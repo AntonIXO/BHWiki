@@ -1,0 +1,34 @@
+[Unit]
+Description=BHWiki reference wiki
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+DynamicUser=yes
+WorkingDirectory=/opt/bhwiki/current
+EnvironmentFile=/etc/bhwiki/runtime.env
+Environment=NODE_ENV=production
+Environment=NEXT_TELEMETRY_DISABLED=1
+Environment=HOSTNAME=127.0.0.1
+Environment=PORT=3086
+ExecStart=/usr/bin/node /opt/bhwiki/current/server.js
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+KillSignal=SIGTERM
+UMask=0077
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CacheDirectory=bhwiki
+BindPaths=/var/cache/bhwiki:/opt/bhwiki/current/.next/cache
+
+[Install]
+WantedBy=multi-user.target

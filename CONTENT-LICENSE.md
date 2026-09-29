@@ -1,0 +1,9 @@
+# Content and assets
+
+Original editorial prose and curated explanatory annotations in the source-controlled collection and explanatory documentation are licensed under [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/). Attribute BHWiki contributors, link the source and license, indicate changes, and distribute adaptations under the same license. Repository and publication history preserve contributor attribution.
+
+Application code, tests, migration SQL, deployment configuration and code examples are licensed under [MIT](LICENSE). Publication titles, identifiers, scientific facts and linked third-party works remain subject to their applicable rights and terms. No license to a linked paper or dataset is implied.
+
+Molecular structure PNGs in `public/molecules/` are NCBI PubChem depictions retrieved through the public PUG REST API. Compound IDs, form identity, source links and retrieval details are recorded in [content provenance](docs/content-sources.md) and displayed with the images. Consult [NCBI policies](https://www.ncbi.nlm.nih.gov/home/about/policies/) and the source record for third-party annotations. Do not imply NCBI endorsement. New external assets must record their source, license, attribution and transformations before inclusion.
+
+Wikipedia, PsychonautWiki, Effect Index and Examine were consulted for information architecture. Their prose, effect definitions, images and proprietary datasets are not redistributed. Effect Index's noncommercial terms are not incorporated into BHWiki's content license; descriptions and definitions here are original.

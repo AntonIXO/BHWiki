@@ -1,0 +1,30 @@
+name: Content correction
+description: Report a sourced factual correction or missing context.
+title: "Content: "
+body:
+  - type: input
+    id: article
+    attributes:
+      label: Article or concept
+      description: Page URL, slug or name.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Claim and correction
+      description: Identify the current claim and the proposed correction, including its applicable population or context.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting sources
+      description: Link primary sources or authoritative labels. Include DOI/PMID and relevant location when available; avoid copying full papers.
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations or conflicts
+      description: Describe uncertainty, conflicting evidence, and any relevant affiliation or financial interest.

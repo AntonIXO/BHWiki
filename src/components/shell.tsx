@@ -1,0 +1,8 @@
+import Link from "next/link";
+import { Atom, GitBranch, Code2, Search, ArrowUpRight } from "lucide-react";
+import { repositoryUrl } from "@/lib/site";
+
+export function Logo() { return <Link href="/" className="logo" aria-label="BHWiki home"><span className="logo-mark"><Atom size={25} strokeWidth={1.6}/></span><span>bh<span className="logo-light">wiki</span><span className="logo-dot">.</span></span></Link>; }
+export function Header() { return <header className="site-header"><div className="header-inner"><Logo/><nav aria-label="Main navigation"><Link href="/">Substances</Link><Link href="/effects">Effects</Link><Link href="/graph">Knowledge graph <GitBranch size={14}/></Link><Link href="/about">Methods</Link></nav><div className="header-actions"><Link href="/#library" className="search-icon" aria-label="Search substances"><Search size={19}/></Link><Link href="/contribute" className="contribute-header"><Code2 size={15}/> Contribute</Link></div></div></header>; }
+export function Footer() { const repo=repositoryUrl(); return <footer className="site-footer"><div><Logo/><p>An independent, open substance reference.</p></div><div className="footer-links"><Link href="/about">Evidence & methodology</Link><Link href="/contribute">Contribute <Code2 size={14}/></Link>{repo&&<a href={repo} target="_blank" rel="noreferrer">Source repository <ArrowUpRight size={14}/></a>}</div><p className="footer-note">For education and research, not personal medical advice.<br/>Original content CC BY-SA 4.0 · Code MIT</p></footer>; }
+export function Breadcrumb({current}: {current:string}) { return <div className="breadcrumb"><Link href="/">Library</Link><span>/</span><span>{current}</span></div>; }
