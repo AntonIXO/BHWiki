@@ -31,8 +31,11 @@ The publisher uses the reviewed source commit and records contributor/reviewer m
 ```sh
 bun install --frozen-lockfile
 bun run typecheck
+bun run content:validate
 bun run test
 BHWIKI_DATA_MODE=bundled bun run build
+bunx playwright install chromium
+BHWIKI_DATA_MODE=bundled bun run test:e2e
 ```
 
 Run the browser suite for interface changes and inspect the affected page at narrow and wide widths. Check keyboard navigation, visible focus, source anchors, empty states and the graph's accessible list. Database changes additionally require actual OrioleDB verification and concurrency tests, not a substitute heap database.

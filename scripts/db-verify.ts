@@ -3,6 +3,10 @@ import { spawn } from "node:child_process";
 import { randomUUID } from "node:crypto";
 import { pathToFileURL } from "node:url";
 import postgres from "postgres";
+import { substances } from "../src/lib/content";
+import { contentHash, type PublicationMetadata } from "../src/lib/publication-metadata";
+import { publicationStatements, sourceUpsertStatements } from "../src/lib/publication-sql";
+import type { Reference, Substance } from "../src/lib/types";
 
 /** Run bounded administrative checks; never expose an administrator URL. */
 export async function runDatabaseCheck(script: string, onNotice?: (message: string) => void): Promise<string> {
@@ -95,6 +99,11 @@ BEGIN
     WHERE n.nspname = 'bhwiki' AND c.relkind = 'r'
       AND has_table_privilege('bhwiki_reader', c.oid, 'INSERT,UPDATE,DELETE,TRUNCATE')
   ) THEN RAISE EXCEPTION 'Reader has a table write privilege'; END IF;
+  IF EXISTS (
+    SELECT FROM pg_class c JOIN pg_namespace n ON n.oid = c.relnamespace
+    WHERE n.nspname = 'bhwiki' AND c.relkind = 'r'
+      AND has_table_privilege('bhwiki_reader', c.oid, 'SELECT') AND NOT c.relrowsecurity
+  ) THEN RAISE EXCEPTION 'A reader-accessible table lacks RLS'; END IF;
   FOR target IN SELECT rolname FROM pg_roles WHERE rolname IN ('anon', 'authenticated', 'service_role', 'umami') LOOP
     IF has_schema_privilege(target.rolname, 'bhwiki', 'USAGE') THEN
       RAISE EXCEPTION 'Unexpected BHWiki access for role %', target.rolname;
@@ -112,7 +121,7 @@ DECLARE
   blocked boolean;
 BEGIN
   first_revision := bhwiki.publish_article(doc_a, repeat('a', 64), NULL, '["Database verification"]', '[]', 'Fixture A');
-  duplicate_revision := bhwiki.publish_article(doc_a, repeat('a', 64), NULL, '["Database verification"]', '[]', 'Unchanged fixture A');
+  duplicate_revision := bhwiki.publish_article(doc_a, repeat('a', 64), NULL, '["Database verification"]', '[]', 'Fixture A');
   SELECT id INTO fixture_entity FROM bhwiki.entities WHERE slug = ${sqlString(slug)};
   IF first_revision <> duplicate_revision OR (SELECT count(*) FROM bhwiki.article_revisions WHERE entity_id = fixture_entity) <> 1 THEN
     RAISE EXCEPTION 'An unchanged import created a new publication';
@@ -142,6 +151,13 @@ BEGIN
     blocked := true;
   END;
   IF NOT blocked THEN RAISE EXCEPTION 'A published revision was deletable'; END IF;
+  blocked := false;
+  BEGIN
+    PERFORM bhwiki.publish_article(doc_a || '{"editorialStatus":"editorially-reviewed"}', repeat('e', 64), NULL, '[]', '[]', 'Missing reviewer must fail');
+  EXCEPTION WHEN check_violation THEN
+    blocked := true;
+  END;
+  IF NOT blocked THEN RAISE EXCEPTION 'Editorially reviewed content was accepted without a reviewer'; END IF;
 
   INSERT INTO bhwiki.article_revisions
     (entity_id, revision_number, document, content_hash, editorial_status, summary, published_at)
@@ -204,7 +220,92 @@ BEGIN
 END $reader$;
 RESET ROLE;
 ROLLBACK;
+DO $cleanup$ BEGIN
+  IF EXISTS (SELECT FROM bhwiki.entities WHERE slug = ${sqlString(slug)}) THEN
+    RAISE EXCEPTION 'Verification left a committed fixture';
+  END IF;
+END $cleanup$;
 SELECT 'Publication, immutability, RLS, tenant isolation and OrioleDB checks passed; all fixtures rolled back.' AS result;
+`;
+}
+
+export function attributionVerificationSql(slug = fixtureSlug()): string {
+  const article: Substance = { ...structuredClone(substances[0]), slug, editorialStatus: "editorially-reviewed" };
+  const hash = contentHash(article);
+  const metadata: PublicationMetadata = { contentHash: hash, contributors: ["Fixture contributor one"], reviewers: ["Fixture reviewer one"], reviewReference: `https://example.org/${slug}/review-1` };
+  const correctedMetadata: PublicationMetadata = { ...metadata, contributors: ["Fixture contributor two"], reviewers: ["Fixture reviewer two"], reviewReference: `https://example.org/${slug}/review-2` };
+  const reference: Reference = {
+    id: slug, title: "Synthetic 'quoted' bibliographic fixture", authors: "Fixture O'Connor", year: 2020,
+    doi: `10.5555/${slug}`, url: `https://example.org/${slug}/$source$/$identity$/initial`, kind: "Fixture source",
+    insight: "Rollback-only source correction test", limitation: "Synthetic verification fixture",
+  };
+  const correctedReference: Reference = { ...reference, title: "Corrected 'quoted' bibliographic fixture", authors: "Fixture D'Angelo", year: 2021, url: `https://example.org/${slug}/$source$/$identity$/paper`, kind: "Corrected fixture source" };
+  const conflictingReference: Reference = { ...correctedReference, doi: `10.5555/${slug}-conflicting` };
+  const executeStatements = (statements: string[], into?: string) => statements.map((statement) => `EXECUTE ${sqlString(statement)}${into ? ` INTO ${into}` : ""};`).join("\n");
+  return `
+BEGIN;
+SET LOCAL statement_timeout = '20s';
+SET LOCAL lock_timeout = '5s';
+SELECT pg_advisory_xact_lock(674928105);
+SET LOCAL ROLE bhwiki_owner;
+DO $attribution$
+DECLARE first_revision bigint; second_revision bigint; replay_revision bigint; commit_revision bigint;
+  fixture_entity bigint; first_source bigint; corrected_source bigint; blocked boolean := false;
+BEGIN
+  ${executeStatements(publicationStatements(article, metadata, "a".repeat(40)), "first_revision")}
+  ${executeStatements(publicationStatements(article, correctedMetadata, "b".repeat(40)), "second_revision")}
+  ${executeStatements(publicationStatements(article, correctedMetadata, "b".repeat(40)), "replay_revision")}
+  ${executeStatements(publicationStatements(article, correctedMetadata, "c".repeat(40)), "commit_revision")}
+  SELECT id INTO fixture_entity FROM bhwiki.entities WHERE slug = ${sqlString(slug)};
+  IF first_revision = second_revision OR second_revision <> replay_revision OR second_revision <> commit_revision
+    OR (SELECT count(*) FROM bhwiki.article_revisions WHERE entity_id = fixture_entity) <> 2
+    OR (SELECT count(DISTINCT content_hash) FROM bhwiki.article_revisions WHERE entity_id = fixture_entity) <> 1
+    OR (SELECT content_hash FROM bhwiki.article_revisions WHERE id = second_revision) <> ${sqlString(hash)}
+    OR (SELECT document FROM bhwiki.article_revisions WHERE id = first_revision) <> (SELECT document FROM bhwiki.article_revisions WHERE id = second_revision)
+    OR (SELECT published_revision_id FROM bhwiki.articles WHERE entity_id = fixture_entity) <> second_revision THEN
+    RAISE EXCEPTION 'Attribution correction, exact replay, or source-commit-only publication behavior is incorrect';
+  END IF;
+  IF (SELECT contributors FROM bhwiki.article_revisions WHERE id = first_revision) <> ${sqlString(JSON.stringify(metadata.contributors))}::jsonb
+    OR (SELECT reviewers FROM bhwiki.article_revisions WHERE id = first_revision) <> ${sqlString(JSON.stringify(metadata.reviewers))}::jsonb
+    OR (SELECT summary FROM bhwiki.article_revisions WHERE id = first_revision) <> ${sqlString(`Editorial review: ${metadata.reviewReference}`)}
+    OR (SELECT contributors FROM bhwiki.article_revisions WHERE id = second_revision) <> ${sqlString(JSON.stringify(correctedMetadata.contributors))}::jsonb
+    OR (SELECT reviewers FROM bhwiki.article_revisions WHERE id = second_revision) <> ${sqlString(JSON.stringify(correctedMetadata.reviewers))}::jsonb
+    OR (SELECT summary FROM bhwiki.article_revisions WHERE id = second_revision) <> ${sqlString(`Editorial review: ${correctedMetadata.reviewReference}`)}
+    OR (SELECT source_commit FROM bhwiki.article_revisions WHERE id = second_revision) <> repeat('b', 40) THEN
+    RAISE EXCEPTION 'Attribution history was overwritten or corrected metadata was not recorded';
+  END IF;
+  ${executeStatements(sourceUpsertStatements(reference))}
+  SELECT id INTO first_source FROM bhwiki.sources WHERE doi = ${sqlString(reference.doi!)};
+  ${executeStatements(sourceUpsertStatements(correctedReference))}
+  SELECT id INTO corrected_source FROM bhwiki.sources WHERE doi = ${sqlString(reference.doi!)};
+  IF first_source IS NULL OR first_source <> corrected_source
+    OR (SELECT count(*) FROM bhwiki.sources WHERE doi = ${sqlString(reference.doi!)}) <> 1
+    OR NOT EXISTS (SELECT FROM bhwiki.sources WHERE id = corrected_source
+      AND title = ${sqlString(correctedReference.title)} AND authors = ${sqlString(correctedReference.authors)}
+      AND year = ${correctedReference.year} AND url = ${sqlString(correctedReference.url)} AND kind = ${sqlString(correctedReference.kind)}) THEN
+    RAISE EXCEPTION 'Bibliographic correction failed to update one canonical source in place';
+  END IF;
+  BEGIN
+    ${executeStatements(sourceUpsertStatements(conflictingReference))}
+  EXCEPTION WHEN raise_exception THEN
+    IF SQLERRM NOT LIKE '%conflicting DOI or PMID%' THEN RAISE; END IF;
+    blocked := true;
+  END;
+  IF NOT blocked THEN RAISE EXCEPTION 'Conflicting DOI at an existing source URL was accepted'; END IF;
+  IF EXISTS (SELECT FROM bhwiki.sources WHERE doi = ${sqlString(conflictingReference.doi!)})
+    OR NOT EXISTS (SELECT FROM bhwiki.sources WHERE id = first_source AND doi = ${sqlString(reference.doi!)} AND title = ${sqlString(correctedReference.title)}) THEN
+    RAISE EXCEPTION 'Rejected source identity correction left partial changes';
+  END IF;
+END $attribution$;
+RESET ROLE;
+ROLLBACK;
+DO $cleanup$ BEGIN
+  IF EXISTS (SELECT FROM bhwiki.entities WHERE slug = ${sqlString(slug)})
+    OR EXISTS (SELECT FROM bhwiki.sources WHERE doi = ${sqlString(reference.doi!)} OR doi = ${sqlString(conflictingReference.doi!)}) THEN
+    RAISE EXCEPTION 'Attribution verification left committed fixtures';
+  END IF;
+END $cleanup$;
+SELECT 'Generated publication SQL: attribution correction, immutable history, unchanged replay, commit-only replay, canonical source correction, dollar-delimiter/quote preservation and conflicting identity rejection passed; fixtures rolled back.' AS result;
 `;
 }
 
@@ -258,10 +359,11 @@ async function verifyConcurrentPublication(): Promise<void> {
 
 export async function verifyDatabase(): Promise<void> {
   if (process.argv.includes("--sql")) {
-    process.stdout.write(verificationSql());
+    process.stdout.write(verificationSql() + attributionVerificationSql());
     return;
   }
   console.log(await runDatabaseCheck(verificationSql()));
+  console.log(await runDatabaseCheck(attributionVerificationSql()));
   await verifyConcurrentPublication();
   console.log("Concurrent publication lock contention and successful retry verified; both publishers rolled back.");
 }

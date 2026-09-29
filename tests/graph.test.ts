@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { buildKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, type GraphInput } from "../src/lib/graph";
+import { boundKnowledgeGraph } from "../src/lib/graph-data";
+import type { KnowledgeGraphData } from "../src/lib/types";
 
 const input: GraphInput = {
   substances: [
@@ -10,6 +12,11 @@ const input: GraphInput = {
   ],
   tags: [{ id: "shared", label: "Shared pathway", kind: "mechanism", description: "A shared pathway" }],
   hyperedges: [{ id: "three-way", label: "Joint relationship", relation: "mechanism", description: "Three members", sourceUrl: "https://example.org/paper", members: ["substance:a", "substance:b", "substance:c"], memberRoles: {"substance:a":"exposure", "substance:b":"comparator", "substance:c":"context"} }],
+};
+
+const boundedInput: KnowledgeGraphData = {
+  ...input,
+  substances: input.substances.map(substance => ({ ...substance, formula: "", category: "Reference", editorialStatus: "sourced-draft", reviewedAt: "2026-09-29", halfLifeLabel: "Not established" })),
 };
 
 test("expands a three-member hyperedge into one relationship node and three incidence edges", () => {
@@ -86,4 +93,25 @@ test("compact previews keep the entire sourced relationship rather than a pairwi
   assert.equal(model.relationships[0].memberRoles["substance:c"], "context");
   const nodes = new Set(model.nodes.map((node) => node.id));
   assert.ok(model.elements.every((element) => !element.data.source || (nodes.has(element.data.source) && nodes.has(element.data.target))));
+});
+
+test("focused concepts without authored claims still expose classification neighbors", () => {
+  const bounded = boundKnowledgeGraph({ ...boundedInput, hyperedges: [] }, { focus: "tag:shared", limit: 3 });
+  assert.deepEqual(bounded.substances.map(substance => substance.slug), ["a", "b"]);
+  assert.deepEqual(bounded.tags.map(tag => tag.id), ["shared"]);
+  assert.equal(bounded.hyperedges.length, 0);
+  assert.equal(bounded.truncated, false);
+  assert.equal(buildKnowledgeGraph(bounded).relationships[0].relation, "tag membership");
+});
+
+test("bounding excludes a whole oversized claim and trims unloaded classification references", () => {
+  const bounded = boundKnowledgeGraph(boundedInput, { focus: "substance:a", limit: 2 });
+  assert.equal(bounded.hyperedges.length, 0);
+  assert.equal(bounded.truncated, true);
+  assert.equal(bounded.substances.length + bounded.tags.length, 2);
+  assert.deepEqual(bounded.substances[0].tags, ["shared"]);
+  const tighter = boundKnowledgeGraph(boundedInput, { focus: "substance:a", limit: 1 });
+  assert.deepEqual(tighter.substances[0].tags, []);
+  assert.deepEqual(boundedInput.substances[0].tags, ["shared"], "bounding must not mutate the catalog");
+  assert.doesNotThrow(() => buildKnowledgeGraph(tighter));
 });

@@ -1,10 +1,10 @@
 .root { width: 100%; overflow: hidden; border: 1px solid #dce2d7; border-radius: 12px; background: #f7f8f4; color: #263931; }
 .toolbar { display: flex; align-items: center; gap: 16px; padding: 16px 20px; border-bottom: 1px solid #dce2d7; background: #fbfcf8; }
-.search { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; color: #718074; }
-.search input { min-width: 0; width: 100%; border: 0; outline: none; background: transparent; color: #263931; font: inherit; font-size: 13px; }
-.search input::placeholder { color: #7b867c; }
+.search { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; color: #53644b; }
+.search input { min-width: 0; width: 100%; border: 0; outline: none; background: transparent; color: #263931; font: inherit; font-size:14px; }
+.search input::placeholder { color: #53644b; }
 .search:focus-within { outline: 2px solid #9aae9d; outline-offset: 6px; border-radius: 2px; }
-.search button, .close { display: flex; align-items: center; justify-content: center; border: 0; background: transparent; color: #66766a; cursor: pointer; }
+.search button, .close { display: flex; align-items: center; justify-content: center; border: 0; background: transparent; color: #53644b; cursor: pointer; }
 .toolbar select { max-width: 170px; padding: 7px 26px 7px 9px; border: 1px solid #dbe1d7; border-radius: 5px; background: #fbfcf8; font: inherit; font-size: 12px; color: #4f6355; }
 .resetLink { font-size: 12px; color: #285b49; white-space: nowrap; }
 .boundNotice { margin: 0; padding: 12px 20px; border-bottom: 1px solid #dce2d7; font-size: 12px; color: #596d60; }
@@ -12,7 +12,7 @@
 .stage { position: relative; height: 590px; background-image: radial-gradient(#c4cebf 0.6px, transparent 0.6px); background-size: 18px 18px; }
 .canvas { position: absolute; inset: 0; cursor: grab; }
 .compact .stage { height: 302px; }
-.legend { display: flex; gap: 15px; position: absolute; top: 17px; left: 19px; pointer-events: none; font-size: 10px; letter-spacing: .015em; color: #65735f; background: #f7f8f4d9; padding: 5px 0; }
+.legend { display: flex; gap: 15px; position: absolute; top: 17px; left: 19px; pointer-events: none; font-size: 12px; letter-spacing: .015em; color: #53644b; background: #f7f8f4d9; padding: 5px 0; }
 .legend span { display: flex; gap: 6px; align-items: center; }
 .legend i { width: 7px; height: 7px; display: inline-block; border-radius: 50%; }
 .substanceDot { background: #4d7855; }
@@ -23,19 +23,19 @@
 .zoom button + button { border-top: 1px solid #e1e6db; }
 .zoom button:hover, .related button:hover { background: #e7eddf; }
 .zoom button:disabled { opacity: .4; cursor: default; }
-.exploreLink { display: flex; align-items: center; gap: 7px; position: absolute; bottom: 14px; right: 15px; color: #285b49; background: #f8faf4; padding: 8px 10px; border: 1px solid #d9e0d2; border-radius: 5px; text-decoration: none; font-size: 11px; }
-.status { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; pointer-events: none; padding: 40px; font-size: 13px; color: #62735e; }
+.exploreLink { display: flex; align-items: center; gap: 7px; position: absolute; bottom: 14px; right: 15px; color: #285b49; background: #f8faf4; padding: 8px 10px; border: 1px solid #d9e0d2; border-radius: 5px; text-decoration: none; font-size: 12px; }
+.status { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; pointer-events: none; padding: 40px; font-size:14px; color: #53644b; }
 .selection { position: absolute; top: 53px; right: 18px; width: 265px; max-height: calc(100% - 75px); overflow-y: auto; padding: 22px; border: 1px solid #d8e1d1; border-radius: 8px; background: #fdfef9f5; box-shadow: 0 8px 30px #2a422213; backdrop-filter: blur(10px); }
 .close { position: absolute; right: 9px; top: 9px; padding: 5px; }
-.eyebrow { display: block; font-size: 9px; text-transform: uppercase; letter-spacing: .13em; color: #7a856e; }
+.eyebrow { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: .13em; color: #53644b; }
 .selection h3 { margin: 9px 0 12px; font-size: 23px; font-weight: 500; letter-spacing: -.025em; }
-.selection p { margin: 0 0 16px; line-height: 1.65; font-size: 12px; color: #6a7464; }
+.selection p { margin: 0 0 16px; line-height: 1.65; font-size:14px; color: #53644b; }
 .selection a { display: flex; align-items: center; gap: 5px; margin: 10px 0 0; font-size: 12px; font-weight: 500; color: #285b49; text-decoration: none; }
 .related { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 20px; padding-top: 15px; border-top: 1px solid #e3e8dc; }
-.related > span { flex: 0 0 100%; margin-bottom: 3px; color: #7a856e; font-size: 10px; }
-.related button { border: 1px solid #dfe4d8; border-radius: 4px; padding: 4px 7px; background: #f2f5eb; color: #637157; font-size: 10px; cursor: pointer; }
-.related button small { display: block; margin-top: 3px; color: #717a67; font-size: 9px; }
-.footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 13px 18px; border-top: 1px solid #dce2d7; background: #fbfcf8; font-size: 10px; color: #7c8873; }
+.related > span { flex: 0 0 100%; margin-bottom: 3px; color: #53644b; font-size: 12px; }
+.related button { border: 1px solid #dfe4d8; border-radius: 4px; padding: 4px 7px; background: #f2f5eb; color: #53644b; font-size: 12px; cursor: pointer; }
+.related button small { display: block; margin-top: 3px; color: #53644b; font-size: 12px; }
+.footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 13px 18px; border-top: 1px solid #dce2d7; background: #fbfcf8; font-size: 12px; color: #53644b; }
 .footer p { margin: 0; }
 .footer > span { flex-shrink: 0; }
 .textView { padding: 14px 18px; border-top: 1px solid #dce2d7; background: #fbfcf8; font-size: 12px; }
@@ -45,17 +45,17 @@
 .textColumns ul { list-style: none; padding: 0; margin: 0; }
 .textColumns li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 0; border-bottom: 1px solid #e4e8df; }
 .textColumns a { color: #285b49; }
-.textColumns button { border: 0; padding: 0; background: none; color: #536f45; font: inherit; font-size: 11px; cursor: pointer; text-align: left; }
+.textColumns button { border: 0; padding: 0; background: none; color: #536f45; font: inherit; font-size: 12px; cursor: pointer; text-align: left; }
 .textColumns .textRelationship { display: block; }
-.textRelationship > button { font-size: 13px; font-weight: 500; }
-.textRelationship p { color: #717a67; font-size: 11px; line-height: 1.6; }
-.textRelationship span { display: block; margin: 8px 0; color: #7c856f; font-size: 10px; }
-.textRelationship a { font-size: 10px; }
+.textRelationship > button { font-size:14px; font-weight: 500; }
+.textRelationship p { color: #53644b; font-size:14px; line-height: 1.6; }
+.textRelationship span { display: block; margin: 8px 0; color: #53644b; font-size: 12px; }
+.textRelationship a { font-size: 12px; }
 .textRelationship .sourceLink { display: inline-block; margin: 8px 16px 0 0; }
 .textRelationship .members li { justify-content: flex-start; padding: 6px 0; border: 0; }
 .textRelationship .members a { font-size: 12px; }
-.textRelationship .members span { margin: 0; font-size: 11px; }
-.nodeKind { display: block; margin-top: 4px; color: #65735f; font-size: 10px; }
+.textRelationship .members span { margin: 0; font-size: 12px; }
+.nodeKind { display: block; margin-top: 4px; color: #53644b; font-size: 12px; }
 .srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; }
 .root button:focus-visible, .root select:focus-visible, .root a:focus-visible, .root summary:focus-visible { outline: 2px solid #517c50; outline-offset: 3px; }
 @media (max-width: 700px) {

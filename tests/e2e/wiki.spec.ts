@@ -16,12 +16,12 @@ test('library search, aliases, typed filters and empty state',async({page})=>{
 test('articles preserve sourced contexts and the correct modeled analyte',async({page})=>{
  await page.goto('/substances/psilocybin');
  await expect(page.locator('.article-hero h1')).toContainText('Psilocybin');
- await expect(page.locator('.kinetics-svg title')).toContainText('Psilocin');
+ await expect(page.locator('.kinetics-svg title')).toContainText(/psilocin/i);
  await expect(page.locator('.kinetics-slider')).toHaveCount(0);
  await page.goto('/substances/caffeine');
  await expect(page.locator('.article-hero')).toContainText('Sourced draft');
  const slider=page.getByRole('slider');await expect(slider).toBeVisible();await slider.fill('6');await expect(page.locator('.kinetics-slider-heading output')).toContainText('6');
- await expect(page.locator('#effects')).toBeVisible();await expect(page.locator('#outcomes')).toBeVisible();
+ await expect(page.locator('#effects')).toBeVisible();await expect(page.locator('#measured-outcomes')).toBeVisible();
  await page.locator('.article-citation').first().click();
  expect(new URL(page.url()).hash).toMatch(/^#reference-/);
  const broken=await page.locator('a[href^="#reference-"]').evaluateAll(links=>links.filter(a=>!document.getElementById(a.getAttribute('href')!.slice(1))).length);expect(broken).toBe(0);
@@ -54,4 +54,13 @@ test('read APIs are compact and validate parameters',async({request})=>{
  expect((await request.get('/api/search?limit=1000')).status()).toBe(400);
  const response=await request.get('/api/graph?focus=caffeine&limit=20');expect(response.status()).toBe(200);const graph=await response.json();expect(graph.substances[0].references).toBeUndefined();
  expect((await request.get('/api/graph?limit=-1')).status()).toBe(400);
+});
+
+test('reading surfaces meet automated accessibility checks',async({page})=>{
+ const {default:AxeBuilder}=await import('@axe-core/playwright');
+ for(const path of ['/','/substances/caffeine','/effects/alertness','/graph?focus=caffeine']){
+  await page.goto(path);await page.waitForLoadState('networkidle');
+  const result=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
+  expect(result.violations,`${path}: ${JSON.stringify(result.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)})))}`).toEqual([]);
+ }
 });

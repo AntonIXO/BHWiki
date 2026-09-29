@@ -18,9 +18,14 @@ Open [localhost:3086](http://localhost:3086). The example selects `BHWIKI_DATA_M
 
 ```sh
 bun run typecheck
+bun run content:validate
 bun run test
 BHWIKI_DATA_MODE=bundled bun run build
+bunx playwright install chromium
+BHWIKI_DATA_MODE=bundled bun run test:e2e
 ```
+
+On Linux, install Chromium system dependencies with `bunx playwright install --with-deps chromium` when needed. The browser suite starts the built application itself; use `PLAYWRIGHT_BASE_URL` only to target an intentionally running instance.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for content changes and review requirements, and [deployment instructions](deploy/README.md) for a standalone production package. Next.js API guidance for this installed release is bundled in `node_modules/next/dist/docs/`.
 
@@ -47,9 +52,9 @@ Public “sourced draft” is an editorial review status, distinct from an unpub
 
 ## Validation and release
 
-The repository checks content references, graph integrity, article behavior and publication semantics. CI installs the pinned dependencies, checks types, runs tests and builds in explicit bundled mode. Browser checks exercise desktop/mobile navigation, search, filters, source links, graph controls and empty states. Real OrioleDB isolation and publication checks are a separate database verification step; a successful bundled build does not establish database correctness.
+The repository checks content references, graph integrity, article behavior and publication semantics. CI installs the pinned dependencies, checks types and content, runs unit tests, builds in explicit bundled mode and runs the desktop/mobile Chromium suite. Browser checks exercise desktop/mobile navigation, search, filters, source links, graph controls and empty states. Real OrioleDB isolation and publication checks are a separate database verification step; a successful bundled build does not establish database correctness.
 
-The workload benchmark measures article lookup, catalog filtering and bounded graph queries on the target database. Its results describe that dataset and host; choosing OrioleDB alone is not evidence of a speedup. Release verification results and limitations belong in [docs/verification.md](docs/verification.md).
+The workload benchmark measures article lookup, catalog filtering and bounded graph queries on the target database. Its results describe that dataset and host; choosing OrioleDB alone is not evidence of a speedup. The verified release passes 32 unit tests and 14 desktop/mobile browser tests, including automated accessibility checks; actual OrioleDB publication/isolation checks and the standalone container build also pass. See [the verification record](docs/verification.md) for scope, measurements and limitations.
 
 ## Licensing and sources
 

@@ -5,13 +5,16 @@
   "scripts": {
     "dev": "next dev --hostname 0.0.0.0 --port 3086",
     "build": "next build --webpack",
-    "start": "next start --hostname 0.0.0.0 --port 3086",
-    "typecheck": "tsc --noEmit",
+    "start": "node --env-file-if-exists=.env.local scripts/start.mjs",
+    "typecheck": "next typegen && tsc --noEmit",
     "test": "tsx --test tests/*.test.ts",
     "db:migrate": "tsx scripts/db-migrate.ts",
     "db:seed": "tsx scripts/db-seed.ts",
     "content:validate": "tsx scripts/validate-content.ts",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "content:hashes": "tsx scripts/content-hashes.ts",
+    "db:verify": "tsx scripts/db-verify.ts",
+    "db:benchmark": "tsx scripts/db-benchmark.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "2.117.2",
@@ -24,6 +27,7 @@
     "server-only": "0.0.1"
   },
   "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
     "@playwright/test": "1.63.0",
     "@types/node": "26.6.3",
     "@types/react": "19.3.0",

@@ -1,13 +1,17 @@
-import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import postgres from "postgres";
 import { substances, tags, hyperedges } from "../src/lib/content";
 import { validateContent } from "../src/lib/validate-content";
 import type { Reference } from "../src/lib/types";
+import { publicationStatements, sourceMatchSql, sourceUpsertStatements } from "../src/lib/publication-sql";
+import { validateCanonicalSources, validateEditorialMetadata } from "../src/lib/publication-metadata";
 
 // This file is the only publisher. It emits/executes a complete atomic transaction
 // from the same validated content used by the bundled application.
 validateContent({ substances, tags, hyperedges });
+const editorial = validateEditorialMetadata(substances, JSON.parse(readFileSync(new URL("../content/editorial.json", import.meta.url), "utf8")));
+validateCanonicalSources(substances.flatMap((s) => s.references));
 const q = (value: unknown): string => {
   if (value === null || value === undefined) return "NULL";
   if (typeof value === "number") { if (!Number.isFinite(value)) throw new Error("Non-finite seed value"); return String(value); }
@@ -18,24 +22,17 @@ const json = (value: unknown) => `${q(JSON.stringify(value))}::jsonb`;
 let sourceCommit: string | null = process.env.BHWIKI_SOURCE_COMMIT ?? null;
 if (!sourceCommit) {
   try {
-    const dirty = execFileSync("git", ["status", "--porcelain", "--", "src/lib/content*", "src/lib/types.ts"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
+    const dirty = execFileSync("git", ["status", "--porcelain", "--", "src/lib/content*", "src/lib/types.ts", "content/editorial.json"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
     if (!dirty) sourceCommit = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
   } catch { /* No repository or commit: do not invent source provenance. */ }
 }
 if (sourceCommit && !/^[a-f0-9]{40,64}$/.test(sourceCommit)) throw new Error("BHWIKI_SOURCE_COMMIT must be a full Git commit hash");
-// Reviewers must come from actual review metadata; this source collection has no attested reviews.
-if (substances.some((s) => s.editorialStatus === "editorially-reviewed")) throw new Error("Reviewed publication requires attested reviewer metadata; current importer supports sourced drafts only.");
 const statements = ["BEGIN;", "SET LOCAL lock_timeout = '5s';", "SET LOCAL statement_timeout = '60s';", "SELECT pg_advisory_xact_lock(674928105);", "SET LOCAL ROLE bhwiki_owner;"];
 const emit = (sql: string) => statements.push(sql);
 const entity = (slug: string) => `(SELECT id FROM bhwiki.entities WHERE slug = ${q(slug.replace(/^(substance|tag):/, ""))})`;
 const insert = (table: string, values: Record<string, string>) => emit(`INSERT INTO bhwiki.${table} (${Object.keys(values).join(", ")}) VALUES (${Object.values(values).join(", ")});`);
 const upsert = (table: string, values: Record<string, string>, keys: string[]) => emit(`INSERT INTO bhwiki.${table} (${Object.keys(values).join(", ")}) VALUES (${Object.values(values).join(", ")}) ON CONFLICT (${keys.join(", ")}) DO UPDATE SET ${Object.keys(values).filter((k) => !keys.includes(k)).map((k) => `${k} = EXCLUDED.${k}`).join(", ")};`);
-const sourceIdentity = (ref: Reference) => ({ doi: ref.doi?.replace(/^https?:\/\/(dx\.)?doi\.org\//, "").toLowerCase() ?? null, pmid: ref.pmid ?? null, url: ref.url });
-const sourceMatch = (ref: Reference): string => {
-  const id = sourceIdentity(ref);
-  return [`url = ${q(id.url)}`, ...(id.doi ? [`doi = ${q(id.doi)}`] : []), ...(id.pmid ? [`pmid = ${q(id.pmid)}`] : [])].join(" OR ");
-};
-const source = (ref: Reference) => `(SELECT id FROM bhwiki.sources WHERE ${sourceMatch(ref)})`;
+const source = (ref: Reference) => `(SELECT id FROM bhwiki.sources WHERE ${sourceMatchSql(ref)})`;
 
 // Public concepts and article identities exist before participant references are inserted.
 for (const tag of tags) {
@@ -45,8 +42,7 @@ for (const tag of tags) {
   for (const alias of [...new Set([tag.label, ...(tag.aliases ?? [])].map((v) => v.toLowerCase()))]) insert("entity_aliases", { entity_id: entity(tag.id), alias: q(alias) });
 }
 for (const s of substances) {
-  const hash = createHash("sha256").update(JSON.stringify(s)).digest("hex");
-  emit(`SELECT bhwiki.publish_article(${json(s)}, ${q(hash)}, ${q(sourceCommit)}, '[]'::jsonb, '[]'::jsonb, ${q("Source-controlled publication; editorial review not yet completed.")});`);
+  for (const statement of publicationStatements(s, editorial.get(s.slug), sourceCommit)) emit(statement);
 }
 
 for (const s of substances) {
@@ -57,13 +53,7 @@ for (const s of substances) {
     return source(ref);
   };
   for (const ref of s.references) {
-    const id = sourceIdentity(ref);
-    const key = id.doi ? `doi:${id.doi}` : id.pmid ? `pmid:${id.pmid}` : `url:${id.url}`;
-    emit(`DO $source$ BEGIN IF (SELECT count(*) FROM bhwiki.sources WHERE ${sourceMatch(ref)}) > 1 THEN RAISE EXCEPTION 'Conflicting source identities require explicit consolidation'; END IF; END $source$;`);
-    emit(`INSERT INTO bhwiki.sources (canonical_key, doi, pmid, title, authors, year, url, kind)
-      SELECT ${[q(key), q(id.doi), q(id.pmid), q(ref.title), q(ref.authors), q(ref.year), q(ref.url), q(ref.kind)].join(", ")}
-      WHERE NOT EXISTS (SELECT FROM bhwiki.sources WHERE ${sourceMatch(ref)});`);
-    emit(`UPDATE bhwiki.sources SET doi = coalesce(doi, ${q(id.doi)}), pmid = coalesce(pmid, ${q(id.pmid)}) WHERE ${sourceMatch(ref)};`);
+    for (const statement of sourceUpsertStatements(ref)) emit(statement);
   }
   // Snapshot and normalized projections become visible together at COMMIT.
   // There is no inference of route, source category, statistic, direction or analyte from prose.
@@ -115,6 +105,6 @@ else {
   const sql = postgres(connection, { max: 1, prepare: false, onnotice: () => {} });
   try {
     await sql.unsafe(script);
-    console.log(`Published ${substances.length} sourced-draft articles, ${tags.length} concepts and ${hyperedges.length} relationships transactionally.`);
+    console.log(`Published ${substances.length} articles with validated editorial provenance, ${tags.length} concepts and ${hyperedges.length} relationships transactionally.`);
   } finally { await sql.end({ timeout: 2 }); }
 }

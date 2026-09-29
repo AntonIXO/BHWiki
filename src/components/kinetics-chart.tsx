@@ -63,6 +63,6 @@ function EliminationChart({ observation, model, sourceHref }: KineticsChartProps
       {[0, 1, 2, 3, 4, 5].map(index => <text key={index} x={left + index / 5 * plotWidth} y={top + plotHeight + 24} textAnchor="middle" className="kinetics-svg-label">{hours(index / 5 * endTime)} h</text>)}
     </svg>
     <div className="kinetics-readouts"><span>After <strong>{hours(halfLife)} h</strong><b>50% remains</b></span><span>After <strong>{hours(halfLife * 2)} h</strong><b>25% remains</b></span><span>After <strong>{hours(halfLife * 5)} h</strong><b>3.125% remains</b></span></div>
-    <p className="kinetics-footnote">Model: fraction remaining = 2<sup>−time / half-life</sup>. Assumes a single exposure, instantaneous distribution, and a constant elimination rate for {model.analyte}. Formation of metabolites, repeated exposure, and interactions are not modeled. <a href={sourceHref}>Source & context</a></p>
+    <p className="kinetics-footnote">Model: fraction remaining = 2<sup>−time / half-life</sup>. Assumes a single exposure, instantaneous distribution, and a constant half-life for {model.analyte}. Formation of metabolites, repeated exposure, and interactions are not modeled. <a href={sourceHref}>Source & context</a></p>
   </div>;
 }

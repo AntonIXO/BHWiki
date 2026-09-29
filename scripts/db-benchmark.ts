@@ -16,6 +16,13 @@ const queries = {
     JOIN bhwiki.article_revisions r ON r.id = a.published_revision_id AND r.entity_id = e.id
     WHERE e.slug = ${sqlString(`${prefix}-1`)} AND e.entity_type = 'substance' AND e.status = 'published'
     LIMIT 1`,
+  // Exact production catalog query: filtering currently happens on compact
+  // catalog records in the application, not in the SQL comparison below.
+  catalog: `
+    SELECT a.catalog FROM bhwiki.entities e JOIN bhwiki.articles a ON a.entity_id = e.id
+    WHERE e.entity_type = 'substance' AND e.status = 'published'
+    ORDER BY e.label`,
+  // Exploratory comparison only; this is not the production catalog path.
   filtered_catalog: `
     SELECT a.catalog FROM bhwiki.entities e JOIN bhwiki.articles a ON a.entity_id = e.id
     WHERE e.status = 'published' AND e.entity_type = 'substance'
@@ -28,14 +35,12 @@ const queries = {
       )
     ORDER BY e.label LIMIT 25`,
   focused_graph: `
-    WITH selected AS MATERIALIZED (
-      SELECT r.id FROM bhwiki.relationships r
-      WHERE r.status = 'published' AND EXISTS (
-        SELECT FROM bhwiki.relationship_members focus
-        JOIN bhwiki.entities entity ON entity.id = focus.entity_id
-        WHERE focus.relationship_id = r.id AND entity.slug = ${sqlString(`${prefix}-concept-1`)}
-      )
-      ORDER BY r.label LIMIT 80
+    WITH focus_entity AS MATERIALIZED (
+      SELECT id FROM bhwiki.entities WHERE slug = ${sqlString(`${prefix}-concept-1`)}
+    ), selected AS MATERIALIZED (
+      SELECT relationship_id AS id FROM bhwiki.relationship_members
+      WHERE entity_id = (SELECT id FROM focus_entity)
+      ORDER BY relationship_id LIMIT 80
     )
     SELECT r.slug, r.label, r.relation, r.source_urls,
       jsonb_agg(jsonb_build_object('slug', e.slug, 'kind', e.entity_type, 'label', e.label, 'role', m.member_role) ORDER BY e.slug) AS members
@@ -100,10 +105,15 @@ BEGIN
   END LOOP;
   PERFORM set_config('bhwiki.benchmark_${name}', samples::text, true);
 END $measure$;
-SELECT jsonb_build_object('query', ${sqlString(name)}, 'samples', current_setting('bhwiki.benchmark_${name}')::jsonb) AS measurement;
+SELECT jsonb_build_object('query', ${sqlString(name)}, 'scope', ${sqlString(name === "filtered_catalog" ? "exploratory SQL filtering; application currently filters compact catalog records" : name === "focused_graph" ? "representative complete graph slice; production loads candidates and members separately" : "production query shape")}, 'samples', current_setting('bhwiki.benchmark_${name}')::jsonb) AS measurement;
 `).join("\n")}
 RESET ROLE;
 ROLLBACK;
+DO $cleanup$ BEGIN
+  IF EXISTS (SELECT FROM bhwiki.entities WHERE slug LIKE ${sqlString(`${prefix}%`)}) THEN
+    RAISE EXCEPTION 'Benchmark left committed fixtures';
+  END IF;
+END $cleanup$;
 SELECT jsonb_build_object('fixtureArticles', ${fixtureCount}, 'fixtureConcepts', 20, 'fixtureRelationships', ${fixtureCount},
   'result', 'All fixtures rolled back. Three observations per query, reader RLS enabled, existing planner statistics unchanged. No comparative engine performance claim.') AS context;
 `;

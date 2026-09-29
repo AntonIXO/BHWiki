@@ -55,3 +55,10 @@ export function boundKnowledgeGraph(data: KnowledgeGraphData, options: { focus?:
   const selectedSubstances: CatalogSubstance[] = [...substances].filter(([id]) => selected.has(id)).map(([, s]) => ({ ...s, tags: s.tags.filter((id) => tagIds.has(id)) }));
   return { substances: selectedSubstances, tags: selectedTags, hyperedges, truncated };
 }
+
+/** Preserve omission information before fetching complete membership rows. */
+export function selectGraphCandidates<T extends { memberCount: number }>(rows: T[], limit: number): { edges: T[]; truncated: boolean } {
+  const bound = graphLimit(limit);
+  return { edges: rows.filter((row) => row.memberCount <= bound).slice(0, bound),
+    truncated: rows.length > bound || rows.some((row) => row.memberCount > bound) };
+}

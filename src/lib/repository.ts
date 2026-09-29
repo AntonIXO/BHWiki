@@ -3,7 +3,7 @@ import postgres from "postgres";
 import { createHash } from "node:crypto";
 import { substances as bundledSubstances, tags as bundledTags, hyperedges as bundledHyperedges } from "./content";
 import { toCatalogSubstance, type CatalogSubstance, type Hyperedge, type KnowledgeGraphData, type Revision, type Substance, type Tag } from "./types";
-import { boundKnowledgeGraph, graphLimit, normalizeGraphFocus } from "./graph-data";
+import { boundKnowledgeGraph, graphLimit, normalizeGraphFocus, selectGraphCandidates } from "./graph-data";
 import { validateSubstance } from "./validate-content";
 
 const globalDatabase = globalThis as typeof globalThis & { bhwikiSql?: ReturnType<typeof postgres> };
@@ -109,17 +109,26 @@ export async function getKnowledgeGraph(options: { focus?: string; limit?: numbe
   const focus = normalizeGraphFocus(options.focus);
   // Candidate count is bounded independently of the total database size. Every chosen
   // relationship's entire member set is loaded before the atomic entity-bound admission.
-  const edges = await sql<{ dbId: string; id: string; label: string; relation: string; description: string; sourceUrl: string; sourceUrls: string[] }[]>`
-    SELECT r.id AS "dbId", r.slug AS id, r.label, r.relation, r.description, r.source_url AS "sourceUrl", r.source_urls AS "sourceUrls"
+  type EdgeRow = { memberCount: number; dbId: string; id: string; label: string; relation: string; description: string; sourceUrl: string; sourceUrls: string[] };
+  const edges = focus ? await sql<EdgeRow[]>`
+    WITH focus_entity AS MATERIALIZED (
+      SELECT id FROM bhwiki.entities WHERE slug = ${focus} AND status = 'published'
+    ), candidates AS MATERIALIZED (
+      SELECT relationship_id FROM bhwiki.relationship_members
+      WHERE entity_id = (SELECT id FROM focus_entity) ORDER BY relationship_id LIMIT ${limit + 1}
+    )
+    SELECT r.id AS "dbId", r.slug AS id, r.label, r.relation, r.description, r.source_url AS "sourceUrl", r.source_urls AS "sourceUrls",
+      (SELECT count(*)::integer FROM bhwiki.relationship_members size WHERE size.relationship_id = r.id) AS "memberCount"
+    FROM candidates c JOIN bhwiki.relationships r ON r.id = c.relationship_id
+    ORDER BY r.label
+  ` : await sql<EdgeRow[]>`
+    SELECT r.id AS "dbId", r.slug AS id, r.label, r.relation, r.description, r.source_url AS "sourceUrl", r.source_urls AS "sourceUrls",
+      (SELECT count(*)::integer FROM bhwiki.relationship_members size WHERE size.relationship_id = r.id) AS "memberCount"
     FROM bhwiki.relationships r WHERE r.status = 'published'
-      AND (SELECT count(*) FROM bhwiki.relationship_members size WHERE size.relationship_id = r.id) <= ${limit}
-      AND (${focus ?? null}::text IS NULL OR EXISTS (
-        SELECT FROM bhwiki.relationship_members m JOIN bhwiki.entities e ON e.id = m.entity_id
-        WHERE m.relationship_id = r.id AND e.slug = ${focus ?? null}
-      ))
     ORDER BY r.label LIMIT ${limit + 1}
   `;
-  const edgeIds = edges.slice(0, limit).map((e) => e.dbId);
+  const candidates = selectGraphCandidates(edges, limit);
+  const edgeIds = candidates.edges.map((e) => e.dbId);
   const members = edgeIds.length ? await sql<{ relationshipId: string; member: string; role: string; entityId: string }[]>`
     SELECT m.relationship_id AS "relationshipId", m.entity_id AS "entityId", m.member_role AS role,
       CASE WHEN e.entity_type = 'substance' THEN 'substance:' ELSE 'tag:' END || e.slug AS member
@@ -139,10 +148,10 @@ export async function getKnowledgeGraph(options: { focus?: string; limit?: numbe
     sql<{ catalog: CatalogSubstance }[]>`SELECT catalog FROM bhwiki.articles WHERE entity_id IN ${sql(ids)}`,
     sql<{ document: Tag }[]>`SELECT document FROM bhwiki.concepts WHERE entity_id IN ${sql(ids)}`,
   ]);
-  const hyperedges: Hyperedge[] = edges.slice(0, limit).map(({ dbId, ...edge }) => {
+  const hyperedges: Hyperedge[] = candidates.edges.map(({ dbId, memberCount: _memberCount, ...edge }) => {
     const own = members.filter((m) => m.relationshipId === dbId);
     return { ...edge, members: own.map((m) => m.member), memberRoles: Object.fromEntries(own.map((m) => [m.member, m.role])) };
   });
   return boundKnowledgeGraph({ substances: articles.map((a) => a.catalog), tags: concepts.map((c) => c.document), hyperedges,
-    truncated: edges.length > limit || extras.length > limit }, options);
+    truncated: candidates.truncated || extras.length > limit }, options);
 }
