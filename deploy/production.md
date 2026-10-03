@@ -1,8 +1,8 @@
 # BHWiki production deployment
 
 - Public URL: https://bhwiki.devpins.org
-- Source: `/opt/BHWiki`, release commit `398e7b869399acdc3e79069cd960d92347ccb69a`.
-- Container: `bhwiki-web-1`, image `bhwiki:398e7b869399`.
+- Source: `/opt/BHWiki`, release commit `e5353240c8caa39e719e22d04ad644bf77e86762`.
+- Container: `bhwiki-web-1`, image `bhwiki:e535324-research`.
 - Compose: `/opt/BHWiki/deploy/compose.yaml`; production selection: `/etc/bhwiki/compose.env`.
 - Runtime: `/etc/bhwiki/runtime.env`, root-only, database mode, existing dedicated `bhwiki_reader` credential.
 - Upstream: `http://127.0.0.1:3086`; host networking, unprivileged Node runtime, read-only filesystem, health check, restart `unless-stopped`.
@@ -41,4 +41,10 @@ Public HTTP redirects with 308 to HTTPS. The HTTPS certificate names `bhwiki.dev
 
 ## Rollback
 
-Select a retained, verified image in `/etc/bhwiki/compose.env`, then reapply the same Compose command. Never delete revisions or reset the shared database. This is the first public release, so there is no earlier publicly deployed version. `bhwiki:local` is retained from the earlier release verification, but is not automatically a production rollback target.
+Select a retained, verified image in `/etc/bhwiki/compose.env`, then reapply the same Compose command. Never delete revisions or reset the shared database. The prior public image `bhwiki:398e7b869399` and the initial research image `bhwiki:af510df-research` are retained. The pre-research Compose selection is saved in `/etc/bhwiki/compose.env.before-research-20261004`. The additive research migration remains compatible with the prior reader; do not remove it or rewrite article revisions during rollback.
+
+## Interactive research release — 2026-10-04
+
+Image `bhwiki:e535324-research` runs source commit `e5353240c8caa39e719e22d04ad644bf77e86762`. The container is healthy with zero restarts. All 30 standard desktop/mobile checks pass against the public HTTPS origin, including automated accessibility. The two enriched-fixture browser checks passed separately against this exact image with a read-only temporary corpus.
+
+Migration `202610040001_research_explorers.sql` was applied before the application. The real 194-article Markdown corpus was published transactionally; all 24 observation projections contain their record keys and payloads. No synthetic study records remain. Database/bundled parity passed for 170 filtered queries, every evidence record, relationships and reversed interaction lookup. Existing isolation, immutability and concurrent-publication checks passed.
