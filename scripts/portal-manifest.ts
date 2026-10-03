@@ -9,6 +9,13 @@ export type PortalSpec = {
   wiki?: string;
 };
 
+// The label in the row is 404 on PubChem name search. Each CID is the one record those synonyms identify.
+const pinnedCids: Record<string, number> = {
+  "delta-10-thc": 162625088,
+  thcb: 6453891,
+  "o-pce": 132989542,
+};
+
 /** `slug|Name|PubChem query|wiki title|alias;alias`. Empty optional fields may be omitted from the right. */
 function parse(line: string, tags: string[], category: string): PortalSpec {
   const [slug, name, query, wiki, aliasField] = line.split("|");
@@ -17,6 +24,7 @@ function parse(line: string, tags: string[], category: string): PortalSpec {
     slug,
     name,
     query: query || name,
+    cid: pinnedCids[slug],
     aliases: aliasField ? aliasField.split(";").filter(Boolean) : [],
     tags,
     category,
@@ -94,9 +102,9 @@ export const portalManifest: PortalSpec[] = [
   ]),
   ...group("Cannabinoid", cannabinoid, [
     "delta-8-thc|Delta-8-THC|Delta-8-Tetrahydrocannabinol|Delta-8-THC",
-    "delta-10-thc|Delta-10-THC|Delta-10-Tetrahydrocannabinol|Delta-10-THC",
+    "delta-10-thc|Delta-10-THC|delta10-THC|Delta-10-THC",
     "delta-11-thc|Delta-11-THC|Delta-11-Tetrahydrocannabinol|Delta-11-THC",
-    "thcb|THCB|Tetrahydrocannabutol|THCB",
+    "thcb|THCB|Tetrahydrocannabinol-C4|THCB",
     "thch|THCH|Tetrahydrocannabihexol|THCH",
     "thcp|THCP|Tetrahydrocannabiphorol|THCP",
     "hhc|HHC|Hexahydrocannabinol|HHC",
@@ -122,7 +130,7 @@ export const portalManifest: PortalSpec[] = [
     "4-meo-pcp|4-MeO-PCP",
     "dck|Deschloroketamine|Deschloroketamine|Deschloroketamine|DCK",
     "methoxetamine|Methoxetamine|Methoxetamine|Methoxetamine|MXE",
-    "o-pce|O-PCE|2-Oxo-PCE|O-PCE",
+    "o-pce|O-PCE|eticyclidone|O-PCE",
     "pcp|Phencyclidine|Phencyclidine|PCP|PCP",
   ]),
   ...group("Dissociative", dissociative, [
