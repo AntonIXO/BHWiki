@@ -36,6 +36,31 @@ test('concepts and effects link back to sourced articles',async({page})=>{
  await page.goto('/outcomes/attention');await expect(page.getByRole('heading',{level:1})).toBeVisible();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
 });
+test('elimination dose scales amounts and preserves half-life controls',async({page})=>{
+ await page.goto('/substances/caffeine');
+ const dose=page.getByRole('spinbutton',{name:'Illustrative dose of Caffeine (mg, optional)'});
+ await expect(page.locator('.kinetics-axis-label')).toContainText('(%)');
+ await dose.fill('200');
+ await expect(page.locator('.kinetics-axis-label')).toContainText('(mg)');
+ await expect(page.locator('.kinetics-readouts')).toContainText('100 mg remains (50%)');
+ await expect(page.locator('.kinetics-readouts')).toContainText('50 mg remains (25%)');
+ await expect(page.locator('.kinetics-readouts')).toContainText('6.25 mg remains (3.125%)');
+ await page.getByRole('slider').fill('6');
+ await expect(page.locator('.kinetics-readouts')).toContainText('6 h');
+ await dose.fill('0.5');
+ await expect(page.locator('.kinetics-readouts')).toContainText('0.25 mg remains (50%)');
+ await dose.fill('-5');
+ await expect(dose).toHaveAttribute('aria-invalid','true');
+ await expect(page.locator('.kinetics-dose-error')).toContainText('greater than zero');
+ await expect(page.locator('.kinetics-axis-label')).toContainText('(%)');
+ await dose.fill('0');await expect(dose).toHaveAttribute('aria-invalid','true');
+ await dose.fill('');await expect(dose).toHaveAttribute('aria-invalid','false');
+ await expect(page.locator('.kinetics-readouts')).toContainText('50% remains');
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
+ await page.goto('/substances/psilocybin');
+ await expect(page.getByRole('spinbutton',{name:/Illustrative dose of Psilocin/})).toBeVisible();
+ await page.goto('/substances/l-theanine');await expect(page.getByRole('spinbutton')).toHaveCount(0);
+});
 test('graph controls and text alternative preserve complete context',async({page})=>{
  await page.goto('/graph?focus=caffeine');await expect(page.getByRole('button',{name:'Zoom in'})).toBeEnabled();
  await page.getByLabel('Filter graph by concept type').selectOption('enzyme');

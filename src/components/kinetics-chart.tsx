@@ -3,6 +3,7 @@
 import { useId, useState } from "react";
 import { fractionRemaining, getEliminationModel, type EliminationModel } from "@/lib/kinetics";
 import type { PKObservation } from "@/lib/types";
+import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from "@/components/ui/empty";
@@ -46,6 +47,11 @@ export function KineticsChart({ observation, sourceHref }: KineticsChartProps) {
 function EliminationChart({ observation, model, sourceHref }: KineticsChartProps & { observation: PKObservation; model: EliminationModel }) {
   const id = useId();
   const [selectedHalfLife, setSelectedHalfLife] = useState(model.initialHalfLife);
+  const [doseInput, setDoseInput] = useState("");
+  const parsedDose = Number(doseInput);
+  const dose = doseInput.trim() !== "" && Number.isFinite(parsedDose) && parsedDose > 0 ? parsedDose : null;
+  const invalidDose = doseInput !== "" && dose === null;
+  const remainingLabel = (fraction: number) => dose === null ? `${fraction * 100}% remains` : `${hours(dose * fraction)} mg remains (${fraction * 100}%)`;
   const halfLife = Math.min(model.maximum, Math.max(model.minimum, selectedHalfLife));
   const endTime = model.maximum * 5;
   const left = 44;
@@ -108,10 +114,17 @@ function EliminationChart({ observation, model, sourceHref }: KineticsChartProps
         ) : (
           <p className="text-muted-foreground">The model uses this single {observation.statistic === "study-mean" ? "study mean" : "reported estimate"}; no range is inferred.</p>
         )}
-        <p className="text-muted-foreground">{model.analyte} remaining (%)</p>
+        <div className="flex flex-col gap-2">
+          <label htmlFor={`${id}-dose`}>Illustrative dose of {model.analyte} (mg, optional)</label>
+          <Input id={`${id}-dose`} type="number" min="0" step="any" inputMode="decimal" placeholder="Enter amount in mg" value={doseInput} onChange={event => setDoseInput(event.target.value)} aria-describedby={`${id}-dose-help${invalidDose ? ` ${id}-dose-error` : ""}`} aria-invalid={invalidDose}/>
+          <p id={`${id}-dose-help`} className="text-muted-foreground">The model treats this as the starting amount of {model.analyte} after absorption and distribution. It does not calculate bioavailability or conversion from another substance. Leave blank to view percentages.</p>
+          {invalidDose && <p id={`${id}-dose-error`} className="kinetics-dose-error text-destructive" role="status">Enter a finite amount greater than zero in mg.</p>}
+        </div>
+        <div className="kinetics-axis-label">{model.analyte} remaining ({dose === null ? "%" : "mg"})</div>
+
         <svg className="kinetics-svg h-auto w-full overflow-visible text-foreground" viewBox="0 0 616 218" role="img" aria-labelledby={`${id}-title ${id}-description`}>
           <title id={`${id}-title`}>{`${model.analyte}: illustrative elimination with a ${hours(halfLife)} hour half-life`}</title>
-          <desc id={`${id}-description`}>A first-order elimination model of {model.analyte}. Fifty percent remains after {hours(halfLife)} hours and 25 percent after {hours(halfLife * 2)} hours. Horizontal axis: elapsed hours after absorption and distribution. Vertical axis: percentage of the modeled analyte remaining. This is a mathematical illustration, not a personalized prediction.</desc>
+          <desc id={`${id}-description`}>A first-order elimination model of {model.analyte}. {dose !== null && `Starting amount: ${hours(dose)} mg. `}{remainingLabel(0.5)} after {hours(halfLife)} hours and {remainingLabel(0.25)} after {hours(halfLife * 2)} hours. Horizontal axis: elapsed hours after absorption and distribution. Vertical axis: {dose === null ? "percentage" : "milligrams"} of the modeled analyte remaining. This is a mathematical illustration, not a personalized prediction.</desc>
           <defs>
             <linearGradient id={`${id}-fill`} x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor="currentColor" stopOpacity="0.16" />
@@ -123,7 +136,7 @@ function EliminationChart({ observation, model, sourceHref }: KineticsChartProps
             return (
               <g key={percent}>
                 <line x1={left} x2={left + plotWidth} y1={px(y)} y2={px(y)} stroke="var(--border)" strokeDasharray={percent === 0 ? undefined : "3 5"} />
-                <text x={left - 12} y={px(y + 4)} textAnchor="end" className="fill-muted-foreground text-xs">{percent}</text>
+                <text x={left - 12} y={px(y + 4)} textAnchor="end" className="fill-muted-foreground text-xs">{dose === null ? percent : hours(dose * (percent / 100))}</text>
               </g>
             );
           })}
@@ -137,7 +150,7 @@ function EliminationChart({ observation, model, sourceHref }: KineticsChartProps
             </text>
           ))}
         </svg>
-        <Table>
+        <Table className="kinetics-readouts" aria-live="polite">
           <TableHeader>
             <TableRow>
               <TableHead>Elapsed</TableHead>
@@ -147,20 +160,20 @@ function EliminationChart({ observation, model, sourceHref }: KineticsChartProps
           <TableBody>
             <TableRow>
               <TableCell>After {hours(halfLife)} h</TableCell>
-              <TableCell>50% remains</TableCell>
+              <TableCell>{remainingLabel(0.5)}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>After {hours(halfLife * 2)} h</TableCell>
-              <TableCell>25% remains</TableCell>
+              <TableCell>{remainingLabel(0.25)}</TableCell>
             </TableRow>
             <TableRow>
               <TableCell>After {hours(halfLife * 5)} h</TableCell>
-              <TableCell>3.125% remains</TableCell>
+              <TableCell>{remainingLabel(0.03125)}</TableCell>
             </TableRow>
           </TableBody>
         </Table>
         <p className="text-muted-foreground">
-          Model: fraction remaining = 2<sup>−time / half-life</sup>. Assumes a single exposure, instantaneous distribution, and a constant half-life for {model.analyte}. Formation of metabolites, repeated exposure, and interactions are not modeled. <a href={sourceHref} className="text-foreground underline underline-offset-4">Source & context</a>
+          Model: fraction remaining = 2<sup>−time / half-life</sup>.{dose !== null && " Amount remaining = starting amount × fraction remaining."} Assumes a single exposure, instantaneous distribution, and a constant half-life for {model.analyte}. Formation of metabolites, repeated exposure, and interactions are not modeled. <a href={sourceHref} className="text-foreground underline underline-offset-4">Source & context</a>
         </p>
       </CardContent>
     </Card>

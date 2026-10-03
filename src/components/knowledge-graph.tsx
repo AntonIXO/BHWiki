@@ -34,6 +34,23 @@ const tagTypes: { value: TagKind; label: string }[] = [
   { value: "legal", label: "Legal context" },
 ];
 
+const pageTypes = [
+  { label: "Substance", selector: 'node[kind = "substance"]', shape: "round-rectangle", fill: "#dcebdd", border: "#6c9475", color: "#285b49", width: 126, height: 46 },
+  { label: "Concept", selector: 'node[kind = "tag"][tagKind != "effect"][tagKind != "outcome"]', shape: "ellipse", fill: "#e7e1f4", border: "#9884ba", color: "#51416c", width: 142, height: 62 },
+  { label: "Effect", selector: 'node[tagKind = "effect"]', shape: "hexagon", fill: "#f5e5c4", border: "#be9444", color: "#70521e", width: 146, height: 58 },
+  { label: "Outcome", selector: 'node[tagKind = "outcome"]', shape: "cut-rectangle", fill: "#dcebf5", border: "#6899b6", color: "#2c5a74", width: 136, height: 54 },
+] as const;
+
+function LegendSymbol({ shape, fill, border }: { shape: typeof pageTypes[number]["shape"] | "diamond"; fill: string; border: string }) {
+  return <svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true" fill={fill} stroke={border} strokeWidth="1.2">
+    {shape === "round-rectangle" ? <rect x="1" y="2" width="20" height="12" rx="3" />
+      : shape === "ellipse" ? <ellipse cx="11" cy="8" rx="10" ry="7" />
+      : shape === "hexagon" ? <polygon points="5,1 17,1 21,8 17,15 5,15 1,8" />
+      : shape === "cut-rectangle" ? <polygon points="4,1 18,1 21,4 21,12 18,15 4,15 1,12 1,4" />
+      : <polygon points="11,2 17,8 11,14 5,8" />}
+  </svg>;
+}
+
 const graphStyle: StylesheetStyle[] = [
   { selector: "node", style: {
     label: "data(label)", "font-family": "system-ui, sans-serif", "font-size": 12,
@@ -42,16 +59,11 @@ const graphStyle: StylesheetStyle[] = [
     shape: "round-rectangle", width: 116, height: 42, "border-width": 1, "border-color": "#e5e5e5",
     "overlay-opacity": 0,
   } },
-  { selector: 'node[kind = "substance"]', style: {
-    "background-color": "#fafafa", "border-color": "#171717", "border-width": 1.5,
-    "font-weight": 600, "font-size": 13, color: "#171717", width: 126, height: 46,
-  } },
-  { selector: 'node[tagKind = "effect"], node[tagKind = "class"]', style: {
-    "background-color": "#f5f5f5", "border-color": "#d4d4d4", color: "#171717",
-  } },
-  { selector: 'node[tagKind = "enzyme"], node[tagKind = "neurotransmitter"]', style: {
-    "background-color": "#f5f5f5", "border-color": "#d4d4d4",
-  } },
+  ...pageTypes.map((type): StylesheetStyle => ({ selector: type.selector, style: {
+    shape: type.shape, "background-color": type.fill, "border-color": type.border,
+    color: type.color, width: type.width, height: type.height, "border-width": 1.2,
+  } })),
+  { selector: 'node[kind = "substance"]', style: { "font-weight": 600, "font-size": 13 } },
   { selector: 'node[kind = "relationship"]', style: {
     shape: "diamond", width: 14, height: 14, "background-color": "#737373", "border-width": 0,
     label: "", "text-valign": "bottom", "text-margin-y": 7, "font-size": 10,
@@ -60,7 +72,7 @@ const graphStyle: StylesheetStyle[] = [
     "background-color": "#171717", width: 18, height: 18,
   } },
   { selector: "edge", style: { width: 1.15, "line-color": "#d4d4d4", "curve-style": "bezier", opacity: 0.85 } },
-  { selector: "node:selected", style: { "border-color": "#171717", "border-width": 2.5, "background-color": "#f5f5f5" } },
+  { selector: "node:selected", style: { "border-width": 3 } },
   { selector: 'node[kind = "relationship"]:selected', style: { label: "data(label)", "background-color": "#171717" } },
   { selector: ".muted", style: { opacity: 0.2 } },
   { selector: "edge.highlighted", style: { "line-color": "#171717", width: 2, opacity: 1 } },
@@ -532,10 +544,9 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
         )}
         {loadError && <p className="pointer-events-none absolute inset-0 grid place-items-center p-8 text-center text-sm text-muted-foreground" role="status">{compact ? "Open the full graph to explore these connections." : "The visual map could not load. Explore the text view below."}</p>}
         {ready && (model.nodes.length === 0 || noMatches) && <p className="absolute inset-0 z-10 grid place-items-center bg-background p-8 text-center text-sm text-muted-foreground" role="status">No connections found. Try another search or concept type.</p>}
-        <div className="pointer-events-none absolute top-3 left-3 flex gap-3 rounded-lg bg-background px-2 py-1 text-xs text-muted-foreground ring-1 ring-foreground/10" aria-label="Graph legend">
-          <span className="inline-flex items-center gap-1.5"><i className="size-2 rounded-full bg-foreground" />Substance</span>
-          <span className="inline-flex items-center gap-1.5"><i className="size-2 rounded-full border border-foreground" />Concept</span>
-          <span className="inline-flex items-center gap-1.5"><i className="size-2 rotate-45 bg-muted-foreground" />Relationship</span>
+        <div className="pointer-events-none absolute top-3 left-3 flex max-w-[calc(100%-1.5rem)] flex-wrap gap-x-3 gap-y-1.5 rounded-lg bg-background px-2 py-1 text-xs text-muted-foreground ring-1 ring-foreground/10" aria-label="Graph legend">
+          {pageTypes.map((type) => <span className="inline-flex items-center gap-1.5" key={type.label}><LegendSymbol shape={type.shape} fill={type.fill} border={type.border} />{type.label}</span>)}
+          <span className="inline-flex items-center gap-1.5"><LegendSymbol shape="diamond" fill="#737373" border="#737373" />Relationship</span>
         </div>
         {!compact && (
           <ButtonGroup orientation="vertical" aria-label="Graph view" className="absolute bottom-4 left-4 bg-background">
@@ -606,12 +617,12 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
         <>
         <Separator />
         <div className="flex flex-col gap-2 px-4 py-3 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p id={helpId}>A diamond connects all members of one relationship. Type filters keep qualifying context visible. Drag a node to move it. Local depth keeps the selected neighborhood, and search dims the rest without breaking a group.</p>
+          <p id={helpId}>Color and shape identify the page type. A diamond connects all members of one relationship. Type filters keep qualifying context visible. Drag a node to move it. Local depth keeps the selected neighborhood, and search dims the rest without breaking a group.</p>
           <span aria-live="polite">{visibleSubstances.length} substances · {visibleConcepts.length} concepts · {listedRelationships.length} relationships</span>
         </div>
         </>
       )}
-      {compact && <p id={helpId} className="sr-only">A diamond connects all members of one relationship. Open the full graph to search and read its text view.</p>}
+      {compact && <p id={helpId} className="sr-only">Color and shape identify the page type. A diamond connects all members of one relationship. Open the full graph to search and read its text view.</p>}
 
       {!compact && (
         <Collapsible className="border-t border-border">

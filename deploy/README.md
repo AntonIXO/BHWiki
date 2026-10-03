@@ -1,5 +1,7 @@
 # Deployment package
 
+The shared-host deployment at `https://bhwiki.devpins.org` is documented in [production operations](production.md). Use its pinned production environment file rather than the generic defaults below.
+
 This package serves BHWiki on **127.0.0.1:3086** and uses the existing Supabase PostgreSQL listener on **127.0.0.1:54322**. It does not create a database server, change another tenant, install a reverse proxy or publish a domain. Use either the container or systemd method, not both on the same port.
 
 Apply the ordered canonical migrations, publish the reviewed collection and verify isolation using [database operations](../docs/database.md). Preserve the shared PostgreSQL container and existing backups. The runtime role must be `bhwiki_reader`; migration credentials never enter the running application.
