@@ -9,6 +9,14 @@ export type Observation = {
   description: string; sourceId: string; population: string; exposure: string;
   instrument: string | null; magnitude: string | null;
 };
+export type TimeUnit = "minutes" | "hours";
+export type TimeSpan = { min: number | null; max: number | null; unit: TimeUnit };
+export type DurationPhaseName = "onset" | "comeup" | "peak" | "offset" | "after-effects";
+export type DurationPhase = { name: DurationPhaseName } & TimeSpan;
+export type DurationRoute = {
+  route: string; population: string; sourceId: string; note: string;
+  total: TimeSpan | null; phases: DurationPhase[];
+};
 export type DoseContext = {
   label: string; amount: string; quantity: number | null; quantityMax: number | null; unit: string;
   ingredient: string; formulation: string; route: string; frequency: string; duration: string;
@@ -26,6 +34,8 @@ export type Claim = {
   context: string; sourceIds: string[]; conflictingSourceIds: string[];
   assessment: "not-formally-assessed"; limitation: string;
 };
+export type Interaction = { id: string; name: string; otherSlug: string | null; summary: string; sourceId: string };
+export type ExperienceLink = { title: string; url: string; publisher: "PsychonautWiki" };
 export type Substance = {
   slug: string; name: string; subtitle: string; summary: string; description: string;
   aliases: string[]; formula: string; molecularWeight: string; pubchemCid: number; smiles: string;
@@ -33,11 +43,13 @@ export type Substance = {
   evidenceNote: string; reviewedAt: string; editorialStatus: EditorialStatus;
   halfLife: { label: string; low: number | null; high: number | null; context: string; sourceId: string; observationId: string };
   pkObservations: PKObservation[];
-  kinetics: { onset: string; peak: string; duration: string; bioavailability: string; metabolism: string; sourceId: string };
+  kinetics: { onset: string; peak: string; duration: string; bioavailability: string; metabolism: string; sourceId: string; timeline?: DurationRoute[] };
   modifiers: { label: string; effect: string; detail: string; sourceId: string; observationId: string; factorType: "smoking" | "pregnancy" | "enzyme" | "genotype" | "other"; direction: "slower" | "faster" | "variable" }[];
   doses: DoseContext[]; effects: Observation[]; outcomes: Observation[]; claims: Claim[];
   mechanisms: { title: string; description: string; sourceId: string; conceptId?: string }[];
   cautions: { title: string; description: string; sourceId: string }[];
+  interactions: Interaction[];
+  experienceLinks: ExperienceLink[];
   references: Reference[];
   legal: { jurisdiction: string; activity: string; status: string; sourceUrl: string; asOf: string }[];
 };

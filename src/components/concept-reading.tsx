@@ -3,9 +3,19 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { ArrowRight, ArrowUpRight, BookOpen, GitBranch, Search } from "lucide-react";
+import { Citation } from "@/components/citation";
+import { Breadcrumb } from "@/components/shell";
+import { SectionNav } from "@/components/section-nav";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ButtonGroup } from "@/components/ui/button-group";
+import { Card, CardAction, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia } from "@/components/ui/empty";
+import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
+import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput } from "@/components/ui/input-group";
+import { Pagination, PaginationContent, PaginationItem, PaginationNext, PaginationPrevious } from "@/components/ui/pagination";
 import { getCatalog, getConcept, getConcepts, getKnowledgeGraph, getSubstance } from "@/lib/repository";
 import { conceptPath, type CatalogSubstance, type Claim, type Observation, type Reference, type Substance, type Tag, type TagKind } from "@/lib/types";
-import styles from "./concept-reading.module.css";
 
 export type ConceptSection = "effects" | "outcomes" | "concepts";
 export type ReadingSearchParams = Record<string, string | string[] | undefined>;
@@ -36,12 +46,45 @@ function sourceLabel(url: string): string {
 }
 function editorialLabel(status: Substance["editorialStatus"]): string { return status === "editorially-reviewed" ? "Editorially reviewed" : "Sourced draft"; }
 function sourceAnchor(slug: string, id: string): string { return `source-${slug}-${id}`; }
-function Citation({ substance, id }: { substance: Substance; id: string }) {
-  const source = substance.references.find(reference => reference.id === id);
-  return source ? <a className={styles.citation} href={`#${sourceAnchor(substance.slug, id)}`} aria-label={`Source: ${source.title}`}>Source <ArrowUpRight size={12}/></a> : <span className={styles.muted}>Source not assessed</span>;
+function SourceCite({ substance, id }: { substance: Substance; id: string }) {
+  const index = substance.references.findIndex(reference => reference.id === id);
+  if (index < 0) return <span className="text-sm text-muted-foreground">Source not assessed</span>;
+  const reference = substance.references[index];
+  return <Citation reference={reference} href={`#${sourceAnchor(substance.slug, id)}`} label={`[${index + 1}]`} ariaLabel={`Reference ${index + 1}: ${reference.title}`} />;
 }
 function CollectionNav({ selected }: { selected: ConceptSection }) {
-  return <nav className={styles.collectionNav} aria-label="Knowledge collections">{(Object.keys(sections) as ConceptSection[]).map(section => <Link key={section} href={`/${section}`} aria-current={section === selected ? "page" : undefined}>{sections[section].title}</Link>)}</nav>;
+  return (
+    <ButtonGroup aria-label="Knowledge collections" className="flex-wrap">
+      {(Object.keys(sections) as ConceptSection[]).map(section => (
+        <Button key={section} variant={section === selected ? "secondary" : "outline"} size="sm" nativeButton={false} render={<Link href={`/${section}`} aria-current={section === selected ? "page" : undefined} />}>
+          {sections[section].title}
+        </Button>
+      ))}
+    </ButtonGroup>
+  );
+}
+
+function PageNav({ label, page, totalPages, previousHref, nextHref }: { label: string; page: number; totalPages: number; previousHref?: string; nextHref?: string }) {
+  if (totalPages <= 1) return null;
+  return (
+    <Pagination aria-label={label}>
+      <PaginationContent>
+        {previousHref && (
+          <PaginationItem>
+            <PaginationPrevious href={previousHref} />
+          </PaginationItem>
+        )}
+        <PaginationItem>
+          <span className="px-2 text-sm text-muted-foreground">Page {page} of {totalPages}</span>
+        </PaginationItem>
+        {nextHref && (
+          <PaginationItem>
+            <PaginationNext href={nextHref} />
+          </PaginationItem>
+        )}
+      </PaginationContent>
+    </Pagination>
+  );
 }
 
 export async function conceptMetadata(slug: string): Promise<Metadata> {
@@ -67,35 +110,164 @@ export async function ConceptIndex({ section, searchParams }: { section: Concept
     return `/${section}?${params}`;
   };
 
-  return <main id="main" className={styles.page}>
-    <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/">Substance library</Link><span aria-hidden="true">/</span><span>{sections[section].title}</span></nav>
-    <header className={styles.indexHeader}><span className={styles.eyebrow}>{sections[section].eyebrow}</span><h1>{sections[section].title}</h1><p>{sections[section].description}</p></header>
-    <CollectionNav selected={section}/>
-    <form className={styles.searchForm} action={`/${section}`} role="search">
-      <div className={styles.searchInput}><Search size={18} aria-hidden="true"/><label htmlFor="concept-search" className="sr-only">Search {sections[section].title.toLowerCase()}</label><input id="concept-search" name="q" type="search" defaultValue={query} placeholder="Search names, definitions, or aliases" maxLength={200}/></div>
-      {section === "concepts" && <><label htmlFor="concept-kind" className="sr-only">Concept type</label><select id="concept-kind" name="kind" defaultValue={selectedKind}><option value="">All concept types</option>{kinds.map(kind => <option key={kind} value={kind}>{kindLabels[kind]}</option>)}</select></>}
-      <button type="submit">Search <ArrowRight size={14}/></button>
-    </form>
-    <div className={styles.resultsMeta}><span>{filtered.length} {filtered.length === 1 ? "entry" : "entries"}{query ? ` matching “${query}”` : " in this collection"}</span>{(query || selectedKind) && <Link href={`/${section}`}>Clear filters</Link>}</div>
-    {visible.length ? <div className={styles.cardGrid}>{visible.map(concept => {
-      const count = catalog.filter(substance => substance.tags.includes(concept.id)).length;
-      return <Link className={styles.conceptCard} href={conceptPath(concept)} key={concept.id}><span className={styles.kind}>{kindLabels[concept.kind]}</span><h2>{concept.label}<ArrowUpRight size={18}/></h2><p>{concept.description}</p><div className={styles.cardMeta}><span>{count} tagged {count === 1 ? "substance" : "substances"}</span><span>{concept.sourceUrls?.length ?? 0} definition sources</span></div></Link>;
-    })}</div> : <div className={styles.empty}><BookOpen size={26}/><h2>No matching entries</h2><p>{query || selectedKind ? "Try a different name or clear the filters to see this collection." : "Definitions and supporting sources have not been assessed for this collection yet."}</p>{(query || selectedKind) && <Link href={`/${section}`}>Browse the collection <ArrowRight size={15}/></Link>}</div>}
-    {totalPages > 1 && <nav className={styles.pagination} aria-label="Collection pages">{page > 1 && <Link href={pageHref(page - 1)}>Previous</Link>}<span>Page {page} of {totalPages}</span>{page < totalPages && <Link href={pageHref(page + 1)}>Next <ArrowRight size={14}/></Link>}</nav>}
-    <div className={styles.collectionNote}><BookOpen size={19}/><p>Definitions are original editorial summaries with linked sources. A connection describes its recorded context; it does not establish a universal effect or clinical benefit. <Link href="/about">Read our methods.</Link></p></div>
-  </main>;
+  return (
+    <main id="main" className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-5 py-8 sm:px-8">
+      <Breadcrumb items={[{ href: "/", label: "Substance library" }, { label: sections[section].title }]} />
+      <header className="flex flex-col gap-3">
+        <p className="text-xs font-medium tracking-wide text-muted-foreground uppercase">{sections[section].eyebrow}</p>
+        <h1 className="text-4xl font-medium">{sections[section].title}</h1>
+        <p className="max-w-3xl text-lg text-muted-foreground">{sections[section].description}</p>
+      </header>
+      <CollectionNav selected={section} />
+      <form action={`/${section}`} role="search">
+        <FieldGroup className="sm:flex-row sm:items-end">
+          <Field>
+            <FieldLabel htmlFor="concept-search" className="sr-only">Search {sections[section].title.toLowerCase()}</FieldLabel>
+            <InputGroup>
+              <InputGroupAddon>
+                <Search aria-hidden="true" />
+              </InputGroupAddon>
+              <InputGroupInput id="concept-search" name="q" type="search" defaultValue={query} placeholder="Search names, definitions, or aliases" maxLength={200} />
+              <InputGroupAddon align="inline-end">
+                <InputGroupButton type="submit" size="sm">
+                  Search
+                  <ArrowRight data-icon="inline-end" />
+                </InputGroupButton>
+              </InputGroupAddon>
+            </InputGroup>
+          </Field>
+          {section === "concepts" && (
+            <Field className="sm:max-w-64">
+              <FieldLabel htmlFor="concept-kind" className="sr-only">Concept type</FieldLabel>
+              <select id="concept-kind" name="kind" defaultValue={selectedKind} className="h-8 w-full rounded-lg border border-input bg-transparent px-2.5 text-base text-foreground outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 md:text-sm">
+                <option value="">All concept types</option>
+                {kinds.map(kind => <option key={kind} value={kind}>{kindLabels[kind]}</option>)}
+              </select>
+            </Field>
+          )}
+        </FieldGroup>
+      </form>
+      <div className="flex flex-wrap items-center justify-between gap-3 text-sm">
+        <span>{filtered.length} {filtered.length === 1 ? "entry" : "entries"}{query ? ` matching “${query}”` : " in this collection"}</span>
+        {(query || selectedKind) && <Link href={`/${section}`} className="underline underline-offset-4">Clear filters</Link>}
+      </div>
+      {visible.length ? (
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {visible.map(concept => {
+            const count = catalog.filter(substance => substance.tags.includes(concept.id)).length;
+            return (
+              <Link className="block h-full" href={conceptPath(concept)} key={concept.id}>
+                <Card className="h-full">
+                  <CardHeader>
+                    <Badge variant="outline">{kindLabels[concept.kind]}</Badge>
+                    <CardTitle><h2 className="inline-flex items-start gap-1">{concept.label}<ArrowUpRight aria-hidden="true" size={18} /></h2></CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground">{concept.description}</p>
+                  </CardContent>
+                  <CardFooter className="text-muted-foreground">
+                    <span>{count} tagged {count === 1 ? "substance" : "substances"}</span>
+                    <span className="ms-auto">{concept.sourceUrls?.length ?? 0} definition sources</span>
+                  </CardFooter>
+                </Card>
+              </Link>
+            );
+          })}
+        </div>
+      ) : (
+        <Empty>
+          <EmptyHeader>
+            <EmptyMedia variant="icon"><BookOpen /></EmptyMedia>
+            <h2>No matching entries</h2>
+            <EmptyDescription>{query || selectedKind ? "Try a different name or clear the filters to see this collection." : "Definitions and supporting sources have not been assessed for this collection yet."}</EmptyDescription>
+          </EmptyHeader>
+          {(query || selectedKind) && (
+            <EmptyContent>
+              <Button nativeButton={false} variant="outline" render={<Link href={`/${section}`} />}>
+                Browse the collection
+                <ArrowRight data-icon="inline-end" />
+              </Button>
+            </EmptyContent>
+          )}
+        </Empty>
+      )}
+      <PageNav label="Collection pages" page={page} totalPages={totalPages} previousHref={page > 1 ? pageHref(page - 1) : undefined} nextHref={page < totalPages ? pageHref(page + 1) : undefined} />
+      <Card>
+        <CardHeader>
+          <CardDescription>Definitions are original editorial summaries with linked sources. A connection describes its recorded context; it does not establish a universal effect or clinical benefit. <Link href="/about" className="underline underline-offset-4">Read our methods.</Link></CardDescription>
+        </CardHeader>
+      </Card>
+    </main>
+  );
 }
 
 function ObservationCard({ observation, substance }: { observation: Observation; substance: Substance }) {
-  return <article className={styles.observation}>
-    <div className={styles.observationHeader}><div><Link href={`/substances/${substance.slug}`}>{substance.name}<ArrowUpRight size={15}/></Link><span>{editorialLabel(substance.editorialStatus)}</span></div><span className={styles.direction}>{observation.direction}</span></div>
-    <h3>{observation.name}</h3><p>{observation.description} <Citation substance={substance} id={observation.sourceId}/></p>
-    <dl className={styles.context}><div><dt>Evidence type</dt><dd>{observation.evidence}</dd></div><div><dt>Population</dt><dd>{observation.population || "Not assessed"}</dd></div><div><dt>Exposure</dt><dd>{observation.exposure || "Not assessed"}</dd></div><div><dt>Instrument</dt><dd>{observation.instrument || "Not assessed"}</dd></div><div><dt>Reported magnitude</dt><dd>{observation.magnitude || "Not established"}</dd></div></dl>
-  </article>;
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>
+          <Link href={`/substances/${substance.slug}`} className="inline-flex items-center gap-1 underline underline-offset-4">{substance.name}<ArrowUpRight aria-hidden="true" size={15} /></Link>
+        </CardTitle>
+        <CardActionStatus status={editorialLabel(substance.editorialStatus)} direction={observation.direction} />
+      </CardHeader>
+      <CardContent className="flex flex-col gap-4">
+        <h3 className="text-lg font-medium">{observation.name}</h3>
+        <p>{observation.description} <SourceCite substance={substance} id={observation.sourceId} /></p>
+        <dl className="grid gap-3 sm:grid-cols-2">
+          <div className="flex flex-col gap-1"><dt className="text-sm text-muted-foreground">Evidence type</dt><dd>{observation.evidence}</dd></div>
+          <div className="flex flex-col gap-1"><dt className="text-sm text-muted-foreground">Population</dt><dd>{observation.population || "Not assessed"}</dd></div>
+          <div className="flex flex-col gap-1"><dt className="text-sm text-muted-foreground">Exposure</dt><dd>{observation.exposure || "Not assessed"}</dd></div>
+          <div className="flex flex-col gap-1"><dt className="text-sm text-muted-foreground">Instrument</dt><dd>{observation.instrument || "Not assessed"}</dd></div>
+          <div className="flex flex-col gap-1"><dt className="text-sm text-muted-foreground">Reported magnitude</dt><dd>{observation.magnitude || "Not established"}</dd></div>
+        </dl>
+      </CardContent>
+    </Card>
+  );
+}
+
+function CardActionStatus({ status, direction }: { status: string; direction: string }) {
+  return (
+    <CardAction>
+      <div className="flex flex-wrap justify-end gap-2">
+        <Badge variant="secondary">{status}</Badge>
+        <Badge variant="outline">{direction}</Badge>
+      </div>
+    </CardAction>
+  );
 }
 
 function ClaimCard({ claim, substance, memberRecord }: { claim: Claim; substance: Substance; memberRecord: (member: string) => { href?: string; label: string } }) {
-  return <article className={styles.claim}><span className={styles.kind}>Claim · not formally assessed</span><h3>{claim.assertion}</h3><p>{claim.context || "Context not assessed"}</p><ul className={styles.members}>{claim.participants.map(participant => { const record = memberRecord(participant.entityId); return <li key={`${participant.entityId}-${participant.role}`}>{record.href ? <Link href={record.href}>{record.label}</Link> : <span>{record.label}</span>}<span>{participant.role}</span></li>; })}</ul><div className={styles.claimSources}>{claim.sourceIds.map(id => <Citation key={id} substance={substance} id={id}/>)}</div><p className={styles.limitation}><strong>Limitation</strong> {claim.limitation || "Not assessed"}</p>{claim.conflictingSourceIds.length > 0 && <div className={styles.claimSources}><span>Conflicting evidence:</span>{claim.conflictingSourceIds.map(id => <Citation key={id} substance={substance} id={id}/>)}</div>}<Link className={styles.textLink} href={`/substances/${substance.slug}#connections`}>{substance.name} · {editorialLabel(substance.editorialStatus)} <ArrowUpRight size={13}/></Link></article>;
+  return (
+    <Card>
+      <CardHeader>
+        <CardDescription>Claim · not formally assessed</CardDescription>
+        <CardTitle><h3>{claim.assertion}</h3></CardTitle>
+      </CardHeader>
+      <CardContent className="flex flex-col gap-3">
+        <p>{claim.context || "Context not assessed"}</p>
+        <ul className="flex flex-col gap-2">
+          {claim.participants.map(participant => {
+            const record = memberRecord(participant.entityId);
+            return (
+              <li key={`${participant.entityId}-${participant.role}`} className="flex flex-wrap items-baseline justify-between gap-2">
+                {record.href ? <Link href={record.href} className="underline underline-offset-4">{record.label}</Link> : <span>{record.label}</span>}
+                <span className="text-sm text-muted-foreground">{participant.role}</span>
+              </li>
+            );
+          })}
+        </ul>
+        <div className="flex flex-wrap gap-3">{claim.sourceIds.map(id => <SourceCite key={id} substance={substance} id={id} />)}</div>
+        <p><strong>Limitation</strong> {claim.limitation || "Not assessed"}</p>
+        {claim.conflictingSourceIds.length > 0 && (
+          <div className="flex flex-wrap items-center gap-3 text-sm">
+            <span>Conflicting evidence:</span>
+            {claim.conflictingSourceIds.map(id => <SourceCite key={id} substance={substance} id={id} />)}
+          </div>
+        )}
+        <Link className="inline-flex items-center gap-1 text-sm underline underline-offset-4" href={`/substances/${substance.slug}#connections`}>{substance.name} · {editorialLabel(substance.editorialStatus)} <ArrowUpRight aria-hidden="true" size={13} /></Link>
+      </CardContent>
+    </Card>
+  );
 }
 
 export async function ConceptArticle({ section, slug, searchParams }: { section: ConceptSection; slug: string; searchParams: ReadingSearchParams }) {
@@ -129,21 +301,246 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
     const found = catalog.find(item => `substance:${item.slug}` === member);
     return found ? { href: `/substances/${found.slug}`, label: found.name } : { label: member };
   };
+  const pageHash = section === "concepts" ? "substances" : "observations";
 
-  return <main id="main" className={styles.page}>
-    <nav className={styles.breadcrumb} aria-label="Breadcrumb"><Link href="/">Library</Link><span aria-hidden="true">/</span><Link href={`/${section}`}>{sections[section].title}</Link><span aria-hidden="true">/</span><span aria-current="page">{concept.label}</span></nav>
-    <header className={styles.articleHeader}><div className={styles.headingMeta}><span className={styles.eyebrow}>{kindLabels[concept.kind].toUpperCase()}</span><span className={styles.draft}>Definition: {concept.sourceUrls?.length ? "sourced draft" : "sources not assessed"}</span></div><h1>{concept.label}</h1><p>{concept.description}</p>{Boolean(concept.aliases?.length) && <p className={styles.aliases}>Also called {concept.aliases!.join(", ")}</p>}<div className={styles.headerLinks}><a href="#definition-sources"><BookOpen size={15}/>{concept.sourceUrls?.length ?? 0} definition sources</a><Link href={`/graph?focus=${encodeURIComponent(memberId)}`}><GitBranch size={15}/>Explore connections <ArrowUpRight size={14}/></Link></div></header>
-    <nav className={styles.articleNav} aria-label="On this page">{section !== "concepts" && <a href="#observations">Observations</a>}<a href="#connections">Connections</a><a href="#substances">Linked substances</a><a href="#definition-sources">Sources</a></nav>
-    <div className={styles.articleLayout}><div>
-      {section !== "concepts" && <section className={styles.section} id="observations"><div className={styles.sectionHeading}><h2>{section === "effects" ? "Reported experience" : "Findings in context"}</h2><span>{observations.length} observations{totalPages > 1 ? " on this page" : ""}</span></div><p className={styles.sectionIntro}>{section === "effects" ? "These qualitative descriptions preserve the reported direction and setting. They do not assign a universal intensity score." : "Measured endpoints are tied to a particular task, population, and exposure. A finding cannot be generalized to a different outcome without supporting evidence."}</p>{observations.length ? <div className={styles.observationList}>{observations.map(({ substance, observation }, index) => <ObservationCard key={`${substance.slug}-${index}`} substance={substance} observation={observation}/>)}</div> : <p className={styles.emptyInline}>No matching observations have been assessed{totalPages > 1 ? " for the substances on this page" : " in the published collection"}.</p>}</section>}
-      {mechanisms.length > 0 && <section className={styles.section}><div className={styles.sectionHeading}><h2>Mechanistic context</h2></div>{mechanisms.map(({ substance, mechanism }, index) => <article className={styles.claim} key={`${substance.slug}-${index}`}><span className={styles.kind}>{substance.name} · {editorialLabel(substance.editorialStatus)}</span><h3>{mechanism.title}</h3><p>{mechanism.description} <Citation substance={substance} id={mechanism.sourceId}/></p><Link className={styles.textLink} href={`/substances/${substance.slug}`}>Read the substance article <ArrowUpRight size={14}/></Link></article>)}</section>}
-      <section className={styles.section} id="connections"><div className={styles.sectionHeading}><h2>Connections & claims</h2><Link href={`/graph?focus=${encodeURIComponent(memberId)}`}>Open graph <ArrowUpRight size={14}/></Link></div><p className={styles.sectionIntro}>Each relationship keeps its participants and their roles together. Source details explain what the connection supports.</p>{claims.map(({ substance, claim }) => <ClaimCard key={`${substance.slug}-${claim.id}`} substance={substance} claim={claim} memberRecord={memberRecord}/>)}{connections.map(edge => <article className={styles.connection} key={edge.id}><span className={styles.kind}>{edge.relation.replaceAll("-", " ")}</span><h3>{edge.label}</h3><p>{edge.description}</p><ul className={styles.members}>{edge.members.map(member => { const record = memberRecord(member); return <li key={member}>{record.href ? <Link href={record.href}>{record.label}</Link> : <span>{record.label}</span>}<span>{edge.memberRoles[member] || "Participant"}</span></li>; })}</ul><div className={styles.claimSources}>{[...new Set([edge.sourceUrl, ...(edge.sourceUrls ?? [])].filter(Boolean))].map((url, index) => <a className={styles.citation} key={url} href={url} target="_blank" rel="noreferrer">Relationship source {index + 1}<ArrowUpRight size={12}/></a>)}</div></article>)}{!claims.length && !connections.length && <p className={styles.emptyInline}>No sourced relationships have been assessed for this concept yet.</p>}{graph.truncated && <p className={styles.emptyInline}>This is a bounded selection of connections. Open a neighboring article or focus the graph to continue exploring.</p>}</section>
-      <section className={styles.section} id="substances"><div className={styles.sectionHeading}><h2>Linked substances</h2><span>{linkedCatalog.length} entries</span></div><p className={styles.sectionIntro}>Tagged articles and participants in the relationships above. A shared tag alone does not establish a causal effect.</p>{visibleCatalog.length ? <div className={styles.substanceGrid}>{visibleCatalog.map(substance => <SubstanceCard key={substance.slug} substance={substance}/>)}</div> : <p className={styles.emptyInline}>No linked substance articles have been assessed yet.</p>}{totalPages > 1 && <nav className={styles.pagination} aria-label="Linked substance pages">{page > 1 && <Link href={`${conceptPath(concept)}?page=${page - 1}#${section === "concepts" ? "substances" : "observations"}`}>Previous</Link>}<span>Page {page} of {totalPages}</span>{page < totalPages && <Link href={`${conceptPath(concept)}?page=${page + 1}#${section === "concepts" ? "substances" : "observations"}`}>Next <ArrowRight size={14}/></Link>}</nav>}</section>
-      <section className={styles.section} id="definition-sources"><div className={styles.sectionHeading}><h2>Follow the sources</h2></div><h3 className={styles.subheading}>Definition sources</h3><p className={styles.sectionIntro}>Supporting reading for this original editorial definition. Independent editorial review has not been recorded.</p>{concept.sourceUrls?.length ? <ul className={styles.definitionSources}>{concept.sourceUrls.map((url, index) => <li key={url}><span>{String(index + 1).padStart(2, "0")}</span><a href={url} target="_blank" rel="noreferrer">{sourceLabel(url)}<ArrowUpRight size={14}/></a></li>)}</ul> : <p className={styles.emptyInline}>Definition sources have not been assessed.</p>}{usedSources.size > 0 && <><h3 className={styles.subheading}>Observation & claim sources</h3><ol className={styles.references}>{[...usedSources.entries()].map(([id, { reference, substance }]) => <li key={id} id={id}><span className={styles.kind}>{reference.kind} · {reference.year}</span><h4><a href={reference.url} target="_blank" rel="noreferrer">{reference.title}<ArrowUpRight size={15}/></a></h4><span className={styles.authors}>{reference.authors}</span><p>{reference.insight}</p><p className={styles.limitation}><strong>Limitation</strong> {reference.limitation}</p><p className={styles.limitation}><strong>Funding / disclosures</strong> {reference.funding || "Not assessed"}</p><Link className={styles.textLink} href={`/substances/${substance.slug}#reference-${reference.id}`}>Source in {substance.name} <ArrowUpRight size={13}/></Link></li>)}</ol></>}</section>
-    </div><aside className={styles.sidebar} aria-label="Related reading"><div className={styles.sidebarCard}><span className={styles.eyebrow}>KEEP EXPLORING</span><h2>Related concepts</h2>{related.length ? <ul>{related.map(item => <li key={item.id}><Link href={conceptPath(item)}><span>{kindLabels[item.kind]}</span>{item.label}<ArrowUpRight size={14}/></Link></li>)}</ul> : <p>Related definitions have not been assessed yet.</p>}<Link className={styles.textLink} href={`/${section}`}>Browse {sections[section].title.toLowerCase()} <ArrowRight size={14}/></Link></div><div className={styles.editorialNote}><BookOpen size={20}/><h2>Read with the context left in.</h2><p>Sources and editorial review are separate. A sourced draft has references but has not completed independent editorial review.</p><Link href="/about">Evidence & methodology <ArrowUpRight size={14}/></Link><Link href="/contribute">Suggest a sourced correction <ArrowUpRight size={14}/></Link></div></aside></div>
-  </main>;
+  return (
+    <main id="main" className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 py-8 sm:px-8">
+      <Breadcrumb items={[{ href: "/", label: "Library" }, { href: `/${section}`, label: sections[section].title }, { label: concept.label }]} />
+      <header className="flex flex-col gap-4">
+        <div className="flex flex-wrap items-center gap-3">
+          <p className="text-xs font-medium tracking-wide text-muted-foreground uppercase">{kindLabels[concept.kind].toUpperCase()}</p>
+          <Badge variant="secondary">Definition: {concept.sourceUrls?.length ? "sourced draft" : "sources not assessed"}</Badge>
+        </div>
+        <h1 className="text-4xl font-medium">{concept.label}</h1>
+        <p className="max-w-3xl text-lg text-muted-foreground">{concept.description}</p>
+        {Boolean(concept.aliases?.length) && <p>Also called {concept.aliases!.join(", ")}</p>}
+        <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+          <a href="#definition-sources" className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline"><BookOpen aria-hidden="true" size={15} />{concept.sourceUrls?.length ?? 0} definition sources</a>
+          <Link href={`/graph?focus=${encodeURIComponent(memberId)}`} className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline"><GitBranch aria-hidden="true" size={15} />Explore connections <ArrowUpRight aria-hidden="true" size={14} /></Link>
+        </div>
+      </header>
+      <SectionNav
+        label="On this page"
+        items={[
+          ...(section !== "concepts" ? [{ id: "observations", name: "Observations" }] : []),
+          { id: "connections", name: "Connections" },
+          { id: "substances", name: "Linked substances" },
+          { id: "definition-sources", name: "Sources" },
+        ]}
+      />
+      <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
+        <div className="flex min-w-0 flex-col gap-12">
+          {section !== "concepts" && (
+            <section className="flex scroll-mt-24 flex-col gap-4" id="observations">
+              <div className="flex flex-wrap items-baseline justify-between gap-3">
+                <h2 className="text-2xl font-medium">{section === "effects" ? "Reported experience" : "Findings in context"}</h2>
+                <span className="text-sm text-muted-foreground">{observations.length} observations{totalPages > 1 ? " on this page" : ""}</span>
+              </div>
+              <p className="text-muted-foreground">{section === "effects" ? "These qualitative descriptions preserve the reported direction and setting. They do not assign a universal intensity score." : "Measured endpoints are tied to a particular task, population, and exposure. A finding cannot be generalized to a different outcome without supporting evidence."}</p>
+              {observations.length ? (
+                <div className="flex flex-col gap-4">
+                  {observations.map(({ substance, observation }, index) => <ObservationCard key={`${substance.slug}-${index}`} substance={substance} observation={observation} />)}
+                </div>
+              ) : (
+                <Empty>
+                  <EmptyHeader>
+                    <EmptyDescription>No matching observations have been assessed{totalPages > 1 ? " for the substances on this page" : " in the published collection"}.</EmptyDescription>
+                  </EmptyHeader>
+                </Empty>
+              )}
+            </section>
+          )}
+          {mechanisms.length > 0 && (
+            <section className="flex flex-col gap-4">
+              <h2 className="text-2xl font-medium">Mechanistic context</h2>
+              {mechanisms.map(({ substance, mechanism }, index) => (
+                <Card key={`${substance.slug}-${index}`}>
+                  <CardHeader>
+                    <CardDescription>{substance.name} · {editorialLabel(substance.editorialStatus)}</CardDescription>
+                    <CardTitle><h3>{mechanism.title}</h3></CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-col gap-3">
+                    <p>{mechanism.description} <SourceCite substance={substance} id={mechanism.sourceId} /></p>
+                    <Link className="inline-flex items-center gap-1 text-sm underline underline-offset-4" href={`/substances/${substance.slug}`}>Read the substance article <ArrowUpRight aria-hidden="true" size={14} /></Link>
+                  </CardContent>
+                </Card>
+              ))}
+            </section>
+          )}
+          <section className="flex scroll-mt-24 flex-col gap-4" id="connections">
+            <div className="flex flex-wrap items-baseline justify-between gap-3">
+              <h2 className="text-2xl font-medium">Connections & claims</h2>
+              <Link href={`/graph?focus=${encodeURIComponent(memberId)}`} className="inline-flex items-center gap-1 text-sm underline underline-offset-4">Open graph <ArrowUpRight aria-hidden="true" size={14} /></Link>
+            </div>
+            <p className="text-muted-foreground">Each relationship keeps its participants and their roles together. Source details explain what the connection supports.</p>
+            <div className="flex flex-col gap-4">
+              {claims.map(({ substance, claim }) => <ClaimCard key={`${substance.slug}-${claim.id}`} substance={substance} claim={claim} memberRecord={memberRecord} />)}
+              {connections.map(edge => (
+                <Card key={edge.id}>
+                  <CardHeader>
+                    <CardDescription>{edge.relation.replaceAll("-", " ")}</CardDescription>
+                    <CardTitle><h3>{edge.label}</h3></CardTitle>
+                  </CardHeader>
+                  <CardContent className="flex flex-col gap-3">
+                    <p>{edge.description}</p>
+                    <ul className="flex flex-col gap-2">
+                      {edge.members.map(member => {
+                        const record = memberRecord(member);
+                        return (
+                          <li key={member} className="flex flex-wrap items-baseline justify-between gap-2">
+                            {record.href ? <Link href={record.href} className="underline underline-offset-4">{record.label}</Link> : <span>{record.label}</span>}
+                            <span className="text-sm text-muted-foreground">{edge.memberRoles[member] || "Participant"}</span>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                    <div className="flex flex-wrap gap-3">
+                      {[...new Set([edge.sourceUrl, ...(edge.sourceUrls ?? [])].filter(Boolean))].map((url, index) => (
+                        <a className="inline-flex items-center gap-1 text-sm underline underline-offset-4" key={url} href={url} target="_blank" rel="noreferrer">Relationship source {index + 1}<ArrowUpRight aria-hidden="true" size={12} /></a>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            {!claims.length && !connections.length && (
+              <Empty>
+                <EmptyHeader>
+                  <EmptyDescription>No sourced relationships have been assessed for this concept yet.</EmptyDescription>
+                </EmptyHeader>
+              </Empty>
+            )}
+            {graph.truncated && <p className="text-sm text-muted-foreground">This is a bounded selection of connections. Open a neighboring article or focus the graph to continue exploring.</p>}
+          </section>
+          <section className="flex scroll-mt-24 flex-col gap-4" id="substances">
+            <div className="flex flex-wrap items-baseline justify-between gap-3">
+              <h2 className="text-2xl font-medium">Linked substances</h2>
+              <span className="text-sm text-muted-foreground">{linkedCatalog.length} entries</span>
+            </div>
+            <p className="text-muted-foreground">Tagged articles and participants in the relationships above. A shared tag alone does not establish a causal effect.</p>
+            {visibleCatalog.length ? (
+              <div className="grid gap-4 sm:grid-cols-2">
+                {visibleCatalog.map(substance => <SubstanceCard key={substance.slug} substance={substance} />)}
+              </div>
+            ) : (
+              <Empty>
+                <EmptyHeader>
+                  <EmptyDescription>No linked substance articles have been assessed yet.</EmptyDescription>
+                </EmptyHeader>
+              </Empty>
+            )}
+            <PageNav
+              label="Linked substance pages"
+              page={page}
+              totalPages={totalPages}
+              previousHref={page > 1 ? `${conceptPath(concept)}?page=${page - 1}#${pageHash}` : undefined}
+              nextHref={page < totalPages ? `${conceptPath(concept)}?page=${page + 1}#${pageHash}` : undefined}
+            />
+          </section>
+          <section className="flex scroll-mt-24 flex-col gap-4" id="definition-sources">
+            <h2 className="text-2xl font-medium">Follow the sources</h2>
+            <h3 className="text-lg font-medium">Definition sources</h3>
+            <p className="text-muted-foreground">Supporting reading for this original editorial definition. Independent editorial review has not been recorded.</p>
+            {concept.sourceUrls?.length ? (
+              <ul className="flex flex-col gap-2">
+                {concept.sourceUrls.map((url, index) => (
+                  <li key={url} className="flex items-baseline gap-3">
+                    <span className="text-sm text-muted-foreground">{String(index + 1).padStart(2, "0")}</span>
+                    <a href={url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 underline underline-offset-4">{sourceLabel(url)}<ArrowUpRight aria-hidden="true" size={14} /></a>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <Empty>
+                <EmptyHeader>
+                  <EmptyDescription>Definition sources have not been assessed.</EmptyDescription>
+                </EmptyHeader>
+              </Empty>
+            )}
+            {usedSources.size > 0 && (
+              <div className="flex flex-col gap-4">
+                <h3 className="text-lg font-medium">Observation & claim sources</h3>
+                <ol className="flex flex-col gap-4">
+                  {[...usedSources.entries()].map(([id, { reference, substance }]) => (
+                    <li key={id} id={id}>
+                      <Card>
+                        <CardHeader>
+                          <CardDescription>{reference.kind} · {reference.year}</CardDescription>
+                          <CardTitle>
+                            <h4>
+                              <a href={reference.url} target="_blank" rel="noreferrer" className="inline-flex items-start gap-1 underline-offset-4 hover:underline">
+                                {reference.title}
+                                <ArrowUpRight aria-hidden="true" className="mt-0.5 shrink-0" size={15} />
+                              </a>
+                            </h4>
+                          </CardTitle>
+                          <CardDescription>{reference.authors}</CardDescription>
+                        </CardHeader>
+                        <CardContent className="flex flex-col gap-3">
+                          <p>{reference.insight}</p>
+                          <p><strong>Limitation</strong> {reference.limitation}</p>
+                          <p><strong>Funding / disclosures</strong> {reference.funding || "Not assessed"}</p>
+                          <Link className="inline-flex items-center gap-1 text-sm underline underline-offset-4" href={`/substances/${substance.slug}#reference-${reference.id}`}>Source in {substance.name} <ArrowUpRight aria-hidden="true" size={13} /></Link>
+                        </CardContent>
+                      </Card>
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            )}
+          </section>
+        </div>
+        <aside className="flex flex-col gap-4" aria-label="Related reading">
+          <Card>
+            <CardHeader>
+              <CardDescription>Keep exploring</CardDescription>
+              <CardTitle><h2>Related concepts</h2></CardTitle>
+            </CardHeader>
+            <CardContent className="flex flex-col gap-3">
+              {related.length ? (
+                <ul className="flex flex-col gap-2">
+                  {related.map(item => (
+                    <li key={item.id}>
+                      <Link href={conceptPath(item)} className="flex flex-col gap-0.5 underline-offset-4 hover:underline">
+                        <span className="text-sm text-muted-foreground">{kindLabels[item.kind]}</span>
+                        <span className="inline-flex items-center gap-1">{item.label}<ArrowUpRight aria-hidden="true" size={14} /></span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              ) : <p className="text-muted-foreground">Related definitions have not been assessed yet.</p>}
+              <Link className="inline-flex items-center gap-1 text-sm underline underline-offset-4" href={`/${section}`}>Browse {sections[section].title.toLowerCase()} <ArrowRight aria-hidden="true" size={14} /></Link>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle><h2>Read with the context left in.</h2></CardTitle>
+              <CardDescription>Sources and editorial review are separate. A sourced draft has references but has not completed independent editorial review.</CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-col items-start gap-2">
+              <Link href="/about" className="inline-flex items-center gap-1 text-sm underline underline-offset-4">Evidence & methodology <ArrowUpRight aria-hidden="true" size={14} /></Link>
+              <Link href="/contribute" className="inline-flex items-center gap-1 text-sm underline underline-offset-4">Suggest a sourced correction <ArrowUpRight aria-hidden="true" size={14} /></Link>
+            </CardContent>
+          </Card>
+        </aside>
+      </div>
+    </main>
+  );
 }
 
 function SubstanceCard({ substance }: { substance: CatalogSubstance }) {
-  return <Link className={styles.substanceCard} href={`/substances/${substance.slug}`}><span className={styles.kind}>{substance.category}</span><h3>{substance.name}<ArrowUpRight size={16}/></h3><p>{substance.summary}</p><span className={styles.muted}>{editorialLabel(substance.editorialStatus)}</span></Link>;
+  return (
+    <Link className="block h-full" href={`/substances/${substance.slug}`}>
+      <Card className="h-full">
+        <CardHeader>
+          <CardDescription>{substance.category}</CardDescription>
+          <CardTitle><h3 className="inline-flex items-center gap-1">{substance.name}<ArrowUpRight aria-hidden="true" size={16} /></h3></CardTitle>
+        </CardHeader>
+        <CardContent className="flex flex-col gap-3">
+          <p className="text-muted-foreground">{substance.summary}</p>
+          <Badge variant="secondary">{editorialLabel(substance.editorialStatus)}</Badge>
+        </CardContent>
+      </Card>
+    </Link>
+  );
 }

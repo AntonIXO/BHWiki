@@ -1,8 +1,103 @@
 import Link from "next/link";
-import { Atom, GitBranch, Code2, Search, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Code2 } from "lucide-react";
+import { Logo } from "@/components/logo";
+import {
+  Breadcrumb as BreadcrumbNav,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import { repositoryUrl } from "@/lib/site";
 
-export function Logo() { return <Link href="/" className="logo" aria-label="BHWiki home"><span className="logo-mark"><Atom size={25} strokeWidth={1.6}/></span><span>bh<span className="logo-light">wiki</span><span className="logo-dot">.</span></span></Link>; }
-export function Header() { return <header className="site-header"><div className="header-inner"><Logo/><nav aria-label="Main navigation"><Link href="/">Substances</Link><Link href="/effects">Effects</Link><Link href="/graph">Knowledge graph <GitBranch size={14}/></Link><Link href="/about">Methods</Link></nav><div className="header-actions"><Link href="/#library" className="search-icon" aria-label="Search substances"><Search size={19}/></Link><Link href="/contribute" className="contribute-header"><Code2 size={15}/> Contribute</Link></div></div></header>; }
-export function Footer() { const repo=repositoryUrl(); return <footer className="site-footer"><div><Logo/><p>An independent, open substance reference.</p></div><div className="footer-links"><Link href="/about">Evidence & methodology</Link><Link href="/contribute">Contribute <Code2 size={14}/></Link>{repo&&<a href={repo} target="_blank" rel="noreferrer">Source repository <ArrowUpRight size={14}/></a>}</div><p className="footer-note">For education and research, not personal medical advice.<br/>Original content CC BY-SA 4.0 · Code MIT</p></footer>; }
-export function Breadcrumb({current}: {current:string}) { return <div className="breadcrumb"><Link href="/">Library</Link><span>/</span><span>{current}</span></div>; }
+export { Logo } from "@/components/logo";
+
+export function Breadcrumb({
+  current,
+  items,
+}: {
+  current?: string;
+  items?: { href?: string; label: string }[];
+}) {
+  const trail = items ?? [
+    { href: "/", label: "Library" },
+    { label: current ?? "" },
+  ];
+  return (
+    <BreadcrumbNav>
+      <BreadcrumbList>
+        {trail.flatMap((item, index) => {
+          const last = index === trail.length - 1;
+          const crumb = (
+            <BreadcrumbItem key={`${item.label}-${index}`}>
+              {last || !item.href ? (
+                <BreadcrumbPage>{item.label}</BreadcrumbPage>
+              ) : (
+                <BreadcrumbLink render={<Link href={item.href} />}>{item.label}</BreadcrumbLink>
+              )}
+            </BreadcrumbItem>
+          );
+          return index === 0 ? [crumb] : [<BreadcrumbSeparator key={`sep-${index}`} />, crumb];
+        })}
+      </BreadcrumbList>
+    </BreadcrumbNav>
+  );
+}
+
+export function Footer() {
+  const repo = repositoryUrl();
+  return (
+    <footer className="mx-auto mt-auto flex w-full max-w-6xl flex-col gap-6 px-5 py-8 sm:px-8">
+      <Separator />
+      <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+        <div className="flex flex-col gap-2">
+          <Logo />
+          <p className="text-sm text-muted-foreground">An independent, open substance reference.</p>
+        </div>
+        <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+          <Link href="/about" className="underline-offset-4 hover:underline">Evidence & methodology</Link>
+          <Link href="/contribute" className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline">
+            Contribute <Code2 aria-hidden="true" />
+          </Link>
+          {repo && (
+            <a href={repo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 underline-offset-4 hover:underline">
+              Source repository <ArrowUpRight aria-hidden="true" />
+            </a>
+          )}
+        </div>
+        <p className="max-w-xs text-sm text-muted-foreground sm:text-right">
+          For education and research, not personal medical advice.
+          <br />
+          Original content CC BY-SA 4.0 · Code MIT
+        </p>
+      </div>
+    </footer>
+  );
+}
+
+export function TextLink({ href, children, external = false }: { href: string; children: React.ReactNode; external?: boolean }) {
+  const className = "inline-flex items-center gap-1 text-sm underline underline-offset-4";
+  if (external) {
+    return (
+      <a href={href} target="_blank" rel="noreferrer" className={className}>
+        {children}
+      </a>
+    );
+  }
+  return (
+    <Link href={href} className={className}>
+      {children}
+    </Link>
+  );
+}
+
+export function PrimaryLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <Button nativeButton={false} render={<Link href={href} />}>
+      {children}
+    </Button>
+  );
+}
