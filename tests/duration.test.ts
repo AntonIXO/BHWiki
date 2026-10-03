@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
-import { formatSpan, phaseWeights, spanMinutes } from "../src/lib/duration";
+import { formatSpan, elapsedPhases } from "../src/lib/duration";
 import { DurationTimeline } from "../src/components/duration-timeline";
 import { validateSubstance } from "../src/lib/validate-content";
 import { substances } from "../src/lib/content";
@@ -16,21 +16,13 @@ const phases: DurationPhase[] = [
   { name: "after-effects", min: 30, max: null, unit: "minutes" },
 ];
 
-test("phase weights use midpoints in minutes and skip empty spans", () => {
-  assert.equal(spanMinutes({ min: 1, max: 2, unit: "hours" }), 90);
-  assert.equal(spanMinutes({ min: null, max: null, unit: "minutes" }), null);
-  assert.equal(spanMinutes({ min: 0, max: 0, unit: "minutes" }), null);
-  const weights = phaseWeights(phases);
-  assert.deepEqual(weights.map((segment) => segment.name), ["onset", "peak", "after-effects"]);
-  assert.equal(weights.reduce((sum, segment) => sum + segment.weight, 0), 1);
-  assert.equal(weights[0]?.weight, 30 / 150);
-  assert.equal(weights[1]?.weight, 90 / 150);
-  assert.equal(weights[2]?.weight, 30 / 150);
+test("duration ranges preserve units and do not imply elapsed positions", () => {
   assert.equal(formatSpan({ min: 20, max: 40, unit: "minutes" }), "20–40 min");
   assert.equal(formatSpan({ min: 2, max: 2, unit: "hours" }), "2 h");
+  assert.equal(elapsedPhases({ route: "Oral", population: "Fixture", sourceId: "source", note: "Fixture", total: null, phases }).length, 0);
 });
 
-test("the timeline lists cited prose and paints a bar only for numeric phases", () => {
+test("the timeline retains cited prose and requires elapsed semantics for a chart", () => {
   const caffeine = substances.find((substance) => substance.slug === "caffeine")!;
   const fallback = renderToStaticMarkup(createElement(DurationTimeline, {
     accent: caffeine.accent,
@@ -56,7 +48,8 @@ test("the timeline lists cited prose and paints a bar only for numeric phases", 
     },
     citationFor: () => createElement("span", null, "source"),
   }));
-  assert.match(timed, /data-duration-bar/);
+  assert.equal(timed.includes("data-duration-bar"), false);
+  assert.match(timed, /Time basis not assessed/);
   assert.match(timed, /20–40 min/);
   assert.match(timed, /3–6 h/);
 });

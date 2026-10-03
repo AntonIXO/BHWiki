@@ -221,7 +221,7 @@ export default function Catalog({
             .filter((tag) => tag && tag.kind !== "legal")
             .slice(0, 2);
           return (
-            <Link key={substance.slug} href={`/substances/${substance.slug}`} className={cn("substance-card block min-w-0", view === "list" && "sm:col-span-1")}>
+            <div key={substance.slug} className={cn("substance-card flex min-w-0 flex-col gap-2", view === "list" && "sm:col-span-1")}><Link href={`/substances/${substance.slug}`} className="flex-1">
               <Card className={cn("h-full", view === "list" && "md:flex-row md:items-stretch")}>
                 <CardHeader className={cn(view === "list" && "md:flex-1")}>
                   <div className="flex items-center justify-between gap-2">
@@ -257,7 +257,7 @@ export default function Catalog({
                   </span>
                 </CardFooter>
               </Card>
-            </Link>
+            </Link><Link href={`/compare?substances=${substance.slug}`} className="text-sm underline underline-offset-4">Compare {substance.name}</Link></div>
           );
         })}
       </div>

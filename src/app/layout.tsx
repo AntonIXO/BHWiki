@@ -1,3 +1,4 @@
+import { EvidenceProvider } from "@/components/evidence";
 import type { Metadata } from "next";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/shell";
@@ -13,12 +14,12 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <body className="flex min-h-svh flex-col">
-        <TooltipProvider delay={300}>
+        <TooltipProvider delay={300}><EvidenceProvider>
           <a href="#main" className="skip-link">Skip to content</a>
           <Header />
           <div className="flex flex-1 flex-col">{children}</div>
           <Footer />
-        </TooltipProvider>
+        </EvidenceProvider></TooltipProvider>
       </body>
     </html>
   );

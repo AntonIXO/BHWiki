@@ -1,3 +1,4 @@
+import { recordId } from "../src/lib/research";
 import { readFileSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import postgres from "postgres";
@@ -81,12 +82,12 @@ for (const s of substances) {
     article_id: article, observation_id: `(SELECT id FROM bhwiki.pk_observations WHERE article_id = ${article} AND observation_key = ${q(m.observationId)})`, source_id: reference(m.sourceId), label: q(m.label), effect: q(m.effect), detail: q(m.detail), factor_type: q(m.factorType), direction: q(m.direction),
   });
   for (const [type, observations] of [["effect", s.effects], ["outcome", s.outcomes]] as const) {
-    for (const o of observations) insert("effect_observations", { article_id: article, concept_id: entity(o.conceptId), source_id: reference(o.sourceId), observation_type: q(type), name: q(o.name), direction: q(o.direction), evidence: q(o.evidence), description: q(o.description), population: q(o.population), exposure: q(o.exposure), instrument: q(o.instrument), magnitude: q(o.magnitude) });
+    for (const o of observations) insert("effect_observations", { article_id: article, concept_id: entity(o.conceptId), source_id: reference(o.sourceId), observation_type: q(type), observation_key: q(recordId(o)), record: json(o), name: q(o.name), direction: q(o.direction), evidence: q(o.evidence), description: q(o.description), population: q(o.population), exposure: q(o.exposure), instrument: q(o.instrument), magnitude: q(o.magnitude) });
   }
 }
 
 for (const edge of hyperedges) {
-  upsert("relationships", { slug: q(edge.id), label: q(edge.label), relation: q(edge.relation), description: q(edge.description), source_url: q(edge.sourceUrl), source_urls: json(edge.sourceUrls ?? [edge.sourceUrl]), status: q("published") }, ["slug"]);
+  upsert("relationships", { slug: q(edge.id), label: q(edge.label), relation: q(edge.relation), description: q(edge.description), source_url: q(edge.sourceUrl), source_urls: json(edge.sourceUrls ?? [edge.sourceUrl]), directed_steps: json(edge.directedSteps ?? []), status: q("published") }, ["slug"]);
   const relation = `(SELECT id FROM bhwiki.relationships WHERE slug = ${q(edge.id)})`;
   emit(`DELETE FROM bhwiki.relationship_members WHERE relationship_id = ${relation};`);
   for (const member of edge.members) insert("relationship_members", { relationship_id: relation, entity_id: entity(member), member_role: q(edge.memberRoles[member]) });

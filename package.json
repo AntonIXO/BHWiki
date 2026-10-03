@@ -15,7 +15,8 @@
     "test:e2e": "playwright test",
     "content:hashes": "tsx scripts/content-hashes.ts",
     "db:verify": "tsx scripts/db-verify.ts",
-    "db:benchmark": "tsx scripts/db-benchmark.ts"
+    "db:benchmark": "tsx scripts/db-benchmark.ts",
+    "db:verify:research": "node --env-file-if-exists=.env.local --conditions=react-server --import tsx scripts/research-db-verify.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.8.0",

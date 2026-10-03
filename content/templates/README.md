@@ -13,3 +13,5 @@ Each article is one Markdown file:
 Effects go in `content/effects/`. Measured outcomes go in `content/outcomes/`. Other concepts go in `content/concepts/<kind>/`, and the folder must match `kind`. Relationships go in `content/relationships/`. Substances go in `content/substances/`.
 
 Keep `editorialStatus` as `sourced-draft` until a reviewer records the review. Link claims to reference ids. Use original wording. Do not copy Effect Index, PsychonautWiki, or Wikipedia prose.
+
+For optional study metadata, numerical results, interactions, timing semantics, effect details and directed mechanism steps, see [research enrichment](research-enrichment.md).

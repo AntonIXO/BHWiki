@@ -135,7 +135,7 @@ export async function getKnowledgeGraph(options: { focus?: string; limit?: numbe
   const focus = normalizeGraphFocus(options.focus);
   // Candidate count is bounded independently of the total database size. Every chosen
   // relationship's entire member set is loaded before the atomic entity-bound admission.
-  type EdgeRow = { memberCount: number; dbId: string; id: string; label: string; relation: string; description: string; sourceUrl: string; sourceUrls: string[] };
+  type EdgeRow = { memberCount: number; dbId: string; id: string; label: string; relation: string; description: string; sourceUrl: string; sourceUrls: string[]; directedSteps: Hyperedge["directedSteps"] };
   const edges = focus ? await sql<EdgeRow[]>`
     WITH focus_entity AS MATERIALIZED (
       SELECT id FROM bhwiki.entities WHERE slug = ${focus} AND status = 'published'
@@ -143,12 +143,12 @@ export async function getKnowledgeGraph(options: { focus?: string; limit?: numbe
       SELECT relationship_id FROM bhwiki.relationship_members
       WHERE entity_id = (SELECT id FROM focus_entity) ORDER BY relationship_id LIMIT ${limit + 1}
     )
-    SELECT r.id AS "dbId", r.slug AS id, r.label, r.relation, r.description, r.source_url AS "sourceUrl", r.source_urls AS "sourceUrls",
+    SELECT r.id AS "dbId", r.slug AS id, r.label, r.relation, r.description, r.source_url AS "sourceUrl", r.source_urls AS "sourceUrls", r.directed_steps AS "directedSteps",
       (SELECT count(*)::integer FROM bhwiki.relationship_members size WHERE size.relationship_id = r.id) AS "memberCount"
     FROM candidates c JOIN bhwiki.relationships r ON r.id = c.relationship_id
     ORDER BY r.label
   ` : await sql<EdgeRow[]>`
-    SELECT r.id AS "dbId", r.slug AS id, r.label, r.relation, r.description, r.source_url AS "sourceUrl", r.source_urls AS "sourceUrls",
+    SELECT r.id AS "dbId", r.slug AS id, r.label, r.relation, r.description, r.source_url AS "sourceUrl", r.source_urls AS "sourceUrls", r.directed_steps AS "directedSteps",
       (SELECT count(*)::integer FROM bhwiki.relationship_members size WHERE size.relationship_id = r.id) AS "memberCount"
     FROM bhwiki.relationships r WHERE r.status = 'published'
     ORDER BY r.label LIMIT ${limit + 1}
@@ -180,4 +180,49 @@ export async function getKnowledgeGraph(options: { focus?: string; limit?: numbe
   });
   return boundKnowledgeGraph({ substances: articles.map((a) => a.catalog), tags: concepts.map((c) => c.document), hyperedges,
     truncated: candidates.truncated || extras.length > limit }, options);
+}
+
+/** Query the concept's observation projection, independently of linked-substance pagination. */
+export async function getObservationPage(conceptId:string,kind:"effect"|"outcome",filters:import("./research-types").ObservationFilters={},page=1) {
+  const { observationRows, filterObservations, evidenceKey } = await import("./research");
+  const sql=database();
+  if(!sql)return filterObservations(bundledSubstances.flatMap(s=>observationRows(s,kind)).filter(r=>r.observation.conceptId===conceptId),filters,page);
+  const rows=await sql<{articleSlug:string;articleName:string;editorialStatus:Substance["editorialStatus"];observation:import("./types").Observation;reference:import("./types").Reference|undefined}[]>`
+    SELECT e.slug AS "articleSlug", e.label AS "articleName", r.editorial_status AS "editorialStatus",
+      coalesce(o.record, jsonb_build_object('conceptId',c.slug,'name',o.name,'direction',o.direction,'evidence',o.evidence,
+        'description',o.description,'sourceId',a.reference_key,'population',o.population,'exposure',o.exposure,'instrument',o.instrument,'magnitude',o.magnitude)) AS observation,
+      (SELECT ref FROM jsonb_array_elements(r.document->'references') ref WHERE ref->>'id'=a.reference_key LIMIT 1) AS reference
+    FROM bhwiki.effect_observations o JOIN bhwiki.entities c ON c.id=o.concept_id
+    JOIN bhwiki.entities e ON e.id=o.article_id JOIN bhwiki.articles p ON p.entity_id=e.id
+    JOIN bhwiki.article_revisions r ON r.id=p.published_revision_id
+    JOIN LATERAL (SELECT * FROM bhwiki.article_sources a WHERE a.article_id=e.id AND a.source_id=o.source_id AND (o.record IS NULL OR a.reference_key=o.record->>'sourceId') ORDER BY a.reference_key LIMIT 1) a ON true
+    WHERE c.slug=${conceptId} AND o.observation_type=${kind} AND e.status='published'
+  `;
+  return filterObservations(rows.map(r=>({...r,kind,key:evidenceKey(r.articleSlug,kind,r.observation)})),filters,page);
+}
+
+export async function getRelationship(id:string):Promise<Hyperedge|undefined>{
+  const sql=database();if(!sql)return bundledHyperedges.find(e=>e.id===id);
+  const [edge]=await sql<{id:string;label:string;relation:string;description:string;sourceUrl:string;sourceUrls:string[];directedSteps:Hyperedge["directedSteps"];dbId:string}[]>`
+    SELECT id AS "dbId",slug AS id,label,relation,description,source_url AS "sourceUrl",source_urls AS "sourceUrls",directed_steps AS "directedSteps"
+    FROM bhwiki.relationships WHERE slug=${id} AND status='published' LIMIT 1
+  `;
+  if(!edge)return undefined;
+  const members=await sql<{member:string;role:string}[]>`SELECT CASE WHEN e.entity_type='substance' THEN 'substance:' ELSE 'tag:' END || e.slug AS member,m.member_role AS role FROM bhwiki.relationship_members m JOIN bhwiki.entities e ON e.id=m.entity_id WHERE m.relationship_id=${edge.dbId}`;
+  const {dbId:_dbId,...rest}=edge;return {...rest,members:members.map(m=>m.member),memberRoles:Object.fromEntries(members.map(m=>[m.member,m.role]))};
+}
+export async function getEvidenceRecord(key:string){
+  const {articleEvidence,relationshipEvidence}=await import("./research");
+  if(key.length>250||!/^[a-z0-9~-]+$/.test(key))return undefined;
+  const [slug,kind,id,...extra]=key.split("~");if(extra.length)return undefined;
+  if(slug==="relationship"&&!id){const edge=await getRelationship(kind);return edge?relationshipEvidence(edge):undefined;}
+  if(!id)return undefined;
+  const article=await getSubstance(slug);return article?articleEvidence(article).find(r=>r.key===key):undefined;
+}
+export async function getComparison(slugs:string[]){ return getSubstancesBySlugs([...new Set(slugs)].slice(0,3)); }
+export async function getPairInteractions(a:string,b:string){
+  const {matchInteractions}=await import("./research");
+  const articles=await getSubstancesBySlugs([...new Set([a,b])]);
+  const first=articles.find(s=>s.slug===a),second=articles.find(s=>s.slug===b);
+  return first&&second?{articles,result:matchInteractions(first,second)}:undefined;
 }

@@ -1,4 +1,6 @@
 "use client";
+import { EvidenceButton } from "@/components/evidence";
+import { pageTypes, graphStyle } from "@/lib/graph-style";
 
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import Link from "next/link";
@@ -34,12 +36,6 @@ const tagTypes: { value: TagKind; label: string }[] = [
   { value: "legal", label: "Legal context" },
 ];
 
-const pageTypes = [
-  { label: "Substance", selector: 'node[kind = "substance"]', shape: "round-rectangle", fill: "#dcebdd", border: "#6c9475", color: "#285b49", width: 126, height: 46 },
-  { label: "Concept", selector: 'node[kind = "tag"][tagKind != "effect"][tagKind != "outcome"]', shape: "ellipse", fill: "#e7e1f4", border: "#9884ba", color: "#51416c", width: 142, height: 62 },
-  { label: "Effect", selector: 'node[tagKind = "effect"]', shape: "hexagon", fill: "#f5e5c4", border: "#be9444", color: "#70521e", width: 146, height: 58 },
-  { label: "Outcome", selector: 'node[tagKind = "outcome"]', shape: "cut-rectangle", fill: "#dcebf5", border: "#6899b6", color: "#2c5a74", width: 136, height: 54 },
-] as const;
 
 function LegendSymbol({ shape, fill, border }: { shape: typeof pageTypes[number]["shape"] | "diamond"; fill: string; border: string }) {
   return <svg width="22" height="16" viewBox="0 0 22 16" aria-hidden="true" fill={fill} stroke={border} strokeWidth="1.2">
@@ -51,33 +47,6 @@ function LegendSymbol({ shape, fill, border }: { shape: typeof pageTypes[number]
   </svg>;
 }
 
-const graphStyle: StylesheetStyle[] = [
-  { selector: "node", style: {
-    label: "data(label)", "font-family": "system-ui, sans-serif", "font-size": 12,
-    "text-valign": "center", "text-halign": "center", color: "#171717",
-    "text-wrap": "wrap", "text-max-width": "108px", "background-color": "#ffffff",
-    shape: "round-rectangle", width: 116, height: 42, "border-width": 1, "border-color": "#e5e5e5",
-    "overlay-opacity": 0,
-  } },
-  ...pageTypes.map((type): StylesheetStyle => ({ selector: type.selector, style: {
-    shape: type.shape, "background-color": type.fill, "border-color": type.border,
-    color: type.color, width: type.width, height: type.height, "border-width": 1.2,
-  } })),
-  { selector: 'node[kind = "substance"]', style: { "font-weight": 600, "font-size": 13 } },
-  { selector: 'node[kind = "relationship"]', style: {
-    shape: "diamond", width: 14, height: 14, "background-color": "#737373", "border-width": 0,
-    label: "", "text-valign": "bottom", "text-margin-y": 7, "font-size": 10,
-  } },
-  { selector: 'node[relation != "tag membership"][kind = "relationship"]', style: {
-    "background-color": "#171717", width: 18, height: 18,
-  } },
-  { selector: "edge", style: { width: 1.15, "line-color": "#d4d4d4", "curve-style": "bezier", opacity: 0.85 } },
-  { selector: "node:selected", style: { "border-width": 3 } },
-  { selector: 'node[kind = "relationship"]:selected', style: { label: "data(label)", "background-color": "#171717" } },
-  { selector: ".muted", style: { opacity: 0.2 } },
-  { selector: "edge.highlighted", style: { "line-color": "#171717", width: 2, opacity: 1 } },
-  { selector: ".depth-hidden", style: { display: "none" } },
-];
 
 const fieldClass = "h-8 w-full min-w-0 rounded-lg border border-input bg-transparent px-2.5 text-sm outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50";
 
@@ -594,6 +563,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
           </CardHeader>
           <CardContent className="flex flex-col gap-2 text-sm">
             <Prose className="text-muted-foreground" text={selected.description} />
+            {selected.id.startsWith("relationship:") && <div><EvidenceButton evidenceKey={`relationship~${selected.id.slice(13)}`}/></div>}
             {selected.href && <Link href={selected.href} className="inline-flex items-center gap-1 underline underline-offset-4">{selected.kind === "substance" ? "Read substance profile" : "Read concept article"} <ArrowUpRight aria-hidden="true" /></Link>}
             {selected.kind !== "relationship" && <Link href={`/graph?focus=${encodeURIComponent(selected.id)}`} className="inline-flex items-center gap-1 underline underline-offset-4">Focus neighborhood <ArrowUpRight aria-hidden="true" /></Link>}
             {selectedSources.map((source, index) => <a key={source} href={source} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 underline underline-offset-4">View source{selectedSources.length > 1 ? ` ${index + 1}` : ""} <ArrowUpRight aria-hidden="true" /></a>)}
@@ -675,6 +645,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
                     <li key={edge.nodeId} className="flex flex-col gap-2 border-b border-border pb-3 text-sm">
                       <Button type="button" variant="link" className="h-auto justify-start px-0" onClick={() => { const node = model.nodes.find((item) => item.id === edge.nodeId); if (node) selectNode(node); }}>{edge.label}</Button>
                       <Prose className="text-muted-foreground" text={edge.description} />
+                      {edge.relation !== "tag membership" && <div><EvidenceButton evidenceKey={`relationship~${edge.id}`}/></div>}
                       <ul className="flex flex-col gap-1">
                         {edge.members.map((id) => {
                           const node = model.nodes.find((item) => item.id === id)!;

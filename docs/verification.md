@@ -64,3 +64,11 @@ These are database execution measurements, not end-to-end request latencies or O
 ## Editorial status
 
 Every launch article is a **sourced draft**, with original summaries and inspectable references. Technical validation and targeted source checks do not constitute independent medical/editorial review. No reviewers, community counts, vendor records or personal health outcomes have been fabricated. No promotional, referral or vendor UI remains in the application.
+
+## Interactive research implementation — 2026-10-04
+
+The eight-feature implementation passes content validation, strict types, the production build and 53 unit tests. All 30 standard desktop/mobile browser checks pass, including axe accessibility and evidence navigation; the two enriched-corpus browser checks run separately and pass. The standard run skips those two fixture-only cases intentionally.
+
+The rich corpus is generated outside `content/` and exercises structured results, elapsed timing, independent phase durations, effect variations, media and directed steps. Original records and their content hashes are preserved. Desktop comparison/plot and mobile evidence screenshots were inspected.
+
+The additive OrioleDB migration was rehearsed with rollback and applied. Existing publication, immutable-history, RLS, tenant-isolation and concurrent-publisher checks pass. An enriched fixture publication verified reader-visible observation payloads and directed steps inside a transaction that rolled back. No synthetic findings were published.
