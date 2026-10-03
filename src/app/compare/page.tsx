@@ -1,7 +1,11 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { getCatalog, getComparison, getConcepts } from "@/lib/repository";
-import { evidenceKey, selectionSlugs } from "@/lib/research";
+import {
+  evidenceKey,
+  observationMagnitude,
+  selectionSlugs,
+} from "@/lib/research";
 import type { Substance } from "@/lib/types";
 import { EvidenceButton } from "@/components/evidence";
 import { SubstanceSelectors } from "@/components/substance-selectors";
@@ -113,10 +117,17 @@ export default async function ComparePage({
                   {o.population} · {o.exposure}
                 </p>
                 <p>
-                  Comparator: {o.study?.comparator ?? "Not assessed"}.
-                  Assessment: {o.study?.assessmentTime ?? "Not assessed"}.
+                  Comparator:{" "}
+                  {o.study?.comparator ??
+                    o.result?.comparator ??
+                    "Not assessed"}
+                  . Assessment:{" "}
+                  {o.study?.assessmentTime ??
+                    o.result?.assessmentTime ??
+                    "Not assessed"}
+                  .
                 </p>
-                <p>{o.magnitude ?? "Magnitude not quantified"}</p>
+                <p>{observationMagnitude(o)}</p>
                 {o.study?.comparedSubstances && (
                   <p>
                     Explicit study arms: {o.study.comparedSubstances.join(", ")}

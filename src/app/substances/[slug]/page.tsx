@@ -3,7 +3,7 @@ import { EffectPreview } from "@/components/effect-preview";
 import { TimingExplorer } from "@/components/timing-explorer";
 import { MechanismExplorer } from "@/components/mechanism-explorer";
 import { StudyPlots } from "@/components/study-plots";
-import { evidenceKey, observationRows } from "@/lib/research";
+import { evidenceKey, observationMagnitude, observationRows } from "@/lib/research";
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -128,8 +128,8 @@ function ObservationMatrix({ observations, substance, entities, measured = false
                 { term: "Population", detail: effect.population || "Not established" },
                 { term: "Exposure context", detail: effect.exposure || "Not established" },
                 ...(measured ? [
-                  { term: "Measure / instrument", detail: effect.instrument || "Not assessed in this summary" },
-                  { term: "Magnitude", detail: effect.magnitude || "Not quantified in this summary" },
+                  { term: "Measure / instrument", detail: effect.result?.instrument || effect.instrument || "Not assessed in this summary" },
+                  { term: "Magnitude", detail: observationMagnitude(effect) },
                 ] : []),
               ]} />
             </CardContent>

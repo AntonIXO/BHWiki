@@ -100,14 +100,14 @@ export function articleEvidence(s: Substance): EvidenceRecord[] {
           ["Evidence type", o.evidence],
           ["Population", o.population],
           ["Exposure", o.exposure],
-          ["Instrument", o.instrument],
-          ["Reported magnitude", o.magnitude],
+          ["Instrument", o.result?.instrument ?? o.instrument],
+          ["Reported magnitude", observationMagnitude(o)],
           ["Study", o.study?.id],
           ["Design", o.study?.design],
           ["Sample size", o.study?.sampleSize],
-          ["Comparator", o.study?.comparator],
+          ["Comparator", o.study?.comparator ?? o.result?.comparator],
           ["Duration (days)", o.study?.durationDays],
-          ["Assessment time", o.study?.assessmentTime],
+          ["Assessment time", o.study?.assessmentTime ?? o.result?.assessmentTime],
           ["Route", o.study?.route],
           ["Formulation", o.study?.formulation],
           ["Report type", o.reportType],
@@ -427,4 +427,12 @@ export function plotGroups(rows: ObservationRow[]) {
     if (key) groups.set(key, [...(groups.get(key) ?? []), row]);
   }
   return [...groups].map(([key, rows]) => ({ key, rows }));
+}
+
+/** Use the same curated estimate in prose, tables, comparisons, and plots. */
+export function observationMagnitude(observation: Observation): string {
+  const result = observation.result;
+  if (!result) return observation.magnitude || "Not quantified in this summary";
+  const interval = result.confidenceInterval;
+  return `${result.estimate} ${result.unit} (${result.measure.replaceAll("-", " ")})${interval ? `; ${interval.level}% CI ${interval.lower}–${interval.upper}` : "; confidence interval not reported"}`;
 }

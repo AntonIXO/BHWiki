@@ -222,7 +222,15 @@ test("isolated rich fixtures activate plots, timing semantics, variations, and m
     !process.env.BHWIKI_RICH_FIXTURE_TESTS,
     "Requires the isolated fixture corpus",
   );
-  await page.goto("/outcomes/attention?view=plot&population=Fixture%20adults");
+  await page.goto("/outcomes/attention?population=Fixture%20adults");
+  await expect(page.locator("#observations")).toContainText(
+    "-2 points (mean difference)",
+  );
+  await page.getByRole("tab", { name: "Table", exact: true }).click();
+  await expect(page.locator("#observations table")).toContainText(
+    "-2 points (mean difference)",
+  );
+  await page.getByRole("tab", { name: "Plot", exact: true }).click();
   const plot = page.getByRole("group", { name: /Study estimates/ });
   await expect(plot).toBeVisible();
   await expect(page.locator("#observations table")).toContainText(

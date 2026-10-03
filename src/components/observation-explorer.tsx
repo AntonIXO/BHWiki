@@ -1,3 +1,4 @@
+import { observationMagnitude } from "@/lib/research";
 import Link from "next/link";
 import { getObservationPage } from "@/lib/repository";
 import {
@@ -62,10 +63,13 @@ export function ObservationFinding({ row }: { row: ObservationRow }) {
           {[
             ["Population", o.population],
             ["Exposure", o.exposure],
-            ["Comparator", o.study?.comparator],
-            ["Instrument", o.instrument],
-            ["Magnitude", o.magnitude],
-            ["Assessment time", o.study?.assessmentTime],
+            ["Comparator", o.study?.comparator ?? o.result?.comparator],
+            ["Instrument", o.result?.instrument ?? o.instrument],
+            ["Magnitude", observationMagnitude(o)],
+            [
+              "Assessment time",
+              o.study?.assessmentTime ?? o.result?.assessmentTime,
+            ],
           ].map(([label, value]) => (
             <div key={label}>
               <dt className="text-sm text-muted-foreground">{label}</dt>
@@ -166,15 +170,19 @@ export async function ObservationExplorer({
                   </TableCell>
                   <TableCell>
                     {row.observation.study?.comparator ??
+                      row.observation.result?.comparator ??
                       "Comparator not assessed"}
                     <br />
                     {row.observation.study?.assessmentTime ??
+                      row.observation.result?.assessmentTime ??
                       "Follow-up not assessed"}
                   </TableCell>
                   <TableCell>
-                    {row.observation.instrument ?? "Instrument not assessed"}
+                    {row.observation.result?.instrument ??
+                      row.observation.instrument ??
+                      "Instrument not assessed"}
                     <br />
-                    {row.observation.magnitude ?? "Magnitude not quantified"}
+                    {observationMagnitude(row.observation)}
                   </TableCell>
                   <TableCell>
                     <EvidenceButton evidenceKey={row.key} />

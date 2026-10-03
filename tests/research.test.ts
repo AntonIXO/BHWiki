@@ -8,6 +8,7 @@ import {
   filterObservations,
   matchInteractions,
   observationRows,
+  observationMagnitude,
   plotGroups,
   recordId,
   selectionSlugs,
@@ -70,6 +71,7 @@ test("evidence keys are independent of order and explicit IDs survive correction
   )!;
   assert.equal(evidence.conflictingSources.length, 1);
   assert.equal(evidence.result?.estimate, -2);
+  assert.equal(evidence.context.find(c => c.label === "Reported magnitude")?.value, "-2 points (mean difference); 95% CI -3–-1");
 });
 test("filters apply before pagination and expose unassessed metadata", () => {
   const { caffeine, observation } = researchFixture();
@@ -235,4 +237,18 @@ test("duplicate pair assertions retain both origins with stable reversed orderin
   assert.equal(result.matches.length, 1);
   assert.equal(result.matches[0].records.length, 2);
   assert.deepEqual(result, matchInteractions(b, a));
+});
+
+test("structured magnitudes remain readable when the legacy prose magnitude is absent", () => {
+  const { observation } = researchFixture();
+  observation.magnitude = null;
+  assert.equal(
+    observationMagnitude(observation),
+    "-2 points (mean difference); 95% CI -3–-1",
+  );
+  delete observation.result;
+  assert.equal(
+    observationMagnitude(observation),
+    "Not quantified in this summary",
+  );
 });

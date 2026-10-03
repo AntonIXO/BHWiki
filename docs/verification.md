@@ -67,7 +67,7 @@ Every launch article is a **sourced draft**, with original summaries and inspect
 
 ## Interactive research implementation — 2026-10-04
 
-The eight-feature implementation passes content validation, strict types, the production build and 53 unit tests. All 30 standard desktop/mobile browser checks pass, including axe accessibility and evidence navigation; the two enriched-corpus browser checks run separately and pass. The standard run skips those two fixture-only cases intentionally.
+The eight-feature implementation passes content validation, strict types, the production build and 54 unit tests. All 30 standard desktop/mobile browser checks pass, including axe accessibility and evidence navigation; the two enriched-corpus browser checks run separately and pass. The standard run skips those two fixture-only cases intentionally.
 
 The rich corpus is generated outside `content/` and exercises structured results, elapsed timing, independent phase durations, effect variations, media and directed steps. Original records and their content hashes are preserved. Desktop comparison/plot and mobile evidence screenshots were inspected.
 
