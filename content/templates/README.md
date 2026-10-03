@@ -14,6 +14,8 @@ Effects go in `content/effects/`. Measured outcomes go in `content/outcomes/`. O
 
 Keep `editorialStatus` as `sourced-draft` until a reviewer records the review. Link claims to reference ids. Use original wording. Do not copy Effect Index, PsychonautWiki, or Wikipedia prose.
 
+For optional study metadata, numerical results, interactions, timing semantics, effect details and directed mechanism steps, see [research enrichment](research-enrichment.md).
+
 ## Unresolved identities and preparations
 
 A mixture, tissue extract or unresolved research code may use `pubchemCid: null`. In that case, `formula`, `molecularWeight` and `smiles` must all be `Not established`. Do not assign a surrogate compound identifier or draw a structure for a mixture. The profile still needs a source reference; imported Molekul profiles use `molekul-profile`. Existing molecular identities retain their PubChem attribution.

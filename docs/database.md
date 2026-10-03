@@ -13,6 +13,7 @@ Canonical shared-host migrations and provisioning remain in `/opt/optihealth_db/
 | `202609290001_bhwiki_foundation.sql` | `bhwiki.sql` | Applied prototype; immutable checksum |
 | `202609290002_reference_model.sql` | `bhwiki-v2.sql` | Additive reference model and publication engine |
 | `202609290003_publication_attribution.sql` | `bhwiki-v3.sql` | Immutable attribution/review corrections |
+| `202610040001_research_explorers.sql` | `bhwiki-v4.sql` | Observation records/keys and explicitly directed relationship steps |
 
 The provisioning script validates SHA-256 checksums for every applied version and rejects canonical/portable differences. Changes require a **new migration**, never edits to applied files. All migration and publishing operations use the same transaction advisory lock.
 

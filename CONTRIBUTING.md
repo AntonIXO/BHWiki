@@ -6,6 +6,8 @@ Contribute through a repository pull request. The application links to the confi
 
 The source-controlled collection lives in `content/`. Each substance, concept, and relationship is one Markdown file. Copy a starting point from `content/templates/` and read `content/templates/README.md` before adding a file. `src/lib/types.ts` and `src/lib/validate-content.ts` are still the contract: the Markdown compiles into those records, and a heading or YAML fence the compiler does not recognize fails the check. A focused correction should explain the claim being changed, its source, its applicable context and the remaining uncertainty.
 
+For optional fields powering evidence panels, explorers and plots, see [research enrichment](content/templates/research-enrichment.md).
+
 For each change:
 
 1. Use original wording and a primary publication or authoritative label where available. Record DOI/PMID and stable source IDs; cite claims beside the relevant observation. Preserve negative and conflicting findings.

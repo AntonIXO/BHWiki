@@ -1,3 +1,9 @@
+import { EvidenceButton } from "@/components/evidence";
+import { EffectPreview } from "@/components/effect-preview";
+import { TimingExplorer } from "@/components/timing-explorer";
+import { MechanismExplorer } from "@/components/mechanism-explorer";
+import { StudyPlots } from "@/components/study-plots";
+import { evidenceKey, observationMagnitude, observationRows } from "@/lib/research";
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -20,7 +26,7 @@ import { Empty, EmptyDescription, EmptyHeader } from "@/components/ui/empty";
 import { Item, ItemContent, ItemDescription, ItemMedia, ItemTitle } from "@/components/ui/item";
 import { Separator } from "@/components/ui/separator";
 import { indexEntities, type EntityIndex } from "@/lib/entities";
-import { getSubstance, getCatalog, getConcepts } from "@/lib/repository";
+import { getSubstance, getCatalog, getConcepts, getKnowledgeGraph } from "@/lib/repository";
 import { conceptPath, type DoseContext, type Observation, type Substance } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
@@ -117,13 +123,13 @@ function ObservationMatrix({ observations, substance, entities, measured = false
               <CardDescription>{effect.evidence}</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col gap-4">
-              <p><Prose text={effect.description} inline /> <Source substance={substance} id={effect.sourceId} /></p>
+              <p><Prose text={effect.description} inline /> <Source substance={substance} id={effect.sourceId} /></p><div className="flex flex-wrap gap-2"><EvidenceButton evidenceKey={evidenceKey(substance.slug,measured?"outcome":"effect",effect)}/>{concept?.kind === "effect" && <EffectPreview effect={concept}/>}</div>
               <ContextList items={[
                 { term: "Population", detail: effect.population || "Not established" },
                 { term: "Exposure context", detail: effect.exposure || "Not established" },
                 ...(measured ? [
-                  { term: "Measure / instrument", detail: effect.instrument || "Not assessed in this summary" },
-                  { term: "Magnitude", detail: effect.magnitude || "Not quantified in this summary" },
+                  { term: "Measure / instrument", detail: effect.result?.instrument || effect.instrument || "Not assessed in this summary" },
+                  { term: "Magnitude", detail: observationMagnitude(effect) },
                 ] : []),
               ]} />
             </CardContent>
@@ -138,7 +144,7 @@ export default async function SubstancePage({ params }: Props) {
   const { slug } = await params;
   const substance = await getSubstance(slug);
   if (!substance) notFound();
-  const [catalog, concepts] = await Promise.all([getCatalog(), getConcepts()]);
+  const [catalog, concepts, mechanismGraph] = await Promise.all([getCatalog(), getConcepts(), getKnowledgeGraph({ focus: slug, limit: 60 })]);
   const entities = indexEntities(catalog, concepts);
   const substanceTags = entities.conceptsFor(substance.tags);
   const related = entities.relatedSubstances(substance.slug, substance.tags);
@@ -175,7 +181,7 @@ export default async function SubstancePage({ params }: Props) {
           </div>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-1.5"><BookOpen aria-hidden="true" size={16} />{substance.references.length} sources</span>
-            <span>Content date {dateLabel(substance.reviewedAt)}</span>
+            <span>Content date {dateLabel(substance.reviewedAt)}</span><Link className="underline underline-offset-4" href={`/compare?substances=${slug}`}>Compare</Link>
             <Link href={`/graph?focus=${substance.slug}`} className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline">Explore connections <GitBranch aria-hidden="true" size={16} /></Link>
             <Link href={`/substances/${slug}/history`} className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline">Revision history <History aria-hidden="true" size={16} /></Link>
           </div>
@@ -205,11 +211,12 @@ export default async function SubstancePage({ params }: Props) {
                     <CircleDot aria-hidden="true" className="mt-0.5 shrink-0 text-muted-foreground" size={17} />
                     <div className="flex min-w-0 flex-col gap-1">
                       <h4 className="font-medium">{concept ? <Link href={conceptPath(concept)} className="underline underline-offset-4">{mechanism.title}</Link> : mechanism.title}</h4>
-                      <p><Prose text={mechanism.description} inline /> <Source substance={substance} id={mechanism.sourceId} /></p>
+                      <p><Prose text={mechanism.description} inline /> <Source substance={substance} id={mechanism.sourceId} /></p><div><EvidenceButton evidenceKey={evidenceKey(slug,"mechanism",mechanism)}/></div>
                     </div>
                   </div>
                 );
               }) : <DataEmpty>Mechanisms not assessed.</DataEmpty>}
+              <MechanismExplorer slug={slug} data={mechanismGraph}/>
             </div>
           </section>
 
@@ -223,6 +230,7 @@ export default async function SubstancePage({ params }: Props) {
             <SectionHeading number="03" title="Measured outcomes" />
             <p className="text-muted-foreground">What the research measured, for whom, and under which exposure. Findings remain attached to the study’s task or clinical endpoint.</p>
             <ObservationMatrix observations={substance.outcomes} substance={substance} entities={entities} measured />
+            <details className="rounded-lg border p-4"><summary className="cursor-pointer font-medium">Study-result plots</summary><div className="pt-4"><StudyPlots rows={observationRows(substance,"outcome")}/></div></details>
           </section>
 
           <section id="exposure" className="flex scroll-mt-24 flex-col gap-4">
@@ -264,9 +272,9 @@ export default async function SubstancePage({ params }: Props) {
               </CardHeader>
               <CardContent><Source substance={substance} id={substance.halfLife.sourceId} /></CardContent>
             </Card>
-            <DurationTimeline accent={substance.accent} kinetics={substance.kinetics} citationFor={(sourceId) => <Source substance={substance} id={sourceId} />} />
+            <TimingExplorer slug={slug} kinetics={substance.kinetics} observations={substance.pkObservations} initialId={substance.halfLife.observationId} references={substance.references}/>
             <p>{substance.halfLife.context} <Source substance={substance} id={substance.halfLife.sourceId} /></p>
-            <KineticsChart observation={selectedObservation} sourceHref={`#reference-${selectedObservation?.sourceId ?? substance.halfLife.sourceId}`} />
+
             <h3 className="text-lg font-medium">Sourced elimination observations</h3>
             {substance.pkObservations.length ? (
               <div className="flex flex-col gap-4">
@@ -336,7 +344,7 @@ export default async function SubstancePage({ params }: Props) {
                 ))}
               </div>
             ) : <DataEmpty>Safety not assessed.</DataEmpty>}
-            <h3 className="text-lg font-medium">Interactions in cited sources</h3>
+            <h3 className="text-lg font-medium">Interactions in cited sources</h3><Link className="underline underline-offset-4" href={`/interactions?a=${slug}`}>Explore a pair of substances</Link>
             {substance.interactions.length ? (
               <div className="flex flex-col gap-4">
                 {substance.interactions.map(interaction => (
@@ -350,7 +358,7 @@ export default async function SubstancePage({ params }: Props) {
                       {interaction.otherSlug && <CardDescription>{interaction.name}</CardDescription>}
                     </CardHeader>
                     <CardContent>
-                      <p>{interaction.summary} <Source substance={substance} id={interaction.sourceId} /></p>
+                      <p>{interaction.summary} <Source substance={substance} id={interaction.sourceId} /></p><div className="mt-3"><EvidenceButton evidenceKey={evidenceKey(slug,"interaction",interaction)}/></div>
                     </CardContent>
                   </Card>
                 ))}
@@ -443,7 +451,7 @@ export default async function SubstancePage({ params }: Props) {
                         <span>Supporting sources {claim.sourceIds.map(id => <Source key={id} substance={substance} id={id} />)}</span>
                         {claim.conflictingSourceIds.length > 0 && <span>Conflicting sources {claim.conflictingSourceIds.map(id => <Source key={id} substance={substance} id={id} />)}</span>}
                       </div>
-                      <p className="text-sm text-muted-foreground">Evidence strength: not formally assessed.</p>
+                      <p className="text-sm text-muted-foreground">Evidence strength: not formally assessed.</p><div><EvidenceButton evidenceKey={evidenceKey(slug,"claim",claim)}/></div>
                     </CardContent>
                   </Card>
                 ))}

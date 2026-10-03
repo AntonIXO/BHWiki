@@ -38,6 +38,8 @@ const links = [
 ];
 
 const browse = [
+  { href: "/compare", label: "Compare substances" },
+  { href: "/interactions", label: "Interactions" },
   { href: "/outcomes", label: "Measured outcomes" },
   { href: "/concepts", label: "Mechanisms & concepts" },
 ];

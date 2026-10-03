@@ -1,3 +1,7 @@
+import { ObservationExplorer } from "@/components/observation-explorer";
+import { EffectDetails } from "@/components/effect-details";
+import { EvidenceButton } from "@/components/evidence";
+import { evidenceKey } from "@/lib/research";
 import "server-only";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -59,7 +63,7 @@ function ClaimCard({ claim, substance, memberRecord }: { claim: Claim; substance
           })}
         </ul>
         <div className="flex flex-wrap gap-3">{claim.sourceIds.map((id) => <SourceCite key={id} substance={substance} id={id} />)}</div>
-        <p><strong>Limitation</strong> {claim.limitation || "Not assessed"}</p>
+        <p><strong>Limitation</strong> {claim.limitation || "Not assessed"}</p><div><EvidenceButton evidenceKey={evidenceKey(substance.slug,"claim",claim)}/></div>
         {claim.conflictingSourceIds.length > 0 && (
           <div className="flex flex-wrap items-center gap-3 text-sm">
             <span>Conflicting evidence:</span>
@@ -106,7 +110,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
   const linkedCatalog = catalog.filter((substance) => substance.tags.includes(concept.id) || connectedSlugs.has(substance.slug)).sort((a, b) => a.name.localeCompare(b.name));
   const pageSize = 12;
   const totalPages = Math.max(1, Math.ceil(linkedCatalog.length / pageSize));
-  const page = Math.min(pageNumber(searchParams.page), totalPages);
+  const page = Math.min(pageNumber(searchParams.substancesPage), totalPages);
   const visibleCatalog = linkedCatalog.slice((page - 1) * pageSize, page * pageSize);
   const documents = await getSubstancesBySlugs(visibleCatalog.map((substance) => substance.slug));
   const observations = documents.flatMap((substance) => (section === "effects" ? substance.effects : section === "outcomes" ? substance.outcomes : []).filter((observation) => observation.conceptId === concept.id).map((observation) => ({ substance, observation })));
@@ -122,7 +126,12 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
   mechanisms.forEach(({ substance, mechanism }) => addSource(substance, mechanism.sourceId));
   const related = concepts.filter((item) => item.id !== concept.id && ((concept.relatedIds ?? []).includes(item.id) || (item.relatedIds ?? []).includes(concept.id)));
   const memberRecord = entities.graphMember;
-  const pageHash = section === "concepts" ? "substances" : "observations";
+  const linkedPageHref = (nextPage: number) => {
+    const query = new URLSearchParams();
+    for (const [key, value] of Object.entries(searchParams)) if (typeof value === "string" && key !== "evidence") query.set(key,value);
+    query.set("substancesPage",String(nextPage));
+    return `${conceptPath(concept)}?${query}#substances`;
+  };
 
   return (
     <main id="main" className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 py-8 sm:px-8">
@@ -155,20 +164,10 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
             <section className="flex scroll-mt-24 flex-col gap-4" id="observations">
               <div className="flex flex-wrap items-baseline justify-between gap-3">
                 <h2 className="text-2xl font-medium">{section === "effects" ? "Reported experience" : "Findings in context"}</h2>
-                <span className="text-sm text-muted-foreground">{observations.length} observations{totalPages > 1 ? " on this page" : ""}</span>
               </div>
               <p className="text-muted-foreground">{section === "effects" ? "These qualitative descriptions preserve the reported direction and setting. They do not assign a universal intensity score." : "Measured endpoints are tied to a particular task, population, and exposure. A finding cannot be generalized to a different outcome without supporting evidence."}</p>
-              {observations.length ? (
-                <div className="flex flex-col gap-4">
-                  {observations.map(({ substance, observation }, index) => <ObservationCard key={`${substance.slug}-${index}`} substance={substance} observation={observation} />)}
-                </div>
-              ) : (
-                <Empty>
-                  <EmptyHeader>
-                    <EmptyDescription>No matching observations have been assessed{totalPages > 1 ? " for the substances on this page" : " in the published collection"}.</EmptyDescription>
-                  </EmptyHeader>
-                </Empty>
-              )}
+              <ObservationExplorer conceptId={concept.id} kind={section === "effects" ? "effect" : "outcome"} searchParams={searchParams}/>
+              {section === "effects" && <EffectDetails details={concept.details}/>}
             </section>
           )}
           {mechanisms.length > 0 && (
@@ -203,7 +202,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
                     <CardTitle><h3>{edge.label}</h3></CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-col gap-3">
-                    <Prose text={edge.description} />
+                    <Prose text={edge.description} /><div><EvidenceButton evidenceKey={`relationship~${edge.id}`}/></div>
                     <ul className="flex flex-col gap-2">
                       {edge.members.map((member) => {
                         const record = memberRecord(member);
@@ -254,8 +253,8 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
               label="Linked substance pages"
               page={page}
               totalPages={totalPages}
-              previousHref={page > 1 ? `${conceptPath(concept)}?page=${page - 1}#${pageHash}` : undefined}
-              nextHref={page < totalPages ? `${conceptPath(concept)}?page=${page + 1}#${pageHash}` : undefined}
+              previousHref={page > 1 ? linkedPageHref(page - 1) : undefined}
+              nextHref={page < totalPages ? linkedPageHref(page + 1) : undefined}
             />
           </section>
           <section className="flex scroll-mt-24 flex-col gap-4" id="definition-sources">

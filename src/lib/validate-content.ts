@@ -1,3 +1,4 @@
+import { validateResearchArticle, validateResearchCorpus } from "./validate-research";
 import type { Substance, Tag, Hyperedge } from './types';
 
 type RecordValue = Record<string,unknown>;
@@ -49,6 +50,7 @@ export function validateSubstance(value:unknown):asserts value is Substance {
  for(const item of [typed.halfLife,...typed.modifiers])if(!observations.has(item.observationId))fail(p,`unknown PK observation ${item.observationId}`);
  for(const claim of typed.claims)for(const id of [...claim.sourceIds,...claim.conflictingSourceIds])if(!sources.has(id))fail(p,`unknown claim source ${id}`);
  if(new Set(typed.claims.map(c=>c.id)).size!==typed.claims.length)fail(p,'duplicate local claim ID');
+ validateResearchArticle(typed);
 }
 
 export function validateContent(bundle:{substances:Substance[];tags:Tag[];hyperedges:Hyperedge[]}):void {
@@ -60,5 +62,6 @@ export function validateContent(bundle:{substances:Substance[];tags:Tag[];hypere
  const byId=new Map(tags.map(t=>[t.id,t]));
  for(const t of tags)for(const id of t.relatedIds||[])if(!byId.has(id))fail(t.id,`unknown related concept ${id}`);
  for(const s of substances){for(const id of s.tags)if(!byId.has(id))fail(s.slug,`unknown concept ${id}`);for(const [list,kind] of [[s.effects,'effect'],[s.outcomes,'outcome']] as const)for(const o of list)if(byId.get(o.conceptId)?.kind!==kind)fail(s.slug,`${o.conceptId} must be a ${kind}`);for(const c of s.claims){for(const m of c.participants)if(!entityIds.has(m.entityId))fail(s.slug,`unknown claim participant ${m.entityId}`);if(new Set(c.participants.map(m=>m.entityId)).size!==c.participants.length)fail(s.slug,'duplicate claim participant');}for(const interaction of s.interactions)if(interaction.otherSlug!==null&&(!entityIds.has(`substance:${interaction.otherSlug}`)||interaction.otherSlug===s.slug))fail(s.slug,`unknown interaction target ${interaction.otherSlug}`);for(const id of s.tags)if(byId.get(id)?.kind==='legal'&&!s.legal.length)fail(s.slug,'legal tag needs dated article context');}
+ validateResearchCorpus(substances,tags,hyperedges);
  const seen=new Set<string>();for(const edge of hyperedges){if(seen.has(edge.id))fail(edge.id,'duplicate hyperedge');seen.add(edge.id);https(edge.sourceUrl,edge.id);for(const url of edge.sourceUrls||[])https(url,edge.id);if(new Set(edge.members).size<2||new Set(edge.members).size!==edge.members.length)fail(edge.id,'relationship needs distinct members');for(const id of edge.members){if(!entityIds.has(id))fail(edge.id,`unknown member ${id}`);text(edge.memberRoles[id],`${edge.id}.${id}.role`);}}
 }

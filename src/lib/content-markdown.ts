@@ -288,6 +288,13 @@ export function serializeContent(relativePath: string, parsed: ContentRecord): s
 }
 
 export function contentDirectory(): string {
+  // An explicit, server-owned alternate corpus supports isolated integration tests.
+  if (process.env.BHWIKI_CONTENT_DIRECTORY) {
+    if (process.env.BHWIKI_DATA_MODE !== "bundled") throw new Error("An alternate content directory requires explicit bundled mode");
+    const directory = path.resolve(process.env.BHWIKI_CONTENT_DIRECTORY);
+    if (!existsSync(path.join(directory, "substances"))) throw new Error("Invalid alternate content directory");
+    return directory;
+  }
   const candidates = [
     path.join(process.cwd(), "content"),
     path.resolve(path.dirname(fileURLToPath(import.meta.url)), "../../content"),
