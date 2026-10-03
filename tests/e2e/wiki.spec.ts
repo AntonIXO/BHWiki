@@ -20,7 +20,9 @@ test('articles preserve sourced contexts and the correct modeled analyte',async(
  await expect(page.locator('.kinetics-slider')).toHaveCount(0);
  await page.goto('/substances/caffeine');
  await expect(page.locator('.article-hero')).toContainText('Sourced draft');
- const slider=page.getByRole('slider');await expect(slider).toBeVisible();await slider.fill('6');await expect(page.locator('.kinetics-slider-heading output')).toContainText('6');
+ const slider=page.getByRole('slider');await expect(slider).toBeVisible();
+ await page.waitForFunction(()=>{const slider=document.querySelector('.kinetics-slider');return !!slider&&Object.getOwnPropertyNames(slider).some(key=>key.startsWith('__reactProps'));});
+ await slider.fill('6');await expect(page.locator('.kinetics-slider-heading output')).toContainText('6');
  await expect(page.locator('#effects')).toBeVisible();await expect(page.locator('#measured-outcomes')).toBeVisible();
  await page.locator('.article-citation').first().click();
  expect(new URL(page.url()).hash).toMatch(/^#reference-/);

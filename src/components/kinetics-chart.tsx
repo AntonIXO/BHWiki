@@ -17,6 +17,11 @@ function hours(value: number) {
   return new Intl.NumberFormat("en", { maximumSignificantDigits: 3 }).format(value);
 }
 
+/** Two decimal places keep the server and browser SVG attributes identical. */
+function px(value: number) {
+  return value.toFixed(2);
+}
+
 export function KineticsChart({ observation, sourceHref }: KineticsChartProps) {
   const model = getEliminationModel(observation);
   if (!observation || !model) {
@@ -50,9 +55,9 @@ function EliminationChart({ observation, model, sourceHref }: KineticsChartProps
   const points = Array.from({ length: 121 }, (_, index) => {
     const t = (index / 120) * endTime;
     const remaining = fractionRemaining(t, halfLife);
-    return `${left + (t / endTime) * plotWidth},${top + (1 - remaining) * plotHeight}`;
+    return `${px(left + (t / endTime) * plotWidth)},${px(top + (1 - remaining) * plotHeight)}`;
   }).join(" ");
-  const halfLifeX = left + (halfLife / endTime) * plotWidth;
+  const halfLifeX = px(left + (halfLife / endTime) * plotWidth);
 
   return (
     <Card>
@@ -117,17 +122,17 @@ function EliminationChart({ observation, model, sourceHref }: KineticsChartProps
             const y = top + ((100 - percent) / 100) * plotHeight;
             return (
               <g key={percent}>
-                <line x1={left} x2={left + plotWidth} y1={y} y2={y} stroke="var(--border)" strokeDasharray={percent === 0 ? undefined : "3 5"} />
-                <text x={left - 12} y={y + 4} textAnchor="end" className="fill-muted-foreground text-xs">{percent}</text>
+                <line x1={left} x2={left + plotWidth} y1={px(y)} y2={px(y)} stroke="var(--border)" strokeDasharray={percent === 0 ? undefined : "3 5"} />
+                <text x={left - 12} y={px(y + 4)} textAnchor="end" className="fill-muted-foreground text-xs">{percent}</text>
               </g>
             );
           })}
           <polygon points={`${left},${top + plotHeight} ${points} ${left + plotWidth},${top + plotHeight}`} fill={`url(#${id}-fill)`} />
           <polyline points={points} fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" />
-          <line x1={halfLifeX} x2={halfLifeX} y1={top + plotHeight / 2} y2={top + plotHeight} stroke="var(--muted-foreground)" strokeDasharray="4 4" />
-          <circle cx={halfLifeX} cy={top + plotHeight / 2} r="4.5" fill="currentColor" stroke="var(--background)" strokeWidth="2" />
+          <line x1={halfLifeX} x2={halfLifeX} y1={px(top + plotHeight / 2)} y2={top + plotHeight} stroke="var(--muted-foreground)" strokeDasharray="4 4" />
+          <circle cx={halfLifeX} cy={px(top + plotHeight / 2)} r="4.5" fill="currentColor" stroke="var(--background)" strokeWidth="2" />
           {[0, 1, 2, 3, 4, 5].map((index) => (
-            <text key={index} x={left + (index / 5) * plotWidth} y={top + plotHeight + 24} textAnchor="middle" className="fill-muted-foreground text-xs">
+            <text key={index} x={px(left + (index / 5) * plotWidth)} y={px(top + plotHeight + 24)} textAnchor="middle" className="fill-muted-foreground text-xs">
               {hours((index / 5) * endTime)} h
             </text>
           ))}
