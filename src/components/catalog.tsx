@@ -7,6 +7,7 @@ import type { CatalogSubstance, Tag } from "@/lib/types";
 import { searchCatalog } from "@/lib/search";
 import { cn } from "@/lib/utils";
 import { MoleculeImage } from "@/components/molecule-image";
+import { Prose } from "@/components/prose";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -236,7 +237,7 @@ export default function Catalog({
                       loading="lazy"
                     />
                   )}
-                  <p className="line-clamp-3 text-sm text-muted-foreground">{substance.summary}</p>
+                  <Prose className="line-clamp-3 text-sm text-muted-foreground" text={substance.summary} />
                   <div className="flex flex-wrap gap-1.5">
                     {conceptTags.map((tag) => (
                       <Badge key={tag!.id} variant="outline">{tag!.label}</Badge>

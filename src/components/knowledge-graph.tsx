@@ -7,6 +7,7 @@ import type { Core, StylesheetStyle } from "cytoscape";
 import { buildKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, type GraphModel, type GraphNode } from "@/lib/graph";
 import type { KnowledgeGraphData, TagKind } from "@/lib/types";
 import { cn } from "@/lib/utils";
+import { Prose } from "@/components/prose";
 import { Button } from "@/components/ui/button";
 import { ButtonGroup } from "@/components/ui/button-group";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -545,7 +546,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
             <CardTitle><h3>{selected.label}</h3></CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col gap-2 text-sm">
-            <p className="text-muted-foreground">{selected.description}</p>
+            <Prose className="text-muted-foreground" text={selected.description} />
             {selected.href && <Link href={selected.href} className="inline-flex items-center gap-1 underline underline-offset-4">{selected.kind === "substance" ? "Read substance profile" : "Read concept article"} <ArrowUpRight aria-hidden="true" /></Link>}
             {selected.kind !== "relationship" && <Link href={`/graph?focus=${encodeURIComponent(selected.id)}`} className="inline-flex items-center gap-1 underline underline-offset-4">Focus neighborhood <ArrowUpRight aria-hidden="true" /></Link>}
             {selectedSources.map((source, index) => <a key={source} href={source} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 underline underline-offset-4">View source{selectedSources.length > 1 ? ` ${index + 1}` : ""} <ArrowUpRight aria-hidden="true" /></a>)}
@@ -626,7 +627,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
                   {listedRelationships.map((edge) => (
                     <li key={edge.nodeId} className="flex flex-col gap-2 border-b border-border pb-3 text-sm">
                       <Button type="button" variant="link" className="h-auto justify-start px-0" onClick={() => { const node = model.nodes.find((item) => item.id === edge.nodeId); if (node) selectNode(node); }}>{edge.label}</Button>
-                      <p className="text-muted-foreground">{edge.description}</p>
+                      <Prose className="text-muted-foreground" text={edge.description} />
                       <ul className="flex flex-col gap-1">
                         {edge.members.map((id) => {
                           const node = model.nodes.find((item) => item.id === id)!;

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { ArrowRight, ArrowUpRight, BookOpen, GitBranch, Search } from "lucide-react";
 import { Citation } from "@/components/citation";
+import { Prose } from "@/components/prose";
 import { Breadcrumb } from "@/components/shell";
 import { SectionNav } from "@/components/section-nav";
 import { Badge } from "@/components/ui/badge";
@@ -163,7 +164,7 @@ export async function ConceptIndex({ section, searchParams }: { section: Concept
                     <CardTitle><h2 className="inline-flex items-start gap-1">{concept.label}<ArrowUpRight aria-hidden="true" size={18} /></h2></CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">{concept.description}</p>
+                    <Prose className="text-muted-foreground" text={concept.description} />
                   </CardContent>
                   <CardFooter className="text-muted-foreground">
                     <span>{count} tagged {count === 1 ? "substance" : "substances"}</span>
@@ -212,7 +213,7 @@ function ObservationCard({ observation, substance }: { observation: Observation;
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         <h3 className="text-lg font-medium">{observation.name}</h3>
-        <p>{observation.description} <SourceCite substance={substance} id={observation.sourceId} /></p>
+        <p><Prose text={observation.description} inline /> <SourceCite substance={substance} id={observation.sourceId} /></p>
         <dl className="grid gap-3 sm:grid-cols-2">
           <div className="flex flex-col gap-1"><dt className="text-sm text-muted-foreground">Evidence type</dt><dd>{observation.evidence}</dd></div>
           <div className="flex flex-col gap-1"><dt className="text-sm text-muted-foreground">Population</dt><dd>{observation.population || "Not assessed"}</dd></div>
@@ -312,7 +313,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
           <Badge variant="secondary">Definition: {concept.sourceUrls?.length ? "sourced draft" : "sources not assessed"}</Badge>
         </div>
         <h1 className="text-4xl font-medium">{concept.label}</h1>
-        <p className="max-w-3xl text-lg text-muted-foreground">{concept.description}</p>
+        <Prose className="max-w-3xl text-lg text-muted-foreground" text={concept.description} />
         {Boolean(concept.aliases?.length) && <p>Also called {concept.aliases!.join(", ")}</p>}
         <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
           <a href="#definition-sources" className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline"><BookOpen aria-hidden="true" size={15} />{concept.sourceUrls?.length ?? 0} definition sources</a>
@@ -360,7 +361,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
                     <CardTitle><h3>{mechanism.title}</h3></CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-col gap-3">
-                    <p>{mechanism.description} <SourceCite substance={substance} id={mechanism.sourceId} /></p>
+                    <p><Prose text={mechanism.description} inline /> <SourceCite substance={substance} id={mechanism.sourceId} /></p>
                     <Link className="inline-flex items-center gap-1 text-sm underline underline-offset-4" href={`/substances/${substance.slug}`}>Read the substance article <ArrowUpRight aria-hidden="true" size={14} /></Link>
                   </CardContent>
                 </Card>
@@ -382,7 +383,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
                     <CardTitle><h3>{edge.label}</h3></CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-col gap-3">
-                    <p>{edge.description}</p>
+                    <Prose text={edge.description} />
                     <ul className="flex flex-col gap-2">
                       {edge.members.map(member => {
                         const record = memberRecord(member);

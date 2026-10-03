@@ -7,7 +7,7 @@ export function SectionNav({ label, items }: { label: string; items: { id: strin
       <Tabs>
         <TabsList variant="line" className="h-auto w-full flex-wrap justify-start group-data-horizontal/tabs:h-auto">
           {items.map((item) => (
-            <TabsTrigger key={item.id} value={item.id} nativeButton={false} render={<a href={`#${item.id}`} />}>
+            <TabsTrigger key={item.id} value={item.id} nativeButton={false} className="text-foreground/75" render={<a href={`#${item.id}`} />}>
               {item.name}
             </TabsTrigger>
           ))}

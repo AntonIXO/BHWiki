@@ -8,10 +8,55 @@ import { searchCatalog } from '../src/lib/search';
 import { existsSync } from 'node:fs';
 const bundle={substances,tags,hyperedges};
 
-test('the ten-article release validates all observations, primary identities and sources',()=>{
- validateContent(bundle);assert.equal(substances.length,10);
+test('the library validates identities, sources, and the added records',()=>{
+ validateContent(bundle);assert.ok(substances.length>=22);
  for(const s of substances)assert.ok(existsSync(`public/molecules/${s.slug}.png`),`${s.slug} structure`);
  assert.ok(buildKnowledgeGraph(bundle).nodes.length>substances.length);
+});
+test('class tags cite the inspected papers',()=>{
+ const portalTags=['dissociative','deliriant','cannabinoid','opioid','benzodiazepine','depressant','lysergamide','tryptamine','phenethylamine','arylcyclohexylamine'].map(id=>{
+  const tag=tags.find(item=>item.id===id);
+  assert.ok(tag,id);
+  return tag;
+ });
+ const blob=portalTags.flatMap(tag=>tag.sourceUrls??[]).join(' ');
+ assert.doesNotMatch(blob,/27982573|26516546|24781744|28861491/);
+ assert.match(portalTags.find(tag=>tag.id==='opioid')!.sourceUrls!.join(' '),/26516461/);
+ assert.match(portalTags.find(tag=>tag.id==='benzodiazepine')!.description,/central nervous system/i);
+ assert.doesNotMatch(portalTags.find(tag=>tag.id==='benzodiazepine')!.description,/GABA-A/);
+ const live=tags.flatMap(tag=>tag.sourceUrls??[]).join(' ');
+ assert.doesNotMatch(live,/27982573|26516546|24781744|28861491/);
+ assert.match(tags.find(tag=>tag.id==='opioid')!.sourceUrls!.join(' '),/26516461/);
+});
+test('identity stubs stay empty and experience links stay on one PsychonautWiki page',()=>{
+ const stubs=substances.filter(substance=>substance.subtitle==='Identity record.');
+ assert.ok(stubs.length>0);
+ for(const substance of stubs){
+  assert.equal(substance.effects.length,0);
+  assert.equal(substance.claims.length,0);
+  assert.equal(substance.interactions.length,0);
+  assert.equal(substance.doses.length,0);
+  assert.ok(substance.experienceLinks.length<=1);
+  for(const link of substance.experienceLinks){
+   const url=new URL(link.url);
+   assert.equal(link.publisher,'PsychonautWiki');
+   assert.equal(url.hostname,'psychonautwiki.org');
+   assert.equal(url.search,'');
+   assert.match(url.pathname,/^\/wiki\/[^/]+$/);
+  }
+ }
+});
+test('a deep-article interaction cites a reference on that article',()=>{
+ const ketamine=substances.find(substance=>substance.slug==='ketamine')!;
+ assert.ok(ketamine.interactions.length>=1);
+ for(const interaction of ketamine.interactions)assert.ok(ketamine.references.some(reference=>reference.id===interaction.sourceId));
+ const lsd=substances.find(substance=>substance.slug==='lsd')!;
+ assert.equal(lsd.experienceLinks.length,1);
+ const url=new URL(lsd.experienceLinks[0].url);
+ assert.equal(url.hostname,'psychonautwiki.org');
+ assert.equal(url.pathname,'/wiki/LSD');
+ const delta=substances.find(substance=>substance.slug==='delta-9-thc')!;
+ assert.equal(delta.interactions[0].otherSlug,'ethanol');
 });
 test('a dangling source is rejected before publication',()=>{const s=structuredClone(substances[0]);s.doses[0].sourceId='missing';assert.throws(()=>validateSubstance(s),/unknown source/);});
 test('negative and unknown half-lives cannot become numeric models',()=>{const s=structuredClone(substances[0]);s.pkObservations[0].low=-2;assert.throws(()=>validateSubstance(s),/nonnegative/);s.pkObservations[0].low=null;s.pkObservations[0].statistic='not-established';assert.throws(()=>validateSubstance(s),/cannot be modeled/);});

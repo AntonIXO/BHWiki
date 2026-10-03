@@ -1,5 +1,7 @@
 # Release verification — 2026-09-29
 
+The bundled collection checked on 2026-10-03 contains **191 articles, 59 concepts, and 27 relationships**. Content validation, typecheck, and the unit tests passed. Playwright against the bundled dev server passed on desktop and mobile, including the class index, an identity stub, a sourced interaction, and the off-site experience link. That check does not repeat the database or deployment checks in the table below. The table remains the record of the ten-article launch.
+
 Verified the independent ten-article release against the existing database and the standalone deployment artifact. The source-controlled content was initially published from commit `d36510e`; later implementation corrections preserve those content snapshots. Canonical infrastructure is committed in `/opt/optihealth_db` at `e6af1b7`.
 
 ## Results

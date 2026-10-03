@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, BookOpen, FlaskConical, GitBranch, Search } from "lucide-react";
 import Catalog from "@/components/catalog";
+import { Prose } from "@/components/prose";
 import { MoleculeImage } from "@/components/molecule-image";
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Field, FieldLabel } from "@/components/ui/field";
 import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput } from "@/components/ui/input-group";
@@ -12,6 +14,7 @@ import { conceptPath } from "@/lib/types";
 export const dynamic = "force-dynamic";
 
 const featuredConcepts = ["acetylcholine", "histamine", "cyp1a2", "tobacco-smoke"];
+const classIndex = ["psychedelic", "lysergamide", "tryptamine", "phenethylamine", "dissociative", "arylcyclohexylamine", "deliriant", "cannabinoid", "stimulant", "depressant", "opioid", "benzodiazepine"];
 
 export default async function Home({ searchParams }: { searchParams: Promise<{ tag?: string; q?: string }> }) {
   const { tag, q } = await searchParams;
@@ -58,6 +61,22 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ t
           </Card>
         </Link>
       </section>
+
+      <nav aria-label="Browse by class" className="flex flex-col gap-3">
+        <h2 className="text-sm font-medium text-muted-foreground">Browse by class</h2>
+        <div className="flex flex-wrap gap-2">
+          {classIndex.map((id) => {
+            const item = tags.find((entry) => entry.id === id);
+            if (!item) return null;
+            const active = tag === id;
+            return (
+              <Link key={id} href={`/?tag=${id}#library`} aria-current={active ? "page" : undefined}>
+                <Badge variant={active ? "default" : "outline"}>{item.label}</Badge>
+              </Link>
+            );
+          })}
+        </div>
+      </nav>
 
       <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
         <Catalog
@@ -110,7 +129,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ t
                   <Item key={tag.id} variant="muted" size="sm" role="listitem" render={<Link href={conceptPath(tag)} />}>
                     <ItemContent>
                       <ItemTitle>{tag.label}</ItemTitle>
-                      <ItemDescription>{tag.description}</ItemDescription>
+                      <ItemDescription><Prose text={tag.description} inline /></ItemDescription>
                     </ItemContent>
                     <ItemActions>
                       <ArrowUpRight aria-hidden="true" />

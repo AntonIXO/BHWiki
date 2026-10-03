@@ -12,7 +12,7 @@ Provision `/etc/bhwiki/runtime.env` using `deploy/runtime.env.example` as the sh
 
 ## Container
 
-The multi-stage Dockerfile installs the pinned Bun lockfile and produces Next.js standalone output. The runtime includes public assets and `.next/static`, which standalone tracing does not copy automatically. It runs as the image's unprivileged `node` user. Docker build context excludes all local environment files.
+The multi-stage Dockerfile installs the pinned Bun lockfile and produces Next.js standalone output. The runtime includes public assets, the `content/` Markdown collection, and `.next/static`, which standalone tracing does not copy automatically. It runs as the image's unprivileged `node` user. Docker build context excludes all local environment files.
 
 ```sh
 docker build --tag bhwiki:local .
@@ -37,7 +37,7 @@ Use Node.js 22 at `/usr/bin/node`. Build outside any directory currently served 
 BHWIKI_DATA_MODE=bundled bun run build
 ```
 
-Prepare a new release directory such as `/opt/bhwiki/releases/<source-commit>`. Copy `.next/standalone/` contents into it, then copy `public/` and `.next/static/` into the same relative locations. Create its empty `.next/cache/` mount point. Keep release files root-owned and world-readable/traversable, with no private environment file in the release. Link `/opt/bhwiki/current` to the prepared directory.
+Prepare a new release directory such as `/opt/bhwiki/releases/<source-commit>`. Copy `.next/standalone/` contents into it, then copy `public/`, `content/`, and `.next/static/` into the same relative locations. Create its empty `.next/cache/` mount point. Keep release files root-owned and world-readable/traversable, with no private environment file in the release. Link `/opt/bhwiki/current` to the prepared directory.
 
 Install `deploy/bhwiki.service` as `/etc/systemd/system/bhwiki.service`. It runs with a dynamic unprivileged user, reads its environment through systemd, and mounts `/var/cache/bhwiki` into the release cache directory. `ProtectSystem=strict` keeps the source tree read-only. Validate the unit before enabling it:
 

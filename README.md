@@ -32,7 +32,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for content changes and review requiremen
 ## Architecture
 
 - Next.js 16 App Router, React 19, strict TypeScript and Bun; server-rendered public articles with focused client interactions.
-- One content model for articles, concept pages, publications and role-bearing hyperedges. Cytoscape handles layout and interaction; an adjacent list provides accessible navigation.
+- One content model for articles, concept pages, publications and role-bearing hyperedges. The editable source is a Markdown file per record under `content/`; pages, search, the graph, and publication read the compiled records. Cytoscape handles layout and interaction; an adjacent list provides accessible navigation.
 - Explicit `bundled` and `database` data modes. A configured database failure returns an error instead of switching to bundled records.
 - Existing Supabase PostgreSQL 18 infrastructure with a separate `bhwiki` schema. Every BHWiki application table explicitly uses **OrioleDB**; migrations fail when the engine is unavailable.
 - Server-side SQL through a dedicated read-only role and a small connection pool. No browser database credentials, public editing API, authentication dependency or shared PostgREST configuration change.

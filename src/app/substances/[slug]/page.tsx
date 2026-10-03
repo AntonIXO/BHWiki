@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowDown, ArrowRight, ArrowUp, ArrowUpRight, BookOpen, CircleDot, GitBranch, History, Info, MoveHorizontal } from "lucide-react";
 import { Citation } from "@/components/citation";
+import { Prose } from "@/components/prose";
 import { DurationTimeline } from "@/components/duration-timeline";
 import { MoleculeImage } from "@/components/molecule-image";
 import { SectionNav } from "@/components/section-nav";
@@ -118,7 +119,7 @@ function ObservationMatrix({ observations, substance, concepts, measured = false
               <CardDescription>{effect.evidence}</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col gap-4">
-              <p>{effect.description} <Source substance={substance} id={effect.sourceId} /></p>
+              <p><Prose text={effect.description} inline /> <Source substance={substance} id={effect.sourceId} /></p>
               <ContextList items={[
                 { term: "Population", detail: effect.population || "Not established" },
                 { term: "Exposure context", detail: effect.exposure || "Not established" },
@@ -156,7 +157,7 @@ export default async function SubstancePage({ params }: Props) {
             <Badge variant="secondary">{reviewed ? "Editorially reviewed" : "Sourced draft"}</Badge>
           </div>
           <h1 className="text-4xl font-medium">{substance.name}<span className="mt-2 block text-lg font-normal text-muted-foreground">{substance.subtitle}</span></h1>
-          <p className="max-w-3xl text-lg text-muted-foreground">{substance.summary}</p>
+          <Prose className="max-w-3xl text-lg text-muted-foreground" text={substance.summary} />
           <div className="flex flex-wrap gap-2">
             {substanceTags.map(tag => (
               <HoverCard key={tag.id}>
@@ -167,7 +168,7 @@ export default async function SubstancePage({ params }: Props) {
                   <div className="flex flex-col gap-1.5">
                     <Badge variant="secondary">{tag.kind.replaceAll("-", " ")}</Badge>
                     <h4 className="font-medium">{tag.label}</h4>
-                    <p>{tag.description}</p>
+                    <Prose text={tag.description} />
                   </div>
                 </HoverCardContent>
               </HoverCard>
@@ -187,12 +188,12 @@ export default async function SubstancePage({ params }: Props) {
         <div className="flex min-w-0 flex-col gap-12">
           <section id="overview" className="flex scroll-mt-24 flex-col gap-4">
             <SectionHeading number="01" title="Overview" />
-            <p>{substance.description}</p>
+            <Prose text={substance.description} />
             <Alert>
               <BookOpen />
               <AlertTitle>{reviewed ? "Editorially reviewed article" : "Sourced draft · editorial review pending"}</AlertTitle>
               <AlertDescription>
-                <p>{substance.evidenceNote}</p>
+                <Prose text={substance.evidenceNote} />
                 <p>Assessment belongs to each claim and outcome. An article’s editorial status is not a grade of a substance’s safety or efficacy.</p>
               </AlertDescription>
             </Alert>
@@ -205,7 +206,7 @@ export default async function SubstancePage({ params }: Props) {
                     <CircleDot aria-hidden="true" className="mt-0.5 shrink-0 text-muted-foreground" size={17} />
                     <div className="flex min-w-0 flex-col gap-1">
                       <h4 className="font-medium">{concept ? <Link href={conceptPath(concept)} className="underline underline-offset-4">{mechanism.title}</Link> : mechanism.title}</h4>
-                      <p>{mechanism.description} <Source substance={substance} id={mechanism.sourceId} /></p>
+                      <p><Prose text={mechanism.description} inline /> <Source substance={substance} id={mechanism.sourceId} /></p>
                     </div>
                   </div>
                 );
@@ -330,12 +331,32 @@ export default async function SubstancePage({ params }: Props) {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p>{caution.description} <Source substance={substance} id={caution.sourceId} /></p>
+                      <p><Prose text={caution.description} inline /> <Source substance={substance} id={caution.sourceId} /></p>
                     </CardContent>
                   </Card>
                 ))}
               </div>
             ) : <DataEmpty>Safety not assessed.</DataEmpty>}
+            <h3 className="text-lg font-medium">Interactions in cited sources</h3>
+            {substance.interactions.length ? (
+              <div className="flex flex-col gap-4">
+                {substance.interactions.map(interaction => (
+                  <Card key={interaction.id}>
+                    <CardHeader>
+                      <CardTitle>
+                        <h3>{interaction.otherSlug
+                          ? <EntityLink id={`substance:${interaction.otherSlug}`} concepts={concepts} catalog={allSubstances} />
+                          : interaction.name}</h3>
+                      </CardTitle>
+                      {interaction.otherSlug && <CardDescription>{interaction.name}</CardDescription>}
+                    </CardHeader>
+                    <CardContent>
+                      <p>{interaction.summary} <Source substance={substance} id={interaction.sourceId} /></p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            ) : <DataEmpty>Not assessed. No sourced interaction has been curated.</DataEmpty>}
           </section>
 
           <section id="evidence" className="flex scroll-mt-24 flex-col gap-4">
@@ -379,6 +400,22 @@ export default async function SubstancePage({ params }: Props) {
                 </div>
               </CardContent>
             </Card>
+            {substance.experienceLinks.length > 0 && (
+              <div className="flex flex-col gap-3">
+                <h3 className="text-lg font-medium">Reports elsewhere</h3>
+                <p className="text-muted-foreground">This link leaves BHWiki for an outside experience index. It is not a finding, a dose, or a source for the claims above. The report text is not stored here.</p>
+                <ul className="flex flex-col gap-2">
+                  {substance.experienceLinks.map(link => (
+                    <li key={link.url}>
+                      <a href={link.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 underline underline-offset-4">
+                        {link.title} <ArrowUpRight aria-hidden="true" size={14} />
+                      </a>
+                      <span className="text-sm text-muted-foreground"> · {link.publisher}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </section>
 
           <section id="connections" className="flex scroll-mt-24 flex-col gap-4">

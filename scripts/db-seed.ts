@@ -22,7 +22,7 @@ const json = (value: unknown) => `${q(JSON.stringify(value))}::jsonb`;
 let sourceCommit: string | null = process.env.BHWIKI_SOURCE_COMMIT ?? null;
 if (!sourceCommit) {
   try {
-    const dirty = execFileSync("git", ["status", "--porcelain", "--", "src/lib/content*", "src/lib/types.ts", "content/editorial.json"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
+    const dirty = execFileSync("git", ["status", "--porcelain", "--", "src/lib/content.ts", "src/lib/content-markdown.ts", "src/lib/types.ts", "content"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
     if (!dirty) sourceCommit = execFileSync("git", ["rev-parse", "HEAD"], { encoding: "utf8", stdio: ["ignore", "pipe", "ignore"] }).trim();
   } catch { /* No repository or commit: do not invent source provenance. */ }
 }

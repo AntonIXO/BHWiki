@@ -1,6 +1,8 @@
 # Content provenance and editorial conventions
 
-Curated on 2026-09-29. The launch collection contains ten original articles covering supplements, medications and psychoactive substances. Every article is a **sourced draft**; none has passed independent editorial review. `reviewedAt` records this source-curation date, not approval by a clinician or review board.
+Curated on 2026-09-29, with a catalog fill on 2026-10-03. The launch collection contains ten original articles covering supplements, medications and psychoactive substances. The later fill adds twelve sourced articles and 169 identity stubs. Every article is a **sourced draft**; none has passed independent editorial review. `reviewedAt` records the source-curation date, not approval by a clinician or review board.
+
+The editable source is one Markdown file per substance, concept, and relationship under `content/`. Those files compile into the same article, concept, and relationship records the pages and the publisher use. `content/editorial.json` remains the separate review attestation and is empty for this collection.
 
 ## How evidence is represented
 
@@ -57,6 +59,33 @@ Download endpoint: `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/<CID>
 Each concept has an original definition, type, aliases, source URLs and optional related concepts. Receptors are targets; acetylcholine and histamine are endogenous transmitters. `hystamine` is a search alias for histamine. Attention, sleep and exercise performance are measured-outcome concepts, while alertness, craving and perceptual alteration describe subjective experiences.
 
 Hyperedges persist all participating entities and their roles. IDs use `substance:<slug>` and `tag:<id>`. A contextual relationship remains complete when filtering: for example, the caffeine–CYP1A2–tobacco-smoke relation must retain the smoke exposure member. Co-study does not mean synergy or a recommendation to combine substances, and an outcome relationship can describe an adverse result.
+
+## Catalog fill — 2026-10-03
+
+The bundled catalog now has 191 sourced drafts: the original ten articles, twelve articles written from inspected labels and papers, and 169 identity-only stubs. A stub records a PubChem formula, molecular weight, CID, connectivity SMILES, and a structure image. Its effects, doses, interactions, pharmacokinetics, and legal status stay unassessed.
+
+[Molekul](https://molekul.io/) and PsychonautWiki supplied names to look up. Their prose was not copied. Molekul is a peptide and actoprotector atlas without a reuse license used here. No vendor, donation, wearable, diary, extraction, cultivation, conversion, or trip-report text was imported. An experience link, when present, is one PsychonautWiki substance URL. The report itself is not hosted.
+
+These names did not resolve to a single PubChem compound and were skipped: delta-10-THC, THCB, THCH, THCP-O-acetate, O-PCE, and N-(2C)-fentanyl. Peptides, organisms, brews, and preparation pages were not added.
+
+| Article | Source records | Coverage |
+| --- | --- | --- |
+| LSD | [Dolder 2017](https://pubmed.ncbi.nlm.nih.gov/28197931/), [Holze 2021](https://pubmed.ncbi.nlm.nih.gov/33059356/), [Nichols 2016](https://pubmed.ncbi.nlm.nih.gov/26841800/), [PubChem 5761](https://pubchem.ncbi.nlm.nih.gov/compound/5761) | Plasma half-life after 100 and 200 µg, dose-effect description, and a class 5-HT2A statement. Legal status was not retrieved. |
+| MDMA | [Mitchell 2021](https://pubmed.ncbi.nlm.nih.gov/33972795/), [PubChem 1615](https://pubchem.ncbi.nlm.nih.gov/compound/1615) | CAPS-5 result in one supervised severe-PTSD trial. The inspected abstract states neither the milligram dose nor a half-life. |
+| Ketamine | [Eugia injection label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f8b01c77-620d-4734-a771-b8524b65bcca), [Pelletier 2022](https://pubmed.ncbi.nlm.nih.gov/36555217/), [PubChem 3821](https://pubchem.ncbi.nlm.nih.gov/compound/3821) | Induction instructions, redistribution rather than elimination, and the CNS-depressant warning. |
+| Delta-9-THC | [Dronabinol capsule label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd8c5d57-0173-4f62-8ff0-d8147986a976), [PubChem 16078](https://pubchem.ncbi.nlm.nih.gov/compound/16078) | Labeled capsule kinetics. The terminal half-life is a reported range and is not modeled. Flower doses are out of scope. |
+| Ethanol | [Holford 1987](https://pubmed.ncbi.nlm.nih.gov/3319346/), [PubChem 702](https://pubchem.ncbi.nlm.nih.gov/compound/702) | Michaelis–Menten parameters. No first-order half-life is assigned. |
+| Mescaline | [Mueller 2025](https://pubmed.ncbi.nlm.nih.gov/40658345/), [PubChem 4076](https://pubchem.ncbi.nlm.nih.gov/compound/4076) | Dose-proportional exposure and a 3.5-hour half-life across the studied doses. |
+| DMT | [van der Heijden 2026](https://pubmed.ncbi.nlm.nih.gov/42671902/), [PubChem 6089](https://pubchem.ncbi.nlm.nih.gov/compound/6089) | Intravenous infusion concentrations and a smoking difference described as probable. Industry affiliation is disclosed by the paper. |
+| Dextromethorphan | [Polistirex label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=7a6b68eb-8fe0-447d-aed7-28432c45b58c), [PubChem 5360696](https://pubchem.ncbi.nlm.nih.gov/compound/5360696) | MAOI warning for that extended-release suspension. No half-life was extracted. |
+| Salvinorin A | [MacLean 2013](https://pubmed.ncbi.nlm.nih.gov/23135605/), [Johnson 2011](https://pubmed.ncbi.nlm.nih.gov/21131142/), [PubChem 128563](https://pubchem.ncbi.nlm.nih.gov/compound/128563) | Inhaled timing and kappa-opioid agonism for the pure compound, distinct from the plant. |
+| Mitragynine | [Huestis 2026](https://pubmed.ncbi.nlm.nih.gov/42266029/), [FDA kratom page](https://www.fda.gov/news-events/public-health-focus/fda-and-kratom), [PubChem 3034396](https://pubchem.ncbi.nlm.nih.gov/compound/3034396) | Extract pharmacokinetics and the FDA product warning. The article is the alkaloid, not the leaf. |
+| Alprazolam | [Actavis tablet label](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a23063c0-099a-4256-b95f-3a857bbf704b), [PubChem 2118](https://pubchem.ncbi.nlm.nih.gov/compound/2118) | Healthy-adult mean half-life, labeled starting doses, and the boxed opioid warning. |
+| Nitrous oxide | [Miller 2023](https://pubmed.ncbi.nlm.nih.gov/32119427/), [PubChem 948](https://pubchem.ncbi.nlm.nih.gov/compound/948) | Named in a multi-gas anesthetic review. No MAC, dose, or half-life was extracted. |
+
+Class tags are a browse index. Their descriptions do not claim that every member shares a mechanism. Opioid cites Pathan and Williams, PMID 26516461. Benzodiazepine cites Griffin 2013, PMID 23789008, and does not state a GABA-A mechanism. Dissociative and arylcyclohexylamine cite Pelletier 2022, PMID 36555217. Cannabinoid cites the dronabinol label. Deliriant cites the diphenhydramine label as one anticholinergic example. PMIDs 27982573, 26516546, 24781744, and 28861491 are not concept sources.
+
+New structure files use `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/<CID>/PNG?image_size=600x400`. `scripts/generate-portal.ts` resolves a stub identity and writes a missing Markdown file. It leaves an existing file unchanged. The Markdown under `content/` is what the pages load.
 
 ## Original text and reuse
 

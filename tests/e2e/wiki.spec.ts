@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('library search, aliases, typed filters and empty state',async({page})=>{
- await page.goto('/');await expect(page.locator('.substance-card')).toHaveCount(10);
+ await page.goto('/');await expect(page.locator('.substance-card').first()).toBeVisible();expect(await page.locator('.substance-card').count()).toBeGreaterThanOrEqual(10);
  await expect(page.locator('body')).not.toContainText(/OptiHealth|vendor|established evidence/i);
  const search=page.getByRole('textbox',{name:'Search the substance library'});
  await search.fill('hystamine');await expect(page.locator('.substance-card')).toContainText(['Diphenhydramine']);
@@ -58,6 +58,30 @@ test('read APIs are compact and validate parameters',async({request})=>{
  expect((await request.get('/api/graph?limit=-1')).status()).toBe(400);
 });
 
+test('class index, a stub, and a sourced interaction hold on desktop and a phone width',async({page})=>{
+ await page.setViewportSize({width:1280,height:800});
+ await page.goto('/');
+ await page.getByRole('link',{name:'Opioid',exact:true}).click();
+ await expect(page.locator('.substance-card').first()).toBeVisible();
+ await expect(page.locator('.substance-card').filter({hasText:'Caffeine'})).toHaveCount(0);
+ await page.goto('/substances/ketamine');
+ await expect(page.locator('#safety')).toContainText(/opioid analgesics/i);
+ await page.locator('#safety .article-citation').first().click();
+ expect(new URL(page.url()).hash).toMatch(/^#reference-/);
+ await page.goto('/substances/lsd');
+ await expect(page.getByRole('link',{name:'LSD on PsychonautWiki'})).toHaveAttribute('href','https://psychonautwiki.org/wiki/LSD');
+ await expect(page.locator('#main')).not.toContainText(/Time reversal|trip report/i);
+ await page.setViewportSize({width:390,height:844});
+ await page.goto('/');
+ await page.getByRole('link',{name:'Opioid',exact:true}).click();
+ await expect(page.locator('.substance-card').first()).toBeVisible();
+ await expect(page.locator('.substance-card').filter({hasText:'Caffeine'})).toHaveCount(0);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
+ await page.goto('/substances/2c-b');
+ await expect(page.locator('#effects')).toContainText('Not assessed');
+ await expect(page.locator('#safety')).toContainText('Not assessed');
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
+});
 test('reading surfaces meet automated accessibility checks',async({page})=>{
  const {default:AxeBuilder}=await import('@axe-core/playwright');
  for(const path of ['/','/substances/caffeine','/effects/alertness','/graph?focus=caffeine']){

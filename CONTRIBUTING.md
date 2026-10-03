@@ -4,7 +4,7 @@ Contribute through a repository pull request. The application links to the confi
 
 ## Content changes
 
-The source-controlled collection lives in `src/lib/content.ts`, with its contract in `src/lib/types.ts`. Follow the actual types and validation rather than inferring records from prose. A focused correction should explain the claim being changed, its source, its applicable context and the remaining uncertainty.
+The source-controlled collection lives in `content/`. Each substance, concept, and relationship is one Markdown file. Copy a starting point from `content/templates/` and read `content/templates/README.md` before adding a file. `src/lib/types.ts` and `src/lib/validate-content.ts` are still the contract: the Markdown compiles into those records, and a heading or YAML fence the compiler does not recognize fails the check. A focused correction should explain the claim being changed, its source, its applicable context and the remaining uncertainty.
 
 For each change:
 
