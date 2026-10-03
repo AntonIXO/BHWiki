@@ -1,5 +1,17 @@
 import { test, expect } from '@playwright/test';
 
+test('imported preparation has a source trail without a fabricated molecule', async ({ page }) => {
+ await page.goto('/substances/cerebrolysin');
+ await expect(page.getByRole('heading', { level: 1, name: /^Cerebrolysin/ })).toBeVisible();
+ await expect(page.getByText('Structure not established', { exact: true }).first()).toBeVisible();
+ await expect(page.locator('a[href*="pubchem.ncbi.nlm.nih.gov/compound/"]')).toHaveCount(0);
+ await expect(page.locator('img[src="/molecules/cerebrolysin.png"]')).toHaveCount(0);
+ await expect(page.locator('a[href="https://molekul.io/compounds/cerebrolysin"]')).toBeVisible();
+ await expect(page.locator('a[href="https://pubmed.ncbi.nlm.nih.gov/37818733/"]')).toBeVisible();
+ const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+ expect(overflow).toBe(false);
+});
+
 test('library search, aliases, typed filters and empty state',async({page})=>{
  await page.goto('/');await expect(page.locator('.substance-card').first()).toBeVisible();expect(await page.locator('.substance-card').count()).toBeGreaterThanOrEqual(10);
  await expect(page.locator('body')).not.toContainText(/OptiHealth|vendor|established evidence/i);

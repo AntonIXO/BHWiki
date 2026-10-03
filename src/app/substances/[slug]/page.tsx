@@ -180,7 +180,7 @@ export default async function SubstancePage({ params }: Props) {
             <Link href={`/substances/${slug}/history`} className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline">Revision history <History aria-hidden="true" size={16} /></Link>
           </div>
         </div>
-        <MoleculeImage src={`/molecules/${substance.slug}.png`} alt={`Two-dimensional molecular structure of ${substance.name}`} wellClassName="h-52 w-full" width={270} height={230} />
+        <MoleculeImage src={substance.pubchemCid === null ? undefined : `/molecules/${substance.slug}.png`} alt={`Two-dimensional molecular structure of ${substance.name}`} wellClassName="h-52 w-full" width={270} height={230} />
       </header>
       <SectionNav label="On this page" items={toc} />
       <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
@@ -518,8 +518,8 @@ export default async function SubstancePage({ params }: Props) {
               <CardDescription>Molecular structure</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col gap-4">
-              <MoleculeImage src={`/molecules/${substance.slug}.png`} alt="" wellClassName="mx-auto h-48 w-full max-w-64" width={270} height={230} />
-              <a href={`https://pubchem.ncbi.nlm.nih.gov/compound/${substance.pubchemCid}`} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm underline underline-offset-4">PubChem CID {substance.pubchemCid}<ArrowUpRight aria-hidden="true" size={14} /></a>
+              <MoleculeImage src={substance.pubchemCid === null ? undefined : `/molecules/${substance.slug}.png`} alt="" wellClassName="mx-auto h-48 w-full max-w-64" width={270} height={230} />
+              {substance.pubchemCid !== null && <a href={`https://pubchem.ncbi.nlm.nih.gov/compound/${substance.pubchemCid}`} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm underline underline-offset-4">PubChem CID {substance.pubchemCid}<ArrowUpRight aria-hidden="true" size={14} /></a>}
               <Separator />
               <p className="text-xs font-medium tracking-wide text-muted-foreground uppercase">Identity</p>
               <ContextList items={[
@@ -528,7 +528,7 @@ export default async function SubstancePage({ params }: Props) {
                 { term: "Classification", detail: substance.category },
                 { term: "Also known as", detail: substance.aliases.length ? substance.aliases.join(", ") : "No aliases curated" },
               ]} />
-              <p className="text-sm">Identity source <Source substance={substance} id="pubchem" /></p>
+              <p className="text-sm">{substance.pubchemCid === null ? "Profile source " : "Identity source "}<Source substance={substance} id={substance.pubchemCid === null ? "molekul-profile" : "pubchem"} /></p>
               <Popover>
                 <PopoverTrigger render={<Button variant="outline" size="sm" className="w-fit" />}>
                   SMILES identifier

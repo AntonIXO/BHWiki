@@ -38,7 +38,7 @@ export type Interaction = { id: string; name: string; otherSlug: string | null; 
 export type ExperienceLink = { title: string; url: string; publisher: "PsychonautWiki" };
 export type Substance = {
   slug: string; name: string; subtitle: string; summary: string; description: string;
-  aliases: string[]; formula: string; molecularWeight: string; pubchemCid: number; smiles: string;
+  aliases: string[]; formula: string; molecularWeight: string; pubchemCid: number | null; smiles: string;
   category: string; tags: string[]; accent: string;
   evidenceNote: string; reviewedAt: string; editorialStatus: EditorialStatus;
   halfLife: { label: string; low: number | null; high: number | null; context: string; sourceId: string; observationId: string };

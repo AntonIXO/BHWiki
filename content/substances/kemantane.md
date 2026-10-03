@@ -1,16 +1,18 @@
 ---
 slug: kemantane
 name: Kemantane
-subtitle: Identity record.
-aliases: []
+subtitle: Source-linked research profile.
+aliases:
+  - Кемантан
 formula: C10H14O2
 molecularWeight: 166.22 g/mol
 pubchemCid: 64184
 smiles: C1C2CC3CC(C2)(CC1C3=O)O
-category: Actoprotector
-tags: []
+category: Experimental compound
+tags:
+  - adamantane-research
 accent: "#a9b993"
-reviewedAt: 2026-10-03
+reviewedAt: 2026-10-04
 editorialStatus: sourced-draft
 halfLife:
   label: Not established here
@@ -62,15 +64,23 @@ x-order: 209
 
 ## Summary
 
-Kemantane is recorded here as C10H14O2, PubChem CID 64184. It is filed as Actoprotector. Effects, doses, pharmacokinetics, interactions, and legal status have not been assessed for this draft.
+Kemantane — Adamantane preparation used as a comparator in immune-pharmacology research. This is a secondary-source identity lead; clinical effects and exposure protocols remain unassessed.
 
 ## Description
 
 Kemantane is an identity record for PubChem CID 64184 (C10H14O2). The structure and molecular weight come from that compound record. Salts, stereoisomers, preparations, and commercial products can differ. It is filed as Actoprotector. Effects, doses, pharmacokinetics, interactions, and legal status have not been assessed for this draft.
 
+Kemantane appears in Molekul's research atlas. The original profile groups it as experimental adamantane / analogue. This describes the atlas's working classification, not an established indication. The existing PubChem identity is retained separately from the newly collected research links.
+
+The Molekul profile was parsed on 2026-10-04. Its classification and linked source trail are discovery information; external documents, cohort overlap, preparation identity and findings have not been independently appraised in this import.
+
+Identity lead from Molekul: Adamantane preparation used as a comparator in immune-pharmacology research. This account has not been independently verified against the original chemistry or preparation documentation.
+
 ## Evidence note
 
 Only chemical identity is curated. Effects, doses, pharmacokinetics, interactions, and legal status have not been assessed.
+
+The Molekul profile was parsed on 2026-10-04. Its classification and linked source trail are discovery information; external documents, cohort overlap, preparation identity and findings have not been independently appraised in this import. The year on a source-discovery link is its capture year, not the paper's publication year. Missing doses, kinetics and clinical observations remain unassessed.
 
 ## Doses
 
@@ -157,6 +167,24 @@ Only chemical identity is curated. Effects, doses, pharmacokinetics, interaction
   insight: Source of the displayed formula, molecular weight, structure, and connectivity SMILES.
   limitation: The parent compound identity is distinct from salts, formulations, and commercial product quality.
   funding: US National Library of Medicine.
+- id: molekul-profile
+  title: "Kemantane: Molekul research profile"
+  authors: Molekul
+  year: 2026
+  url: https://molekul.io/compounds/kemantane
+  kind: Research atlas · accessed 2026
+  insight: Provenance of the imported name, working classification and source trail.
+  limitation: A secondary discovery resource. This import does not independently verify its findings or count its links as independent studies.
+  funding: Not assessed in this import.
+- id: molekul-link-5
+  title: www.medical-diss.com document 6 — source link captured 2026; metadata pending
+  authors: Bibliographic metadata not independently verified
+  year: 2026
+  url: https://www.medical-diss.com/medicina/rol-neyrotropnyh-adamantansoderzhaschih-soedineniy-v-regulyatsii-immuniteta
+  kind: Source discovery link · capture year
+  insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
+  limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
+  funding: Not assessed in this import.
 ```
 
 ## Legal

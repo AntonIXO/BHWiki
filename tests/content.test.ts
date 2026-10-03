@@ -10,7 +10,7 @@ const bundle={substances,tags,hyperedges};
 
 test('the library validates identities, sources, and the added records',()=>{
  validateContent(bundle);assert.ok(substances.length>=22);
- for(const s of substances)assert.ok(existsSync(`public/molecules/${s.slug}.png`),`${s.slug} structure`);
+ for(const s of substances)if(s.pubchemCid!==null)assert.ok(existsSync(`public/molecules/${s.slug}.png`),`${s.slug} structure`);
  assert.ok(buildKnowledgeGraph(bundle).nodes.length>substances.length);
 });
 test('class tags cite the inspected papers',()=>{

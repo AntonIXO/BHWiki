@@ -87,6 +87,18 @@ Class tags are a browse index. Their descriptions do not claim that every member
 
 New structure files use `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/<CID>/PNG?image_size=600x400`. `scripts/generate-portal.ts` resolves a stub identity and writes a missing Markdown file. It leaves an existing file unchanged. The Markdown under `content/` is what the pages load.
 
+## Molekul profile import — 2026-10-04
+
+Chrome extraction covered all **95** compound profiles in the [Molekul index](https://molekul.io/compounds). This adds **87** records and enriches **8** existing identity articles; the current bundled catalog contains **281** sourced drafts. The eight existing records are Bemitil, Bromantane, Chlodantane, Kemantane, Noopept, phenylpiracetam (Molekul's Phenotropil), Picamilon and Piracetam. Previously curated clinical articles remain unchanged.
+
+Each profile contains an original identity-lead note, aliases, a working browse classification, and the collected research-document links. Molecular identity, dose protocols, efficacy observations, half-lives and safety conclusions are not inferred from the source atlas. Existing PubChem identities are preserved. Newly imported preparations and unresolved candidates have `pubchemCid: null`; the interface explicitly displays the missing structure rather than assigning a surrogate molecule.
+
+Of **274** distinct extracted URLs, **271** are included as eligible document leads. Three product/catalogue URLs are excluded from public references. Nine profiles contain no external URLs; two additional profiles contain only excluded product URLs. Research report reproductions on commercial hosts remain document leads, with appraisal pending. No reports or third-party PDFs are republished.
+
+Source links with unverified bibliographic metadata explicitly use the capture year, **2026**, rather than asserting a publication date. Their titles and limitations describe them as source-discovery links. Existing canonical bibliography is reused when an already-curated URL matches. Neither the automated importer nor its tests confer independent scientific review.
+
+See [the acquisition manifest and import method](../data/imports/README.md). `bun run content:molekul` rebuilds the Markdown offline and supports repeat imports. It refuses to overwrite independently reviewed articles. Molekul prose, diagrams, study-result narratives, vendor pages, donation information, wearable records and personal diaries are not imported.
+
 ## Original text and reuse
 
 No definitions, descriptions or illustrations were copied from Wikipedia, PsychonautWiki, Effect Index or Examine. These references informed information architecture. In particular, Effect Index's noncommercial license does not authorize incorporating its prose into this project's independently licensed content. Original editorial material is CC BY-SA 4.0; code and third-party assets have their own licensing and attribution. Contributions arrive through repository pull requests with source changes reviewable before publication.

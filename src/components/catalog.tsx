@@ -234,9 +234,9 @@ export default function Catalog({
                   <p className="text-sm text-muted-foreground">{substance.formula}</p>
                 </CardHeader>
                 <CardContent className={cn("flex flex-col gap-3", view === "list" && "md:flex-1 md:justify-center")}>
-                  {view !== "list" && (
+                  {view !== "list" && substance.formula !== "Not established" && (
                     <MoleculeImage
-                      src={`/molecules/${substance.slug}.png`}
+                      src={substance.formula === "Not established" ? undefined : `/molecules/${substance.slug}.png`}
                       alt={`${substance.name} molecular structure`}
                       wellClassName="ms-auto h-16 w-20 shrink-0"
                       loading="lazy"

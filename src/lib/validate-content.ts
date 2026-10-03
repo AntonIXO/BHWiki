@@ -19,7 +19,8 @@ export function validateSubstance(value:unknown):asserts value is Substance {
  const s=record(value,'substance');const p=typeof s.slug==='string'?s.slug:'substance';
  fields(s,['slug','name','subtitle','summary','description','formula','molecularWeight','smiles','category','accent','evidenceNote','reviewedAt'],p);
  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(s.slug as string))fail(p,'invalid slug');
- if(!Number.isInteger(s.pubchemCid)||(s.pubchemCid as number)<1)fail(p,'invalid compound identifier');
+ if(s.pubchemCid!==null&&(!Number.isInteger(s.pubchemCid)||(s.pubchemCid as number)<1))fail(p,'invalid compound identifier');
+ if(s.pubchemCid===null&&['formula','molecularWeight','smiles'].some(key=>s[key]!=='Not established'))fail(p,'unresolved identity must not claim a molecular structure');
  if(!/^\d{4}-\d{2}-\d{2}$/.test(s.reviewedAt as string)||!Number.isFinite(Date.parse(s.reviewedAt as string)))fail(p,'invalid source check date');
  if('evidenceLevel' in s)fail(p,'global evidence badges are not supported');
  texts(s.aliases,p+'.aliases');texts(s.tags,p+'.tags');choice(s.editorialStatus,['sourced-draft','editorially-reviewed'],p+'.editorialStatus');

@@ -12,6 +12,7 @@
     "db:seed": "tsx scripts/db-seed.ts",
     "content:validate": "tsx scripts/validate-content.ts",
     "content:portal": "tsx scripts/generate-portal.ts",
+    "content:molekul": "tsx scripts/import-molekul.ts",
     "test:e2e": "playwright test",
     "content:hashes": "tsx scripts/content-hashes.ts",
     "db:verify": "tsx scripts/db-verify.ts",

@@ -25,12 +25,12 @@ test("markdown files preserve the curated records", () => {
   const curated = curatedSlugs.map((slug) => substances.find((substance) => substance.slug === slug));
   assert.deepEqual(curated.map((substance) => substance?.slug), curatedSlugs);
   assert.deepEqual(curated.map((substance) => substance && contentHash(substance)), curatedHashes);
-  assert.equal(substances.length, 194);
-  assert.equal(tags.length, 59);
-  assert.equal(substances.filter((substance) => substance.subtitle === "Identity record.").length, 172);
+  assert.equal(substances.length, 281);
+  assert.equal(tags.length, 66);
+  assert.equal(substances.filter((substance) => substance.subtitle === "Identity record.").length, 164);
   const kinds: Record<TagKind, number> = { class: 0, "chemical-family": 0, mechanism: 0, target: 0, neurotransmitter: 0, enzyme: 0, effect: 0, outcome: 0, exposure: 0, legal: 0 };
   for (const tag of tags) kinds[tag.kind] += 1;
-  assert.deepEqual(kinds, { class: 10, "chemical-family": 6, mechanism: 5, target: 9, neurotransmitter: 5, enzyme: 2, effect: 8, outcome: 9, exposure: 4, legal: 1 });
+  assert.deepEqual(kinds, { class: 17, "chemical-family": 6, mechanism: 5, target: 9, neurotransmitter: 5, enzyme: 2, effect: 8, outcome: 9, exposure: 4, legal: 1 });
   assert.equal(hyperedges.length, 27);
   const total = (count: (substance: Substance) => number) => curated.reduce((sum, substance) => sum + count(substance!), 0);
   assert.equal(total((substance) => substance.references.length), 42);
