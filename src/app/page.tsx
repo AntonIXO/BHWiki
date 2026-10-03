@@ -82,7 +82,7 @@ export default async function Home({ searchParams }: { searchParams: Promise<{ t
         <Catalog
           key={`${tag || "all"}:${q || ""}`}
           substances={substances}
-          tags={tags}
+          concepts={tags.map((item) => ({ id: item.id, label: item.label, kind: item.kind, aliases: item.aliases }))}
           initialTag={tags.some((item) => item.id === tag) ? tag : ""}
           initialQuery={typeof q === "string" ? q : ""}
         />

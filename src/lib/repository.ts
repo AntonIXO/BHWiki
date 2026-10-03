@@ -1,8 +1,9 @@
 import "server-only";
+import { cache } from "react";
 import postgres from "postgres";
 import { createHash } from "node:crypto";
-import { substances as bundledSubstances, tags as bundledTags, hyperedges as bundledHyperedges } from "./content";
-import { toCatalogSubstance, type CatalogSubstance, type Hyperedge, type KnowledgeGraphData, type Revision, type Substance, type Tag } from "./types";
+import { catalog as bundledCatalog, conceptById, hyperedges as bundledHyperedges, substanceBySlug, substances as bundledSubstances, tags as bundledTags } from "./content";
+import { type CatalogSubstance, type Hyperedge, type KnowledgeGraphData, type Revision, type Substance, type Tag } from "./types";
 import { boundKnowledgeGraph, graphLimit, normalizeGraphFocus, selectGraphCandidates } from "./graph-data";
 import { validateSubstance } from "./validate-content";
 
@@ -33,7 +34,7 @@ function readDocument(row: { slug: string; document: unknown }): Substance {
 }
 
 /** Server-only compatibility helper. Client-facing library and graph use compact catalog records. */
-export async function getSubstances(): Promise<Substance[]> {
+export const getSubstances = cache(async (): Promise<Substance[]> => {
   const sql = database();
   if (!sql) return bundledSubstances;
   const rows = await sql<{ slug: string; document: unknown }[]>`
@@ -42,31 +43,56 @@ export async function getSubstances(): Promise<Substance[]> {
   `;
   if (!rows.length) throw new Error("BHWiki database has no published articles. Run the content publication step.");
   return rows.map(readDocument);
-}
+});
 
-export async function getSubstance(slug: string): Promise<Substance | undefined> {
+export const getSubstance = cache(async (slug: string): Promise<Substance | undefined> => {
   const sql = database();
-  if (!sql) return bundledSubstances.find((substance) => substance.slug === slug);
+  if (!sql) return substanceBySlug.get(slug);
   const [row] = await sql<{ slug: string; document: unknown }[]>`
     SELECT e.slug, r.document FROM bhwiki.entities e JOIN bhwiki.articles a ON a.entity_id = e.id
     JOIN bhwiki.article_revisions r ON r.id = a.published_revision_id
     WHERE e.slug = ${slug} AND e.entity_type = 'substance' AND e.status = 'published' LIMIT 1
   `;
   return row ? readDocument(row) : undefined;
+});
+
+const readSubstancesByKey = cache(async (key: string): Promise<Substance[]> => {
+  const slugs = key.length ? key.split("\0") : [];
+  const sql = database();
+  if (!sql) return slugs.flatMap((slug) => {
+    const substance = substanceBySlug.get(slug);
+    return substance ? [substance] : [];
+  });
+  if (!slugs.length) return [];
+  const rows = await sql<{ slug: string; document: unknown }[]>`
+    SELECT e.slug, r.document FROM bhwiki.entities e JOIN bhwiki.articles a ON a.entity_id = e.id
+    JOIN bhwiki.article_revisions r ON r.id = a.published_revision_id
+    WHERE e.slug IN ${sql(slugs)} AND e.entity_type = 'substance' AND e.status = 'published'
+  `;
+  const bySlug = new Map(rows.map((row) => [row.slug, readDocument(row)]));
+  return slugs.flatMap((slug) => {
+    const substance = bySlug.get(slug);
+    return substance ? [substance] : [];
+  });
+});
+
+/** One published-document read for a page of slugs. Missing slugs are omitted. */
+export function getSubstancesBySlugs(slugs: string[]): Promise<Substance[]> {
+  return readSubstancesByKey([...new Set(slugs)].join("\0"));
 }
 
-export async function getCatalog(): Promise<CatalogSubstance[]> {
+export const getCatalog = cache(async (): Promise<CatalogSubstance[]> => {
   const sql = database();
-  if (!sql) return bundledSubstances.map(toCatalogSubstance);
+  if (!sql) return bundledCatalog;
   const rows = await sql<{ catalog: CatalogSubstance }[]>`
     SELECT a.catalog FROM bhwiki.entities e JOIN bhwiki.articles a ON a.entity_id = e.id
     WHERE e.entity_type = 'substance' AND e.status = 'published' ORDER BY e.label
   `;
   if (!rows.length) throw new Error("BHWiki database has no published catalog. Run the content publication step.");
   return rows.map((row) => row.catalog);
-}
+});
 
-export async function getConcepts(): Promise<Tag[]> {
+export const getConcepts = cache(async (): Promise<Tag[]> => {
   const sql = database();
   if (!sql) return bundledTags;
   const rows = await sql<{ document: Tag }[]>`
@@ -74,23 +100,23 @@ export async function getConcepts(): Promise<Tag[]> {
     WHERE e.status = 'published' ORDER BY e.label
   `;
   return rows.map((row) => row.document);
-}
+});
 
-export async function getConcept(slug: string): Promise<Tag | undefined> {
+export const getConcept = cache(async (slug: string): Promise<Tag | undefined> => {
   const sql = database();
-  if (!sql) return bundledTags.find((tag) => tag.id === slug);
+  if (!sql) return conceptById.get(slug);
   const [row] = await sql<{ document: Tag }[]>`
     SELECT c.document FROM bhwiki.entities e JOIN bhwiki.concepts c ON c.entity_id = e.id
     WHERE e.slug = ${slug} AND e.status = 'published' LIMIT 1
   `;
   return row?.document;
-}
+});
 
 export async function getRevisions(slug: string): Promise<Revision[]> {
   const sql = database();
   // Bundled files have no database publication event or attested reviewer metadata.
   if (!sql) {
-    const s = bundledSubstances.find((item) => item.slug === slug);
+    const s = substanceBySlug.get(slug);
     return s ? [{ revision: 1, publishedAt: "", sourceCommit: null, contributors: [], reviewers: [], editorialStatus: s.editorialStatus, summary: "Bundled source snapshot; database publication history is unavailable in bundled mode.", contentHash: createHash("sha256").update(JSON.stringify(s)).digest("hex") }] : [];
   }
   const rows = await sql<(Revision & { publishedAt: Date | string })[]>`
@@ -104,7 +130,7 @@ export async function getRevisions(slug: string): Promise<Revision[]> {
 
 export async function getKnowledgeGraph(options: { focus?: string; limit?: number } = {}): Promise<KnowledgeGraphData> {
   const sql = database();
-  if (!sql) return boundKnowledgeGraph({ substances: bundledSubstances.map(toCatalogSubstance), tags: bundledTags, hyperedges: bundledHyperedges }, options);
+  if (!sql) return boundKnowledgeGraph({ substances: bundledCatalog, tags: bundledTags, hyperedges: bundledHyperedges }, options);
   const limit = graphLimit(options.limit);
   const focus = normalizeGraphFocus(options.focus);
   // Candidate count is bounded independently of the total database size. Every chosen

@@ -108,6 +108,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
   const paintRef = useRef<() => void>(() => {});
   const layoutRef = useRef<(fit: boolean) => void>(() => {});
   const forceReady = useRef(false);
+  const viewFitted = useRef(false);
   const fullscreenFitted = useRef(false);
   function focusNode(focus: string | undefined) {
     if (!focus) return null;
@@ -134,10 +135,17 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
   const repulsionLabelId = useId();
   const distanceLabelId = useId();
   const gravityLabelId = useId();
-  const model = useMemo(() => {
-    const built = buildKnowledgeGraph({ substances, tags, hyperedges }, tagKind || undefined);
+  const sourceModel = useMemo(() => {
+    const built = buildKnowledgeGraph({ substances, tags, hyperedges });
     return compact ? previewKnowledgeGraph(built) : built;
-  }, [substances, tags, hyperedges, tagKind, compact]);
+  }, [substances, tags, hyperedges, compact]);
+  const model = useMemo(
+    () => (tagKind ? buildKnowledgeGraph({ substances, tags, hyperedges }, tagKind) : sourceModel),
+    [sourceModel, tagKind, substances, tags, hyperedges],
+  );
+  const appliedSource = useRef<GraphModel | null>(null);
+  const sourceRef = useRef(sourceModel);
+  sourceRef.current = sourceModel;
   const viewRef = useRef({ query, depth, selectedId, model, compact });
   const forcesRef = useRef({ repulsion, linkDistance, gravity });
   viewRef.current = { query, depth, selectedId, model, compact };
@@ -242,8 +250,10 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
     import("cytoscape").then(({ default: cytoscape }) => {
       if (cancelled || !container.current) return;
       const forces = forcesRef.current;
+      const initial = sourceRef.current;
+      appliedSource.current = initial;
       cy = cytoscape({
-        container: container.current, elements: model.elements, style: graphStyle,
+        container: container.current, elements: initial.elements, style: graphStyle,
         minZoom: 0.15, maxZoom: 2.5, wheelSensitivity: 0.22,
         boxSelectionEnabled: false, autounselectify: false,
         layout: {
@@ -280,21 +290,46 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
     }).catch(() => { if (!cancelled) setLoadError(true); });
     return () => {
       cancelled = true;
+      appliedSource.current = null;
       observer?.disconnect();
       cy?.destroy();
       if (graph.current === cy) graph.current = null;
     };
-  }, [model, compact]);
+  }, [compact]);
+
+  useEffect(() => {
+    if (!ready) return;
+    const cy = graph.current;
+    if (!cy || cy.destroyed() || appliedSource.current === sourceModel) return;
+    appliedSource.current = sourceModel;
+    cy.batch(() => {
+      cy.elements().remove();
+      cy.add(sourceModel.elements);
+    });
+    paintRef.current();
+    layoutRef.current(true);
+  }, [sourceModel, ready, compact]);
 
   useEffect(() => {
     if (!ready) return;
     paintRef.current();
   }, [query, selectedId, depth, ready, model]);
 
+  // Depth and concept type hide nodes on the layout from mount. Force sliders are what rerun cose.
   useEffect(() => {
-    if (!ready || compact) return;
-    layoutRef.current(true);
-  }, [depth, ready, model, compact]);
+    if (!ready || compact) {
+      if (!ready) viewFitted.current = false;
+      return;
+    }
+    if (!viewFitted.current) {
+      viewFitted.current = true;
+      return;
+    }
+    const cy = graph.current;
+    if (!cy || cy.destroyed()) return;
+    const visible = cy.elements().not(".depth-hidden");
+    cy.fit(visible.empty() ? undefined : visible, 40);
+  }, [depth, tagKind, ready, compact]);
 
   useEffect(() => {
     if (!ready) {
@@ -305,7 +340,8 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
       forceReady.current = true;
       return;
     }
-    layoutRef.current(false);
+    const timer = window.setTimeout(() => layoutRef.current(false), 150);
+    return () => window.clearTimeout(timer);
   }, [repulsion, linkDistance, gravity, ready]);
 
   useEffect(() => {

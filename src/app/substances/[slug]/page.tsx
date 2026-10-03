@@ -19,8 +19,9 @@ import { Card, CardAction, CardContent, CardDescription, CardHeader, CardTitle }
 import { Empty, EmptyDescription, EmptyHeader } from "@/components/ui/empty";
 import { Item, ItemContent, ItemDescription, ItemMedia, ItemTitle } from "@/components/ui/item";
 import { Separator } from "@/components/ui/separator";
+import { indexEntities, type EntityIndex } from "@/lib/entities";
 import { getSubstance, getCatalog, getConcepts } from "@/lib/repository";
-import { conceptPath, type CatalogSubstance, type Concept, type DoseContext, type Observation, type Substance } from "@/lib/types";
+import { conceptPath, type DoseContext, type Observation, type Substance } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 type Props = { params: Promise<{ slug: string }> };
@@ -49,12 +50,9 @@ function doseQuantity(dose: DoseContext) {
   return `${quantity}${maximum} ${dose.unit}`;
 }
 
-function EntityLink({ id, concepts, catalog }: { id: string; concepts: Concept[]; catalog: CatalogSubstance[] }) {
-  const entityId = id.replace(/^(substance|tag|concept):/, "");
-  const substance = catalog.find(item => item.slug === entityId);
-  const concept = concepts.find(item => item.id === entityId);
-  if (id.startsWith("substance:") || (!concept && substance)) return substance ? <Link href={`/substances/${substance.slug}`} className="underline underline-offset-4">{substance.name}</Link> : <span>{entityId}</span>;
-  return concept ? <Link href={conceptPath(concept)} className="underline underline-offset-4">{concept.label}</Link> : <span>{entityId}</span>;
+function EntityLink({ id, entities }: { id: string; entities: EntityIndex }) {
+  const record = entities.substanceLink(id);
+  return record.href ? <Link href={record.href} className="underline underline-offset-4">{record.label}</Link> : <span>{record.label}</span>;
 }
 
 function DataEmpty({ children }: { children: ReactNode }) {
@@ -103,12 +101,12 @@ function Direction({ direction }: { direction: Observation["direction"] }) {
   return <Badge variant="outline"><Icon aria-hidden="true" />{direction}</Badge>;
 }
 
-function ObservationMatrix({ observations, substance, concepts, measured = false }: { observations: Observation[]; substance: Substance; concepts: Concept[]; measured?: boolean }) {
+function ObservationMatrix({ observations, substance, entities, measured = false }: { observations: Observation[]; substance: Substance; entities: EntityIndex; measured?: boolean }) {
   if (!observations.length) return <DataEmpty>Not assessed. No sourced {measured ? "measured outcomes" : "subjective observations"} have been curated for this article.</DataEmpty>;
   return (
     <div className="flex flex-col gap-4">
       {observations.map((effect, index) => {
-        const concept = concepts.find(item => item.id === effect.conceptId);
+        const concept = entities.conceptById.get(effect.conceptId);
         return (
           <Card key={`${effect.conceptId}-${index}`}>
             <CardHeader>
@@ -140,9 +138,10 @@ export default async function SubstancePage({ params }: Props) {
   const { slug } = await params;
   const substance = await getSubstance(slug);
   if (!substance) notFound();
-  const [allSubstances, concepts] = await Promise.all([getCatalog(), getConcepts()]);
-  const substanceTags = substance.tags.map(id => concepts.find(tag => tag.id === id)).filter(tag => tag !== undefined);
-  const related = allSubstances.filter(item => item.slug !== substance.slug).map(item => ({ item, shared: item.tags.filter(tag => substance.tags.includes(tag)).length })).filter(entry => entry.shared > 0).sort((a, b) => b.shared - a.shared).slice(0, 3);
+  const [catalog, concepts] = await Promise.all([getCatalog(), getConcepts()]);
+  const entities = indexEntities(catalog, concepts);
+  const substanceTags = entities.conceptsFor(substance.tags);
+  const related = entities.relatedSubstances(substance.slug, substance.tags);
   const selectedObservation = substance.pkObservations.find(item => item.id === substance.halfLife.observationId);
   const reviewed = substance.editorialStatus === "editorially-reviewed";
   const toc = [{ id: "overview", name: "Overview" }, { id: "effects", name: "Subjective effects" }, { id: "measured-outcomes", name: "Measured outcomes" }, { id: "exposure", name: "Doses & routes" }, { id: "kinetics", name: "Pharmacokinetics" }, { id: "safety", name: "Safety" }, { id: "evidence", name: "Research" }, { id: "connections", name: "Connections" }, { id: "legal", name: "Legal context" }, { id: "editorial-history", name: "History" }];
@@ -200,7 +199,7 @@ export default async function SubstancePage({ params }: Props) {
             <div className="flex flex-col gap-3">
               <h3 className="text-lg font-medium">How it works</h3>
               {substance.mechanisms.length ? substance.mechanisms.map(mechanism => {
-                const concept = concepts.find(item => item.id === mechanism.conceptId);
+                const concept = mechanism.conceptId ? entities.conceptById.get(mechanism.conceptId) : undefined;
                 return (
                   <div key={mechanism.title} className="flex gap-3">
                     <CircleDot aria-hidden="true" className="mt-0.5 shrink-0 text-muted-foreground" size={17} />
@@ -217,13 +216,13 @@ export default async function SubstancePage({ params }: Props) {
           <section id="effects" className="flex scroll-mt-24 flex-col gap-4">
             <SectionHeading number="02" title="Subjective effects" />
             <p className="text-muted-foreground">Descriptions of experience in their reported context. Direction does not imply benefit, and these observations do not define a universal intensity score.</p>
-            <ObservationMatrix observations={substance.effects} substance={substance} concepts={concepts} />
+            <ObservationMatrix observations={substance.effects} substance={substance} entities={entities} />
           </section>
 
           <section id="measured-outcomes" className="flex scroll-mt-24 flex-col gap-4">
             <SectionHeading number="03" title="Measured outcomes" />
             <p className="text-muted-foreground">What the research measured, for whom, and under which exposure. Findings remain attached to the study’s task or clinical endpoint.</p>
-            <ObservationMatrix observations={substance.outcomes} substance={substance} concepts={concepts} measured />
+            <ObservationMatrix observations={substance.outcomes} substance={substance} entities={entities} measured />
           </section>
 
           <section id="exposure" className="flex scroll-mt-24 flex-col gap-4">
@@ -345,7 +344,7 @@ export default async function SubstancePage({ params }: Props) {
                     <CardHeader>
                       <CardTitle>
                         <h3>{interaction.otherSlug
-                          ? <EntityLink id={`substance:${interaction.otherSlug}`} concepts={concepts} catalog={allSubstances} />
+                          ? <EntityLink id={`substance:${interaction.otherSlug}`} entities={entities} />
                           : interaction.name}</h3>
                       </CardTitle>
                       {interaction.otherSlug && <CardDescription>{interaction.name}</CardDescription>}
@@ -433,7 +432,7 @@ export default async function SubstancePage({ params }: Props) {
                       <ul className="flex flex-col gap-2">
                         {claim.participants.map(member => (
                           <li key={`${member.entityId}-${member.role}`} className="flex flex-wrap items-baseline justify-between gap-2">
-                            <EntityLink id={member.entityId} concepts={concepts} catalog={allSubstances} />
+                            <EntityLink id={member.entityId} entities={entities} />
                             <span className="text-sm text-muted-foreground">{member.role}</span>
                           </li>
                         ))}

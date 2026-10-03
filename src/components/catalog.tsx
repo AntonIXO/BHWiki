@@ -3,8 +3,8 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Clock3, FlaskConical, LayoutGrid, List, Search, SlidersHorizontal, X } from "lucide-react";
-import type { CatalogSubstance, Tag } from "@/lib/types";
-import { searchCatalog } from "@/lib/search";
+import type { CatalogSubstance } from "@/lib/types";
+import { searchCatalog, type SearchConcept } from "@/lib/search";
 import { cn } from "@/lib/utils";
 import { MoleculeImage } from "@/components/molecule-image";
 import { Prose } from "@/components/prose";
@@ -16,7 +16,6 @@ import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTi
 import { Field, FieldGroup, FieldLabel, FieldLegend, FieldSet } from "@/components/ui/field";
 import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput } from "@/components/ui/input-group";
 import { Kbd } from "@/components/ui/kbd";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Separator } from "@/components/ui/separator";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
@@ -25,15 +24,16 @@ const sortItems = [
   { value: "name", label: "A–Z" },
   { value: "updated", label: "Recently sourced" },
 ];
+const pageSize = 48;
 
 export default function Catalog({
   substances,
-  tags,
+  concepts,
   initialTag = "",
   initialQuery = "",
 }: {
   substances: CatalogSubstance[];
-  tags: Tag[];
+  concepts: SearchConcept[];
   initialTag?: string;
   initialQuery?: string;
 }) {
@@ -43,12 +43,19 @@ export default function Catalog({
   const [sort, setSort] = useState<"name" | "updated">("name");
   const [view, setView] = useState<"grid" | "list">("grid");
   const [showFilters, setShowFilters] = useState(Boolean(initialTag));
+  const [visibleCount, setVisibleCount] = useState(pageSize);
   const categories = [...new Set(substances.map((item) => item.category))];
-  const kinds = [...new Set(tags.map((tag) => tag.kind))];
+  const kinds = [...new Set(concepts.map((concept) => concept.kind))];
+  const conceptById = useMemo(() => new Map(concepts.map((concept) => [concept.id, concept])), [concepts]);
   const filtered = useMemo(
-    () => searchCatalog(substances, tags, { q: query, category, tags: selectedTags, sort }),
-    [substances, tags, query, category, selectedTags, sort],
+    () => searchCatalog(substances, concepts, { q: query, category, tags: selectedTags, sort }),
+    [substances, concepts, query, category, selectedTags, sort],
   );
+  const shown = filtered.slice(0, visibleCount);
+
+  useEffect(() => {
+    setVisibleCount(pageSize);
+  }, [query, category, selectedTags, sort]);
 
   function clear() {
     setQuery("");
@@ -126,27 +133,25 @@ export default function Catalog({
             <p className="text-sm">Match all selected concepts</p>
             <Button type="button" variant="ghost" size="sm" onClick={clear}>Reset filters</Button>
           </div>
-          <ScrollArea className="h-80">
-            <div className="grid gap-4 pe-3 sm:grid-cols-2">
-              {kinds.map((kind) => (
-                <FieldSet key={kind} className="rounded-lg bg-card p-3 ring-1 ring-foreground/10">
-                  <FieldLegend className="capitalize">{kind.replaceAll("-", " ")}</FieldLegend>
-                  <FieldGroup>
-                    {tags.filter((tag) => tag.kind === kind).map((tag) => (
-                      <Field key={tag.id} orientation="horizontal">
-                        <Checkbox
-                          id={`tag-${tag.id}`}
-                          checked={selectedTags.includes(tag.id)}
-                          onCheckedChange={() => toggleTag(tag.id)}
-                        />
-                        <FieldLabel htmlFor={`tag-${tag.id}`}>{tag.label}</FieldLabel>
-                      </Field>
-                    ))}
-                  </FieldGroup>
-                </FieldSet>
-              ))}
-            </div>
-          </ScrollArea>
+          <div className="grid items-start gap-4 sm:grid-cols-2">
+            {kinds.map((kind) => (
+              <FieldSet key={kind} className="min-w-0 rounded-lg bg-card p-3 ring-1 ring-foreground/10">
+                <FieldLegend className="capitalize">{kind.replaceAll("-", " ")}</FieldLegend>
+                <FieldGroup className="gap-2">
+                  {concepts.filter((concept) => concept.kind === kind).map((tag) => (
+                    <Field key={tag.id} orientation="horizontal">
+                      <Checkbox
+                        id={`tag-${tag.id}`}
+                        checked={selectedTags.includes(tag.id)}
+                        onCheckedChange={() => toggleTag(tag.id)}
+                      />
+                      <FieldLabel htmlFor={`tag-${tag.id}`}>{tag.label}</FieldLabel>
+                    </Field>
+                  ))}
+                </FieldGroup>
+              </FieldSet>
+            ))}
+          </div>
         </div>
       )}
 
@@ -210,9 +215,9 @@ export default function Catalog({
       </div>
 
       <div className={cn("substance-grid grid grid-cols-1 gap-4 sm:grid-cols-2", view === "list" && "list-view sm:grid-cols-1")}>
-        {filtered.map((substance) => {
+        {shown.map((substance) => {
           const conceptTags = substance.tags
-            .map((id) => tags.find((tag) => tag.id === id))
+            .map((id) => conceptById.get(id))
             .filter((tag) => tag && tag.kind !== "legal")
             .slice(0, 2);
           return (
@@ -256,6 +261,12 @@ export default function Catalog({
           );
         })}
       </div>
+
+      {shown.length < filtered.length && (
+        <Button type="button" variant="outline" onClick={() => setVisibleCount(filtered.length)}>
+          Show all {filtered.length} substances
+        </Button>
+      )}
 
       {filtered.length === 0 && (
         <Empty>
