@@ -1,0 +1,32 @@
+{
+  "topic": "choline-chloride",
+  "sourceUrl": "https://chatgpt.com/c/6ac1a289-9ca8-83ed-97fb-58807716316d",
+  "method": "Visible research content captured in Chrome through a temporary loopback-only form",
+  "files": [
+    {
+      "path": "substances/choline-chloride.md",
+      "bytes": 33420,
+      "sha256": "8dc7517e21228da38087867f5aff524a34fa5018979d06e7b2f44ded74969c31"
+    },
+    {
+      "path": "outcomes/plasma-choline-concentration.md",
+      "bytes": 540,
+      "sha256": "3db0694d606bf2bb27042f9c18fad2120462b793a6e8882e6816508bd56e31e2"
+    },
+    {
+      "path": "outcomes/plasma-tmao-concentration.md",
+      "bytes": 547,
+      "sha256": "60d22db9aecc8fe5b5e0133791afc6ec442618ff135dd60cfe60d46d0f3f0515"
+    },
+    {
+      "path": "outcomes/hepatic-steatosis.md",
+      "bytes": 522,
+      "sha256": "c259a3eee4661a11fad4f2c1edf5237f9a56ec6996b38271bd4497302a54a069"
+    },
+    {
+      "path": "relationships/choline-chloride-choline-supply.md",
+      "bytes": 939,
+      "sha256": "c6c321fe696c6fa787f0ecc575035d76f169291bfcb0cdeb04e36c4124e72441"
+    }
+  ]
+}

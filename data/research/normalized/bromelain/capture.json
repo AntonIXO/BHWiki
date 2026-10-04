@@ -1,0 +1,97 @@
+{
+  "topic": "bromelain",
+  "sourceUrl": "https://chatgpt.com/c/6ac18764-2054-83eb-ad45-a4c49dfe3c38",
+  "method": "Locally normalized from the captured Chrome research Markdown; raw acquisition remains unchanged",
+  "files": [
+    {
+      "path": "substances/bromelain.md",
+      "originalSha256": "a66126042f678c00d687f54fe57b75dd5c559eeb86a19d9fe2c68e2a87924c71",
+      "sha256": "f327925a9818b2950734930938c743893ca716959a78567d9aaa47e385f089d5",
+      "bytes": 60046
+    },
+    {
+      "path": "outcomes/postoperative-pain.md",
+      "originalSha256": "078bed88f6da4d26764d0229419d80ea5e7b36e687b545ce40ee747cbd557a40",
+      "sha256": "078bed88f6da4d26764d0229419d80ea5e7b36e687b545ce40ee747cbd557a40",
+      "bytes": 451
+    },
+    {
+      "path": "outcomes/postoperative-facial-swelling.md",
+      "originalSha256": "38127995bb5e26ac9578bbd30547e5d67e7b288b7c53b6420a8830f574408038",
+      "sha256": "38127995bb5e26ac9578bbd30547e5d67e7b288b7c53b6420a8830f574408038",
+      "bytes": 437
+    },
+    {
+      "path": "outcomes/trismus.md",
+      "originalSha256": "f2a0cb1f612c270792632b2f7187477139cf37a38fa81f7799d7b59b7655c313",
+      "sha256": "f2a0cb1f612c270792632b2f7187477139cf37a38fa81f7799d7b59b7655c313",
+      "bytes": 404
+    },
+    {
+      "path": "outcomes/ulcerative-colitis-disease-activity.md",
+      "originalSha256": "b885ff415de2911db1f0c3b9373ba65f1cfb9281b065971663922d60beb96c8a",
+      "sha256": "b885ff415de2911db1f0c3b9373ba65f1cfb9281b065971663922d60beb96c8a",
+      "bytes": 502
+    },
+    {
+      "path": "outcomes/ulcerative-colitis-quality-of-life.md",
+      "originalSha256": "4412fcaa9bb096c6bcd7db88f8a097a8c6dbd0532323850e9eee46c028aae005",
+      "sha256": "4412fcaa9bb096c6bcd7db88f8a097a8c6dbd0532323850e9eee46c028aae005",
+      "bytes": 492
+    },
+    {
+      "path": "outcomes/sinusitis-symptom-response.md",
+      "originalSha256": "443e28b8c188b89d49e9c32cc3e4c45ef772ca1062cf9b39e552884453018f2f",
+      "sha256": "443e28b8c188b89d49e9c32cc3e4c45ef772ca1062cf9b39e552884453018f2f",
+      "bytes": 552
+    },
+    {
+      "path": "outcomes/burn-eschar-removal.md",
+      "originalSha256": "72cfd723fd224fbb7db48904efc5e7b8c86cbb35bb461b884ec4b433eb06f6d3",
+      "sha256": "72cfd723fd224fbb7db48904efc5e7b8c86cbb35bb461b884ec4b433eb06f6d3",
+      "bytes": 564
+    },
+    {
+      "path": "concepts/mechanism/cysteine-protease-activity.md",
+      "originalSha256": "f24cb56e80d87ea1b5a299cb1b785c004861541803a385929f11255651b74929",
+      "sha256": "f24cb56e80d87ea1b5a299cb1b785c004861541803a385929f11255651b74929",
+      "bytes": 538
+    },
+    {
+      "path": "concepts/mechanism/immune-inflammatory-modulation.md",
+      "originalSha256": "5430c4005fefc8258aba78068e74887a2236e19d4146e2e412c4f2d6f414463c",
+      "sha256": "5430c4005fefc8258aba78068e74887a2236e19d4146e2e412c4f2d6f414463c",
+      "bytes": 559
+    },
+    {
+      "path": "concepts/mechanism/hemostasis-modulation.md",
+      "originalSha256": "c1e11a0d3c092a8cc9d080ec063cc8bedf60f6c2679789eefcab895425033855",
+      "sha256": "c1e11a0d3c092a8cc9d080ec063cc8bedf60f6c2679789eefcab895425033855",
+      "bytes": 585
+    },
+    {
+      "path": "concepts/mechanism/enzymatic-eschar-debridement.md",
+      "originalSha256": "babc63cdeb2d837bd9db3a7b56d9c82f14e2f0e555b22303c4af3510a787e5b0",
+      "sha256": "babc63cdeb2d837bd9db3a7b56d9c82f14e2f0e555b22303c4af3510a787e5b0",
+      "bytes": 565
+    },
+    {
+      "path": "relationships/bromelain-cysteine-protease-activity.md",
+      "originalSha256": "01a35682c9260cfbc5f48d06058ee0cccc781ede02fe328b3bda12f30a64d977",
+      "sha256": "01a35682c9260cfbc5f48d06058ee0cccc781ede02fe328b3bda12f30a64d977",
+      "bytes": 1050
+    },
+    {
+      "path": "relationships/bromelain-immune-inflammatory-modulation.md",
+      "originalSha256": "80195c50047be183120e0677baa251699f01ffd7e853ee47ce0d23c2701be731",
+      "sha256": "80195c50047be183120e0677baa251699f01ffd7e853ee47ce0d23c2701be731",
+      "bytes": 1116
+    },
+    {
+      "path": "relationships/bromelain-hemostasis-modulation.md",
+      "originalSha256": "4afca7900b7f8ab348baa26ba261eb2ade20f4cfe230368381629bf170a730dc",
+      "sha256": "4afca7900b7f8ab348baa26ba261eb2ade20f4cfe230368381629bf170a730dc",
+      "bytes": 1107
+    }
+  ]
+}

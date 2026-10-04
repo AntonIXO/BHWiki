@@ -1,0 +1,82 @@
+{
+  "topic": "zeaxanthin",
+  "sourceUrl": "https://chatgpt.com/c/6ac182e0-8d98-83ed-a629-135ea37ce7c2",
+  "method": "Visible research content captured in Chrome through a temporary loopback-only form",
+  "files": [
+    {
+      "path": "substances/zeaxanthin.md",
+      "bytes": 78347,
+      "sha256": "a61495b00068f5576dadd7c758aeaf27d1cf02bf287dc62c60b0de4bc10171b5"
+    },
+    {
+      "path": "outcomes/macular-pigment-optical-density.md",
+      "bytes": 738,
+      "sha256": "4e72058ae3f12618cd2b02a5a01ab0885d90f426f6aa776145b469bb5e301015"
+    },
+    {
+      "path": "outcomes/visual-acuity.md",
+      "bytes": 618,
+      "sha256": "d82fcb36274b14e3d41e3b60663219caf0e9e92311ec7f1b8cd12c037052d6e8"
+    },
+    {
+      "path": "outcomes/contrast-sensitivity.md",
+      "bytes": 701,
+      "sha256": "6620c9edbaf6e179a5d6681519781821525902aa26319f0f405324c220655d8f"
+    },
+    {
+      "path": "outcomes/photostress-recovery-time.md",
+      "bytes": 717,
+      "sha256": "cee885745e6b3dc24adc45a28fa2518a7a40ce27f72dc9c33a50c688b1919b0e"
+    },
+    {
+      "path": "outcomes/glare-disability.md",
+      "bytes": 651,
+      "sha256": "74f500dcb91453cd631eaca7cc378768f41138f3064586622df005ad27fcf039"
+    },
+    {
+      "path": "outcomes/color-contrast-discrimination.md",
+      "bytes": 697,
+      "sha256": "220e782324a9957119c802cb82b6ed596cdded0740d567dea7dd5c3fdef2ddb7"
+    },
+    {
+      "path": "outcomes/foveal-shape-discrimination.md",
+      "bytes": 605,
+      "sha256": "91de5cba3765d572b3ba650e3be6e9f200e25dc08ded3a77193d7e8de6b06d8f"
+    },
+    {
+      "path": "outcomes/central-visual-field-scotoma.md",
+      "bytes": 645,
+      "sha256": "dcbc660ab36d25d2847c470eb6a5574a294e0e258577198b805b3b46e9382f86"
+    },
+    {
+      "path": "outcomes/macular-pigment-spatial-distribution.md",
+      "bytes": 730,
+      "sha256": "4a3427c6900c4c82a7fdf7aabf51f6e8d764082d8a197cd1e7f1a2900a72ed94"
+    },
+    {
+      "path": "outcomes/retinal-structure-oct.md",
+      "bytes": 600,
+      "sha256": "1cef4eaf38fd0f9a37c3ff5710c4f513d82b6e24e3409247c81f71ed04c9808e"
+    },
+    {
+      "path": "outcomes/multifocal-erg-response-density.md",
+      "bytes": 648,
+      "sha256": "b4a716fb7a01d6f08b655c5c2ec4a46d191a587a09bd0d7bab4e17b3eead8052"
+    },
+    {
+      "path": "concepts/mechanism/macular-pigment-accumulation.md",
+      "bytes": 754,
+      "sha256": "de1cc8d784026ebb166c2d6c222b6981ebb91d8d838f2b590f6be7a4c2046965"
+    },
+    {
+      "path": "concepts/mechanism/short-wavelength-light-filtering.md",
+      "bytes": 792,
+      "sha256": "de6c6ecb6c3c19500b1bcf00725a8115bd76a656299937761ebee6990f26fb61"
+    },
+    {
+      "path": "relationships/zeaxanthin-macular-pigment-accumulation.md",
+      "bytes": 1804,
+      "sha256": "e30986beefa5a5dd4209449c0f4be027b2f33bd4c435a01763d49c4d02a75616"
+    }
+  ]
+}

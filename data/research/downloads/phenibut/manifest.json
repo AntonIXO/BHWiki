@@ -1,0 +1,50 @@
+{
+  "topic": "phenibut",
+  "sourceUrl": "https://chatgpt.com/c/6ac17f4c-1594-83ed-9253-94f1afee392d",
+  "importedAt": "2026-10-03T23:01:37.292Z",
+  "method": "Local reconciliation from one completed Chrome Deep Research report and checked primary sources; generated files unavailable",
+  "editorialStatus": "sourced-draft",
+  "files": [
+    {
+      "path": "substances/phenibut.md",
+      "archive": "ccd9326239e4/substances/phenibut.md",
+      "sha256": "ccd9326239e4da77662200c7cd3f2a62a81c4214e1e9d767631c62e4b0eb744a"
+    },
+    {
+      "path": "concepts/target/gaba-b-receptor.md",
+      "archive": "9ca0d940f229/concepts/target/gaba-b-receptor.md",
+      "sha256": "9ca0d940f229116794e8601be9d2bba945781d1350fda63131036e6bd4a6ff5f"
+    },
+    {
+      "path": "concepts/target/alpha2delta-vgcc.md",
+      "archive": "ed67805ace00/concepts/target/alpha2delta-vgcc.md",
+      "sha256": "ed67805ace0067b5850e0dcb3df26879137c560466dbcde644c55bc21d83c846"
+    },
+    {
+      "path": "outcomes/adjustment-disorder-severity.md",
+      "archive": "1412dd908a44/outcomes/adjustment-disorder-severity.md",
+      "sha256": "1412dd908a44f52c23a7d02acd7fe395f3c1a5cc6dfbe7d98f23f26030d17003"
+    },
+    {
+      "path": "outcomes/fatigue-severity.md",
+      "archive": "b919086a58ff/outcomes/fatigue-severity.md",
+      "sha256": "b919086a58ff7a32ee1f32b53be89f53cb91ecf958cdf3af0381f0bba4a133a4"
+    },
+    {
+      "path": "outcomes/cognitive-task-performance.md",
+      "archive": "0fc0cf33dee2/outcomes/cognitive-task-performance.md",
+      "sha256": "0fc0cf33dee2e2533e11331852f0fcd49acd41fa74c0431e4525a608c066f360"
+    },
+    {
+      "path": "outcomes/invasive-airway-support.md",
+      "archive": "b404fdff4cd3/outcomes/invasive-airway-support.md",
+      "sha256": "b404fdff4cd3c1de34771b33fb64e7bb85cc0d7b599084df32f12c7e7316c897"
+    },
+    {
+      "path": "relationships/phenibut-preclinical-targets.md",
+      "archive": "006532601fd4/relationships/phenibut-preclinical-targets.md",
+      "sha256": "006532601fd41b501fa8d49bb46210dc3986b925519693f8e4c4f38d6336d368"
+    }
+  ],
+  "inputOrigin": "reconciled/phenibut.json"
+}

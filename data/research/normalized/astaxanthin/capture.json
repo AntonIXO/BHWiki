@@ -1,0 +1,109 @@
+{
+  "topic": "astaxanthin",
+  "sourceUrl": "https://chatgpt.com/c/6ac18135-b844-83eb-8d65-7f68e9cde257",
+  "method": "Locally normalized from the captured Chrome research Markdown; raw acquisition remains unchanged",
+  "files": [
+    {
+      "path": "substances/astaxanthin.md",
+      "originalSha256": "a1fa5b8ebcf9d398ca4e17607d532b2ebb3dbd251a0c50483df958e791cf3d22",
+      "sha256": "998b88ab9b62d8d7c06b0dd9053be68872da71604ffa6715fa211fb62305ad0c",
+      "bytes": 60404
+    },
+    {
+      "path": "outcomes/skin-hydration.md",
+      "originalSha256": "7abd22a82145f7b651e41549e411517f8f06df2f8cb7c60e098cdb1905a75318",
+      "sha256": "7abd22a82145f7b651e41549e411517f8f06df2f8cb7c60e098cdb1905a75318",
+      "bytes": 642
+    },
+    {
+      "path": "outcomes/skin-elasticity.md",
+      "originalSha256": "bf244dba8b6869e297782528c4a02d62696472682f9d7aef055b8b64b9bf4fa6",
+      "sha256": "bf244dba8b6869e297782528c4a02d62696472682f9d7aef055b8b64b9bf4fa6",
+      "bytes": 554
+    },
+    {
+      "path": "outcomes/wrinkle-depth.md",
+      "originalSha256": "84764555ac26170c9c9fafe658f748d5bbd27b698505eff65ccd575ae20ee51d",
+      "sha256": "84764555ac26170c9c9fafe658f748d5bbd27b698505eff65ccd575ae20ee51d",
+      "bytes": 611
+    },
+    {
+      "path": "outcomes/skin-photoprotection.md",
+      "originalSha256": "dc916fff62e262191d4a5f9bb5225456570cdf40a12d5e0d1b4505a3f1df242e",
+      "sha256": "dc916fff62e262191d4a5f9bb5225456570cdf40a12d5e0d1b4505a3f1df242e",
+      "bytes": 600
+    },
+    {
+      "path": "outcomes/digital-eye-strain.md",
+      "originalSha256": "29da2f5a815df72b1d92683a3dc09ddbbd283fb598bc17763743cd85c5ca22de",
+      "sha256": "29da2f5a815df72b1d92683a3dc09ddbbd283fb598bc17763743cd85c5ca22de",
+      "bytes": 638
+    },
+    {
+      "path": "outcomes/visual-fatigue.md",
+      "originalSha256": "eff5e0567d1c87a827136d7d8500cf32dbd5f6e9149619d07bdf5b11284c7e07",
+      "sha256": "eff5e0567d1c87a827136d7d8500cf32dbd5f6e9149619d07bdf5b11284c7e07",
+      "bytes": 541
+    },
+    {
+      "path": "outcomes/cognitive-performance.md",
+      "originalSha256": "8b9fb5990d71d1d0826395e5bb5773ba0ca8f9f245ca16c5e0a2e360957eb102",
+      "sha256": "8b9fb5990d71d1d0826395e5bb5773ba0ca8f9f245ca16c5e0a2e360957eb102",
+      "bytes": 652
+    },
+    {
+      "path": "outcomes/creatine-kinase.md",
+      "originalSha256": "6f10a032acbdfe79754437b164ffbda2700a1d9ad0a2cad9a8affe6522c6ba9d",
+      "sha256": "6f10a032acbdfe79754437b164ffbda2700a1d9ad0a2cad9a8affe6522c6ba9d",
+      "bytes": 609
+    },
+    {
+      "path": "outcomes/lactate-dehydrogenase.md",
+      "originalSha256": "bd19c83753bb3ed2be0768ebf46f5a5a3e40314ea005d0b690961f216a80695a",
+      "sha256": "bd19c83753bb3ed2be0768ebf46f5a5a3e40314ea005d0b690961f216a80695a",
+      "bytes": 549
+    },
+    {
+      "path": "outcomes/fasting-glucose.md",
+      "originalSha256": "743bf228cee2ce4c7192950de1d6de6494e0047bcca4dfac12d528e29481ff43",
+      "sha256": "743bf228cee2ce4c7192950de1d6de6494e0047bcca4dfac12d528e29481ff43",
+      "bytes": 598
+    },
+    {
+      "path": "outcomes/hba1c.md",
+      "originalSha256": "d906c4d079e562f76f13d6afe1c72ed0cfb01e622aa7695913b2ce99ff1c6372",
+      "sha256": "d906c4d079e562f76f13d6afe1c72ed0cfb01e622aa7695913b2ce99ff1c6372",
+      "bytes": 535
+    },
+    {
+      "path": "outcomes/ldl-cholesterol.md",
+      "originalSha256": "cb94eb1aa1c48f9e80f790c9c8b78b373ad713c02085951161278f34a378bc61",
+      "sha256": "cb94eb1aa1c48f9e80f790c9c8b78b373ad713c02085951161278f34a378bc61",
+      "bytes": 618
+    },
+    {
+      "path": "outcomes/hdl-cholesterol.md",
+      "originalSha256": "8fe13076a1ad98a8001ea65aa067d9f01fd88c513eb21300729a1022a0ea9a08",
+      "sha256": "8fe13076a1ad98a8001ea65aa067d9f01fd88c513eb21300729a1022a0ea9a08",
+      "bytes": 569
+    },
+    {
+      "path": "outcomes/total-cholesterol.md",
+      "originalSha256": "0dc42889be0db33cf18aae1e73da92b44616627b55a19e511e9c0f95ed0ba403",
+      "sha256": "0dc42889be0db33cf18aae1e73da92b44616627b55a19e511e9c0f95ed0ba403",
+      "bytes": 553
+    },
+    {
+      "path": "concepts/mechanism/astaxanthin-oral-absorption.md",
+      "originalSha256": "3344f7168a1e6906d23e6df274b841acebef030ccecf0a45ba175e51cc72c355",
+      "sha256": "3344f7168a1e6906d23e6df274b841acebef030ccecf0a45ba175e51cc72c355",
+      "bytes": 860
+    },
+    {
+      "path": "relationships/astaxanthin-oral-absorption-relationship.md",
+      "originalSha256": "37b07d6d3489ef167b60e6b359fe4faaf3fc8b9f33cc1476bc5a9cb8c26f6bb3",
+      "sha256": "37b07d6d3489ef167b60e6b359fe4faaf3fc8b9f33cc1476bc5a9cb8c26f6bb3",
+      "bytes": 1787
+    }
+  ]
+}

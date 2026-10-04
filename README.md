@@ -4,7 +4,9 @@ An independent, English-language reference wiki connecting substances, subjectiv
 
 The launch collection covers caffeine, L-theanine, creatine, melatonin, nicotine, psilocybin, modafinil, methylphenidate, diphenhydramine and citicoline. Shared concept pages and a Cytoscape.js knowledge graph provide additional ways into the same records. The initial articles are **sourced drafts**, not independently reviewed medical guidance.
 
-The current catalog contains 281 records, including 95 profiles linked to the Molekul research atlas. The Chrome import adds 87 pages and enriches eight existing records with identity leads and research-document links. Preparations without a curated molecular identity show an explicit missing-structure state. These profiles are acquisition drafts; source links are not independently verified study findings. See [the import record](data/imports/README.md).
+The current catalog contains 296 records, including 95 profiles linked to the Molekul research atlas. That import added 87 pages and enriched eight existing records with identity leads and research-document links. Preparations without a curated molecular identity show an explicit missing-structure state. See [the Molekul import record](data/imports/README.md).
+
+Separate ChatGPT Deep Research runs have added or enriched 21 topics with structured outcomes, exposure context, pharmacokinetics, mechanisms and source disclosures. Nineteen supplied literal Markdown; Phenibut and Tadalafil were locally reconciled from their saved reports and checked primary records because generated file links were unavailable. All remain sourced drafts. [The acquisition record](data/research/README.md) distinguishes originals, format repairs and local reconciliation; 38 further topics remain queued.
 
 ## Run locally
 

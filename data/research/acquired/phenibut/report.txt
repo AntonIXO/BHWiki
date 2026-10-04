@@ -1,0 +1,276 @@
+Phenibut Deep Research
+Executive summary
+
+Phenibut is 4-amino-3-phenylbutanoic acid (β-phenyl-γ-aminobutyric acid), a chiral synthetic analogue of the inhibitory neurotransmitter GABA. The BHWiki identity supplied in the research brief—formula C10H13NO2, molecular weight 179.22 g/mol, PubChem CID 14113, and the specified connectivity SMILES—was retained, with the parent compound kept distinct from phenibut hydrochloride and commercial formulations such as Noofen and Anvifen. The attached brief was treated as the governing BHWiki schema and editorial contract. 
+1
+
+The pharmacology is better established than the clinical efficacy. In preclinical receptor and animal experiments, R-phenibut accounts for most GABA-B-receptor activity: racemic phenibut and R-phenibut had reported GABA-B binding affinities of 177 ± 2 and 92 ± 3 µM, respectively, while baclofen was substantially more potent at 6.0 ± 1 µM. Selected R-phenibut behavioral effects were blocked by the GABA-B antagonist CGP35348. 
+2
+ Separately, rat-brain membrane experiments found that both R- and S-phenibut bind the α2δ subunit of voltage-dependent calcium channels, with reported Ki values of 23 and 39 µM; rodent pain experiments supported an α2δ-associated component of its antinociceptive pharmacology. 
+3
+ These results support molecular mechanism edges, but they are not evidence that phenibut is an effective human anxiolytic, sleep medication, cognitive enhancer, or analgesic.
+
+The human efficacy literature is considerably weaker than common online descriptions imply. A small randomized 53-patient add-on study in people with cerebrovascular disease and persistent fatigue reported improvements in fatigue and Schulte-test cognitive performance, but the accessible abstract does not supply a verified dose, placebo/blinding details, or quantitative between-group effect estimates. 
+4
+ An uncontrolled 2022 post-COVID study reported pre/post improvements in HADS anxiety, subjective sleep, MoCA, TMT-B and fatigue after Anvifen, but lacked a concurrent comparator. 
+5
+ A more recent 2025 Latvian adjustment-disorder study found substantial ADNM-20 symptom improvement after three weeks of Noofen, but it too lacked a concurrent control and was funded by Noofen manufacturer JSC Olpha; two authors were Olpha employees and another disclosed financial relationships including Olpha. 
+6
+ No exact phenibut interventional study was returned by the ClinicalTrials.gov intervention search conducted for this review. 
+7
+
+The most convincing human evidence concerns harm rather than benefit. A regional poison-centre series recorded 56 phenibut exposure calls, with more than half showing CNS effects, 35.7% having documented coingestants, and 11 patients requiring intubation; this is a selected poison-centre population and is not a 19.6% risk estimate for all users. 
+8
+ A systematic review identified 62 published toxicity/withdrawal cases and described altered mental status, somnolence, psychosis and movement disorders in toxicity, while withdrawal commonly involved anxiety, agitation, insomnia and psychosis. 
+9
+ Another systematic withdrawal review found that its entire evidence base consisted of case reports or conference abstracts and documented severe manifestations including seizures, intubation and ICU admission; consequently, published case-management strategies cannot be treated as comparative evidence or converted into self-treatment protocols. 
+10
+
+A major finding of this research is that the often-repeated numeric pharmacokinetic story is less secure than it appears. The primary human study located was an open randomized crossover bioequivalence experiment in 18 healthy volunteers, measuring unchanged aminophenylbutyric acid in plasma after single oral administration and concluding that Anvifen capsules and Phenibut tablets were bioequivalent. Its accessible publication record does not report the numerical elimination half-life, absolute bioavailability, renal unchanged fraction, Tmax, Cmax, or sufficient metabolic information needed to validate commonly repeated secondary estimates. 
+11
+ The BHWiki deliverable therefore records the elimination half-life as not established from an accessible primary human source rather than propagating a secondary-source number.
+
+Evidence synthesis
+
+The clinical literature separates naturally into three tiers: modern but uncontrolled observational work; a small amount of older controlled regional research; and a much larger body of case-based toxicology. That distribution matters because a drug can have a clear receptor mechanism and clear ability to produce dependence while still having uncertain therapeutic efficacy.
+
+Clinical question	Best evidence located	Published exposure	Finding	Evidential constraint
+Adjustment-disorder symptoms	2025 Latvian observational study; 90 evaluable adults	Noofen 250 mg three times daily for about 3 weeks	ADNM-20 symptoms declined; reported mean symptom reduction 14.8 ± 11.3 points	No concurrent control; manufacturer-funded; declared commercial COI. 
+6
+
+Post-COVID anxiety	2022 uncontrolled study; 92 adults	Anvifen 500 mg three times daily for 21 days	Median HADS-A fell from 10.5 [8.5–12] to 7 [5–8]	Before/after only; regression to mean, recovery and expectancy cannot be separated from treatment effect. 
+5
+
+Post-COVID sleep	Same 2022 cohort	Same exposure	Subjective sleep score rose from 15 [15–16] to 25 [25–26]	Same uncontrolled design and multiple-outcome problem. 
+5
+
+Cognition/fatigue in cerebrovascular disease	2017 randomized study; 53 patients	Noophen plus standard therapy; accessible abstract does not state dose	Reported improvement in fatigue and Schulte-test cognitive performance	Small add-on study; accessible record does not establish placebo/blinding or a robust numerical between-group effect. 
+4
+
+Tension-type headache	2016 regional study; 117 patients	Anvifen 250 mg three times daily, 3-week course	Improvement reported across several measures; weaker result in chronic TTH	Accessible abstract does not establish blinded placebo control. 
+12
+
+Persistent postural-perceptual dizziness	2017 cohort; 84 patients	Anvifen 250 mg three times daily for 6 weeks	Anxiety and sleep reportedly improved	Uncontrolled and embedded in broader rehabilitation context. 
+13
+
+Childhood anxiety/phobic disorder	2021 study; 64 children, 40 treated	Dose not verified in accessible abstract	70% of treated children reportedly improved in anxiety/impulsivity/sleep domains	Treatment allocation and comparator methodology are insufficiently described in accessible record for strong causal inference. 
+14
+
+These published quantities are research exposures, not recommendations. The 2020 systematic safety review described 0.25–2 g/day as the therapeutic-dose context represented in the older literature, while dependence and intoxication case reports frequently involved much larger and highly variable exposures. 
+15
+ The article file preserves this distinction explicitly so that the structured “Doses” cards do not become an informal recreational-use guide.
+
+Taken as a whole, the evidence does not support equating “used clinically in Eastern Europe” with “proven by modern placebo-controlled trials.” The most recent positive efficacy paper itself is observational rather than randomized, and manufacturer involvement is substantial. 
+6
+ Conversely, the small randomized cerebrovascular study means it would also be inaccurate to say that no controlled human evidence whatsoever exists. 
+4
+ The defensible conclusion is that controlled human efficacy evidence exists but is sparse, indication-specific, regionally concentrated, and insufficient for broad anxiety/sleep/nootropic claims.
+
+Pharmacology and pharmacokinetics
+
+Phenibut should not be collapsed into a generic “GABA supplement.” The parent molecule is a β-phenyl-substituted GABA analogue and is chiral. The classic 2008 stereochemistry study found that pharmacological activity in several tested systems depended predominantly on the R-enantiomer. S-phenibut was inactive in several behavioral tests up to 500 mg/kg, while R-phenibut was approximately twice as potent as the racemate in most tests; the same study linked this stereoselectivity to GABA-B receptor affinity. 
+2
+
+The later α2δ work makes the mechanism more nuanced. R-phenibut, S-phenibut, baclofen and gabapentin had reported α2δ binding Ki values of 23, 39, 156 and 0.05 µM, respectively, in rat-brain membrane preparations. The authors found that R-phenibut's antinociceptive effects in their formalin and chronic-constriction-injury models were not blocked by a GABA-B antagonist and interpreted this as evidence for α2δ-mediated effects in those models. 
+3
+ This is why the companion concept graph contains separate gaba-b-receptor and alpha2delta-vgcc targets rather than reducing phenibut to a single mechanism.
+
+The human PK record is much thinner. The 2011 randomized crossover study is useful because it directly measured unchanged aminophenylbutyric acid in human plasma after oral pharmaceutical formulations, but the accessible report only establishes bioequivalence and does not expose the numerical values needed for a trustworthy kinetic model. 
+11
+ Consequently:
+
+PK field	BHWiki treatment	Reason
+Elimination half-life	Not established	No numeric value verified in accessible primary human publication. 
+11
+
+Onset	Not established	Community timing was not substituted for controlled human PK data.
+Peak / Tmax	Not established	Not reported in the accessible primary record. 
+11
+
+Absolute oral bioavailability	Not established	Bioequivalence is not the same as absolute bioavailability. 
+11
+
+Metabolism	Not sufficiently established here	The primary accessible human record states that unchanged parent compound was assayed but does not provide a complete metabolic balance. 
+11
+
+Felt-effect duration	Not modeled	It would be methodologically incorrect to infer subjective duration from an unverified half-life.
+
+This conservative handling is intentional. Secondary summaries commonly repeat a precise half-life and renal-excretion percentage, but the primary brief explicitly requested tracing those numbers to their original evidence rather than recycling them. 
+1
+
+Safety, dependence, withdrawal, and toxicity
+
+The safety record has two very different faces. The 2020 systematic review of older clinical trials found adverse events reported in 5.66% of 583 trial participants, with somnolence the most frequently reported event at 1.89%. 
+15
+ That finding should be interpreted cautiously because it aggregates heterogeneous older studies with uncertain adverse-event ascertainment. It should not be treated as a universal modern incidence estimate.
+
+The poison-centre and case-report literature demonstrates that severe presentations can occur. The Minnesota Poison Control System identified 56 exposure calls over 19 years, 48 of them in the final five years of the observation period. More than half involved CNS effects, withdrawal concerns were documented in 10.7%, coingestants in 35.7%, and 11 patients were intubated; no phenibut-attributed deaths occurred in that particular regional series. 
+8
+ Because patients prompting poison-centre calls are not a representative sample of all exposed people, these fractions measure the composition of reported cases rather than individual-use probabilities.
+
+The broader systematic case review found 62 published toxicity/withdrawal cases; 63.2% reported concomitant use of other addictive substances, with alcohol and benzodiazepines among the most commonly combined drugs. Toxicity presentations commonly included altered mental status, somnolence, psychosis and movement disorders. 
+9
+ This provides a basis for a co-exposure warning, not for claiming that every specific benzodiazepine–phenibut pair has been studied experimentally.
+
+Withdrawal is a particularly important risk because abrupt reduction after repeated use can produce a syndrome qualitatively opposite to phenibut's acute depressant effects. The 2023 withdrawal review found published reports of anxiety, insomnia, agitation, hallucinations, delirium and seizures; withdrawal had been described as early as two hours after the last dose in the case literature, although dose histories and product composition were often uncertain. The authors explicitly noted that every included report was a case report or conference abstract and that publication bias and unrecognized polysubstance use were major limitations. 
+10
+
+Risk domain	Evidence	What can responsibly be concluded
+Sedation / somnolence	Clinical-trial safety summaries and poison-centre reports	Phenibut can produce clinically relevant CNS depression. 
+15
+
+Severe intoxication	Poison-centre and case series	Altered consciousness and respiratory compromise requiring airway support are documented possibilities, but incidence cannot be estimated from these selected data. 
+8
+
+Agitation / psychosis	Toxicity and withdrawal case literature	Paradoxical agitated, psychotic and delirious presentations are well documented as case phenomena. 
+9
+
+Dependence	Multiple case reports and systematic reviews	Physical dependence and tolerance are established clinical concerns. 
+16
+
+Withdrawal seizures	Systematic case review	Seizures have occurred in severe published withdrawal cases; case-series frequency is not a population incidence. 
+10
+
+Alcohol/benzodiazepine co-use	Systematic clinical-case review	Frequent co-use creates a serious safety concern, but controlled pair-specific interaction magnitudes are unavailable. 
+9
+
+Product mislabeling	Laboratory analyses	Unregulated products may contain substantially different phenibut quantities than expected and may contain undeclared compounds. 
+17
+ 
+18
+
+Pregnancy/neonate	Isolated case report	Neonatal withdrawal has been reported, but reproductive risk and incidence remain undefined. 
+19
+
+Laboratory product testing reinforces why nominal online doses should not be equated with pharmaceutical exposure. In one study, four supplement brands tested after the FDA's 2019 warning contained between 21 mg and 1,164 mg per serving, and phenibut quantity increased in three of the four products relative to pre-warning samples. 
+17
+ A later analysis found label discrepancies and undeclared compounds; that paper reported no external funding but disclosed that one author was an employee of JSC Olpha, which manufactures Noofen, while Olpha supplied reference material. 
+18
+
+Legal and regulatory status
+
+The legal picture is jurisdiction-specific. It is especially important not to translate “not internationally controlled” into “legal everywhere,” or FDA dietary-supplement status into federal controlled-substance status.
+
+Jurisdiction	Verified position as of the research date	Confidence and limits
+United States	FDA states that phenibut does not meet the statutory definition of a dietary ingredient and products declaring it as one are misbranded. In April 2026 FDA again described phenibut as an unlawful dietary-supplement ingredient in a public-health alert. 
+20
+	High for FDA food/supplement status. This research did not independently verify a current DEA phenibut-specific Controlled Substances Act entry, so the deliverable does not make a blanket federal-possession claim.
+European Union	No single current EU-wide phenibut scheduling/authorization rule was verified from an official EU source in this run.	Unresolved at EU-wide level. Member-state treatment can differ; the article deliberately avoids inferring EU-wide legality from an individual country.
+United Kingdom	MHRA previously seized phenibut among experimental smart-drug products. UK law separately prohibits production/supply/import/export of non-exempt psychoactive substances under the Psychoactive Substances Act framework. 
+21
+	High for the historical MHRA enforcement and general PSA framework; a current phenibut-specific official classification ruling was not located, so the BHWiki legal record is deliberately scoped to MHRA enforcement rather than overstating the position.
+Russia	Clinical and historical literature clearly documents medicinal phenibut use in Russia. 
+22
+	A current phenibut-specific registration entry was not directly retrieved from the Russian state register. The Russian Ministry of Health confirms the GRLS as the official medicines registry, but the article does not substitute historical literature for a current registration record. 
+23
+
+Canada	No phenibut-specific current authorization/control record was retrieved from Health Canada during this run. Health Canada's official databases distinguish authorized drugs and licensed natural health products. 
+24
+	Phenibut-specific status unresolved here. The BHWiki Legal list therefore does not fabricate a Canadian status from secondary websites.
+Australia	Australian Government guidance explicitly lists phenibut as Poisons Standard Schedule 9 — prohibited substance. 
+25
+	High. Scheduling is nationally defined but given legal effect through state/territory law, so exact offences and authorized research exceptions remain locally implemented. 
+26
+
+International / UN system	WHO ECDD reported phenibut as not internationally controlled and in 2021 recommended continued surveillance rather than critical review for scheduling. 
+27
+	High for WHO/ECDD status; national law remains separate.
+
+The U.S. position is particularly well documented. FDA first publicly acted against phenibut-labelled dietary supplements in 2019 because phenibut does not satisfy the statutory definition of a dietary ingredient. 
+28
+ In 2021 FDA also described phenibut HCl in a marketed beverage product as an unsafe food additive under the circumstances at issue, and a 2026 alert again identified phenibut as unlawful in dietary supplements. 
+29
+
+Australia is the clearest prohibition among the requested jurisdictions. Government import guidance explicitly calls phenibut Schedule 9, while TGA explains that Schedule 9 is intended for substances with a high propensity for dependence/abuse that should generally be limited to approved analytical, medical or scientific research contexts. 
+25
+
+Funding, conflicts of interest, and evidence quality
+
+Commercial influence was assessed source by source rather than inferred from author affiliation alone. The clearest industry-funded efficacy publication is the 2025 Noofen adjustment-disorder paper: its funding statement says JSC Olpha supported the study, Guna Dansone and Yulia Troshina were JSC Olpha employees, and Elmārs Tērauds disclosed financial benefits from several pharmaceutical companies including Olpha. 
+6
+ This does not invalidate the observations, but the combination of commercial sponsorship, declared company employment, and an uncontrolled before/after design substantially limits causal confidence.
+
+By contrast, the 2020 systematic safety review reports support through the EU-ERA-NET NEURON project TRAINS and its PubMed record states that the authors declared no conflicts of interest. 
+30
+ Its conclusions are nevertheless constrained by the quality of the underlying older trials and case reports.
+
+For the foundational GABA-B and α2δ experiments, PubMed indexes non-U.S.-government research support, but the exact funder and full COI disclosures were not verified from accessible full-text declarations in this run. 
+2
+ 
+3
+ They are therefore marked not assessed for exact sponsorship rather than being labeled independent.
+
+The later online-product analysis offers a useful example of why funding and conflicts are encoded separately. The article says it received no external funding, but one author was an employee of Noofen manufacturer JSC Olpha and Olpha supplied phenibut hydrochloride reference material. 
+18
+ The generated article records the declared employment conflict rather than treating “no external funding” as evidence of complete commercial independence.
+
+For several older Russian-language clinical papers, only abstracts were accessible through the sources inspected. Those records are coded not assessed for funding/COI, not “none declared.” This follows the brief's requirement that absence of accessible disclosure must not be mistaken for evidence of independence. 
+1
+
+Deliverables and prioritized sources
+
+The main BHWiki article has been generated as UTF-8 Markdown and validated so that its frontmatter and every structured section parse as YAML. It follows the supplied section ordering, keeps tags: [depressant], does not use the invalid canonical IDs gaba, gaba-b-receptor, or alpha2delta without companion definitions, and leaves unsupported PK timing values explicitly unknown. 
+1
+
+Download phenibut.md
+
+Download the detailed research report
+
+Download the complete BHWiki bundle
+
+The ZIP contains the main article, the detailed report, a prioritized-source TSV, companion concepts for gaba-neurotransmitter, gaba-b-receptor, alpha2delta-vgcc, anxiety-severity, adjustment-disorder-severity, cognitive-task-performance, and invasive-airway-support; three relationship Markdown files; and two Mermaid files covering the entity/relationship map and the pharmacology–toxicity pathway.
+
+The highest-priority evidence sources are:
+
+Priority	Source	Role
+Essential	Dambrova et al., 2008, Comparative pharmacological activity of optical isomers of phenibut	Primary stereochemistry and GABA-B binding evidence. 
+2
+
+Essential	Zvejniece et al., 2015, R-phenibut binds to the α2-δ subunit…	Primary α2δ binding/mechanism evidence. 
+3
+
+Essential	Zhezlova et al., 2011, Bioequivalence of anvifen and phenibut	Primary human PK/bioequivalence study and basis for the explicit PK knowledge gap. 
+11
+
+Essential	McCabe et al., 2019, Phenibut exposures and clinical effects reported to a regional poison center	Primary clinical toxicology cohort. 
+8
+
+Essential	Feldman et al., 2023, systematic withdrawal review	Best detailed synthesis of withdrawal case evidence and its limitations. 
+10
+
+Essential	Weleff et al., 2023, systematic toxicity/withdrawal review	Broad clinical-presentation synthesis. 
+9
+
+Essential	Tērauds et al., 2025, Noofen adjustment-disorder study	Most recent directly relevant human efficacy evidence; important manufacturer funding/COI. 
+6
+
+High	Vorob'eva & Rusaya, 2017	Small randomized controlled add-on efficacy evidence. 
+4
+
+High	Esin et al., 2022	Quantified but uncontrolled anxiety/sleep/cognitive outcomes. 
+5
+
+High	Cohen et al., 2022	Primary chemical evidence of large marketed-product dose variability. 
+17
+
+High	WHO ECDD phenibut pre-review	International abuse/dependence and scheduling assessment. 
+27
+
+High	U.S. FDA phenibut regulatory pages	Current U.S. dietary-supplement status and 2026 enforcement/risk communication. 
+20
+
+High	Australian Government/TGA sources	Official Schedule 9 status and meaning of the schedule. 
+25
+Coverage and access gaps
+
+The largest unresolved scientific gap is primary human pharmacokinetics. A human randomized crossover study was located, but the accessible report did not expose enough numerical PK information to validate the familiar half-life, renal-excretion, onset or duration figures found in secondary summaries. 
+11
+ The generated BHWiki page therefore uses an explicit nonnumeric PK observation with modelEligible: false rather than fabricating precision.
+
+The second major gap is high-quality efficacy evidence. Controlled human research is not literally absent, but modern placebo-controlled evidence for anxiety, insomnia, or healthy-person cognitive enhancement was not identified. The newest positive human study is uncontrolled and commercially sponsored. 
+4
+ 
+6
+
+The final gap is regulatory. Australia and the U.S. dietary-supplement position are well supported by current official sources, while this run did not obtain sufficiently specific official records to populate definitive BHWiki legal entries for EU-wide status, current Russian registration, or phenibut-specific Canadian status. Rather than filling those cells from secondary legality websites, the article leaves those jurisdictional records out and documents the uncertainty in the companion research report. 
+25

@@ -1,0 +1,25 @@
+{
+  "topic": "citicoline",
+  "sourceUrl": "https://chatgpt.com/c/6ac1a28b-eb8c-83ed-9c93-28143ecc07ce",
+  "method": "Locally normalized from the captured Chrome research Markdown; raw acquisition remains unchanged",
+  "files": [
+    {
+      "path": "substances/citicoline.md",
+      "originalSha256": "79fd9eed1ce6c60ee326a3b9499b626cb9e2159011827573ed1428493dd84c80",
+      "sha256": "79fd9eed1ce6c60ee326a3b9499b626cb9e2159011827573ed1428493dd84c80",
+      "bytes": 41925
+    },
+    {
+      "path": "outcomes/traumatic-brain-injury-recovery.md",
+      "originalSha256": "dd07d2af89164854d06119e710b881c98a331d334fcced6ebc35e5220cb330fb",
+      "sha256": "dd07d2af89164854d06119e710b881c98a331d334fcced6ebc35e5220cb330fb",
+      "bytes": 661
+    },
+    {
+      "path": "relationships/citicoline-choline-precursor.md",
+      "originalSha256": "c27030b9fcf51f595925172c31675bcc6420965c435920890ca8b555d990e45a",
+      "sha256": "c27030b9fcf51f595925172c31675bcc6420965c435920890ca8b555d990e45a",
+      "bytes": 1093
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "topic": "noopept",
+  "sourceUrl": "https://chatgpt.com/c/6ac1a292-7058-83ed-ba67-40d30e2ed2bb",
+  "method": "Visible research content captured in Chrome through a temporary loopback-only form",
+  "files": [
+    {
+      "path": "substances/noopept.md",
+      "bytes": 41938,
+      "sha256": "ea25386f54bc09b980fbf69c5ea004ffa0f7fcc11fce6a8e8d93b685730ba66e"
+    },
+    {
+      "path": "concepts/target/ampa-receptor.md",
+      "bytes": 597,
+      "sha256": "b4098df586f463e0fbfdf35cc7a6d48ae9847c9cf66286a4bd108a1e56588e86"
+    }
+  ]
+}

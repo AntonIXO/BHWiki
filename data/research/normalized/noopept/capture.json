@@ -1,0 +1,19 @@
+{
+  "topic": "noopept",
+  "sourceUrl": "https://chatgpt.com/c/6ac1a292-7058-83ed-ba67-40d30e2ed2bb",
+  "method": "Locally normalized from the captured Chrome research Markdown; raw acquisition remains unchanged",
+  "files": [
+    {
+      "path": "substances/noopept.md",
+      "originalSha256": "ea25386f54bc09b980fbf69c5ea004ffa0f7fcc11fce6a8e8d93b685730ba66e",
+      "sha256": "ea25386f54bc09b980fbf69c5ea004ffa0f7fcc11fce6a8e8d93b685730ba66e",
+      "bytes": 41938
+    },
+    {
+      "path": "concepts/target/ampa-receptor.md",
+      "originalSha256": "b4098df586f463e0fbfdf35cc7a6d48ae9847c9cf66286a4bd108a1e56588e86",
+      "sha256": "b4098df586f463e0fbfdf35cc7a6d48ae9847c9cf66286a4bd108a1e56588e86",
+      "bytes": 597
+    }
+  ]
+}

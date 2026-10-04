@@ -1,0 +1,54 @@
+{
+  "source": "NCBI PubChem PUG REST 2D image service",
+  "retrievedAt": "2026-10-04",
+  "records": [
+    {
+      "slug": "choline",
+      "pubchemCid": 305,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/305/PNG?image_size=500x500&record_type=2d",
+      "sha256": "4ea9a3b7008eb9fe9e94adfb9f8f29b061032981ada614c73e3895a792f99094"
+    },
+    {
+      "slug": "choline-chloride",
+      "pubchemCid": 6209,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6209/PNG?image_size=500x500&record_type=2d",
+      "sha256": "71348aab16f6bec0463664de500278617b7d95b13eb63f78410410504a65f501"
+    },
+    {
+      "slug": "gaba",
+      "pubchemCid": 119,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/119/PNG?image_size=500x500&record_type=2d",
+      "sha256": "eeef28d90e974f316cbc30769d706e3f4775abbe2af4266951ced17aa28d91f2"
+    },
+    {
+      "slug": "magnesium",
+      "pubchemCid": 5462224,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5462224/PNG?image_size=500x500&record_type=2d",
+      "sha256": "a561d46fa9268b0219859e31f076e16289b7ed61c10fe281633c78e5d326db92"
+    },
+    {
+      "slug": "urolithin-a",
+      "pubchemCid": 5488186,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5488186/PNG?image_size=500x500&record_type=2d",
+      "sha256": "4bbeed2a22155b1bf0d7c591666356bfa1eb8554ddc4a7d448ae5561c42a8079"
+    },
+    {
+      "slug": "vitamin-c",
+      "pubchemCid": 54670067,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/54670067/PNG?image_size=500x500&record_type=2d",
+      "sha256": "21016694c904212eff06c5602fdcfb18ea193a306a79fc9b8e69dfb2878d3cf8"
+    },
+    {
+      "slug": "zeaxanthin",
+      "pubchemCid": 5280899,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280899/PNG?image_size=500x500&record_type=2d",
+      "sha256": "dd3e49f9ba671a57e1b29443c8d8ae5876fa96598995d526c37a9681ec5d2a20"
+    },
+    {
+      "slug": "tadalafil",
+      "pubchemCid": 110635,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/110635/PNG?image_size=500x500&record_type=2d",
+      "sha256": "0f66ca46969385681d49258d4b81a6cbdbe61ae5cacd22a25a54df8b308578c0"
+    }
+  ]
+}

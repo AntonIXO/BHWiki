@@ -434,5 +434,5 @@ export function observationMagnitude(observation: Observation): string {
   const result = observation.result;
   if (!result) return observation.magnitude || "Not quantified in this summary";
   const interval = result.confidenceInterval;
-  return `${result.estimate} ${result.unit} (${result.measure.replaceAll("-", " ")})${interval ? `; ${interval.level}% CI ${interval.lower}–${interval.upper}` : "; confidence interval not reported"}`;
+  return `${result.estimate} ${result.unit} (${result.measure.replaceAll("-", " ")})${interval ? `; ${interval.level}% CI ${interval.lower}–${interval.upper}` : "; confidence interval not curated"}`;
 }

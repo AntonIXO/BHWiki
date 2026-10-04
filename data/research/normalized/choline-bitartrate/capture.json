@@ -1,0 +1,49 @@
+{
+  "topic": "choline-bitartrate",
+  "sourceUrl": "https://chatgpt.com/c/6ac1a287-f100-83ed-baa4-5553ed7cafe4",
+  "method": "Locally normalized from the captured Chrome research Markdown; raw acquisition remains unchanged",
+  "files": [
+    {
+      "path": "substances/choline-bitartrate.md",
+      "originalSha256": "f5b8ed1c5a048e4d951b18ce387d2688d05aa1b36cce97e2c525c868d621faa9",
+      "sha256": "294bca0f884341d3517f9691a0abf6b60b0886ce8716f8f1f473161a5b979058",
+      "bytes": 52240
+    },
+    {
+      "path": "outcomes/visuomotor-accuracy.md",
+      "originalSha256": "9c9f7ade46e44ad7496e3899df20f7a0f82a878b3553696204c06a9c5c803d4b",
+      "sha256": "9c9f7ade46e44ad7496e3899df20f7a0f82a878b3553696204c06a9c5c803d4b",
+      "bytes": 616
+    },
+    {
+      "path": "outcomes/reaction-time.md",
+      "originalSha256": "f62c36239f4dfd3c92d332d8fa1eaac261f0a5f052ccab06509f24702fecd84c",
+      "sha256": "f62c36239f4dfd3c92d332d8fa1eaac261f0a5f052ccab06509f24702fecd84c",
+      "bytes": 588
+    },
+    {
+      "path": "outcomes/plasma-choline.md",
+      "originalSha256": "d92fcb48a74436777dcbc127fdf700fcaa9b8c89629a9c4ae930d7539bd276ad",
+      "sha256": "d92fcb48a74436777dcbc127fdf700fcaa9b8c89629a9c4ae930d7539bd276ad",
+      "bytes": 656
+    },
+    {
+      "path": "outcomes/trimethylamine-n-oxide.md",
+      "originalSha256": "402f25d8431ba86203caa63c7a78e27e6e019c70e68ce09edc75265f841622b8",
+      "sha256": "402f25d8431ba86203caa63c7a78e27e6e019c70e68ce09edc75265f841622b8",
+      "bytes": 797
+    },
+    {
+      "path": "outcomes/platelet-reactivity.md",
+      "originalSha256": "0303852b1282696c40fb12d35660cd96f318a40426eaa6de0ddaf9455a7a0bf7",
+      "sha256": "0303852b1282696c40fb12d35660cd96f318a40426eaa6de0ddaf9455a7a0bf7",
+      "bytes": 639
+    },
+    {
+      "path": "outcomes/insulin-sensitivity.md",
+      "originalSha256": "ac7890fd13c6027fddd82b1960e513f1c3a7ecd71291915992aa95fd75e67e8e",
+      "sha256": "ac7890fd13c6027fddd82b1960e513f1c3a7ecd71291915992aa95fd75e67e8e",
+      "bytes": 628
+    }
+  ]
+}

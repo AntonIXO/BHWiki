@@ -13,6 +13,7 @@
     "content:validate": "tsx scripts/validate-content.ts",
     "content:portal": "tsx scripts/generate-portal.ts",
     "content:molekul": "tsx scripts/import-molekul.ts",
+    "content:research": "tsx scripts/import-deep-research.ts",
     "test:e2e": "playwright test",
     "content:hashes": "tsx scripts/content-hashes.ts",
     "db:verify": "tsx scripts/db-verify.ts",

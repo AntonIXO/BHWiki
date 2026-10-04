@@ -1,0 +1,788 @@
+---
+slug: phosphatidylcholine
+name: Phosphatidylcholine
+subtitle: An acyl-variable family of choline-containing glycerophospholipids with strongly formulation-specific human evidence.
+aliases:
+  - PC
+  - 1,2-diacyl-glycero-3-phosphocholine
+  - 3-sn-phosphatidylcholine
+  - choline phosphatide
+formula: Not established
+molecularWeight: Not established
+pubchemCid: null
+smiles: Not established
+category: Glycerophospholipid
+tags:
+  - glycerophospholipid
+  - choline-precursor
+accent: "#888888"
+reviewedAt: 2026-10-04
+editorialStatus: sourced-draft
+halfLife:
+  label: Not established for the phosphatidylcholine class
+  low: null
+  high: null
+  context: Phosphatidylcholine denotes acyl-variable molecular species and mixtures; no universal human elimination half-life was identified for the class.
+  sourceId: chebi-phosphatidylcholine
+  observationId: pc-class-half-life
+kinetics:
+  onset: Not established
+  peak: Not established
+  duration: Not established
+  bioavailability: Dietary phosphatidylcholine is partly hydrolyzed to absorbable choline-containing products, while a remaining fraction can be absorbed intact and incorporated into chylomicrons; precise human absorption fractions by formulation are not established.
+  metabolism: Absorbed phosphatidylcholine undergoes phospholipid remodeling and redistribution; its choline moiety can enter host choline pathways, while intestinal microbiota can convert choline derived from ingested phosphatidylcholine toward trimethylamine and hepatic trimethylamine-N-oxide formation.
+  sourceId: ods-choline
+x-shape:
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+x-order: 9007199254740991
+---
+
+## Summary
+
+Phosphatidylcholine (PC) is an acyl-variable glycerophospholipid class, not one fixed molecule; commercial lecithin and PC-rich therapeutic formulations are not interchangeable. Human evidence is formulation-specific: MASLD steatosis data are positive, cognition and alcoholic-liver fibrosis trials are negative, and modified-release ulcerative-colitis findings did not replicate in phase 3.
+
+## Description
+
+[ChEBI](https://www.ebi.ac.uk/chebi/CHEBI%3A64482) defines phosphatidylcholine as glycerophosphocholine bearing two acyl substituents, so molecular formula, mass and structure vary by species. Consequently, no single PubChem CID, fixed formula, molecular weight or SMILES is assigned here. Commercial [lecithin](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-184/subpart-B/section-184.1400) is broader: a mixture of choline-, ethanolamine- and inositol-containing phosphatides plus other lipids. Human studies likewise use distinct exposures including lecithin, polyenyl/essential phospholipid mixtures, purified modified-release LT-02 and isotope-labeled PC. Dietary PC can be hydrolyzed or absorbed into chylomicrons, and its choline moiety enters endogenous and microbiota-dependent metabolism ([NIH ODS](https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/)).
+
+## Evidence note
+
+Provided attachments specify the topic brief, BHWiki schema, canonical IDs and format-only template; a current phosphatidylcholine article was not provided and is therefore unspecified. This draft uses new public searches through 2026-10-04. Canonical mapping: `tags` → `choline-precursor`; `outcomes.conceptId` → `cognitive-task-performance`, `fatigue-severity`; necessary class/outcome IDs are supplied as companion files. No universal PC-class half-life or single CID is claimed, and no PC-specific medication interaction met the verification threshold.
+
+## Doses
+
+```yaml
+- label: Essential phospholipid exposure in the EXCEL MASLD trial
+  amount: 1800 mg/day
+  quantity: 1800
+  quantityMax: null
+  unit: mg/day
+  ingredient: Essential phospholipids rich in polyunsaturated phosphatidylcholine
+  formulation: Oral essential phospholipid preparation derived from highly purified soybean phospholipids
+  route: oral
+  frequency: daily
+  duration: 6 months
+  population: Adults with MASLD plus type 2 diabetes, hyperlipidemia and/or obesity
+  purpose: Adjunct to lifestyle standard of care; randomized phase 4 efficacy and safety trial
+  sourceCategory: research
+  note: Research exposure, not a general phosphatidylcholine dosing recommendation; the formulation contained a PC-rich phospholipid mixture rather than one molecular species.
+  sourceId: stefan-2026
+- label: LT-02 phase 2 high-dose arm
+  amount: 3.2 g/day
+  quantity: 3.2
+  quantityMax: null
+  unit: g/day
+  ingredient: LT-02 phosphatidylcholine
+  formulation: Modified-release pellets containing highly concentrated soy-derived phosphatidylcholine
+  route: oral
+  frequency: 0.8 g four times daily
+  duration: 12 weeks
+  population: Adults with active ulcerative colitis inadequately responsive to mesalazine
+  purpose: Randomized dose-finding treatment trial
+  sourceCategory: research
+  note: The 3.2 g/day arm produced the largest phase 2 disease-activity signal; later phase 3 induction results were negative.
+  sourceId: karner-2014
+- label: LT-02 phase 3 induction exposure
+  amount: 3.2 g/day
+  quantity: 3.2
+  quantityMax: null
+  unit: g/day
+  ingredient: LT-02 phosphatidylcholine
+  formulation: Gastro-resistant modified-release phosphatidylcholine
+  route: oral
+  frequency: 0.8 g four times daily or 1.6 g twice daily
+  duration: 12 weeks
+  population: Adults with mild-to-moderate ulcerative colitis inadequately responsive to mesalamine
+  purpose: Add-on induction of remission in PROTECT-1
+  sourceCategory: research
+  note: Both active regimens delivered 3.2 g/day; the trial was stopped early for futility.
+  sourceId: dignass-2024
+- label: Polyenylphosphatidylcholine alcoholic-liver-disease trial
+  amount: 3 tablets/day
+  quantity: 3
+  quantityMax: null
+  unit: tablets/day
+  ingredient: Polyenylphosphatidylcholine
+  formulation: Oral PPC tablets
+  route: oral
+  frequency: daily
+  duration: 24 months
+  population: Heavy drinkers with biopsy-confirmed perivenular/septal fibrosis or incomplete cirrhosis
+  purpose: Prevention or reversal of alcoholic-liver fibrosis
+  sourceCategory: research
+  note: Tablet mass was not established from the inspected source; the primary 24-month fibrosis endpoint was negative.
+  sourceId: lieber-2003
+- label: Stable-isotope phosphatidylcholine challenge
+  amount: 250 mg d9-phosphatidylcholine
+  quantity: 250
+  quantityMax: null
+  unit: mg
+  ingredient: Deuterium-labeled phosphatidylcholine
+  formulation: High-purity d9-phosphatidylcholine tracer in a gelatin capsule
+  route: oral
+  frequency: single challenge
+  duration: single dose
+  population: Healthy adults
+  purpose: Trace microbiota-dependent phosphatidylcholine metabolism to TMAO
+  sourceCategory: research
+  note: The tracer was co-ingested with two hard-boiled eggs; this was a mechanistic challenge, not a therapeutic dose.
+  sourceId: tang-2013
+```
+
+## Pharmacokinetics
+
+```yaml
+- id: pc-class-half-life
+  analyte: Phosphatidylcholine class
+  route: oral
+  formulation: Variable phosphatidylcholine molecular species and mixtures
+  population: Humans
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: The generic phosphatidylcholine entity has variable acyl substituents, and oral products differ in composition and metabolic fate; no defensible universal class-wide elimination half-life was identified.
+  sourceId: chebi-phosphatidylcholine
+  modelEligible: false
+```
+
+## Modifiers
+
+```yaml
+[]
+```
+
+## Effects
+
+```yaml
+[]
+```
+
+## Outcomes
+
+```yaml
+- id: masld-cap-stefan-2026
+  study:
+    id: eudract-2021-006069-39
+    design: Multicenter double-blind randomized placebo-controlled phase 4 trial
+    sampleSize: 193
+    populationLabels:
+      - MASLD
+      - cardiometabolic comorbidity
+    comparator: Placebo plus lifestyle standard of care
+    route: oral
+    formulation: Essential phospholipids rich in polyunsaturated phosphatidylcholine
+    assessmentTime: 6 months
+  result:
+    measure: mean-difference
+    estimate: -14.81
+    unit: dB/m
+    instrument: FibroScan controlled attenuation parameter
+    comparator: Placebo plus standard of care
+    assessmentTime: 6 months
+    population: Modified intention-to-treat adults with MASLD and cardiometabolic comorbidity
+    confidenceInterval:
+      lower: -27.89
+      upper: -1.72
+      level: 95
+  reportType: measured-assessment
+  conceptId: hepatic-steatosis
+  name: Hepatic steatosis by controlled attenuation parameter
+  direction: Decreased
+  evidence: Human research
+  description: EPL plus standard care reduced CAP more than placebo plus standard care at 6 months; LS-mean changes were -24.6 versus -9.8 dB/m, meeting the trial's primary endpoint.
+  sourceId: stefan-2026
+  population: Adults with MASLD and type 2 diabetes, hyperlipidemia and/or obesity
+  exposure: Essential phospholipids 1800 mg/day orally for 6 months
+  instrument: FibroScan controlled attenuation parameter
+  magnitude: LSMD -14.81 dB/m; 95% CI -27.89 to -1.72; p=0.0269
+- id: masld-fibrosis-stefan-2026
+  study:
+    id: eudract-2021-006069-39
+    design: Multicenter double-blind randomized placebo-controlled phase 4 trial
+    sampleSize: 193
+    populationLabels:
+      - MASLD
+      - cardiometabolic comorbidity
+    comparator: Placebo plus lifestyle standard of care
+    route: oral
+    formulation: Essential phospholipids rich in polyunsaturated phosphatidylcholine
+    assessmentTime: 6 months
+  result:
+    measure: mean-difference
+    estimate: -0.06
+    unit: kPa
+    instrument: FibroScan liver stiffness measurement
+    comparator: Placebo plus standard of care
+    assessmentTime: 6 months
+    population: Modified intention-to-treat adults with MASLD and cardiometabolic comorbidity
+    confidenceInterval:
+      lower: -0.81
+      upper: 0.7
+      level: 95
+  reportType: measured-assessment
+  conceptId: liver-fibrosis
+  name: Liver stiffness
+  direction: Variable
+  evidence: Human research
+  description: The same trial found no statistically significant between-group difference in liver stiffness, so its positive steatosis result should not be interpreted as demonstrated antifibrotic efficacy.
+  sourceId: stefan-2026
+  population: Adults with MASLD and cardiometabolic comorbidity
+  exposure: Essential phospholipids 1800 mg/day orally for 6 months
+  instrument: FibroScan liver stiffness measurement
+  magnitude: LSMD -0.06 kPa; 95% CI -0.81 to 0.70; p=0.8849
+- id: masld-fatigue-stefan-2026
+  study:
+    id: eudract-2021-006069-39
+    design: Multicenter double-blind randomized placebo-controlled phase 4 trial
+    sampleSize: 193
+    populationLabels:
+      - MASLD
+      - cardiometabolic comorbidity
+    comparator: Placebo plus lifestyle standard of care
+    route: oral
+    formulation: Essential phospholipids rich in polyunsaturated phosphatidylcholine
+    assessmentTime: 6 months
+  result:
+    measure: mean-difference
+    estimate: 0.31
+    unit: CLDQ-MASLD fatigue-domain points
+    instrument: CLDQ-MASLD fatigue subscore
+    comparator: Placebo plus standard of care
+    assessmentTime: 6 months
+    population: Modified intention-to-treat adults with MASLD and cardiometabolic comorbidity
+    confidenceInterval:
+      lower: 0.04
+      upper: 0.58
+      level: 95
+  reportType: measured-assessment
+  conceptId: fatigue-severity
+  name: MASLD fatigue
+  direction: Decreased
+  evidence: Human research
+  description: The fatigue-domain score improved relative to placebo; overall quality-of-life total score did not differ significantly, making this a secondary domain-specific finding.
+  sourceId: stefan-2026
+  population: Adults with MASLD and cardiometabolic comorbidity
+  exposure: Essential phospholipids 1800 mg/day orally for 6 months
+  instrument: CLDQ-MASLD fatigue subscore
+  magnitude: LSMD +0.31 points; 95% CI 0.04 to 0.58; p=0.0229
+- id: alcoholic-liver-fibrosis-lieber-2003
+  study:
+    id: va-cooperative-study-391
+    design: Multicenter randomized prospective double-blind placebo-controlled trial
+    sampleSize: 789
+    populationLabels:
+      - alcoholic liver disease
+      - biopsy-confirmed fibrosis
+    comparator: placebo
+    route: oral
+    formulation: Polyenylphosphatidylcholine
+    assessmentTime: 24 months
+  reportType: measured-assessment
+  conceptId: liver-fibrosis
+  name: Biopsy fibrosis progression in alcoholic liver disease
+  direction: Variable
+  evidence: Human research
+  description: Among 412 participants with a 2-year repeat biopsy, PPC did not significantly alter the primary fibrosis-progression endpoint; 22.8% of PPC and 20.0% of placebo participants progressed at least one stage.
+  sourceId: lieber-2003
+  population: Predominantly male heavy drinkers with biopsy-confirmed precirrhotic alcoholic liver disease
+  exposure: Polyenylphosphatidylcholine versus placebo for 2 years
+  instrument: Serial liver biopsy fibrosis staging
+  magnitude: Progression 22.8% PPC versus 20.0% placebo; primary comparison not significant
+- id: alzheimer-lecithin-heyman-1987
+  study:
+    id: heyman-lecithin-1987
+    design: Six-month randomized double-blind placebo-controlled trial
+    sampleSize: 37
+    populationLabels:
+      - early-onset Alzheimer disease
+    comparator: placebo
+    route: oral
+    formulation: lecithin
+    assessmentTime: 6 months
+  reportType: measured-assessment
+  conceptId: cognitive-task-performance
+  name: Clinical and neuropsychological progression in Alzheimer disease
+  direction: Variable
+  evidence: Human research
+  description: High-dose lecithin increased plasma choline but did not retard clinical or neuropsychological progression; the authors concluded lecithin alone had no important therapeutic effect.
+  sourceId: heyman-1987
+  population: Adults with early-onset Alzheimer disease meeting trial diagnostic and compliance criteria
+  exposure: High-dose oral lecithin for 6 months
+  instrument: Clinical Dementia Rating, activities-of-daily-living measures and neuropsychological test battery
+  magnitude: Clinically stable/improved 37.5% lecithin versus 57.1% placebo; reported difference -19.6 percentage points, 95% CI -51 to 12
+- id: uc-disease-activity-karner-2014
+  study:
+    id: nct01011322
+    design: Multicenter double-blind randomized placebo-controlled dose-finding trial
+    sampleSize: 156
+    populationLabels:
+      - ulcerative colitis
+      - inadequate mesalazine response
+    comparator: placebo
+    route: oral
+    formulation: Modified-release LT-02 phosphatidylcholine
+    durationDays: 84
+    assessmentTime: 12 weeks
+  reportType: measured-assessment
+  conceptId: ulcerative-colitis-disease-activity
+  name: Ulcerative-colitis disease activity
+  direction: Decreased
+  evidence: Human research
+  description: The 3.2 g/day LT-02 arm produced a larger SCCAI reduction than placebo in this phase 2 study, while lower doses were not significantly different.
+  sourceId: karner-2014
+  population: Adults with active mesalazine-refractory ulcerative colitis
+  exposure: Modified-release LT-02 3.2 g/day for 12 weeks
+  instrument: Simple Clinical Colitis Activity Index
+  magnitude: SCCAI 8.5 to 4.1 with 3.2 g/day versus 9.0 to 6.0 with placebo; p=0.030
+- id: uc-induction-remission-dignass-2024
+  study:
+    id: nct02142725
+    design: Multicenter double-blind randomized placebo-controlled phase 3 induction trial
+    sampleSize: 466
+    populationLabels:
+      - ulcerative colitis
+      - inadequate mesalamine response
+    comparator: Placebo added to oral mesalamine
+    route: oral
+    formulation: Modified-release LT-02 phosphatidylcholine
+    durationDays: 84
+    assessmentTime: 12 weeks
+  reportType: measured-assessment
+  conceptId: ulcerative-colitis-remission
+  name: Deep remission during ulcerative-colitis induction
+  direction: Variable
+  evidence: Human research
+  description: PROTECT-1 was stopped early for futility; neither 3.2 g/day LT-02 dosing schedule significantly improved deep remission versus placebo.
+  sourceId: dignass-2024
+  population: Adults with mild-to-moderate ulcerative colitis inadequately responsive to mesalamine
+  exposure: LT-02 0.8 g QID or 1.6 g BID, each added to mesalamine
+  instrument: Protocol-defined deep remission
+  magnitude: Deep remission 13.5% placebo, 14.2% LT-02 BID and 9.7% LT-02 QID
+- id: uc-maintenance-remission-dignass-2024
+  study:
+    id: nct02280629
+    design: Double-blind randomized phase 3 maintenance trial
+    sampleSize: 150
+    populationLabels:
+      - ulcerative colitis
+      - remission maintenance
+    comparator: Placebo or mesalamine
+    route: oral
+    formulation: Modified-release LT-02 phosphatidylcholine
+    assessmentTime: 48 weeks
+  reportType: measured-assessment
+  conceptId: ulcerative-colitis-remission
+  name: Ulcerative-colitis maintenance of remission
+  direction: Variable
+  evidence: Human research
+  description: The under-enrolled PROTECT-2 maintenance study found no statistically significant remission difference among LT-02, placebo and mesalamine; the authors considered the efficacy signal unconfirmed.
+  sourceId: dignass-2024
+  population: Patients entering the maintenance study in ulcerative-colitis remission
+  exposure: LT-02 1.6 g twice daily for 48 weeks
+  instrument: Protocol-defined remission
+  magnitude: Remission 49.3% LT-02, 43.2% placebo and 50.0% mesalamine
+- id: pc-tmao-challenge-tang-2013
+  study:
+    id: phosphatidylcholine-challenge-2013
+    design: Prospective stable-isotope dietary challenge with within-person antibiotic perturbation in a subset
+    sampleSize: 40
+    populationLabels:
+      - healthy adults
+    comparator: Pre-antibiotic versus microbiota suppression in six participants
+    route: oral
+    formulation: d9-phosphatidylcholine tracer co-ingested with eggs
+    assessmentTime: Serial 1-8 hour plasma sampling and 24-hour urine
+  reportType: measured-assessment
+  conceptId: plasma-tmao
+  name: Microbiota-dependent TMAO generation after phosphatidylcholine ingestion
+  direction: Increased
+  evidence: Human research
+  description: Both TMAO and labeled d9-TMAO rose after the phosphatidylcholine challenge; broad-spectrum antibiotics nearly abolished their generation in the tested subset, and production returned after microbiota recovery.
+  sourceId: tang-2013
+  population: Healthy adults
+  exposure: 250 mg d9-phosphatidylcholine plus two hard-boiled eggs
+  instrument: Stable-isotope dilution liquid chromatography tandem mass spectrometry
+  magnitude: Time-dependent labeled TMAO formation; near-complete suppression after antibiotics in six participants
+```
+
+## Mechanisms
+
+```yaml
+- title: Choline-containing membrane phospholipid
+  description: Phosphatidylcholine is a glycerophosphocholine carrying two variable acyl substituents and is a major membrane phospholipid class; molecular species differ according to their acyl chains.
+  sourceId: chebi-phosphatidylcholine
+- title: Kennedy-pathway phosphatidylcholine biosynthesis
+  description: KEGG module M00090 maps choline through phosphocholine and CDP-choline to phosphatidylcholine, providing a major de novo route from choline to PC.
+  sourceId: kegg-m00090
+  conceptId: choline-precursor
+- title: PEMT phosphatidylcholine biosynthesis
+  description: In human liver, phosphatidylethanolamine N-methyltransferase catalyzes three sequential S-adenosylmethionine-dependent methylations converting phosphatidylethanolamine to phosphatidylcholine.
+  sourceId: shields-pemt-2003
+- title: Choline precursor pool
+  description: Digestion of dietary choline-containing phospholipids can liberate free choline; choline is required for acetylcholine synthesis and for phosphatidylcholine production and remodeling.
+  sourceId: ods-choline
+  conceptId: choline-precursor
+- title: Gut microbiota-dependent TMAO formation
+  description: Human stable-isotope challenge data show that the choline moiety of ingested phosphatidylcholine can contribute to microbiota-dependent trimethylamine formation and subsequent host conversion to TMAO.
+  sourceId: tang-2013
+- title: Colonic mucus-barrier replacement hypothesis
+  description: Modified-release LT-02 was designed to deliver phosphatidylcholine distally and replenish colonic mucus PC. A phase 2 signal supported the hypothesis, but later phase 3 remission efficacy was not confirmed.
+  sourceId: karner-2014
+```
+
+## Cautions
+
+```yaml
+- title: Lecithin, purified PC and PC-rich mixtures are not interchangeable
+  description: U.S. regulation defines commercial lecithin as a mixture of choline, ethanolamine and inositol phosphatides plus other lipids. Results from lecithin, LT-02, PPC and EPL therefore should remain formulation-specific.
+  sourceId: ecfr-lecithin
+- title: TMAO formation does not establish cardiovascular harm from PC supplementation
+  description: The isotope experiment demonstrates microbiota-dependent TMAO production from ingested PC. Its separate angiography cohort linked higher TMAO to cardiovascular events observationally; it did not randomize PC supplementation to cardiovascular outcomes.
+  sourceId: tang-2013
+- title: Positive MASLD surrogate endpoint does not establish antifibrotic or event benefit
+  description: EPL improved FibroScan CAP at 6 months but not liver-stiffness measurement. The study did not establish prevention of cirrhosis, decompensation, cardiovascular events or mortality.
+  sourceId: stefan-2026
+- title: Dementia efficacy is unsupported by lecithin trials
+  description: A Cochrane review of 12 randomized trials found no clear clinical benefit of lecithin for Alzheimer or Parkinsonian dementia; older studies were small and do not exclude every possible formulation-specific effect.
+  sourceId: higgins-2003
+- title: Unapproved injection-lipolysis products are a separate high-risk route
+  description: FDA reports scars, serious infections, deformities, cysts and painful nodules after unapproved fat-dissolving injections commonly containing PPC and/or sodium deoxycholate; these reports cannot isolate PC's contribution or generalize to oral PC.
+  sourceId: fda-fat-dissolving
+```
+
+## Claims
+
+```yaml
+- id: pc-is-variable-glycerophospholipid-class
+  assertion: Phosphatidylcholine is an acyl-variable glycerophospholipid class rather than one fixed molecular species, and commercial lecithin is a broader phosphatide mixture.
+  relation: is-a
+  participants:
+    - entityId: substance:phosphatidylcholine
+      role: subject
+    - entityId: tag:glycerophospholipid
+      role: class
+  context: Chemical identity and product-definition context
+  sourceIds:
+    - chebi-phosphatidylcholine
+    - ecfr-lecithin
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Individual purified PC molecular species can have fixed formulas and identifiers; this article represents the generic PC topic.
+- id: pc-participates-in-choline-pathways
+  assertion: "Phosphatidylcholine participates bidirectionally in choline metabolism: choline supports PC synthesis, while digestion and turnover of PC can supply choline-containing metabolites."
+  relation: participates-in
+  participants:
+    - entityId: substance:phosphatidylcholine
+      role: phospholipid
+    - entityId: tag:choline-precursor
+      role: metabolic-role
+  context: Human nutrition and biochemical pathway context
+  sourceIds:
+    - ods-choline
+    - kegg-m00090
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: This biochemical relationship does not establish cognitive benefit from supplemental PC.
+- id: lecithin-dementia-efficacy-not-established
+  assertion: Randomized lecithin evidence has not established clinically meaningful treatment efficacy for Alzheimer or Parkinsonian dementia.
+  relation: has-human-evidence
+  participants:
+    - entityId: substance:phosphatidylcholine
+      role: PC-containing-exposure-context
+    - entityId: tag:cognitive-task-performance
+      role: measured-outcome
+  context: Older dementia trials used lecithin rather than a uniform purified PC molecular species.
+  sourceIds:
+    - higgins-2003
+    - heyman-1987
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Trials were generally small and old; lecithin composition and endpoints varied.
+- id: hepatic-evidence-is-formulation-and-indication-specific
+  assertion: "Hepatic evidence is context-specific: a 2026 EPL trial reduced CAP-defined steatosis in MASLD, whereas long-term PPC did not reduce biopsy fibrosis progression in alcoholic liver disease."
+  relation: has-context-dependent-human-evidence
+  participants:
+    - entityId: substance:phosphatidylcholine
+      role: PC-rich-formulation-context
+    - entityId: tag:hepatic-steatosis
+      role: measured-outcome
+    - entityId: tag:liver-fibrosis
+      role: measured-outcome
+  context: Different populations, PC-rich formulations and liver endpoints
+  sourceIds:
+    - stefan-2026
+    - lieber-2003
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: The trials do not test the same disease, formulation or endpoint and should not be treated as direct replications.
+- id: lt02-phase2-signal-not-confirmed-phase3
+  assertion: A phase 2 modified-release LT-02 disease-activity signal in ulcerative colitis was not confirmed as superior remission efficacy in the subsequent phase 3 induction program.
+  relation: has-conflicting-stage-specific-evidence
+  participants:
+    - entityId: substance:phosphatidylcholine
+      role: modified-release-intervention
+    - entityId: tag:ulcerative-colitis-remission
+      role: clinical-outcome
+  context: Modified-release LT-02 in mesalamine-inadequate-response ulcerative colitis
+  sourceIds:
+    - karner-2014
+    - dignass-2024
+  conflictingSourceIds:
+    - karner-2014
+    - dignass-2024
+  assessment: not-formally-assessed
+  limitation: Phase 2 and phase 3 used different primary endpoints; the maintenance study was under-enrolled after induction futility.
+- id: pc-can-generate-tmao-via-microbiota
+  assertion: Orally ingested phosphatidylcholine can generate circulating TMAO through a gut-microbiota-dependent pathway in humans.
+  relation: produces-metabolite-via-host-microbiome
+  participants:
+    - entityId: substance:phosphatidylcholine
+      role: dietary-precursor
+    - entityId: tag:plasma-tmao
+      role: measured-metabolite
+  context: Stable-isotope oral phosphatidylcholine challenge
+  sourceIds:
+    - tang-2013
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: This establishes metabolite formation, not that ordinary PC supplementation causes cardiovascular disease.
+```
+
+## Interactions
+
+```yaml
+[]
+```
+
+## Experience links
+
+```yaml
+[]
+```
+
+## References
+
+```yaml
+- id: chebi-phosphatidylcholine
+  title: phosphatidylcholine (CHEBI:64482)
+  authors: Chemical Entities of Biological Interest, EMBL-EBI
+  year: 2018
+  url: https://www.ebi.ac.uk/chebi/CHEBI%3A64482
+  kind: Chemical database record
+  insight: Defines generic phosphatidylcholine as glycerophosphocholine bearing two acyl substituents; the record uses variable R groups rather than one fixed species.
+  limitation: Generic ontology entry, not a pharmacokinetic or clinical-efficacy source.
+  funding: Not applicable to this institutional chemical-database record.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not applicable to this institutional chemical-database record.
+  conflictOfInterestStatus: not-assessed
+- id: ods-choline
+  title: Choline — Fact Sheet for Health Professionals
+  authors: National Institutes of Health, Office of Dietary Supplements
+  year: 2022
+  url: https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/
+  kind: Authoritative nutrient monograph
+  insight: Describes PC digestion, intact phospholipid absorption into chylomicrons, lecithin as PC-rich, choline pathways, cognition evidence and TMA/TMAO context.
+  limitation: Dynamic monograph; 2026 denotes the reviewed web version, not a claim that all underlying evidence was published in 2026.
+  funding: Not applicable to this U.S. government nutrient monograph.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not applicable to this institutional monograph.
+  conflictOfInterestStatus: not-assessed
+- id: kegg-m00090
+  title: "KEGG Module M00090: Phosphatidylcholine (PC) biosynthesis, choline => PC"
+  authors: Kyoto Encyclopedia of Genes and Genomes
+  year: 2026
+  url: https://www.kegg.jp/module/M00090
+  kind: Pathway database
+  insight: Maps the choline-to-PC Kennedy pathway through phosphocholine and CDP-choline to phosphatidylcholine.
+  limitation: Dynamic pathway database; it does not quantify human supplementation effects.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: shields-pemt-2003
+  title: Membrane topography of human phosphatidylethanolamine N-methyltransferase.
+  authors: David J Shields, Richard Lehner, Luis B Agellon, Dennis E Vance
+  year: 2003
+  url: https://pubmed.ncbi.nlm.nih.gov/12431977/
+  kind: Primary biochemical study
+  insight: Reports human hepatic conversion of phosphatidylethanolamine to PC through three sequential PEMT-catalyzed methylations using S-adenosylmethionine.
+  limitation: Mechanistic biochemical work; it does not test supplemental PC efficacy.
+  pmid: "12431977"
+  doi: 10.1074/jbc.M210904200
+  funding: Not assessed from an inspected funding declaration.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: tang-2013
+  title: Intestinal microbial metabolism of phosphatidylcholine and cardiovascular risk
+  authors: W H Wilson Tang, Zeneng Wang, Bruce S Levison, Robert A Koeth, Earl B Britt, Xiaoming Fu, Yuping Wu, Stanley L Hazen
+  year: 2013
+  url: https://pubmed.ncbi.nlm.nih.gov/23614584/
+  kind: Human challenge study and prospective cohort
+  insight: Stable-isotope PC challenge demonstrated microbiota-dependent TMAO formation; a separate 4,007-person angiography cohort associated higher TMAO with later cardiovascular events.
+  limitation: The cardiovascular analysis was observational and does not establish that PC supplementation causes cardiovascular events.
+  pmid: "23614584"
+  doi: 10.1056/NEJMoa1109400
+  funding: The publication reports National Institutes of Health and other support; detailed sponsorship classification was not fully assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed from a complete inspected declaration.
+  conflictOfInterestStatus: not-assessed
+- id: heyman-1987
+  title: Failure of long term high-dose lecithin to retard progression of early-onset Alzheimer's disease.
+  authors: A Heyman, D Schmechel, W Wilkinson, H Rogers, R Krishnan, D Holloway, K Schultz, L Gwyther, R Peoples, C Utley
+  year: 1987
+  url: https://pubmed.ncbi.nlm.nih.gov/3479525/
+  kind: Randomized controlled trial
+  insight: Six-month high-dose lecithin raised plasma choline but did not slow clinical or neuropsychological Alzheimer progression.
+  limitation: Small older trial; only 37 participants met diagnostic and compliance requirements, and lecithin is not purified PC.
+  pmid: "3479525"
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: higgins-2003
+  title: Lecithin for dementia and cognitive impairment.
+  authors: J P T Higgins, L Flicker
+  year: 2003
+  url: https://pubmed.ncbi.nlm.nih.gov/12917896/
+  kind: Systematic review and meta-analysis
+  insight: Review of 12 randomized trials found no clear clinical benefit of lecithin in Alzheimer or Parkinsonian dementia.
+  limitation: Evidence was sparse, heterogeneous and based on small older lecithin trials; a moderate effect could not be excluded.
+  pmid: "12917896"
+  doi: 10.1002/14651858.CD001015
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: lieber-2003
+  title: II. Veterans Affairs Cooperative Study of polyenylphosphatidylcholine in alcoholic liver disease.
+  authors: Charles S Lieber, David G Weiss, Roberto Groszmann, Fiorenzo Paronetto, Steven Schenker, Veterans Affairs Cooperative Study 391 Group
+  year: 2003
+  url: https://pubmed.ncbi.nlm.nih.gov/14634492/
+  kind: Multicenter randomized controlled trial
+  insight: In 789 heavy drinkers with biopsy-confirmed liver injury, 2-year PPC treatment did not significantly alter the primary fibrosis-progression endpoint.
+  limitation: Only 412 underwent the 24-month biopsy; alcohol intake fell markedly in both arms, reducing fibrosis progression and treatment contrast.
+  pmid: "14634492"
+  doi: 10.1097/01.ALC.0000093743.03049.80
+  funding: Not fully assessed from an inspected publication funding declaration.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: karner-2014
+  title: 'First multicenter study of modified release phosphatidylcholine "LT-02" in ulcerative colitis: a randomized, placebo-controlled trial in mesalazine-refractory courses.'
+  authors: Max Karner, Andreas Kocjan, Juergen Stein, Stefan Schreiber, Georg von Boyen, Peter Uebel, Carsten Schmidt, Limas Kupcinskas, Ion Dina, Frank Zuelch, Gerhard Keilhauer, Wolfgang Stremmel
+  year: 2014
+  url: https://pubmed.ncbi.nlm.nih.gov/24796768/
+  kind: Multicenter randomized controlled trial
+  insight: Phase 2 LT-02 3.2 g/day reduced SCCAI more than placebo over 12 weeks; remission and mucosal-healing comparisons were less definitive.
+  limitation: Small dose-finding study using change in SCCAI as the primary endpoint; later phase 3 induction failed.
+  pmid: "24796768"
+  doi: 10.1038/ajg.2014.104
+  funding: The publication states that the study was funded by sponsor Lipid Therapeutics GmbH, Heidelberg, Germany.
+  sponsorshipStatus: industry-funded
+  conflictsOfInterest: Complete conflict declaration was not assessed for classification.
+  conflictOfInterestStatus: not-assessed
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC4085478/
+- id: dignass-2024
+  title: "Modified-Release Phosphatidylcholine (LT-02) for Ulcerative Colitis: Two Double-Blind, Randomized, Placebo-Controlled Trials."
+  authors: Axel Dignass, Wolfgang Stremmel, Marek Horyński, Oleksandr Poyda, Peter Armerding, Klaus Fellermann, Jost Langhorst, Tanja Kuehbacher, Peter Uebel, Juergen Stein, Gottfried Novacek, Elena Avalueva, Oleksandr Oliinyk, Peter Hasselblatt, Andrey Dorofeyev, Heidrun Heinemann, Ralph Mueller, Roland Greinwald, Walter Reinisch, International PROTECT-1/2 Study Groups
+  year: 2024
+  url: https://pubmed.ncbi.nlm.nih.gov/37806372/
+  kind: Phase 3 randomized controlled trials
+  insight: PROTECT-1 showed no LT-02 induction benefit and stopped for futility; the smaller maintenance trial showed no significant remission difference.
+  limitation: Maintenance enrollment was curtailed after induction futility, limiting power to assess the maintenance signal.
+  pmid: "37806372"
+  doi: 10.1016/j.cgh.2023.09.031
+  funding: ClinicalTrials.gov identifies commercial sponsor Dr. Falk Pharma GmbH for PROTECT-1 and PROTECT-2.
+  sponsorshipStatus: industry-funded
+  conflictsOfInterest: Complete publication conflict declaration was not assessed for classification in this draft.
+  conflictOfInterestStatus: not-assessed
+  disclosureUrl: https://clinicaltrials.gov/study/NCT02142725
+- id: stefan-2026
+  title: "Effect of Essential Phospholipids in Metabolic Dysfunction-Associated Steatotic Liver Disease: A Randomised Phase 4 Clinical Trial."
+  authors: Norbert Stefan, Marek Hartleb, Jiangao Fan, Münevver Demir, Jörn M Schattenberg, Jan Gietka, Łukasz Bułdak, Branko Popovic, Rafael Varona, Beatrice Bois De Fer
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/41889076/
+  kind: Multicenter randomized phase 4 trial
+  insight: EPL 1800 mg/day improved CAP-defined hepatic steatosis versus placebo at 6 months but did not significantly improve liver stiffness.
+  limitation: Six-month treatment, noninvasive surrogate endpoints and a 165-person modified intention-to-treat set limit inference about long-term clinical outcomes.
+  pmid: "41889076"
+  doi: 10.1111/liv.70601
+  funding: The publication reports commercial support from Opella.
+  sponsorshipStatus: industry-funded
+  conflictsOfInterest: N. Stefan reported Opella support; B. Popovic, R. Varona and B. Bois De Fer disclosed Opella employment/financial interests; additional author industry relationships were declared.
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC13022469/
+- id: ecfr-lecithin
+  title: 21 CFR § 184.1400 — Lecithin
+  authors: U.S. Food and Drug Administration; Electronic Code of Federal Regulations
+  year: 1983
+  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-184/subpart-B/section-184.1400
+  kind: Official regulation
+  insight: Defines commercial lecithin as a mixture of choline, ethanolamine and inositol phosphatides with other lipids and permits food use under current good manufacturing practice.
+  limitation: Food-ingredient regulation does not establish therapeutic efficacy or approval of purified PC drug products.
+  funding: Not applicable to an official regulation.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not applicable to an official regulation.
+  conflictOfInterestStatus: not-assessed
+- id: fda-fat-dissolving
+  title: Using Fat-Dissolving Injections That Are Not FDA Approved Can Be Harmful
+  authors: U.S. Food and Drug Administration
+  year: 2023
+  url: https://www.fda.gov/drugs/buying-using-medicine-safely/using-fat-dissolving-injections-are-not-fda-approved-can-be-harmful
+  kind: Official regulatory safety communication
+  insight: FDA warns that unapproved injection-lipolysis products commonly containing PPC and sodium deoxycholate have been associated with serious local adverse reactions.
+  limitation: Reports involve unapproved injectable products and cannot isolate PPC's causal contribution or characterize oral PC safety.
+  funding: Not applicable to an FDA safety communication.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not applicable to an FDA safety communication.
+  conflictOfInterestStatus: not-assessed
+```
+
+## Legal
+
+```yaml
+- jurisdiction: United States
+  activity: Use of commercial lecithin as a food ingredient
+  status: 21 CFR § 184.1400 permits commercial lecithin in food with no limitation other than current good manufacturing practice; this status concerns lecithin, not therapeutic approval of purified phosphatidylcholine.
+  sourceUrl: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-184/subpart-B/section-184.1400
+  asOf: 2026-10-04
+- jurisdiction: United States
+  activity: Injection lipolysis using phosphatidylcholine-containing unapproved products
+  status: FDA warns against unapproved fat-dissolving injections commonly containing phosphatidylcholine and/or sodium deoxycholate; phosphatidylcholine-containing injection-lipolysis products are not established here as FDA-approved drugs.
+  sourceUrl: https://www.fda.gov/drugs/buying-using-medicine-safely/using-fat-dissolving-injections-are-not-fda-approved-can-be-harmful
+  asOf: 2026-10-04
+```
+

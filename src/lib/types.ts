@@ -2,7 +2,14 @@ import type { DirectedStep, EffectDetails, QuantitativeResult, StudyContext } fr
 export type TagKind = "class" | "chemical-family" | "mechanism" | "target" | "neurotransmitter" | "enzyme" | "effect" | "outcome" | "exposure" | "legal";
 export type Tag = { id: string; label: string; kind: TagKind; description: string; aliases?: string[]; sourceUrls?: string[]; relatedIds?: string[]; details?: EffectDetails };
 export type Concept = Tag;
-export type Reference = { id: string; title: string; authors: string; year: number; url: string; kind: string; insight: string; limitation: string; pmid?: string; doi?: string; funding?: string };
+export type SponsorshipStatus = "industry-funded" | "non-industry-funded" | "mixed-funding" | "no-external-funding" | "not-reported" | "not-assessed";
+export type ConflictOfInterestStatus = "declared" | "none-declared" | "not-reported" | "not-assessed";
+export type Reference = {
+  id: string; title: string; authors: string; year: number; url: string; kind: string;
+  insight: string; limitation: string; pmid?: string; doi?: string; funding?: string;
+  sponsorshipStatus?: SponsorshipStatus; conflictsOfInterest?: string;
+  conflictOfInterestStatus?: ConflictOfInterestStatus; disclosureUrl?: string;
+};
 export type EditorialStatus = "sourced-draft" | "editorially-reviewed";
 export type Observation = {
   id?: string; study?: StudyContext; result?: QuantitativeResult; conflictingSourceIds?: string[];

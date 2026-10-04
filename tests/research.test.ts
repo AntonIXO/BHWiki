@@ -186,7 +186,7 @@ test("mechanism diagrams keep qualifiers and draw arrows only for authored steps
   const data = {
     substances: substances.map(toCatalogSubstance),
     tags,
-    hyperedges,
+    hyperedges: hyperedges.filter((edge) => edge.members.includes("substance:caffeine")),
   };
   const base = buildMechanismModel(data);
   assert.equal(base.elements.filter((e) => e.data.directed).length, 0);
@@ -194,6 +194,7 @@ test("mechanism diagrams keep qualifiers and draw arrows only for authored steps
   const model = buildMechanismModel({
     ...corpus,
     substances: corpus.substances.map(toCatalogSubstance),
+    hyperedges: corpus.hyperedges.filter((edge) => edge.members.includes("substance:caffeine")),
   });
   assert.equal(model.elements.filter((e) => e.data.directed).length, 1);
   const smoke = model.relationships.find((e) => e.id === "caffeine-clearance")!;

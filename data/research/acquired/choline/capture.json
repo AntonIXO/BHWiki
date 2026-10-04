@@ -1,0 +1,92 @@
+{
+  "topic": "choline",
+  "sourceUrl": "https://chatgpt.com/c/6ac1a286-89f4-83eb-82f8-08d782ab52ee",
+  "method": "Visible research content captured in Chrome through a temporary loopback-only form",
+  "files": [
+    {
+      "path": "substances/choline.md",
+      "bytes": 62964,
+      "sha256": "0cf3cfd9b30068decf1565054a0bb927d9a999fd25110380be519b3a2530af84"
+    },
+    {
+      "path": "outcomes/choline-deficiency-organ-dysfunction.md",
+      "bytes": 612,
+      "sha256": "4a4dd31851cce19787bef456a282a17a631c4b1340c612c74fbff18e1d189812"
+    },
+    {
+      "path": "outcomes/hepatic-steatosis.md",
+      "bytes": 571,
+      "sha256": "52cd58dacd7b84cb298c53ca7c92c732c0262c3519c712ad2daa4cef45d99cae"
+    },
+    {
+      "path": "outcomes/infant-information-processing-speed.md",
+      "bytes": 597,
+      "sha256": "211a8d8a75bdaf891c3f569e24a38f34a3a6c77c9e42d52687cc162c81d79cbb"
+    },
+    {
+      "path": "outcomes/plasma-tmao.md",
+      "bytes": 674,
+      "sha256": "6a49b1f1afcfa485146c9e7b9dbedb1f8973958f4f478abd273e136acb93c749"
+    },
+    {
+      "path": "outcomes/platelet-reactivity.md",
+      "bytes": 576,
+      "sha256": "c79ed18c2e60b0bfa86c89c4707c87a5923cdfc776b8f0d4a1afe5cbdd7369d1"
+    },
+    {
+      "path": "concepts/mechanism/phosphatidylcholine-biosynthesis.md",
+      "bytes": 859,
+      "sha256": "07124ec3d8b24dbd6e6d0e2c218824218ec2435902b612ce348f446d192e958d"
+    },
+    {
+      "path": "concepts/mechanism/betaine-one-carbon-metabolism.md",
+      "bytes": 703,
+      "sha256": "425665b5d151ec713555356cecef2d38f2be840a1b4f7fcd194e57eeab3aa268"
+    },
+    {
+      "path": "concepts/mechanism/gut-microbial-tmao-generation.md",
+      "bytes": 708,
+      "sha256": "617276581c88021c7af13c3a707edc29b98e1eb0ec7a33fcaa20e8d7f9b72a5d"
+    },
+    {
+      "path": "concepts/enzyme/chka.md",
+      "bytes": 534,
+      "sha256": "85105980aca25d101a5da6a19707eb005123e58ab00fef14701cf342aa55724f"
+    },
+    {
+      "path": "concepts/enzyme/pcyt1a.md",
+      "bytes": 608,
+      "sha256": "37656b1c9b07272c1e872d019e684a1426f655b9c94c7f1bb9b7e8c59044dbe4"
+    },
+    {
+      "path": "concepts/enzyme/pemt.md",
+      "bytes": 634,
+      "sha256": "44b401ff940ae0ff8b6b6d7a8aeaa8c0148ef16130887d5caeca73d1a0f6ae85"
+    },
+    {
+      "path": "concepts/enzyme/chdh.md",
+      "bytes": 545,
+      "sha256": "4b21232789bcc1ceec2d4ecc552067961cc71573da9ec3ad8a66f9b03b1290fd"
+    },
+    {
+      "path": "concepts/enzyme/bhmt.md",
+      "bytes": 567,
+      "sha256": "37de70137a2feab57f9808648844e56c5175745f0ab6f6eab17edd48b8ecb20c"
+    },
+    {
+      "path": "concepts/enzyme/chat.md",
+      "bytes": 539,
+      "sha256": "1d88099cdb7288abd14efedb583a61d44ef56134603110db7a5d47f90b2e0a17"
+    },
+    {
+      "path": "concepts/enzyme/fmo3.md",
+      "bytes": 646,
+      "sha256": "45a30c25d96b0a07131f9d1d94ac570cfe4e068f1523cc39886d8026993faaea"
+    },
+    {
+      "path": "relationships/choline-metabolic-network.md",
+      "bytes": 5468,
+      "sha256": "4af9bf93df7e0c76793b4c88331f007ba724785fa22ce68bbf7d0b91a31697c3"
+    }
+  ]
+}

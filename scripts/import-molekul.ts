@@ -76,6 +76,9 @@ export function makeImportedRecord(manifest: MolekulManifest, row: MolekulManife
   } satisfies Substance;
   // A reviewed article must be deliberately reconciled, never silently downgraded by an acquisition script.
   if (draft.editorialStatus === "editorially-reviewed") throw new Error(`Manual reconciliation required for reviewed article: ${slug}`);
+  // This is a frozen acquisition snapshot. Do not reintroduce its discovery prose
+  // after a source-linked profile has subsequently been researched or corrected.
+  if (existing?.references.some(ref => ref.id === "molekul-profile" && ref.url === profileUrl)) return draft;
   const title = existing?.name ?? name;
   if (name !== title && !draft.aliases.includes(name)) draft.aliases.push(name);
   if (alias && !draft.aliases.includes(alias)) draft.aliases.push(alias);

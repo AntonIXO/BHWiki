@@ -1,0 +1,67 @@
+{
+  "topic": "gaba",
+  "sourceUrl": "https://chatgpt.com/c/6ac1a294-a3a0-83eb-9b89-6a70eb3ee436",
+  "method": "Visible research content captured in Chrome through a temporary loopback-only form",
+  "files": [
+    {
+      "path": "substances/gaba.md",
+      "bytes": 36765,
+      "sha256": "e700f3970f9fd9ce9932cb7a7019d58095aeed219dd7c28826e7caa1d6ea0627"
+    },
+    {
+      "path": "concepts/target/gaba-a-receptor.md",
+      "bytes": 477,
+      "sha256": "e533d0c32566e34f83584164370ebf76c93b3278d95896988c6f43177b420f10"
+    },
+    {
+      "path": "outcomes/stress-response.md",
+      "bytes": 465,
+      "sha256": "d6b74479ac7fa46d2ffbae413f20128f6323207793af28833cfccacf9629e7c5"
+    },
+    {
+      "path": "concepts/neurotransmitter/glutamate.md",
+      "bytes": 462,
+      "sha256": "4a2753f8df744ce9202e69430ac4d674ec8cf10228b54022efddfe44293b83aa"
+    },
+    {
+      "path": "concepts/enzyme/glutamate-decarboxylase.md",
+      "bytes": 466,
+      "sha256": "8b2abdba58492f73ea3b0a85797f6582818e128e21325b188f683e339d453377"
+    },
+    {
+      "path": "concepts/target/gaba-transporter-1.md",
+      "bytes": 464,
+      "sha256": "3776d76538d4a400f191728c565f1e457a9e1573d4ee1baa0787dd49ce17cb7e"
+    },
+    {
+      "path": "concepts/enzyme/gaba-transaminase.md",
+      "bytes": 481,
+      "sha256": "daf50471705874f824c6b4f84d656ba00b75a92b421a83e89b9c89a5ccf444f2"
+    },
+    {
+      "path": "concepts/enzyme/succinate-semialdehyde-dehydrogenase.md",
+      "bytes": 513,
+      "sha256": "efddec2d98f7d7f044dc8e4d9a8d78183fdbdaef76f19507b8442951c158e8b4"
+    },
+    {
+      "path": "concepts/exposure/oral-systemic-exposure.md",
+      "bytes": 458,
+      "sha256": "b1fc7583605ac2e6f71fc93c00590c1a58716f49db72305ad69f8217e09d4ea5"
+    },
+    {
+      "path": "relationships/gaba-biosynthesis.md",
+      "bytes": 881,
+      "sha256": "8ff36d89f514bcc7447bbb9cc047cdc2ed1145342734b6f2004a788937254e73"
+    },
+    {
+      "path": "relationships/gaba-receptor-interactions.md",
+      "bytes": 1454,
+      "sha256": "c45d5c2ca6920b4b2e14efb1b4d45760d82610f4b274ffd0a30ab78f79d59636"
+    },
+    {
+      "path": "relationships/gaba-transport-metabolism.md",
+      "bytes": 1365,
+      "sha256": "519f69c61c8671d11c2b30e896c7b1a358bea963e67e2a5865f2d33324f8c78e"
+    }
+  ]
+}

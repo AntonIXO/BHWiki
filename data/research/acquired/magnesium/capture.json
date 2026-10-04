@@ -1,0 +1,72 @@
+{
+  "topic": "magnesium",
+  "sourceUrl": "https://chatgpt.com/c/6ac18763-7c5c-83ed-866a-bccee73875f3",
+  "method": "Visible research content captured in Chrome through a temporary loopback-only form",
+  "files": [
+    {
+      "path": "substances/magnesium.md",
+      "bytes": 75825,
+      "sha256": "6c47dc107519050be9b41d311369eb3c692f69b26bf06e8de59589d35608713f"
+    },
+    {
+      "path": "outcomes/blood-pressure.md",
+      "bytes": 636,
+      "sha256": "a17b30335407289b19151aa2f7051ec951e5590feebbec7a918f5e016d099f71"
+    },
+    {
+      "path": "outcomes/insulin-sensitivity.md",
+      "bytes": 614,
+      "sha256": "dc763eca8c1ac6755f7005a4d1240cf09501ab9c0318c7b2d327af3ffe7038e6"
+    },
+    {
+      "path": "outcomes/glycemic-control.md",
+      "bytes": 670,
+      "sha256": "71d9fe953539c8bb35800413a6239cd085cf1eab98fcaa55b73bea5fdc61b080"
+    },
+    {
+      "path": "outcomes/cognitive-performance.md",
+      "bytes": 660,
+      "sha256": "12df6d5a3b67e0a11f289e84ae1548c2106d333af41be166af08c8f8d1ce27ed"
+    },
+    {
+      "path": "concepts/mechanism/magnesium-homeostasis.md",
+      "bytes": 740,
+      "sha256": "803a574af96e9091fd0aa98439c4a9e2b8efbeba98f7bf7b768ae6e7939b0915"
+    },
+    {
+      "path": "concepts/mechanism/mg-atp-complex.md",
+      "bytes": 654,
+      "sha256": "0367be91ebb338f0044b7c0cf88e00f2f0c2c7399dfb7711b443648e733768dc"
+    },
+    {
+      "path": "concepts/target/trpm6.md",
+      "bytes": 650,
+      "sha256": "6ae1716da968fb5932104f159fc83906e489b966d6ac737f6ed86ca30c2413f6"
+    },
+    {
+      "path": "concepts/target/trpm7.md",
+      "bytes": 623,
+      "sha256": "a3a1c39c89602ef1e14f36e5047f70bfaa9abcd7bdd14ef4f4539b0248a18b2a"
+    },
+    {
+      "path": "concepts/target/slc41a1.md",
+      "bytes": 566,
+      "sha256": "7a5524a20e5e34357abd5c2b2205b8e57ca5aa9eafc40b2fd145f4d9ebc3a75b"
+    },
+    {
+      "path": "concepts/target/cnnm2.md",
+      "bytes": 683,
+      "sha256": "c1aebf7331da84f9ff869a198737c2c903625b7b8bff12ce9de04d1a87ce86d3"
+    },
+    {
+      "path": "relationships/magnesium-epithelial-homeostasis.md",
+      "bytes": 1861,
+      "sha256": "f718111ed7bfda6e6cd21083005b89ac975db3898c4775314a34d443f0ce25bf"
+    },
+    {
+      "path": "relationships/magnesium-cellular-mgatp.md",
+      "bytes": 1370,
+      "sha256": "02ca7b3c7c295d77e8e21734af7484902bfd74b4b0106a1b67a3c04c8bf60ff4"
+    }
+  ]
+}

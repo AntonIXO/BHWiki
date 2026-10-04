@@ -1,0 +1,1718 @@
+Zeaxanthin BHWiki research deliverable
+Primary deliverable
+
+The complete machine-importable zeaxanthin.md source is below. It follows the supplied BHWiki contract, including the requirement to distinguish standalone zeaxanthin from lutein/zeaxanthin and meso-zeaxanthin combinations. 
+1
+ The central evidence tension is preserved rather than averaged away: LUXEA reported a corrected roughly 14% MPOD increase with zeaxanthin, while the later randomized Japanese study found MPOD unchanged with 10 mg/day zeaxanthin; the ZVF AMD trial reported some zeaxanthin-arm visual improvements but had a lutein—not inert placebo—control and no between-group MPOD advantage. 
+2
+
+markdown
+Copy
+---
+slug: zeaxanthin
+name: Zeaxanthin
+subtitle: "A macular xanthophyll carotenoid with mixed standalone human supplementation evidence"
+aliases:
+  - "3R,3'R-zeaxanthin"
+  - "all-trans-zeaxanthin"
+  - "beta,beta-carotene-3,3'-diol"
+  - "zeaxanthol"
+formula: C40H56O2
+molecularWeight: "568.9 g/mol"
+pubchemCid: 5280899
+smiles: "CC1=C(C(C[C@@H](C1)O)(C)C)/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C2=C(C[C@H](CC2(C)C)O)C)\\C)\\C)/C)/C"
+category: carotenoid
+tags: []
+accent: "#E7A900"
+reviewedAt: "2026-10-04"
+editorialStatus: sourced-draft
+halfLife:
+  label: "Human elimination half-life not established"
+  low: null
+  high: null
+  context: "The inspected human supplementation and single-dose bioavailability studies did not establish a validated terminal elimination half-life for parent zeaxanthin. A 2022 randomized single-dose study sampled serum through 72 hours and reported Cmax and AUC comparisons but not a terminal half-life."
+  sourceId: ref-kotagiri-2022
+  observationId: pk-zeaxanthin-half-life-not-established
+kinetics:
+  onset: "No subjective-effect onset is established. Serum exposure has been measured during the first 72 hours after a single oral lutein/zeaxanthin dose, while retinal pigment responses in supplementation trials were assessed over months."
+  peak: "Not established across formulations; formulation-specific serum Cmax differed substantially in a randomized bioavailability study."
+  duration: "Retinal accumulation and visual endpoints have generally been studied over approximately 3 to 24 months; this is not an elimination-duration estimate."
+  bioavailability: "Oral bioavailability is formulation-dependent. In 90 healthy adults given a single 10 mg lutein plus 2 mg zeaxanthin dose, the Ocusorb formulation produced about 1.8-fold higher zeaxanthin Cmax and 2.2-fold higher zeaxanthin AUC0-72 than the reference formulation."
+  metabolism: "A clinically validated human parent-zeaxanthin elimination model was not established in the inspected trials; studies primarily quantified intact circulating zeaxanthin by HPLC."
+  sourceId: ref-kotagiri-2022
+x-shape: [slug, name, subtitle, summary, description, aliases, formula, molecularWeight, pubchemCid, smiles, category, tags, accent, evidenceNote, reviewedAt, editorialStatus, halfLife, pkObservations, kinetics, modifiers, doses, effects, outcomes, claims, mechanisms, cautions, interactions, experienceLinks, references, legal]
+---
+
+## Summary
+
+**Executive summary.** Zeaxanthin is the dietary `(3R,3'R)` xanthophyll concentrated with lutein and meso-zeaxanthin in human macular pigment. Its molecular identity is well established, but the clinical evidence for **standalone zeaxanthin supplementation** is much smaller and more internally conflicting than the literature on combined lutein/zeaxanthin formulations.
+
+The clearest standalone retinal-pigment evidence conflicts. The LUXEA program used identically formulated lutein or zeaxanthin and reported that zeaxanthin produced similar pigment accumulation at foveal and parafoveal locations, which initially confounded differential heterochromatic-flicker MPOD measurement; after correction, the investigators estimated an approximately **14% MPOD increase**. In contrast, a randomized study of 22 healthy Japanese volunteers found that **10 mg/day zeaxanthin for up to 3 months left resonance-Raman MPOD essentially unchanged**, while 10 mg/day lutein increased MPOD by more than 20% at months 2 and 3.
+
+The principal standalone disease trial, the Zeaxanthin and Visual Function Study (ZVF; NCT00564902), randomized 60 predominantly male participants with mild-to-moderate atrophic AMD to 8 mg/day zeaxanthin, zeaxanthin plus lutein, or a **9 mg/day lutein active control rather than an inert placebo**. Mean MPOD across the three groups increased from 0.33 ± 0.17 to 0.51 ± 0.18 density units at 12 months (within-trial P=0.03), but there was **no significant between-group difference (P=0.47)**. The zeaxanthin arm improved high-contrast acuity by a reported 1.5 lines, while shape discrimination and central-scotoma outcomes were borderline; lutein performed better on low-contrast acuity, contrast sensitivity and glare recovery. These exploratory findings do not establish that zeaxanthin is superior to lutein or placebo.
+
+A separate randomized open-label study in eight people with macular telangiectasia type 2 tested **10 or 20 mg/day standalone zeaxanthin for 24 months**. Zeaxanthin increased pigment in the pre-existing perifoveal ring but did not restore pigment to the depleted central fovea and produced **no objective visual-acuity, contrast-sensitivity or OCT benefit**. One participant receiving 20 mg/day developed reversible inner-retinal crystalline deposits after about six months; they disappeared after supplementation stopped.
+
+Combination trials frequently show increased MPOD and sometimes better photostress recovery, chromatic contrast, glare-related performance or retinal electrophysiology, but those effects cannot be assigned to zeaxanthin alone. This includes trials using 10 mg lutein plus 2 mg zeaxanthin, 10 mg plus 10 mg, zeaxanthin/lutein products containing additional antioxidants, and AREDS2. AREDS2 specifically tested adding **10 mg lutein plus 2 mg zeaxanthin to an AREDS background formulation**; its primary comparison did not significantly reduce progression to advanced AMD (HR 0.90, 98.7% CI 0.76–1.07; P=0.12), so AREDS2 is not standalone zeaxanthin-efficacy evidence.
+
+Overall, human trials support oral absorption and retinal incorporation of zeaxanthin, but the magnitude and spatial pattern of MPOD response depend on measurement method, formulation, retinal condition and co-supplements. Evidence for clinically meaningful standalone improvements in vision or AMD progression remains limited. The small MacTel safety signal argues against treating the absence of common adverse events in other small trials as proof that high-dose long-term zeaxanthin is risk-free.
+
+## Description
+
+Zeaxanthin is a C40 xanthophyll carotenoid with molecular formula C40H56O2, molecular weight 568.9 g/mol and PubChem CID 5280899. The naturally occurring dietary stereoisomer addressed here is `(3R,3'R)-zeaxanthin`; **meso-zeaxanthin `(3R,3'S)` is a distinct stereoisomer and combination studies containing meso-zeaxanthin are not treated as standalone zeaxanthin trials**.
+
+The human ocular literature is unusually sensitive to measurement method. Psychophysical heterochromatic flicker photometry estimates macular pigment from differential short-wavelength sensitivity, whereas resonance Raman spectroscopy measures carotenoid Raman signal and autofluorescence methods infer pigment from attenuation of fundus autofluorescence. LUXEA is particularly important because zeaxanthin accumulated at both the foveal measurement location and its parafoveal reference, reducing the apparent HFP difference and requiring correction.
+
+| Human trial/program | Design and population | Zeaxanthin exposure | Visual/retinal methods | Main result relevant to zeaxanthin |
+|---|---|---|---|---|
+| LUXEA, 2006–2007 publications | Controlled supplementation program in healthy subjects; visual-performance analysis n=34 | Zeaxanthin alone, initially 10 mg/day with higher exposure in the second 6 months; lutein, L+Z and placebo comparators | Monthly HFP MPOD/blue-light sensitivity; high-mesopic contrast acuity; scatter/wavefront; color discrimination | Corrected MPOD response about +14% with Z; mesopic visual-performance trends were not clearly Z-specific; yellow-blue color discrimination remained unchanged |
+| ZVF, NCT00564902 | Randomized, double-masked, active-controlled, 60 participants with mild-to-moderate atrophic AMD; 57 men/3 women; mean age 74.9 years | 8 mg/day Z; 8 mg Z + 8 mg L; 9 mg L active control; 12 months | QuantifEye HFP MPOD; high/low-contrast acuity; shape discrimination; kinetic field; glare recovery; CSF; ChromaTest | MPOD 0.33±0.17 to 0.51±0.18 du across groups, P=0.03, but between groups P=0.47; Z arm high-contrast acuity +1.5 lines; several other Z outcomes were trends rather than conventional two-sided significance |
+| Tanito et al. 2012 | Randomized trial, 22 healthy Japanese adults | 10 mg/day Z versus 10 mg/day lutein for up to 3 months | Resonance Raman spectroscopy plus one-wavelength autofluorescence | Z-group MPOD remained unchanged; lutein increased MPOD >20% at months 2 and 3 |
+| MacTel zeaxanthin trial | Randomized open-label dose comparison, n=8, MacTel type 2, age 38–79, 1 male/7 female | 10 or 20 mg/day Z for up to 24 months | ETDRS BCVA; CSV-1000 contrast sensitivity; 488-nm autofluorescence MP mapping; OCT; serum HPLC | Pigment increased in 5–7° perifoveal ring but not central fovea; no objective VA, CS or OCT benefit; one reversible crystalline maculopathy at 20 mg/day |
+| Early-AMD Ma/Huang program | Randomized double-masked placebo-controlled, 108 initially and 112 in extended report, age 50–79 | 10 mg L + 10 mg Z versus 10 mg L, 20 mg L or placebo | MPOD, BCVA, CS, photorecovery, mfERG; later microperimetry | L+Z arm MPOD +0.058±0.027 du at 48 weeks and central mfERG N1P1 response density increased; effects cannot be isolated to Z |
+| MP-GD, NCT00909090 | Randomized double-blind placebo-controlled healthy adults; publication recruited 115 | 10 mg L + 2 mg Z/day for 1 year | Customized HFP; xenon-flash photostress; glare disability; chromatic contrast | MPOD and photostress/chromatic contrast improved versus placebo; glare disability did not significantly improve; no standalone-Z arm |
+| NVC, NCT04741763 | Randomized double-blind placebo-controlled, n=33 older adults with night-vision difficulty | 14 mg Z + 7 mg L plus additional antioxidants/minerals for 6 months | QuantifEye MPOD, Central Vision Analyzer, MDD-2 glare recovery, UFOV, low-contrast acuity | Right-eye MPOD 0.35→0.41 du, P<0.001; left 0.35→0.37, NS; glare-contrast and glare-recovery outcomes improved, but formulation prevents Z attribution |
+| High-myopia Lycium trial | Randomized 5-arm, n=54, 3 months | Lycium barbarum providing 10 or 20 mg Z plus 1 or 2 mg L; lutein-only and blank controls | MPOD and ophthalmic examination | 20-mg-Z food arm had higher MPOD than 2-mg-lutein control at 3 months (P=0.0403); 10-mg-Z comparison was not significant (P=0.1117); whole-food composition prevents standalone-Z inference |
+| Pediatric L+Z RCT | Double-blind placebo-controlled, n=60, age 5–12 | 10 mg L + 2 mg Z/day for 180 days | MPOD, CFF, eye-strain/fatigue VAS and cognitive tests | MPOD increased versus placebo by day 42 and serum Z by day 180; no standalone-Z arm |
+| Teen L+Z RCT | Double-blind placebo-controlled, n=82, age 13–18 | 10 mg L + 2 mg Z/day for 6 months | MPOD and cognitive/visual-performance testing | MPOD improvement greater than placebo in left (P=0.010) and right (P=0.004) eyes; no standalone-Z arm |
+
+## Evidence note
+
+Standalone zeaxanthin evidence should not be pooled conceptually with lutein/zeaxanthin or lutein/zeaxanthin/meso-zeaxanthin products. LUXEA and the Tanito trial directly conflict on whether conventional central MPOD measurably rises with zeaxanthin alone, although their measurement approaches, populations and durations differ. ZVF provides exploratory visual-function evidence in AMD but used lutein as its control and was commercially supported. The MacTel study provides important negative and safety evidence: an anatomic pigment response did not translate into improved objective vision or OCT structure.
+
+AREDS2 is retained only as context for AMD progression and combination evidence. All participants were generally taking an AREDS antioxidant/zinc background formula, and the tested carotenoid intervention was 10 mg lutein plus 2 mg zeaxanthin. The primary addition analysis was not statistically significant for advanced AMD; therefore it cannot establish either standalone zeaxanthin efficacy or a zeaxanthin-specific dose effect.
+
+```mermaid
+timeline
+    title Selected human zeaxanthin supplementation evidence
+    2006 : LUXEA visual-performance and color-vision reports
+    2007 : LUXEA retinal accumulation report — corrected Z MPOD response about +14%
+    2011 : ZVF — 8 mg/day standalone Z in atrophic AMD
+    2012 : Tanito — 10 mg/day standalone Z; central MPOD unchanged
+         : Ma early-AMD L+Z trial — MPOD and mfERG
+    2014 : MP-GD — 10 mg lutein + 2 mg zeaxanthin; photostress/chromatic contrast
+    2015 : Extended early-AMD retinal-sensitivity report
+    2017 : MacTel — 10/20 mg/day standalone Z; no objective visual benefit
+    2021 : NVC — 14 mg Z + 7 mg L multinutrient night-vision trial
+    2022 : High-myopia Lycium trial
+         : Randomized L+Z formulation bioavailability study
+    2024 : Pediatric L+Z RCT
+    2026 : Teen L+Z RCT
+```
+
+No reliable human parent-zeaxanthin terminal elimination half-life was identified in the inspected sources. Pharmacokinetic rich-page modeling is therefore deliberately disabled rather than populated with an inferred carotenoid half-life.
+
+## Doses
+
+```yaml
+- label: "LUXEA standalone zeaxanthin"
+  amount: "10 mg/day initially; dose doubled to 20 mg/day during the second 6-month period in the continuing supplementation protocol"
+  quantity: 10
+  quantityMax: 20
+  unit: "mg"
+  ingredient: "zeaxanthin"
+  formulation: "OPTISHARP zeaxanthin in an Actilease formulation"
+  route: "oral"
+  frequency: "daily"
+  duration: "6 to 12 months"
+  population: "Healthy human volunteers in the LUXEA carotenoid supplementation program"
+  purpose: "Measure retinal macular-pigment accumulation and visual-performance responses"
+  sourceCategory: research
+  note: "Standalone zeaxanthin arm; lutein, lutein-plus-zeaxanthin and placebo arms were also studied. Dose schedule is retained as published rather than converted into a recommendation."
+  sourceId: ref-luxea-2007
+
+- label: "ZVF standalone zeaxanthin"
+  amount: "8 mg/day"
+  quantity: 8
+  quantityMax: null
+  unit: "mg"
+  ingredient: "3R,3'R-zeaxanthin"
+  formulation: "EZEyes zeaxanthin"
+  route: "oral"
+  frequency: "daily"
+  duration: "12 months"
+  population: "Adults aged 45–90 with mild-to-moderate atrophic age-related macular degeneration; trial cohort mean age 74.9 years, 57 men and 3 women"
+  purpose: "Assess MPOD and multiple visual-function endpoints"
+  sourceCategory: research
+  note: "The control was 9 mg/day lutein ('faux placebo'), not an inert placebo."
+  sourceId: ref-zvf-registry
+
+- label: "Japanese standalone zeaxanthin trial"
+  amount: "10 mg/day"
+  quantity: 10
+  quantityMax: null
+  unit: "mg"
+  ingredient: "zeaxanthin"
+  formulation: "Oral zeaxanthin supplement"
+  route: "oral"
+  frequency: "daily"
+  duration: "Up to 3 months"
+  population: "22 healthy Japanese volunteers randomized to lutein or zeaxanthin"
+  purpose: "Compare macular pigment responses measured by resonance Raman spectroscopy and autofluorescence imaging"
+  sourceCategory: research
+  note: "Direct active comparison with 10 mg/day lutein."
+  sourceId: ref-tanito-2012
+
+- label: "MacTel standalone zeaxanthin low dose"
+  amount: "10 mg/day"
+  quantity: 10
+  quantityMax: null
+  unit: "mg"
+  ingredient: "zeaxanthin"
+  formulation: "EyePromise Zeaxanthin"
+  route: "oral"
+  frequency: "daily"
+  duration: "Up to 24 months"
+  population: "Adults with macular telangiectasia type 2"
+  purpose: "Assess macular-pigment spatial distribution and objective visual function"
+  sourceCategory: research
+  note: "Open-label randomized dose comparison; no placebo arm."
+  sourceId: ref-mactel-2017
+
+- label: "MacTel standalone zeaxanthin high dose"
+  amount: "20 mg/day"
+  quantity: 20
+  quantityMax: null
+  unit: "mg"
+  ingredient: "zeaxanthin"
+  formulation: "EyePromise Zeaxanthin"
+  route: "oral"
+  frequency: "daily"
+  duration: "Up to 24 months"
+  population: "Adults with macular telangiectasia type 2"
+  purpose: "Assess macular-pigment spatial distribution and objective visual function"
+  sourceCategory: research
+  note: "One participant receiving 20 mg/day developed reversible inner-retinal crystalline deposits after approximately 6 months."
+  sourceId: ref-mactel-2017
+
+- label: "Early-AMD lutein plus zeaxanthin"
+  amount: "10 mg lutein plus 10 mg zeaxanthin/day"
+  quantity: 10
+  quantityMax: null
+  unit: "mg"
+  ingredient: "zeaxanthin"
+  formulation: "Combined lutein and zeaxanthin supplement"
+  route: "oral"
+  frequency: "daily"
+  duration: "48 weeks in initial reports; extended follow-up to 2 years"
+  population: "Adults aged 50–79 with early age-related macular degeneration"
+  purpose: "Assess MPOD, visual function, mfERG and later retinal sensitivity"
+  sourceCategory: research
+  note: "Combination evidence; the zeaxanthin-specific contribution cannot be isolated."
+  sourceId: ref-ma-2012
+
+- label: "MP-GD lutein plus zeaxanthin"
+  amount: "10 mg lutein plus 2 mg zeaxanthin/day"
+  quantity: 2
+  quantityMax: null
+  unit: "mg"
+  ingredient: "zeaxanthin"
+  formulation: "FloraGLO lutein plus OptiSharp zeaxanthin"
+  route: "oral"
+  frequency: "once daily"
+  duration: "1 year"
+  population: "Healthy adults aged 18–40"
+  purpose: "Assess MPOD, glare disability, photostress recovery and chromatic contrast"
+  sourceCategory: research
+  note: "Placebo-controlled combination trial; cannot estimate standalone zeaxanthin efficacy."
+  sourceId: ref-mpgd-registry
+
+- label: "Night Vision and Carotenoids multinutrient supplement"
+  amount: "14 mg zeaxanthin plus 7 mg lutein/day"
+  quantity: 14
+  quantityMax: null
+  unit: "mg"
+  ingredient: "zeaxanthin"
+  formulation: "ScreenShieldPro carotenoid supplement with lutein and additional antioxidants/minerals"
+  route: "oral"
+  frequency: "once daily with food"
+  duration: "6 months"
+  population: "33 older US veterans with self-reported difficulty with night vision and without overt major retinal disease"
+  purpose: "Assess MPOD, glare, contrast and visual-attention measures relevant to night driving"
+  sourceCategory: research
+  note: "Multicomponent formulation; findings cannot be attributed specifically to zeaxanthin."
+  sourceId: ref-nvc-2021
+
+- label: "High-myopia low-dose Lycium arm"
+  amount: "10 g Lycium barbarum/day providing approximately 10 mg zeaxanthin and 1 mg lutein"
+  quantity: 10
+  quantityMax: null
+  unit: "mg"
+  ingredient: "zeaxanthin from Lycium barbarum"
+  formulation: "Whole Lycium barbarum fruit; zeaxanthin-rich food intervention"
+  route: "oral"
+  frequency: "daily"
+  duration: "3 months"
+  population: "Adults with high myopia"
+  purpose: "Assess MPOD response"
+  sourceCategory: research
+  note: "Not purified standalone zeaxanthin; whole fruit also supplied lutein and other constituents."
+  sourceId: ref-zhang-2022
+
+- label: "High-myopia high-dose Lycium arm"
+  amount: "20 g Lycium barbarum/day providing approximately 20 mg zeaxanthin and 2 mg lutein"
+  quantity: 20
+  quantityMax: null
+  unit: "mg"
+  ingredient: "zeaxanthin from Lycium barbarum"
+  formulation: "Whole Lycium barbarum fruit; zeaxanthin-rich food intervention"
+  route: "oral"
+  frequency: "daily"
+  duration: "3 months"
+  population: "Adults with high myopia"
+  purpose: "Assess MPOD response"
+  sourceCategory: research
+  note: "Not purified standalone zeaxanthin; whole fruit also supplied lutein and other constituents."
+  sourceId: ref-zhang-2022
+
+- label: "Pediatric lutein plus zeaxanthin gummies"
+  amount: "10 mg lutein plus 2 mg zeaxanthin/day"
+  quantity: 2
+  quantityMax: null
+  unit: "mg"
+  ingredient: "zeaxanthin"
+  formulation: "Lutein/zeaxanthin gummy"
+  route: "oral"
+  frequency: "daily"
+  duration: "180 days"
+  population: "60 children aged 5–12 years"
+  purpose: "Assess MPOD and visual/cognitive performance"
+  sourceCategory: research
+  note: "Combination trial; no standalone-zeaxanthin arm."
+  sourceId: ref-children-2024
+
+- label: "Teen lutein plus zeaxanthin supplement"
+  amount: "10 mg lutein plus 2 mg zeaxanthin/day"
+  quantity: 2
+  quantityMax: null
+  unit: "mg"
+  ingredient: "zeaxanthin"
+  formulation: "Lutein/zeaxanthin supplement"
+  route: "oral"
+  frequency: "daily"
+  duration: "6 months"
+  population: "82 healthy teenagers aged 13–18 with high screen use and low fruit/vegetable intake"
+  purpose: "Assess MPOD and cognitive performance"
+  sourceCategory: research
+  note: "Combination trial; no standalone-zeaxanthin arm."
+  sourceId: ref-teen-2026
+```
+
+## Pharmacokinetics
+
+```yaml
+- id: pk-zeaxanthin-half-life-not-established
+  analyte: "parent zeaxanthin"
+  route: "oral"
+  formulation: "Oral zeaxanthin; human studies include multiple formulation types"
+  population: "Humans"
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: "No validated terminal human elimination half-life for parent zeaxanthin was reported in the inspected clinical supplementation literature. The 2022 randomized bioavailability study sampled serum through 72 hours after a single 2 mg zeaxanthin dose co-formulated with 10 mg lutein and compared Cmax/AUC, but did not establish a terminal half-life."
+  sourceId: ref-kotagiri-2022
+  modelEligible: false
+```
+
+## Duration
+
+```yaml
+- id: duration-single-dose-serum-window
+  formulation: "Single-dose 10 mg lutein plus 2 mg zeaxanthin, test or reference formulation"
+  measurement: plasma
+  analyte: "serum zeaxanthin"
+  route: "oral"
+  population: "90 healthy adults"
+  sourceId: ref-kotagiri-2022
+  note: "Serum was sampled before dosing and at multiple points from 2 through 72 hours. This is the pharmacokinetic observation window, not a zeaxanthin elimination duration or subjective-effect duration."
+  total:
+    min: 0
+    max: 72
+    unit: hours
+  phases: []
+```
+
+## Modifiers
+
+```yaml
+[]
+```
+
+## Effects
+
+```yaml
+[]
+```
+
+## Outcomes
+
+```yaml
+- id: outcome-luxea-mpod
+  conceptId: macular-pigment-optical-density
+  name: "Macular pigment optical density"
+  direction: Increased
+  evidence: Human research
+  description: "In LUXEA, zeaxanthin alone accumulated at both foveal and parafoveal measurement locations. This reduced the differential HFP signal, but after correction the investigators estimated an approximately 14% MPOD increase."
+  sourceId: ref-luxea-2007
+  population: "Healthy volunteers in the LUXEA supplementation program"
+  exposure: "Standalone zeaxanthin, approximately 10 mg/day initially with higher exposure during the later supplementation period"
+  instrument: "Monthly heterochromatic flicker photometry measuring foveal and parafoveal blue-light sensitivity"
+  magnitude: "Approximately +14% corrected MPOD response with zeaxanthin alone"
+  reportType: measured-assessment
+  conflictingSourceIds:
+    - ref-tanito-2012
+  study:
+    id: study-luxea
+    design: "Controlled carotenoid supplementation program with zeaxanthin, lutein, lutein-plus-zeaxanthin and placebo conditions"
+    populationLabels:
+      - "healthy volunteers"
+    comparator: "Lutein, lutein plus zeaxanthin, and placebo"
+    route: "oral"
+    formulation: "Actilease/OPTISHARP zeaxanthin"
+    assessmentTime: "monthly during 6–12 months"
+  result:
+    measure: mean
+    estimate: 14
+    unit: "% corrected MPOD increase"
+    instrument: "Heterochromatic flicker photometry with correction for zeaxanthin accumulation at the parafoveal reference location"
+    comparator: "baseline"
+    assessmentTime: "during 6–12 months of supplementation"
+    population: "LUXEA zeaxanthin-supplemented participants"
+
+- id: outcome-luxea-mesopic-contrast
+  conceptId: contrast-sensitivity
+  name: "High-mesopic contrast acuity"
+  direction: Variable
+  evidence: Human research
+  description: "The visual-performance analysis found trends toward improved high-mesopic contrast acuity in supplemented groups, but conventional statistical significance was reported for the lutein group rather than a standalone zeaxanthin effect."
+  sourceId: ref-kvansakul-2006
+  population: "34 subjects from the LUXEA carotenoid supplementation trial"
+  exposure: "Zeaxanthin, lutein, their combination or placebo over 12 months"
+  instrument: "High-mesopic contrast acuity threshold testing"
+  magnitude: "Trend toward lower/better contrast acuity thresholds in supplemented groups; lutein arm P=0.001, with no clearly established zeaxanthin-specific significant effect"
+  reportType: measured-assessment
+  study:
+    id: study-luxea
+    design: "Controlled supplementation trial analysis"
+    sampleSize: 34
+    populationLabels:
+      - "healthy volunteers"
+    comparator: "Lutein, lutein plus zeaxanthin, and placebo"
+    route: "oral"
+    assessmentTime: "6 and 12 months"
+
+- id: outcome-luxea-color-discrimination
+  conceptId: color-contrast-discrimination
+  name: "Color discrimination"
+  direction: Variable
+  evidence: Human research
+  description: "Yellow-blue discrimination thresholds remained normal and were not related to the supplementation-associated MPOD increase; red-green discrimination showed only a tendency toward improvement at higher MPOD."
+  sourceId: ref-rodriguez-2006
+  population: "24 normal trichromats participating in a lutein/zeaxanthin supplementation study"
+  exposure: "Zeaxanthin and/or lutein supplementation"
+  instrument: "Psychophysical yellow-blue and red-green chromatic discrimination threshold testing with spatial MPOD profiling"
+  magnitude: "No supplementation-related yellow-blue threshold improvement; marginal red-green tendency"
+  reportType: measured-assessment
+  study:
+    id: study-luxea
+    design: "Controlled carotenoid supplementation analysis"
+    sampleSize: 24
+    populationLabels:
+      - "normal trichromats"
+    route: "oral"
+
+- id: outcome-tanito-mpod
+  conceptId: macular-pigment-optical-density
+  name: "Macular pigment optical density"
+  direction: Variable
+  evidence: Human research
+  description: "Healthy Japanese participants randomized to 10 mg/day zeaxanthin showed no consistent central MPOD increase over three months, unlike the 10 mg/day lutein arm."
+  sourceId: ref-tanito-2012
+  population: "22 healthy Japanese volunteers, including participants with and without high myopia"
+  exposure: "10 mg/day standalone zeaxanthin for up to 3 months"
+  instrument: "Resonance Raman spectrophotometry and one-wavelength autofluorescence imaging"
+  magnitude: "MPOD(RRS) remained unchanged in the zeaxanthin group; lutein increased RRS and AFI MPOD by >20% at months 2 and 3"
+  reportType: measured-assessment
+  conflictingSourceIds:
+    - ref-luxea-2007
+  study:
+    id: study-tanito-2012
+    design: "Randomized active-comparator trial"
+    sampleSize: 22
+    populationLabels:
+      - "healthy Japanese adults"
+    comparator: "10 mg/day lutein"
+    route: "oral"
+    formulation: "zeaxanthin supplement"
+    assessmentTime: "baseline and months 1, 2 and 3"
+
+- id: outcome-zvf-mpod
+  conceptId: macular-pigment-optical-density
+  name: "Macular pigment optical density"
+  direction: Variable
+  evidence: Human research
+  description: "MPOD increased over 12 months in the ZVF trial as a whole, but the zeaxanthin arm was not superior to lutein or lutein-plus-zeaxanthin."
+  sourceId: ref-zvf-2011
+  population: "60 participants with mild-to-moderate atrophic AMD; mean age 74.9 years; 57 men and 3 women"
+  exposure: "8 mg/day zeaxanthin, 8 mg/day zeaxanthin plus lutein, or 9 mg/day lutein active control"
+  instrument: "QuantifEye/MPS 9000 modified heterochromatic flicker photometry, approximately 1° central MPOD"
+  magnitude: "Across groups, 0.33±0.17 density units at baseline to 0.51±0.18 at 12 months, P=0.03; between-group ANOVA P=0.47"
+  reportType: measured-assessment
+  study:
+    id: study-zvf-nct00564902
+    design: "Prospective randomized double-masked active-controlled trial"
+    sampleSize: 60
+    populationLabels:
+      - "atrophic age-related macular degeneration"
+      - "mean age 74.9 years"
+      - "predominantly male"
+    comparator: "9 mg/day lutein active control"
+    route: "oral"
+    formulation: "3R,3'R-zeaxanthin"
+    assessmentTime: "4, 8 and 12 months"
+
+- id: outcome-zvf-high-contrast-acuity
+  conceptId: visual-acuity
+  name: "High-contrast visual acuity"
+  direction: Increased
+  evidence: Human research
+  description: "The standalone zeaxanthin arm showed a reported improvement in detailed high-contrast visual acuity, but the publication does not establish a conventional inert-placebo comparison because the control was lutein."
+  sourceId: ref-zvf-2011
+  population: "Older adults with atrophic AMD in ZVF"
+  exposure: "8 mg/day zeaxanthin for 12 months"
+  instrument: "Detailed high-contrast visual-acuity testing; registry also describes logMAR/Visual Acuity Scale testing with the Colenbrander Mixed Contrast Reading Card"
+  magnitude: "Reported improvement of 1.5 lines in the zeaxanthin group"
+  reportType: measured-assessment
+  study:
+    id: study-zvf-nct00564902
+    design: "Randomized double-masked active-controlled trial"
+    sampleSize: 60
+    comparator: "9 mg/day lutein active control"
+    route: "oral"
+    formulation: "3R,3'R-zeaxanthin"
+    assessmentTime: "12 months"
+
+- id: outcome-zvf-shape-discrimination
+  conceptId: foveal-shape-discrimination
+  name: "Foveal shape discrimination"
+  direction: Variable
+  evidence: Human research
+  description: "Shape-discrimination threshold improved numerically in the zeaxanthin group, but the reported one-tailed P value was 0.06 and therefore did not meet a conventional two-sided 0.05 threshold."
+  sourceId: ref-zvf-2011
+  population: "Older adults with atrophic AMD in ZVF"
+  exposure: "8 mg/day zeaxanthin for 12 months"
+  instrument: "Retina Foundation of the Southwest radial-frequency shape-discrimination task"
+  magnitude: "Threshold changed from 0.97 to 0.57; reported P=0.06, one-tailed"
+  reportType: measured-assessment
+  study:
+    id: study-zvf-nct00564902
+    design: "Randomized double-masked active-controlled trial"
+    sampleSize: 60
+    comparator: "9 mg/day lutein active control"
+    assessmentTime: "12 months"
+
+- id: outcome-zvf-central-field
+  conceptId: central-visual-field-scotoma
+  name: "Central kinetic visual-field scotoma"
+  direction: Variable
+  evidence: Human research
+  description: "A larger proportion of participants in the zeaxanthin group showed clearing of central kinetic-field scotomas, but the result was borderline rather than conventionally significant."
+  sourceId: ref-zvf-2011
+  population: "Older adults with atrophic AMD in ZVF"
+  exposure: "8 mg/day zeaxanthin for 12 months"
+  instrument: "10° yellow kinetic visual-field testing with central scotoma area assessment"
+  magnitude: "Trend toward greater scotoma clearing; P=0.057"
+  reportType: measured-assessment
+  study:
+    id: study-zvf-nct00564902
+    design: "Randomized double-masked active-controlled trial"
+    sampleSize: 60
+    comparator: "9 mg/day lutein active control"
+    assessmentTime: "12 months"
+
+- id: outcome-zvf-contrast
+  conceptId: contrast-sensitivity
+  name: "Photopic contrast sensitivity"
+  direction: Variable
+  evidence: Human research
+  description: "ZVF measured contrast sensitivity at five spatial frequencies. The publication states that the lutein active-control group was superior for contrast sensitivity while zeaxanthin showed only a trend."
+  sourceId: ref-zvf-2011
+  population: "Older adults with atrophic AMD in ZVF"
+  exposure: "8 mg/day zeaxanthin for 12 months"
+  instrument: "Functional Vision Analyzer at 1.5, 3, 6, 12 and 20 cycles/degree"
+  magnitude: "No clear statistically established zeaxanthin superiority; lutein control performed better"
+  reportType: measured-assessment
+  study:
+    id: study-zvf-nct00564902
+    design: "Randomized double-masked active-controlled trial"
+    sampleSize: 60
+    comparator: "9 mg/day lutein active control"
+    assessmentTime: "12 months"
+
+- id: outcome-zvf-glare-recovery
+  conceptId: photostress-recovery-time
+  name: "Glare recovery"
+  direction: Variable
+  evidence: Human research
+  description: "The lutein active-control group was superior for glare recovery in ZVF; the standalone zeaxanthin result was described as a trend."
+  sourceId: ref-zvf-2011
+  population: "Older adults with atrophic AMD in ZVF"
+  exposure: "8 mg/day zeaxanthin for 12 months"
+  instrument: "KOWA AS14B Night Vision Tester after 30 seconds of continuous retinal bleach; recovery to low-contrast Landolt-C recognition"
+  magnitude: "Zeaxanthin trend; lutein active control superior"
+  reportType: measured-assessment
+  study:
+    id: study-zvf-nct00564902
+    design: "Randomized double-masked active-controlled trial"
+    sampleSize: 60
+    comparator: "9 mg/day lutein active control"
+    assessmentTime: "12 months"
+
+- id: outcome-mactel-macular-pigment
+  conceptId: macular-pigment-spatial-distribution
+  name: "Macular pigment spatial distribution"
+  direction: Variable
+  evidence: Human research
+  description: "High-dose standalone zeaxanthin increased pigment where a perifoveal ring was already present but failed to restore the normal central foveal peak characteristic of healthy macular pigment."
+  sourceId: ref-mactel-2017
+  population: "8 adults with class III macular telangiectasia type 2, age 38–79; 1 man and 7 women"
+  exposure: "10 or 20 mg/day zeaxanthin for up to 24 months"
+  instrument: "488-nm Heidelberg Spectralis single-wavelength fundus autofluorescence processed to estimate MPOD distribution"
+  magnitude: "Increased pigment in the approximately 5–7° perifoveal ring; no central foveal reconstitution"
+  reportType: measured-assessment
+  study:
+    id: study-mactel-nct01354093
+    design: "Randomized open-label dose-comparison interventional trial"
+    sampleSize: 8
+    populationLabels:
+      - "macular telangiectasia type 2"
+      - "class III macular pigment distribution"
+    comparator: "10 mg/day versus 20 mg/day zeaxanthin; no placebo"
+    route: "oral"
+    formulation: "EyePromise Zeaxanthin"
+    assessmentTime: "baseline and 6, 12, 18 and 24 months"
+
+- id: outcome-mactel-acuity
+  conceptId: visual-acuity
+  name: "Best-corrected visual acuity"
+  direction: Variable
+  evidence: Human research
+  description: "Despite increased perifoveal pigment and some subjective reports of seeing better, no objective visual-acuity improvement was documented; acuity generally declined over time with the disease."
+  sourceId: ref-mactel-2017
+  population: "8 adults with macular telangiectasia type 2"
+  exposure: "10 or 20 mg/day zeaxanthin for up to 24 months"
+  instrument: "4-m ETDRS best-corrected visual acuity converted to logMAR for analysis"
+  magnitude: "No objective improvement"
+  reportType: measured-assessment
+  study:
+    id: study-mactel-nct01354093
+    design: "Randomized open-label dose-comparison trial"
+    sampleSize: 8
+    comparator: "10 mg/day versus 20 mg/day; no placebo"
+    assessmentTime: "through 24 months"
+
+- id: outcome-mactel-contrast
+  conceptId: contrast-sensitivity
+  name: "Contrast sensitivity"
+  direction: Variable
+  evidence: Human research
+  description: "Contrast sensitivity did not improve objectively despite zeaxanthin-associated perifoveal pigment accumulation."
+  sourceId: ref-mactel-2017
+  population: "8 adults with macular telangiectasia type 2"
+  exposure: "10 or 20 mg/day zeaxanthin for up to 24 months"
+  instrument: "CSV-1000 contrast sensitivity at 3, 6, 12 and 18 cycles/degree"
+  magnitude: "No objective improvement; values generally worsened over time"
+  reportType: measured-assessment
+  study:
+    id: study-mactel-nct01354093
+    design: "Randomized open-label dose-comparison trial"
+    sampleSize: 8
+    comparator: "10 mg/day versus 20 mg/day; no placebo"
+    assessmentTime: "through 24 months"
+
+- id: outcome-mactel-oct
+  conceptId: retinal-structure-oct
+  name: "Foveal OCT structure"
+  direction: Variable
+  evidence: Human research
+  description: "Zeaxanthin did not produce a detectable beneficial change in foveal OCT morphology or thickness during the MacTel trial."
+  sourceId: ref-mactel-2017
+  population: "8 adults with macular telangiectasia type 2"
+  exposure: "10 or 20 mg/day zeaxanthin for up to 24 months"
+  instrument: "Optical coherence tomography"
+  magnitude: "No discernible improvement or trend in macular thickness"
+  reportType: measured-assessment
+  study:
+    id: study-mactel-nct01354093
+    design: "Randomized open-label dose-comparison trial"
+    sampleSize: 8
+    assessmentTime: "through 24 months"
+
+- id: outcome-early-amd-combo-mpod
+  conceptId: macular-pigment-optical-density
+  name: "Macular pigment optical density"
+  direction: Increased
+  evidence: Human research
+  description: "In early AMD, the 10 mg lutein plus 10 mg zeaxanthin arm showed a significant MPOD increase after 48 weeks. This is combination evidence and cannot identify the independent contribution of zeaxanthin."
+  sourceId: ref-ma-2012
+  population: "108 adults aged 50–79 with early AMD"
+  exposure: "10 mg lutein plus 10 mg zeaxanthin/day for 48 weeks"
+  instrument: "Macular pigment optical-density assessment at baseline, 24 and 48 weeks"
+  magnitude: "Mean MPOD increase 0.058 ± 0.027 density unit over 48 weeks"
+  reportType: measured-assessment
+  study:
+    id: study-ma-early-amd
+    design: "Randomized double-masked placebo-controlled four-arm trial"
+    sampleSize: 108
+    populationLabels:
+      - "early age-related macular degeneration"
+      - "age 50–79 years"
+    comparator: "10 mg lutein, 20 mg lutein, and placebo"
+    route: "oral"
+    formulation: "lutein plus zeaxanthin"
+    assessmentTime: "48 weeks"
+
+- id: outcome-early-amd-mferg
+  conceptId: multifocal-erg-response-density
+  name: "Multifocal ERG N1P1 response density"
+  direction: Increased
+  evidence: Human research
+  description: "Central retinal mfERG response density increased in ring 1 in the lutein-plus-zeaxanthin arm at 48 weeks; more peripheral rings and P1 peak latencies did not show consistent changes."
+  sourceId: ref-ma-mferg-2012
+  population: "108 adults with early AMD"
+  exposure: "10 mg lutein plus 10 mg zeaxanthin/day for 48 weeks"
+  instrument: "Multifocal electroretinography; N1P1 response density by concentric retinal ring"
+  magnitude: "Significant increase in ring 1 for the L+Z arm; no significant P1 latency change"
+  reportType: measured-assessment
+  study:
+    id: study-ma-early-amd
+    design: "Randomized double-masked placebo-controlled four-arm trial"
+    sampleSize: 108
+    comparator: "10 mg lutein, 20 mg lutein, and placebo"
+    assessmentTime: "48 weeks"
+
+- id: outcome-mpgd-mpod
+  conceptId: macular-pigment-optical-density
+  name: "Macular pigment optical density"
+  direction: Increased
+  evidence: Human research
+  description: "One year of lutein-plus-zeaxanthin supplementation increased MPOD significantly versus placebo at all measured eccentricities. There was no standalone-zeaxanthin arm."
+  sourceId: ref-hammond-2014
+  population: "Young healthy adults"
+  exposure: "10 mg lutein plus 2 mg zeaxanthin/day for 1 year"
+  instrument: "Customized heterochromatic flicker photometry at 10, 30, 60 and 105 arcmin eccentricities"
+  magnitude: "Significant increase versus placebo at every reported eccentricity"
+  reportType: measured-assessment
+  study:
+    id: study-mpgd-nct00909090
+    design: "Randomized double-blind placebo-controlled trial"
+    sampleSize: 115
+    populationLabels:
+      - "young healthy adults"
+    comparator: "visually identical placebo"
+    route: "oral"
+    formulation: "10 mg FloraGLO lutein plus 2 mg OptiSharp zeaxanthin"
+    assessmentTime: "every 3 months through 12 months"
+
+- id: outcome-mpgd-photostress
+  conceptId: photostress-recovery-time
+  name: "Photostress recovery time"
+  direction: Decreased
+  evidence: Human research
+  description: "Recovery after intense retinal photostress improved significantly with combined lutein/zeaxanthin versus placebo; the zeaxanthin-specific contribution cannot be isolated."
+  sourceId: ref-hammond-2014
+  population: "Young healthy adults"
+  exposure: "10 mg lutein plus 2 mg zeaxanthin/day for 1 year"
+  instrument: "Time to reacquire a grating target after 30 seconds of intense xenon white-flash exposure"
+  magnitude: "Significantly shorter recovery time versus placebo"
+  reportType: measured-assessment
+  study:
+    id: study-mpgd-nct00909090
+    design: "Randomized double-blind placebo-controlled trial"
+    sampleSize: 115
+    comparator: "placebo"
+    assessmentTime: "12 months"
+
+- id: outcome-mpgd-color
+  conceptId: color-contrast-discrimination
+  name: "Chromatic contrast"
+  direction: Increased
+  evidence: Human research
+  description: "Chromatic contrast improved significantly versus placebo after combined lutein/zeaxanthin supplementation."
+  sourceId: ref-hammond-2014
+  population: "Young healthy adults"
+  exposure: "10 mg lutein plus 2 mg zeaxanthin/day for 1 year"
+  instrument: "Threshold for a yellow grating superposed on a 460-nm background"
+  magnitude: "Significant improvement versus placebo"
+  reportType: measured-assessment
+  study:
+    id: study-mpgd-nct00909090
+    design: "Randomized double-blind placebo-controlled trial"
+    sampleSize: 115
+    comparator: "placebo"
+    assessmentTime: "12 months"
+
+- id: outcome-mpgd-glare
+  conceptId: glare-disability
+  name: "Glare disability"
+  direction: Variable
+  evidence: Human research
+  description: "Glare disability remained associated with MPOD but did not significantly improve in the supplemented group compared with placebo."
+  sourceId: ref-hammond-2014
+  population: "Young healthy adults"
+  exposure: "10 mg lutein plus 2 mg zeaxanthin/day for 1 year"
+  instrument: "Energy in a surrounding annulus required to veil a central grating target"
+  magnitude: "No significant intervention improvement"
+  reportType: measured-assessment
+  study:
+    id: study-mpgd-nct00909090
+    design: "Randomized double-blind placebo-controlled trial"
+    sampleSize: 115
+    comparator: "placebo"
+    assessmentTime: "12 months"
+
+- id: outcome-nvc-mpod
+  conceptId: macular-pigment-optical-density
+  name: "Macular pigment optical density"
+  direction: Variable
+  evidence: Human research
+  description: "The multinutrient NVC supplement increased right-eye MPOD significantly but the smaller left-eye change was not significant."
+  sourceId: ref-nvc-2021
+  population: "33 older adults with night-vision difficulty"
+  exposure: "14 mg zeaxanthin plus 7 mg lutein and additional antioxidants/minerals daily for 6 months"
+  instrument: "QuantifEye heterochromatic flicker photometry at the central 1°"
+  magnitude: "Right eye 0.35±0.04 SE to 0.41±0.05 du, P<0.001; left eye 0.35±0.05 to 0.37 du, P>0.05"
+  reportType: measured-assessment
+  study:
+    id: study-nvc-nct04741763
+    design: "Prospective randomized double-blind placebo-controlled 2:1 trial"
+    sampleSize: 33
+    populationLabels:
+      - "older adults"
+      - "self-reported night-vision difficulty"
+    comparator: "high-oleic safflower-oil placebo"
+    route: "oral"
+    formulation: "ScreenShieldPro multinutrient carotenoid supplement"
+    assessmentTime: "6 months"
+  result:
+    measure: mean
+    estimate: 0.41
+    unit: "density units"
+    instrument: "QuantifEye heterochromatic flicker photometry, right eye"
+    comparator: "same active group baseline mean 0.35 density units; placebo remained unchanged"
+    assessmentTime: "6 months"
+    population: "NVC active-treatment group, right eyes"
+
+- id: outcome-nvc-glare-contrast
+  conceptId: contrast-sensitivity
+  name: "Contrast sensitivity under glare"
+  direction: Increased
+  evidence: Human research
+  description: "Contrast/glare acuity improved in both eyes after the multinutrient carotenoid intervention."
+  sourceId: ref-nvc-2021
+  population: "Older adults with night-vision difficulty"
+  exposure: "14 mg zeaxanthin plus 7 mg lutein and additional antioxidants/minerals daily for 6 months"
+  instrument: "Vimetrics Central Vision Analyzer under high-glare challenge"
+  magnitude: "Approximately 0.147 and 0.149 logMAR improvement in right and left eyes; P=0.02 and P=0.01"
+  reportType: measured-assessment
+  study:
+    id: study-nvc-nct04741763
+    design: "Randomized double-blind placebo-controlled trial"
+    sampleSize: 33
+    comparator: "placebo"
+    assessmentTime: "6 months"
+
+- id: outcome-nvc-glare-recovery
+  conceptId: photostress-recovery-time
+  name: "Photostress glare-recovery time"
+  direction: Decreased
+  evidence: Human research
+  description: "The multinutrient carotenoid group recovered more rapidly after photostress in both eyes."
+  sourceId: ref-nvc-2021
+  population: "Older adults with night-vision difficulty"
+  exposure: "14 mg zeaxanthin plus 7 mg lutein and additional antioxidants/minerals daily for 6 months"
+  instrument: "MDD-2 monocular photostress glare-recovery device"
+  magnitude: "Recovery time improved by 2.76 s in the right eye and 2.54 s in the left; P=0.008 and P=0.02"
+  reportType: measured-assessment
+  study:
+    id: study-nvc-nct04741763
+    design: "Randomized double-blind placebo-controlled trial"
+    sampleSize: 33
+    comparator: "placebo"
+    assessmentTime: "6 months"
+
+- id: outcome-high-myopia-mpod
+  conceptId: macular-pigment-optical-density
+  name: "Macular pigment optical density"
+  direction: Variable
+  evidence: Human research
+  description: "A zeaxanthin-rich Lycium barbarum intervention produced dose-dependent-looking but inconsistent comparisons: the 20 mg zeaxanthin/2 mg lutein food arm differed significantly from its 2 mg lutein control, while the lower-dose comparison did not."
+  sourceId: ref-zhang-2022
+  population: "54 participants with high myopia"
+  exposure: "Lycium barbarum providing approximately 10 or 20 mg zeaxanthin plus 1 or 2 mg lutein daily for 3 months"
+  instrument: "Macular pigment optical-density measurement"
+  magnitude: "High-dose Lycium vs high-dose lutein control P=0.0403; low-dose comparison P=0.1117"
+  reportType: measured-assessment
+  study:
+    id: study-high-myopia-chictr2100046748
+    design: "Prospective randomized five-arm clinical trial"
+    sampleSize: 54
+    populationLabels:
+      - "high myopia"
+    comparator: "1 or 2 mg/day lutein controls and blank control"
+    route: "oral"
+    formulation: "whole Lycium barbarum"
+    assessmentTime: "3 months"
+
+- id: outcome-children-mpod
+  conceptId: macular-pigment-optical-density
+  name: "Macular pigment optical density"
+  direction: Increased
+  evidence: Human research
+  description: "Combined lutein/zeaxanthin gummies increased MPOD in children relative to placebo, with separation reported as early as day 42."
+  sourceId: ref-children-2024
+  population: "60 children aged 5–12 years"
+  exposure: "10 mg lutein plus 2 mg zeaxanthin/day for 180 days"
+  instrument: "Macular pigment optical-density assessment"
+  magnitude: "Significant versus placebo at all post-supplementation visits, beginning by day 42"
+  reportType: measured-assessment
+  study:
+    id: study-children-ctri-2022-05-042364
+    design: "Randomized double-blind parallel placebo-controlled trial"
+    sampleSize: 60
+    populationLabels:
+      - "children age 5–12 years"
+    comparator: "placebo gummy"
+    route: "oral"
+    formulation: "lutein/zeaxanthin gummy"
+    durationDays: 180
+    assessmentTime: "days 42 through 180"
+
+- id: outcome-teen-mpod
+  conceptId: macular-pigment-optical-density
+  name: "Macular pigment optical density"
+  direction: Increased
+  evidence: Human research
+  description: "Six months of combined lutein/zeaxanthin supplementation increased MPOD more than placebo in teenagers with high screen exposure."
+  sourceId: ref-teen-2026
+  population: "82 teenagers aged 13–18 years with high screen use and low fruit/vegetable intake"
+  exposure: "10 mg lutein plus 2 mg zeaxanthin/day for 6 months"
+  instrument: "Macular pigment optical-density assessment"
+  magnitude: "Between-group change P=0.010 for left eyes and P=0.004 for right eyes"
+  reportType: measured-assessment
+  study:
+    id: study-teen-actrn12625000047493
+    design: "Parallel randomized double-blind placebo-controlled trial"
+    sampleSize: 82
+    populationLabels:
+      - "healthy teenagers"
+      - "age 13–18 years"
+      - "high electronic-screen exposure"
+    comparator: "sunflower-oil placebo"
+    route: "oral"
+    formulation: "lutein/zeaxanthin supplement"
+    assessmentTime: "6 months"
+```
+
+## Mechanisms
+
+```yaml
+- title: "Selective retinal accumulation into macular pigment"
+  description: "Human supplementation studies show that oral zeaxanthin can accumulate in retinal macular-pigment regions. LUXEA found zeaxanthin deposition at both foveal and parafoveal locations, while the MacTel trial showed that deposition depended strongly on pre-existing retinal pigment geography and did not repopulate pigment-depleted central fovea."
+  sourceId: ref-luxea-2007
+  conceptId: macular-pigment-accumulation
+
+- title: "Short-wavelength light filtering by macular pigment"
+  description: "Zeaxanthin is a constituent of macular pigment that absorbs short-wavelength visible light. Human visual trials test the downstream hypothesis that increasing macular pigment can alter glare, chromatic contrast or photostress performance; these trials demonstrate associations and intervention effects on some visual endpoints but do not prove that filtering is the sole causal mechanism."
+  sourceId: ref-hammond-2014
+  conceptId: short-wavelength-light-filtering
+```
+
+## Cautions
+
+```yaml
+- title: "Reversible crystalline maculopathy reported at 20 mg/day"
+  description: "In the eight-person MacTel study, one participant receiving 20 mg/day zeaxanthin developed yellowish inner-retinal crystals after approximately six months. The deposits disappeared within months after supplementation stopped, and visual acuity was not measurably reduced by the crystals. A single case cannot establish incidence but is important high-dose safety evidence."
+  sourceId: ref-mactel-2017
+
+- title: "Standalone efficacy is substantially less certain than combination evidence"
+  description: "Many positive human studies used lutein plus zeaxanthin, meso-zeaxanthin, omega-3 fatty acids, antioxidants or multinutrient formulations. Those trials cannot identify zeaxanthin's independent effect and should not be presented as standalone zeaxanthin efficacy."
+  sourceId: ref-hammond-2014
+
+- title: "Standalone MPOD trials conflict"
+  description: "LUXEA estimated an approximately 14% corrected MPOD increase with zeaxanthin, whereas the randomized Japanese study found no central MPOD increase with 10 mg/day zeaxanthin over three months. Differences in retinal spatial sampling, measurement method, duration and population may contribute, but the conflict remains unresolved."
+  sourceId: ref-tanito-2012
+
+- title: "ZVF did not use an inert placebo"
+  description: "The ZVF publication is described as placebo-controlled in its title, but the registry and paper identify the control as 9 mg/day lutein ('faux placebo'). Improvements within the 8 mg/day zeaxanthin arm therefore do not constitute a zeaxanthin-versus-inert-placebo effect estimate."
+  sourceId: ref-zvf-registry
+
+- title: "AREDS2 is not standalone zeaxanthin evidence"
+  description: "AREDS2 tested 10 mg lutein plus 2 mg zeaxanthin, generally on top of an AREDS antioxidant/zinc formulation. Its primary advanced-AMD comparison was not statistically significant, and neither the design nor formulation isolates zeaxanthin."
+  sourceId: ref-areds2-2013
+
+- title: "Meso-zeaxanthin is not interchangeable with dietary zeaxanthin"
+  description: "Meso-zeaxanthin is a distinct stereoisomer. Trials of lutein/zeaxanthin/meso-zeaxanthin formulations are combination-product evidence and are not counted here as standalone (3R,3'R)-zeaxanthin efficacy."
+  sourceId: ref-pubchem-zeaxanthin
+```
+
+## Claims
+
+```yaml
+- id: claim-standalone-zeaxanthin-mpod
+  assertion: "Standalone oral zeaxanthin can increase measured retinal macular pigment under some supplementation protocols, but this effect is not consistently reproduced across human trials."
+  relation: "affects"
+  participants:
+    - entityId: substance:zeaxanthin
+      role: "intervention"
+    - entityId: tag:macular-pigment-optical-density
+      role: "measured outcome"
+  context: "Healthy human supplementation studies using different retinal-pigment methods and durations."
+  sourceIds:
+    - ref-luxea-2007
+  conflictingSourceIds:
+    - ref-tanito-2012
+  assessment: not-formally-assessed
+  limitation: "LUXEA required correction because zeaxanthin accumulated at its parafoveal HFP reference location; Tanito used resonance Raman spectroscopy and autofluorescence and found no zeaxanthin-group increase over three months."
+
+- id: claim-zvf-zeaxanthin-acuity
+  assertion: "An 8 mg/day zeaxanthin arm in ZVF showed a reported 1.5-line improvement in high-contrast visual acuity over 12 months."
+  relation: "associated-with-improvement-in"
+  participants:
+    - entityId: substance:zeaxanthin
+      role: "intervention"
+    - entityId: tag:visual-acuity
+      role: "measured outcome"
+  context: "Older participants with mild-to-moderate atrophic AMD."
+  sourceIds:
+    - ref-zvf-2011
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: "The control was lutein rather than inert placebo, the cohort was small and overwhelmingly male, and the abstract does not provide a definitive between-arm effect estimate for the acuity change."
+
+- id: claim-mactel-no-objective-visual-benefit
+  assertion: "In macular telangiectasia type 2, 10–20 mg/day standalone zeaxanthin did not produce objective improvement in visual acuity despite increasing pigment in the residual perifoveal pigment ring."
+  relation: "did-not-improve"
+  participants:
+    - entityId: substance:zeaxanthin
+      role: "intervention"
+    - entityId: tag:visual-acuity
+      role: "measured outcome"
+  context: "Eight-person randomized open-label MacTel dose-comparison trial followed for up to 24 months."
+  sourceIds:
+    - ref-mactel-2017
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: "Very small sample, no placebo group and progressive underlying retinal disease."
+
+- id: claim-zeaxanthin-retinal-accumulation
+  assertion: "Orally administered zeaxanthin can accumulate in the human retina, but the spatial distribution of that accumulation depends on retinal context."
+  relation: "contributes-to"
+  participants:
+    - entityId: substance:zeaxanthin
+      role: "dietary xanthophyll"
+    - entityId: tag:macular-pigment-accumulation
+      role: "mechanism"
+  context: "Human supplementation measured using psychophysical and fundus-imaging methods."
+  sourceIds:
+    - ref-luxea-2007
+    - ref-mactel-2017
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: "Retinal pigment accumulation is a biomarker and does not itself demonstrate improved clinical vision or slowed disease progression."
+```
+
+## Interactions
+
+```yaml
+[]
+```
+
+## Experience links
+
+```yaml
+[]
+```
+
+## References
+
+```yaml
+- id: ref-pubchem-zeaxanthin
+  title: "Zeaxanthin"
+  authors: "National Center for Biotechnology Information"
+  year: 2026
+  url: "https://pubchem.ncbi.nlm.nih.gov/compound/5280899"
+  kind: "authoritative chemical database"
+  insight: "Establishes zeaxanthin identity as PubChem CID 5280899, formula C40H56O2, molecular weight 568.9 g/mol, stereochemical structure and canonical SMILES."
+  limitation: "Chemical database record; not clinical efficacy or safety evidence."
+  funding: "Not assessed"
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed"
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-luxea-2007
+  title: "Xanthophyll accumulation in the human retina during supplementation with lutein or zeaxanthin - the LUXEA (LUtein Xanthophyll Eye Accumulation) study"
+  authors: "Wolfgang Schalch, William Cohn, Felix M Barker, Wolfgang Köpcke, John Mellerio, Alan C Bird, Anthony G Robson, Fred F Fitzke, Frederik J G M van Kuijk"
+  year: 2007
+  url: "https://pubmed.ncbi.nlm.nih.gov/17084803/"
+  kind: "randomized controlled human supplementation study"
+  insight: "Using monthly heterochromatic flicker photometry and plasma HPLC, zeaxanthin alone produced similar pigment accumulation at foveal and parafoveal locations; after correction for reference-location accumulation, the reported MPOD increase was approximately 14%."
+  limitation: "Spatial accumulation of zeaxanthin confounded the conventional differential HFP calculation; the accessible abstract does not expose complete arm-level baseline characteristics or adverse-event tables."
+  pmid: "17084803"
+  doi: "10.1016/j.abb.2006.09.032"
+  funding: "Not assessed from an inspected publication funding declaration; two authors had DSM Nutritional Products affiliation, which is not itself coded as proof of study sponsorship."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed; an explicit publication conflict declaration was not available in the inspected abstract-level source."
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-kvansakul-2006
+  title: "Supplementation with the carotenoids lutein or zeaxanthin improves human visual performance"
+  authors: "Jessica Kvansakul, Marisa Rodriguez-Carmona, David F Edgar, Felix M Barker, Wolfgang Köpcke, Wolfgang Schalch, John L Barbur"
+  year: 2006
+  url: "https://pubmed.ncbi.nlm.nih.gov/16792735/"
+  kind: "controlled human supplementation study"
+  insight: "In 34 subjects from the carotenoid supplementation program, high-mesopic contrast-acuity thresholds tended to improve with supplementation, but the clearly significant result was reported for lutein rather than standalone zeaxanthin."
+  limitation: "Small subgroup analysis; outcome pattern does not establish an independent significant zeaxanthin visual-performance effect."
+  pmid: "16792735"
+  doi: "10.1111/j.1475-1313.2006.00387.x"
+  funding: "Not assessed from an inspected funding declaration."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed; the author list included a DSM Nutritional Products employee, but affiliation alone is not treated as a declared conflict."
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-rodriguez-2006
+  title: "The effects of supplementation with lutein and/or zeaxanthin on human macular pigment density and colour vision"
+  authors: "Marisa Rodriguez-Carmona, Jessica Kvansakul, J Alister Harlow, Wolfgang Köpcke, Wolfgang Schalch, John L Barbur"
+  year: 2006
+  url: "https://pubmed.ncbi.nlm.nih.gov/16460314/"
+  kind: "controlled human clinical trial"
+  insight: "In 24 normal trichromats, supplementation increased macular pigment but yellow-blue discrimination remained unaffected; red-green discrimination showed only a tendency toward improvement."
+  limitation: "Small study and mixed lutein/zeaxanthin exposure conditions; not a clean standalone-zeaxanthin efficacy estimate."
+  pmid: "16460314"
+  doi: "10.1111/j.1475-1313.2006.00386.x"
+  funding: "Not assessed from an inspected publication funding statement."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed."
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-zvf-2011
+  title: "Randomized, double-blind, placebo-controlled study of zeaxanthin and visual function in patients with atrophic age-related macular degeneration: the Zeaxanthin and Visual Function Study (ZVF) FDA IND #78, 973"
+  authors: "Stuart P Richer, William Stiles, Kelly Graham-Hoffman, Marc Levin, Dennis Ruskin, James Wrobel, Dong-Wouk Park, Carla Thomas"
+  year: 2011
+  url: "https://pubmed.ncbi.nlm.nih.gov/22027699/"
+  kind: "randomized double-masked active-controlled clinical trial"
+  insight: "Sixty mostly male AMD patients were randomized to 8 mg zeaxanthin, zeaxanthin plus lutein, or lutein. MPOD rose across all groups without a between-group difference; the zeaxanthin arm improved high-contrast acuity by 1.5 lines, with borderline shape/field results, while lutein performed better on low-contrast acuity, CSF and glare recovery."
+  limitation: "The 'faux placebo' was active lutein rather than inert placebo; small and overwhelmingly male cohort; several reported zeaxanthin findings were exploratory or borderline."
+  pmid: "22027699"
+  doi: "10.1016/j.optm.2011.08.008"
+  funding: "Supported by the Captain James A. Lovell Federal Health Care Facility and Department of Veterans Affairs Research Service/CARES; Chrysantis, Inc. was identified as the primary ZVF granting sponsor, with multiple companies providing instruments or other support."
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: "An explicit publication COI declaration was not established from the inspected sources."
+  conflictOfInterestStatus: not-assessed
+  disclosureUrl: "https://ohsu.elsevierpure.com/en/publications/randomized-double-blind-placebo-controlled-study-of-zeaxanthin-an/"
+
+- id: ref-zvf-registry
+  title: "The Zeaxanthin and Visual Function Study"
+  authors: "ClinicalTrials.gov; Chrysantis, Inc."
+  year: 2012
+  url: "https://clinicaltrials.gov/study/NCT00564902"
+  kind: "clinical trial registry"
+  insight: "Registry confirms NCT00564902, randomized double masking, 60 actual participants, 8 mg/day standalone 3R,3'R-zeaxanthin, 8 mg zeaxanthin plus 8 mg lutein, and 9 mg lutein active control, with detailed MPOD, acuity, glare, CSF, color and kinetic-field methods."
+  limitation: "Sponsor-submitted registry data; registry presence and posted endpoints do not independently establish efficacy."
+  funding: "Lead sponsor Chrysantis, Inc.; collaborators Kowa Company, Ltd. and Image Technologies Inc."
+  sponsorshipStatus: industry-funded
+  conflictsOfInterest: "Registry does not constitute a journal conflict-of-interest declaration."
+  conflictOfInterestStatus: not-assessed
+  disclosureUrl: "https://clinicaltrials.gov/study/NCT00564902"
+
+- id: ref-tanito-2012
+  title: "Macular pigment density changes in Japanese individuals supplemented with lutein or zeaxanthin: quantification via resonance Raman spectrophotometry and autofluorescence imaging"
+  authors: "Masaki Tanito, Akira Obana, Yuko Gohto, Shigetoshi Okazaki, Werner Gellermann, Akihiro Ohira"
+  year: 2012
+  url: "https://pubmed.ncbi.nlm.nih.gov/22699751/"
+  kind: "randomized active-comparator clinical trial"
+  insight: "Twenty-two healthy Japanese volunteers received 10 mg/day lutein or zeaxanthin for up to three months. Zeaxanthin-group MPOD measured by resonance Raman spectroscopy remained unchanged, while lutein produced >20% MPOD increases at months 2 and 3."
+  limitation: "Small active-comparator study, only three months long, with no inert placebo."
+  pmid: "22699751"
+  doi: "10.1007/s10384-012-0157-0"
+  funding: "Not assessed because the inspected accessible sources did not expose a funding declaration."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed because an explicit disclosure statement was not available in the inspected accessible source."
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-mactel-2017
+  title: "MACULAR PIGMENT DISTRIBUTION RESPONSES TO HIGH-DOSE ZEAXANTHIN SUPPLEMENTATION IN PATIENTS WITH MACULAR TELANGIECTASIA TYPE 2"
+  authors: "Rene Y Choi, Aruna Gorusupudi, Kimberley Wegner, Mohsen Sharifzadeh, Werner Gellermann, Paul S Bernstein"
+  year: 2017
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5503818/"
+  kind: "randomized open-label interventional trial"
+  insight: "Eight MacTel patients randomized to 10 or 20 mg/day zeaxanthin increased pigment in the residual perifoveal ring but not the depleted fovea, with no objective VA, contrast-sensitivity or OCT benefit. One 20-mg participant developed reversible crystalline maculopathy."
+  limitation: "Extremely small sample, no placebo control and progressive underlying disease; insufficient for incidence estimates or robust efficacy statistics."
+  pmid: "28079755"
+  doi: "10.1097/IAE.0000000000001450"
+  funding: "Research to Prevent Blindness, Lowy Medical Research Institute, NIH grants EY11600 and EY14800; zeaxanthin supplements supplied by ZeaVision, LLC."
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: "The authors explicitly reported no proprietary conflicts of interest."
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5503818/"
+
+- id: ref-ma-2012
+  title: "Effect of lutein and zeaxanthin on macular pigment and visual function in patients with early age-related macular degeneration"
+  authors: "Le Ma, Shao-Fang Yan, Yang-Mu Huang, Xin-Rong Lu, Fang Qian, Hong-Lei Pang, Xian-Rong Xu, Zhi-Yong Zou, Peng-Cheng Dong, Xin Xiao, Xun Wang, Ting-Ting Sun, Hong-Liang Dou, Xiao-Ming Lin"
+  year: 2012
+  url: "https://pubmed.ncbi.nlm.nih.gov/22858124/"
+  kind: "randomized double-masked placebo-controlled clinical trial"
+  insight: "In 108 people with early AMD, 10 mg lutein plus 10 mg zeaxanthin increased MPOD by 0.058±0.027 density unit over 48 weeks; visual-function relationships were also analyzed."
+  limitation: "Combination arm cannot isolate zeaxanthin; the strongest contrast-sensitivity between-group result in the abstract favored 20 mg lutein."
+  pmid: "22858124"
+  doi: "10.1016/j.ophtha.2012.06.014"
+  funding: "Not assessed from an inspected full funding declaration."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed."
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-ma-mferg-2012
+  title: "Improvement of retinal function in early age-related macular degeneration after lutein and zeaxanthin supplementation: a randomized, double-masked, placebo-controlled trial"
+  authors: "Le Ma, Hong-Liang Dou, Yang-Mu Huang, Xin-Rong Lu, Xian-Rong Xu, Fang Qian, Zhi-Yong Zou, Hong-Lei Pang, Peng-Cheng Dong, Xin Xiao, Xun Wang, Ting-Ting Sun, Xiao-Ming Lin"
+  year: 2012
+  url: "https://pubmed.ncbi.nlm.nih.gov/22835510/"
+  kind: "randomized double-masked placebo-controlled clinical trial"
+  insight: "At 48 weeks the lutein-plus-zeaxanthin arm showed a significant increase in central ring-1 mfERG N1P1 response density; peripheral responses and P1 latencies did not consistently change."
+  limitation: "Combination treatment cannot identify a zeaxanthin-specific electrophysiologic effect."
+  pmid: "22835510"
+  doi: "10.1016/j.ajo.2012.04.014"
+  funding: "Not assessed from an inspected funding declaration."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed."
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-huang-2015
+  title: "Changes following supplementation with lutein and zeaxanthin in retinal function in eyes with early age-related macular degeneration: a randomised, double-blind, placebo-controlled trial"
+  authors: "Yang-Mu Huang, Hong-Liang Dou, Fei-Fei Huang, Xian-Rong Xu, Zhi-Yong Zou, Xin-Rong Lu, Xiao-Ming Lin"
+  year: 2015
+  url: "https://pubmed.ncbi.nlm.nih.gov/25228440/"
+  kind: "randomized double-blind placebo-controlled clinical trial"
+  insight: "Two-year extension of the early-AMD supplementation program confirmed MPOD increases in active arms; microperimetry improvements were clearest in lutein-only groups."
+  limitation: "Does not establish an independent zeaxanthin effect."
+  pmid: "25228440"
+  doi: "10.1136/bjophthalmol-2014-305503"
+  funding: "Not assessed from an inspected funding declaration."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed."
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-hammond-2014
+  title: "A double-blind, placebo-controlled study on the effects of lutein and zeaxanthin on photostress recovery, glare disability, and chromatic contrast"
+  authors: "Billy R Hammond, Laura M Fletcher, Franz Roos, Jonas Wittwer, Wolfgang Schalch"
+  year: 2014
+  url: "https://pubmed.ncbi.nlm.nih.gov/25468896/"
+  kind: "randomized double-blind placebo-controlled clinical trial"
+  insight: "Ten mg lutein plus 2 mg zeaxanthin daily for one year increased MPOD and improved photostress recovery and chromatic contrast versus placebo; glare disability did not significantly improve."
+  limitation: "No standalone-zeaxanthin arm. Publication reports 115 recruited participants, while the later ClinicalTrials.gov record lists 109 actual enrollment."
+  pmid: "25468896"
+  doi: "10.1167/iovs.14-15573"
+  funding: "University of Georgia was lead sponsor and DSM-firmenich Switzerland AG is listed as collaborator in the registry."
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: "An explicit publication conflict declaration was not established from the inspected sources."
+  conflictOfInterestStatus: not-assessed
+  disclosureUrl: "https://clinicaltrials.gov/study/NCT00909090"
+
+- id: ref-mpgd-registry
+  title: "Macular Pigment and Glare Disability"
+  authors: "ClinicalTrials.gov; University of Georgia"
+  year: 2020
+  url: "https://clinicaltrials.gov/study/NCT00909090"
+  kind: "clinical trial registry"
+  insight: "Registry specifies the 10 mg FloraGLO lutein plus 2 mg OptiSharp zeaxanthin intervention, placebo control and MPOD, glare-disability, photostress-recovery and heterochromatic-contrast endpoints."
+  limitation: "Sponsor-submitted registry data; not an independent efficacy assessment."
+  funding: "University of Georgia lead sponsor; DSM-firmenich Switzerland AG collaborator."
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: "Not assessed by the registry."
+  conflictOfInterestStatus: not-assessed
+  disclosureUrl: "https://clinicaltrials.gov/study/NCT00909090"
+
+- id: ref-nvc-2021
+  title: "Night Vision and Carotenoids (NVC): A Randomized Placebo Controlled Clinical Trial on Effects of Carotenoid Supplementation on Night Vision in Older Adults"
+  authors: "Stuart Richer, Steven Novil, Taylor Gullett, Avni Dervishi, Sherwin Nassiri, Co Duong, Robert Davis, Pinakin Gunvant Davey"
+  year: 2021
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8471486/"
+  kind: "randomized double-blind placebo-controlled clinical trial"
+  insight: "A 14 mg zeaxanthin/7 mg lutein multinutrient supplement increased right-eye MPOD, improved contrast under glare and shortened glare-recovery time in a small six-month trial."
+  limitation: "Only 33 participants; active and placebo groups differed in age and baseline MPOD; product contained additional antioxidants/minerals; results cannot isolate zeaxanthin."
+  pmid: "34579067"
+  doi: "10.3390/nu13093191"
+  funding: "Not assessed from the inspected disclosure section."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed from the inspected disclosure section."
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-zhang-2022
+  title: "Macular pigment optical density responses to different levels of zeaxanthin in patients with high myopia"
+  authors: "Yue Zhang, Jie Hao, Kai Cao, Yue Qi, Ningli Wang, Song Han"
+  year: 2022
+  url: "https://pubmed.ncbi.nlm.nih.gov/35044504/"
+  kind: "randomized controlled clinical trial"
+  insight: "Fifty-four high-myopia participants were randomized among Lycium barbarum arms providing 10 or 20 mg zeaxanthin plus small lutein doses, lutein controls and blank control. The high-dose Lycium comparison was significant for MPOD; the low-dose comparison was not."
+  limitation: "Zeaxanthin was delivered in whole Lycium barbarum with lutein and other food constituents, so this is not purified standalone-zeaxanthin evidence."
+  pmid: "35044504"
+  doi: "10.1007/s00417-021-05532-2"
+  funding: "Not assessed from an inspected publication funding declaration."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed."
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-kotagiri-2022
+  title: "Superior Bioavailability of a Novel Lutein and Zeaxanthin Formulation in Healthy Human Subjects"
+  authors: "Srinivasa Rao Kotagiri, Abhijeet Morde, Deshanie Rai, Kalmanoor Babji, Mohan Lal, Muralidhara Padigaru, Chirag Khatri"
+  year: 2022
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9253220/"
+  kind: "randomized double-blind comparative single-dose bioavailability study"
+  insight: "Ninety adults received 10 mg lutein plus 2 mg zeaxanthin in test or reference formulations. The test formulation produced approximately 1.8-fold higher zeaxanthin Cmax and 2.2-fold higher AUC0-72, demonstrating formulation-dependent exposure."
+  limitation: "Co-formulated lutein/zeaxanthin single-dose pharmacokinetic study; does not establish a terminal zeaxanthin half-life or clinical visual efficacy."
+  pmid: "35585428"
+  doi: "10.1007/s40123-022-00522-x"
+  funding: "Not assessed from the inspected disclosure section."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed from the inspected disclosure section."
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-children-2024
+  title: "Lutein and Zeaxanthin Supplementation Improves Dynamic Visual and Cognitive Performance in Children: A Randomized, Double-Blind, Parallel, Placebo-Controlled Study"
+  authors: "Rajesh Parekh, Billy R Hammond, Divya Chandradhara"
+  year: 2024
+  url: "https://pubmed.ncbi.nlm.nih.gov/38363462/"
+  kind: "randomized double-blind placebo-controlled clinical trial"
+  insight: "Sixty children received 10 mg lutein plus 2 mg zeaxanthin or placebo for 180 days; MPOD increased significantly versus placebo from day 42 and no safety concern was reported."
+  limitation: "Combination intervention; cannot attribute effects to zeaxanthin alone."
+  pmid: "38363462"
+  doi: "10.1007/s12325-024-02785-1"
+  funding: "Not assessed from an inspected disclosure statement."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed from an inspected disclosure statement."
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-teen-2026
+  title: "Supplementation with lutein and zeaxanthin increases macular pigment optical density and cognitive performance in healthy teenagers in a randomized, double-blind, placebo-controlled trial"
+  authors: "Adrian L Lopresti, Stephen J Smith"
+  year: 2026
+  url: "https://pubmed.ncbi.nlm.nih.gov/42413424/"
+  kind: "randomized double-blind placebo-controlled clinical trial"
+  insight: "Eighty-two teenagers received 10 mg lutein plus 2 mg zeaxanthin or sunflower-oil placebo for six months; MPOD increased more in both eyes in the active group, while several other cognitive/self-report endpoints were null."
+  limitation: "Combination intervention and recent publication without inspected full-text funding/COI declarations."
+  pmid: "42413424"
+  doi: "10.1016/j.nutres.2026.06.005"
+  funding: "Not assessed because the full disclosure statement was not inspected."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed because the full disclosure statement was not inspected."
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-areds2-2013
+  title: "Lutein + zeaxanthin and omega-3 fatty acids for age-related macular degeneration: the Age-Related Eye Disease Study 2 (AREDS2) randomized clinical trial"
+  authors: "Age-Related Eye Disease Study 2 Research Group"
+  year: 2013
+  url: "https://pubmed.ncbi.nlm.nih.gov/23644932/"
+  kind: "multicenter randomized double-masked placebo-controlled phase 3 trial"
+  insight: "Among 4203 high-risk AMD participants, adding 10 mg lutein plus 2 mg zeaxanthin to the AREDS background did not significantly reduce advanced AMD in the primary comparison: HR 0.90, 98.7% CI 0.76–1.07, P=0.12."
+  limitation: "Not standalone zeaxanthin: lutein and zeaxanthin were combined and participants generally also received the AREDS antioxidant/zinc formula. Secondary substitutions and subgroup analyses answer different questions from standalone efficacy."
+  pmid: "23644932"
+  doi: "10.1001/jama.2013.4997"
+  funding: "Not assessed from an inspected funding declaration for this record."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed from an inspected disclosure statement for this record."
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-fda-gras-639
+  title: "Agency Response Letter GRAS Notice No. GRN 000639"
+  authors: "U.S. Food and Drug Administration"
+  year: 2016
+  url: "https://www.fda.gov/food/gras-notice-inventory/agency-response-letter-gras-notice-no-grn-000639"
+  kind: "official regulatory food-ingredient record"
+  insight: "FDA stated that it had no questions regarding Kemin's conclusion that its specified zeaxanthin ingredient was GRAS under the intended food-use conditions, while explicitly noting that FDA had not made its own GRAS determination."
+  limitation: "GRAS response concerns specified food-ingredient uses and is not drug approval, disease-treatment approval, or proof that every zeaxanthin supplement/formulation is equivalent."
+  funding: "Not applicable / not assessed"
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not applicable / not assessed"
+  conflictOfInterestStatus: not-assessed
+
+- id: ref-fda-gras-588
+  title: "Agency Response Letter GRAS Notice No. GRN 000588"
+  authors: "U.S. Food and Drug Administration"
+  year: 2016
+  url: "https://www.fda.gov/food/gras-notice-inventory/agency-response-letter-gras-notice-no-grn-000588"
+  kind: "official regulatory food-ingredient record"
+  insight: "FDA responded without questions to OmniActive's GRAS conclusion for specified paprika-derived zeaxanthin food uses at stated serving levels."
+  limitation: "Scoped to the notified ingredient and intended food uses; not an approval of therapeutic claims or all supplement doses."
+  funding: "Not applicable / not assessed"
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not applicable / not assessed"
+  conflictOfInterestStatus: not-assessed
+```
+
+## Legal
+
+```yaml
+- jurisdiction: "United States"
+  activity: "Use of specified zeaxanthin ingredient in foods under GRAS Notice GRN 000639 intended conditions"
+  status: "FDA stated it had no questions regarding Kemin Foods' GRAS conclusion for the notified intended uses; FDA explicitly did not make its own GRAS determination. This status does not constitute approval of zeaxanthin as a treatment for eye disease."
+  sourceUrl: "https://www.fda.gov/food/gras-notice-inventory/agency-response-letter-gras-notice-no-grn-000639"
+  asOf: "2026-10-04"
+
+- jurisdiction: "United States"
+  activity: "Use of specified paprika-derived zeaxanthin ingredient in foods under GRAS Notice GRN 000588 intended conditions"
+  status: "FDA stated it had no questions regarding OmniActive's GRAS conclusion for the specified intended food uses; this is not therapeutic approval and does not establish equivalence of all zeaxanthin formulations or doses."
+  sourceUrl: "https://www.fda.gov/food/gras-notice-inventory/agency-response-letter-gras-notice-no-grn-000588"
+  asOf: "2026-10-04"
+```
+
+Companion outcome concepts
+
+The outcome files below are the minimal new BHWiki concepts needed to keep actual ocular measurements out of unrelated canonical categories. The methods represented—HFP, resonance Raman/autofluorescence, ETDRS-type acuity, contrast testing, photostress, kinetic field testing, OCT and mfERG—are the methods actually used in the human studies above. 
+2
+
+outcomes/macular-pigment-optical-density.md
+
+markdown
+Copy
+---
+id: macular-pigment-optical-density
+label: "Macular pigment optical density"
+kind: outcome
+aliases:
+  - MPOD
+relatedIds:
+  - macular-pigment-accumulation
+sourceUrls:
+  - "https://pubmed.ncbi.nlm.nih.gov/17084803/"
+  - "https://pubmed.ncbi.nlm.nih.gov/22699751/"
+  - "https://clinicaltrials.gov/study/NCT00564902"
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Macular pigment optical density is a quantitative measure of the optical attenuation associated with macular xanthophyll pigment. Human studies estimate it with methods including heterochromatic flicker photometry, resonance Raman spectroscopy and fundus autofluorescence; values and spatial interpretation are method-dependent.
+
+
+outcomes/visual-acuity.md
+
+markdown
+Copy
+---
+id: visual-acuity
+label: "Visual acuity"
+kind: outcome
+aliases:
+  - "best-corrected visual acuity"
+  - BCVA
+relatedIds: []
+sourceUrls:
+  - "https://pubmed.ncbi.nlm.nih.gov/22027699/"
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC5503818/"
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Visual acuity measures the ability to resolve spatial detail under specified testing conditions. Zeaxanthin trials have used high- and low-contrast letter tests, ETDRS protocols and logMAR-derived measures, so the instrument and contrast condition must be retained with each result.
+
+
+outcomes/contrast-sensitivity.md
+
+markdown
+Copy
+---
+id: contrast-sensitivity
+label: "Contrast sensitivity"
+kind: outcome
+aliases:
+  - "contrast sensitivity function"
+  - CSF
+relatedIds: []
+sourceUrls:
+  - "https://pubmed.ncbi.nlm.nih.gov/16792735/"
+  - "https://clinicaltrials.gov/study/NCT00564902"
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC5503818/"
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Contrast sensitivity quantifies visual detection or discrimination as target contrast varies, often across spatial frequencies or under glare/mesopic conditions. It is distinct from high-contrast visual acuity and must be interpreted according to the specific chart or psychophysical instrument used.
+
+
+outcomes/photostress-recovery-time.md
+
+markdown
+Copy
+---
+id: photostress-recovery-time
+label: "Photostress recovery time"
+kind: outcome
+aliases:
+  - "glare recovery time"
+  - "photostress recovery"
+relatedIds: []
+sourceUrls:
+  - "https://clinicaltrials.gov/study/NCT00909090"
+  - "https://clinicaltrials.gov/study/NCT00564902"
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC8471486/"
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Photostress recovery time is the elapsed time required to regain a specified visual target or acuity criterion after exposure to an intense retinal-bleaching light stimulus. Shorter recovery denotes better performance, but flash source, bleach duration and recovery target differ among studies.
+
+
+outcomes/glare-disability.md
+
+markdown
+Copy
+---
+id: glare-disability
+label: "Glare disability"
+kind: outcome
+aliases:
+  - "disability glare"
+relatedIds:
+  - photostress-recovery-time
+sourceUrls:
+  - "https://pubmed.ncbi.nlm.nih.gov/25468896/"
+  - "https://clinicaltrials.gov/study/NCT00909090"
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Glare disability quantifies loss of visual performance caused by a surrounding or superimposed glare source. It is a distinct endpoint from photostress recovery time: glare-disability testing measures performance while glare is present, whereas photostress testing measures recovery after bleaching exposure.
+
+
+outcomes/color-contrast-discrimination.md
+
+markdown
+Copy
+---
+id: color-contrast-discrimination
+label: "Color and chromatic contrast discrimination"
+kind: outcome
+aliases:
+  - "chromatic contrast"
+  - "color discrimination"
+relatedIds: []
+sourceUrls:
+  - "https://pubmed.ncbi.nlm.nih.gov/16460314/"
+  - "https://pubmed.ncbi.nlm.nih.gov/25468896/"
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Color and chromatic contrast discrimination describes psychophysical thresholds for detecting chromatic differences or colored targets against a specified background. Zeaxanthin-related trials have tested yellow-blue and red-green discrimination as well as yellow-grating thresholds on short-wavelength backgrounds.
+
+
+outcomes/foveal-shape-discrimination.md
+
+markdown
+Copy
+---
+id: foveal-shape-discrimination
+label: "Foveal shape discrimination"
+kind: outcome
+aliases:
+  - "radial-frequency shape discrimination"
+relatedIds: []
+sourceUrls:
+  - "https://clinicaltrials.gov/study/NCT00564902"
+  - "https://pubmed.ncbi.nlm.nih.gov/22027699/"
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Foveal shape discrimination is a psychophysical measure of the smallest detectable deformation of a centrally viewed shape. In ZVF it was assessed with radial-frequency targets, with lower deformation thresholds representing finer discrimination.
+
+
+outcomes/central-visual-field-scotoma.md
+
+markdown
+Copy
+---
+id: central-visual-field-scotoma
+label: "Central visual-field scotoma"
+kind: outcome
+aliases:
+  - "central kinetic visual-field defect"
+relatedIds: []
+sourceUrls:
+  - "https://clinicaltrials.gov/study/NCT00564902"
+  - "https://pubmed.ncbi.nlm.nih.gov/22027699/"
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+A central visual-field scotoma is an area of reduced or absent visual sensitivity within the central field. The ZVF trial mapped central macular scotoma area with kinetic yellow stimuli at multiple contrast levels rather than treating visual-field status as equivalent to visual acuity.
+
+
+outcomes/macular-pigment-spatial-distribution.md
+
+markdown
+Copy
+---
+id: macular-pigment-spatial-distribution
+label: "Macular pigment spatial distribution"
+kind: outcome
+aliases:
+  - "macular pigment distribution"
+relatedIds:
+  - macular-pigment-optical-density
+  - macular-pigment-accumulation
+sourceUrls:
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC5503818/"
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Macular pigment spatial distribution describes where macular xanthophyll pigment is concentrated across retinal eccentricity, not merely its peak or average optical density. This distinction is clinically important in macular telangiectasia, where pigment can form an abnormal perifoveal ring while remaining depleted at the central fovea.
+
+
+outcomes/retinal-structure-oct.md
+
+markdown
+Copy
+---
+id: retinal-structure-oct
+label: "Retinal structure on optical coherence tomography"
+kind: outcome
+aliases:
+  - OCT
+  - "retinal OCT"
+relatedIds: []
+sourceUrls:
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC5503818/"
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Retinal OCT structure is an imaging outcome describing retinal layer morphology or thickness measured by optical coherence tomography. A change in retinal pigment or visual performance does not imply an OCT structural change, so OCT findings are retained as a separate measured outcome.
+
+
+outcomes/multifocal-erg-response-density.md
+
+markdown
+Copy
+---
+id: multifocal-erg-response-density
+label: "Multifocal ERG response density"
+kind: outcome
+aliases:
+  - mfERG
+  - "N1P1 response density"
+relatedIds: []
+sourceUrls:
+  - "https://pubmed.ncbi.nlm.nih.gov/22835510/"
+  - "https://pubmed.ncbi.nlm.nih.gov/25228440/"
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Multifocal electroretinogram response density is a localized electrophysiologic measure of retinal response generated from many visual-field elements and summarized by retinal regions or rings. N1P1 response density and P1 peak latency are distinct mfERG variables and should not be merged.
+
+Mechanism companion files
+
+Human supplementation directly supports retinal accumulation, but not every proposed downstream antioxidant or photoprotective pathway; the mechanism files therefore keep the graph narrow. LUXEA measured zeaxanthin-associated retinal pigment accumulation, while the placebo-controlled glare/photostress study supplies direct human visual evidence compatible with—but not uniquely proving—the short-wavelength filtering hypothesis. 
+2
+
+concepts/mechanism/macular-pigment-accumulation.md
+
+markdown
+Copy
+---
+id: macular-pigment-accumulation
+label: "Macular pigment accumulation"
+kind: mechanism
+aliases:
+  - "retinal xanthophyll accumulation"
+relatedIds:
+  - macular-pigment-optical-density
+  - macular-pigment-spatial-distribution
+sourceUrls:
+  - "https://pubmed.ncbi.nlm.nih.gov/17084803/"
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC5503818/"
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Macular pigment accumulation is the selective deposition of xanthophyll carotenoids within macular retinal regions after dietary exposure. Human zeaxanthin supplementation demonstrates that accumulation can occur, while disease-state data show that where pigment accumulates depends on preserved retinal architecture.
+
+
+concepts/mechanism/short-wavelength-light-filtering.md
+
+markdown
+Copy
+---
+id: short-wavelength-light-filtering
+label: "Short-wavelength light filtering"
+kind: mechanism
+aliases:
+  - "blue-light filtering"
+relatedIds:
+  - macular-pigment-accumulation
+  - glare-disability
+  - photostress-recovery-time
+sourceUrls:
+  - "https://pubmed.ncbi.nlm.nih.gov/25468896/"
+  - "https://pubchem.ncbi.nlm.nih.gov/compound/5280899"
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Short-wavelength light filtering is the optical attenuation of blue-visible wavelengths by macular xanthophyll pigment before light reaches deeper retinal structures. Human supplementation trials test predicted visual consequences such as glare and photostress performance, but those outcomes do not establish filtering as the only operative mechanism.
+
+
+relationships/zeaxanthin-macular-pigment-accumulation.md
+
+markdown
+Copy
+---
+id: zeaxanthin-macular-pigment-accumulation
+label: "Zeaxanthin contributes to human macular pigment accumulation"
+relation: "contributes-to"
+members:
+  - substance:zeaxanthin
+  - tag:macular-pigment-accumulation
+  - tag:macular-pigment-optical-density
+memberRoles:
+  substance:zeaxanthin: "oral xanthophyll exposure"
+  tag:macular-pigment-accumulation: "retinal accumulation mechanism"
+  tag:macular-pigment-optical-density: "measured retinal-pigment outcome"
+sourceUrl: "https://pubmed.ncbi.nlm.nih.gov/17084803/"
+sourceUrls:
+  - "https://pubmed.ncbi.nlm.nih.gov/17084803/"
+  - "https://pmc.ncbi.nlm.nih.gov/articles/PMC5503818/"
+directedSteps:
+  - from: substance:zeaxanthin
+    to: tag:macular-pigment-accumulation
+    label: "oral supplementation can increase zeaxanthin-associated pigment in human retinal macular regions"
+    sourceUrls:
+      - "https://pubmed.ncbi.nlm.nih.gov/17084803/"
+      - "https://pmc.ncbi.nlm.nih.gov/articles/PMC5503818/"
+  - from: tag:macular-pigment-accumulation
+    to: tag:macular-pigment-optical-density
+    label: "retinal pigment accumulation can alter measured macular pigment optical density, subject to spatial reference and measurement method"
+    sourceUrls:
+      - "https://pubmed.ncbi.nlm.nih.gov/17084803/"
+x-shape: [id, label, relation, members, memberRoles, sourceUrl, sourceUrls, directedSteps, description]
+---
+## Description
+
+Human supplementation studies support a directed link from oral zeaxanthin exposure to retinal macular-pigment accumulation and from that accumulation to MPOD measurements. LUXEA also demonstrates an important measurement caveat: zeaxanthin can accumulate at both the foveal target and parafoveal reference location, so a differential HFP value can underestimate accumulation unless the spatial response is considered.
+
+Coverage and access gaps
+
+The high-confidence standalone evidence base captured here consists chiefly of LUXEA, ZVF, the randomized Japanese lutein-versus-zeaxanthin study, and the MacTel dose study. LUXEA’s corrected response supports retinal accumulation, but its HFP reference location was itself affected by zeaxanthin; Tanito et al. found no central MPOD response to 10 mg/day over three months; and MacTel showed that increasing pigment outside the foveal center need not improve acuity, contrast sensitivity, or OCT structure. 
+3
+
+The strongest safety-specific primary observation found for standalone high-dose zeaxanthin was the single reversible crystalline maculopathy case during 20 mg/day treatment in the eight-person MacTel study. The authors explicitly reported no proprietary conflicts, while funding included NIH, Research to Prevent Blindness, the Lowy Medical Research Institute, and in-kind zeaxanthin from ZeaVision. This is a signal, not an incidence estimate. 
+4
+
+Funding and conflict fields remain not-assessed wherever an explicit original-paper declaration was not accessible or inspected; corporate author affiliation was deliberately not converted into an industry-funding classification. For ZVF, commercial sponsorship could be verified independently: Chrysantis was the primary granting sponsor, alongside VA/public support and several commercial instrumentation contributors. 
+5
+
+AREDS2 is intentionally not represented as evidence that zeaxanthin alone prevents AMD progression. It randomized a lutein 10 mg + zeaxanthin 2 mg combination on an AREDS background; the primary advanced-AMD comparison was HR 0.90 with a 98.7% CI of 0.76–1.07 and P=0.12. The U.S. legal records are likewise narrowly scoped: FDA's GRAS letters say the agency had no questions regarding the notifiers' conclusions for specified food uses, while explicitly distinguishing that response from FDA itself making a GRAS determination or approving therapeutic eye-disease claims. 
+6

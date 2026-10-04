@@ -188,14 +188,16 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
   funding: Not assessed in this import.
 - id: molekul-link-175
-  title: PubMed PMID 19234797 — source link captured 2026; metadata pending
-  authors: Bibliographic metadata not independently verified
-  year: 2026
+  title: Comparative studies of Noopept and piracetam in the treatment of patients with mild cognitive disorders in organic brain diseases of vascular and traumatic origin
+  authors: G. G. Neznamov and E. S. Teleshova
+  year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19234797/
-  kind: Source discovery link · capture year
+  kind: Human randomized active-comparator study
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
-  limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
+  limitation: Bibliographic metadata was reconciled from the separate research acquisition; relevance and findings for this original discovery profile remain unassessed.
   funding: Not assessed in this import.
+  doi: 10.1007/s11055-009-9128-4
+  pmid: "19234797"
 - id: molekul-link-213
   title: PubMed PMID 22972044 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified

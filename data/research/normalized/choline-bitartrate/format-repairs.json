@@ -1,0 +1,9 @@
+{
+  "topic": "choline-bitartrate",
+  "sourceUrl": "https://chatgpt.com/c/6ac1a287-f100-83ed-baa4-5553ed7cafe4",
+  "changes": [
+    "substances/choline-bitartrate.md: quoted 5 scalar values containing colon-space without changing their text.",
+    "ods-2022: assessed labels without a declaration source downgraded to not-assessed; disclosure text retained.",
+    "fda-food-2026: assessed labels without a declaration source downgraded to not-assessed; disclosure text retained."
+  ]
+}

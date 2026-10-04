@@ -1,0 +1,82 @@
+{
+  "topic": "lactoferrin",
+  "sourceUrl": "https://chatgpt.com/c/6ac182b5-bfac-83ed-8f9b-66f4ddda5050",
+  "method": "Visible research content captured in Chrome through a temporary loopback-only form",
+  "files": [
+    {
+      "path": "substances/lactoferrin.md",
+      "bytes": 89769,
+      "sha256": "e575ff9455c61e6b1b26d6e9e871e1a7b211c64d48d3230a58244fe9e3e22496"
+    },
+    {
+      "path": "outcomes/hemoglobin-concentration.md",
+      "bytes": 761,
+      "sha256": "3a952971f41c646010cb341bbb1586304400b084538fbe0bde899c02b9d9c45e"
+    },
+    {
+      "path": "outcomes/serum-ferritin.md",
+      "bytes": 629,
+      "sha256": "89b0d7a3b46cdf5d87d2c5fc81622787c47e23ce54fc7f5b7018fdeafa39cea5"
+    },
+    {
+      "path": "outcomes/gastrointestinal-adverse-events.md",
+      "bytes": 834,
+      "sha256": "bda7f8ab21f8404d239cfee65780141c07679782491c9ad6afaae9b6f7591b04"
+    },
+    {
+      "path": "outcomes/late-onset-infection.md",
+      "bytes": 770,
+      "sha256": "9428a46b6ec111f99985f252e4ee438c507a5e394fa05336fdd15eb40b31a1cd"
+    },
+    {
+      "path": "outcomes/diarrhea-incidence.md",
+      "bytes": 576,
+      "sha256": "2d6a9304532a74ff915bbb63b94f7e621c5be833c7fcc434fba7ace3531cfbef"
+    },
+    {
+      "path": "outcomes/diarrhea-duration.md",
+      "bytes": 604,
+      "sha256": "1052164394cf73b37c017119868f125f077183510c8d35e6077a900237035b60"
+    },
+    {
+      "path": "outcomes/antibiotic-associated-diarrhea.md",
+      "bytes": 639,
+      "sha256": "f015971e9512d2fa2f731341eb1d9e9a2824ff007fb5834cd6173ecffeda0385"
+    },
+    {
+      "path": "outcomes/helicobacter-pylori-eradication.md",
+      "bytes": 639,
+      "sha256": "5324c60825bc836d6aa86f682fd87485d2d3df2f5309910e134e9874325562f4"
+    },
+    {
+      "path": "outcomes/anti-lactoferrin-antibody-response.md",
+      "bytes": 761,
+      "sha256": "29cabf408c3112f815909ed072e97b7121b3ad8399e0b0e716263792030eaed6"
+    },
+    {
+      "path": "concepts/mechanism/gastric-processing-of-lactoferrin.md",
+      "bytes": 825,
+      "sha256": "ebf1bec539a1131a93cdc8706c778a5ba9eb179e76eaa0a9da93291e9440d102"
+    },
+    {
+      "path": "concepts/mechanism/hepcidin-linked-iron-homeostasis.md",
+      "bytes": 872,
+      "sha256": "909fca04d2c648962bb3641ac8c17c402ebd56a45273edfd7a4468557aceac16"
+    },
+    {
+      "path": "relationships/lactoferrin-iron-status-human.md",
+      "bytes": 1771,
+      "sha256": "737db17f7fedbdfb02f1287051d4f2f59a70e21f4d2018958044e475a12ea619"
+    },
+    {
+      "path": "relationships/lactoferrin-late-onset-infection-human.md",
+      "bytes": 1384,
+      "sha256": "70b3bca2d42003e3ca352548b08858927235f64931a657f5d4bf6bd5b54483ea"
+    },
+    {
+      "path": "relationships/lactoferrin-gastric-processing-human.md",
+      "bytes": 1335,
+      "sha256": "80412bd8e6bb1eee5abdc20e840f936ce242b9be3f91f28ea46a2426feccb051"
+    }
+  ]
+}

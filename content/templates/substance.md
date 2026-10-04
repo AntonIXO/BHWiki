@@ -143,6 +143,9 @@ Say what this draft covers and what it does not claim.
   insight: What this source supports.
   limitation: What it does not establish.
   funding: Not assessed in this draft.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this draft.
+  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal

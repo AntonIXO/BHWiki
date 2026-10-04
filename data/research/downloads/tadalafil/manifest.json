@@ -1,0 +1,60 @@
+{
+  "topic": "tadalafil",
+  "sourceUrl": "https://chatgpt.com/c/6ac18034-81b4-83ed-b70e-c411db5c1877",
+  "importedAt": "2026-10-04T06:49:17.239Z",
+  "method": "Local reconciliation from one completed Chrome Deep Research report and checked primary sources; generated files unavailable",
+  "editorialStatus": "sourced-draft",
+  "files": [
+    {
+      "path": "substances/tadalafil.md",
+      "archive": "ae5418f888eb/substances/tadalafil.md",
+      "sha256": "ae5418f888ebd43047341ff8070561ba07c3bac813e590ec3fa2aac570efccff"
+    },
+    {
+      "path": "concepts/target/pde5.md",
+      "archive": "40ab4f71f2d7/concepts/target/pde5.md",
+      "sha256": "40ab4f71f2d7ce996ad1dd0aaa79968d8dcd69bf6cc7a16eed2f5bc7a1833211"
+    },
+    {
+      "path": "concepts/mechanism/cgmp-signaling.md",
+      "archive": "a3efeaa5bcb7/concepts/mechanism/cgmp-signaling.md",
+      "sha256": "a3efeaa5bcb7d52ea523f9a32007f86088201c20df95228ca836e2826741883b"
+    },
+    {
+      "path": "concepts/mechanism/smooth-muscle-relaxation.md",
+      "archive": "002c27bee476/concepts/mechanism/smooth-muscle-relaxation.md",
+      "sha256": "002c27bee476b96bc6cf7e941c5da1b2853256560c2a15b7a3c5ababa25f9ea7"
+    },
+    {
+      "path": "outcomes/erectile-function.md",
+      "archive": "9e5c1e3c5695/outcomes/erectile-function.md",
+      "sha256": "9e5c1e3c5695cd8072c759bffea1064c92bac8e49fc3705174e7e96914462a68"
+    },
+    {
+      "path": "outcomes/lower-urinary-tract-symptoms.md",
+      "archive": "39ed05259336/outcomes/lower-urinary-tract-symptoms.md",
+      "sha256": "39ed052593363261e2922f0beef6954abc15cb7cf897b62fe7304e4c559f4668"
+    },
+    {
+      "path": "outcomes/maximum-urinary-flow.md",
+      "archive": "8671c33c468e/outcomes/maximum-urinary-flow.md",
+      "sha256": "8671c33c468e660f11e15ade8a68139a3bcca8a34b660033774b01e6b791e405"
+    },
+    {
+      "path": "outcomes/pah-clinical-worsening.md",
+      "archive": "60e84e754d9e/outcomes/pah-clinical-worsening.md",
+      "sha256": "60e84e754d9ea26fa3b4c37eccccf7fd7e56a178a1cba45c21184e1ffd4c7914"
+    },
+    {
+      "path": "outcomes/pah-functional-class.md",
+      "archive": "f3d7d91faee3/outcomes/pah-functional-class.md",
+      "sha256": "f3d7d91faee3d0ef6ec09e170c905ec92329deafc9f04092ef8e72bcd7667c6f"
+    },
+    {
+      "path": "relationships/tadalafil-pde5-signaling.md",
+      "archive": "6e7c3ba562e2/relationships/tadalafil-pde5-signaling.md",
+      "sha256": "6e7c3ba562e2de1e9e1327f5a8662338dcb41bd3e8078d633a9be765e9fdff87"
+    }
+  ],
+  "inputOrigin": "reconciled/tadalafil.json"
+}

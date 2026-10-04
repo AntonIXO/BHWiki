@@ -1,0 +1,55 @@
+{
+  "topic": "phosphatidylcholine",
+  "sourceUrl": "https://chatgpt.com/c/6ac1a289-d5bc-83ed-988d-934efb08eb28",
+  "method": "Locally normalized from the captured Chrome research Markdown; raw acquisition remains unchanged",
+  "files": [
+    {
+      "path": "substances/phosphatidylcholine.md",
+      "originalSha256": "20b474439d9db5c2933c050e2b41ac515c83a66c774ad6a99d295d30e3458fa4",
+      "sha256": "20b474439d9db5c2933c050e2b41ac515c83a66c774ad6a99d295d30e3458fa4",
+      "bytes": 40103
+    },
+    {
+      "path": "concepts/chemical-family/glycerophospholipid.md",
+      "originalSha256": "af121a3a26eaef9278b6974084e860a90cde44322f016e1860ee721eb82dcbaf",
+      "sha256": "af121a3a26eaef9278b6974084e860a90cde44322f016e1860ee721eb82dcbaf",
+      "bytes": 535
+    },
+    {
+      "path": "outcomes/hepatic-steatosis.md",
+      "originalSha256": "3d12e8102a87dcfa74c9579b976fba8ab77ab96e6be94f367fdf03734d1afa6d",
+      "sha256": "3d12e8102a87dcfa74c9579b976fba8ab77ab96e6be94f367fdf03734d1afa6d",
+      "bytes": 504
+    },
+    {
+      "path": "outcomes/liver-fibrosis.md",
+      "originalSha256": "40f4f334e673b316bd123dd1506aa20692051967744b278632eeed0b9a525f04",
+      "sha256": "40f4f334e673b316bd123dd1506aa20692051967744b278632eeed0b9a525f04",
+      "bytes": 545
+    },
+    {
+      "path": "outcomes/ulcerative-colitis-disease-activity.md",
+      "originalSha256": "a10226205863439b346189a85713558ab32642999a10311d7b90ddc0c924a988",
+      "sha256": "a10226205863439b346189a85713558ab32642999a10311d7b90ddc0c924a988",
+      "bytes": 508
+    },
+    {
+      "path": "outcomes/ulcerative-colitis-remission.md",
+      "originalSha256": "0409e31bdc5ae6d0d7c8f6cdc1ba2276a250e32cde43b4b6f768a13a0dab6236",
+      "sha256": "0409e31bdc5ae6d0d7c8f6cdc1ba2276a250e32cde43b4b6f768a13a0dab6236",
+      "bytes": 563
+    },
+    {
+      "path": "outcomes/plasma-tmao.md",
+      "originalSha256": "81b332ce7b86ad04717863cb7b3a379bef6da2e18b6caec748d2573dcc5e5ad9",
+      "sha256": "81b332ce7b86ad04717863cb7b3a379bef6da2e18b6caec748d2573dcc5e5ad9",
+      "bytes": 562
+    },
+    {
+      "path": "relationships/phosphatidylcholine-tmao-pathway.md",
+      "originalSha256": "12166167765205125b10df250495493cfd85008c6dcaac3f3572f2d907d17c9e",
+      "sha256": "12166167765205125b10df250495493cfd85008c6dcaac3f3572f2d907d17c9e",
+      "bytes": 1321
+    }
+  ]
+}

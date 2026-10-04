@@ -10,6 +10,7 @@ import { expandSourceToken, isResearchLink, makeImportedRecord, manifestFingerpr
 const manifest: MolekulManifest = JSON.parse(readFileSync(new URL("../data/imports/molekul-2026-10-04.json", import.meta.url), "utf8"));
 const notes: Record<string, string> = JSON.parse(readFileSync(new URL("../data/imports/molekul-identity-notes.json", import.meta.url), "utf8"));
 const canonical = new Map(substances.flatMap(s => s.references.map(r => [r.url, r] as const)));
+const researched = new Set(JSON.parse(readFileSync(new URL("../data/research/integration.json", import.meta.url), "utf8")).topics.map((t: { topic: string }) => t.topic));
 
 test("all Chrome-discovered profiles map to articles, with complete eligible source trails", () => {
   assert.equal(manifestFingerprint(manifest), 3078886368);
@@ -18,11 +19,14 @@ test("all Chrome-discovered profiles map to articles, with complete eligible sou
   for (const row of manifest.profiles) {
     const s = substances.find(s => s.slug === (slugAliases[row[0]] ?? row[0]));
     assert.ok(s, row[0]);
-    assert.ok(s.description.includes(notes[row[0]]));
+    if (!researched.has(s.slug)) assert.ok(s.description.includes(notes[row[0]]));
     assert.equal(s.editorialStatus, "sourced-draft");
     for (const index of row[4]) {
       const url = expandSourceToken(manifest.urlTokens[index]);
-      if (isResearchLink(url)) assert.ok(s.references.some(r => r.url === url), `${row[0]}: ${url}`);
+      if (isResearchLink(url)) {
+        const pmid = /^https:\/\/pubmed\.ncbi\.nlm\.nih\.gov\/(\d+)\/?$/.exec(url)?.[1];
+        assert.ok(s.references.some(r => r.url === url || (pmid && String(r.pmid) === pmid)), `${row[0]}: ${url}`);
+      }
     }
     assert.ok(!s.references.some(r => !isResearchLink(r.url)));
     const repeated = makeImportedRecord(manifest, row, s, canonical, notes[row[0]]);

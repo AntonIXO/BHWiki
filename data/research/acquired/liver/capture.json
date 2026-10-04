@@ -1,0 +1,32 @@
+{
+  "topic": "liver",
+  "sourceUrl": "https://chatgpt.com/c/6ac18766-e78c-83eb-804f-89d1ce1d686c",
+  "method": "Visible research content captured in Chrome through a temporary loopback-only form",
+  "files": [
+    {
+      "path": "substances/liver.md",
+      "bytes": 45995,
+      "sha256": "3409a23d86818fe017d24313be8f5dbf85adde043c9f5bed57dd302c47930501"
+    },
+    {
+      "path": "outcomes/red-blood-cell-count.md",
+      "bytes": 634,
+      "sha256": "313bef947b3f184b2fcf4b573ae69f2eaef9c8bb2b57fd0dd138d206875dfd74"
+    },
+    {
+      "path": "outcomes/reticulocyte-percentage.md",
+      "bytes": 617,
+      "sha256": "898d3d7827b813b489e7038e0c843b7058ca5bc748e3f1e24a80a2457609f659"
+    },
+    {
+      "path": "outcomes/hemoglobin-concentration.md",
+      "bytes": 672,
+      "sha256": "776fe02e20b0d3b2dcb5aacaf992a947b723b2dec80e6c78d122c0ff371e39a9"
+    },
+    {
+      "path": "outcomes/serum-iron.md",
+      "bytes": 626,
+      "sha256": "f2066540b8d24106f9847dfefd6549be0751763e5047d370d97a2d7c54faffb6"
+    }
+  ]
+}

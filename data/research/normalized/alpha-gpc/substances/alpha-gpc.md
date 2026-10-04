@@ -1,0 +1,828 @@
+---
+slug: alpha-gpc
+name: Alpha-GPC
+subtitle: Choline-source phosphodiester studied in cognitive impairment and healthy-performance contexts.
+aliases:
+  - L-alpha-glycerylphosphorylcholine
+  - L-alpha-GPC
+  - choline alfoscerate
+  - sn-glycero-3-phosphocholine
+  - glycerophosphocholine
+formula: C8H20NO6P
+molecularWeight: 257.22 g/mol
+pubchemCid: 657272
+smiles: C[N+](C)(C)CCOP(=O)([O-])OCC(CO)O
+category: Nootropic
+tags:
+  - nootropic-research
+  - choline-precursor
+accent: "#a9b993"
+reviewedAt: "2026-10-04"
+editorialStatus: sourced-draft
+halfLife:
+  label: Parent compound half-life not established
+  low: null
+  high: null
+  context: "Inspected human oral evidence characterized plasma free choline after Alpha-GPC rather than a validated elimination half-life for parent Alpha-GPC."
+  sourceId: efsa-2026
+  observationId: alpha-gpc-parent-half-life
+kinetics:
+  onset: "In a small human crossover study summarized by EFSA, plasma free choline increased significantly from 0.75 hours after a 1,200 mg oral Alpha-GPC dose."
+  peak: "The same study observed the maximum reported plasma free-choline concentration at 2 hours."
+  duration: "Parent Alpha-GPC plasma duration and elimination half-life are not established in the inspected human evidence."
+  bioavailability: "Alpha-GPC is described as rapidly and efficiently absorbed, but an absolute human oral bioavailability percentage was not established."
+  metabolism: "Alpha-GPC supplies free choline and glycerophosphate; choline participates in acetylcholine and betaine pathways."
+  sourceId: efsa-2026
+x-shape:
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+x-order: 150
+---
+
+## Summary
+
+Alpha-GPC (choline alfoscerate) is a choline-source phosphodiester used in medicinal, food, and supplement contexts. Controlled cognitive signals are strongest in impaired populations, while healthy-person cognition/exercise results are small and mixed; a large Korean claims cohort found an observational, non-causal association with higher incident stroke.
+
+## Description
+
+Oral L-alpha-GPC is rapidly absorbed and raises plasma free choline, but a human parent-compound elimination half-life is not established. A 2003 placebo-controlled Alzheimer trial and a 2023 meta-analysis reported cognitive improvement, while a 2024 adjunct RCT had nonsignificant primary comparisons and healthy-person results remain endpoint-dependent. EFSA assessed soy-derived GPC 85% and Alpha Size 100P forms with the novel food above 98% purity on a dry basis; USP-NF specifies 98–102% Alpha-GPC on an anhydrous basis. Research doses, regulatory food-use levels, formulations, and untested commercial products are not interchangeable.
+
+## Evidence note
+
+Patient evidence includes older trials, adjunct-treatment studies and extreme heterogeneity in the standalone MMSE meta-analysis (I²=98%). Healthy evidence uses small samples, often men, with important commercial sponsorship and several null endpoints. The Korean stroke finding is observational and remains vulnerable to residual and indication-related confounding. Parent Alpha-GPC half-life, clinically verified drug interactions and broadly generalizable contraindications remain unestablished in the inspected English-language evidence.
+
+## Doses
+
+```yaml
+- label: Alzheimer disease placebo-controlled trial
+  amount: 400 mg three times daily; 1,200 mg/day
+  quantity: 1200
+  quantityMax: null
+  unit: mg/day
+  ingredient: Choline alfoscerate
+  formulation: 400 mg oral capsules
+  route: Oral
+  frequency: Three times daily
+  duration: 180 days
+  population: Adults aged 60–80 years with mild to moderate Alzheimer-type dementia
+  purpose: Cognitive-efficacy research exposure
+  sourceCategory: research
+  note: "This is a trial exposure, not a general dosing recommendation."
+  sourceId: moreno-2003
+
+- label: Donepezil adjunct randomized comparison
+  amount: 400 mg three times daily; 1,200 mg/day
+  quantity: 1200
+  quantityMax: null
+  unit: mg/day
+  ingredient: Choline alfoscerate
+  formulation: Newglia 400 mg tablets
+  route: Oral
+  frequency: Three times daily
+  duration: 24 weeks
+  population: Adults aged 50–84 years with Alzheimer disease and MMSE 26 or less already taking stable donepezil
+  purpose: Adjunct cognitive-efficacy research exposure
+  sourceCategory: research
+  note: "The randomized donepezil-plus-Alpha-GPC versus donepezil-only primary MMSE comparisons were not statistically significant at weeks 12 or 24."
+  sourceId: lee-kim-2024
+
+- label: Six-day strength crossover trial
+  amount: 600 mg/day
+  quantity: 600
+  quantityMax: null
+  unit: mg/day
+  ingredient: Alpha-GPC
+  formulation: AlphaSize capsules with third-party certificate of analysis
+  route: Oral
+  frequency: Divided between morning and evening
+  duration: 6 days
+  population: 13 healthy college-aged men
+  purpose: Isometric-force research exposure
+  sourceCategory: research
+  note: "Small crossover trial; a day-6 lower-body force signal was not accompanied by a significant upper-body result."
+  sourceId: bellar-2015
+
+- label: Seven-day healthy-performance dose-ranging trial
+  amount: 250 or 500 mg/day
+  quantity: 250
+  quantityMax: 500
+  unit: mg/day
+  ingredient: Alpha-GPC
+  formulation: Chemi Nutra capsules with active content independently verified by quantitative NMR
+  route: Oral
+  frequency: Once daily
+  duration: 7 days
+  population: Healthy college-aged men
+  purpose: Physical and psychomotor performance research exposure
+  sourceCategory: research
+  note: "Separate randomized Alpha-GPC arms received 250 or 500 mg/day; neither dose produced a significant Alpha-GPC advantage on IMTP, UBIST or psychomotor vigilance."
+  sourceId: marcus-2017
+
+- label: Acute healthy-cognition crossover doses
+  amount: 315 or 630 mg Alpha-GPC
+  quantity: 315
+  quantityMax: 630
+  unit: mg
+  ingredient: Alpha-GPC
+  formulation: "GeniusPure; nominal 90% Alpha-GPC material, with the tested batch reported as 91.6% by third-party analysis"
+  route: Oral
+  frequency: Single administration
+  duration: Single dose
+  population: 20 healthy resistance-trained men
+  purpose: Acute cognition and physical-performance research exposure
+  sourceCategory: research
+  note: "The 315 mg dose was delivered as 350 mg material and the 630 mg dose as 700 mg material; the study was industry funded."
+  sourceId: kerksick-2024
+
+- label: EFSA-assessed proposed novel-food use level
+  amount: Up to 203.7 mg/day Alpha-GPC
+  quantity: 203.7
+  quantityMax: null
+  unit: mg/day
+  ingredient: L-alpha-GPC
+  formulation: GPC 85% or Alpha Size 100P from phosphatidylcholine-enriched soy lecithin
+  route: Oral
+  frequency: Daily proposed food-supplement use
+  duration: Not a clinical treatment regimen
+  population: Proposed target population above 3 years of age, including pregnant and lactating people
+  purpose: Novel-food safety assessment use level corresponding to 82.5 mg/day choline
+  sourceCategory: reference
+  note: "EFSA concluded the specified novel food was safe under these proposed conditions; this exposure is not interchangeable with therapeutic trial doses and an EFSA opinion is not itself a marketing authorization."
+  sourceId: efsa-2026
+```
+
+## Pharmacokinetics
+
+```yaml
+- id: alpha-gpc-parent-half-life
+  analyte: Parent Alpha-GPC
+  route: Oral
+  formulation: L-alpha-GPC
+  population: Humans
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: "The inspected human evidence and EFSA ADME synthesis document absorption and plasma free-choline changes but do not establish a parent Alpha-GPC elimination half-life suitable for modeling."
+  sourceId: efsa-2026
+  modelEligible: false
+```
+
+## Duration
+
+```yaml
+- id: oral-alpha-gpc-free-choline-1200mg
+  formulation: 1,200 mg oral Alpha-GPC
+  measurement: plasma
+  analyte: Plasma free choline
+  route: Oral
+  population: 12 healthy men in a placebo-controlled crossover study summarized by EFSA
+  sourceId: efsa-2026
+  note: "Plasma free choline, not parent Alpha-GPC, increased significantly from 0.75 hours and reached the reported maximum at 2 hours; these times must not be interpreted as subjective onset or parent-drug elimination."
+  total: null
+  phases:
+    - name: onset
+      basis: elapsed-since-exposure
+      min: 0.75
+      max: 0.75
+      unit: hours
+    - name: peak
+      basis: elapsed-since-exposure
+      min: 2
+      max: 2
+      unit: hours
+```
+
+## Modifiers
+
+```yaml
+[]
+```
+
+## Effects
+
+```yaml
+- id: subjective-alertness-kerksick-2024
+  study:
+    id: NCT06690619
+    design: Randomized double-blind placebo-controlled three-condition crossover trial
+    sampleSize: 20
+    populationLabels:
+      - Healthy resistance-trained men
+    comparator: Resistant-dextrin placebo
+    route: Oral
+    formulation: "GeniusPure Alpha-GPC; nominal 90% material with tested batch reported as 91.6%"
+    durationDays: 1
+    assessmentTime: 60 minutes after ingestion and 30 minutes after the exercise bout
+  reportType: measured-assessment
+  conceptId: alertness
+  name: Subjective alertness
+  direction: Variable
+  evidence: Human research
+  description: "Neither 315 mg nor 630 mg produced a statistically significant between-condition improvement in visual-analog-scale alertness; mood, concentration and motivation measures were likewise null."
+  sourceId: kerksick-2024
+  population: Healthy resistance-trained men
+  exposure: Single oral 315 mg or 630 mg Alpha-GPC dose versus placebo
+  instrument: 100-mm visual analog scale
+  magnitude: No statistically significant between-condition effect reported.
+```
+
+## Outcomes
+
+```yaml
+- id: alzheimer-cognition-moreno-2003
+  study:
+    id: moreno-2003-alzheimer-rct
+    design: Multicenter double-blind randomized placebo-controlled trial
+    sampleSize: 261
+    populationLabels:
+      - Mild to moderate Alzheimer-type dementia
+      - Adults aged 60–80 years
+    comparator: Placebo capsules
+    route: Oral
+    formulation: Choline alfoscerate 400 mg capsules
+    durationDays: 180
+    assessmentTime: Days 90 and 180
+  conceptId: cognitive-task-performance
+  name: Cognitive performance in mild to moderate Alzheimer disease
+  direction: Increased
+  evidence: Human research
+  description: "Alpha-GPC improved multiple cognitive/global measures relative to placebo. ADAS-Cog changed by -3.20 points from baseline at day 180 with Alpha-GPC while placebo worsened by +2.90 points; the publication reported significant between-treatment differences."
+  sourceId: moreno-2003
+  population: 261 adults with mild to moderate Alzheimer-type dementia
+  exposure: 1,200 mg/day oral choline alfoscerate for 180 days versus placebo
+  instrument: ADAS-Cog, MMSE, GDS, ADAS-Total and CGI
+  magnitude: "ADAS-Cog mean change at day 180 was -3.20 points with Alpha-GPC versus +2.90 points with placebo; the abstract does not report a between-group confidence interval."
+
+- id: impaired-cognition-mmse-meta-2023
+  study:
+    id: sagaro-2023-meta-analysis
+    design: Random-effects systematic review and meta-analysis of controlled Alpha-GPC studies
+    sampleSize: 449
+    populationLabels:
+      - Adults with neurological disorders and cognitive impairment
+    comparator: Placebo or other medication
+    route: Oral
+    formulation: Choline alfoscerate
+    assessmentTime: 90–180 days
+  result:
+    measure: mean-difference
+    estimate: 3.5
+    unit: points
+    instrument: Mini-Mental State Examination
+    comparator: Placebo or other medication
+    assessmentTime: 90–180 days
+    population: Adults with neurological disorders and cognitive impairment
+    confidenceInterval:
+      lower: 0.36
+      upper: 6.63
+      level: 95
+  conceptId: cognitive-task-performance
+  name: MMSE performance with standalone Alpha-GPC
+  direction: Increased
+  evidence: Human research
+  description: "The 2023 synthesis found a higher MMSE score with Alpha-GPC than control across three controlled studies, but heterogeneity was extreme and materially limits the pooled estimate."
+  sourceId: sagaro-2023
+  population: Adults aged at least 50 years with neurological disorders and cognitive impairment
+  exposure: Primarily 1,200 mg/day oral Alpha-GPC for 90–180 days
+  instrument: Mini-Mental State Examination
+  magnitude: "Mean difference +3.50 points (95% CI 0.36 to 6.63); I²=98%."
+
+- id: donepezil-adjunct-mmse-meta-2023
+  study:
+    id: sagaro-2023-meta-analysis
+    design: Random-effects meta-analysis of randomized adjunct-treatment trials
+    sampleSize: 350
+    populationLabels:
+      - Alzheimer disease
+      - Alzheimer disease with cerebrovascular injury or depression
+    comparator: Donepezil plus placebo
+    route: Oral
+    formulation: Choline alfoscerate plus donepezil
+    assessmentTime: 360–720 days
+  result:
+    measure: mean-difference
+    estimate: 1.72
+    unit: points
+    instrument: Mini-Mental State Examination
+    comparator: Donepezil plus placebo
+    assessmentTime: 360–720 days
+    population: Adults with Alzheimer disease or related cognitive impairment
+    confidenceInterval:
+      lower: 0.2
+      upper: 3.25
+      level: 95
+  conceptId: cognitive-task-performance
+  name: MMSE performance when Alpha-GPC was added to donepezil
+  direction: Increased
+  evidence: Human research
+  description: "Four trials in the 2023 meta-analysis favored adjunct Alpha-GPC on MMSE. Three trials also favored adjunct treatment on ADAS-Cog, whereas pooled basic activities of daily living did not significantly differ."
+  sourceId: sagaro-2023
+  population: Adults with Alzheimer disease or related cognitive impairment
+  exposure: 1,200 mg/day Alpha-GPC plus 10 mg/day donepezil versus donepezil plus placebo
+  instrument: Mini-Mental State Examination
+  magnitude: "MMSE mean difference +1.72 points (95% CI 0.20 to 3.25; I²=61%). ADAS-Cog pooled MD was -5.76 points (95% CI -8.07 to -3.46); BADL MD 0.46 (95% CI -0.21 to 1.13)."
+
+- id: donepezil-adjunct-null-lee-kim-2024
+  study:
+    id: lee-kim-2024-donepezil-rct
+    design: Prospective double-blind randomized comparison embedded in a mixed randomized and open-label study
+    sampleSize: 100
+    populationLabels:
+      - Alzheimer disease
+      - MMSE 26 or less
+      - Stable donepezil treatment
+    comparator: Donepezil alone
+    route: Oral
+    formulation: Newglia choline alfoscerate 400 mg tablets
+    durationDays: 168
+    assessmentTime: Weeks 12 and 24
+  conceptId: cognitive-task-performance
+  name: Cognitive performance in a 2024 donepezil adjunct trial
+  direction: Variable
+  evidence: Human research
+  description: "Among 100 randomized to donepezil alone or donepezil plus Alpha-GPC, 83 were included in final analysis. The primary MMSE comparison did not significantly separate groups at either follow-up, and ADAS-Cog comparisons were also nonsignificant."
+  sourceId: lee-kim-2024
+  population: Adults aged 50–84 years with Alzheimer disease taking stable donepezil
+  exposure: 1,200 mg/day choline alfoscerate plus donepezil versus donepezil alone for 24 weeks
+  instrument: MMSE and ADAS-Cog
+  magnitude: "MMSE change was +3.52% versus +1.36% at week 12 (P=.223) and +1.61% versus +1.07% at week 24 (P=.771); ADAS-Cog between-group P values were .089 and .290."
+
+- id: healthy-stroop-kerksick-2024
+  study:
+    id: NCT06690619
+    design: Randomized double-blind placebo-controlled three-condition crossover trial
+    sampleSize: 20
+    populationLabels:
+      - Healthy resistance-trained men
+    comparator: Resistant-dextrin placebo
+    route: Oral
+    formulation: "GeniusPure Alpha-GPC; nominal 90% material with tested batch reported as 91.6%"
+    durationDays: 1
+    assessmentTime: "Change score from 60 minutes post-dose to 30 minutes after the exercise bout"
+  result:
+    measure: standardized-mean-difference
+    estimate: 0.61
+    unit: Cohen d
+    instrument: Stroop total-score change
+    comparator: Placebo
+    assessmentTime: "Change from 60 minutes post-dose to 30 minutes after exercise"
+    population: Healthy resistance-trained men receiving 630 mg Alpha-GPC
+  conceptId: cognitive-task-performance
+  name: Acute Stroop performance in healthy men
+  direction: Increased
+  evidence: Human research
+  description: "The 630 mg condition had a larger Stroop total-score change than placebo, and 315 mg also reached nominal significance. N-Back and overall Flanker findings were largely null; the analyzed Stroop endpoint was a change across post-dose/pre- and post-exercise testing rather than a simple pre-dose baseline comparison."
+  sourceId: kerksick-2024
+  population: 20 healthy resistance-trained men
+  exposure: Single 315 mg or 630 mg oral Alpha-GPC dose versus placebo
+  instrument: Stroop color-matching test
+  magnitude: "Stroop score change was 13.0±8.2 with 630 mg versus 5.2±9.0 with placebo (P=.013, d=0.61); 315 mg was 10.8±7.7 (P=.046, d=0.48 versus placebo)."
+
+- id: healthy-attention-marcus-2017
+  study:
+    id: marcus-2017-performance-rct
+    design: Randomized double-blind four-arm parallel trial
+    sampleSize: 48
+    populationLabels:
+      - Healthy college-aged men
+      - Recreationally trained
+    comparator: Placebo and 200 mg caffeine
+    route: Oral
+    formulation: Alpha-GPC capsules with independently verified active content
+    durationDays: 7
+    assessmentTime: Day 7
+    comparedSubstances:
+      - caffeine
+  conceptId: attention
+  name: Psychomotor vigilance after seven days of Alpha-GPC
+  direction: Variable
+  evidence: Human research
+  description: "Neither the 250 mg nor 500 mg Alpha-GPC arm significantly improved psychomotor vigilance versus the other groups; mean reaction time, maximum reaction time and attention lapses did not differ by treatment."
+  sourceId: marcus-2017
+  population: 48 healthy college-aged men randomized among two Alpha-GPC doses, caffeine and placebo
+  exposure: 250 or 500 mg/day oral Alpha-GPC for seven days
+  instrument: Walter Reed 5-minute psychomotor vigilance test
+  magnitude: No significant treatment-group differences; reported P values were greater than .5.
+
+- id: lower-body-force-bellar-2015
+  study:
+    id: bellar-2015-strength-crossover
+    design: Double-blind placebo-controlled crossover trial
+    sampleSize: 13
+    populationLabels:
+      - Healthy college-aged men
+    comparator: Placebo
+    route: Oral
+    formulation: AlphaSize capsules with third-party certificate of analysis
+    durationDays: 6
+    assessmentTime: One hour after the initial dose and day 6
+  conflictingSourceIds:
+    - marcus-2017
+  conceptId: exercise
+  name: Lower-body isometric force
+  direction: Increased
+  evidence: Human research
+  description: "No acute advantage appeared one hour after the first dose, but day-6 isometric mid-thigh-pull change favored 600 mg/day Alpha-GPC. A later 48-person dose-ranging trial did not reproduce an Alpha-GPC advantage on the same strength test."
+  sourceId: bellar-2015
+  population: 13 healthy college-aged men
+  exposure: 600 mg/day oral Alpha-GPC for six days versus placebo
+  instrument: Isometric mid-thigh pull peak force
+  magnitude: "Day-6 change was +98.8±236.9 N with Alpha-GPC versus -39.0±170.9 N with placebo (treatment-by-time P=.04); upper-body force was nonsignificant (P=.127)."
+
+- id: incident-stroke-korea-2021
+  study:
+    id: lee-stroke-2021-korean-nhis
+    design: Population-based retrospective matched cohort study
+    sampleSize: 1190376
+    populationLabels:
+      - South Korean adults aged 50 years or older
+      - No baseline stroke, TIA or Alzheimer disease
+    comparator: No Alpha-GPC prescription
+    assessmentTime: Up to 10 years of follow-up from 2009 through January 2018
+  result:
+    measure: hazard-ratio
+    estimate: 1.43
+    unit: ratio
+    instrument: NHIS claims-defined total stroke hospitalization
+    comparator: No Alpha-GPC prescription
+    assessmentTime: Up to 10 years
+    population: Matched South Korean adults aged 50 years or older
+    confidenceInterval:
+      lower: 1.41
+      upper: 1.46
+      level: 95
+  conceptId: incident-stroke
+  name: Incident stroke in a Korean prescription cohort
+  direction: Increased
+  evidence: Human research
+  description: "Alpha-GPC prescription exposure was associated with higher subsequent stroke incidence after matching. Because exposure was not randomized and Alpha-GPC was commonly prescribed in clinical contexts linked to cognitive or cerebrovascular concerns, this result does not establish causal drug harm."
+  sourceId: lee-stroke-2021
+  population: South Korean adults aged 50 years or older without baseline stroke, TIA or Alzheimer disease
+  exposure: At least one day of Alpha-GPC prescription during 2006–2008 versus no prescription
+  instrument: National Health Insurance Service claims; stroke hospitalization for at least two days with ICD-10 I60–I69
+  magnitude: "Matched total-stroke HR 1.43 (95% CI 1.41–1.46); ischemic-stroke HR 1.34 (1.31–1.37); hemorrhagic-stroke HR 1.37 (1.29–1.46)."
+```
+
+## Mechanisms
+
+```yaml
+- title: Choline precursor pathway
+  description: "Human ADME evidence supports Alpha-GPC as an orally absorbed source of free choline and glycerophosphate, while choline is a precursor used in acetylcholine synthesis. This precursor relationship does not by itself establish increased brain acetylcholine after a given oral dose or a clinical cognitive benefit."
+  sourceId: efsa-2026
+  conceptId: choline-precursor
+```
+
+## Cautions
+
+```yaml
+- title: Observational long-term stroke association
+  description: "A Korean claims cohort found higher incident total, ischemic and hemorrhagic stroke among Alpha-GPC prescription users, including after matching and sensitivity analyses. The nonrandomized design, baseline clinical differences and plausible confounding by indication prevent interpreting the hazard ratios as proof that Alpha-GPC causes stroke."
+  sourceId: lee-stroke-2021
+
+- title: Mild adverse events in a six-month Alzheimer trial
+  description: "EFSA's review of the 2003 placebo-controlled trial reports 15 adverse events in 11 Alpha-GPC recipients, including 10 constipation and 5 nervousness events, versus 6 events in 3 placebo recipients; the reported events were mild."
+  sourceId: efsa-2026
+
+- title: Soy-derived formulation allergen context
+  description: "The specific novel food assessed by EFSA is made from phosphatidylcholine-enriched soy lecithin. Soy protein was below the assay quantification limit in five tested batches and EFSA considered allergenic potential low, while noting that the material remains subject to EU mandatory soy-allergen labeling."
+  sourceId: efsa-2026
+```
+
+## Claims
+
+```yaml
+- id: alpha-gpc-impaired-cognition
+  assertion: "Controlled studies in cognitively impaired adults report cognitive signals for Alpha-GPC, but the size and certainty of benefit are not firmly established."
+  relation: studied-for
+  participants:
+    - entityId: substance:alpha-gpc
+      role: intervention
+    - entityId: tag:cognitive-task-performance
+      role: measured-outcome
+  context: "Evidence includes a six-month placebo-controlled Alzheimer trial and pooled older studies, with long-term data frequently testing Alpha-GPC as an adjunct rather than monotherapy."
+  sourceIds:
+    - moreno-2003
+    - sagaro-2023
+  conflictingSourceIds:
+    - lee-kim-2024
+  assessment: not-formally-assessed
+  limitation: "Standalone MMSE heterogeneity was 98%, and a 2024 adjunct RCT did not significantly separate Alpha-GPC plus donepezil from donepezil alone on primary MMSE comparisons."
+
+- id: alpha-gpc-healthy-cognition
+  assertion: "Evidence for cognitive enhancement in healthy people is endpoint-dependent rather than consistently positive."
+  relation: tested-for
+  participants:
+    - entityId: substance:alpha-gpc
+      role: intervention
+    - entityId: tag:cognitive-task-performance
+      role: measured-outcome
+    - entityId: tag:attention
+      role: measured-outcome
+  context: "A 20-man industry-funded crossover reported Stroop change-score effects after single 315 or 630 mg doses, while N-Back, several Flanker endpoints, subjective ratings and a separate seven-day psychomotor-vigilance trial were null."
+  sourceIds:
+    - kerksick-2024
+  conflictingSourceIds:
+    - marcus-2017
+  assessment: not-formally-assessed
+  limitation: "Small male samples, endpoint multiplicity, differing tests, single-dose exposure and commercial sponsorship substantially limit generalization to healthy-person attention or cognition."
+
+- id: alpha-gpc-exercise-performance
+  assertion: "Alpha-GPC has produced isolated strength or power signals in healthy exercise studies, but the findings are not consistently replicated."
+  relation: tested-for
+  participants:
+    - entityId: substance:alpha-gpc
+      role: intervention
+    - entityId: tag:exercise
+      role: measured-outcome
+  context: "A 13-man crossover favored 600 mg/day for six days on lower-body isometric force, whereas a later 48-man trial found no Alpha-GPC advantage on IMTP or upper-body isometric strength and acute 2024 physical-performance results were largely null."
+  sourceIds:
+    - bellar-2015
+  conflictingSourceIds:
+    - marcus-2017
+    - kerksick-2024
+  assessment: not-formally-assessed
+  limitation: "Studies are small, use different doses and endpoints, and several involve commercial suppliers or funders; an established ergogenic effect cannot be inferred."
+
+- id: alpha-gpc-stroke-association
+  assertion: "Prescription exposure to Alpha-GPC was associated with higher incident stroke in a large South Korean observational cohort."
+  relation: associated-with
+  participants:
+    - entityId: substance:alpha-gpc
+      role: prescription-exposure
+    - entityId: tag:incident-stroke
+      role: outcome
+  context: "The matched analysis compared 108,216 Alpha-GPC users with 1,082,160 nonusers and reported a total-stroke HR of 1.43; longer prescription duration was also associated with higher risk."
+  sourceIds:
+    - lee-stroke-2021
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: "Claims data cannot eliminate residual or indication-related confounding, and the study did not randomize Alpha-GPC, measure TMAO as mediator, or establish causal harm."
+```
+
+## Interactions
+
+```yaml
+[]
+```
+
+## Experience links
+
+```yaml
+- title: Alpha-GPC on PsychonautWiki
+  url: https://psychonautwiki.org/wiki/Alpha-GPC
+  publisher: PsychonautWiki
+```
+
+## References
+
+```yaml
+- id: pubchem
+  title: "Alpha-GPC: compound identity and structure"
+  authors: NCBI PubChem
+  year: 2026
+  url: https://pubchem.ncbi.nlm.nih.gov/compound/657272
+  kind: Chemical database
+  insight: "Source of the preserved formula, molecular weight, PubChem CID and connectivity SMILES."
+  limitation: "A parent-compound database record does not establish clinical formulation, product purity, pharmacokinetics or therapeutic effects."
+  funding: "U.S. National Library of Medicine database; clinical-study sponsorship is not applicable and was not assessed."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed."
+  conflictOfInterestStatus: not-assessed
+
+- id: moreno-2003
+  title: "Cognitive improvement in mild to moderate Alzheimer's dementia after treatment with the acetylcholine precursor choline alfoscerate: a multicenter, double-blind, randomized, placebo-controlled trial"
+  authors: Maria De Jesus Moreno Moreno
+  year: 2003
+  url: https://doi.org/10.1016/S0149-2918(03)90023-3
+  kind: Randomized controlled trial
+  insight: "In 261 patients, 1,200 mg/day for 180 days favored Alpha-GPC over placebo across ADAS-Cog and several other cognitive/global measures."
+  limitation: "Older trial; the inspected public abstract lacks detailed funding/COI declarations and does not report a between-group confidence interval."
+  pmid: "12637119"
+  doi: "10.1016/S0149-2918(03)90023-3"
+  funding: "Not assessed."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed."
+  conflictOfInterestStatus: not-assessed
+
+- id: sagaro-2023
+  title: "Activity of Choline Alphoscerate on Adult-Onset Cognitive Dysfunctions: A Systematic Review and Meta-Analysis"
+  authors: Getu Gamo Sagaro, Enea Traini, Francesco Amenta
+  year: 2023
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10041421/
+  kind: Systematic review and meta-analysis
+  insight: "Seven RCTs and one cohort were synthesized; cognition favored Alpha-GPC in standalone and donepezil-adjunct analyses, while some functional endpoints were null."
+  limitation: "Standalone MMSE heterogeneity was I²=98%; studies were generally small or old, and several long-term estimates concern adjunct therapy."
+  pmid: "36683513"
+  doi: "10.3233/JAD-221189"
+  funding: "Institutional funding of the University of Camerino."
+  sponsorshipStatus: non-industry-funded
+  conflictsOfInterest: "The authors reported no conflict of interest."
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC10041421/
+
+- id: bellar-2015
+  title: "The effect of 6 days of alpha glycerylphosphorylcholine on isometric strength"
+  authors: David Bellar, Nina R LeBlanc, Brian Campbell
+  year: 2015
+  url: https://doi.org/10.1186/s12970-015-0103-x
+  kind: Randomized controlled crossover trial
+  insight: "Thirteen men showed a day-6 lower-body isometric-force signal with 600 mg/day; acute and upper-body comparisons were null."
+  limitation: "Very small male sample with high variability; a later dose-ranging trial did not reproduce an Alpha-GPC advantage on IMTP."
+  pmid: "26582972"
+  doi: "10.1186/s12970-015-0103-x"
+  funding: "Chemi Nutra, Austin, Texas, funded the research."
+  sponsorshipStatus: industry-funded
+  conflictsOfInterest: "The authors declared no competing financial interests and reported no Chemi Nutra employee or affiliate role in study design, interpretation or manuscript preparation."
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC4650143/
+
+- id: marcus-2017
+  title: "Evaluation of the effects of two doses of alpha glycerylphosphorylcholine on physical and psychomotor performance"
+  authors: Lena Marcus, Jason Soileau, Lawrence W Judge, David Bellar
+  year: 2017
+  url: https://doi.org/10.1186/s12970-017-0196-5
+  kind: Randomized controlled trial
+  insight: "In 48 men, 250 and 500 mg/day raised serum free choline but did not improve IMTP, upper-body isometric strength or psychomotor vigilance."
+  limitation: "Twelve participants per arm; countermovement-jump findings were endpoint-specific and did not establish a uniform Alpha-GPC advantage over placebo."
+  pmid: "29042830"
+  doi: "10.1186/s12970-017-0196-5"
+  funding: "The study was partially funded by a research grant from Chemi Nutra."
+  sponsorshipStatus: industry-funded
+  conflictsOfInterest: "The authors declared no competing interests."
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC5629791/
+
+- id: kerksick-2024
+  title: "Acute Alpha-Glycerylphosphorylcholine Supplementation Enhances Cognitive Performance in Healthy Men"
+  authors: Chad M Kerksick
+  year: 2024
+  url: https://doi.org/10.3390/nu16234240
+  kind: Randomized controlled crossover trial
+  insight: "Single 315 and 630 mg doses produced nominal Stroop change-score effects in 20 trained men; N-Back, subjective ratings, physical performance and growth-hormone outcomes were largely null."
+  limitation: "Small male sample, retrospective registration and LSD pairwise testing limit inference; the authors note stricter multiplicity correction could alter findings."
+  pmid: "39683633"
+  doi: "10.3390/nu16234240"
+  funding: "Nanjing Nutrabuilding Bio-tech Co., Ltd. (NNB Nutrition) provided a restricted grant to the Center for Applied Health Sciences."
+  sponsorshipStatus: industry-funded
+  conflictsOfInterest: "Kerksick disclosed serving as a paid scientific advisor to NNB Nutrition; the publication describes a conflict-management plan."
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC11644786/
+
+- id: lee-kim-2024
+  title: "Comparative study of choline alfoscerate as a combination therapy with donepezil: A mixed double-blind randomized controlled and open-label observation trial"
+  authors: Wankiun Lee, Manho Kim
+  year: 2024
+  url: https://doi.org/10.1097/MD.0000000000038067
+  kind: Randomized controlled and observational study
+  insight: "The randomized donepezil comparison showed numerically larger changes with adjunct Alpha-GPC, but primary MMSE and ADAS-Cog between-group tests were nonsignificant."
+  limitation: "Only 83 of 100 randomized participants were analyzed; additional tiny open-label comparator groups should not be interpreted as randomized evidence."
+  pmid: "38875437"
+  doi: "10.1097/MD.0000000000038067"
+  funding: "The research received grants from JW Pharmaceutical, Seoul, Korea."
+  sponsorshipStatus: industry-funded
+  conflictsOfInterest: "No conflict-of-interest declaration was located in the inspected PMC full text."
+  conflictOfInterestStatus: not-reported
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC11175912/
+
+- id: lee-stroke-2021
+  title: "Association of L-α Glycerylphosphorylcholine With Subsequent Stroke Risk After 10 Years"
+  authors: Gyeongsil Lee, Seulggie Choi, Jooyoung Chang, Daein Choi, Joung Sik Son, Kyuwoong Kim, Sung Min Kim, Seogsong Jeong, Sang Min Park
+  year: 2021
+  url: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2786547
+  kind: Retrospective cohort study
+  insight: "In Korean NHIS data, Alpha-GPC prescription exposure was associated with higher total, ischemic and hemorrhagic stroke hazards, including after matching."
+  limitation: "Observational claims data remain vulnerable to residual and indication-related confounding; JAMA notes a September 24, 2026 correction to Methods and Article Information."
+  pmid: "34817582"
+  doi: "10.1001/jamanetworkopen.2021.36008"
+  funding: "Supported by the National Health Insurance Service of Korea, the National Research Foundation of Korea Basic Science Research Program, and Brain Korea 21 Plus grants."
+  sponsorshipStatus: non-industry-funded
+  conflictsOfInterest: "None reported."
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2786547
+
+- id: efsa-2026
+  title: "Safety of L-alpha-glycerylphosphorylcholine (L-alpha-GPC) from soya phospholipids (lecithin) as a novel food pursuant to Regulation (EU) 2015/2283"
+  authors: EFSA Panel on Nutrition, Novel Foods and Food Allergens
+  year: 2026
+  url: https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2026.10008
+  kind: Regulatory scientific opinion
+  insight: "EFSA concluded the specified soy-derived novel food was safe at the proposed 203.7 mg/day use level and documented its composition, manufacturing, ADME and human tolerability."
+  limitation: "The conclusion concerns specified GPC 85% and Alpha Size 100P material under proposed uses; it is not a blanket assessment of all products or therapeutic dosing."
+  doi: "10.2903/j.efsa.2026.10008"
+  funding: "European Commission requested the opinion; applicant Chemi S.p.A. supplied the dossier, and EFSA states proprietary applicant data were essential to its conclusion."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "EFSA states declarations of interest for participating scientific experts are publicly available; individual declarations were not assessed for this record."
+  conflictOfInterestStatus: not-assessed
+
+- id: fda-grn419
+  title: "GRN No. 419: L-alpha-glycerylphosphorylcholine"
+  authors: U.S. Food and Drug Administration
+  year: 2012
+  url: https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=419&set=GrASNotices
+  kind: Official GRAS notice record
+  insight: "FDA recorded no questions regarding ChemiNutra's GRAS conclusion for specified conventional-food uses of L-alpha-GPC at levels of 10–100 mg."
+  limitation: "A no-questions GRAS response is not FDA drug approval and does not establish efficacy or safety of all Alpha-GPC doses, formulations or supplement uses."
+  funding: "Not assessed; ChemiNutra, Inc. was the GRAS notifier."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed."
+  conflictOfInterestStatus: not-assessed
+
+- id: health-canada-2023
+  title: "Notice of Modification to the List of permitted supplemental ingredients to enable the use of L-alpha-glycerylphosphorylcholine in supplemented foods"
+  authors: Health Canada
+  year: 2023
+  url: https://www.canada.ca/en/health-canada/services/food-nutrition/public-involvement-partnerships/notice-modification-list-ingredients-l-alpha-glycerylphosphorylcholine-supplemented-foods.html
+  kind: Official regulatory notice
+  insight: "Canada enabled L-alpha-GPC as a source of supplemental choline in supplemented foods, subject to existing choline maximum levels and labeling conditions."
+  limitation: "The authorization concerns supplemented-food use under choline conditions, not proof of cognitive or exercise efficacy and not an unrestricted product authorization."
+  funding: "Government regulatory document; clinical-study sponsorship was not assessed."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed."
+  conflictOfInterestStatus: not-assessed
+
+- id: usp-alpha-gpc
+  title: L-Alpha-Glycerylphosphorylcholine
+  authors: United States Pharmacopeia
+  year: 2023
+  url: https://doi.usp.org/USPNF/USPNF_M10375_05_01.html
+  kind: Compendial dietary-supplement monograph
+  insight: "USP-NF defines material produced from enriched phosphatidylcholine soy lecithin and specifies 98.0–102.0% Alpha-GPC on an anhydrous basis."
+  limitation: "A compendial specification describes conforming material; it does not demonstrate that every commercial Alpha-GPC product meets USP-NF requirements."
+  doi: "10.31003/USPNF_M10375_05_01"
+  funding: "Not assessed."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed."
+  conflictOfInterestStatus: not-assessed
+
+- id: ec-novel-food-status
+  title: "Consultation process on novel food status: L-alpha glycerylfosforylcholine (L-alpha-GPC)"
+  authors: European Commission
+  year: 2024
+  url: https://food.ec.europa.eu/food-safety/novel-food/consultation-process-novel-food-status_en
+  kind: Official regulatory status record
+  insight: "The European Commission consultation-status page lists L-alpha-GPC as Novel food, published March 22, 2024."
+  limitation: "Novel-food classification is distinct from completion of the EU authorization process or inclusion in the Union list."
+  funding: "European Commission regulatory record; sponsorship was not assessed."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed."
+  conflictOfInterestStatus: not-assessed
+```
+
+## Legal
+
+```yaml
+- jurisdiction: United States
+  activity: Conventional food ingredient under a GRAS notice
+  status: "GRN 419 closed November 20, 2012 with FDA stating it had no questions regarding the notifier's GRAS conclusion for specified conventional-food uses at 10–100 mg. This is not FDA drug approval."
+  sourceUrl: https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=419&set=GrASNotices
+  asOf: "2026-10-04"
+
+- jurisdiction: Canada
+  activity: Source of supplemental choline in supplemented foods
+  status: "Health Canada enabled L-alpha-GPC as a source of supplemental choline effective September 20, 2023, subject to the established choline conditions of use and labeling requirements."
+  sourceUrl: https://www.canada.ca/en/health-canada/services/food-nutrition/public-involvement-partnerships/notice-modification-list-ingredients-l-alpha-glycerylphosphorylcholine-supplemented-foods.html
+  asOf: "2026-10-04"
+
+- jurisdiction: European Union
+  activity: Novel-food status
+  status: "The European Commission consultation process classifies L-alpha-GPC as Novel food; the status entry was published March 22, 2024."
+  sourceUrl: https://food.ec.europa.eu/food-safety/novel-food/consultation-process-novel-food-status_en
+  asOf: "2026-10-04"
+
+- jurisdiction: European Union
+  activity: Novel-food authorization application
+  status: "The Commission continues to list the 2023 L-alpha-GPC Article 10 application, and EFSA issued a positive safety opinion in May 2026 for the specified soy-derived novel food at proposed use up to 203.7 mg/day. A Union-list implementing authorization was not verified in this research."
+  sourceUrl: https://food.ec.europa.eu/food-safety/novel-food/authorisations/summary-applications-and-notifications_en
+  asOf: "2026-10-04"
+```

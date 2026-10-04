@@ -1,0 +1,22 @@
+{
+  "topic": "lactoferrin",
+  "sourceUrl": "https://chatgpt.com/c/6ac182b5-bfac-83ed-8f9b-66f4ddda5050",
+  "changes": [
+    "Condensed overview prose; study findings, references and structured records retained. Embedded prose diagrams remain in the original acquisition report.",
+    "substances/lactoferrin.md: quoted 13 scalar values containing colon-space without changing their text.",
+    "outcomes/hemoglobin-concentration.md: moved frontmatter description into Definition, preserving existing body text.",
+    "outcomes/serum-ferritin.md: moved frontmatter description into Definition, preserving existing body text.",
+    "outcomes/gastrointestinal-adverse-events.md: moved frontmatter description into Definition, preserving existing body text.",
+    "outcomes/late-onset-infection.md: moved frontmatter description into Definition, preserving existing body text.",
+    "outcomes/diarrhea-incidence.md: moved frontmatter description into Definition, preserving existing body text.",
+    "outcomes/diarrhea-duration.md: moved frontmatter description into Definition, preserving existing body text.",
+    "outcomes/antibiotic-associated-diarrhea.md: moved frontmatter description into Definition, preserving existing body text.",
+    "outcomes/helicobacter-pylori-eradication.md: moved frontmatter description into Definition, preserving existing body text.",
+    "outcomes/anti-lactoferrin-antibody-response.md: moved frontmatter description into Definition, preserving existing body text.",
+    "concepts/mechanism/gastric-processing-of-lactoferrin.md: moved frontmatter description into Definition, preserving existing body text.",
+    "concepts/mechanism/hepcidin-linked-iron-homeostasis.md: moved frontmatter description into Definition, preserving existing body text.",
+    "relationships/lactoferrin-iron-status-human.md: moved frontmatter description into Description, preserving existing body text.",
+    "relationships/lactoferrin-late-onset-infection-human.md: moved frontmatter description into Description, preserving existing body text.",
+    "relationships/lactoferrin-gastric-processing-human.md: moved frontmatter description into Description, preserving existing body text."
+  ]
+}

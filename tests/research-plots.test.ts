@@ -28,7 +28,7 @@ test("ratios use a log axis and never invent missing confidence intervals", () =
   };
   const html = renderToStaticMarkup(createElement(StudyPlots, { rows: [row] }));
   assert.match(html, /Logarithmic.*horizontal axis/);
-  assert.match(html, /Interval not reported/);
+  assert.match(html, /Interval not curated/);
   assert.match(html, /no-effect value \(1\)/);
   assert.doesNotMatch(html, /NaN|Infinity/);
 });

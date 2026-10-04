@@ -1,0 +1,42 @@
+{
+  "topic": "choline-bitartrate",
+  "sourceUrl": "https://chatgpt.com/c/6ac1a287-f100-83ed-baa4-5553ed7cafe4",
+  "method": "Visible research content captured in Chrome through a temporary loopback-only form",
+  "files": [
+    {
+      "path": "substances/choline-bitartrate.md",
+      "bytes": 52325,
+      "sha256": "f5b8ed1c5a048e4d951b18ce387d2688d05aa1b36cce97e2c525c868d621faa9"
+    },
+    {
+      "path": "outcomes/visuomotor-accuracy.md",
+      "bytes": 616,
+      "sha256": "9c9f7ade46e44ad7496e3899df20f7a0f82a878b3553696204c06a9c5c803d4b"
+    },
+    {
+      "path": "outcomes/reaction-time.md",
+      "bytes": 588,
+      "sha256": "f62c36239f4dfd3c92d332d8fa1eaac261f0a5f052ccab06509f24702fecd84c"
+    },
+    {
+      "path": "outcomes/plasma-choline.md",
+      "bytes": 656,
+      "sha256": "d92fcb48a74436777dcbc127fdf700fcaa9b8c89629a9c4ae930d7539bd276ad"
+    },
+    {
+      "path": "outcomes/trimethylamine-n-oxide.md",
+      "bytes": 797,
+      "sha256": "402f25d8431ba86203caa63c7a78e27e6e019c70e68ce09edc75265f841622b8"
+    },
+    {
+      "path": "outcomes/platelet-reactivity.md",
+      "bytes": 639,
+      "sha256": "0303852b1282696c40fb12d35660cd96f318a40426eaa6de0ddaf9455a7a0bf7"
+    },
+    {
+      "path": "outcomes/insulin-sensitivity.md",
+      "bytes": 628,
+      "sha256": "ac7890fd13c6027fddd82b1960e513f1c3a7ecd71291915992aa95fd75e67e8e"
+    }
+  ]
+}

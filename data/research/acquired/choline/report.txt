@@ -1,0 +1,2052 @@
+CHOLINE BHWiki Deep Research
+Main article
+
+choline.md
+
+markdown
+Copy
+---
+slug: choline
+name: Choline
+subtitle: Essential nutrient supporting membrane phospholipids, acetylcholine synthesis, and one-carbon metabolism.
+aliases:
+  - Choline ion
+  - Choline cation
+  - Bilineurine
+formula: "C5H14NO+"
+molecularWeight: "104.17 g/mol"
+pubchemCid: 305
+smiles: "C[N+](C)(C)CCO"
+category: Nutrient
+tags: []
+accent: "UNSPECIFIED"
+reviewedAt: "2026-10-04"
+halfLife:
+  label: Not established
+  low: null
+  high: null
+  context: "No general human elimination half-life is established for dietary choline; choline enters multiple metabolic and structural pools rather than behaving as a single-compartment drug exposure."
+  sourceId: efsa-2016-choline-drvs
+  observationId: choline-half-life-not-established
+kinetics:
+  onset: Not established for choline as a general dietary nutrient exposure.
+  peak: Formulation- and meal-dependent; no general peak value is established.
+  duration: Not established as a single clinically meaningful exposure duration.
+  bioavailability: "Choline is absorbed from dietary and supplemental forms, but a general absolute human bioavailability value is not established; water-soluble and lipid-soluble forms have different handling."
+  metabolism: "Choline enters phosphatidylcholine and sphingomyelin synthesis, acetylcholine synthesis, oxidation toward betaine and one-carbon metabolism, and—after gut microbial metabolism of susceptible choline-containing substrates—the trimethylamine/TMAO pathway."
+  sourceId: efsa-2016-choline-drvs
+editorialStatus: sourced-draft
+x-shape:
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+---
+
+## Summary
+
+Choline is an essential nutrient required for phospholipid, acetylcholine, and methyl-group metabolism. Controlled depletion can cause reversible liver or muscle injury, whereas evidence for benefits above nutritional adequacy—especially cognition and cardiometabolic outcomes—is formulation- and context-dependent.
+
+## Description
+
+Choline (PubChem CID 305; C5H14NO+, 104.17 g/mol) is a permanently charged quaternary ammonium nutrient. Foods supply free choline plus phosphocholine, glycerophosphocholine, phosphatidylcholine, and sphingomyelin; selected NIH values include beef liver 356 mg/3 oz, one large egg 147 mg, and roasted soybeans 107 mg/½ cup. Choline supports phospholipid synthesis, acetylcholine production, and betaine-dependent one-carbon metabolism. Dietary choline, choline salts, and phosphatidylcholine are exposure forms, whereas citicoline (CDP-choline) and alpha-GPC are separate choline-containing compounds with separate BHWiki slugs; efficacy should not be transferred between them. Gut microbes can convert susceptible choline substrates to trimethylamine and subsequently TMAO. Sources: pubchem-choline; nih-ods-choline; efsa-2016-choline-drvs.
+
+## Evidence note
+
+High confidence applies to nutrient essentiality, deficiency-related liver/muscle injury, and established dietary reference values. Prenatal cognition evidence is promising but inconsistent and derives partly from small trials; adult cognitive supplementation evidence is sparse. Choline-bitartrate can raise TMAO and platelet reactivity, but formulation matters and downstream TMAO associations do not establish cardiovascular harm from dietary choline. No general elimination half-life is established. Funding/COI classifications are assessed only where declarations were inspected. Sources: fischer-2007; caudill-2018; bahnfleth-2022; cheatham-2012; wilcox-2021; jia-2019; yoo-2026.
+
+## Doses
+
+```yaml
+- label: U.S. AI — birth to 6 months
+  amount: "125 mg/day"
+  quantity: 125
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Life-stage reference period
+  population: Infants from birth through 6 months
+  purpose: U.S. Adequate Intake
+  sourceCategory: reference
+  note: "Adequate Intake is a nutritional reference value, not a therapeutic dose."
+  sourceId: nih-ods-choline
+
+- label: U.S. AI — 7 to 12 months
+  amount: "150 mg/day"
+  quantity: 150
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Life-stage reference period
+  population: Infants aged 7–12 months
+  purpose: U.S. Adequate Intake
+  sourceCategory: reference
+  note: "Adequate Intake is a nutritional reference value, not a therapeutic dose."
+  sourceId: nih-ods-choline
+
+- label: U.S. AI — 1 to 3 years
+  amount: "200 mg/day"
+  quantity: 200
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Life-stage reference period
+  population: Children aged 1–3 years
+  purpose: U.S. Adequate Intake
+  sourceCategory: reference
+  note: "Adequate Intake is a nutritional reference value, not a therapeutic dose."
+  sourceId: nih-ods-choline
+
+- label: U.S. AI — 4 to 8 years
+  amount: "250 mg/day"
+  quantity: 250
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Life-stage reference period
+  population: Children aged 4–8 years
+  purpose: U.S. Adequate Intake
+  sourceCategory: reference
+  note: "Adequate Intake is a nutritional reference value, not a therapeutic dose."
+  sourceId: nih-ods-choline
+
+- label: U.S. AI — 9 to 13 years
+  amount: "375 mg/day"
+  quantity: 375
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Life-stage reference period
+  population: Children aged 9–13 years
+  purpose: U.S. Adequate Intake
+  sourceCategory: reference
+  note: "Adequate Intake is a nutritional reference value, not a therapeutic dose."
+  sourceId: nih-ods-choline
+
+- label: U.S. AI — males 14 to 18 years
+  amount: "550 mg/day"
+  quantity: 550
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Life-stage reference period
+  population: Males aged 14–18 years
+  purpose: U.S. Adequate Intake
+  sourceCategory: reference
+  note: "Adequate Intake is a nutritional reference value, not a therapeutic dose."
+  sourceId: nih-ods-choline
+
+- label: U.S. AI — females 14 to 18 years
+  amount: "400 mg/day"
+  quantity: 400
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Life-stage reference period
+  population: Females aged 14–18 years who are not pregnant or lactating
+  purpose: U.S. Adequate Intake
+  sourceCategory: reference
+  note: "Adequate Intake is a nutritional reference value, not a therapeutic dose."
+  sourceId: nih-ods-choline
+
+- label: U.S. AI — adult men
+  amount: "550 mg/day"
+  quantity: 550
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Adult reference period
+  population: Men aged 19 years and older
+  purpose: U.S. Adequate Intake
+  sourceCategory: reference
+  note: "An AI is used because available evidence is insufficient to derive an EAR/RDA."
+  sourceId: nih-ods-choline
+
+- label: U.S. AI — adult women
+  amount: "425 mg/day"
+  quantity: 425
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Adult reference period
+  population: Women aged 19 years and older who are not pregnant or lactating
+  purpose: U.S. Adequate Intake
+  sourceCategory: reference
+  note: "An AI is used because available evidence is insufficient to derive an EAR/RDA."
+  sourceId: nih-ods-choline
+
+- label: U.S. AI — pregnancy
+  amount: "450 mg/day"
+  quantity: 450
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Pregnancy
+  population: Pregnant adolescents and adults
+  purpose: U.S. Adequate Intake during pregnancy
+  sourceCategory: reference
+  note: "The AI is a nutritional adequacy reference and does not establish an optimal neurodevelopmental supplementation dose."
+  sourceId: nih-ods-pregnancy
+
+- label: U.S. AI — lactation
+  amount: "550 mg/day"
+  quantity: 550
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Lactation
+  population: Lactating adolescents and adults
+  purpose: U.S. Adequate Intake during lactation
+  sourceCategory: reference
+  note: "Adequate Intake is a nutritional reference value."
+  sourceId: nih-ods-choline
+
+- label: EFSA AI — infants 7 to 11 months
+  amount: "160 mg/day"
+  quantity: 160
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Life-stage reference period
+  population: Infants aged 7–11 months
+  purpose: European Adequate Intake
+  sourceCategory: reference
+  note: "EFSA dietary reference value."
+  sourceId: efsa-2016-choline-drvs
+
+- label: EFSA AI — children 1 to 3 years
+  amount: "140 mg/day"
+  quantity: 140
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Life-stage reference period
+  population: Children aged 1–3 years
+  purpose: European Adequate Intake
+  sourceCategory: reference
+  note: "EFSA dietary reference value."
+  sourceId: efsa-2016-choline-drvs
+
+- label: EFSA AI — children 4 to 6 years
+  amount: "170 mg/day"
+  quantity: 170
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Life-stage reference period
+  population: Children aged 4–6 years
+  purpose: European Adequate Intake
+  sourceCategory: reference
+  note: "EFSA dietary reference value."
+  sourceId: efsa-2016-choline-drvs
+
+- label: EFSA AI — children 7 to 10 years
+  amount: "250 mg/day"
+  quantity: 250
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Life-stage reference period
+  population: Children aged 7–10 years
+  purpose: European Adequate Intake
+  sourceCategory: reference
+  note: "EFSA dietary reference value."
+  sourceId: efsa-2016-choline-drvs
+
+- label: EFSA AI — children 11 to 14 years
+  amount: "340 mg/day"
+  quantity: 340
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Life-stage reference period
+  population: Children aged 11–14 years
+  purpose: European Adequate Intake
+  sourceCategory: reference
+  note: "EFSA dietary reference value."
+  sourceId: efsa-2016-choline-drvs
+
+- label: EFSA AI — adolescents 15 to 17 years
+  amount: "400 mg/day"
+  quantity: 400
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Life-stage reference period
+  population: Adolescents aged 15–17 years
+  purpose: European Adequate Intake
+  sourceCategory: reference
+  note: "EFSA dietary reference value."
+  sourceId: efsa-2016-choline-drvs
+
+- label: EFSA AI — adults
+  amount: "400 mg/day"
+  quantity: 400
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Adult reference period
+  population: Adults
+  purpose: European Adequate Intake
+  sourceCategory: reference
+  note: "EFSA concluded available data were insufficient to derive an Average Requirement and Population Reference Intake."
+  sourceId: efsa-2016-choline-drvs
+
+- label: EFSA AI — pregnancy
+  amount: "480 mg/day"
+  quantity: 480
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Pregnancy
+  population: Pregnant women
+  purpose: European Adequate Intake during pregnancy
+  sourceCategory: reference
+  note: "European nutritional reference value; it is not a therapeutic dose."
+  sourceId: efsa-2016-choline-drvs
+
+- label: EFSA AI — lactation
+  amount: "520 mg/day"
+  quantity: 520
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total dietary choline
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Lactation
+  population: Lactating women
+  purpose: European Adequate Intake during lactation
+  sourceCategory: reference
+  note: "European nutritional reference value."
+  sourceId: efsa-2016-choline-drvs
+
+- label: U.S. adult tolerable upper intake level
+  amount: "3500 mg/day"
+  quantity: 3500
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Total choline from foods and supplements
+  route: Oral dietary intake
+  frequency: Daily
+  duration: Chronic intake reference
+  population: Adults aged 19 years and older
+  purpose: U.S. Tolerable Upper Intake Level
+  sourceCategory: reference
+  note: "This is an upper-limit risk-management value, not a recommended intake; lower age-specific ULs apply to children and adolescents."
+  sourceId: nih-ods-choline
+
+- label: Beef liver dietary source
+  amount: "356 mg per 3 oz serving"
+  quantity: 356
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: "Beef liver, pan-fried, 3 oz"
+  route: Oral
+  frequency: Per serving
+  duration: Single serving reference
+  population: General population
+  purpose: Representative dietary source
+  sourceCategory: reference
+  note: "Selected food value reported by NIH ODS from U.S. food-composition data."
+  sourceId: nih-ods-choline
+
+- label: Egg dietary source
+  amount: "147 mg per large egg"
+  quantity: 147
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: "Whole egg, hard-boiled, 1 large"
+  route: Oral
+  frequency: Per serving
+  duration: Single serving reference
+  population: General population
+  purpose: Representative dietary source
+  sourceCategory: reference
+  note: "Selected food value reported by NIH ODS."
+  sourceId: nih-ods-choline
+
+- label: Roasted soybean dietary source
+  amount: "107 mg per 1/2 cup"
+  quantity: 107
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: "Soybeans, roasted, 1/2 cup"
+  route: Oral
+  frequency: Per serving
+  duration: Single serving reference
+  population: General population
+  purpose: Representative dietary source
+  sourceCategory: reference
+  note: "Selected food value reported by NIH ODS."
+  sourceId: nih-ods-choline
+
+- label: Chicken dietary source
+  amount: "72 mg per 3 oz serving"
+  quantity: 72
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: "Chicken breast, roasted, 3 oz"
+  route: Oral
+  frequency: Per serving
+  duration: Single serving reference
+  population: General population
+  purpose: Representative dietary source
+  sourceCategory: reference
+  note: "Selected food value reported by NIH ODS."
+  sourceId: nih-ods-choline
+
+- label: Cod dietary source
+  amount: "71 mg per 3 oz serving"
+  quantity: 71
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: "Cod, cooked, 3 oz"
+  route: Oral
+  frequency: Per serving
+  duration: Single serving reference
+  population: General population
+  purpose: Representative dietary source
+  sourceCategory: reference
+  note: "Selected food value reported by NIH ODS."
+  sourceId: nih-ods-choline
+
+- label: Milk dietary source
+  amount: "43 mg per cup"
+  quantity: 43
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: "Milk, 1% fat, 1 cup"
+  route: Oral
+  frequency: Per serving
+  duration: Single serving reference
+  population: General population
+  purpose: Representative dietary source
+  sourceCategory: reference
+  note: "Selected food value reported by NIH ODS."
+  sourceId: nih-ods-choline
+
+- label: Controlled depletion exposure
+  amount: "<50 mg per 70 kg body weight per day"
+  quantity: null
+  quantityMax: 50
+  unit: "mg/70 kg/day"
+  ingredient: Choline
+  formulation: Controlled low-choline diet
+  route: Oral
+  frequency: Daily
+  duration: Up to 42 days
+  population: Healthy adult men, premenopausal women, and postmenopausal women
+  purpose: Experimental induction of dietary choline deficiency
+  sourceCategory: research
+  note: "This was a monitored research depletion protocol and is not a recommended exposure."
+  sourceId: fischer-2007
+
+- label: Pregnancy controlled-feeding comparison — lower intake
+  amount: "480 mg/day total choline"
+  quantity: 480
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: "Controlled diet providing 380 mg/day plus 100 mg/day supplemental choline from choline chloride"
+  route: Oral
+  frequency: Daily
+  duration: Approximately 10–12 weeks in the third trimester
+  population: Healthy pregnant women enrolled at approximately 27 weeks gestation
+  purpose: Controlled-feeding pregnancy trial comparator
+  sourceCategory: research
+  note: "The trial compared total intakes of 480 and 930 mg/day; this is not an established therapeutic dosing recommendation."
+  sourceId: nct01127022
+
+- label: Pregnancy controlled-feeding comparison — higher intake
+  amount: "930 mg/day total choline"
+  quantity: 930
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: "Controlled diet providing 380 mg/day plus 550 mg/day supplemental choline from choline chloride"
+  route: Oral
+  frequency: Daily
+  duration: Approximately 10–12 weeks in the third trimester
+  population: Healthy pregnant women enrolled at approximately 27 weeks gestation
+  purpose: Controlled-feeding pregnancy trial experimental intake
+  sourceCategory: research
+  note: "The observed cognitive findings do not establish 930 mg/day as an optimal routine pregnancy intake."
+  sourceId: nct01127022
+
+- label: Long-term parenteral nutrition trial
+  amount: "2 g/day choline chloride"
+  quantity: 2000
+  quantityMax: null
+  unit: mg
+  ingredient: Choline chloride
+  formulation: Choline chloride added to total parenteral nutrition
+  route: Intravenous
+  frequency: Daily
+  duration: 24 weeks
+  population: Long-term home TPN patients receiving at least 80% of nutritional needs parenterally
+  purpose: Reversal of choline-deficiency-associated hepatic abnormalities
+  sourceCategory: research
+  note: "This was a clinical research exposure in a high-risk parenteral-nutrition population, not a general oral supplement dose."
+  sourceId: buchman-2001
+
+- label: Choline-bitartrate TMAO trial exposure
+  amount: "Two 500 mg choline-bitartrate tablets/day; approximately 411 mg/day free choline"
+  quantity: 411
+  quantityMax: null
+  unit: mg
+  ingredient: Choline
+  formulation: Choline bitartrate tablets
+  route: Oral
+  frequency: Daily
+  duration: 28 days
+  population: Healthy adults with normal renal function
+  purpose: Compare choline source/form effects on fasting TMAO and platelet reactivity
+  sourceCategory: research
+  note: "Salt mass and choline-equivalent mass are not interchangeable; the formulation must be retained when interpreting this trial."
+  sourceId: wilcox-2021
+
+- label: Acute performance study
+  amount: "50 mg/kg body weight"
+  quantity: 50
+  quantityMax: null
+  unit: "mg/kg"
+  ingredient: Choline
+  formulation: Formulation not established from the inspected abstract
+  route: Oral
+  frequency: Acute pre-test exposure
+  duration: Single-session exposure
+  population: Healthy men undergoing load-carriage and no-load exercise sessions
+  purpose: Test physical and cognitive performance after choline ingestion
+  sourceCategory: research
+  note: "Plasma choline increased, but measured physical and cognitive performance did not improve."
+  sourceId: deuster-2002
+```
+
+## Pharmacokinetics
+
+```yaml
+- id: choline-half-life-not-established
+  analyte: Choline
+  route: Oral
+  formulation: Dietary and supplemental choline forms
+  population: Humans
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: "A general elimination half-life is not established for choline as a nutrient because absorbed choline partitions into free choline, phospholipid, acetylcholine, betaine, and other metabolic pools; no defensible single-compartment value was identified."
+  sourceId: efsa-2016-choline-drvs
+  modelEligible: false
+```
+
+## Modifiers
+
+```yaml
+[]
+```
+
+## Effects
+
+```yaml
+[]
+```
+
+## Outcomes
+
+```yaml
+- id: dietary-depletion-organ-dysfunction
+  study:
+    id: fischer-2007-depletion-repletion
+    design: Controlled feeding depletion-repletion study with randomized folic-acid supplementation during depletion
+    sampleSize: 57
+    populationLabels:
+      - Healthy adult men
+      - Premenopausal women
+      - Postmenopausal women
+    comparator: Sex and menopausal-status strata under the same depletion protocol
+    route: Oral
+    formulation: Controlled low-choline diet
+    assessmentTime: During up to 42 days of dietary choline depletion
+  conceptId: choline-deficiency-organ-dysfunction
+  name: Choline-deficiency organ dysfunction
+  direction: Increased
+  evidence: Human research
+  description: "During dietary choline depletion, fatty liver or muscle damage developed in 77% of men, 80% of postmenopausal women, and 44% of premenopausal women; organ function normalized with choline repletion."
+  sourceId: fischer-2007
+  population: "57 healthy adults: 26 men, 16 premenopausal women, and 15 postmenopausal women."
+  exposure: "<50 mg choline per 70 kg body weight per day for up to 42 days after a 10-day higher-choline baseline diet."
+  instrument: "Liver magnetic-resonance imaging plus serum markers of hepatic and skeletal-muscle injury."
+  magnitude: "77% of men, 80% of postmenopausal women, and 44% of premenopausal women developed the prespecified fatty-liver or muscle-damage phenotype."
+
+- id: parenteral-choline-hepatic-steatosis
+  study:
+    id: buchman-2001-tpn-choline
+    design: Randomized placebo-controlled trial
+    sampleSize: 15
+    populationLabels:
+      - Long-term home total-parenteral-nutrition patients
+    comparator: Usual total parenteral nutrition without added choline
+    route: Intravenous
+    formulation: Total parenteral nutrition plus 2 g/day choline chloride
+    durationDays: 168
+    assessmentTime: Week 4 and serially through week 24; follow-up at week 34
+  result:
+    measure: mean
+    estimate: 13.3
+    unit: Hounsfield units
+    instrument: Liver computed-tomography density
+    comparator: "Usual TPN group mean at week 4: 5.8 Hounsfield units"
+    assessmentTime: Week 4
+    population: Long-term home TPN patients randomized to choline-supplemented TPN
+  conceptId: hepatic-steatosis
+  name: Hepatic steatosis in parenteral-nutrition-associated choline deficiency
+  direction: Decreased
+  evidence: Human research
+  description: "Adding choline chloride to long-term TPN increased liver CT density, consistent with reduced steatosis, and lowered several hepatic aminotransferase measures; steatosis recurred after supplementation stopped."
+  sourceId: buchman-2001
+  population: "15 patients receiving at least 80% of nutritional requirements through long-term TPN."
+  exposure: "2 g/day choline chloride added to TPN for 24 weeks."
+  instrument: "Liver/spleen computed tomography and serum ALT, AST, alkaline phosphatase, GGT, and bilirubin."
+  magnitude: "Week-4 liver density was 13.3 ± 5.0 HU with choline versus 5.8 ± 5.2 HU with usual TPN (P=.04); group differences persisted through week 24."
+
+- id: prenatal-choline-infant-processing-speed
+  study:
+    id: nct01127022
+    design: Randomized double-blind controlled feeding trial
+    sampleSize: 24
+    populationLabels:
+      - Infants born to healthy women randomized during the third trimester
+    comparator: Maternal total choline intake of 480 mg/day
+    route: Oral maternal exposure
+    formulation: Controlled diet plus choline chloride
+    assessmentTime: Infant ages 4, 7, 10, and 13 months
+  conceptId: infant-information-processing-speed
+  name: Infant information-processing speed
+  direction: Increased
+  evidence: Human research
+  description: "Infants whose mothers consumed 930 rather than 480 mg/day total choline during the third trimester had faster mean saccadic reaction time when results were averaged across four infant assessment ages."
+  sourceId: caudill-2018
+  population: "24 infants from a controlled-feeding pregnancy trial; 26 women had been randomized to the two choline-intake groups."
+  exposure: "Maternal 480 or 930 mg/day total choline from approximately 27 weeks gestation until delivery."
+  instrument: "Infant visual-attention/saccadic reaction-time paradigm."
+  magnitude: "Mean reaction time across ages was reported as 22.6 ms faster in the 930 mg/day group, with a reported 95% CI of 1.3–43.8 ms and P=.03."
+
+- id: prenatal-choline-child-sustained-attention
+  study:
+    id: nct01127022
+    design: Seven-year follow-up of a randomized double-blind controlled feeding trial
+    sampleSize: 20
+    populationLabels:
+      - Children aged approximately 7 years
+    comparator: Maternal total choline intake of 480 mg/day during the third trimester
+    route: Oral maternal exposure
+    formulation: Controlled diet plus choline chloride
+    assessmentTime: Age 7 years
+  conceptId: attention
+  name: Sustained attention at age seven
+  direction: Increased
+  evidence: Human research
+  description: "Children in the maternal 930 mg/day group had higher Sustained Attention Task scores and showed less decline in signal detections across the session than children in the 480 mg/day group."
+  sourceId: bahnfleth-2022
+  population: "20 children retained from the pregnancy controlled-feeding cohort."
+  exposure: "Maternal total choline intake of 480 or 930 mg/day during the third trimester."
+  instrument: Sustained Attention Task
+  magnitude: "Mean SAT score was 0.71 versus 0.56; the modeled treatment-group effect had 95% CI 0.03–0.27 and P=.02. For 17-ms signals, hits declined 22.9% in the 480-mg group versus a 1.5% increase in the 930-mg group."
+
+- id: prenatal-phosphatidylcholine-infant-episodic-memory
+  study:
+    id: nct00678925
+    design: Randomized double-blind placebo-controlled trial
+    sampleSize: 99
+    populationLabels:
+      - Infants whose mothers received prenatal/postpartum phosphatidylcholine or placebo
+    comparator: Corn-oil placebo
+    route: Oral maternal exposure
+    formulation: Supplemental phosphatidylcholine
+    assessmentTime: Infant ages 10 and 12 months
+  conceptId: episodic-memory
+  name: Infant episodic memory after maternal phosphatidylcholine supplementation
+  direction: Variable
+  evidence: Human research
+  description: "Maternal phosphatidylcholine supplementation from 18 weeks gestation through 90 days postpartum did not significantly improve the measured long-term episodic-memory outcome."
+  sourceId: cheatham-2012
+  population: "99 infants tested from a trial in which 140 pregnant women were randomized."
+  exposure: "Supplemental phosphatidylcholine reported as 750 mg/day in the publication, with background dietary choline of approximately 360 mg/day."
+  instrument: null
+  magnitude: "No statistically significant treatment-group difference was reported."
+  conflictingSourceIds:
+    - caudill-2018
+    - bahnfleth-2022
+
+- id: prenatal-phosphatidylcholine-infant-cognitive-battery
+  study:
+    id: nct00678925
+    design: Randomized double-blind placebo-controlled trial
+    sampleSize: 99
+    populationLabels:
+      - Infants whose mothers received prenatal/postpartum phosphatidylcholine or placebo
+    comparator: Corn-oil placebo
+    route: Oral maternal exposure
+    formulation: Supplemental phosphatidylcholine
+    assessmentTime: Infant ages 10 and 12 months
+  conceptId: cognitive-task-performance
+  name: Infant global and language development
+  direction: Variable
+  evidence: Human research
+  description: "The phosphatidylcholine and placebo groups did not differ significantly in global development or language development at 10 and 12 months."
+  sourceId: cheatham-2012
+  population: "99 infants tested from a trial in which 140 pregnant women were randomized."
+  exposure: "Maternal phosphatidylcholine supplementation beginning at 18 weeks gestation and continuing through 90 days postpartum."
+  instrument: null
+  magnitude: "No statistically significant treatment-group differences were reported."
+  conflictingSourceIds:
+    - caudill-2018
+    - bahnfleth-2022
+
+- id: acute-choline-cognitive-performance
+  study:
+    id: deuster-2002-load-carriage
+    design: Double-blind randomized crossover study
+    sampleSize: 13
+    populationLabels:
+      - Healthy adult men
+    comparator: Placebo
+    route: Oral
+    formulation: Formulation not established from inspected abstract
+    assessmentTime: After load-carriage and no-load test sessions
+  conceptId: cognitive-task-performance
+  name: Cognitive performance after acute choline ingestion
+  direction: Variable
+  evidence: Human research
+  description: "Although 50 mg/kg choline increased plasma choline, it did not improve reaction time, logical reasoning, vigilance, spatial memory, or working memory after exhaustive physical activity."
+  sourceId: deuster-2002
+  population: "13 healthy men, mean age approximately 28 years."
+  exposure: "50 mg/kg body weight choline before experimental test sessions."
+  instrument: "Cognitive-performance battery assessing reaction time, reasoning, vigilance, spatial memory, and working memory."
+  magnitude: "No significant choline-related improvement in the reported physical or cognitive tasks."
+
+- id: choline-bitartrate-fasting-tmao
+  study:
+    id: nct03039023
+    design: Randomized five-arm 28-day intervention trial
+    sampleSize: 82
+    populationLabels:
+      - Healthy adults with normal renal function
+    comparator: Whole eggs and phosphatidylcholine supplement arms
+    route: Oral
+    formulation: Choline bitartrate tablets
+    durationDays: 28
+    assessmentTime: Baseline to day 28
+    comparedSubstances:
+      - choline-bitartrate
+  conceptId: plasma-tmao
+  name: Fasting plasma TMAO
+  direction: Increased
+  evidence: Human research
+  description: "Fasting plasma TMAO increased in each intervention arm containing choline bitartrate, whereas four whole eggs/day or a phosphatidylcholine supplement did not significantly raise fasting TMAO."
+  sourceId: wilcox-2021
+  population: Healthy adults with estimated glomerular filtration rate above 60.
+  exposure: "Daily choline-bitartrate-containing intervention for 28 days; the supplement-only arm used two 500 mg bitartrate tablets providing approximately 411 mg/day free choline."
+  instrument: Mass-spectrometric plasma TMAO quantification
+  magnitude: "TMAO increased in all three choline-bitartrate-containing arms (all P<.0001); egg-only P=.28 and phosphatidylcholine P=.27."
+  conflictingSourceIds:
+    - thomas-2022
+
+- id: choline-bitartrate-platelet-reactivity
+  study:
+    id: nct03039023
+    design: Randomized five-arm 28-day intervention trial
+    sampleSize: 82
+    populationLabels:
+      - Healthy adults with normal renal function
+    comparator: Whole eggs and phosphatidylcholine supplement arms
+    route: Oral
+    formulation: Choline bitartrate tablets
+    durationDays: 28
+    assessmentTime: Baseline to day 28
+    comparedSubstances:
+      - choline-bitartrate
+  conceptId: platelet-reactivity
+  name: Platelet reactivity
+  direction: Increased
+  evidence: Human research
+  description: "Platelet reactivity increased in the three arms containing choline bitartrate but not significantly in the whole-egg or phosphatidylcholine arms."
+  sourceId: wilcox-2021
+  population: Healthy adults with normal renal function.
+  exposure: Choline-bitartrate-containing intervention for 28 days.
+  instrument: Platelet aggregometry
+  magnitude: "Platelet reactivity increased in all three bitartrate arms (all P<.01); egg-only P=.10 and phosphatidylcholine P=.79."
+
+- id: metabolic-syndrome-choline-bitartrate-tmao
+  study:
+    id: thomas-2022-egg-bitartrate-crossover
+    design: Randomized controlled crossover trial
+    sampleSize: 23
+    populationLabels:
+      - Adults with metabolic syndrome
+    comparator: Three whole eggs per day
+    route: Oral
+    formulation: Choline bitartrate supplement
+    durationDays: 28
+    assessmentTime: End of each 4-week intervention
+    comparedSubstances:
+      - choline-bitartrate
+  conceptId: plasma-tmao
+  name: TMAO after egg versus choline-bitartrate intake in metabolic syndrome
+  direction: Variable
+  evidence: Human research
+  description: "In adults with metabolic syndrome consuming approximately 400 mg/day choline-equivalent from either eggs or choline bitartrate, plasma TMAO was not significantly different between treatments or from baseline."
+  sourceId: thomas-2022
+  population: "23 adults with metabolic syndrome."
+  exposure: "Three eggs/day or a choline-bitartrate supplement, each providing approximately 400 mg/day choline, for four weeks."
+  instrument: Stable-isotope-dilution liquid chromatography–tandem mass spectrometry
+  magnitude: "No significant TMAO treatment difference was reported (P>.05)."
+  conflictingSourceIds:
+    - wilcox-2021
+```
+
+## Mechanisms
+
+```yaml
+- title: CDP-choline phosphatidylcholine synthesis
+  description: "Free choline can be phosphorylated by choline kinase and enter the CDP-choline/Kennedy pathway; PCYT1A catalyzes a regulatory cytidylyltransferase step leading toward phosphatidylcholine, a major membrane and lipoprotein phospholipid."
+  sourceId: efsa-2016-choline-drvs
+  conceptId: phosphatidylcholine-biosynthesis
+
+- title: Endogenous PEMT phosphatidylcholine synthesis
+  description: "PEMT provides a hepatic de novo phosphatidylcholine-synthesis route from phosphatidylethanolamine. Estrogen-responsive PEMT activity is one reason endogenous choline-related phospholipid synthesis and dietary requirement can differ by sex and reproductive state."
+  sourceId: fischer-2007
+  conceptId: phosphatidylcholine-biosynthesis
+
+- title: Acetylcholine synthesis
+  description: "Choline is a direct substrate for choline acetyltransferase, which forms acetylcholine from choline and acetyl-CoA; this biochemical precursor role does not by itself establish cognitive enhancement from supplemental choline."
+  sourceId: efsa-2016-choline-drvs
+  conceptId: choline-precursor
+
+- title: Betaine and one-carbon metabolism
+  description: "Choline oxidation supplies betaine-related one-carbon metabolism. Betaine can donate a methyl group through BHMT to remethylate homocysteine to methionine, linking choline status with methyl-group metabolism."
+  sourceId: efsa-2016-choline-drvs
+  conceptId: betaine-one-carbon-metabolism
+
+- title: Gut microbial trimethylamine and host TMAO generation
+  description: "Gut microbes can metabolize susceptible choline-containing substrates to trimethylamine; host oxidation, principally involving FMO3, generates TMAO. Human TMAO production varies with choline source, formulation, microbiota, and host context."
+  sourceId: tang-2013
+  conceptId: gut-microbial-tmao-generation
+
+- title: Analytical quantification by isotope-dilution LC-MS/MS
+  description: "Human choline/TMAO studies commonly use chromatographic mass-spectrometric methods, including stable-isotope dilution LC-MS/MS, to distinguish choline, TMAO, betaine, dimethylglycine, and labeled isotopologues in plasma or urine."
+  sourceId: wilcox-2021
+```
+
+## Cautions
+
+```yaml
+- title: Choline deficiency can injure liver or skeletal muscle
+  description: "Controlled human depletion produced fatty liver and/or biochemical muscle injury in a substantial proportion of participants, with susceptibility differing by sex and menopausal status. Deliberately inducing low-choline intake is not a safe self-experiment."
+  sourceId: fischer-2007
+
+- title: High chronic intakes can produce adverse effects
+  description: "NIH ODS identifies fishy body odor, vomiting, excessive sweating and salivation, hypotension, and liver toxicity among effects associated with excessive choline intake. The U.S. adult UL is 3,500 mg/day; lower age-specific ULs apply to minors."
+  sourceId: nih-ods-choline
+
+- title: Pregnancy trial doses are not established optimal intake targets
+  description: "Small controlled-feeding studies found some offspring cognitive advantages with 930 versus 480 mg/day maternal total choline, but another phosphatidylcholine trial was null. These findings do not establish a universal pregnancy dose above the U.S. or EFSA AI."
+  sourceId: yoo-2026
+
+- title: TMAO effects are formulation-specific and not equivalent to proven cardiovascular harm
+  description: "A 28-day trial found higher fasting TMAO and platelet reactivity with choline bitartrate but not whole eggs or phosphatidylcholine. TMAO predicts cardiovascular risk in observational cohorts, while causal inference remains contested and subject to reverse causality."
+  sourceId: wilcox-2021
+
+- title: Preserve choline-equivalent versus compound mass
+  description: "A salt, phospholipid, citicoline, alpha-GPC, and free choline are not interchangeable mass units. Study interpretation should retain the exact ingredient, formulation, salt or phospholipid mass, and choline-equivalent amount when reported."
+  sourceId: wilcox-2021
+```
+
+## Claims
+
+```yaml
+- id: dietary-choline-is-required-nutrient
+  assertion: "Humans require an exogenous supply of choline because endogenous synthesis is insufficient for all individuals; controlled depletion can produce reversible liver or muscle dysfunction."
+  relation: deficiency-causes-reversible-organ-dysfunction
+  participants:
+    - entityId: substance:choline
+      role: required-nutrient
+    - entityId: tag:choline-deficiency-organ-dysfunction
+      role: deficiency-outcome
+  context: "Supported by controlled feeding depletion/repletion in healthy adults and by reversal of hepatic abnormalities with choline chloride in long-term parenteral-nutrition patients."
+  sourceIds:
+    - fischer-2007
+    - buchman-2001
+    - efsa-2016-choline-drvs
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: "Exact individual requirement varies, and available evidence is insufficient to derive an EAR for the general population."
+
+- id: prenatal-choline-may-affect-offspring-attention
+  assertion: "Higher maternal choline intake during pregnancy may improve selected offspring information-processing and sustained-attention outcomes, but the human evidence is not uniformly positive."
+  relation: prenatal-exposure-may-modify-attention
+  participants:
+    - entityId: substance:choline
+      role: maternal-nutrient-exposure
+    - entityId: tag:attention
+      role: offspring-cognitive-outcome
+  context: "A small controlled-feeding cohort showed faster infant processing and better sustained attention at age seven with 930 versus 480 mg/day; a larger maternal phosphatidylcholine trial found no infant cognitive benefit."
+  sourceIds:
+    - caudill-2018
+    - bahnfleth-2022
+  conflictingSourceIds:
+    - cheatham-2012
+  assessment: not-formally-assessed
+  limitation: "Trials differ in formulation, timing, background diet, endpoints, and sample size; 930 mg/day is not established as an optimal routine pregnancy dose."
+
+- id: choline-bitartrate-can-increase-tmao
+  assertion: "Choline bitartrate can increase fasting plasma TMAO under some intervention conditions, and this response should not be generalized to equal-choline exposure from whole eggs or phosphatidylcholine."
+  relation: formulation-specific-increase
+  participants:
+    - entityId: substance:choline-bitartrate
+      role: administered-choline-form
+    - entityId: tag:plasma-tmao
+      role: downstream-biomarker
+  context: "In healthy adults with normal renal function, bitartrate-containing arms increased fasting TMAO over 28 days while egg-only and phosphatidylcholine arms did not; a smaller metabolic-syndrome crossover study reported no treatment difference."
+  sourceIds:
+    - wilcox-2021
+  conflictingSourceIds:
+    - thomas-2022
+  assessment: not-formally-assessed
+  limitation: "Small trials and differing populations, diets, microbiomes, renal function, and formulations limit generalization."
+
+- id: tmao-biomarker-does-not-establish-choline-cardiovascular-causality
+  assertion: "A choline-derived TMAO biomarker signal is not equivalent to evidence that dietary choline itself causes cardiovascular events."
+  relation: downstream-biomarker-not-established-clinical-causality
+  participants:
+    - entityId: substance:choline
+      role: potential-dietary-precursor
+    - entityId: tag:plasma-tmao
+      role: downstream-metabolite-biomarker
+  context: "Higher TMAO predicted major cardiovascular events in an angiography cohort, but bidirectional Mendelian-randomization analyses did not support genetically predicted TMAO as a cause of tested cardiovascular endpoints after multiple-testing correction and suggested reverse causality from diabetes or kidney disease."
+  sourceIds:
+    - tang-2013
+    - jia-2019
+    - wilcox-2021
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: "Metabolite association, genetic-instrument analyses, and short-term feeding studies answer different causal questions and do not directly estimate long-term cardiovascular effects of dietary choline."
+```
+
+## Interactions
+
+```yaml
+- id: no-established-clinically-relevant-medication-interaction
+  name: No established clinically relevant medication interaction
+  otherSlug: null
+  summary: "NIH ODS reports no known clinically relevant interactions between choline and medications. Absence of a documented interaction is not proof that every formulation is interaction-free."
+  sourceId: nih-ods-choline
+  context: "General nutrient monograph; formulation-specific products can contain additional ingredients with separate interaction profiles."
+```
+
+## Experience links
+
+```yaml
+[]
+```
+
+## References
+
+```yaml
+- id: pubchem-choline
+  title: Choline — PubChem Compound Summary for CID 305
+  authors: National Center for Biotechnology Information, PubChem
+  year: 2026
+  url: https://pubchem.ncbi.nlm.nih.gov/compound/305
+  kind: Authoritative chemical database
+  insight: "Defines the choline cation identity, PubChem CID 305, molecular formula C5H14NO+, molecular weight 104.17 g/mol, and chemical synonyms."
+  limitation: "Dynamic database record; the year reflects the inspected current record version rather than an original experimental publication."
+  funding: "Not applicable to this official database record."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not applicable; conflict declarations were not assessed for a database record."
+  conflictOfInterestStatus: not-assessed
+
+- id: nih-ods-choline
+  title: Choline — Fact Sheet for Health Professionals
+  authors: National Institutes of Health, Office of Dietary Supplements
+  year: 2022
+  url: https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/
+  kind: Authoritative nutrient monograph
+  insight: "Provides U.S. Adequate Intakes, upper limits, food-source values, deficiency effects, supplement forms, adverse effects, and medication-interaction summary."
+  limitation: "Nutrient monograph synthesizes evidence and is not an efficacy trial or individualized treatment guideline."
+  funding: "Official U.S. National Institutes of Health resource."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed for an official agency monograph."
+  conflictOfInterestStatus: not-assessed
+
+- id: nih-ods-pregnancy
+  title: "Dietary Supplements and Life Stages: Pregnancy — Fact Sheet for Health Professionals"
+  authors: National Institutes of Health, Office of Dietary Supplements
+  year: 2025
+  url: https://ods.od.nih.gov/factsheets/Pregnancy-HealthProfessional/
+  kind: Authoritative nutrient monograph
+  insight: "Lists the U.S. pregnancy choline AI of 450 mg/day and pregnancy ULs of 3,000 mg/day for ages 14–18 and 3,500 mg/day for ages 19–50."
+  limitation: "Reference-intake guidance does not establish efficacy of doses above the AI for offspring cognition."
+  funding: "Official U.S. National Institutes of Health resource."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed for an official agency monograph."
+  conflictOfInterestStatus: not-assessed
+
+- id: efsa-2016-choline-drvs
+  title: Dietary Reference Values for choline
+  authors: EFSA Panel on Dietetic Products, Nutrition and Allergies
+  year: 2016
+  url: https://doi.org/10.2903/j.efsa.2016.4484
+  kind: Authoritative scientific opinion
+  insight: "Establishes European choline AIs and reviews absorption, metabolism, deficiency, biomarkers, life-stage requirements, and evidence limitations."
+  limitation: "AIs are reference values; EFSA found evidence insufficient to derive an Average Requirement or Population Reference Intake."
+  doi: "10.2903/j.efsa.2016.4484"
+  funding: "Official European Food Safety Authority scientific opinion."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Managed under EFSA scientific-panel procedures; individual declarations were not reclassified for this draft."
+  conflictOfInterestStatus: not-assessed
+
+- id: fischer-2007
+  title: Sex and menopausal status influence human dietary requirements for the nutrient choline
+  authors: Leslie M Fischer, Kerry Ann daCosta, Lester Kwock, Paul W Stewart, Tsui-Shan Lu, Sally P Stabler, Robert H Allen, Steven H Zeisel
+  year: 2007
+  url: https://pubmed.ncbi.nlm.nih.gov/17490963/
+  kind: Controlled feeding depletion-repletion study
+  insight: "Dietary depletion caused fatty liver or muscle damage in many adults, with marked sex/menopausal differences, and organ dysfunction reversed with choline repletion."
+  limitation: "Small controlled-feeding cohort; depletion conditions do not estimate long-term disease risk or a population EAR."
+  pmid: "17490963"
+  doi: "10.1093/ajcn/85.5.1275"
+  funding: "NIH grants supported the study; the inspected full text also reports lecithin supplied by Solae."
+  sponsorshipStatus: non-industry-funded
+  conflictsOfInterest: "Authors reported no study-related financial conflict; Steven Zeisel disclosed unrelated research support from Mead Johnson and the Egg Nutrition Research Center."
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC2435503/
+
+- id: buchman-2001
+  title: "Choline deficiency causes reversible hepatic abnormalities in patients receiving parenteral nutrition: proof of a human choline requirement: a placebo-controlled trial"
+  authors: A L Buchman, M E Ament, M Sohel, M Dubin, D J Jenden, M Roch, H Pownall, W Farley, M Awal, C Ahn
+  year: 2001
+  url: https://pubmed.ncbi.nlm.nih.gov/11531217/
+  kind: Randomized placebo-controlled trial
+  insight: "Adding 2 g/day choline chloride to long-term TPN improved liver CT density and several liver enzymes; steatosis recurred after choline withdrawal."
+  limitation: "Only 15 long-term TPN patients; findings address parenteral deficiency, not routine oral supplementation."
+  pmid: "11531217"
+  doi: "10.1177/0148607101025005260"
+  funding: "Not assessed from an inspected declaration."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed from an inspected declaration."
+  conflictOfInterestStatus: not-assessed
+
+- id: nct01127022
+  title: Effect of Maternal Choline Intake on Choline Status and Health Biomarkers During Pregnancy and Lactation
+  authors: Cornell University
+  year: 2010
+  url: https://clinicaltrials.gov/study/NCT01127022
+  kind: ClinicalTrials.gov registry
+  insight: "Documents controlled 480 versus 930 mg/day total choline arms, choline-chloride supplementation, study design, sponsor/collaborators, and planned maternal/offspring outcomes."
+  limitation: "Sponsor-submitted registry data; total registry enrollment spans pregnancy, lactation, and nonpregnant substudies and is not the sample size of each publication."
+  funding: "Registry identifies Cornell University as lead sponsor and American Egg Board, Beef Checkoff, and USDA Beltsville Human Nutrition Research Center as collaborators."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Registry record is not a publication COI declaration."
+  conflictOfInterestStatus: not-assessed
+
+- id: caudill-2018
+  title: "Maternal choline supplementation during the third trimester of pregnancy improves infant information processing speed: a randomized, double-blind, controlled feeding study"
+  authors: Marie A Caudill, Barbara J Strupp, Laura Muscalu, Julie E H Nevins, Richard L Canfield
+  year: 2018
+  url: https://pubmed.ncbi.nlm.nih.gov/29217669/
+  kind: Randomized double-blind controlled feeding trial
+  insight: "Maternal 930 versus 480 mg/day total choline in the third trimester produced faster mean infant information-processing reaction time across four postnatal ages."
+  limitation: "Very small trial: 26 mothers randomized and 24 infants contributed cognitive follow-up data."
+  pmid: "29217669"
+  doi: "10.1096/fj.201700692RR"
+  funding: "Inspected publication reports support from the Egg Nutrition Center, Beef Checkoff, USDA, and Cornell institutional programs."
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: "The inspected publication reported no conflicts of interest and stated that funders had no role in study design, analysis, or publication decisions."
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC6988845/
+
+- id: bahnfleth-2022
+  title: "Prenatal choline supplementation improves child sustained attention: A 7-year follow-up of a randomized controlled feeding trial"
+  authors: Charlotte L Bahnfleth, Barbara J Strupp, Marie A Caudill, Richard L Canfield
+  year: 2022
+  url: https://pubmed.ncbi.nlm.nih.gov/34962672/
+  kind: Randomized-trial follow-up
+  insight: "At age seven, children from the maternal 930 mg/day group had higher sustained-attention scores and less vigilance decline than the 480 mg/day group."
+  limitation: "Only 20 children were analyzed, making estimates imprecise and vulnerable to attrition and chance."
+  pmid: "34962672"
+  doi: "10.1096/fj.202101217R"
+  funding: "Inspected full text reports U.S. Department of Agriculture/NIFA support and commercial support including Balchem; author support also included NICHD and an Egg Nutrition Center award."
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: "The inspected full text reported no conflicts of interest."
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC9303951/
+
+- id: nct00678925
+  title: Supplemental Choline and Brain Development in Humans
+  authors: The Gerber Foundation
+  year: 2008
+  url: https://clinicaltrials.gov/study/NCT00678925
+  kind: ClinicalTrials.gov registry
+  insight: "Documents the randomized maternal phosphatidylcholine-versus-corn-oil trial from pregnancy through 90 days postpartum and its infant-memory outcomes."
+  limitation: "The registry intervention description and publication dosing language are not identical; publication-specific dosing is preserved separately rather than reconciled by assumption."
+  funding: "Registry lists The Gerber Foundation as lead sponsor and the Egg Nutrition Center as collaborator."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Registry record is not a publication COI declaration."
+  conflictOfInterestStatus: not-assessed
+
+- id: cheatham-2012
+  title: "Phosphatidylcholine supplementation in pregnant women consuming moderate-choline diets does not enhance infant cognitive function: a randomized, double-blind, placebo-controlled trial"
+  authors: Carol L Cheatham, Barbara Davis Goldman, Leslie M Fischer, Kerry-Ann da Costa, J Steven Reznick, Steven H Zeisel
+  year: 2012
+  url: https://pubmed.ncbi.nlm.nih.gov/23134891/
+  kind: Randomized double-blind placebo-controlled trial
+  insight: "Maternal phosphatidylcholine supplementation produced no significant improvement in infant global development, language, visuospatial memory, or episodic memory at 10–12 months."
+  limitation: "Results concern one phosphatidylcholine regimen in women consuming moderate-choline diets and do not exclude effects with different exposure, timing, or later follow-up."
+  pmid: "23134891"
+  doi: "10.3945/ajcn.112.037184"
+  funding: "Inspected publication reports Gerber Foundation, NIH, and Egg Nutrition Center support; Solae supplied study phosphatidylcholine."
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: "The inspected publication reported no personal or financial conflicts related to the study."
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC3497930/
+
+- id: deuster-2002
+  title: Choline ingestion does not modify physical or cognitive performance
+  authors: Patricia A Deuster, Anita Singh, Regina Coll, Dale E Hyde, William J Becker
+  year: 2002
+  url: https://pubmed.ncbi.nlm.nih.gov/12502178/
+  kind: Randomized double-blind crossover trial
+  insight: "A 50 mg/kg exposure raised plasma choline but did not improve physical performance, reaction time, reasoning, vigilance, spatial memory, or working memory."
+  limitation: "Only 13 healthy men were studied under an exercise/load-carriage paradigm; formulation details and disclosures were not verified from full text."
+  pmid: "12502178"
+  funding: "Not assessed from an inspected declaration."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed from an inspected declaration."
+  conflictOfInterestStatus: not-assessed
+
+- id: nct03039023
+  title: Effects of Choline From Eggs vs. Supplements on the Generation of TMAO in Humans
+  authors: The Cleveland Clinic
+  year: 2017
+  url: https://clinicaltrials.gov/study/NCT03039023
+  kind: ClinicalTrials.gov registry
+  insight: "Defines the egg, choline-bitartrate, combined, egg-white-plus-bitartrate, and phosphatidylcholine arms and registered TMAO and platelet-function outcomes."
+  limitation: "Sponsor-submitted registry record; enrollment counts and analytic populations should be taken from the relevant publication for publication-specific outcomes."
+  funding: "Registry identifies The Cleveland Clinic as lead sponsor."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Registry record is not a publication COI declaration."
+  conflictOfInterestStatus: not-assessed
+
+- id: wilcox-2021
+  title: "Dietary Choline Supplements, but Not Eggs, Raise Fasting TMAO Levels in Participants with Normal Renal Function: A Randomized Clinical Trial"
+  authors: Jennifer Wilcox, Sarah M Skye, Brett Graham, Allyson Zabell, Xinmin S Li, Lin Li, Shamanthika Shelkay, Xiaoming Fu, Sarah Neale, Cathy O'Laughlin, Kimberly Peterson, Stanley L Hazen, W H Wilson Tang
+  year: 2021
+  url: https://pubmed.ncbi.nlm.nih.gov/33872583/
+  kind: Randomized clinical trial
+  insight: "Choline-bitartrate-containing arms increased fasting TMAO and platelet reactivity; equivalent high-choline exposure from eggs or phosphatidylcholine did not."
+  limitation: "Short 28-day biomarker study in mostly young adults with normal renal function; it did not measure cardiovascular events."
+  pmid: "33872583"
+  doi: "10.1016/j.amjmed.2021.03.016"
+  funding: "Inspected full text reports NIH/ODS and philanthropic support plus commercially supported mass-spectrometry infrastructure through a Shimadzu Center of Excellence award."
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: "Stanley Hazen disclosed patents, consulting, research relationships, and royalty eligibility involving TMAO-related diagnostics/therapeutics; W H Wilson Tang disclosed unrelated consulting/honoraria."
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC8410632/
+
+- id: thomas-2022
+  title: Comparison between Egg Intake versus Choline Supplementation on Gut Microbiota and Plasma Carotenoids in Subjects with Metabolic Syndrome
+  authors: Minu S Thomas, Marissa DiBella, Christopher N Blesso, Olga Malysheva, Marie Caudill, Maria Sholola, Jessica L Cooperstone, Maria Luz Fernandez
+  year: 2022
+  url: https://pubmed.ncbi.nlm.nih.gov/35334836/
+  kind: Randomized controlled crossover trial
+  insight: "Three eggs/day and choline bitartrate supplying about 400 mg/day choline-equivalent did not significantly differ in plasma TMAO in 23 adults with metabolic syndrome."
+  limitation: "Small metabolic-syndrome crossover study; disclosure text was not inspected for this draft."
+  pmid: "35334836"
+  doi: "10.3390/nu14061179"
+  funding: "Not assessed from an inspected declaration."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed from an inspected declaration."
+  conflictOfInterestStatus: not-assessed
+
+- id: tang-2013
+  title: Intestinal microbial metabolism of phosphatidylcholine and cardiovascular risk
+  authors: W H Wilson Tang, Zeneng Wang, Bruce S Levison, Robert A Koeth, Earl B Britt, Xiaoming Fu, Yuping Wu, Stanley L Hazen
+  year: 2013
+  url: https://pubmed.ncbi.nlm.nih.gov/23614584/
+  kind: Human challenge study and prospective cohort
+  insight: "Antibiotic suppression demonstrated microbiota-dependent TMAO formation after a phosphatidylcholine challenge; higher fasting TMAO predicted three-year major cardiovascular events in 4,007 angiography patients."
+  limitation: "The cardiovascular component is observational for TMAO and does not show that dietary choline or phosphatidylcholine causes cardiovascular events."
+  pmid: "23614584"
+  doi: "10.1056/NEJMoa1109400"
+  funding: "Abstract reports National Institutes of Health and other support; full funding declaration was not re-inspected for classification."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed from an inspected declaration in this draft."
+  conflictOfInterestStatus: not-assessed
+
+- id: jia-2019
+  title: "Assessment of Causal Direction Between Gut Microbiota-Dependent Metabolites and Cardiometabolic Health: A Bidirectional Mendelian Randomization Analysis"
+  authors: Jinzhu Jia, Pan Dou, Meng Gao, Xuejun Kong, Changwei Li, Zhonghua Liu, Tao Huang
+  year: 2019
+  url: https://pubmed.ncbi.nlm.nih.gov/31167879/
+  kind: Bidirectional Mendelian randomization analysis
+  insight: "Genetically predicted higher TMAO was not associated with tested cardiometabolic diseases after Bonferroni correction; diabetes and kidney disease predicted higher TMAO, supporting possible reverse causality."
+  limitation: "Genetic instruments test lifelong genetically proxied metabolite variation, not short-term dietary choline exposure; several secondary associations were only suggestive."
+  pmid: "31167879"
+  doi: "10.2337/db19-0153"
+  funding: "Not assessed from an inspected declaration."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed from an inspected declaration."
+  conflictOfInterestStatus: not-assessed
+
+- id: yoo-2026
+  title: "Choline status and related health outcomes in humans: A scoping review"
+  authors: Samantha Yoo, Andrew Aoun, Azita Montazeri, Erin Collins, Julian Little
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/41847819/
+  kind: Scoping review
+  insight: "Mapped 117 primary human studies and judged evidence insufficient or equivocal for many outcomes, while identifying possible maternal-choline benefits for offspring neurodevelopment."
+  limitation: "Scoping review maps rather than quantitatively pools evidence; searches covered human studies from 2000 through May 2025 and three main databases."
+  pmid: "41847819"
+  doi: "10.1177/02601060261430655"
+  funding: "Canadian Institutes of Health Research grant FRN-PJT-175263."
+  sponsorshipStatus: non-industry-funded
+  conflictsOfInterest: "Authors declared no potential conflicts of interest."
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://doi.org/10.1177/02601060261430655
+
+- id: knott-2015-cdp-choline
+  title: Neurocognitive effects of acute choline supplementation in low, medium and high performer healthy volunteers
+  authors: Verner Knott, Sara de la Salle, Joelle Choueiry, Danielle Impey, Dylan Smith, Meaghan Smith, Elise Beaudry, Salman Saghir, Vadim Ilivitsky, Alain Labelle
+  year: 2015
+  url: https://pubmed.ncbi.nlm.nih.gov/25681529/
+  kind: Randomized controlled trial of citicoline
+  insight: "Provides a human trial example in which the administered intervention was CDP-choline/citicoline rather than free dietary choline."
+  limitation: "This citation distinguishes formulation identity; its efficacy findings should not be transferred to choline."
+  pmid: "25681529"
+  doi: "10.1016/j.pbb.2015.02.004"
+  funding: "Not assessed from an inspected declaration."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed from an inspected declaration."
+  conflictOfInterestStatus: not-assessed
+
+- id: jeon-2024-alpha-gpc
+  title: "Efficacy and safety of choline alphoscerate for amnestic mild cognitive impairment: a randomized double-blind placebo-controlled trial"
+  authors: Jongwook Jeon, Su Young Lee, Seunghoon Lee, Changwoo Han, Geum Duck Park, Se-Joo Kim, Jhin Goo Chang, Woo Jung Kim
+  year: 2024
+  url: https://pubmed.ncbi.nlm.nih.gov/39300341/
+  kind: Randomized controlled trial of alpha-GPC
+  insight: "Provides a human trial example identifying alpha-GPC/choline alphoscerate as a distinct administered choline-containing compound."
+  limitation: "This citation distinguishes formulation identity; its efficacy findings should not be transferred to choline."
+  pmid: "39300341"
+  doi: "10.1186/s12877-024-05366-7"
+  funding: "Not assessed from an inspected declaration."
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: "Not assessed from an inspected declaration."
+  conflictOfInterestStatus: not-assessed
+```
+
+## Legal
+
+```yaml
+- jurisdiction: United States
+  activity: Nutrition and Supplement Facts labeling
+  status: "FDA's current Daily Value for choline is 550 mg for adults and children aged 4 years and older under the current nutrition-label framework."
+  sourceUrl: https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels
+  asOf: "2026-10-04"
+
+- jurisdiction: European Union
+  activity: Authorized nutrition and health claims
+  status: "Commission Regulation (EU) No 432/2012 includes authorized choline claims concerning normal homocysteine metabolism, normal lipid metabolism, and maintenance of normal liver function, subject to the regulation's conditions of use."
+  sourceUrl: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02012R0432-20250820
+  asOf: "2026-10-04"
+```
+
+Companion concepts
+
+choline-concept-list.md
+
+markdown
+Copy
+# Choline companion concept list
+
+| Canonical ID | Label | Kind | Import path | Use in choline.md |
+| --- | --- | --- | --- | --- |
+| choline-deficiency-organ-dysfunction | Choline-deficiency organ dysfunction | outcome | outcomes/choline-deficiency-organ-dysfunction.md | Combined fatty-liver/muscle-damage endpoint in depletion studies |
+| hepatic-steatosis | Hepatic steatosis | outcome | outcomes/hepatic-steatosis.md | Liver-fat outcome in deficiency and TPN repletion |
+| infant-information-processing-speed | Infant information-processing speed | outcome | outcomes/infant-information-processing-speed.md | Infant saccadic reaction-time endpoint |
+| plasma-tmao | Plasma trimethylamine N-oxide | outcome | outcomes/plasma-tmao.md | Downstream choline/microbiome biomarker |
+| platelet-reactivity | Platelet reactivity | outcome | outcomes/platelet-reactivity.md | Platelet-function endpoint |
+| phosphatidylcholine-biosynthesis | Phosphatidylcholine biosynthesis | mechanism | concepts/mechanism/phosphatidylcholine-biosynthesis.md | Kennedy/CDP-choline and PEMT pathways |
+| betaine-one-carbon-metabolism | Betaine-dependent one-carbon metabolism | mechanism | concepts/mechanism/betaine-one-carbon-metabolism.md | Choline oxidation, betaine, BHMT pathway |
+| gut-microbial-tmao-generation | Gut microbial TMA/TMAO generation | mechanism | concepts/mechanism/gut-microbial-tmao-generation.md | Microbial TMA and host TMAO pathway |
+| chka | CHKA | enzyme | concepts/enzyme/chka.md | Choline phosphorylation |
+| pcyt1a | PCYT1A | enzyme | concepts/enzyme/pcyt1a.md | CDP-choline pathway regulatory enzyme |
+| pemt | PEMT | enzyme | concepts/enzyme/pemt.md | Endogenous phosphatidylcholine synthesis |
+| chdh | CHDH | enzyme | concepts/enzyme/chdh.md | Choline oxidation toward betaine |
+| bhmt | BHMT | enzyme | concepts/enzyme/bhmt.md | Betaine-dependent homocysteine remethylation |
+| chat | Choline acetyltransferase | enzyme | concepts/enzyme/chat.md | Acetylcholine synthesis |
+| fmo3 | FMO3 | enzyme | concepts/enzyme/fmo3.md | Trimethylamine oxidation to TMAO |
+
+
+outcomes/choline-deficiency-organ-dysfunction.md
+
+markdown
+Copy
+---
+id: choline-deficiency-organ-dysfunction
+label: Choline-deficiency organ dysfunction
+kind: outcome
+aliases:
+  - Choline-deficiency liver or muscle dysfunction
+relatedIds:
+  - hepatic-steatosis
+sourceUrls:
+  - https://pubmed.ncbi.nlm.nih.gov/17490963/
+  - https://pubmed.ncbi.nlm.nih.gov/11531217/
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+A measured human outcome representing hepatic steatosis, liver-enzyme abnormalities, and/or skeletal-muscle injury emerging during inadequate choline exposure and improving after choline repletion.
+
+
+outcomes/hepatic-steatosis.md
+
+markdown
+Copy
+---
+id: hepatic-steatosis
+label: Hepatic steatosis
+kind: outcome
+aliases:
+  - Fatty liver
+relatedIds:
+  - choline-deficiency-organ-dysfunction
+sourceUrls:
+  - https://pubmed.ncbi.nlm.nih.gov/17490963/
+  - https://pubmed.ncbi.nlm.nih.gov/11531217/
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+Excess hepatic fat measured by imaging or related validated assessment. Controlled choline depletion can induce hepatic steatosis, and choline repletion can reverse steatosis in susceptible deficiency settings.
+
+
+outcomes/infant-information-processing-speed.md
+
+markdown
+Copy
+---
+id: infant-information-processing-speed
+label: Infant information-processing speed
+kind: outcome
+aliases:
+  - Infant visual processing speed
+  - Infant saccadic reaction time
+relatedIds:
+  - attention
+sourceUrls:
+  - https://pubmed.ncbi.nlm.nih.gov/29217669/
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+A measured infant cognitive endpoint operationalized in the cited maternal-choline trial by reaction time during a visual-attention/saccade paradigm; faster reaction time was interpreted as faster information processing.
+
+
+outcomes/plasma-tmao.md
+
+markdown
+Copy
+---
+id: plasma-tmao
+label: Plasma trimethylamine N-oxide
+kind: outcome
+aliases:
+  - Plasma TMAO
+  - Circulating trimethylamine N-oxide
+relatedIds:
+  - gut-microbial-tmao-generation
+sourceUrls:
+  - https://pubmed.ncbi.nlm.nih.gov/33872583/
+  - https://pubmed.ncbi.nlm.nih.gov/23614584/
+  - https://pubmed.ncbi.nlm.nih.gov/31167879/
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+Circulating trimethylamine N-oxide measured as a downstream host–microbiome metabolite of trimethylamine-generating nutrients. It is a biomarker endpoint and must not be treated as equivalent to a cardiovascular clinical event.
+
+
+outcomes/platelet-reactivity.md
+
+markdown
+Copy
+---
+id: platelet-reactivity
+label: Platelet reactivity
+kind: outcome
+aliases:
+  - Platelet responsiveness
+  - Platelet aggregation response
+relatedIds:
+  - plasma-tmao
+sourceUrls:
+  - https://pubmed.ncbi.nlm.nih.gov/33872583/
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+A laboratory measure of platelet responsiveness or aggregation. In the cited 28-day choline-source trial, platelet reactivity increased in choline-bitartrate-containing arms but not significantly in egg-only or phosphatidylcholine arms.
+
+
+concepts/mechanism/phosphatidylcholine-biosynthesis.md
+
+markdown
+Copy
+---
+id: phosphatidylcholine-biosynthesis
+label: Phosphatidylcholine biosynthesis
+kind: mechanism
+aliases:
+  - CDP-choline pathway
+  - Kennedy pathway
+relatedIds:
+  - chka
+  - pcyt1a
+  - pemt
+sourceUrls:
+  - https://doi.org/10.2903/j.efsa.2016.4484
+  - https://www.ncbi.nlm.nih.gov/gene/?term=CHKA%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://www.ncbi.nlm.nih.gov/gene/?term=PCYT1A%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://www.ncbi.nlm.nih.gov/gene/?term=PEMT%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+Phosphatidylcholine is synthesized through the choline-dependent CDP-choline pathway and through a PEMT-mediated phosphatidylethanolamine methylation pathway, linking dietary choline with membrane and lipoprotein phospholipid metabolism.
+
+
+concepts/mechanism/betaine-one-carbon-metabolism.md
+
+markdown
+Copy
+---
+id: betaine-one-carbon-metabolism
+label: Betaine-dependent one-carbon metabolism
+kind: mechanism
+aliases:
+  - Choline-betaine methyl metabolism
+relatedIds:
+  - chdh
+  - bhmt
+sourceUrls:
+  - https://doi.org/10.2903/j.efsa.2016.4484
+  - https://www.ncbi.nlm.nih.gov/gene/?term=CHDH%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://www.ncbi.nlm.nih.gov/gene/?term=BHMT%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+A one-carbon pathway in which oxidation of choline supplies betaine-related methyl metabolism and BHMT uses betaine as a methyl donor for remethylation of homocysteine to methionine.
+
+
+concepts/mechanism/gut-microbial-tmao-generation.md
+
+markdown
+Copy
+---
+id: gut-microbial-tmao-generation
+label: Gut microbial TMA/TMAO generation
+kind: mechanism
+aliases:
+  - Choline-TMA-TMAO pathway
+relatedIds:
+  - plasma-tmao
+  - fmo3
+sourceUrls:
+  - https://pubmed.ncbi.nlm.nih.gov/23614584/
+  - https://pubmed.ncbi.nlm.nih.gov/33872583/
+  - https://www.ncbi.nlm.nih.gov/gene/?term=FMO3%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+A host–microbiome pathway in which intestinal microbes generate trimethylamine from susceptible trimethylamine-containing nutrients and host flavin-containing monooxygenase activity converts trimethylamine to trimethylamine N-oxide.
+
+
+concepts/enzyme/chka.md
+
+markdown
+Copy
+---
+id: chka
+label: CHKA
+kind: enzyme
+aliases:
+  - Choline kinase alpha
+relatedIds:
+  - phosphatidylcholine-biosynthesis
+sourceUrls:
+  - https://www.ncbi.nlm.nih.gov/gene/?term=CHKA%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://doi.org/10.2903/j.efsa.2016.4484
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+CHKA encodes choline kinase alpha, which phosphorylates choline to phosphocholine at the entry to the CDP-choline pathway for phosphatidylcholine synthesis.
+
+
+concepts/enzyme/pcyt1a.md
+
+markdown
+Copy
+---
+id: pcyt1a
+label: PCYT1A
+kind: enzyme
+aliases:
+  - CTP:phosphocholine cytidylyltransferase alpha
+relatedIds:
+  - phosphatidylcholine-biosynthesis
+sourceUrls:
+  - https://www.ncbi.nlm.nih.gov/gene/?term=PCYT1A%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://doi.org/10.2903/j.efsa.2016.4484
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+PCYT1A encodes CTP:phosphocholine cytidylyltransferase alpha, a central regulatory enzyme of the CDP-choline pathway that converts phosphocholine toward CDP-choline for phosphatidylcholine synthesis.
+
+
+concepts/enzyme/pemt.md
+
+markdown
+Copy
+---
+id: pemt
+label: PEMT
+kind: enzyme
+aliases:
+  - Phosphatidylethanolamine N-methyltransferase
+relatedIds:
+  - phosphatidylcholine-biosynthesis
+sourceUrls:
+  - https://www.ncbi.nlm.nih.gov/gene/?term=PEMT%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://pubmed.ncbi.nlm.nih.gov/17490963/
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+PEMT catalyzes methylation of phosphatidylethanolamine toward phosphatidylcholine, providing an endogenous phosphatidylcholine-synthesis pathway whose estrogen responsiveness contributes to variation in dietary choline requirement.
+
+
+concepts/enzyme/chdh.md
+
+markdown
+Copy
+---
+id: chdh
+label: CHDH
+kind: enzyme
+aliases:
+  - Choline dehydrogenase
+relatedIds:
+  - betaine-one-carbon-metabolism
+sourceUrls:
+  - https://www.ncbi.nlm.nih.gov/gene/?term=CHDH%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://doi.org/10.2903/j.efsa.2016.4484
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+CHDH encodes choline dehydrogenase and initiates mitochondrial oxidation of choline toward betaine, directing choline carbon into methyl-donor and one-carbon metabolism.
+
+
+concepts/enzyme/bhmt.md
+
+markdown
+Copy
+---
+id: bhmt
+label: BHMT
+kind: enzyme
+aliases:
+  - Betaine-homocysteine S-methyltransferase
+relatedIds:
+  - betaine-one-carbon-metabolism
+sourceUrls:
+  - https://www.ncbi.nlm.nih.gov/gene/?term=BHMT%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://doi.org/10.2903/j.efsa.2016.4484
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+BHMT catalyzes transfer of a methyl group from betaine to homocysteine, forming methionine and dimethylglycine and linking choline-derived betaine to one-carbon metabolism.
+
+
+concepts/enzyme/chat.md
+
+markdown
+Copy
+---
+id: chat
+label: Choline acetyltransferase
+kind: enzyme
+aliases:
+  - ChAT
+relatedIds:
+  - acetylcholine
+sourceUrls:
+  - https://www.ncbi.nlm.nih.gov/gene/?term=CHAT%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://doi.org/10.2903/j.efsa.2016.4484
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+Choline acetyltransferase catalyzes acetylcholine formation from choline and acetyl-CoA, establishing choline as a biochemical precursor of the neurotransmitter acetylcholine.
+
+
+concepts/enzyme/fmo3.md
+
+markdown
+Copy
+---
+id: fmo3
+label: FMO3
+kind: enzyme
+aliases:
+  - Flavin-containing dimethylaniline monooxygenase 3
+  - Flavin-containing monooxygenase 3
+relatedIds:
+  - gut-microbial-tmao-generation
+  - plasma-tmao
+sourceUrls:
+  - https://www.ncbi.nlm.nih.gov/gene/?term=FMO3%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://pubmed.ncbi.nlm.nih.gov/23614584/
+x-shape:
+  - id
+  - label
+  - kind
+  - description
+  - aliases
+  - relatedIds
+  - sourceUrls
+---
+
+## Definition
+
+FMO3 is a host flavin-containing monooxygenase involved in oxidation of gut-microbe-derived trimethylamine to trimethylamine N-oxide, completing a major host step in the TMA/TMAO pathway.
+
+Relationship files
+
+choline-relationship-table.md
+
+markdown
+Copy
+# Choline relationship table
+
+| From canonical entity | Relation | To canonical entity | Context |
+| --- | --- | --- | --- |
+| substance:choline | phosphorylated in pathway by | tag:chka | Entry to the CDP-choline phosphatidylcholine pathway |
+| tag:chka | supplies phosphocholine to | tag:pcyt1a | Sequential CDP-choline pathway |
+| tag:pcyt1a | supports | tag:phosphatidylcholine-biosynthesis | Regulatory CDP-choline step |
+| tag:pemt | supports | tag:phosphatidylcholine-biosynthesis | Separate endogenous phosphatidylethanolamine-methylation route |
+| substance:choline | substrate for | tag:chat | Cholinergic synthesis |
+| tag:chat | produces pathway product | tag:acetylcholine | Acetylcholine synthesis |
+| substance:choline | oxidized toward betaine by | tag:chdh | One-carbon entry |
+| tag:chdh | supplies | tag:betaine-one-carbon-metabolism | Choline-to-betaine oxidation |
+| tag:betaine-one-carbon-metabolism | uses | tag:bhmt | Betaine-dependent homocysteine remethylation |
+| substance:choline | can enter | tag:gut-microbial-tmao-generation | Form- and microbiome-dependent microbial metabolism |
+| tag:gut-microbial-tmao-generation | supplies trimethylamine to | tag:fmo3 | Host oxidation step |
+| tag:fmo3 | generates | tag:plasma-tmao | Circulating downstream metabolite |
+
+
+relationships/choline-metabolic-network.md
+
+markdown
+Copy
+---
+id: choline-metabolic-network
+label: Choline metabolic network
+relation: metabolic-routing
+members:
+  - substance:choline
+  - tag:chka
+  - tag:pcyt1a
+  - tag:pemt
+  - tag:phosphatidylcholine-biosynthesis
+  - tag:chat
+  - tag:acetylcholine
+  - tag:chdh
+  - tag:betaine-one-carbon-metabolism
+  - tag:bhmt
+  - tag:gut-microbial-tmao-generation
+  - tag:fmo3
+  - tag:plasma-tmao
+memberRoles:
+  "substance:choline": nutrient-substrate
+  "tag:chka": enzyme
+  "tag:pcyt1a": enzyme
+  "tag:pemt": enzyme
+  "tag:phosphatidylcholine-biosynthesis": phospholipid-pathway
+  "tag:chat": enzyme
+  "tag:acetylcholine": neurotransmitter-product
+  "tag:chdh": enzyme
+  "tag:betaine-one-carbon-metabolism": methyl-metabolism-pathway
+  "tag:bhmt": enzyme
+  "tag:gut-microbial-tmao-generation": host-microbiome-pathway
+  "tag:fmo3": host-enzyme
+  "tag:plasma-tmao": measured-downstream-metabolite
+sourceUrl: https://doi.org/10.2903/j.efsa.2016.4484
+sourceUrls:
+  - https://doi.org/10.2903/j.efsa.2016.4484
+  - https://pubmed.ncbi.nlm.nih.gov/23614584/
+  - https://pubmed.ncbi.nlm.nih.gov/33872583/
+  - https://www.ncbi.nlm.nih.gov/gene/?term=CHKA%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://www.ncbi.nlm.nih.gov/gene/?term=PCYT1A%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://www.ncbi.nlm.nih.gov/gene/?term=PEMT%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://www.ncbi.nlm.nih.gov/gene/?term=CHDH%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://www.ncbi.nlm.nih.gov/gene/?term=BHMT%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://www.ncbi.nlm.nih.gov/gene/?term=CHAT%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+  - https://www.ncbi.nlm.nih.gov/gene/?term=FMO3%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+directedSteps:
+  - from: substance:choline
+    to: tag:chka
+    label: Choline is phosphorylated by choline kinase at entry to the CDP-choline pathway.
+    sourceUrls:
+      - https://doi.org/10.2903/j.efsa.2016.4484
+      - https://www.ncbi.nlm.nih.gov/gene/?term=CHKA%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+
+  - from: tag:chka
+    to: tag:pcyt1a
+    label: Phosphocholine generated after choline phosphorylation feeds the PCYT1A-controlled CDP-choline pathway.
+    sourceUrls:
+      - https://doi.org/10.2903/j.efsa.2016.4484
+      - https://www.ncbi.nlm.nih.gov/gene/?term=PCYT1A%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+
+  - from: tag:pcyt1a
+    to: tag:phosphatidylcholine-biosynthesis
+    label: PCYT1A catalysis supports phosphatidylcholine formation through the CDP-choline pathway.
+    sourceUrls:
+      - https://doi.org/10.2903/j.efsa.2016.4484
+
+  - from: tag:pemt
+    to: tag:phosphatidylcholine-biosynthesis
+    label: PEMT provides an endogenous phosphatidylethanolamine-methylation route to phosphatidylcholine.
+    sourceUrls:
+      - https://pubmed.ncbi.nlm.nih.gov/17490963/
+      - https://www.ncbi.nlm.nih.gov/gene/?term=PEMT%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+
+  - from: substance:choline
+    to: tag:chat
+    label: Choline serves as a substrate for choline acetyltransferase.
+    sourceUrls:
+      - https://doi.org/10.2903/j.efsa.2016.4484
+      - https://www.ncbi.nlm.nih.gov/gene/?term=CHAT%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+
+  - from: tag:chat
+    to: tag:acetylcholine
+    label: Choline acetyltransferase catalyzes acetylcholine synthesis from choline and acetyl-CoA.
+    sourceUrls:
+      - https://doi.org/10.2903/j.efsa.2016.4484
+
+  - from: substance:choline
+    to: tag:chdh
+    label: Choline dehydrogenase initiates oxidation of choline toward betaine.
+    sourceUrls:
+      - https://doi.org/10.2903/j.efsa.2016.4484
+      - https://www.ncbi.nlm.nih.gov/gene/?term=CHDH%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+
+  - from: tag:chdh
+    to: tag:betaine-one-carbon-metabolism
+    label: Choline oxidation supplies the betaine-related one-carbon pathway.
+    sourceUrls:
+      - https://doi.org/10.2903/j.efsa.2016.4484
+
+  - from: tag:betaine-one-carbon-metabolism
+    to: tag:bhmt
+    label: Betaine-dependent one-carbon metabolism uses BHMT for homocysteine remethylation.
+    sourceUrls:
+      - https://doi.org/10.2903/j.efsa.2016.4484
+      - https://www.ncbi.nlm.nih.gov/gene/?term=BHMT%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+
+  - from: substance:choline
+    to: tag:gut-microbial-tmao-generation
+    label: Susceptible choline-containing exposures can be metabolized by intestinal microbes to trimethylamine.
+    sourceUrls:
+      - https://pubmed.ncbi.nlm.nih.gov/23614584/
+      - https://pubmed.ncbi.nlm.nih.gov/33872583/
+
+  - from: tag:gut-microbial-tmao-generation
+    to: tag:fmo3
+    label: Gut-derived trimethylamine becomes substrate for host FMO3-mediated oxidation.
+    sourceUrls:
+      - https://pubmed.ncbi.nlm.nih.gov/23614584/
+      - https://www.ncbi.nlm.nih.gov/gene/?term=FMO3%5Bgene%5D+AND+Homo+sapiens%5Borgn%5D
+
+  - from: tag:fmo3
+    to: tag:plasma-tmao
+    label: FMO3-mediated trimethylamine oxidation contributes to circulating TMAO.
+    sourceUrls:
+      - https://pubmed.ncbi.nlm.nih.gov/23614584/
+x-shape:
+  - id
+  - label
+  - relation
+  - members
+  - memberRoles
+  - description
+  - sourceUrl
+  - sourceUrls
+  - directedSteps
+---
+
+## Description
+
+Schema-native directed relationship graph linking choline to phosphatidylcholine synthesis, acetylcholine synthesis, betaine-dependent one-carbon metabolism, and the microbiome-dependent TMA/TMAO route. The graph represents biochemical routing only and does not assert that any downstream metabolite or mechanism causes a clinical cognitive or cardiovascular benefit or harm.
+
+Coverage and validation note
+
+The molecular identity is anchored to the current PubChem record for CID 305, which reports C5H14NO+ and molecular weight 104.17 g/mol. 
+1
+ Nutritional-reference records preserve jurisdictional differences rather than collapsing them: EFSA specifies 400 mg/day for adults, 480 mg/day during pregnancy, and 520 mg/day during lactation, while U.S. pregnancy guidance uses 450 mg/day; FDA’s current nutrition-label Daily Value is 550 mg. 
+2
+
+The clinical evidence is deliberately separated by endpoint and formulation. Controlled dietary depletion caused fatty liver or muscle damage in 77% of men, 80% of postmenopausal women, and 44% of premenopausal women, supporting human nutritional essentiality. 
+3
+ Choline chloride also reversed hepatic abnormalities in a small randomized long-term-TPN trial. 
+4
+ In pregnancy research, the controlled-feeding 480-versus-930 mg/day study produced positive infant processing-speed and seven-year attention findings, but a larger phosphatidylcholine trial reported no significant infant cognitive advantage, so the article does not promote 930 mg/day as an established optimal pregnancy dose. 
+5
+ 
+6
+ 
+7
+ The corresponding registry confirms that the controlled-feeding pregnancy arms used 480 and 930 mg/day total choline with choline chloride supplementation. 
+8
+
+The TMAO treatment is likewise biomarker-specific rather than causal shorthand. In the 28-day randomized source-comparison study, choline-bitartrate-containing arms raised fasting TMAO and platelet reactivity, whereas whole eggs and phosphatidylcholine did not significantly do so. 
+9
+ The registry independently documents those five formulation arms and TMAO/platelet endpoints. 
+10
+ Higher TMAO was associated with later cardiovascular events in Tang et al., but that was not proof that dietary choline caused those events; bidirectional Mendelian-randomization evidence did not support genetically predicted TMAO as a cause of the tested cardiovascular endpoints after multiple-testing correction and identified evidence compatible with reverse causality from diabetes or kidney disease. 
+11
+ 
+12
+
+The most recent broad evidence map located during this research, published in September 2026, included 117 primary human studies and judged evidence insufficient or equivocal for many health outcomes despite signals of possible maternal-choline benefit for offspring neurodevelopment. 
+13
+ 
+14
+ Full disclosure text was not inspected for Buchman 2001, Deuster 2002, Tang 2013, Jia 2019, and Thomas 2022, so their funding and COI statuses remain not-assessed rather than being inferred from PubMed indexing.
+
+The supplied topic brief is treated as the controlling schema: unsupported fields are omitted or explicitly unresolved, all new graph participants are supplied above, and no evidence from citicoline, alpha-GPC, or choline-bitartrate is silently transferred to free/dietary choline. 
+15
+ Mermaid blocks were not inserted into choline.md because the exact import contract permits only the named substance sections and one YAML block per rich section; the directedSteps relationship file is the schema-native graph representation requested by that contract. The schema has no separate analytical-method top-level field, so validated LC-MS/MS methodology is represented compactly under Mechanisms rather than by inventing a heading.

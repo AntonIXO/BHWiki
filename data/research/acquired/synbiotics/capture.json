@@ -1,0 +1,87 @@
+{
+  "topic": "synbiotics",
+  "sourceUrl": "https://chatgpt.com/c/6ac1848f-5f90-83eb-929f-f40b7a2da134",
+  "method": "Visible research content captured in Chrome through a temporary loopback-only form",
+  "files": [
+    {
+      "path": "substances/synbiotics.md",
+      "bytes": 54028,
+      "sha256": "a6ed3291e87540508e0152ed445ceb87a4ba113a1015d56faed45a9f988600dc"
+    },
+    {
+      "path": "outcomes/neonatal-sepsis-or-death.md",
+      "bytes": 584,
+      "sha256": "b563d6f666a18644ee0dd4f98e25e16290000542f6b8ef0bbb94cce703a75358"
+    },
+    {
+      "path": "outcomes/probiotic-strain-stool-persistence.md",
+      "bytes": 751,
+      "sha256": "f8c910e8f07a00a8e417dc6626468a4ab5b78576abd60a9cd4e99397f1852ad9"
+    },
+    {
+      "path": "outcomes/body-fat-mass.md",
+      "bytes": 487,
+      "sha256": "736b72c20467b64add1f3ce9eecfce2a1c59fb931e1473b33a4be8a58ba154d7"
+    },
+    {
+      "path": "outcomes/postoperative-infection.md",
+      "bytes": 629,
+      "sha256": "baeaa52912d0f67849b8ceb6f4427444ccadbfaec712a84e412f9b960a1da075"
+    },
+    {
+      "path": "outcomes/hospital-length-of-stay.md",
+      "bytes": 615,
+      "sha256": "67faa5c7d1226ad168e99c1c23992b7677708e30e363f040b5a99fc8ebf57284"
+    },
+    {
+      "path": "outcomes/pediatric-ibs-symptom-recovery.md",
+      "bytes": 595,
+      "sha256": "6b033259a0886034ba3397d92401fb1ae55649fce49ad6fed5d25ac052b65e91"
+    },
+    {
+      "path": "outcomes/h-pylori-eradication.md",
+      "bytes": 527,
+      "sha256": "291fdc0865ab49781bb9adec5b8ec14bba396b2a66b427e7425791a01de0763b"
+    },
+    {
+      "path": "concepts/mechanism/selective-microbial-substrate-utilization.md",
+      "bytes": 773,
+      "sha256": "087a9b2246d9b6e2da453a81f94ab2184b835fe9f6d8871d0327d0f780cb23a2"
+    },
+    {
+      "path": "relationships/synbiotics-selective-substrate-utilization.md",
+      "bytes": 819,
+      "sha256": "f5e549f9571d65db50920e95e9b79a5bd668c85a54b382047ba0843b25cbcfd6"
+    },
+    {
+      "path": "relationships/synbiotics-neonatal-sepsis-or-death.md",
+      "bytes": 812,
+      "sha256": "7ce32c5349844f65dfb38434a307578cf1c3e79700204b50b99129ce64f2e402"
+    },
+    {
+      "path": "relationships/synbiotics-probiotic-strain-stool-persistence.md",
+      "bytes": 984,
+      "sha256": "8f7d607cda4d6ab4066bb17937c8b01bd60dca9822ecf300855ae87c9fb7b178"
+    },
+    {
+      "path": "relationships/synbiotics-body-fat-mass.md",
+      "bytes": 759,
+      "sha256": "6954e3d4a95fb01922ab899c2199ffde6c192b9987f13f4fe93c5107357738f8"
+    },
+    {
+      "path": "relationships/synbiotics-postoperative-infection.md",
+      "bytes": 970,
+      "sha256": "372f0168aacd5c67fa28b1a9a0b93ef258ff21ecc7065470f73fccdb01408b0a"
+    },
+    {
+      "path": "relationships/synbiotics-pediatric-ibs-symptom-recovery.md",
+      "bytes": 764,
+      "sha256": "10d530e42218e9c235fbe7f94fc268dcbb8201b807f2186b4e3eab1a845db0c1"
+    },
+    {
+      "path": "relationships/synbiotics-h-pylori-eradication.md",
+      "bytes": 749,
+      "sha256": "6f0edf91ec2abfbda8569b4c8be5046306092495342f9e09b3c9dd536046403b"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { ObservationExplorer } from "@/components/observation-explorer";
+import { SourceDisclosures } from "@/components/source-disclosures";
 import { EffectDetails } from "@/components/effect-details";
 import { EvidenceButton } from "@/components/evidence";
 import { evidenceKey } from "@/lib/research";
@@ -299,7 +300,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
                         <CardContent className="flex flex-col gap-3">
                           <p>{reference.insight}</p>
                           <p><strong>Limitation</strong> {reference.limitation}</p>
-                          <p><strong>Funding / disclosures</strong> {reference.funding || "Not assessed"}</p>
+                          <SourceDisclosures reference={reference} />
                           <Link className="inline-flex items-center gap-1 text-sm underline underline-offset-4" href={`/substances/${substance.slug}#reference-${reference.id}`}>Source in {substance.name} <ArrowUpRight aria-hidden="true" size={13} /></Link>
                         </CardContent>
                       </Card>

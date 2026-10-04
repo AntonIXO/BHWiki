@@ -1,0 +1,1029 @@
+{
+  "method": "Integration of separate, one-topic Chrome Deep Research acquisitions",
+  "topics": [
+    {
+      "topic": "alpha-gpc",
+      "sourceUrl": "https://chatgpt.com/c/6ac1a28e-7d74-83ed-8983-736ca0f99369",
+      "files": [
+        "substances/alpha-gpc.md",
+        "outcomes/incident-stroke.md",
+        "relationships/alpha-gpc-choline-acetylcholine.md"
+      ]
+    },
+    {
+      "topic": "astaxanthin",
+      "sourceUrl": "https://chatgpt.com/c/6ac18135-b844-83eb-8d65-7f68e9cde257",
+      "files": [
+        "substances/astaxanthin.md",
+        "outcomes/skin-hydration.md",
+        "outcomes/skin-elasticity.md",
+        "outcomes/wrinkle-depth.md",
+        "outcomes/skin-photoprotection.md",
+        "outcomes/digital-eye-strain.md",
+        "outcomes/visual-fatigue.md",
+        "outcomes/cognitive-performance.md",
+        "outcomes/creatine-kinase.md",
+        "outcomes/lactate-dehydrogenase.md",
+        "outcomes/fasting-glucose.md",
+        "outcomes/hba1c.md",
+        "outcomes/ldl-cholesterol.md",
+        "outcomes/hdl-cholesterol.md",
+        "outcomes/total-cholesterol.md",
+        "concepts/mechanism/astaxanthin-oral-absorption.md",
+        "relationships/astaxanthin-oral-absorption-relationship.md"
+      ]
+    },
+    {
+      "topic": "bromelain",
+      "sourceUrl": "https://chatgpt.com/c/6ac18764-2054-83eb-ad45-a4c49dfe3c38",
+      "files": [
+        "substances/bromelain.md",
+        "outcomes/postoperative-pain.md",
+        "outcomes/postoperative-facial-swelling.md",
+        "outcomes/trismus.md",
+        "outcomes/ulcerative-colitis-disease-activity.md",
+        "outcomes/ulcerative-colitis-quality-of-life.md",
+        "outcomes/sinusitis-symptom-response.md",
+        "outcomes/burn-eschar-removal.md",
+        "concepts/mechanism/cysteine-protease-activity.md",
+        "concepts/mechanism/immune-inflammatory-modulation.md",
+        "concepts/mechanism/hemostasis-modulation.md",
+        "concepts/mechanism/enzymatic-eschar-debridement.md",
+        "relationships/bromelain-cysteine-protease-activity.md",
+        "relationships/bromelain-immune-inflammatory-modulation.md",
+        "relationships/bromelain-hemostasis-modulation.md"
+      ]
+    },
+    {
+      "topic": "choline",
+      "sourceUrl": "https://chatgpt.com/c/6ac1a286-89f4-83eb-82f8-08d782ab52ee",
+      "files": [
+        "substances/choline.md",
+        "outcomes/choline-deficiency-organ-dysfunction.md",
+        "outcomes/hepatic-steatosis.md",
+        "outcomes/infant-information-processing-speed.md",
+        "outcomes/plasma-tmao.md",
+        "outcomes/platelet-reactivity.md",
+        "concepts/mechanism/phosphatidylcholine-biosynthesis.md",
+        "concepts/mechanism/betaine-one-carbon-metabolism.md",
+        "concepts/mechanism/gut-microbial-tmao-generation.md",
+        "concepts/enzyme/chka.md",
+        "concepts/enzyme/pcyt1a.md",
+        "concepts/enzyme/pemt.md",
+        "concepts/enzyme/chdh.md",
+        "concepts/enzyme/bhmt.md",
+        "concepts/enzyme/chat.md",
+        "concepts/enzyme/fmo3.md",
+        "relationships/choline-metabolic-network.md"
+      ]
+    },
+    {
+      "topic": "choline-bitartrate",
+      "sourceUrl": "https://chatgpt.com/c/6ac1a287-f100-83ed-baa4-5553ed7cafe4",
+      "files": [
+        "substances/choline-bitartrate.md",
+        "outcomes/visuomotor-accuracy.md",
+        "outcomes/reaction-time.md",
+        "outcomes/plasma-choline.md",
+        "outcomes/trimethylamine-n-oxide.md",
+        "outcomes/platelet-reactivity.md",
+        "outcomes/insulin-sensitivity.md"
+      ]
+    },
+    {
+      "topic": "choline-chloride",
+      "sourceUrl": "https://chatgpt.com/c/6ac1a289-9ca8-83ed-97fb-58807716316d",
+      "files": [
+        "substances/choline-chloride.md",
+        "outcomes/plasma-choline-concentration.md",
+        "outcomes/plasma-tmao-concentration.md",
+        "outcomes/hepatic-steatosis.md",
+        "relationships/choline-chloride-choline-supply.md"
+      ]
+    },
+    {
+      "topic": "citicoline",
+      "sourceUrl": "https://chatgpt.com/c/6ac1a28b-eb8c-83ed-9c93-28143ecc07ce",
+      "files": [
+        "substances/citicoline.md",
+        "outcomes/traumatic-brain-injury-recovery.md",
+        "relationships/citicoline-choline-precursor.md"
+      ]
+    },
+    {
+      "topic": "gaba",
+      "sourceUrl": "https://chatgpt.com/c/6ac1a294-a3a0-83eb-9b89-6a70eb3ee436",
+      "files": [
+        "substances/gaba.md",
+        "concepts/target/gaba-a-receptor.md",
+        "outcomes/stress-response.md",
+        "concepts/neurotransmitter/glutamate.md",
+        "concepts/enzyme/glutamate-decarboxylase.md",
+        "concepts/target/gaba-transporter-1.md",
+        "concepts/enzyme/gaba-transaminase.md",
+        "concepts/enzyme/succinate-semialdehyde-dehydrogenase.md",
+        "concepts/exposure/oral-systemic-exposure.md",
+        "relationships/gaba-biosynthesis.md",
+        "relationships/gaba-receptor-interactions.md",
+        "relationships/gaba-transport-metabolism.md"
+      ]
+    },
+    {
+      "topic": "lactoferrin",
+      "sourceUrl": "https://chatgpt.com/c/6ac182b5-bfac-83ed-8f9b-66f4ddda5050",
+      "files": [
+        "substances/lactoferrin.md",
+        "outcomes/hemoglobin-concentration.md",
+        "outcomes/serum-ferritin.md",
+        "outcomes/gastrointestinal-adverse-events.md",
+        "outcomes/late-onset-infection.md",
+        "outcomes/diarrhea-incidence.md",
+        "outcomes/diarrhea-duration.md",
+        "outcomes/antibiotic-associated-diarrhea.md",
+        "outcomes/helicobacter-pylori-eradication.md",
+        "outcomes/anti-lactoferrin-antibody-response.md",
+        "concepts/mechanism/gastric-processing-of-lactoferrin.md",
+        "concepts/mechanism/hepcidin-linked-iron-homeostasis.md",
+        "relationships/lactoferrin-iron-status-human.md",
+        "relationships/lactoferrin-late-onset-infection-human.md",
+        "relationships/lactoferrin-gastric-processing-human.md"
+      ]
+    },
+    {
+      "topic": "liver",
+      "sourceUrl": "https://chatgpt.com/c/6ac18766-e78c-83eb-804f-89d1ce1d686c",
+      "files": [
+        "substances/liver.md",
+        "outcomes/red-blood-cell-count.md",
+        "outcomes/reticulocyte-percentage.md",
+        "outcomes/hemoglobin-concentration.md",
+        "outcomes/serum-iron.md"
+      ]
+    },
+    {
+      "topic": "magnesium",
+      "sourceUrl": "https://chatgpt.com/c/6ac18763-7c5c-83ed-866a-bccee73875f3",
+      "files": [
+        "substances/magnesium.md",
+        "outcomes/blood-pressure.md",
+        "outcomes/insulin-sensitivity.md",
+        "outcomes/glycemic-control.md",
+        "outcomes/cognitive-performance.md",
+        "concepts/mechanism/magnesium-homeostasis.md",
+        "concepts/mechanism/mg-atp-complex.md",
+        "concepts/target/trpm6.md",
+        "concepts/target/trpm7.md",
+        "concepts/target/slc41a1.md",
+        "concepts/target/cnnm2.md",
+        "relationships/magnesium-epithelial-homeostasis.md",
+        "relationships/magnesium-cellular-mgatp.md"
+      ]
+    },
+    {
+      "topic": "noopept",
+      "sourceUrl": "https://chatgpt.com/c/6ac1a292-7058-83ed-ba67-40d30e2ed2bb",
+      "files": [
+        "substances/noopept.md",
+        "concepts/target/ampa-receptor.md"
+      ]
+    },
+    {
+      "topic": "phenylpiracetam",
+      "sourceUrl": "https://chatgpt.com/c/6ac1a290-7608-83eb-a1ea-4cc71c7af0ca",
+      "files": [
+        "substances/phenylpiracetam.md"
+      ]
+    },
+    {
+      "topic": "phosphatidylcholine",
+      "sourceUrl": "https://chatgpt.com/c/6ac1a289-d5bc-83ed-988d-934efb08eb28",
+      "files": [
+        "substances/phosphatidylcholine.md",
+        "concepts/chemical-family/glycerophospholipid.md",
+        "outcomes/hepatic-steatosis.md",
+        "outcomes/liver-fibrosis.md",
+        "outcomes/ulcerative-colitis-disease-activity.md",
+        "outcomes/ulcerative-colitis-remission.md",
+        "outcomes/plasma-tmao.md",
+        "relationships/phosphatidylcholine-tmao-pathway.md"
+      ]
+    },
+    {
+      "topic": "saccharomyces-boulardii",
+      "sourceUrl": "https://chatgpt.com/c/6ac18763-9060-83ed-a1a5-1c3c4db1fa2f",
+      "files": [
+        "substances/saccharomyces-boulardii.md",
+        "outcomes/antibiotic-associated-diarrhea-incidence.md",
+        "outcomes/clostridioides-difficile-recurrence.md",
+        "outcomes/travelers-diarrhea-incidence.md",
+        "outcomes/gut-microbiota-composition.md",
+        "concepts/mechanism/clostridioides-difficile-toxin-proteolysis.md",
+        "concepts/class/antifungal-agents.md",
+        "relationships/saccharomyces-boulardii-aad.md",
+        "relationships/saccharomyces-boulardii-cdi-recurrence.md",
+        "relationships/saccharomyces-boulardii-travelers-diarrhea.md",
+        "relationships/saccharomyces-boulardii-toxin-proteolysis.md"
+      ]
+    },
+    {
+      "topic": "synbiotics",
+      "sourceUrl": "https://chatgpt.com/c/6ac1848f-5f90-83eb-929f-f40b7a2da134",
+      "files": [
+        "substances/synbiotics.md",
+        "outcomes/neonatal-sepsis-or-death.md",
+        "outcomes/probiotic-strain-stool-persistence.md",
+        "outcomes/body-fat-mass.md",
+        "outcomes/postoperative-infection.md",
+        "outcomes/hospital-length-of-stay.md",
+        "outcomes/pediatric-ibs-symptom-recovery.md",
+        "outcomes/h-pylori-eradication.md",
+        "concepts/mechanism/selective-microbial-substrate-utilization.md",
+        "relationships/synbiotics-selective-substrate-utilization.md",
+        "relationships/synbiotics-neonatal-sepsis-or-death.md",
+        "relationships/synbiotics-probiotic-strain-stool-persistence.md",
+        "relationships/synbiotics-body-fat-mass.md",
+        "relationships/synbiotics-postoperative-infection.md",
+        "relationships/synbiotics-pediatric-ibs-symptom-recovery.md",
+        "relationships/synbiotics-h-pylori-eradication.md"
+      ]
+    },
+    {
+      "topic": "urolithin-a",
+      "sourceUrl": "https://chatgpt.com/c/6ac18765-3324-83ed-ba6d-6882c503ce31",
+      "files": [
+        "substances/urolithin-a.md",
+        "outcomes/muscle-endurance.md",
+        "outcomes/muscle-strength.md",
+        "outcomes/walking-capacity.md",
+        "outcomes/skeletal-muscle-atp-production.md",
+        "outcomes/mitochondrial-biomarkers.md",
+        "outcomes/exercise-recovery.md",
+        "outcomes/immune-function.md",
+        "concepts/mechanism/mitophagy.md",
+        "relationships/urolithin-a-mitophagy.md"
+      ]
+    },
+    {
+      "topic": "vitamin-c",
+      "sourceUrl": "https://chatgpt.com/c/6ac18768-85a8-83ed-8db3-ff17d98d850e",
+      "files": [
+        "substances/vitamin-c.md",
+        "outcomes/scurvy-clinical-manifestations.md",
+        "outcomes/common-cold-incidence.md",
+        "outcomes/common-cold-duration.md",
+        "outcomes/major-cardiovascular-events.md",
+        "outcomes/total-cancer-incidence.md",
+        "outcomes/sepsis-organ-dysfunction.md",
+        "outcomes/death-or-persistent-organ-dysfunction.md",
+        "outcomes/progression-free-survival.md",
+        "outcomes/overall-survival.md",
+        "concepts/mechanism/collagen-hydroxylation.md",
+        "concepts/mechanism/ascorbate-redox.md",
+        "concepts/mechanism/nonheme-iron-absorption.md",
+        "concepts/mechanism/ascorbate-transport-homeostasis.md",
+        "concepts/mechanism/pharmacologic-ascorbate-prooxidant.md",
+        "relationships/vitamin-c-collagen-hydroxylation.md",
+        "relationships/vitamin-c-nonheme-iron-absorption.md",
+        "relationships/vitamin-c-transport-homeostasis.md",
+        "relationships/vitamin-c-pharmacologic-prooxidant.md"
+      ]
+    },
+    {
+      "topic": "zeaxanthin",
+      "sourceUrl": "https://chatgpt.com/c/6ac182e0-8d98-83ed-a629-135ea37ce7c2",
+      "files": [
+        "substances/zeaxanthin.md",
+        "outcomes/macular-pigment-optical-density.md",
+        "outcomes/visual-acuity.md",
+        "outcomes/contrast-sensitivity.md",
+        "outcomes/photostress-recovery-time.md",
+        "outcomes/glare-disability.md",
+        "outcomes/color-contrast-discrimination.md",
+        "outcomes/foveal-shape-discrimination.md",
+        "outcomes/central-visual-field-scotoma.md",
+        "outcomes/macular-pigment-spatial-distribution.md",
+        "outcomes/retinal-structure-oct.md",
+        "outcomes/multifocal-erg-response-density.md",
+        "concepts/mechanism/macular-pigment-accumulation.md",
+        "concepts/mechanism/short-wavelength-light-filtering.md",
+        "relationships/zeaxanthin-macular-pigment-accumulation.md"
+      ]
+    }
+  ],
+  "articles": 295,
+  "concepts": 205,
+  "relationships": 62,
+  "changes": [
+    "Retained prior curated clinical records and source IDs: astaxanthin",
+    "Reused canonical outcome definition: skin-hydration",
+    "Reused canonical outcome definition: skin-elasticity",
+    "Reused canonical outcome definition: wrinkle-depth",
+    "Reused canonical outcome definition: skin-photoprotection",
+    "Reused canonical outcome definition: digital-eye-strain",
+    "Reused canonical outcome definition: visual-fatigue",
+    "Reused canonical outcome definition: cognitive-performance",
+    "Reused canonical outcome definition: creatine-kinase",
+    "Reused canonical outcome definition: lactate-dehydrogenase",
+    "Reused canonical outcome definition: fasting-glucose",
+    "Reused canonical outcome definition: hba1c",
+    "Reused canonical outcome definition: ldl-cholesterol",
+    "Reused canonical outcome definition: hdl-cholesterol",
+    "Reused canonical outcome definition: total-cholesterol",
+    "Reused canonical mechanism definition: astaxanthin-oral-absorption",
+    "Reused canonical outcome definition: platelet-reactivity",
+    "Reused canonical outcome definition: hepatic-steatosis",
+    "Retained prior curated clinical records and source IDs: citicoline",
+    "Reused canonical outcome definition: hemoglobin-concentration",
+    "Reused canonical outcome definition: insulin-sensitivity",
+    "Reused canonical outcome definition: cognitive-performance",
+    "Reconciled captured-link bibliography with the actual publication: Comparative studies of Noopept and piracetam in the treatment of patients with mild cognitive disorders in organic brain diseases of vascular and traumatic origin",
+    "Reconciled captured-link bibliography with the actual publication: Noopept stimulates the expression of NGF and BDNF in rat hippocampus",
+    "Reconciled captured-link bibliography with the actual publication: Molecular Mechanism Underlying the Action of Substituted Pro-Gly Dipeptide Noopept",
+    "Reconciled captured-link bibliography with the actual publication: Investigation into Stereoselective Pharmacological Activity of Phenotropil",
+    "Reused canonical outcome definition: hepatic-steatosis",
+    "Reused canonical outcome definition: ulcerative-colitis-disease-activity",
+    "Reused canonical outcome definition: plasma-tmao"
+  ],
+  "files": [
+    {
+      "path": "substances/piracetam.md",
+      "sha256": "c04b2c74cb566e864d230cd0fbb140d3f92737ae65fde3745d3debabe49cf63d"
+    },
+    {
+      "path": "substances/alpha-gpc.md",
+      "sha256": "66d9248bd87414df01819113cedfa3103747a6cfd8da8e6b349a23efde10cf8e"
+    },
+    {
+      "path": "substances/bromelain.md",
+      "sha256": "02b184a8dc788a3c1e1b0169feaa1d602fb12af3941908afca4414b25b130f18"
+    },
+    {
+      "path": "substances/choline.md",
+      "sha256": "b6cfc6cb7bb1111bd6b71bac42af4591a601b1e22fc3cddd8f439b2749586fa6"
+    },
+    {
+      "path": "substances/choline-bitartrate.md",
+      "sha256": "337ffc9d254c5dfb8879bb0d96766ddc12bebf5fbcbad546791687d36ff531eb"
+    },
+    {
+      "path": "substances/choline-chloride.md",
+      "sha256": "df85af83c68d7dd9f15098d1cd139c7981a781654e342edd3f4778434b59e575"
+    },
+    {
+      "path": "substances/citicoline.md",
+      "sha256": "f2d7f74ea7fb2e2b0deba91c0a36271018d56f754e17723ca9d459cf8a678262"
+    },
+    {
+      "path": "substances/gaba.md",
+      "sha256": "e6fbb95c8d2faba3a3befb72d7c320ff61faf4a92022b877b1508ee437e1c0ab"
+    },
+    {
+      "path": "substances/lactoferrin.md",
+      "sha256": "b92c34000ce9166eacbc95cac56d86ef264fb79943536d316c7df9d8640515b5"
+    },
+    {
+      "path": "substances/liver.md",
+      "sha256": "f403fac96013081bdb754e4723e99f4f65e65432a23f9333d648886603855477"
+    },
+    {
+      "path": "substances/magnesium.md",
+      "sha256": "b2aebdcc0d980cdf60ab6d3a699452093734bf4a5bf47d7c411761dade9604b0"
+    },
+    {
+      "path": "substances/noopept.md",
+      "sha256": "cae958c6dd499f280dc0a3960a1267950056cd7a210e0b2672570e9b237c9813"
+    },
+    {
+      "path": "substances/phenylpiracetam.md",
+      "sha256": "8b27733761c984b055fe3e56d494f78a60a81c662e4014e80a10d37209cd905c"
+    },
+    {
+      "path": "substances/phosphatidylcholine.md",
+      "sha256": "e086f5fc9c718019e7da8e1c810461e9d349ac2846f2a13870daf34ebdd262b5"
+    },
+    {
+      "path": "substances/saccharomyces-boulardii.md",
+      "sha256": "ba88e51682411474170342d054d913776c5857e37477862cb769fd2c1ffe8163"
+    },
+    {
+      "path": "substances/synbiotics.md",
+      "sha256": "7c1f39bcee6e4c2d9cf1edd589cf2f2e5283fbde5a29fce474acef67317774c0"
+    },
+    {
+      "path": "substances/urolithin-a.md",
+      "sha256": "235803726e3ef73f7e953291abac80a6455934d28e4cf0ba28845496305ef9d2"
+    },
+    {
+      "path": "substances/vitamin-c.md",
+      "sha256": "9ae9a58074e62524c1a53a007cd5812879af19794cc3e0ac34f84a8696f6495d"
+    },
+    {
+      "path": "substances/zeaxanthin.md",
+      "sha256": "fab87194ed49785be7c81d29fa1574037c40f3a261ccbff5ee2613553774a96c"
+    },
+    {
+      "path": "outcomes/incident-stroke.md",
+      "sha256": "136dccb6f00a0fec951870eaa7c734bae8deea3cae49694225e58e2efe555b5f"
+    },
+    {
+      "path": "outcomes/postoperative-pain.md",
+      "sha256": "cd2893a3e93310c0854f6f1734fdfa8946ee176ba10e1236633494b6c5ac37e0"
+    },
+    {
+      "path": "outcomes/postoperative-facial-swelling.md",
+      "sha256": "201b02b6260b4c9e20c62136a07a89dbdb49337dde2ce0eb7637bab984a8a0d9"
+    },
+    {
+      "path": "outcomes/trismus.md",
+      "sha256": "38a75466b25df8f7e370b08aecbf7a116df705cc057191ecc8300900f0017a15"
+    },
+    {
+      "path": "outcomes/ulcerative-colitis-disease-activity.md",
+      "sha256": "68aa873915d41a9ff3a41cd0f424063d597a34cbe9c62ca360e9d1d9a49c55de"
+    },
+    {
+      "path": "outcomes/ulcerative-colitis-quality-of-life.md",
+      "sha256": "f81b2129695deb595cb394ac5680f1d51e4302c6173974725c138a84d757bc53"
+    },
+    {
+      "path": "outcomes/sinusitis-symptom-response.md",
+      "sha256": "93a6447702cd880c7247d57315397f447f3bb8c0493383c5e0376c72c000a4be"
+    },
+    {
+      "path": "outcomes/burn-eschar-removal.md",
+      "sha256": "0a182cd86d340ca226163fc857adfd6e8e7202660818bfff3c32e34310f40ded"
+    },
+    {
+      "path": "concepts/mechanism/cysteine-protease-activity.md",
+      "sha256": "dc0eb63e5cfc76487d031f40f0955176545dd32043e5fd6d05740aab3c8fb468"
+    },
+    {
+      "path": "concepts/mechanism/immune-inflammatory-modulation.md",
+      "sha256": "b26eac0f866bb57adfdf9ab2a9f3d77acadfa013a0147afce4b31885759cbbfe"
+    },
+    {
+      "path": "concepts/mechanism/hemostasis-modulation.md",
+      "sha256": "7d59783cb6131cb0b8ee9263e9f6fd18a2851fb6d477264be087a9dce9e5b189"
+    },
+    {
+      "path": "concepts/mechanism/enzymatic-eschar-debridement.md",
+      "sha256": "847a199009a6366d3565f7dd14678f7a8225d7fbd0bf3b358bbc0eb2f55d0cec"
+    },
+    {
+      "path": "outcomes/choline-deficiency-organ-dysfunction.md",
+      "sha256": "1c61cb09df21b0e8b6bf7f78768f20315b4f0521027a3eee165acb766b2319c9"
+    },
+    {
+      "path": "outcomes/hepatic-steatosis.md",
+      "sha256": "4b735b81d25c540cf619bf20e8665e4f603883f3e307c16654e2e4a1922f86b2"
+    },
+    {
+      "path": "outcomes/infant-information-processing-speed.md",
+      "sha256": "fec873a77aa407a926325dd681319184ac8d7f9cdc95ce9f4478be64e2745159"
+    },
+    {
+      "path": "outcomes/plasma-tmao.md",
+      "sha256": "fe823f6bfb7e61040cb556d80bf4d30652ab5521a4e8ef7c5cbf87b1cafa60e8"
+    },
+    {
+      "path": "outcomes/platelet-reactivity.md",
+      "sha256": "4e5ce52106289e473f63fb243587735e17f733116597ff4da6d9a05f34202f78"
+    },
+    {
+      "path": "concepts/mechanism/phosphatidylcholine-biosynthesis.md",
+      "sha256": "b0528de75388c4dd0822c76b25deb60b5eafb62c739d361d488bd1b72abc5c27"
+    },
+    {
+      "path": "concepts/mechanism/betaine-one-carbon-metabolism.md",
+      "sha256": "467fc0eaf3fbc01e529b6dc8c13a8b42ae9d9bf61a5eebbb69c415ad616134b6"
+    },
+    {
+      "path": "concepts/mechanism/gut-microbial-tmao-generation.md",
+      "sha256": "6883938ab41be4798df7033e88c9faca714323d39ad48cb30d4ccc0ad5b293ae"
+    },
+    {
+      "path": "concepts/enzyme/chka.md",
+      "sha256": "01e25320a7879ab7ef42ba9e4d858b40a1babee27cb14361db105d9f05b67a12"
+    },
+    {
+      "path": "concepts/enzyme/pcyt1a.md",
+      "sha256": "8b71710147695de651fbacd1eb36228f70d1d80a2d8a06cb33256084397ac7a8"
+    },
+    {
+      "path": "concepts/enzyme/pemt.md",
+      "sha256": "390096f5e2831b2122e74d669ddc3ffe0c16f3ca21b28cfce7ab26c5c0c5aed7"
+    },
+    {
+      "path": "concepts/enzyme/chdh.md",
+      "sha256": "56ca1d25075d3c58fe579aae1ecec93708c13b3a382a4283a01d2433416905ed"
+    },
+    {
+      "path": "concepts/enzyme/bhmt.md",
+      "sha256": "2b061a182c00b5180f5e0b34370fbb4b247b702d9a1dd796b2b44c9137648667"
+    },
+    {
+      "path": "concepts/enzyme/chat.md",
+      "sha256": "82fedf3d1d1f0550710863f4dc965996cb3ebe8b43a7db977fb595baee918251"
+    },
+    {
+      "path": "concepts/enzyme/fmo3.md",
+      "sha256": "02f1868215dfd7f01065b58d116970759230509f604309231964e4a4a126aad8"
+    },
+    {
+      "path": "outcomes/visuomotor-accuracy.md",
+      "sha256": "19fd8e536a5d526fedb6797bb3f2c7730a8af09718803b88e7e5341746da67b7"
+    },
+    {
+      "path": "outcomes/reaction-time.md",
+      "sha256": "78710f8b273f6288a1637829ba8da1ee6451f8e0ed9a8ce416c4c2d97c3f4b45"
+    },
+    {
+      "path": "outcomes/plasma-choline.md",
+      "sha256": "707bba312f06c6ee8d78d6b852de6bade29e87fc19b9d25867da94da22df7286"
+    },
+    {
+      "path": "outcomes/trimethylamine-n-oxide.md",
+      "sha256": "cc92ee02a12e1d0ee7fde9cce27a3795e40190d7b41e4b8cb2d2de4b6b4c7f59"
+    },
+    {
+      "path": "outcomes/insulin-sensitivity.md",
+      "sha256": "9e5dfd3b74a5cd828bef387535cf7e4230e2020927b768fffcca16226cde18e5"
+    },
+    {
+      "path": "outcomes/plasma-choline-concentration.md",
+      "sha256": "d119d42920ff373d3210a03159e4d314b4aac77e2d1f04a3f68ef8a717321115"
+    },
+    {
+      "path": "outcomes/plasma-tmao-concentration.md",
+      "sha256": "8513a49d6a16c3c6c6aee3374773a228e9a16d5d970891fdc925369f0fdcfcf3"
+    },
+    {
+      "path": "outcomes/traumatic-brain-injury-recovery.md",
+      "sha256": "a786e79ed7f33a6cbbf88713217f6d6bc24cef4a80ee59094b79af2125c36757"
+    },
+    {
+      "path": "concepts/target/gaba-a-receptor.md",
+      "sha256": "e4c7a817ec28f644e1cffe6d4a1109efffd7e5ebd0f7eeba054730f23198d0fb"
+    },
+    {
+      "path": "outcomes/stress-response.md",
+      "sha256": "ddcdb9af477258bf91e9f18e78a85fd1fb4e5424eccb634927644101e2d63712"
+    },
+    {
+      "path": "concepts/neurotransmitter/glutamate.md",
+      "sha256": "db3cbc340a847cb69da078f4cdda8f22ddb4c2cc36b271f287ad665a33e9b7c3"
+    },
+    {
+      "path": "concepts/enzyme/glutamate-decarboxylase.md",
+      "sha256": "54c7549609fba962a3b07216c4dd3edc2d3f96ceecea1a016b3a6964c76d46fd"
+    },
+    {
+      "path": "concepts/target/gaba-transporter-1.md",
+      "sha256": "8044d2c93a203fe25120e53add1df22f2591c2b6b749d715fcca5707a6e6e3c6"
+    },
+    {
+      "path": "concepts/enzyme/gaba-transaminase.md",
+      "sha256": "ac5638114c09437688852d204b09b5a06fa0710cdfb24b60c7213334efbf540c"
+    },
+    {
+      "path": "concepts/enzyme/succinate-semialdehyde-dehydrogenase.md",
+      "sha256": "ff01dd1eb0946285064be9be43098acd9e0f270b201f702a42ee0bcc5cbb3932"
+    },
+    {
+      "path": "concepts/exposure/oral-systemic-exposure.md",
+      "sha256": "3060d3ea37e731fcbcbdb10c7a7bbc775780234bbbddd3c444b0ceec534784c7"
+    },
+    {
+      "path": "outcomes/hemoglobin-concentration.md",
+      "sha256": "6884c7ee4167ea689f84a4196bf50f7f3d39f02701e5777257a8ebdc95a21cd5"
+    },
+    {
+      "path": "outcomes/serum-ferritin.md",
+      "sha256": "f8f8c9e7cdaa85c961216b8223345c3d3363b4b6ab49ae15b8ac1178095ad879"
+    },
+    {
+      "path": "outcomes/gastrointestinal-adverse-events.md",
+      "sha256": "af1045f24cf7c50b86c1cc3475e69b2b50f9ec3a840306485a8530e934fe08b9"
+    },
+    {
+      "path": "outcomes/late-onset-infection.md",
+      "sha256": "fffc8c251093ed420e1675ff27dbb4c6c1f59c311d11c0aeb8cafb02ea1ea4c5"
+    },
+    {
+      "path": "outcomes/diarrhea-incidence.md",
+      "sha256": "9d96d21300b2396a2620e48e8cd4007847b6c40b93837f081ddbe51bf986e739"
+    },
+    {
+      "path": "outcomes/diarrhea-duration.md",
+      "sha256": "f0f0f052432db6a644414907e724d4f9b1c7c70b9e38c85008b890080f365023"
+    },
+    {
+      "path": "outcomes/antibiotic-associated-diarrhea.md",
+      "sha256": "b706628072849f119e3d3e0e742024219c7082a092fb279dc481fd224f56110c"
+    },
+    {
+      "path": "outcomes/helicobacter-pylori-eradication.md",
+      "sha256": "b192fdfa69aeaecb6cb3f042f5e10dae1ec9741ba4cc2080558144ffe9a6f3f3"
+    },
+    {
+      "path": "outcomes/anti-lactoferrin-antibody-response.md",
+      "sha256": "4b6d6132b2f1780980faa560a12781e9f86b942d4ae936ae3a9ea3d82801a936"
+    },
+    {
+      "path": "concepts/mechanism/gastric-processing-of-lactoferrin.md",
+      "sha256": "3d6fcc77aee5fa3f3443275691f60dc97bb943bd121fbecbb93031f4ca2eaa04"
+    },
+    {
+      "path": "concepts/mechanism/hepcidin-linked-iron-homeostasis.md",
+      "sha256": "8488e3858e1c28ed9b5bd167a8df7efa8aa98fe13bc11ecbcb195b596d83f8f1"
+    },
+    {
+      "path": "outcomes/red-blood-cell-count.md",
+      "sha256": "d188a4c57180449c34e655564ab1ab80a2d6b78bd229411bd08cc7d14c0c1da3"
+    },
+    {
+      "path": "outcomes/reticulocyte-percentage.md",
+      "sha256": "2f95e6afec2caf5cb718835ba17e0156876d7abe8280cd759cf34c912cf69be7"
+    },
+    {
+      "path": "outcomes/serum-iron.md",
+      "sha256": "39aa3d28ab86fc522db0766a4bd84a78bdfe9745c7225259c6c22a9a48b586f8"
+    },
+    {
+      "path": "outcomes/blood-pressure.md",
+      "sha256": "af993e6015026155b58a89cefecd5b14ca1ed2660c2da717d7d767c42070f618"
+    },
+    {
+      "path": "outcomes/glycemic-control.md",
+      "sha256": "6974bd84df78938e77ba6d38901adf2ec3d6803c64acd6afcbc4997fd1d9e31b"
+    },
+    {
+      "path": "concepts/mechanism/magnesium-homeostasis.md",
+      "sha256": "e55721bf1b5366fc2d111e8c4d07a24796b8daa4448d8ceac50b065634016b29"
+    },
+    {
+      "path": "concepts/mechanism/mg-atp-complex.md",
+      "sha256": "f6d566a13a337c5059e9de95fc66efe715db4ed6b762490b66a677d10912f0e2"
+    },
+    {
+      "path": "concepts/target/trpm6.md",
+      "sha256": "141bace6e4a6745261d420fc85a40bcf1055807ab47601516e1eefb6d52220c0"
+    },
+    {
+      "path": "concepts/target/trpm7.md",
+      "sha256": "ec8c368833c03ee2b63fc1cd0d01d77996d27eb097b9437423b75943d2bf5f5c"
+    },
+    {
+      "path": "concepts/target/slc41a1.md",
+      "sha256": "c513eaf899a079c0adb44ca832767e770d048f0f8a71279135aa6e12223f8ba0"
+    },
+    {
+      "path": "concepts/target/cnnm2.md",
+      "sha256": "80d631c764cc2f3efdcc1e3eca1f9b555bbddef73a7e30a1e9a65a9fcc37c3d0"
+    },
+    {
+      "path": "concepts/target/ampa-receptor.md",
+      "sha256": "6d83f6e18ce596b1154359ce5d09fabe009f68c3719f27b8410037d935000155"
+    },
+    {
+      "path": "concepts/chemical-family/glycerophospholipid.md",
+      "sha256": "b9414890cdc6ac473f69a4af197201ad1f6839e715f631e0b2d82c502875cf0d"
+    },
+    {
+      "path": "outcomes/liver-fibrosis.md",
+      "sha256": "bda94f27caf189116cf9bfd7e5b0947f4d33b4f380b72ad71189a1c2201f1b05"
+    },
+    {
+      "path": "outcomes/ulcerative-colitis-remission.md",
+      "sha256": "50c76e518c48daeaa62c94e9c8271e876e4d9ef9539aad70c3f6136c59005534"
+    },
+    {
+      "path": "outcomes/antibiotic-associated-diarrhea-incidence.md",
+      "sha256": "a9546ce8dc1dd3d9522685b685b3b236a46b8811cde7e88295781f5edfa8c9d0"
+    },
+    {
+      "path": "outcomes/clostridioides-difficile-recurrence.md",
+      "sha256": "d04878760faee7253fc4dbffc452240d35a7e4d5c339d1bc7ea7eba08857e2d5"
+    },
+    {
+      "path": "outcomes/travelers-diarrhea-incidence.md",
+      "sha256": "fd220e1a8c2e4a915ebc41a076568908fc89b428f24d35a4c926b51232317816"
+    },
+    {
+      "path": "outcomes/gut-microbiota-composition.md",
+      "sha256": "3d4e9a43d6adc74a0aa349be5a7f98e9b458aa684e270883e83d27af57f14ee8"
+    },
+    {
+      "path": "concepts/mechanism/clostridioides-difficile-toxin-proteolysis.md",
+      "sha256": "1a5985d51fd3728d54a8c4d4b34252b60f4bfd3d9ec6a7920ba7d4f2c6f2a2cb"
+    },
+    {
+      "path": "concepts/class/antifungal-agents.md",
+      "sha256": "954a2a4880241a97a45de061d13530182193f88fb393b8d333cfe7130b599f30"
+    },
+    {
+      "path": "outcomes/neonatal-sepsis-or-death.md",
+      "sha256": "695263fbff20c53be8408c87c67ca59ce60c8ae9899e17ec9b269033f931169b"
+    },
+    {
+      "path": "outcomes/probiotic-strain-stool-persistence.md",
+      "sha256": "e0d83bef4ac517f5a0e8b633a52731f4673be3d70fe68736c58186b5c1f1794e"
+    },
+    {
+      "path": "outcomes/body-fat-mass.md",
+      "sha256": "d95f2c09b83fae7b065dd08d7a09e1c5de4da119c0f49c1c2ac8bd99471cd292"
+    },
+    {
+      "path": "outcomes/postoperative-infection.md",
+      "sha256": "c040a0c9ed32f53a75ad8c79a8fd60008343a95704e26b8cb2504b88aae847f8"
+    },
+    {
+      "path": "outcomes/hospital-length-of-stay.md",
+      "sha256": "d3e325d683845130f99ec0cde5329b56a25e73c215716d6104c16dead112ea7c"
+    },
+    {
+      "path": "outcomes/pediatric-ibs-symptom-recovery.md",
+      "sha256": "0599b731b3757817582d780fb1a0c79ca8bf16cc52b8a357fa007f981b34cb13"
+    },
+    {
+      "path": "outcomes/h-pylori-eradication.md",
+      "sha256": "b94f4d6fb35fb82d939783730109e9b9ec3a8b42e664aed2181166dc091088c9"
+    },
+    {
+      "path": "concepts/mechanism/selective-microbial-substrate-utilization.md",
+      "sha256": "bc8fcb51d99d753b446f96a3ee2bc215ef60d020f4001b8dda1bbb7144bbb020"
+    },
+    {
+      "path": "outcomes/muscle-endurance.md",
+      "sha256": "7143e408f81afa84a41c6c46073067da57bcba41de068799f5d7fc48adf464eb"
+    },
+    {
+      "path": "outcomes/muscle-strength.md",
+      "sha256": "33f0171eba5e3e812fa2c43ce59d0688b84aa53858e8501a34487d760a173206"
+    },
+    {
+      "path": "outcomes/walking-capacity.md",
+      "sha256": "129dfb4d6a05f4b0f1aeaecf7519a0c83f7f16428799560ba2b18c10aa247ec9"
+    },
+    {
+      "path": "outcomes/skeletal-muscle-atp-production.md",
+      "sha256": "97d519d73fd10e46b1ac086e5748e4793942d9146bf1f8d4e7cace93d258c879"
+    },
+    {
+      "path": "outcomes/mitochondrial-biomarkers.md",
+      "sha256": "21cef7e83d1089d2e39a1fd98fefc0b8029da12fd0fbb1ba086fa3a1774db447"
+    },
+    {
+      "path": "outcomes/exercise-recovery.md",
+      "sha256": "ad803f33497f769c8df367b019cbabaaf9379b2c608f9aac8228374c52e0ce63"
+    },
+    {
+      "path": "outcomes/immune-function.md",
+      "sha256": "999c24cd5f5ebc7d1e27c76b4c85ff83dc6305ec996ec2d24bccd3c0e856a581"
+    },
+    {
+      "path": "concepts/mechanism/mitophagy.md",
+      "sha256": "0ce70be9bfee4fb43f6120c49bd3dad333a133c845b8a3e7853d55e08542183e"
+    },
+    {
+      "path": "outcomes/scurvy-clinical-manifestations.md",
+      "sha256": "083ae6c06aaad82fa6eed533f34b2f94db5e615b41563ced83cb4cfec0d2e768"
+    },
+    {
+      "path": "outcomes/common-cold-incidence.md",
+      "sha256": "139aad507e0c809f7cd4ad34dac368a0aae5f642fec3aff76a68da877188b55b"
+    },
+    {
+      "path": "outcomes/common-cold-duration.md",
+      "sha256": "5803f5fc46a0a8e01ad157cc081eab620a3541c79cad123340f340b34c2169cf"
+    },
+    {
+      "path": "outcomes/major-cardiovascular-events.md",
+      "sha256": "9cbd653e92d5a1fd8a303ca7072ccf20e024bb57bf16d179dad1d9542d5e50f8"
+    },
+    {
+      "path": "outcomes/total-cancer-incidence.md",
+      "sha256": "1ff21bd0e0deb0ef0d6d32be15d4529cfc798479d8dcd933d11ac0b28c642c3d"
+    },
+    {
+      "path": "outcomes/sepsis-organ-dysfunction.md",
+      "sha256": "cc3318939ebcde89fad8a3933e5b1efbd59cf0b0a6aa5951062ecef7b4788074"
+    },
+    {
+      "path": "outcomes/death-or-persistent-organ-dysfunction.md",
+      "sha256": "aa972d65b3a82e844b2fceee71d0c54860d541327564c6dbbdb89542bde409ef"
+    },
+    {
+      "path": "outcomes/progression-free-survival.md",
+      "sha256": "5ef433d33e5ad19bb36a4e17d0b7e3977a018427f3e48f231fb227cbf32b3563"
+    },
+    {
+      "path": "outcomes/overall-survival.md",
+      "sha256": "bee97b22b5a1c1c5babc3bc0e1d3d39d725a251f390ac614d5e2be5f03ef8804"
+    },
+    {
+      "path": "concepts/mechanism/collagen-hydroxylation.md",
+      "sha256": "5a38cce7f8747046a470a6d0d83a671819bab470ceef286012ce5a6b7e018f5f"
+    },
+    {
+      "path": "concepts/mechanism/ascorbate-redox.md",
+      "sha256": "c8542da801262421c3cb8ec5dada8cfe14c9443d1063c5dabad111afda351837"
+    },
+    {
+      "path": "concepts/mechanism/nonheme-iron-absorption.md",
+      "sha256": "22b40c562edca8749b8ab8716ddea666fbe2be5952cc309100d10920dd89de64"
+    },
+    {
+      "path": "concepts/mechanism/ascorbate-transport-homeostasis.md",
+      "sha256": "0f1edb5577a0fa7b4d5cd05dc68c66e8765d08d0fcc080ffa77d4acd7d2388bc"
+    },
+    {
+      "path": "concepts/mechanism/pharmacologic-ascorbate-prooxidant.md",
+      "sha256": "f457727ca9877846b327b35a6ed8f8c8877ceaa53e0f8e982cdcde59ceeb6f47"
+    },
+    {
+      "path": "outcomes/macular-pigment-optical-density.md",
+      "sha256": "eb5dd67b9dae990523e00ff64b08183673777e47019d100692d2d6a573e94f0c"
+    },
+    {
+      "path": "outcomes/visual-acuity.md",
+      "sha256": "8de6af62ba5ee4ecfba9dcd0a03f087d1f7bfa704f5f06f070a8c2112f3e3708"
+    },
+    {
+      "path": "outcomes/contrast-sensitivity.md",
+      "sha256": "11233d38eb3eb7224a4e269ede94e5fc3eb681d3701905700036bd6c79663eda"
+    },
+    {
+      "path": "outcomes/photostress-recovery-time.md",
+      "sha256": "5d499d6ce37c5d84a98b2b1053c2e0f769de132f206b7d5ac79cb2324aef868d"
+    },
+    {
+      "path": "outcomes/glare-disability.md",
+      "sha256": "0ca0af4972e5b30f2402da247da6b41dcf8c2fe2fcc7ad2f0cbc5578cd4ac63a"
+    },
+    {
+      "path": "outcomes/color-contrast-discrimination.md",
+      "sha256": "57316e6baad419ac7f58e92a56e66b2f9d776aa8363426c5aadbe817747d88bb"
+    },
+    {
+      "path": "outcomes/foveal-shape-discrimination.md",
+      "sha256": "d4f793fd86583bb4ccbd517457d58313c5e08bfdede06fae0cb3da5101e2d970"
+    },
+    {
+      "path": "outcomes/central-visual-field-scotoma.md",
+      "sha256": "de98eed6e8a159f103099920fce8995a70c019964912d95c0c7f547516546e7e"
+    },
+    {
+      "path": "outcomes/macular-pigment-spatial-distribution.md",
+      "sha256": "e38a4988a4a22b615b191efb1a7e588a24b8a660573276ce5c13560a52331461"
+    },
+    {
+      "path": "outcomes/retinal-structure-oct.md",
+      "sha256": "b073b7d9a3bbe48d82d39c9d52ee45dc0ff87d009fb8a3bc623cc2c05054bf65"
+    },
+    {
+      "path": "outcomes/multifocal-erg-response-density.md",
+      "sha256": "9bc9dce079aa37496801146daafffd0d3f681c2e321e10003291773923e75a55"
+    },
+    {
+      "path": "concepts/mechanism/macular-pigment-accumulation.md",
+      "sha256": "4bc983f33c211ecc84ed65e1a1aa5e4106bea4a1791864dfa074a62bff45e938"
+    },
+    {
+      "path": "concepts/mechanism/short-wavelength-light-filtering.md",
+      "sha256": "0168d3a31323f8a2b91f54d42d9479efcb34e0a069d5111705b7f7fe5217ea26"
+    },
+    {
+      "path": "relationships/alpha-gpc-choline-acetylcholine.md",
+      "sha256": "875889143c05e3ea782780dc8f0056941d279bf6a2f16d68edf21658241ea42d"
+    },
+    {
+      "path": "relationships/bromelain-cysteine-protease-activity.md",
+      "sha256": "58ebdeaeaf803c8590eb440ea1bdb91b51d33535ad59dfd61796703a00d8b7d2"
+    },
+    {
+      "path": "relationships/bromelain-immune-inflammatory-modulation.md",
+      "sha256": "eca852d7534246de6e7fc26a89262b9c2449cd09f231e6e1b55307a1658e2c8b"
+    },
+    {
+      "path": "relationships/bromelain-hemostasis-modulation.md",
+      "sha256": "3c9cd022367ecdf8f77a7a87c5219122a028694f501e6e83b88a789968d78195"
+    },
+    {
+      "path": "relationships/choline-metabolic-network.md",
+      "sha256": "499023654b752477849d72aa598aace42e07671475b8914d53c708c91e8053b4"
+    },
+    {
+      "path": "relationships/choline-chloride-choline-supply.md",
+      "sha256": "7e516d2d2eb101b03792775f5ff7c53c6752b645ce889146272eb53453eb22ab"
+    },
+    {
+      "path": "relationships/citicoline-choline-precursor.md",
+      "sha256": "91773ad8cd165dac1c04aa623e536f53741df3e076dc7c8ef1542abbfb9eeab6"
+    },
+    {
+      "path": "relationships/gaba-biosynthesis.md",
+      "sha256": "a2028bb3a04b5835ad27fc0abb099cf33e68f1c590955e9727d3dc119c4a3c0e"
+    },
+    {
+      "path": "relationships/gaba-receptor-interactions.md",
+      "sha256": "1eaec9925ad31da4e5bb847c788485eec10635f62465e5fcc666ebfa58404ea8"
+    },
+    {
+      "path": "relationships/gaba-transport-metabolism.md",
+      "sha256": "05a1d384224c76b4ede5a956cec0d46761ff14e7e07afa5b5302dbef001494e9"
+    },
+    {
+      "path": "relationships/lactoferrin-iron-status-human.md",
+      "sha256": "27533f79a22d000efdea720984b683da994ea6e4117a076ed9b9ef37f581f999"
+    },
+    {
+      "path": "relationships/lactoferrin-late-onset-infection-human.md",
+      "sha256": "62cbce5c283444eaa46295ce8ca688da3a623e8da7745358a86b842cc4ca955d"
+    },
+    {
+      "path": "relationships/lactoferrin-gastric-processing-human.md",
+      "sha256": "47331acaf89ee0e6c516dce66cec51971c01616fbd72b12cd6299c176d960b92"
+    },
+    {
+      "path": "relationships/magnesium-epithelial-homeostasis.md",
+      "sha256": "7fbd9f1e46051754f10e7290038e1384a0cc1e991fee86b3dec2797ada8275c3"
+    },
+    {
+      "path": "relationships/magnesium-cellular-mgatp.md",
+      "sha256": "2c821afb14e5d98cce3cd67e2964b854f508856ba124fce186080f1b9fd1130f"
+    },
+    {
+      "path": "relationships/phosphatidylcholine-tmao-pathway.md",
+      "sha256": "53b6a7e438b2f297a268d9217b0319450a9c14c8517a4da95a8475240a58cc2c"
+    },
+    {
+      "path": "relationships/saccharomyces-boulardii-aad.md",
+      "sha256": "bc772bacc42b56446c4b27c42d7f6a66b1e4e654fc24c351f5064a4a39a502bf"
+    },
+    {
+      "path": "relationships/saccharomyces-boulardii-cdi-recurrence.md",
+      "sha256": "a35cb23d9de14f3218a94ff7dccf62d1187f70b0a527da339f8bf15d51219fdd"
+    },
+    {
+      "path": "relationships/saccharomyces-boulardii-travelers-diarrhea.md",
+      "sha256": "5954f564a12a74c5e1005cbd911edc3ad18c2c6aeb1f5b008e06fd808d0eed53"
+    },
+    {
+      "path": "relationships/saccharomyces-boulardii-toxin-proteolysis.md",
+      "sha256": "2924f53fcda905703e5d88f5c7bf3e2e60bfe3d92795f2cbe6bec485ba05fcc3"
+    },
+    {
+      "path": "relationships/synbiotics-selective-substrate-utilization.md",
+      "sha256": "d7c78ed579fa3b339ba8ef0be17026dbe960c1a81d86e706bdd41970c20333a0"
+    },
+    {
+      "path": "relationships/synbiotics-neonatal-sepsis-or-death.md",
+      "sha256": "18ec8b441d90f7497e1f5cecc5bf762f3443f4b1f4174994fa199bad2f5ef0ab"
+    },
+    {
+      "path": "relationships/synbiotics-probiotic-strain-stool-persistence.md",
+      "sha256": "e20f36130b166449a0616443f66f64176b0f4f43fa6e57d72440e6d80089904a"
+    },
+    {
+      "path": "relationships/synbiotics-body-fat-mass.md",
+      "sha256": "7a8b35fcaa6fbad7cdb8dd48a043993780f20f95675d26690da24eb3e1fefa88"
+    },
+    {
+      "path": "relationships/synbiotics-postoperative-infection.md",
+      "sha256": "62447ed86f2130359b6ed8c1673eb5ee65b49522f4f58566725f1471aaadc1e6"
+    },
+    {
+      "path": "relationships/synbiotics-pediatric-ibs-symptom-recovery.md",
+      "sha256": "6920103e8d70a0d5cb044e10c83daca2f40184b16c4d00fdd41af0ab681b79f6"
+    },
+    {
+      "path": "relationships/synbiotics-h-pylori-eradication.md",
+      "sha256": "7941d4f5b456590fea14792a3661bdc04d61d96da0e9692fa213b04ceb316e16"
+    },
+    {
+      "path": "relationships/urolithin-a-mitophagy.md",
+      "sha256": "354f03a948325ccc2e8005e4996e2d317e72bece277a3672ef738ceb8501860b"
+    },
+    {
+      "path": "relationships/vitamin-c-collagen-hydroxylation.md",
+      "sha256": "f2c9c1088316f75fdefc5a73707c5715e011fd5c584ea022bdf5c2d53f213e9e"
+    },
+    {
+      "path": "relationships/vitamin-c-nonheme-iron-absorption.md",
+      "sha256": "49925869e7b444ef4bac6b07ccfc9f7df8177f3320dad152df6995ff7a0c7436"
+    },
+    {
+      "path": "relationships/vitamin-c-transport-homeostasis.md",
+      "sha256": "f431884f35ea45972ac792722bb9a368d50d6821c364801bf14970d81e0e0448"
+    },
+    {
+      "path": "relationships/vitamin-c-pharmacologic-prooxidant.md",
+      "sha256": "7bcdaa6aa2839853a6646071ebac09b83524e908fd969ae29a0f97a5ed0317dd"
+    },
+    {
+      "path": "relationships/zeaxanthin-macular-pigment-accumulation.md",
+      "sha256": "7d38ed2c32dde5a5eae3ad35759b9c0bcc8633e7fe7db4b1a2ea05eb10a3dbcb"
+    }
+  ]
+}

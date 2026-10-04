@@ -1,0 +1,12 @@
+{
+  "topic": "astaxanthin",
+  "sourceUrl": "https://chatgpt.com/c/6ac18135-b844-83eb-8d65-7f68e9cde257",
+  "changes": [
+    "Condensed overview prose; study findings, references and structured records retained. Embedded prose diagrams remain in the original acquisition report.",
+    "ref-coral-2004: sponsorshipStatus changed to not-assessed because the text explicitly says the declaration was not inspected; index categories do not establish funding independence.",
+    "ref-choi-2011: sponsorshipStatus changed to not-assessed because the text explicitly says the declaration was not inspected; index categories do not establish funding independence.",
+    "ref-nct06593535: linked the inspected registry sponsor listing as its disclosure source.",
+    "ref-efsa-2020: assessed labels without a declaration source downgraded to not-assessed; disclosure text retained.",
+    "ref-eu-2023: assessed labels without a declaration source downgraded to not-assessed; disclosure text retained."
+  ]
+}

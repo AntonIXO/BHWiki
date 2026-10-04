@@ -18,32 +18,32 @@ const curatedHashes = [
   "fa998bf864134be9fd7d9d1ddc859f1da99a40123f6580c13b7d74b5518b5e3f",
   "b5f9d77395bcccfec7595383c83ed4dd4b1181eb2b6d182bc65014584565c731",
   "804044a8ef78689b374091ff6d627bb4205a1713905c07f15bce3dc6c67c542b",
-  "b57ba850726f327d86e530813bb5f80644bb415ac715a9ff4b8e4c8367170aec",
+  "8a43599577fface579b443f3fc50ca0814533d167a6628be248d0295004bbb2c",
 ];
 
 test("markdown files preserve the curated records", () => {
   const curated = curatedSlugs.map((slug) => substances.find((substance) => substance.slug === slug));
   assert.deepEqual(curated.map((substance) => substance?.slug), curatedSlugs);
   assert.deepEqual(curated.map((substance) => substance && contentHash(substance)), curatedHashes);
-  assert.equal(substances.length, 281);
-  assert.equal(tags.length, 66);
-  assert.equal(substances.filter((substance) => substance.subtitle === "Identity record.").length, 164);
+  assert.equal(substances.length, 296);
+  assert.equal(tags.length, 213);
+  assert.equal(substances.filter((substance) => substance.subtitle === "Identity record.").length, 161);
   const kinds: Record<TagKind, number> = { class: 0, "chemical-family": 0, mechanism: 0, target: 0, neurotransmitter: 0, enzyme: 0, effect: 0, outcome: 0, exposure: 0, legal: 0 };
   for (const tag of tags) kinds[tag.kind] += 1;
-  assert.deepEqual(kinds, { class: 17, "chemical-family": 6, mechanism: 5, target: 9, neurotransmitter: 5, enzyme: 2, effect: 8, outcome: 9, exposure: 4, legal: 1 });
-  assert.equal(hyperedges.length, 27);
+  assert.deepEqual(kinds, { class: 18, "chemical-family": 7, mechanism: 29, target: 19, neurotransmitter: 6, enzyme: 12, effect: 8, outcome: 108, exposure: 5, legal: 1 });
+  assert.equal(hyperedges.length, 63);
   const total = (count: (substance: Substance) => number) => curated.reduce((sum, substance) => sum + count(substance!), 0);
-  assert.equal(total((substance) => substance.references.length), 42);
+  assert.equal(total((substance) => substance.references.length), 55);
   assert.equal(total((substance) => substance.pkObservations.length), 12);
-  assert.equal(total((substance) => substance.doses.length), 10);
-  assert.equal(total((substance) => substance.mechanisms.length), 11);
-  assert.equal(total((substance) => substance.cautions.length), 21);
+  assert.equal(total((substance) => substance.doses.length), 19);
+  assert.equal(total((substance) => substance.mechanisms.length), 14);
+  assert.equal(total((substance) => substance.cautions.length), 29);
   assert.equal(total((substance) => substance.effects.length), 7);
-  assert.equal(total((substance) => substance.outcomes.length), 11);
-  assert.equal(total((substance) => substance.claims.length), 19);
+  assert.equal(total((substance) => substance.outcomes.length), 18);
+  assert.equal(total((substance) => substance.claims.length), 24);
   assert.equal(total((substance) => substance.modifiers.length), 9);
-  assert.equal(total((substance) => substance.legal.length), 1);
-  assert.equal(total((substance) => substance.interactions.length + substance.experienceLinks.length + (substance.kinetics.timeline?.length ?? 0)), 0);
+  assert.equal(total((substance) => substance.legal.length), 4);
+  assert.equal(total((substance) => substance.interactions.length + substance.experienceLinks.length + (substance.kinetics.timeline?.length ?? 0)), 2);
   const caffeine = curated[0];
   assert.equal(caffeine?.halfLife.sourceId, "temple2017");
   assert.deepEqual([caffeine?.halfLife.low, caffeine?.halfLife.high], [3, 7]);

@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-04",
+  "topicsImported": [
+    "phenibut",
+    "tadalafil",
+    "astaxanthin",
+    "zeaxanthin",
+    "lactoferrin",
+    "magnesium",
+    "synbiotics",
+    "saccharomyces-boulardii",
+    "bromelain",
+    "urolithin-a",
+    "liver",
+    "vitamin-c",
+    "choline",
+    "choline-bitartrate",
+    "choline-chloride",
+    "phosphatidylcholine",
+    "citicoline",
+    "alpha-gpc",
+    "phenylpiracetam",
+    "noopept",
+    "gaba"
+  ],
+  "topicsQueued": [
+    "tyrosine",
+    "atomoxetine",
+    "berberine",
+    "fasting",
+    "ketogenic-diet",
+    "exogenous-ketones",
+    "modafinil",
+    "armodafinil",
+    "quercetin",
+    "lutein",
+    "lutemax",
+    "pqq",
+    "spermidine",
+    "magnesium-citrate",
+    "magnesium-glycinate",
+    "magnesium-oxide",
+    "magnesium-malate",
+    "magnesium-l-threonate",
+    "magnesium-taurate",
+    "magnesium-chloride",
+    "magnesium-sulfate",
+    "huperzine-a",
+    "phosphatidylserine",
+    "resveratrol",
+    "melatonin",
+    "dihexa",
+    "psilocybin-microdosing",
+    "lsd-microdosing",
+    "amphetamine",
+    "lisdexamfetamine",
+    "mixed-amphetamine-salts",
+    "dextroamphetamine",
+    "bromantane",
+    "omega-3",
+    "vitamin-d",
+    "coenzyme-q10",
+    "glycine",
+    "taurine"
+  ],
+  "oneTopicPerDeepResearch": true,
+  "corpus": {
+    "articles": 296,
+    "concepts": 213,
+    "relationships": 63
+  },
+  "checks": {
+    "contentValidation": "passed",
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "unitTests": {
+      "passed": 63
+    },
+    "fullBrowserSuiteBeforeTadalafil": {
+      "passed": 32,
+      "skipped": 2
+    },
+    "researchBrowserSuiteAfterTadalafil": {
+      "passed": 12,
+      "skipped": 2
+    }
+  },
+  "browserCleanup": {
+    "closedTabs": 34,
+    "remainingUnusedTab": {
+      "title": "Research saved",
+      "url": "http://127.0.0.1:3088/capture",
+      "reason": "Chrome focus command timed out repeatedly; native Wayland desktop window control unavailable."
+    },
+    "unrelatedUserTabsPreserved": true
+  },
+  "renderedProof": {
+    "path": "data/research/acquired/phenibut/wiki-evidence.jpg",
+    "sha256": "c2735d81c5dd0d1bc98b327e650994dc98f057658456a647bd0e8d06f1281ef5"
+  },
+  "publicationScope": "Local bundled workspace only; no database publication or deployment."
+}

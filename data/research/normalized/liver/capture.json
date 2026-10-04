@@ -1,0 +1,37 @@
+{
+  "topic": "liver",
+  "sourceUrl": "https://chatgpt.com/c/6ac18766-e78c-83eb-804f-89d1ce1d686c",
+  "method": "Locally normalized from the captured Chrome research Markdown; raw acquisition remains unchanged",
+  "files": [
+    {
+      "path": "substances/liver.md",
+      "originalSha256": "3409a23d86818fe017d24313be8f5dbf85adde043c9f5bed57dd302c47930501",
+      "sha256": "7684e12aa9bad1d2182ff849059006146c0b4858b5150bb2705fc8aa455bb973",
+      "bytes": 36945
+    },
+    {
+      "path": "outcomes/red-blood-cell-count.md",
+      "originalSha256": "313bef947b3f184b2fcf4b573ae69f2eaef9c8bb2b57fd0dd138d206875dfd74",
+      "sha256": "313bef947b3f184b2fcf4b573ae69f2eaef9c8bb2b57fd0dd138d206875dfd74",
+      "bytes": 634
+    },
+    {
+      "path": "outcomes/reticulocyte-percentage.md",
+      "originalSha256": "898d3d7827b813b489e7038e0c843b7058ca5bc748e3f1e24a80a2457609f659",
+      "sha256": "898d3d7827b813b489e7038e0c843b7058ca5bc748e3f1e24a80a2457609f659",
+      "bytes": 617
+    },
+    {
+      "path": "outcomes/hemoglobin-concentration.md",
+      "originalSha256": "776fe02e20b0d3b2dcb5aacaf992a947b723b2dec80e6c78d122c0ff371e39a9",
+      "sha256": "776fe02e20b0d3b2dcb5aacaf992a947b723b2dec80e6c78d122c0ff371e39a9",
+      "bytes": 672
+    },
+    {
+      "path": "outcomes/serum-iron.md",
+      "originalSha256": "f2066540b8d24106f9847dfefd6549be0751763e5047d370d97a2d7c54faffb6",
+      "sha256": "f2066540b8d24106f9847dfefd6549be0751763e5047d370d97a2d7c54faffb6",
+      "bytes": 626
+    }
+  ]
+}

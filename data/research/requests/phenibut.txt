@@ -1,0 +1,662 @@
+ONE TOPIC ONLY: Phenibut (slug phenibut). Run Deep Research immediately, without asking clarification. Research a complete rich BHWiki article, then return an actual downloadable phenibut.md conforming exactly to the attached contract below. Research date 2026-10-04.
+
+Topic-specific questions: distinguish racemic phenibut, enantiomers, free amino acid and hydrochloride formulations; do not confuse F-phenibut, baclofen or gabapentin with phenibut. Search phenibut, beta-phenyl-GABA, aminophenylbutyric acid, Noofen, Anvifen, фенибут. Establish what controlled human evidence actually exists for anxiety, sleep, cognition and clinical uses, including regional/Russian literature. Separate historical uncontrolled reports from randomized efficacy evidence. Examine GABA-B and alpha2delta mechanisms and species/stereochemistry. Critically trace the origin of frequently repeated oral half-life/onset/duration estimates and qualify weak original evidence. Research intoxication, tolerance, dependence, withdrawal, poison-center data, interactions with alcohol/other depressants, renal handling, and regulatory context using official sources. Case reports of withdrawal are harm observations, not efficacy trials or incidence estimates. Populate sourced subjective effects where support exists, clearly distinguishing clinical adverse-event descriptions from community reports. Add essential measured-outcome concepts if the existing dictionary does not fit. Include numeric study-result enrichment only when valid for the actual endpoint; do not turn poison-center proportions into individual risk or means into effect differences. Inspect sponsorship/COI source by source. Never fabricate a safe-use regimen or withdrawal-treatment instructions. Preserve the existing identity and canonical source metadata below unless a verified correction is needed.
+
+
+
+
+=== docs/deep-research-workflow.md ===
+
+# One topic per Deep Research
+
+Every ChatGPT Deep Research run covers exactly one substance, supplement form, food, or dietary protocol. Never batch the queue into a single report. The research instruction consists of the topic brief, the Markdown contract, the actual TypeScript record types, enrichment rules, existing concept IDs, and the current article where one exists. The output is an English UTF-8 Markdown file named `<slug>.md`, directly importable as `content/substances/<slug>.md`.
+
+## Research questions
+
+Research identity (including salts, stereoisomers, formulations, products and aliases), proposed uses, human benefits and null findings, subjective experiences, mechanisms, study/label exposures, absorption/metabolism/elimination, duration, modifiers, adverse events, tolerance/dependence/withdrawal, contraindications, interactions, and scoped official regulatory context. For foods, organisms, combinations and dietary protocols, do not invent a single molecule or elimination half-life. Preserve actual formulation, strain, elemental versus salt mass, and protocol definition.
+
+Human clinical outcomes, laboratory tasks, physiological biomarkers, and subjective reports belong to different records. Do not equate a biomarker with clinical benefit, patient treatment with healthy-person enhancement, preclinical mechanisms with human efficacy, or full-dose psychedelic evidence with microdosing evidence. Preserve negative, conflicting and inconclusive findings. Search thoroughly; write compactly.
+
+## Sources and search
+
+Search PubMed/PMC, original journal full text, ClinicalTrials.gov and other recognized trial registries, systematic reviews and their original studies, official regulator documents, official medication labels, and authoritative nutrient monographs. Use source-specific queries combining the topic's generic, brand, chemical and regional names with randomized trial, meta-analysis, pharmacokinetics, adverse events, withdrawal, interaction and funding/conflict terms. Inspect full text and supplements whenever available. For Russian/Soviet compounds also search Russian names and original regional literature and explain inaccessible, untranslated or uncontrolled evidence.
+
+Use reviews to locate and contextualize primary studies; do not present multiple papers from one trial as independent replications. Record design, sample size, population, comparator, formulation/route, exposure duration, assessment time, instrument, effect estimate and confidence interval when actually reported. Keep a registration/publication study ID so multiple outcomes from the same study stay connected. State access limits. Community resources can document subjective experience or give research leads, never establish clinical efficacy or official legal status. Do not use vendor sales pages as evidence.
+
+Inspect the funding and conflict-of-interest declarations of each included publication. Record commercial sponsorship and disclosed employment, consulting, equity, patents and other declared interests without treating them as automatic proof that a result is false. Unknown disclosures are not proof of independence. Keep a direct link to the inspected declaration/full text.
+
+## Page structure and interactive outputs
+
+Preserve all existing article sections. The site consumes their structured fields, rather than extracting findings from prose:
+
+| Markdown section/field | Output in BHWiki |
+| --- | --- |
+| Identity, aliases, tags | Identity panel, molecule provenance, browse/search and concept navigation |
+| Summary, Description, Evidence note | Catalog summary, overview, evidence limitations |
+| Effects | Subjective-effect cards and explorer; reporting method and population stay explicit |
+| Outcomes | Measured-outcome cards, evidence explorer and comparison; one record per measured finding |
+| `study` and `result` | Inspectable study context and study-result plots; retain units, instrument, comparator and assessment time |
+| Doses | Source-specific research/label exposures with ingredient/form, route, quantity, frequency, duration and population |
+| Pharmacokinetics, halfLife | Analyte-specific elimination observations and educational curves |
+| Duration | Timing explorer; separate plasma timing from subjective-effect timing |
+| Modifiers | Source-supported kinetic modifiers linked to the actual observation |
+| Mechanisms, Claims, companion relationships | Source-linked mechanism and knowledge graphs with participants, roles and explicit directed steps |
+| Cautions, Interactions | Safety cards and pair/class interaction explorer with explicit context and uncertainty |
+| References | Primary study/label bibliography, evidence panels, funding and COI labels |
+| Experience links | Optional outside experience index, clearly distinct from clinical findings |
+| Legal | Jurisdiction/activity/form/date-specific official context |
+
+Do not leave Effects, Outcomes, Doses, Mechanisms, Cautions, Interactions or Claims empty merely to shorten the article when eligible evidence exists. Empty arrays are correct when the evidence is absent or unverified. Explain major gaps in Evidence note. Include meaningful quantitative results when verified; never manufacture values to activate a plot. Limit prose to the essential finding/context/limitation, avoid repeated background, and retain direct source links. There is no arbitrary maximum number of sources, but each included source must support a concrete record or essential qualification.
+
+## Markdown contract
+
+The article starts with YAML frontmatter bounded by `---`. No H1, no text before the frontmatter, no wrapping the entire article in a code fence, and no ChatGPT citation tokens in the downloaded file. Frontmatter contains all non-section fields, `x-shape` listing every record field exactly once, and the existing `x-order` if supplied. Do not put prose/list fields in frontmatter. Retain `editorialStatus: sourced-draft`; automated research is not independent editorial review. `reviewedAt` is the research date as a quoted YYYY-MM-DD string.
+
+Required headings in this order: `## Summary`, `## Description`, `## Evidence note`, `## Doses`, `## Pharmacokinetics`, optional `## Duration`, `## Modifiers`, `## Effects`, `## Outcomes`, `## Mechanisms`, `## Cautions`, `## Claims`, `## Interactions`, `## Experience links`, `## References`, `## Legal`.
+
+Summary, Description and Evidence note contain ordinary original Markdown prose without fenced blocks. Every other section contains exactly one fenced `yaml` block whose root is a list, including `[]` when empty. No extra prose outside that fence. `Duration` maps to `kinetics.timeline` and is not an additional `x-shape` field. Do not add unknown article headings.
+
+Use the attached TypeScript types as the exact key/enum contract and the existing article/template as the formatting example. Supply every required field on every record, using null only where allowed. Strings must be nonempty. IDs and slugs use lowercase letters, digits and hyphens. Each `sourceId`, supporting/conflicting source ID, and severity source points to a reference on this article. `halfLife.observationId` and modifier observation IDs point to existing `pkObservations` IDs. Preserve existing identities, source metadata and curated records unless an inspected source justifies a correction. Unresolved identity must have `pubchemCid: null` and exactly `Not established` for formula, molecularWeight and smiles. Do not infer structures for products, foods, organisms or protocols.
+
+### Observation, result and timing rules
+
+Effects refer to concept kind `effect`, Outcomes to kind `outcome`. `direction` is `Increased`, `Decreased` or `Variable`, not a benefit score. `evidence` is `Human research`, `Subjective reports` or `Limited research`. `reportType` is `measured-assessment` or `informal-account` when known. Distinguish anxiety ratings as a measured clinical outcome from reported feelings of anxiety as an effect. A trial with multiple endpoints gets multiple sourced observations with the same actual `study.id`; attach different/null/conflicting results accurately.
+
+Use `result` only for a reported mean, mean difference, standardized mean difference, odds ratio, risk ratio or hazard ratio. Keep `estimate`, `unit`, `instrument`, `comparator`, `assessmentTime`, and `population`; include `confidenceInterval: {lower, upper, level}` only for a verified confidence interval (e.g. level 95). Never reinterpret SD, SE, P values or ranges as CI. Omit unsupported numeric enrichment while retaining a clear free-text `magnitude` and source context.
+
+PK records identify measured analyte, route, formulation, population, statistic (`approximate`, `study-mean`, `reported-range`, `not-established`), value/bounds in hours, source and context. Unknown estimates have value/low/high null and modelEligible false. Never infer subjective duration from elimination. Nutrient balance, organism persistence and dietary protocols are not drug elimination curves.
+
+Duration entries preserve route, population, formulation, `measurement: subjective|plasma`, source, note, total and phases. Plasma entries must identify the analyte. Each phase declares `basis: elapsed-since-exposure|phase-duration` only when explicitly supported, with min/max and minutes/hours. Do not add independent phase ranges together or transform medians/ranges into means. Omit unsupported timing instead of inventing it.
+
+### Connections and companion concepts
+
+Prefer the supplied canonical concept IDs. New endpoints are allowed and desirable when the topic needs distinct visual, metabolic, gastrointestinal, cardiovascular or other measured outcomes absent from the current dictionary. Return a separate downloadable concept Markdown file for each essential new concept, never squeeze a finding into an unrelated existing concept. These remain supporting artifacts for the ONE researched topic, not additional substance research.
+
+Concept frontmatter: `id`, `label`, `kind` (effect, outcome, class, mechanism, target, neurotransmitter, enzyme, exposure, chemical-family or legal), `aliases: []`, `relatedIds: []`, `sourceUrls: [actual HTTPS sources]`, `x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]`; only body heading `## Definition` with a concise original sourced definition. File path is `effects/<id>.md`, `outcomes/<id>.md`, or `concepts/<kind>/<id>.md`. IDs cannot duplicate a substance slug. Do not return replacements for existing shared concepts.
+
+Claims keep assertion, relation, distinct participant entity IDs with explicit roles, context, sourceIds, conflictingSourceIds, `assessment: not-formally-assessed`, and limitation. Participant IDs are `substance:<slug>` or `tag:<id>` and must exist or be supplied as companion concepts. Interactions use exact existing `otherSlug` when that specific pair is actually supported, or `otherSlug: null` plus an existing class `targetClassId` for documented class-wide concern. Do not set both. Generic caution has null otherSlug and no targetClassId; it does not create a pair match. Optional severity is the source's actual characterization with its sourceId, never an invented traffic-light score.
+
+For a verified mechanism graph, supply a separate relationship Markdown with frontmatter `id`, `label`, `relation`, `members`, `memberRoles`, `sourceUrl`, optional `sourceUrls`, optional `directedSteps: [{from, to, label, sourceUrls}]`, and matching `x-shape` (including description); body only `## Description`. All member IDs and roles must resolve. Arrows require direct source support, not shared classification. A clinical endpoint must not be asserted as a consequence of a preclinical mechanism.
+
+### Funding and conflicts (new reference metadata)
+
+Every included reference retains id, exact title, authors/organization, integer publication year, direct HTTPS url, study/official-source kind, concise actual insight and specific limitation; verified PMID/DOI are quoted strings. Add:
+
+```yaml
+funding: "Named funders and role, or Not assessed."
+sponsorshipStatus: not-assessed
+conflictsOfInterest: "Declared interests, explicit no-conflict statement, or Not assessed."
+conflictOfInterestStatus: not-assessed
+# Include only after actually inspecting a declaration/source:
+disclosureUrl: https://actual-inspected-fulltext.example/publication
+```
+
+`sponsorshipStatus` enums: industry-funded, non-industry-funded, mixed-funding, not-reported, not-assessed. Industry and mixed statuses require explicit commercial funding/sponsorship (do not infer from author affiliation alone). Non-industry-funded requires inspected funding disclosure identifying noncommercial support. Not-reported requires an inspected source without a disclosure; inaccessible/uninspected is not-assessed.
+
+`conflictOfInterestStatus` enums: declared, none-declared, not-reported, not-assessed. Declared means actual disclosed interests; none-declared requires an inspected explicit no-conflict declaration. Not-reported and not-assessed follow the distinction above. Nonunknown statuses require supporting funding/conflicts text and an inspected `disclosureUrl`. Do not label a study independent solely because no disclosure is visible in an abstract.
+
+## Delivery and validation
+
+Create an actual downloadable `<slug>.md`, not just an essay or a truncated inline sample. Supply companion concept/relationship Markdown files only when necessary to populate supported rich features. A ZIP containing these Markdown files is acceptable alongside the main standalone MD. Validate YAML/IDs/source references before delivery. A short separate coverage note lists searched evidence categories, any missing full text, unresolved discrepancies and unpopulated sections with reasons. Never put that note inside the article.
+
+Downloaded research is acquisition material. BHWiki independently parses and validates the proposed corpus, checks canonical bibliography, inspects key sources/disclosures, and renders the affected article before accepting it. Machine validation does not establish scientific accuracy or editorial review.
+
+
+
+=== src/lib/types.ts ===
+
+import type { DirectedStep, EffectDetails, QuantitativeResult, StudyContext } from "./research-types";
+export type TagKind = "class" | "chemical-family" | "mechanism" | "target" | "neurotransmitter" | "enzyme" | "effect" | "outcome" | "exposure" | "legal";
+export type Tag = { id: string; label: string; kind: TagKind; description: string; aliases?: string[]; sourceUrls?: string[]; relatedIds?: string[]; details?: EffectDetails };
+export type Concept = Tag;
+export type Reference = { id: string; title: string; authors: string; year: number; url: string; kind: string; insight: string; limitation: string; pmid?: string; doi?: string; funding?: string };
+export type EditorialStatus = "sourced-draft" | "editorially-reviewed";
+export type Observation = {
+  id?: string; study?: StudyContext; result?: QuantitativeResult; conflictingSourceIds?: string[];
+  reportType?: "measured-assessment" | "informal-account";
+  conceptId: string; name: string; direction: "Increased" | "Decreased" | "Variable";
+  evidence: "Human research" | "Subjective reports" | "Limited research";
+  description: string; sourceId: string; population: string; exposure: string;
+  instrument: string | null; magnitude: string | null;
+};
+export type TimeUnit = "minutes" | "hours";
+export type TimeSpan = { min: number | null; max: number | null; unit: TimeUnit };
+export type DurationPhaseName = "onset" | "comeup" | "peak" | "offset" | "after-effects";
+export type DurationPhase = { name: DurationPhaseName; basis?: "elapsed-since-exposure" | "phase-duration" } & TimeSpan;
+export type DurationRoute = {
+  id?: string; formulation?: string; measurement?: "subjective" | "plasma"; analyte?: string;
+  route: string; population: string; sourceId: string; note: string;
+  total: TimeSpan | null; phases: DurationPhase[];
+};
+export type DoseContext = {
+  label: string; amount: string; quantity: number | null; quantityMax: number | null; unit: string;
+  ingredient: string; formulation: string; route: string; frequency: string; duration: string;
+  population: string; purpose: string; sourceCategory: "research" | "approved-label" | "reference" | "community";
+  note: string; sourceId: string;
+};
+export type PKObservation = {
+  id: string; analyte: string; route: string; formulation: string; population: string;
+  endpoint: "elimination-half-life"; statistic: "approximate" | "study-mean" | "reported-range" | "not-established";
+  value: number | null; low: number | null; high: number | null; unit: "hours";
+  context: string; sourceId: string; modelEligible: boolean;
+};
+export type Claim = {
+  id: string; assertion: string; relation: string; participants: { entityId: string; role: string }[];
+  context: string; sourceIds: string[]; conflictingSourceIds: string[];
+  assessment: "not-formally-assessed"; limitation: string;
+};
+export type Interaction = { id: string; name: string; otherSlug: string | null; summary: string; sourceId: string; targetClassId?: string; mechanism?: string; context?: string; severity?: { label: string; sourceId: string }; conflictingSourceIds?: string[] };
+export type ExperienceLink = { title: string; url: string; publisher: "PsychonautWiki" };
+export type Substance = {
+  slug: string; name: string; subtitle: string; summary: string; description: string;
+  aliases: string[]; formula: string; molecularWeight: string; pubchemCid: number | null; smiles: string;
+  category: string; tags: string[]; accent: string;
+  evidenceNote: string; reviewedAt: string; editorialStatus: EditorialStatus;
+  halfLife: { label: string; low: number | null; high: number | null; context: string; sourceId: string; observationId: string };
+  pkObservations: PKObservation[];
+  kinetics: { onset: string; peak: string; duration: string; bioavailability: string; metabolism: string; sourceId: string; timeline?: DurationRoute[] };
+  modifiers: { label: string; effect: string; detail: string; sourceId: string; observationId: string; factorType: "smoking" | "pregnancy" | "enzyme" | "genotype" | "other"; direction: "slower" | "faster" | "variable" }[];
+  doses: DoseContext[]; effects: Observation[]; outcomes: Observation[]; claims: Claim[];
+  mechanisms: { title: string; description: string; sourceId: string; conceptId?: string }[];
+  cautions: { title: string; description: string; sourceId: string }[];
+  interactions: Interaction[];
+  experienceLinks: ExperienceLink[];
+  references: Reference[];
+  legal: { jurisdiction: string; activity: string; status: string; sourceUrl: string; asOf: string }[];
+};
+export type CatalogSubstance = Pick<Substance, "slug" | "name" | "summary" | "aliases" | "formula" | "category" | "tags" | "editorialStatus" | "reviewedAt"> & { halfLifeLabel: string };
+export type Hyperedge = { id: string; label: string; relation: string; members: string[]; memberRoles: Record<string,string>; description: string; sourceUrl: string; sourceUrls?: string[]; directedSteps?: DirectedStep[] };
+export type KnowledgeGraphData = { substances: CatalogSubstance[]; tags: Tag[]; hyperedges: Hyperedge[]; truncated?: boolean };
+export type Revision = { revision: number; publishedAt: string; sourceCommit: string | null; contributors: string[]; reviewers: string[]; editorialStatus: EditorialStatus; summary: string; contentHash: string };
+export function toCatalogSubstance(s: Substance): CatalogSubstance { return {slug:s.slug,name:s.name,summary:s.summary,aliases:s.aliases,formula:s.formula,category:s.category,tags:s.tags,editorialStatus:s.editorialStatus,reviewedAt:s.reviewedAt,halfLifeLabel:s.halfLife.label}; }
+export function conceptPath(t: Pick<Tag,"id"|"kind">): string { return `/${t.kind === "effect" ? "effects" : t.kind === "outcome" ? "outcomes" : "concepts"}/${t.id}`; }
+
+
+
+=== src/lib/research-types.ts ===
+
+import type { EditorialStatus, Observation, Reference } from "./types";
+
+export type StudyContext = {
+  id: string;
+  design?: string;
+  sampleSize?: number;
+  populationLabels?: string[];
+  comparator?: string;
+  route?: string;
+  formulation?: string;
+  durationDays?: number;
+  assessmentTime?: string;
+  comparedSubstances?: string[];
+};
+export type QuantitativeResult = {
+  measure:
+    | "mean-difference"
+    | "standardized-mean-difference"
+    | "odds-ratio"
+    | "risk-ratio"
+    | "hazard-ratio"
+    | "mean";
+  estimate: number;
+  unit: string;
+  instrument: string;
+  comparator: string;
+  assessmentTime: string;
+  population: string;
+  confidenceInterval?: { lower: number; upper: number; level: number };
+};
+export type DirectedStep = {
+  from: string;
+  to: string;
+  label: string;
+  sourceUrls: string[];
+};
+export type EffectDetails = {
+  variations?: {
+    id: string;
+    title: string;
+    description: string;
+    sourceUrls: string[];
+  }[];
+  reports?: {
+    title: string;
+    url: string;
+    context: string;
+    substanceSlugs: string[];
+  }[];
+  media?: {
+    kind: "image" | "audio" | "video";
+    url: string;
+    title: string;
+    description: string;
+    attribution: string;
+    license: string;
+    sourceUrl: string;
+    captionsUrl?: string;
+  }[];
+};
+export type EvidenceKind =
+  | "effect"
+  | "outcome"
+  | "claim"
+  | "mechanism"
+  | "interaction"
+  | "pk"
+  | "duration"
+  | "source"
+  | "caution"
+  | "dose";
+export type EvidenceSource = Partial<Reference> &
+  Pick<Reference, "id" | "title" | "url">;
+export type EvidenceRecord = {
+  key: string;
+  title: string;
+  assertion: string;
+  kind: string;
+  articleSlug?: string;
+  articleName?: string;
+  editorialStatus?: EditorialStatus;
+  context: { label: string; value: string }[];
+  sources: EvidenceSource[];
+  conflictingSources: EvidenceSource[];
+  limitation: string;
+  result?: QuantitativeResult;
+  study?: StudyContext;
+};
+export type ObservationRow = {
+  key: string;
+  articleSlug: string;
+  articleName: string;
+  editorialStatus: EditorialStatus;
+  kind: "effect" | "outcome";
+  observation: Observation;
+  reference?: Reference;
+};
+export const observationFilterNames = [
+  "substance",
+  "population",
+  "design",
+  "duration",
+  "route",
+  "formulation",
+  "evidence",
+  "context",
+] as const;
+export type ObservationFilter = (typeof observationFilterNames)[number];
+export type ObservationFilters = Partial<Record<ObservationFilter, string>>;
+export type ObservationPage = {
+  rows: ObservationRow[];
+  total: number;
+  page: number;
+  pages: number;
+  facets: Record<ObservationFilter, { value: string; label: string }[]>;
+};
+
+
+
+=== content/templates/research-enrichment.md ===
+
+# Research enrichment
+
+Optional fields activate the research interfaces without changing article components. Keep original claims, exposures and citations in their existing sections. Do not add new substance headings. Values below illustrate the **format only**, not findings about any substance. Replace every example with source-verified data before publishing.
+
+## Observations: Effects and Outcomes YAML
+
+Add a stable, article-local `id` to a record when curating it. IDs use lowercase letters, digits and hyphens. Retain an ID when correcting the same record; use a new ID for a different observation. Legacy records use content-derived keys, so old links can become unavailable after a correction.
+
+```yaml
+id: attention-trial-followup
+# Existing conceptId, name, direction, evidence, description, sourceId,
+# population, exposure, instrument and magnitude remain required.
+study:
+  id: trial-registry-or-authored-study-id
+  design: Randomized placebo-controlled trial
+  sampleSize: 40
+  populationLabels: [Example study population]
+  comparator: Placebo
+  route: Oral
+  formulation: Example formulation
+  durationDays: 14
+  assessmentTime: Day 14
+  # Optional: only name substances actually compared in the study.
+  comparedSubstances: [caffeine, l-theanine]
+result:
+  measure: mean-difference
+  estimate: -2
+  unit: points
+  instrument: Example instrument and scale version
+  comparator: Placebo
+  assessmentTime: Day 14
+  population: Example study population
+  confidenceInterval:
+    lower: -3
+    upper: -1
+    level: 95
+conflictingSourceIds: [another-reference-on-this-article]
+# Effects only: state the actual reporting method when assessed.
+reportType: measured-assessment
+```
+
+Supported result measures: `mean-difference`, `standardized-mean-difference`, `odds-ratio`, `risk-ratio`, `hazard-ratio`, `mean`. Estimates may be negative for differences/means; ratios and their intervals must be positive. Confidence levels use percentages, e.g. `95`. Omit an unavailable interval entirely. Do not turn ranges, standard deviations, standard errors or P values into confidence intervals. Existing free-text `magnitude` is never parsed into a graph automatically.
+
+A study identifier names the actual study, not its publication: one trial can have several papers and several outcomes. Comparator, population, instrument, units and assessment time determine separate plot groups. No pooled effect is calculated. Do not create a universal evidence or benefit score.
+
+Missing structured population, design, duration, route or formulation appears under **Not assessed** in filters. Exposure-duration bands are `<1`, `1–7`, `8–30`, and `>30` days. Do not assign metadata from assumptions.
+
+## Interactions YAML
+
+Retain `id`, `name`, `summary`, `sourceId`, and `otherSlug`. For an exact substance, set `otherSlug` to its slug. For an explicitly documented class-wide concern, set `otherSlug: null` and `targetClassId` to an existing concept whose kind is `class`. Do not set both targets. A missing target remains a general caution and never produces a pair match.
+
+Optional enrichment:
+
+```yaml
+mechanism: Source-supported mechanism, with its uncertainty.
+context: Population, formulation, exposure and limitations.
+severity:
+  label: The severity characterization used by the source
+  sourceId: reference-on-this-article
+conflictingSourceIds: [conflicting-reference-on-this-article]
+```
+
+The UI does not derive severity from prose. Pair lookup checks both selected articles and preserves the originating article for each assertion.
+
+## Duration YAML
+
+The existing `## Duration` list supports optional `id`, `formulation`, `measurement` (`subjective` or `plasma`), and `analyte`. A plasma record must name its analyte. Keep route, population, sourceId, note, total and phases.
+
+Each phase may declare `basis: elapsed-since-exposure` or `basis: phase-duration`. Numeric `min` and `max` retain the source's units (`minutes` or `hours`). An absolute chart is shown only when every supplied phase has explicit elapsed semantics and both bounds. Otherwise ranges appear independently in text. Do not add phase durations, convert a range midpoint into a mean, or infer felt-effect timing from elimination.
+
+## Effect concept details
+
+Effect concepts may add an optional `details` map to frontmatter; also add `details` to `x-shape`. The original `## Definition` remains unchanged.
+
+```yaml
+details:
+  variations:
+    - id: variation-id
+      title: Variation title
+      description: Original, source-grounded description.
+      sourceUrls: [https://example.org/source]
+  reports:
+    - title: An individual account
+      url: https://example.org/report
+      context: Report setting and limitations.
+      substanceSlugs: [caffeine]
+  media:
+    - kind: image
+      url: https://example.org/illustration.png
+      title: Illustration title
+      description: Meaningful alternative description or transcript.
+      attribution: Author name
+      license: Actual reuse license
+      sourceUrl: https://example.org/original
+```
+
+Media kinds are `image`, `audio`, and `video`. Videos require an HTTPS `captionsUrl` pointing to captions (WebVTT). Keep audio transcripts in the description. All media is labelled illustrative and loaded only after the reader chooses to show it; audio/video never autoplay. Secure permission and record attribution before adding media. An external PsychonautWiki substance link does not establish an effect-specific report.
+
+## Relationship direction
+
+Relationship frontmatter can add `directedSteps` and list it in `x-shape`:
+
+```yaml
+directedSteps:
+  - from: substance:caffeine
+    to: tag:adenosine-receptor
+    label: Exact relationship supported by the cited source
+    sourceUrls: [https://example.org/source]
+```
+
+Both endpoints must already be distinct members of the relationship. Retain all other members and roles; contextual qualifiers must not disappear. The diagram adds arrows only for these explicit steps. It never creates a causal pathway from shared classification.
+
+## Verification
+
+Run `bun run content:validate` and `bun run test`. Source-check the assertions independently of those checks. The full artificial examples live under `tests/fixtures/`, outside the published collection.
+
+
+
+=== content/substances/phenibut.md ===
+
+---
+slug: phenibut
+name: Phenibut
+subtitle: Identity record.
+aliases: []
+formula: C10H13NO2
+molecularWeight: 179.22 g/mol
+pubchemCid: 14113
+smiles: C1=CC=C(C=C1)C(CC(=O)O)CN
+category: Depressant
+tags:
+  - depressant
+accent: "#c3b093"
+reviewedAt: 2026-10-03
+editorialStatus: sourced-draft
+halfLife:
+  label: Not established here
+  low: null
+  high: null
+  context: The citation identifies the compound rather than reporting a PubChem half-life finding.
+  sourceId: pubchem
+  observationId: phenibut-identity
+kinetics:
+  onset: Not assessed
+  peak: Not assessed
+  duration: Not assessed
+  bioavailability: Not assessed
+  metabolism: Not assessed
+  sourceId: pubchem
+x-shape:
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+x-order: 244
+---
+
+## Summary
+
+Phenibut is recorded here as C10H13NO2, PubChem CID 14113. It is indexed under Depressant. Effects, doses, pharmacokinetics, interactions, and legal status have not been assessed for this draft.
+
+## Description
+
+Phenibut is an identity record for PubChem CID 14113 (C10H13NO2). The structure and molecular weight come from that compound record. Salts, stereoisomers, preparations, and commercial products can differ. It is indexed under Depressant. Effects, doses, pharmacokinetics, interactions, and legal status have not been assessed for this draft.
+
+## Evidence note
+
+Only chemical identity is curated. Effects, doses, pharmacokinetics, interactions, and legal status have not been assessed.
+
+## Doses
+
+```yaml
+[]
+```
+
+## Pharmacokinetics
+
+```yaml
+- id: phenibut-identity
+  analyte: Phenibut
+  route: Not assessed
+  formulation: Parent compound record
+  population: Not assessed
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: The citation identifies the compound rather than reporting an elimination half-life.
+  sourceId: pubchem
+  modelEligible: false
+```
+
+## Modifiers
+
+```yaml
+[]
+```
+
+## Effects
+
+```yaml
+[]
+```
+
+## Outcomes
+
+```yaml
+[]
+```
+
+## Mechanisms
+
+```yaml
+[]
+```
+
+## Cautions
+
+```yaml
+[]
+```
+
+## Claims
+
+```yaml
+[]
+```
+
+## Interactions
+
+```yaml
+[]
+```
+
+## Experience links
+
+```yaml
+- title: Phenibut on PsychonautWiki
+  url: https://psychonautwiki.org/wiki/Phenibut
+  publisher: PsychonautWiki
+```
+
+## References
+
+```yaml
+- id: pubchem
+  title: "Phenibut: compound identity and structure"
+  authors: NCBI PubChem
+  year: 2026
+  url: https://pubchem.ncbi.nlm.nih.gov/compound/14113
+  kind: Chemical database
+  insight: Source of the displayed formula, molecular weight, structure, and connectivity SMILES.
+  limitation: The parent compound identity is distinct from salts, formulations, and commercial product quality.
+  funding: US National Library of Medicine.
+```
+
+## Legal
+
+```yaml
+[]
+```
+
+
+
+
+=== Existing canonical concepts ===
+alertness: effect — Subjective alertness
+anxiety: effect — Anxiety and jitteriness
+craving: effect — Craving
+daytime-sleepiness: effect — Daytime sleepiness
+dissociation: effect — Dissociation
+drowsiness: effect — Drowsiness
+perception: effect — Altered perception
+wakefulness: effect — Wakefulness
+attention: outcome — Attention
+depression-severity: outcome — Depression symptom severity
+episodic-memory: outcome — Episodic memory
+exercise: outcome — Exercise performance
+muscle-stores: outcome — Muscle creatine stores
+ptsd-severity: outcome — PTSD symptom severity
+sleep: outcome — Sleep
+stroke-recovery: outcome — Stroke recovery
+wake-maintenance: outcome — Measured wakefulness
+amino-acid: chemical-family — Amino acid derivative
+arylcyclohexylamine: chemical-family — Arylcyclohexylamine
+lysergamide: chemical-family — Lysergamide
+methylxanthine: chemical-family — Methylxanthine
+phenethylamine: chemical-family — Phenethylamine
+tryptamine: chemical-family — Tryptamine
+actoprotector: class — Actoprotector
+adamantane-research: class — Adamantane research
+antihistamine: class — Antihistamine
+benzodiazepine: class — Benzodiazepine
+biological-preparation: class — Biological preparation
+cannabinoid: class — Cannabinoid
+combination-research: class — Combination research
+deliriant: class — Deliriant
+depressant: class — Depressant
+dissociative: class — Dissociative
+experimental-compound: class — Experimental compound
+hormone: class — Hormone
+nootropic-research: class — Nootropic research
+opioid: class — Opioid
+peptide-research: class — Peptide research
+psychedelic: class — Psychedelic
+stimulant: class — Stimulant
+cyp1a2: enzyme — CYP1A2
+cyp2a6: enzyme — CYP2A6
+age-exposure: exposure — Age context
+behavioral-scheduling: exposure — Behavioral sleep–wake scheduling
+psychological-support: exposure — Clinical psychological support
+tobacco-smoke: exposure — Tobacco-smoke exposure
+us-schedule-i: legal — US federal Schedule I
+adenosine-antagonist: mechanism — Adenosine antagonist
+choline-precursor: mechanism — Choline precursor
+circadian: mechanism — Circadian signaling
+energy-buffer: mechanism — Energy buffering
+nicotinic-agonist: mechanism — Nicotinic agonist
+acetylcholine: neurotransmitter — Acetylcholine
+adenosine: neurotransmitter — Adenosine
+dopamine: neurotransmitter — Dopamine
+histamine: neurotransmitter — Histamine
+serotonin: neurotransmitter — Serotonin
+adenosine-receptor: target — Adenosine receptors
+dopamine-transporter: target — Dopamine transporter
+histamine-h1: target — Histamine H1 receptor
+kappa-opioid-receptor: target — Kappa-opioid receptor
+mu-opioid-receptor: target — Mu-opioid receptor
+muscarinic-receptor: target — Muscarinic acetylcholine receptors
+nicotinic-receptor: target — Nicotinic acetylcholine receptors
+nmda-receptor: target — NMDA receptor
+serotonin-2a: target — Serotonin 5-HT2A receptor
+
+
+=== Existing substance slugs for supported pair interactions ===
+1-4-butanediol, 1p-lsd, 2-ai, 2-fa, 2-fdck, 2-fma, 25b-nbome, 25c-nbome, 25i-nbome, 25n-nbome, 2c-b, 2c-b-fly, 2c-c, 2c-d, 2c-e, 2c-i, 2c-p, 2c-t-2, 2c-t-7, 2m2b, 3-4-ctmp, 3-fea, 3-fpm, 3-meo-pce, 3-meo-pcmo, 3-meo-pcp, 4-aco-det, 4-aco-dmt, 4-aco-met, 4-aco-mipt, 4-fa, 4-ho-dipt, 4-ho-dpt, 4-ho-met, 4-ho-mipt, 4-meo-pcp, 5-apb, 5-meo-dalt, 5-meo-dibf, 5-meo-dmt, 5-meo-mipt, 5f-akb48, 5f-pb-22, 6-apb, 6-apdb, a-php, a-pvp, ab-fubinaca, acetylfentanyl, actovegin, adamantylaminoethyl-chlorophenoxyacetate, adk-559, adk-591, adk-613, adk-676, adk-677, adk-790, adk-828, adk-829, adk-918, adk-957, adk-963, al-lad, alpha-gpc, alprazolam, amphetamine, amt, apica, armodafinil, awe18, b-300, bemitil, benzydamine, binavit, bonomarlot, bonothyrk, bromantane, bromitil, bromo-dragonfly, bronchogen, buprenorphine, butylone, caffeine, camphane-aniline-4e, camphane-chlorobenzamide, cardiogen, cartalax, cerebrolysin, cerluten, chelohart, chitomur, chlodantane, choline-bitartrate, chonluten, citicoline, clonazepam, clonazolam, cocaine, codeine, coluracetam, cortagen, cortexin, cp-88, creatine, crystagen, cyclontane, dck, delta-10-thc, delta-11-thc, delta-8-thc, delta-9-thc, deschloroetizolam, desomorphine, desoxypipradrol, dextromethorphan, dextropropoxyphene, diazepam, dichloropane, diclazepam, dihydrocodeine, dilept, diphenhydramine, diphenidine, dipt, dmt, dob, doc, doi, dom, dsip, edl, efavirenz, endoluten, ephenidine, epitalon, epithalamin, eth-lad, ethanol, ethylmorphine, ethylone, ethylphenidate, etizolam, etomerzol, f-phenibut, flubromazepam, flubromazolam, gabapentin, gbl, ghb, glandokort, gotratix, haemalin, heroin, hexedrone, hexen, hhc, hhch, hhcp-o-acetate, hydrocodone, ibogaine, isopropylphenidate, jwh-018, jwh-073, ked, kemantane, ketamine, l-theanine, libidon, lisdexamfetamine, livagen, lorazepam, lsa, lsd, mda, mdai, mdea, mdma, mdpv, meclofenoxate, melatonin, memantine, mephedrone, mescaline, met, methadone, methamphetamine, methaqualone, methoxetamine, methoxphenidine, methylnaphthidate, methylone, methylphenidate, mexedrone, mipt, mirtazapine, mitragynine, modafinil, morphine, myristicin, n-acetylcysteine, nep, nicotine, nifoxipam, nitrous-oxide, nm-2-ai, noopept, normophthal, o-desmethyltramadol, o-pce, ogp, ovagen, oxiracetam, oxycodone, pancragen, pcc, pcp, pentobarbital, pethidine, phenibut, phenobarbital, phenylpiracetam, picamilon, pielotax, pinealon, pirabel, piracetam, pramiracetam, pregabalin, prostamax, prostatilen, psilocin, psilocybin, pyrazolam, quetiapine, retinalamin, s-adenosyl-methionine, salvinorin-a, secobarbital, selank, semax, sigumir, stamakort, stemokin, sts-135, sufentanil, suprefort, svetinorm, tactivin, tapentadol, taxorest, testagen, testoluten, thc-o-acetate, thcb, thcp, thj-018, thj-2201, thymalin, thymodepressin, thymogen, thymohaemin, thymohexin, tianeptine, tireogen, tramadol, trekrezan, tyrosine, u-47700, vasolin, vasonin, ventfort, ventvil, vesugen, vilon, vilosen, vinpotropil, visoluten, vladonix, zhenoluten, zolpidem, zopiclone

@@ -1,0 +1,67 @@
+{
+  "topic": "urolithin-a",
+  "sourceUrl": "https://chatgpt.com/c/6ac18765-3324-83ed-ba6d-6882c503ce31",
+  "method": "Locally normalized from the captured Chrome research Markdown; raw acquisition remains unchanged",
+  "files": [
+    {
+      "path": "substances/urolithin-a.md",
+      "originalSha256": "34bf71419ad9b75ebc241b2789df5a53df32b0929213097df8a3cc8dd8caf4e5",
+      "sha256": "89f8c46a012adc29789cce4dbf8b3c5e40cc50a2137dcb920684a3ca88a388dd",
+      "bytes": 50327
+    },
+    {
+      "path": "outcomes/muscle-endurance.md",
+      "originalSha256": "900785f790b8cc86bd4b1b72373deb437fd925e26e8863f609600433d8d3ea77",
+      "sha256": "900785f790b8cc86bd4b1b72373deb437fd925e26e8863f609600433d8d3ea77",
+      "bytes": 585
+    },
+    {
+      "path": "outcomes/muscle-strength.md",
+      "originalSha256": "725b6614a6f36600961383f2b7c6cac658941b7f83f35698a29a8ea9736f7718",
+      "sha256": "725b6614a6f36600961383f2b7c6cac658941b7f83f35698a29a8ea9736f7718",
+      "bytes": 603
+    },
+    {
+      "path": "outcomes/walking-capacity.md",
+      "originalSha256": "b0caf8ad5e7f12df46d47be6f05bffb1715555278696e2484639a39c110c565e",
+      "sha256": "b0caf8ad5e7f12df46d47be6f05bffb1715555278696e2484639a39c110c565e",
+      "bytes": 612
+    },
+    {
+      "path": "outcomes/skeletal-muscle-atp-production.md",
+      "originalSha256": "576564ff4dc8a951d3d9e39922a06f0f174de12f19aaa788ab8414b6d3103e5a",
+      "sha256": "576564ff4dc8a951d3d9e39922a06f0f174de12f19aaa788ab8414b6d3103e5a",
+      "bytes": 550
+    },
+    {
+      "path": "outcomes/mitochondrial-biomarkers.md",
+      "originalSha256": "627c8dffc63f6e7331e5fdb693c2aa415db3b2cb472cd72217aa96c729bf371f",
+      "sha256": "627c8dffc63f6e7331e5fdb693c2aa415db3b2cb472cd72217aa96c729bf371f",
+      "bytes": 723
+    },
+    {
+      "path": "outcomes/exercise-recovery.md",
+      "originalSha256": "4874cfbf4d23dd0f4ba41d542691b40f46806b21dbf6903c5c2965d935388287",
+      "sha256": "4874cfbf4d23dd0f4ba41d542691b40f46806b21dbf6903c5c2965d935388287",
+      "bytes": 591
+    },
+    {
+      "path": "outcomes/immune-function.md",
+      "originalSha256": "e496803350c27d02c1e5aad9bf3aad1f0be6e74b041b6d53fff21e81cca32645",
+      "sha256": "e496803350c27d02c1e5aad9bf3aad1f0be6e74b041b6d53fff21e81cca32645",
+      "bytes": 617
+    },
+    {
+      "path": "concepts/mechanism/mitophagy.md",
+      "originalSha256": "629970db8ab986700ae4ea2364bc3fee5de2004265f816f716d562bd524d778a",
+      "sha256": "629970db8ab986700ae4ea2364bc3fee5de2004265f816f716d562bd524d778a",
+      "bytes": 652
+    },
+    {
+      "path": "relationships/urolithin-a-mitophagy.md",
+      "originalSha256": "2149ec16163a0aaed1b8720e187fb45d4252b40e87556e1a09c0227d65d4b460",
+      "sha256": "2149ec16163a0aaed1b8720e187fb45d4252b40e87556e1a09c0227d65d4b460",
+      "bytes": 1225
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+Tadalafil BHWiki Deep-Research Deliverable
+Executive summary
+
+The completed BHWiki article treats tadalafil as one molecule with indication-, formulation-, population-, and exposure-specific evidence, rather than conflating Cialis and Adcirca use cases. Identity is verified against PubChem as CID 110635, formula C₂₂H₁₉N₃O₄, molecular weight 389.4 g/mol, with the verified stereospecific SMILES retained in front matter. 
+1
+
+The article distinguishes current U.S. Cialis labeling for erectile dysfunction, BPH/LUTS, and combined ED/BPH from U.S. Adcirca labeling for WHO Group 1 PAH. It also records the EU formulation/regulatory differences: EMA lists Cialis tablets in 2.5, 5, 10, and 20 mg strengths and Adcirca as tablets and oral liquid, with EU PAH authorization extending to children from age two. 
+2
+
+The pharmacokinetic records deliberately preserve context-dependent half-life observations rather than presenting “17.5 hours” as universal. The current Cialis label reports a mean terminal half-life of 17.5 hours in healthy subjects, while the Adcirca label reports 15 hours after 40 mg in healthy subjects and 35 hours in pulmonary-hypertension patients not receiving bosentan, with lower clearance and 26% higher steady-state exposure in the latter population. 
+2
+
+The efficacy section preserves endpoint-specific evidence. The 2026 ED network meta-analysis reports odds ratios of 7.13 (95% CI 4.61–11.03) for tadalafil 20 mg and 3.14 (95% CI 1.90–5.17) for tadalafil 10 mg versus placebo for attaining IIEF-EF >26. The 2021 BPH meta-analysis reports a −1.97-point IPSS mean difference (95% CI −2.24 to −1.70) for tadalafil 5 mg once daily versus placebo. PHIRST reports a +33 m placebo-corrected 6-minute-walk effect (95% CI 15–50) at 16 weeks with tadalafil 40 mg; its background-bosentan subgroup was smaller and statistically uncertain. 
+3
+
+Healthy-person enhancement is kept explicitly separate. A 14-man double-blind crossover study found no improvement in VO₂max or aerobic/anaerobic thresholds after tadalafil 20 mg in normoxia; another small crossover study reported adverse shifts in oxidative-stress and muscle-damage biomarkers; and an 80-participant obesity trial found no improvement in flow-mediated dilation after a single 20 mg dose. These findings do not establish healthy-person exercise or endothelial enhancement. 
+4
+
+Deliverables
+
+Main article: Download tadalafil.md
+
+Complete bundle: Download tadalafil_bhwiki.zip
+
+The ZIP contains tadalafil.md, eight tadalafil-specific companion outcome concepts, three mechanism/target concepts, one directed mechanism relationship file, and a manifest. The generated main article passed automated checks for required heading order, one-list-per-YAML-section structure, exact x-shape, source-ID resolution, PK observation references, concept resolution, enums, and absence of an H1.
+
+The companion concepts cover erectile function/IIEF-EF, BPH/LUTS/IPSS, six-minute walk distance, PAH clinical worsening, PAH WHO functional class, maximum urinary flow rate, exercise-induced oxidative stress, and flow-mediated dilation. Mechanism support covers PDE5, cyclic-GMP signaling, and smooth-muscle relaxation, with a directed tadalafil → PDE5 → cGMP → smooth-muscle relaxation relationship grounded in current official labeling. The Cialis label describes sexual-stimulation-dependent NO/cGMP signaling, PDE5 inhibition, and the resulting increase in cavernosal blood flow, while explicitly stating that the mechanism for BPH symptom reduction has not been established. 
+2
+
+Evidence and safety coverage
+
+The article includes structured approved-label exposures rather than a personal regimen: Cialis as-needed ED dosing, once-daily ED dosing, 5 mg BPH/ED-BPH exposure, adult Adcirca 40 mg PAH exposure, PHIRST research arms, and the healthy-exercise experimental exposures needed to interpret enhancement claims. Current U.S. labeling also provides indication-specific renal and hepatic restrictions rather than one generic dose-adjustment rule. 
+2
+
+Safety is represented in both structured cautions and interactions. Organic nitrates and guanylate-cyclase stimulators such as riociguat are contraindicated; alpha-blockers and antihypertensives can add to blood-pressure lowering; substantial alcohol can increase orthostatic effects; and potent CYP3A4 inhibition can substantially increase tadalafil exposure. In the Cialis interaction study, ketoconazole 400 mg/day increased single-dose tadalafil 20 mg AUC by 312% and Cmax by 22%. 
+2
+
+The article also preserves the distinction between common trial adverse effects and rare postmarketing signals. Headache, dyspepsia, back pain, myalgia, flushing, and nasal congestion occur in the controlled programs, with frequencies varying substantially by dose and indication; postmarketing labeling separately describes priapism, NAION/vision-loss reports, sudden hearing decrease/loss, and serious cardiovascular events while cautioning that spontaneous reports generally cannot establish incidence or causal attribution. 
+2
+
+Sponsorship and conflicts
+
+Funding and conflict-of-interest information is stored source by source rather than assigning an overall independence grade.
+
+PHIRST is marked industry-funded: its publication states that Eli Lilly and Company funded the study, and its disclosure section identifies steering-committee, advisory, consulting, speaking, employment, stockholding, and former-ICOS relationships among authors. 
+5
+
+The 2026 ED systematic review/network meta-analysis is marked mixed-funded because the paper reports Viatris funding alongside Italian Ministry of University grant support for one author. Its extensive disclosed conflicts include Viatris employment/possible stock ownership and multiple other consulting, grant, speaking, royalty, patent, and professional-leadership relationships. 
+6
+
+Sources whose declarations could not be inspected reliably are marked not-assessed, rather than being treated as independent by default.
+
+Coverage and access gaps
+
+Several older tadalafil publications were accessible only through abstracts, regulatory summaries, registry records, or incomplete publisher access during this review. Their funding/COI fields are therefore deliberately left not-assessed where the declaration itself was not inspectable.
+
+The article does not turn disease-population signals into healthy-person enhancement claims, does not infer felt duration from the 17.5-hour elimination half-life, does not equate IPSS improvement with improved Qmax, and does not treat the PAH 6-minute-walk endpoint as generic athletic performance. The 2021 BPH synthesis itself found significant IPSS improvement while reporting no statistically significant Qmax or post-void-residual advantage, reinforcing that separation of outcome concepts. 
+7
+
+Regulatory status is dated and jurisdiction-specific. The inspected current U.S. sources are the 2026 Cialis SPL and December 2025 Adcirca SPL; the EMA Cialis product information was updated January 28, 2026, and the EMA Adcirca page records the separate EU authorization, including pediatric PAH use from age two. 
+8

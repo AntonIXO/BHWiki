@@ -4,6 +4,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import type { Reference } from "@/lib/types";
+import { SourceDisclosureBadges } from "@/components/source-disclosures";
 
 export function Citation({
   reference,
@@ -41,6 +42,7 @@ export function Citation({
           <p className="text-muted-foreground">{reference.authors}</p>
           <p>{reference.insight}</p>
           <p className="text-muted-foreground">Limitations: {reference.limitation}</p>
+          <SourceDisclosureBadges reference={reference} />
           <div className="flex flex-wrap gap-x-3 gap-y-1">
             <a href={href} className="underline underline-offset-4">In this article</a>
             <a href={reference.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 underline underline-offset-4">

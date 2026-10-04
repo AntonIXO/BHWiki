@@ -1,0 +1,22 @@
+{
+  "topic": "alpha-gpc",
+  "sourceUrl": "https://chatgpt.com/c/6ac1a28e-7d74-83ed-8983-736ca0f99369",
+  "method": "Visible research content captured in Chrome through a temporary loopback-only form",
+  "files": [
+    {
+      "path": "substances/alpha-gpc.md",
+      "bytes": 40803,
+      "sha256": "9453ab95839e3c9dd03d3dc5795a4a875c066516029dd7b74fcd588ebddd6db2"
+    },
+    {
+      "path": "outcomes/incident-stroke.md",
+      "bytes": 513,
+      "sha256": "31a1d1ce4d56264b4b3d2ef8190a7089049026e5de34f9db8b8e401052381709"
+    },
+    {
+      "path": "relationships/alpha-gpc-choline-acetylcholine.md",
+      "bytes": 1420,
+      "sha256": "d94faf0a930244b3c700293430e3bf5581109f7978e58b44a507a5b69f50b12f"
+    }
+  ]
+}

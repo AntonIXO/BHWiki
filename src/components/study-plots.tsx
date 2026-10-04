@@ -171,7 +171,7 @@ function ResultPlot({ rows }: { rows: ObservationRow[] }) {
                   <TableCell>
                     {r.confidenceInterval
                       ? `${r.confidenceInterval.level}% CI ${r.confidenceInterval.lower}–${r.confidenceInterval.upper}`
-                      : "Interval not reported"}
+                      : "Interval not curated"}
                   </TableCell>
                   <TableCell>
                     <EvidenceButton evidenceKey={row.key} />

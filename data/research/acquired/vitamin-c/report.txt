@@ -1,0 +1,2046 @@
+Vitamin C — Deep Research Report and BHWiki Source
+Executive summary
+
+Vitamin C is L-ascorbic acid/ascorbate, an essential water-soluble micronutrient with formula C₆H₈O₆, molecular weight 176.12 g/mol, and PubChem CID 54670067. Its most secure biological roles are as a reducing cofactor/electron donor in collagen-related hydroxylation and other biosynthetic reactions, as part of cellular redox chemistry, and as an enhancer of non-heme iron absorption. Severe sustained deficiency causes scurvy. 
+1
+
+The central interpretive distinction is deficiency correction versus additional supplementation in vitamin-C-replete people. A classic controlled depletion study found that the five volunteers who completed prolonged deprivation developed full clinical scurvy after roughly 84–97 days; the syndrome included hemorrhagic/connective-tissue manifestations and reversed with vitamin C repletion. That evidence establishes essentiality and deficiency treatment, but does not establish benefit from pharmacologic supplementation in people who already have adequate status. 
+2
+
+Oral and intravenous vitamin C are pharmacologically different interventions. In a controlled human pharmacokinetic study, 1.25 g orally produced a mean peak plasma concentration of about 134.8 µmol/L, versus 885 µmol/L intravenously at the same dose; modeling predicted a ceiling near 220 µmol/L even with maximally tolerated repeated oral dosing, whereas pharmacologic IV administration can reach millimolar concentrations. Oral bioavailability falls as doses rise because intestinal uptake, tissue saturation, renal reabsorption, and urinary loss are tightly regulated. 
+3
+ The current U.S. ASCOR label reports a mean half-life of 7.4 ± 1.4 h after a 1,000 mg IV infusion in a small PK subset, whereas a modern high-dose IV study reported mean terminal estimates around 1.9 h in healthy volunteers and 2.4 h in oncology participants, illustrating the dose/model dependence of any single “half-life.” 
+4
+ 
+5
+
+For ordinary nutrition, U.S. adult RDAs are 90 mg/day for men and 75 mg/day for women, rising to 85 mg/day in adult pregnancy and 120 mg/day in adult lactation; smokers are advised an additional 35 mg/day. The U.S. adult tolerable upper intake level is 2,000 mg/day. WHO/FAO uses a different derivation and recommends 45 mg/day for adults, 55 mg/day during pregnancy, and 70 mg/day during lactation, illustrating that nutrient-reference systems are not interchangeable. 
+6
+
+For the common cold, the best-established pattern remains nuanced: in a Cochrane review, regular vitamin C produced essentially no general-population incidence reduction (RR 0.97, 95% CI 0.94–1.00; 10,708 participants), but the subgroup exposed to brief severe physical stress—marathon runners, skiers, and soldiers exercising in subarctic conditions—had lower incidence (RR 0.48, 95% CI 0.35–0.64; n=598). Regular supplementation shortened cold duration by about 8% in adults and 14% in children, whereas starting vitamin C after symptoms began produced no consistent duration or severity effect. The extreme-stress result is not evidence of general exercise-performance enhancement. 
+7
+
+Large long-term prevention trials were convincingly null. In 14,641 male physicians, 500 mg/day oral vitamin C for about eight years did not reduce major cardiovascular events (HR 0.99, 95% CI 0.89–1.11) and did not reduce total cancer (HR 1.01, 95% CI 0.92–1.10). 
+8
+ 
+9
+
+The critical-care evidence argues against routine pharmacologic IV vitamin C for sepsis. CITRIS-ALI did not improve its prespecified modified-SOFA primary outcome (mean difference −0.10, 95% CI −1.23 to 1.03). 
+10
+ More importantly, the much larger blinded LOVIT trial found death or persistent organ dysfunction at day 28 in 44.5% versus 38.5%, RR 1.21 (95% CI 1.04–1.40), with vitamin C versus placebo. 
+11
+ The 2026 Surviving Sepsis Campaign consequently suggests against IV vitamin C in adults with sepsis or septic shock, with low certainty of evidence. 
+12
+
+High-dose IV vitamin C in oncology remains investigational rather than a general anticancer treatment. The phase III VITALITY study in 442 patients with metastatic colorectal cancer did not significantly improve overall-population progression-free survival (HR 0.86, 95% CI 0.70–1.05). 
+13
+ A randomized placebo-controlled prostate-cancer phase II trial likewise found no meaningful clinical benefit and stopped for futility. 
+14
+ Conversely, a very small randomized pancreatic-cancer trial reported longer survival with 75 g IV ascorbate three times weekly added to chemotherapy (OS HR 0.46, 90% CI 0.23–0.92; 36 randomized, 34 treated), an interesting signal that requires independent confirmation rather than extrapolation across tumors. 
+15
+ The U.S. National Cancer Institute states that FDA has not approved high-dose IV vitamin C as a cancer treatment. 
+16
+
+Safety depends strongly on exposure and route. High oral intake commonly causes gastrointestinal intolerance; pharmacologic or prolonged IV exposure raises distinct concerns about oxalate nephropathy/nephrolithiasis, severe hemolysis in G6PD deficiency, and oxidation-reduction assay interference. The current ASCOR prescribing information specifically addresses those risks and lists no formal contraindications, while requiring caution and monitoring in susceptible populations. 
+4
+ Vitamin C's enhancement of iron absorption also makes high-dose exposure particularly relevant in pathological iron-overload states. 
+6
+
+The attached BHWiki contract has been followed as the schema authority, including its separation of outcomes/effects, route-specific kinetics, disclosure fields, explicit not-assessed states, and companion concepts rather than guessed canonical IDs. 
+17
+
+Download vitamin-c.md
+
+Evidence synthesis
+Question	Highest-value evidence	Finding	Interpretation
+Deficiency / scurvy	Hodges et al., controlled depletion/repletion	Five completing volunteers developed full clinical scurvy at roughly 84–97 days of deprivation	Strong causal evidence for essentiality; small historical study and not evidence for megadosing in replete people. 
+2
+
+Oral pharmacokinetics	Levine et al., metabolic-ward study, n=7	Sigmoid dose–plasma relationship; complete bioavailability at a 200 mg single dose, declining at ≥500 mg; urinary loss rises as intake increases	Explains why gram-dose oral exposure does not scale proportionally with dose. 
+18
+
+Oral versus IV	Padayatty et al., n=17	1.25 g oral peak ≈134.8 µM versus IV ≈885 µM; disparity enlarges with dose	Oral and pharmacologic IV evidence cannot be pooled as though they are the same intervention. 
+3
+
+Common-cold prevention	Cochrane meta-analysis	General population RR 0.97 (0.94–1.00)	No clinically persuasive routine prevention effect. 
+7
+
+Severe exercise/cold stress and colds	Cochrane prespecified subgroup	RR 0.48 (0.35–0.64), n=598	Context-specific signal during brief severe physical stress; not evidence of general exercise enhancement. 
+7
+
+Cold duration	Cochrane meta-analysis	Regular supplementation shortened adult duration ~8% and child duration ~14%; post-onset treatment inconsistent	Small prophylactic duration effect, distinct from treating an established cold. 
+7
+
+Cardiovascular prevention	Physicians' Health Study II, n=14,641	500 mg/day; major CVD HR 0.99 (0.89–1.11)	Strong null in middle-aged/older male physicians. 
+8
+
+Cancer prevention	Physicians' Health Study II, n=14,641	Total cancer HR 1.01 (0.92–1.10); prostate cancer HR 1.02 (0.90–1.15)	No prevention benefit in this population. 
+9
+
+Sepsis, mechanistic/early trial	CITRIS-ALI, n=167	Modified SOFA difference −0.10 (−1.23 to 1.03)	Primary endpoint null; later trials are more decision-relevant. 
+10
+
+Sepsis, definitive contemporary trial	LOVIT, 872 randomized	Death/persistent organ dysfunction RR 1.21 (1.04–1.40)	Harm signal; weighs strongly against routine pharmacologic IV use. 
+11
+
+Metastatic colorectal cancer	VITALITY phase III, n=442	PFS 8.6 vs 8.3 months; HR 0.86 (0.70–1.05)	Overall negative; subgroup findings are hypothesis-generating. 
+13
+
+Metastatic CRPC	Paller et al. phase II, n=47	rPFS 10.1 vs 10.0 months; HR 1.35 (0.66–2.75); futility stop	Does not support routine IV vitamin C with docetaxel. 
+14
+
+Metastatic pancreatic cancer	Bodeker et al. phase II, n=36	OS 16.0 vs 8.3 months; HR 0.46, 90% CI 0.23–0.92	Positive but small and statistically less stringent than a conventional 95% CI; needs replication. 
+15
+
+Recent supportive oncology evidence	2026 nasopharyngeal-cancer RCT	2 g IV before chemotherapy did not significantly reduce GI toxicities; platelet-count trajectory favored vitamin C	Endpoint-specific supportive-care signal, not proof of anticancer efficacy. 
+19
+
+Two pharmacologic points prevent common interpretive errors. First, vitamin C is subject to concentration-dependent renal handling rather than simple dose-proportional oral kinetics: once tissues and plasma approach saturation, additional absorbed vitamin C is increasingly excreted. 
+18
+ Second, high-dose IV exposure can largely clear through the kidneys within 24 hours; in the 2022 pharmacokinetic study, urinary recovery approached 99% at 100 g in healthy volunteers, while oncology participants showed somewhat lower recovery. 
+5
+
+At the biochemical level, ascorbate's established roles include collagen-related enzyme chemistry, antioxidant/electron-donor functions, and increased non-heme iron absorption; these functions explain deficiency pathology but do not make an antioxidant biomarker or mechanistic effect equivalent to clinical efficacy. 
+6
+ Pharmacologic IV oncology hypotheses are additionally route-specific: the NCI review describes millimolar IV exposure and a proposed extracellular pro-oxidant mechanism that cannot be reproduced by ordinary oral dosing. 
+16
+
+Trial and guideline comparison
+Authority / guideline	Population or scope	Vitamin C position
+U.S. NIH/DRI framework	General nutrition	AI: 40 mg/day at 0–6 months, 50 mg/day at 7–12 months. RDA: 15 mg at 1–3 y, 25 mg at 4–8 y, 45 mg at 9–13 y, 75/65 mg for adolescent males/females, 90/75 mg for adult men/women, 80/85 mg pregnancy in adolescents/adults, 115/120 mg lactation. Smokers: +35 mg/day. 
+6
+
+U.S. UL	General nutrition	No infant UL; 400 mg/day age 1–3, 650 mg age 4–8, 1,200 mg age 9–13, 1,800 mg age 14–18, and 2,000 mg/day adults, including pregnancy/lactation. 
+6
+
+WHO/FAO	International nutrient requirements	RNI 25 mg/day age 0–6 mo; 30 mg 7–12 mo and 1–6 y; 35 mg 7–9 y; 40 mg 10–18 y; 45 mg adults; 55 mg pregnancy; 70 mg lactation. 
+20
+
+EFSA	European dietary reference values	Uses a separate DRV methodology; adult population reference intakes are 110 mg/day for men and 95 mg/day for women, with life-stage adjustments. The difference from U.S./WHO values reflects different derivation frameworks, not a contradiction about vitamin C essentiality.
+Current U.S. ASCOR label	Scurvy when oral treatment is impossible, insufficient, or contraindicated	Short-term IV treatment only: 50 mg/day at 5–<12 months, 100 mg/day at 1–<11 years, 200 mg/day at ≥11 years/adults; recommended maximum seven days. Not labeled for asymptomatic “vitamin C deficiency” without scurvy. 
+4
+
+Surviving Sepsis Campaign 2026	Adults with sepsis/septic shock	Suggests against IV vitamin C, conditional recommendation, low-certainty evidence. 
+12
+
+NCI PDQ	High-dose IV vitamin C in cancer	Reviews heterogeneous investigational evidence and states that FDA has not approved high-dose IV vitamin C for cancer treatment. 
+16
+
+FDA dietary-supplement framework	U.S. supplements	Dietary supplements are not FDA-approved for safety or effectiveness before marketing; manufacturers/distributors bear primary responsibility for lawful products and claims. 
+21
+
+The formulation distinction is also clinically important. “Vitamin C” may mean free L-ascorbic acid, mineral ascorbates, food-derived vitamin C, or prescription/investigational IV ascorbate. The molecule is the same vitamin-active chemical system, but formulation, sodium/calcium load, administration route, concentration-time profile, and evidence base are not interchangeable. PubChem identifies L-ascorbic acid separately from its conjugate base, L-ascorbate. 
+1
+
+Historical and evidence timeline
+
+The timeline below emphasizes milestones that materially changed the modern interpretation of vitamin C: experimental human deficiency, saturable human pharmacokinetics, recognition of the oral/IV exposure gap, large chronic-disease null trials, critical-care trials, and the recent mixed oncology evidence. 
+2
+ 
+18
+ 
+3
+ 
+8
+ 
+11
+
+1971
+Controlled humandepletion studycharacterizesclinical scurvy andits time course
+1996
+Levine et al. showsaturabledose–plasmakinetics, tissuesaturation andincreasing urinaryloss
+2004
+Padayatty et al.quantify the largeoral-versus-IVplasmaconcentration gap
+2008
+Physicians' HealthStudy II reports nocardiovascular-preventionbenefit from 500mg/day
+2009
+Physicians' HealthStudy II reports nototal- orprostate-cancerprevention benefit
+2013
+Cochrane reviewfinds no materialgeneralcold-incidenceprevention, modestduration reduction,and anextreme-stresssubgroup signal
+2019
+CITRIS-ALI fails toimproveprespecifiedorgan-failure/biomarkerprimary endpoints
+2022
+LOVIT findsincreased death orpersistent organdysfunction withpharmacologic IVvitamin C in sepsis
+VITALITY phase IIIis negative overallformetastatic-colorectal-cancerPFS
+2024
+Randomizedprostate-cancertrial stops forfutility
+Smallpancreatic-cancerphase II trialreports a positivesurvival signal
+2026
+Surviving SepsisCampaignsuggests againstIV vitamin C foradult sepsis/septicshock
+Current U.S.ASCOR labelingcontinues todistinguishshort-term scurvytreatment fromhigh-doseinvestigational use
+Vitamin C — selected evidence milestones
+Complete BHWiki article source
+
+The complete machine-importable source below is the content of the downloadable vitamin-c.md. It follows the supplied BHWiki Markdown/YAML contract; citations inside the article are represented as resolvable local sourceId records and literal publication URLs rather than ChatGPT citation tokens. 
+17
+
+markdown
+Copy
+---
+slug: vitamin-c
+name: Vitamin C
+subtitle: Essential ascorbate nutrient; deficiency treatment and route-dependent pharmacology
+aliases:
+  - L-ascorbic acid
+  - ascorbic acid
+  - ascorbate
+  - L(+)-ascorbic acid
+  - vitamin C
+formula: C6H8O6
+molecularWeight: 176.12 g/mol
+pubchemCid: 54670067
+smiles: "C([C@@H]([C@@H]1C(=C(C(=O)O1)O)O)O)O"
+category: vitamin
+tags: []
+accent: "#D97706"
+reviewedAt: "2026-10-04"
+editorialStatus: sourced-draft
+halfLife:
+  label: IV ascorbic acid half-life in the current U.S. ASCOR label
+  low: 7.4
+  high: 7.4
+  context: "Mean observed half-life in three healthy adults after a single 1,000 mg intravenous infusion over 30 minutes; the label reports 7.4 ± 1.4 hours, where ± is SD rather than a range. High-dose IV studies report shorter terminal estimates in different dose/model contexts."
+  sourceId: ref-ascor-label
+  observationId: pk-ascor-iv-1g
+kinetics:
+  onset: "Oral uptake begins in the small intestine through saturable sodium-dependent transport; no general subjective onset is established."
+  peak: "Route- and dose-dependent. In healthy volunteers, 1.25 g orally produced a mean peak plasma concentration of about 135 µmol/L versus about 885 µmol/L after the same intravenous dose."
+  duration: "No general subjective duration is established. Pharmacologic intravenous concentrations fall over hours and high IV doses are predominantly cleared in urine within 24 hours."
+  bioavailability: "Oral absorption is efficient at nutritional doses but falls as doses rise; intravenous administration bypasses intestinal absorption and produces plasma concentrations orders of magnitude above oral dosing."
+  metabolism: "Ascorbate is reversibly oxidized to dehydroascorbate and is catabolized in part to oxalate; renal filtration, tubular reabsorption and urinary excretion are central to systemic homeostasis."
+  sourceId: ref-padayatty-2004
+x-shape: [slug, name, subtitle, summary, description, aliases, formula, molecularWeight, pubchemCid, smiles, category, tags, accent, evidenceNote, reviewedAt, editorialStatus, halfLife, pkObservations, kinetics, modifiers, doses, effects, outcomes, claims, mechanisms, cautions, interactions, experienceLinks, references, legal]
+---
+
+## Summary
+
+Vitamin C is the essential water-soluble micronutrient L-ascorbic acid/ascorbate. Its best-established human roles are as an electron donor and enzyme cofactor, especially in collagen hydroxylation, carnitine and catecholamine-related biosynthesis, antioxidant redox chemistry, and enhancement of non-heme iron absorption. Severe depletion causes scurvy; replacing deficiency is a qualitatively different evidence question from adding pharmacologic doses to vitamin-C-replete people.
+
+Oral pharmacokinetics are strongly homeostatically controlled: intestinal absorption is saturable, tissue and plasma concentrations plateau, and renal excretion rises as intake increases. Intravenous administration bypasses intestinal control and can create millimolar pharmacologic concentrations that are not achievable by oral supplementation. These routes must not be treated as interchangeable interventions.
+
+For people without deficiency, routine high-dose oral supplementation has not shown broad prevention of cardiovascular disease or cancer. Regular vitamin C does not materially lower common-cold incidence in the general population, although pooled trials show a modest reduction in cold duration and a larger incidence reduction in people exposed to brief severe physical stress. Starting vitamin C only after cold symptoms begin has not shown a consistent benefit. High-dose IV vitamin C is not established as routine therapy for sepsis or cancer: the large LOVIT sepsis trial found more death or persistent organ dysfunction, and 2026 Surviving Sepsis Campaign guidance suggests against IV vitamin C; randomized oncology trials are heterogeneous, with major negative studies alongside a small positive pancreatic-cancer trial.
+
+## Description
+
+L-ascorbic acid has molecular formula C6H8O6 and molecular weight 176.12 g/mol. In physiologic solution it exists substantially as ascorbate. Common supplemental formulations include free ascorbic acid and mineral ascorbates such as sodium or calcium ascorbate; formulation claims should not be assumed to confer clinical superiority without product-specific evidence.
+
+Humans cannot synthesize vitamin C and obtain it from diet. Fruits and vegetables are the principal sources; high-content examples include peppers, citrus fruit and juice, kiwifruit, broccoli, strawberries and Brussels sprouts. Storage and heat can reduce food vitamin C content. U.S. adult RDAs are 90 mg/day for men and 75 mg/day for women, with pregnancy and lactation adjustments, and smokers are advised an additional 35 mg/day. The adult U.S. tolerable upper intake level is 2,000 mg/day. WHO/FAO RNIs are lower (45 mg/day for adults, 55 mg/day in pregnancy and 70 mg/day in lactation), illustrating that reference values differ by authority and derivation method.
+
+Scurvy reflects failure of vitamin-C-dependent connective-tissue biology. Controlled depletion experiments and clinical observations describe fatigue followed by follicular hyperkeratosis, perifollicular or other hemorrhage, bruising, painful/swollen joints, gingival swelling and bleeding, poor wound healing and anemia. In a classic tightly controlled depletion study, full clinical scurvy appeared after roughly 84–97 days of a vitamin-C-free diet in the remaining five volunteers, when body stores had fallen markedly; real-world timelines vary with starting stores, intake and comorbidity.
+
+## Evidence note
+
+Evidence is strongest for prevention and correction of deficiency and for the route-dependent pharmacokinetic behavior of ascorbate. Evidence for additional supplementation is indication-specific. A biomarker or plasma concentration change is not itself a clinical benefit, and results obtained with pharmacologic IV concentrations cannot be extrapolated to oral supplementation.
+
+The common-cold literature supports a small duration effect from regular prophylactic intake, not meaningful prevention in the general population; the extreme-exercise subgroup signal should not be generalized to ordinary exercise performance. Large long-duration randomized trials in well-nourished men found no cardiovascular or cancer-prevention benefit from 500 mg/day oral vitamin C. In critical illness, the large LOVIT trial raised a harm signal and current sepsis guidance recommends against routine IV vitamin C. In oncology, positive and negative randomized trials coexist, differ by cancer type and regimen, and do not establish a general anticancer indication. Deficiency correction and pharmacologic cancer/sepsis dosing therefore require separate interpretation.
+
+## Doses
+
+```yaml
+- label: U.S. AI, birth to 6 months
+  amount: 40 mg/day
+  quantity: 40
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: dietary vitamin C from milk, food and/or formula as applicable
+  route: oral
+  frequency: daily
+  duration: life-stage reference
+  population: infants birth to 6 months
+  purpose: U.S. Adequate Intake
+  sourceCategory: reference
+  note: Adequate Intake rather than RDA.
+  sourceId: ref-ods
+- label: U.S. AI, 7 to 12 months
+  amount: 50 mg/day
+  quantity: 50
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: dietary vitamin C
+  route: oral
+  frequency: daily
+  duration: life-stage reference
+  population: infants 7 to 12 months
+  purpose: U.S. Adequate Intake
+  sourceCategory: reference
+  note: Adequate Intake rather than RDA.
+  sourceId: ref-ods
+- label: U.S. RDA, children 1 to 3 years
+  amount: 15 mg/day
+  quantity: 15
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total dietary intake
+  route: oral
+  frequency: daily
+  duration: life-stage reference
+  population: children 1 to 3 years
+  purpose: U.S. Recommended Dietary Allowance
+  sourceCategory: reference
+  note: Applies to both sexes.
+  sourceId: ref-ods
+- label: U.S. RDA, children 4 to 8 years
+  amount: 25 mg/day
+  quantity: 25
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total dietary intake
+  route: oral
+  frequency: daily
+  duration: life-stage reference
+  population: children 4 to 8 years
+  purpose: U.S. Recommended Dietary Allowance
+  sourceCategory: reference
+  note: Applies to both sexes.
+  sourceId: ref-ods
+- label: U.S. RDA, children 9 to 13 years
+  amount: 45 mg/day
+  quantity: 45
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total dietary intake
+  route: oral
+  frequency: daily
+  duration: life-stage reference
+  population: children 9 to 13 years
+  purpose: U.S. Recommended Dietary Allowance
+  sourceCategory: reference
+  note: Applies to both sexes.
+  sourceId: ref-ods
+- label: U.S. RDA, males 14 to 18 years
+  amount: 75 mg/day
+  quantity: 75
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total dietary intake
+  route: oral
+  frequency: daily
+  duration: life-stage reference
+  population: males 14 to 18 years
+  purpose: U.S. Recommended Dietary Allowance
+  sourceCategory: reference
+  note: Add 35 mg/day for people who smoke.
+  sourceId: ref-ods
+- label: U.S. RDA, females 14 to 18 years
+  amount: 65 mg/day
+  quantity: 65
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total dietary intake
+  route: oral
+  frequency: daily
+  duration: life-stage reference
+  population: females 14 to 18 years
+  purpose: U.S. Recommended Dietary Allowance
+  sourceCategory: reference
+  note: Add 35 mg/day for people who smoke.
+  sourceId: ref-ods
+- label: U.S. RDA, adult men
+  amount: 90 mg/day
+  quantity: 90
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total dietary intake
+  route: oral
+  frequency: daily
+  duration: adult reference
+  population: men 19 years and older
+  purpose: U.S. Recommended Dietary Allowance
+  sourceCategory: reference
+  note: Add 35 mg/day for people who smoke.
+  sourceId: ref-ods
+- label: U.S. RDA, adult women
+  amount: 75 mg/day
+  quantity: 75
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total dietary intake
+  route: oral
+  frequency: daily
+  duration: adult reference
+  population: women 19 years and older
+  purpose: U.S. Recommended Dietary Allowance
+  sourceCategory: reference
+  note: Add 35 mg/day for people who smoke.
+  sourceId: ref-ods
+- label: U.S. RDA, pregnancy age 14 to 18
+  amount: 80 mg/day
+  quantity: 80
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total dietary intake
+  route: oral
+  frequency: daily
+  duration: pregnancy
+  population: pregnant adolescents 14 to 18 years
+  purpose: U.S. Recommended Dietary Allowance
+  sourceCategory: reference
+  note: Life-stage reference value.
+  sourceId: ref-ods
+- label: U.S. RDA, pregnancy age 19 and older
+  amount: 85 mg/day
+  quantity: 85
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total dietary intake
+  route: oral
+  frequency: daily
+  duration: pregnancy
+  population: pregnant adults 19 years and older
+  purpose: U.S. Recommended Dietary Allowance
+  sourceCategory: reference
+  note: Life-stage reference value.
+  sourceId: ref-ods
+- label: U.S. RDA, lactation age 14 to 18
+  amount: 115 mg/day
+  quantity: 115
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total dietary intake
+  route: oral
+  frequency: daily
+  duration: lactation
+  population: lactating adolescents 14 to 18 years
+  purpose: U.S. Recommended Dietary Allowance
+  sourceCategory: reference
+  note: Life-stage reference value.
+  sourceId: ref-ods
+- label: U.S. RDA, lactation age 19 and older
+  amount: 120 mg/day
+  quantity: 120
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total dietary intake
+  route: oral
+  frequency: daily
+  duration: lactation
+  population: lactating adults 19 years and older
+  purpose: U.S. Recommended Dietary Allowance
+  sourceCategory: reference
+  note: Life-stage reference value.
+  sourceId: ref-ods
+- label: U.S. UL, infants
+  amount: No tolerable upper intake level established
+  quantity: null
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total intake
+  route: oral
+  frequency: daily
+  duration: infancy
+  population: infants birth to 12 months
+  purpose: U.S. tolerable upper intake level
+  sourceCategory: reference
+  note: No UL was established for infants; intake should generally come from food/formula sources appropriate to age.
+  sourceId: ref-ods
+- label: U.S. UL, children 1 to 3 years
+  amount: 400 mg/day
+  quantity: 400
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total intake from food and supplements
+  route: oral
+  frequency: daily
+  duration: life-stage reference
+  population: children 1 to 3 years
+  purpose: U.S. tolerable upper intake level
+  sourceCategory: reference
+  note: UL is not a recommended target intake.
+  sourceId: ref-ods
+- label: U.S. UL, children 4 to 8 years
+  amount: 650 mg/day
+  quantity: 650
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total intake from food and supplements
+  route: oral
+  frequency: daily
+  duration: life-stage reference
+  population: children 4 to 8 years
+  purpose: U.S. tolerable upper intake level
+  sourceCategory: reference
+  note: UL is not a recommended target intake.
+  sourceId: ref-ods
+- label: U.S. UL, children 9 to 13 years
+  amount: 1200 mg/day
+  quantity: 1200
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total intake from food and supplements
+  route: oral
+  frequency: daily
+  duration: life-stage reference
+  population: children 9 to 13 years
+  purpose: U.S. tolerable upper intake level
+  sourceCategory: reference
+  note: UL is not a recommended target intake.
+  sourceId: ref-ods
+- label: U.S. UL, adolescents 14 to 18 years
+  amount: 1800 mg/day
+  quantity: 1800
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total intake from food and supplements
+  route: oral
+  frequency: daily
+  duration: life-stage reference
+  population: adolescents 14 to 18 years, including pregnancy and lactation
+  purpose: U.S. tolerable upper intake level
+  sourceCategory: reference
+  note: UL is not a recommended target intake.
+  sourceId: ref-ods
+- label: U.S. UL, adults
+  amount: 2000 mg/day
+  quantity: 2000
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: total intake from food and supplements
+  route: oral
+  frequency: daily
+  duration: adult reference
+  population: adults 19 years and older, including pregnancy and lactation
+  purpose: U.S. tolerable upper intake level
+  sourceCategory: reference
+  note: UL is based primarily on gastrointestinal adverse effects and is not a recommended target intake.
+  sourceId: ref-ods
+- label: ASCOR labeled adult and age 11+ scurvy treatment
+  amount: 200 mg once daily
+  quantity: 200
+  quantityMax: null
+  unit: mg
+  ingredient: ascorbic acid
+  formulation: ASCOR diluted intravenous infusion
+  route: intravenous
+  frequency: once daily
+  duration: maximum recommended duration 7 days
+  population: adults and pediatric patients age 11 years and older with scurvy when oral administration is not possible, insufficient or contraindicated
+  purpose: treatment of scurvy
+  sourceCategory: approved-label
+  note: Product-specific U.S. prescribing information; not a high-dose IV oncology or sepsis regimen.
+  sourceId: ref-ascor-label
+- label: ASCOR labeled pediatric scurvy treatment, 1 to under 11 years
+  amount: 100 mg once daily
+  quantity: 100
+  quantityMax: null
+  unit: mg
+  ingredient: ascorbic acid
+  formulation: ASCOR diluted intravenous infusion
+  route: intravenous
+  frequency: once daily
+  duration: maximum recommended duration 7 days
+  population: pediatric patients age 1 year to under 11 years with scurvy when oral administration is not possible, insufficient or contraindicated
+  purpose: treatment of scurvy
+  sourceCategory: approved-label
+  note: Repeat dosing is not recommended in pediatric patients under 11 years according to the label.
+  sourceId: ref-ascor-label
+- label: ASCOR labeled infant scurvy treatment, 5 to under 12 months
+  amount: 50 mg once daily
+  quantity: 50
+  quantityMax: null
+  unit: mg
+  ingredient: ascorbic acid
+  formulation: ASCOR diluted intravenous infusion
+  route: intravenous
+  frequency: once daily
+  duration: maximum recommended duration 7 days
+  population: pediatric patients age 5 months to under 12 months with scurvy when oral administration is not possible, insufficient or contraindicated
+  purpose: treatment of scurvy
+  sourceCategory: approved-label
+  note: Product-specific U.S. prescribing information.
+  sourceId: ref-ascor-label
+- label: Common-cold regular supplementation evidence base
+  amount: at least 200 mg/day in included placebo-controlled trials
+  quantity: 200
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: oral vitamin C
+  route: oral
+  frequency: daily
+  duration: regular prophylactic use during trial periods
+  population: adults and children in placebo-controlled common-cold trials
+  purpose: prevention and duration/severity assessment
+  sourceCategory: research
+  note: This is the review inclusion threshold, not a clinical recommendation; individual trial doses varied.
+  sourceId: ref-cochrane-cold
+- label: Physicians' Health Study II vitamin C arm
+  amount: 500 mg/day
+  quantity: 500
+  quantityMax: null
+  unit: mg
+  ingredient: vitamin C
+  formulation: oral supplement
+  route: oral
+  frequency: once daily
+  duration: mean follow-up 8 years
+  population: 14,641 U.S. male physicians age 50 years and older in a factorial randomized trial
+  purpose: cardiovascular and cancer prevention
+  sourceCategory: research
+  note: Long-term primary-prevention exposure; results were null for major cardiovascular events and total cancer.
+  sourceId: ref-phs-cvd
+- label: CITRIS-ALI intravenous vitamin C
+  amount: 50 mg/kg every 6 hours
+  quantity: 50
+  quantityMax: null
+  unit: mg/kg
+  ingredient: ascorbic acid
+  formulation: intravenous vitamin C infusion
+  route: intravenous
+  frequency: every 6 hours
+  duration: 96 hours
+  population: adults with sepsis and acute respiratory distress syndrome
+  purpose: organ failure and biomarker outcomes
+  sourceCategory: research
+  note: Pharmacologic critical-care exposure; not a deficiency-correction regimen.
+  sourceId: ref-citris
+- label: LOVIT intravenous vitamin C
+  amount: 50 mg/kg every 6 hours
+  quantity: 50
+  quantityMax: null
+  unit: mg/kg
+  ingredient: vitamin C
+  formulation: intravenous infusion
+  route: intravenous
+  frequency: every 6 hours
+  duration: up to 96 hours
+  population: adults in ICU within 24 hours with proven or suspected infection and receiving vasopressors
+  purpose: sepsis treatment
+  sourceCategory: research
+  note: Primary composite outcome favored placebo; this is not a recommended regimen.
+  sourceId: ref-lovit
+- label: VITALITY colorectal-cancer trial
+  amount: 1.5 g/kg/day on days 1 to 3
+  quantity: 1.5
+  quantityMax: null
+  unit: g/kg/day
+  ingredient: vitamin C
+  formulation: high-dose intravenous vitamin C plus FOLFOX with or without bevacizumab
+  route: intravenous
+  frequency: daily on days 1 to 3 of protocol cycles
+  duration: protocol treatment period
+  population: untreated unresectable metastatic colorectal cancer with normal G6PD status
+  purpose: adjunctive cancer treatment
+  sourceCategory: research
+  note: Overall progression-free survival was not significantly improved.
+  sourceId: ref-vitality
+- label: Metastatic pancreatic-cancer pharmacologic ascorbate trial
+  amount: 75 g
+  quantity: 75
+  quantityMax: null
+  unit: g
+  ingredient: ascorbate
+  formulation: pharmacologic intravenous ascorbate plus gemcitabine and nab-paclitaxel
+  route: intravenous
+  frequency: three times weekly
+  duration: during protocol chemotherapy
+  population: adults with stage IV pancreatic ductal adenocarcinoma
+  purpose: adjunctive cancer treatment
+  sourceCategory: research
+  note: Small randomized trial; positive survival signal requires independent confirmation.
+  sourceId: ref-bodeker
+```
+
+## Pharmacokinetics
+
+```yaml
+- id: pk-ascor-iv-1g
+  analyte: ascorbic acid
+  route: intravenous
+  formulation: ASCOR ascorbic acid injection, single 1,000 mg dose infused over 30 minutes
+  population: healthy adult men and women; half-life estimate reported for N=3
+  endpoint: elimination-half-life
+  statistic: study-mean
+  value: 7.4
+  low: null
+  high: null
+  unit: hours
+  context: "Current U.S. ASCOR label reports mean ± SD half-life 7.4 ± 1.4 h. The SD is not encoded as a range."
+  sourceId: ref-ascor-label
+  modelEligible: true
+- id: pk-iv-highdose-healthy-2022
+  analyte: ascorbic acid
+  route: intravenous
+  formulation: intravenous vitamin C, 1 to 100 g dose-escalation pharmacokinetic study
+  population: 21 healthy volunteers
+  endpoint: elimination-half-life
+  statistic: study-mean
+  value: 1.9
+  low: null
+  high: null
+  unit: hours
+  context: "Mean terminal half-life reported for healthy participants in a high-dose IV pharmacokinetic study; dose/model context differs from the ASCOR label study."
+  sourceId: ref-chen-2022
+  modelEligible: true
+- id: pk-iv-highdose-oncology-2022
+  analyte: ascorbic acid
+  route: intravenous
+  formulation: intravenous vitamin C, 25 to 100 g
+  population: 12 oncology participants
+  endpoint: elimination-half-life
+  statistic: study-mean
+  value: 2.4
+  low: null
+  high: null
+  unit: hours
+  context: "Mean terminal half-life in oncology participants; the reported comparison with healthy volunteers was not statistically significant."
+  sourceId: ref-chen-2022
+  modelEligible: true
+- id: pk-oral-homeostatic
+  analyte: ascorbic acid
+  route: oral
+  formulation: oral dietary or supplemental vitamin C across nutritional and gram-range doses
+  population: healthy adults
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: "A single general oral elimination half-life is not an adequate summary because intestinal absorption, tissue saturation, renal reabsorption and urinary excretion are concentration-dependent. Dose-concentration studies show tight oral plasma control rather than a simple fixed half-life."
+  sourceId: ref-levine-1996
+  modelEligible: false
+```
+
+## Duration
+
+```yaml
+- id: dur-ascor-iv-1g-peak
+  formulation: ASCOR ascorbic acid injection, 1,000 mg infused over 30 minutes
+  measurement: plasma
+  analyte: ascorbic acid
+  route: intravenous
+  population: healthy adult men and women, N=8 for concentration-time study
+  sourceId: ref-ascor-label
+  note: Mean peak plasma concentration was 436.2 µmol/L at the end of the 30-minute infusion; this is plasma timing, not a subjective-effect timeline.
+  total: null
+  phases:
+    - name: peak
+      basis: elapsed-since-exposure
+      min: 30
+      max: 30
+      unit: minutes
+```
+
+## Modifiers
+
+```yaml
+[]
+```
+
+## Effects
+
+```yaml
+[]
+```
+
+## Outcomes
+
+```yaml
+- id: outcome-scurvy-repletion
+  conceptId: scurvy-clinical-manifestations
+  name: Scurvy clinical manifestations
+  direction: Decreased
+  evidence: Human research
+  description: Controlled depletion data show that severe sustained vitamin C deprivation produces scurvy and that vitamin C repletion corrects the deficiency state; this establishes deficiency correction, not benefit from extra supplementation in vitamin-C-replete people.
+  sourceId: ref-hodges-1971
+  population: Five adult male volunteers who completed a prolonged controlled vitamin C depletion experiment
+  exposure: Vitamin-C-free depletion followed by graded repletion
+  instrument: Clinical examination and biochemical vitamin C status
+  magnitude: Full clinical scurvy developed after approximately 84 to 97 days of depletion in the five completing volunteers.
+  reportType: measured-assessment
+  study:
+    id: Hodges-1971-depletion
+    design: Controlled metabolic depletion-repletion study
+    sampleSize: 5
+    populationLabels:
+      - adult men
+      - controlled metabolic ward/prison research setting
+    comparator: within-participant vitamin C status across depletion and repletion
+    route: oral
+    formulation: controlled dietary vitamin C
+- id: outcome-cold-incidence-general
+  conceptId: common-cold-incidence
+  name: Common-cold incidence in the general population
+  direction: Variable
+  evidence: Human research
+  description: Regular vitamin C supplementation did not materially reduce the risk of experiencing at least one cold in general-community placebo-controlled trials.
+  sourceId: ref-cochrane-cold
+  population: General-community participants in 29 trial comparisons; 10,708 participants in the general-community incidence analysis
+  exposure: Regular oral vitamin C at 200 mg/day or more in included trials
+  instrument: Proportion of participants experiencing one or more colds
+  magnitude: "Pooled RR 0.97 (95% CI 0.94 to 1.00) in general-community trials."
+  reportType: measured-assessment
+  study:
+    id: Cochrane-CD000980
+    design: Systematic review and meta-analysis of placebo-controlled trials
+    sampleSize: 10708
+    populationLabels:
+      - general community
+    comparator: placebo
+    route: oral
+    formulation: vitamin C, doses varied by trial
+  result:
+    measure: risk-ratio
+    estimate: 0.97
+    unit: ratio
+    instrument: participants with at least one common cold during the study period
+    comparator: placebo
+    assessmentTime: across regular supplementation trial periods
+    population: general-community trial participants
+    confidenceInterval:
+      lower: 0.94
+      upper: 1.00
+      level: 95
+- id: outcome-cold-incidence-extreme-stress
+  conceptId: common-cold-incidence
+  name: Common-cold incidence during brief severe physical stress
+  direction: Decreased
+  evidence: Human research
+  description: A prespecified pooled subgroup of marathon runners, skiers and soldiers exercising in subarctic conditions had fewer colds with regular vitamin C; this subgroup result should not be generalized to ordinary activity or exercise performance.
+  sourceId: ref-cochrane-cold
+  population: 598 marathon runners, skiers and soldiers in five trials
+  exposure: Regular oral vitamin C at 200 mg/day or more in included trials
+  instrument: Proportion experiencing one or more colds
+  magnitude: "Pooled RR 0.48 (95% CI 0.35 to 0.64)."
+  reportType: measured-assessment
+  study:
+    id: Cochrane-CD000980-extreme-stress
+    design: Meta-analytic subgroup of placebo-controlled trials
+    sampleSize: 598
+    populationLabels:
+      - marathon runners
+      - skiers
+      - soldiers on subarctic exercise
+    comparator: placebo
+    route: oral
+    formulation: vitamin C, doses varied by trial
+  result:
+    measure: risk-ratio
+    estimate: 0.48
+    unit: ratio
+    instrument: participants with at least one common cold
+    comparator: placebo
+    assessmentTime: during trial periods involving brief severe physical stress
+    population: extreme-exercise/cold-exposure subgroup
+    confidenceInterval:
+      lower: 0.35
+      upper: 0.64
+      level: 95
+- id: outcome-cold-duration-adults
+  conceptId: common-cold-duration
+  name: Common-cold duration in adults using regular supplementation
+  direction: Decreased
+  evidence: Human research
+  description: Regular vitamin C modestly shortened cold duration in adults, whereas trials beginning treatment after symptom onset did not show a consistent duration or severity benefit.
+  sourceId: ref-cochrane-cold
+  population: Adult cold episodes in placebo-controlled trials
+  exposure: Regular oral vitamin C at 200 mg/day or more in included trials
+  instrument: Mean duration of common-cold episodes
+  magnitude: "Adult cold duration was reduced by 8% (95% CI 3% to 12%); seven therapeutic comparisons encompassing 3,249 episodes showed no consistent post-onset effect."
+  reportType: measured-assessment
+  study:
+    id: Cochrane-CD000980-duration
+    design: Systematic review and meta-analysis of placebo-controlled trials
+    populationLabels:
+      - adults
+    comparator: placebo
+    route: oral
+    formulation: vitamin C, doses varied by trial
+- id: outcome-major-cvd
+  conceptId: major-cardiovascular-events
+  name: Major cardiovascular events
+  direction: Variable
+  evidence: Human research
+  description: Long-term vitamin C supplementation did not reduce the composite of nonfatal myocardial infarction, nonfatal stroke and cardiovascular death in Physicians' Health Study II.
+  sourceId: ref-phs-cvd
+  population: 14,641 U.S. male physicians age 50 years and older
+  exposure: 500 mg oral vitamin C daily for a mean 8 years
+  instrument: Adjudicated major cardiovascular event composite
+  magnitude: "HR 0.99 (95% CI 0.89 to 1.11); P=0.91."
+  reportType: measured-assessment
+  study:
+    id: NCT00270647
+    design: Randomized, double-blind, placebo-controlled factorial trial
+    sampleSize: 14641
+    populationLabels:
+      - male physicians
+      - age 50 years and older
+    comparator: vitamin C placebo
+    route: oral
+    formulation: vitamin C 500 mg tablet
+    assessmentTime: mean 8 years
+  result:
+    measure: hazard-ratio
+    estimate: 0.99
+    unit: ratio
+    instrument: major cardiovascular events composite
+    comparator: placebo
+    assessmentTime: mean 8 years
+    population: male physicians age 50 years and older
+    confidenceInterval:
+      lower: 0.89
+      upper: 1.11
+      level: 95
+- id: outcome-total-cancer
+  conceptId: total-cancer-incidence
+  name: Total cancer incidence
+  direction: Variable
+  evidence: Human research
+  description: Long-term vitamin C supplementation did not reduce total cancer incidence in Physicians' Health Study II.
+  sourceId: ref-phs-cancer
+  population: 14,641 U.S. male physicians age 50 years and older
+  exposure: 500 mg oral vitamin C daily for a mean 8 years
+  instrument: Confirmed total cancer incidence
+  magnitude: "HR 1.01 (95% CI 0.92 to 1.10); P=0.86."
+  reportType: measured-assessment
+  study:
+    id: NCT00270647
+    design: Randomized, double-blind, placebo-controlled factorial trial
+    sampleSize: 14641
+    populationLabels:
+      - male physicians
+      - age 50 years and older
+    comparator: vitamin C placebo
+    route: oral
+    formulation: vitamin C 500 mg tablet
+    assessmentTime: mean 8 years
+  result:
+    measure: hazard-ratio
+    estimate: 1.01
+    unit: ratio
+    instrument: total cancer incidence
+    comparator: placebo
+    assessmentTime: mean 8 years
+    population: male physicians age 50 years and older
+    confidenceInterval:
+      lower: 0.92
+      upper: 1.10
+      level: 95
+- id: outcome-citris-organ-failure
+  conceptId: sepsis-organ-dysfunction
+  name: Organ dysfunction in sepsis with ARDS
+  direction: Variable
+  evidence: Human research
+  description: CITRIS-ALI did not improve its primary modified SOFA endpoint despite exploratory mortality findings that motivated further study.
+  sourceId: ref-citris
+  population: 167 adults with sepsis and ARDS present for less than 24 hours
+  exposure: IV vitamin C 50 mg/kg every 6 hours for 96 hours
+  instrument: Modified Sequential Organ Failure Assessment score, range 0 to 20
+  magnitude: "Difference in change from baseline to 96 h: -0.10 points (95% CI -1.23 to 1.03); P=0.86."
+  reportType: measured-assessment
+  study:
+    id: NCT02106975
+    design: Randomized, double-blind, placebo-controlled multicenter trial
+    sampleSize: 167
+    populationLabels:
+      - sepsis
+      - acute respiratory distress syndrome
+    comparator: dextrose placebo
+    route: intravenous
+    formulation: vitamin C 50 mg/kg every 6 hours
+    durationDays: 4
+    assessmentTime: 96 hours
+  result:
+    measure: mean-difference
+    estimate: -0.10
+    unit: points
+    instrument: modified Sequential Organ Failure Assessment score
+    comparator: placebo
+    assessmentTime: 96 hours
+    population: adults with sepsis and ARDS
+    confidenceInterval:
+      lower: -1.23
+      upper: 1.03
+      level: 95
+- id: outcome-lovit-primary
+  conceptId: death-or-persistent-organ-dysfunction
+  name: Death or persistent organ dysfunction at day 28
+  direction: Increased
+  evidence: Human research
+  description: In LOVIT, pharmacologic IV vitamin C increased the primary composite of death or persistent organ dysfunction compared with placebo.
+  sourceId: ref-lovit
+  population: 863 analyzed adults with sepsis in ICU receiving vasopressors
+  exposure: IV vitamin C 50 mg/kg every 6 hours for up to 96 hours
+  instrument: Death or continued vasopressor use, invasive mechanical ventilation, or new renal-replacement therapy on day 28
+  magnitude: "44.5% versus 38.5%; RR 1.21 (95% CI 1.04 to 1.40); P=0.01."
+  reportType: measured-assessment
+  study:
+    id: NCT03680274
+    design: International randomized, blinded, placebo-controlled trial
+    sampleSize: 872
+    populationLabels:
+      - adults with sepsis
+      - ICU
+      - receiving vasopressors
+    comparator: matched placebo
+    route: intravenous
+    formulation: vitamin C 50 mg/kg every 6 hours
+    durationDays: 4
+    assessmentTime: day 28
+  result:
+    measure: risk-ratio
+    estimate: 1.21
+    unit: ratio
+    instrument: death or persistent organ dysfunction composite
+    comparator: placebo
+    assessmentTime: day 28
+    population: adults with sepsis receiving vasopressors in ICU
+    confidenceInterval:
+      lower: 1.04
+      upper: 1.40
+      level: 95
+- id: outcome-vitality-pfs
+  conceptId: progression-free-survival
+  name: Progression-free survival in metastatic colorectal cancer
+  direction: Variable
+  evidence: Human research
+  description: Adding high-dose IV vitamin C to first-line FOLFOX with or without bevacizumab did not significantly improve progression-free survival in the overall VITALITY population.
+  sourceId: ref-vitality
+  population: 442 untreated patients with unresectable metastatic colorectal cancer and normal G6PD status
+  exposure: IV vitamin C 1.5 g/kg/day for 3 hours on days 1 to 3 plus FOLFOX with or without bevacizumab
+  instrument: Progression-free survival
+  magnitude: "Median 8.6 versus 8.3 months; HR 0.86 (95% CI 0.70 to 1.05); P=0.10."
+  reportType: measured-assessment
+  study:
+    id: Wang-2022-VITALITY
+    design: Randomized, open-label, multicenter phase 3 trial
+    sampleSize: 442
+    populationLabels:
+      - metastatic colorectal cancer
+      - untreated metastatic disease
+    comparator: FOLFOX with or without bevacizumab alone
+    route: intravenous
+    formulation: high-dose vitamin C plus chemotherapy
+  result:
+    measure: hazard-ratio
+    estimate: 0.86
+    unit: ratio
+    instrument: progression-free survival
+    comparator: chemotherapy control
+    assessmentTime: time-to-event follow-up
+    population: overall randomized metastatic colorectal cancer population
+    confidenceInterval:
+      lower: 0.70
+      upper: 1.05
+      level: 95
+- id: outcome-prostate-rpfs
+  conceptId: progression-free-survival
+  name: Radiographic progression-free survival in metastatic castration-resistant prostate cancer
+  direction: Variable
+  evidence: Human research
+  description: High-dose IV vitamin C added to docetaxel did not improve radiographic progression-free survival; the trial was stopped for futility.
+  sourceId: ref-paller
+  population: 47 men with progressive metastatic castration-resistant prostate cancer, most heavily pretreated
+  exposure: IV vitamin C 1 g/kg plus docetaxel versus placebo plus docetaxel
+  instrument: Radiographic progression-free survival
+  magnitude: "Median 10.1 versus 10.0 months; HR 1.35 (95% CI 0.66 to 2.75); P=0.40."
+  reportType: measured-assessment
+  study:
+    id: Paller-2024-mCRPC
+    design: Randomized, double-blind, placebo-controlled phase 2 trial
+    sampleSize: 47
+    populationLabels:
+      - metastatic castration-resistant prostate cancer
+    comparator: placebo plus docetaxel
+    route: intravenous
+    formulation: high-dose vitamin C plus docetaxel
+  result:
+    measure: hazard-ratio
+    estimate: 1.35
+    unit: ratio
+    instrument: radiographic progression-free survival
+    comparator: placebo plus docetaxel
+    assessmentTime: time-to-event follow-up
+    population: metastatic castration-resistant prostate cancer
+    confidenceInterval:
+      lower: 0.66
+      upper: 2.75
+      level: 95
+- id: outcome-pancreatic-os
+  conceptId: overall-survival
+  name: Overall survival in metastatic pancreatic cancer
+  direction: Increased
+  evidence: Limited research
+  description: A small randomized phase 2 trial reported longer overall survival when pharmacologic IV ascorbate was added to gemcitabine and nab-paclitaxel; the small sample and 90% confidence interval warrant cautious interpretation and independent replication.
+  sourceId: ref-bodeker
+  population: 36 randomized patients with stage IV pancreatic cancer; 34 received assigned treatment
+  exposure: IV pharmacologic ascorbate 75 g three times weekly plus gemcitabine and nab-paclitaxel
+  instrument: Overall survival
+  magnitude: "Median 16.0 versus 8.3 months; HR 0.46 (90% CI 0.23 to 0.92); P=0.030."
+  reportType: measured-assessment
+  study:
+    id: NCT02905578
+    design: Randomized phase 2 clinical trial
+    sampleSize: 36
+    populationLabels:
+      - stage IV pancreatic cancer
+    comparator: gemcitabine plus nab-paclitaxel alone
+    route: intravenous
+    formulation: pharmacologic ascorbate 75 g three times weekly
+  result:
+    measure: hazard-ratio
+    estimate: 0.46
+    unit: ratio
+    instrument: overall survival
+    comparator: standard chemotherapy alone
+    assessmentTime: time-to-event follow-up
+    population: metastatic pancreatic cancer
+    confidenceInterval:
+      lower: 0.23
+      upper: 0.92
+      level: 90
+```
+
+## Mechanisms
+
+```yaml
+- title: Collagen hydroxylation and connective-tissue integrity
+  description: Vitamin C acts as a reducing cofactor for iron-dependent prolyl and lysyl hydroxylation reactions required for normal collagen maturation. Severe deficiency therefore impairs connective tissue, explaining capillary fragility, gingival disease and poor wound healing in scurvy.
+  sourceId: ref-ods
+  conceptId: collagen-hydroxylation
+- title: Redox electron donor and antioxidant network
+  description: Ascorbate donates electrons in aqueous compartments and can quench reactive oxidants; it also participates in recycling other antioxidants. Antioxidant chemistry is a biochemical role and does not by itself establish benefit from high-dose supplementation for chronic disease.
+  sourceId: ref-ods
+  conceptId: ascorbate-redox
+- title: Enhancement of non-heme iron absorption
+  description: Ascorbate improves non-heme iron bioavailability, in part by maintaining iron in a more soluble reduced state in the intestinal lumen. The magnitude is meal- and diet-dependent, so a single-meal absorption effect should not be treated as a universal long-term change in iron stores.
+  sourceId: ref-ods
+  conceptId: nonheme-iron-absorption
+- title: Saturable transport and renal homeostasis
+  description: Sodium-dependent vitamin C transport supports intestinal uptake, tissue accumulation and renal reclamation. As doses rise, oral fractional absorption falls, plasma concentrations plateau and urinary excretion increases; dehydroascorbate can also enter cells through glucose-transport pathways before intracellular reduction.
+  sourceId: ref-levine-1996
+  conceptId: ascorbate-transport-homeostasis
+- title: Pharmacologic IV ascorbate as a context-dependent pro-oxidant
+  description: Intravenous dosing can create millimolar extracellular ascorbate concentrations that are unattainable orally. Preclinical cancer models support extracellular hydrogen-peroxide-generating pro-oxidant chemistry under pharmacologic conditions, but this mechanism does not establish clinical efficacy and is tumor- and regimen-dependent.
+  sourceId: ref-nci-pdq
+  conceptId: pharmacologic-ascorbate-prooxidant
+```
+
+## Cautions
+
+```yaml
+- title: Gastrointestinal intolerance at high oral intakes
+  description: Gram-range oral vitamin C commonly causes osmotic gastrointestinal effects such as diarrhea, nausea and abdominal cramps; the U.S. adult UL is 2,000 mg/day and is not a target intake.
+  sourceId: ref-ods
+- title: Oxalate nephropathy and nephrolithiasis risk
+  description: Ascorbate is metabolized in part to oxalate. The current ASCOR label reports acute and chronic oxalate nephropathy with prolonged high-dose exposure and warns that renal impairment, a history of oxalate stones and older age can increase risk. Case reports and observational signals do not establish a single incidence estimate for all oral or IV exposures.
+  sourceId: ref-ascor-label
+- title: G6PD deficiency and high-dose intravenous exposure
+  description: Severe hemolysis has been reported after ascorbic acid administration in people with glucose-6-phosphate dehydrogenase deficiency. The ASCOR label requires dose reduction and blood-count monitoring in this population; pharmacologic oncology trials commonly exclude G6PD deficiency.
+  sourceId: ref-ascor-label
+- title: Iron-overload disorders
+  description: Vitamin C can increase non-heme iron absorption and can mobilize redox-active iron. High-dose supplementation warrants particular caution in hereditary hemochromatosis or other iron-overload states; evidence in iron-replete people should not be extrapolated to these populations.
+  sourceId: ref-ods
+- title: Oxidation-reduction laboratory interference
+  description: High circulating ascorbate can interfere with oxidation-reduction-based laboratory methods. The ASCOR label specifically warns about blood or urine glucose testing and assays for nitrite, bilirubin and leukocytes and advises delaying susceptible testing until 24 hours after infusion when possible.
+  sourceId: ref-ascor-label
+- title: Oral and intravenous evidence are not interchangeable
+  description: Oral dosing is constrained by saturable absorption and renal homeostasis, whereas IV dosing produces pharmacologic plasma concentrations. Safety and efficacy claims from one route cannot be assumed for the other.
+  sourceId: ref-padayatty-2004
+```
+
+## Claims
+
+```yaml
+- id: claim-vitamin-c-collagen
+  assertion: Vitamin C is required to support normal collagen hydroxylation and connective-tissue integrity, and severe deficiency causes the connective-tissue manifestations of scurvy.
+  relation: supports
+  participants:
+    - entityId: substance:vitamin-c
+      role: essential reducing cofactor
+    - entityId: tag:collagen-hydroxylation
+      role: vitamin-C-dependent biochemical process
+  context: Human nutrition and deficiency physiology.
+  sourceIds:
+    - ref-ods
+    - ref-hodges-1971
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Biochemical necessity establishes deficiency biology but does not imply benefit from supraphysiologic supplementation in replete people.
+- id: claim-vitamin-c-iron
+  assertion: Vitamin C can increase absorption of non-heme dietary iron under meal conditions.
+  relation: increases
+  participants:
+    - entityId: substance:vitamin-c
+      role: dietary reducing agent
+    - entityId: tag:nonheme-iron-absorption
+      role: absorption endpoint
+  context: Human meal studies; magnitude depends on meal composition and baseline iron physiology.
+  sourceIds:
+    - ref-ods
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Single-meal enhancement does not quantify long-term iron stores across complete diets and may be undesirable in iron-overload disorders.
+- id: claim-vitamin-c-common-cold-general
+  assertion: Regular vitamin C supplementation does not materially prevent common colds in the general population but modestly shortens average cold duration; a larger incidence effect appears in brief severe physical-stress subgroups.
+  relation: conditionally-modifies
+  participants:
+    - entityId: substance:vitamin-c
+      role: regular oral supplement
+    - entityId: tag:common-cold-incidence
+      role: clinical outcome
+  context: Placebo-controlled trials included in the Cochrane review; supplementation was regular rather than started only after symptoms.
+  sourceIds:
+    - ref-cochrane-cold
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Trial doses, populations and cold definitions varied; subgroup results should not be generalized to ordinary exercise or to therapeutic dosing after onset.
+- id: claim-vitamin-c-cvd
+  assertion: Oral vitamin C 500 mg/day did not reduce major cardiovascular events over about eight years in middle-aged and older male physicians.
+  relation: does-not-reduce
+  participants:
+    - entityId: substance:vitamin-c
+      role: oral supplement
+    - entityId: tag:major-cardiovascular-events
+      role: clinical outcome
+  context: Physicians' Health Study II.
+  sourceIds:
+    - ref-phs-cvd
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: The population was predominantly well-nourished male physicians and does not represent deficient populations or all demographic groups.
+- id: claim-vitamin-c-sepsis
+  assertion: Routine pharmacologic IV vitamin C is not supported for adults with sepsis or septic shock; the large LOVIT trial found an increased risk of death or persistent organ dysfunction and the 2026 Surviving Sepsis Campaign suggests against its use.
+  relation: not-recommended
+  participants:
+    - entityId: substance:vitamin-c
+      role: intravenous pharmacologic intervention
+    - entityId: tag:death-or-persistent-organ-dysfunction
+      role: clinical outcome
+  context: Critically ill adults with sepsis; this does not address replacement of documented nutritional deficiency.
+  sourceIds:
+    - ref-lovit
+    - ref-ssc-2026
+  conflictingSourceIds:
+    - ref-citris
+  assessment: not-formally-assessed
+  limitation: Trial populations and protocols differ; CITRIS-ALI did not improve primary organ-failure endpoints but generated exploratory mortality signals that were not confirmed as benefit in LOVIT.
+- id: claim-vitamin-c-oncology
+  assertion: High-dose IV vitamin C remains investigational as an oncology adjunct because randomized results differ by tumor type and regimen.
+  relation: evidence-is-mixed
+  participants:
+    - entityId: substance:vitamin-c
+      role: pharmacologic intravenous adjunct
+    - entityId: tag:progression-free-survival
+      role: cancer time-to-event outcome
+  context: Randomized metastatic colorectal, prostate and pancreatic cancer trials.
+  sourceIds:
+    - ref-vitality
+    - ref-paller
+    - ref-bodeker
+    - ref-nci-pdq
+  conflictingSourceIds:
+    - ref-bodeker
+  assessment: not-formally-assessed
+  limitation: VITALITY and the prostate phase 2 trial were negative overall, whereas the small pancreatic phase 2 trial reported benefit using 90% confidence intervals; tumor biology and co-therapies differ substantially.
+```
+
+## Interactions
+
+```yaml
+- id: interaction-vitamin-c-iron
+  name: Iron absorption and iron-overload states
+  otherSlug: null
+  summary: Vitamin C enhances non-heme iron absorption; high supplemental or pharmacologic exposure can be undesirable in people with pathologic iron overload.
+  sourceId: ref-ods
+  mechanism: Reduces and solubilizes non-heme iron, increasing intestinal availability; redox-active iron can also alter oxidative chemistry.
+  context: Particularly relevant to hereditary hemochromatosis and other iron-overload disorders.
+- id: interaction-vitamin-c-lab-redox
+  name: Oxidation-reduction laboratory assays
+  otherSlug: null
+  summary: High circulating ascorbate can generate inaccurate results in susceptible blood and urine assays, including some glucose methods.
+  sourceId: ref-ascor-label
+  mechanism: Ascorbic acid is a strong reducing agent that interferes with colorimetric or electrochemical oxidation-reduction reactions.
+  context: The ASCOR label advises postponing susceptible tests until 24 hours after infusion when possible.
+- id: interaction-vitamin-c-warfarin
+  name: Warfarin anticoagulation
+  otherSlug: null
+  summary: The ASCOR label notes limited case reports suggesting interference, but reports no effect in patients receiving up to 1,000 mg/day ascorbic acid for two weeks; standard anticoagulation monitoring should continue.
+  sourceId: ref-ascor-label
+  mechanism: Not established.
+  context: Evidence is limited and does not justify assuming a clinically important interaction in every patient.
+- id: interaction-vitamin-c-urine-ph
+  name: Drugs affected by urine acidification
+  otherSlug: null
+  summary: The ASCOR label states that ascorbic acid can acidify urine and thereby alter renal handling of pH-sensitive drugs, including lowering amphetamine concentrations.
+  sourceId: ref-ascor-label
+  mechanism: Urine acidification can change ionization and renal excretion of susceptible drugs.
+  context: Label-specific warning for intravenous ascorbic acid; clinical relevance depends on exposure and the co-administered drug.
+```
+
+## Experience links
+
+```yaml
+[]
+```
+
+## References
+
+```yaml
+- id: ref-pubchem
+  title: L-Ascorbic Acid
+  authors: National Center for Biotechnology Information
+  year: 2026
+  url: https://pubchem.ncbi.nlm.nih.gov/compound/54670067
+  kind: authoritative chemical database
+  insight: "Identifies L-ascorbic acid as PubChem CID 54670067, molecular formula C6H8O6 and molecular weight 176.12 g/mol, with vitamin C and ascorbic acid among synonyms."
+  limitation: Chemical identity database; not a clinical-efficacy source.
+  funding: Government database; study sponsorship not applicable.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not applicable to a database record.
+  conflictOfInterestStatus: not-assessed
+- id: ref-ods
+  title: Vitamin C - Health Professional Fact Sheet
+  authors: NIH Office of Dietary Supplements
+  year: 2025
+  url: https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/
+  kind: authoritative nutrient monograph
+  insight: "Summarizes biochemical functions, food sources, U.S. RDA/AI and UL values, absorption, deficiency, common-cold evidence and safety considerations; updated July 31, 2025."
+  limitation: Secondary authoritative synthesis rather than a single primary study.
+  funding: U.S. National Institutes of Health public information resource; trial sponsorship not applicable.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed for an agency fact sheet.
+  conflictOfInterestStatus: not-assessed
+- id: ref-who-fao
+  title: Vitamin C
+  authors: World Health Organization and Food and Agriculture Organization of the United Nations
+  year: 2004
+  url: https://www.fao.org/4/y2809e/y2809e0c.htm
+  kind: international nutrient-requirement guideline chapter
+  insight: "Provides WHO/FAO RNIs: adults 45 mg/day, pregnancy 55 mg/day and lactation 70 mg/day, with age-specific child values and the physiologic basis used."
+  limitation: Older international reference values derived with a different framework than current U.S. DRIs.
+  funding: Intergovernmental guideline; study sponsorship not applicable.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in the web chapter.
+  conflictOfInterestStatus: not-assessed
+- id: ref-efsa
+  title: Scientific Opinion on Dietary Reference Values for vitamin C
+  authors: EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA)
+  year: 2013
+  url: https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2013.3418
+  kind: European dietary reference value scientific opinion
+  insight: "Sets European population reference intakes using EFSA's derivation framework, including 110 mg/day for adult men and 95 mg/day for adult women."
+  limitation: Reference-value methodology and terminology differ from U.S. RDA/AI and WHO/FAO RNI systems.
+  doi: "10.2903/j.efsa.2013.3418"
+  funding: European Food Safety Authority scientific opinion; trial sponsorship not applicable.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Panel-level declarations not re-audited for this article.
+  conflictOfInterestStatus: not-assessed
+- id: ref-ascor-label
+  title: ASCOR (ascorbic acid injection), for intravenous use
+  authors: McGuff Pharmaceuticals, Inc.
+  year: 2026
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=388aad52-fc01-4784-9791-1dbc80c69306
+  kind: current U.S. prescription drug label
+  insight: "Labels short-term IV treatment of scurvy when oral administration is not possible, insufficient or contraindicated; provides age-based doses, oxalate/G6PD/laboratory warnings, interactions and a 1,000 mg IV pharmacokinetic study."
+  limitation: Product-specific prescribing information; labeled dosing should not be extrapolated to high-dose investigational IV uses.
+  funding: Regulatory product labeling; trial sponsorship not separately assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not applicable/assessed for prescribing information.
+  conflictOfInterestStatus: not-assessed
+- id: ref-hodges-1971
+  title: Clinical manifestations of ascorbic acid deficiency in man
+  authors: "Hodges RE, Hood J, Canham JE, Sauberlich HE, Baker EM"
+  year: 1971
+  url: https://pubmed.ncbi.nlm.nih.gov/5090631/
+  kind: controlled human depletion-repletion study
+  insight: "Described the sequence of clinical scurvy during prolonged experimental vitamin C deprivation; five completing volunteers developed full clinical scurvy after approximately 84 to 97 days."
+  limitation: Very small historical study in incarcerated adult men under research standards that predate modern ethical norms; limited generalizability.
+  pmid: "5090631"
+  doi: "10.1093/ajcn/24.4.432"
+  funding: "U.S. Army Medical Research and Development Command contract DADA17-67-C-7111 and grant/support AM5306-08 were reported."
+  sponsorshipStatus: non-industry-funded
+  conflictsOfInterest: No modern competing-interest declaration was identified in the inspected historical record.
+  conflictOfInterestStatus: not-reported
+  disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/5090631/
+- id: ref-levine-1996
+  title: "Vitamin C pharmacokinetics in healthy volunteers: evidence for a recommended dietary allowance"
+  authors: "Levine M, Conry-Cantilena C, Wang Y, Welch RW, Washko PW, Dhariwal KR, Park JB, Lazarev A, Graumlich JF, King J, Cantilena LR"
+  year: 1996
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC39676/
+  kind: controlled depletion-repletion pharmacokinetic study
+  insight: "In seven hospitalized healthy volunteers, steady-state plasma concentrations followed sigmoid dose-response kinetics; leukocytes saturated near 100 mg/day, oral bioavailability was complete at a 200 mg single dose, fell at 500 mg and above, and urinary excretion rose with higher doses."
+  limitation: Seven participants and an intensive metabolic-ward design limit population generalizability.
+  pmid: "8623000"
+  doi: "10.1073/pnas.93.8.3704"
+  funding: Funding and sponsorship were not fully re-audited from the accessible record for this article.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Competing-interest disclosure was not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: ref-padayatty-2004
+  title: "Vitamin C pharmacokinetics: implications for oral and intravenous use"
+  authors: "Padayatty SJ, Sun H, Wang Y, Riordan HD, Hewitt SM, Katz A, Wesley RA, Levine M"
+  year: 2004
+  url: https://pubmed.ncbi.nlm.nih.gov/15068981/
+  kind: human dose-concentration study and pharmacokinetic modeling
+  insight: "In 17 healthy hospitalized volunteers, 1.25 g oral vitamin C produced mean peak plasma concentration 134.8 µmol/L versus 885 µmol/L after IV administration; modeled high-dose IV exposure was far above oral exposure."
+  limitation: Very high IV-dose concentrations were partly modeled; patient data did not validate the high-dose cancer context.
+  pmid: "15068981"
+  doi: "10.7326/0003-4819-140-7-200404060-00010"
+  funding: Source-level funding details were not fully assessed from the accessible record.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Source-level competing-interest details were not fully assessed.
+  conflictOfInterestStatus: not-assessed
+- id: ref-chen-2022
+  title: "Pharmacokinetic Evaluation of Intravenous Vitamin C: A Classic Pharmacokinetic Study"
+  authors: "Chen P, Reed G, Jiang J, Wang Y, Sunega J, Dong R, Ma Y, Esparham A, Ferrell R, Levine M, Drisko J, Chen Q"
+  year: 2022
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9439974/
+  kind: clinical pharmacokinetic study
+  insight: "Studied IV vitamin C 1–100 g in 21 healthy volunteers and 25–100 g in 12 oncology participants; first-order kinetics held to 75 g, renal elimination predominated, and most administered vitamin C was recovered in urine within 24 hours."
+  limitation: Small cohorts and pharmacokinetic rather than efficacy endpoints; oncology and healthy cohorts differed.
+  pmid: "35750958"
+  doi: "10.1007/s40262-022-01142-1"
+  funding: "Reported support included private/endowment and NIH-related sources; Mylan supplied study drug, creating mixed support."
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: Competing-interest declarations were not fully re-audited for this article.
+  conflictOfInterestStatus: not-assessed
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC9439974/
+- id: ref-cochrane-cold
+  title: Vitamin C for preventing and treating the common cold
+  authors: "Hemilä H, Chalker E"
+  year: 2013
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8078152/
+  kind: systematic review and meta-analysis of placebo-controlled trials
+  insight: "General-population incidence RR 0.97 (95% CI 0.94–1.00); severe-physical-stress subgroup RR 0.48 (0.35–0.64); regular supplementation shortened adult cold duration about 8%, while therapeutic post-onset trials showed no consistent effect."
+  limitation: Many trials were old and heterogeneous in dose, population and outcome definitions; subgroup findings are context-specific.
+  pmid: "23440782"
+  doi: "10.1002/14651858.CD000980.pub4"
+  funding: "Review support included Australian National University and the Australian Commonwealth Department of Health and Ageing; no commercial trial sponsor was reported for the review."
+  sponsorshipStatus: non-industry-funded
+  conflictsOfInterest: The review reports no relevant conflict for the other review authors after disclosed academic interests were considered.
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC8078152/
+- id: ref-phs-cvd
+  title: "Vitamins E and C in the prevention of cardiovascular disease in men: the Physicians' Health Study II randomized controlled trial"
+  authors: "Sesso HD, Buring JE, Christen WG, Kurth T, Belanger C, MacFadyen J, Bubes V, Manson JE, Glynn RJ, Gaziano JM"
+  year: 2008
+  url: https://pubmed.ncbi.nlm.nih.gov/18997197/
+  kind: randomized double-blind placebo-controlled factorial trial
+  insight: "Vitamin C 500 mg/day for a mean 8 years did not reduce major cardiovascular events: HR 0.99 (95% CI 0.89–1.11)."
+  limitation: Male physicians age 50 years and older; limited generalizability to women, deficiency states and lower-resource populations.
+  pmid: "18997197"
+  doi: "10.1001/jama.2008.600"
+  funding: "NIH grants plus an investigator-initiated BASF grant; BASF, Wyeth and DSM provided study agents/packaging."
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: Author disclosures included research support and relationships with governmental, nonprofit and commercial entities.
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC2586922/
+- id: ref-phs-cancer
+  title: "Vitamins E and C in the prevention of prostate and total cancer in men: the Physicians' Health Study II randomized controlled trial"
+  authors: "Gaziano JM, Glynn RJ, Christen WG, Kurth T, Belanger C, MacFadyen J, Bubes V, Manson JE, Sesso HD, Buring JE"
+  year: 2009
+  url: https://pubmed.ncbi.nlm.nih.gov/19066368/
+  kind: randomized double-blind placebo-controlled factorial trial
+  insight: "Vitamin C 500 mg/day did not reduce total cancer (HR 1.01, 95% CI 0.92–1.10) or prostate cancer (HR 1.02, 95% CI 0.90–1.15)."
+  limitation: Same predominantly well-nourished male-physician cohort as the cardiovascular analysis.
+  pmid: "19066368"
+  doi: "10.1001/jama.2008.862"
+  funding: "NIH support with study agents/packaging and an investigator-initiated grant involving commercial manufacturers."
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: Author financial disclosures were reported in the publication.
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC2774210/
+- id: ref-citris
+  title: "Effect of Vitamin C Infusion on Organ Failure and Biomarkers of Inflammation and Vascular Injury in Patients With Sepsis and Severe Acute Respiratory Failure: The CITRIS-ALI Randomized Clinical Trial"
+  authors: "Fowler AA 3rd, Truwit JD, Hite RD, Morris PE, DeWilde C, Priday A, Fisher B, Thacker LR 2nd, Natarajan R, Brophy DF, et al."
+  year: 2019
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6777268/
+  kind: randomized double-blind placebo-controlled multicenter trial
+  insight: "IV vitamin C 50 mg/kg every 6 h for 96 h did not improve the primary modified SOFA, C-reactive-protein or thrombomodulin endpoints."
+  limitation: Preliminary trial with multiple endpoints; exploratory mortality findings were not the primary efficacy endpoint and later evidence changed the balance.
+  pmid: "31573637"
+  doi: "10.1001/jama.2019.11825"
+  funding: "NIH/NHLBI and other academic/public support; McGuff supplied vitamin C study material."
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: Author disclosures included research support and study-material relationships.
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC6777268/
+- id: ref-lovit
+  title: Intravenous Vitamin C in Adults with Sepsis in the Intensive Care Unit
+  authors: "Lamontagne F, Masse MH, Menard J, Sprague S, Pinto R, Heyland DK, Cook DJ, et al.; LOVIT Investigators and Canadian Critical Care Trials Group"
+  year: 2022
+  url: https://www.nejm.org/doi/10.1056/NEJMoa2200644
+  kind: randomized blinded placebo-controlled multicenter trial
+  insight: "The day-28 composite of death or persistent organ dysfunction occurred in 44.5% with IV vitamin C versus 38.5% with placebo, RR 1.21 (95% CI 1.04–1.40)."
+  limitation: ICU sepsis population receiving vasopressors; findings do not address ordinary dietary supplementation or treatment of confirmed nutritional deficiency.
+  pmid: "35704292"
+  doi: "10.1056/NEJMoa2200644"
+  funding: "Lotte and John Hecht Memorial Foundation; Nova Biomedical Canada supplied glucometers/strips/control solutions; vitamin C was purchased from Mylan at Canadian and New Zealand sites."
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: Author disclosure forms are published with the article; individual relationships were not exhaustively transcribed here.
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://www.nejm.org/doi/10.1056/NEJMoa2200644
+- id: ref-ssc-2026
+  title: "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026"
+  authors: Society of Critical Care Medicine
+  year: 2026
+  url: https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026
+  kind: international clinical practice guideline
+  insight: "For adults with sepsis or septic shock, the guideline suggests against IV vitamin C; certainty of evidence is rated low."
+  limitation: Conditional recommendation based on the guideline evidence framework; does not address documented nutritional deficiency.
+  funding: Guideline-level funding and individual panel disclosures were not fully re-audited for this article.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Guideline panel disclosures were not fully re-audited.
+  conflictOfInterestStatus: not-assessed
+- id: ref-vitality
+  title: "A Randomized, Open-Label, Multicenter, Phase 3 Study of High-Dose Vitamin C Plus FOLFOX ± Bevacizumab versus FOLFOX ± Bevacizumab in Unresectable Untreated Metastatic Colorectal Cancer (VITALITY Study)"
+  authors: "Wang F, He MM, Xiao J, Zhang YQ, Yuan XL, Fang WJ, et al."
+  year: 2022
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9527503/
+  kind: randomized open-label multicenter phase 3 trial
+  insight: "Overall PFS was not significantly improved by adding IV vitamin C: median 8.6 vs 8.3 months; HR 0.86 (95% CI 0.70–1.05)."
+  limitation: Open-label design; positive RAS-mutant subgroup finding was not the overall primary result and requires confirmation.
+  pmid: "35929990"
+  doi: "10.1158/1078-0432.CCR-22-0655"
+  funding: "Sun Yat-sen University Clinical Research 5010 Program, National Natural Science Foundation of China and provincial/municipal public research programs."
+  sponsorshipStatus: non-industry-funded
+  conflictsOfInterest: The publication reports no disclosures.
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC9527503/
+- id: ref-paller
+  title: "High-Dose Intravenous Vitamin C Combined with Docetaxel in Men with Metastatic Castration-Resistant Prostate Cancer: A Randomized Placebo-Controlled Phase II Trial"
+  authors: "Paller CJ, Zahurak ML, Mandl A, Metri NA, Lalji A, Heath E, Kelly WK, Hoimes C, Barata P, Taksey J, et al."
+  year: 2024
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11333993/
+  kind: randomized double-blind placebo-controlled phase 2 trial
+  insight: "Adding IV vitamin C 1 g/kg to docetaxel did not significantly improve PSA50 response, radiographic PFS, overall survival or toxicity; the study stopped for futility."
+  limitation: Small, heavily pretreated population and early futility termination reduce precision.
+  pmid: "39076107"
+  doi: "10.1158/2767-9764.CRC-24-0225"
+  funding: "U.S. Department of Defense, NIH and Billi Marcus Foundation support were reported."
+  sponsorshipStatus: non-industry-funded
+  conflictsOfInterest: Multiple author relationships with commercial oncology companies were disclosed.
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC11333993/
+- id: ref-bodeker
+  title: A randomized trial of pharmacological ascorbate, gemcitabine, and nab-paclitaxel for metastatic pancreatic cancer
+  authors: "Bodeker KL, Smith BJ, Berg DJ, Chandrasekharan C, Sharif S, Fei N, et al."
+  year: 2024
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11491967/
+  kind: randomized phase 2 clinical trial
+  insight: "In 36 randomized patients, adding 75 g IV ascorbate three times weekly was associated with OS HR 0.46 (90% CI 0.23–0.92) and PFS HR 0.43 (90% CI 0.20–0.92)."
+  limitation: Very small sample, 34 treated patients, and use of 90% confidence intervals; findings require independent confirmation.
+  pmid: "39369582"
+  doi: "10.1016/j.redox.2024.103375"
+  funding: "NIH P01CA217797 and Holden Comprehensive Cancer Center P30 support were reported."
+  sponsorshipStatus: non-industry-funded
+  conflictsOfInterest: Authors declared no known competing financial interests or personal relationships that could have appeared to influence the work.
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC11491967/
+- id: ref-nci-pdq
+  title: Intravenous Vitamin C (PDQ®)–Health Professional Version
+  authors: National Cancer Institute
+  year: 2025
+  url: https://www.cancer.gov/about-cancer/treatment/cam/hp/vitamin-c-pdq
+  kind: U.S. government evidence summary
+  insight: "Separates oral from IV pharmacology, reviews clinical oncology evidence and states that FDA has not approved high-dose vitamin C as a cancer treatment."
+  limitation: Secondary evidence synthesis; not itself a randomized trial or FDA approval database.
+  funding: U.S. National Cancer Institute evidence summary; trial sponsorship not applicable.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed for the PDQ editorial process in this article.
+  conflictOfInterestStatus: not-assessed
+- id: ref-fda-supplements
+  title: FDA 101: Dietary Supplements
+  authors: U.S. Food and Drug Administration
+  year: 2025
+  url: https://www.fda.gov/consumers/consumer-updates/fda-101-dietary-supplements
+  kind: official U.S. regulatory information
+  insight: "Explains that FDA does not approve dietary supplements for safety, effectiveness or labeling before sale; firms bear primary responsibility for lawful marketing."
+  limitation: General supplement regulatory framework, not vitamin-C-specific efficacy evidence.
+  funding: U.S. government regulatory information; study sponsorship not applicable.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not applicable to regulatory guidance.
+  conflictOfInterestStatus: not-assessed
+```
+
+## Legal
+
+```yaml
+- jurisdiction: United States
+  activity: sale of vitamin C as a dietary supplement
+  status: Dietary supplements are regulated under the U.S. dietary-supplement framework and are not FDA-approved for safety and effectiveness before marketing.
+  sourceUrl: https://www.fda.gov/consumers/consumer-updates/fda-101-dietary-supplements
+  asOf: "2026-10-04"
+- jurisdiction: United States
+  activity: prescription intravenous treatment of scurvy with ASCOR
+  status: Current ASCOR prescribing information labels short-term IV treatment of scurvy in adults and pediatric patients age 5 months and older when oral administration is not possible, insufficient or contraindicated.
+  sourceUrl: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=388aad52-fc01-4784-9791-1dbc80c69306
+  asOf: "2026-10-04"
+- jurisdiction: United States
+  activity: high-dose intravenous vitamin C as a cancer treatment
+  status: Not FDA-approved as a cancer treatment.
+  sourceUrl: https://www.cancer.gov/about-cancer/treatment/cam/hp/vitamin-c-pdq
+  asOf: "2026-10-04"
+```
+
+Essential companion concepts and relationships
+
+The article deliberately does not reuse unrelated pre-existing effect/outcome IDs from the supplied dictionary. The following companion concepts are limited to entities actually referenced by the article, preventing cardiovascular, infectious-disease, oncology, or biochemical endpoints from being misclassified as unrelated canonical concepts. 
+17
+
+outcomes/scurvy-clinical-manifestations.md
+
+markdown
+Copy
+---
+id: scurvy-clinical-manifestations
+label: Scurvy clinical manifestations
+kind: outcome
+aliases:
+  - clinical scurvy
+relatedIds:
+  - collagen-hydroxylation
+sourceUrls:
+  - https://pubmed.ncbi.nlm.nih.gov/5090631/
+  - https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+The clinically measured manifestations of severe sustained vitamin C deficiency, including hemorrhagic/connective-tissue findings, gingival disease, impaired wound healing and related systemic symptoms.
+
+
+outcomes/common-cold-incidence.md
+
+markdown
+Copy
+---
+id: common-cold-incidence
+label: Common-cold incidence
+kind: outcome
+aliases:
+  - cold incidence
+relatedIds:
+  - common-cold-duration
+sourceUrls:
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC8078152/
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+The occurrence of one or more common-cold episodes in participants during a defined observation period.
+
+
+outcomes/common-cold-duration.md
+
+markdown
+Copy
+---
+id: common-cold-duration
+label: Common-cold duration
+kind: outcome
+aliases:
+  - cold episode duration
+relatedIds:
+  - common-cold-incidence
+sourceUrls:
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC8078152/
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+The measured duration of a common-cold episode, typically expressed as days of illness or as a relative difference in episode duration between groups.
+
+
+outcomes/major-cardiovascular-events.md
+
+markdown
+Copy
+---
+id: major-cardiovascular-events
+label: Major cardiovascular events
+kind: outcome
+aliases:
+  - major cardiovascular event composite
+relatedIds: []
+sourceUrls:
+  - https://pubmed.ncbi.nlm.nih.gov/18997197/
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+A prespecified cardiovascular clinical-event endpoint combining serious events such as nonfatal myocardial infarction, nonfatal stroke and cardiovascular death.
+
+
+outcomes/total-cancer-incidence.md
+
+markdown
+Copy
+---
+id: total-cancer-incidence
+label: Total cancer incidence
+kind: outcome
+aliases:
+  - total cancer
+relatedIds: []
+sourceUrls:
+  - https://pubmed.ncbi.nlm.nih.gov/19066368/
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+The occurrence of confirmed incident cancers across anatomical sites during a defined trial follow-up period.
+
+
+outcomes/sepsis-organ-dysfunction.md
+
+markdown
+Copy
+---
+id: sepsis-organ-dysfunction
+label: Sepsis organ dysfunction
+kind: outcome
+aliases:
+  - organ failure in sepsis
+relatedIds:
+  - death-or-persistent-organ-dysfunction
+sourceUrls:
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC6777268/
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Measured dysfunction or failure of organ systems in patients with sepsis, including validated composite scores such as the Sequential Organ Failure Assessment and trial-specific modifications.
+
+
+outcomes/death-or-persistent-organ-dysfunction.md
+
+markdown
+Copy
+---
+id: death-or-persistent-organ-dysfunction
+label: Death or persistent organ dysfunction
+kind: outcome
+aliases:
+  - death or persistent organ dysfunction at day 28
+relatedIds:
+  - sepsis-organ-dysfunction
+sourceUrls:
+  - https://www.nejm.org/doi/10.1056/NEJMoa2200644
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+The LOVIT trial composite of death or continued need for vasopressors, invasive mechanical ventilation, or new renal-replacement therapy at the specified day-28 assessment.
+
+
+outcomes/progression-free-survival.md
+
+markdown
+Copy
+---
+id: progression-free-survival
+label: Progression-free survival
+kind: outcome
+aliases:
+  - PFS
+  - radiographic progression-free survival
+relatedIds:
+  - overall-survival
+sourceUrls:
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC9527503/
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC11333993/
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC11491967/
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+A time-to-event oncology outcome measuring time until protocol-defined disease progression or death, with exact progression criteria determined by the individual trial.
+
+
+outcomes/overall-survival.md
+
+markdown
+Copy
+---
+id: overall-survival
+label: Overall survival
+kind: outcome
+aliases:
+  - OS
+relatedIds:
+  - progression-free-survival
+sourceUrls:
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC11491967/
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+A time-to-event clinical outcome measuring time from the trial-defined origin to death from any cause.
+
+
+concepts/mechanism/collagen-hydroxylation.md
+
+markdown
+Copy
+---
+id: collagen-hydroxylation
+label: Collagen hydroxylation
+kind: mechanism
+aliases:
+  - collagen prolyl and lysyl hydroxylation
+relatedIds:
+  - scurvy-clinical-manifestations
+  - ascorbate-redox
+sourceUrls:
+  - https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Vitamin-C-dependent reducing chemistry that supports iron-dependent hydroxylation reactions required for normal collagen maturation and connective-tissue integrity.
+
+
+concepts/mechanism/ascorbate-redox.md
+
+markdown
+Copy
+---
+id: ascorbate-redox
+label: Ascorbate redox chemistry
+kind: mechanism
+aliases:
+  - vitamin C redox activity
+relatedIds:
+  - collagen-hydroxylation
+  - pharmacologic-ascorbate-prooxidant
+sourceUrls:
+  - https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+The reversible electron-donating and oxidation-reduction chemistry of ascorbate that supports enzyme cofactors and antioxidant reactions under physiological conditions.
+
+
+concepts/mechanism/nonheme-iron-absorption.md
+
+markdown
+Copy
+---
+id: nonheme-iron-absorption
+label: Non-heme iron absorption
+kind: mechanism
+aliases:
+  - dietary nonheme iron uptake
+relatedIds:
+  - ascorbate-redox
+sourceUrls:
+  - https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+Intestinal uptake of dietary non-heme iron, which vitamin C can enhance through chemical reduction and maintenance of iron in more soluble, absorbable forms.
+
+
+concepts/mechanism/ascorbate-transport-homeostasis.md
+
+markdown
+Copy
+---
+id: ascorbate-transport-homeostasis
+label: Ascorbate transport and homeostasis
+kind: mechanism
+aliases:
+  - vitamin C transport homeostasis
+relatedIds:
+  - ascorbate-redox
+sourceUrls:
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC39676/
+  - https://pubmed.ncbi.nlm.nih.gov/15068981/
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+The concentration-dependent intestinal uptake, tissue transport, renal reclamation and urinary elimination processes that tightly constrain plasma vitamin C after oral intake.
+
+
+concepts/mechanism/pharmacologic-ascorbate-prooxidant.md
+
+markdown
+Copy
+---
+id: pharmacologic-ascorbate-prooxidant
+label: Pharmacologic ascorbate pro-oxidant mechanism
+kind: mechanism
+aliases:
+  - high-dose IV ascorbate pro-oxidant chemistry
+relatedIds:
+  - ascorbate-redox
+sourceUrls:
+  - https://www.cancer.gov/about-cancer/treatment/cam/hp/vitamin-c-pdq
+x-shape: [id, label, kind, description, aliases, relatedIds, sourceUrls]
+---
+## Definition
+
+A proposed mechanism at millimolar pharmacologic ascorbate concentrations in which extracellular redox reactions can generate hydrogen peroxide and related oxidative stress; it is primarily a preclinical mechanistic rationale and does not itself establish anticancer efficacy.
+
+
+relationships/vitamin-c-collagen-hydroxylation.md
+
+markdown
+Copy
+---
+id: vitamin-c-collagen-hydroxylation
+label: Vitamin C supports collagen hydroxylation
+relation: supports
+members:
+  - substance:vitamin-c
+  - tag:collagen-hydroxylation
+memberRoles:
+  "substance:vitamin-c": reducing cofactor
+  "tag:collagen-hydroxylation": biochemical process
+sourceUrl: https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/
+sourceUrls:
+  - https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/
+  - https://pubmed.ncbi.nlm.nih.gov/5090631/
+directedSteps:
+  - from: substance:vitamin-c
+    to: tag:collagen-hydroxylation
+    label: supports iron-dependent collagen hydroxylation
+    sourceUrls:
+      - https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/
+x-shape: [id, label, relation, members, memberRoles, sourceUrl, sourceUrls, directedSteps, description]
+---
+## Description
+
+Physiological ascorbate supports collagen-related hydroxylation chemistry; severe depletion disrupts connective-tissue integrity and produces characteristic scurvy manifestations.
+
+
+relationships/vitamin-c-nonheme-iron-absorption.md
+
+markdown
+Copy
+---
+id: vitamin-c-nonheme-iron-absorption
+label: Vitamin C enhances non-heme iron absorption
+relation: increases
+members:
+  - substance:vitamin-c
+  - tag:nonheme-iron-absorption
+memberRoles:
+  "substance:vitamin-c": dietary reducing agent
+  "tag:nonheme-iron-absorption": absorption process
+sourceUrl: https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/
+sourceUrls:
+  - https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/
+directedSteps:
+  - from: substance:vitamin-c
+    to: tag:nonheme-iron-absorption
+    label: increases dietary non-heme iron availability
+    sourceUrls:
+      - https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/
+x-shape: [id, label, relation, members, memberRoles, sourceUrl, sourceUrls, directedSteps, description]
+---
+## Description
+
+Vitamin C can improve dietary non-heme iron absorption; the magnitude depends on meal composition and this interaction can be undesirable in pathological iron-overload states.
+
+
+relationships/vitamin-c-transport-homeostasis.md
+
+markdown
+Copy
+---
+id: vitamin-c-transport-homeostasis
+label: Vitamin C exposure is constrained by transport and renal homeostasis
+relation: homeostatically-controlled-by
+members:
+  - substance:vitamin-c
+  - tag:ascorbate-transport-homeostasis
+memberRoles:
+  "substance:vitamin-c": transported micronutrient
+  "tag:ascorbate-transport-homeostasis": absorption and elimination system
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC39676/
+sourceUrls:
+  - https://pmc.ncbi.nlm.nih.gov/articles/PMC39676/
+  - https://pubmed.ncbi.nlm.nih.gov/15068981/
+directedSteps:
+  - from: tag:ascorbate-transport-homeostasis
+    to: substance:vitamin-c
+    label: limits oral plasma exposure as dose rises
+    sourceUrls:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC39676/
+  - from: tag:ascorbate-transport-homeostasis
+    to: substance:vitamin-c
+    label: increases urinary elimination after saturation
+    sourceUrls:
+      - https://pmc.ncbi.nlm.nih.gov/articles/PMC39676/
+x-shape: [id, label, relation, members, memberRoles, sourceUrl, sourceUrls, directedSteps, description]
+---
+## Description
+
+Saturable intestinal uptake and concentration-dependent renal handling create a nonlinear oral dose–plasma relationship and explain why oral and intravenous vitamin C are pharmacokinetically non-equivalent.
+
+
+relationships/vitamin-c-pharmacologic-prooxidant.md
+
+markdown
+Copy
+---
+id: vitamin-c-pharmacologic-prooxidant
+label: Pharmacologic IV vitamin C can engage pro-oxidant chemistry
+relation: can-engage
+members:
+  - substance:vitamin-c
+  - tag:pharmacologic-ascorbate-prooxidant
+memberRoles:
+  "substance:vitamin-c": pharmacologic IV exposure
+  "tag:pharmacologic-ascorbate-prooxidant": proposed cancer mechanism
+sourceUrl: https://www.cancer.gov/about-cancer/treatment/cam/hp/vitamin-c-pdq
+sourceUrls:
+  - https://www.cancer.gov/about-cancer/treatment/cam/hp/vitamin-c-pdq
+directedSteps:
+  - from: substance:vitamin-c
+    to: tag:pharmacologic-ascorbate-prooxidant
+    label: millimolar IV exposure enables context-dependent extracellular pro-oxidant chemistry
+    sourceUrls:
+      - https://www.cancer.gov/about-cancer/treatment/cam/hp/vitamin-c-pdq
+x-shape: [id, label, relation, members, memberRoles, sourceUrl, sourceUrls, directedSteps, description]
+---
+## Description
+
+Pharmacologic IV exposure can reach concentrations at which preclinical extracellular pro-oxidant mechanisms become plausible; this pathway is a mechanistic hypothesis rather than proof of clinical anticancer efficacy.
+
+Coverage and access gaps
+
+The evidence set prioritizes primary controlled human studies, randomized trials, official U.S. prescribing information, NIH/FDA/NCI/SCCM sources, WHO/FAO nutrient guidance, and systematic review evidence. PubChem confirms chemical identity; the current DailyMed ASCOR label supplies product-specific U.S. scurvy indications, pharmacokinetics, warnings and interactions. 
+1
+ 
+4
+
+Funding and conflicts were kept deliberately conservative. Where a full disclosure statement was inspected or clearly reported, the article records commercial/noncommercial support and declared conflicts; where only bibliographic metadata or an incomplete source view was available, it uses not-assessed rather than inferring independence. LOVIT, for example, was foundation-funded, received commercial glucose-monitoring supplies, and published author disclosure forms; its primary result and funding statement are directly visible in the inspected NEJM article. 
+11
+
+The exercise evidence encoded here is intentionally restricted to the verified extreme-physical-stress common-cold subgroup. A separate exercise-performance benefit is not claimed because the retrieved vitamin-C-only evidence did not support a sufficiently precise, generalizable performance endpoint for structured inclusion. Likewise, isolated biomarker improvements were not promoted to clinical benefits. 
+7
+
+The oncology section is intentionally tumor- and regimen-specific rather than collapsing studies into a universal “cancer” effect. The most important tension is between negative randomized colorectal/prostate results and the small positive pancreatic study; NCI's current position remains that high-dose IV vitamin C is not FDA-approved for cancer treatment. 
+13
+ 
+14
+ 
+15
+ 
+16

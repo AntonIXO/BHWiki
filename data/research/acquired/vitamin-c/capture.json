@@ -1,0 +1,102 @@
+{
+  "topic": "vitamin-c",
+  "sourceUrl": "https://chatgpt.com/c/6ac18768-85a8-83ed-8db3-ff17d98d850e",
+  "method": "Visible research content captured in Chrome through a temporary loopback-only form",
+  "files": [
+    {
+      "path": "substances/vitamin-c.md",
+      "bytes": 69900,
+      "sha256": "df50d56944e27aa387c464c76a538f71516f96a3a9a29005a3be7e052f4f4be0"
+    },
+    {
+      "path": "outcomes/scurvy-clinical-manifestations.md",
+      "bytes": 578,
+      "sha256": "00a24679d062ac64e5fa56805eed57f9959b917fdfa7cac74a329a1462ca8c75"
+    },
+    {
+      "path": "outcomes/common-cold-incidence.md",
+      "bytes": 400,
+      "sha256": "70c89ef7084562a54abf5b05e304e19f6957b63f75e829d9de7fd7631d9c016c"
+    },
+    {
+      "path": "outcomes/common-cold-duration.md",
+      "bytes": 453,
+      "sha256": "9d535a6bc0acb484a4293ea36301a2e1ad4bbfdbaf9ffac1ee5f9306218abf1b"
+    },
+    {
+      "path": "outcomes/major-cardiovascular-events.md",
+      "bytes": 461,
+      "sha256": "2de2fdfc3387365e5c683a8711938905d0ac4219657cb6254682d12dfa83cfa7"
+    },
+    {
+      "path": "outcomes/total-cancer-incidence.md",
+      "bytes": 376,
+      "sha256": "2f700710326c5757a8184da7dcbca8335c679112a8fc97a6911c77704eaa8423"
+    },
+    {
+      "path": "outcomes/sepsis-organ-dysfunction.md",
+      "bytes": 521,
+      "sha256": "c1692d7146efd5f9b0eae88cd88ec8fecd25f9ac7ac10adfb666f1b110692592"
+    },
+    {
+      "path": "outcomes/death-or-persistent-organ-dysfunction.md",
+      "bytes": 535,
+      "sha256": "1e4dae59d2b775f75f98e52cda719b3fcf935463dd6d73a359d28d0f77bc17af"
+    },
+    {
+      "path": "outcomes/progression-free-survival.md",
+      "bytes": 611,
+      "sha256": "cead480c3ceb1e9be13733f38bc3aa6b0eab28e53230e3cf7cfab47095e0ec77"
+    },
+    {
+      "path": "outcomes/overall-survival.md",
+      "bytes": 383,
+      "sha256": "5dd85bd45d0f5b8c768567ca8720ffdaaabfcea40ac28c2ed763ef08ff4315e1"
+    },
+    {
+      "path": "concepts/mechanism/collagen-hydroxylation.md",
+      "bytes": 533,
+      "sha256": "bebecb378957e95311d166c6941f25a091db278929da74b9fe3092e0aec48a62"
+    },
+    {
+      "path": "concepts/mechanism/ascorbate-redox.md",
+      "bytes": 529,
+      "sha256": "58e851f526429cc047bc3de61b9c587ba95b263adf9b844913e8610c76843be4"
+    },
+    {
+      "path": "concepts/mechanism/nonheme-iron-absorption.md",
+      "bytes": 482,
+      "sha256": "47b3edd72dcc98c1a683e99a41417c9b79d1a344cb7441775c0b0d404da74328"
+    },
+    {
+      "path": "concepts/mechanism/ascorbate-transport-homeostasis.md",
+      "bytes": 554,
+      "sha256": "ad668a3555abd046d07ed7d469d0adab64b203be0a302a08fbc520ad9d9c3d79"
+    },
+    {
+      "path": "concepts/mechanism/pharmacologic-ascorbate-prooxidant.md",
+      "bytes": 654,
+      "sha256": "b14b53cd0771d63e3bd14f4000031a2a1eef6bfadd40bae045661224eac126c0"
+    },
+    {
+      "path": "relationships/vitamin-c-collagen-hydroxylation.md",
+      "bytes": 1008,
+      "sha256": "a31433649660fd30972f7bba5268b475b4ddf6f374c98b88effed33bf7eeb854"
+    },
+    {
+      "path": "relationships/vitamin-c-nonheme-iron-absorption.md",
+      "bytes": 968,
+      "sha256": "09ed81c05fe2662b8c195ad4d3ca192ff22c91c68397dc831986e7319c67af95"
+    },
+    {
+      "path": "relationships/vitamin-c-transport-homeostasis.md",
+      "bytes": 1288,
+      "sha256": "0e9e0151c91871020b073565d0c3265edc990fc9471874ef4a35339d38cdc124"
+    },
+    {
+      "path": "relationships/vitamin-c-pharmacologic-prooxidant.md",
+      "bytes": 1124,
+      "sha256": "f7da10954eb733b599a22f2ae4a2bf153bff76a38ee45367998f38d865f655be"
+    }
+  ]
+}

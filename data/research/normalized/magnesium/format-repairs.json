@@ -1,0 +1,19 @@
+{
+  "topic": "magnesium",
+  "sourceUrl": "https://chatgpt.com/c/6ac18763-7c5c-83ed-866a-bccee73875f3",
+  "changes": [
+    "Condensed overview prose; study findings, references and structured records retained. Embedded prose diagrams remain in the original acquisition report.",
+    "substances/magnesium.md: quoted 12 scalar values containing colon-space without changing their text.",
+    "liu-2016: assessed labels without a declaration source downgraded to not-assessed; disclosure text retained.",
+    "outcomes/blood-pressure.md: moved frontmatter description into Definition, preserving existing body text.",
+    "outcomes/insulin-sensitivity.md: moved frontmatter description into Definition, preserving existing body text.",
+    "outcomes/glycemic-control.md: moved frontmatter description into Definition, preserving existing body text.",
+    "outcomes/cognitive-performance.md: moved frontmatter description into Definition, preserving existing body text.",
+    "concepts/mechanism/magnesium-homeostasis.md: moved frontmatter description into Definition, preserving existing body text.",
+    "concepts/mechanism/mg-atp-complex.md: moved frontmatter description into Definition, preserving existing body text.",
+    "concepts/target/trpm6.md: moved frontmatter description into Definition, preserving existing body text.",
+    "concepts/target/trpm7.md: moved frontmatter description into Definition, preserving existing body text.",
+    "concepts/target/slc41a1.md: moved frontmatter description into Definition, preserving existing body text.",
+    "concepts/target/cnnm2.md: moved frontmatter description into Definition, preserving existing body text."
+  ]
+}

@@ -22,6 +22,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Prose } from "@/components/prose";
+import { SourceDisclosures } from "@/components/source-disclosures";
 
 type FocusTarget = HTMLElement | SVGElement;
 const EvidenceContext = createContext<
@@ -237,10 +238,7 @@ export function EvidenceContents({ record }: { record: EvidenceRecord }) {
                   <strong>Study limitations:</strong>{" "}
                   {r.limitation ?? "Not assessed"}
                 </p>
-                <p>
-                  <strong>Funding / disclosures:</strong>{" "}
-                  {r.funding ?? "Not assessed"}
-                </p>
+                <SourceDisclosures reference={r} />
               </article>
             ))
           ) : (

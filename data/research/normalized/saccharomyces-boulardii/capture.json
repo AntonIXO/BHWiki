@@ -1,0 +1,73 @@
+{
+  "topic": "saccharomyces-boulardii",
+  "sourceUrl": "https://chatgpt.com/c/6ac18763-9060-83ed-a1a5-1c3c4db1fa2f",
+  "method": "Locally normalized from the captured Chrome research Markdown; raw acquisition remains unchanged",
+  "files": [
+    {
+      "path": "substances/saccharomyces-boulardii.md",
+      "originalSha256": "74e78b504e549cf0fcadd302e9e63b529032ab09e2184e2761b707da7d4034d2",
+      "sha256": "5ec893bf3de730387bf4e487fc21c1217b08d994d9d56ba7aa85cc1487233eb6",
+      "bytes": 57368
+    },
+    {
+      "path": "outcomes/antibiotic-associated-diarrhea-incidence.md",
+      "originalSha256": "2e083923b7f4ec1bd914a4feed5f47c87759b737b3fd188f8df276627d518d59",
+      "sha256": "2e083923b7f4ec1bd914a4feed5f47c87759b737b3fd188f8df276627d518d59",
+      "bytes": 657
+    },
+    {
+      "path": "outcomes/clostridioides-difficile-recurrence.md",
+      "originalSha256": "1a75f123d755dcb696d078ad968f58c2a6a999c932a057b3c1174039a163b485",
+      "sha256": "1a75f123d755dcb696d078ad968f58c2a6a999c932a057b3c1174039a163b485",
+      "bytes": 618
+    },
+    {
+      "path": "outcomes/travelers-diarrhea-incidence.md",
+      "originalSha256": "ed9817ec4a9000b22f5bb252983790c97e334bb4ff1871d509e95f2c21c1cb3d",
+      "sha256": "ed9817ec4a9000b22f5bb252983790c97e334bb4ff1871d509e95f2c21c1cb3d",
+      "bytes": 590
+    },
+    {
+      "path": "outcomes/gut-microbiota-composition.md",
+      "originalSha256": "51996be291cf6b2c014f6297c0f08a4abbc76b09e85721722bd43c7597baedfb",
+      "sha256": "51996be291cf6b2c014f6297c0f08a4abbc76b09e85721722bd43c7597baedfb",
+      "bytes": 577
+    },
+    {
+      "path": "concepts/mechanism/clostridioides-difficile-toxin-proteolysis.md",
+      "originalSha256": "b0536288f5bd6cf8c37da8834b1082961101e76d9d01f14a329a50b66fba8bcf",
+      "sha256": "b0536288f5bd6cf8c37da8834b1082961101e76d9d01f14a329a50b66fba8bcf",
+      "bytes": 616
+    },
+    {
+      "path": "concepts/class/antifungal-agents.md",
+      "originalSha256": "981a2d83a10e7828aaf8ba086afe6195fa671aa7c8274dcf0e26bb1d67fb2fea",
+      "sha256": "981a2d83a10e7828aaf8ba086afe6195fa671aa7c8274dcf0e26bb1d67fb2fea",
+      "bytes": 483
+    },
+    {
+      "path": "relationships/saccharomyces-boulardii-aad.md",
+      "originalSha256": "8190fa86345c9d453ff3f99cb83974bd13d7ac8dfb5675e8d69b185ffc78c240",
+      "sha256": "8190fa86345c9d453ff3f99cb83974bd13d7ac8dfb5675e8d69b185ffc78c240",
+      "bytes": 1090
+    },
+    {
+      "path": "relationships/saccharomyces-boulardii-cdi-recurrence.md",
+      "originalSha256": "e4db4bf0d7591084bab5ddbf52aeec5b10f5697205f9f933e349e2c0f639fe80",
+      "sha256": "e4db4bf0d7591084bab5ddbf52aeec5b10f5697205f9f933e349e2c0f639fe80",
+      "bytes": 899
+    },
+    {
+      "path": "relationships/saccharomyces-boulardii-travelers-diarrhea.md",
+      "originalSha256": "3536ddde5850859d36a9815a2b154c699a0cf2835eb4fcd4bab645a9277931dc",
+      "sha256": "3536ddde5850859d36a9815a2b154c699a0cf2835eb4fcd4bab645a9277931dc",
+      "bytes": 837
+    },
+    {
+      "path": "relationships/saccharomyces-boulardii-toxin-proteolysis.md",
+      "originalSha256": "94bd982805b5a3ddfbe2e30cc7f27098d5e3da8d525b05bde592a96f3ec224a0",
+      "sha256": "94bd982805b5a3ddfbe2e30cc7f27098d5e3da8d525b05bde592a96f3ec224a0",
+      "bytes": 1207
+    }
+  ]
+}

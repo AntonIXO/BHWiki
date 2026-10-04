@@ -18,7 +18,9 @@ test("evidence opens, survives a direct link, restores focus, and follows browse
     }),
   ).toBeVisible();
   await expect(sheet).toContainText("Comparator");
-  await expect(sheet).toContainText("Funding / disclosures");
+  await expect(sheet).toContainText("Funding:");
+  await expect(sheet).toContainText("Conflicts of interest:");
+  await expect(sheet).toContainText("Conflicts not assessed");
   const direct = page.url();
   await page.keyboard.press("Escape");
   await expect(sheet).not.toBeVisible();

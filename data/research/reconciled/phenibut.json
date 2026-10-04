@@ -1,0 +1,604 @@
+{
+  "provenance": {
+    "chatUrl": "https://chatgpt.com/c/6ac17f4c-1594-83ed-9253-94f1afee392d",
+    "method": "Locally reconciled from the completed Chrome Deep Research report and checked primary records; generated sandbox files were not retrievable.",
+    "limitations": "Not an independently reviewed systematic review; full-text access and unassessed disclosures are explicit."
+  },
+  "substance": {
+    "slug": "phenibut",
+    "name": "Phenibut",
+    "subtitle": "GABA analogue · limited clinical efficacy evidence and documented dependence risk.",
+    "summary": "Phenibut is a chiral CNS depressant with GABA-B and α2δ-related preclinical pharmacology. Human efficacy findings are limited; poisoning, dependence and severe withdrawal are documented.",
+    "description": "Phenibut is a synthetic GABA analogue, distinct from oral GABA, F-phenibut and baclofen. Parent compound, enantiomers, hydrochloride/free-amino-acid preparations and commercial products must not be conflated. A small randomized add-on study and uncontrolled clinical cohorts report indication-specific improvements; these do not establish broad anxiety, sleep or healthy-person enhancement benefits. [Clinical study](https://pubmed.ncbi.nlm.nih.gov/29265084/) · [Recent observational study](https://pmc.ncbi.nlm.nih.gov/articles/PMC12347254/).",
+    "aliases": [
+      "β-phenyl-GABA",
+      "Noofen",
+      "Noophen",
+      "Anvifen",
+      "Фенибут"
+    ],
+    "formula": "C10H13NO2",
+    "molecularWeight": "179.22 g/mol",
+    "pubchemCid": 14113,
+    "smiles": "C1=CC=C(C=C1)C(CC(=O)O)CN",
+    "category": "Depressant",
+    "tags": [
+      "depressant",
+      "gaba-b-receptor",
+      "alpha2delta-vgcc"
+    ],
+    "accent": "#c3b093",
+    "evidenceNote": "Selected studies from a separate Phenibut Deep Research run, reconciled with primary records; independent editorial review remains pending. The 2025 efficacy cohort was uncontrolled and manufacturer funded, with declared commercial interests. Several older papers were abstract-only. An unverified elimination estimate, absent trial comparator or missing disclosure remains unknown; these gaps must not become evidence of safety, independence or no effect.",
+    "reviewedAt": "2026-10-04",
+    "editorialStatus": "sourced-draft",
+    "halfLife": {
+      "label": "Not established from the inspected primary human record",
+      "low": null,
+      "high": null,
+      "context": "The inspected primary abstract reports bioequivalence but no numeric elimination half-life. Common secondary estimates were not verified here.",
+      "sourceId": "zhezlova2011",
+      "observationId": "phenibut-human-pk-2011"
+    },
+    "pkObservations": [
+      {
+        "id": "phenibut-human-pk-2011",
+        "analyte": "Unchanged aminophenylbutyric acid (phenibut)",
+        "route": "Oral",
+        "formulation": "Anvifen capsules versus Phenibut tablets",
+        "population": "18 healthy volunteers",
+        "endpoint": "elimination-half-life",
+        "statistic": "not-established",
+        "value": null,
+        "low": null,
+        "high": null,
+        "unit": "hours",
+        "context": "The inspected primary abstract reports bioequivalence but no numeric elimination half-life. Common secondary estimates were not verified here.",
+        "sourceId": "zhezlova2011",
+        "modelEligible": false
+      }
+    ],
+    "kinetics": {
+      "onset": "Not established here",
+      "peak": "Not established here",
+      "duration": "Not established here",
+      "bioavailability": "Not established; formulation bioequivalence is not absolute bioavailability.",
+      "metabolism": "Not established from the inspected primary human record.",
+      "sourceId": "zhezlova2011"
+    },
+    "modifiers": [],
+    "doses": [
+      {
+        "label": "Adjustment-disorder observational exposure",
+        "amount": "250 mg per administration",
+        "quantity": 250,
+        "quantityMax": null,
+        "unit": "mg",
+        "ingredient": "Phenibut",
+        "formulation": "Noofen capsules",
+        "route": "Oral",
+        "frequency": "Three times daily",
+        "duration": "About three weeks",
+        "population": "Adults with adjustment disorder",
+        "purpose": "Observed ADNM-20 change",
+        "sourceCategory": "research",
+        "note": "Clinician-prescribed routine practice; uncontrolled exposure is not a personal recommendation.",
+        "sourceId": "terauds2025"
+      }
+    ],
+    "effects": [
+      {
+        "id": "reported-somnolence",
+        "conceptId": "drowsiness",
+        "name": "Reported somnolence",
+        "direction": "Increased",
+        "evidence": "Human research",
+        "description": "Somnolence was the most frequently reported adverse event in the older trials summarized by the review; reporting methods and study quality varied.",
+        "sourceId": "kupats2020",
+        "population": "583 participants across 11 older clinical trials",
+        "exposure": "Heterogeneous clinical trial exposures",
+        "instrument": null,
+        "magnitude": "Reported in 1.89% of participants in the review; not a universal incidence estimate."
+      },
+      {
+        "id": "withdrawal-anxiety",
+        "conceptId": "anxiety",
+        "name": "Anxiety during withdrawal",
+        "direction": "Increased",
+        "evidence": "Limited research",
+        "description": "Anxiety and insomnia occurred in published withdrawal cases. These adverse experiences do not establish an acute anxiolytic benefit.",
+        "sourceId": "feldman2023",
+        "population": "Published withdrawal cases",
+        "exposure": "Discontinuation after repeated exposure",
+        "instrument": null,
+        "magnitude": null
+      }
+    ],
+    "outcomes": [
+      {
+        "id": "adjustment-disorder-adnm20",
+        "conceptId": "adjustment-disorder-severity",
+        "name": "Adjustment-disorder symptom score",
+        "direction": "Decreased",
+        "evidence": "Human research",
+        "description": "Scores improved within participants; no concurrent comparator establishes a causal drug effect.",
+        "sourceId": "terauds2025",
+        "population": "90 adults with adjustment disorder",
+        "exposure": "Noofen; three-week observational course",
+        "instrument": "ADNM-20 total score",
+        "magnitude": "Mean reduction 14.8 points (SD 11.3).",
+        "reportType": "measured-assessment",
+        "study": {
+          "id": "noofen-ajd-latvia-2023-2024",
+          "design": "Uncontrolled observational study",
+          "sampleSize": 90,
+          "populationLabels": [
+            "Adults with adjustment disorder"
+          ],
+          "comparator": "Own baseline; no concurrent control",
+          "route": "Oral",
+          "formulation": "Noofen capsules",
+          "durationDays": 21,
+          "assessmentTime": "After approximately three weeks"
+        },
+        "result": {
+          "measure": "mean",
+          "estimate": 14.8,
+          "unit": "points reduced",
+          "instrument": "ADNM-20 total-score reduction",
+          "comparator": "Own baseline; no concurrent control",
+          "assessmentTime": "After approximately three weeks",
+          "population": "Adults with adjustment disorder"
+        }
+      },
+      {
+        "id": "cerebrovascular-fatigue",
+        "conceptId": "fatigue-severity",
+        "name": "Fatigue in cerebrovascular disease",
+        "direction": "Decreased",
+        "evidence": "Human research",
+        "description": "The add-on group reported fatigue improvement; the inspected abstract lacks a numeric between-group estimate and blinding details.",
+        "sourceId": "vorobeva2017",
+        "population": "53 patients with cerebrovascular disease and persistent fatigue",
+        "exposure": "Noophen plus standard therapy; exposure details unavailable in the inspected abstract",
+        "instrument": "MFI-20",
+        "magnitude": "30–50% reduction reported in approximately three quarters of the treated group.",
+        "reportType": "measured-assessment",
+        "study": {
+          "id": "vorobeva-rusaya-2017",
+          "design": "Randomized add-on trial",
+          "sampleSize": 53,
+          "populationLabels": [
+            "Patients with cerebrovascular disease"
+          ],
+          "comparator": "Standard therapy alone"
+        }
+      },
+      {
+        "id": "schulte-task",
+        "conceptId": "cognitive-task-performance",
+        "name": "Schulte-test performance",
+        "direction": "Increased",
+        "evidence": "Human research",
+        "description": "Improved task performance was reported alongside reduced mental fatigue; this is not evidence of general intelligence or healthy-person enhancement.",
+        "sourceId": "vorobeva2017",
+        "population": "Patients with cerebrovascular disease and fatigue",
+        "exposure": "Same randomized add-on study",
+        "instrument": "Schulte test",
+        "magnitude": "Numeric between-group estimate not supplied in the inspected abstract.",
+        "reportType": "measured-assessment",
+        "study": {
+          "id": "vorobeva-rusaya-2017",
+          "design": "Randomized add-on trial",
+          "sampleSize": 53,
+          "comparator": "Standard therapy alone"
+        }
+      },
+      {
+        "id": "poison-centre-airway-support",
+        "conceptId": "invasive-airway-support",
+        "name": "Intubation among reported poison-centre cases",
+        "direction": "Variable",
+        "evidence": "Human research",
+        "description": "Intubation occurred among selected reported exposures; without an exposed-population denominator or comparator, this does not estimate individual risk.",
+        "sourceId": "mccabe2019",
+        "population": "56 regional poison-centre exposure calls",
+        "exposure": "Reported phenibut exposure; products and coexposures varied",
+        "instrument": "Clinical case records",
+        "magnitude": "11 of 56 cases were intubated.",
+        "reportType": "measured-assessment",
+        "study": {
+          "id": "mccabe-minnesota-2000-2018",
+          "design": "Retrospective poison-centre series",
+          "sampleSize": 56,
+          "populationLabels": [
+            "Reported poison-centre exposures"
+          ],
+          "comparator": "No comparator"
+        }
+      }
+    ],
+    "claims": [
+      {
+        "id": "r-enantiomer-gaba-b",
+        "assertion": "R-enantiomer-dependent GABA-B pharmacology was demonstrated in preclinical systems.",
+        "relation": "Preclinical receptor pharmacology",
+        "participants": [
+          {
+            "entityId": "substance:phenibut",
+            "role": "R-enantiomer and racemate tested"
+          },
+          {
+            "entityId": "tag:gaba-b-receptor",
+            "role": "Receptor target"
+          }
+        ],
+        "context": "Binding and animal behavioral experiments, not a human efficacy trial.",
+        "sourceIds": [
+          "dambrova2008"
+        ],
+        "conflictingSourceIds": [],
+        "assessment": "not-formally-assessed",
+        "limitation": "Does not establish human clinical effects."
+      },
+      {
+        "id": "alpha2delta-binding",
+        "assertion": "Phenibut enantiomers bound the α2δ subunit in rat-brain preparations.",
+        "relation": "Preclinical ligand binding",
+        "participants": [
+          {
+            "entityId": "substance:phenibut",
+            "role": "Tested ligand enantiomers"
+          },
+          {
+            "entityId": "tag:alpha2delta-vgcc",
+            "role": "Binding target"
+          }
+        ],
+        "context": "Rodent experimental systems.",
+        "sourceIds": [
+          "zvejniece2015"
+        ],
+        "conflictingSourceIds": [],
+        "assessment": "not-formally-assessed",
+        "limitation": "Human target engagement and clinical analgesia remain unestablished here."
+      }
+    ],
+    "mechanisms": [
+      {
+        "title": "GABA-B-related pharmacology",
+        "description": "Binding and antagonist experiments linked R-enantiomer-dependent effects to GABA-B receptors in preclinical systems. Clinical efficacy does not follow from receptor activity alone.",
+        "sourceId": "dambrova2008",
+        "conceptId": "gaba-b-receptor"
+      },
+      {
+        "title": "α2δ-related pharmacology",
+        "description": "Phenibut enantiomers bound α2δ in rat-brain preparations; rodent pain models supported this mechanism. These experiments do not establish human analgesic benefit.",
+        "sourceId": "zvejniece2015",
+        "conceptId": "alpha2delta-vgcc"
+      }
+    ],
+    "cautions": [
+      {
+        "title": "CNS and respiratory depression",
+        "description": "Selected poison-centre cases included depressed consciousness and respiratory compromise requiring intubation. Case frequency is not population incidence.",
+        "sourceId": "mccabe2019"
+      },
+      {
+        "title": "Dependence and severe withdrawal",
+        "description": "Published withdrawal cases include agitation, hallucinations, delirium and seizures. Case-management reports do not establish a self-treatment protocol.",
+        "sourceId": "feldman2023"
+      },
+      {
+        "title": "Product composition and coexposures",
+        "description": "The 2026 FDA alert found undeclared ingredients alongside phenibut in a particular product. Its harms cannot all be attributed to phenibut alone.",
+        "sourceId": "fda2026"
+      }
+    ],
+    "interactions": [
+      {
+        "id": "other-substances-regulatory-warning",
+        "name": "Other substances",
+        "otherSlug": null,
+        "summary": "FDA warns that co-use with other prescribed or illicit substances can contribute to life-threatening complications. This is a general warning, not a quantified pair-specific interaction.",
+        "sourceId": "fda2026",
+        "context": "Regulatory safety alert; no controlled interaction magnitude or universal pair classification is supplied."
+      }
+    ],
+    "experienceLinks": [
+      {
+        "title": "Phenibut on PsychonautWiki",
+        "url": "https://psychonautwiki.org/wiki/Phenibut",
+        "publisher": "PsychonautWiki"
+      }
+    ],
+    "references": [
+      {
+        "id": "pubchem",
+        "title": "Phenibut: compound identity and structure",
+        "authors": "NCBI PubChem",
+        "year": 2026,
+        "url": "https://pubchem.ncbi.nlm.nih.gov/compound/14113",
+        "kind": "Chemical database",
+        "insight": "Source of the displayed formula, molecular weight, structure, and connectivity SMILES.",
+        "limitation": "The parent compound identity is distinct from salts, formulations, and commercial product quality.",
+        "funding": "US National Library of Medicine.",
+        "sponsorshipStatus": "not-assessed",
+        "conflictsOfInterest": "Not assessed from an inspected declaration.",
+        "conflictOfInterestStatus": "not-assessed"
+      },
+      {
+        "id": "dambrova2008",
+        "title": "Comparative pharmacological activity of optical isomers of phenibut",
+        "authors": "Maija Dambrova et al.",
+        "year": 2008,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/18275958/",
+        "kind": "Preclinical receptor and animal experiments",
+        "pmid": "18275958",
+        "doi": "10.1016/j.ejphar.2008.01.015",
+        "insight": "R-enantiomer-dependent GABA-B pharmacology in the tested systems.",
+        "limitation": "Binding and animal behavior do not establish human clinical efficacy.",
+        "funding": "Exact funding declaration not assessed.",
+        "sponsorshipStatus": "not-assessed",
+        "conflictsOfInterest": "Not assessed from an inspected declaration.",
+        "conflictOfInterestStatus": "not-assessed"
+      },
+      {
+        "id": "zvejniece2015",
+        "title": "R-phenibut binds to the α2-δ subunit of voltage-dependent calcium channels and exerts gabapentin-like anti-nociceptive effects",
+        "authors": "Liga Zvejniece et al.",
+        "year": 2015,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/26234470/",
+        "kind": "Preclinical binding and rodent pain experiments",
+        "pmid": "26234470",
+        "doi": "10.1016/j.pbb.2015.07.014",
+        "insight": "Phenibut enantiomers bound α2δ in rat-brain preparations; rodent results supported this target.",
+        "limitation": "Does not establish clinical analgesia or human target engagement. Manufacturer affiliations are visible; full declarations were not inspected.",
+        "funding": "Exact funding declaration not assessed.",
+        "sponsorshipStatus": "not-assessed",
+        "conflictsOfInterest": "Not assessed from an inspected declaration.",
+        "conflictOfInterestStatus": "not-assessed"
+      },
+      {
+        "id": "vorobeva2017",
+        "title": "[Efficacy and safety of noophen in the treatment of chronic fatigue syndrome in patients with cerebrovascular insufficiency]",
+        "authors": "O V Vorob'eva; V V Rusaya",
+        "year": 2017,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/29265084/",
+        "kind": "Randomized add-on clinical trial",
+        "pmid": "29265084",
+        "doi": "10.17116/jnevro201711711131-36",
+        "insight": "Fatigue and Schulte-test improvement reported in an indication-specific randomized study.",
+        "limitation": "Small study; inspected abstract lacks blinding details and quantitative between-group effects.",
+        "funding": "Not assessed; only the indexed abstract was inspected.",
+        "sponsorshipStatus": "not-assessed",
+        "conflictsOfInterest": "Not assessed from an inspected declaration.",
+        "conflictOfInterestStatus": "not-assessed"
+      },
+      {
+        "id": "terauds2025",
+        "title": "Efficacy of Noofen 250 mg Capsules for the Management of Anxious–Neurotic Symptoms in Patients with Adjustment Disorder",
+        "authors": "Elmārs Tērauds; Guna Dansone; Yulia Troshina",
+        "year": 2025,
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12347254/",
+        "kind": "Uncontrolled observational study",
+        "pmid": "40807194",
+        "doi": "10.3390/jcm14155570",
+        "insight": "ADNM-20 improvement in 90 evaluable patients.",
+        "limitation": "No concurrent control; manufacturer support and declared commercial interests.",
+        "funding": "JSC Olpha supported the study.",
+        "sponsorshipStatus": "industry-funded",
+        "conflictsOfInterest": "Dansone and Troshina reported Olpha employment; Tērauds reported financial benefits including Olpha.",
+        "conflictOfInterestStatus": "declared",
+        "disclosureUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12347254/"
+      },
+      {
+        "id": "zhezlova2011",
+        "title": "[Bioequivalence of anvifen and phenibut]",
+        "authors": "A V Zhezlova; V G Belolipetskaia; S V Blagodatskikh; E V Merkulova",
+        "year": 2011,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/21809698/",
+        "kind": "Open randomized crossover bioequivalence study",
+        "pmid": "21809698",
+        "insight": "Anvifen capsules and Phenibut tablets were reported bioequivalent in 18 healthy volunteers.",
+        "limitation": "Inspected abstract lacks numeric elimination estimates; bioequivalence does not establish absolute bioavailability.",
+        "funding": "Not assessed; only the indexed abstract was inspected.",
+        "sponsorshipStatus": "not-assessed",
+        "conflictsOfInterest": "Not assessed from an inspected declaration.",
+        "conflictOfInterestStatus": "not-assessed"
+      },
+      {
+        "id": "mccabe2019",
+        "title": "Phenibut exposures and clinical effects reported to a regional poison center",
+        "authors": "Daniel J McCabe; Stacey A Bangh; Ann M Arens; Jon B Cole",
+        "year": 2019,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30878413/",
+        "kind": "Retrospective poison-centre series",
+        "pmid": "30878413",
+        "doi": "10.1016/j.ajem.2019.02.044",
+        "insight": "CNS depression and intubation were documented in selected exposure calls.",
+        "limitation": "Selected reported cases, coexposures and uncertain products prevent population-risk or causal attribution estimates.",
+        "funding": "Not assessed from the indexed abstract.",
+        "sponsorshipStatus": "not-assessed",
+        "conflictsOfInterest": "Not assessed from an inspected declaration.",
+        "conflictOfInterestStatus": "not-assessed"
+      },
+      {
+        "id": "feldman2023",
+        "title": "A systematic review of phenibut withdrawal focusing on complications, therapeutic approaches, and single substance versus polysubstance withdrawal",
+        "authors": "Ryan Feldman et al.",
+        "year": 2023,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38112312/",
+        "kind": "Systematic review of withdrawal case reports",
+        "pmid": "38112312",
+        "doi": "10.1080/15563650.2023.2285702",
+        "insight": "Severe withdrawal manifestations included delirium, hallucinations and seizures.",
+        "limitation": "All included publications were case reports or conference abstracts; no incidence or comparative treatment efficacy follows.",
+        "funding": "Not assessed from the indexed abstract.",
+        "sponsorshipStatus": "not-assessed",
+        "conflictsOfInterest": "Not assessed from an inspected declaration.",
+        "conflictOfInterestStatus": "not-assessed"
+      },
+      {
+        "id": "kupats2020",
+        "title": "Safety and Tolerability of the Anxiolytic and Nootropic Drug Phenibut: A Systematic Review of Clinical Trials and Case Reports",
+        "authors": "Einars Kupats et al.",
+        "year": 2020,
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32340063/",
+        "kind": "Systematic safety review",
+        "pmid": "32340063",
+        "doi": "10.1055/a-1151-5017",
+        "insight": "Older trials reported adverse events including somnolence; case reports documented dependence and intoxication.",
+        "limitation": "Heterogeneous older studies and selected cases do not establish a universal safety rate.",
+        "funding": "Exact funding declaration not independently inspected.",
+        "sponsorshipStatus": "not-assessed",
+        "conflictsOfInterest": "Authors explicitly declared no conflicts in the indexed statement.",
+        "conflictOfInterestStatus": "none-declared",
+        "disclosureUrl": "https://pubmed.ncbi.nlm.nih.gov/32340063/"
+      },
+      {
+        "id": "fda2019",
+        "title": "FDA Acts on Dietary Supplements Containing DMHA and Phenibut",
+        "authors": "US Food and Drug Administration",
+        "year": 2019,
+        "url": "https://www.fda.gov/food/hfp-constituent-updates/fda-acts-dietary-supplements-containing-dmha-and-phenibut",
+        "kind": "Official regulatory statement",
+        "insight": "FDA states that phenibut does not meet the dietary-ingredient definition.",
+        "limitation": "Dietary-supplement marketing status does not determine all possession or medication laws.",
+        "funding": "Federal regulatory agency; study sponsorship is not applicable.",
+        "sponsorshipStatus": "not-assessed",
+        "conflictsOfInterest": "Not assessed from an inspected declaration.",
+        "conflictOfInterestStatus": "not-assessed"
+      },
+      {
+        "id": "fda2026",
+        "title": "FDA Advises Consumers, Retailers, and Distributors Not to Eat, Sell, or Distribute Addall XR Shot or Addall XL Dietary Supplements (April 2026)",
+        "authors": "US Food and Drug Administration",
+        "year": 2026,
+        "url": "https://www.fda.gov/food/alerts-advisories-safety-information/fda-advises-consumers-retailers-and-distributors-not-eat-sell-or-distribute-addall-xr-shot-or-addall",
+        "kind": "Official public-health alert",
+        "insight": "FDA reiterated unlawful dietary-supplement ingredient status and addiction/withdrawal concerns.",
+        "limitation": "A specific product alert; undeclared additional ingredients prevent attributing all product harms to phenibut.",
+        "funding": "Federal regulatory agency; study sponsorship is not applicable.",
+        "sponsorshipStatus": "not-assessed",
+        "conflictsOfInterest": "Not assessed from an inspected declaration.",
+        "conflictOfInterestStatus": "not-assessed"
+      }
+    ],
+    "legal": [
+      {
+        "jurisdiction": "United States",
+        "activity": "Marketing phenibut as a dietary-supplement ingredient",
+        "status": "FDA states that phenibut is not a lawful dietary-supplement ingredient; this does not determine every possession or medication law.",
+        "sourceUrl": "https://www.fda.gov/food/alerts-advisories-safety-information/fda-advises-consumers-retailers-and-distributors-not-eat-sell-or-distribute-addall-xr-shot-or-addall",
+        "asOf": "2026-10-04"
+      }
+    ]
+  },
+  "tags": [
+    {
+      "id": "gaba-b-receptor",
+      "label": "GABA-B receptor",
+      "kind": "target",
+      "description": "A receptor target investigated through ligand binding and receptor-selective antagonist experiments. A compound's activity in an experimental system does not by itself establish human clinical efficacy.",
+      "aliases": [],
+      "relatedIds": [],
+      "sourceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/18275958/"
+      ]
+    },
+    {
+      "id": "alpha2delta-vgcc",
+      "label": "α2δ subunit of voltage-dependent calcium channels",
+      "kind": "target",
+      "description": "An auxiliary calcium-channel subunit investigated as a ligand-binding target. Experimental binding and rodent pain responses are distinct from human target engagement or clinical outcomes.",
+      "aliases": [],
+      "relatedIds": [],
+      "sourceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/26234470/"
+      ]
+    },
+    {
+      "id": "adjustment-disorder-severity",
+      "label": "Adjustment-disorder symptom severity",
+      "kind": "outcome",
+      "description": "Symptoms associated with a defined stress-related clinical disorder, measured with an identified instrument such as ADNM-20. Score changes depend on population, comparator and assessment time; uncontrolled change does not establish treatment efficacy.",
+      "aliases": [],
+      "relatedIds": [],
+      "sourceUrls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12347254/"
+      ]
+    },
+    {
+      "id": "fatigue-severity",
+      "label": "Fatigue severity",
+      "kind": "outcome",
+      "description": "Fatigue measured with a named instrument such as MFI-20. Physical, mental and motivational domains and their clinical population must remain explicit; a score change is distinct from performance on a cognitive task.",
+      "aliases": [],
+      "relatedIds": [],
+      "sourceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/29265084/"
+      ]
+    },
+    {
+      "id": "cognitive-task-performance",
+      "label": "Cognitive task performance",
+      "kind": "outcome",
+      "description": "Performance on a specified cognitive test, retaining the task, measure and study population. A task improvement does not establish general intelligence or enhancement across unrelated tasks.",
+      "aliases": [],
+      "relatedIds": [],
+      "sourceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/29265084/"
+      ]
+    },
+    {
+      "id": "invasive-airway-support",
+      "label": "Invasive airway support",
+      "kind": "outcome",
+      "description": "A documented clinical intervention such as endotracheal intubation. Counts among reported poisoning cases describe those selected records; they do not supply individual exposure risk without an appropriate denominator and comparison.",
+      "aliases": [],
+      "relatedIds": [],
+      "sourceUrls": [
+        "https://pubmed.ncbi.nlm.nih.gov/30878413/"
+      ]
+    }
+  ],
+  "relationship": {
+    "id": "phenibut-preclinical-targets",
+    "label": "Phenibut experimental binding targets",
+    "relation": "Preclinical receptor and ligand-binding observations",
+    "members": [
+      "substance:phenibut",
+      "tag:gaba-b-receptor",
+      "tag:alpha2delta-vgcc"
+    ],
+    "memberRoles": {
+      "substance:phenibut": "Tested racemate and enantiomers",
+      "tag:gaba-b-receptor": "Preclinical receptor target",
+      "tag:alpha2delta-vgcc": "Rat-brain binding target"
+    },
+    "description": "Two separately sourced experimental mechanisms. The arrows describe tested molecular relationships and do not infer human efficacy, analgesia or a recommended combination.",
+    "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/18275958/",
+    "sourceUrls": [
+      "https://pubmed.ncbi.nlm.nih.gov/18275958/",
+      "https://pubmed.ncbi.nlm.nih.gov/26234470/"
+    ],
+    "directedSteps": [
+      {
+        "from": "substance:phenibut",
+        "to": "tag:gaba-b-receptor",
+        "label": "R-enantiomer-dependent binding/pharmacology in preclinical systems",
+        "sourceUrls": [
+          "https://pubmed.ncbi.nlm.nih.gov/18275958/"
+        ]
+      },
+      {
+        "from": "substance:phenibut",
+        "to": "tag:alpha2delta-vgcc",
+        "label": "Ligand binding in rat-brain membrane preparations",
+        "sourceUrls": [
+          "https://pubmed.ncbi.nlm.nih.gov/26234470/"
+        ]
+      }
+    ]
+  }
+}

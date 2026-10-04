@@ -1,4 +1,5 @@
 import { EvidenceButton } from "@/components/evidence";
+import { SourceDisclosures } from "@/components/source-disclosures";
 import { EffectPreview } from "@/components/effect-preview";
 import { TimingExplorer } from "@/components/timing-explorer";
 import { MechanismExplorer } from "@/components/mechanism-explorer";
@@ -150,6 +151,9 @@ export default async function SubstancePage({ params }: Props) {
   const related = entities.relatedSubstances(substance.slug, substance.tags);
   const selectedObservation = substance.pkObservations.find(item => item.id === substance.halfLife.observationId);
   const reviewed = substance.editorialStatus === "editorially-reviewed";
+  const identityReference = substance.pubchemCid === null
+    ? substance.references.find(r => r.id === "molekul-profile") ?? substance.references[0]
+    : substance.references.find(r => r.id === "pubchem") ?? substance.references.find(r => /pubchem\.ncbi\.nlm\.nih\.gov\/(?:compound|rest\/pug\/compound)\//.test(r.url));
   const toc = [{ id: "overview", name: "Overview" }, { id: "effects", name: "Subjective effects" }, { id: "measured-outcomes", name: "Measured outcomes" }, { id: "exposure", name: "Doses & routes" }, { id: "kinetics", name: "Pharmacokinetics" }, { id: "safety", name: "Safety" }, { id: "evidence", name: "Research" }, { id: "connections", name: "Connections" }, { id: "legal", name: "Legal context" }, { id: "editorial-history", name: "History" }];
 
   return (
@@ -186,7 +190,7 @@ export default async function SubstancePage({ params }: Props) {
             <Link href={`/substances/${slug}/history`} className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline">Revision history <History aria-hidden="true" size={16} /></Link>
           </div>
         </div>
-        <MoleculeImage src={substance.pubchemCid === null ? undefined : `/molecules/${substance.slug}.png`} alt={`Two-dimensional molecular structure of ${substance.name}`} wellClassName="h-52 w-full" width={270} height={230} />
+        <MoleculeImage src={substance.pubchemCid === null ? undefined : `/molecules/${substance.slug}.png`} alt={`Chemical identity depiction of ${substance.name}`} wellClassName="h-52 w-full" width={270} height={230} />
       </header>
       <SectionNav label="On this page" items={toc} />
       <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
@@ -399,7 +403,7 @@ export default async function SubstancePage({ params }: Props) {
                           )}
                           <p>{reference.insight}</p>
                           <p><strong>Limitations</strong> {reference.limitation}</p>
-                          <p><strong>Funding / disclosures</strong> {reference.funding || "Not assessed in this summary."}</p>
+                          <SourceDisclosures reference={reference} />
                         </ItemContent>
                       </Item>
                     </div>
@@ -536,7 +540,7 @@ export default async function SubstancePage({ params }: Props) {
                 { term: "Classification", detail: substance.category },
                 { term: "Also known as", detail: substance.aliases.length ? substance.aliases.join(", ") : "No aliases curated" },
               ]} />
-              <p className="text-sm">{substance.pubchemCid === null ? "Profile source " : "Identity source "}<Source substance={substance} id={substance.pubchemCid === null ? "molekul-profile" : "pubchem"} /></p>
+              <p className="text-sm">{substance.pubchemCid === null ? "Profile source " : "Identity source "}{identityReference ? <Source substance={substance} id={identityReference.id} /> : "Not linked to a curated reference."}</p>
               <Popover>
                 <PopoverTrigger render={<Button variant="outline" size="sm" className="w-fit" />}>
                   SMILES identifier

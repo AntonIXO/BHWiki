@@ -1,4 +1,5 @@
 import { validateResearchArticle, validateResearchCorpus } from "./validate-research";
+import { validateSourceDisclosure } from "./source-disclosures";
 import type { Substance, Tag, Hyperedge } from './types';
 
 type RecordValue = Record<string,unknown>;
@@ -39,7 +40,7 @@ export function validateSubstance(value:unknown):asserts value is Substance {
  if(!('experienceLinks' in s))s.experienceLinks=[];
  objects(s.experienceLinks,p+'.experienceLinks',(r,k)=>{fields(r,['title'],k);if(r.publisher!=='PsychonautWiki')fail(k,'publisher must be PsychonautWiki');https(r.url,k+'.url');const u=new URL(r.url as string);if(u.hostname!=='psychonautwiki.org'||u.search||u.hash||!/^\/wiki\/[^/]+$/.test(u.pathname))fail(k,'expected a PsychonautWiki substance URL');});
  if((s.experienceLinks as unknown[]).length>1)fail(p,'at most one experience link');
- objects(s.references,p+'.references',(r,k)=>{fields(r,['id','title','authors','kind','insight','limitation'],k);https(r.url,k+'.url');if(!Number.isInteger(r.year)||(r.year as number)<1600)fail(k,'invalid publication year');if(r.pmid!==undefined&&!/^\d+$/.test(String(r.pmid)))fail(k,'invalid PMID');if(r.doi!==undefined&&!/^10\.\d{4,9}\/\S+$/.test(String(r.doi)))fail(k,'invalid DOI');});
+ objects(s.references,p+'.references',(r,k)=>{fields(r,['id','title','authors','kind','insight','limitation'],k);https(r.url,k+'.url');if(!Number.isInteger(r.year)||(r.year as number)<1600)fail(k,'invalid publication year');if(r.pmid!==undefined&&!/^\d+$/.test(String(r.pmid)))fail(k,'invalid PMID');if(r.doi!==undefined&&!/^10\.\d{4,9}\/\S+$/.test(String(r.doi)))fail(k,'invalid DOI');validateSourceDisclosure(r,k);});
  objects(s.legal,p+'.legal',(r,k)=>{fields(r,['jurisdiction','activity','status','asOf'],k);https(r.sourceUrl,k+'.sourceUrl');if(!/^\d{4}-\d{2}-\d{2}$/.test(String(r.asOf)))fail(k,'invalid legal date');});
  objects(s.claims,p+'.claims',(r,k)=>{fields(r,['id','assertion','relation','context','limitation'],k);choice(r.assessment,['not-formally-assessed'],k+'.assessment');texts(r.sourceIds,k+'.sourceIds');texts(r.conflictingSourceIds,k+'.conflictingSourceIds');if(!(r.sourceIds as string[]).length)fail(k,'claim needs a source');objects(r.participants,k+'.participants',(m,j)=>fields(m,['entityId','role'],j));if((r.participants as unknown[]).length<2)fail(k,'claim needs participants');});
  const typed=value as Substance;
