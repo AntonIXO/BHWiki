@@ -309,6 +309,7 @@ export default async function SubstancePage({ params }: Props) {
     : substance.references.find(r => r.id === "pubchem") ?? substance.references.find(r => /pubchem\.ncbi\.nlm\.nih\.gov\/(?:compound|rest\/pug\/compound)\//.test(r.url));
   const toc = [
     { id: "overview", name: "Overview" },
+    { id: "effects", name: "Subjective effects" },
     { id: "measured-outcomes", name: "Measured outcomes" },
     { id: "exposure", name: "Doses & routes" },
     ...(identificationTests.length ? [{ id: "identification-tests", name: "Identification tests" }] : []),
@@ -393,6 +394,12 @@ export default async function SubstancePage({ params }: Props) {
               }) : <DataEmpty>Mechanisms not assessed.</DataEmpty>}
               <MechanismExplorer slug={slug} data={mechanismGraph}/>
             </div>
+          </section>
+
+          <section id="effects" className="flex scroll-mt-24 flex-col gap-4">
+            <SectionHeading title="Subjective effects" />
+            <p className="text-muted-foreground">Reported experiences are kept separate from measured outcomes and remain tied to their cited context.</p>
+            <ObservationMatrix observations={substance.effects} substance={substance} entities={entities} />
           </section>
 
           <section id="measured-outcomes" className="flex scroll-mt-24 flex-col gap-4">
