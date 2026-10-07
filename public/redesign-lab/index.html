@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BHWiki redesign lab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@0.468.0"></script>
+  </head>
+  <body>
+    <main class="lab-shell">
+      <section class="lab-intro">
+        <div>
+          <p class="eyebrow"><i data-lucide="atom"></i>BHWiki redesign lab</p>
+          <h1>BHWiki redesign lab</h1>
+          <p class="lede">A subpage experiment in the existing BHWiki language. Choose the data treatment and page-type cues while the content stays familiar.</p>
+        </div>
+        <div class="lab-status"><span class="status-dot"></span><span id="lab-status-text">Layout selected · refine details</span></div>
+      </section>
+
+      <div class="workspace">
+        <aside class="controls" aria-label="Prototype choices">
+          <div class="control-block">
+            <div class="control-title"><span><i data-lucide="layout-dashboard"></i></span><div><strong>Start with a direction</strong><small>Sets a coherent default.</small></div></div>
+            <div class="preset-list">
+              <button class="preset is-active" data-preset="atlas"><span class="preset-top"><span class="preset-icon"><i data-lucide="layout-dashboard"></i></span><i data-lucide="chevron-right"></i></span><strong>Evidence Atlas</strong><small>Dark navigation, compact matrix, pinned PK rail.</small></button>
+              <button class="preset" data-preset="ledger"><span class="preset-top"><span class="preset-icon"><i data-lucide="list-tree"></i></span><i data-lucide="chevron-right"></i></span><strong>Evidence Ledger</strong><small>Quiet surfaces, dense rows, evidence-first scanning.</small></button>
+              <button class="preset" data-preset="field"><span class="preset-top"><span class="preset-icon"><i data-lucide="book-open-check"></i></span><i data-lucide="chevron-right"></i></span><strong>Field Guide</strong><small>Editorial identity, alive outcome cards, visible context.</small></button>
+            </div>
+          </div>
+
+          <div class="control-block">
+            <div class="control-title"><span><i data-lucide="palette"></i></span><div><strong>Page type color</strong><small>Make substance, effect, and enzyme legible.</small></div></div>
+            <div class="choice-list">
+              <button class="choice is-active" data-page-type="substance"><span class="choice-icon"><i data-lucide="flask-conical"></i></span><span><b>Substance</b><small>teal / structural</small></span><i data-lucide="check"></i></button>
+              <button class="choice" data-page-type="effect"><span class="choice-icon"><i data-lucide="sparkles"></i></span><span><b>Effect</b><small>amber / outcome</small></span><i data-lucide="check"></i></button>
+              <button class="choice" data-page-type="enzyme"><span class="choice-icon"><i data-lucide="network"></i></span><span><b>Enzyme</b><small>blue / mechanism</small></span><i data-lucide="check"></i></button>
+            </div>
+          </div>
+
+          <div class="control-block">
+            <div class="control-title"><span><i data-lucide="chart-column-big"></i></span><div><strong>Measured outcomes</strong><small>Less prose, more visible evidence.</small></div></div>
+            <div class="choice-list">
+              <button class="choice is-active" data-outcome="matrix"><span class="choice-icon"><i data-lucide="table-2"></i></span><span><b>Evidence matrix</b><small>Compact comparison table</small></span><i data-lucide="check"></i></button>
+              <button class="choice" data-outcome="signal"><span class="choice-icon"><i data-lucide="activity"></i></span><span><b>Signal rows</b><small>Icon + insight + evidence</small></span><i data-lucide="check"></i></button>
+              <button class="choice" data-outcome="cards"><span class="choice-icon"><i data-lucide="gallery-horizontal-end"></i></span><span><b>Insight cards</b><small>Large scan-friendly cards</small></span><i data-lucide="check"></i></button>
+            </div>
+          </div>
+
+          <div class="control-block compact-controls">
+            <label for="pk-placement"><i data-lucide="clock-3"></i>Pharmacokinetics</label>
+            <select id="pk-placement"><option value="rail">Pinned right rail</option><option value="inline">Inline with outcomes</option></select>
+            <label for="source-mode"><i data-lucide="book-open"></i>Listed sources</label>
+            <select id="source-mode"><option value="collapsed">Hidden by default</option><option value="expanded">Visible by default</option></select>
+          </div>
+
+          <details class="control-block idea-block" open>
+            <summary class="idea-summary"><span><i data-lucide="sliders-horizontal"></i><strong>More decisions to choose</strong></span><i data-lucide="chevron-down"></i></summary>
+            <p class="idea-help">Every requested idea is exposed here as a reversible demo choice.</p>
+            <div class="idea-grid">
+              <label for="surface-mode"><span><i data-lucide="paintbrush"></i>Section surfaces</span><select id="surface-mode"><option value="tinted">Type-tinted</option><option value="neutral">Neutral white</option></select></label>
+              <label for="label-mode"><span><i data-lucide="tag"></i>Section labels</span><select id="label-mode"><option value="icons">Icon + label</option><option value="numbers">Numbered labels</option></select></label>
+              <label for="icon-mode"><span><i data-lucide="shapes"></i>Icon density</span><select id="icon-mode"><option value="rich">Rich iconography</option><option value="quiet">Quiet iconography</option></select></label>
+              <label for="outcome-label"><span><i data-lucide="message-square-text"></i>Outcome heading</span><select id="outcome-label"><option value="measured">Measured outcomes</option><option value="data">What the data shows</option><option value="signal">Research signal</option></select></label>
+              <label for="interaction-mode"><span><i data-lucide="shield-check"></i>Interaction view</span><select id="interaction-mode"><option value="map">Risk map</option><option value="rows">Evidence rows</option></select></label>
+            </div>
+            <div class="idea-toggles">
+              <label><input type="checkbox" id="visual-slots" /> <span><i data-lucide="image-plus"></i>Images &amp; figure slot</span></label>
+              <label><input type="checkbox" id="chart-slot" /> <span><i data-lucide="chart-no-axes-combined"></i>Interactive data figure</span></label>
+              <label><input type="checkbox" id="sleep-toggle" checked /> <span><i data-lucide="moon"></i>Keep Sleep outcome</span></label>
+              <label><input type="checkbox" id="subjective-toggle" /> <span><i data-lucide="brain"></i>Show subjective effects</span></label>
+              <label><input type="checkbox" id="external-toggle" checked /> <span><i data-lucide="external-link"></i>External wiki links</span></label>
+            </div>
+          </details>
+
+          <div class="control-footer">
+            <div class="current-selection"><span>Current combination</span><strong id="current-selection">Evidence Atlas · Substance</strong><small id="current-detail">Evidence matrix · right rail · sources collapsed</small><small id="ideas-detail">Tinted sections · rich icons · sleep included</small></div>
+            <button class="choose-button" id="choose-button"><i data-lucide="sparkles"></i><span>Choose this combination</span></button>
+          </div>
+        </aside>
+
+        <section class="preview-wrap" aria-label="Live redesign preview">
+          <div class="preview-meta"><span><i data-lucide="eye"></i>Live preview</span><span><i data-lucide="flask-conical"></i>Interactive sample data · Methylphenidate</span></div>
+          <div class="preview direction-atlas type-substance outcome-matrix pk-rail" id="preview">
+            <header class="preview-header">
+              <div class="brand"><span class="brand-mark"><i data-lucide="atom"></i></span><span>bh<span class="brand-muted">wiki</span>.</span></div>
+              <div class="search"><i data-lucide="search"></i>Search substances, outcomes, or mechanisms</div>
+              <nav><span>Substances</span><span>Effects</span><span>Knowledge graph</span></nav>
+              <button class="icon-button" aria-label="Preview detail"><i data-lucide="sparkles"></i></button>
+            </header>
+
+            <div class="preview-body">
+              <div class="breadcrumb">Library <i data-lucide="chevron-right"></i> Methylphenidate</div>
+              <section class="identity">
+                <div class="identity-copy">
+                  <span class="type-pill"><i data-lucide="flask-conical"></i><span id="type-label">Substance</span></span>
+                  <h2>Methylphenidate</h2>
+                  <p class="subtitle">A transporter target, a clinical context.</p>
+                  <p class="description">A stimulant medicine with formulation-dependent delivery. ADHD treatment findings and attention-task results stay attached to their population and exposure context.</p>
+                  <div class="tags"><span>Ritalin</span><span>Concerta</span><span>MPH</span><span>ADHD</span></div>
+                  <div class="identity-links"><span><i data-lucide="book-open"></i>5 sources</span><span><i data-lucide="link-2"></i>Compare</span><span><i data-lucide="network"></i>Connections</span></div>
+                </div>
+                <div class="molecule"><img src="methylphenidate.png" alt="Methylphenidate structure" /><span>C₁₄H₁₉NO₂ · 233.31 g/mol</span></div>
+                <div class="external-links"><span>Elsewhere</span><a href="https://en.wikipedia.org/wiki/Methylphenidate">Wikipedia <i data-lucide="external-link"></i></a><a href="https://examine.com/">Examine <i data-lucide="external-link"></i></a><a href="https://evipedia.ai/">Evipedia <i data-lucide="external-link"></i></a><a href="https://psychonautwiki.org/">PsychonautWiki <i data-lucide="external-link"></i></a></div>
+              </section>
+
+              <div class="preview-tabs" role="tablist" aria-label="Preview sections"><button class="active" data-tab="overview" role="tab"><i data-lucide="compass"></i>Overview</button><button data-tab="outcomes" role="tab"><i data-lucide="chart-column-big"></i>Measured outcomes</button><button data-tab="doses" role="tab"><i data-lucide="pill"></i>Doses &amp; routes</button><button data-tab="kinetics" role="tab"><i data-lucide="clock-3"></i>Pharmacokinetics</button><button data-tab="safety" role="tab"><i data-lucide="shield-alert"></i>Safety</button><button data-tab="research" role="tab"><i data-lucide="book-open"></i>Research</button><button data-tab="connections" role="tab"><i data-lucide="network"></i>Connections</button><button data-tab="legal" role="tab"><i data-lucide="scale"></i>Legal</button><button data-tab="history" role="tab"><i data-lucide="history"></i>History</button><button class="optional-tab" data-tab="subjective" role="tab"><i data-lucide="brain"></i>Subjective effects</button></div>
+
+              <div class="caveat"><span><i data-lucide="info"></i><strong>Sourced draft.</strong> Evidence is context-bound; editorial status is not a safety or efficacy grade.</span><button id="caveat-source-toggle">Show 5 sources <i data-lucide="chevron-down"></i></button></div>
+
+              <div class="tab-panel is-active" data-tab-panel="overview">
+              <div class="main-grid" id="main-grid">
+                <div class="primary-column">
+                  <section class="panel outcomes-panel">
+                    <div class="panel-heading"><div><span class="section-kicker"><b data-number="01"><i data-lucide="chart-column-big"></i></b>Research signal</span><h3 id="outcome-heading">Measured outcomes</h3><p>What the research measured, for whom, and under which exposure.</p></div><button class="filter-button"><i data-lucide="users"></i>All populations <i data-lucide="chevron-down"></i></button></div>
+                    <div id="outcomes-content"></div>
+                    <div class="outcome-footer"><span><i data-lucide="circle-alert"></i>Outcome direction is not a universal benefit score.</span><button><i data-lucide="network"></i>Add figure or dataset</button></div>
+                    <div class="visual-slot" id="visual-slot"><i data-lucide="image-plus"></i><div><strong>Add a figure or pasted image</strong><small>Drop a chart, study plot, or annotated mechanism here.</small></div><button>Choose image</button></div>
+                    <div class="chart-slot" id="chart-slot"><div><span class="section-kicker"><b><i data-lucide="chart-no-axes-combined"></i></b>Data visualization</span><h4>Attention signal by population</h4><p>Demo slot for a chart library or pasted study figure.</p></div><div class="bar-chart"><span style="height:72%"><b>ADHD</b></span><span style="height:44%"><b>Healthy</b></span><span style="height:58%"><b>Mixed</b></span></div></div>
+                  </section>
+
+                  <section class="panel interactions-panel"><div class="panel-heading compact"><div><span class="section-kicker"><b data-number="02"><i data-lucide="shield-alert"></i></b>Risk map</span><h3>Interactions</h3><p>Keep status visible before the reader opens details.</p></div><a href="#sources">Explore pair <i data-lucide="chevron-right"></i></a></div><div class="interaction-grid"><article class="interaction avoid"><span><i data-lucide="x"></i>Avoid</span><strong>MAOIs</strong><small>serious interaction signal</small></article><article class="interaction caution"><span><i data-lucide="alert-triangle"></i>Caution</span><strong>Cannabis · SSRIs</strong><small>context and monitoring required</small></article><article class="interaction monitor"><span><i data-lucide="eye"></i>Monitor</span><strong>Other stimulants</strong><small>additive cardiovascular load</small></article></div><div class="interaction-rows"><div><span class="status avoid"><i data-lucide="x"></i>Avoid</span><strong>MAOIs</strong><small>serious interaction signal</small><a href="#sources">Source context <i data-lucide="chevron-right"></i></a></div><div><span class="status caution"><i data-lucide="alert-triangle"></i>Caution</span><strong>Cannabis · SSRIs</strong><small>context and monitoring required</small><a href="#sources">Source context <i data-lucide="chevron-right"></i></a></div><div><span class="status monitor"><i data-lucide="eye"></i>Monitor</span><strong>Other stimulants</strong><small>additive cardiovascular load</small><a href="#sources">Source context <i data-lucide="chevron-right"></i></a></div></div></section>
+
+                  <section class="panel sources-panel" id="sources"><button class="sources-toggle" id="sources-toggle"><span><i data-lucide="book-open"></i><strong>Research &amp; sources</strong><small id="sources-description">5 listed sources hidden by default</small></span><span id="sources-action">Show 5 <i data-lucide="chevron-down"></i></span></button><div class="source-list" id="source-list"></div></section>
+                </div>
+                <section class="panel pk-panel" id="pk-panel"></section>
+              </div>
+              </div>
+
+              <section class="tab-panel" data-tab-panel="outcomes">
+                <section class="panel detail-panel"><div class="panel-heading"><div><span class="section-kicker"><b><i data-lucide="chart-column-big"></i></b>Measured outcomes</span><h3>What the studies measured</h3><p>Each signal retains the population, exposure, endpoint, and source context.</p></div><span class="result-count"><i data-lucide="library"></i>4 outcome domains</span></div><div class="outcome-detail-list"><article><span class="detail-icon attention"><i data-lucide="target"></i></span><div><h4>Attention <span class="direction up"><i data-lucide="arrow-up"></i> Increased</span></h4><p>Attention-task performance improved in the subgroup meeting ADHD diagnostic criteria. Participants without that diagnosis showed a different response pattern.</p><dl><div><dt>Population</dt><dd>Adults meeting DSM-IV ADHD criteria</dd></div><div><dt>Exposure</dt><dd>Single 30 mg oral study exposure</dd></div><div><dt>Measure</dt><dd>Sustained-attention task</dd></div></dl></div><span class="grade grade-b">B</span></article><article><span class="detail-icon cognition"><i data-lucide="brain"></i></span><div><h4>Executive function <span class="direction mixed"><i data-lucide="activity"></i> Context-dependent</span></h4><p>Direction varied by diagnosis, task, and acute exposure. The observed change is not a universal cognitive-enhancement claim.</p><dl><div><dt>Population</dt><dd>Clinical and healthy samples</dd></div><div><dt>Exposure</dt><dd>Acute oral study contexts</dd></div><div><dt>Measure</dt><dd>Working-memory and response-inhibition tasks</dd></div></dl></div><span class="grade grade-b">B</span></article><article><span class="detail-icon sleep"><i data-lucide="moon"></i></span><div><h4>Sleep <span class="direction down"><i data-lucide="arrow-down"></i> Small worsening</span></h4><p>Later exposure was associated with longer sleep-onset latency in healthy adults.</p><dl><div><dt>Population</dt><dd>Healthy adults</dd></div><div><dt>Exposure</dt><dd>Later-day stimulant exposure</dd></div><div><dt>Measure</dt><dd>Sleep onset and total sleep time</dd></div></dl></div><span class="grade grade-c">C</span></article><article><span class="detail-icon heart"><i data-lucide="heart-pulse"></i></span><div><h4>Heart rate <span class="direction up"><i data-lucide="arrow-up"></i> Small increase</span></h4><p>Cardiovascular measures remain attached to dose, formulation, and population rather than being presented as a single risk score.</p><dl><div><dt>Population</dt><dd>Mixed clinical and healthy populations</dd></div><div><dt>Exposure</dt><dd>Therapeutic and single-dose contexts</dd></div><div><dt>Measure</dt><dd>Heart rate and blood pressure</dd></div></dl></div><span class="grade grade-c">C</span></article></div></section>
+              </section>
+
+              <section class="tab-panel" data-tab-panel="doses">
+                <section class="panel detail-panel"><div class="panel-heading"><div><span class="section-kicker"><b><i data-lucide="pill"></i></b>Doses &amp; routes</span><h3>Published exposure records</h3><p>Study and label context, never a personal dosing recommendation.</p></div><span class="result-count"><i data-lucide="flask-conical"></i>1 curated exposure</span></div><div class="exposure-hero"><div><span class="eyebrow-small">Research exposure</span><strong>30 mg</strong><span>single oral study exposure</span></div><div class="exposure-route"><span><i data-lucide="pill"></i>Oral</span><span><i data-lucide="timer"></i>Acute crossover</span><span><i data-lucide="users"></i>24 adults</span></div></div><dl class="data-grid"><div><dt>Ingredient / form</dt><dd>Methylphenidate · oral study medication; salt not specified in abstract</dd></div><div><dt>Route</dt><dd>Oral</dd></div><div><dt>Frequency</dt><dd>Single study exposure</dd></div><div><dt>Duration</dt><dd>Acute crossover experiment</dd></div><div><dt>Population</dt><dd>24 adults recruited from an ADHD clinic; 18 met DSM-IV ADHD criteria</dd></div><div><dt>Purpose</dt><dd>Assess attention and spatial working memory</dd></div></dl><div class="inline-note"><i data-lucide="info"></i>A monitored experimental exposure, not a dosing recommendation or a formulation conversion.</div></section>
+              </section>
+
+              <section class="tab-panel" data-tab-panel="kinetics">
+                <section class="panel detail-panel"><div class="panel-heading"><div><span class="section-kicker"><b><i data-lucide="clock-3"></i></b>Pharmacokinetics</span><h3>Absorption, timing, and elimination</h3><p>Plasma timing and felt effects are separate measurements.</p></div><span class="result-count"><i data-lucide="activity"></i>Illustrative model</span></div><div class="kinetics-summary"><div><span>Elimination half-life</span><strong>3.5 hours</strong><small>reported adult range 1.3–7.7 hours</small></div><div><span>Peak, label context</span><strong>About 2 hours</strong><small>10 mg immediate-release tablet</small></div><div><span>Bioavailability</span><strong>Not assigned</strong><small>enantiomer-specific and affected by first-pass metabolism</small></div></div><div class="kinetics-expanded"><div class="timeline-large"><span class="phase phase-onset">Onset<small>not established here</small></span><span class="phase phase-peak">Peak<small>about 2 h</small></span><span class="phase phase-elim">Elimination<small>3.5 h mean</small></span></div><div class="model-copy"><h4>Modeled elimination</h4><p>The curve begins after absorption and distribution. It does not predict onset, felt effects, or an individual response.</p><div class="model-table"><span>After 3.5 h <b>50% remains</b></span><span>After 7 h <b>25% remains</b></span><span>After 17.5 h <b>3.125% remains</b></span></div></div></div><div class="inline-note"><i data-lucide="info"></i>Model: fraction remaining = 2<sup>−time / half-life</sup>. Formation of metabolites, repeated exposure, and interactions are not modeled.</div></section>
+              </section>
+
+              <section class="tab-panel" data-tab-panel="safety">
+                <section class="panel detail-panel"><div class="panel-heading"><div><span class="section-kicker"><b><i data-lucide="shield-alert"></i></b>Safety &amp; uncertainty</span><h3>Context before certainty</h3><p>Adverse effects, interactions, tolerance, and withdrawal in the cited contexts.</p></div><span class="result-count"><i data-lucide="triangle-alert"></i>Not an interaction checker</span></div><div class="safety-grid"><article class="safety-card warning"><span><i data-lucide="triangle-alert"></i>Misuse and dependence</span><p>Prescribing information carries a boxed warning for abuse, misuse, addiction, physical dependence, and withdrawal.</p><a href="#sources">Source 01 <i data-lucide="arrow-up-right"></i></a></article><article class="safety-card caution"><span><i data-lucide="heart-pulse"></i>Cardiovascular context</span><p>The label describes cardiovascular monitoring requirements and psychiatric risks that depend on the patient and formulation.</p><a href="#sources">Source 01 <i data-lucide="arrow-up-right"></i></a></article><article class="safety-card neutral"><span><i data-lucide="layers-3"></i>Formulations differ</span><p>Immediate-release elimination data do not describe the release profile of every extended-release product.</p><a href="#sources">Source 02 <i data-lucide="arrow-up-right"></i></a></article></div><div class="inline-note"><i data-lucide="info"></i>Absence of a curated interaction is not evidence that no interaction exists.</div></section>
+              </section>
+
+              <section class="tab-panel" data-tab-panel="research">
+                <section class="panel detail-panel"><div class="panel-heading"><div><span class="section-kicker"><b><i data-lucide="book-open"></i></b>Research &amp; sources</span><h3>The finding, source, and limitation</h3><p>Funding and conflicts are shown where they have been assessed.</p></div><span class="result-count"><i data-lucide="library"></i>5 sources</span></div><div class="research-list"><article><span class="source-number">01</span><div><h4>RITALIN immediate-release tablets: prescribing information <span class="source-type">Official label</span></h4><p>Describes absorption, metabolism, clinical use, and safety.</p><small><i data-lucide="shield-alert"></i>Formulation-specific; does not establish benefit outside labeled context.</small></div><a href="#">Open <i data-lucide="external-link"></i></a></article><article><span class="source-number">02</span><div><h4>RITALIN LA pharmacokinetic comparison <span class="source-type">Official label</span></h4><p>Reports adult mean and range for immediate-release elimination.</p><small><i data-lucide="shield-alert"></i>Label context; formulation controls delivery separately.</small></div><a href="#">Open <i data-lucide="external-link"></i></a></article><article><span class="source-number">03</span><div><h4>Neurocognitive effects in adult ADHD <span class="source-type">Crossover study · 2005</span></h4><p>Observed sustained-attention and working-memory changes in the diagnosed subgroup.</p><small><i data-lucide="shield-alert"></i>Small acute study with differing diagnostic subgroups.</small></div><a href="#">Open <i data-lucide="external-link"></i></a></article><article><span class="source-number">04</span><div><h4>Dopamine transporter occupancy <span class="source-type">Human PET study · 1998</span></h4><p>Directly measured transporter occupancy after oral methylphenidate.</p><small><i data-lucide="shield-alert"></i>Mechanistic endpoint; does not measure clinical response.</small></div><a href="#">Open <i data-lucide="external-link"></i></a></article><article><span class="source-number">05</span><div><h4>Methylphenidate compound identity and structure <span class="source-type">Chemical database</span></h4><p>Source of displayed formula, molecular weight, structure, and SMILES.</p><small><i data-lucide="shield-alert"></i>Parent compound identity is distinct from salts and products.</small></div><a href="#">Open <i data-lucide="external-link"></i></a></article></div></section>
+              </section>
+
+              <section class="tab-panel" data-tab-panel="connections">
+                <section class="panel detail-panel"><div class="panel-heading"><div><span class="section-kicker"><b><i data-lucide="network"></i></b>Connected claims</span><h3>Mechanism and relationships</h3><p>Shared membership does not imply that substances should be combined.</p></div><a href="#">Open graph <i data-lucide="arrow-up-right"></i></a></div><div class="connection-trail"><div class="connection-node substance"><i data-lucide="flask-conical"></i><strong>Methylphenidate</strong><small>substance</small></div><i data-lucide="arrow-right" class="connection-arrow"></i><div class="connection-node target"><i data-lucide="network"></i><strong>Dopamine transporter</strong><small>target</small></div><i data-lucide="arrow-right" class="connection-arrow"></i><div class="connection-node transmitter"><i data-lucide="sparkles"></i><strong>Dopamine</strong><small>transmitter</small></div></div><div class="claim-card"><span class="claim-label"><i data-lucide="git-branch"></i> transporter-occupancy</span><h4>Oral methylphenidate occupied dopamine transporters in a PET study.</h4><p>Acute exposure in healthy volunteers. Mechanistic imaging does not measure clinical response.</p><footer><span><i data-lucide="book-open"></i>Supporting source 04</span><span>Evidence strength not formally assessed</span></footer></div></section>
+              </section>
+
+              <section class="tab-panel" data-tab-panel="legal">
+                <section class="panel detail-panel narrow-detail"><div class="empty-state"><span class="empty-icon"><i data-lucide="scale"></i></span><span class="section-kicker">Legal context</span><h3>Not assessed</h3><p>Absence of a legal record is not a statement of legal status. Add jurisdiction-specific records only when the source and date are explicit.</p><button class="filter-button"><i data-lucide="plus"></i>Suggest a jurisdiction record</button></div></section>
+              </section>
+
+              <section class="tab-panel" data-tab-panel="history">
+                <section class="panel detail-panel"><div class="panel-heading"><div><span class="section-kicker"><b><i data-lucide="history"></i></b>Editorial history</span><h3>How this page changed</h3><p>Content date and editorial status stay visible without grading the substance.</p></div><span class="result-count"><i data-lucide="calendar-days"></i>Sep 29, 2026</span></div><div class="history-status"><span class="history-dot"></span><div><strong>Sourced draft</strong><p>Editorial review has not been recorded.</p></div><span class="status-chip">Review pending</span></div><div class="history-list"><article><span>Sep 29, 2026</span><strong>Content date updated</strong><small>Five sources and compound identity records are attached.</small></article><article><span>Draft</span><strong>Research context added</strong><small>Attention, pharmacokinetics, safety, and transporter occupancy claims retained with limitations.</small></article></div><div class="history-actions"><button class="filter-button"><i data-lucide="git-compare"></i>View published revisions</button><button class="filter-button"><i data-lucide="message-square-plus"></i>Suggest a correction</button></div></section>
+              </section>
+
+              <section class="tab-panel" data-tab-panel="subjective">
+                <section class="panel detail-panel"><div class="panel-heading"><div><span class="section-kicker"><b><i data-lucide="brain"></i></b>Subjective effects</span><h3>Optional experience notes</h3><p>This section is hidden by default in the selected redesign because BHWiki prioritizes measured outcomes.</p></div><span class="result-count"><i data-lucide="eye-off"></i>Optional</span></div><div class="subjective-demo"><div class="subjective-row"><span class="subjective-icon"><i data-lucide="zap"></i></span><div><strong>Alertness</strong><p>Reported in some contexts, but no universal intensity score is assigned.</p></div><span class="context-chip">Context-bound</span></div><div class="subjective-row"><span class="subjective-icon"><i data-lucide="message-circle"></i></span><div><strong>Subjective focus</strong><p>Descriptions remain attached to the source population and exposure.</p></div><span class="context-chip">Not graded</span></div></div><div class="inline-note"><i data-lucide="info"></i>Use the toggle in the decision panel to compare the page with or without this section.</div></section>
+              </section>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

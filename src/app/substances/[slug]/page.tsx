@@ -5,11 +5,12 @@ import { TimingExplorer } from "@/components/timing-explorer";
 import { MechanismExplorer } from "@/components/mechanism-explorer";
 import { StudyPlots } from "@/components/study-plots";
 import { evidenceKey, observationMagnitude, observationRows } from "@/lib/research";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowDown, ArrowRight, ArrowUp, ArrowUpRight, BookOpen, CircleDot, GitBranch, History, Info, MoveHorizontal } from "lucide-react";
+import { Activity, ArrowDown, ArrowRight, ArrowUp, ArrowUpRight, BookOpen, BookOpenCheck, Brain, ChartColumnBig, CircleDot, Clock3, Compass, Droplets, FlaskConical, GitBranch, Globe, HeartPulse, History, Info, Layers3, Moon, MoveHorizontal, Network, Pill, RefreshCw, Scale, ShieldAlert, ShieldCheck, Target, TriangleAlert, Zap } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { Citation } from "@/components/citation";
 import { Prose } from "@/components/prose";
 import { DurationTimeline } from "@/components/duration-timeline";
@@ -17,6 +18,7 @@ import { MoleculeImage } from "@/components/molecule-image";
 import { SectionNav } from "@/components/section-nav";
 import { Breadcrumb } from "@/components/shell";
 import { KineticsChart } from "@/components/kinetics-chart";
+import { EvidenceCanvas } from "@/components/evidence-canvas";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -95,12 +97,26 @@ function DataEmpty({ children }: { children: ReactNode }) {
   );
 }
 
+const sectionIcons: Record<string, LucideIcon> = {
+  Overview: Compass,
+  "Measured outcomes": ChartColumnBig,
+  "Doses & routes": Pill,
+  Pharmacokinetics: Clock3,
+  "Safety & uncertainty": ShieldAlert,
+  "Research & sources": BookOpen,
+  "Connected claims": Network,
+  "Legal context": Scale,
+  "Editorial history": History,
+};
+
 function SectionHeading({ number, title, extra }: { number?: string; title: string; extra?: ReactNode }) {
+  const Icon = sectionIcons[title] ?? CircleDot;
   return (
-    <div className="flex flex-col gap-3">
+    <div className="section-heading flex flex-col gap-3">
       <div className="flex flex-wrap items-baseline justify-between gap-3">
-        <div className="flex items-baseline gap-3">
-          {number && <span className="text-sm text-muted-foreground">{number}</span>}
+        <div className="flex items-center gap-3">
+          <span className="section-heading-icon" aria-hidden="true"><Icon size={17} /></span>
+          {number && <span className="section-heading-number text-sm text-muted-foreground">{number}</span>}
           <h2 className="text-2xl font-medium">{title}</h2>
         </div>
         {extra}
@@ -133,6 +149,28 @@ function Direction({ direction }: { direction: Observation["direction"] }) {
 
 function ObservationMatrix({ observations, substance, entities, measured = false }: { observations: Observation[]; substance: Substance; entities: EntityIndex; measured?: boolean }) {
   if (!observations.length) return <DataEmpty>Not assessed. No sourced {measured ? "measured outcomes" : "subjective observations"} have been curated for this article.</DataEmpty>;
+  if (measured) return (
+    <div className="outcome-list">
+      {observations.map((effect, index) => {
+        const concept = entities.conceptById.get(effect.conceptId);
+        const Icon = effect.direction === "Increased" ? ArrowUp : effect.direction === "Decreased" ? ArrowDown : MoveHorizontal;
+        return (
+          <article key={`${effect.conceptId}-${index}`} className={`outcome-row outcome-${effect.direction.toLowerCase()}`}>
+            <span className="outcome-row-icon" aria-hidden="true"><Target size={18} /></span>
+            <div className="outcome-row-main">
+              <div className="outcome-row-title">
+                <h3>{concept ? <Link href={conceptPath(concept)} className="underline underline-offset-4">{effect.name}</Link> : effect.name}</h3>
+                <Badge variant="outline"><Icon aria-hidden="true" />{effect.direction}</Badge>
+              </div>
+              <p>{<Prose text={effect.description} inline />} <Source substance={substance} id={effect.sourceId} /></p>
+              <div className="outcome-row-meta"><span><strong>Population</strong>{effect.population || "Not established"}</span><span><strong>Exposure</strong>{effect.exposure || "Not established"}</span><span><strong>Measure</strong>{effect.result?.instrument || effect.instrument || "Not assessed"}</span></div>
+              <div className="outcome-row-actions"><EvidenceButton evidenceKey={evidenceKey(substance.slug,"outcome",effect)}/><span className="text-muted-foreground">{effect.evidence}</span></div>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+  );
   return (
     <div className="flex flex-col gap-4">
       {observations.map((effect, index) => {
@@ -164,6 +202,66 @@ function ObservationMatrix({ observations, substance, entities, measured = false
   );
 }
 
+function KineticsRail({ substance }: { substance: Substance }) {
+  return (
+    <Card className="kinetics-rail">
+      <CardHeader>
+        <CardDescription className="inline-flex items-center gap-1.5"><span className="rail-kicker-icon"><Clock3 aria-hidden="true" size={15} /></span>Pharmacokinetics</CardDescription>
+        <CardTitle><span className="rail-value">{substance.halfLife.label || "Not established"}</span></CardTitle>
+        <CardDescription>Elimination half-life{` · ${substance.halfLife.observationId ? "source-linked" : "not established"}`}</CardDescription>
+      </CardHeader>
+      <CardContent className="flex flex-col gap-3">
+        <div className="kinetics-rail-timeline" aria-label="Published timing summary">
+          <span><Zap aria-hidden="true" size={14} /><b>Onset</b><small>{substance.kinetics.onset || "Not established"}</small></span>
+          <span><Activity aria-hidden="true" size={14} /><b>Peak</b><small>{substance.kinetics.peak || "Not established"}</small></span>
+          <span><Moon aria-hidden="true" size={14} /><b>Duration</b><small>{substance.kinetics.duration || "Not established"}</small></span>
+        </div>
+        <div className="kinetics-rail-meta">
+          <span><Droplets aria-hidden="true" size={14} /><strong>Bioavailability</strong>{substance.kinetics.bioavailability || "Not established"}</span>
+          <span><RefreshCw aria-hidden="true" size={14} /><strong>Metabolism</strong>{substance.kinetics.metabolism || "Not established"}</span>
+        </div>
+        <Link href="#kinetics" className="inline-flex items-center gap-1.5 text-sm underline underline-offset-4">Open full kinetics <ArrowRight aria-hidden="true" size={14} /></Link>
+      </CardContent>
+    </Card>
+  );
+}
+
+function SafetySignal({ caution, index, substance }: { caution: Substance["cautions"][number]; index: number; substance: Substance }) {
+  const modes = [
+    { icon: TriangleAlert, label: "Warning", tone: "warning" },
+    { icon: HeartPulse, label: "Monitor", tone: "monitor" },
+    { icon: Layers3, label: "Context", tone: "context" },
+  ] as const;
+  const mode = modes[index % modes.length];
+  const Icon = mode.icon;
+  return (
+    <article className={`safety-signal safety-signal-${mode.tone}`}>
+      <div className="safety-signal-icon"><Icon aria-hidden="true" size={18} /></div>
+      <div className="safety-signal-body">
+        <div className="safety-signal-heading"><span>{mode.label}</span><h3>{caution.title}</h3></div>
+        <p><Prose text={caution.description} inline /> <Source substance={substance} id={caution.sourceId} /></p>
+      </div>
+      <ShieldCheck aria-hidden="true" className="safety-signal-check" size={18} />
+    </article>
+  );
+}
+
+function ClaimCard({ claim, entities, substance, slug }: { claim: Substance["claims"][number]; entities: EntityIndex; substance: Substance; slug: string }) {
+  return (
+    <article className="claim-card claim-card-rich">
+      <div className="claim-card-header"><span className="claim-relation"><Network aria-hidden="true" size={15} />{claim.relation}</span><span className="claim-status"><ShieldCheck aria-hidden="true" size={14} />Authored relationship</span></div>
+      <h3>{claim.assertion}</h3>
+      <div className="claim-participants">
+        {claim.participants.map((member, index) => <div key={`${member.entityId}-${member.role}`} className="claim-participant"><span className="claim-node-icon"><FlaskConical aria-hidden="true" size={15} /></span><EntityLink id={member.entityId} entities={entities} /><small>{member.role}</small>{index < claim.participants.length - 1 && <ArrowRight aria-hidden="true" className="claim-arrow" size={15} />}</div>)}
+      </div>
+      <p>{claim.context}</p>
+      <p><strong>Limitation</strong> {claim.limitation}</p>
+      <div className="claim-card-footer"><span><BookOpen aria-hidden="true" size={14} />Supporting sources {claim.sourceIds.map(id => <Source key={id} substance={substance} id={id} />)}</span><span>Evidence strength: not formally assessed</span></div>
+      <div><EvidenceButton evidenceKey={evidenceKey(slug,"claim",claim)}/></div>
+    </article>
+  );
+}
+
 export default async function SubstancePage({ params }: Props) {
   const { slug } = await params;
   const substance = await getSubstance(slug);
@@ -181,7 +279,6 @@ export default async function SubstancePage({ params }: Props) {
     : substance.references.find(r => r.id === "pubchem") ?? substance.references.find(r => /pubchem\.ncbi\.nlm\.nih\.gov\/(?:compound|rest\/pug\/compound)\//.test(r.url));
   const toc = [
     { id: "overview", name: "Overview" },
-    { id: "effects", name: "Subjective effects" },
     { id: "measured-outcomes", name: "Measured outcomes" },
     { id: "exposure", name: "Doses & routes" },
     ...(identificationTests.length ? [{ id: "identification-tests", name: "Identification tests" }] : []),
@@ -194,7 +291,7 @@ export default async function SubstancePage({ params }: Props) {
   ];
 
   return (
-    <main id="main" className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 py-8 sm:px-8">
+    <main id="main" data-entity-kind="substance" className="article-page mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 py-8 sm:px-8" style={{ "--article-accent": substance.accent } as CSSProperties}>
       <Breadcrumb current={substance.name} />
       <header className="article-hero grid items-center gap-6 rounded-xl border-s-4 bg-card p-5 ring-1 ring-foreground/10 sm:p-6 lg:grid-cols-[minmax(0,1fr)_16rem]" style={{ borderInlineStartColor: substance.accent }}>
         <div className="flex flex-col gap-4">
@@ -226,6 +323,13 @@ export default async function SubstancePage({ params }: Props) {
             <span>Content date {dateLabel(substance.reviewedAt)}</span><Link className="underline underline-offset-4" href={`/compare?substances=${slug}`}>Compare</Link>
             <Link href={`/graph?focus=${substance.slug}`} className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline">Explore connections <GitBranch aria-hidden="true" size={16} /></Link>
             <Link href={`/substances/${slug}/history`} className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline">Revision history <History aria-hidden="true" size={16} /></Link>
+          </div>
+          <div className="external-wiki-links" aria-label="Related external wikis">
+            <span className="text-xs font-medium tracking-wide text-muted-foreground uppercase">Elsewhere</span>
+            <a href={`https://en.wikipedia.org/wiki/${encodeURIComponent(substance.name)}`} target="_blank" rel="noreferrer"><Globe aria-hidden="true" size={13} />Wikipedia <ArrowUpRight aria-hidden="true" size={13} /></a>
+            <a href="https://examine.com/" target="_blank" rel="noreferrer"><BookOpenCheck aria-hidden="true" size={13} />Examine <ArrowUpRight aria-hidden="true" size={13} /></a>
+            <a href="https://evipedia.ai/" target="_blank" rel="noreferrer" title="Open Evipedia homepage"><ChartColumnBig aria-hidden="true" size={13} />Evipedia <ArrowUpRight aria-hidden="true" size={13} /></a>
+            <a href="https://psychonautwiki.org/" target="_blank" rel="noreferrer"><Brain aria-hidden="true" size={13} />PsychonautWiki <ArrowUpRight aria-hidden="true" size={13} /></a>
           </div>
         </div>
         <MoleculeImage src={substance.pubchemCid === null ? undefined : `/molecules/${substance.slug}.png`} alt={`Chemical identity depiction of ${substance.name}`} wellClassName="h-52 w-full" width={270} height={230} />
@@ -262,21 +366,16 @@ export default async function SubstancePage({ params }: Props) {
             </div>
           </section>
 
-          <section id="effects" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="02" title="Subjective effects" />
-            <p className="text-muted-foreground">Descriptions of experience in their reported context. Direction does not imply benefit, and these observations do not define a universal intensity score.</p>
-            <ObservationMatrix observations={substance.effects} substance={substance} entities={entities} />
-          </section>
-
           <section id="measured-outcomes" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="03" title="Measured outcomes" />
+            <SectionHeading number="02" title="Measured outcomes" />
             <p className="text-muted-foreground">What the research measured, for whom, and under which exposure. Findings remain attached to the study’s task or clinical endpoint.</p>
             <ObservationMatrix observations={substance.outcomes} substance={substance} entities={entities} measured />
+            <EvidenceCanvas />
             <details className="rounded-lg border p-4"><summary className="cursor-pointer font-medium">Study-result plots</summary><div className="pt-4"><StudyPlots rows={observationRows(substance,"outcome")}/></div></details>
           </section>
 
           <section id="exposure" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="04" title="Doses & routes" />
+            <SectionHeading number="03" title="Doses & routes" />
             <p className="text-muted-foreground">Published exposure records, distinguished by source category. These describe study or reference context and are not personal dosing recommendations.</p>
             {hasIntakeDetails && <p className="text-sm text-muted-foreground">Food timing and solubility labels describe the cited route or formulation. Solubility alone does not establish whether food changes absorption.</p>}
             {substance.doses.length ? (
@@ -334,7 +433,7 @@ export default async function SubstancePage({ params }: Props) {
           )}
 
           <section id="kinetics" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="05" title="Pharmacokinetics" />
+            <SectionHeading number="04" title="Pharmacokinetics" />
             <p className="text-muted-foreground">Absorption, metabolism and elimination depend on the analyte, route, formulation, physiology and other exposures.</p>
             <Card size="sm">
               <CardHeader>
@@ -377,7 +476,7 @@ export default async function SubstancePage({ params }: Props) {
             ]} />
             {substance.modifiers.length > 0 && (
               <div className="flex flex-col gap-3">
-                <h3 className="text-lg font-medium">What changes the picture?</h3>
+                <h3 className="text-lg font-medium">Factors that change the estimate</h3>
                 {substance.modifiers.map(modifier => (
                   <Card key={modifier.label} size="sm">
                     <CardHeader>
@@ -397,22 +496,11 @@ export default async function SubstancePage({ params }: Props) {
           </section>
 
           <section id="safety" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="06" title="Safety & uncertainty" />
+            <SectionHeading number="05" title="Safety & uncertainty" />
             <p className="text-muted-foreground">Adverse effects, interactions, tolerance and withdrawal in the cited contexts. This section is not an exhaustive interaction checker.</p>
             {substance.cautions.length ? (
-              <div className="flex flex-col gap-4">
-                {substance.cautions.map(caution => (
-                  <Card key={caution.title}>
-                    <CardHeader>
-                      <CardTitle>
-                        <h3 className="flex items-start gap-2"><Info aria-hidden="true" className="mt-0.5 shrink-0" size={20} />{caution.title}</h3>
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p><Prose text={caution.description} inline /> <Source substance={substance} id={caution.sourceId} /></p>
-                    </CardContent>
-                  </Card>
-                ))}
+              <div className="safety-signals">
+                {substance.cautions.map((caution, index) => <SafetySignal key={caution.title} caution={caution} index={index} substance={substance} />)}
               </div>
             ) : <DataEmpty>Safety not assessed.</DataEmpty>}
             <h3 className="text-lg font-medium">Interactions in cited sources</h3><Link className="underline underline-offset-4" href={`/interactions?a=${slug}`}>Explore a pair of substances</Link>
@@ -444,16 +532,21 @@ export default async function SubstancePage({ params }: Props) {
           </section>
 
           <section id="evidence" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="07" title="Research & sources" extra={<Badge variant="secondary">{substance.references.length}</Badge>} />
+            <SectionHeading number="06" title="Research & sources" extra={<Badge variant="secondary">{substance.references.length}</Badge>} />
             <p className="text-muted-foreground">The source, the finding and its limitations. Funding information is reported where curated; an unassessed disclosure does not mean a study had no commercial funding.</p>
-            <Card>
+            <details className="research-disclosure rounded-lg border" id="research-sources">
+              <summary className="flex cursor-pointer items-center justify-between gap-3 px-4 py-3 font-medium">
+                <span className="inline-flex items-center gap-2"><BookOpen aria-hidden="true" size={17} />Show research sources</span>
+                <Badge variant="secondary">{substance.references.length}</Badge>
+              </summary>
+              <Card className="rounded-t-none border-0 shadow-none">
               <CardContent>
                 <div className="flex flex-col gap-3">
                   {substance.references.map((reference, index) => (
                     <div key={reference.id} className="flex flex-col gap-3">
                       {index > 0 && <Separator />}
                       <Item id={`reference-${reference.id}`} variant="muted" size="sm" className="items-start">
-                        <ItemMedia className="text-sm font-medium text-muted-foreground">{String(index + 1).padStart(2, "0")}</ItemMedia>
+                        <ItemMedia className="text-sm font-medium text-muted-foreground"><span className="research-source-icon"><BookOpenCheck aria-hidden="true" size={15} /></span>{String(index + 1).padStart(2, "0")}</ItemMedia>
                         <ItemContent>
                           <ItemTitle className="line-clamp-none w-full whitespace-normal">
                             <h3>
@@ -464,9 +557,7 @@ export default async function SubstancePage({ params }: Props) {
                             </h3>
                           </ItemTitle>
                           <ItemDescription className="line-clamp-none">{reference.authors}</ItemDescription>
-                          <div className="flex flex-wrap gap-1.5">
-                            <Badge variant="outline">{reference.kind}</Badge>
-                            <Badge variant="secondary">{reference.year}</Badge>
+                          <div className="research-source-kind"><BookOpen aria-hidden="true" size={13} />{reference.kind}<Badge variant="secondary">{reference.year}</Badge>
                           </div>
                           {(reference.pmid || reference.doi) && (
                             <div className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
@@ -474,8 +565,8 @@ export default async function SubstancePage({ params }: Props) {
                               {reference.doi && <a href={`https://doi.org/${reference.doi}`} target="_blank" rel="noreferrer" className="underline underline-offset-4">DOI {reference.doi}</a>}
                             </div>
                           )}
-                          <p>{reference.insight}</p>
-                          <p><strong>Limitations</strong> {reference.limitation}</p>
+                          <p className="research-source-insight"><ChartColumnBig aria-hidden="true" size={16} /><span>{reference.insight}</span></p>
+                          <p className="research-source-limitation"><TriangleAlert aria-hidden="true" size={16} /><span><strong>Limitations</strong> {reference.limitation}</span></p>
                           <SourceDisclosures reference={reference} />
                         </ItemContent>
                       </Item>
@@ -483,7 +574,8 @@ export default async function SubstancePage({ params }: Props) {
                   ))}
                 </div>
               </CardContent>
-            </Card>
+              </Card>
+            </details>
             {substance.experienceLinks.length > 0 && (
               <div className="flex flex-col gap-3">
                 <h3 className="text-lg font-medium">Reports elsewhere</h3>
@@ -503,42 +595,18 @@ export default async function SubstancePage({ params }: Props) {
           </section>
 
           <section id="connections" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="08" title="Connected claims" />
+            <SectionHeading number="07" title="Connected claims" />
             <p className="text-muted-foreground">Each relationship retains its participants, roles and context. Shared membership does not imply that substances should be combined.</p>
             {substance.claims.length ? (
-              <div className="flex flex-col gap-4">
-                {substance.claims.map(claim => (
-                  <Card key={claim.id}>
-                    <CardHeader>
-                      <CardDescription>{claim.relation}</CardDescription>
-                      <CardTitle><h3>{claim.assertion}</h3></CardTitle>
-                    </CardHeader>
-                    <CardContent className="flex flex-col gap-3">
-                      <ul className="flex flex-col gap-2">
-                        {claim.participants.map(member => (
-                          <li key={`${member.entityId}-${member.role}`} className="flex flex-wrap items-baseline justify-between gap-2">
-                            <EntityLink id={member.entityId} entities={entities} />
-                            <span className="text-sm text-muted-foreground">{member.role}</span>
-                          </li>
-                        ))}
-                      </ul>
-                      <p>{claim.context}</p>
-                      <p><strong>Limitation</strong> {claim.limitation}</p>
-                      <div className="flex flex-col gap-1 text-sm">
-                        <span>Supporting sources {claim.sourceIds.map(id => <Source key={id} substance={substance} id={id} />)}</span>
-                        {claim.conflictingSourceIds.length > 0 && <span>Conflicting sources {claim.conflictingSourceIds.map(id => <Source key={id} substance={substance} id={id} />)}</span>}
-                      </div>
-                      <p className="text-sm text-muted-foreground">Evidence strength: not formally assessed.</p><div><EvidenceButton evidenceKey={evidenceKey(slug,"claim",claim)}/></div>
-                    </CardContent>
-                  </Card>
-                ))}
+              <div className="claim-list">
+                {substance.claims.map(claim => <ClaimCard key={claim.id} claim={claim} entities={entities} substance={substance} slug={slug} />)}
               </div>
             ) : <DataEmpty>Structured claims not assessed.</DataEmpty>}
             <Link className="inline-flex items-center gap-1.5 text-sm underline underline-offset-4" href={`/graph?focus=${slug}`}>Explore the relationship graph <GitBranch aria-hidden="true" size={16} /></Link>
           </section>
 
           <section id="legal" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="09" title="Legal context" />
+            <SectionHeading number="08" title="Legal context" />
             {substance.legal.length > 0 ? (
               <div className="flex flex-col gap-4">
                 {substance.legal.map(item => (
@@ -561,7 +629,7 @@ export default async function SubstancePage({ params }: Props) {
           </section>
 
           <section id="editorial-history" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="10" title="Editorial history" />
+            <SectionHeading number="09" title="Editorial history" />
             <p>{reviewed ? "This article is marked editorially reviewed. Review attribution is recorded with its published revisions." : "This article is a sourced draft. Editorial review has not been recorded."} Content date: {dateLabel(substance.reviewedAt)}.</p>
             <div className="flex flex-wrap gap-3">
               <Button nativeButton={false} variant="outline" render={<Link href={`/substances/${slug}/history`} />}>
@@ -598,6 +666,7 @@ export default async function SubstancePage({ params }: Props) {
         </div>
 
         <aside className="flex flex-col gap-4 lg:sticky lg:top-24 lg:self-start" aria-label="Substance identity and related resources">
+          <KineticsRail substance={substance} />
           <Card>
             <CardHeader>
               <CardDescription>Molecular structure</CardDescription>

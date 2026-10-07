@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { disclosureLabels, type SourceDisclosure } from "@/lib/source-disclosures";
+import { CircleDollarSign, ExternalLink, ShieldAlert } from "lucide-react";
 
 export function SourceDisclosureBadges({ reference }: { reference: SourceDisclosure }) {
   const labels = disclosureLabels(reference);
@@ -13,12 +14,12 @@ export function SourceDisclosureBadges({ reference }: { reference: SourceDisclos
 
 export function SourceDisclosures({ reference }: { reference: SourceDisclosure }) {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="source-disclosures flex flex-col gap-2">
       <SourceDisclosureBadges reference={reference} />
-      <p><strong>Funding:</strong> {reference.funding || "Not assessed."}</p>
-      <p><strong>Conflicts of interest:</strong> {reference.conflictsOfInterest || "Not assessed."}</p>
+      <p className="source-disclosure-row"><CircleDollarSign aria-hidden="true" size={15} /><span><strong>Funding:</strong> {reference.funding || "Not assessed."}</span></p>
+      <p className="source-disclosure-row"><ShieldAlert aria-hidden="true" size={15} /><span><strong>Conflicts of interest:</strong> {reference.conflictsOfInterest || "Not assessed."}</span></p>
       {reference.disclosureUrl && (
-        <a href={reference.disclosureUrl} target="_blank" rel="noreferrer" className="text-sm underline underline-offset-4">Source disclosure</a>
+        <a href={reference.disclosureUrl} target="_blank" rel="noreferrer" className="source-disclosure-link text-sm underline underline-offset-4"><ExternalLink aria-hidden="true" size={14} />Source disclosure</a>
       )}
     </div>
   );
