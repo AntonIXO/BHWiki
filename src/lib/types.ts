@@ -32,6 +32,9 @@ export type DoseContext = {
   label: string; amount: string; quantity: number | null; quantityMax: number | null; unit: string;
   ingredient: string; formulation: string; route: string; frequency: string; duration: string;
   population: string; purpose: string; sourceCategory: "research" | "approved-label" | "reference" | "community";
+  foodRelation?: "empty-stomach" | "with-food" | "with-or-without-food" | "food-effect-not-established";
+  solubility?: "water-soluble" | "fat-soluble" | "formulation-dependent" | "solubility-not-established";
+  absorptionNote?: string;
   note: string; sourceId: string;
 };
 export type PKObservation = {
@@ -46,6 +49,15 @@ export type Claim = {
   assessment: "not-formally-assessed"; limitation: string;
 };
 export type Interaction = { id: string; name: string; otherSlug: string | null; summary: string; sourceId: string; targetClassId?: string; mechanism?: string; context?: string; severity?: { label: string; sourceId: string }; conflictingSourceIds?: string[] };
+export type IdentificationTest = {
+  name: string;
+  kind: "presumptive-reagent" | "instrumental-confirmation";
+  target: string;
+  expectedResult: string;
+  interpretation: string;
+  limitations: string;
+  sourceId: string;
+};
 export type ExperienceLink = { title: string; url: string; publisher: "PsychonautWiki" };
 export type Substance = {
   slug: string; name: string; subtitle: string; summary: string; description: string;
@@ -60,6 +72,7 @@ export type Substance = {
   mechanisms: { title: string; description: string; sourceId: string; conceptId?: string }[];
   cautions: { title: string; description: string; sourceId: string }[];
   interactions: Interaction[];
+  identificationTests?: IdentificationTest[];
   experienceLinks: ExperienceLink[];
   references: Reference[];
   legal: { jurisdiction: string; activity: string; status: string; sourceUrl: string; asOf: string }[];

@@ -73,7 +73,7 @@ for (const s of substances) {
     for (const id of c.conflictingSourceIds) insert("claim_sources", { claim_id: claim, source_id: reference(id), stance: q("conflicting") });
   }
   for (const d of s.doses) insert("doses", {
-    article_id: article, source_id: reference(d.sourceId), label: q(d.label), amount: q(d.amount), quantity: q(d.quantity), quantity_max: q(d.quantityMax), unit: q(d.unit), ingredient: q(d.ingredient), formulation: q(d.formulation), route: q(d.route), frequency: q(d.frequency), duration: q(d.duration), population: q(d.population), purpose: q(d.purpose), source_category: q(d.sourceCategory), note: q(d.note),
+    article_id: article, source_id: reference(d.sourceId), label: q(d.label), amount: q(d.amount), quantity: q(d.quantity), quantity_max: q(d.quantityMax), unit: q(d.unit), ingredient: q(d.ingredient), formulation: q(d.formulation), route: q(d.route), frequency: q(d.frequency), duration: q(d.duration), population: q(d.population), purpose: q(d.purpose), source_category: q(d.sourceCategory), food_relation: q(d.foodRelation), solubility: q(d.solubility), absorption_note: q(d.absorptionNote), note: q(d.note),
   });
   for (const p of s.pkObservations) insert("pk_observations", {
     article_id: article, observation_key: q(p.id), source_id: reference(p.sourceId), analyte: q(p.analyte), route: q(p.route), formulation: q(p.formulation), population: q(p.population), endpoint: q(p.endpoint), statistic: q(p.statistic), value: q(p.value), low: q(p.low), high: q(p.high), unit: q(p.unit), context: q(p.context), model_eligible: q(p.modelEligible),

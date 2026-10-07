@@ -59,6 +59,13 @@ test('a deep-article interaction cites a reference on that article',()=>{
  assert.equal(delta.interactions[0].otherSlug,'ethanol');
 });
 test('a dangling source is rejected before publication',()=>{const s=structuredClone(substances[0]);s.doses[0].sourceId='missing';assert.throws(()=>validateSubstance(s),/unknown source/);});
+test('intake and identification records are optional but strictly typed and sourced',()=>{
+ const s=structuredClone(substances[0]);
+ s.doses[0].foodRelation='with-food';s.doses[0].solubility='fat-soluble';s.doses[0].absorptionNote='Fixture context.';
+ s.identificationTests=[{name:'Ehrlich',kind:'presumptive-reagent',target:s.name,expectedResult:'Fixture color change',interpretation:'Presumptive only.',limitations:'Does not establish purity.',sourceId:s.references[0].id}];
+ validateSubstance(s);
+ s.doses[0].foodRelation='invalid' as never;assert.throws(()=>validateSubstance(s),/foodRelation/);
+});
 test('negative and unknown half-lives cannot become numeric models',()=>{const s=structuredClone(substances[0]);s.pkObservations[0].low=-2;assert.throws(()=>validateSubstance(s),/nonnegative/);s.pkObservations[0].low=null;s.pkObservations[0].statistic='not-established';assert.throws(()=>validateSubstance(s),/cannot be modeled/);});
 test('a measured outcome cannot masquerade as a subjective effect',()=>{const b=structuredClone(bundle);b.substances[0].effects[0].conceptId='attention';assert.throws(()=>validateContent(b),/must be a effect/);});
 test('roles cannot disappear from a contextual relationship',()=>{const b=structuredClone(bundle);delete b.hyperedges[0].memberRoles[b.hyperedges[0].members[0]];assert.throws(()=>validateContent(b),/role/);});

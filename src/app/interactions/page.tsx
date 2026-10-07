@@ -3,6 +3,8 @@ import { selectionSlugs } from "@/lib/research";
 import { EvidenceButton } from "@/components/evidence";
 import { SubstanceSelectors } from "@/components/substance-selectors";
 import { Breadcrumb } from "@/components/shell";
+import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
@@ -104,6 +106,35 @@ export default async function InteractionsPage({
               </Empty>
             )}
           </section>
+          {pair.overlaps.length > 0 && (
+            <section className="flex flex-col gap-4">
+              <h2 className="text-2xl font-medium">Shared mechanisms and findings</h2>
+              <p className="text-muted-foreground">
+                These records share an authored mechanism, reported effect, or measured outcome. An overlap is context for comparison, not evidence that the combination is unsafe or beneficial.
+              </p>
+              {pair.overlaps.map((overlap) => (
+                <Card key={overlap.key}>
+                  <CardHeader>
+                    <CardTitle>{overlap.name}</CardTitle>
+                    <CardDescription>
+                      <Badge variant="outline">{overlap.kind === "mechanism" ? "Shared mechanism" : overlap.kind === "outcome" ? "Shared measured outcome" : "Shared reported effect"}</Badge>
+                    </CardDescription>
+                  </CardHeader>
+                  <CardContent className="grid gap-5 sm:grid-cols-2">
+                    {overlap.records.map((record, index) => (
+                      <div key={`${overlap.key}:${record.articleSlug}:${index}`} className="flex flex-col gap-3">
+                        <Link href={`/substances/${record.articleSlug}`} className="font-medium underline underline-offset-4">{record.articleName}</Link>
+                        {record.direction && <Badge variant="secondary" className="w-fit">{record.direction}</Badge>}
+                        <p>{record.detail}</p>
+                        {record.evidenceKey && <EvidenceButton evidenceKey={record.evidenceKey} />}
+                        {record.sourceUrls && record.sourceUrls.length > 0 && <div className="flex flex-wrap gap-3 text-sm"><span className="text-muted-foreground">Concept sources:</span>{record.sourceUrls.map((url, sourceIndex) => <a key={url} href={url} target="_blank" rel="noreferrer" className="underline underline-offset-4">Source {sourceIndex + 1}</a>)}</div>}
+                      </div>
+                    ))}
+                  </CardContent>
+                </Card>
+              ))}
+            </section>
+          )}
           <section className="flex flex-col gap-4">
             <h2 className="text-2xl font-medium">
               General cautions from these articles

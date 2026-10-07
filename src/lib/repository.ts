@@ -221,8 +221,10 @@ export async function getEvidenceRecord(key:string){
 }
 export async function getComparison(slugs:string[]){ return getSubstancesBySlugs([...new Set(slugs)].slice(0,3)); }
 export async function getPairInteractions(a:string,b:string){
-  const {matchInteractions}=await import("./research");
+  const {matchInteractionOverlaps,matchInteractions}=await import("./research");
   const articles=await getSubstancesBySlugs([...new Set([a,b])]);
   const first=articles.find(s=>s.slug===a),second=articles.find(s=>s.slug===b);
-  return first&&second?{articles,result:matchInteractions(first,second)}:undefined;
+  if(!first||!second)return undefined;
+  const concepts=await getConcepts();
+  return {articles,result:matchInteractions(first,second),overlaps:matchInteractionOverlaps(first,second,concepts)};
 }

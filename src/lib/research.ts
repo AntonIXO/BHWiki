@@ -1,4 +1,4 @@
-import type { Hyperedge, Observation, Substance } from "./types";
+import type { Hyperedge, Observation, Substance, Tag } from "./types";
 import {
   observationFilterNames,
   type EvidenceKind,
@@ -356,6 +356,83 @@ export type InteractionMatch = {
   name: string;
   records: EvidenceRecord[];
 };
+
+export type InteractionOverlapRecord = {
+  articleSlug: string;
+  articleName: string;
+  detail: string;
+  direction?: Observation["direction"];
+  evidenceKey?: string;
+  sourceUrls?: string[];
+};
+
+export type InteractionOverlap = {
+  key: string;
+  kind: "mechanism" | "effect" | "outcome";
+  conceptId: string;
+  name: string;
+  records: InteractionOverlapRecord[];
+};
+
+function overlapRecords(substance: Substance, kind: InteractionOverlap["kind"], conceptId: string): InteractionOverlapRecord[] {
+  if (kind === "mechanism") {
+    return substance.mechanisms
+      .filter((mechanism) => mechanism.conceptId === conceptId)
+      .map((mechanism) => ({
+        articleSlug: substance.slug,
+        articleName: substance.name,
+        detail: mechanism.description,
+        evidenceKey: evidenceKey(substance.slug, "mechanism", mechanism),
+      }));
+  }
+  const observations = kind === "effect" ? substance.effects : substance.outcomes;
+  return observations
+    .filter((observation) => observation.conceptId === conceptId)
+    .map((observation) => ({
+      articleSlug: substance.slug,
+      articleName: substance.name,
+      detail: observation.description,
+      direction: observation.direction,
+      evidenceKey: evidenceKey(substance.slug, kind, observation),
+    }));
+}
+
+/** Derive context from identical authored concept IDs; this is never an interaction verdict. */
+export function matchInteractionOverlaps(a: Substance, b: Substance, concepts: Tag[]): InteractionOverlap[] {
+  const labels = new Map(concepts.map((concept) => [concept.id, concept.label]));
+  const mechanismKinds = new Set(["mechanism", "target", "neurotransmitter", "enzyme"]);
+  const mechanismTags = new Set(concepts.filter((concept) => mechanismKinds.has(concept.kind)).map((concept) => concept.id));
+  const kinds: InteractionOverlap["kind"][] = ["mechanism", "effect", "outcome"];
+  const overlaps: InteractionOverlap[] = [];
+  for (const kind of kinds) {
+    const leftIds = new Set(
+      (kind === "mechanism" ? [...a.mechanisms.flatMap((item) => item.conceptId ? [item.conceptId] : []), ...a.tags.filter((id) => mechanismTags.has(id))] : (kind === "effect" ? a.effects : a.outcomes).map((item) => item.conceptId)),
+    );
+    const rightIds = new Set(
+      (kind === "mechanism" ? [...b.mechanisms.flatMap((item) => item.conceptId ? [item.conceptId] : []), ...b.tags.filter((id) => mechanismTags.has(id))] : (kind === "effect" ? b.effects : b.outcomes).map((item) => item.conceptId)),
+    );
+    for (const conceptId of [...leftIds].filter((id) => rightIds.has(id)).sort()) {
+      const records = [...overlapRecords(a, kind, conceptId), ...overlapRecords(b, kind, conceptId)];
+      if (kind === "mechanism" && !records.some((record) => record.articleSlug === a.slug)) {
+        const concept = concepts.find((item) => item.id === conceptId);
+        if (concept) records.push({ articleSlug: a.slug, articleName: a.name, detail: `Indexed under ${concept.label}.`, sourceUrls: concept.sourceUrls });
+      }
+      if (kind === "mechanism" && !records.some((record) => record.articleSlug === b.slug)) {
+        const concept = concepts.find((item) => item.id === conceptId);
+        if (concept) records.push({ articleSlug: b.slug, articleName: b.name, detail: `Indexed under ${concept.label}.`, sourceUrls: concept.sourceUrls });
+      }
+      overlaps.push({
+        key: `${kind}:${conceptId}`,
+        kind,
+        conceptId,
+        name: labels.get(conceptId) ?? conceptId,
+        records,
+      });
+    }
+  }
+  return overlaps;
+}
+
 export function matchInteractions(
   a: Substance,
   b: Substance,

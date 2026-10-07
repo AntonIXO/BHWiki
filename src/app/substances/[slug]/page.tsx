@@ -57,6 +57,29 @@ function doseQuantity(dose: DoseContext) {
   return `${quantity}${maximum} ${dose.unit}`;
 }
 
+const foodRelationLabels: Record<NonNullable<DoseContext["foodRelation"]>, string> = {
+  "empty-stomach": "Empty stomach",
+  "with-food": "With food",
+  "with-or-without-food": "With or without food",
+  "food-effect-not-established": "Food effect not established",
+};
+const solubilityLabels: Record<NonNullable<DoseContext["solubility"]>, string> = {
+  "water-soluble": "Water-soluble",
+  "fat-soluble": "Fat-soluble",
+  "formulation-dependent": "Formulation-dependent solubility",
+  "solubility-not-established": "Solubility not established",
+};
+
+function IntakeBadges({ dose }: { dose: DoseContext }) {
+  if (!dose.foodRelation && !dose.solubility) return null;
+  return (
+    <div className="flex flex-wrap gap-2" aria-label="Intake and absorption details">
+      {dose.foodRelation && <Badge variant="outline" className="border-emerald-300 bg-emerald-50 text-emerald-900 dark:border-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-100">{foodRelationLabels[dose.foodRelation]}</Badge>}
+      {dose.solubility && <Badge variant="outline" className="border-violet-300 bg-violet-50 text-violet-900 dark:border-violet-800 dark:bg-violet-950/40 dark:text-violet-100">{solubilityLabels[dose.solubility]}</Badge>}
+    </div>
+  );
+}
+
 function EntityLink({ id, entities }: { id: string; entities: EntityIndex }) {
   const record = entities.substanceLink(id);
   return record.href ? <Link href={record.href} className="underline underline-offset-4">{record.label}</Link> : <span>{record.label}</span>;
@@ -151,10 +174,24 @@ export default async function SubstancePage({ params }: Props) {
   const related = entities.relatedSubstances(substance.slug, substance.tags);
   const selectedObservation = substance.pkObservations.find(item => item.id === substance.halfLife.observationId);
   const reviewed = substance.editorialStatus === "editorially-reviewed";
+  const identificationTests = substance.identificationTests ?? [];
+  const hasIntakeDetails = substance.doses.some(dose => dose.foodRelation || dose.solubility || dose.absorptionNote);
   const identityReference = substance.pubchemCid === null
     ? substance.references.find(r => r.id === "molekul-profile") ?? substance.references[0]
     : substance.references.find(r => r.id === "pubchem") ?? substance.references.find(r => /pubchem\.ncbi\.nlm\.nih\.gov\/(?:compound|rest\/pug\/compound)\//.test(r.url));
-  const toc = [{ id: "overview", name: "Overview" }, { id: "effects", name: "Subjective effects" }, { id: "measured-outcomes", name: "Measured outcomes" }, { id: "exposure", name: "Doses & routes" }, { id: "kinetics", name: "Pharmacokinetics" }, { id: "safety", name: "Safety" }, { id: "evidence", name: "Research" }, { id: "connections", name: "Connections" }, { id: "legal", name: "Legal context" }, { id: "editorial-history", name: "History" }];
+  const toc = [
+    { id: "overview", name: "Overview" },
+    { id: "effects", name: "Subjective effects" },
+    { id: "measured-outcomes", name: "Measured outcomes" },
+    { id: "exposure", name: "Doses & routes" },
+    ...(identificationTests.length ? [{ id: "identification-tests", name: "Identification tests" }] : []),
+    { id: "kinetics", name: "Pharmacokinetics" },
+    { id: "safety", name: "Safety" },
+    { id: "evidence", name: "Research" },
+    { id: "connections", name: "Connections" },
+    { id: "legal", name: "Legal context" },
+    { id: "editorial-history", name: "History" },
+  ];
 
   return (
     <main id="main" className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 py-8 sm:px-8">
@@ -166,6 +203,7 @@ export default async function SubstancePage({ params }: Props) {
             <Badge variant="secondary">{reviewed ? "Editorially reviewed" : "Sourced draft"}</Badge>
           </div>
           <h1 className="text-4xl font-medium">{substance.name}<span className="mt-2 block text-lg font-normal text-muted-foreground">{substance.subtitle}</span></h1>
+          {substance.aliases.length > 0 && <p className="break-words text-sm text-muted-foreground"><span className="font-medium text-foreground">Also known as:</span> {substance.aliases.join(" · ")}</p>}
           <Prose className="max-w-3xl text-lg text-muted-foreground" text={substance.summary} />
           <div className="flex flex-wrap gap-2">
             {substanceTags.map(tag => (
@@ -240,6 +278,7 @@ export default async function SubstancePage({ params }: Props) {
           <section id="exposure" className="flex scroll-mt-24 flex-col gap-4">
             <SectionHeading number="04" title="Doses & routes" />
             <p className="text-muted-foreground">Published exposure records, distinguished by source category. These describe study or reference context and are not personal dosing recommendations.</p>
+            {hasIntakeDetails && <p className="text-sm text-muted-foreground">Food timing and solubility labels describe the cited route or formulation. Solubility alone does not establish whether food changes absorption.</p>}
             {substance.doses.length ? (
               <div className="flex flex-col gap-4">
                 {substance.doses.map((dose, index) => (
@@ -250,6 +289,7 @@ export default async function SubstancePage({ params }: Props) {
                     </CardHeader>
                     <CardContent className="flex flex-col gap-4">
                       <p className="text-lg font-medium">{doseQuantity(dose)} <Source substance={substance} id={dose.sourceId} /></p>
+                      <IntakeBadges dose={dose} />
                       <ContextList items={[
                         { term: "Ingredient / form", detail: `${dose.ingredient || "Not established"} · ${dose.formulation || "Formulation not established"}` },
                         { term: "Route", detail: dose.route || "Not established" },
@@ -258,6 +298,7 @@ export default async function SubstancePage({ params }: Props) {
                         { term: "Population", detail: dose.population || "Not established" },
                         { term: "Purpose", detail: dose.purpose || "Not assessed" },
                       ]} />
+                      {dose.absorptionNote && <p><strong>Absorption context</strong> {dose.absorptionNote}</p>}
                       <p>{dose.note}</p>
                     </CardContent>
                   </Card>
@@ -265,6 +306,32 @@ export default async function SubstancePage({ params }: Props) {
               </div>
             ) : <DataEmpty>Not assessed. No sourced exposure records have been curated.</DataEmpty>}
           </section>
+
+          {identificationTests.length > 0 && (
+            <section id="identification-tests" className="flex scroll-mt-24 flex-col gap-4">
+              <SectionHeading title="Identification tests" />
+              <p className="text-muted-foreground">These are source-linked identification contexts. Reagent results are presumptive and do not establish exact identity, purity, concentration, or safety.</p>
+              <div className="flex flex-col gap-4">
+                {identificationTests.map((test) => (
+                  <Card key={`${test.kind}:${test.name}`}>
+                    <CardHeader>
+                      <CardTitle><h3>{test.name}</h3></CardTitle>
+                      <CardAction><Badge variant={test.kind === "presumptive-reagent" ? "secondary" : "outline"}>{test.kind === "presumptive-reagent" ? "Presumptive reagent" : "Instrumental confirmation"}</Badge></CardAction>
+                    </CardHeader>
+                    <CardContent className="flex flex-col gap-4">
+                      <ContextList items={[
+                        { term: "Target", detail: test.target },
+                        { term: "Expected result", detail: test.expectedResult },
+                        { term: "Interpretation", detail: test.interpretation },
+                        { term: "Limitations", detail: test.limitations },
+                      ]} />
+                      <Source substance={substance} id={test.sourceId} />
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </section>
+          )}
 
           <section id="kinetics" className="flex scroll-mt-24 flex-col gap-4">
             <SectionHeading number="05" title="Pharmacokinetics" />
@@ -362,7 +429,13 @@ export default async function SubstancePage({ params }: Props) {
                       {interaction.otherSlug && <CardDescription>{interaction.name}</CardDescription>}
                     </CardHeader>
                     <CardContent>
-                      <p>{interaction.summary} <Source substance={substance} id={interaction.sourceId} /></p><div className="mt-3"><EvidenceButton evidenceKey={evidenceKey(slug,"interaction",interaction)}/></div>
+                      <p>{interaction.summary} <Source substance={substance} id={interaction.sourceId} /></p>
+                      {(interaction.mechanism || interaction.context || interaction.severity) && <ContextList items={[
+                        ...(interaction.mechanism ? [{ term: "Mechanism", detail: interaction.mechanism }] : []),
+                        ...(interaction.context ? [{ term: "Context", detail: interaction.context }] : []),
+                        ...(interaction.severity ? [{ term: "Severity in cited source", detail: <>{interaction.severity.label} <Source substance={substance} id={interaction.severity.sourceId} /></> }] : []),
+                      ]} />}
+                      <div className="mt-3"><EvidenceButton evidenceKey={evidenceKey(slug,"interaction",interaction)}/></div>
                     </CardContent>
                   </Card>
                 ))}

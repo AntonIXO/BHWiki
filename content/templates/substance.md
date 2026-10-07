@@ -54,6 +54,7 @@ x-shape:
   - mechanisms
   - cautions
   - interactions
+  - identificationTests
   - experienceLinks
   - references
   - legal
@@ -76,6 +77,8 @@ Say what this draft covers and what it does not claim.
 ```yaml
 []
 ```
+
+Optional dose fields `foodRelation`, `solubility`, and `absorptionNote` are source-linked and route/formulation-specific. Do not infer food instructions from solubility.
 
 ## Pharmacokinetics
 
@@ -124,6 +127,14 @@ Say what this draft covers and what it does not claim.
 ```yaml
 []
 ```
+
+## Identification tests
+
+```yaml
+[]
+```
+
+Use `presumptive-reagent` for reagent results such as Ehrlich and `instrumental-confirmation` for methods such as FTIR or GC-MS. Include the expected result, interpretation, limitations, and a supporting `sourceId`; do not add synthesis or hazardous procedural instructions.
 
 ## Experience links
 

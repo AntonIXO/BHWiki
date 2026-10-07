@@ -124,6 +124,17 @@ test("comparison and interaction pages handle URL selections and incomplete reco
   ).toBeVisible();
 });
 
+test("conditional identity and overlap sections stay scoped to available data", async ({ page }) => {
+  await page.goto("/substances/caffeine");
+  await expect(page.locator(".article-hero")).toContainText("Also known as:");
+  await expect(page.locator("#identification-tests")).toHaveCount(0);
+  await expect(page.locator("#exposure")).not.toContainText("Food timing and solubility labels");
+  await page.goto("/interactions?a=phenylpiracetam&b=modafinil");
+  await expect(page.getByRole("heading", { name: "Shared mechanisms and findings" })).toBeVisible();
+  await expect(page.getByText("Dopamine transporter", { exact: true })).toBeVisible();
+  await expect(page.getByText(/overlap is context/i)).toBeVisible();
+});
+
 test("timing selection changes the sourced model and mechanism diagram exposes evidence", async ({
   page,
 }) => {
@@ -243,6 +254,11 @@ test("isolated rich fixtures activate plots, timing semantics, variations, and m
   await expect(page.getByRole("dialog")).toContainText("fixture-trial");
   await page.keyboard.press("Escape");
   await page.goto("/substances/caffeine");
+  await expect(page.getByText("With food", { exact: true })).toBeVisible();
+  await expect(page.getByText("Fat-soluble", { exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Identification tests" })).toBeVisible();
+  await expect(page.getByText("Fixture Ehrlich test", { exact: true })).toBeVisible();
+  await expect(page.getByText(/do not establish exact identity/i)).toBeVisible();
   await expect(
     page.getByRole("img", {
       name: "Sourced elapsed-time ranges since exposure",

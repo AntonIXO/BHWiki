@@ -58,6 +58,7 @@ x-shape:
   - mechanisms
   - cautions
   - interactions
+  - identificationTests
   - experienceLinks
   - references
   - legal
@@ -92,6 +93,9 @@ The terminal range is not modeled as one half-life. The initial 4-hour figure is
   population: 34 healthy subjects, ages 20–45, fasted
   purpose: Labeled pharmacokinetic summary
   sourceCategory: approved-label
+  foodRelation: empty-stomach
+  solubility: fat-soluble
+  absorptionNote: The label describes high lipid solubility; this pharmacokinetic context was studied in fasted subjects.
   note: Mean Cmax 1.32 ng/mL (SD 0.62), median Tmax 1.00 hour (0.50–4.00), AUC0-12 2.88 ng·hr/mL (SD 1.57).
   sourceId: dronabinol-label
 - label: Fasted multiple-dose pharmacokinetics, 5 mg
@@ -107,6 +111,9 @@ The terminal range is not modeled as one half-life. The initial 4-hour figure is
   population: 34 healthy subjects, ages 20–45, fasted
   purpose: Labeled pharmacokinetic summary
   sourceCategory: approved-label
+  foodRelation: empty-stomach
+  solubility: fat-soluble
+  absorptionNote: The label describes high lipid solubility; this pharmacokinetic context was studied in fasted subjects.
   note: Mean Cmax 2.96 ng/mL (SD 1.81), median Tmax 2.50 hours (0.50–4.00), AUC0-12 6.16 ng·hr/mL (SD 1.85).
   sourceId: dronabinol-label
 - label: Fasted multiple-dose pharmacokinetics, 10 mg
@@ -122,6 +129,9 @@ The terminal range is not modeled as one half-life. The initial 4-hour figure is
   population: 34 healthy subjects, ages 20–45, fasted
   purpose: Labeled pharmacokinetic summary
   sourceCategory: approved-label
+  foodRelation: empty-stomach
+  solubility: fat-soluble
+  absorptionNote: The label describes high lipid solubility; this pharmacokinetic context was studied in fasted subjects.
   note: Mean Cmax 7.88 ng/mL (SD 4.54), median Tmax 1.50 hours (0.50–3.50), AUC0-12 15.2 ng·hr/mL (SD 5.52). The label notes a slight increase in dose proportionality for mean Cmax and AUC0-12 as dose increased.
   sourceId: dronabinol-label
 ```
@@ -215,6 +225,18 @@ The terminal range is not modeled as one half-life. The initial 4-hour figure is
   sourceId: dronabinol-label
 ```
 
+## Identification tests
+
+```yaml
+- name: GC-MS confirmation in biological samples
+  kind: instrumental-confirmation
+  target: Delta-9-THC in blood or urine
+  expectedResult: A validated GC-MS method identifies delta-9-THC using selective chromatographic and mass-spectral criteria in the studied matrix.
+  interpretation: Confirmatory laboratory analysis can identify and quantify delta-9-THC in the validated biological sample context.
+  limitations: Requires a qualified laboratory and matrix-specific validation; it does not identify an unknown capsule or establish product purity by itself.
+  sourceId: thc-gcms-2024
+```
+
 ## Experience links
 
 ```yaml
@@ -244,6 +266,17 @@ The terminal range is not modeled as one half-life. The initial 4-hour figure is
   insight: Source of the displayed formula, molecular weight, structure, and connectivity SMILES.
   limitation: Connectivity SMILES do not encode every stereochemical distinction. The parent record is distinct from salts, formulations, and commercial product quality.
   funding: US National Library of Medicine.
+- id: thc-gcms-2024
+  title: Enhancement and validation of a quantitative GC-MS method for the detection of delta-9-THC and THC-COOH in postmortem blood and urine samples
+  authors: Somayeh Paknahad; Farzaneh Jokar; Mohammad Kazem Koohi; Masoud Ghadipasha; Jalal Hassan; Maryam Akhgari; Mehdi Forouzesh
+  year: 2024
+  url: https://pubmed.ncbi.nlm.nih.gov/39415877/
+  kind: Analytical method validation
+  insight: Validates selective GC-MS identification and quantification of delta-9-THC in blood and THC-COOH in urine, including authentic forensic samples.
+  limitation: Biological-matrix forensic method; it does not validate field reagent testing or identification of an unknown commercial product.
+  doi: 10.1016/j.mex.2024.102962
+  pmid: '39415877'
+  funding: Not assessed in this draft.
 ```
 
 ## Legal
@@ -251,4 +284,3 @@ The terminal range is not modeled as one half-life. The initial 4-hour figure is
 ```yaml
 []
 ```
-

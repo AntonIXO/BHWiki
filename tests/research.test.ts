@@ -7,6 +7,7 @@ import {
   evidenceKey,
   filterObservations,
   matchInteractions,
+  matchInteractionOverlaps,
   observationRows,
   observationMagnitude,
   plotGroups,
@@ -49,6 +50,23 @@ test("enrichment round-trips without changing legacy records or hashes", () => {
       parsed.record,
     );
   }
+});
+test("optional identification tests and dose intake context round-trip", () => {
+  const { caffeine } = researchFixture();
+  caffeine.doses[0].foodRelation = "with-food";
+  caffeine.doses[0].solubility = "fat-soluble";
+  caffeine.doses[0].absorptionNote = "Fixture note.";
+  caffeine.identificationTests = [{
+    name: "Ehrlich",
+    kind: "presumptive-reagent",
+    target: caffeine.name,
+    expectedResult: "Fixture color change",
+    interpretation: "Presumptive only.",
+    limitations: "Does not establish purity.",
+    sourceId: caffeine.references[0].id,
+  }];
+  const parsed = parseContentSource("substances/caffeine.md", serializeContent("substances/caffeine.md", { collection: "substances", record: caffeine, order: 0 }));
+  assert.deepEqual(parsed.record, caffeine);
 });
 test("evidence keys are independent of order and explicit IDs survive corrections", () => {
   const s = substances[0],
@@ -125,6 +143,20 @@ test("pair lookup is symmetric and only uses explicit exact/class targets", () =
   assert.equal(matchInteractions(a, b).matches.length, 0);
   assert.ok(matchInteractions(a, b).general.length);
   assert.equal(matchInteractions(a, a).matches.length, 0);
+});
+test("shared authored mechanisms are context, never an inferred interaction", () => {
+  const a = structuredClone(substances.find((s) => s.slug === "phenylpiracetam")!);
+  const b = structuredClone(substances.find((s) => s.slug === "modafinil")!);
+  a.interactions = [];
+  b.interactions = [];
+  const overlaps = matchInteractionOverlaps(a, b, tags);
+  assert.ok(overlaps.some((overlap) => overlap.kind === "mechanism" && overlap.conceptId === "dopamine-transporter"));
+  assert.equal(matchInteractions(a, b).matches.length, 0);
+  a.mechanisms = [];
+  b.mechanisms = [];
+  a.tags.push("dopamine");
+  b.tags.push("dopamine");
+  assert.ok(matchInteractionOverlaps(a, b, tags).some((overlap) => overlap.conceptId === "dopamine"));
 });
 test("invalid numerical estimates, intervals, classes, and sources are rejected", () => {
   const mutate = (

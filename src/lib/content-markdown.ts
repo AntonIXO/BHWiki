@@ -29,12 +29,14 @@ const substanceLists = [
   ["References", "references"],
   ["Legal", "legal"],
 ] as const;
+const optionalSubstanceLists = [["Identification tests", "identificationTests"]] as const;
 
 const substanceProseFields = new Set<string>(substanceProse.map(([, field]) => field));
 const substanceListFields = new Set<string>(substanceLists.map(([, field]) => field));
 const substanceHeadings = new Map<string, { field: string; kind: "prose" | "list" }>();
 for (const [title, field] of substanceProse) substanceHeadings.set(title, { field, kind: "prose" });
 for (const [title, field] of substanceLists) substanceHeadings.set(title, { field, kind: "list" });
+for (const [title, field] of optionalSubstanceLists) substanceHeadings.set(title, { field, kind: "list" });
 substanceHeadings.set("Duration", { field: "timeline", kind: "list" });
 
 export class ContentFormatError extends Error {
@@ -179,6 +181,7 @@ function substanceRecord(relativePath: string, source: string): ContentRecord {
     if (field === "timeline") continue;
     parts[field] = value;
   }
+  if (!Object.prototype.hasOwnProperty.call(parts, "identificationTests") && shape.includes("identificationTests")) parts.identificationTests = [];
   if (sections.timeline !== undefined) {
     if (!isRecord(parts.kinetics)) fail(file, "Duration requires a kinetics map in frontmatter");
     parts.kinetics = { ...parts.kinetics, timeline: sections.timeline };
@@ -260,12 +263,16 @@ export function serializeContent(relativePath: string, parsed: ContentRecord): s
   if (parsed.collection === "substances") {
     const record = parsed.record as unknown as Record<string, unknown>;
     const shape = Object.keys(record);
-    const data = singularCopy(record, shape, new Set([...substanceProseFields, ...substanceListFields]), file);
+    const data = singularCopy(record, shape, new Set([...substanceProseFields, ...substanceListFields, ...optionalSubstanceLists.map(([, field]) => field)]), file);
     data["x-order"] = parsed.order;
     const sections = [
       ...substanceProse.map(([title, field]) => proseSection(title, record[field], file)),
       ...substanceLists.map(([title, field]) => listSection(title, record[field])),
     ];
+    const identificationTests = record.identificationTests;
+    if (Array.isArray(identificationTests) && identificationTests.length > 0) {
+      sections.push(listSection("Identification tests", identificationTests));
+    }
     const kinetics = record.kinetics;
     if (isRecord(kinetics) && Object.prototype.hasOwnProperty.call(kinetics, "timeline")) {
       const durationAt = sections.findIndex((section) => section.startsWith("## Modifiers"));

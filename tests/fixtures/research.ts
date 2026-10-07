@@ -34,6 +34,18 @@ export function researchFixture() {
   };
   caffeine.outcomes.push(observation);
   caffeine.effects[0].reportType = "measured-assessment";
+  caffeine.doses[0].foodRelation = "with-food";
+  caffeine.doses[0].solubility = "fat-soluble";
+  caffeine.doses[0].absorptionNote = "Fixture intake context.";
+  caffeine.identificationTests = [{
+    name: "Fixture Ehrlich test",
+    kind: "presumptive-reagent",
+    target: caffeine.name,
+    expectedResult: "Fixture color change",
+    interpretation: "Presumptive only.",
+    limitations: "Does not establish purity or concentration.",
+    sourceId: caffeine.references[0].id,
+  }];
   caffeine.kinetics.timeline = [
     {
       id: "fixture-elapsed",
