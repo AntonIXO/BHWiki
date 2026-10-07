@@ -135,6 +135,22 @@ test("conditional identity and overlap sections stay scoped to available data", 
   await expect(page.getByText(/overlap is context/i)).toBeVisible();
 });
 
+test("figures and pharmacokinetics render only from committed data", async ({ page }) => {
+  await page.goto("/substances/caffeine");
+  await expect(page.getByText("Add a figure or dataset", { exact: true })).toHaveCount(0);
+  await expect(page.getByText("Choose image", { exact: true })).toHaveCount(0);
+  await expect(page.getByText("Study-result plots", { exact: true })).toHaveCount(0);
+  await expect(page.locator(".kinetics-rail")).toHaveCount(1);
+  await expect(page.locator(".kinetics-rail .kinetics-visual-marker-label")).toHaveText(["Onset", "Peak", "Duration", "Half-life"]);
+  await page.locator(".kinetics-rail .kinetics-visual-marker-peak").click();
+  await expect(page.getByText(/Serum peak around 2 hours/)).toBeVisible();
+
+  await page.goto("/substances/2c-b");
+  await expect(page.locator("#kinetics")).toHaveCount(0);
+  await expect(page.locator(".kinetics-rail")).toHaveCount(0);
+  await expect(page.getByRole("link", { name: "Pharmacokinetics", exact: true })).toHaveCount(0);
+});
+
 test("timing selection changes the sourced model and mechanism diagram exposes evidence", async ({
   page,
 }) => {

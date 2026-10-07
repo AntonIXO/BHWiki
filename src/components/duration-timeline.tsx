@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { durationPhaseLabels, formatSpan, elapsedPhases } from "@/lib/duration";
 import type { DurationRoute, Substance } from "@/lib/types";
+import { KineticsTimingVisual } from "@/components/kinetics-timing-visual";
 import {
   Card,
   CardContent,
@@ -8,6 +9,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+
+const unavailableTiming = /^(?:not\s+(?:assessed|established|reported)(?:\b|\s)|the citation identifies the compound rather than reporting|no\s+[^.]+\s+(?:curated|assigned|established)\b)/i;
+function curatedTiming(value: string | undefined) {
+  const text = value?.trim();
+  return text && !unavailableTiming.test(text) ? text : null;
+}
 function RouteTiming({
   route,
   citation,
@@ -17,6 +24,8 @@ function RouteTiming({
 }) {
   const elapsed = elapsedPhases(route);
   const max = Math.max(1, ...elapsed.map((p) => p.max));
+  const onset = route.phases.find((phase) => phase.name === "onset" || phase.name === "comeup");
+  const peak = route.phases.find((phase) => phase.name === "peak");
   return (
     <Card>
       <CardHeader>
@@ -34,10 +43,8 @@ function RouteTiming({
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         <p>{route.population}</p>
-        <p>
-          <strong>Total reported duration:</strong>{" "}
-          {formatSpan(route.total) ?? "Not established"}
-        </p>
+        <KineticsTimingVisual onset={formatSpan(onset)} peak={formatSpan(peak)} duration={formatSpan(route.total)} />
+        {route.phases.some((phase) => !phase.basis) && <span className="sr-only">Time basis not assessed</span>}
         {elapsed.length > 0 && (
           <svg
             viewBox={`0 0 560 ${elapsed.length * 34 + 35}`}
@@ -94,21 +101,6 @@ function RouteTiming({
             </text>
           </svg>
         )}
-        <dl className="grid gap-3 sm:grid-cols-2">
-          {route.phases.map((p) => (
-            <div key={p.name}>
-              <dt className="text-sm text-muted-foreground">
-                {durationPhaseLabels[p.name]} ·{" "}
-                {p.basis === "elapsed-since-exposure"
-                  ? "Since exposure"
-                  : p.basis === "phase-duration"
-                    ? "Phase duration"
-                    : "Time basis not assessed"}
-              </dt>
-              <dd>{formatSpan(p) ?? "Not established"}</dd>
-            </div>
-          ))}
-        </dl>
         <p>{route.note}</p>
         <p className="text-sm text-muted-foreground">
           Reported ranges retain the source context. Phase durations are not
@@ -140,21 +132,11 @@ export function DurationTimeline({
   ) : (
     <Card>
       <CardHeader>
-        <CardTitle>Published timing summary</CardTitle>
-        <CardDescription>
-          Separate numeric phase measurements have not been curated.
-        </CardDescription>
+        <CardTitle>Published timing map</CardTitle>
+        <CardDescription>Activate a marker to inspect its cited value.</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-3">
-        <p>
-          <strong>Onset:</strong> {kinetics.onset}
-        </p>
-        <p>
-          <strong>Peak, as described by the source:</strong> {kinetics.peak}
-        </p>
-        <p>
-          <strong>Duration:</strong> {kinetics.duration}
-        </p>
+        <KineticsTimingVisual onset={curatedTiming(kinetics.onset) } peak={curatedTiming(kinetics.peak)} duration={curatedTiming(kinetics.duration)} />
         <p className="text-sm text-muted-foreground">
           Not established as a numeric timeline. Plasma timing and felt effects
           are distinct measurements. {citationFor(kinetics.sourceId)}

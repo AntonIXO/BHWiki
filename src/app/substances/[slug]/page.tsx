@@ -4,21 +4,19 @@ import { EffectPreview } from "@/components/effect-preview";
 import { TimingExplorer } from "@/components/timing-explorer";
 import { MechanismExplorer } from "@/components/mechanism-explorer";
 import { StudyPlots } from "@/components/study-plots";
-import { evidenceKey, observationMagnitude, observationRows } from "@/lib/research";
+import { KineticsTimingVisual } from "@/components/kinetics-timing-visual";
+import { evidenceKey, observationMagnitude, observationRows, plotGroups } from "@/lib/research";
 import type { CSSProperties, ReactNode } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Activity, ArrowDown, ArrowRight, ArrowUp, ArrowUpRight, BookOpen, BookOpenCheck, Brain, ChartColumnBig, CircleDot, Clock3, Compass, Droplets, FlaskConical, GitBranch, Globe, HeartPulse, History, Info, Layers3, Moon, MoveHorizontal, Network, Pill, RefreshCw, Scale, ShieldAlert, ShieldCheck, Target, TriangleAlert, Zap } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUp, ArrowUpRight, BookOpen, BookOpenCheck, Brain, ChartColumnBig, CircleDot, Clock3, Compass, FlaskConical, GitBranch, Globe, HeartPulse, History, Layers3, MoveHorizontal, Network, Pill, Scale, ShieldAlert, ShieldCheck, Target, TriangleAlert } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Citation } from "@/components/citation";
 import { Prose } from "@/components/prose";
-import { DurationTimeline } from "@/components/duration-timeline";
 import { MoleculeImage } from "@/components/molecule-image";
 import { SectionNav } from "@/components/section-nav";
 import { Breadcrumb } from "@/components/shell";
-import { KineticsChart } from "@/components/kinetics-chart";
-import { EvidenceCanvas } from "@/components/evidence-canvas";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -202,25 +200,51 @@ function ObservationMatrix({ observations, substance, entities, measured = false
   );
 }
 
+const placeholderKineticsText = /^(?:not\s+(?:assessed|established|reported)(?:\b|\s)|no\s+[^.]+\s+(?:curated|assigned|established)\b|absolute\s+[^.]+\s+not\s+determined\b|this\s+import\s+contains\s+[^.]+,?\s+not\s+a\s+verified\b)/i;
+const identityOnlyKineticsText = /^the citation identifies the compound rather than reporting/i;
+
+function hasCuratedKineticsText(value: string | null | undefined) {
+  const text = value?.trim();
+  return Boolean(text && !placeholderKineticsText.test(text) && !identityOnlyKineticsText.test(text));
+}
+
+function hasCuratedPKObservation(observation: Substance["pkObservations"][number]) {
+  return Boolean(
+    observation.modelEligible ||
+      observation.value !== null ||
+      observation.low !== null ||
+      observation.high !== null ||
+      (hasCuratedKineticsText(observation.context) && !identityOnlyKineticsText.test(observation.context.trim())),
+  );
+}
+
+function hasKineticsData(substance: Substance) {
+  const halfLifeEstimate = substance.halfLife.low !== null || substance.halfLife.high !== null;
+  const halfLifeLabel = hasCuratedKineticsText(substance.halfLife.label);
+  const halfLifeContext = hasCuratedKineticsText(substance.halfLife.context);
+  const kineticsSummary = [substance.kinetics.onset, substance.kinetics.peak, substance.kinetics.duration, substance.kinetics.bioavailability, substance.kinetics.metabolism].some(hasCuratedKineticsText);
+  const timingData = (substance.kinetics.timeline ?? []).some((route) => route.total !== null || route.phases.length > 0 || hasCuratedKineticsText(route.note));
+  return halfLifeEstimate || halfLifeLabel || halfLifeContext || kineticsSummary || timingData || substance.pkObservations.some(hasCuratedPKObservation) || substance.modifiers.length > 0;
+}
+
 function KineticsRail({ substance }: { substance: Substance }) {
+  if (!hasKineticsData(substance)) return null;
+  const timing = {
+    onset: hasCuratedKineticsText(substance.kinetics.onset) ? substance.kinetics.onset : null,
+    peak: hasCuratedKineticsText(substance.kinetics.peak) ? substance.kinetics.peak : null,
+    duration: hasCuratedKineticsText(substance.kinetics.duration) ? substance.kinetics.duration : null,
+    elimination: hasCuratedKineticsText(substance.halfLife.label) ? substance.halfLife.label : null,
+  };
+  if (!Object.values(timing).some(Boolean)) return null;
   return (
     <Card className="kinetics-rail">
       <CardHeader>
-        <CardDescription className="inline-flex items-center gap-1.5"><span className="rail-kicker-icon"><Clock3 aria-hidden="true" size={15} /></span>Pharmacokinetics</CardDescription>
-        <CardTitle><span className="rail-value">{substance.halfLife.label || "Not established"}</span></CardTitle>
-        <CardDescription>Elimination half-life{` · ${substance.halfLife.observationId ? "source-linked" : "not established"}`}</CardDescription>
+        <CardDescription className="inline-flex items-center gap-1.5"><span className="rail-kicker-icon"><Clock3 aria-hidden="true" size={15} /></span>Sourced kinetics</CardDescription>
+        <CardDescription>Activate a marker to inspect its cited value.</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-3">
-        <div className="kinetics-rail-timeline" aria-label="Published timing summary">
-          <span><Zap aria-hidden="true" size={14} /><b>Onset</b><small>{substance.kinetics.onset || "Not established"}</small></span>
-          <span><Activity aria-hidden="true" size={14} /><b>Peak</b><small>{substance.kinetics.peak || "Not established"}</small></span>
-          <span><Moon aria-hidden="true" size={14} /><b>Duration</b><small>{substance.kinetics.duration || "Not established"}</small></span>
-        </div>
-        <div className="kinetics-rail-meta">
-          <span><Droplets aria-hidden="true" size={14} /><strong>Bioavailability</strong>{substance.kinetics.bioavailability || "Not established"}</span>
-          <span><RefreshCw aria-hidden="true" size={14} /><strong>Metabolism</strong>{substance.kinetics.metabolism || "Not established"}</span>
-        </div>
-        <Link href="#kinetics" className="inline-flex items-center gap-1.5 text-sm underline underline-offset-4">Open full kinetics <ArrowRight aria-hidden="true" size={14} /></Link>
+        <KineticsTimingVisual {...timing} />
+        <Link href="#kinetics" className="inline-flex items-center gap-1.5 text-sm underline underline-offset-4">View full kinetics <ArrowRight aria-hidden="true" size={14} /></Link>
       </CardContent>
     </Card>
   );
@@ -274,6 +298,11 @@ export default async function SubstancePage({ params }: Props) {
   const reviewed = substance.editorialStatus === "editorially-reviewed";
   const identificationTests = substance.identificationTests ?? [];
   const hasIntakeDetails = substance.doses.some(dose => dose.foodRelation || dose.solubility || dose.absorptionNote);
+  const showKinetics = hasKineticsData(substance);
+  const outcomePlotRows = observationRows(substance, "outcome");
+  const hasOutcomePlots = plotGroups(outcomePlotRows).length > 0;
+  const curatedPKObservations = substance.pkObservations.filter(hasCuratedPKObservation);
+  const hasHalfLifeEstimate = substance.halfLife.low !== null || substance.halfLife.high !== null || hasCuratedKineticsText(substance.halfLife.label);
   const identityReference = substance.pubchemCid === null
     ? substance.references.find(r => r.id === "molekul-profile") ?? substance.references[0]
     : substance.references.find(r => r.id === "pubchem") ?? substance.references.find(r => /pubchem\.ncbi\.nlm\.nih\.gov\/(?:compound|rest\/pug\/compound)\//.test(r.url));
@@ -282,7 +311,7 @@ export default async function SubstancePage({ params }: Props) {
     { id: "measured-outcomes", name: "Measured outcomes" },
     { id: "exposure", name: "Doses & routes" },
     ...(identificationTests.length ? [{ id: "identification-tests", name: "Identification tests" }] : []),
-    { id: "kinetics", name: "Pharmacokinetics" },
+    ...(showKinetics ? [{ id: "kinetics", name: "Pharmacokinetics" }] : []),
     { id: "safety", name: "Safety" },
     { id: "evidence", name: "Research" },
     { id: "connections", name: "Connections" },
@@ -328,7 +357,6 @@ export default async function SubstancePage({ params }: Props) {
             <span className="text-xs font-medium tracking-wide text-muted-foreground uppercase">Elsewhere</span>
             <a href={`https://en.wikipedia.org/wiki/${encodeURIComponent(substance.name)}`} target="_blank" rel="noreferrer"><Globe aria-hidden="true" size={13} />Wikipedia <ArrowUpRight aria-hidden="true" size={13} /></a>
             <a href="https://examine.com/" target="_blank" rel="noreferrer"><BookOpenCheck aria-hidden="true" size={13} />Examine <ArrowUpRight aria-hidden="true" size={13} /></a>
-            <a href="https://evipedia.ai/" target="_blank" rel="noreferrer" title="Open Evipedia homepage"><ChartColumnBig aria-hidden="true" size={13} />Evipedia <ArrowUpRight aria-hidden="true" size={13} /></a>
             <a href="https://psychonautwiki.org/" target="_blank" rel="noreferrer"><Brain aria-hidden="true" size={13} />PsychonautWiki <ArrowUpRight aria-hidden="true" size={13} /></a>
           </div>
         </div>
@@ -370,8 +398,7 @@ export default async function SubstancePage({ params }: Props) {
             <SectionHeading number="02" title="Measured outcomes" />
             <p className="text-muted-foreground">What the research measured, for whom, and under which exposure. Findings remain attached to the study’s task or clinical endpoint.</p>
             <ObservationMatrix observations={substance.outcomes} substance={substance} entities={entities} measured />
-            <EvidenceCanvas />
-            <details className="rounded-lg border p-4"><summary className="cursor-pointer font-medium">Study-result plots</summary><div className="pt-4"><StudyPlots rows={observationRows(substance,"outcome")}/></div></details>
+            {hasOutcomePlots && <details className="rounded-lg border p-4"><summary className="cursor-pointer font-medium">Study-result plots</summary><div className="pt-4"><StudyPlots rows={outcomePlotRows}/></div></details>}
           </section>
 
           <section id="exposure" className="flex scroll-mt-24 flex-col gap-4">
@@ -432,23 +459,29 @@ export default async function SubstancePage({ params }: Props) {
             </section>
           )}
 
-          <section id="kinetics" className="flex scroll-mt-24 flex-col gap-4">
+          {showKinetics && <section id="kinetics" className="flex scroll-mt-24 flex-col gap-4">
             <SectionHeading number="04" title="Pharmacokinetics" />
             <p className="text-muted-foreground">Absorption, metabolism and elimination depend on the analyte, route, formulation, physiology and other exposures.</p>
-            <Card size="sm">
+            {hasHalfLifeEstimate && <Card size="sm">
               <CardHeader>
                 <CardDescription>Elimination half-life{selectedObservation ? ` · ${selectedObservation.analyte}` : ""}</CardDescription>
-                <CardTitle>{substance.halfLife.label || "Not established"}</CardTitle>
+                <CardTitle>{substance.halfLife.label}</CardTitle>
               </CardHeader>
               <CardContent><Source substance={substance} id={substance.halfLife.sourceId} /></CardContent>
-            </Card>
-            <TimingExplorer slug={slug} kinetics={substance.kinetics} observations={substance.pkObservations} initialId={substance.halfLife.observationId} references={substance.references}/>
-            <p>{substance.halfLife.context} <Source substance={substance} id={substance.halfLife.sourceId} /></p>
+            </Card>}
+            {(substance.kinetics.timeline?.length || curatedPKObservations.length) ? <TimingExplorer slug={slug} kinetics={substance.kinetics} observations={curatedPKObservations} initialId={substance.halfLife.observationId} references={substance.references}/> : <ContextList items={[
+              ...(hasCuratedKineticsText(substance.kinetics.onset) ? [{ term: "Onset", detail: substance.kinetics.onset }] : []),
+              ...(hasCuratedKineticsText(substance.kinetics.peak) ? [{ term: "Peak", detail: substance.kinetics.peak }] : []),
+              ...(hasCuratedKineticsText(substance.kinetics.duration) ? [{ term: "Duration", detail: substance.kinetics.duration }] : []),
+              ...(hasCuratedKineticsText(substance.kinetics.bioavailability) ? [{ term: "Bioavailability", detail: substance.kinetics.bioavailability }] : []),
+              ...(hasCuratedKineticsText(substance.kinetics.metabolism) ? [{ term: "Metabolism", detail: substance.kinetics.metabolism }] : []),
+            ]} />}
+            {hasCuratedKineticsText(substance.halfLife.context) && <p>{substance.halfLife.context} <Source substance={substance} id={substance.halfLife.sourceId} /></p>}
 
-            <h3 className="text-lg font-medium">Sourced elimination observations</h3>
-            {substance.pkObservations.length ? (
+            {curatedPKObservations.length > 0 && <><h3 className="text-lg font-medium">Sourced elimination observations</h3>
+            {curatedPKObservations.length ? (
               <div className="flex flex-col gap-4">
-                {substance.pkObservations.map(observation => (
+                {curatedPKObservations.map(observation => (
                   <Card key={observation.id} id={`pk-${observation.id}`}>
                     <CardHeader>
                       <CardTitle><h4>{observation.analyte}</h4></CardTitle>
@@ -469,10 +502,10 @@ export default async function SubstancePage({ params }: Props) {
                   </Card>
                 ))}
               </div>
-            ) : <DataEmpty>Elimination observations not assessed.</DataEmpty>}
+            ) : null}</>}
             <ContextList items={[
-              { term: "Bioavailability", detail: <>{substance.kinetics.bioavailability || "Not established"} <Source substance={substance} id={substance.kinetics.sourceId} /></> },
-              { term: "Metabolism / metabolites", detail: <>{substance.kinetics.metabolism || "Not established"} <Source substance={substance} id={substance.kinetics.sourceId} /></> },
+              ...(hasCuratedKineticsText(substance.kinetics.bioavailability) ? [{ term: "Bioavailability", detail: <>{substance.kinetics.bioavailability} <Source substance={substance} id={substance.kinetics.sourceId} /></> }] : []),
+              ...(hasCuratedKineticsText(substance.kinetics.metabolism) ? [{ term: "Metabolism / metabolites", detail: <>{substance.kinetics.metabolism} <Source substance={substance} id={substance.kinetics.sourceId} /></> }] : []),
             ]} />
             {substance.modifiers.length > 0 && (
               <div className="flex flex-col gap-3">
@@ -493,7 +526,7 @@ export default async function SubstancePage({ params }: Props) {
                 ))}
               </div>
             )}
-          </section>
+          </section>}
 
           <section id="safety" className="flex scroll-mt-24 flex-col gap-4">
             <SectionHeading number="05" title="Safety & uncertainty" />
@@ -666,7 +699,7 @@ export default async function SubstancePage({ params }: Props) {
         </div>
 
         <aside className="flex flex-col gap-4 lg:sticky lg:top-24 lg:self-start" aria-label="Substance identity and related resources">
-          <KineticsRail substance={substance} />
+          {showKinetics && <KineticsRail substance={substance} />}
           <Card>
             <CardHeader>
               <CardDescription>Molecular structure</CardDescription>

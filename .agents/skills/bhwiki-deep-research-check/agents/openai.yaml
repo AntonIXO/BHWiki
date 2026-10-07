@@ -1,0 +1,6 @@
+interface:
+  display_name: "BHWiki Deep Research Check"
+  short_description: "Validate one Deep Research page for BHWiki"
+  default_prompt: "Use $bhwiki-deep-research-check to run or audit one BHWiki Deep Research Markdown page."
+policy:
+  allow_implicit_invocation: true

@@ -11,7 +11,7 @@ const presets = {
   field: { label: "Field Guide", type: "enzyme", outcome: "cards", pk: "inline", sources: "expanded" },
 };
 
-const state = { direction: "atlas", type: "substance", outcome: "matrix", pk: "rail", sources: "collapsed", activeTab: "overview", surface: "tinted", labels: "icons", icons: "rich", outcomeLabel: "measured", interaction: "map", visual: false, chart: false, sleep: true, subjective: false, external: true, chosen: false };
+const state = { direction: "atlas", type: "substance", outcome: "matrix", pk: "rail", sources: "collapsed", activeTab: "overview", surface: "tinted", labels: "icons", icons: "rich", outcomeLabel: "measured", interaction: "map", sleep: true, subjective: false, external: true, chosen: false };
 const preview = document.querySelector("#preview");
 const outcomesContent = document.querySelector("#outcomes-content");
 const pkPanel = document.querySelector("#pk-panel");
@@ -56,7 +56,7 @@ function updateTabs() {
 }
 
 function update() {
-  preview.className = `preview direction-${state.direction} type-${state.type} outcome-${state.outcome} pk-${state.pk} surface-${state.surface} labels-${state.labels} icons-${state.icons} interaction-mode-${state.interaction} ${state.visual ? "show-visual-slot" : ""} ${state.chart ? "show-chart-slot" : ""} ${state.sleep ? "" : "no-sleep"} ${state.subjective ? "show-subjective" : ""} ${state.external ? "" : "hide-external"}`;
+  preview.className = `preview direction-${state.direction} type-${state.type} outcome-${state.outcome} pk-${state.pk} surface-${state.surface} labels-${state.labels} icons-${state.icons} interaction-mode-${state.interaction} ${state.sleep ? "" : "no-sleep"} ${state.subjective ? "show-subjective" : ""} ${state.external ? "" : "hide-external"}`;
   preview.querySelector(".main-grid").classList.toggle("pk-inline", state.pk === "inline");
   typeLabel.textContent = state.type[0].toUpperCase() + state.type.slice(1);
   const typeIcon = document.querySelector(".type-pill i, .type-pill svg"); if (typeIcon) typeIcon.outerHTML = icon(state.type === "effect" ? "sparkles" : state.type === "enzyme" ? "network" : "flask-conical");
@@ -72,7 +72,7 @@ function updateControls() {
   document.querySelectorAll("[data-outcome]").forEach((button) => button.classList.toggle("is-active", button.dataset.outcome === state.outcome));
   document.querySelector("#pk-placement").value = state.pk; document.querySelector("#source-mode").value = state.sources;
   document.querySelector("#surface-mode").value = state.surface; document.querySelector("#label-mode").value = state.labels; document.querySelector("#icon-mode").value = state.icons; document.querySelector("#outcome-label").value = state.outcomeLabel; document.querySelector("#interaction-mode").value = state.interaction;
-  document.querySelector("#visual-slots").checked = state.visual; document.querySelector("#chart-slot").checked = state.chart; document.querySelector("#sleep-toggle").checked = state.sleep; document.querySelector("#subjective-toggle").checked = state.subjective; document.querySelector("#external-toggle").checked = state.external;
+  document.querySelector("#sleep-toggle").checked = state.sleep; document.querySelector("#subjective-toggle").checked = state.subjective; document.querySelector("#external-toggle").checked = state.external;
   document.querySelector("#outcome-heading").textContent = state.outcomeLabel === "data" ? "What the data shows" : state.outcomeLabel === "signal" ? "Research signal" : "Measured outcomes";
   const preset = presets[state.direction];
   document.querySelector("#current-selection").textContent = `${preset.label} · ${state.type[0].toUpperCase() + state.type.slice(1)}`;
@@ -92,8 +92,6 @@ document.querySelector("#label-mode").addEventListener("change", (e) => setState
 document.querySelector("#icon-mode").addEventListener("change", (e) => setState({ icons: e.target.value }));
 document.querySelector("#outcome-label").addEventListener("change", (e) => setState({ outcomeLabel: e.target.value }));
 document.querySelector("#interaction-mode").addEventListener("change", (e) => setState({ interaction: e.target.value }));
-document.querySelector("#visual-slots").addEventListener("change", (e) => setState({ visual: e.target.checked }));
-document.querySelector("#chart-slot").addEventListener("change", (e) => setState({ chart: e.target.checked }));
 document.querySelector("#sleep-toggle").addEventListener("change", (e) => setState({ sleep: e.target.checked }));
 document.querySelector("#subjective-toggle").addEventListener("change", (e) => setState({ subjective: e.target.checked }));
 document.querySelector("#external-toggle").addEventListener("change", (e) => setState({ external: e.target.checked }));
