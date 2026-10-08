@@ -23,6 +23,7 @@ import { Button } from "@/components/ui/button";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
 import { Popover, PopoverContent, PopoverDescription, PopoverHeader, PopoverTitle, PopoverTrigger } from "@/components/ui/popover";
 import { Card, CardAction, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Empty, EmptyDescription, EmptyHeader } from "@/components/ui/empty";
 import { Item, ItemContent, ItemDescription, ItemMedia, ItemTitle } from "@/components/ui/item";
 import { Separator } from "@/components/ui/separator";
@@ -567,13 +568,17 @@ export default async function SubstancePage({ params }: Props) {
           <section id="evidence" className="flex scroll-mt-24 flex-col gap-4">
             <SectionHeading number="06" title="Research & sources" extra={<Badge variant="secondary">{substance.references.length}</Badge>} />
             <p className="text-muted-foreground">The source, the finding and its limitations. Funding information is reported where curated; an unassessed disclosure does not mean a study had no commercial funding.</p>
-            <details className="research-disclosure rounded-lg border" id="research-sources">
-              <summary className="flex cursor-pointer items-center justify-between gap-3 px-4 py-3 font-medium">
+            <Collapsible className="research-disclosure rounded-lg border" id="research-sources">
+              <CollapsibleTrigger className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left font-medium">
                 <span className="inline-flex items-center gap-2"><BookOpen aria-hidden="true" size={17} />Show research sources</span>
                 <Badge variant="secondary">{substance.references.length}</Badge>
-              </summary>
-              <Card className="rounded-t-none border-0 shadow-none">
-              <CardContent>
+              </CollapsibleTrigger>
+              <CollapsibleContent
+                keepMounted
+                className="transition-[opacity,transform] duration-180 ease-[var(--ease-out)] data-ending-style:scale-95 data-ending-style:opacity-0 data-starting-style:scale-95 data-starting-style:opacity-0"
+              >
+                <Card className="rounded-t-none border-0 shadow-none">
+                <CardContent>
                 <div className="flex flex-col gap-3">
                   {substance.references.map((reference, index) => (
                     <div key={reference.id} className="flex flex-col gap-3">
@@ -606,9 +611,10 @@ export default async function SubstancePage({ params }: Props) {
                     </div>
                   ))}
                 </div>
-              </CardContent>
-              </Card>
-            </details>
+                </CardContent>
+                </Card>
+              </CollapsibleContent>
+            </Collapsible>
             {substance.experienceLinks.length > 0 && (
               <div className="flex flex-col gap-3">
                 <h3 className="text-lg font-medium">Reports elsewhere</h3>

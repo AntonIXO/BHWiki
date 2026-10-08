@@ -244,7 +244,7 @@
 .external-wiki-links a:nth-of-type(2):not(:has(svg))::before { content: "E"; }
 .external-wiki-links a:nth-of-type(3):not(:has(svg))::before { content: "V"; }
 .external-wiki-links a:nth-of-type(4):not(:has(svg))::before { content: "P"; }
-.external-wiki-links a:hover { color: color-mix(in oklch, var(--primary) 75%, var(--foreground)); border-color: color-mix(in oklch, var(--primary) 42%, var(--border)); background: color-mix(in oklch, var(--primary) 9%, var(--card)); transform: translateY(-1px); }
+.external-wiki-links a:hover { color: color-mix(in oklch, var(--primary) 75%, var(--foreground)); border-color: color-mix(in oklch, var(--primary) 42%, var(--border)); background: color-mix(in oklch, var(--primary) 9%, var(--card)); }
 .external-wiki-links a:active { transform: scale(.98); }
 .external-wiki-links a::before { content: none !important; display: none; }
 .external-wiki-links a svg { flex: 0 0 auto; }
@@ -273,7 +273,6 @@
   border-color: color-mix(in oklch, var(--primary) 35%, var(--border));
   background: color-mix(in oklch, var(--card) 84%, var(--primary));
   box-shadow: 0 .45rem 1.25rem color-mix(in oklch, var(--foreground) 7%, transparent);
-  transform: translateY(-1px);
 }
 
 .research-disclosure [data-slot="item-media"] {
@@ -379,7 +378,7 @@
   transition: transform 180ms var(--ease-out), box-shadow 180ms var(--ease-out), border-color 180ms ease;
 }
 
-.outcome-row:hover { transform: translateY(-2px); box-shadow: 0 10px 24px color-mix(in oklch, var(--foreground) 9%, transparent); }
+.outcome-row:hover { box-shadow: 0 10px 24px color-mix(in oklch, var(--foreground) 9%, transparent); }
 .outcome-row-increased { border-inline-start-color: oklch(0.62 0.14 160); }
 .outcome-row-decreased { border-inline-start-color: oklch(0.65 0.14 25); }
 .outcome-row-variable { border-inline-start-color: oklch(0.68 0.12 85); }
@@ -441,23 +440,40 @@
 .kinetics-visual-phase-bar span:nth-child(2) { background: color-mix(in oklch, var(--primary) 45%, oklch(0.75 .12 80)); }
 .kinetics-visual-phase-bar span:nth-child(3) { background: color-mix(in oklch, var(--primary) 32%, oklch(0.72 .12 160)); }
 
+@media (hover: hover) and (pointer: fine) {
+  .external-wiki-links a:hover { transform: translateY(-1px); }
+  .research-disclosure [data-slot="item"]:hover { transform: translateY(-1px); }
+  .outcome-row:hover { transform: translateY(-2px); }
+}
+
 .safety-signals { display: grid; gap: .65rem; }.safety-signal { display: grid; grid-template-columns: 2.35rem minmax(0,1fr) auto; align-items: start; gap: .75rem; padding: .95rem; border: 1px solid var(--border); border-radius: .85rem; background: var(--card); }.safety-signal-icon { display: grid; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: .7rem; }.safety-signal-warning { border-inline-start: .25rem solid oklch(.66 .15 25); background: color-mix(in oklch, oklch(.66 .15 25) 6%, var(--card)); }.safety-signal-warning .safety-signal-icon { color: oklch(.62 .16 25); background: color-mix(in oklch, oklch(.66 .15 25) 15%, var(--card)); }.safety-signal-monitor { border-inline-start: .25rem solid oklch(.62 .14 160); background: color-mix(in oklch, oklch(.62 .14 160) 6%, var(--card)); }.safety-signal-monitor .safety-signal-icon { color: oklch(.52 .14 160); background: color-mix(in oklch, oklch(.62 .14 160) 15%, var(--card)); }.safety-signal-context { border-inline-start: .25rem solid oklch(.68 .13 78); background: color-mix(in oklch, oklch(.68 .13 78) 7%, var(--card)); }.safety-signal-context .safety-signal-icon { color: oklch(.55 .13 78); background: color-mix(in oklch, oklch(.68 .13 78) 17%, var(--card)); }.safety-signal-heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem; }.safety-signal-heading span { color: var(--muted-foreground); font-size: .68rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }.safety-signal-heading h3 { margin: 0; font-size: 1rem; }.safety-signal-body p { margin: .35rem 0 0; color: var(--muted-foreground); }.safety-signal-check { margin-top: .15rem; color: color-mix(in oklch, var(--foreground) 30%, transparent); }
 
 .claim-list { display: grid; gap: .85rem; }.claim-card-rich { padding: 1.1rem; border: 1px solid var(--border); border-inline-start: .25rem solid color-mix(in oklch, var(--primary) 58%, var(--border)); border-radius: .9rem; background: color-mix(in oklch, var(--card) 95%, var(--primary)); }.claim-card-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem; }.claim-relation,.claim-status { display: inline-flex; align-items: center; gap: .35rem; color: var(--muted-foreground); font-size: .7rem; }.claim-relation { color: var(--primary); font-weight: 700; }.claim-status { color: oklch(.52 .14 160); }.claim-card-rich h3 { margin: .55rem 0 .8rem; font-size: 1.15rem; }.claim-participants { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-bottom: .8rem; padding: .65rem; border: 1px solid var(--border); border-radius: .7rem; background: var(--card); }.claim-participant { display: inline-flex; align-items: center; gap: .35rem; color: var(--foreground); font-size: .78rem; }.claim-participant small { color: var(--muted-foreground); }.claim-node-icon { display: inline-grid; place-items: center; width: 1.55rem; height: 1.55rem; border-radius: .5rem; background: color-mix(in oklch, var(--primary) 12%, var(--card)); color: var(--primary); }.claim-arrow { color: var(--muted-foreground); }.claim-card-rich p { margin: .5rem 0 0; color: var(--muted-foreground); }.claim-card-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem; margin: .85rem 0; padding-top: .75rem; border-top: 1px solid var(--border); color: var(--muted-foreground); font-size: .75rem; }.claim-card-footer span { display: inline-flex; align-items: center; gap: .35rem; }
 
-.research-disclosure { background: var(--card); }.research-disclosure > summary { list-style: none; }.research-disclosure > summary::-webkit-details-marker { display: none; }.research-disclosure[open] > summary { border-bottom: 1px solid var(--border); background: color-mix(in oklch, var(--primary) 5%, var(--card)); }.research-disclosure > summary::after { content: "Show"; color: var(--muted-foreground); font-size: .75rem; }.research-disclosure[open] > summary::after { content: "Hide"; }.research-disclosure > summary { transition: background-color 160ms ease; }
+.research-disclosure { background: var(--card); }.research-disclosure > [data-slot="collapsible-trigger"] { transition: background-color 160ms var(--ease-out); }.research-disclosure[data-open] > [data-slot="collapsible-trigger"] { border-bottom: 1px solid var(--border); background: color-mix(in oklch, var(--primary) 5%, var(--card)); }
 
 
 @media (prefers-reduced-motion: no-preference) {
   .outcome-row { animation: outcome-row-in 260ms var(--ease-out) both; }
   .outcome-row:nth-child(2) { animation-delay: 35ms; }.outcome-row:nth-child(3) { animation-delay: 70ms; }.outcome-row:nth-child(4) { animation-delay: 105ms; }
   @keyframes outcome-row-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+  .knowledge-graph-details { animation: knowledge-graph-details-in 220ms var(--ease-out) both; }
+  @keyframes knowledge-graph-details-in { from { opacity: 0; transform: translateX(1rem); } to { opacity: 1; transform: translateX(0); } }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .outcome-row { animation: none; }
+  .knowledge-graph-details { animation: none; }
   .external-wiki-links a,
-  .research-disclosure [data-slot="item"] { transition: none; }
+  .research-disclosure [data-slot="item"],
+  .outcome-row,
+  .kinetics-phase-card,
+  .kinetics-half-life { transition-property: color, background-color, border-color, box-shadow, opacity; }
+  .external-wiki-links a,
+  .research-disclosure [data-slot="item"],
+  .outcome-row,
+  .kinetics-phase-card,
+  .kinetics-half-life { transform: none !important; }
 }
 
 @media (max-width: 640px) {
@@ -479,7 +495,8 @@
   *,
   *::before,
   *::after {
-    transition: none !important;
-    animation: none !important;
+    transition-duration: 160ms !important;
+    animation-duration: 160ms !important;
+    animation-iteration-count: 1 !important;
   }
 }

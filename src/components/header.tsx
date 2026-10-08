@@ -3,8 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown, Code2, Menu, Search } from "lucide-react";
+import { ChevronDown, Code2, Menu } from "lucide-react";
 import { Logo } from "@/components/logo";
+import { HeaderSearch } from "@/components/header-search";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -27,7 +28,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
 
 const links = [
@@ -100,21 +100,7 @@ export function Header() {
           </NavigationMenu>
         </nav>
         <div className="ms-auto flex items-center gap-1.5">
-          <Tooltip>
-            <TooltipTrigger
-              render={
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  nativeButton={false}
-                  render={<Link href="/#library" aria-label="Search substances" />}
-                />
-              }
-            >
-              <Search />
-            </TooltipTrigger>
-            <TooltipContent>Search substances</TooltipContent>
-          </Tooltip>
+          <HeaderSearch />
           <DropdownMenu>
             <DropdownMenuTrigger render={<Button variant="ghost" size="sm" className="hidden md:inline-flex" />}>
               Browse

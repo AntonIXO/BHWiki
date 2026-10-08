@@ -12,6 +12,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { Empty, EmptyContent, EmptyDescription, EmptyHeader, EmptyMedia, EmptyTitle } from "@/components/ui/empty";
 import { Field, FieldGroup, FieldLabel, FieldLegend, FieldSet } from "@/components/ui/field";
 import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput } from "@/components/ui/input-group";
@@ -67,21 +68,6 @@ export default function Catalog({
     setSelectedTags((current) => (current.includes(id) ? current.filter((tag) => tag !== id) : [...current, id]));
   }
 
-  useEffect(() => {
-    function onKey(event: KeyboardEvent) {
-      if (event.key !== "/" || event.metaKey || event.ctrlKey || event.altKey) return;
-      const target = event.target;
-      if (target instanceof HTMLElement) {
-        const tag = target.tagName;
-        if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || target.isContentEditable) return;
-      }
-      event.preventDefault();
-      document.getElementById("library-search")?.focus();
-    }
-    window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
-  }, []);
-
   return (
     <section id="library" className="flex flex-col gap-5" aria-labelledby="library-title">
       <div className="flex items-end justify-between gap-4">
@@ -92,43 +78,40 @@ export default function Catalog({
         <Badge variant="secondary">{substances.length} articles</Badge>
       </div>
 
-      <div className="flex items-center gap-2">
-        <InputGroup className="w-auto min-w-0 flex-1">
-          <InputGroupAddon>
-            <Search aria-hidden="true" />
-          </InputGroupAddon>
-          <InputGroupInput
-            id="library-search"
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search a substance, effect, or mechanism…"
-            aria-label="Search the substance library"
-          />
-          <InputGroupAddon align="inline-end">
-            {query ? (
-              <InputGroupButton type="button" size="icon-xs" aria-label="Clear search" onClick={() => setQuery("")}>
-                <X />
-              </InputGroupButton>
-            ) : (
-              <Kbd>/</Kbd>
-            )}
-          </InputGroupAddon>
-        </InputGroup>
-        <Button
-          type="button"
-          variant="outline"
-          aria-expanded={showFilters}
-          aria-label="Filters"
-          onClick={() => setShowFilters((open) => !open)}
-        >
-          <SlidersHorizontal data-icon="inline-start" />
-          <span>Filters</span>
-          {selectedTags.length > 0 && <Badge variant="secondary">{selectedTags.length}</Badge>}
-        </Button>
-      </div>
+      <Collapsible open={showFilters} onOpenChange={setShowFilters} className="contents">
+        <div className="flex items-center gap-2">
+          <InputGroup className="w-auto min-w-0 flex-1">
+            <InputGroupAddon>
+              <Search aria-hidden="true" />
+            </InputGroupAddon>
+            <InputGroupInput
+              id="library-search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Search a substance, effect, or mechanism…"
+              aria-label="Search the substance library"
+            />
+            <InputGroupAddon align="inline-end">
+              {query ? (
+                <InputGroupButton type="button" size="icon-xs" aria-label="Clear search" onClick={() => setQuery("")}>
+                  <X />
+                </InputGroupButton>
+              ) : (
+                <Kbd>/</Kbd>
+              )}
+            </InputGroupAddon>
+          </InputGroup>
+          <CollapsibleTrigger render={<Button type="button" variant="outline" aria-label="Filters" />}>
+            <SlidersHorizontal data-icon="inline-start" />
+            <span>Filters</span>
+            {selectedTags.length > 0 && <Badge variant="secondary">{selectedTags.length}</Badge>}
+          </CollapsibleTrigger>
+        </div>
 
-      {showFilters && (
-        <div className="flex flex-col gap-3 rounded-xl bg-muted/40 p-4 ring-1 ring-foreground/10">
+        <CollapsibleContent
+          keepMounted
+          className="flex flex-col gap-3 rounded-xl bg-muted/40 p-4 ring-1 ring-foreground/10 transition-[opacity,transform] duration-180 ease-[var(--ease-out)] data-ending-style:scale-95 data-ending-style:opacity-0 data-starting-style:scale-95 data-starting-style:opacity-0"
+        >
           <div className="flex items-center justify-between gap-3">
             <p className="text-sm">Match all selected concepts</p>
             <Button type="button" variant="ghost" size="sm" onClick={clear}>Reset filters</Button>
@@ -152,8 +135,8 @@ export default function Catalog({
               </FieldSet>
             ))}
           </div>
-        </div>
-      )}
+        </CollapsibleContent>
+      </Collapsible>
 
       <ToggleGroup
         value={[category || "all"]}

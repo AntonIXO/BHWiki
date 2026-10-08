@@ -553,7 +553,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
       </div>
 
       {selected && !compact && (
-        <Card aria-live="polite" className={cn("relative m-3 max-h-[36rem] min-h-0 overflow-y-auto lg:my-3 lg:mr-3 lg:ml-0", fullscreen && "max-h-[40%] shrink-0 lg:max-h-none lg:w-72")}>
+        <Card aria-live="polite" className={cn("knowledge-graph-details relative m-3 max-h-[36rem] min-h-0 overflow-y-auto lg:my-3 lg:mr-3 lg:ml-0", fullscreen && "max-h-[40%] shrink-0 lg:max-h-none lg:w-72")}>
           <CardHeader>
             <Button type="button" variant="ghost" size="icon-sm" className="absolute top-2 right-2" aria-label="Close node details" onClick={() => setSelectedId(null)}>
               <X />
@@ -597,7 +597,10 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
       {!compact && (
         <Collapsible className="border-t border-border">
           <CollapsibleTrigger className="px-4 py-3 text-sm underline underline-offset-4">Explore an accessible text view</CollapsibleTrigger>
-          <CollapsibleContent>
+          <CollapsibleContent
+            keepMounted
+            className="transition-[opacity,transform] duration-180 ease-[var(--ease-out)] data-ending-style:scale-95 data-ending-style:opacity-0 data-starting-style:scale-95 data-starting-style:opacity-0"
+          >
             <div className={cn("grid gap-6 px-4 pt-2 pb-4 md:grid-cols-[1fr_2fr]", fullscreen && "max-h-[min(24rem,40dvh)] overflow-y-auto")}>
               <div className="flex flex-col gap-6">
                 <section className="flex flex-col gap-2">

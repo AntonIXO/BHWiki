@@ -25,6 +25,38 @@ test('library search, aliases, typed filters and empty state',async({page})=>{
  await page.getByRole('button',{name:'List view'}).click();await expect(page.locator('.substance-grid')).toHaveClass(/list-view/);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
 });
+
+test('layout search opens a textable database field and routes to results', async ({ page }) => {
+ await page.goto('/substances/caffeine');
+ const trigger = page.getByRole('button', { name: 'Search substances' });
+ await trigger.click();
+ const input = page.getByRole('textbox', { name: 'Search the substance database' });
+ await expect(input).toBeFocused();
+ await input.fill('caffeine');
+ await expect(page.getByRole('option', { name: /Caffeine/ })).toBeVisible();
+ await page.getByRole('option', { name: /Caffeine/ }).click();
+ await expect(page).toHaveURL(/\/substances\/caffeine$/);
+
+ await page.goto('/effects/alertness');
+ await page.keyboard.press('/');
+ await expect(page.getByRole('textbox', { name: 'Search the substance database' })).toBeFocused();
+ await page.keyboard.press('Escape');
+ await page.getByRole('button', { name: 'Search substances' }).click();
+ const enterInput = page.getByRole('textbox', { name: 'Search the substance database' });
+ await enterInput.fill('adenosine');
+ await enterInput.press('Enter');
+ await expect(page).toHaveURL(/\/?q=adenosine#library$/);
+});
+
+test('layout search reports an API failure without stale results', async ({ page }) => {
+ await page.route('**/api/search*', (route) => route.abort());
+ await page.goto('/');
+ await page.getByRole('button', { name: 'Search substances' }).click();
+ const input = page.getByRole('textbox', { name: 'Search the substance database' });
+ await input.fill('caffeine');
+ await expect(page.getByText('Search is temporarily unavailable.', { exact: true })).toBeVisible();
+ await expect(page.getByRole('option')).toHaveCount(0);
+});
 test('articles preserve sourced contexts and the correct modeled analyte',async({page})=>{
  await page.goto('/substances/psilocybin');
  await expect(page.locator('.article-hero h1')).toContainText('Psilocybin');
