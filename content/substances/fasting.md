@@ -59,6 +59,8 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
@@ -342,6 +344,10 @@ x-order: 9007199254740991
 - scope: "This is a descriptive evidence article about dietary protocol definitions and controlled human outcomes."
 - claim_boundary: "It does not establish a medical indication, individualized dose, disease-treatment claim, or lifespan claim."
 - jurisdiction: "Regulation of fasting clinics, commercial fasting products, advertising, and medical practice varies by jurisdiction and is not assessed."
+
+<!-- Deep Research source-link ledger -->
+
+Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
 
 ## Doses
 
@@ -1107,6 +1113,30 @@ x-order: 9007199254740991
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
+  conflictOfInterestStatus: not-assessed
+- id: dr-fasting-link-1
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://clinicaltrials.gov/study/NCT03745612
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-fasting-link-2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://clinicaltrials.gov/study/NCT04692532
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 ```
 

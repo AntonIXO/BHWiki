@@ -59,6 +59,8 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
@@ -210,6 +212,10 @@ In the United States, the DEA’s federal classification remains Schedule I. Ore
 - take_home_microdosing: "Oregon’s cited service model does not establish general legal take-home microdosing. (S10)"
 - jurisdictional_scope: "Possession, cultivation, sale, research, and supervised services may be governed by different federal, state, and local rules."
 - status: "Legal status is jurisdiction-specific and subject to change."
+
+<!-- Deep Research source-link ledger -->
+
+Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
 
 ## Doses
 
@@ -951,6 +957,42 @@ In the United States, the DEA’s federal classification remains Schedule I. Ore
   funding: State agency publication.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not applicable.
+  conflictOfInterestStatus: not-assessed
+- id: dr-psilocybin-microdosing-link-1
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://www.erowid.org/plants/mushrooms/mushrooms.shtml
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-psilocybin-microdosing-link-2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://psychonautwiki.org/wiki/Psilocybin_mushrooms
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-psilocybin-microdosing-link-3
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://selfblinding-microdose.org/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 ```
 

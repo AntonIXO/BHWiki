@@ -65,19 +65,169 @@ x-shape:
   - references
   - legal
 x-order: 150
+
+
 ---
 
 ## Summary
 
 Alpha-GPC (choline alfoscerate) is a choline-source phosphodiester used in medicinal, food, and supplement contexts. Controlled cognitive signals are strongest in impaired populations, while healthy-person cognition/exercise results are small and mixed; a large Korean claims cohort found an observational, non-causal association with higher incident stroke.
 
+Deep Research synthesis: Alpha-GPC — BHWiki Deep Research — returned Deep Research evidence record.
+
 ## Description
 
 Oral L-alpha-GPC is rapidly absorbed and raises plasma free choline, but a human parent-compound elimination half-life is not established. A 2003 placebo-controlled Alzheimer trial and a 2023 meta-analysis reported cognitive improvement, while a 2024 adjunct RCT had nonsignificant primary comparisons and healthy-person results remain endpoint-dependent. EFSA assessed soy-derived GPC 85% and Alpha Size 100P forms with the novel food above 98% purity on a dry basis; USP-NF specifies 98–102% Alpha-GPC on an anhydrous basis. Research doses, regulatory food-use levels, formulations, and untested commercial products are not interchangeable.
 
+Deep Research synthesis: The full returned Deep Research report is preserved in the pending acquisition folder for alpha-gpc.
+
 ## Evidence note
 
 Patient evidence includes older trials, adjunct-treatment studies and extreme heterogeneity in the standalone MMSE meta-analysis (I²=98%). Healthy evidence uses small samples, often men, with important commercial sponsorship and several null endpoints. The Korean stroke finding is observational and remains vulnerable to residual and indication-related confounding. Parent Alpha-GPC half-life, clinically verified drug interactions and broadly generalizable contraindications remain unestablished in the inspected English-language evidence.
+
+<!-- Deep Research integration: alpha-gpc -->
+
+**Full Deep Research detail retained from the returned report:**
+
+### Alpha-GPC — BHWiki Deep Research
+
+> Returned report captured from the signed-in Chrome ChatGPT Deep Research card. Citation markers `[R#]` resolve to the reference ledger below.
+
+**BHWiki slug:** `alpha-gpc`
+**Scope date:** October 10, 2026
+**Completion evidence:** Deep Research completed in 10 minutes; 21 citations and 478 searches were exposed by the returned card.
+**Evidence boundary:** primary human trials, systematic reviews/meta-analyses, official nutrient or novel-food opinions, medication labels, regulatory/safety sources, pharmacovigilance, and clinical-trial registries. Animal, mechanistic, and in-vitro findings were not treated as efficacy evidence.
+
+### Scope and identity
+
+**Canonical topic:** Alpha-GPC. **Synonyms:** L-alpha-glycerylphosphorylcholine, L-alpha-GPC, alpha-glycerylphosphorylcholine, choline alfoscerate.
+
+Alpha-GPC is a chemically defined glycerophosphocholine compound, molecular formula C₈H₂₀NO₆P and molecular weight about 257.22 g/mol. Health Canada treats it as an esterified choline source and uses a conversion of approximately 1 mg Alpha-GPC = 0.4 mg choline; EFSA’s proposed 203.7 mg/day novel-food level corresponds to 82.5 mg/day choline. It should remain a separate BHWiki entity from choline chloride, choline bitartrate, phosphatidylcholine/lecithin, citicoline/CDP-choline, and generic dietary choline; findings for those substances are not Alpha-GPC efficacy evidence. [dr-alpha-gpc-s1]
+
+Formulation is relevant. EFSA assessed soy-phospholipid-derived Alpha-GPC as a concentrated liquid (“GPC85”) and as a powder (“Alpha Size 100P”), with Alpha-GPC exceeding 98% on a dry-matter basis. EFSA also notes that choline alfoscerate is the main constituent of medicinal products such as Gliatilin/Delecit, nationally authorized in some countries and marketed in Italy and Poland as oral or injectable formulations. [dr-alpha-gpc-s1]
+
+Human trials have used actual Alpha-GPC doses from roughly 200 mg to 1,200 mg/day. The amount of actual parent compound should be recorded rather than the mass of a diluted ingredient. In the 2024 Kerksick trial, for example, 350 mg and 700 mg portions of a nominal 90% ingredient delivered 315 mg and 630 mg Alpha-GPC, respectively; independent lot testing measured 91.6% Alpha-GPC. [R8,R9]
+
+### Human pharmacokinetics and biomarkers
+
+A central correction for the existing record is that most cited human “Alpha-GPC pharmacokinetics” are actually measurements of plasma free choline after Alpha-GPC dosing, not intact Alpha-GPC. EFSA concluded that the percentage of orally administered Alpha-GPC absorbed in humans could not be determined from the available data. In a controlled-diet human experiment summarized by EFSA, 1,200 mg oral Alpha-GPC increased plasma free choline, with the maximum occurring around two hours after dosing. That validates a downstream choline exposure signal; it does not validate intact-parent bioavailability or a parent-compound concentration–time curve. [dr-alpha-gpc-s1]
+
+The best modern human oral PK-type study is Min et al. 2019. Fifty healthy Korean men entered a randomized, fasting, single-dose, two-period crossover bioequivalence study and 48 completed it, receiving 1,200 mg Alpha-GPC as either film-coated tablets or a soft-gel reference formulation. Critically, the analytical endpoint was baseline-corrected plasma choline, measured by LC-MS/MS. Reported mean choline AUC₀–∞ was 3.428±2.170 versus 3.305±1.803 μg·h/mL, Cmax 0.365±0.158 versus 0.380±0.108 μg/mL, and Tmax 3.51±2.57 versus 3.85±3.19 hours; the formulations were bioequivalent for this downstream biomarker. [dr-alpha-gpc-s4]
+
+Accordingly, the frequently repeated 0.5–6.2 hour half-life should not be entered as “Alpha-GPC half-life.” EFSA traces those estimates to circulating free choline after Alpha-GPC administration. No validated human elimination half-life for intact parent Alpha-GPC was identified in the eligible evidence. [dr-alpha-gpc-s1]
+
+The distinction is experimentally important. In Marcus et al. 2017, healthy young men received 250 or 500 mg/day for seven days. Serum free choline was significantly higher in the Alpha-GPC groups than placebo—reported as 132% and 59% elevations—yet the psychomotor-vigilance test showed no between-group benefit. A biochemical choline rise therefore cannot be used as a proxy for cognitive efficacy. [dr-alpha-gpc-s9]
+
+**BHWiki PK statement:** oral Alpha-GPC reliably changes circulating free-choline biomarkers, but intact-parent oral absorption fraction, validated parent Cmax/Tmax/AUC, distribution and elimination half-life remain insufficiently characterized in humans.
+
+### Clinical and performance evidence
+
+The strongest monotherapy evidence is the multicenter placebo-controlled Alzheimer trial by Moreno Moreno. 261 patients with mild-to-moderate Alzheimer dementia were randomized to Alpha-GPC 400 mg three times daily, 1,200 mg/day total, for 180 days or placebo. Cognitive/global-rating outcomes favored Alpha-GPC. The later meta-analysis estimated the single-trial ADAS-Cog mean difference at about −6.10 points at follow-up. This is evidence for changes in cognitive/clinical rating scales; it is not evidence that Alpha-GPC alters neuropathology, prevents institutionalization, reduces stroke, or prolongs survival. [R5,R6]
+
+The 2023 systematic review/meta-analysis by Sagaro, Traini and Amenta included seven RCTs and one prospective cohort, totaling 861 participants. For Alpha-GPC versus placebo or other active treatment, studies generally used 1,200 mg/day for 90–180 days; pooled MMSE-based cognition favored Alpha-GPC by MD 3.50 points (95% CI 0.36–6.63), but heterogeneity was extreme at I²=98%. For Alpha-GPC 1,200 mg/day + donepezil 10 mg/day versus donepezil plus placebo, pooled estimates favored the combination for MMSE (MD 1.72, 95% CI 0.20–3.25), ADAS-Cog (MD −5.76, 95% CI −8.07 to −3.46), IADL and NPI, whereas BADL did not significantly improve. The meta-analysis also imputed change-score standard deviations for two studies using an assumed correlation, adding uncertainty. [dr-alpha-gpc-s6]
+
+ASCOMALVA provides adjunctive rather than monotherapy evidence. Patients had Alzheimer disease plus imaging evidence of ischemic cerebrovascular injury and received donepezil with Alpha-GPC 1,200 mg/day or donepezil plus placebo. At the two-year interim analysis, 113 of the originally planned 210 participants had completed follow-up, with the combination showing slower deterioration across several cognitive, behavioral and functional measures. Several ASCOMALVA papers are analyses or extensions of the same trial program and should not be counted as independent replications. [dr-alpha-gpc-s7]
+
+For vascular cognitive impairment specifically, the evidence is appreciably weaker. In the 2023 review, a 62-person cerebral-small-vessel-disease RCT compared Alpha-GPC 1,200 mg/day + nimodipine 90 mg/day with nimodipine plus placebo for 360 days and found no significant difference in ADL or IADL. Separately, Seoul National University Hospital completed a Phase 4 placebo-controlled trial in 222 post-stroke patients with vascular cognitive impairment without dementia, but ClinicalTrials.gov has no posted outcome results, so registry completion cannot be interpreted as efficacy. [R6,R16]
+
+A small newer population-specific RCT adds evidence but does not materially settle the question. Sohn, Park and Lim randomized 36 older adults with type 2 diabetes and mild cognitive decrement to 1,200 mg/day Alpha-GPC or placebo. The between-group MMSE difference was about +1.4 at six months with p=0.059 and +1.7 at 12 months with p<0.001. The sample was very small and the population was not a general Alzheimer or healthy-cognition cohort. [dr-alpha-gpc-s21]
+
+Healthy cognition results are mixed:
+
+- **250/500 mg/day:** Marcus et al. randomized 48 healthy young men to 250 mg Alpha-GPC, 500 mg Alpha-GPC, caffeine or placebo for seven days. Serum free choline increased, but psychomotor vigilance was null, and Alpha-GPC did not improve the primary isometric strength measures. Selected countermovement-jump velocity/power outcomes differed, with the 250 mg group showing the largest changes—an internally non-monotonic finding rather than a convincing dose-response. [dr-alpha-gpc-s9]
+- **600 mg/day:** Bellar et al. studied only 13 college-aged men in a double-blind crossover. After six days of 600 mg/day, lower-body isometric mid-thigh-pull change was +98.8±236.9 N versus −39.0±170.9 N on placebo, p≈0.04. Upper-body strength was not significant. The small sample and large variance make this preliminary rather than definitive exercise evidence. [dr-alpha-gpc-s8]
+- **315/630 mg acute:** the 2024 randomized crossover in 20 resistance-trained men found both doses improved change in Stroop total score versus placebo and 630 mg reduced Stroop completion time. N-back showed no significant benefit, most Flanker outcomes were null, visual-analog measures did not differ, and overall analyses did not demonstrate clear physical-performance or growth-hormone benefits. The study was retrospectively registered after the trial had been conducted. [R10,R19]
+- **400 mg/day:** Tamura et al. randomized 39 healthy volunteers in a single-blind study; two weeks of Alpha-GPC produced a signal for higher subjective motivation, particularly nighttime motivation, but no anxiety effect. This was a subjective emotion/motivation measure, not objective evidence of improved memory or attention. [dr-alpha-gpc-s11]
+
+A human scopolamine challenge from 1991 found that Alpha-GPC pretreatment attenuated experimentally induced attention/memory impairment. It establishes a pharmacodynamic observation under anticholinergic challenge, not general enhancement of normal memory. [kerksick-2024]
+
+Evidence conclusion: the Alzheimer literature contains a real clinical-scale signal around 1,200 mg/day, but certainty is constrained by age of the evidence base, heterogeneity and limited independent modern replication. Healthy-cognition evidence is low-certainty, mixed and test-specific. Strength/power evidence is very low-certainty: the known 250, 500 and 600 mg studies include positive, null and non-dose-responsive results.
+
+### Safety, cardiovascular signal, interactions and special populations
+
+Health Canada’s safety review of oral human experience up to 1,200 mg/day identified reported adverse events including agitation, heartburn/GI symptoms, insomnia, nausea, headache, fever and hypotension. Across the therapeutic studies reviewed, adverse events occurred in up to roughly 8%, were generally temporary and did not establish a pattern of serious toxicity; headache, nausea and dizziness were also observed in placebo recipients in some trials. These relatively small, short studies cannot exclude uncommon or delayed harms. [dr-alpha-gpc-s2]
+
+The symptoms should not all automatically be labeled “cholinergic.” GI symptoms and hypotension are compatible with increased cholinergic activity, but the human trials generally did not demonstrate a mechanism for each adverse event. Mechanistic plausibility is therefore not an efficacy or causality substitute.
+
+The major long-duration cardiovascular concern is the Korean National Health Insurance Service claims analysis. Among 12,008,977 adults aged 50 or older, 108,877 had Alpha-GPC prescriptions during the exposure-identification period. After matching, Alpha-GPC exposure was associated with total stroke aHR 1.43 (95% CI 1.41–1.46), ischemic stroke 1.34 (1.31–1.37) and hemorrhagic stroke 1.37 (1.29–1.46); greater prescription duration was associated with higher total-stroke risk. [dr-alpha-gpc-s14]
+
+That Korean result is an observational association, not causal evidence. Alpha-GPC users differed clinically from nonusers, and residual confounding, confounding by indication, healthcare-use differences and claims-based endpoint ascertainment can remain after matching. Conversely, the small randomized trials are nowhere near large or long enough to disprove a modest stroke hazard. The correct BHWiki treatment is therefore “material unresolved safety signal,” not “Alpha-GPC causes stroke” and not “stroke risk disproven.”
+
+Short-term cardiovascular physiology studies do not resolve this issue. For example, a crossover study in 12 overweight/obese women using 1,000 mg Alpha-GPC measured heart-rate variability and blood-pressure recovery around sprint exercise; it assessed acute physiology, not clinical cardiovascular events.
+
+**Anticholinergics:** the human scopolamine experiment suggests Alpha-GPC can pharmacodynamically oppose some scopolamine-induced cognitive impairment. It does not establish safety or dosing rules for routine co-administration with prescription anticholinergic medicines. [kerksick-2024]
+
+**Cholinesterase inhibitors:** Alpha-GPC 1,200 mg/day has been intentionally combined with donepezil 10 mg/day for one to two years in ASCOMALVA-type trials. Thus, concomitant exposure has direct human trial experience. That does not establish absence of additive cholinergic adverse effects in other patients, and the combination results should not be generalized to all cholinesterase inhibitors. [dr-alpha-gpc-s7]
+
+**Levodopa:** no eligible human Alpha-GPC–levodopa interaction study or independently verified official medication-label interaction was located. A mechanistic claim should not be substituted for that evidence gap.
+
+**Blood-pressure medicines:** no direct human interaction trial was identified. Because hypotension appears among reported Alpha-GPC adverse events, coadministration with antihypertensives is a plausible monitoring concern, but not a demonstrated drug interaction.
+
+**Other choline sources:** Health Canada provides the clearest regulator-backed stacking precaution. Alpha-GPC is treated as a supplemental choline source, and when a supplemented food supplies more than 234 mg choline per serving, Canadian labeling must warn against same-day use with other choline-containing supplemented foods or supplements, explicitly including Alpha-GPC. [R2,R3]
+
+**Pregnancy/lactation:** no therapeutic-dose human pregnancy or lactation trials were identified. Health Canada’s earlier assessment specifically found no relevant oral human pregnancy/breastfeeding data. EFSA in 2026 nevertheless considered 203.7 mg/day acceptable under the proposed novel-food conditions for the population older than three years, including pregnant and lactating people. This is a regulatory safety conclusion at a much lower exposure, based on the entire dossier including proprietary data; it should not be extrapolated to 1,200 mg/day therapeutic regimens. [R1,R2]
+
+**Pediatrics:** direct pediatric efficacy evidence is absent. Health Canada reported an absence of child/adolescent oral data in its assessment; EFSA’s later novel-food conclusion covers people older than three years at no more than 203.7 mg/day, while infants and young children are excluded from the proposed food-supplement use. Regulatory extrapolation is not a pediatric efficacy trial. [R1,R2]
+
+**Renal/hepatic impairment:** no dedicated human impairment PK study or evidence-based dose adjustment was identified. The modern healthy-volunteer Alpha-GPC trial excluded participants with hepatorenal disease, so normal-volunteer tolerability cannot establish dosing in renal or hepatic impairment. [dr-alpha-gpc-s4]
+
+No Alpha-GPC-specific regulator pharmacovigilance case-series or spontaneous-report signal analysis meeting the requested source restrictions was identified. That is an evidence gap, not evidence that no such adverse events occur.
+
+### Regulatory status and product quality
+
+**European Union:** EFSA published its scientific opinion on May 12, 2026 after an application from Chemi S.p.A. The proposed novel food is soy-phospholipid-derived L-alpha-GPC for food supplements in people older than three years at up to 203.7 mg/day, equivalent to 82.5 mg choline/day. EFSA concluded there was no safety concern under those proposed conditions. EFSA also explicitly stated that it could not have reached its safety conclusion without proprietary applicant data. [dr-alpha-gpc-s1]
+
+That 203.7 mg/day is a proposed novel-food use level, not the dose tested for Alzheimer disease and not an EFSA conclusion that 1,200 mg/day is safe as a food supplement. An EFSA scientific opinion is also not, by itself, a European Commission marketing authorization. No Commission implementing regulation specifically authorizing this Alpha-GPC novel food was identified in the eligible primary-source search through October 10, 2026; EU legal authorization therefore remains unresolved in this record rather than being inferred from the EFSA opinion. [dr-alpha-gpc-s1]
+
+EFSA reports that choline alfoscerate is used as a nationally authorized medicine in some EU and non-EU countries and specifically cites Italy and Poland. A current national medicinal-product label was not independently retrieved, so this report does not manufacture contraindications, pregnancy statements, renal/hepatic adjustments or drug interactions from secondary summaries. [dr-alpha-gpc-s1]
+
+**Canada:** Health Canada formally enabled L-alpha-GPC as a source of supplemental choline in supplemented foods effective September 20, 2023. The relevant maximum choline amounts are 1,171 mg/serving for qualifying supplemented foods and 478 mg/serving in the specified higher-caffeine category; additional label warnings apply at lower thresholds, including the same-day stacking warning above 234 mg choline/serving. These are Canadian supplemented-food rules, not Alpha-GPC therapeutic dose recommendations. [R2,R3]
+
+**Product quality:** hygroscopicity and ingredient concentration create meaningful labeling/manufacturing issues. The 2015 600 mg trial used AlphaSize capsules accompanied by a third-party certificate of analysis. The 2017 250/500 mg trial reported independent quantitative-NMR verification of active content. The 2024 trial used nominally 90% Alpha-GPC and third-party analysis measured the lot at 91.6%, illustrating why a label saying “700 mg Alpha-GPC ingredient” may correspond to only 630 mg actual Alpha-GPC when a standardized 90% material is used. [R8,R9,R10]
+
+No eligible independent post-market survey was identified that establishes content accuracy, contaminants or batch-to-batch conformity across retail Alpha-GPC supplements. Trial-grade certificates and EFSA specifications should therefore not be generalized to the retail market.
+
+ClinicalTrials.gov also shows important unresolved evidence. The 222-participant post-stroke VCI trial NCT01363648 is completed without posted results. A newer healthy-adult study, NCT07267845, was registered to test 350 mg/day for six weeks in 80 adults and remains listed as recruiting/no posted results in the available registry record even though its projected 2026 completion dates have passed; the status is therefore stale or uncertain rather than evidence of a completed positive study. [R16,R18]
+
+### Evidence appraisal
+
+The BHWiki evidence position should be:
+
+- **Alzheimer/cognitive impairment:** moderate-to-low certainty positive symptom-scale signal, centered on 1,200 mg/day, but without evidence of disease modification and with substantial heterogeneity and limited modern independent replication.
+- **Healthy cognition:** low certainty/mixed. Free choline rises do not consistently translate to attention or memory benefits; the recent Stroop signal at 315/630 mg coexists with null N-back, earlier null psychomotor-vigilance results and a null 200/400 mg acute experiment.
+- **Strength/power:** very low certainty/mixed. Preserve the 600 mg/day lower-body force result, but also the null upper-body outcome, null isometric outcomes at 250/500 mg, non-monotonic jump findings and lack of robust physical-performance effect in the 2024 acute trial.
+- **Safety:** short-term tolerability appears generally acceptable in studied populations, but long-term randomized safety is inadequate. The Korean claims-cohort stroke association remains a material unresolved observational signal.
+- **PK:** describe free choline after dosing, not a validated intact-parent PK profile. Keep the existing gap: no validated parent Alpha-GPC human half-life identified.
+
+**Sponsorship/COI pattern:** commercial involvement is concentrated in healthy-performance research. Chemi Nutra supplied products in the early sports work, and several studies were commercially supported; the 2024 Kerksick study was funded by NNB Nutrition and the investigator disclosed paid scientific-advisor work for NNB. The 2023 meta-analysis was authored in part by investigators who also authored multiple Alpha-GPC/ASCOMALVA studies—an independence consideration, not proof of bias. The Korean stroke cohort was publicly funded and reported no conflicts. EFSA’s opinion was a regulator-led assessment of a commercially submitted Chemi S.p.A. dossier for which proprietary applicant data were essential.
+
+### Reference ledger
+
+| ID | Reference and direct URL | Funding, sponsorship, conflicts and status |
+|---|---|---|
+| R1 | EFSA Panel on Nutrition, Novel Foods and Food Allergens. 2026. *Safety of L-alpha-glycerylphosphorylcholine (L-alpha-GPC) from soya phospholipids (lecithin) as a novel food pursuant to Regulation (EU) 2015/2283*. [DOI](https://doi.org/10.2903/j.efsa.2026.10008) | Funding: EFSA regulatory assessment; commercial application and proprietary dossier from Chemi S.p.A. Sponsorship: regulatory review of an industry application. COI: EFSA institutional declarations-of-interest framework; no study-author commercial COI identified in the opinion. Conflict status: independent regulator, but applicant has direct commercial interest and proprietary applicant data were necessary. |
+| R2 | Health Canada. 2024. *Summary of Health Canada’s safety assessment of L-alpha-glycerylphosphorylcholine for use as a supplemental ingredient*. [Regulator](https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/information-product/supplemented-foods/l-alpha-glycerylphosphorylcholine-safety-assessment.html) | Funding: Government of Canada. Sponsorship: public regulator. COI: no commercial sponsor disclosed. Conflict status: regulatory. |
+| R3 | Health Canada. 2023. *Notice of modification to enable the use of L-alpha-glycerylphosphorylcholine in supplemented foods*. [Regulator](https://www.canada.ca/en/health-canada/services/food-nutrition/public-involvement-partnerships/notice-modification-list-ingredients-l-alpha-glycerylphosphorylcholine-supplemented-foods/document.html) | Funding: Government of Canada. Sponsorship: public regulator. COI: not applicable in the clinical-study sense. Conflict status: regulatory. |
+| R4 | Min M-H, Park J-H, Hur J-H, Shin H-C, Cho Y, Kim D-D. 2019. *Formulation and bioequivalence studies of choline alfoscerate tablet comparing with soft gelatin capsule in healthy male volunteers*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/31040642/) · [DOI](https://doi.org/10.2147/DDDT.S193424) | Funding: unknown from disclosures retrieved for this report. Sponsorship: unknown. COI: disclosure not established from retrieved record. Conflict status: unknown. |
+| R5 | Moreno Moreno MJ. 2003. *Cognitive improvement in mild to moderate Alzheimer's dementia after treatment with the acetylcholine precursor choline alfoscerate: a multicenter, double-blind, randomized, placebo-controlled trial*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/12637119/) · [DOI](https://doi.org/10.1016/S0149-2918(03)90023-3) | Funding: not reported in accessible PubMed record. Sponsorship: unknown. COI: not reported in accessible record. Conflict status: unknown. |
+| R6 | Sagaro GG, Traini E, Amenta F. 2023. *Activity of Choline Alphoscerate on Adult-Onset Cognitive Dysfunctions: A Systematic Review and Meta-Analysis*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/36683513/) · [DOI](https://doi.org/10.3233/JAD-221189) | Funding: not stated in full text retrieved for this review. Sponsorship: unknown. COI: financial disclosure not established; Traini/Amenta also authored several studies in the underlying Alpha-GPC evidence base. Conflict status: author-overlap/independence concern; financial COI unknown. |
+| R7 | Amenta F, Carotenuto A, Fasanaro AM, Rea R, Traini E. 2014. *The ASCOMALVA Trial: interim results after two years of treatment*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/24898643/) · [DOI](https://doi.org/10.3233/JAD-140150) | Funding: not reported in accessible PubMed record. Sponsorship: unknown. COI: not established in accessible record. Conflict status: unknown; repeated-cohort publication overlap relevant. |
+| R8 | Bellar D, LeBlanc NR, Campbell B. 2015. *The effect of 6 days of alpha glycerylphosphorylcholine on isometric strength*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/26582972/) · [DOI](https://doi.org/10.1186/s12970-015-0103-x) | Funding/product support: AlphaSize/Chemi Nutra supplied active material and third-party certificate; exact financial-funding statement not independently re-established. Sponsorship: commercial product involvement. COI: no competing financial interest identified in retrieved article record. Conflict status: industry/product involvement; financial funding detail incompletely verified. |
+| R9 | Marcus L, Soileau J, Judge LW, Bellar D. 2017. *Evaluation of the effects of two doses of alpha glycerylphosphorylcholine on physical and psychomotor performance*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/29042830/) · [DOI](https://doi.org/10.1186/s12970-017-0196-5) | Funding/product support: Chemi Nutra supplied all study capsules and analytical certificates. Sponsorship: industry-supported. COI: explicit individual financial conflicts not established from retrieved disclosure text. Conflict status: industry involvement; individual financial COI incompletely verified. |
+| R10 | Kerksick CM. 2024. *Acute Alpha-Glycerylphosphorylcholine Supplementation Enhances Cognitive Performance in Healthy Men*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/39683633/) · [DOI](https://doi.org/10.3390/nu16234240) · [ClinicalTrials.gov NCT06690619](https://clinicaltrials.gov/study/NCT06690619) | Funding: NNB Nutrition, grant NNB-001-012024. Sponsorship: industry-funded research with Lindenwood University as registry sponsor and NNB Nutrition as collaborator. COI: author disclosed paid scientific-advisor work for NNB; management plan restricted involvement in consent/data collection/analysis until unblinding. Conflict status: declared financial conflict. |
+| R11 | Tamura Y, Takata K, Matsubara K, Kataoka Y. 2021. *Alpha-Glycerylphosphorylcholine Increases Motivation in Healthy Volunteers: A Single-Blind, Randomized, Placebo-Controlled Human Study*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/34207484/) · [DOI](https://doi.org/10.3390/nu13062091) | Funding: Japanese public research-program support reported. Sponsorship: non-industry/public. COI: no specific commercial conflict identified; complete disclosure verification incomplete. Conflict status: no commercial conflict identified; disclosure verification incomplete. |
+| R12 | Parker AG, Byars A, Purpura M, Jäger R. 2015. *The effects of alpha-glycerylphosphorylcholine, caffeine or placebo on markers of mood, cognitive function, power, speed, and agility*. [DOI](https://doi.org/10.1186/1550-2783-12-S1-P41) | Funding: Chemi Nutra support reported. Sponsorship: industry-supported. COI: commercial affiliations present among authors; complete individual disclosure not independently verified. Conflict status: industry funding/commercial affiliations. |
+| R13 | Canal N, Franceschi M, Alberoni M, Castiglioni C, De Moliner P, Longoni A. 1991. *Effect of L-alpha-glyceryl-phosphorylcholine on amnesia caused by scopolamine*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/2071257/) | Funding: unknown. Sponsorship: unknown. COI: no disclosure available in accessible PubMed record. Conflict status: unknown. |
+| R14 | Lee G, Choi S, Chang J, Choi D, Son JS, Kim K, Kim SM, Jeong S, Park SM. 2021. *Association of L-α Glycerylphosphorylcholine With Subsequent Stroke Risk After 10 Years*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/34817582/) · [DOI](https://doi.org/10.1001/jamanetworkopen.2021.36008) | Funding: Korean public funding, including National Health Insurance Service/National Research Foundation support; funders reported no role. Sponsorship: public/non-industry. COI: none reported. Conflict status: none declared. |
+| R15 | Lindenwood University. NCT06690619. *Effects of Alpha-GPC on Muscle Power, GH Levels, and Cognitive Function*. [Registry](https://clinicaltrials.gov/study/NCT06690619) | Funding/sponsor: Lindenwood University lead sponsor, NNB Nutrition collaborator; linked publication reports NNB funding. Sponsorship: academic registry sponsorship with commercial funding/collaboration. COI: registry does not adjudicate COI; linked publication declares investigator’s NNB advisory relationship. Conflict status: declared in linked publication. |
+| R16 | Seoul National University Hospital. NCT01363648. *The Efficacy of Gliatiline on Post-stroke Patients With Vascular Cognitive Impairment no Dementia*. [Registry](https://clinicaltrials.gov/study/NCT01363648) | Funding: not specified in retrieved registry information. Sponsorship: academic lead sponsor. COI: registry does not supply investigator financial-disclosure adjudication. Conflict status: unknown. Results: no posted results. |
+| R17 | Scopolamine challenge record (Canal et al., 1991). [PubMed](https://pubmed.ncbi.nlm.nih.gov/2071257/) | Funding, sponsorship and COI: unknown in accessible record. Conflict status: unknown. Used only for the pharmacodynamic challenge finding, not routine enhancement or a drug-interaction rule. |
+| R18 | ClinicalTrials.gov. NCT07267845, healthy-adult Alpha-GPC study. [Registry](https://clinicaltrials.gov/study/NCT07267845) | Funding/sponsor and COI: registry record incomplete; status recruiting/no posted results and projected dates stale or uncertain. Conflict status: unknown. |
+| R19 | ClinicalTrials.gov. NCT06690619, linked to Kerksick 2024. [Registry](https://clinicaltrials.gov/study/NCT06690619) | Funding/sponsor: Lindenwood University lead sponsor, NNB Nutrition collaborator. COI: linked publication declares NNB advisory relationship. Conflict status: declared in linked publication. |
+| R20 | Sohn M, Park YH, Lim S. 2025. *Effects of choline alfoscerate on cognitive function and quality of life in type 2 diabetes: A double-blind, randomized, placebo-controlled trial*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/39703111/) · [DOI](https://doi.org/10.1111/dom.16131) | Funding: not established from accessible PubMed record. Sponsorship: unknown. COI: not established from accessible record. Conflict status: unknown. |
+| R21 | Health Canada/EFSA human safety and novel-food evidence cited above. Direct regulator links: [Health Canada](https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/information-product/supplemented-foods/l-alpha-glycerylphosphorylcholine-safety-assessment.html) · [EFSA DOI](https://doi.org/10.2903/j.efsa.2026.10008) | Funding and COI are source-specific as described in R1–R3; unknown fields are intentionally not inferred. |
+
+Open evidence gaps: validated intact-parent Alpha-GPC concentration–time data and parent half-life; oral absolute bioavailability; dedicated renal/hepatic-impairment studies; therapeutic-dose pregnancy/lactation and pediatric trials; direct levodopa and antihypertensive interaction trials; independent modern replication of Alzheimer findings; robust healthy-cognition replication; independent exercise trials; posted results for the completed 222-person post-stroke VCI study; long-duration randomized cardiovascular/stroke safety studies; verified current national medication labels; and independent retail-market quality surveillance.
 
 ## Doses
 
@@ -190,6 +340,20 @@ Patient evidence includes older trials, adjunct-treatment studies and extreme he
   unit: hours
   context: The inspected human evidence and EFSA ADME synthesis document absorption and plasma free-choline changes but do not establish a parent Alpha-GPC elimination half-life suitable for modeling.
   sourceId: efsa-2026
+  modelEligible: false
+- id: dr-alpha-gpc-alpha-gpc-pk-1
+  analyte: Parent compound or reported analyte
+  route: Not established
+  formulation: Not established
+  population: Humans
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: No validated universal terminal half-life was established in the returned report.
+  sourceId: dr-alpha-gpc-s1
   modelEligible: false
 ```
 
@@ -768,6 +932,306 @@ Patient evidence includes older trials, adjunct-treatment studies and extreme he
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s1
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.2903/j.efsa.2026.10008
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s2
+  title: Regulator
+  authors: Not assessed
+  year: 2026
+  url: https://www.canada.ca/en/health-canada/services/food-nutrition/food-safety/information-product/supplemented-foods/l-alpha-glycerylphosphorylcholine-safety-assessment.html
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s3
+  title: Regulator
+  authors: Not assessed
+  year: 2026
+  url: https://www.canada.ca/en/health-canada/services/food-nutrition/public-involvement-partnerships/notice-modification-list-ingredients-l-alpha-glycerylphosphorylcholine-supplemented-foods/document.html
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s4
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/31040642/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s5
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.2147/DDDT.S193424
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s6
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/12637119/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s7
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1016/S0149-2918(03
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s8
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/36683513/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s9
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.3233/JAD-221189
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s10
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/24898643/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s11
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.3233/JAD-140150
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s12
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/26582972/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s14
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/29042830/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s16
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/39683633/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s18
+  title: ClinicalTrials.gov NCT06690619
+  authors: Not assessed
+  year: 2026
+  url: https://clinicaltrials.gov/study/NCT06690619
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s19
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/34207484/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s20
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.3390/nu13062091
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s21
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1186/1550-2783-12-S1-P41
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s22
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/2071257/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s23
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/34817582/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s24
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1001/jamanetworkopen.2021.36008
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s25
+  title: Registry
+  authors: Not assessed
+  year: 2026
+  url: https://clinicaltrials.gov/study/NCT01363648
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s26
+  title: Registry
+  authors: Not assessed
+  year: 2026
+  url: https://clinicaltrials.gov/study/NCT07267845
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s27
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/39703111/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-alpha-gpc-s28
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1111/dom.16131
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
@@ -794,4 +1258,3 @@ Patient evidence includes older trials, adjunct-treatment studies and extreme he
   sourceUrl: https://food.ec.europa.eu/food-safety/novel-food/authorisations/summary-applications-and-notifications_en
   asOf: 2026-10-04
 ```
-

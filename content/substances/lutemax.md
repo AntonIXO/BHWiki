@@ -59,6 +59,8 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
@@ -335,6 +337,10 @@ x-order: 9007199254740991
   source: [R1, R2]
 - evidence_status: "Clinical publications support ingredient-specific biomarker and exploratory functional findings, not a legally established indication for AMD, blue-light injury, insomnia, cognitive disease, stress disorders, or skin disease."
   source: [R1, R3, R4, R5, R6, R7, R8]
+
+<!-- Deep Research source-link ledger -->
+
+Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
 
 ## Doses
 
@@ -1236,6 +1242,18 @@ x-order: 9007199254740991
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
+  conflictOfInterestStatus: not-assessed
+- id: dr-lutemax-link-1
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://lutemax.com/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 ```
 

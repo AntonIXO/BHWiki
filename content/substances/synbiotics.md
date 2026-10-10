@@ -69,19 +69,153 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
 
 Synbiotics combine live microorganisms with substrates used by microorganisms. Human effects belong to the studied strains, substrate and product, rather than to a universal synbiotic class effect.
 
+Deep Research synthesis: BHWiki Deep Research: Synbiotics — returned Deep Research evidence record.
+
 ## Description
 
 Complementary and synergistic formulations are distinct. Trials address gastrointestinal, infection or metabolic outcomes in different populations and with different controls. Microbiome or laboratory changes must be separated from patient-important clinical endpoints.
 
+Deep Research synthesis: The full returned Deep Research report is preserved in the pending acquisition folder for synbiotics.
+
 ## Evidence note
 
 Product identity, comparator, trial quality and commercial involvement constrain interpretation. Results cannot be transferred automatically between strains or preparations. Mixtures have no single molecular identity or elimination half-life; missing safety or disclosure evidence remains unassessed.
+
+<!-- Deep Research integration: synbiotics -->
+
+**Full Deep Research detail retained from the returned report:**
+
+### BHWiki Deep Research: Synbiotics
+
+> Returned report captured from the Chrome ChatGPT Deep Research card. Citation markers `[R#]` resolve to the reference ledger below.
+
+**Slug:** `synbiotics`
+**Evidence current through:** 2026-10-10
+
+### Scope and definition
+
+Synbiotics should be treated as specific strain–substrate combinations, not as a therapeutic class. ISAPP’s 2020 consensus defines a synbiotic as a mixture comprising live microorganisms and substrate(s) selectively utilized by host microorganisms that confers a health benefit. A complementary synbiotic contains a probiotic plus a prebiotic that each independently meet their definitions; they need not have been designed to cooperate. A synergistic synbiotic is deliberately designed so the substrate is selectively utilized by the co-administered microorganism(s); the individual components need not separately qualify as a probiotic and a prebiotic, but selective utilization and a health benefit need to be demonstrated for the combination. [dr-synbiotics-s1]
+
+A probiotic alone is not a synbiotic; a prebiotic alone is not a synbiotic; a fermented food is not automatically a synbiotic; and a multi-strain live-microbe product without an appropriate substrate is not a synbiotic. Calling a probiotic-plus-fiber product “synergistic” merely because its combination arm outperformed a comparator is also incorrect: ISAPP “synergistic” describes a designed selective-utilization relationship, not a statistical interaction term. [dr-synbiotics-s1]
+
+Most older human trials called “synbiotic” predate this definition and did not test selective utilization by the co-administered organism. They are best recorded as complementary/legacy synbiotics or classification unclear. Organism strain, substrate chemistry, dose, formulation, viable count, host population, co-medications, and endpoint differ enough that a class effect cannot be inferred.
+
+### Formulations, dose, viability, transit, and persistence
+
+Synbiotics do not have a meaningful single drug-like pharmacokinetic profile. Relevant human exposure measures are viable microbial dose actually delivered, survival through gastrointestinal transit, stool recoverability, substrate delivery and fermentation, whole-gut transit, and persistence of physiological or microbiome effects after discontinuation. These are formulation- and host-dependent; conventional plasma Cmax/AUC/t½ should not be invented for the class. [R2, R3]
+
+| Combination studied | Organism/strain identity | Substrate and dose | Microbial dose/formulation | Transit/persistence or viability finding |
+|---|---|---|---|---|
+| B420 + Litesse Ultra | *Bifidobacterium animalis* subsp. *lactis* B420; deposit not stated | Polydextrose 12 g/day | 1×10^10 CFU/day in a sachet mixed into a 250-mL smoothie for 6 months | Returned sachets retained ~1.1×10^10 CFU/day; stool qPCR detected B420-compatible signal in 82% of B420 arms, but cross-reactivity produced background positives. [dr-synbiotics-s3] |
+| BL-99 + FOS | *B. animalis* subsp. *lactis* BL-99; deposit not reported | FOS 0.8 g/day | 2×10^10 CFU/day, refrigerated sachet | Older-adult whole-gut transit ~37.1 h vs 50.6 h placebo; effect detectable 2 weeks after stopping, not proof of permanent engraftment. [dr-synbiotics-s2] |
+| LP202195 + FOS | *Lactiplantibacillus plantarum* ATCC 202195 | FOS 150 mg/day | ~1×10^9 CFU/day for seven days in newborns | Clinical benefit in a defined Indian newborn population; no transfer to other settings. [dr-synbiotics-s4] |
+| Prodefen Plus | LGG plus *L. casei*, *S. thermophilus*, *B. breve*, *L. acidophilus*, *B. infantis*, and an organism reported as *B. bulgaricus*; six strain IDs absent | FOS 990 mg/sachet | LGG 1×10^10 CFU plus 1×10^9 CFU each of six organisms; one sachet/day | AAD trial dosed two hours after morning amoxicillin/clavulanate; no combination-specific persistence endpoint. [dr-synbiotics-s5] |
+| UC *B. longum* + Synergy 1 | *B. longum* isolated from healthy rectal epithelium; no deposit | Oligofructose-enriched inulin, Synergy 1 | Exact CFU unavailable | Mucosal/fecal signals were mechanistic, not durable colonization or robust remission. [dr-synbiotics-s6] |
+| GDM three-strain + inulin | *L. acidophilus* T16 IBRC-M10785; *L. casei* T2 IBRC-M10783; *B. bifidum* T1 IBRC-M10771 | Inulin HPX 800 mg/day | Each reported as 2×10^9 CFU/g; exact CFU/day not justified | No persistence endpoint. [dr-synbiotics-s7] |
+| CKD SYNERGY | Nine organisms across *Lactobacillus*, *Bifidobacterium*, *Streptococcus*; IDs undisclosed | 15 g/day high-MW inulin HP + FOS + GOS | 9×10^10 CFU/day; half dose first three weeks | Stool microbiome shifted toward *Bifidobacterium*; this is not permanent engraftment. [panigrahi-2017] |
+
+The B420 study checked viable counts throughout the trial rather than assuming label potency. Several other studies identify organisms only to species level or give no deposit number; those omissions must remain explicit rather than being filled from a similar product. [R3, R5, R8]
+
+### Clinical evidence by indication
+
+**Antibiotic-associated diarrhea.** A 151-participant randomized double-blind trial evaluated Prodefen Plus for 14 days alongside amoxicillin/clavulanate. The sachet contained FOS 990 mg, LGG 10^10 CFU, and six additional organisms at 10^9 CFU each. AAD incidence and stool consistency favored the synbiotic and it was reported as well tolerated. Six organisms lacked strain identifiers; two authors were ITF Research Pharma employees and all investigators received research fees. This supports the proprietary formulation in that antibiotic/dental context, not “synbiotics” generally. [dr-synbiotics-s5]
+
+**IBS.** Results conflict. A 2024 systematic review/network meta-analysis found synbiotic/prebiotic evidence sparse and did not establish a global IBS benefit. [dr-synbiotics-s9] A separate 2024 multicenter RCT in 202 adults reported substantial improvements with a proprietary nine-strain/FOS enteric-coated capsule: IBS-SSS and IBS-GIS favored treatment and 70% reported adequate relief after 12 weeks; two treated participants reported transient headache. [dr-synbiotics-s10] A smaller older-adult trial of *L. paracasei* DKGF1 plus *Opuntia humifusa* extract found a 51.5% versus 23.5% responder rate, while gas/bloating did not significantly differ. [dr-synbiotics-s11]
+
+**Inflammatory bowel disease.** In active ulcerative colitis, an 18-patient pilot of *B. longum* plus Synergy 1 found reductions in inflammatory gene-expression/histologic measures, while the endoscopic signal was borderline; this is mechanistic evidence from a very small study. [dr-synbiotics-s6] For Crohn disease, a Cochrane review found only two small eligible RCTs; including a 35-participant synbiotic study, evidence did not demonstrate remission induction versus placebo and certainty was very low. [dr-synbiotics-s12]
+
+**H. pylori.** A 2026 systematic review/meta-analysis of six RCTs and 486 participants found improved eradication in ITT analysis with adjunctive synbiotics (RR 1.18, 95% CI 1.04–1.34), but not per protocol (RR 1.06, 95% CI 0.95–1.18). Safety data came from only three pediatric trials (n=230), certainty was low, and formulations differed. [dr-synbiotics-s13]
+
+**Obesity/metabolic outcomes.** The B420/polydextrose factorial trial included probiotic-only, prebiotic-only, combination, and placebo arms. In 225 adults with overweight/obesity, the prespecified ITT analysis did not find a significant body-fat difference. In the smaller per-protocol population, B420 + 12 g/day polydextrose was associated with ~4.5% lower body-fat change (about 1.4 kg vs placebo); B420 alone did not significantly differ in the primary pairwise comparison. A post-hoc factorial interaction does not establish an ISAPP “synergistic synbiotic.” Adverse-event incidence did not differ materially. [dr-synbiotics-s3] ClinicalTrials.gov identifies Danisco as sponsor and confirms B420 10^10 CFU/day plus polydextrose 12 g/day. [dr-synbiotics-s14]
+
+**Perioperative outcomes.** A 2020 systematic review/meta-analysis of 34 RCTs with 2,723 elective abdominal-surgery participants reported fewer postoperative infections with probiotic/synbiotic interventions. Its synbiotic subgroup RR was 0.46 (95% CI 0.33–0.66; n=1,399; I²=53%); hospital-stay heterogeneity was extreme (I²=91%) and mortality was unchanged (RR 0.98, 95% CI 0.54–1.80). Different surgeries, organisms, substrates, doses, and feeding protocols were pooled. [dr-synbiotics-s15]
+
+**Neonatal/pediatric evidence.** Panigrahi et al. randomized 4,556 rural Indian newborns ≥35 weeks and ≥2,000 g without baseline sepsis or major morbidity. *L. plantarum* ATCC 202195 plus FOS reduced the composite of sepsis/death (RR 0.60, 95% CI 0.48–0.74), culture-positive/culture-negative sepsis, and lower respiratory infection. The result should not be extrapolated to extremely premature or <1,000-g infants, where live-microbe invasive infection is an established regulatory concern. [R4, R16]
+
+**Pregnancy.** Small gestational-diabetes trials conflict. A 60-person trial using T16/T2/T1 strains plus inulin reported favorable metabolic/inflammatory measures and some pregnancy/neonatal outcomes. [dr-synbiotics-s7] A separate 90-person four-Lactobacillus + FOS trial did not find significant between-group changes in fasting glucose, insulin sensitivity, lipids, or total antioxidant capacity, although blood pressure differed. [dr-synbiotics-s17] These studies cannot establish class-wide pregnancy safety; lactation-specific evidence is inadequate.
+
+**Renal impairment.** In the SYNERGY crossover RCT, 37 predialysis-CKD adults were randomized and 31 completed. Indoxyl sulfate did not significantly improve; p-cresyl sulfate fell, stool *Bifidobacterium* increased, and albuminuria increased by about 38 mg/24 h. [dr-synbiotics-s18] In the 12-month SYNERGY II feasibility RCT, stool microbiota changed, but eGFR decreased by about 3.14 mL/min/1.73 m² and serum creatinine rose by about 20.8 µmol/L, with no benefit on other endpoints. [dr-synbiotics-s19] No generic renal dose adjustment or renal-protective class effect is established.
+
+**Hepatic impairment.** In 55 cirrhosis patients with minimal hepatic encephalopathy, a 30-day trial found lower ammonia/endotoxemia and reversal of minimal encephalopathy in 50% of synbiotic-treated patients; fermentable fiber alone was also beneficial, weakening attribution to the live component. [dr-synbiotics-s20] The returned report also mentions a later overt-hepatic-encephalopathy pilot using a synbiotic-plus-BCAA combination, but its direct metadata was not recovered; that finding is not used as an independent efficacy source.
+
+### Biomarkers versus patient-important outcomes
+
+Patient-important or clinically proximal endpoints include AAD occurrence/duration, IBS symptom relief, *H. pylori* eradication, body-fat change, postoperative infection/mortality, neonatal sepsis/death, spontaneous bowel movements, whole-gut transit, and clinical reversal of hepatic encephalopathy. [R2, R3, R4, R5, R10, R13, R15]
+
+Mechanistic/surrogate findings include stool or mucosal abundance, community-composition changes, qPCR detection, short-chain fatty acids, cytokines/CRP, zonulin, endotoxemia, ammonia, indoxyl sulfate, p-cresyl sulfate, and inflammatory gene expression. Such changes support plausibility but do not establish symptom relief, durable colonization, remission, or survival benefit. [R3, R6, R8, R18]
+
+Important null/conflicting findings remain prominent: IBS network meta-analysis non-conclusive despite a positive proprietary-product RCT; Crohn remission evidence negative/very-low certainty; *H. pylori* benefit present in ITT but not per protocol; B420/polydextrose non-significant in primary ITT body-fat analysis; perioperative meta-analysis no mortality benefit; pregnancy trials conflict; and CKD studies changed microbial/uremic biomarkers without patient-important renal benefit and generated a concerning longer-term kidney-function signal. [R3, R9, R12, R13, R15, R17, R19]
+
+### Safety, susceptible populations, interactions, and special populations
+
+Most reported adverse effects were mild, but RCTs are too small and short to exclude rare invasive infection. The nine-strain/FOS IBS trial reported two transient headaches; B420/polydextrose found no meaningful between-group AE difference; and Prodefen Plus was reported as well tolerated. [R3, R5, R10]
+
+FDA warned in September 2023 that preterm infants receiving live bacteria or yeast products can develop invasive, potentially fatal infection. The communication describes a <1,000-g infant who received *Bifidobacterium longum* subsp. *infantis*, developed sepsis matching the administered product by genomic sequencing, and died; FDA also highlighted bacteremia/fungemia reports in very premature/VLBW infants and stated that no probiotic product is approved as a drug or biological product for infants. [dr-synbiotics-s16] This is safety evidence about live organisms, not a synbiotic-specific absolute-risk estimate.
+
+Live yeast deserves separate caution. A 2023 systematic review identified 108 analyzable *Saccharomyces* fungemia cases; 73 (67.6%) had received *S. boulardii*. ICU stay, parenteral/enteral nutrition, gastrointestinal illness, and diabetes were common; case-series mortality was 36.1%. These data should not be generalized to bacterial-only synbiotics, but they show why safety cannot be inferred from “probiotic/synbiotic.” [dr-synbiotics-s22]
+
+Extremely premature/VLBW infants, critically ill or markedly immunocompromised patients, and people with major gastrointestinal-barrier disruption are susceptible populations. A central venous line is a reasonable risk flag, but this evidence set does not provide a central-line-specific synbiotic incidence estimate; that portion is an inference from live-microbe invasive-infection literature, not a quantified synbiotic effect. [R16, R22]
+
+For pregnancy and lactation, short gestational-diabetes RCTs are insufficient to establish general safety across products, doses, gestational stages, or indications. For renal/hepatic impairment, fixed nutritional regimens and mixed findings do not create a PK-based dose-adjustment scheme. [R7, R17, R18, R19, R20]
+
+Medication-interaction evidence differs from conventional drug interaction studies. Prodefen Plus was intentionally administered two hours after amoxicillin/clavulanate, while CKD SYNERGY reported larger uremic-toxin changes in participants who did not receive antibiotics. [R5, R18] These observations support recording antibiotic exposure as a modifier but do not establish a universal two-hour separation rule. Robust CYP/transporter interaction data are not an established class evidence base.
+
+### Regulation, quality, sponsorship, and conflicts
+
+“Synbiotic” is a scientific term rather than a standalone FDA approval category. FDA’s 2023 preterm-infant communication states that no probiotic drug or biological product is approved for infants and that investigational administration of live bacteria or yeast to treat, mitigate, cure, or prevent disease is subject to IND requirements. [dr-synbiotics-s16] U.S. food/dietary-supplement treatment differs from drug approval; identity, viable counts, contamination control, and manufacturing quality are therefore important. [dr-synbiotics-s23]
+
+In the EU, nutrition and health claims on foods are governed by Regulation (EC) No 1924/2006; efficacy for one strain–substrate formulation does not authorize a generic claim for unrelated products. [dr-synbiotics-s24]
+
+Strong quality reporting includes exact strain/deposit identifiers, CFU at consumption, substrate chemistry/dose, storage, formulation technology, and stability testing. B420 re-counted viable cells at study end. [dr-synbiotics-s3] The 2024 IBS product used an enteric-coated capsule designed to protect organisms against gastric acidity. [dr-synbiotics-s25] Conversely, Prodefen Plus specified total CFUs but only one clearly strain-specific identity among seven organisms, and CKD SYNERGY disclosed genera/species groups and total dose without individual strain identifiers. [R5, R8]
+
+Commercial involvement is common. The B420 trial was funded by DuPont Nutrition & Health, with several authors employed by the company; the registry lists Danisco as sponsor. [R3, R14] In the Prodefen Plus paper, two authors were ITF Research Pharma employees and all investigators received research fees. [dr-synbiotics-s5] Industry involvement does not by itself invalidate a trial, but the sponsorship/COI field must remain next to efficacy findings.
+
+### Compact BHWiki evidence statement
+
+Do not infer across strain–substrate combinations. Human evidence supports specific signals in AAD prevention, selected IBS formulations, *H. pylori* adjunctive therapy, postoperative infection outcomes, and a defined neonatal trial, but the evidence is heterogeneous and often legacy/classification-unclear. Crohn remission evidence is negative/very low certainty; *H. pylori* benefit is ITT-only in the cited meta-analysis; B420/polydextrose body-fat benefit was not significant in primary ITT; pregnancy trials conflict; and CKD studies changed biomarkers without establishing renal benefit. Live-microbe invasive infection is a genuine concern in premature infants, ICU/CVC, immunocompromised, and severely vulnerable populations. [R3, R4, R9, R12, R13, R15, R16, R19, R22]
+
+### Reference ledger
+
+Unknown disclosure means the source was inspected but a usable funding/COI statement was not recoverable; it does not mean independent funding.
+
+| ID | Reference and direct URL | Funding / sponsorship | Conflicts / status |
+|---|---|---|---|
+| R1 | Swanson KS, Gibson GR, Hutkins R, et al. *ISAPP consensus statement on the definition and scope of synbiotics*. 2020. [PubMed](https://pubmed.ncbi.nlm.nih.gov/32826966/); [DOI](https://doi.org/10.1038/s41575-020-0344-2) | Research support indexed; meeting support incompletely extracted. | Scientific-association consensus; declarations incomplete. |
+| R2 | Li M, Zhang Q, Zhao W, et al. *Effects and Persistence of Bifidobacterium animalis subsp. lactis BL-99 and Fructooligosaccharides on Older Adults with Functional Constipation*. 2025. [PubMed](https://pubmed.ncbi.nlm.nih.gov/40499217/); [DOI](https://doi.org/10.1016/j.jnha.2025.100598) | Not fully extracted; manufacturer-affiliated involvement. | Possible industry conflict; details incomplete. |
+| R3 | Stenman LK, Lehtinen MJ, Meland N, et al. *Probiotic With or Without Fiber Controls Body Fat Mass*. 2016. [PubMed](https://pubmed.ncbi.nlm.nih.gov/27810310/); [DOI](https://doi.org/10.1016/j.ebiom.2016.10.036); [NCT01978691](https://clinicaltrials.gov/study/NCT01978691) | DuPont Nutrition & Health; Danisco sponsor. | Several authors DuPont employees; declared industry conflict. |
+| R4 | Panigrahi P, Parida S, Nanda NC, et al. *A randomized synbiotic trial to prevent sepsis among infants in rural India*. 2017. [PubMed](https://pubmed.ncbi.nlm.nih.gov/28813414/); [DOI](https://doi.org/10.1038/nature23480) | NIH extramural support indexed. | Disclosure incomplete. |
+| R5 | Barreiro Guridi C, Romeo Serena A, Gallego Cabrera S, et al. *Clinical evaluation of Prodefen Plus® in prevention of antibiotic-associated diarrhoea*. 2020. [PubMed](https://pubmed.ncbi.nlm.nih.gov/33032474/); [DOI](https://doi.org/10.3920/BM2020.0062) | Industry-associated ITF Research Pharma group. | Two authors employees; all investigators received research fees. |
+| R6 | Furrie E, Macfarlane S, Kennedy A, et al. *Synbiotic therapy (Bifidobacterium longum/Synergy 1) initiates resolution of inflammation in active ulcerative colitis*. 2005. [PubMed](https://pubmed.ncbi.nlm.nih.gov/15647189/); [DOI](https://doi.org/10.1136/gut.2004.044834) | Research support indexed; award not extracted. | Unknown. |
+| R7 | Karamali M, Nasiri N, Taghavi Shavazi N, et al. *Effects of synbiotic supplementation on pregnancy outcomes in gestational diabetes*. 2018. [PubMed](https://pubmed.ncbi.nlm.nih.gov/28786012/); [DOI](https://doi.org/10.1007/s12602-017-9313-7) | Non-U.S. support indexed; grant not extracted. | Unknown. |
+| R8 | Rossi M, Johnson DW, Morrison M, et al. *SYNERGY: A Randomized Trial*. 2016. [PubMed](https://pubmed.ncbi.nlm.nih.gov/26772193/); [DOI](https://doi.org/10.2215/CJN.05240515) | Non-U.S. government support indexed; academic/noncommercial. | Protocol declared no competing interests; trial disclosure incomplete. |
+| R9 | Wu J, Li Q, Zheng Y, Li Y. *Efficacy of Probiotics, Prebiotics, Synbiotics, and FMT in IBS: Systematic Review and Network Meta-Analysis*. 2024. [PubMed](https://pubmed.ncbi.nlm.nih.gov/38999862/); [DOI](https://doi.org/10.3390/nu16132114) | Unknown. | Unknown. |
+| R10 | Sommermeyer H, Chmielowiec K, Bernatek M, et al. *Balanced Nine-Strain Synbiotic in Primary-Care IBS*. 2024. [PubMed](https://pubmed.ncbi.nlm.nih.gov/38794741/); [DOI](https://doi.org/10.3390/nu16101503); [NCT05731232](https://clinicaltrials.gov/study/NCT05731232) | Not fully extracted; proprietary product commercially purchased. | COI incomplete/unknown. |
+| R11 | Oh JH, Jang YS, Kang D, et al. *Lactobacillus paracasei DKGF1 and Opuntia humifusa in elderly IBS*. 2023. [PubMed](https://pubmed.ncbi.nlm.nih.gov/35611667/); [DOI](https://doi.org/10.5009/gnl210478) | Unknown. | Unknown. |
+| R12 | Limketkai BN, Akobeng AK, Gordon M, Adepoju AA. *Probiotics for induction of remission in Crohn’s disease*. 2020. [PubMed](https://pubmed.ncbi.nlm.nih.gov/32678465/); [DOI](https://doi.org/10.1002/14651858.CD006634.pub3) | Cochrane review; funding not extracted. | Unknown/incomplete. |
+| R13 | Romyasamit C, Duangchan T, Leepromma Y, et al. *Adjunctive Synbiotic Therapy for H. pylori Eradication*. 2026. [PubMed](https://pubmed.ncbi.nlm.nih.gov/42795277/); [DOI](https://doi.org/10.3390/life16091409) | Unknown. | Unknown. |
+| R14 | ClinicalTrials.gov. *The Effect of a Bifidobacterium and Polydextrose on Body Fat Mass*, NCT01978691. [Registry](https://clinicaltrials.gov/study/NCT01978691) | Danisco sponsor. | Industry sponsor documented; registry lacks journal-style author COI. |
+| R15 | Chowdhury AH, Adiamah A, Kushairi A, et al. *Perioperative Probiotics or Synbiotics in Elective Abdominal Surgery*. 2020. [PubMed](https://pubmed.ncbi.nlm.nih.gov/31469748/); [DOI](https://doi.org/10.1097/SLA.0000000000003581) | Non-U.S. government support indexed; exact award not extracted. | Unknown/incomplete. |
+| R16 | U.S. FDA. *Risk of Invasive Disease in Preterm Infants Given Probiotics Formulated to Contain Live Bacteria or Yeast*. 2023. [Regulator page](https://www.fda.gov/safety/medical-product-safety-information/risk-invasive-disease-preterm-infants-given-probiotics-formulated-contain-live-bacteria-or-yeast); [provider letter](https://www.fda.gov/media/172606/download) | U.S. regulator. | N/A. |
+| R17 | Nabhani Z, Ghaemmaghami Hezaveh SJ, Razmpoosh E, et al. *Synbiotic supplementation in gestational diabetes*. 2018. [PubMed](https://pubmed.ncbi.nlm.nih.gov/29432772/); [DOI](https://doi.org/10.1016/j.diabres.2018.02.008) | Unknown. | Unknown. |
+| R18 | Rossi et al. *SYNERGY* predialysis CKD trial. See R8. | See R8. | See R8. |
+| R19 | McFarlane C, Krishnasamy R, Stanton T, et al. *SYNERGY II feasibility randomized controlled trial*. 2021. [PubMed](https://pubmed.ncbi.nlm.nih.gov/34960037/); [DOI](https://doi.org/10.3390/nu13124481) | Unknown. | Unknown. |
+| R20 | Liu Q, Duan ZP, Ha DK, et al. *Synbiotic modulation of gut flora in minimal hepatic encephalopathy*. 2004. [PubMed](https://pubmed.ncbi.nlm.nih.gov/15122774/); [DOI](https://doi.org/10.1002/hep.20194) | Unknown. | Unknown. |
+| R22 | Vinayagamoorthy K, Pentapati KC, Prakash H. *Epidemiology of Saccharomyces fungemia: A systematic review*. 2023. [PubMed](https://pubmed.ncbi.nlm.nih.gov/36806741/); [DOI](https://doi.org/10.1093/mmy/myad014) | Unknown. | Unknown. |
+| R23 | U.S. FDA. *Dietary Supplements*. [FDA overview](https://www.fda.gov/food/dietary-supplements) | U.S. government. | N/A. |
+| R24 | European Commission. *Nutrition and Health Claims; Regulation (EC) No 1924/2006*. [Official source](https://food.ec.europa.eu/food-safety/labelling-and-nutrition/nutrition-and-health-claims_en) | EU regulator/policy authority. | N/A. |
+| R25 | Enteric-coated nine-strain IBS formulation details as reported in R10. | See R10. | See R10. |
+
+### Open limitations
+
+No class-wide synbiotic effect, generic renal/hepatic dose adjustment, universal antibiotic separation rule, validated persistence threshold, or broad pregnancy/lactation safety profile was established. Strain-level identity, CFU-at-consumption, substrate chemistry, storage, and sponsor/COI reporting remain inconsistent. Live-microbe invasive-infection risk is concentrated in preterm/VLBW, ICU/CVC, immunocompromised, and severely vulnerable populations. The Deep Research card exposed Markdown/Word/PDF export controls; this file preserves the single returned report text and ledger for inspection without adding a second capture.
 
 ## Doses
 
@@ -239,6 +373,20 @@ Product identity, comparator, trial quality and commercial involvement constrain
   unit: hours
   context: No scientifically meaningful class-wide elimination half-life exists for synbiotics. Administered organisms can be transiently detected or, in some settings, persist in stool; substrates and microbial metabolites have separate kinetics. Stool persistence must not be relabeled as a drug elimination half-life.
   sourceId: isapp-2020
+  modelEligible: false
+- id: dr-synbiotics-synbiotics-pk-1
+  analyte: Parent compound or reported analyte
+  route: Not established
+  formulation: Not established
+  population: Humans
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: No validated universal terminal half-life was established in the returned report.
+  sourceId: dr-synbiotics-s1
   modelEligible: false
 ```
 
@@ -811,6 +959,498 @@ Product identity, comparator, trial quality and commercial involvement constrain
   conflictsOfInterest: The authors explicitly declared no conflicts of interest.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/39241935/
+- id: dr-synbiotics-s1
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/32826966/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s2
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1038/s41575-020-0344-2
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s3
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/40499217/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s4
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1016/j.jnha.2025.100598
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s5
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/27810310/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s6
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1016/j.ebiom.2016.10.036
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s7
+  title: NCT01978691
+  authors: Not assessed
+  year: 2026
+  url: https://clinicaltrials.gov/study/NCT01978691
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s9
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1038/nature23480
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s10
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/33032474/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s11
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.3920/BM2020.0062
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s12
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/15647189/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s13
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1136/gut.2004.044834
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s14
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/28786012/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s15
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1007/s12602-017-9313-7
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s16
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/26772193/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s17
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.2215/CJN.05240515
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s18
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/38999862/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s19
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.3390/nu16132114
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s20
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/38794741/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s21
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.3390/nu16101503
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s22
+  title: NCT05731232
+  authors: Not assessed
+  year: 2026
+  url: https://clinicaltrials.gov/study/NCT05731232
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s23
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/35611667/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s24
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.5009/gnl210478
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s25
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/32678465/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s26
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1002/14651858.CD006634.pub3
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s27
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/42795277/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s28
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.3390/life16091409
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s29
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/31469748/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s30
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1097/SLA.0000000000003581
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s31
+  title: Regulator page
+  authors: Not assessed
+  year: 2026
+  url: https://www.fda.gov/safety/medical-product-safety-information/risk-invasive-disease-preterm-infants-given-probiotics-formulated-contain-live-bacteria-or-yeast
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s32
+  title: provider letter
+  authors: Not assessed
+  year: 2026
+  url: https://www.fda.gov/media/172606/download
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s33
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/29432772/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s34
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1016/j.diabres.2018.02.008
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s35
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/34960037/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s36
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.3390/nu13124481
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s37
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/15122774/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s38
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1002/hep.20194
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s39
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/36806741/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s40
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1093/mmy/myad014
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s41
+  title: Dietary Supplements
+  authors: Not assessed
+  year: 2026
+  url: https://www.fda.gov/food/dietary-supplements
+  kind: regulatory information
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-synbiotics-s42
+  title: Official source
+  authors: Not assessed
+  year: 2026
+  url: https://food.ec.europa.eu/food-safety/labelling-and-nutrition/nutrition-and-health-claims_en
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
@@ -818,4 +1458,3 @@ Product identity, comparator, trial quality and commercial involvement constrain
 ```yaml
 []
 ```
-

@@ -60,6 +60,8 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
@@ -74,7 +76,7 @@ Berberine occurs in plants including *Berberis* and *Coptis*. Berberine chloride
 
 **Full Deep Research detail retained from the returned report:**
 
-# Research Report: Research exactly berberine (correct alias Betberine; slug berberine). Return a compact complete BHWiki Markdown article only, <=4500 words. Required headings Summary, Description, Evidence note, Doses, Pharmacokinetics, Modifiers, Effects, Outcomes, Mechanisms, Cautions, Claims, Interactions, Experience links, References, Legal; frontmatter with x-shape; fenced yaml list for every non-prose section. Every factual claim needs a source link or sourceId. References require exact title, named authors/organization, year, HTTPS URL, kind, insight, limitation, funding, sponsorshipStatus, conflictsOfInterest, conflictOfInterestStatus, using not-assessed when unknown. Cover formulation/salts, human randomized glycemia/lipid/weight outcomes and nulls, bias/publication concerns, AMPK mechanisms without clinical inference, PK/metabolites, pregnancy/GI/drug interactions. No preface, metadata, audit tables, citation tokens, or recommendations.
+### Research Report: Research exactly berberine (correct alias Betberine; slug berberine). Return a compact complete BHWiki Markdown article only, <=4500 words. Required headings Summary, Description, Evidence note, Doses, Pharmacokinetics, Modifiers, Effects, Outcomes, Mechanisms, Cautions, Claims, Interactions, Experience links, References, Legal; frontmatter with x-shape; fenced yaml list for every non-prose section. Every factual claim needs a source link or sourceId. References require exact title, named authors/organization, year, HTTPS URL, kind, insight, limitation, funding, sponsorshipStatus, conflictsOfInterest, conflictOfInterestStatus, using not-assessed when unknown. Cover formulation/salts, human randomized glycemia/lipid/weight outcomes and nulls, bias/publication concerns, AMPK mechanisms without clinical inference, PK/metabolites, pregnancy/GI/drug interactions. No preface, metadata, audit tables, citation tokens, or recommendations.
 
 ---
 slug: berberine
@@ -327,6 +329,10 @@ Berberine occurs in plants including *Berberis* and *Coptis*. Berberine chloride
   sourceId: S2
 - note: "Personal anecdotes are not used as efficacy or safety evidence."
   sourceId: S4
+
+<!-- Deep Research source-link ledger -->
+
+Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
 
 ## Doses
 
@@ -643,6 +649,90 @@ Berberine occurs in plants including *Berberis* and *Coptis*. Berberine chloride
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
+  conflictOfInterestStatus: not-assessed
+- id: dr-berberine-link-1
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubchem.ncbi.nlm.nih.gov/compound/Berberine-Chloride?utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-berberine-link-2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12016319/?utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-berberine-link-3
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/38888754/?utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-berberine-link-4
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/37598753/?utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-berberine-link-5
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/28290706/?utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-berberine-link-6
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://www.ncbi.nlm.nih.gov/books/NBK600384/?utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-berberine-link-7
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4898966
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 ```
 

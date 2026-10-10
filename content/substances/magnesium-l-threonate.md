@@ -59,6 +59,8 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
@@ -73,7 +75,7 @@ The full returned Deep Research report is preserved in the pending acquisition f
 
 **Full Deep Research detail retained from the returned report:**
 
-# Magnesium L-threonate (Magtein)
+### Magnesium L-threonate (Magtein)
 
 **Deep Research result:** browser ChatGPT Deep Research, Pro tier selected (`Pro`, 5 of 5), completed 2026-10-10 in 9 minutes, 16 citations, 389 searches.
 
@@ -155,6 +157,10 @@ NIH states that forms dissolving well in liquid tend to be absorbed better and t
 No published human trial identified here directly establishes that MgT is superior to magnesium glycinate, citrate, chloride or oxide for sleep or cognition. UCLA registry NCT07640685 is designed to compare magnesium glycinate vs magnesium L-threonate vs placebo in varsity athletes, but is listed without results. [11]
 
 NCT07706283 (Barry University) enrolled 81 healthy adults for six weeks to study sleep, cognition and neuromuscular function; it was listed completed in March 2026 without posted results. NCT07015047 (UCLA) studies sleep/recovery and athletic performance in 100 collegiate athletes and was listed active, not recruiting, without posted results. Absence of posted results is neither positive nor negative evidence. [12][13]
+
+<!-- Deep Research source-link ledger -->
+
+Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
 
 ## Doses
 
@@ -529,6 +535,18 @@ NCT07706283 (Barry University) enrolled 81 healthy adults for six weeks to study
   kind: Deep Research source
   insight: Source cited by the returned Deep Research report.
   limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-l-threonate-link-1
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.

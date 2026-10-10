@@ -59,6 +59,8 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
@@ -259,6 +261,10 @@ In the United States, FDA labeling guidance permits narrowly worded qualified cl
   sourceId: PS-14
 - regulatory_scope: "Legal wording and permissible claims vary by jurisdiction and product composition."
   sourceId: PS-15
+
+<!-- Deep Research source-link ledger -->
+
+Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
 
 ## Doses
 
@@ -992,6 +998,90 @@ In the United States, FDA labeling guidance permits narrowly worded qualified cl
   funding: Not stated; author affiliations included BYHEALTH Institute of Nutrition & Health.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Authors declared no conflict of interest.
+  conflictOfInterestStatus: not-assessed
+- id: dr-phosphatidylserine-link-1
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://biolimitless.com/wp-content/uploads/2025/03/KJFST-phosph-cognitive-elderly.pdf
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-phosphatidylserine-link-2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://www.neurology.org/doi/abs/10.1212/WNL.41.5.644?is_nova=true&nb_cid=24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&nbclid=nvss_24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&ref_id=nvss_24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&src=%5B07.02.26%5D+MM+E.I1&sub1=2019982747502501890&sub2=%5B07.02.26%5D+MM+E.I1&sub3=2019982842447720450&sub4=%5B07.02.26%5D+C1_Img&sub5=2019983294635634690&sub6=Img_02&sub7=android&sub8=0&utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-phosphatidylserine-link-3
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://www.jstage.jst.go.jp/article/jcbn/47/3/47_10-62/_pdf
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-phosphatidylserine-link-1-dup2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/11842880/?utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-phosphatidylserine-link-2-dup2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/25414047/?utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-phosphatidylserine-link-3-dup2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://www.fda.gov/media/81606/download?pwsName=healthandwellness&sponsorId=Q%2BbsLFVYDSzmXKlASeqkmA%3D%3D
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-phosphatidylserine-link-4
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://www.neurology.org/doi/abs/10.1212/WNL.41.5.644?is_nova=true&nb_cid=24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&nbclid=nvss_24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&ref_id=nvss_24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&src=%5B07.02.26%5D+MM+E.I1&sub1=2019982747502501890&sub2=%5B07.02.26%5D+MM+E.I1&sub3=2019982842447720450&sub4=%5B07.02.26%5D+C1_Img&sub5=2019983294635634690&sub6=Img_02&sub7=android&sub8=0
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 ```
 

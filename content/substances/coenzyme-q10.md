@@ -59,6 +59,8 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
@@ -73,7 +75,7 @@ The full returned Deep Research report is preserved in the pending acquisition f
 
 **Full Deep Research detail retained from the returned report:**
 
-# Coenzyme Q10 (ubiquinone and ubiquinol)
+### Coenzyme Q10 (ubiquinone and ubiquinol)
 
 Slug: coenzyme-q10
 Evidence cutoff: October 10, 2026

@@ -59,6 +59,8 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
@@ -423,6 +425,10 @@ In the United States, MgO may appear in OTC antacid products under the FDA antac
   sourceId:
     - MO-13
     - MO-14
+
+<!-- Deep Research source-link ledger -->
+
+Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
 
 ## Doses
 
@@ -1191,6 +1197,271 @@ In the United States, MgO may appear in OTC antacid products under the FDA antac
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-1
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=31bc45c7-ba92-bad0-e063-6394a90a9af8
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10544839/?utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-3
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://www.researchgate.net/profile/Mark-Graber/publication/11563416_Bioavallability_of_US_commercial_magnesium_preparations/links/54996da00cf22a8313961916/Bioavallability-of-US-commercial-magnesium-preparations.pdf?origin=publication_detail&utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-4
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/31587548/?utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-5
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/30805197/?utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-6
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://ods.od.nih.gov/factsheets/magnesium-healthProfessional/?utm_source=openai
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-7
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/12786918/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-8
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/30798472/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-9
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/27057522/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-10
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/11794633/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-11
+  title: Mg citrate found more bioavailable than other Mg preparations in a randomised, double-blind study.
+  authors: Ann F Walker, Georgios Marakis, Samantha Christie, Martyn Byng
+  year: 2003
+  url: https://pubmed.ncbi.nlm.nih.gov/14596323/
+  kind: randomized double-blind placebo-controlled comparative bioavailability trial
+  insight: At 300 mg/day elemental magnesium, citrate and an amino-acid chelate produced greater absorption-related responses than oxide over 60 days; citrate had the strongest serum response.
+  limitation: Forty-six healthy participants; biomarker bioavailability differences do not establish superiority for clinical outcomes.
+  pmid: "14596323"
+  funding: Full funding declaration was not inspected in accessible full text during this review.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Full conflict-of-interest declaration was not inspected.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-12
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/30136128/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-13
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/10193669/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-14
+  title: Questions and Answers on Dietary Supplements
+  authors: U.S. Food and Drug Administration
+  year: 2026
+  url: https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements
+  kind: official regulatory guidance
+  insight: Explains that FDA does not preapprove dietary supplements before marketing, firms bear initial responsibility for safety and labeling compliance, and current good manufacturing practices apply.
+  limitation: General U.S. dietary-supplement regulation; not a finding about any specific liver product's quality or efficacy.
+  funding: U.S. federal regulatory publication.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not applicable as a clinical-study disclosure.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-15
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://dps-admin.fda.gov/omuf/sites/omuf/files/monograph-documents/2022-10/OTC%20Monograph_M001-Antacid%20Products%20for%20OTC%20Human%20Use%2010.14.2022.pdf
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-1-dup2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/31587548/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-2-dup2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10544839/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-3-dup2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/30805197/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-4-dup2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=3aba26ec-5ebe-433e-9524-fb355c5a0198&version=104
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-5-dup2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://ods.od.nih.gov/factsheets/magnesium-healthprofessional/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-6-dup2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://www.researchgate.net/profile/Mark-Graber/publication/11563416_Bioavallability_of_US_commercial_magnesium_preparations/links/54996da00cf22a8313961916/Bioavallability-of-US-commercial-magnesium-preparations.pdf?origin=publication_detail
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-oxide-link-16
+  title: Magnesium - Health Professional Fact Sheet
+  authors: National Institutes of Health, Office of Dietary Supplements
+  year: 2026
+  url: https://ods.od.nih.gov/factsheets/magnesium-healthProfessional/
+  kind: official nutrient monograph
+  insight: Elemental-magnesium labeling, adult supplemental UL, toxicity, renal-risk, and medication interactions.
+  limitation: General magnesium evidence; not a magnesium-malate-specific efficacy or safety trial.
+  funding: NIH Office of Dietary Supplements.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: none stated
   conflictOfInterestStatus: not-assessed
 ```
 

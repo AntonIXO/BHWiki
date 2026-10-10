@@ -59,6 +59,8 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
@@ -285,6 +287,10 @@ x-order: 9007199254740991
   sourceId: [S1]
 - scope: "The U.S. laxative label does not establish authorization for sleep, cognition, chronic supplementation, or other unlisted outcomes."
   sourceId: [S1, S2, S8, S9]
+
+<!-- Deep Research source-link ledger -->
+
+Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
 
 ## Doses
 
@@ -1004,6 +1010,30 @@ x-order: 9007199254740991
   funding: Commercial product labeling.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Manufacturers have a commercial product interest.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-citrate-link-1
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=36d6c27d-45dc-3081-e063-6394a90a87e9
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-citrate-link-2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2cffb084-2b25-4e1b-846b-8681de7ea666
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 ```
 

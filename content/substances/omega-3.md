@@ -59,6 +59,8 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
@@ -73,7 +75,7 @@ The full returned Deep Research report is preserved in the pending acquisition f
 
 **Full Deep Research detail retained from the returned report:**
 
-# Omega-3 long-chain fatty acids — BHWiki deep-research report
+### Omega-3 long-chain fatty acids — BHWiki deep-research report
 
 **Deep Research result:** browser ChatGPT Deep Research, model selector visibly `Pro` (`5 of 5`) immediately before submission, completed 2026-10-10 in 12 minutes, 41 citations, 372 searches.
 
@@ -257,6 +259,10 @@ The central problem is heterogeneity disguised by “omega-3.” REDUCE-IT teste
 The same applies to LDL effects: EPA-only icosapent ethyl lowered triglycerides without the marked LDL rise seen with DHA-containing EPA+DHA ethyl esters. Absorption superiority of free fatty acids/re-esterified triglycerides over ethyl esters cannot be converted into a blanket claim of superior cardiovascular, cognitive, mood, or exercise outcomes. [R16][R17][R18][R22]
 
 **Most defensible BHWiki summary:** prescription omega-3 therapy has strong product-specific triglyceride evidence and high-quality CV benefit for icosapent ethyl 4 g/day in selected statin-treated high-risk patients; AF and bleeding risks must be included, and DHA-containing products can raise LDL. Healthy-person supplementation has no convincing routine prevention evidence for major CV events, dementia, or depression; exercise recovery effects are possible but not broadly ergogenic. Pregnancy effects are mixed; routine infant-IQ claims are unsupported. Fish is a distinct, regulator-supported dietary exposure when lower-mercury species are chosen. Biomarkers must not be presented as clinical outcomes.
+
+<!-- Deep Research source-link ledger -->
+
+Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
 
 ## Doses
 
@@ -1074,6 +1080,54 @@ The same applies to LDL effects: EPA-only icosapent ethyl lowered triglycerides 
   kind: Deep Research source
   insight: Source cited by the returned Deep Research report.
   limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-omega-3-link-1
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://doi.org/10.1016/S0140-6736(07)60527-3
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-omega-3-link-1-dup2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=9c1a2828-1583-4414-ab22-a60480e8e508
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-omega-3-link-2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=21cfa4ce-0b05-47ed-b268-339eb1b83b75
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-omega-3-link-3
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://www.anzctr.org.au/Trial/Registration/TrialReview.aspx?id=363687
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.

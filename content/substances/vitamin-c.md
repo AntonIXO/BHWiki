@@ -63,19 +63,156 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
 
 Vitamin C is an essential nutrient; treating deficiency differs from additional supplementation in replete people. Human findings depend on endpoint, population and oral versus intravenous exposure.
 
+Deep Research synthesis: Vitamin C — BHWiki Deep Research — returned Deep Research evidence record.
+
 ## Description
 
 Research covers common-cold incidence or duration and other clinical or biochemical outcomes, with positive and null findings. Saturable oral absorption and renal handling limit extrapolation between formulations and routes. Antioxidant mechanisms do not establish universal clinical benefit.
 
+Deep Research synthesis: The full returned Deep Research report is preserved in the pending acquisition folder for vitamin-c.
+
 ## Evidence note
 
 Dose, comparator, baseline status and formulation remain explicit. Kidney-stone, iron-overload and interference concerns retain their cited contexts. Commercial involvement and unassessed disclosures are separated from evidence certainty; selected studies are not independent editorial review.
+
+<!-- Deep Research integration: vitamin-c -->
+
+**Full Deep Research detail retained from the returned report:**
+
+### Vitamin C — BHWiki Deep Research
+
+> Returned report captured from the signed-in Chrome ChatGPT Deep Research card. Citation markers `[R#]` resolve to the reference dossier below.
+
+**BHWiki slug:** `vitamin-c`
+**Scope date:** October 10, 2026
+**Evidence boundary:** primary human trials; systematic reviews/meta-analyses; official nutrient guidance; medication labels; regulator/safety sources; and clinical-trial registries. Mechanistic, animal, and in-vitro findings were excluded as evidence of clinical benefit.
+**Route rule:** dietary vitamin C, oral vitamin C supplements, and intravenous ascorbic acid are treated as distinct exposures.
+**Completion evidence:** Deep Research completed in 12 minutes; 14 citations and 296 searches were exposed by the returned card (`aria-label` counters); the report contained 20 source IDs (`R1`–`R20`).
+
+### Scope and route separation
+
+Vitamin C is L-ascorbic acid/ascorbate, an essential water-soluble nutrient. U.S. adult RDAs are 90 mg/day for men and 75 mg/day for women, rising to 85 mg/day in pregnancy and 120 mg/day during lactation; people who smoke require an additional 35 mg/day. The adult tolerable upper intake level is 2,000 mg/day from food plus supplements. Five varied servings of fruits and vegetables can provide more than 200 mg/day. [ref-ods]
+
+Dietary vitamin C is nutritional exposure from food. Oral supplements most commonly contain ascorbic acid, with sodium ascorbate, calcium ascorbate and other mineral ascorbates also available. NIH guidance considers supplemental ascorbic acid to have bioavailability equivalent to naturally occurring food ascorbate; human comparisons have not established a consistent clinically important advantage for alternative oral forms. [ref-ods]
+
+IV ascorbic acid is pharmacologically different. It bypasses saturable intestinal absorption and can transiently generate plasma concentrations several-fold to orders of magnitude above those achieved orally. That pharmacokinetic fact does not demonstrate therapeutic efficacy and is not a valid basis for extrapolating cell-culture, antioxidant, or pro-oxidant hypotheses into clinical benefit. [R4,R5] NIH likewise distinguishes the routes when discussing cancer research.
+
+Scurvy is the established deficiency disease. Signs can appear after roughly a month of little or no vitamin C—approximately <10 mg/day—and include fatigue/malaise, gingival inflammation or bleeding, petechiae, ecchymoses or purpura, joint symptoms, hyperkeratosis, corkscrew hairs and impaired wound healing; untreated scurvy can be fatal. [ref-ods]
+
+The U.S. prescription IV product ASCOR has a much narrower approved role: short-term treatment, for no more than one week, of scurvy in patients aged at least 5 months when oral administration is impossible, insufficient or contraindicated. It is explicitly not labeled for nonscorbutic vitamin C deficiency and is not approved for fatigue, infection, sepsis or cancer. [ref-ascor-label]
+
+### Pharmacokinetics and biomarker interpretation
+
+Oral absorption is saturable. NIH summarizes absorption as about 70–90% at 30–180 mg/day, falling to <50% above 1 g/day, with increasing urinary disposal of absorbed unmetabolized ascorbate as intake increases. [ref-ods]
+
+Levine et al.'s controlled depletion/repletion experiment found a steep plasma dose-response between roughly 30 and 100 mg/day, earlier saturation of leukocyte pools than plasma, essentially complete single-dose bioavailability at 200 mg but falling bioavailability at doses of 500 mg and above, and substantial urinary loss at high intake. Neutrophils, monocytes and lymphocytes were saturated at about 100 mg/day and contained ascorbate concentrations at least approximately 14-fold higher than plasma. [dr-vitamin-c-s4] This supports tight homeostatic control rather than a dose-proportional oral exposure model. NIH accordingly uses plasma vitamin C as the routine status marker while noting that leukocyte vitamin C may better approximate tissue status but is technically harder to measure and not consistently reliable.
+
+Padayatty et al. directly compared routes in healthy volunteers. 1.25 g orally produced a mean peak plasma concentration of about 134.8 µmol/L, compared with about 885 µmol/L after 1.25 g IV. Their pharmacokinetic model estimated that even 3 g orally every four hours would peak around 220 µmol/L. Very-high-dose IV concentrations reported by that paper's model are exposure predictions, not observed anticancer or anti-infective outcomes. [dr-vitamin-c-s5] NIH's current synthesis likewise reports an oral 1.25-g peak of roughly 135 µmol/L and modeled oral ceiling near 220 µmol/L.
+
+The current ASCOR label provides another human IV PK datapoint: 1,000 mg infused over 30 minutes in eight healthy adults produced a mean Cmax of 436.2 µmol/L at the end of infusion. The reported elimination half-life was 7.4 ± 1.4 hours, based on three participants contributing to that estimate. Once plasma concentrations exceed the renal threshold, approximately 1.4 mg/100 mL, urinary excretion becomes large; conversion to urinary oxalate is a major metabolic route. [ref-ascor-label]
+
+Measured ascorbate biomarkers should be kept separate from subjective and clinical outcomes. A single 10-g IV infusion in the office-worker fatigue trial raised plasma vitamin C from approximately 12.7 to 267.9 µg/mL at two hours, demonstrating exposure; only the trial's “fatigue right now” outcome improved, while “usual fatigue” and “worst fatigue” did not. [dr-vitamin-c-s9] Similarly, CITRIS-ALI achieved pharmacologic IV exposure without significant improvement in its prespecified organ-failure, C-reactive-protein or thrombomodulin endpoints, and the larger LOVIT trial found worse—not better—its primary patient-important composite outcome. [R14,R15]
+
+### Clinical effects and null findings
+
+| Claim area | Route and tested exposure | Biomarker versus clinical result | Evidence interpretation |
+|---|---|---|---|
+| Common cold | Regular oral vitamin C, generally ≥200 mg/day; extreme-exertion/cold-exposure studies roughly 250 mg–1 g/day | In the general population, prophylaxis did not materially reduce incidence. Regular use shortened cold duration by about 8% in adults and 14% in children. In short-term extreme physical/cold exposure, incidence was about halved. Starting vitamin C after symptoms began showed no consistent benefit. [R1,R6] | Small prophylactic duration effect; no general-population prevention and no established treatment effect after onset. |
+| Other respiratory infection | Heterogeneous oral supplementation trials; pneumonia reviews include heterogeneous regimens/routes | Adult ARI meta-analysis found a small reduction in occurrence, RR 0.96 (95% CI 0.93–0.99), and about 9% shorter symptoms. [dr-vitamin-c-s7] A six-RCT community-acquired-pneumonia meta-analysis found a nonsignificant mortality estimate, RR 0.51 (95% CI 0.24–1.09), with mixed other outcomes. [dr-vitamin-c-s8] | Possibly small prevention/duration effect for broad ARI; pneumonia-treatment evidence remains inconclusive. |
+| Fatigue | Single IV 10 g dose: 20 mL of 500 mg/mL Merit C plus 100 mL normal saline over 30 minutes | Plasma vitamin C increased markedly and an oxidative-stress assay decreased. “Fatigue right now” improved through one day, overall p=0.004; “usual fatigue” and “worst fatigue” did not. The signal was concentrated in a post-stratified lower-baseline-vitamin-C subgroup. [dr-vitamin-c-s9] | One short RCT with sponsor-linked investigator conflicts; not evidence for chronic fatigue or repeated IV treatment. |
+| Exercise/recovery | Oral 3 g/day for two weeks before and four days after eccentric exercise; n=18 men | Creatine kinase rise at 48 h and a glutathione oxidation marker were attenuated; soreness was lower for the first 24 h. Muscle force and range of motion were not improved. [dr-vitamin-c-s10] A 2026 double-blind-RCT meta-analysis reported inconsistent post-exercise biomarker effects with low/very-low certainty. [dr-vitamin-c-s11] | Subjective/biochemical signals do not establish better performance or functional recovery. |
+| Wound/pressure-ulcer healing | Small historical trials included 500 mg oral ascorbic acid twice daily; another comparison used 10 mg three times daily. [dr-vitamin-c-s13] | The 2024 Cochrane review found vitamin-C-specific evidence too uncertain for a reliable healing conclusion; effects of multinutrient products cannot be attributed to vitamin C alone. [dr-vitamin-c-s12] | Correct deficiency, but routine high-dose C to accelerate pressure-ulcer healing is not established. |
+| Sepsis/critical illness | CITRIS-ALI and LOVIT used IV 50 mg/kg every six hours, approximately 200 mg/kg/day, for up to 96 h; LOVIT administered doses over about 30–60 min. [R14,R15] | CITRIS-ALI: no significant primary improvement in modified SOFA score, CRP or thrombomodulin. LOVIT, n=872: death or persistent organ dysfunction at day 28 occurred in 44.5% with vitamin C vs 38.5% with placebo, RR 1.21 (95% CI 1.04–1.40), p=0.01. [dr-vitamin-c-s15] A 2026 meta-analysis of 14 RCTs/1,958 participants estimated lower 28-day mortality, RR 0.70, but rated the evidence low quality and found the apparent benefit was driven by single-center studies and absent in multicenter trials. [dr-vitamin-c-s16] | Not an established sepsis therapy. The largest multicenter monotherapy RCT produced a harm signal; apparently positive pooled estimates are unstable and study-design dependent. |
+| Oncology | Advanced colorectal cancer: oral 10 g/day. Phase-I IV cancer study: 0.4, 0.6, 0.9 or 1.5 g/kg IV three times weekly. [R17,R18] | Oral 10 g/day produced no advantage in progression or survival and no objective responses. [dr-vitamin-c-s17] The IV phase-I trial found tolerability but no objective anticancer responses. [dr-vitamin-c-s18] A 2025 mixed RCT/cohort meta-analysis reported longer median overall survival, but the association was larger in cohort studies than randomized trials, with substantial heterogeneity in cancer type, treatment combination, dose and duration. [dr-vitamin-c-s19] | Anticancer efficacy remains unestablished. Pharmacologic plasma exposure, antioxidant/pro-oxidant hypotheses, cell culture and animal findings are not evidence of patient benefit. |
+
+The oncology and sepsis literatures are therefore particularly important examples of discordance between biomarker/pharmacokinetic plausibility and clinical outcomes. In sepsis, serum vitamin C reliably rises after IV dosing, yet high-quality multicenter results have not established benefit and LOVIT's primary outcome favored placebo. The 2026 meta-analysis itself reports that its nominal mortality benefit disappears in the multicenter subgroup.
+
+### Safety, interactions, and special populations
+
+**Oral adverse effects and kidney stones.** High oral doses most commonly cause osmotic diarrhea, nausea, abdominal cramping and other gastrointestinal symptoms; the adult UL is 2 g/day. High intake can increase urinary oxalate and uric acid, although studies of oral vitamin C and stone formation are conflicting. NIH identifies greater concern in people with pre-existing hyperoxaluria or renal disorders. [ref-ods]
+
+**IV renal risk.** The ASCOR label reports acute and chronic oxalate nephropathy and nephrolithiasis after prolonged high-dose ascorbic-acid administration. People with renal impairment, prior oxalate stones, older adults and very young children are higher-risk groups; the label instructs renal monitoring in at-risk patients. [ref-ascor-label] Because ascorbate is renally cleared above its plasma threshold and urinary oxalate is a major metabolite, very-high-dose IV regimens generate a fundamentally different renal substrate burden from ordinary dietary intake.
+
+**Iron and iron overload.** Vitamin C increases nonheme iron absorption. This is generally not hazardous in healthy people and can increase absorption of oral/nonheme iron, but chronic high-dose vitamin C can aggravate iron loading in hereditary hemochromatosis; an absorption-enhancing interaction with iron should therefore not be characterized as universally beneficial. [ref-ods]
+
+**G6PD deficiency.** Hemolysis, including severe hemolysis, has been reported in G6PD-deficient patients given ascorbic acid. The current ASCOR label restricts treatment in G6PD deficiency to no more than the relevant age-specific RDA/AI and calls for hemoglobin/blood-count monitoring. [ref-ascor-label] LOVIT excluded known G6PD deficiency, illustrating why the safety of gram-dose IV regimens cannot simply be generalized to that population. [dr-vitamin-c-s15]
+
+**Laboratory and glucose-test interference.** Pharmacologic ascorbate can interfere with oxidation-reduction/colorimetric tests, including blood and urine glucose, nitrite, bilirubin and leukocyte testing. ASCOR advises delaying susceptible testing, where possible, until 24 hours after infusion. [ref-ascor-label] The precise direction of glucose error is platform-dependent; high-dose IV vitamin C should therefore trigger assay-specific review rather than an assumption that a point-of-care glucose reading is valid.
+
+**Warfarin.** Limited case reports have suggested attenuation of warfarin anticoagulation, but the ASCOR label notes that ascorbic acid up to 1,000 mg/day for two weeks produced no observed anticoagulation effect in the cited experience. The appropriate interpretation is continued standard INR/anticoagulation monitoring, not a proven major interaction and not a guarantee of no interaction at pharmacologic IV exposure. [ref-ascor-label]
+
+**Chemotherapy and radiotherapy.** NIH considers clinical interaction evidence with antioxidants, chemotherapy and radiotherapy uncertain and recommends oncology review before high-dose use. [ref-ods] The ASCOR label states that bleomycin can be inactivated by ascorbic acid in vitro and lists possible effects on several antibiotics; an in-vitro observation is not evidence that IV vitamin C improves or worsens cancer outcomes in patients. [ref-ascor-label]
+
+**Urine-pH-sensitive medicines.** The ASCOR label notes that urine acidification can increase renal elimination and lower serum concentrations of amphetamine and can alter exposure to other pH-sensitive medicines such as fluphenazine. [ref-ascor-label]
+
+**Antacids.** A small controlled human study found increased gastrointestinal aluminum absorption when 2 g of ascorbic acid was coadministered with aluminum hydroxide. [dr-vitamin-c-s20] This matters most when aluminum clearance is impaired; high-dose vitamin C plus aluminum-containing antacids should not be treated as a pharmacologically neutral combination.
+
+**Pregnancy and lactation.** Nutritional requirements are 85 mg/day in pregnancy and 120 mg/day in lactation, with an adult UL of 2 g/day. [ref-ods] There are no adequate pregnancy data for ASCOR or another injectable ascorbic-acid product; the label directs scurvy treatment during pregnancy or lactation not to exceed the relevant U.S. RDA. Decades of oral exposure without a clear developmental signal do not establish safety of gram-dose pharmacologic IV regimens. [ref-ascor-label]
+
+**Renal and hepatic impairment.** ASCOR requires caution in scorbutic patients with renal impairment, dialysis, diabetic nephropathy, transplant status, prior oxalate stones or other risk factors for oxalate nephropathy. [ref-ascor-label] The current label contains no dedicated hepatic-impairment dosing section; that absence is not evidence that high-dose IV use has been demonstrated safe in hepatic disease.
+
+**Exact labeled IV formulation and dose.** ASCOR is supplied as 25,000 mg/50 mL, 500 mg/mL, in a pharmacy bulk package; it must be diluted to an isotonic final concentration of 1–25 mg/mL and administered slowly. Labeled once-daily scurvy doses are 50 mg at age 5–<12 months, 100 mg at age 1–<11 years, and 200 mg at age ≥11 years/adults, for at most one week. [ref-ascor-label] Rapid administration above 250 mg/min has been associated with transient faintness, nausea, lethargy, flushing, dizziness and headache; injection-site pain/swelling is also reported. These doses are orders of magnitude below experimental 10-g, 50-mg/kg-q6h or 0.4–1.5-g/kg regimens.
+
+### Regulatory and conflict landscape
+
+In the United States, vitamin C in foods is a nutrient. Oral vitamin C sold as a dietary supplement is not pre-approved by FDA for safety or effectiveness; supplement companies bear responsibility for legal compliance, and a product intended to treat, prevent, cure or alleviate disease is regulated as a drug regardless of a supplement label. [ref-fda-supplements]
+
+ASCOR is a prescription IV drug whose approved indication is short-term scurvy treatment when oral administration is not feasible. Its approval does not constitute FDA approval of pharmacologic IV vitamin C for fatigue, infection, sepsis, wound healing or malignancy. [ref-ascor-label]
+
+The sponsorship landscape does not support a simple “industry-funded versus independent” explanation for conflicting results. Foundational oral/IV PK studies were publicly supported, and CITRIS-ALI was academic/publicly supported. LOVIT's lead sponsor was Université de Sherbrooke and its published report identifies the Lotte and John Hecht Memorial Foundation as funder. [R4,R5,R14,R15]
+
+A more notable conflict signal occurs in the positive fatigue RCT: the Korean Association for Vitamin Research funded the study; the ClinicalTrials.gov record lists DongGuk University as lead sponsor and the association as collaborator; and two investigators disclosed chairperson/membership roles in that association. [dr-vitamin-c-s9] The short follow-up, subjective primary outcome and sponsor-linked affiliations warrant caution in generalizing that result.
+
+Older vitamin C literature frequently predates current disclosure standards. Accordingly, the dossier below marks absent funding or conflict information unknown, rather than treating missing disclosure as evidence of no conflict.
+
+The resulting BHWiki evidence position is:
+
+- **Established:** dietary adequacy, deficiency prevention, and treatment of scurvy.
+- **Modest:** regular oral supplementation can slightly shorten common-cold duration, without materially reducing general-population incidence. [ref-ods]
+- **Limited/inconsistent:** broad respiratory infection, nonspecific fatigue, exercise recovery and pressure-ulcer healing.
+- **Not established and safety-relevant:** pharmacologic IV vitamin C for sepsis; LOVIT found a statistically significant adverse primary composite despite later low-certainty meta-analytic signals in smaller studies.
+- **Not established as anticancer therapy:** oral 10 g/day was negative, IV phase-I monotherapy produced no objective responses, and newer pooled survival signals are substantially influenced by nonrandomized data. [R17,R18,R19]
+
+### Reference dossier and limitations
+
+Each entry includes a direct primary URL and disclosure assessment. Unknown means the retrieved primary record did not permit reliable verification; it does not mean that no funding or competing interest existed.
+
+| ID | Reference and direct URL(s) | Funding, sponsorship, conflicts and status |
+|---|---|---|
+| R1 | NIH Office of Dietary Supplements. *Vitamin C: Fact Sheet for Health Professionals*. Current online guidance; accessed 2026-10-10. [Regulator/guidance](https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/) | Funding: U.S. NIH institutional guidance. Sponsor: U.S. government. COI: not applicable as institutional nutrient guidance. Conflict status: low; official guidance source. |
+| R2 | U.S. FDA/DailyMed; McGuff Pharmaceuticals. *ASCOR (ascorbic acid injection), prescribing information*. Label revised July 2022; current SPL accessed 2026-10-10. [DailyMed](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=388aad52-fc01-4784-9791-1dbc80c69306) | Funding: manufacturer-generated regulated product labeling. Sponsor: commercial manufacturer; regulator-hosted SPL. COI: commercial interest in product. Conflict status: material commercial source; appropriate for labeled dose/safety/PK/regulatory facts, not independent efficacy inference. |
+| R3 | U.S. Food and Drug Administration. *FDA 101: Dietary Supplements*. Current page accessed 2026-10-10. [FDA](https://www.fda.gov/consumers/consumer-updates/fda-101-dietary-supplements) | Funding: U.S. government. Sponsor: government. COI: not applicable. Conflict status: low; regulatory source. |
+| R4 | Levine M, Conry-Cantilena C, Wang Y, Welch RW, Washko PW, Dhariwal KR, Park JB, Lazarev A, Graumlich JF, King J, Cantilena LR. 1996. *Vitamin C pharmacokinetics in healthy volunteers: evidence for a recommended dietary allowance*. PNAS. [PubMed](https://pubmed.ncbi.nlm.nih.gov/8623000/) · [DOI](https://doi.org/10.1073/pnas.93.8.3704) | Funding: U.S. Public Health Service/government support indexed by PubMed. Sponsor status: public. COI: no modern declaration verified in retrieved record. Conflict status: unknown by current disclosure standards; no commercial sponsor identified in retrieved metadata. |
+| R5 | Padayatty SJ, Sun H, Wang Y, Riordan HD, Hewitt SM, Katz A, Wesley RA, Levine M. 2004. *Vitamin C pharmacokinetics: implications for oral and intravenous use*. Ann Intern Med. [PubMed](https://pubmed.ncbi.nlm.nih.gov/15068981/) · [DOI](https://doi.org/10.7326/0003-4819-140-7-200404060-00010) | Funding: U.S.-government/PHS support indexed by PubMed. Sponsor status: public. COI: full declaration not verified in retrieved record. Conflict status: unknown/incomplete disclosure extraction. |
+| R6 | Hemilä H, Chalker E. 2013. *Vitamin C for preventing and treating the common cold*. Cochrane Database Syst Rev. [PubMed](https://pubmed.ncbi.nlm.nih.gov/23440782/) · [DOI](https://doi.org/10.1002/14651858.CD000980.pub4) | Funding: non-U.S.-government support indexed in retrieved metadata; exact funder not verified. Sponsor: systematic review, not an intervention sponsor. COI: declaration not fully verified in retrieved record. Conflict status: unknown/incomplete. |
+| R7 | Abioye AI, Bromage S, Fawzi W. 2021. *Effect of micronutrient supplements on influenza and other respiratory tract infections among adults: a systematic review and meta-analysis*. BMJ Glob Health. [PubMed](https://pubmed.ncbi.nlm.nih.gov/33472840/) · [DOI](https://doi.org/10.1136/bmjgh-2020-003176) | Funding: not verified in retrieved metadata. Sponsor status: academic systematic review. COI: “None declared” in PubMed record. Conflict status: no declared competing interest; funding detail incomplete. |
+| R8 | Sharma Y et al. 2024. *Efficacy and safety of vitamin C supplementation in treatment of community-acquired pneumonia: systematic review and meta-analysis with trial sequential analysis*. Scientific Reports. [PubMed](https://pubmed.ncbi.nlm.nih.gov/38783029/) · [DOI](https://doi.org/10.1038/s41598-024-62571-5) | Funding: unknown in retrieved record. Sponsor status: systematic review. COI: unknown in retrieved record. Conflict status: unknown. |
+| R9 | Suh SY, Bae WK, Ahn HY, Choi SE, Jung GC, Yeom CH. 2012. *Intravenous vitamin C administration reduces fatigue in office workers: a double-blind randomized controlled trial*. Nutr J. [PubMed](https://pubmed.ncbi.nlm.nih.gov/22264303/) · [DOI](https://doi.org/10.1186/1475-2891-11-7) · [ClinicalTrials.gov NCT00633581](https://clinicaltrials.gov/study/NCT00633581) | Funding: Korean Association for Vitamin Research; paper states sponsor had no role in design/conduct/analysis/publication. Registry sponsor: DongGuk University; association collaborator. COI: CH Yeom was association chairperson; GC Jung was a member. Conflict status: declared sponsor-linked investigator affiliations; materially relevant. |
+| R10 | Bryer SC, Goldfarb AH. 2006. *Effect of high dose vitamin C supplementation on muscle soreness, damage, function, and oxidative stress to eccentric exercise*. Int J Sport Nutr Exerc Metab. [PubMed](https://pubmed.ncbi.nlm.nih.gov/16948483/) · [DOI](https://doi.org/10.1123/ijsnem.16.3.270) | Funding: unknown in retrieved record. Sponsor: unknown. COI: unknown/not stated in retrieved record. Conflict status: unknown. |
+| R11 | Candeloro BM et al. 2026. *Effect of vitamin C supplementation on post-exercise recovery: A systematic review and meta-analysis of randomized double-blind placebo trials*. Clin Nutr ESPEN. [PubMed](https://pubmed.ncbi.nlm.nih.gov/41687812/) · [DOI](https://doi.org/10.1016/j.clnesp.2026.102962) | Funding: unknown in retrieved record. Sponsor: systematic review. COI: unknown in retrieved record. Conflict status: unknown. |
+| R12 | Langer G, Wan CS, Fink A, Schwingshackl L, Schoberer D. 2024. *Nutritional interventions for preventing and treating pressure ulcers*. Cochrane Database Syst Rev. [PubMed](https://pubmed.ncbi.nlm.nih.gov/38345088/) · [DOI](https://doi.org/10.1002/14651858.CD003216.pub3) | Funding: exact review funding not verified in retrieved record. Sponsor: Cochrane systematic review. COI: declaration not fully extracted. Conflict status: unknown/incomplete. |
+| R13 | Medical Advisory Secretariat, Ontario. 2009. *Management of chronic pressure ulcers: an evidence-based analysis*. Ontario Health Technology Assessment Series. [PubMed](https://pubmed.ncbi.nlm.nih.gov/23074533/) | Funding: institutional health-technology assessment; external funding not stated in retrieved record. Sponsor status: public/institutional assessment. COI: not stated in retrieved record. Conflict status: low-to-unclear; no commercial sponsor identified. |
+| R14 | Fowler AA, Truwit JD, Hite RD, et al. 2019. *Effect of Vitamin C Infusion on Organ Failure and Biomarkers of Inflammation and Vascular Injury in Patients With Sepsis and Severe Acute Respiratory Failure: The CITRIS-ALI Randomized Clinical Trial*. JAMA. [PubMed](https://pubmed.ncbi.nlm.nih.gov/31573637/) · [DOI](https://doi.org/10.1001/jama.2019.11825) · [ClinicalTrials.gov NCT02106975](https://clinicaltrials.gov/study/NCT02106975) | Funding: NIH/NHLBI support indexed; registry collaborator NHLBI. Lead sponsor: Virginia Commonwealth University. COI: full individual declarations not extracted in retrieved record. Conflict status: noncommercial academic/public sponsorship; individual disclosure detail incomplete. |
+| R15 | Lamontagne F, Masse M-H, Menard J, et al. 2022. *Intravenous Vitamin C in Adults with Sepsis in the Intensive Care Unit*. N Engl J Med. [PubMed](https://pubmed.ncbi.nlm.nih.gov/35704292/) · [DOI](https://doi.org/10.1056/NEJMoa2200644) · [ClinicalTrials.gov NCT03680274](https://clinicaltrials.gov/study/NCT03680274) | Funding: Lotte and John Hecht Memorial Foundation. Lead sponsor: Université de Sherbrooke; foundation collaborator. COI: full individual declaration not extracted in retrieved record. Conflict status: noncommercial philanthropic/academic sponsorship; individual disclosure detail incomplete. |
+| R16 | Cai B, Xiao Q, Xia Y, Yu X, Xian X, Liu L, Dai Y, He B. 2026. *Intravenous vitamin C as micronutrient therapy in patients with sepsis or septic shock: an updated systematic review and meta-analysis of randomized controlled trials*. Front Nutr. [PubMed](https://pubmed.ncbi.nlm.nih.gov/42761050/) · [DOI](https://doi.org/10.3389/fnut.2026.1905726) · [PROSPERO CRD4204261367808](https://www.crd.york.ac.uk/PROSPERO/view/CRD4204261367808) | Funding: not verified in retrieved record. Sponsor: systematic review. COI: not verified in retrieved record. Conflict status: unknown. |
+| R17 | Moertel CG, Fleming TR, Creagan ET, Rubin J, O'Connell MJ, Ames MM. 1985. *High-dose vitamin C versus placebo in the treatment of patients with advanced cancer who have had no prior chemotherapy. A randomized double-blind comparison*. N Engl J Med. [PubMed](https://pubmed.ncbi.nlm.nih.gov/3880867/) · [DOI](https://doi.org/10.1056/NEJM198501173120301) | Funding: U.S. Public Health Service support indexed by PubMed. Sponsor: public. COI: modern conflict declaration unavailable in retrieved record. Conflict status: unknown by current disclosure standards. |
+| R18 | Hoffer LJ, Levine M, Assouline S, Melnychuk D, Padayatty SJ, Rosadiuk K, Rousseau C, Robitaille L, Miller WH. 2008. *Phase I clinical trial of i.v. ascorbic acid in advanced malignancy*. Ann Oncol. [PubMed](https://pubmed.ncbi.nlm.nih.gov/18544557/) · [DOI](https://doi.org/10.1093/annonc/mdn377) | Funding: non-U.S.-government support indexed by PubMed; exact funder not verified. Sponsor status: noncommercial/public support indicated by indexing. COI: full declaration not verified. Conflict status: unknown/incomplete. |
+| R19 | Qu J, Yao M, Yu S, et al. 2025. *Overall and Progression-Free Survival of Patients With Malignant Neoplasm Following Intravenous Vitamin C: A Systematic Review and Meta-Analysis*. Int J Vitam Nutr Res. [PubMed](https://pubmed.ncbi.nlm.nih.gov/40613397/) · [DOI](https://doi.org/10.31083/IJVNR37372) · [PROSPERO CRD42024600634](https://www.crd.york.ac.uk/PROSPERO/view/CRD42024600634) | Funding: unknown in retrieved record. Sponsor: systematic review. COI: unknown in retrieved record. Conflict status: unknown; interpretation is additionally limited by inclusion of cohort studies and heterogeneous regimens. |
+| R20 | Domingo JL, Gomez M, Llobet JM, Richart C. 1991. *Effect of ascorbic acid on gastrointestinal aluminium absorption*. Lancet. [PubMed](https://pubmed.ncbi.nlm.nih.gov/1683458/) · [DOI](https://doi.org/10.1016/0140-6736(91)92776-X) | Funding: unknown in retrieved record. Sponsor: unknown. COI: unknown/not stated in retrieved record. Conflict status: unknown. |
+
+The principal unresolved limitation is disclosure completeness: several older publications and some recent review records did not expose full funding/COI statements in the retrieved primary metadata, so those fields are deliberately left unknown rather than inferred. The public contents/schema of the pre-existing BHWiki vitamin-c record were not available in the research source set; this is therefore an extension-ready evidence record, not a claim that unseen existing text was mechanically merged. The regulatory conclusions above are specifically U.S. conclusions; product classification and approved indications can differ in other jurisdictions.
+
+<!-- Deep Research source-link ledger -->
+
+Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
 
 ## Doses
 
@@ -560,6 +697,20 @@ Dose, comparator, baseline status and formulation remain explicit. Kidney-stone,
   unit: hours
   context: A single general oral elimination half-life is not an adequate summary because intestinal absorption, tissue saturation, renal reabsorption and urinary excretion are concentration-dependent. Dose-concentration studies show tight oral plasma control rather than a simple fixed half-life.
   sourceId: ref-levine-1996
+  modelEligible: false
+- id: dr-vitamin-c-vitamin-c-pk-1
+  analyte: Parent compound or reported analyte
+  route: Not established
+  formulation: Not established
+  population: Humans
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: No validated universal terminal half-life was established in the returned report.
+  sourceId: ref-ods
   modelEligible: false
 ```
 
@@ -1414,6 +1565,462 @@ Dose, comparator, baseline status and formulation remain explicit. Kidney-stone,
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not applicable to regulatory guidance.
   conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s4
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/8623000/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s5
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1073/pnas.93.8.3704
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s7
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.7326/0003-4819-140-7-200404060-00010
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s8
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/23440782/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s9
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1002/14651858.CD000980.pub4
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s10
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/33472840/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s11
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1136/bmjgh-2020-003176
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s12
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/38783029/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s13
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1038/s41598-024-62571-5
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s14
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/22264303/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s15
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1186/1475-2891-11-7
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s16
+  title: ClinicalTrials.gov NCT00633581
+  authors: Not assessed
+  year: 2026
+  url: https://clinicaltrials.gov/study/NCT00633581
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s17
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/16948483/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s18
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1123/ijsnem.16.3.270
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s19
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/41687812/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s20
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1016/j.clnesp.2026.102962
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s21
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/38345088/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s22
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1002/14651858.CD003216.pub3
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s23
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/23074533/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s24
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/31573637/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s25
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1001/jama.2019.11825
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s26
+  title: ClinicalTrials.gov NCT02106975
+  authors: Not assessed
+  year: 2026
+  url: https://clinicaltrials.gov/study/NCT02106975
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s27
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/35704292/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s28
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1056/NEJMoa2200644
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s29
+  title: ClinicalTrials.gov NCT03680274
+  authors: Not assessed
+  year: 2026
+  url: https://clinicaltrials.gov/study/NCT03680274
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s30
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/42761050/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s31
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.3389/fnut.2026.1905726
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s32
+  title: PROSPERO CRD4204261367808
+  authors: Not assessed
+  year: 2026
+  url: https://www.crd.york.ac.uk/PROSPERO/view/CRD4204261367808
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s33
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/3880867/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s34
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1056/NEJM198501173120301
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s35
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/18544557/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s36
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1093/annonc/mdn377
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s37
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/40613397/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s38
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.31083/IJVNR37372
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s39
+  title: PROSPERO CRD42024600634
+  authors: Not assessed
+  year: 2026
+  url: https://www.crd.york.ac.uk/PROSPERO/view/CRD42024600634
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s40
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/1683458/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-s41
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1016/0140-6736(91
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-vitamin-c-link-1
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://doi.org/10.1016/0140-6736(91)92776-X
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
@@ -1435,4 +2042,3 @@ Dose, comparator, baseline status and formulation remain explicit. Kidney-stone,
   sourceUrl: https://www.cancer.gov/about-cancer/treatment/cam/hp/vitamin-c-pdq
   asOf: 2026-10-04
 ```
-

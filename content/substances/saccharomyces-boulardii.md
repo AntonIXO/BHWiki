@@ -61,19 +61,155 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
 
 Saccharomyces boulardii is a probiotic yeast studied for defined gastrointestinal indications. Evidence is strain-, product- and population-specific, and clinical benefit must be weighed against documented invasive-infection risks in susceptible patients.
 
+Deep Research synthesis: Saccharomyces boulardii — BHWiki Deep Research — returned Deep Research evidence record.
+
 ## Description
 
 Trials commonly examine antibiotic-associated diarrhea and recurrent infection contexts. Recurrence, diarrhea duration and biomarker changes are distinct outcomes, and adjunctive studies do not establish replacement for standard treatment. Organism and formulation details matter.
 
+Deep Research synthesis: The full returned Deep Research report is preserved in the pending acquisition folder for saccharomyces-boulardii.
+
 ## Evidence note
 
 Preserve strain identity, comparator and indication, including negative subgroup findings. Case reports and safety alerts establish possible harms without supplying population incidence. A live-organism preparation has no single small-molecule identity or drug elimination curve.
+
+<!-- Deep Research integration: saccharomyces-boulardii -->
+
+**Full Deep Research detail retained from the returned report:**
+
+### Saccharomyces boulardii — BHWiki Deep Research
+
+> Returned report captured from the Chrome ChatGPT Deep Research card. Citation markers `[R#]` resolve to the reference ledger below.
+
+**BHWiki slug:** `saccharomyces-boulardii`
+**Evidence cutoff:** October 10, 2026
+
+### Record scope and strain identity
+
+Saccharomyces boulardii is a live probiotic yeast, not a bacterial probiotic, synbiotic, or generic multi-strain probiotic. Clinical papers sometimes name it *Saccharomyces cerevisiae* var. *boulardii*; that taxonomic relationship does not make therapeutic *S. boulardii* preparations interchangeable with baker's/brewer's *S. cerevisiae*, nor does it justify transferring efficacy between separately deposited *S. boulardii* strains. CNCM numbers identify deposited microorganisms rather than a probiotic class. [dr-saccharomyces-boulardii-s1]
+
+The best-characterized medicinal strain here is CNCM I-745. The current French Ultra-Levure 200-mg Summary of Product Characteristics identifies each capsule as 200 mg of live *S. boulardii* CNCM I-745; official French records also cover 100-mg sachets. The marketing-authorization holder is Biocodex. [dr-saccharomyces-boulardii-s2]
+
+A clinically studied but separate strain is CNCM I-3799. In a randomized pediatric trial, the proprietary Lesaffre strain was supplied as sachets containing 5 × 10^9 CFU each, with two sachets/day for 1 × 10^10 CFU/day. The I-3799 result must not be reassigned to I-745. [dr-saccharomyces-boulardii-s3]
+
+Mass and CFU remain separate fields. A 250-mg capsule from one product cannot be assumed to contain the same viable-cell count as 250 mg from another manufacturer or formulation unless that exact product or study supplies both values.
+
+### Transit, persistence, formulations, and interactions
+
+This live organism is better described by gastrointestinal transit and fecal recovery than by drug-like plasma pharmacokinetics. In healthy volunteers, increasing oral doses produced higher steady-state fecal concentrations; ampicillin increased fecal concentration, fecal concentration-time exposure, and recovery, consistent with altered intestinal ecology rather than systemic absorption. [dr-saccharomyces-boulardii-s4] The French I-745 SmPC states that the viable yeast passes through the gastrointestinal tract without colonizing and generally disappears from stools within roughly 2–5 days after discontinuation. [dr-saccharomyces-boulardii-s2]
+
+In recurrent *C. difficile* disease, an older human study found lower stool concentrations of recovered *S. boulardii* among patients who subsequently recurred than among those who did not. This is a stool-biomarker association, not a validated therapeutic concentration target. [dr-saccharomyces-boulardii-s5]
+
+Mechanistic studies remain separate from efficacy evidence. NCT01473368 randomized 53 healthy volunteers to S. boulardii 500 mg twice daily for 14 days, amoxicillin/clavulanate 875/125 mg twice daily for seven days, both, or control; the linked publication identified CNCM I-745 and primarily examined microbiome changes. [dr-saccharomyces-boulardii-s6] A linked analysis assessed fecal bile-acid metabolism, again a biomarker rather than a patient-important endpoint. [dr-saccharomyces-boulardii-s7]
+
+The completed Mayo Clinic NCT05538247 mechanistic study administered two 250-mg I-745 capsules twice daily for 14 days and used an indomethacin challenge; registered outcomes included lactulose/mannitol permeability, zonulin, claudins, fecal calprotectin, CRP, and gastrointestinal symptom scores. No posted registry efficacy results were available in the record last updated May 11, 2026. [dr-saccharomyces-boulardii-s8]
+
+The French I-745 label says that because the probiotic is a fungus it should not be combined with oral or systemic antifungal therapy. Antibiotics are not a class contraindication: beta-lactams, metronidazole, vancomycin, and *H. pylori* antibiotics have intentionally been coadministered in human trials. Immunodeficiency raises invasive-infection concern and is a label-level contraindication. The label also advises against mixing viable yeast with preparations above 50°C, very cold/iced preparations, or alcohol. [dr-saccharomyces-boulardii-s2]
+
+### Clinical evidence by indication
+
+| Setting | Strain/product certainty | Exact regimen where available | Patient-important findings | BHWiki interpretation |
+|---|---|---|---|---|
+| Antibiotic-associated diarrhea, pooled adults + children | Mixed preparations; deposit not secure across all studies | Trial-dependent | 21 RCTs, 4,780 participants: AAD 18.7%→8.5%, RR 0.47 (95% CI 0.38–0.57), NNT ≈10; pediatric RR 0.43 and adult RR 0.49. Adult CDAD not significant, RR 0.80 (0.47–1.34). [dr-saccharomyces-boulardii-s9] | Broad signal, but not automatically an I-745 estimate. |
+| AAD, hospitalized adults | Deposit not established in abstract | 1 g/day, within 72 h of beta-lactam start through three days after antibiotics | AAD 7.2% vs 14.6%, adjusted RR 0.29 (0.08–0.98). [dr-saccharomyces-boulardii-s10] | Positive older RCT. |
+| AAD, elderly hospitalized adults | Deposit not established in abstract | Capsule twice daily from <48 h after antibiotic start through seven days after withdrawal | AAD 15.1% vs 13.3%, OR 1.16 (0.53–2.56); CDAD 2.8% vs 2.0%; mortality not different. [dr-saccharomyces-boulardii-s11] | Important null/conflicting adult trial. |
+| Recurrent *C. difficile* disease | Deposit not established in abstract | 1 g/day ×4 weeks with vancomycin or metronidazole | In recurrent disease: recurrence 34.6% vs 64.7%, P=.04; initial episode 19.3% vs 24.2%, P=.86. Major immunosuppression excluded. [dr-saccharomyces-boulardii-s12] | Historical benefit restricted to recurrent subgroup. |
+| Recurrent *C. difficile*, regimen interaction | Deposit not established in abstract | 1 g/day ×28 days after 10-day antibiotic regimen | Benefit appeared only with high-dose vancomycin 2 g/day: recurrence 16.7% vs 50%, P=.05. [dr-saccharomyces-boulardii-s13] | Subgroup/regimen-dependent. |
+| Mild–moderate CDI, modern trial | CNCM I-745 | Two 250-mg capsules q12h = 1,000 mg/day plus vancomycin 125 mg q6h ×10 days | n=120: clinical cure 98.31% vs 98.36% (no difference); recurrence 1.69% vs 13.11%, P=.032; global cure 96.61% vs 85.25%, P=.044. Severe CDI, severe immunocompromise, and pregnancy excluded. [dr-saccharomyces-boulardii-s14] | Promising I-745 recurrence result, but small single-center trial. |
+| Pediatric acute gastroenteritis, pooled | Mixed preparations | Trial-dependent | 29 RCTs: diarrhea duration −1.06 day (95% CI −1.32 to −0.79), I²=90%; hospitalization −0.85 day, I²=91%; very-low-quality evidence. [dr-saccharomyces-boulardii-s15] | Positive average effect, major heterogeneity and weak methods. |
+| Pediatric acute diarrhea | CNCM I-3799 | 5 × 10^9 CFU twice daily for five days with ORS + zinc | Recovery 65.8 ±12 h vs 95.3 ±17.6 h, P=.0001; AEs 14.3% vs 17.6%; no serious product-related event. [dr-saccharomyces-boulardii-s3] | Direct evidence for I-3799 only. |
+| Pediatric gastroenteritis in China | CNCM I-745, “Yihuo,” Biocodex | 125–500 mg/day, usually age-adjusted | 10 RCTs, n=1,125: diarrhea duration −1.63 days (95% CI −2.08 to −1.18), I²=84.8%; mostly unblinded, low–moderate quality. [dr-saccharomyces-boulardii-s16] | Defined I-745 evidence, but heterogeneous and industry-funded. |
+| *H. pylori* eradication | CNCM I-745 | 500 mg BID added to clarithromycin 500 mg + amoxicillin 1,000 mg + esomeprazole 40 mg BID, 10 or 14 days | 404 randomized; nominal ITT advantage in 10-day subgroup but not 14-day; combined PP eradication 90.6% vs 85.0%, P=.183. [dr-saccharomyces-boulardii-s17] | No robust overall eradication benefit. |
+| Crohn disease remission maintenance | Deposit not established in abstract | 1 g/day ×52 weeks | Relapse 47.5% vs 53.2%, nonsignificant; time to relapse, CDAI, ESR, CRP not significantly different. [dr-saccharomyces-boulardii-s18] | Negative trial. |
+| IBS | CNCM I-745 | Several single-strain randomized regimens | 2026 strain-specific meta-analysis found conflicting I-745 results; continuous scales did not establish sufficient benefit for pain, bloating, urgency, straining, incomplete evacuation, or mucus passage. [ref-pozzoni-2012] | Efficacy unresolved; do not substitute other strains. |
+
+The evidence does not support a single “*S. boulardii* works” statement. The broadest signal is AAD prevention, but classic studies often lack deposit-level identification and an important elderly inpatient RCT was null. CDI recurrence data are potentially important yet subgroup/regimen dependent; the 2025 I-745 study is encouraging but does not resolve efficacy or safety in severe CDI, ICU patients, or immunocompromised hosts. Pediatric acute-diarrhea evidence is positive on average but methodologically heterogeneous. [R9, R11, R14, R15]
+
+NCT06451913 is a Biocodex-sponsored Phase IV study of CNCM I-745 plus amoxicillin in adults treated for erythema migrans. Its primary outcome is microbiome change and AAD is secondary; the record reviewed listed it as recruiting with planned completion in December 2026, so it cannot yet be counted as efficacy evidence. [dr-saccharomyces-boulardii-s20]
+
+### Safety, fungemia, and special populations
+
+Short-duration selected-population RCTs often report adverse-event frequencies similar to placebo, but they do not characterize safety in populations susceptible to invasive yeast infection because such patients are commonly excluded. The current French CNCM I-745 SmPC contraindicates use in people with a central venous catheter, critically ill patients, and immunodeficient patients because of fungemia risk. It reports very rare fungemia and hypersensitivity/anaphylactic reactions and warns that viable yeast can contaminate susceptible patients via hands or the environment; capsules should not be opened near high-risk patients, with gloves and handwashing advised. [R2, R30]
+
+In five Finnish university hospitals from 2009–2018, investigators identified 46 *Saccharomyces* fungemias; at least 20 patients (43%) had documented *S. boulardii* use. Compared with contemporaneous bacteremia/candidemia controls, probiotic use was associated with OR 14 (95% CI 4–44). The retrospective study could not molecularly establish probiotic origin for every isolate, so this is a strong association rather than proof for all cases. [ref-mcfarland-1994]
+
+A separate hospital exposure-denominator study examined 46,729 adult inpatients, of whom 16,404 received *S. boulardii*. Eighteen recipients had *S. cerevisiae* fungemia, corresponding to 0.11% of recipients in that setting and 1.70 cases per 10,000 patient-days; ICU admission was associated with OR 6.55 (95% CI 2.28–18.87). The microbiology method could not distinguish *S. cerevisiae* from *S. boulardii*, an important limitation. [dr-saccharomyces-boulardii-s22]
+
+A 2023 systematic review found 117 published *Saccharomyces* fungemia cases, with 108 analyzable; 73/108 (67.6%) had received *S. boulardii*. ICU stay, enteral/parenteral feeding, gastrointestinal disease/symptoms, and diabetes occurred frequently, and all-cause mortality in the published-case cohort was 36.1%. These percentages use a case-series denominator and must not be presented as absolute risk among ordinary probiotic users. [dr-saccharomyces-boulardii-s23]
+
+An earlier ICU cluster is important for causality and quality/handling: seven severely ill patients with central lines developed fungemia, and genomic methods showed identity between bloodstream isolates and yeasts from treatment packets. One affected patient had not personally received the probiotic, supporting environmental/catheter contamination during handling in addition to gastrointestinal translocation as plausible routes. [dr-saccharomyces-boulardii-s24]
+
+The returned report also mentions a 2026 open-label severe-acute-pancreatitis ICU trial reporting fewer nosocomial infections with *S. boulardii* plus enteral nutrition, but its direct registry/publication metadata was not recovered in the report ledger. It is therefore not used as a verified efficacy source and cannot negate established pharmacovigilance or the current product contraindication for critically ill patients.
+
+**Pregnancy:** the French CNCM I-745 SmPC states that pregnancy-exposure follow-up is insufficient and recommends avoidance as a precaution. The 2025 CDI RCT excluded pregnant participants. [R2, R14]
+
+**Lactation:** direct evidence is inadequate. The current French SmPC material did not provide a specific breastfeeding recommendation, and Mayo NCT05538247 explicitly excluded breastfeeding women. [dr-saccharomyces-boulardii-s8]
+
+**Renal/hepatic impairment:** no renal- or hepatic-dose adjustment was identified in the current French label, but this is not affirmative evidence in severe organ failure. NCT05538247 excluded severe hepatic or renal impairment. The 2025 CDI trial enrolled some people with chronic kidney disease but was not designed as an organ-impairment dose study. [R8, R14]
+
+**Immunosuppression:** record primarily as a susceptibility/contraindication issue rather than a conventional metabolic drug interaction. The French label contraindicates use in immunodeficient patients, and historical CDI efficacy trials excluded important immunosuppressed groups. [R2, R12]
+
+### Regulation, quality, sponsorship, and evidence limits
+
+Regulatory status is jurisdiction- and product-specific. In France, Ultra-Levure CNCM I-745 is a medicinal product, with Biocodex as marketing-authorization holder; its official indication is adjunctive symptomatic treatment of diarrhea alongside rehydration. The current SmPC itself states that clinical efficacy of that medicinal product for diarrhea has not been documented by controlled trials, even though broader clinical literature exists for *S. boulardii* products and strains. [dr-saccharomyces-boulardii-s2]
+
+Health Canada's public Natural Health Product record lists a marketed *S. boulardii* capsule under NPN 80030216, but the public record does not establish CNCM I-745 identity. [dr-saccharomyces-boulardii-s26]
+
+In the United States, the NIH Dietary Supplement Label Database contains a historical Florastor record identifying a 250-mg *S. boulardii* lyophilized ingredient; that historical label is neither proof of the current formulation nor FDA drug approval. [dr-saccharomyces-boulardii-s27] FDA's dietary-supplement framework places lawful premarket safety and labeling responsibility on manufacturers/distributors, with FDA able to act against adulterated or misbranded supplements. [dr-saccharomyces-boulardii-s28]
+
+Quality is clinically relevant because the intervention is viable. Deposit identity, manufacturing method, viable-cell count, storage, temperature, and handling determine the intervention actually delivered. The official French label describes a lyophilized preparation, temperature/handling restrictions and environmental precautions. The strongest contamination evidence concerns cross-contamination during handling and central-line exposure, not a demonstrated manufacturing-contamination defect. [R2, R24]
+
+Sponsorship and conflicts are heterogeneous. The 2025 I-745 CDI trial reported support from the Faculty of Medicine, Chiang Mai University and declared no competing interests. The NCT01473368 microbiome program had Beth Israel Deaconess Medical Center as lead sponsor and Biocodex as collaborator. [R6, R14] The 2025 China pediatric I-745 meta-analysis was funded by Biocodex; L.V. McFarland disclosed consulting/advisory relationships involving Biocodex and other pharmaceutical companies, whereas Tong Li declared no relevant commercial or financial relationship. [dr-saccharomyces-boulardii-s16] The 2026 strain-specific IBS meta-analysis explicitly states no financial support and no conflicts. [ref-pozzoni-2012] Older RCTs frequently have incomplete funding/COI metadata; those entries are marked unknown rather than presumed independent.
+
+**BHWiki evidence statement:** Do not infer across deposits or formulations. Broad clinical evidence supports a reduction in AAD incidence, but classic studies often lack deposit-level identification and include an important null elderly-inpatient trial. CDI recurrence evidence is suggestive but depends on population and concomitant antibiotic regimen; the modern I-745 trial is promising but excludes the highest-risk populations. Pediatric acute-diarrhea evidence suggests shorter illness on average but is heterogeneous and methodologically weak; I-3799 and I-745 data must remain separate. Evidence is negative for Crohn remission maintenance, non-robust for *H. pylori* eradication in a recent I-745 trial, and conflicting for IBS. Rare invasive *Saccharomyces* infection is a genuine pharmacovigilance signal concentrated in CVC, ICU, immunodeficient and other severely vulnerable patients. [R9, R11, R14, R18, R19, R22]
+
+### Reference ledger
+
+Unknown disclosure means the source was inspected but a usable funding/COI statement was not recoverable; it does not mean the study was independent.
+
+| ID | Reference and direct URL | Funding / sponsorship | Conflicts / status |
+|---|---|---|---|
+| R1 | CNCM / Institut Pasteur. *Collection Nationale de Cultures de Microorganismes*. [Institutional source](https://www.pasteur.fr/en/collection-nationale-de-cultures-de-microorganismes-cncm) | Institutional/public-nonprofit. | No material commercial conflict apparent for deposit-authority facts. |
+| R2 | French medicines database / ANSM. *ULTRA-LEVURE 200 mg, gélule — Résumé des caractéristiques du produit*. [Regulator record](https://rec-bdm.ansm.integra.fr/affichageDoc.php?specid=63398083&typedoc=R) | Public regulator; dossier belongs to Biocodex. | Official label with inherent MA-holder interest. |
+| R3 | Mourey F, Sureja V, Kheni D, Shah P, Parikh D, et al. *A Multicenter, Randomized, Double-blind, Placebo-controlled Trial of Saccharomyces boulardii in Infants and Children With Acute Diarrhea*. 2020. [PubMed](https://pubmed.ncbi.nlm.nih.gov/32796401/); [DOI](https://doi.org/10.1097/INF.0000000000002849); [CTRI](https://ctri.nic.in/Clinicaltrials/pmaindet2.php?trialid=19053) | Lesaffre proprietary CNCM I-3799 product; exact funder not located. | Disclosure not located; commercial strain involvement apparent. |
+| R4 | Klein SM, Elmer GW, McFarland LV, Surawicz CM, Levy RH. *Recovery and elimination of the biotherapeutic agent, Saccharomyces boulardii, in healthy human volunteers*. 1993. [PubMed](https://pubmed.ncbi.nlm.nih.gov/8290474/); [DOI](https://doi.org/10.1023/A:1018924820333) | Non-U.S.-government support indexed; exact funder unknown. | Older disclosure incomplete — unknown. |
+| R5 | Elmer GW, McFarland LV, Surawicz CM, Danko L, Greenberg RN. *Behaviour of Saccharomyces boulardii in recurrent Clostridium difficile disease patients*. 1999. [PubMed](https://pubmed.ncbi.nlm.nih.gov/10594402/); [DOI](https://doi.org/10.1046/j.1365-2036.1999.00666.x) | Unknown. | Unknown — older disclosure incomplete. |
+| R6 | Kabbani TA et al. *Prospective randomized controlled study on the effects of Saccharomyces boulardii CNCM I-745 and amoxicillin-clavulanate or the combination on the gut microbiota of healthy volunteers*. 2017; NCT01473368. [PubMed](https://pubmed.ncbi.nlm.nih.gov/27973989/); [DOI](https://doi.org/10.1080/19490976.2016.1267890); [Registry](https://clinicaltrials.gov/study/NCT01473368) | Beth Israel Deaconess Medical Center lead sponsor; Biocodex collaborator. | Industry collaboration present; publication COI not fully recovered. |
+| R7 | Kelly CP, Chong Nguyen C, Palmieri LJ, et al. *Saccharomyces boulardii CNCM I-745 Modulates the Fecal Bile Acids Metabolism During Antimicrobial Therapy in Healthy Volunteers*. 2019. [PubMed](https://pubmed.ncbi.nlm.nih.gov/30881353/); [DOI](https://doi.org/10.3389/fmicb.2019.00336) | Linked to NCT01473368; Biocodex collaborator. | Not fully extracted; industry collaboration present. |
+| R8 | Mayo Clinic. *Effects of Saccharomyces Boulardii CNCM I-745 on Intestinal Barrier Function*. NCT05538247. [Registry](https://clinicaltrials.gov/study/NCT05538247) | Mayo Clinic lead sponsor; no collaborator listed. | Individual COI unknown in registry. |
+| R9 | Szajewska H, Kołodziej M. *Systematic review with meta-analysis: Saccharomyces boulardii in the prevention of antibiotic-associated diarrhoea*. 2015. [PubMed](https://pubmed.ncbi.nlm.nih.gov/26216624/); [DOI](https://doi.org/10.1111/apt.13344) | Non-U.S.-government support indexed; exact funder not extracted. | Unknown/incomplete. |
+| R10 | McFarland LV, Surawicz CM, Greenberg RN, Elmer GW, Moyer KA, et al. *Prevention of beta-lactam-associated diarrhea by Saccharomyces boulardii compared with placebo*. 1995. [PubMed](https://pubmed.ncbi.nlm.nih.gov/7872284/) | Non-U.S.-government support indexed; exact funder unknown. | Unknown. |
+| R11 | Pozzoni P, Riva A, Giacco Bellatorre A, et al. *Saccharomyces boulardii for the prevention of antibiotic-associated diarrhea in adult hospitalized patients*. 2012. [PubMed](https://pubmed.ncbi.nlm.nih.gov/22472744/); [DOI](https://doi.org/10.1038/ajg.2012.56) | Exact funder not extracted. | Unknown/incomplete. |
+| R12 | McFarland LV, Surawicz CM, Greenberg RN, Fekety R, Elmer GW, et al. *A randomized placebo-controlled trial of Saccharomyces boulardii in combination with standard antibiotics for Clostridium difficile disease*. 1994. [PubMed](https://pubmed.ncbi.nlm.nih.gov/8201735/) | Non-U.S.-government support indexed; exact source unknown. | Unknown; older disclosure incomplete. |
+| R13 | Surawicz CM, McFarland LV, Greenberg RN, Rubin M, Fekety R, et al. *The search for a better treatment for recurrent Clostridium difficile disease: use of high-dose vancomycin combined with Saccharomyces boulardii*. 2000. [PubMed](https://pubmed.ncbi.nlm.nih.gov/11049785/); [DOI](https://doi.org/10.1086/318130) | Non-U.S.-government support indexed; exact source unknown. | Unknown; older disclosure incomplete. |
+| R14 | Chitapanarux T, Wiracha U, Winichakoon P, Salee P, Traisathit P. *Efficacy and safety of Saccharomyces boulardii as adjunct therapy with Vancomycin in treating Clostridioides difficile infection*. 2025. [PubMed](https://pubmed.ncbi.nlm.nih.gov/40457042/); [DOI](https://doi.org/10.1038/s41598-025-04986-2) | Faculty of Medicine, Chiang Mai University grant MC046-65; academic/non-industry. | Authors declared no competing interests. |
+| R15 | Szajewska H, Kołodziej M, Zalewski BM. *Systematic review with meta-analysis: Saccharomyces boulardii for treating acute gastroenteritis in children—a 2020 update*. 2020. [PubMed](https://pubmed.ncbi.nlm.nih.gov/32056266/); [DOI](https://doi.org/10.1111/apt.15659) | Exact funder not extracted; manufacturers contacted for data. | Unknown/incomplete. |
+| R16 | McFarland LV, Li T. *Efficacy and safety of Saccharomyces boulardii CNCM I-745 for pediatric acute diarrhea in China*. 2025. [PubMed](https://pubmed.ncbi.nlm.nih.gov/40535538/); [DOI](https://doi.org/10.3389/fcimb.2025.1587792) | Biocodex France. | Industry-funded; McFarland disclosed Biocodex and other commercial relationships; Li declared none. |
+| R17 | Sjomina O, Poļaka I, Suhorukova J, et al. *Randomised clinical trial: efficacy and safety of H. pylori eradication treatment with and without Saccharomyces boulardii supplementation*. 2024. [PubMed](https://pubmed.ncbi.nlm.nih.gov/37942999/); [DOI](https://doi.org/10.1097/CEJ.0000000000000858) | Unknown. | Unknown/incomplete. |
+| R18 | Bourreille A, Cadiot G, Le Dreau G, Laharie D, Beaugerie L, et al. *Saccharomyces boulardii does not prevent relapse of Crohn's disease*. 2013. [PubMed](https://pubmed.ncbi.nlm.nih.gov/23466709/); [DOI](https://doi.org/10.1016/j.cgh.2013.02.021) | Unknown. | Unknown/incomplete. |
+| R19 | Maslennikov R, Gosteeva E, Ananeva V, et al. *Strain-Specific Systematic Review with Meta-Analysis of Probiotics Efficacy in IBS*. 2026. [PubMed](https://pubmed.ncbi.nlm.nih.gov/41682832/); [DOI](https://doi.org/10.3390/jcm15031152) | No financial support. | Authors report no conflicts. |
+| R20 | Biocodex. *Effect of Saccharomyces Boulardii CNCM I-745 on Gut Microbiota in Patients Undergoing Antibiotic Therapy*. NCT06451913. [Registry](https://clinicaltrials.gov/study/NCT06451913) | Biocodex lead sponsor; ongoing Phase IV. | Investigator financial COI not provided; no efficacy results posted. |
+| R21 | Rannikko J, Holmberg V, Karppelin M, et al. *Fungemia and Other Fungal Infections Associated with Use of Saccharomyces boulardii Probiotic Supplements*. 2021. [PubMed](https://pubmed.ncbi.nlm.nih.gov/34287140/); [DOI](https://doi.org/10.3201/eid2708.210018) | Academic/public-health observational research; exact funder not extracted. | Disclosure incomplete; no commercial sponsor identified. |
+| R22 | Wombwell E, Bransteitter B, Gillen LR. *Incidence of Saccharomyces cerevisiae fungemia in hospitalised patients administered Saccharomyces boulardii probiotic*. 2021. [PubMed](https://pubmed.ncbi.nlm.nih.gov/34585799/); [DOI](https://doi.org/10.1111/myc.13375) | Unknown. | Unknown/incomplete. |
+| R23 | Vinayagamoorthy K, Pentapati KC, Prakash H. *Epidemiology of Saccharomyces fungemia: A systematic review*. 2023. [PubMed](https://pubmed.ncbi.nlm.nih.gov/36806741/); [DOI](https://doi.org/10.1093/mmy/myad014) | Unknown. | Unknown/incomplete. |
+| R24 | Lherm T, Monet C, Nougière B, et al. *Seven cases of fungemia with Saccharomyces boulardii in critically ill patients*. 2002. [PubMed](https://pubmed.ncbi.nlm.nih.gov/12107689/); [DOI](https://doi.org/10.1007/s00134-002-1267-9) | Unknown. | Unknown; older disclosure incomplete. |
+| R26 | Health Canada. *SACCHAROMYCES BOULARDII — NPN 80030216*. [Regulator record](https://health-products.canada.ca/lnhpd-bdpsnh/info?licence=80030216) | Canadian government database; commercial licence-holder record. | N/A for regulator; commercial licence-holder interest. |
+| R27 | NIH/NLM. *Florastor Saccharomyces boulardii lyo* — Dietary Supplement Label Database. Historical label, 2013. [Label record](https://dsld.od.nih.gov/label/25700) | U.S. government database; commercial label. | Historical commercial label; not proof of current formulation or FDA drug approval. |
+| R28 | U.S. Food and Drug Administration. *Dietary Supplements*. [FDA overview](https://www.fda.gov/food/dietary-supplements) | U.S. government. | N/A. |
+| R29 | McFarland LV, Li T. Funding/COI disclosure details for the CNCM I-745 China meta-analysis. See R16. | See R16. | See R16. |
+| R30 | ANSM. *Saccharomyces boulardii (Ultra-Levure): ajout d'une contre-indication chez les patients en état critique ou immunodéprimés*. 2018. [Regulator safety communication](https://archive.ansm.sante.fr/S-informer/Informations-de-securite-Lettres-aux-professionnels-de-sante/Saccharomyces-boulardii-ultra-levure-ajout-d-une-contre-indication-chez-les-patients-en-etat-critique-ou-immunodeprimes-Lettres-aux-professionnels-de-sante) | Public regulator. | Official pharmacovigilance source; N/A for regulator. |
+
+### Open limitations
+
+No strain-independent CFU↔mass conversion, validated stool-CFU therapeutic threshold, universal interaction profile, or safe use boundary for ICU/CVC/immunodeficient patients was established. Classic AAD/CDI trials often lack deposit identity; product and strain results must remain separate. Pregnancy, lactation, severe renal/hepatic impairment, and high-risk immunocompromised populations remain underrepresented or excluded. The returned Deep Research card exposed Markdown/Word/PDF export controls; this file preserves the single returned report text and ledger for inspection without adding a second capture.
 
 ## Doses
 
@@ -231,6 +367,20 @@ Preserve strain identity, comparator and indication, including negative subgroup
   unit: hours
   context: A drug-like elimination half-life is not established or appropriate. The French RCP reports that repeated oral administration transits alive through the gastrointestinal tract without colonization and that the yeast disappears from stool about 2 to 5 days after treatment cessation; that observation is gastrointestinal persistence and is not converted into a half-life.
   sourceId: ref-ansm-ultra-200
+  modelEligible: false
+- id: dr-saccharomyces-boulardii-saccharomyces-boulardii-pk-1
+  analyte: Parent compound or reported analyte
+  route: Not established
+  formulation: Not established
+  population: Humans
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: No validated universal terminal half-life was established in the returned report.
+  sourceId: dr-saccharomyces-boulardii-s1
   modelEligible: false
 ```
 
@@ -988,6 +1138,546 @@ Preserve strain identity, comparator and indication, including negative subgroup
   conflictsOfInterest: Commercial interest is intrinsic because Biocodex manufactures and markets CNCM I-745-containing products.
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://www.biocodex.com/en/about-us/biocodex-heritage/
+- id: dr-saccharomyces-boulardii-s1
+  title: Institutional source
+  authors: Not assessed
+  year: 2026
+  url: https://www.pasteur.fr/en/collection-nationale-de-cultures-de-microorganismes-cncm
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s2
+  title: Regulator record
+  authors: Not assessed
+  year: 2026
+  url: https://rec-bdm.ansm.integra.fr/affichageDoc.php?specid=63398083&typedoc=R
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s3
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/32796401/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s4
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1097/INF.0000000000002849
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s5
+  title: CTRI
+  authors: Not assessed
+  year: 2026
+  url: https://ctri.nic.in/Clinicaltrials/pmaindet2.php?trialid=19053
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s6
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/8290474/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s7
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1023/A:1018924820333
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s8
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/10594402/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s9
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1046/j.1365-2036.1999.00666.x
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s10
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/27973989/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s11
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1080/19490976.2016.1267890
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s12
+  title: Registry
+  authors: Not assessed
+  year: 2026
+  url: https://clinicaltrials.gov/study/NCT01473368
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s13
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/30881353/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s14
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.3389/fmicb.2019.00336
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s15
+  title: Registry
+  authors: Not assessed
+  year: 2026
+  url: https://clinicaltrials.gov/study/NCT05538247
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s16
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/26216624/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s17
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1111/apt.13344
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s18
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/7872284/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s20
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1038/ajg.2012.56
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s22
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/11049785/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s23
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1086/318130
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s24
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/40457042/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s25
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1038/s41598-025-04986-2
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s26
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/32056266/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s27
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1111/apt.15659
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s28
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/40535538/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s29
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.3389/fcimb.2025.1587792
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s30
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/37942999/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s31
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1097/CEJ.0000000000000858
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s32
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/23466709/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s33
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1016/j.cgh.2013.02.021
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s34
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/41682832/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s35
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.3390/jcm15031152
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s36
+  title: Registry
+  authors: Not assessed
+  year: 2026
+  url: https://clinicaltrials.gov/study/NCT06451913
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s37
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/34287140/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s38
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.3201/eid2708.210018
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s40
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1111/myc.13375
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s41
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/36806741/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s42
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1093/mmy/myad014
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s43
+  title: PubMed
+  authors: Not assessed
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/12107689/
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s44
+  title: DOI
+  authors: Not assessed
+  year: 2026
+  url: https://doi.org/10.1007/s00134-002-1267-9
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s45
+  title: Regulator record
+  authors: Not assessed
+  year: 2026
+  url: https://health-products.canada.ca/lnhpd-bdpsnh/info?licence=80030216
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s46
+  title: Label record
+  authors: Not assessed
+  year: 2026
+  url: https://dsld.od.nih.gov/label/25700
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s47
+  title: Dietary Supplements
+  authors: Not assessed
+  year: 2026
+  url: https://www.fda.gov/food/dietary-supplements
+  kind: regulatory information
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-saccharomyces-boulardii-s48
+  title: Regulator safety communication
+  authors: Not assessed
+  year: 2026
+  url: https://archive.ansm.sante.fr/S-informer/Informations-de-securite-Lettres-aux-professionnels-de-sante/Saccharomyces-boulardii-ultra-levure-ajout-d-une-contre-indication-chez-les-patients-en-etat-critique-ou-immunodeprimes-Lettres-aux-professionnels-de-sante
+  kind: Deep Research source
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
@@ -1019,4 +1709,3 @@ Preserve strain identity, comparator and indication, including negative subgroup
   sourceUrl: https://www.fda.gov/food/dietary-supplements/information-consumers-using-dietary-supplements
   asOf: 2026-10-04
 ```
-

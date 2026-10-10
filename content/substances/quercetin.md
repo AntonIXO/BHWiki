@@ -59,6 +59,8 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
+
+
 ---
 
 ## Summary
@@ -73,7 +75,7 @@ The full returned Deep Research report is preserved in the pending acquisition f
 
 **Full Deep Research detail retained from the returned report:**
 
-# Research Report: Research exactly quercetin (include alias quercetine; slug quercetin). Return a compact complete BHWiki Markdown article only, <=4500 words. Required headings Summary, Description, Evidence note, Doses, Pharmacokinetics, Modifiers, Effects, Outcomes, Mechanisms, Cautions, Claims, Interactions, Experience links, References, Legal; frontmatter with x-shape; one fenced yaml list in every non-prose section. Cover aglycone/glycoside/phytosome formulations, primary human respiratory/exercise/blood-pressure/metabolic trials, inconsistent/null findings, biomarker versus clinical outcomes, formulation PK, and clinically documented interactions versus enzyme-tube theory. Every factual claim needs a source link or sourceId. References require exact title, named authors/organization, year, HTTPS URL, kind, insight, limitation, funding, sponsorshipStatus, conflictsOfInterest, conflictOfInterestStatus; use not-assessed when unknown. No preface, metadata, audit tables, citation tokens, or recommendations.
+### Research Report: Research exactly quercetin (include alias quercetine; slug quercetin). Return a compact complete BHWiki Markdown article only, <=4500 words. Required headings Summary, Description, Evidence note, Doses, Pharmacokinetics, Modifiers, Effects, Outcomes, Mechanisms, Cautions, Claims, Interactions, Experience links, References, Legal; frontmatter with x-shape; one fenced yaml list in every non-prose section. Cover aglycone/glycoside/phytosome formulations, primary human respiratory/exercise/blood-pressure/metabolic trials, inconsistent/null findings, biomarker versus clinical outcomes, formulation PK, and clinically documented interactions versus enzyme-tube theory. Every factual claim needs a source link or sourceId. References require exact title, named authors/organization, year, HTTPS URL, kind, insight, limitation, funding, sponsorshipStatus, conflictsOfInterest, conflictOfInterestStatus; use not-assessed when unknown. No preface, metadata, audit tables, citation tokens, or recommendations.
 
 ---
 x-shape:
@@ -82,7 +84,7 @@ x-shape:
     - quercetine
 ---
 
-# Summary
+### Summary
 
 Quercetin is a dietary flavonol whose aglycone, glycoside, phytosome, and micellar formulations produce materially different human exposure.[S14][S16][S17][S24] Human clinical findings are mixed: respiratory and exercise results are context-dependent, blood-pressure effects are generally small and heterogeneous, and metabolic findings are concentrated in selected populations rather than consistently reproduced.[S1][S3][S4][S6][S8][S10][S11][S12][S13] Pharmacokinetic improvements are more consistent than clinical benefits; higher plasma exposure has not been shown to confer proportional disease-outcome benefit.[S14][S15][S16][S17] Human interaction evidence is direction-specific and inconsistent rather than explained by a single CYP3A4 or P-glycoprotein rule.[S18][S19][S20][S21][S22][S23]
 
@@ -94,7 +96,7 @@ Quercetin is a dietary flavonol whose aglycone, glycoside, phytosome, and micell
   source: [S1, S4, S10, S11]
 - interaction_bottom_line: "Human data show mixed transporter/enzyme effects and one warfarin case"
   source: [S18, S19, S20, S21, S22, S23]
-# Description
+### Description
 
 Quercetin is the flavonol aglycone 3,3′,4′,5,7-pentahydroxyflavone, formula C₁₅H₁₀O₇.[S24] Plants commonly contain quercetin as glycosides, including glucosides and rutinoside; onions are particularly rich in glucosides, whereas rutin is quercetin-3-O-rutinoside.[S14][S15] “Aglycone” means quercetin without a sugar group. A phytosome is a lecithin-based quercetin complex, while a micellar product uses a different delivery system; product mass is therefore not automatically equivalent to free-quercetin mass.[S16][S17]
 
@@ -110,7 +112,7 @@ Quercetin is the flavonol aglycone 3,3′,4′,5,7-pentahydroxyflavone, formula 
 - form: "Micellar"
   example: "LipoMicel, a food-grade delivery formulation"
   source: [S17]
-# Evidence note
+### Evidence note
 
 The evidence base is separated into primary human randomized trials, human pharmacokinetic studies, pooled analyses, and mechanistic or regulatory sources. Many trials are short, use small samples, or evaluate surrogate biomarkers rather than patient-important outcomes.[S1][S4][S6][S10][S13][S17] Analytical methods that hydrolyze plasma conjugates may report “total quercetin” rather than free circulating aglycone.[S14][S17] Subgroup findings and formulation-specific PK findings should not be generalized across products or populations.[S1][S8][S16][S17]
 
@@ -120,7 +122,7 @@ The evidence base is separated into primary human randomized trials, human pharm
   source: [S10, S11]
 - major limitation: "Biomarker and exposure changes often exceed evidence for clinical benefit"
   source: [S4, S5, S10, S11, S14]
-# Doses
+### Doses
 
 - dietary_exposure: "Estimated food intake is commonly about 5–100 mg/day; unusually quercetin-rich diets can provide more"
   source: [S24]
@@ -136,7 +138,7 @@ The evidence base is separated into primary human randomized trials, human pharm
   source: [S14, S16, S17]
 - interpretation: "These are studied exposures, not a validated therapeutic schedule"
   source: [S1, S6, S10, S17]
-# Pharmacokinetics
+### Pharmacokinetics
 
 - plasma_species: "Human plasma usually contains quercetin glucuronides, sulfates, methylated metabolites, and other conjugates; free aglycone may be undetectable"
   source: [S14, S17]
@@ -152,7 +154,7 @@ The evidence base is separated into primary human randomized trials, human pharm
   source: [S17]
 - clinical_meaning: "Higher AUC or Cmax demonstrates improved exposure, not superior respiratory, exercise, blood-pressure, or metabolic outcomes"
   source: [S1, S4, S10, S16, S17]
-# Modifiers
+### Modifiers
 
 - chemical_form: "Glucosides generally absorb faster and more extensively than rutinoside; aglycone, glucoside, and rutin doses are not milligram-for-milligram interchangeable"
   source: [S14, S15]
@@ -166,7 +168,7 @@ The evidence base is separated into primary human randomized trials, human pharm
   source: [S14, S17]
 - variability: "Age, sex, BMI, microbiota, phase-II enzymes, transporters, and diet are plausible contributors to interindividual PK variation"
   source: [S17, S24]
-# Effects
+### Effects
 
 - domain: "Respiratory infection"
   finding: "A 1002-person community RCT found no overall reduction in URTI rates or symptoms with 500 or 1000 mg/day for 12 weeks; a fit subgroup aged 40 years or older had 31% fewer sick days and 36% lower severity with 1000 mg/day"
@@ -186,7 +188,7 @@ The evidence base is separated into primary human randomized trials, human pharm
 - domain: "Metabolism"
   finding: "PCOS and type-2-diabetes trials reported improvements in HOMA-IR, adiponectin, HbA1c, or SBP, but pooled evidence finds no consistent effect on fasting glucose, HOMA-IR, lipids, inflammation, or anthropometric measures"
   source: [S10, S11, S12, S13]
-# Outcomes
+### Outcomes
 
 - exposure_outcome: "The most reproducible human effect is increased circulating quercetin or conjugate exposure with glycoside, matrix, phytosome, or micellar formulations"
   source: [S14, S15, S16, S17]
@@ -198,7 +200,7 @@ The evidence base is separated into primary human randomized trials, human pharm
   source: [S1, S2, S3, S4, S5]
 - hard_endpoint: "The cited trials do not establish reductions in cardiovascular events, cancer incidence, long-term mortality, or durable disease remission"
   source: [S10, S11, S24, S27]
-# Mechanisms
+### Mechanisms
 
 - absorption: "Glycoside hydrolysis, intestinal uptake, phase-II conjugation, biliary recycling, and microbiota metabolism determine which quercetin-related species reach plasma"
   source: [S14, S17, S24]
@@ -210,7 +212,7 @@ The evidence base is separated into primary human randomized trials, human pharm
   source: [S10, S11, S12, S13]
 - interaction: "Aglycone and conjugates can affect CYP enzymes, albumin binding, and uptake/efflux transporters in vitro; intestinal and hepatic effects can point in opposite directions in humans"
   source: [S18, S19, S20, S21, S23]
-# Cautions
+### Cautions
 
 - short_term_tolerability: "Small oral trials generally reported acceptable short-term tolerability; one 10-person micellar PK study reported no adverse events or GI intolerance"
   source: [S17, S24]
@@ -222,7 +224,7 @@ The evidence base is separated into primary human randomized trials, human pharm
   source: [S22]
 - evidence_boundary: "In-vitro mutagenicity, antioxidant, antiviral, or enzyme findings do not establish equivalent human clinical effects"
   source: [S24, S27]
-# Claims
+### Claims
 
 - claim: "Quercetin is an antioxidant and anti-inflammatory treatment"
   assessment: "Mechanistically plausible and supported in preclinical systems; human clinical outcome support is insufficient"
@@ -242,7 +244,7 @@ The evidence base is separated into primary human randomized trials, human pharm
 - claim: "Quercetin treats COVID-19, cancer, or aging"
   assessment: "Not established by the cited human evidence; respiratory/COVID evidence reviews describe insufficient or low-certainty evidence"
   source: [S24, S26, S27]
-# Interactions
+### Interactions
 
 - drug: "Fexofenadine"
   human_finding: "In 12 volunteers receiving quercetin 500 mg three times daily for 7 days, oral fexofenadine clearance decreased by 37%; renal clearance and half-life did not differ"
@@ -267,7 +269,7 @@ The evidence base is separated into primary human randomized trials, human pharm
 - mechanism_theory: "CYP3A4, CYP2C9, P-glycoprotein, OATP, albumin-binding, and bacterial DNA-gyrase effects are mainly in-vitro, animal, or mechanistic signals; human probe studies show null, increased, and decreased exposure depending on drug and protocol"
   evidence_class: "Mechanistic theory versus clinical PK"
   source: [S18, S19, S20, S21, S23, S24]
-# Experience links
+### Experience links
 
 - structured_symptoms: "Daily Wisconsin Upper Respiratory Symptom Survey logs in the 1002-person community trial"
   source: [S1]
@@ -279,7 +281,7 @@ The evidence base is separated into primary human randomized trials, human pharm
   source: [S14, S16, S17]
 - adverse_event_experience: "Short-term trial tolerability and a warfarin-associated INR case"
   source: [S17, S22]
-# References
+### References
 
 - id: S1
   title: "Quercetin supplementation and upper respiratory tract infection: A randomized community clinical trial"
@@ -631,7 +633,7 @@ The evidence base is separated into primary human randomized trials, human pharm
   sponsorshipStatus: "not-assessed"
   conflictsOfInterest: "not-assessed"
   conflictOfInterestStatus: "not-assessed"
-# Legal
+### Legal
 
 - jurisdiction: "United States"
   status: "FDA GRN 341 lists quercetin as a food ingredient for specified categories at up to 500 mg per serving; the notice is not a drug approval"
@@ -642,6 +644,10 @@ The evidence base is separated into primary human randomized trials, human pharm
   source: [S25, S26, S27]
 - jurisdictional_scope: "Labeling and legal status outside the United States are not assessed here"
   source: [S25, S26]
+
+<!-- Deep Research source-link ledger -->
+
+Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
 
 ## Doses
 
@@ -1039,6 +1045,330 @@ The evidence base is separated into primary human randomized trials, human pharm
   kind: Deep Research source
   insight: Source cited by the returned Deep Research report.
   limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-1
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/20478383/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/17805089/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-3
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/18213545/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-4
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/20029506/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-5
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/24379709/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-6
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/17951477/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-7
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/19402938/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-8
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/26328470/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-9
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/26924303/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-10
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/37654199/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-11
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/31940027/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-12
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/27824398/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-13
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/38930033/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-14
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://accp1.onlinelibrary.wiley.com/doi/abs/10.1177/00912700122010366
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-15
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/26482244/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-16
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/30328058/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-17
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://onlinelibrary.wiley.com/doi/10.1155/2023/9727539
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-18
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/25988261/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-19
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/19221726/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-20
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/16945047/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-21
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://www.sciencedirect.com/science/article/abs/pii/S0928098714000189
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-22
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9608098/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-23
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://doi.org/10.1016/j.biopha.2017.01.092
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-24
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7143931/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-25
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/frs-international-llc-606701-06152020
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-26
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/32837891/
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-quercetin-link-1-dup2
+  title: Deep Research source link
+  authors: Deep Research returned source; metadata not separately normalized
+  year: 2026
+  url: https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=341&set=GRASNotices
+  kind: Deep Research source link
+  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
+  limitation: Bibliographic metadata was not separately normalized from the capture.
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.

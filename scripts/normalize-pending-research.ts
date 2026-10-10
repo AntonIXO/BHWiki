@@ -1,8 +1,8 @@
-import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse as parseYaml } from "yaml";
-import { loadCorpus, serializeContent, type ContentRecord } from "../src/lib/content-markdown";
+import { loadCorpus, parseContentSource, serializeContent, type ContentRecord } from "../src/lib/content-markdown";
 import type { Claim, Interaction, Observation, Reference, Substance } from "../src/lib/types";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -59,7 +59,9 @@ function sections(raw: string): Sections {
   matches.forEach((m, i) => {
     const start = (m.index ?? 0) + m[0].length;
     const end = i + 1 < matches.length ? (matches[i + 1].index ?? raw.length) : raw.length;
-    out.set(m[1].trim(), raw.slice(start, end).trim());
+    // Deep Research often annotates a contract heading with a citation, e.g.
+    // `## Doses (source)`. The article contract keeps the canonical heading.
+    out.set(m[1].trim().replace(/\s+(?:\([^)]*\)|\[[^\]]*\])\s*$/, ""), raw.slice(start, end).trim());
   });
   return out;
 }
@@ -69,6 +71,7 @@ function withoutFences(value: string) {
 function prose(value: string | undefined) {
   if (!value) return "";
   return withoutFences(value)
+    .replace(/^#\s+/gm, "### ")
     .replace(/^##\s+/gm, "### ")
     .replace(/^Research Metadata[\s\S]*$/m, "")
     .trim();
@@ -103,10 +106,9 @@ function sourceIds(v: unknown): string[] {
   return text(v, "S1").split(/[;,\s]+/).filter(Boolean).map(sourceNumber);
 }
 function citations(raw: string) {
-  const urls = [...raw.matchAll(/\[([^\]]+)\]\((https:\/\/[^)]+)\)/g)].map((m) => ({ title: m[1], url: m[2] }));
-  if (!urls.length) {
-    for (const match of raw.matchAll(/https:\/\/[^\s)]+/g)) urls.push({ title: "Deep Research source", url: match[0].replace(/[.,;]+$/, "") });
-  }
+  const urls: { title: string; url: string }[] = [];
+  for (const match of raw.matchAll(/\[([^\]]+)\]\((https:\/\/[^\s<>\]]+)\)/g)) urls.push({ title: match[1], url: match[2].replace(/[.,;]+$/, "") });
+  if (!urls.length) for (const match of raw.matchAll(/https:\/\/[^\s<>\]]+/g)) urls.push({ title: "Deep Research source", url: match[0].replace(/[.,;]+$/, "") });
   const unique: { title: string; url: string }[] = [];
   const seen = new Set<string>();
   for (const item of urls) if (!seen.has(item.url)) { seen.add(item.url); unique.push(item); }
@@ -230,21 +232,113 @@ function build(slug: string, raw: string): Substance {
   return record;
 }
 
+function sourceIdentity(ref: Reference): string {
+  return (ref.doi ? `doi:${ref.doi.toLowerCase()}` : ref.pmid ? `pmid:${ref.pmid}` : `url:${ref.url.replace(/[?#].*$/, "").replace(/\/$/, "").toLowerCase()}`);
+}
+
+function citationMap(text: string, map: Map<string, string>): string {
+  return text.replace(/\[([RS])(\d+)\]/g, (_whole, _prefix, number) => `[${map.get(`S${number}`) ?? `S${number}`}]`);
+}
+
+function cloneAndRemap<T>(value: T, map: Map<string, string>): T {
+  if (typeof value === "string") return citationMap(value, map) as T;
+  if (Array.isArray(value)) return value.map(item => cloneAndRemap(item, map)) as T;
+  if (!value || typeof value !== "object") return value;
+  const result: Record<string, unknown> = {};
+  for (const [key, child] of Object.entries(value as Record<string, unknown>)) {
+    if (["sourceId", "observationId"].includes(key) && typeof child === "string") result[key] = map.get(child) ?? child;
+    else if (["sourceIds", "conflictingSourceIds"].includes(key) && Array.isArray(child)) result[key] = child.map(id => typeof id === "string" ? map.get(id) ?? id : id);
+    else result[key] = cloneAndRemap(child, map);
+  }
+  return result as T;
+}
+
+function prefixed<T extends Record<string, unknown>>(value: T, prefix: string, map: Map<string, string>): T {
+  const clone = cloneAndRemap(value, map) as T;
+  const generic = clone as Record<string, unknown>;
+  if (typeof generic.id === "string") generic.id = `${prefix}-${generic.id}`;
+  if (typeof generic.observationId === "string" && !generic.observationId.startsWith(`${prefix}-`)) generic.observationId = `${prefix}-${generic.observationId}`;
+  return clone;
+}
+
+function mergeExisting(existing: Substance, generated: Substance, slug: string, corpus: ReturnType<typeof loadCorpus>): Substance {
+  const sourceMap = new Map<string, string>();
+  const references = [...existing.references];
+  const byIdentity = new Map(references.map(reference => [sourceIdentity(reference), reference.id]));
+  for (const reference of generated.references) {
+    const identity = sourceIdentity(reference);
+    const existingId = byIdentity.get(identity);
+    if (existingId) { sourceMap.set(reference.id, existingId); continue; }
+    const id = `dr-${slug}-${reference.id.toLowerCase()}`;
+    const copy = { ...reference, id };
+    references.push(copy);
+    byIdentity.set(identity, id);
+    sourceMap.set(reference.id, id);
+  }
+  const prefix = `dr-${slug}`;
+  const pkObservations = generated.pkObservations.map(item => prefixed(item as unknown as Record<string, unknown>, prefix, sourceMap) as unknown as Substance["pkObservations"][number]);
+  const generatedObservationIds = new Map(generated.pkObservations.map(item => [item.id, `${prefix}-${item.id}`]));
+  const remapObservation = (item: Record<string, unknown>) => {
+    const copy = prefixed(item, prefix, sourceMap);
+    if (typeof copy.observationId === "string") copy.observationId = generatedObservationIds.get(String(item.observationId)) ?? copy.observationId;
+    return copy;
+  };
+  const entities = new Set([
+    ...corpus.substances.map(item => `substance:${item.slug}`),
+    ...corpus.tags.map(item => `tag:${item.id}`),
+  ]);
+  const generatedClaims = generated.claims
+    .filter(claim => claim.participants.every(participant => entities.has(participant.entityId)))
+    .map(claim => prefixed(claim as unknown as Record<string, unknown>, prefix, sourceMap) as unknown as Substance["claims"][number]);
+  const generatedInteractions = generated.interactions.map(item => {
+    const copy = prefixed(item as unknown as Record<string, unknown>, prefix, sourceMap) as unknown as Substance["interactions"][number];
+    if (copy.otherSlug && !corpus.substances.some(candidate => candidate.slug === copy.otherSlug)) copy.otherSlug = null;
+    return copy;
+  });
+  const detailMarker = `<!-- Deep Research integration: ${slug} -->`;
+  const detail = citationMap(generated.evidenceNote, sourceMap);
+  const summary = citationMap(generated.summary, sourceMap);
+  const description = citationMap(generated.description, sourceMap);
+  return {
+    ...existing,
+    summary: `${existing.summary}\n\nDeep Research synthesis: ${summary}`,
+    description: `${existing.description}\n\nDeep Research synthesis: ${description}`,
+    evidenceNote: existing.evidenceNote.includes(detailMarker) ? existing.evidenceNote : `${existing.evidenceNote}\n\n${detailMarker}\n\n${detail}`,
+    references,
+    pkObservations: [...existing.pkObservations, ...pkObservations],
+    doses: [...existing.doses, ...generated.doses.map(item => prefixed(item as unknown as Record<string, unknown>, prefix, sourceMap) as unknown as Substance["doses"][number])],
+    effects: [...existing.effects, ...generated.effects.map(item => prefixed(item as unknown as Record<string, unknown>, prefix, sourceMap) as unknown as Substance["effects"][number])],
+    outcomes: [...existing.outcomes, ...generated.outcomes.map(item => prefixed(item as unknown as Record<string, unknown>, prefix, sourceMap) as unknown as Substance["outcomes"][number])],
+    modifiers: [...existing.modifiers, ...generated.modifiers.map(item => remapObservation(item as unknown as Record<string, unknown>) as unknown as Substance["modifiers"][number])],
+    mechanisms: [...existing.mechanisms, ...generated.mechanisms.map(item => { const copy = prefixed(item as unknown as Record<string, unknown>, prefix, sourceMap) as unknown as Substance["mechanisms"][number]; if (copy.conceptId && !corpus.tags.some(tag => tag.id === copy.conceptId)) delete copy.conceptId; return copy; })],
+    cautions: [...existing.cautions, ...generated.cautions.map(item => prefixed(item as unknown as Record<string, unknown>, prefix, sourceMap) as unknown as Substance["cautions"][number])],
+    claims: [...existing.claims, ...generatedClaims],
+    interactions: [...existing.interactions, ...generatedInteractions],
+    legal: [...existing.legal, ...generated.legal.map(item => cloneAndRemap(item, sourceMap))],
+  };
+}
+
 const generated: string[] = [];
-for (const entry of (await import("node:fs")).readdirSync(pendingRoot, { withFileTypes: true })) {
+const currentCorpus = loadCorpus(contentRoot);
+const existingBySlug = new Map(currentCorpus.substances.map(record => [record.slug, record]));
+for (const entry of readdirSync(pendingRoot, { withFileTypes: true })) {
   if (!entry.isDirectory()) continue;
   const slug = topicSlug(entry.name);
   const target = path.join(contentRoot, "substances", `${slug}.md`);
   const sourcePath = path.join(pendingRoot, entry.name, "deep-research.md");
-  if (existsSync(target) && !readFileSync(target, "utf8").includes("subtitle: Evidence-specific research record.")) continue;
+  if (slug === "armodafinil") continue;
+  const existing = existingBySlug.get(slug);
+  if (existsSync(target) && existing && (existing.subtitle === "Evidence-specific research record." || existing.evidenceNote.includes(`<!-- Deep Research integration: ${slug} -->`))) continue;
   if (!existsSync(sourcePath)) continue;
   const raw = readFileSync(sourcePath, "utf8");
   if (raw.length < 1000) continue;
-  const record = build(slug, raw);
+  const generatedRecord = build(slug, raw);
+  const record = existing ? mergeExisting(existing, generatedRecord, slug, currentCorpus) : generatedRecord;
   const recordBytes = Buffer.byteLength(JSON.stringify(record));
   if (recordBytes > 500_000) console.error("oversized fields", slug, Object.fromEntries(Object.entries(record).map(([k, v]) => [k, typeof v === "string" ? v.length : JSON.stringify(v)?.length ?? 0])));
   if (recordBytes > 500_000) throw new Error(`Refusing oversized normalized record ${slug}: ${recordBytes} bytes`);
-  const compiled = serializeContent(`substances/${slug}.md`, { collection: "substances", record, order: Number.MAX_SAFE_INTEGER } as ContentRecord);
+  const existingOrder = existing ? Number(readFileSync(target, "utf8").match(/^x-order:\s*(\d+)/m)?.[1] ?? Number.MAX_SAFE_INTEGER) : Number.MAX_SAFE_INTEGER;
+  const compiled = serializeContent(`substances/${slug}.md`, { collection: "substances", record, order: existingOrder } as ContentRecord);
   if (compiled.length > 500_000) throw new Error(`Refusing oversized normalized Markdown ${slug}: ${compiled.length} bytes`);
   mkdirSync(path.dirname(target), { recursive: true });
   writeFileSync(target, compiled);
