@@ -28,6 +28,18 @@ When using the browser-backed ChatGPT surface, select the model selector's `6 Pr
 3. Convert the result into a **complete `<slug>.md`** and companion concept/relationship `.md` files only where the BHWiki schema requires them. Keep compact original prose, exact study context, null findings, and the source links supplied by Deep Research. Do not add a separate acquisition or provenance file.
 4. Every material factual assertion must have an inline citation or a source ID that resolves to the article’s `References` section. Preserve the study’s title, authors or organization, year, direct URL, and the specific finding or limitation needed to verify the assertion. Reviews may locate studies but must not be presented as independent replications. Community/vendor pages cannot establish efficacy, safety, or legal status.
 
+### Section-by-section integration is mandatory
+
+Use `content/substances/caffeine.md` as the canonical shape example. A Deep Research report is source material to decompose into the wiki’s sections, not prose to paste into one field. Every imported page must distribute eligible findings across the matching sections and structured records:
+
+- `Summary`, `Description`, and `Evidence note` contain only compact synthesis, scope, uncertainty, and evidence gaps. `Evidence note` must never contain the complete returned report, a copied audit table, a `Full Deep Research detail` block, or a source-ledger dump.
+- Put each study exposure in `Doses`, each analyte/formulation observation in `Pharmacokinetics`, each supported factor in `Modifiers`, subjective experiences in `Effects`, and measured endpoints in `Outcomes`.
+- Keep mechanisms, cautions, claims, interactions, legal context, and references in their dedicated sections. Preserve null findings, conflicting studies, funding, and conflicts of interest on the record they qualify.
+- Use one concise original paragraph only when a fact cannot be represented by the current YAML type; cite it in the nearest relevant prose section. If important evidence repeatedly cannot fit, extend the schema/UI deliberately and validate it; do not hide the evidence in `Evidence note`.
+- Do not emit raw report headings, Markdown tables, YAML blocks, citation ledgers, or copied report prose inside a prose section. Do not rely on a collapsed raw-report panel as the integration mechanism.
+
+Before accepting an import, open the rendered page and confirm that Overview is compact and the populated Doses, PK, Effects, Outcomes, Safety, Connections, Legal, and Research sections expose the evidence separately, like the caffeine page. A page that merely displays the returned report in Overview fails the integration gate even when its Markdown parses.
+
 ## BHWiki output gate
 
 Reject or repair the draft before import when any of these fail:
