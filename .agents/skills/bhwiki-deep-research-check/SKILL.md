@@ -17,7 +17,9 @@ BHWiki’s checked-in contract is the output authority when the two documents di
 
 ## Research source
 
-Use the connected OpenAI Deep Research result as the research input. Do not create or retain separate capture files, acquisition manifests, run metadata, or duplicate copies of the report. Only the resulting BHWiki Markdown files belong in the repository.
+Use the connected OpenAI Deep Research result as the research input. For an inspection-only acquisition, preserve exactly one returned report under `data/research/pending-YYYY-MM-DD/<slug>-.../deep-research.md` and one short README with the conversation/mode/model evidence; do not create duplicate captures, acquisition manifests, or extra copies. Only a normalized, validated BHWiki Markdown article may enter `content/`, and pending research artifacts remain uncommitted unless the user explicitly asks otherwise.
+
+When using the browser-backed ChatGPT surface, select the model selector's `6 Pro` mode before submitting the Deep Research prompt. Depending on the current UI, this may be displayed as the `Pro` tier rather than with the numeric model prefix; record the exact visible label instead of inventing a model name. Do not substitute ordinary Chat, `Medium`, the default model, or another model for this mode. Verify immediately before submission that the selector shows the Pro tier at `5 of 5` (the highest setting, when the power scale is exposed) and that the composer visibly has the `Deep research` mode chip. Model selection is separate from the Deep Research mode and must be checked immediately before submission. If neither a `6 Pro` label nor the current UI's `Pro` tier is visible, preserve the run as unverified and do not import it as an approved acquisition.
 
 ## Research run
 

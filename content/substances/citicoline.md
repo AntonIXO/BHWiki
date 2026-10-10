@@ -6,6 +6,8 @@ aliases:
   - CDP-choline
   - Cytidine diphosphate choline
   - Cytidine 5′-diphosphocholine
+  - Citicoline sodium
+  - Cognizin
 formula: C14H26N4O11P2
 molecularWeight: 488.32 g/mol
 pubchemCid: 13804
@@ -16,7 +18,7 @@ tags:
   - episodic-memory
   - stroke-recovery
 accent: "#a9b993"
-reviewedAt: 2026-10-04
+reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
 halfLife:
   label: Not established for unchanged citicoline
@@ -76,7 +78,7 @@ Citicoline is CDP-choline, not dietary choline itself: it is a nucleotide contai
 
 ## Evidence note
 
-Evidence is indication- and endpoint-specific. ICTUS and COBRIT found no functional/cognitive benefit in acute ischemic stroke and traumatic brain injury; a 2020 Cochrane review likewise found little or no stroke benefit with low-certainty evidence. A 2021 industry-funded older-adult trial missed its primary working-memory endpoint but improved secondary episodic-memory measures; EFSA concluded in 2024 that a memory cause-effect relationship was not established. Parent-citicoline half-life remains unresolved because human disposition studies primarily measured radiolabel or metabolites.
+Evidence is indication- and endpoint-specific. ICTUS and COBRIT found no functional/cognitive benefit in acute ischemic stroke and traumatic brain injury; a 2020 Cochrane review likewise found little or no stroke benefit with low-certainty evidence. A 2021 industry-funded older-adult trial missed its primary working-memory endpoint but improved secondary episodic-memory measures; EFSA concluded in 2024 that a memory cause-effect relationship was not established. Parent-citicoline half-life remains unresolved because human disposition studies primarily measured radiolabel or metabolites. The current extension adds null vascular-dementia evidence, a biased open post-stroke signal, a negative pediatric ADHD pilot, preliminary TBI and glaucoma findings, and the 2025 EU refusal of the proposed memory claim; these do not establish a general nootropic or neuroprotective effect.
 
 ## Doses
 
@@ -231,6 +233,21 @@ Evidence is indication- and endpoint-specific. ICTUS and COBRIT found no functio
   sourceCategory: research
   note: Selected population and study formulation; not evidence for benefit in all ages.
   sourceId: nakazaki2021
+- label: Health Canada adult cognitive-function monograph range
+  amount: 250–1000 mg/day; maximum 500 mg/single dose
+  quantity: 250
+  quantityMax: 1000
+  unit: mg/day
+  ingredient: Citicoline
+  formulation: Licensed natural-health-product ingredient framework
+  route: Oral
+  frequency: According to product claim and label
+  duration: Not specified
+  population: Adults
+  purpose: Jurisdiction-specific product-licensing conditions for sustained attention or older-adult cognitive health
+  sourceCategory: reference
+  note: A licensing monograph is not proof of efficacy for every product or indication; verify the actual product licence.
+  sourceId: hc-cognitive-2025
 ```
 
 ## Pharmacokinetics
@@ -486,6 +503,124 @@ Evidence is indication- and endpoint-specific. ICTUS and COBRIT found no functio
   exposure: "Hospital trial: intravenous followed by oral citicoline"
   instrument: Global endpoint combining NIHSS, modified Rankin Scale and Barthel Index at 90 days
   magnitude: Odds ratio 1.03; 95% CI 0.86–1.25
+- id: cohen-vascular-dementia
+  study:
+    id: cohen-vascular-dementia-2003
+    design: Double-blind randomized placebo-controlled trial
+    sampleSize: 30
+    populationLabels:
+      - Vascular dementia
+    comparator: Placebo
+    route: Oral
+    formulation: Citicoline
+    durationDays: 365
+    assessmentTime: 12 months
+  conflictingSourceIds: []
+  conceptId: cognitive-performance
+  name: Neuropsychological performance in vascular dementia
+  direction: Variable
+  evidence: Human research
+  description: A small long-term randomized trial found no advantage over placebo on neuropsychological performance or MRI measures.
+  sourceId: cohen2003
+  population: 30 patients with vascular dementia
+  exposure: 500 mg twice daily for 12 months
+  instrument: Neuropsychological battery and MRI measures
+  magnitude: No significant between-group advantage reported.
+- id: cotroneo-ideale-vascular-cognition
+  study:
+    id: ideale-citicoline-2013
+    design: Open nonrandomized controlled study
+    sampleSize: 349
+    populationLabels:
+      - Mild vascular cognitive impairment
+    comparator: Usual care control
+    route: Oral
+    formulation: Citicoline
+    durationDays: 270
+    assessmentTime: 9 months
+  conflictingSourceIds:
+    - cohen2003
+  conceptId: cognitive-performance
+  name: Screening cognition in mild vascular cognitive impairment
+  direction: Increased
+  evidence: Human research
+  description: MMSE remained more stable in the citicoline group, but the open allocation and absence of an ADL/IADL difference prevent a demonstrated functional benefit claim.
+  sourceId: cotroneo2013
+  population: 349 older adults with mild vascular cognitive impairment
+  exposure: 500 mg twice daily for 9 months
+  instrument: MMSE and ADL/IADL measures
+  magnitude: Screening-cognition signal; no ADL/IADL difference reported.
+- id: alvarez-sabin-poststroke-cognition
+  study:
+    id: alvarez-sabin-poststroke-2013
+    design: Open randomized usual-care comparison
+    sampleSize: 347
+    populationLabels:
+      - Post-stroke vascular cognitive impairment
+    comparator: Usual care
+    route: Oral
+    formulation: Citicoline
+    durationDays: 365
+    assessmentTime: 12 months
+  conflictingSourceIds:
+    - davalos2012
+  conceptId: stroke-recovery
+  name: Cognitive and functional outcomes after stroke
+  direction: Variable
+  evidence: Human research
+  description: Attention/executive and orientation domains favored citicoline in an open follow-up, but attrition was substantial and the modified Rankin Scale result was not significant.
+  sourceId: alvarez-sabin2013
+  population: 347 participants beginning treatment six weeks after ischemic stroke; 199 had one-year neuropsychological follow-up
+  exposure: 1000 mg/day for 12 months
+  instrument: Neuropsychological domains and modified Rankin Scale
+  magnitude: "mRS ≤2: 57.3% versus 48.7%, P=0.186; domain-level signals remain vulnerable to attrition and open treatment."
+- id: shakeri-2026-tbi-pilot
+  study:
+    id: shakeri-bavali-oleyayi-tbi-2026
+    design: Single-center triple-blind randomized placebo-controlled pilot
+    sampleSize: 60
+    populationLabels:
+      - Mild-to-moderate traumatic brain injury
+    comparator: Placebo
+    route: Oral
+    formulation: Citicoline
+    durationDays: 90
+    assessmentTime: Day 90
+  conflictingSourceIds:
+    - zafonte2012
+  conceptId: traumatic-brain-injury-recovery
+  name: Cognitive and functional recovery after mild-to-moderate traumatic brain injury
+  direction: Increased
+  evidence: Limited research
+  description: A small 2026 pilot reported better MMSE and secondary functional outcomes, but it is not a replication of COBRIT and its funding disclosure was not verified.
+  sourceId: shakeri2026
+  population: 60 adults with mild-to-moderate traumatic brain injury
+  exposure: 1000 mg/day for 90 days
+  instrument: MMSE, Barthel Index and GOSE
+  magnitude: Primary MMSE 25.2 versus 21.5, P<0.001; preliminary single-center result.
+- id: hubner-adhd-pilot
+  study:
+    id: hubner-citicoline-adhd-2024
+    design: Double-blind placebo-controlled crossover pilot
+    sampleSize: 27
+    populationLabels:
+      - Children aged 7–12 with ADHD
+    comparator: Placebo
+    route: Oral
+    formulation: Citicoline
+    durationDays: 28
+    assessmentTime: End of each period
+  conflictingSourceIds: []
+  conceptId: attention
+  name: ADHD attention and behavioral parameters
+  direction: Variable
+  evidence: Limited research
+  description: The small pediatric crossover pilot did not show a significant benefit on assessed parameters; it cannot establish broad pediatric safety.
+  sourceId: hubner2024
+  population: Children aged 7–12 with ADHD; registry reports 27 recruited and 22 completing
+  exposure: 250 mg/day for 28 days per period with a 28-day washout
+  instrument: Study-specific ADHD attention and behavioral measures
+  magnitude: No significant between-condition benefit reported.
 ```
 
 ## Mechanisms
@@ -542,6 +677,15 @@ Evidence is indication- and endpoint-specific. ICTUS and COBRIT found no functio
 - title: Limited safety horizon
   description: A short trial in selected older adults does not establish long-term safety across all populations.
   sourceId: nakazaki2021
+- title: Pediatric ADHD pilot was negative
+  description: The small double-blind crossover ADHD pilot did not show a significant benefit and cannot establish broad pediatric safety or a treatment role.
+  sourceId: hubner2024
+- title: Preliminary TBI signal needs replication
+  description: The 2026 single-center TBI pilot reported better MMSE and functional secondary outcomes, but it is small, later than COBRIT, and its funding disclosure was not verified.
+  sourceId: shakeri2026
+- title: Proposed EU memory claim refused
+  description: The European Commission refused the proposed citicoline memory health claim in Regulation (EU) 2025/2223; this does not ban the authorized ingredient or resolve every endpoint-specific trial.
+  sourceId: eu-memory-claim-2025
 ```
 
 ## Claims
@@ -799,7 +943,7 @@ Evidence is indication- and endpoint-specific. ICTUS and COBRIT found no functio
   insight: Ten RCTs with 4281 participants showed little or no difference in mortality, disability, functional or neurological recovery; evidence was low certainty.
   limitation: Included trials had high risk of bias; harms were poorly reported and quality of life was not assessed.
   funding: External sources listed Cochrane Stroke Group and Iberoamerican Cochrane Network; no commercial support was declared for the review.
-  sponsorshipStatus: non-industry-funded
+  sponsorshipStatus: not-assessed
   conflictsOfInterest: All listed review authors declared none known.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC8406786/
@@ -889,6 +1033,100 @@ Evidence is indication- and endpoint-specific. ICTUS and COBRIT found no functio
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not applicable to a clinical-publication COI assessment; not assessed.
   conflictOfInterestStatus: not-assessed
+- id: cohen2003
+  title: "Long-term citicoline (cytidine diphosphate choline) use in patients with vascular dementia: neuroimaging and neuropsychological outcomes"
+  authors: Cohen et al.
+  year: 2003
+  pmid: "12865605"
+  doi: 10.1159/000071116
+  url: https://pubmed.ncbi.nlm.nih.gov/12865605/
+  kind: Double-blind randomized placebo-controlled trial
+  insight: In 30 vascular-dementia patients, 500 mg twice daily for 12 months did not improve neuropsychological or MRI outcomes versus placebo.
+  limitation: Small older trial; funding and full conflict declaration were not inspected.
+  funding: Not assessed from an inspected full funding declaration.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed from an inspected full conflict declaration.
+  conflictOfInterestStatus: not-assessed
+- id: cotroneo2013
+  title: "Effectiveness and safety of citicoline in mild vascular cognitive impairment: the IDEALE study"
+  authors: Cotroneo et al.
+  year: 2013
+  pmid: "23403474"
+  doi: 10.2147/CIA.S38420
+  url: https://pubmed.ncbi.nlm.nih.gov/23403474/
+  kind: Open nonrandomized controlled study
+  insight: MMSE was more stable with citicoline in 349 adults with mild vascular cognitive impairment, but ADL/IADL did not differ.
+  limitation: Open allocation and nonrandomized design leave substantial confounding and do not establish functional preservation.
+  funding: Not assessed from an inspected full funding declaration.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed from an inspected full conflict declaration.
+  conflictOfInterestStatus: not-assessed
+- id: alvarez-sabin2013
+  title: "Long-term treatment with citicoline may improve poststroke vascular cognitive impairment"
+  authors: Alvarez-Sabín et al.
+  year: 2013
+  pmid: "23406981"
+  doi: 10.1159/000346602
+  url: https://pubmed.ncbi.nlm.nih.gov/23406981/
+  kind: Open randomized usual-care comparison
+  insight: Domain-level cognitive signals favored citicoline after stroke, but the mRS result was not significant and only 199 of 347 participants had one-year neuropsychological follow-up.
+  limitation: Open treatment and attrition weaken causal and patient-important-outcome inference.
+  funding: Not assessed from an inspected full funding declaration.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed from an inspected full conflict declaration.
+  conflictOfInterestStatus: not-assessed
+- id: shakeri2026
+  title: "Effect of citicoline on cognitive function and functional recovery in patients with mild-to-moderate traumatic brain injury: a randomized placebo-controlled trial"
+  authors: Shakeri Bavali Oleyayi et al.
+  year: 2026
+  pmid: "42679920"
+  doi: 10.1016/j.neuroscience.2026.08.058
+  url: https://pubmed.ncbi.nlm.nih.gov/42679920/
+  kind: Single-center triple-blind randomized placebo-controlled pilot
+  insight: A 60-person 90-day pilot reported better MMSE and secondary functional outcomes with 1000 mg/day citicoline.
+  limitation: Preliminary single-center result; not a replication of COBRIT and full funding/COI disclosure was not inspected.
+  funding: Not assessed from an inspected full funding declaration.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed from an inspected full conflict declaration.
+  conflictOfInterestStatus: not-assessed
+- id: hubner2024
+  title: "Use of Citicoline in Attention-Deficit/Hyperactivity Disorder: A Pilot Study"
+  authors: Hübner et al.
+  year: 2024
+  pmid: "38976279"
+  doi: 10.1097/WNF.0000000000000602
+  url: https://pubmed.ncbi.nlm.nih.gov/38976279/
+  kind: Double-blind placebo-controlled crossover pilot
+  insight: A small pediatric ADHD pilot did not find a significant benefit on assessed parameters.
+  limitation: Registry reports 27 recruited and 22 completing; small short study cannot establish pediatric efficacy or broad safety.
+  funding: Registry names Univates as sponsor/supporting institution; article-specific monetary funding was not verified.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed from an inspected full conflict declaration.
+  conflictOfInterestStatus: not-assessed
+- id: hc-cognitive-2025
+  title: Cognitive Function Products
+  authors: Health Canada
+  year: 2025
+  url: https://webprod.hc-sc.gc.ca/nhpid-bdipsn/atReq?atid=fonc.cognitive.func&lang=eng&wbdisable=true
+  kind: Official natural-health-product monograph
+  insight: Provides product-licensing ranges for citicoline sustained-attention and older-adult cognitive-health claims, including a 500 mg single-dose maximum.
+  limitation: A licensing monograph is not evidence for every retail product or for stroke/TBI treatment.
+  funding: Official licensing guidance; trial funding not applicable.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Individual drafting conflicts not reported in the inspected monograph.
+  conflictOfInterestStatus: not-assessed
+- id: eu-memory-claim-2025
+  title: Commission Regulation (EU) 2025/2223 refusing to authorise a proposed citicoline memory health claim
+  authors: European Commission
+  year: 2025
+  url: https://eur-lex.europa.eu/eli/reg/2025/2223/oj/eng
+  kind: Official EU legal act
+  insight: Refused the proposed citicoline memory-function claim effective 25 November 2025.
+  limitation: The refusal is not a ban on the authorized novel-food ingredient and does not adjudicate every endpoint-specific study.
+  funding: Official legal instrument; application by Edge Pharma Sp. z o.o.; trial funding not applicable.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not applicable to a legal instrument; commercial applicant identified.
+  conflictOfInterestStatus: not-assessed
 - id: kyowa-patent-2024
   title: Administration of citicoline to improve cognitive performance, attentional performance, and motor function
   authors: Kyowa Hakko Bio Co., Ltd.
@@ -921,5 +1159,14 @@ Evidence is indication- and endpoint-specific. ICTUS and COBRIT found no functio
   status: An FDA warning letter treated cited disease claims for a seller's CDP-choline/citicoline products as drug claims contributing to unapproved-new-drug violations; the letter is firm-specific and not an ingredient-wide approval determination.
   sourceUrl: https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/pure-nootropics-llc-565425-02052019
   asOf: 2026-10-04
+- jurisdiction: European Union
+  activity: Proposed citicoline memory health claim
+  status: Regulation (EU) 2025/2223 refused the proposed memory-function claim effective 25 November 2025; this is not a ban on the authorized novel-food ingredient.
+  sourceUrl: https://eur-lex.europa.eu/eli/reg/2025/2223/oj/eng
+  asOf: 2026-10-10
+- jurisdiction: Canada
+  activity: Natural health product citicoline cognitive-function claims
+  status: Health Canada’s 2025 monograph provides product-licensing ranges for sustained attention and older-adult cognitive health, including a 500 mg single-dose maximum; this is not blanket approval of every retail product or stroke/TBI treatment.
+  sourceUrl: https://webprod.hc-sc.gc.ca/nhpid-bdipsn/atReq?atid=fonc.cognitive.func&lang=eng&wbdisable=true
+  asOf: 2026-10-10
 ```
-

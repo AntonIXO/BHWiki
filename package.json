@@ -14,6 +14,7 @@
     "content:portal": "tsx scripts/generate-portal.ts",
     "content:molekul": "tsx scripts/import-molekul.ts",
     "content:research": "tsx scripts/import-deep-research.ts",
+    "content:normalize-pending": "tsx scripts/normalize-pending-research.ts",
     "test:e2e": "playwright test",
     "content:hashes": "tsx scripts/content-hashes.ts",
     "db:verify": "tsx scripts/db-verify.ts",
