@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import Markdown from "react-markdown";
 
-const markdownSyntax = /[*_`\][#]|^\s*[-+] |<[a-z!/]/i;
+const markdownSyntax = /[*_`\][#|]|^\s*[-+] |<[a-z!/]/i;
 
 type Props = { text: string; className?: string; inline?: boolean };
 
