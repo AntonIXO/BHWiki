@@ -51,19 +51,6 @@ function dateLabel(value: string) {
   return Number.isNaN(date.getTime()) ? "Not recorded" : date.toLocaleDateString("en", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 }
 
-function splitEvidenceNote(note: string) {
-  const markers = [
-    "**Full Deep Research detail retained from the returned report:**",
-    "### Returned Deep Research detail",
-    "<!-- Deep Research integration:",
-    "<!-- Deep Research source-link ledger -->",
-  ];
-  const positions = markers.map(marker => note.indexOf(marker)).filter(position => position >= 0);
-  if (!positions.length) return { summary: note, detail: "" };
-  const start = Math.min(...positions);
-  return { summary: note.slice(0, start).trim(), detail: note.slice(start).trim() };
-}
-
 function doseQuantity(dose: DoseContext) {
   if (dose.quantity === null) return dose.amount || "Amount not established";
   const quantity = new Intl.NumberFormat("en", { maximumFractionDigits: 6 }).format(dose.quantity);
@@ -310,7 +297,6 @@ export default async function SubstancePage({ params }: Props) {
   const related = entities.relatedSubstances(substance.slug, substance.tags);
   const selectedObservation = substance.pkObservations.find(item => item.id === substance.halfLife.observationId);
   const reviewed = substance.editorialStatus === "editorially-reviewed";
-  const evidenceNote = splitEvidenceNote(substance.evidenceNote);
   const identificationTests = substance.identificationTests ?? [];
   const hasIntakeDetails = substance.doses.some(dose => dose.foodRelation || dose.solubility || dose.absorptionNote);
   const showKinetics = hasKineticsData(substance);
@@ -387,18 +373,10 @@ export default async function SubstancePage({ params }: Props) {
               <BookOpen />
               <AlertTitle>{reviewed ? "Editorially reviewed article" : "Sourced draft · editorial review pending"}</AlertTitle>
               <AlertDescription>
-                <Prose text={evidenceNote.summary} />
+                <Prose text={substance.evidenceNote} />
                 <p>Assessment belongs to each claim and outcome. An article’s editorial status is not a grade of a substance’s safety or efficacy.</p>
               </AlertDescription>
             </Alert>
-            {evidenceNote.detail && (
-              <details className="rounded-lg border bg-card p-4">
-                <summary className="cursor-pointer font-medium">Returned research detail</summary>
-                <div className="mt-4 flex flex-col gap-4 text-sm text-muted-foreground">
-                  <Prose text={evidenceNote.detail} />
-                </div>
-              </details>
-            )}
             <div className="flex flex-col gap-3">
               <h3 className="text-lg font-medium">How it works</h3>
               {substance.mechanisms.length ? substance.mechanisms.map(mechanism => {

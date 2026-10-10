@@ -762,8 +762,8 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
   title: Magnesium - Health Professional Fact Sheet
   authors: National Institutes of Health, Office of Dietary Supplements
   year: 2026
-  url: https://ods.od.nih.gov/factsheets/magnesium-healthProfessional/
-  kind: official nutrient monograph
+  url: https://ods.od.nih.gov/factsheets/magnesium-healthprofessional/
+  kind: Official nutrient monograph
   insight: Current U.S. reference source for magnesium physiology, dietary sources, RDAs/AIs, supplemental ULs, status assessment, deficiency, toxicity, and major medication interactions.
   limitation: Narrative government fact sheet synthesizing multiple evidence types; individual therapeutic questions require inspection of the underlying trials and current clinical guidance.
   funding: Not applicable; U.S. government health information.

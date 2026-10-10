@@ -9,24 +9,27 @@ molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
+tags:
+  - psychedelic
+  - tryptamine
+  - serotonin-2a
 accent: "#888888"
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
 halfLife:
-  label: Not established
-  low: null
-  high: null
-  context: The returned report does not establish a validated universal human terminal half-life.
-  sourceId: S1
-  observationId: psilocybin-microdosing-pk-1
+  label: 1.4–3 hours in high-dose oral psilocybin PK studies; not microdose-specific
+  low: 1.4
+  high: 3
+  context: Human PK studies used 15–30 mg or 0.3–0.6 mg/kg, substantially above typical microdosing exposures. Their psilocin timing and half-life estimates cannot be assumed to describe repeated microdosing precisely (S5, S6).
+  sourceId: S5
+  observationId: psilocybin-microdosing-pk
 kinetics:
-  onset: Not established
-  peak: Not established
-  duration: Not established
-  bioavailability: Not established
-  metabolism: Not established
-  sourceId: S1
+  onset: Microdose-specific onset is not standardized; high-dose oral psilocin peaks around 2 hours
+  peak: About 2 hours in 15–30 mg oral studies
+  duration: High-dose psilocin half-life about 1.4–3 hours; repeated microdose accumulation is unknown
+  bioavailability: Formulation- and mushroom-content-dependent
+  metabolism: Psilocybin is converted to psilocin; glucuronidation and an extended terminal phase are reported
+  sourceId: S5
 x-shape:
   - slug
   - name
@@ -59,398 +62,147 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
-
-
 ---
 
 ## Summary
 
-Psilocybin microdosing is repeated ingestion of a low, usually subthreshold amount of psilocybin-containing mushrooms, truffles, or measured psilocybin. Controlled studies in screened, generally healthy adults show that some doses produce detectable subjective, somatic, and EEG effects, but do not reliably improve standard cognition, creativity, mood, anxiety, depression, well-being, or social function beyond placebo. Long-term cardiovascular and psychiatric safety, repeated-dose pharmacokinetics, and efficacy in clinical populations remain unresolved. Full-dose psilocybin-depression evidence is outside scope and cannot establish microdosing efficacy. (S1, S2, S3, S4, S7)
-
-- bottom_line: "Acute effects can be real and detectable; reliable functional or mood enhancement has not been demonstrated."
-- strongest_evidence: "Small randomized, double-blind, placebo-controlled studies in healthy adults."
-- key_uncertainties: "Clinical efficacy, long-term safety, repeated-dose PK, dose-response, and interaction risks."
-- scope: "Microdosing only; no inference from macrodose therapeutic trials."
+Psilocybin microdosing means repeated low exposure to psilocybin-containing mushrooms, truffles, or measured psilocybin. Controlled studies in screened healthy adults show detectable subjective, somatic, and EEG effects in some protocols, but no reliable improvement in standard cognition, creativity, mood, anxiety, depression, well-being, or social function beyond placebo (S1, S2, S4, S7).
 
 ## Description
 
-“Microdose” has no universally accepted pharmacological cutoff. Research and popular protocols commonly define it operationally as approximately 5–10% of a psychoactive dose, or roughly one-tenth to one-twentieth of a full dose, taken intermittently. “Subperceptual” describes the intention of the regimen, not a guaranteed result: controlled participants have often detected active capsules above chance. (S2, S4, S7)
-
-- operational_definition: "An intended sub-hallucinogenic dose taken intermittently."
-- common_schedule: "Often one administration every three days or approximately two to three times weekly."
-- pharmacological_status: "No validated universal milligram threshold."
-- perceptual_status: "Not reliably imperceptible; detectability varies with dose, material, prior experience, and expectancy."
-- preparations: "Synthetic psilocybin, dried mushrooms, and fresh or dried psilocybin truffles are not mass-equivalent."
+There is no universal pharmacological cutoff for a microdose. Controlled datasets used roughly 0.8–1.5 mg measured psilocybin per administration or variable mushroom/truffle masses. Fresh or dried material cannot be converted reliably to analyte milligrams without moisture and alkaloid assays (S1, S2, S4, S7).
 
 ## Evidence note
 
-The controlled literature is small and heterogeneous. The main studies summarized here recruited healthy or otherwise screened adults, frequently with previous psychedelic experience, and used brief protocols lasting days to several weeks. Instruments included the DASS-21, emotional Go/No-Go, MAIA, PANAS, WEMWBS, MPFI, Affect Grid, AX-CPT, Reference-Back, N-back, Attentional Blink, Stroop, creativity tasks, and social-cognition tasks. No cited placebo-controlled psilocybin microdosing trial establishes treatment of depression, ADHD, or another clinical disorder. (S2, S4, S7)
-
-- population: "Predominantly healthy, screened adults; clinical psychiatric populations are largely absent."
-- design_strength: "Randomized placebo-controlled studies provide the most informative evidence."
-- major_bias: "Expectancy, self-selection, incomplete blinding, variable mushroom potency, and small samples."
-- placebo_issue: "Inert capsules may not adequately match subtle subjective effects; active placebo studies are lacking in the reviewed literature."
-- interpretation: "Null findings reduce confidence in broad enhancement claims but do not prove that every possible dose or population is ineffective."
-
-**Full Deep Research detail retained from the returned report:**
-
-**Doses:**
-
-Whole-mushroom mass is an imprecise proxy for psilocybin exposure because alkaloid content varies by species, batch, storage, and preparation. The two principal controlled psilocybin datasets reviewed in 2024 used approximately 0.8–1.5 mg measured psilocybin per administration; this is more informative than a generic mushroom-gram label. (S1, S2, S7)
-
-- field_mass_range: "Approximately 0.1–0.5 g dried psilocybin mushroom material is described in the research literature as a microdosing range; this is not an analyte-standardized definition. (S1)"
-- Cavanna_2022: "0.5 g dried Psilocybe cubensis per administration; the authors reported an estimated effective exposure of approximately 0.9 mg psilocybin, with chemical variability acknowledged. n=34. (S1)"
-- Marschall_2022: "0.7 g dried Galindoi truffles, approximately 1.5 mg psilocybin per dose; five to seven administrations across three weeks. (S2)"
-- Prochazkova_2026: "0.65 g or 1.00 g fresh Psilocybe galindoii truffles, approximately one dose every three days; six doses in Experiment 1 and up to ten in Experiment 2. (S4)"
-- conversion_rule: "Fresh-truffle mass, dried-truffle mass, dried-mushroom mass, and synthetic psilocybin milligrams cannot be converted reliably without moisture and alkaloid assays."
-- scope_warning: "These are study doses, not validated personal dosing standards."
-
-**Pharmacokinetics:**
-
-Psilocybin is converted to psilocin, the principal psychoactive circulating metabolite. Available human PK studies used 15–30 mg or 0.3–0.6 mg/kg—substantially larger than typical research microdoses—so their timing and exposure estimates cannot be assumed to describe microdosing precisely. (S5, S6)
-
-- active_metabolite: "Psilocin; intact psilocybin was not detected in plasma in one controlled PK study. (S6)"
-- fixed_doses: "After 15, 25, and 30 mg oral psilocybin, mean peak psilocin concentrations were approximately 11, 17, and 21 ng/mL, reached at about two hours. (S5)"
-- half_life: "Approximately 1.4–1.8 hours in the fixed-dose study; approximately 3.0 ± 1.1 hours in a 0.3–0.6 mg/kg study. (S5, S6)"
-- elimination: "Renal clearance of intact psilocin accounted for less than 2% in the weight-adjusted study; glucuronide metabolism and an extended terminal phase were observed. (S6)"
-- repeated_protocols: "No validated microdose-specific model establishes accumulation, steady state, metabolite persistence, or receptor adaptation across every-third-day or longer regimens."
-- body_weight: "Body weight did not predict PK in the larger-dose studies, but this does not validate fixed mushroom mass at microdose levels. (S5, S6)"
-
-**Modifiers:**
-
-Observed effects may depend on active-alkaloid concentration, dose timing, prior psychedelic exposure, baseline symptoms, expectations, and whether the dose is perceptible. The evidence does not provide a validated individual-tailoring model. (S1, S2, S3, S4, S7)
-
-- material: "Species, batch, storage, drying, and homogenization alter exposure."
-- dose: "Dose-response relationships have not been mapped adequately for psilocybin microdosing."
-- schedule: "Most controlled protocols are short; common every-third-day schedules are customary rather than pharmacokinetically validated."
-- baseline_state: "Healthy participants may show ceiling effects on mood and well-being measures."
-- prior_experience: "Previous psychedelic use can increase detectability and may shape conditioning or expectancy."
-- expectancy: "Beliefs about receiving an active dose can influence self-reported outcomes."
-- timing: "Acute testing near the expected peak may capture transient effects rather than persistent or between-dose effects."
-
-**Effects:**
-
-Acute effects are more consistently observed than enhancement effects. In Cavanna et al., active-dose subjective ratings were higher on dosing days, but the difference was concentrated among participants who correctly identified their condition; 75% of measurement weeks were correctly unblinded. The same study found reduced EEG theta power, no reliable creativity or cognitive enhancement, and several small uncorrected changes suggestive of slowing or impairment. (S1)
-
-In the preregistered repeated-dose study by Marschall et al., seven approximately 1.5 mg psilocybin-equivalent truffle doses over three weeks produced no placebo difference on DASS-21 depression, anxiety, or stress-related outcomes, emotional Go/No-Go processing, or MAIA interoceptive awareness. The DASS-21 condition test was non-significant, *F*(1,43)=0.59, *p*=.45, with Bayes factor 0.24 favoring the null. (S2)
-
-The two 2026 longitudinal trials tested six or ten fresh-truffle doses and found no reliable group differences across cognitive-control, working-memory, attention, social-cognition, mood, mindfulness, self-compassion, flexibility, or well-being measures after multiplicity correction. An isolated improvement on difficult Reading the Mind in the Eyes trials remained exploratory because of the large number of tests. Active participants reported more somatic or bodily-awareness effects, while 48% of participants reporting symptoms were actually in the placebo group. (S4)
-
-- acute_subjective_state: "Detectable active-dose effects occur, but detectability and expectancy are intertwined. (S1, S4)"
-- acute_neurophysiology: "Reduced EEG theta power was observed without a corresponding enhancement of behavioral performance. (S1)"
-- acute_cognition: "No consistent enhancement of attention, inhibition, working memory, divergent thinking, or convergent thinking; some small uncorrected slowing signals were observed. (S1, S4)"
-- repeated_mood: "No reliable psilocybin-versus-placebo reduction in depression, anxiety, stress, negative affect, or improvement in well-being in healthy samples. (S2, S4)"
-- repeated_social_cognition: "One isolated RMET signal was reported, but broad social-cognition measures were null and the finding remains exploratory. (S4)"
-- somatic_effects: "Body awareness, nausea, altered temperature, or heart-rate sensations can occur even at microdose-range exposures. (S4)"
-
-**Outcomes:**
-
-The best-supported outcome is a subtle, sometimes perceptible change in acute experience. Broad claims of improved productivity, creativity, emotional health, or durable cognition are not supported consistently by placebo-controlled psilocybin studies. Positive observational reports remain difficult to separate from expectancy, self-selection, practice effects, and the ritual of dosing. (S1, S2, S3, S4, S7)
-
-- cognition: "No reliable enhancement across the tested laboratory domains."
-- creativity: "No corrected active-placebo advantage on standard divergent or convergent-thinking measures."
-- mood_well_being: "Repeated healthy-volunteer trials are predominantly null."
-- clinical_treatment: "Microdose efficacy for depression, ADHD, anxiety disorders, or other diagnoses is unestablished."
-- durability: "Controlled evidence does not establish benefits persisting beyond short protocols."
-- pharmacological_signal: "Subjective, somatic, and EEG changes indicate that null functional outcomes do not necessarily mean no biological activity."
-
-**Mechanisms:**
-
-Psilocin’s principal psychedelic mechanism involves serotonin 5-HT2A receptor agonism, but the receptor occupancy, exposure threshold, and downstream mechanism relevant to human microdosing have not been established. EEG changes demonstrate neural modulation, not therapeutic efficacy. (S4, S5, S7)
-
-- primary_pharmacology: "Psilocybin functions largely as a prodrug for psilocin, which activates 5-HT2A signaling. (S4, S5)"
-- expectancy_pathway: "Szigeti et al. found that participants' beliefs about capsule content predicted outcomes more strongly than actual capsule content in their self-blinded sample. (S3)"
-- placebo_interpretation: "Expectancy is a plausible contributor, but the 2024 review judged the evidence insufficient to conclude that all microdosing effects are placebo-only. (S7)"
-- neural_signal: "Reduced theta power is compatible with acute pharmacological action but does not identify a beneficial mechanism. (S1)"
-- plasticity_claim: "Neuroplasticity evidence derived from high-dose or preclinical work cannot establish a human microdosing effect; repeated microdose plasticity has not been demonstrated clinically. (S2)"
-
-**Cautions:**
-
-Short controlled trials in screened healthy adults cannot establish long-term safety. The cardiovascular and psychiatric concerns below are primarily uncertainty statements, not proof that typical microdosing causes those outcomes. (S2, S4, S7, S8)
-
-- cardiovascular: "Long-term cardiac safety is unknown. Chronic 5-HT2B-related valvular or fibrotic risk is biologically plausible, but microdosing-specific clinical injury has not been established. (S7)"
-- hemodynamics: "The 2024 review found no blood-pressure or heart-rate data in the psilocybin microdosing studies it reviewed. (S7)"
-- psychiatric: "Microdosing trials commonly excluded psychosis, schizophrenia, mania, bipolar-spectrum histories, serious substance-use disorders, and major psychiatric comorbidity; safety in these groups is therefore uncertain. (S2, S4, S8)"
-- cognition_and_function: "Active doses can be perceptible and may produce somatic discomfort or small task-slowing signals; subthreshold intent does not guarantee unimpaired performance. (S1, S4)"
-- product_variability: "Unassayed mushrooms and truffles can deliver materially different psilocybin and psilocin exposures. (S1, S2)"
-- evidence_gap: "Pregnancy, significant cardiovascular disease, seizure disorders, prolonged frequent use, and polypharmacy are insufficiently characterized in microdosing research. (S7, S8)"
-
-**Claims:**
-
-- claim: "Microdosing treats depression or anxiety."
-  assessment: "Not established; placebo-controlled psilocybin microdose studies in healthy adults found null mood and symptom outcomes, and clinical populations remain insufficiently studied. (S2, S4, S7)"
-- claim: "Microdosing improves focus, productivity, or ADHD symptoms."
-  assessment: "Not demonstrated across AX-CPT, Reference-Back, N-back, Attentional Blink, or related measures; ADHD treatment evidence is absent from the cited trials. (S4)"
-- claim: "Microdosing enhances creativity."
-  assessment: "No reliable advantage on standard divergent- or convergent-thinking tasks in the principal controlled mushroom study. (S1)"
-- claim: "Microdoses are imperceptible."
-  assessment: "Incorrect as a general definition; active-dose effects were detectable and blinding frequently failed. (S1, S2)"
-- claim: "Microdosing produces neuroplastic repair."
-  assessment: "Unproven in humans; mechanistic claims are largely extrapolated from preclinical or non-microdose research. (S2)"
-- claim: "Long-term microdosing is safe."
-  assessment: "Unknown; long-term cardiac, psychiatric, and repeated-exposure surveillance is inadequate. (S7, S8)"
-- claim: "All reported benefits are placebo."
-  assessment: "Too strong for the current evidence; expectancy contributes, but dose, duration, sample, and measurement limitations leave pharmacological effects unresolved. (S3, S7)"
-
-**Interactions:**
-
-Microdose-specific interaction evidence is a major gap. Repeated human studies have excluded participants taking medication, and consensus guidance identifies drug–drug interactions and medical comorbidity as unresolved issues. Evidence from full-dose psilocybin or from anecdotal combinations should not be treated as microdose-specific evidence. (S2, S8)
-
-- psychiatric_medications: "Direct controlled interaction data for SSRIs, SNRIs, antipsychotics, mood stabilizers, and other psychotropics at microdose exposure are insufficient."
-- serotonergic_drugs: "The frequency and severity of serotonin-mediated adverse interactions with microdoses are not quantified."
-- MAOIs_lithium_stimulants: "No reliable microdose-specific safety or pharmacodynamic dataset establishes interaction risk."
-- alcohol_cannabis_other_psychedelics: "Controlled repeated psilocybin microdosing studies do not characterize these combinations."
-- metabolism: "Psilocin glucuronidation is documented, but clinically useful enzyme-interaction predictions for microdosing are not established. (S6)"
-- study_context: "At least one repeated microdosing study excluded people currently taking medication, limiting generalizability. (S2)"
-
-**Legal:**
-
-In the United States, the DEA’s federal classification remains Schedule I. Oregon provides a regulated psilocybin-service pathway, but access occurs through a licensed service center during an administration session with a trained facilitator; this is not nationwide legalization and does not create a general legal market for unsupervised take-home microdosing. Laws elsewhere vary by jurisdiction. (S9, S10)
-
-- united_states_federal: "Psilocybin is federally Schedule I under the Controlled Substances Act. (S9)"
-- Oregon: "Licensed-service-center access is permitted during a facilitated administration session under Oregon’s psilocybin-services framework. (S10)"
-- take_home_microdosing: "Oregon’s cited service model does not establish general legal take-home microdosing. (S10)"
-- jurisdictional_scope: "Possession, cultivation, sale, research, and supervised services may be governed by different federal, state, and local rules."
-- status: "Legal status is jurisdiction-specific and subject to change."
-
-<!-- Deep Research source-link ledger -->
-
-Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
+The controlled literature is small, short, and dominated by healthy or screened adults. Expectancy, incomplete blinding, self-selection, variable mushroom potency, and exclusion of people taking medication limit generalization. Positive observational reports cannot be separated cleanly from expectancy and ritual effects (S1, S2, S3, S4, S7).
 
 ## Doses
 
 ```yaml
-- label: psilocybin-microdosing research exposure 1
-  amount: Not established
-  quantity: null
+- label: Dried Psilocybe cubensis
+  amount: 0.5 g dried mushroom; estimated approximately 0.9 mg psilocybin
+  quantity: 0.5
   quantityMax: null
-  unit: not established
-  ingredient: psilocybin-microdosing
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
+  unit: g dried material
+  ingredient: Psilocybin microdosing
+  formulation: Psilocybe cubensis mushroom
+  route: Oral
+  frequency: Single study administration
+  duration: Acute assessment
+  population: 34 healthy adults
   purpose: Research exposure; not a dosing recommendation.
+  note: Mushroom chemistry was variable and active effects were often detectable (S1).
   sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"field_mass_range":"Approximately 0.1–0.5 g dried psilocybin mushroom material is described in the research literature as a microdosing range; this is not an analyte-standardized definition. (S1)"}'
   sourceId: S1
-- label: psilocybin-microdosing research exposure 2
-  amount: Not established
-  quantity: null
+- label: Dried Galindoi truffles
+  amount: 0.7 g dried truffles; approximately 1.5 mg psilocybin
+  quantity: 0.7
   quantityMax: null
-  unit: not established
-  ingredient: psilocybin-microdosing
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
+  unit: g dried material
+  ingredient: Psilocybin microdosing
+  formulation: Galindoi truffles
+  route: Oral
+  frequency: Five to seven administrations across three weeks
+  duration: 3 weeks
+  population: Healthy self-selected adults
   purpose: Research exposure; not a dosing recommendation.
+  note: The preregistered study found no placebo difference in DASS-21, emotional Go/No-Go, or MAIA outcomes (S2).
   sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"Cavanna_2022":"0.5 g dried Psilocybe cubensis per administration; the authors reported an estimated effective exposure of approximately 0.9 mg psilocybin, with chemical variability acknowledged. n=34. (S1)"}'
-  sourceId: S1
-- label: psilocybin-microdosing research exposure 3
-  amount: Not established
-  quantity: null
-  quantityMax: null
-  unit: not established
-  ingredient: psilocybin-microdosing
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
+  sourceId: S2
+- label: Fresh Galindoii truffles
+  amount: 0.65–1.00 g fresh truffles
+  quantity: 0.65
+  quantityMax: 1
+  unit: g fresh material
+  ingredient: Psilocybin microdosing
+  formulation: Psilocybe galindoii fresh truffles
+  route: Oral
+  frequency: Approximately one dose every three days
+  duration: Six to ten doses across longitudinal trials
+  population: Healthy screened adults
   purpose: Research exposure; not a dosing recommendation.
+  note: Fresh-truffle mass is not a precise analyte dose; broad cognitive and mood measures were null after correction (S4).
   sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"Marschall_2022":"0.7 g dried Galindoi truffles, approximately 1.5 mg psilocybin per dose; five to seven administrations across three weeks. (S2)"}'
-  sourceId: S1
-- label: psilocybin-microdosing research exposure 4
-  amount: Not established
-  quantity: null
-  quantityMax: null
-  unit: not established
-  ingredient: psilocybin-microdosing
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
-  purpose: Research exposure; not a dosing recommendation.
+  sourceId: S4
+- label: Measured psilocybin microdose range
+  amount: Approximately 0.8–1.5 mg psilocybin per administration in controlled datasets
+  quantity: 0.8
+  quantityMax: 1.5
+  unit: mg psilocybin
+  ingredient: Psilocybin microdosing
+  formulation: Measured or estimated psilocybin exposure
+  route: Oral
+  frequency: Protocol-specific
+  duration: Short repeated protocols
+  population: Healthy screened adults
+  purpose: Research exposure range; not a dosing recommendation.
+  note: Mushroom and truffle mass cannot be converted reliably without chemical assays (S1, S2, S7).
   sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"Prochazkova_2026":"0.65 g or 1.00 g fresh Psilocybe galindoii truffles, approximately one dose every three days; six doses in Experiment 1 and up to ten in Experiment 2. (S4)"}'
-  sourceId: S1
-- label: psilocybin-microdosing research exposure 5
-  amount: Not established
-  quantity: null
-  quantityMax: null
-  unit: not established
-  ingredient: psilocybin-microdosing
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
-  purpose: Research exposure; not a dosing recommendation.
-  sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"conversion_rule":"Fresh-truffle mass, dried-truffle mass, dried-mushroom mass, and synthetic psilocybin milligrams cannot be converted reliably without moisture and alkaloid assays."}'
-  sourceId: S1
-- label: psilocybin-microdosing research exposure 6
-  amount: Not established
-  quantity: null
-  quantityMax: null
-  unit: not established
-  ingredient: psilocybin-microdosing
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
-  purpose: Research exposure; not a dosing recommendation.
-  sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"scope_warning":"These are study doses, not validated personal dosing standards."}'
-  sourceId: S1
+  sourceId: S7
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: psilocybin-microdosing-pk-1
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
+- id: psilocybin-microdosing-pk
+  analyte: Psilocin
+  route: Oral
+  formulation: High-dose oral psilocybin PK studies; microdose-specific curve unavailable
+  population: Healthy adults in single-dose PK studies
   endpoint: elimination-half-life
-  statistic: not-established
+  statistic: reported-range
   value: null
-  low: null
-  high: null
+  low: 1.4
+  high: 3
   unit: hours
-  context: 'Original Deep Research PK detail: {"active_metabolite":"Psilocin; intact psilocybin was not detected in plasma in one controlled PK study. (S6)"}'
-  sourceId: S1
-  modelEligible: false
-- id: psilocybin-microdosing-pk-2
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"fixed_doses":"After 15, 25, and 30 mg oral psilocybin, mean peak psilocin concentrations were approximately 11, 17, and 21 ng/mL, reached at about two hours. (S5)"}'
-  sourceId: S1
-  modelEligible: false
-- id: psilocybin-microdosing-pk-3
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"half_life":"Approximately 1.4–1.8 hours in the fixed-dose study; approximately 3.0 ± 1.1 hours in a 0.3–0.6 mg/kg study. (S5, S6)"}'
-  sourceId: S1
-  modelEligible: false
-- id: psilocybin-microdosing-pk-4
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"elimination":"Renal clearance of intact psilocin accounted for less than 2% in the weight-adjusted study; glucuronide metabolism and an extended terminal phase were observed. (S6)"}'
-  sourceId: S1
-  modelEligible: false
-- id: psilocybin-microdosing-pk-5
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"repeated_protocols":"No validated microdose-specific model establishes accumulation, steady state, metabolite persistence, or receptor adaptation across every-third-day or longer regimens."}'
-  sourceId: S1
-  modelEligible: false
-- id: psilocybin-microdosing-pk-6
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"body_weight":"Body weight did not predict PK in the larger-dose studies, but this does not validate fixed mushroom mass at microdose levels. (S5, S6)"}'
-  sourceId: S1
+  context: At 15–30 mg oral psilocybin, psilocin peaked at about 2 hours with half-lives around 1.4–1.8 hours; a 0.3–0.6 mg/kg study reported about 3.0 ± 1.1 hours. Intact psilocybin was not detected in plasma in one study, and repeated microdose accumulation or steady state is unknown (S5, S6).
+  sourceId: S5
   modelEligible: false
 ```
 
 ## Modifiers
 
 ```yaml
-- label: Modifier 1
-  effect: Variable
-  detail: '{"material":"Species, batch, storage, drying, and homogenization alter exposure."}'
+- label: Species, batch, storage, and drying
+  effect: Active-alkaloid concentration changes exposure.
+  detail: Whole-mushroom and truffle mass are imprecise proxies for psilocybin without assays.
   sourceId: S1
-  observationId: psilocybin-microdosing-pk-1
+  observationId: psilocybin-microdosing-pk
   factorType: other
   direction: variable
-- label: Modifier 2
-  effect: Variable
-  detail: '{"dose":"Dose-response relationships have not been mapped adequately for psilocybin microdosing."}'
-  sourceId: S1
-  observationId: psilocybin-microdosing-pk-1
+- label: Dose and schedule
+  effect: Dose-response and repeated-protocol kinetics are not mapped adequately.
+  detail: Every-third-day schedules are customary rather than pharmacokinetically validated.
+  sourceId: S2
+  observationId: psilocybin-microdosing-pk
   factorType: other
   direction: variable
-- label: Modifier 3
-  effect: Variable
-  detail: '{"schedule":"Most controlled protocols are short; common every-third-day schedules are customary rather than pharmacokinetically validated."}'
-  sourceId: S1
-  observationId: psilocybin-microdosing-pk-1
+- label: Baseline state
+  effect: Healthy participants may show ceiling effects on mood and well-being measures.
+  detail: Clinical psychiatric populations are largely absent from controlled microdosing studies.
+  sourceId: S4
+  observationId: psilocybin-microdosing-pk
   factorType: other
   direction: variable
-- label: Modifier 4
-  effect: Variable
-  detail: '{"baseline_state":"Healthy participants may show ceiling effects on mood and well-being measures."}'
+- label: Prior psychedelic experience
+  effect: Previous use may increase detectability and shape conditioning or expectancy.
+  detail: Samples are self-selected and blinding is difficult when active effects are perceptible.
   sourceId: S1
-  observationId: psilocybin-microdosing-pk-1
+  observationId: psilocybin-microdosing-pk
   factorType: other
   direction: variable
-- label: Modifier 5
-  effect: Variable
-  detail: '{"prior_experience":"Previous psychedelic use can increase detectability and may shape conditioning or expectancy."}'
-  sourceId: S1
-  observationId: psilocybin-microdosing-pk-1
+- label: Expectancy
+  effect: Beliefs about receiving an active dose can influence self-reported outcomes.
+  detail: In a self-blinded citizen-science study, beliefs predicted reported benefits better than capsule content.
+  sourceId: S3
+  observationId: psilocybin-microdosing-pk
   factorType: other
   direction: variable
-- label: Modifier 6
-  effect: Variable
-  detail: '{"expectancy":"Beliefs about receiving an active dose can influence self-reported outcomes."}'
-  sourceId: S1
-  observationId: psilocybin-microdosing-pk-1
-  factorType: other
-  direction: variable
-- label: Modifier 7
-  effect: Variable
-  detail: '{"timing":"Acute testing near the expected peak may capture transient effects rather than persistent or between-dose effects."}'
-  sourceId: S1
-  observationId: psilocybin-microdosing-pk-1
+- label: Assessment timing
+  effect: Acute testing near the expected peak may capture transient effects rather than persistent or between-dose effects.
+  detail: Short studies do not establish durability beyond the protocol.
+  sourceId: S7
+  observationId: psilocybin-microdosing-pk
   factorType: other
   direction: variable
 ```
@@ -458,373 +210,303 @@ Every HTTPS link returned by this run is represented in References. Links whose 
 ## Effects
 
 ```yaml
-- id: psilocybin-microdosing-effect-1
-  conflictingSourceIds: []
-  reportType: measured-assessment
+- id: psilocybin-microdosing-effect-subjective
   conceptId: perception
-  name: psilocybin-microdosing effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
+  name: Acute subjective state
+  direction: Increased
+  evidence: Subjective reports
+  description: Active-dose subjective ratings were higher on dosing days, but differences were concentrated among participants who correctly identified their condition and blinding was frequently incomplete.
   sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: psilocybin-microdosing-effect-2
-  conflictingSourceIds: []
+  population: 34 healthy adults
+  exposure: 0.5 g dried mushroom; acute within-subject study
+  instrument: Subjective ratings and blinding accuracy
+  magnitude: Detectable in a subset
   reportType: measured-assessment
-  conceptId: perception
-  name: psilocybin-microdosing effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: psilocybin-microdosing-effect-3
   conflictingSourceIds: []
-  reportType: measured-assessment
+- id: psilocybin-microdosing-effect-neural
   conceptId: perception
-  name: psilocybin-microdosing effect
-  direction: Variable
+  name: EEG theta power
+  direction: Decreased
   evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
+  description: Reduced EEG theta power was observed without corresponding behavioral cognitive enhancement.
   sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: psilocybin-microdosing-effect-4
+  population: 34 healthy adults
+  exposure: 0.5 g dried mushroom
+  instrument: EEG
+  magnitude: Reduced theta power
+  reportType: measured-assessment
   conflictingSourceIds: []
-  reportType: measured-assessment
+- id: psilocybin-microdosing-effect-somatic
   conceptId: perception
-  name: psilocybin-microdosing effect
+  name: Somatic and bodily sensations
   direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: psilocybin-microdosing-effect-5
+  evidence: Subjective reports
+  description: Body awareness, nausea, altered temperature, or heart-rate sensations can occur at microdose-range exposures; symptoms were not specific to active assignment in all analyses.
+  sourceId: S4
+  population: Healthy screened adults in two longitudinal trials
+  exposure: Six or ten fresh-truffle doses
+  instrument: Symptom and bodily-awareness reports
+  magnitude: Mixed; 48% of symptom reporters were placebo
+  reportType: measured-assessment
   conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: psilocybin-microdosing effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: psilocybin-microdosing-effect-6
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: psilocybin-microdosing effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
 ```
 
 ## Outcomes
 
 ```yaml
-- id: psilocybin-microdosing-outcome-1
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: attention
-  name: psilocybin-microdosing outcome
+- id: psilocybin-microdosing-outcome-cognition
+  conceptId: cognitive-performance
+  name: Standard cognitive performance
   direction: Variable
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
+  description: No reliable enhancement across attention, inhibition, working memory, divergent thinking, or convergent thinking; small uncorrected slowing signals were exploratory.
   sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: psilocybin-microdosing-outcome-2
-  conflictingSourceIds: []
+  population: Healthy screened adults
+  exposure: Acute and repeated microdose protocols
+  instrument: AX-CPT, Reference-Back, N-back, Attentional Blink, Stroop, creativity tasks
+  magnitude: Predominantly null
   reportType: measured-assessment
-  conceptId: attention
-  name: psilocybin-microdosing outcome
+  conflictingSourceIds: []
+  study:
+    id: psilo-cognition
+    design: Double-blind placebo-controlled studies
+    comparator: Placebo
+    route: Oral
+    formulation: Mushroom or truffle
+    assessmentTime: Acute and repeated
+    sampleSize: 34
+- id: psilocybin-microdosing-outcome-creativity
+  conceptId: cognitive-performance
+  name: Creativity
   direction: Variable
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
+  description: The principal controlled mushroom study found no corrected active-placebo advantage on standard divergent- or convergent-thinking measures.
   sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: psilocybin-microdosing-outcome-3
-  conflictingSourceIds: []
+  population: 34 healthy adults
+  exposure: 0.5 g dried mushroom
+  instrument: Creativity tasks
+  magnitude: Null after correction
   reportType: measured-assessment
-  conceptId: attention
-  name: psilocybin-microdosing outcome
+  conflictingSourceIds: []
+- id: psilocybin-microdosing-outcome-mood
+  conceptId: depression-severity
+  name: Mood and anxiety symptoms
   direction: Variable
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: psilocybin-microdosing-outcome-4
-  conflictingSourceIds: []
+  description: Seven approximately 1.5 mg truffle doses over three weeks produced no placebo difference in DASS-21 depression, anxiety, or stress; later longitudinal trials were also broadly null after correction.
+  sourceId: S2
+  population: Healthy self-selected adults
+  exposure: Repeated truffle microdosing over three weeks
+  instrument: DASS-21, emotional Go/No-Go, MAIA
+  magnitude: DASS condition test F(1,43)=0.59, P=.45; BF 0.24 favoring null
   reportType: measured-assessment
-  conceptId: attention
-  name: psilocybin-microdosing outcome
+  conflictingSourceIds: []
+- id: psilocybin-microdosing-outcome-social
+  conceptId: cognitive-performance
+  name: Social cognition and well-being
   direction: Variable
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: psilocybin-microdosing-outcome-5
-  conflictingSourceIds: []
+  description: The longitudinal trials found no reliable group differences in social cognition, mindfulness, self-compassion, flexibility, or well-being; one difficult RMET signal remained exploratory after many tests.
+  sourceId: S4
+  population: Healthy screened adults
+  exposure: Six or ten fresh-truffle doses
+  instrument: RMET and well-being measures
+  magnitude: Broadly null; isolated exploratory signal
   reportType: measured-assessment
-  conceptId: attention
-  name: psilocybin-microdosing outcome
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: psilocybin-microdosing-outcome-6
   conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: attention
-  name: psilocybin-microdosing outcome
+- id: psilocybin-microdosing-outcome-clinical
+  conceptId: depression-severity
+  name: Clinical treatment efficacy
   direction: Variable
-  evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
+  evidence: Limited research
+  description: Microdose efficacy for depression, ADHD, anxiety disorders, or other diagnoses is unestablished because clinical populations are largely absent from controlled studies.
+  sourceId: S7
+  population: Clinical populations largely unstudied
+  exposure: Microdose protocols
+  instrument: Clinical symptom endpoints
+  magnitude: Not established
+  reportType: measured-assessment
+  conflictingSourceIds: []
+- id: psilocybin-microdosing-outcome-durability
+  conceptId: cognitive-performance
+  name: Durability
+  direction: Variable
+  evidence: Limited research
+  description: Controlled evidence does not establish benefits persisting beyond short protocols lasting days to several weeks.
+  sourceId: S7
+  population: Healthy screened adults
+  exposure: Short repeated protocols
+  instrument: Follow-up outcomes
+  magnitude: Not established
+  reportType: measured-assessment
+  conflictingSourceIds: []
 ```
 
 ## Mechanisms
 
 ```yaml
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"primary_pharmacology":"Psilocybin functions largely as a prodrug for psilocin, which activates 5-HT2A signaling. (S4, S5)"}'
+- title: Psilocin 5-HT2A signaling
+  description: Psilocybin functions largely as a prodrug for psilocin, which activates 5-HT2A signaling; receptor occupancy and a microdose-specific exposure threshold are not established.
+  sourceId: S5
+  conceptId: serotonin-2a
+- title: Expectancy pathway
+  description: In a self-blinded sample, beliefs about capsule content predicted reported outcomes better than actual capsule content, supporting expectancy as a contributor.
+  sourceId: S3
+- title: Acute neural modulation
+  description: Reduced theta power is compatible with acute pharmacological action but does not identify a beneficial mechanism.
   sourceId: S1
-- title: Research mechanism
-  description: "Original Deep Research mechanism: {\"expectancy_pathway\":\"Szigeti et al. found that participants' beliefs about capsule content predicted outcomes more strongly than actual capsule content in their self-blinded sample. (S3)\"}"
-  sourceId: S1
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"placebo_interpretation":"Expectancy is a plausible contributor, but the 2024 review judged the evidence insufficient to conclude that all microdosing effects are placebo-only. (S7)"}'
-  sourceId: S1
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"neural_signal":"Reduced theta power is compatible with acute pharmacological action but does not identify a beneficial mechanism. (S1)"}'
-  sourceId: S1
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"plasticity_claim":"Neuroplasticity evidence derived from high-dose or preclinical work cannot establish a human microdosing effect; repeated microdose plasticity has not been demonstrated clinically. (S2)"}'
-  sourceId: S1
+- title: Plasticity claim remains extrapolated
+  description: Preclinical or high-dose neuroplasticity findings cannot establish a human microdosing effect; repeated microdose plasticity has not been demonstrated clinically.
+  sourceId: S2
 ```
 
 ## Cautions
 
 ```yaml
-- title: Research caution
-  description: 'Original Deep Research caution: {"cardiovascular":"Long-term cardiac safety is unknown. Chronic 5-HT2B-related valvular or fibrotic risk is biologically plausible, but microdosing-specific clinical injury has not been established. (S7)"}'
+- title: Long-term cardiac uncertainty
+  description: Chronic 5-HT2B-related valvular or fibrotic risk is biologically plausible, but microdosing-specific clinical injury has not been established and long-term surveillance is inadequate.
+  sourceId: S7
+- title: Psychiatric exclusions
+  description: Trials commonly excluded psychosis, schizophrenia, mania, bipolar-spectrum histories, serious substance-use disorders, and major comorbidity; safety in these groups is uncertain.
+  sourceId: S8
+- title: Functional impairment is possible
+  description: Active doses can be perceptible and may produce somatic discomfort or small task-slowing signals; subthreshold intent does not guarantee unimpaired performance.
   sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"hemodynamics":"The 2024 review found no blood-pressure or heart-rate data in the psilocybin microdosing studies it reviewed. (S7)"}'
+- title: Product variability
+  description: Unassayed mushrooms and truffles can deliver materially different psilocybin and psilocin exposures.
   sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"psychiatric":"Microdosing trials commonly excluded psychosis, schizophrenia, mania, bipolar-spectrum histories, serious substance-use disorders, and major psychiatric comorbidity; safety in these groups is therefore uncertain. (S2, S4, S8)"}'
-  sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"cognition_and_function":"Active doses can be perceptible and may produce somatic discomfort or small task-slowing signals; subthreshold intent does not guarantee unimpaired performance. (S1, S4)"}'
-  sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"product_variability":"Unassayed mushrooms and truffles can deliver materially different psilocybin and psilocin exposures. (S1, S2)"}'
-  sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"evidence_gap":"Pregnancy, significant cardiovascular disease, seizure disorders, prolonged frequent use, and polypharmacy are insufficiently characterized in microdosing research. (S7, S8)"}'
-  sourceId: S1
+- title: Evidence gaps
+  description: Pregnancy, significant cardiovascular disease, seizure disorders, prolonged frequent use, and polypharmacy are insufficiently characterized.
+  sourceId: S7
 ```
 
 ## Claims
 
 ```yaml
-- id: psilocybin-microdosing-claim-1
-  assertion: Microdosing treats depression or anxiety.
-  relation: evidence-boundary
+- id: psilocybin-microdosing-claim-treatment
+  assertion: Microdosing treats depression or anxiety
+  relation: evidence-assessment
   participants:
     - entityId: substance:psilocybin-microdosing
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+      role: subject
+    - entityId: tag:serotonin-2a
+      role: context
+  context: Not established; controlled studies in healthy adults found null mood outcomes and clinical populations remain insufficiently studied.
   sourceIds:
-    - S1
-  conflictingSourceIds:
-    - S1
+    - S2
+    - S4
+    - S7
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: psilocybin-microdosing-claim-2
-  assertion: Microdosing improves focus, productivity, or ADHD symptoms.
-  relation: evidence-boundary
+  limitation: Healthy short-term samples cannot estimate treatment efficacy.
+- id: psilocybin-microdosing-claim-focus
+  assertion: Microdosing improves focus, productivity, or ADHD symptoms
+  relation: evidence-assessment
   participants:
     - entityId: substance:psilocybin-microdosing
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+      role: subject
+    - entityId: tag:serotonin-2a
+      role: context
+  context: Not demonstrated across the cited attention and working-memory measures; ADHD treatment evidence is absent.
   sourceIds:
-    - S1
-  conflictingSourceIds:
-    - S1
+    - S4
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: psilocybin-microdosing-claim-3
-  assertion: Microdosing enhances creativity.
-  relation: evidence-boundary
+  limitation: Most studies were not clinical ADHD trials.
+- id: psilocybin-microdosing-claim-creativity
+  assertion: Microdosing enhances creativity
+  relation: evidence-assessment
   participants:
     - entityId: substance:psilocybin-microdosing
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+      role: subject
+    - entityId: tag:serotonin-2a
+      role: context
+  context: No reliable advantage on standard divergent or convergent thinking tasks.
   sourceIds:
     - S1
-  conflictingSourceIds:
-    - S1
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: psilocybin-microdosing-claim-4
-  assertion: Microdoses are imperceptible.
-  relation: evidence-boundary
+  limitation: One short controlled mushroom study cannot exclude every protocol, but broad enhancement is unsupported.
+- id: psilocybin-microdosing-claim-imperceptible
+  assertion: Microdoses are imperceptible
+  relation: evidence-assessment
   participants:
     - entityId: substance:psilocybin-microdosing
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+      role: subject
+    - entityId: tag:serotonin-2a
+      role: context
+  context: Incorrect as a general definition; active effects were detectable and blinding frequently failed.
   sourceIds:
     - S1
-  conflictingSourceIds:
-    - S1
+    - S2
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: psilocybin-microdosing-claim-5
-  assertion: Microdosing produces neuroplastic repair.
-  relation: evidence-boundary
+  limitation: Detectability varies by dose and expectancy.
+- id: psilocybin-microdosing-claim-safe
+  assertion: Long-term microdosing is safe
+  relation: evidence-assessment
   participants:
     - entityId: substance:psilocybin-microdosing
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+      role: subject
+    - entityId: tag:serotonin-2a
+      role: context
+  context: Unknown; long-term cardiac, psychiatric, and repeated-exposure surveillance is inadequate.
   sourceIds:
-    - S1
-  conflictingSourceIds:
-    - S1
+    - S7
+    - S8
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: psilocybin-microdosing-claim-6
-  assertion: Long-term microdosing is safe.
-  relation: evidence-boundary
+  limitation: Absence of evidence is not evidence of safety.
+- id: psilocybin-microdosing-claim-placebo
+  assertion: All reported benefits are placebo
+  relation: evidence-assessment
   participants:
     - entityId: substance:psilocybin-microdosing
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+      role: subject
+    - entityId: tag:serotonin-2a
+      role: context
+  context: Too strong for current evidence; expectancy contributes, but pharmacological effects remain unresolved.
   sourceIds:
-    - S1
-  conflictingSourceIds:
-    - S1
+    - S3
+    - S7
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: psilocybin-microdosing-claim-7
-  assertion: All reported benefits are placebo.
-  relation: evidence-boundary
-  participants:
-    - entityId: substance:psilocybin-microdosing
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
-  sourceIds:
-    - S1
-  conflictingSourceIds:
-    - S1
-  assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
+  limitation: Dose, duration, sample, and measurement limitations remain.
 ```
 
 ## Interactions
 
 ```yaml
-- id: interaction-1
-  name: Documented or hypothesized coexposure
+- id: psilo-interaction-psychiatric
+  name: Psychiatric medications
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"psychiatric_medications":"Direct controlled interaction data for SSRIs, SNRIs, antipsychotics, mood stabilizers, and other psychotropics at microdose exposure are insufficient."}'
-  sourceId: S1
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-2
-  name: Documented or hypothesized coexposure
+  summary: Direct controlled interaction data for SSRIs, SNRIs, antipsychotics, mood stabilizers, and other psychotropics at microdose exposure are insufficient.
+  sourceId: S2
+  context: Evidence gap
+- id: psilo-interaction-serotonergic
+  name: Serotonergic drugs
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"serotonergic_drugs":"The frequency and severity of serotonin-mediated adverse interactions with microdoses are not quantified."}'
-  sourceId: S1
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-3
-  name: Documented or hypothesized coexposure
+  summary: The frequency and severity of serotonin-mediated adverse interactions with microdoses are not quantified.
+  sourceId: S8
+  context: Evidence gap
+- id: psilo-interaction-maoi
+  name: MAOIs, lithium, and stimulants
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"MAOIs_lithium_stimulants":"No reliable microdose-specific safety or pharmacodynamic dataset establishes interaction risk."}'
-  sourceId: S1
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-4
-  name: Documented or hypothesized coexposure
+  summary: No reliable microdose-specific safety or pharmacodynamic dataset establishes interaction risk.
+  sourceId: S8
+  context: Evidence gap
+- id: psilo-interaction-substances
+  name: Alcohol, cannabis, and other psychedelics
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"alcohol_cannabis_other_psychedelics":"Controlled repeated psilocybin microdosing studies do not characterize these combinations."}'
-  sourceId: S1
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-5
-  name: Documented or hypothesized coexposure
+  summary: Controlled repeated microdosing studies do not characterize these combinations.
+  sourceId: S2
+  context: Evidence gap
+- id: psilo-interaction-metabolism
+  name: Psilocin metabolism
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"metabolism":"Psilocin glucuronidation is documented, but clinically useful enzyme-interaction predictions for microdosing are not established. (S6)"}'
-  sourceId: S1
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-6
-  name: Documented or hypothesized coexposure
-  otherSlug: null
-  summary: 'Original Deep Research interaction: {"study_context":"At least one repeated microdosing study excluded people currently taking medication, limiting generalizability. (S2)"}'
-  sourceId: S1
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
+  summary: Psilocin glucuronidation is documented, but clinically useful enzyme-interaction predictions for microdosing are not established.
+  sourceId: S6
+  context: Pharmacokinetic uncertainty
 ```
 
 ## Experience links
@@ -859,7 +541,8 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   funding: Community and in-kind support acknowledged; no conventional grant stated in the retrieved text.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Authors declared no potential conflicts of interest.
-  conflictOfInterestStatus: not-assessed
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC8801668/
 - id: S3
   title: Self-blinding citizen science to explore psychedelic microdosing
   authors: Balázs Szigeti et al.; Imperial College London
@@ -883,7 +566,8 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   funding: European Research Council Advanced Grant ERC-2015-AdG-694722 and MICR grant VI20172020056.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Authors declared no known competing financial interests or relationships.
-  conflictOfInterestStatus: not-assessed
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://doi.org/10.1016/j.neuropharm.2025.110722
 - id: S5
   title: Pharmacokinetics and Pharmacodynamics of Oral Psilocybin Administration in Healthy Participants
   authors: Friederike Holze, Anna M. Becker, Karolina E. Kolaczynska, Urs Duthaler, and Matthias E. Liechti
@@ -908,8 +592,6 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not stated in the retrieved PubMed record.
   conflictOfInterestStatus: not-assessed
-  pmid: "28353056"
-  doi: 10.1007/s40262-017-0540-6
 - id: S7
   title: Is microdosing a placebo? A rapid review of low-dose LSD and psilocybin research
   authors: Vince Polito and Patricio Liknaitzky
@@ -933,7 +615,8 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   funding: Not stated in the retrieved article record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: See article disclosure statement.
-  conflictOfInterestStatus: not-assessed
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12495261/
 - id: S9
   title: "Drugs of Abuse: A DEA Resource Guide, 2024 Edition"
   authors: United States Drug Enforcement Administration
@@ -958,70 +641,19 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not applicable.
   conflictOfInterestStatus: not-assessed
-- id: dr-psilocybin-microdosing-link-1
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://www.erowid.org/plants/mushrooms/mushrooms.shtml
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-psilocybin-microdosing-link-2
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://psychonautwiki.org/wiki/Psilocybin_mushrooms
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-psilocybin-microdosing-link-3
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://selfblinding-microdose.org/
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
 
 ```yaml
-- jurisdiction: Not established
-  activity: Not established
-  status: 'Original Deep Research legal detail: {"united_states_federal":"Psilocybin is federally Schedule I under the Controlled Substances Act. (S9)"}'
-  sourceUrl: https://doi.org/10.1038/s41398-022-02039-0
+- jurisdiction: United States
+  activity: Psilocybin possession and use
+  status: The DEA describes psilocybin as Schedule I under the federal Controlled Substances Act.
+  sourceUrl: https://www.dea.gov/sites/default/files/2025-01/Psilocybin-Drug-Fact-Sheet.pdf
   asOf: 2026-10-10
-- jurisdiction: Not established
-  activity: Not established
-  status: 'Original Deep Research legal detail: {"Oregon":"Licensed-service-center access is permitted during a facilitated administration session under Oregon’s psilocybin-services framework. (S10)"}'
-  sourceUrl: https://doi.org/10.1038/s41398-022-02039-0
-  asOf: 2026-10-10
-- jurisdiction: Not established
-  activity: Not established
-  status: 'Original Deep Research legal detail: {"take_home_microdosing":"Oregon’s cited service model does not establish general legal take-home microdosing. (S10)"}'
-  sourceUrl: https://doi.org/10.1038/s41398-022-02039-0
-  asOf: 2026-10-10
-- jurisdiction: Not established
-  activity: Not established
-  status: 'Original Deep Research legal detail: {"jurisdictional_scope":"Possession, cultivation, sale, research, and supervised services may be governed by different federal, state, and local rules."}'
-  sourceUrl: https://doi.org/10.1038/s41398-022-02039-0
-  asOf: 2026-10-10
-- jurisdiction: Not established
-  activity: Not established
-  status: Legal status is jurisdiction-specific and subject to change.
-  sourceUrl: https://doi.org/10.1038/s41398-022-02039-0
+- jurisdiction: Oregon, United States
+  activity: Licensed psilocybin services
+  status: Oregon permits access through licensed service centers during a facilitated administration session; this is not nationwide legalization or a general legal take-home microdosing market.
+  sourceUrl: https://www.oregon.gov/oha/ph/preventionwellness/pages/psilocybin-what-are-psilocybin-services.aspx
   asOf: 2026-10-10
 ```

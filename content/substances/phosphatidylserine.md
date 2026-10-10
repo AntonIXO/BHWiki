@@ -17,16 +17,16 @@ halfLife:
   label: Not established
   low: null
   high: null
-  context: The returned report does not establish a validated universal human terminal half-life.
-  sourceId: S1
-  observationId: phosphatidylserine-pk-1
+  context: A serum concentration peak around 90 minutes and return toward baseline by 180 minutes were observed; terminal half-life was not established.
+  sourceId: S7
+  observationId: ps-serum-profile
 kinetics:
   onset: Not established
-  peak: Not established
-  duration: Not established
+  peak: Serum PS peak about 90 minutes in a PS/PA mixture
+  duration: Return toward baseline by about 180 minutes in the cited study
   bioavailability: Not established
-  metabolism: Not established
-  sourceId: S1
+  metabolism: Digestion and lipid remodeling; intact brain delivery unresolved
+  sourceId: S7
 x-shape:
   - slug
   - name
@@ -59,336 +59,143 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
-
-
 ---
-
 ## Summary
 
-Phosphatidylserine (PS; PtdSer) is an endogenous anionic membrane phospholipid sold as a supplement. Human evidence is mixed: historical bovine-cortex trials reported selective cognitive or stress-biomarker effects, whereas a well-designed soy-PS trial was null. A 2022 meta-analysis found a memory signal in older adults but no improvement in activities of daily living; its dataset combined randomized and pre–post studies with different PS sources and formulations. Stress studies more consistently altered ACTH or cortisol than validated clinical outcomes, and exercise findings were largely null. Short-term oral use was generally well tolerated; long-term safety and dementia-prevention or treatment effects remain unestablished. Source IDs: PS-01, PS-02, PS-03, PS-10, PS-16. ([biolimitless.com](https://biolimitless.com/wp-content/uploads/2025/03/KJFST-phosph-cognitive-elderly.pdf))
-
-- conclusion: "Evidence is formulation-specific and mixed, not a demonstrated dementia treatment."
-  sourceId: PS-01
-- strongest_negative_trial: "Soy-derived PS at 300 or 600 mg/day for 12 weeks produced no significant cognitive benefit."
-  sourceId: PS-02
-- strongest_positive_signal: "Small or older studies report selective memory or HPA-axis biomarker effects."
-  sourceId: PS-03
-- safety: "Short trials generally reported no serious adverse-event signal."
-  sourceId: PS-11
+Phosphatidylserine (PS) is an endogenous membrane phospholipid sold in bovine-cortex, soy, sunflower, and marine-derived formulations. Evidence is mixed: historical bovine trials and some mixtures reported selective memory or stress-biomarker signals, while well-designed soy trials were null. A meta-analysis found a memory signal without activities-of-daily-living benefit. [S1][S2][S3][S4][S7]
 
 ## Description
 
-PS is a glycerophospholipid concentrated in cell membranes, including neural tissue. Historical clinical research mainly used bovine-cortex PS (BC-PS). Modern products are predominantly enzymatically produced from soy or sunflower lecithin; marine PS products may contain EPA or DHA. The serine-containing head group is conserved, but fatty-acid composition differs: BC-PS contains more saturated/monounsaturated fatty acids and some DHA, soy and sunflower products are PUFA-rich, and marine preparations can be EPA/DHA-rich. The 2022 elderly meta-analysis included bovine, soy, and marine preparations but not a comparable sunflower efficacy trial; sunflower evidence is primarily regulatory safety documentation. Source IDs: PS-01, PS-13, PS-14. ([biolimitless.com](https://biolimitless.com/wp-content/uploads/2025/03/KJFST-phosph-cognitive-elderly.pdf))
-
-- historical_form: "Bovine-cortex PS; used in many 1980s–1990s cognition and stress trials."
-  sourceId: PS-01
-- current_plant_forms: "Soy- and sunflower-lecithin-derived PS made by enzymatic transphosphatidylation."
-  sourceId: PS-04
-- marine_forms: "PS preparations containing marine fatty acids, often EPA/DHA."
-  sourceId: PS-11
-- comparability: "Different acyl chains and co-ingredients prevent assuming equivalent clinical effects."
-  sourceId: PS-01
+Modern products are mainly soy- or sunflower-lecithin-derived; marine products may add EPA/DHA. Fatty-acid composition and co-ingredients differ from historical bovine-cortex PS, so formulations are not interchangeable. [S1][S13][S14]
 
 ## Evidence note
 
-The principal elderly systematic review identified nine studies involving 961 participants: five randomized trials and four pre–post studies; doses were 100–300 mg/day and durations were six weeks to six months. It reported a memory benefit but no activities-of-daily-living benefit, with five studies judged low risk of bias and four having some concerns. Positive findings often came from subgroup analyses, open-label studies, historical BC-PS, or mixtures. Product-specific sponsorship is material: the PS–omega-3 safety trial was funded by Enzymotec, with three employee authors and one consultant; the positive soy open-label pilot was authored by Enzymotec employees. Source IDs: PS-01, PS-11, PS-12. ([biolimitless.com](https://biolimitless.com/wp-content/uploads/2025/03/KJFST-phosph-cognitive-elderly.pdf))
-
-- evidence_base: "Nine studies; 961 participants; five RCTs and four pre–post studies."
-  sourceId: PS-01
-- evidence_limit: "Mixed sources, mixtures, short durations, subgroup analyses, and modest sample sizes."
-  sourceId: PS-01
-- sponsorship_signal: "Enzymotec-funded PS–omega-3 safety study included employee authors and a consultant."
-  sourceId: PS-11
-- sponsorship_signal_2: "Soy-PS open-label pilot was conducted by Enzymotec employees."
-  sourceId: PS-12
-
-**Full Deep Research detail retained from the returned report:**
-
-**Doses:**
-
-Studied oral doses range from 100–300 mg/day in older-adult cognition trials, 300–600 mg/day in the null soy trial, and 750–800 mg/day in exercise or historical BC-PS stress studies. PAS studies report composite doses of 400–800 mg/day, while another trial used 200 mg PS plus 200 mg phosphatidic acid or 400 mg PS plus 400 mg phosphatidic acid daily. These are research exposures, not an established optimal regimen. Source IDs: PS-02, PS-04, PS-08, PS-09, PS-10, PS-17. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/11842880/?utm_source=openai))
-
-- cognition_older_adults: "100 or 300 mg/day soy PS for six months; 300 or 600 mg/day for 12 weeks in another trial."
-  sourceId: PS-02
-- historical_dementia: "300 mg/day BC-PS, commonly 100 mg three times daily."
-  sourceId: PS-05
-- exercise_stress: "750 mg/day soy PS for 10 days; 800 mg/day BC-PS for 10 days."
-  sourceId: PS-09
-- PAS_mental_stress: "400, 600, or 800 mg/day of a PS/phosphatidic-acid complex."
-  sourceId: PS-08
-- PAS_chronic_stress: "200/200 or 400/400 mg/day PS/phosphatidic acid."
-  sourceId: PS-17
-
-**Pharmacokinetics:**
-
-In a PS–phosphatidic-acid study, serum PS peaked about 90 minutes after a single ingestion and returned to baseline by approximately 180 minutes. This describes a mixture and does not establish brain exposure. Reviews state that oral PS is digested, remodeled, and transported through lipid pathways, but the amount reaching the brain, whether it crosses the blood–brain barrier intact, and whether intact supplemental PS is incorporated into neurons remain unresolved. Source IDs: PS-07, PS-13. ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/25414047/?utm_source=openai))
-
-- observed_serum_profile: "Peak at approximately 90 minutes; return toward baseline by approximately 180 minutes."
-  sourceId: PS-07
-- brain_exposure: "Human brain delivery and intact neuronal incorporation are not established."
-  sourceId: PS-13
-- interpretation: "Serum kinetics cannot be treated as evidence of cognitive or clinical efficacy."
-  sourceId: PS-13
-
-**Modifiers:**
-
-Observed effects vary with source, fatty-acid composition, formulation, baseline impairment or stress, dose, and endpoint. In the Crook BC-PS trial, participants with lower baseline performance appeared more responsive; in the Kato soy trial, the overall memory battery was null between groups while a lower-score subgroup showed delayed-recall signals. The 2014 PAS trial found biomarker effects only in chronically high-stress men, not low-stress men. Source IDs: PS-03, PS-04, PS-17. ([neurology.org](https://www.neurology.org/doi/abs/10.1212/WNL.41.5.644?is_nova=true&nb_cid=24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&nbclid=nvss_24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&ref_id=nvss_24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&src=%5B07.02.26%5D+MM+E.I1&sub1=2019982747502501890&sub2=%5B07.02.26%5D+MM+E.I1&sub3=2019982842447720450&sub4=%5B07.02.26%5D+C1_Img&sub5=2019983294635634690&sub6=Img_02&sub7=android&sub8=0&utm_source=openai))
-
-- source_modifier: "Bovine, soy, sunflower, and marine PS differ in fatty-acid composition."
-  sourceId: PS-01
-- formulation_modifier: "PS alone, PS plus phosphatidic acid, PS plus EPA/DHA, and multinutrient products are not interchangeable."
-  sourceId: PS-07
-- baseline_modifier: "Lower baseline cognition or higher chronic stress may identify responsive subgroups."
-  sourceId: PS-03
-- dose_modifier: "Some PAS effects appeared at an intermediate dose and not at higher doses."
-  sourceId: PS-08
-
-**Effects:**
-
-Evidence spans dementia, age-associated memory complaints, mild cognitive impairment, acute psychosocial stress, and exercise. Results are endpoint-specific rather than consistently clinical. Source IDs: PS-01 through PS-18. ([neurology.org](https://www.neurology.org/doi/abs/10.1212/WNL.41.5.644?is_nova=true&nb_cid=24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&nbclid=nvss_24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&ref_id=nvss_24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&src=%5B07.02.26%5D+MM+E.I1&sub1=2019982747502501890&sub2=%5B07.02.26%5D+MM+E.I1&sub3=2019982842447720450&sub4=%5B07.02.26%5D+C1_Img&sub5=2019983294635634690&sub6=Img_02&sub7=android&sub8=0&utm_source=openai))
-
-- domain: "Dementia and Alzheimer disease"
-  finding: "Historical BC-PS trials were inconsistent. Delwaide randomized 42 hospitalized patients; 35 completed six weeks at 300 mg/day, with a significant Peri-scale effect but no convincing broad result. Crook studied 51 probable-AD patients for 12 weeks at 300 mg/day and reported improvements on selected cognitive measures, greatest in less severe disease."
-  sourceId: PS-05
-- domain: "Dementia and Alzheimer disease"
-  finding: "A soy PS plus phosphatidic-acid product, 300 mg PS plus 240 mg PA/day for two months, stabilized seven activities of daily living in the per-protocol PS+PA group (n=53) while placebo declined (n=39); this was short-term functional stabilization, not disease modification."
-  sourceId: PS-07
-- domain: "Healthy or near-healthy cognition"
-  finding: "Crook reported benefit with 300 mg/day BC-PS for 12 weeks in 149 people with age-associated memory impairment. In contrast, Jorissen randomized 120 older adults to placebo, 300 mg/day, or 600 mg/day soy PS for 12 weeks and found no significant difference in any cognitive outcome."
-  sourceId: PS-02
-- domain: "Soy cognition trial"
-  finding: "Kato randomized 78 Japanese adults with subjective memory complaints to placebo, 100 mg/day, or 300 mg/day soy PS for six months; all groups improved on some tests and the overall RBMT comparison was null, while delayed-recall subgroup signals appeared after follow-up."
-  sourceId: PS-04
-- domain: "Recent MCI mixture trial"
-  finding: "A 2025 RCT randomized 190 Chinese adults with MCI for 12 months to a product providing 63 mg/day PS plus 288 mg/day ALA, ginkgo flavonoids, vitamins B1/B6, and folate. Arithmetic, similarity, and short-term-memory scores improved, but the result cannot isolate PS."
-  sourceId: PS-18
-- domain: "Stress"
-  finding: "BC-PS at 800 mg/day for 10 days in nine healthy men blunted exercise-induced ACTH and cortisol. A PAS trial with four groups of 20 found ACTH and cortisol reductions and lower distress only at 400 mg/day PAS, not 600 or 800 mg/day. A later 75-man trial found 400/400 mg/day PS/PA normalized ACTH and cortisol only in highly chronically stressed men, without a significant psychological stress effect."
-  sourceId: PS-08
-- domain: "Exercise"
-  finding: "In 16 male soccer players, 750 mg/day soy PS for 10 days did not reduce cortisol, soreness, creatine kinase, myoglobin, or lipid-peroxidation responses. Running time to exhaustion favored PS numerically but was not statistically significant (P=0.084)."
-  sourceId: PS-10
-- domain: "PS-containing mixtures"
-  finding: "Marine PS combined with DHA/EPA and newer PS/ALA/ginkgo products produce product-level findings; their results should not be attributed to isolated soy or sunflower PS."
-  sourceId: PS-01
-
-**Outcomes:**
-
-The most defensible outcome is a possible small, selective memory effect in some older adults with complaints or cognitive decline, with substantial uncertainty about clinical importance. Functional outcomes, dementia prevention, disease modification, exercise recovery, and general stress improvement are not established. ACTH and cortisol reductions are laboratory biomarkers; they are not equivalent to improved mood, resilience, performance, or disease outcomes. Source IDs: PS-01, PS-07, PS-10, PS-16, PS-17. ([biolimitless.com](https://biolimitless.com/wp-content/uploads/2025/03/KJFST-phosph-cognitive-elderly.pdf))
-
-- cognitive_tests: "Possible modest or domain-specific effects; inconsistent across randomized studies."
-  sourceId: PS-01
-- daily_function: "No pooled improvement in activities of daily living."
-  sourceId: PS-01
-- dementia: "No convincing evidence of prevention or disease modification."
-  sourceId: PS-16
-- cortisol: "Biomarker signal under selected formulations and stress paradigms."
-  sourceId: PS-08
-- exercise: "No consistent evidence for recovery, soreness, cortisol, or performance benefit."
-  sourceId: PS-10
-
-**Mechanisms:**
-
-Endogenous PS helps organize membrane-associated signaling, protein docking, vesicle fusion, receptor activity, and cellular responses to apoptosis and inflammation. Proposed cognition mechanisms include altered membrane function, cholinergic signaling, synaptic transmission, and anti-inflammatory effects. Proposed stress mechanisms involve modulation of hypothalamic–pituitary–adrenal feedback. These mechanisms are biologically plausible but do not establish that oral PS produces clinically meaningful effects in humans. Source IDs: PS-01, PS-13. ([biolimitless.com](https://biolimitless.com/wp-content/uploads/2025/03/KJFST-phosph-cognitive-elderly.pdf))
-
-- membrane_role: "Anionic phospholipid involved in membrane structure and signaling."
-  sourceId: PS-13
-- neural_hypothesis: "Potential effects on cholinergic release, receptor function, and synaptic signaling."
-  sourceId: PS-01
-- inflammatory_hypothesis: "Potential modulation of microglial and oxidative-inflammatory signaling."
-  sourceId: PS-01
-- HPA_hypothesis: "Potential attenuation or normalization of stress-induced ACTH/cortisol responses."
-  sourceId: PS-08
-- uncertainty: "Human brain uptake and causal links to clinical benefit remain unresolved."
-  sourceId: PS-13
-
-**Cautions:**
-
-Short-term trials generally found no serious safety signal, including soy PS at 300 or 600 mg/day for 12 weeks and soy PS at 100 or 300 mg/day for six months. Reported or potentially related symptoms include flatulence, gastrointestinal discomfort, nausea, vomiting, itching, dizziness, and agitation, although causality was often uncertain. Historical BC-PS was largely displaced because of theoretical prion/BSE contamination concerns. Long-term exposure, pregnancy, lactation, and use in medically complex populations are poorly characterized by these trials. Source IDs: PS-04, PS-11, PS-14, PS-16. ([jstage.jst.go.jp](https://www.jstage.jst.go.jp/article/jcbn/47/3/47_10-62/_pdf))
-
-- short_term_safety: "Generally well tolerated in studied older-adult trials."
-  sourceId: PS-04
-- reported_symptoms: "GI discomfort, flatulence, nausea, vomiting, itching, dizziness, and agitation appeared in some reports; attribution was uncertain."
-  sourceId: PS-01
-- bovine_cortex: "Historical BC-PS carried theoretical prion-transmission concerns."
-  sourceId: PS-14
-- evidence_gap: "Long-term safety and special-population safety are not established."
-  sourceId: PS-16
-
-**Claims:**
-
-- claim: "Supports memory in older adults with subjective or mild cognitive decline."
-  status: "Mixed; possible small selective effect, low-to-moderate certainty."
-  sourceId: PS-01
-- claim: "Treats or prevents Alzheimer disease or dementia."
-  status: "Unsupported by convincing clinical evidence."
-  sourceId: PS-05
-- claim: "Improves cognition in healthy adults."
-  status: "Insufficient direct evidence; many studies enrolled memory complaints or used mixtures."
-  sourceId: PS-02
-- claim: "Lowers stress."
-  status: "Biomarker-limited; selected PS/PA studies altered ACTH/cortisol, but clinical stress benefit is unestablished."
-  sourceId: PS-08
-- claim: "Improves exercise recovery or athletic performance."
-  status: "Unproven; controlled exercise findings are mostly null or exploratory."
-  sourceId: PS-10
-- claim: "Is safe."
-  status: "Short-term tolerability is reassuring; long-term certainty is limited."
-  sourceId: PS-11
-
-**Interactions:**
-
-Clinical interaction data are sparse. A possible bleeding risk has been raised for PS, and marine PS products add EPA/DHA exposure; this is a theoretical or formulation-specific concern rather than an established PS interaction. An exploratory soy-PS study reported lower blood pressure, so additive blood-pressure effects remain possible but untested. The cited RCTs generally excluded relevant medications or detect uncommon interactions. Source IDs: PS-04, PS-11, PS-12, PS-16. ([alzdiscovery.org](https://www.alzdiscovery.org/cognitive-vitality/ratings/phosphatidylserine))
-
-- bleeding: "Possible but unconfirmed concern; more relevant when the product also contains EPA/DHA."
-  sourceId: PS-16
-- blood_pressure: "A small open-label soy-PS study reported lower systolic and diastolic pressure; interaction evidence is absent."
-  sourceId: PS-12
-- allergens: "Soy, sunflower, fish, and other formulation excipients create source-specific exposure differences."
-  sourceId: PS-11
-- interaction_evidence: "No reliable human interaction dataset establishes safety with prescription medicines."
-  sourceId: PS-11
-
-**Legal:**
-
-In the United States, FDA labeling guidance permits narrowly worded qualified claims for supplements containing soy-derived PS, accompanied by the disclaimer that the research is “very limited and preliminary” and that FDA finds little supporting evidence. This is not approval to treat dementia or cognitive dysfunction. FDA GRAS documentation for sunflower-derived PS addresses food-safety use, not clinical efficacy. Source IDs: PS-14, PS-15. ([fda.gov](https://www.fda.gov/media/81606/download?pwsName=healthandwellness&sponsorId=Q%2BbsLFVYDSzmXKlASeqkmA%3D%3D))
-
-- United_States_claim: "Qualified claim applies to carefully worded soy-derived PS labeling with an adjacent disclaimer."
-  sourceId: PS-15
-- disease_claim: "The qualified claim is not approval for treatment or prevention of dementia."
-  sourceId: PS-15
-- sunflower_status: "FDA GRAS documentation concerns food-use safety, not proof of cognitive efficacy."
-  sourceId: PS-14
-- regulatory_scope: "Legal wording and permissible claims vary by jurisdiction and product composition."
-  sourceId: PS-15
-
-<!-- Deep Research source-link ledger -->
-
-Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
+The elderly evidence base comprised nine studies and 961 participants, with mixed randomized and pre–post designs, short follow-up, and heterogeneous PS sources. Stress studies more consistently altered ACTH or cortisol than validated clinical outcomes; exercise findings were largely null. Product sponsorship and author employment are disclosed for several PS–DHA/EPA and soy-PS studies. [S1][S8][S10][S11][S12]
 
 ## Doses
 
 ```yaml
-- label: phosphatidylserine research exposure 1
-  amount: Not established
-  quantity: null
+- label: Older-adult cognition RCT
+  amount: 100 or 300 mg/day
+  quantity: 100
   quantityMax: null
-  unit: not established
-  ingredient: phosphatidylserine
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
+  unit: mg
+  ingredient: Phosphatidylserine
+  formulation: Soy PS
+  route: oral
+  frequency: daily
+  duration: 6 months
+  population: 78 older adults with memory complaints
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"cognition_older_adults":"100 or 300 mg/day soy PS for six months; 300 or 600 mg/day for 12 weeks in another trial.","sourceId":"PS-02"}'
-  sourceId: S1
-- label: phosphatidylserine research exposure 2
-  amount: Not established
-  quantity: null
+  note: Kato trial included 100 and 300 mg/day arms; overall memory-battery comparison was null.
+  sourceId: S4
+- label: Age-associated memory trial
+  amount: 300 or 600 mg/day
+  quantity: 300
   quantityMax: null
-  unit: not established
-  ingredient: phosphatidylserine
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
+  unit: mg
+  ingredient: Phosphatidylserine
+  formulation: Soy PS
+  route: oral
+  frequency: daily
+  duration: 12 weeks
+  population: 120 older adults with age-associated memory impairment
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"historical_dementia":"300 mg/day BC-PS, commonly 100 mg three times daily.","sourceId":"PS-05"}'
-  sourceId: S1
-- label: phosphatidylserine research exposure 3
-  amount: Not established
-  quantity: null
+  note: No significant cognitive difference versus placebo.
+  sourceId: S2
+- label: Historical memory trial
+  amount: 300 mg/day
+  quantity: 300
   quantityMax: null
-  unit: not established
-  ingredient: phosphatidylserine
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
+  unit: mg
+  ingredient: Phosphatidylserine
+  formulation: Bovine-cortex PS
+  route: oral
+  frequency: daily
+  duration: 12 weeks
+  population: 149 adults with age-associated memory impairment
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"exercise_stress":"750 mg/day soy PS for 10 days; 800 mg/day BC-PS for 10 days.","sourceId":"PS-09"}'
-  sourceId: S1
-- label: phosphatidylserine research exposure 4
-  amount: Not established
-  quantity: null
+  note: Selective learning and memory signal; historical formulation.
+  sourceId: S3
+- label: PS plus phosphatidic acid
+  amount: 300 mg PS + 240 mg PA/day
+  quantity: 300
   quantityMax: null
-  unit: not established
-  ingredient: phosphatidylserine
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
+  unit: mg
+  ingredient: Phosphatidylserine
+  formulation: Soy PS/PA mixture
+  route: oral
+  frequency: daily
+  duration: 2 months
+  population: Older adults with Alzheimer disease or dementia
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"PAS_mental_stress":"400, 600, or 800 mg/day of a PS/phosphatidic-acid complex.","sourceId":"PS-08"}'
-  sourceId: S1
-- label: phosphatidylserine research exposure 5
-  amount: Not established
-  quantity: null
+  note: Per-protocol functional-stability signal; mixture cannot isolate PS.
+  sourceId: S7
+- label: Stress PAS study
+  amount: 400, 600, or 800 mg/day
+  quantity: 400
   quantityMax: null
-  unit: not established
-  ingredient: phosphatidylserine
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
+  unit: mg
+  ingredient: Phosphatidylserine
+  formulation: PS/phosphatidic-acid complex
+  route: oral
+  frequency: daily
+  duration: Acute study
+  population: Healthy adults during mental stress testing
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"PAS_chronic_stress":"200/200 or 400/400 mg/day PS/phosphatidic acid.","sourceId":"PS-17"}'
-  sourceId: S17
+  note: ACTH/cortisol signal at 400 mg/day only; higher doses did not reproduce it.
+  sourceId: S8
+- label: Exercise trial
+  amount: 750 mg/day
+  quantity: 750
+  quantityMax: null
+  unit: mg
+  ingredient: Phosphatidylserine
+  formulation: Soy PS
+  route: oral
+  frequency: daily
+  duration: 10 days
+  population: 16 male soccer players
+  purpose: Research exposure; not a dosing recommendation.
+  sourceCategory: research
+  note: No cortisol, soreness, muscle-damage, or oxidative-stress benefit.
+  sourceId: S10
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: phosphatidylserine-pk-1
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
+- id: ps-serum-profile
+  analyte: Serum phosphatidylserine
+  route: oral
+  formulation: PS/PA mixture
+  population: Humans in crossover PK study
   endpoint: elimination-half-life
   statistic: not-established
   value: null
   low: null
   high: null
   unit: hours
-  context: 'Original Deep Research PK detail: {"observed_serum_profile":"Peak at approximately 90 minutes; return toward baseline by approximately 180 minutes.","sourceId":"PS-07"}'
-  sourceId: S1
+  context: Serum PS peaked at approximately 90 minutes and returned toward baseline by about 180 minutes; a terminal half-life and brain exposure were not established.
+  sourceId: S7
   modelEligible: false
-- id: phosphatidylserine-pk-2
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
+- id: ps-brain-exposure
+  analyte: Supplemental phosphatidylserine
+  route: oral
+  formulation: PS formulations
+  population: Humans; review-level evidence
   endpoint: elimination-half-life
   statistic: not-established
   value: null
   low: null
   high: null
   unit: hours
-  context: 'Original Deep Research PK detail: {"brain_exposure":"Human brain delivery and intact neuronal incorporation are not established.","sourceId":"PS-13"}'
-  sourceId: S13
-  modelEligible: false
-- id: phosphatidylserine-pk-3
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"interpretation":"Serum kinetics cannot be treated as evidence of cognitive or clinical efficacy.","sourceId":"PS-13"}'
+  context: Digestion, remodeling, and transport occur through lipid pathways; intact brain delivery is unresolved.
   sourceId: S13
   modelEligible: false
 ```
@@ -396,32 +203,25 @@ Every HTTPS link returned by this run is represented in References. Links whose 
 ## Modifiers
 
 ```yaml
-- label: Modifier 1
+- label: Source and fatty-acid composition
   effect: Variable
-  detail: '{"source_modifier":"Bovine, soy, sunflower, and marine PS differ in fatty-acid composition.","sourceId":"PS-01"}'
+  detail: Bovine, soy, sunflower, and marine PS differ in acyl chains and co-ingredients.
   sourceId: S1
-  observationId: phosphatidylserine-pk-1
+  observationId: ps-serum-profile
   factorType: other
   direction: variable
-- label: Modifier 2
+- label: Mixture formulation
   effect: Variable
-  detail: '{"formulation_modifier":"PS alone, PS plus phosphatidic acid, PS plus EPA/DHA, and multinutrient products are not interchangeable.","sourceId":"PS-07"}'
-  sourceId: S1
-  observationId: phosphatidylserine-pk-1
+  detail: PS alone, PS/PA, PS plus EPA/DHA, and multinutrient products are not interchangeable.
+  sourceId: S7
+  observationId: ps-serum-profile
   factorType: other
   direction: variable
-- label: Modifier 3
+- label: Baseline cognition or stress
   effect: Variable
-  detail: '{"baseline_modifier":"Lower baseline cognition or higher chronic stress may identify responsive subgroups.","sourceId":"PS-03"}'
-  sourceId: S1
-  observationId: phosphatidylserine-pk-1
-  factorType: other
-  direction: variable
-- label: Modifier 4
-  effect: Variable
-  detail: '{"dose_modifier":"Some PAS effects appeared at an intermediate dose and not at higher doses.","sourceId":"PS-08"}'
-  sourceId: S1
-  observationId: phosphatidylserine-pk-1
+  detail: Lower baseline performance or higher chronic stress may identify responsive subgroups, but signals were not confirmatory.
+  sourceId: S3
+  observationId: ps-serum-profile
   factorType: other
   direction: variable
 ```
@@ -429,349 +229,213 @@ Every HTTPS link returned by this run is represented in References. Links whose 
 ## Effects
 
 ```yaml
-- id: phosphatidylserine-effect-1
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: phosphatidylserine effect
-  direction: Variable
+- conceptId: perception
+  name: Selective memory performance
+  direction: Increased
   evidence: Human research
-  description: Historical BC-PS trials were inconsistent. Delwaide randomized 42 hospitalized patients; 35 completed six weeks at 300 mg/day, with a significant Peri-scale effect but no convincing broad result. Crook studied 51 probable-AD patients for 12 weeks at 300 mg/day and reported improvements on selected cognitive measures, greatest in less severe disease.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
+  description: Historical BC-PS trials reported selective learning or memory effects, with apparent baseline-severity interaction.
+  sourceId: S3
+  population: 149 adults with age-associated memory impairment
+  exposure: 300 mg/day BC-PS for 12 weeks
+  instrument: Cognitive test battery
   magnitude: null
-- id: phosphatidylserine-effect-2
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: phosphatidylserine effect
+- conceptId: perception
+  name: Soy-PS memory battery
   direction: Variable
   evidence: Human research
-  description: A soy PS plus phosphatidic-acid product, 300 mg PS plus 240 mg PA/day for two months, stabilized seven activities of daily living in the per-protocol PS+PA group (n=53) while placebo declined (n=39); this was short-term functional stabilization, not disease modification.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
+  description: Overall randomized comparisons were null in soy trials; a delayed-recall subgroup signal was reported in one study.
+  sourceId: S4
+  population: 78 older adults with memory complaints
+  exposure: 100 or 300 mg/day soy PS for 6 months
+  instrument: RBMT and memory tests
   magnitude: null
-- id: phosphatidylserine-effect-3
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: phosphatidylserine effect
+- conceptId: perception
+  name: ACTH and cortisol response
   direction: Variable
   evidence: Human research
-  description: Crook reported benefit with 300 mg/day BC-PS for 12 weeks in 149 people with age-associated memory impairment. In contrast, Jorissen randomized 120 older adults to placebo, 300 mg/day, or 600 mg/day soy PS for 12 weeks and found no significant difference in any cognitive outcome.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
+  description: Selected PS/PA or BC-PS protocols altered stress biomarkers, but findings varied by dose and baseline stress.
+  sourceId: S8
+  population: Healthy adults in acute stress paradigms
+  exposure: 400 mg/day PAS or 800 mg/day BC-PS
+  instrument: ACTH and cortisol
   magnitude: null
-- id: phosphatidylserine-effect-4
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: phosphatidylserine effect
+- conceptId: perception
+  name: Exercise recovery symptoms
   direction: Variable
   evidence: Human research
-  description: Kato randomized 78 Japanese adults with subjective memory complaints to placebo, 100 mg/day, or 300 mg/day soy PS for six months; all groups improved on some tests and the overall RBMT comparison was null, while delayed-recall subgroup signals appeared after follow-up.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: phosphatidylserine-effect-5
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: phosphatidylserine effect
-  direction: Variable
-  evidence: Human research
-  description: A 2025 RCT randomized 190 Chinese adults with MCI for 12 months to a product providing 63 mg/day PS plus 288 mg/day ALA, ginkgo flavonoids, vitamins B1/B6, and folate. Arithmetic, similarity, and short-term-memory scores improved, but the result cannot isolate PS.
-  sourceId: S18
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: phosphatidylserine-effect-6
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: phosphatidylserine effect
-  direction: Variable
-  evidence: Human research
-  description: BC-PS at 800 mg/day for 10 days in nine healthy men blunted exercise-induced ACTH and cortisol. A PAS trial with four groups of 20 found ACTH and cortisol reductions and lower distress only at 400 mg/day PAS, not 600 or 800 mg/day. A later 75-man trial found 400/400 mg/day PS/PA normalized ACTH and cortisol only in highly chronically stressed men, without a significant psychological stress effect.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: phosphatidylserine-effect-7
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: phosphatidylserine effect
-  direction: Variable
-  evidence: Human research
-  description: In 16 male soccer players, 750 mg/day soy PS for 10 days did not reduce cortisol, soreness, creatine kinase, myoglobin, or lipid-peroxidation responses. Running time to exhaustion favored PS numerically but was not statistically significant (P=0.084).
+  description: A controlled soccer-player trial found no reduction in cortisol, soreness, muscle-damage markers, or oxidative stress.
   sourceId: S10
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: phosphatidylserine-effect-8
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: phosphatidylserine effect
-  direction: Variable
-  evidence: Human research
-  description: Marine PS combined with DHA/EPA and newer PS/ALA/ginkgo products produce product-level findings; their results should not be attributed to isolated soy or sunflower PS.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
+  population: 16 male soccer players
+  exposure: 750 mg/day soy PS for 10 days
+  instrument: Cortisol, soreness, CK, myoglobin
   magnitude: null
 ```
 
 ## Outcomes
 
 ```yaml
-- id: phosphatidylserine-outcome-1
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: attention
-  name: phosphatidylserine outcome
+- conceptId: memory
+  name: Memory test outcomes
   direction: Variable
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
+  description: A 2022 review found a memory benefit signal but no pooled activities-of-daily-living benefit; randomized soy evidence was inconsistent.
   sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
+  population: Nine studies; 961 participants
+  exposure: 100–300 mg/day across heterogeneous PS products
+  instrument: Memory and ADL measures
   magnitude: null
-- id: phosphatidylserine-outcome-2
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: attention
-  name: phosphatidylserine outcome
+- conceptId: memory
+  name: Daily functioning in dementia
   direction: Variable
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
+  description: A short PS/PA pilot suggested functional stabilization in a per-protocol subgroup; this was not disease modification.
+  sourceId: S7
+  population: Older adults with dementia
+  exposure: PS/PA mixture for 2 months
+  instrument: Activities of daily living
   magnitude: null
-- id: phosphatidylserine-outcome-3
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: attention
-  name: phosphatidylserine outcome
+- conceptId: fatigue-severity
+  name: Exercise performance
   direction: Variable
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S16
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: phosphatidylserine-outcome-4
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: attention
-  name: phosphatidylserine outcome
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: phosphatidylserine-outcome-5
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: attention
-  name: phosphatidylserine outcome
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
+  description: Time to exhaustion favored PS numerically but was not statistically significant; recovery outcomes were null.
   sourceId: S10
-  population: Not established
-  exposure: Not established
-  instrument: null
+  population: 16 male soccer players
+  exposure: 750 mg/day soy PS for 10 days
+  instrument: Time to exhaustion and recovery markers
+  magnitude: null
+- conceptId: stress-response
+  name: Stress biomarkers
+  direction: Variable
+  evidence: Human research
+  description: ACTH and cortisol changes occurred under selected protocols without consistent psychological-stress benefit.
+  sourceId: S8
+  population: Healthy adults under stress testing
+  exposure: PAS 400–800 mg/day
+  instrument: ACTH/cortisol
   magnitude: null
 ```
 
 ## Mechanisms
 
 ```yaml
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"membrane_role":"Anionic phospholipid involved in membrane structure and signaling.","sourceId":"PS-13"}'
+- title: Membrane signaling
+  description: PS is an anionic membrane phospholipid involved in membrane structure, protein docking, vesicle fusion, and receptor signaling.
   sourceId: S13
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"neural_hypothesis":"Potential effects on cholinergic release, receptor function, and synaptic signaling.","sourceId":"PS-01"}'
+- title: Neural signaling hypothesis
+  description: Cholinergic and synaptic effects are biologically plausible but do not establish clinical cognitive benefit from oral PS.
   sourceId: S1
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"inflammatory_hypothesis":"Potential modulation of microglial and oxidative-inflammatory signaling.","sourceId":"PS-01"}'
-  sourceId: S1
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"HPA_hypothesis":"Potential attenuation or normalization of stress-induced ACTH/cortisol responses.","sourceId":"PS-08"}'
-  sourceId: S1
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"uncertainty":"Human brain uptake and causal links to clinical benefit remain unresolved.","sourceId":"PS-13"}'
-  sourceId: S13
+- title: HPA-axis modulation
+  description: Some PS/PA and BC-PS studies attenuated stress-induced ACTH/cortisol responses; clinical stress benefit remains unestablished.
+  sourceId: S8
 ```
 
 ## Cautions
 
 ```yaml
-- title: Research caution
-  description: 'Original Deep Research caution: {"short_term_safety":"Generally well tolerated in studied older-adult trials.","sourceId":"PS-04"}'
+- title: Short-term tolerability
+  description: Short trials generally reported no serious treatment-related signal, including soy PS and PS–DHA/EPA products.
+  sourceId: S11
+- title: Reported symptoms
+  description: GI discomfort, flatulence, nausea, vomiting, itching, dizziness, and agitation appeared in some reports with uncertain attribution.
   sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"reported_symptoms":"GI discomfort, flatulence, nausea, vomiting, itching, dizziness, and agitation appeared in some reports; attribution was uncertain.","sourceId":"PS-01"}'
-  sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"bovine_cortex":"Historical BC-PS carried theoretical prion-transmission concerns.","sourceId":"PS-14"}'
+- title: Historical bovine-cortex products
+  description: Historical BC-PS carried theoretical prion-transmission concerns; modern products are predominantly plant-derived.
   sourceId: S14
-- title: Research caution
-  description: 'Original Deep Research caution: {"evidence_gap":"Long-term safety and special-population safety are not established.","sourceId":"PS-16"}'
+- title: Long-term and special-population evidence
+  description: Long-term safety, pregnancy, lactation, and medically complex-population data are limited.
   sourceId: S16
 ```
 
 ## Claims
 
 ```yaml
-- id: phosphatidylserine-claim-1
-  assertion: Supports memory in older adults with subjective or mild cognitive decline.
+- id: ps-memory
+  assertion: PS supports memory in older adults
   relation: evidence-boundary
   participants:
     - entityId: substance:phosphatidylserine
       role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+    - entityId: tag:glycerophospholipid
+      role: reported-outcome
+  context: Some historical or subgroup signals exist, but randomized soy results and pooled clinical importance are uncertain.
   sourceIds:
     - S1
-  conflictingSourceIds:
-    - S1
+    - S2
+    - S3
+    - S4
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: phosphatidylserine-claim-2
-  assertion: Treats or prevents Alzheimer disease or dementia.
+  limitation: Heterogeneous sources, formulations, short duration, and mixed study quality.
+- id: ps-dementia
+  assertion: PS treats or prevents dementia
   relation: evidence-boundary
   participants:
     - entityId: substance:phosphatidylserine
       role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+    - entityId: tag:glycerophospholipid
+      role: reported-outcome
+  context: No convincing evidence establishes prevention or disease modification.
   sourceIds:
-    - S1
-  conflictingSourceIds:
-    - S1
+    - S5
+    - S6
+    - S16
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: phosphatidylserine-claim-3
-  assertion: Improves cognition in healthy adults.
+  limitation: Small historical trials and mixtures cannot support disease-treatment claims.
+- id: ps-stress
+  assertion: PS lowers stress
   relation: evidence-boundary
   participants:
     - entityId: substance:phosphatidylserine
       role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+    - entityId: tag:immune-inflammatory-modulation
+      role: reported-outcome
+  context: Selected ACTH/cortisol changes are biomarker-limited and do not establish improved psychological stress.
   sourceIds:
-    - S1
-  conflictingSourceIds:
-    - S1
+    - S8
+    - S9
+    - S17
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: phosphatidylserine-claim-4
-  assertion: Lowers stress.
+  limitation: Composite PAS products and small acute studies limit attribution.
+- id: ps-exercise
+  assertion: PS improves exercise recovery
   relation: evidence-boundary
   participants:
     - entityId: substance:phosphatidylserine
       role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
-  sourceIds:
-    - S1
-  conflictingSourceIds:
-    - S1
-  assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: phosphatidylserine-claim-5
-  assertion: Improves exercise recovery or athletic performance.
-  relation: evidence-boundary
-  participants:
-    - entityId: substance:phosphatidylserine
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+    - entityId: tag:glycerophospholipid
+      role: reported-outcome
+  context: Controlled exercise findings are mostly null or exploratory.
   sourceIds:
     - S10
-  conflictingSourceIds:
-    - S1
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: phosphatidylserine-claim-6
-  assertion: Is safe.
-  relation: evidence-boundary
-  participants:
-    - entityId: substance:phosphatidylserine
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
-  sourceIds:
-    - S11
-  conflictingSourceIds:
-    - S1
-  assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
+  limitation: Small samples and short interventions.
 ```
 
 ## Interactions
 
 ```yaml
-- id: interaction-1
-  name: Documented or hypothesized coexposure
+- id: ps-bleeding
+  name: Bleeding risk
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"bleeding":"Possible but unconfirmed concern; more relevant when the product also contains EPA/DHA.","sourceId":"PS-16"}'
+  summary: Possible but unconfirmed concern, more relevant when the product also contains EPA/DHA; reliable prescription-drug interaction data are absent.
   sourceId: S16
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-2
-  name: Documented or hypothesized coexposure
+  context: Secondary evidence synthesis
+- id: ps-blood-pressure
+  name: Blood-pressure lowering
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"blood_pressure":"A small open-label soy-PS study reported lower systolic and diastolic pressure; interaction evidence is absent.","sourceId":"PS-12"}'
+  summary: A small open-label soy-PS study reported lower blood pressure; additive antihypertensive effects remain untested.
   sourceId: S12
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-3
-  name: Documented or hypothesized coexposure
+  context: Open-label product study
+- id: ps-formulation
+  name: Source-specific excipients
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"allergens":"Soy, sunflower, fish, and other formulation excipients create source-specific exposure differences.","sourceId":"PS-11"}'
+  summary: Soy, sunflower, fish, and mixture ingredients create formulation-specific allergen and exposure differences.
   sourceId: S11
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-4
-  name: Documented or hypothesized coexposure
-  otherSlug: null
-  summary: 'Original Deep Research interaction: {"interaction_evidence":"No reliable human interaction dataset establishes safety with prescription medicines.","sourceId":"PS-11"}'
-  sourceId: S11
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
+  context: Safety trial and product composition
 ```
 
 ## Experience links
@@ -912,9 +576,10 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   insight: PS–DHA/EPA product was generally well tolerated without serious treatment-related adverse events.
   limitation: Mixture rather than isolated PS; short duration; efficacy attribution is impossible.
   funding: Enzymotec Ltd., Israel.
-  sponsorshipStatus: not-assessed
+  sponsorshipStatus: industry-funded
   conflictsOfInterest: Three authors were Enzymotec employees; one was a consultant.
-  conflictOfInterestStatus: not-assessed
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://bmcneurol.biomedcentral.com/articles/10.1186/1471-2377-11-79
 - id: S12
   title: "The effect of soybean-derived phosphatidylserine on cognitive performance in elderly with subjective memory complaints: a pilot study"
   authors: Yael Richter; Yael Herzog; Yael Lifshitz; Rami Hayun; Sigalit Zchut
@@ -924,9 +589,10 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   insight: 30 older adults received 300 mg/day soy PS for 12 weeks; several cognitive measures improved.
   limitation: No placebo group, small sample, and all authors were employed by Enzymotec.
   funding: Not clearly stated; product and investigators were company-affiliated.
-  sponsorshipStatus: not-assessed
+  sponsorshipStatus: industry-funded
   conflictsOfInterest: All listed authors were Enzymotec employees.
-  conflictOfInterestStatus: not-assessed
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC3665496/
 - id: S13
   title: "Phosphatidylserine in the brain: metabolism and function"
   authors: H. Y. Kim; B. X. Huang; A. A. Spector
@@ -948,9 +614,10 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   insight: Reviews human safety data across bovine, soy, marine, and sunflower-related PS evidence.
   limitation: Industry-submitted safety dossier; GRAS status is not efficacy evidence.
   funding: Notifier-sponsored regulatory submission.
-  sponsorshipStatus: not-assessed
+  sponsorshipStatus: industry-funded
   conflictsOfInterest: Notifier interests are inherent to the submission.
-  conflictOfInterestStatus: not-assessed
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://www.fda.gov/files/food/published/GRAS-Notice-000636--Phosphatidylserine-derived-from-sunflower.pdf
 - id: S15
   title: Food Labeling Guide
   authors: U.S. Food and Drug Administration
@@ -999,113 +666,19 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Authors declared no conflict of interest.
   conflictOfInterestStatus: not-assessed
-- id: dr-phosphatidylserine-link-1
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://biolimitless.com/wp-content/uploads/2025/03/KJFST-phosph-cognitive-elderly.pdf
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-phosphatidylserine-link-2
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://www.neurology.org/doi/abs/10.1212/WNL.41.5.644?is_nova=true&nb_cid=24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&nbclid=nvss_24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&ref_id=nvss_24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&src=%5B07.02.26%5D+MM+E.I1&sub1=2019982747502501890&sub2=%5B07.02.26%5D+MM+E.I1&sub3=2019982842447720450&sub4=%5B07.02.26%5D+C1_Img&sub5=2019983294635634690&sub6=Img_02&sub7=android&sub8=0&utm_source=openai
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-phosphatidylserine-link-3
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://www.jstage.jst.go.jp/article/jcbn/47/3/47_10-62/_pdf
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-phosphatidylserine-link-1-dup2
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/11842880/?utm_source=openai
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-phosphatidylserine-link-2-dup2
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/25414047/?utm_source=openai
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-phosphatidylserine-link-3-dup2
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://www.fda.gov/media/81606/download?pwsName=healthandwellness&sponsorId=Q%2BbsLFVYDSzmXKlASeqkmA%3D%3D
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-phosphatidylserine-link-4
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://www.neurology.org/doi/abs/10.1212/WNL.41.5.644?is_nova=true&nb_cid=24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&nbclid=nvss_24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&ref_id=nvss_24469f3dde4641caa2495e5dc1da0eb5_2019983294635634690&src=%5B07.02.26%5D+MM+E.I1&sub1=2019982747502501890&sub2=%5B07.02.26%5D+MM+E.I1&sub3=2019982842447720450&sub4=%5B07.02.26%5D+C1_Img&sub5=2019983294635634690&sub6=Img_02&sub7=android&sub8=0
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
 
 ```yaml
-- jurisdiction: Not established
-  activity: Not established
-  status: 'Original Deep Research legal detail: {"United_States_claim":"Qualified claim applies to carefully worded soy-derived PS labeling with an adjacent disclaimer.","sourceId":"PS-15"}'
-  sourceUrl: https://doi.org/10.9721/KJFST.2022.54.1.52
-  asOf: 2026-10-10
-- jurisdiction: Not established
-  activity: Not established
-  status: 'Original Deep Research legal detail: {"disease_claim":"The qualified claim is not approval for treatment or prevention of dementia.","sourceId":"PS-15"}'
-  sourceUrl: https://doi.org/10.9721/KJFST.2022.54.1.52
-  asOf: 2026-10-10
-- jurisdiction: Not established
-  activity: Not established
-  status: 'Original Deep Research legal detail: {"sunflower_status":"FDA GRAS documentation concerns food-use safety, not proof of cognitive efficacy.","sourceId":"PS-14"}'
-  sourceUrl: https://doi.org/10.9721/KJFST.2022.54.1.52
-  asOf: 2026-10-10
-- jurisdiction: Not established
-  activity: Not established
-  status: 'Original Deep Research legal detail: {"regulatory_scope":"Legal wording and permissible claims vary by jurisdiction and product composition.","sourceId":"PS-15"}'
-  sourceUrl: https://doi.org/10.9721/KJFST.2022.54.1.52
-  asOf: 2026-10-10
+- jurisdiction: United States
+  activity: Qualified soy-PS cognitive-function/dementia labeling claim
+  status: FDA guidance requires a qualified claim and disclaimer; labeling is not proof of efficacy.
+  sourceUrl: https://www.fda.gov/media/81606/download
+  asOf: 2013-01-01
+- jurisdiction: United States
+  activity: Sunflower-derived phosphatidylserine food ingredient
+  status: GRAS notice safety dossier; not an efficacy approval.
+  sourceUrl: https://www.fda.gov/files/food/published/GRAS-Notice-000636--Phosphatidylserine-derived-from-sunflower.pdf
+  asOf: 2016-01-01
 ```

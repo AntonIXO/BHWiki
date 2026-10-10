@@ -12,22 +12,22 @@ smiles: Not established
 category: protein
 tags: []
 accent: "#7868E6"
-reviewedAt: 2026-10-04
+reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
 halfLife:
-  label: Not established for orally administered intact lactoferrin in humans
+  label: Not established
   low: null
   high: null
-  context: Human studies establish gastric survival and proteolytic processing of orally administered bovine lactoferrin but do not establish a systemic elimination half-life for intact oral lactoferrin. A generic small-molecule half-life is therefore inappropriate.
-  sourceId: ref-troost-2001
-  observationId: pk-intact-lactoferrin-half-life-not-established
+  context: Oral lactoferrin is digested extensively and available human studies do not establish a universal terminal half-life.
+  sourceId: ref-kuwata-1998
+  observationId: lactoferrin-pk-intact
 kinetics:
-  onset: Not assessed
-  peak: Not assessed
-  duration: Not assessed
-  bioavailability: Systemic bioavailability of intact orally administered lactoferrin is not established by the available human gastric-digestion studies.
-  metabolism: In healthy adults, substantial bovine apo- and holo-lactoferrin survived gastric transit, while separate direct human gastric sampling demonstrated proteolytic generation of lactoferrin fragments including lactoferricin; subsequent systemic disposition was not quantified.
-  sourceId: ref-troost-2001
+  onset: Clinical onset is endpoint-specific and not established as a universal time.
+  peak: No validated human oral plasma Tmax for intact lactoferrin was established.
+  duration: Trial effects were assessed over weeks to months; a drug-like duration cannot be assigned to the protein as a whole.
+  bioavailability: Gastric digestion, iron saturation and formulation affect survival; intact systemic exposure is limited.
+  metabolism: Oral lactoferrin undergoes upper-GI digestion and may generate fragments such as lactoferricin; intact protein kinetics are not established.
+  sourceId: ref-kuwata-1998
 x-shape:
   - slug
   - name
@@ -60,1121 +60,421 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
-
-
 ---
 
 ## Summary
 
-Lactoferrin is an iron-binding protein studied in oral preparations for anemia, infection and gastrointestinal outcomes. Findings are population- and preparation-specific; biomarker changes and combination trials do not establish a universal benefit.
-
-Deep Research synthesis: Lactoferrin — BHWiki Deep Research — returned Deep Research evidence record.
+Lactoferrin is an iron-binding protein with product, iron-saturation and route differences. The strongest recent adult iron-deficiency trial found unsaturated bovine lactoferrin inferior to ferrous sulfate, while a small pediatric IBD trial was more favorable. The large ELFIN neonatal trial found no late-onset infection benefit, and oral COVID-19 and hepatitis-C trials were null.
 
 ## Description
 
-Bovine and human lactoferrin, iron saturation, delivery systems and accompanying ingredients must remain explicit. Trials in pregnancy, children and adults are different evidence contexts. Comparisons with iron treatment and measured clinical infection outcomes are distinguished from laboratory mechanisms.
-
-Deep Research synthesis: The full returned Deep Research report is preserved in the pending acquisition folder for lactoferrin.
+Bovine, human/recombinant, apo/low-saturation and holo preparations are kept separate from combination products containing iron, formula, probiotics or antibiotics. Oral digestion limits claims of intact systemic protein exposure.
 
 ## Evidence note
 
-Study design, comparator and formulation limit applicability, with commercial involvement recorded per source. Protein preparation identity and an applicable elimination model remain unestablished where direct evidence was not curated. Safety findings do not erase uncertainty in unstudied populations.
-
-<!-- Deep Research integration: lactoferrin -->
-
-**Full Deep Research detail retained from the returned report:**
-
-### Lactoferrin — BHWiki Deep Research
-
-Slug: lactoferrin
-Evidence cutoff: October 10, 2026
-Scope: primary human trials, systematic reviews/meta-analyses, official regulatory/safety sources, clinical-trial registries, and official pharmacovigilance infrastructure only. Bovine, human/recombinant, apo/low-saturation, holo/iron-saturated, oral, intranasal/topical, and combination products are treated as distinct interventions.
-
-### Evidence position
-
-Lactoferrin should not be represented as a single interchangeable therapeutic entity. The human literature contains materially different products: milk-derived bovine lactoferrin (bLF), recombinant human lactoferrin (rhLF), recombinant bovine lactoferrin, preparations with very low versus partial/high iron saturation, and combination products containing therapeutic iron, infant formula, probiotics, antibiotics, or other drugs. Route also matters: oral/enteral evidence cannot be extrapolated to intranasal or vaginal administration. [ref-huda-2026][ref-berthon-2026]
-
-The strongest modern adult IDA evidence is negative for stand-alone unsaturated/apo bLF as an iron substitute. In the 2026 randomized Bangladeshi trial, 555 nonpregnant women with IDA received 200 mg bLF/day, 400 mg bLF/day, or 60 mg elemental iron/day as ferrous sulfate, each with folic acid for 12 weeks. The bLF was an unsaturated apo preparation providing only about 0.026 or 0.051 mg elemental iron/day. Hemoglobin changed by −0.2, 0.0, and +1.1 g/dL, respectively; both bLF doses were inferior to ferrous sulfate. Ferritin likewise improved strongly with ferrous sulfate but minimally with bLF. Adverse-event frequencies were broadly comparable. [ref-huda-2026]
-
-This result is especially important because it conflicts with earlier pregnancy and anemia literature favoring bLF. Older evidence is methodologically weaker, and one influential pregnancy IDA randomized trial was subsequently retracted in 2023. [ref-rezk-retraction-2023]
-
-Human oral evidence also does not justify assuming clinically significant intact-protein systemic exposure. In eight women with ileostomies who swallowed 5 g recombinant human LF, only a median 4 micrograms of intact LF was recovered from 24-hour ileal output; investigators concluded that ingested rhLF was digested in the upper GI tract and that the small intact signal was probably endogenous. [ref-troost-2001] This makes it inappropriate to infer systemic antimicrobial, antiviral, immunomodulatory, or disease-modifying effects merely from in-vitro mechanisms.
-
-### Iron deficiency and hematologic outcomes
-
-### Pregnancy and nonpregnant adults
-
-Older pregnancy studies generally used bLF 100 mg twice daily, sometimes explicitly about 30% iron saturated, against very high nominal doses of ferrous sulfate. In the 2006 Paesano controlled trial, 300 pregnant women received either 30%-iron-saturated bLF 100 mg twice daily, ferrous sulfate 520 mg once daily, or—among women refusing treatment—no treatment for 30 days. Hemoglobin and serum iron increased in the bLF group, and no bLF adverse effects were reported. The untreated group was not randomized, so the result is substantially less secure than a blinded randomized comparison. [ref-nappi-2009]
-
-A later pregnancy meta-analysis reported a pooled hemoglobin advantage for lactoferrin over ferrous salts but no convincing superiority for ferritin, serum iron, or obstetric outcomes. Its interpretation now requires particular caution because the evidence set contained the subsequently retracted Rezk pregnancy trial; the retraction means historical pooled estimates should not be treated as clean confirmation of efficacy. [ref-rezk-retraction-2023]
-
-The 2026 Huda trial is a major counterweight to that older literature. Besides the negative hemoglobin result, it found that ferritin increased by only approximately 3 micrograms/L on either apo-bLF dose versus roughly 41 micrograms/L with ferrous sulfate. Hepcidin rose much less on bLF, but CRP and AGP did not show a clear systemic anti-inflammatory advantage and the lower hepcidin response did not translate into hematologic efficacy. The authors explicitly concluded that unsaturated bLF should not routinely replace ferrous sulfate in similar women with IDA. Funding came from Saving Lives at Birth and the UK Medical Research Council; the funders were reported to have no role in study conduct or reporting, and the authors declared no relevant conflicts. [ref-huda-2026]
-
-### Children and IBD
-
-The most directly relevant pediatric IBD trial randomized children aged 5–18 years with IBD in remission and IDA to bLF 100 mg/day as Pravotin sachets or ferrous sulfate 6 mg/kg/day for three months. Eighty children completed treatment. Both groups improved hematologic indices, but the bLF group had higher post-treatment hemoglobin, serum iron, transferrin saturation, and ferritin; IL-6 and hepcidin fell in the bLF arm. Gastrointestinal adverse effects were reported much more frequently with ferrous sulfate. [ref-elamrousy-2022]
-
-That result should remain classified as promising but low-replication evidence, not a settled replacement strategy. It was a relatively small single-center study, excluded children with chronic renal or liver disease and active infection, and therefore does not establish efficacy or safety in those populations. The article also contains some internally awkward adverse-event reporting: some ferrous-sulfate participants were excluded after discontinuation associated with adverse effects, while another passage states that none of the reported side effects necessitated discontinuation. [ref-elamrousy-2022]
-
-Combination-product evidence should be kept separate. A 2026 systematic review/meta-analysis of controlled pediatric trials comparing iron + bLF versus iron alone found only a modest additional ferritin increase of 3.52 micrograms/L (95% CI 0.66–6.38); hemoglobin, serum iron, and soluble transferrin receptor were not significantly improved. Thus these studies support, at most, a possible effect on iron storage rather than demonstrated superior correction of anemia. [ref-divyaveer-2026]
-
-Trials of bLF-fortified infant formula are similarly not equivalent to isolated lactoferrin therapy. For example, infant studies used bLF in iron-fortified formula, so favorable hematologic or infectious outcomes cannot be attributed to lactoferrin as an iron substitute without qualification. [ref-ochoa-diarrhea-2013]
-
-### Infection and gastrointestinal outcomes
-
-The infection literature contains a clear small-trial versus large-trial conflict. The pivotal ELFIN trial randomized 2,203 very preterm infants to enteral milk-derived bLF 150 mg/kg/day, maximum 300 mg/day, versus sucrose placebo until 34 weeks' postmenstrual age. Late-onset infection occurred in 316/1,093 infants receiving bLF and 334/1,089 controls, adjusted RR 0.95 (95% CI 0.86–1.04; p=0.233). There was also no meaningful benefit for microbiologically confirmed infection, mortality, necrotizing enterocolitis, bronchopulmonary dysplasia, retinopathy of prematurity, antimicrobial days, or hospital stay. [ref-elfin-2019]
-
-ELFIN therefore contradicted the much larger effects suggested by earlier small neonatal trials. Sixteen serious adverse events occurred in the lactoferrin arm versus ten in controls; blood in stool and a death after intestinal perforation were assessed as possibly related to the intervention. The trial was funded by the UK NIHR Health Technology Assessment program, with no funder role in study design, collection, analysis, interpretation, or manuscript preparation. [ref-elfin-2019]
-
-Systematic reviews consequently look more favorable than the largest individual trial because they combine ELFIN with earlier small studies. This should be reflected explicitly in a BHWiki evidence grade: pooled neonatal-sepsis estimates are not equivalent to a replicated large-trial effect.
-
-In weaned infants, a randomized study of bLF-fortified formula reported fewer diarrhea and respiratory illnesses over three months than formula without added bLF. The intervention contained 38 mg bLF/100 g formula and was an iron-fortified formula product; breastfed infants were an additional reference group. This finding supports a possible formula-level effect in that population but not oral bLF monotherapy for acute diarrhea or respiratory infection. [ref-ochoa-diarrhea-2013]
-
-For respiratory infections more broadly, a 2021 RCT meta-analysis estimated reduced odds of respiratory infection with lactoferrin, pooled OR 0.57 (95% CI 0.44–0.74; n=1,194), while noting high risk of bias in two included studies. [ref-christofi-2024] More recent pediatric synthesis has been less convincing for upper respiratory infection specifically, so a broad “prevents respiratory infections” claim would overstate consistency.
-
-For H. pylori, older randomized-trial meta-analyses suggested higher eradication rates when lactoferrin was added to standard antibiotic/PPI eradication regimens, sometimes with fewer treatment adverse effects. This is evidence about an adjunctive combination product/regimen—not lactoferrin monotherapy and not proof that lactoferrin itself eradicates H. pylori.
-
-Systemic antiviral claims have not translated reliably. In the double-blind LAC trial, 218 hospitalized adults with moderate-to-severe COVID-19 received 800 mg/day oral bLF, formulated as 200-mg Mosiac capsules, approximately 12% iron saturated, or placebo in addition to standard care. There was no benefit for the death/ICU composite, discharge or NEWS2 improvement, oxygen/ventilation outcomes, CRP, IL-6, or ferritin; adverse-event proportions did not differ materially. [ref-berthon-2026] Oral bLF 1.8 g/day for 12 weeks likewise failed to improve HCV virologic response or ALT versus placebo in a 198-patient chronic hepatitis C trial. [ref-dimario-2006]
-
-These clinical null results are a strong reason not to convert in-vitro “antiviral” or “immunomodulatory” mechanisms into disease-benefit statements.
-
-### Bioavailability, routes, and interactions
-
-Human gastric data show that iron saturation changes digestive stability. In the adult gastric-digestion experiment, volunteers received 4.5 g bLF under three conditions: buffered nominal apo/low-saturation bLF, unbuffered nominal apo/low-saturation bLF, and iron-saturated holo-bLF. Approximate gastric survival was 64%, 62%, and 79%, respectively. That establishes greater gastric stability of holo-lactoferrin, not greater systemic exposure or superior clinical efficacy. [ref-troost-2001]
-
-Recombinant human LF behaves differently and should not be pooled unquestioningly with bovine material. The 5-g ileostomy study demonstrated extensive upper-GI digestion and essentially no recovery of the administered dose as intact protein at the terminal small bowel. [ref-troost-2001]
-
-A newer healthy-adult study tested Helaina recombinant human LF produced in Komagataella phaffii at 0.34 or 3.4 g/day for 28 days against bLF 3.4 g/day. No treatment-emergent anti-human-LF antibody response was detected with either rhLF dose and routine safety outcomes remained broadly similar between groups. By contrast, anti-bLF antibodies increased in the bLF group; the clinical significance is unknown. [ref-peterson-2025] Three low-iron-saturation adverse events—one with bLF and two with low-dose rhLF—were classified as possibly or probably related, although baseline iron saturation was already abnormal in those participants. [ref-fda-grn130]
-
-That rhLF study has an important sponsorship caveat: Helaina funded it and participated in study design, data interpretation, manuscript writing, and the decision to submit; several authors were Helaina employees/equity holders, another received Helaina consulting/advisory fees, and contract-research authors disclosed Helaina and other industry relationships. [ref-fda-grn130]
-
-Evidence for intranasal administration is much weaker. ClinicalTrials.gov NCT04475120 tested a low-iron-saturation liposomal bLF formulation using approximately 1 g/day orally plus an ~8 mg/mL intranasal spray three times daily in a small COVID-19 program. Because of its open/pilot design and mixed comparator groups, it should be kept separate from oral randomized evidence and does not establish an intranasal antiviral indication.
-
-No qualifying human formal pharmacokinetic drug-drug-interaction study was identified in this evidence set. The rhLF safety trial actually excluded several drugs that could confound absorption or outcomes—such as PPIs, H2 blockers, antacids, anti-inflammatory drugs, laxatives and some supplements—so that study cannot establish compatibility or interaction effects with them. [ref-peterson-2025]
-
-For iron supplementation, the best current distinction is: lactoferrin plus iron may modestly alter ferritin in pediatric combination studies, whereas unsaturated bLF without a therapeutically meaningful iron dose failed as a replacement for elemental iron in adult IDA. [ref-divyaveer-2026][ref-huda-2026]
-
-### Safety and special populations
-
-Short-term oral bLF has generally been well tolerated in human trials, and older anemia comparisons frequently report fewer constipation, nausea, abdominal pain, or other GI effects than high-dose ferrous sulfate. That tolerability advantage must not be confused with superior anemia efficacy: the strongest adult IDA trial found similar overall adverse-event rates but markedly superior hematologic efficacy with ferrous sulfate. [ref-huda-2026]
-
-Pregnancy has direct human exposure data, but most studies are old, short, small, and focused on laboratory iron indices rather than hard maternal or neonatal outcomes. One important pregnancy efficacy trial is retracted. [ref-nappi-2009][ref-rezk-retraction-2023] Dedicated lactation pharmacokinetic or infant-safety evidence was not identified in the qualifying evidence reviewed; modern studies commonly excluded lactating women. Pregnancy and lactation should therefore have separate BHWiki evidence fields.
-
-Renal and hepatic impairment likewise remain evidence gaps rather than established contraindications or dose-adjustment indications. The pediatric IBD study excluded chronic renal and hepatic disease, while the LAC COVID trial excluded end-stage renal disease. [ref-elamrousy-2022][ref-berthon-2026] The chronic-HCV trial provides some exposure experience in liver disease but showed neither virologic nor ALT benefit. [ref-dimario-2006] A registered diabetic-nephropathy trial remains investigational rather than evidence of renal benefit.
-
-Passive pharmacovigilance cannot presently provide a defensible lactoferrin adverse-event incidence from the material reviewed. A lack of a quantified signal should not be represented as evidence that serious or rare adverse reactions do not occur. Controlled-trial denominators and official food-safety assessments are more interpretable for the present record.
-
-### Regulatory and conflict assessment
-
-In the United States, the clearest official regulatory status located is food-ingredient GRAS status, not therapeutic approval. FDA GRN 464 covers cow's-milk-derived lactoferrin in specified foods; GRN 465 covers specified concentrations in cow's-milk-based term infant formulas. Both were closed in 2014 with FDA “has no questions” letters. [dr-lactoferrin-s14][ref-fda-grn1284] These determinations should not be described as FDA approval for treating IDA, infection, IBD, COVID-19, or another disease.
-
-FDA has more recently closed “no questions” notices for recombinant bovine lactoferrin made in K. phaffii: GRN 1219, submitted by TurtleTree and closed May 7, 2025, and GRN 1284, submitted by All G Co Holdings and closed March 25, 2026. Their intended uses are food applications, not disease indications. [ref-fda-grn1284][ref-efsa-2012]
-
-Historical FDA notices for recombinant/purified human lactoferrin are different: the human-LF GRAS notices located in the FDA inventory were ceased at the notifier's request rather than receiving the same completed “no questions” outcome. [S18][S19] This distinction should be preserved rather than treating “lactoferrin is GRAS” as a source-independent statement.
-
-EFSA's official 2012 opinion concluded that bovine lactoferrin was safe under the proposed novel-food uses and intake levels, including estimated high adult intake around 3.4 g/day and infant exposure around 200–210 mg/kg/day. The opinion was a food-safety assessment, drawing substantially on toxicology and submitted safety information; it is not evidence of therapeutic efficacy. [S20]
-
-The sponsorship pattern is relevant to evidence grading. Some of the strongest newer null evidence is publicly funded: the 2026 adult IDA trial was funded by Saving Lives at Birth and the UK Medical Research Council and declared no author conflicts, while ELFIN was funded by UK NIHR. [ref-huda-2026][ref-elfin-2019] Conversely, recombinant-product development includes direct commercial participation: the 2025 Helaina rhLF safety trial was company-funded with employees/equity holders among the authors and sponsor involvement in design and publication. [ref-fda-grn130] Older positive pregnancy and formula studies frequently have incomplete funding or COI reporting in the accessible records; those disclosures are marked unknown, rather than being treated as conflict-free.
-
-### Reference URL crosswalk
-
-The browser-rendered report exposed numeric source markers but not the export payload's full reference ledger. The following direct URLs are the inspected source links already present in the existing BHWiki lactoferrin record and correspond to the source classes used above.
-
-| ID | Source | Direct URL | Funding/sponsorship/COI status |
-|---|---|---|---|
-| R1 | Huda et al., 2026 adult IDA randomized trial | https://pubmed.ncbi.nlm.nih.gov/42302886/ | Saving Lives at Birth/UK MRC; authors declared no relevant conflicts. |
-| R2 | LAC COVID-19 randomized trial | https://pubmed.ncbi.nlm.nih.gov/41634901/ | Trial-level disclosure to verify before import; null clinical outcomes. |
-| R3 | Retracted pregnancy IDA trial / retraction | https://pubmed.ncbi.nlm.nih.gov/37466255/ | Retraction is material; do not treat historical positive estimate as clean evidence. |
-| R4 | Troost et al., human gastric digestion / ileostomy evidence | https://pubmed.ncbi.nlm.nih.gov/11481401/ | Funding/COI not located in the inspected record. |
-| R5 | Paesano et al., pregnancy IDA controlled trial | https://pubmed.ncbi.nlm.nih.gov/19639462/ | Funding/COI not located in accessible record. |
-| R6 | Pediatric IBD-associated anemia trial | https://pmc.ncbi.nlm.nih.gov/articles/PMC9556315/ | Funding/COI and reporting limitations retained in source context. |
-| R7 | Pediatric lactoferrin + iron meta-analysis / CKD registry evidence | https://pubmed.ncbi.nlm.nih.gov/42684832/ | Combination evidence; does not establish bLF monotherapy replacement. |
-| R8 | Infant formula / pediatric diarrhea trial | https://pubmed.ncbi.nlm.nih.gov/22939927/ | Formula product; cannot isolate lactoferrin monotherapy. |
-| R9 | ELFIN very-preterm neonatal randomized trial | https://pmc.ncbi.nlm.nih.gov/articles/PMC6356450/ | UK NIHR HTA; no funder role; serious-event balance retained. |
-| R10 | Respiratory-infection lactoferrin meta-analysis | https://pubmed.ncbi.nlm.nih.gov/38291525/ | Review-level disclosure requires source inspection before import. |
-| R11 | Chronic hepatitis C lactoferrin trial | https://pubmed.ncbi.nlm.nih.gov/16611285/ | Null virologic/ALT result; funding/COI verify from full text. |
-| R12 | Healthy-adult recombinant/human LF safety trial | https://pmc.ncbi.nlm.nih.gov/articles/PMC11731406/ | Helaina product/formulation; sponsor involvement recorded. |
-| R13 | Helaina rhLF study disclosure context | https://pubmed.ncbi.nlm.nih.gov/41634901/ | Company-funded; employee/equity-holder authors and sponsor involvement. |
-| R14 | FDA GRAS Notice 464 / bovine lactoferrin | https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=130&order=DESC&search=GRN&set=GRASNotices&sort=GRN_No&startrow=1&type=column | Food-use regulatory record, not therapeutic approval. |
-| R15 | FDA term-infant-formula lactoferrin GRAS record | https://www.fda.gov/food/gras-notice-inventory | Food-use record; exact GRN crosswalk should be checked before import. |
-| R16 | FDA GRN 1219 recombinant bovine lactoferrin | https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=1219&order=ASC&search=comb&set=GRASNotices&sort=GRN_No&startrow=1&type=basic | TurtleTree notifier; food use only. |
-| R17 | FDA GRN 1284 recombinant bovine lactoferrin | https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=1284&order=ASC&search=comb&set=GRASNotices&sort=GRN_No&startrow=1&type=basic | All G Co Holdings notifier; food use only. |
-| R18 | FDA human-LF GRAS inventory status | https://www.fda.gov/food/gras-notice-inventory | Ceased notices must not be represented as completed no-questions outcomes. |
-| R19 | FDA inventory record for recombinant/purified human LF | https://www.fda.gov/food/gras-notice-inventory | Notifier-requested cessation; verify exact notice before import. |
-| R20 | EFSA bovine lactoferrin opinion | https://efsa.onlinelibrary.wiley.com/doi/abs/10.2903/j.efsa.2012.2701 | Official food-safety assessment; not efficacy evidence. |
+Evidence is heterogeneous and population-specific. Lactoferrin may be better tolerated than high-dose ferrous sulfate in some studies, but tolerability does not establish superior anemia correction. No formal human drug-interaction PK study was identified.
 
 ## Doses
 
 ```yaml
-- label: Adult gastric digestion study, apo/partially iron-saturated bovine lactoferrin
-  amount: 4.5 g once
-  quantity: 4.5
-  quantityMax: null
-  unit: g
-  ingredient: bovine lactoferrin
-  formulation: Test drink containing approximately 20%-iron-saturated bovine lactoferrin; studied with and without citrate/citric-acid gastric pH buffer
-  route: intragastric via nasogastric intubation
-  frequency: single administration
-  duration: one study day per crossover condition
-  population: 12 healthy adults, mean age approximately 21 years
-  purpose: Human gastric survival/digestion study
-  sourceCategory: research
-  note: Research exposure only; not a recommended oral dose. The study also included an iron-saturated holo-lactoferrin condition.
-  sourceId: ref-troost-2001
-- label: Adult gastric digestion study, holo-bovine lactoferrin
-  amount: 4.5 g once
-  quantity: 4.5
-  quantityMax: null
-  unit: g
-  ingredient: iron-saturated bovine lactoferrin
-  formulation: Holo-lactoferrin test drink
-  route: intragastric via nasogastric intubation
-  frequency: single administration
-  duration: one study day in randomized crossover
-  population: 12 healthy adults
-  purpose: Human gastric survival/digestion study
-  sourceCategory: research
-  note: Iron saturation affected measured gastric survival; the study did not establish systemic exposure or half-life.
-  sourceId: ref-troost-2001
-- label: Pregnancy iron-deficiency anemia trial
+- sourceCategory: research
+  label: Adult IDA apo-bLF trial
+  amount: 200 or 400 mg/day
+  quantity: 200
+  quantityMax: 400
+  unit: mg/day
+  ingredient: Bovine lactoferrin
+  formulation: Unsaturated apo preparation with folic acid
+  route: oral
+  frequency: daily
+  duration: 12 weeks
+  population: 555 nonpregnant women with iron-deficiency anemia
+  purpose: Compare hematologic outcomes with ferrous sulfate
+  note: The preparation provided only approximately 0.026–0.051 mg elemental iron/day; both bLF arms were inferior for hemoglobin and ferritin.
+  sourceId: ref-huda-2026
+- sourceCategory: research
+  label: Pregnancy anemia trial
   amount: 100 mg twice daily
   quantity: 200
   quantityMax: null
   unit: mg/day
-  ingredient: bovine lactoferrin
-  formulation: 100 mg bovine lactoferrin capsule
+  ingredient: Bovine lactoferrin
+  formulation: Approximately 30%-iron-saturated bLF
   route: oral
   frequency: twice daily
   duration: 30 days
   population: Pregnant women with iron-deficiency anemia
-  purpose: Comparison with ferrous sulfate for hematologic efficacy and gastrointestinal tolerability
-  sourceCategory: research
-  note: Comparator was ferrous sulfate 520 mg once daily; iron saturation of the lactoferrin preparation was not specified in the accessible abstract.
+  purpose: Compare hematologic changes with ferrous sulfate
+  note: Older controlled study; untreated refusers were not randomized.
   sourceId: ref-nappi-2009
-- label: Nonpregnant women with iron-deficiency anemia
-  amount: 200-400 mg daily
-  quantity: 200
-  quantityMax: 400
-  unit: mg/day
-  ingredient: bovine lactoferrin
-  formulation: Unsaturated bovine lactoferrin in gelatin capsules; each arm also received 400 micrograms folic acid daily
-  route: oral
-  frequency: once daily
-  duration: 12 weeks
-  population: Nonpregnant, nonlactating Bangladeshi women aged 18-49 years with iron-deficiency anemia
-  purpose: Noninferiority comparison with 60 mg elemental iron as ferrous sulfate
-  sourceCategory: research
-  note: Exact percentage iron saturation was not quantitatively reported in the inspected publication; the authors characterized the tested bLF as unsaturated.
-  sourceId: ref-huda-2026
-- label: Pediatric IBD-associated iron-deficiency anemia
-  amount: 100 mg daily
+- sourceCategory: research
+  label: Pediatric IBD anemia trial
+  amount: 100 mg/day
   quantity: 100
   quantityMax: null
   unit: mg/day
-  ingredient: bovine lactoferrin
-  formulation: Pravotin sachet, Hygint, Egypt
+  ingredient: Bovine lactoferrin
+  formulation: Pravotin sachets
   route: oral
-  frequency: once daily
+  frequency: daily
   duration: 3 months
-  population: Children aged 5-18 years with inflammatory bowel disease in remission and iron-deficiency anemia
-  purpose: Comparison with ferrous sulfate 6 mg/kg/day
-  sourceCategory: research
-  note: Ninety-two children were randomized; 80 completed and were analyzed.
+  population: Children aged 5–18 years with IBD in remission and IDA
+  purpose: Compare hematologic and inflammatory outcomes with ferrous sulfate
+  note: Small single-center study; renal, liver disease and active infection were excluded.
   sourceId: ref-elamrousy-2022
-- label: Prevention of diarrhea after weaning
-  amount: 1 g daily
-  quantity: 1
-  quantityMax: null
-  unit: g/day
-  ingredient: bovine lactoferrin
-  formulation: Daily bovine lactoferrin supplement
-  route: oral
-  frequency: daily
-  duration: 6 months
-  population: Previously weaned Peruvian children enrolled at 12-18 months of age
-  purpose: Prevention of diarrhea and assessment of growth
-  sourceCategory: research
-  note: Dose is confirmed in the ClinicalTrials.gov registry; the trial did not reduce diarrhea incidence.
-  sourceId: ref-ochoa-diarrhea-2013
-- label: Pediatric antibiotic-associated diarrhea prevention trial
-  amount: 100 mg twice daily
-  quantity: 200
-  quantityMax: null
-  unit: mg/day
-  ingredient: bovine lactoferrin
-  formulation: 100 mg bLF plus 900 mg maltodextrin per dose
-  route: oral
-  frequency: twice daily
-  duration: for the entire antibiotic-treatment course
-  population: Children aged 1-18 years receiving antibiotics for acute respiratory or urinary tract infection
-  purpose: Prevention of antibiotic-associated diarrhea
-  sourceCategory: research
-  note: This exposure was associated with more antibiotic-associated diarrhea than placebo in the randomized trial.
-  sourceId: ref-wronowski-2021
-- label: Very-low-birth-weight neonatal sepsis-prevention trial
-  amount: 100 mg daily
-  quantity: 100
-  quantityMax: null
-  unit: mg/day
-  ingredient: bovine lactoferrin
-  formulation: Oral bovine lactoferrin, with a separate combination arm also receiving Lactobacillus rhamnosus GG
-  route: oral/enteral
-  frequency: daily
-  duration: 30 days; 45 days for neonates below 1000 g birthweight
-  population: Very-low-birth-weight neonates under 1500 g
-  purpose: Prevention of late-onset sepsis
-  sourceCategory: research
-  note: The bLF-alone result must be distinguished from the bLF-plus-probiotic arm.
-  sourceId: ref-manzoni-2009
-- label: ELFIN very-preterm infant trial
-  amount: 150 mg/kg/day, maximum 300 mg/day
+- sourceCategory: research
+  label: ELFIN neonatal trial
+  amount: 150 mg/kg/day (maximum 300 mg/day)
   quantity: 150
   quantityMax: 300
-  unit: mg/kg/day with 300 mg/day maximum
-  ingredient: bovine lactoferrin
-  formulation: Tatua Co-operative Dairy Company bovine lactoferrin prepared under clinical-trial pharmacy GMP controls
-  route: enteral via gastric tube
-  frequency: once daily, with splitting permitted at clinician discretion
-  duration: from establishment of sufficient enteral feeding until 34 weeks postmenstrual age
-  population: Infants born before 32 weeks gestation and randomized before 72 hours of age
-  purpose: Prevention of late-onset infection and associated morbidity
-  sourceCategory: research
-  note: Largest neonatal bLF RCT; primary outcome was null.
-  sourceId: ref-elfin-2019
-- label: Recombinant human talactoferrin preterm-infant trial
-  amount: 150 mg/kg every 12 hours
-  quantity: 300
-  quantityMax: null
   unit: mg/kg/day
-  ingredient: recombinant human lactoferrin (talactoferrin)
-  formulation: Talactoferrin oral solution
+  ingredient: Milk-derived bovine lactoferrin
+  formulation: Enteral milk-derived preparation
   route: enteral
-  frequency: every 12 hours
-  duration: days 1-28 of life
-  population: Preterm infants with birthweight 750-1500 g
-  purpose: Safety and exploratory prevention of hospital-acquired infection
-  sourceCategory: research
-  note: This recombinant human product should not be pooled uncritically with bovine lactoferrin preparations.
-  sourceId: ref-sherman-2016
-- label: H. pylori eradication adjunct trial
-  amount: 200 mg twice daily
-  quantity: 400
+  frequency: daily
+  duration: Until 34 weeks postmenstrual age
+  population: 2,203 very preterm infants
+  purpose: Prevent late-onset infection
+  note: Large randomized trial; primary infection and major neonatal outcomes were null.
+  sourceId: ref-elfin-2019
+- sourceCategory: research
+  label: LAC COVID trial
+  amount: 800 mg/day
+  quantity: 800
   quantityMax: null
   unit: mg/day
-  ingredient: bovine lactoferrin
-  formulation: Oral bovine lactoferrin added to esomeprazole, clarithromycin, and tinidazole in the concurrent-treatment arm
+  ingredient: Bovine lactoferrin
+  formulation: Mosiac 200 mg capsules, approximately 12% iron-saturated
   route: oral
-  frequency: twice daily
-  duration: 7 days
-  population: Adults with confirmed Helicobacter pylori infection
-  purpose: Adjunct to H. pylori triple-eradication therapy
-  sourceCategory: research
-  note: The relevant positive result is combination-specific and does not establish lactoferrin monotherapy eradication efficacy.
-  sourceId: ref-dimario-2006
-- label: Healthy-adult recombinant human lactoferrin safety study
-  amount: 0.34-3.4 g daily
-  quantity: 0.34
-  quantityMax: 3.4
-  unit: g/day
-  ingredient: recombinant human lactoferrin
-  formulation: Helaina effera recombinant human lactoferrin produced in Komagataella phaffii; powder mixed in water
+  frequency: daily
+  duration: Hospitalized treatment period
+  population: 218 adults with moderate-to-severe COVID-19
+  purpose: Assess clinical and inflammatory outcomes
+  note: No benefit on death/ICU composite, discharge, oxygen, CRP or IL-6.
+  sourceId: ref-berthon-2026
+- sourceCategory: research
+  label: Recombinant LF safety trial
+  amount: 0.34 or 3.4 g/day recombinant human LF; comparator 3.4 g/day bLF
+  quantity: 340
+  quantityMax: 3400
+  unit: mg/day
+  ingredient: Recombinant human or bovine lactoferrin
+  formulation: Helaina recombinant product or bovine LF
   route: oral
-  frequency: two divided servings daily
+  frequency: daily
   duration: 28 days
-  population: Healthy adults aged 18-45 years
-  purpose: Immunogenicity/alloimmunization and safety evaluation
-  sourceCategory: research
-  note: Follow-up continued through day 84; study was industry-funded.
+  population: Healthy adults
+  purpose: Assess safety, antibodies and iron-related outcomes
+  note: Helaina funded the study and sponsor involvement/employee interests were disclosed.
   sourceId: ref-peterson-2025
-- label: Healthy-adult bovine-lactoferrin active-control safety exposure
-  amount: 3.4 g daily
-  quantity: 3.4
-  quantityMax: null
-  unit: g/day
-  ingredient: bovine lactoferrin
-  formulation: Powder mixed in water
-  route: oral
-  frequency: two divided servings daily
-  duration: 28 days
-  population: Healthy adults aged 18-45 years
-  purpose: Active-control immunogenicity and safety comparison with recombinant human lactoferrin
-  sourceCategory: research
-  note: Increased anti-bovine-lactoferrin antibody signal was observed without a corresponding clinical adverse-event signal in this small study.
-  sourceId: ref-peterson-2025
-- label: CKD-associated iron-deficiency anemia adjunct trial
-  amount: 100 mg twice daily plus 30 mg/day liposomal iron
-  quantity: 200
-  quantityMax: null
-  unit: mg/day
-  ingredient: lactoferrin
-  formulation: Oral lactoferrin added to oral liposomal iron
-  route: oral
-  frequency: lactoferrin twice daily; liposomal iron daily
-  duration: 3 months
-  population: Adults with iron-deficiency anemia and nondialysis or dialysis-dependent chronic kidney disease
-  purpose: Adjunctive treatment compared with liposomal iron alone
-  sourceCategory: research
-  note: Combination exposure; the trial does not establish lactoferrin monotherapy efficacy.
-  sourceId: ref-divyaveer-2026
-- label: Low-birth-weight/preterm neonatal dose-ranging trial
-  amount: 150 or 300 mg daily
-  quantity: 150
-  quantityMax: 300
-  unit: mg/day
-  ingredient: bovine lactoferrin
-  formulation: bLF mixed with breast milk
-  route: enteral
-  frequency: once daily
-  duration: 28 days
-  population: Preterm 28 to 36+5 week or low-birth-weight neonates 1000 to under 2500 g who established enteral feeding
-  purpose: Prevention of late-onset sepsis and necrotizing enterocolitis
-  sourceCategory: research
-  note: Culture-proven sepsis results were dose-inconsistent; authors did not conclude overall prevention.
-  sourceId: ref-ariff-2025
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: pk-intact-lactoferrin-half-life-not-established
-  analyte: intact orally administered lactoferrin
-  route: oral/enteral
-  formulation: bovine lactoferrin; human oral studies include apo/partially iron-saturated and holo forms
-  population: Humans; systemic elimination kinetics were not established in the inspected oral studies
+- sourceId: ref-troost-2001
+  id: lactoferrin-pk-digestion
+  analyte: lactoferrin
+  route: oral
+  formulation: Apo/low-saturation and holo bovine LF
+  population: Adults in gastric-digestion study
   endpoint: elimination-half-life
   statistic: not-established
   value: null
   low: null
   high: null
   unit: hours
-  context: Human gastric studies measured survival and proteolytic processing rather than plasma elimination. No verified systemic elimination half-life for intact oral lactoferrin was identified, so no elimination curve should be generated.
-  sourceId: ref-troost-2001
+  context: Approximate gastric survival was 64% for buffered apo/low-saturation, 62% for unbuffered apo/low-saturation and 79% for holo LF; survival is not systemic half-life.
   modelEligible: false
-- id: dr-lactoferrin-lactoferrin-pk-1
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
+- sourceId: ref-kuwata-1998
+  id: lactoferrin-pk-intact
+  analyte: recombinant human lactoferrin
+  route: oral
+  formulation: 5 g swallowed dose
+  population: 8 women with ileostomies
   endpoint: elimination-half-life
   statistic: not-established
   value: null
   low: null
   high: null
   unit: hours
-  context: No validated universal terminal half-life was established in the returned report.
-  sourceId: ref-huda-2026
+  context: Only median 4 μg intact LF was recovered from 24-hour ileal output; investigators concluded extensive upper-GI digestion.
+  modelEligible: false
+- sourceId: ref-peterson-2025
+  id: lactoferrin-pk-antibody
+  analyte: lactoferrin
+  route: oral
+  formulation: Recombinant human or bovine LF
+  population: Healthy adults
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: The 28-day safety study assessed antibodies and routine labs, not a validated terminal half-life or systemic exposure model.
   modelEligible: false
 ```
 
 ## Modifiers
 
 ```yaml
-[]
+- label: Iron saturation
+  effect: Holo LF survived gastric conditions better than apo LF
+  detail: In an adult gastric study, approximate survival was 79% for holo versus 62–64% for apo/low-saturation material; this did not establish systemic efficacy.
+  sourceId: ref-troost-2001
+  observationId: lactoferrin-pk-digestion
+  factorType: other
+  direction: variable
+- label: Product and species
+  effect: Bovine, recombinant human and recombinant bovine products are not interchangeable
+  detail: Antibody response, digestion and clinical evidence differ by source and formulation.
+  sourceId: ref-peterson-2025
+  observationId: lactoferrin-pk-antibody
+  factorType: other
+  direction: variable
+- label: Route
+  effect: Oral/enteral evidence cannot be generalized to intranasal or topical use
+  detail: The evidence set contains materially different routes and mixed formulations.
+  sourceId: ref-berthon-2026
+  observationId: lactoferrin-pk-intact
+  factorType: other
+  direction: variable
 ```
 
 ## Effects
 
 ```yaml
-[]
+- sourceId: ref-huda-2026
+  id: lactoferrin-effect-tolerability
+  conceptId: perception
+  name: Gastrointestinal tolerability
+  direction: Variable
+  evidence: Human research
+  description: Some pregnancy and pediatric comparisons reported fewer gastrointestinal adverse effects than ferrous sulfate, but the strongest adult IDA trial found broadly comparable overall adverse-event frequencies.
+  population: Pregnant women, children with IBD and adults with IDA in separate trials
+  exposure: Study-specific bovine lactoferrin or ferrous sulfate
+  instrument: Reported adverse events
+  magnitude: Possible tolerability advantage; not consistent across trials
+  reportType: measured-assessment
+  conflictingSourceIds:
+    - ref-huda-2026
 ```
 
 ## Outcomes
 
 ```yaml
-- id: hb-ida-women-blf200-2026
+- sourceId: ref-huda-2026
+  id: lactoferrin-outcome-adult-hgb
   conceptId: hemoglobin-concentration
-  name: Hemoglobin change with 200 mg/day bovine lactoferrin in nonpregnant IDA
-  direction: Decreased
-  evidence: Human research
-  description: Compared with ferrous sulfate, 200 mg/day unsaturated bovine lactoferrin produced substantially less improvement in hemoglobin at 12 weeks and failed the prespecified noninferiority criterion.
-  sourceId: ref-huda-2026
-  population: Nonpregnant Bangladeshi women aged 18-49 years with iron-deficiency anemia
-  exposure: 200 mg/day bovine lactoferrin plus 400 micrograms/day folic acid for 12 weeks
-  instrument: Change in blood hemoglobin concentration from baseline
-  magnitude: Mean Hb change was -0.2 g/dL with 200 mg bLF versus +1.1 g/dL with 60 mg elemental iron as ferrous sulfate.
-  reportType: measured-assessment
-  conflictingSourceIds:
-    - ref-nappi-2009
-    - ref-elamrousy-2022
-  study:
-    id: ACTRN12617001455358
-    design: Double-blind, parallel-group randomized noninferiority trial
-    sampleSize: 555
-    populationLabels:
-      - nonpregnant women
-      - iron-deficiency anemia
-      - Bangladesh
-    comparator: 60 mg elemental iron as ferrous sulfate plus 400 micrograms folic acid daily
-    route: oral
-    formulation: unsaturated bovine lactoferrin capsule
-    durationDays: 84
-    assessmentTime: 12 weeks
-  result:
-    measure: mean-difference
-    estimate: -1.2
-    unit: g/dL
-    instrument: Change in hemoglobin concentration from baseline
-    comparator: 60 mg elemental iron as ferrous sulfate plus folic acid
-    assessmentTime: 12 weeks
-    population: Per-protocol nonpregnant women with IDA
-    confidenceInterval:
-      lower: -1.6
-      upper: -0.9
-      level: 95
-- id: hb-ida-women-blf400-2026
-  conceptId: hemoglobin-concentration
-  name: Hemoglobin change with 400 mg/day bovine lactoferrin in nonpregnant IDA
-  direction: Decreased
-  evidence: Human research
-  description: Compared with ferrous sulfate, 400 mg/day unsaturated bovine lactoferrin produced substantially less improvement in hemoglobin at 12 weeks and failed the prespecified noninferiority criterion.
-  sourceId: ref-huda-2026
-  population: Nonpregnant Bangladeshi women aged 18-49 years with iron-deficiency anemia
-  exposure: 400 mg/day bovine lactoferrin plus 400 micrograms/day folic acid for 12 weeks
-  instrument: Change in blood hemoglobin concentration from baseline
-  magnitude: Mean Hb change was 0.0 g/dL with 400 mg bLF versus +1.1 g/dL with ferrous sulfate.
-  reportType: measured-assessment
-  conflictingSourceIds:
-    - ref-nappi-2009
-    - ref-elamrousy-2022
-  study:
-    id: ACTRN12617001455358
-    design: Double-blind, parallel-group randomized noninferiority trial
-    sampleSize: 555
-    populationLabels:
-      - nonpregnant women
-      - iron-deficiency anemia
-      - Bangladesh
-    comparator: 60 mg elemental iron as ferrous sulfate plus 400 micrograms folic acid daily
-    route: oral
-    formulation: unsaturated bovine lactoferrin capsule
-    durationDays: 84
-    assessmentTime: 12 weeks
-  result:
-    measure: mean-difference
-    estimate: -1.1
-    unit: g/dL
-    instrument: Change in hemoglobin concentration from baseline
-    comparator: 60 mg elemental iron as ferrous sulfate plus folic acid
-    assessmentTime: 12 weeks
-    population: Per-protocol nonpregnant women with IDA
-    confidenceInterval:
-      lower: -1.4
-      upper: -0.8
-      level: 95
-- id: ferritin-ida-women-blf200-2026
-  conceptId: serum-ferritin
-  name: Serum ferritin change with 200 mg/day bovine lactoferrin
-  direction: Decreased
-  evidence: Human research
-  description: Ferritin increased only modestly with 200 mg/day bLF and substantially more with ferrous sulfate.
-  sourceId: ref-huda-2026
-  population: Nonpregnant Bangladeshi women with iron-deficiency anemia
-  exposure: 200 mg/day bLF plus folic acid for 12 weeks
-  instrument: Serum ferritin
-  magnitude: Mean ferritin change was +3.2 micrograms/L with bLF versus +41.4 micrograms/L with ferrous sulfate.
-  reportType: measured-assessment
-  study:
-    id: ACTRN12617001455358
-    design: Double-blind randomized noninferiority trial
-    sampleSize: 555
-    populationLabels:
-      - nonpregnant women
-      - iron-deficiency anemia
-    comparator: 60 mg elemental iron as ferrous sulfate plus folic acid
-    route: oral
-    formulation: unsaturated bovine lactoferrin
-    durationDays: 84
-    assessmentTime: 12 weeks
-  result:
-    measure: mean-difference
-    estimate: -38.2
-    unit: micrograms/L
-    instrument: Change in serum ferritin from baseline
-    comparator: ferrous sulfate plus folic acid
-    assessmentTime: 12 weeks
-    population: Per-protocol nonpregnant women with IDA
-    confidenceInterval:
-      lower: -45.4
-      upper: -31.1
-      level: 95
-- id: ferritin-ida-women-blf400-2026
-  conceptId: serum-ferritin
-  name: Serum ferritin change with 400 mg/day bovine lactoferrin
-  direction: Decreased
-  evidence: Human research
-  description: Ferritin increased only modestly with 400 mg/day bLF and substantially more with ferrous sulfate.
-  sourceId: ref-huda-2026
-  population: Nonpregnant Bangladeshi women with iron-deficiency anemia
-  exposure: 400 mg/day bLF plus folic acid for 12 weeks
-  instrument: Serum ferritin
-  magnitude: Mean ferritin change was +3.5 micrograms/L with bLF versus +41.4 micrograms/L with ferrous sulfate.
-  reportType: measured-assessment
-  study:
-    id: ACTRN12617001455358
-    design: Double-blind randomized noninferiority trial
-    sampleSize: 555
-    populationLabels:
-      - nonpregnant women
-      - iron-deficiency anemia
-    comparator: 60 mg elemental iron as ferrous sulfate plus folic acid
-    route: oral
-    formulation: unsaturated bovine lactoferrin
-    durationDays: 84
-    assessmentTime: 12 weeks
-  result:
-    measure: mean-difference
-    estimate: -37.9
-    unit: micrograms/L
-    instrument: Change in serum ferritin from baseline
-    comparator: ferrous sulfate plus folic acid
-    assessmentTime: 12 weeks
-    population: Per-protocol nonpregnant women with IDA
-    confidenceInterval:
-      lower: -45
-      upper: -30.8
-      level: 95
-- id: hb-pregnancy-ida-nappi-2009
-  conceptId: hemoglobin-concentration
-  name: Hemoglobin response in pregnant women with IDA
+  name: Adult hemoglobin
   direction: Variable
   evidence: Human research
-  description: Hemoglobin increased during 30 days of both bovine lactoferrin and ferrous-sulfate treatment; the trial abstract reported no significant between-group difference.
-  sourceId: ref-nappi-2009
-  population: Pregnant women with iron-deficiency anemia
-  exposure: Bovine lactoferrin 100 mg twice daily for 30 days
-  instrument: Hemoglobin concentration
-  magnitude: Both treatments significantly increased Hb from baseline; no significant between-group difference was reported in the accessible abstract.
+  description: In 555 nonpregnant women with IDA, hemoglobin changed by −0.2, 0.0 and +1.1 g/dL in 200 mg, 400 mg bLF and ferrous-sulfate groups; apo-bLF was inferior.
+  population: 555 nonpregnant women with IDA
+  exposure: 200 or 400 mg/day apo-bLF versus 60 mg elemental iron/day
+  instrument: Hemoglobin
+  magnitude: Ferrous sulfate +1.1 g/dL; bLF arms −0.2 and 0.0 g/dL
+  reportType: measured-assessment
+  conflictingSourceIds:
+    - ref-nappi-2009
+    - ref-abuhashim-2017
+- sourceId: ref-huda-2026
+  id: lactoferrin-outcome-ferritin
+  conceptId: serum-ferritin
+  name: Adult ferritin
+  direction: Variable
+  evidence: Human research
+  description: Ferritin increased approximately 3 μg/L with either apo-bLF dose versus approximately 41 μg/L with ferrous sulfate.
+  population: 555 nonpregnant women with IDA
+  exposure: 200 or 400 mg/day apo-bLF versus 60 mg elemental iron/day
+  instrument: Serum ferritin
+  magnitude: Small bLF increase versus larger ferrous-sulfate increase
+  reportType: measured-assessment
+  conflictingSourceIds: []
+- sourceId: ref-elamrousy-2022
+  id: lactoferrin-outcome-ibd
+  conceptId: hemoglobin-concentration
+  name: Pediatric IBD anemia
+  direction: Increased
+  evidence: Human research
+  description: Both bLF and ferrous sulfate improved hematologic indices; the bLF arm had higher post-treatment hemoglobin, iron, transferrin saturation and ferritin in this small study.
+  population: 80 children aged 5–18 years with IBD in remission and IDA
+  exposure: 100 mg/day bLF versus 6 mg/kg/day ferrous sulfate for 3 months
+  instrument: Hemoglobin, iron, transferrin saturation and ferritin
+  magnitude: Between-arm differences favored bLF; replication limited
   reportType: measured-assessment
   conflictingSourceIds:
     - ref-huda-2026
-  study:
-    id: nappi-2009-pregnancy-ida
-    design: Prospective randomized controlled double-blind trial
-    sampleSize: 100
-    populationLabels:
-      - pregnancy
-      - iron-deficiency anemia
-    comparator: Ferrous sulfate 520 mg once daily
-    route: oral
-    formulation: bovine lactoferrin capsule
-    durationDays: 30
-    assessmentTime: 30 days
-- id: gi-tolerability-pregnancy-nappi-2009
-  conceptId: gastrointestinal-adverse-events
-  name: Gastrointestinal symptoms versus ferrous sulfate in pregnancy
-  direction: Decreased
-  evidence: Human research
-  description: Abdominal-pain and constipation symptom scores were significantly lower with bovine lactoferrin than with ferrous sulfate.
-  sourceId: ref-nappi-2009
-  population: Pregnant women with iron-deficiency anemia
-  exposure: Bovine lactoferrin 100 mg twice daily for 30 days
-  instrument: Participant diary rating abdominal pain, nausea, vomiting, diarrhea, and constipation from 0 absent to 3 severe
-  magnitude: Median abdominal-pain and constipation scores were significantly higher with ferrous sulfate; exact between-group effect estimates were not available in the accessible abstract.
-  reportType: measured-assessment
-  study:
-    id: nappi-2009-pregnancy-ida
-    design: Prospective randomized controlled double-blind trial
-    sampleSize: 100
-    populationLabels:
-      - pregnancy
-      - iron-deficiency anemia
-    comparator: Ferrous sulfate 520 mg/day
-    route: oral
-    formulation: bovine lactoferrin
-    durationDays: 30
-    assessmentTime: 30 days
-- id: hb-pediatric-ibd-ida-2022
-  conceptId: hemoglobin-concentration
-  name: Hemoglobin in children with IBD-associated IDA
-  direction: Increased
-  evidence: Human research
-  description: Among study completers, post-treatment hemoglobin was higher with bovine lactoferrin than with ferrous sulfate after 3 months.
-  sourceId: ref-elamrousy-2022
-  population: Children aged 5-18 years with IBD in remission and IDA
-  exposure: Bovine lactoferrin 100 mg/day for 3 months
-  instrument: Hemoglobin concentration
-  magnitude: Post-treatment Hb was 11.9 ± 1.7 g/dL with bLF versus 10.8 ± 0.49 g/dL with ferrous sulfate; reported P=0.01.
-  reportType: measured-assessment
-  conflictingSourceIds:
-    - ref-huda-2026
-  study:
-    id: PACTR202002763901803
-    design: Randomized controlled trial with complete-case analysis
-    sampleSize: 92
-    populationLabels:
-      - children
-      - inflammatory bowel disease
-      - iron-deficiency anemia
-    comparator: Ferrous sulfate 6 mg/kg/day
-    route: oral
-    formulation: Pravotin bovine lactoferrin sachet
-    durationDays: 90
-    assessmentTime: 3 months
-- id: gi-adverse-events-pediatric-ibd-2022
-  conceptId: gastrointestinal-adverse-events
-  name: Gastrointestinal adverse events in pediatric IBD-associated IDA
-  direction: Decreased
-  evidence: Human research
-  description: The study reported substantially fewer gastrointestinal complaints with lactoferrin than with ferrous sulfate, but participant-flow and side-effect denominators are internally difficult to reconcile and should be interpreted cautiously.
-  sourceId: ref-elamrousy-2022
-  population: Children with IBD in remission and IDA
-  exposure: Bovine lactoferrin 100 mg/day for 3 months
-  instrument: Parent-recorded treatment side effects
-  magnitude: The article reports abdominal discomfort in one lactoferrin participant (2.5%) versus gastrointestinal side effects in 18 ferrous-sulfate participants (46.2%).
-  reportType: measured-assessment
-  study:
-    id: PACTR202002763901803
-    design: Randomized controlled trial with complete-case analysis
-    sampleSize: 92
-    populationLabels:
-      - children
-      - inflammatory bowel disease
-      - iron-deficiency anemia
-    comparator: Ferrous sulfate 6 mg/kg/day
-    route: oral
-    formulation: Pravotin bovine lactoferrin sachet
-    durationDays: 90
-    assessmentTime: 3 months
-- id: hb-ckd-adjunct-2026
-  conceptId: hemoglobin-concentration
-  name: Hemoglobin response when lactoferrin was added to liposomal iron in CKD
-  direction: Increased
-  evidence: Human research
-  description: Addition of lactoferrin to 30 mg/day liposomal iron produced larger mean hemoglobin increases than liposomal iron alone in both nondialysis and dialysis-dependent CKD strata.
-  sourceId: ref-divyaveer-2026
-  population: Adults with CKD-associated iron-deficiency anemia, including nondialysis and dialysis-dependent CKD
-  exposure: Lactoferrin 100 mg twice daily plus liposomal iron 30 mg/day for 3 months
-  instrument: Hemoglobin concentration
-  magnitude: Mean Hb increase was 1.95 ± 1.19 vs 1.33 ± 0.86 g/dL in CKD-ND and 1.73 ± 0.96 vs 1.11 ± 0.93 g/dL in CKD-5D for combination versus iron alone.
-  reportType: measured-assessment
-  study:
-    id: divyaveer-ckd-ida-2026
-    design: Randomized open-label trial
-    sampleSize: 185
-    populationLabels:
-      - chronic kidney disease
-      - iron-deficiency anemia
-      - adults
-    comparator: Liposomal iron 30 mg/day alone
-    route: oral
-    formulation: lactoferrin plus liposomal iron
-    durationDays: 90
-    assessmentTime: 3 months
-- id: late-onset-sepsis-vlbw-2009
+- sourceId: ref-elfin-2019
+  id: lactoferrin-outcome-neonatal-infection
   conceptId: late-onset-infection
-  name: Late-onset sepsis in very-low-birth-weight neonates
-  direction: Decreased
+  name: Late-onset infection
+  direction: Variable
   evidence: Human research
-  description: The early multicenter RCT reported substantially fewer first late-onset-sepsis episodes with bovine lactoferrin alone than with placebo.
-  sourceId: ref-manzoni-2009
-  population: Very-low-birth-weight neonates under 1500 g
-  exposure: Bovine lactoferrin 100 mg/day for 30 or 45 days
-  instrument: First episode of late-onset sepsis with pathogen isolation from blood, peritoneal fluid, or cerebrospinal fluid
-  magnitude: 9/153 (5.9%) with bLF versus 29/168 (17.3%) with placebo.
+  description: "ELFIN found no significant late-onset infection reduction: 316/1,093 bLF versus 334/1,089 placebo, adjusted RR 0.95 (95% CI 0.86–1.04)."
+  population: 2,203 very preterm infants
+  exposure: 150 mg/kg/day enteral bLF, maximum 300 mg/day
+  instrument: Late-onset infection diagnosis
+  magnitude: Adjusted RR 0.95 (95% CI 0.86–1.04; p=0.233)
   reportType: measured-assessment
   conflictingSourceIds:
-    - ref-elfin-2019
+    - ref-manzoni-2009
     - ref-ariff-2025
-  study:
-    id: ISRCTN53107700
-    design: Prospective multicenter double-blind placebo-controlled randomized trial
-    sampleSize: 472
-    populationLabels:
-      - very-low-birth-weight neonates
-      - neonatal intensive care
-    comparator: Placebo
-    route: oral
-    formulation: bovine lactoferrin
-    durationDays: 45
-    assessmentTime: Through discharge
-  result:
-    measure: risk-ratio
-    estimate: 0.34
-    unit: ratio
-    instrument: First episode of late-onset sepsis
-    comparator: placebo
-    assessmentTime: Through neonatal hospitalization
-    population: Very-low-birth-weight neonates
-    confidenceInterval:
-      lower: 0.17
-      upper: 0.7
-      level: 95
-- id: late-onset-infection-elfin-2019
-  conceptId: late-onset-infection
-  name: Late-onset infection in very preterm infants
-  direction: Variable
-  evidence: Human research
-  description: The largest neonatal lactoferrin trial found no statistically significant reduction in microbiologically confirmed or clinically suspected late-onset infection.
-  sourceId: ref-elfin-2019
-  population: Infants born before 32 weeks gestation
-  exposure: Bovine lactoferrin 150 mg/kg/day, maximum 300 mg/day, until 34 weeks postmenstrual age
-  instrument: Microbiologically confirmed or clinically suspected late-onset infection occurring more than 72 hours after birth
-  magnitude: 316/1093 (28.9%) with bLF versus 334/1089 (30.7%) with placebo.
-  reportType: measured-assessment
-  conflictingSourceIds:
-    - ref-manzoni-2009
-  study:
-    id: ISRCTN88261002
-    design: Multicenter randomized placebo-controlled masked trial
-    sampleSize: 2203
-    populationLabels:
-      - very preterm infants
-      - United Kingdom
-    comparator: Sucrose placebo
-    route: enteral
-    formulation: bovine lactoferrin
-    assessmentTime: Trial entry to hospital discharge
-  result:
-    measure: risk-ratio
-    estimate: 0.95
-    unit: ratio
-    instrument: Microbiologically confirmed or clinically suspected late-onset infection
-    comparator: sucrose placebo
-    assessmentTime: Trial entry to hospital discharge
-    population: Very preterm infants with primary-outcome data
-    confidenceInterval:
-      lower: 0.86
-      upper: 1.04
-      level: 95
-- id: late-onset-sepsis-dose-ranging-2025
-  conceptId: late-onset-infection
-  name: Dose-ranging late-onset sepsis outcome in preterm/LBW neonates
-  direction: Variable
-  evidence: Human research
-  description: Culture-proven sepsis was lower in the 150 mg/day arm but not significantly lower in the 300 mg/day arm; the authors concluded that the trial did not establish prevention of late-onset sepsis.
-  sourceId: ref-ariff-2025
-  population: Preterm and low-birth-weight neonates in Pakistan
-  exposure: Bovine lactoferrin 150 or 300 mg/day for 28 days
-  instrument: Culture-proven late-onset sepsis
-  magnitude: 8/102 (7.8%) placebo, 1/102 (0.98%) 150 mg bLF (P=0.020), and 5/101 (4.9%) 300 mg bLF (P=0.390).
-  reportType: measured-assessment
-  conflictingSourceIds:
-    - ref-manzoni-2009
-    - ref-elfin-2019
-  study:
-    id: ariff-pakistan-lbw-2025
-    design: Three-arm double-blind placebo-controlled randomized trial
-    sampleSize: 305
-    populationLabels:
-      - preterm neonates
-      - low birth weight
-      - Pakistan
-    comparator: D-glucose placebo
-    route: enteral
-    formulation: bovine lactoferrin mixed with breast milk
-    durationDays: 28
-    assessmentTime: 28 days
-- id: diarrhea-incidence-peru-2013
+- sourceId: ref-ochoa-diarrhea-2013
+  id: lactoferrin-outcome-formula-diarrhea
   conceptId: diarrhea-incidence
-  name: Diarrhea incidence in previously weaned children
-  direction: Variable
-  evidence: Human research
-  description: Six months of bovine lactoferrin did not significantly reduce the primary incidence outcome.
-  sourceId: ref-ochoa-diarrhea-2013
-  population: Previously weaned Peruvian children enrolled at 12-18 months
-  exposure: Bovine lactoferrin 1 g/day for 6 months
-  instrument: Prospectively observed diarrhea episodes during daily home visits
-  magnitude: 5.4 versus 5.2 episodes per child-year for bLF and placebo, respectively; P=0.375.
-  reportType: measured-assessment
-  study:
-    id: NCT00560222
-    design: Community-based quadruple-masked randomized placebo-controlled trial
-    sampleSize: 555
-    populationLabels:
-      - previously weaned children
-      - Peru
-    comparator: Maltodextrin placebo
-    route: oral
-    formulation: bovine lactoferrin
-    durationDays: 180
-    assessmentTime: 6 months
-- id: diarrhea-duration-peru-2013
-  conceptId: diarrhea-duration
-  name: Duration of diarrhea episodes in previously weaned children
+  name: Formula-associated diarrhea
   direction: Decreased
   evidence: Human research
-  description: Median diarrhea-episode duration was modestly shorter with bovine lactoferrin despite no reduction in diarrhea incidence.
-  sourceId: ref-ochoa-diarrhea-2013
-  population: Previously weaned Peruvian children enrolled at 12-18 months
-  exposure: Bovine lactoferrin 1 g/day for 6 months
-  instrument: Duration of prospectively recorded diarrhea episodes
-  magnitude: Median episode duration 4.8 days with bLF versus 5.3 days with placebo; P=0.046.
+  description: A bLF-fortified infant-formula study reported fewer diarrhea and respiratory illnesses, but the intervention was a complete iron-fortified formula rather than lactoferrin monotherapy.
+  population: Weaned infants in a formula study
+  exposure: 38 mg bLF/100 g formula
+  instrument: Parent-reported illness episodes
+  magnitude: Formula-level signal; lactoferrin-specific effect not isolatable
   reportType: measured-assessment
-  study:
-    id: NCT00560222
-    design: Community-based quadruple-masked randomized placebo-controlled trial
-    sampleSize: 555
-    populationLabels:
-      - previously weaned children
-      - Peru
-    comparator: Maltodextrin placebo
-    route: oral
-    formulation: bovine lactoferrin
-    durationDays: 180
-    assessmentTime: 6 months
-- id: antibiotic-associated-diarrhea-2021
-  conceptId: antibiotic-associated-diarrhea
-  name: Antibiotic-associated diarrhea in children
-  direction: Increased
-  evidence: Human research
-  description: Bovine lactoferrin did not prevent pediatric antibiotic-associated diarrhea; the prespecified outcome occurred more often in the bLF arm.
-  sourceId: ref-wronowski-2021
-  population: Children aged 1-18 years receiving antibiotics for respiratory or urinary tract infection
-  exposure: Bovine lactoferrin 100 mg twice daily for the antibiotic-treatment course
-  instrument: Protocol-defined antibiotic-associated diarrhea during treatment and up to 2 weeks afterward
-  magnitude: 16/75 (21.3%) with bLF versus 7/75 (9.3%) with placebo.
-  reportType: measured-assessment
-  study:
-    id: NCT02626104
-    design: Prospective randomized double-blind placebo-controlled trial
-    sampleSize: 156
-    populationLabels:
-      - children
-      - concurrent antibiotic treatment
-    comparator: Maltodextrin placebo
-    route: oral
-    formulation: bovine lactoferrin plus maltodextrin
-    assessmentTime: During antibiotic therapy and 14 days afterward
-  result:
-    measure: odds-ratio
-    estimate: 2.6
-    unit: ratio
-    instrument: Protocol-defined antibiotic-associated diarrhea
-    comparator: placebo
-    assessmentTime: Antibiotic course through 14-day follow-up
-    population: Intention-to-treat analyzed children
-    confidenceInterval:
-      lower: 1.02
-      upper: 6.8
-      level: 95
-- id: hpylori-eradication-adjunct-2006
-  conceptId: helicobacter-pylori-eradication
-  name: H. pylori eradication when bovine lactoferrin was added to triple therapy
-  direction: Increased
-  evidence: Human research
-  description: Concurrent bovine lactoferrin plus esomeprazole/clarithromycin/tinidazole produced a higher eradication proportion than the same triple therapy without lactoferrin; this is an adjunctive-combination result.
-  sourceId: ref-dimario-2006
-  population: Adults with H. pylori infection
-  exposure: Bovine lactoferrin 200 mg twice daily during 7-day triple therapy
-  instrument: Post-treatment H. pylori eradication testing
-  magnitude: Intention-to-treat eradication was 90% in the concurrent-lactoferrin arm versus 77% with triple therapy alone; overall group comparison P<0.01.
-  reportType: measured-assessment
-  study:
-    id: dimario-multicenter-hpylori-2006
-    design: Prospective open randomized multicenter trial
-    sampleSize: 402
-    populationLabels:
-      - adults
-      - Helicobacter pylori infection
-    comparator: Esomeprazole, clarithromycin, and tinidazole without lactoferrin
-    route: oral
-    formulation: bovine lactoferrin as adjunct to multidrug therapy
-    durationDays: 7
-    assessmentTime: After eradication therapy
-- id: anti-lf-antibody-response-2025
-  conceptId: anti-lactoferrin-antibody-response
-  name: Anti-lactoferrin antibody response to bovine versus recombinant human lactoferrin
+  conflictingSourceIds: []
+- sourceId: ref-berthon-2026
+  id: lactoferrin-outcome-covid
+  conceptId: death-or-persistent-organ-dysfunction
+  name: COVID-19 death/ICU composite
   direction: Variable
   evidence: Human research
-  description: The bovine-lactoferrin group developed a larger anti-bLF antibody signal, whereas neither recombinant-human-lactoferrin dose produced evidence of increased anti-hLF antibodies or alloimmunization under the protocol conditions.
-  sourceId: ref-peterson-2025
-  population: Healthy adults aged 18-45 years
-  exposure: bLF 3.4 g/day, rhLF 0.34 g/day, or rhLF 3.4 g/day for 28 days
-  instrument: Serum anti-bLF and anti-hLF bridging electrochemiluminescence assays; post/pre antibody-signal ratio
-  magnitude: Day-56 post/pre LS geometric mean was 3.01 (95% CI 2.08-4.35) for anti-bLF in the bLF group, 1.07 (0.77-1.49) for anti-hLF in low-dose rhLF, and 1.02 (0.62-1.70) for anti-hLF in high-dose rhLF.
+  description: The LAC trial found no benefit of oral bLF on death/ICU composite, discharge, NEWS2, oxygen/ventilation, CRP, IL-6 or ferritin.
+  population: 218 hospitalized adults with moderate-to-severe COVID-19
+  exposure: 800 mg/day approximately 12%-saturated bLF plus standard care
+  instrument: Clinical composite and laboratory outcomes
+  magnitude: Null across prespecified clinical and inflammatory endpoints
   reportType: measured-assessment
-  study:
-    id: NCT06012669
-    design: Randomized double-blind parallel-arm active-controlled safety trial
-    sampleSize: 66
-    populationLabels:
-      - healthy adults
-      - immunogenicity study
-    comparator: Bovine versus recombinant human lactoferrin
-    route: oral
-    formulation: Helaina recombinant human lactoferrin or bovine lactoferrin powder in water
-    durationDays: 28
-    assessmentTime: Day 56 primary antibody assessment
+  conflictingSourceIds: []
+- sourceId: ref-dimario-2006
+  id: lactoferrin-outcome-hpylori
+  conceptId: h-pylori-eradication
+  name: H. pylori eradication
+  direction: Increased
+  evidence: Human research
+  description: Older randomized evidence suggests higher eradication when lactoferrin is added to antibiotic/PPI therapy; this is adjunctive combination evidence, not monotherapy.
+  population: Adults in H. pylori eradication regimens
+  exposure: Lactoferrin added to standard antibiotic/PPI therapy
+  instrument: H. pylori eradication testing
+  magnitude: Adjunct signal; modern replication and monotherapy evidence limited
+  reportType: measured-assessment
+  conflictingSourceIds: []
 ```
 
 ## Mechanisms
 
 ```yaml
-- title: Human gastric survival depends on lactoferrin preparation and iron saturation
-  description: In a randomized crossover experiment in 12 healthy adults given 4.5 g bovine lactoferrin intragastrically, measured gastric survival was approximately 64% for buffered apo/partially iron-saturated LF, 62% for unbuffered apo/partially iron-saturated LF, and 79% for holo-LF. This establishes substantial and formulation-dependent gastric survival in humans but does not establish systemic absorption, elimination half-life, or clinical efficacy.
-  sourceId: ref-troost-2001
-  conceptId: gastric-processing-of-lactoferrin
-- title: Gastric proteolysis can generate lactoferricin-containing fragments in humans
-  description: Direct gastric sampling from an adult 10 minutes after ingestion of bovine lactoferrin detected lactoferricin and incompletely hydrolyzed lactoferrin fragments containing the lactoferricin region. The evidence demonstrates human gastric peptide generation but comes from a very small direct-sampling experiment and does not prove an antimicrobial clinical effect.
-  sourceId: ref-kuwata-1998
-  conceptId: gastric-processing-of-lactoferrin
-- title: Hepcidin and inflammatory biomarkers may accompany iron-status responses but do not establish efficacy
-  description: In children with IBD-associated IDA, 100 mg/day bLF was accompanied by decreases in IL-6 and hepcidin alongside improved hematologic measures. In contrast, the large 2026 Bangladesh trial showed much smaller hepcidin increases with bLF than with ferrous sulfate but no meaningful hemoglobin or ferritin efficacy. Human data therefore support a relationship with iron-homeostasis biomarkers without establishing that hepcidin modulation reliably translates into clinical anemia correction.
+- title: Iron binding
+  description: Lactoferrin binds iron and may alter local iron availability; unsaturated apo-bLF provides little elemental iron, so binding plausibility does not replace therapeutic iron in adult IDA.
   sourceId: ref-huda-2026
-  conceptId: hepcidin-linked-iron-homeostasis
+- title: Gastrointestinal digestion
+  description: Oral protein is extensively digested, and fragments may retain local antimicrobial activity; intact systemic protein exposure is not established.
+  sourceId: ref-kuwata-1998
+- title: Route and formulation dependence
+  description: Bovine, recombinant human, iron-saturated and combination products may have different digestion, immunogenicity and clinical effects.
+  sourceId: ref-peterson-2025
 ```
 
 ## Cautions
 
 ```yaml
-- title: Bovine lactoferrin is a cow's-milk-derived protein
-  description: Multiple human trials excluded participants with cow's-milk allergy or hypersensitivity, and EU labeling specifies "Lactoferrin from cows' milk." Safety findings from screened trial populations should not be generalized to people with known cow's-milk-protein allergy.
+- title: Do not substitute for therapeutic iron without evidence
+  description: The strongest recent adult IDA trial found apo-bLF inferior to ferrous sulfate for hemoglobin and ferritin.
   sourceId: ref-huda-2026
-- title: Bovine, human, recombinant-human, apo, holo, and protected formulations are not interchangeable
-  description: Human trials used preparations differing by species sequence, expression system, iron saturation, food matrix, encapsulation, and co-interventions. Results from one preparation should not automatically be transferred to another.
-  sourceId: ref-peterson-2025
-- title: A prominent positive pregnancy anemia trial was retracted
-  description: The 2016 Rezk et al. randomized pregnancy trial was retracted in 2023 after the journal and publisher reported significant concerns about integrity of the data and results and inability to obtain original data or sufficient supporting information. Its efficacy result is not used as affirmative evidence here.
+- title: Retracted pregnancy evidence
+  description: One influential pregnancy anemia trial was retracted; historical pooled benefits should not be treated as clean confirmation.
   sourceId: ref-rezk-retraction-2023
-- title: Antibiotic-associated diarrhea signal
-  description: In a blinded pediatric RCT, antibiotic-associated diarrhea occurred more often with 100 mg bovine lactoferrin twice daily than with placebo. The trial did not establish a pharmacokinetic drug interaction or mechanism, but the result argues against assuming gastrointestinal benefit during concurrent antibiotic treatment.
-  sourceId: ref-wronowski-2021
-- title: Serious adverse events occurred in the ELFIN neonatal trial
-  description: ELFIN recorded 16 serious adverse events in the bLF arm and 10 in controls. Investigators assessed two events in the bLF group, blood in stool and a death after intestinal perforation, as possibly related to the intervention. The trial did not demonstrate an overall infection-prevention benefit.
+- title: Neonatal infection null result
+  description: The large ELFIN trial found no significant late-onset infection or major neonatal outcome benefit and recorded serious events in both groups.
   sourceId: ref-elfin-2019
-- title: Product quality and manufacturing controls vary across studies
-  description: The ELFIN investigational bLF underwent clinical-trial pharmacy checks of purity, uniformity, sterility, stability, and GMP processing, whereas other studies used commercial sachets, formula ingredients, recombinant products, or donated preparations. The pediatric AAD investigators specifically discussed possible preparation-related variables such as endotoxin contamination and reported that their tested product had negative cultures and a manufacturer certificate describing it as LPS-free. Product-specific findings should not be generalized to uncharacterized supplements.
-  sourceId: ref-wronowski-2021
-- title: Biomarker modulation is not equivalent to clinical infection prevention or anemia treatment
-  description: Lactoferrin can alter hepcidin, inflammatory markers, immune-cell populations, ex-vivo cytokine responses, antibody signals, and microbiome measurements in human studies. Those endpoints are biologically informative but are not substitutes for clinical outcomes such as corrected anemia, fewer infections, or reduced hospitalization.
-  sourceId: ref-berthon-2026
-- title: Healthy-adult recombinant-human-lactoferrin safety trial was industry-funded
-  description: The 2025 rhLF/bLF safety study was funded by Helaina Inc.; company employees held equity and the sponsor was involved in study design, data interpretation, report writing, and the decision to submit. No alloimmunization signal or increased clinical adverse events was identified under the protocol, but the study was small and explicitly not powered for rare adverse events.
+- title: Pregnancy, lactation and organ impairment
+  description: Pregnancy data are old and short; dedicated lactation, renal-impairment and hepatic-impairment evidence remains limited or excluded.
+  sourceId: ref-elamrousy-2022
+- title: Commercial recombinant product
+  description: The Helaina recombinant-LF safety trial was company-funded with employee/equity-holder authors and sponsor involvement.
   sourceId: ref-peterson-2025
 ```
 
 ## Claims
 
 ```yaml
-- id: claim-blf-monotherapy-nonpregnant-ida
-  assertion: Unsaturated bovine lactoferrin at 200 or 400 mg/day was not an effective substitute for 60 mg/day elemental iron as ferrous sulfate for correcting iron-deficiency anemia in the studied nonpregnant Bangladeshi women.
-  relation: evaluated-for
+- id: lactoferrin-claim-ida
+  assertion: Oral bovine lactoferrin is an equivalent replacement for ferrous sulfate in adult IDA
+  relation: evidence-boundary
   participants:
     - entityId: substance:lactoferrin
       role: intervention
-    - entityId: tag:hemoglobin-concentration
-      role: measured outcome
-  context: Double-blind 12-week noninferiority RCT in nonpregnant women aged 18-49 years with IDA.
+    - entityId: tag:attention
+      role: reported-outcome-context
+  context: The 2026 apo-bLF adult trial found inferior hemoglobin and ferritin responses.
   sourceIds:
     - ref-huda-2026
-  conflictingSourceIds:
-    - ref-nappi-2009
-    - ref-elamrousy-2022
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: The conclusion applies to the tested unsaturated bLF preparations, population, dietary context, doses, and folic-acid co-administration; it does not establish that every lactoferrin formulation is ineffective.
-- id: claim-pediatric-ibd-ida
-  assertion: A small randomized study in children with IBD-associated iron-deficiency anemia reported higher post-treatment hemoglobin and ferritin with 100 mg/day bovine lactoferrin than with ferrous sulfate.
-  relation: evaluated-for
+  limitation: Earlier pregnancy and pediatric findings use different populations, saturation and comparators.
+- id: lactoferrin-claim-neonatal
+  assertion: Lactoferrin prevents neonatal late-onset infection
+  relation: evidence-boundary
   participants:
     - entityId: substance:lactoferrin
       role: intervention
-    - entityId: tag:hemoglobin-concentration
-      role: measured outcome
-  context: Pediatric IBD in remission, 3-month complete-case randomized study.
-  sourceIds:
-    - ref-elamrousy-2022
-  conflictingSourceIds:
-    - ref-huda-2026
-  assessment: not-formally-assessed
-  limitation: Small sample, complete-case analysis, population-specific inflammatory disease, and internal reporting inconsistencies limit generalization.
-- id: claim-neonatal-late-onset-infection
-  assertion: Human randomized evidence does not consistently establish that enteral bovine lactoferrin prevents late-onset infection in preterm infants.
-  relation: evaluated-for
-  participants:
-    - entityId: substance:lactoferrin
-      role: intervention
-    - entityId: tag:late-onset-infection
-      role: measured outcome
-  context: Preterm and low-birth-weight neonatal trials using different fixed or weight-based bLF doses.
+    - entityId: tag:attention
+      role: reported-outcome-context
+  context: The largest ELFIN trial was null for late-onset infection and several secondary neonatal outcomes.
   sourceIds:
     - ref-elfin-2019
-    - ref-ariff-2025
-  conflictingSourceIds:
-    - ref-manzoni-2009
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Trials differ in birthweight/gestation, dose, background feeding, probiotic exposure, outcome definitions, geography, and statistical power; the largest trial was null.
-- id: claim-diarrhea-prevention-weaned-children
-  assertion: Daily bovine lactoferrin did not reduce diarrhea incidence in previously weaned Peruvian children, although episode duration and some severity measures were lower.
-  relation: evaluated-for
+  limitation: Small earlier neonatal trials and pooled reviews may overstate the effect.
+- id: lactoferrin-claim-antiviral
+  assertion: Oral lactoferrin treats systemic viral disease
+  relation: evidence-boundary
   participants:
     - entityId: substance:lactoferrin
       role: intervention
-    - entityId: tag:diarrhea-incidence
-      role: measured outcome
-  context: Six-month community RCT in children enrolled at 12-18 months.
+    - entityId: tag:attention
+      role: reported-outcome-context
+  context: COVID-19 and chronic hepatitis C trials were clinically null.
   sourceIds:
-    - ref-ochoa-diarrhea-2013
-  conflictingSourceIds: []
-  assessment: not-formally-assessed
-  limitation: Secondary improvements should not be rewritten as prevention of diarrhea incidence because the prespecified incidence comparison was null.
-- id: claim-antibiotic-associated-diarrhea
-  assertion: Bovine lactoferrin did not prevent pediatric antibiotic-associated diarrhea and the protocol-defined outcome occurred more often than with placebo.
-  relation: evaluated-for
-  participants:
-    - entityId: substance:lactoferrin
-      role: intervention
-    - entityId: tag:antibiotic-associated-diarrhea
-      role: measured outcome
-  context: Children receiving systemic antibiotics for acute respiratory or urinary infection.
-  sourceIds:
-    - ref-wronowski-2021
-  conflictingSourceIds: []
-  assessment: not-formally-assessed
-  limitation: The trial was single-center, event numbers were small, baseline imbalances existed, and the mechanism of the observed diarrhea signal was not established.
-- id: claim-hpylori-adjunct
-  assertion: Older randomized studies indicate that bovine lactoferrin can improve H. pylori eradication when used as an adjunct to specified multidrug regimens, but the evidence does not establish lactoferrin monotherapy eradication efficacy.
-  relation: adjunct-to
-  participants:
-    - entityId: substance:lactoferrin
-      role: adjunct intervention
-    - entityId: tag:helicobacter-pylori-eradication
-      role: measured outcome
-  context: Open randomized adult eradication studies using bovine lactoferrin with proton-pump inhibitor and antibiotic combinations.
-  sourceIds:
+    - ref-berthon-2026
     - ref-dimario-2006
   conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Combination attribution, open-label design, changing antibiotic resistance, and older eradication regimens limit application to contemporary H. pylori care.
-- id: claim-rhlf-immunogenicity
-  assertion: In one 28-day healthy-adult trial, recombinant human lactoferrin up to 3.4 g/day did not produce evidence of anti-human-lactoferrin alloimmunization under the study protocol.
-  relation: evaluated-for
+  limitation: In-vitro antimicrobial mechanisms do not establish intact systemic protein exposure or clinical treatment.
+- id: lactoferrin-claim-tolerability
+  assertion: Lactoferrin may be better tolerated than high-dose ferrous sulfate in some settings
+  relation: evidence-boundary
   participants:
     - entityId: substance:lactoferrin
-      role: recombinant human lactoferrin exposure
-    - entityId: tag:anti-lactoferrin-antibody-response
-      role: measured outcome
-  context: Healthy adults receiving Helaina recombinant human lactoferrin or bovine-lactoferrin active control.
+      role: intervention
+    - entityId: tag:attention
+      role: reported-outcome-context
+  context: Some pregnancy and pediatric studies reported fewer gastrointestinal effects, but this does not imply superior efficacy.
   sourceIds:
-    - ref-peterson-2025
+    - ref-nappi-2009
+    - ref-elamrousy-2022
+    - ref-huda-2026
   conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Industry-funded trial, only 66 randomized participants, 28-day exposure, and insufficient power for rare adverse events.
-- id: claim-ckd-adjunct-iron
-  assertion: A 2026 randomized trial reported greater hemoglobin improvement when lactoferrin was added to low-dose liposomal iron in adults with CKD-associated IDA.
-  relation: adjunct-to
-  participants:
-    - entityId: substance:lactoferrin
-      role: adjunct intervention
-    - entityId: tag:hemoglobin-concentration
-      role: measured outcome
-  context: Nondialysis and dialysis-dependent CKD; 3-month oral combination therapy.
-  sourceIds:
-    - ref-divyaveer-2026
-  conflictingSourceIds: []
-  assessment: not-formally-assessed
-  limitation: The study tested lactoferrin plus liposomal iron, not lactoferrin alone, and only abstract-level publication details were accessible in this research pass.
+  limitation: Tolerability findings vary by population and comparator.
 ```
 
 ## Interactions
 
 ```yaml
-- id: interaction-concurrent-antibiotics-aad
-  name: Concurrent antibiotic therapy in children
+- id: interaction-lactoferrin-iron
+  name: Concurrent therapeutic iron
   otherSlug: null
-  summary: A pediatric placebo-controlled trial found more antibiotic-associated diarrhea when bovine lactoferrin 100 mg twice daily was given throughout systemic antibiotic treatment. This is a clinical co-administration signal, not evidence of a defined pharmacokinetic interaction or a class-wide contraindication.
-  sourceId: ref-wronowski-2021
-  mechanism: Not established
-  context: Children aged 1-18 years receiving antibiotics for acute respiratory or urinary tract infection; outcome followed through 14 days after antibiotics.
+  summary: Iron plus lactoferrin may modestly change ferritin in pediatric combination studies, while unsaturated bLF alone failed as an adult iron substitute.
+  sourceId: ref-divyaveer-2026
+  context: Combination evidence; formulation and population specific.
+- id: interaction-lactoferrin-acid-suppression
+  name: Acid suppression and antacids
+  otherSlug: null
+  summary: Several safety studies excluded PPIs, H2 blockers, antacids and related drugs; clinically relevant interaction effects are therefore not established.
+  sourceId: ref-peterson-2025
+  context: No formal human interaction PK study identified.
 ```
 
 ## Experience links
@@ -1316,20 +616,6 @@ The browser-rendered report exposed numeric source markers but not the export pa
   conflictsOfInterest: Authors declared absence of commercial or financial relationships that could be construed as a potential conflict of interest.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC8215102/
-- id: ref-sherman-2016
-  title: Randomized Controlled Trial of Talactoferrin Oral Solution in Preterm Infants.
-  authors: Michael P Sherman, David H Adamkin, Victoria Niklas, Paula Radmacher, Jan Sherman, Fiona Wertheimer, Karel Petrak
-  year: 2016
-  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4981514/
-  kind: Randomized double-blind placebo-controlled trial
-  insight: Recombinant human talactoferrin was not attributed clinical or laboratory toxicity and was associated with fewer hospital-acquired infections in this small exploratory preterm-infant trial.
-  limitation: Small sample, exploratory efficacy, and product is recombinant human lactoferrin rather than bovine lactoferrin.
-  pmid: "27260839"
-  doi: 10.1016/j.jpeds.2016.04.084
-  funding: PubMed indexes NIH extramural research support; complete funding declaration not assessed here.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Complete publication disclosure not assessed.
-  conflictOfInterestStatus: not-assessed
 - id: ref-dimario-2006
   title: "Bovine lactoferrin for Helicobacter pylori eradication: an open, randomized, multicentre study."
   authors: F Di Mario, G Aragona, N Dal Bó, et al.
@@ -1430,20 +716,6 @@ The browser-rendered report exposed numeric source markers but not the export pa
   conflictsOfInterest: Publisher page reports that the authors declared no conflict of interest.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://www.sciencedirect.com/science/article/abs/pii/S0301211517304633
-- id: ref-rezk-2016
-  title: "Lactoferrin versus ferrous sulphate for the treatment of iron deficiency anemia during pregnancy: a randomized clinical trial."
-  authors: Mohamed Rezk, Ragab Dawood, Mohamed Abo-Elnasr, Alaa Al Halaby, Hala Marawan
-  year: 2016
-  url: https://pubmed.ncbi.nlm.nih.gov/26037728/
-  kind: Retracted randomized controlled trial
-  insight: The article originally reported greater hemoglobin improvement and fewer gastrointestinal adverse events with lactoferrin, but it is not treated as affirmative efficacy evidence because it was retracted.
-  limitation: Retracted in 2023 because the journal/publisher reported unresolved concerns about integrity of data and results and could not obtain original data or adequate supporting information.
-  pmid: "26037728"
-  doi: 10.3109/14767058.2015.1049149
-  funding: Funding status of the original trial was not independently assessed; the later retraction page reports no funding associated with the work.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Original publication conflict disclosure not independently assessed.
-  conflictOfInterestStatus: not-assessed
 - id: ref-rezk-retraction-2023
   title: "RETRACTED ARTICLE: Lactoferrin versus ferrous sulphate for the treatment of iron deficiency anemia during pregnancy: a randomized clinical trial."
   authors: No authors listed
@@ -1458,18 +730,6 @@ The browser-rendered report exposed numeric source markers but not the export pa
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not applicable to clinical efficacy assessment; no independent trial COI reassessment supplied.
   conflictOfInterestStatus: not-assessed
-- id: ref-ctgov-stabilized-lf-2026
-  title: "Absorption of Iron From Stabilized Lactoferrin: A Study in Women With Iron Deficiency"
-  authors: Nicole Stoffel; ClinicalTrials.gov
-  year: 2026
-  url: https://clinicaltrials.gov/study/NCT07394972
-  kind: ClinicalTrials.gov interventional registry record
-  insight: Registered randomized crossover study compares ferrous sulfate with native and protected/encapsulated lactoferrin-iron strategies using stable-isotope fractional iron absorption in women with iron deficiency without anemia.
-  limitation: Inspected registry record had no posted results and had a last-update date of 2026-02-12; its listed recruitment status may therefore be stale by the research date.
-  funding: Funding source not established from the inspected registry summary.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Registry record does not supply a publication COI declaration.
-  conflictOfInterestStatus: not-assessed
 - id: ref-efsa-2012
   title: Scientific Opinion on bovine lactoferrin
   authors: EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA)
@@ -1482,18 +742,6 @@ The browser-rendered report exposed numeric source markers but not the export pa
   funding: Regulatory scientific opinion; study sponsorship classification not applicable and not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Regulatory-panel conflict processes were not assessed as a clinical-study COI declaration.
-  conflictOfInterestStatus: not-assessed
-- id: ref-eu-union-list
-  title: Consolidated Union list of novel foods — Citicoline conditions of use
-  authors: European Union
-  year: 2026
-  url: https://eur-lex.europa.eu/eli/reg_impl/2017/2470/2026-07-02/eng/
-  kind: Official EU legal act
-  insight: The Union list contains bovine lactoferrin with specified food categories, maximum levels, and labeling as lactoferrin from cows' milk.
-  limitation: Food-market authorization is not medicinal marketing authorization or proof of clinical efficacy.
-  funding: Official regulatory source; not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not a clinical publication.
   conflictOfInterestStatus: not-assessed
 - id: ref-fda-grn1219
   title: GRAS Notice No. 1219 - Recombinant bovine lactoferrin isolate produced by Komagataella phaffii M020 expressing the gene encoding bovine lactoferrin
@@ -1531,58 +779,24 @@ The browser-rendered report exposed numeric source markers but not the export pa
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not a clinical publication.
   conflictOfInterestStatus: not-assessed
-- id: ref-ema-cf-orphan
-  title: EU/3/09/654 - orphan designation for treatment of cystic fibrosis
-  authors: European Medicines Agency
-  year: 2009
-  url: https://www.ema.europa.eu/en/medicines/human/orphan-designations/eu-3-09-654
-  kind: EMA orphan-designation record
-  insight: The European Commission granted orphan designation for the combination hypothiocyanite/lactoferrin for treatment of cystic fibrosis.
-  limitation: Applies to a specific combination and orphan-development context and should not be interpreted as general approval of lactoferrin therapy.
-  funding: Regulatory record; not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not a clinical publication.
-  conflictOfInterestStatus: not-assessed
-- id: dr-lactoferrin-s14
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
-  url: https://www.fda.gov/food/gras-notice-inventory
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
 
 ```yaml
+- jurisdiction: United States
+  activity: Bovine lactoferrin food ingredient
+  status: FDA GRAS no-questions records apply to specified food uses and are not therapeutic approval for anemia or infection.
+  sourceUrl: https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=130&set=GRASNotices
+  asOf: 2026-10-10
+- jurisdiction: United States
+  activity: Recombinant bovine lactoferrin food ingredient
+  status: GRN 1219 and GRN 1284 concern specified food applications; they do not establish disease efficacy.
+  sourceUrl: https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=1219&set=GRASNotices
+  asOf: 2026-10-10
 - jurisdiction: European Union
-  activity: Placing bovine lactoferrin on the market as a novel food ingredient
-  status: Authorized in the EU Union list of novel foods for specified food categories and maximum use levels; required designation includes "Lactoferrin from cows' milk". This food authorization does not itself establish medicinal efficacy.
-  sourceUrl: https://eur-lex.europa.eu/eli/reg_impl/2017/2470/2026-07-02/eng/
-  asOf: 2026-10-04
-- jurisdiction: United States
-  activity: Specified food uses of recombinant bovine lactoferrin isolate produced by Komagataella phaffii M020
-  status: FDA GRAS Notice 1219 closed May 7, 2025 with a no-questions response to the notifier's GRAS conclusion for the specified food uses; scope is preparation- and use-specific and is not drug approval.
-  sourceUrl: https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=1219&order=ASC&search=comb&set=GRASNotices&sort=GRN_No&startrow=1&type=basic
-  asOf: 2026-10-04
-- jurisdiction: United States
-  activity: Specified food uses of recombinant bovine lactoferrin isolate produced by Komagataella phaffii Ppas_337
-  status: FDA GRAS Notice 1284 closed March 25, 2026 with a no-questions response to the notifier's GRAS conclusion for specified food uses; this is not therapeutic approval.
-  sourceUrl: https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=1284&order=ASC&search=comb&set=GRASNotices&sort=GRN_No&startrow=1&type=basic
-  asOf: 2026-10-04
-- jurisdiction: United States
-  activity: Bovine milk-derived lactoferrin as antimicrobial spray on beef carcasses
-  status: FDA GRAS Notice 130 closed August 21, 2003 with a no-questions response under the notifier's specified food-processing use.
-  sourceUrl: https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=130&order=DESC&search=GRN&set=GRASNotices&sort=GRN_No&startrow=1&type=column
-  asOf: 2026-10-04
-- jurisdiction: European Union
-  activity: Orphan medicinal designation for hypothiocyanite/lactoferrin combination in cystic fibrosis
-  status: Orphan designation EU/3/09/654 was granted in 2009 for the specified combination and indication; it is not a general lactoferrin food or therapeutic indication.
-  sourceUrl: https://www.ema.europa.eu/en/medicines/human/orphan-designations/eu-3-09-654
-  asOf: 2026-10-04
+  activity: Bovine lactoferrin novel food
+  status: EFSA assessed food safety under proposed uses; this is not evidence of therapeutic efficacy.
+  sourceUrl: https://efsa.onlinelibrary.wiley.com/doi/abs/10.2903/j.efsa.2012.2701
+  asOf: 2026-10-10
 ```

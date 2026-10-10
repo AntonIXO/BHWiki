@@ -16,7 +16,7 @@ tags:
   - nootropic-research
   - choline-precursor
 accent: "#a9b993"
-reviewedAt: 2026-10-04
+reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
 halfLife:
   label: Not established in reviewed human studies
@@ -24,7 +24,7 @@ halfLife:
   high: null
   context: Human concentration-time studies measured choline and metabolites for up to 24 hours after oral choline bitartrate but did not establish a validated elimination half-life for the salt or released choline.
   sourceId: boeckmann-2022
-  observationId: choline-bitartrate-identity
+  observationId: choline-bitartrate-free-choline
 kinetics:
   onset: Plasma choline rises within the first post-dose hours after oral choline bitartrate, but a validated pharmacokinetic onset threshold is not established.
   peak: Healthy-person studies reported plasma free-choline peaks around 1 hour after 600 mg choline supplied as bitartrate and a median 1.75 hours after 1336 mg choline bitartrate supplying 550 mg choline.
@@ -64,367 +64,158 @@ x-shape:
   - references
   - legal
 x-order: 162
-
-
 ---
 
 ## Summary
 
 Choline bitartrate is a hygroscopic 1:1 choline/L-hydrogen-tartrate salt containing about 41.1% choline by mass. Human evidence shows no acute memory benefit in healthy young adults, a visuomotor speed–accuracy shift, and reproducible choline/TMAO exposure effects; disease-population findings do not establish healthy-person cognitive enhancement.
 
-Deep Research synthesis: Choline bitartrate — BHWiki Deep Research — returned Deep Research evidence record.
-
 ## Description
 
-Choline bitartrate (CAS 87-67-2; PubChem CID 6900) is the 1:1 choline/L-(+)-hydrogen-tartrate salt. PubChem gives IUPAC name 2-hydroxyethyl(trimethyl)azanium;(2R,3R)-2,3,4-trihydroxy-4-oxobutanoate, InChIKey QWJSAWXRUVVRLH-LREBCSMRSA-M, and InChI=1S/C5H14NO.C4H6O6/c1-6(2,3)4-5-7;5-1(3(7)8)2(6)4(9)10/h7H,4-5H2,1-3H3;1-2,5-6H,(H,7,8)(H,9,10)/q+1;/p-1/t;1-,2-/m.1/s1. Theoretical choline-cation mass fraction is 41.1%. FCC describes a white hygroscopic crystalline powder, freely water-soluble, slightly alcohol-soluble, and ether/chloroform-insoluble. Current USP-NF specifies 99.0–100.5% on anhydrous basis. PubChem compiles trimethylamine/ethylene-oxide manufacture followed by acid salt formation and legacy IR, titrimetric, and capillary-electrophoretic assays.
-
-Deep Research synthesis: The full returned Deep Research report is preserved in the pending acquisition folder for choline-bitartrate.
+Choline bitartrate (CAS 87-67-2; PubChem CID 6900) is the 1:1 choline/L-(+)-hydrogen-tartrate salt, with about 41.1% choline-equivalent by mass in the pure anhydrous form. FCC describes a white hygroscopic crystalline powder, freely water-soluble, slightly alcohol-soluble, and ether/chloroform-insoluble. PubChem compiles manufacturing and legacy identity/assay methods; finished-product moisture and excipients can change delivered salt mass.
 
 ## Evidence note
 
-Evidence is formulation-specific. Healthy-person acute memory trials at 2–2.5 g salt were consistently null; a separate 2 g crossover improved aiming precision while slowing responses. Longer pediatric FASD trials reported memory benefit but are not enhancement evidence. Bitartrate raises plasma choline and often TMAO, with large interindividual variability; TMAO is a biomarker, not demonstrated clinical harm. No validated elimination half-life, pair-specific drug interaction, current public storage specification, or healthy standalone attention benefit was verified. Citicoline/alpha-GPC efficacy is not imported. One 2026 paper contains an internally inconsistent choline-equivalent statement.
-
-<!-- Deep Research integration: choline-bitartrate -->
-
-**Full Deep Research detail retained from the returned report:**
-
-### Choline bitartrate — BHWiki Deep Research
-
-> Returned report captured from the signed-in Chrome ChatGPT Deep Research card. Citation markers `[R#]` resolve to the reference ledger below.
-
-**BHWiki slug:** `choline-bitartrate`
-**Completion evidence:** Deep Research completed in 9 minutes; 27 citations and 420 searches were exposed by the returned card.
-**Evidence boundary:** choline bitartrate only. Evidence for choline chloride, phosphatidylcholine/lecithin, citicoline/CDP-choline, Alpha-GPC, generic dietary choline, or L-tartrate alone is not imported as efficacy evidence except where an official nutrient limit applies to total choline or another choline form is an explicit comparator.
-
-### Identity, formulation, and dose interpretation
-
-Choline bitartrate is the 1:1 salt of the choline cation and hydrogen L-tartrate, CAS 87-67-2, formula C₉H₁₉NO₇, formula mass approximately 253.25 g/mol. FDA records list choline bitartrate, anhydrous, choline hydrogen tartrate, and choline tartrate 1:1. The Food Chemicals Codex describes a white, hygroscopic crystalline powder. In U.S. food regulation it is recognized as GRAS when used according to good manufacturing practice under 21 CFR §182.8250. [dr-choline-bitartrate-s1]
-
-For pure anhydrous salt, the choline-cation fraction is approximately 41.1% by mass. Thus 1,000 mg choline bitartrate ≈ 411 mg choline, while 550 mg choline-equivalent ≈ 1,336 mg salt. This is stoichiometry, not a guarantee of a finished supplement's potency. [dr-choline-bitartrate-s2]
-
-“Elemental choline” is chemically imprecise because choline is a molecular cation; choline-equivalent is clearer. Böckmann et al. administered 1,336 mg choline bitartrate supplying 550 mg choline-equivalent, whereas Wilcox et al. independently assayed two 500-mg bitartrate tablets and found that 1,000 mg salt supplied 411 mg free choline. [R3,R4]
-
-Hygroscopicity matters for bulk-powder quality: moisture uptake, raw-material purity and excipients can alter choline delivered per gram. Human studies range from retail bulk powder without independent assay, through specified raw material, to a commercial product with an analysis certificate and independently assayed tablets. USP/FCC identity/reference standards matter when translating powder weight into a choline-equivalent dose. [R1,R5]
-
-### Human pharmacokinetics and biomarkers
-
-Human literature measures released plasma free choline and metabolites, not a validated concentration-time curve for intact circulating salt. In six healthy men, a randomized crossover compared four preparations, each supplying 550 mg choline-equivalent: 740 mg choline chloride, 1,336 mg choline bitartrate, 1,358 mg Alpha-GPC and 4,018 mg egg phosphatidylcholine. After bitartrate, median free-choline Tmax was approximately 1.75 h and betaine Tmax approximately 2.75 h. Choline AUC did not significantly differ among equal-choline interventions, and concentrations approached baseline by 24 h. [dr-choline-bitartrate-s3]
-
-That crossover found no clear supplement-specific increase in plasma total phosphatidylcholine, lyso-PC, phosphocholine, GPC, dimethylglycine, methionine, carnitine or sphingomyelin. Water-soluble choline preparations rapidly generated TMAO whereas egg phosphatidylcholine did not; bitartrate produced the largest six-hour TMAO AUC in this small cohort, with pronounced between-person variability. [dr-choline-bitartrate-s3]
-
-A second randomized crossover PK study used a commercial choline-bitartrate reference product containing 620 mg assayed choline. Plasma free choline increased rapidly and remained significantly elevated through eight hours; free-choline exposure was broadly comparable to a phosphatidylcholine-rich krill-oil comparator after dose adjustment, while the phosphatidylcholine source peaked later. Betaine and dimethylglycine increased after bitartrate, while TMAO exposure was substantially higher after bitartrate than after the phosphatidylcholine comparator. No serious adverse event occurred. [dr-choline-bitartrate-s5]
-
-A double-blind crossover meal study administered 600 mg choline-equivalent as choline bitartrate, phosphatidylcholine, or control. Bitartrate produced roughly three times the plasma TMAO AUC and about 2.5 times urinary TMAO response of control/phosphatidylcholine conditions over six hours. Gut-microbiota composition distinguished high from low TMAO responders, emphasizing that fixed bitartrate dosing does not produce fixed TMAO response. [dr-choline-bitartrate-s6]
-
-Over four weeks, Wilcox et al. studied adults with normal renal function. Two 500-mg choline-bitartrate tablets daily—1,000 mg salt, independently assayed as 411 mg choline—raised fasting plasma TMAO markedly; in the tablets-only arm median rose from about 1.9 [1.4–3.4] to 11.1 [7.1–25.4] μmol/L. Twenty-four-hour urinary TMAO rose similarly, with changes appearing within a week. Ex-vivo platelet responsiveness to submaximal ADP also increased in bitartrate-containing groups and correlated with plasma and urinary TMAO. Lipid panels did not materially change. [dr-choline-bitartrate-s4]
-
-These are plasma/urine and platelet-function biomarkers, not evidence that bitartrate causes myocardial infarction, stroke, thrombosis, cardiovascular death or other patient-important outcomes. NIH guidance notes that associations between TMAO and cardiovascular disease remain incompletely resolved; bitartrate trials were not sized or designed to establish clinical cardiovascular harm. [R4,R27]
-
-There is genuine heterogeneity. In a four-week crossover among people with metabolic syndrome receiving approximately 400 mg choline/day from bitartrate, plasma TMAO did not differ significantly from baseline, while related studies found increased plasma choline and lower IL-6 without consistent worsening of cholesterol or glucose markers. [R7,R8]
-
-No validated elimination half-life should be entered. Eligible human studies did not establish a terminal half-life for intact salt or released free choline specifically after bitartrate. Tmax values and return toward baseline by 6–24 h cannot validly be converted into a half-life because salt dissociation, endogenous production, tissue uptake, oxidation to betaine, microbial metabolism, meals and sparse terminal sampling prevent a validated terminal-phase estimate.
-
-### Cognitive, exercise, and disease-population outcomes
-
-### Healthy acute cognition and visuomotor performance
-
-Lippelt et al. performed three double-blind placebo-controlled crossover experiments using 2.0 g salt—approximately 822 mg choline—or 2.5 g salt, approximately 1.0–1.03 g choline. Across visuospatial working memory, declarative picture memory and verbal working-memory measures, no reliable benefit emerged; several Bayesian analyses favored the null. Heart rate, blood pressure and mood were also not detectably altered. [dr-choline-bitartrate-s9]
-
-A separate 28-person crossover using 2.0 g choline bitartrate found that participants hit visuomotor targets more centrally roughly 70 minutes after dosing, with associated pupil constriction, but reaction times slowed. The defensible interpretation is a speed–accuracy shift toward precision, not generalized cognitive enhancement. [dr-choline-bitartrate-s10]
-
-No eligible isolated-bitartrate trial established replicated benefit for healthy sustained attention. Choline-to-acetylcholine mechanisms do not establish cognitive efficacy.
-
-### Exercise
-
-In 20 trained male cyclists, 2.43 g choline bitartrate one hour before exercise raised serum choline by approximately 37–52%, but did not increase work performed or time to fatigue during brief supramaximal or prolonged submaximal cycling. [dr-choline-bitartrate-s11]
-
-### Pediatric FASD
-
-Preschool FASD is the disease population with the clearest possible patient-relevant signal, but evidence remains specialized and qualified. In a 60-child, nine-month randomized trial, choline treatment did not produce a broad positive effect on the primary Mullen developmental outcome. A secondary elicited-imitation memory measure favored treatment mainly in younger participants after adjustment for immediate recall, but baseline differences, post-hoc age moderation and ceiling effects limit interpretation. Fishy body odor was the only adverse event clearly attributed to treatment. [dr-choline-bitartrate-s12]
-
-A 2025 pooled analysis of three placebo-controlled FASD trials included 104 children aged 2.5–5.9 years. It reported approximately 25% better performance on one short-delay sequential-memory measure and greater improvement in younger children, but no benefit for executive function or IQ and no evident dose-response relationship. Fishy body odor occurred in 36% of choline recipients versus 8% of placebo. The relevant choline-bitartrate range was approximately 260–500 mg/day. [dr-choline-bitartrate-s13]
-
-Long-term follow-up is exploratory: at approximately four years only 31 children were evaluated, with several cognitive outcomes favoring former choline treatment while others did not; at about seven years only 18 participants remained. Attrition-prone follow-ups are not definitive proof of durable efficacy. [R14,R15]
-
-Important results remain pending. NCT05108974 randomized preschool children to regimens containing 19 mg/kg choline bitartrate for three versus six months; completion was expected in 2027. NCT06527391 recruits Ugandan infants with iron-deficiency anemia to 200 mg choline bitartrate/day for nine months with ferrous sulfate for the first three months; results are pending. NCT04395196 recruits a prenatal-alcohol-exposure trial using bitartrate sufficient to provide 2 g/day choline cation, with completion after 2027. [R16,R17,R18]
-
-A commonly cited negative FASD trial in 5–10-year-olds should not be treated as a bitartrate null merely because its abstract says “choline”: NCT01911299 belongs to a different formulation and remains segregated from this entry. [dr-choline-bitartrate-s19]
-
-### Safety, special populations, and interactions
-
-At acute adult doses around 2–2.5 g salt, healthy cognition studies found no meaningful acute blood-pressure signal; a 24-hour PK study reported good tolerability and no serious adverse events. Minor reports included fishy aftertaste and headaches judged unrelated. The most reproducible bitartrate-specific tolerability finding in pediatric FASD work is fishy body odor. [R9,R12]
-
-NIH guidance for total choline, not bitartrate specifically, lists fishy body odor, vomiting, excessive sweating, salivation, hypotension and liver toxicity among effects of excessive choline intake. The U.S. adult UL is 3,500 mg/day choline, including during pregnancy and lactation; child/adolescent ULs are 1,000 mg/day at ages 1–8, 2,000 mg/day at 9–13 and 3,000 mg/day at 14–18. No UL is established for infants. The theoretical 41.1% fraction makes 3,500 mg choline ≈8.5 g pure anhydrous salt, not a recommended dose. [dr-choline-bitartrate-s27]
-
-NIH adequate intakes are 450 mg/day choline during pregnancy and 550 mg/day during lactation; adult AI outside pregnancy is 425 mg/day for women and 550 mg/day for men. These are total dietary-choline targets, not recommendations to consume those amounts as bitartrate. [dr-choline-bitartrate-s27]
-
-**Renal impairment:** the four-week TMAO/platelet trial enrolled normal renal function, so it cannot establish PK, safety or dose adjustment in CKD. Because renal clearance influences TMAO, renal dysfunction is an important confounder, not proof of bitartrate toxicity.
-
-**Hepatic impairment:** no eligible bitartrate-specific human PK, dose-adjustment or safety trial was identified. Generic biochemical metabolism is insufficient grounds to invent a hepatic dose adjustment.
-
-**Wilson disease:** no eligible human trial, regulator monograph or medication label identified a bitartrate-specific Wilson-disease contraindication or treatment interaction. No clinical copper-chelation effect should be inferred from the tartrate counterion.
-
-**Iron:** the SupCHO protocol intentionally coadministers bitartrate with ferrous sulfate. This establishes prospective study, not absence of interaction or long-term safety advantage. [dr-choline-bitartrate-s17]
-
-**Anticholinergics, cholinesterase inhibitors and levodopa:** targeted retrieval identified no bitartrate-specific human interaction trial. NIH states choline is not known to have clinically relevant medication interactions; this is an absence-of-established-interaction statement, not proof that pharmacodynamic interactions cannot exist. [dr-choline-bitartrate-s27]
-
-**Other choline sources:** dietary choline and every choline supplement count toward total intake and the generic UL. Different carriers remain pharmacokinetically non-interchangeable because randomized comparisons show differences in Tmax and TMAO generation. [R3,R6]
-
-### Regulatory, product quality, and evidence assessment
-
-FDA lists choline bitartrate as a nutrient-supplement food substance, and 21 CFR §182.8250 states it is GRAS when used according to good manufacturing practice. USP/FCC maintains a monograph/reference standard. These address permitted food use and compendial quality; they are not approval of memory-enhancement, exercise-performance, FASD-treatment or cardiovascular claims. [R1,R2,R25,R26]
-
-The evidence base is small: equal-dose adult PK had six men; acute cognition/visuomotor studies involved tens of participants; FASD evidence comes from a narrow pediatric disease population. Cardiometabolic studies overwhelmingly measure intermediate biomarkers rather than morbidity or mortality. [R3,R4,R6]
-
-Sponsorship is mixed. Lippelt reported no funding and no competing interests; Naber reported Netherlands Organisation for Scientific Research support and no competing financial interests. Equal-dose PK was investigator-initiated but partly supported by HiPP-Werk Georg Hipp OHG with authors declaring no conflicts. Smolders' absorption comparison was funded by AAK The Netherlands BV, with two authors employed by AAK—a material potential conflict despite a formal no-conflict declaration. The FASD program is predominantly NIH/NIAAA-funded. [R9,R10,R3,R20]
-
-### BHWiki evidence position
-
-- **Identity/dose:** pure anhydrous bitartrate is approximately 41.1% choline by mass; always distinguish salt mass from choline-equivalent.
-- **Human PK:** oral bitartrate rapidly raises free plasma choline and betaine; free-choline peaks generally occur around 1–2 h; no validated salt or released-choline half-life exists.
-- **Healthy cognition:** 2–2.5 g acute salt doses do not reliably improve memory; one 2-g study found a visuomotor precision effect with slower reaction time.
-- **Exercise:** 2.43 g raised serum choline but did not delay fatigue in trained cyclists.
-- **FASD:** preschool trials provide a qualified memory signal, especially in younger children, but no consistent IQ/executive-function improvement; ongoing trials prevent a settled dose/duration conclusion.
-- **TMAO:** several trials show greater TMAO formation from bitartrate than phosphatidylcholine, with individual variability; one metabolic-syndrome trial conflicts. This is biomarker evidence, not proof of clinical cardiovascular harm.
-
-Major gaps: validated elimination half-life, absolute bioavailability, renal/hepatic dose-adjustment study, Wilson-disease evidence, completed iron-interaction study, bitartrate-specific anticholinergic/cholinesterase-inhibitor/levodopa interaction trial, adequately powered healthy attention study, long-term cardiovascular-outcome RCT, and independent retail product-potency survey.
-
-### Reference ledger and disclosure metadata
-
-| ID | Reference and direct URL | Funding, sponsorship, conflicts and status |
-|---|---|---|
-| R1 | U.S. FDA. *CHOLINE BITARTRATE*, food-substance record. [FDA](https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?set=FoodSubstances&id=CHOLINEBITARTRATE) | U.S. federal regulatory source; COI not applicable; none identified. |
-| R2 | Electronic Code of Federal Regulations. *21 CFR §182.8250—Choline bitartrate*. [eCFR](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-182/subpart-I/section-182.8250) · USP/FCC monograph [DOI](https://doi.org/10.31003/FCC_F100306_04_01) | U.S. government/USP compendial sources; monograph contributor disclosure not recovered. Conflict status: unknown at contributor level. |
-| R3 | Böckmann KA, Franz AR, Minarski M, et al. 2022. *Differential metabolism of choline supplements in adult volunteers*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/34287673/) · [DOI](https://doi.org/10.1007/s00394-021-02637-6) · [DRKS00020454](https://drks.de/search/en/trial/DRKS00020454) | Investigator-initiated with partial HiPP-Werk Georg Hipp OHG support; mixed academic/industry. Authors declared none; relevant industry funding retained. |
-| R4 | Wilcox J, Skye SM, Graham B, et al. 2021. *Dietary Choline Supplements, but Not Eggs, Raise Fasting TMAO Levels in Participants with Normal Renal Function*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/33872583/) · [DOI](https://doi.org/10.1016/j.amjmed.2021.03.016) | Public/academic support; Stanley Hazen disclosed TMAO-related intellectual-property/commercial interests. Conflict status: declared investigator IP/commercial conflict. |
-| R5 | Mödinger Y, Schön C, Wilhelm M, Hals P-A. 2019. *Plasma Kinetics of Choline and Choline Metabolites After a Single Dose of SuperbaBoost or Choline Bitartrate*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/31652561/) · [DOI](https://doi.org/10.3390/nu11102548) | Material Aker BioMarine product involvement/author affiliation; complete disclosure not recovered. Conflict status: relevant potential industry conflict. |
-| R6 | Cho CE, Aardema NDJ, Bunnell ML, et al. 2020. *Effect of Choline Forms and Gut Microbiota Composition on Trimethylamine-N-Oxide Response in Healthy Men*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/32722424/) · [DOI](https://doi.org/10.3390/nu12082220) · [NCT04255368](https://clinicaltrials.gov/study/NCT04255368) | Utah Agricultural Experiment Station Seed Grants; academic/public sponsor. COI disclosure not fully recovered. |
-| R7 | Thomas MS, DiBella M, Blesso CN, et al. 2022. *Comparison between Egg Intake versus Choline Supplementation on Gut Microbiota and Plasma Carotenoids in Subjects with Metabolic Syndrome*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/35334836/) · [DOI](https://doi.org/10.3390/nu14061179) | Funding/sponsorship/COI not fully recovered. Conflict status: unknown. |
-| R8 | DiBella M, Thomas MS, Alyousef H, et al. 2020. *Choline Intake as Supplement or as a Component of Eggs Increases Plasma Choline and Reduces Interleukin-6*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/33066009/) · [DOI](https://doi.org/10.3390/nu12103120) | Funding/sponsorship/COI not fully recovered. Conflict status: unknown. |
-| R9 | Lippelt DP, van der Kint S, van Herk K, Naber M. 2016. *No Acute Effects of Choline Bitartrate Food Supplements on Memory in Healthy, Young, Human Adults*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/27341028/) · [DOI](https://doi.org/10.1371/journal.pone.0157714) | Authors reported no funding and no competing interests. Conflict status: none declared. |
-| R10 | Naber M, Hommel B, Colzato LS. 2015. *Improved human visuomotor performance and pupil constriction after choline supplementation*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/26271904/) · [DOI](https://doi.org/10.1038/srep13188) | Netherlands Organisation for Scientific Research; no competing financial interests. Conflict status: none declared. |
-| R11 | Spector SA, Jackman MR, Sabounjian LA, et al. 1995. *Effect of choline supplementation on fatigue in trained cyclists*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/7674870/) | Non-U.S. government support indexed; exact sponsor/COI not recovered. Conflict status: unknown. |
-| R12 | Wozniak JR, Fuglestad AJ, Eckerle JK, et al. 2015. *Choline supplementation in children with fetal alcohol spectrum disorders*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/26447156/) · [DOI](https://doi.org/10.3945/ajcn.114.099168) · [NCT01149538](https://clinicaltrials.gov/study/NCT01149538) | NIH/NIAAA public grants; one coauthor Fagron affiliation. Conflict status: relevant affiliation; no commercial research funding identified. |
-| R13 | Wozniak JR, Fink BA, Fuglestad AJ, et al. 2025. *Choline enhances elicited imitation memory performance in preschool children with prenatal alcohol exposure*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/39956364/) · [DOI](https://doi.org/10.1016/j.ajcnut.2025.02.009) | NIH public grants; no commercial conflict identified in recovered disclosure. |
-| R14 | Wozniak JR, Eckerle JK, Gimbel BA, et al. 2020. *Four-year follow-up of a randomized controlled trial of choline for neurodevelopment in FASD*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/32164522/) · [DOI](https://doi.org/10.1186/s11689-020-09312-7) | NIH/NIAAA public support; exact COI statement not recovered. |
-| R15 | Gimbel BA, Anthony ME, Ernst AM, et al. 2022. *Long-term follow-up of a randomized controlled trial of choline for neurodevelopment in FASD*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/36526961/) · [DOI](https://doi.org/10.1186/s11689-022-09470-w) | NIH public support; exact COI statement not recovered. |
-| R16 | ClinicalTrials.gov NCT05108974. Preschool choline-bitartrate study. [Registry](https://clinicaltrials.gov/study/NCT05108974) | University/NIAAA academic sponsorship; registry-level investigator COI not supplied. |
-| R17 | Cusick SE, Mupere E, Bangirana P, et al. 2025. *SupCHO Study protocol*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/41257751/) · [DOI](https://doi.org/10.1186/s13063-025-09246-2) · [NCT06527391](https://clinicaltrials.gov/study/NCT06527391) | Thrasher Research Fund and University of Minnesota; nonprofit/academic; no relevant commercial conflict recovered. |
-| R18 | ClinicalTrials.gov NCT04395196. Prenatal choline supplementation during pregnancy. [Registry](https://clinicaltrials.gov/study/NCT04395196) | Wayne State/academic sponsors; specific grant and investigator COI not supplied. |
-| R19 | ClinicalTrials.gov NCT01911299. Separate choline formulation FASD trial. [Registry](https://clinicaltrials.gov/study/NCT01911299) | Registry source used only to keep intervention form separate; sponsor/COI not relied on for bitartrate efficacy. |
-| R20 | Smolders L, de Wit NJW, Balvers MGJ, Obeid R, Vissers MMM, Esser D. 2019. *Natural Choline from Egg Yolk Phospholipids Is More Efficiently Absorbed Compared with Choline Bitartrate*. [PubMed](https://pubmed.ncbi.nlm.nih.gov/31766273/) · [DOI](https://doi.org/10.3390/nu11112758) | AAK The Netherlands BV funded study; two authors AAK employees. Conflict status: material industry sponsor/employee conflict despite formal no-conflict statement. |
-| R21 | U.S. FDA. *CHOLINE BITARTRATE*. [FDA](https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?set=FoodSubstances&id=CHOLINEBITARTRATE) | U.S. federal regulator; COI not applicable. |
-| R22 | 21 CFR §182.8250—Choline bitartrate. [eCFR](https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-182/subpart-I/section-182.8250) | U.S. government; COI not applicable. |
-| R23 | USP/FCC. *Choline Bitartrate* monograph. [DOI](https://doi.org/10.31003/FCC_F100306_04_01) · [USP reference](https://store.usp.org/product/1133509) | Compendial standards organization; monograph-specific contributor disclosure not recovered. |
-| R24 | NIH ODS. *Choline—Health Professional Fact Sheet*. [NIH](https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/) | U.S. NIH official nutrient guidance; COI not applicable. |
-| R25 | ClinicalTrials.gov NCT06527391. SupCHO infant anemia study. [Registry](https://clinicaltrials.gov/study/NCT06527391) | Academic/nonprofit study; results pending. |
-| R26 | ClinicalTrials.gov NCT04395196. Prenatal choline study. [Registry](https://clinicaltrials.gov/study/NCT04395196) | Academic study; results pending. |
-| R27 | NIH ODS choline UL/AI guidance. [NIH](https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/) | U.S. NIH official guidance; COI not applicable. |
-
-<!-- Deep Research source-link ledger -->
-
-Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
+Human evidence is split between formulation-specific choline/TMAO kinetics, null or narrowly positive healthy-person task results, and specialized pediatric FASD studies. Salt mass must be separated from choline-equivalent mass; no validated bitartrate or released-choline half-life is established.
 
 ## Doses
 
 ```yaml
-- label: Acute healthy-young-adult memory experiments
-  amount: 2.0 g choline bitartrate in experiments 1 and 2
-  quantity: 2
+- label: Equal-choline crossover PK exposure
+  amount: 1,336 mg choline bitartrate supplying 550 mg choline-equivalent
+  quantity: 1336
   quantityMax: null
-  unit: g
+  unit: mg salt
   ingredient: Choline bitartrate
-  formulation: Powder dissolved in 400 mL orange juice
-  route: Oral
-  frequency: Single dose per crossover session
-  duration: Single exposure
-  population: Healthy young students
-  purpose: Test acute visuospatial working-memory and declarative-memory performance
-  sourceCategory: research
-  note: The investigators calculated the salt as 41.1% choline by molecular weight, describing 2 g as approximately 800 mg choline.
-  sourceId: lippelt-2016
-- label: Higher-dose acute healthy-young-adult memory experiment
-  amount: 2.5 g choline bitartrate
-  quantity: 2.5
-  quantityMax: null
-  unit: g
-  ingredient: Choline bitartrate
-  formulation: Powder dissolved in 400 mL orange juice
-  route: Oral
-  frequency: Single dose per crossover session
-  duration: Single exposure
-  population: Healthy young students
-  purpose: Replicate memory tests and assess verbal working memory
-  sourceCategory: research
-  note: The publication described 2.5 g salt as providing approximately 1 g choline.
-  sourceId: lippelt-2016
-- label: Acute visuomotor crossover exposure
-  amount: 2 g choline bitartrate
-  quantity: 2
-  quantityMax: null
-  unit: g
-  ingredient: Choline bitartrate
-  formulation: Powder dissolved in 400 mL orange juice
-  route: Oral
-  frequency: Single dose per crossover session
-  duration: Single exposure
-  population: 28 healthy young adults
-  purpose: Assess visuomotor aiming, reaction time, pupil diameter, and physiological measures
-  sourceCategory: research
-  note: The authors described this dose as approximately 800 mg choline; testing began about 70 minutes after ingestion.
-  sourceId: naber-2015
-- label: Healthy-men choline-form crossover
-  amount: 600 mg choline as choline bitartrate
-  quantity: 600
-  quantityMax: null
-  unit: mg
-  ingredient: Choline (as choline bitartrate)
-  formulation: Choline-bitartrate-containing study meal
-  route: Oral
-  frequency: Single study meal
-  duration: 6-hour postprandial observation
-  population: 37 healthy men
-  purpose: Compare plasma choline and TMAO responses across choline forms
-  sourceCategory: research
-  note: This is a choline-equivalent amount reported by the study, not 600 mg total salt; the publication described choline bitartrate as approximately 41% choline by weight.
-  sourceId: cho-2020
-- label: Four-form pharmacokinetic crossover exposure
-  amount: 550 mg choline equivalent supplied by 1336 mg choline bitartrate
-  quantity: 550
-  quantityMax: null
-  unit: mg
-  ingredient: Choline (as choline bitartrate)
-  formulation: 1336 mg choline bitartrate
+  formulation: Oral salt dissolved for randomized crossover comparison
   route: Oral
   frequency: Single dose
-  duration: Samples through 24 hours
-  population: 6 healthy adult men
-  purpose: Compare plasma choline, betaine, TMAO, and phosphatidylcholine kinetics across four choline forms
+  duration: 24-hour sampling
+  population: Six healthy adult men
+  purpose: Compare choline and metabolite kinetics across choline forms
   sourceCategory: research
-  note: The study directly distinguished choline-equivalent dose from salt mass.
+  note: Equal-choline comparator; not a dosing recommendation.
   sourceId: boeckmann-2022
-- label: Four-week healthy-volunteer TMAO intervention
-  amount: 1000 mg choline bitartrate supplying 411 mg free choline
+- label: TMAO biomarker trial
+  amount: 1,000 mg salt supplying approximately 411 mg choline
   quantity: 1000
   quantityMax: null
-  unit: mg
+  unit: mg salt
   ingredient: Choline bitartrate
-  formulation: Two 500 mg choline-bitartrate tablets
+  formulation: Two independently assayed 500-mg tablets daily
   route: Oral
-  frequency: Daily
+  frequency: Once daily
   duration: 4 weeks
-  population: Healthy adults with normal renal function; 20 assigned to the choline-bitartrate-only arm
-  purpose: Assess fasting TMAO and platelet responsiveness
+  population: Adults with normal renal function
+  purpose: Plasma and urinary TMAO/platelet biomarker research
   sourceCategory: research
-  note: The reported 411 mg choline content closely matches the approximately 41.1% theoretical choline fraction of pure anhydrous choline bitartrate.
+  note: The choline fraction is a stoichiometric conversion; cardiovascular events were not studied.
   sourceId: wilcox-2021
-- label: Postmenopausal acute fMRI challenge
-  amount: 1650 mg choline bitartrate
-  quantity: 1650
-  quantityMax: null
-  unit: mg
+- label: Acute cognition crossover
+  amount: 2.0 or 2.5 g salt
+  quantity: 2
+  quantityMax: 2.5
+  unit: g salt
   ingredient: Choline bitartrate
-  formulation: Six oral capsules
+  formulation: Oral food-supplement salt
   route: Oral
-  frequency: Single dose per crossover study day
-  duration: Single exposure
-  population: 20 cognitively normal postmenopausal women aged 50–65 years
-  purpose: Assess working-memory performance and working-memory-related brain activation
+  frequency: Single dose
+  duration: Acute cognitive testing
+  population: Healthy young adults
+  purpose: Memory and visuomotor research
   sourceCategory: research
-  note: The paper states that 1650 mg choline bitartrate delivered 1650 mg choline cation, which conflicts with the salt's approximately 41.1% theoretical choline fraction; by molecular mass, 1650 mg pure anhydrous salt corresponds to about 679 mg choline. The publication's wording is therefore retained as a discrepancy, not normalized as fact.
-  sourceId: dumas-2026
-- label: Pediatric FASD randomized-trial exposure
-  amount: Source-reported choline doses approximately 260–500 mg/day administered as choline bitartrate
-  quantity: 260
-  quantityMax: 500
-  unit: mg
-  ingredient: Choline (administered as choline bitartrate)
-  formulation: Choline-bitartrate supplement
-  route: Oral
-  frequency: Daily
-  duration: 9 months
-  population: Children aged 2.5–5.9 years with fetal alcohol spectrum disorders or prenatal alcohol exposure
-  purpose: Neurodevelopmental intervention targeting memory
-  sourceCategory: research
-  note: The cumulative report describes daily choline doses and identifies choline bitartrate as the supplement form; these source-reported dose values are not reinterpreted as total salt mass.
-  sourceId: wozniak-2025
-- label: Postmenopausal biomarker supplementation
-  amount: 1 g choline/day as choline bitartrate
-  quantity: 1
-  quantityMax: null
-  unit: g
-  ingredient: Choline (as choline bitartrate)
-  formulation: Choline-bitartrate supplement
-  route: Oral
-  frequency: Daily
-  duration: 12 weeks
-  population: 42 healthy postmenopausal women
-  purpose: Assess plasma choline, betaine, homocysteine, B-vitamin status, and lipids
-  sourceCategory: research
-  note: The publication reports the dose as 1 g choline per day supplied as choline bitartrate rather than 1 g total salt.
-  sourceId: wallace-2012
-- label: Trained-cyclist acute exposure
-  amount: 2.43 g choline bitartrate
+  note: No reliable memory benefit; a separate study found a precision/speed trade-off.
+  sourceId: lippelt-2016
+- label: Cycling fatigue study
+  amount: 2.43 g salt
   quantity: 2.43
   quantityMax: null
-  unit: g
+  unit: g salt
   ingredient: Choline bitartrate
-  formulation: Choline-bitartrate-containing beverage
+  formulation: Oral supplement
   route: Oral
-  frequency: Single pre-exercise dose
-  duration: Exercise testing approximately 1 hour later
-  population: 20 trained male cyclists divided between brief and prolonged exercise protocols
-  purpose: Test whether choline supplementation delayed exercise fatigue
+  frequency: Single pre-exercise exposure
+  duration: Acute cycling session
+  population: 20 trained male cyclists
+  purpose: Exercise-fatigue research
   sourceCategory: research
-  note: The study found increased circulating choline but no improvement in the tested exercise-performance endpoints.
+  note: Serum choline increased, but work and time to fatigue did not.
   sourceId: spector-1995
-- label: Acute and four-week TMAO challenge
-  amount: 1000 mg/day choline bitartrate
-  quantity: 1000
-  quantityMax: null
-  unit: mg
+- label: Pediatric FASD trials
+  amount: Approximately 260–500 mg/day choline-equivalent
+  quantity: 260
+  quantityMax: 500
+  unit: mg/day choline-equivalent
   ingredient: Choline bitartrate
-  formulation: Oral capsules
+  formulation: Pediatric trial preparation
   route: Oral
-  frequency: Once before acute testing or daily
-  duration: Single exposure or 4 weeks
-  population: Healthy sedentary adults
-  purpose: Increase gut-microbiota-generated TMAO and test glucose homeostasis
+  frequency: Daily
+  duration: 3–9 months in completed trials
+  population: Preschool children with fetal alcohol spectrum disorders
+  purpose: Developmental-memory research
   sourceCategory: research
-  note: The 2026 paper reports 1000 mg choline bitartrate as providing approximately 450 mg choline; this product-specific statement differs from the approximately 411 mg theoretical choline content of 1000 mg pure anhydrous salt and is retained as reported.
-  sourceId: laskaridou-2026
+  note: Specialized disease-population evidence; fishy body odor was the reproducible treatment-attributed event.
+  sourceId: wozniak-2025
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: choline-bitartrate-identity
-  analyte: Choline after choline bitartrate
+- id: choline-bitartrate-free-choline
+  analyte: Plasma free choline
   route: Oral
-  formulation: Choline bitartrate
-  population: Healthy adults in human concentration-time studies
+  formulation: 1,336 mg choline bitartrate supplying 550 mg choline-equivalent
+  population: Six healthy adult men
   endpoint: elimination-half-life
   statistic: not-established
   value: null
   low: null
   high: null
   unit: hours
-  context: Reviewed human studies reported concentration-time profiles for plasma choline, betaine, TMAO, and related metabolites but did not establish a validated elimination half-life for choline bitartrate or released choline.
+  context: Median free-choline Tmax was approximately 1.75 hours and concentrations approached baseline by 24 hours. The study measured released choline, not intact salt terminal elimination.
   sourceId: boeckmann-2022
   modelEligible: false
-- id: dr-choline-bitartrate-choline-bitartrate-pk-1
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
+- id: choline-bitartrate-metabolites
+  analyte: Plasma betaine and dimethylglycine
+  route: Oral
+  formulation: Commercial choline-bitartrate reference product
+  population: Healthy adult volunteers in a randomized crossover
   endpoint: elimination-half-life
   statistic: not-established
   value: null
   low: null
   high: null
   unit: hours
-  context: No validated universal terminal half-life was established in the returned report.
-  sourceId: dr-choline-bitartrate-s1
+  context: Free choline remained elevated through eight hours, with downstream betaine and dimethylglycine increases; no validated terminal half-life was fitted.
+  sourceId: wozniak-2025
+  modelEligible: false
+- id: choline-bitartrate-tmao
+  analyte: Plasma TMAO
+  route: Oral
+  formulation: 600 mg choline-equivalent as choline bitartrate
+  population: Healthy adults in a double-blind crossover meal study
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: Bitartrate produced a substantially larger six-hour TMAO response than control or phosphatidylcholine, with strong responder variability. TMAO AUC is a biomarker and cannot populate a drug half-life model.
+  sourceId: cho-2020
+  modelEligible: false
+- id: choline-bitartrate-tmao-four-week
+  analyte: Plasma TMAO
+  route: Oral
+  formulation: Two 500-mg choline-bitartrate tablets daily
+  population: Adults with normal renal function
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: Median fasting TMAO rose from about 1.9 to 11.1 micromol/L after four weeks; this is a repeated-exposure biomarker result, not evidence of clinical cardiovascular events.
+  sourceId: wilcox-2021
   modelEligible: false
 ```
 
@@ -473,359 +264,85 @@ Every HTTPS link returned by this run is represented in References. Links whose 
 ## Effects
 
 ```yaml
-[]
+- id: choline-bitartrate-visuomotor-precision
+  conceptId: perception
+  name: Visuomotor precision
+  direction: Increased
+  evidence: Human research
+  description: A 2-g crossover found more centrally placed hits after dosing, accompanied by slower reaction times; this is a speed–accuracy shift rather than general cognitive enhancement.
+  sourceId: naber-2015
+  population: 28 healthy adults
+  exposure: 2 g oral choline bitartrate, acute
+  instrument: Visuomotor target task and pupil response
+  magnitude: More central hits with slower responses
+  reportType: measured-assessment
+  conflictingSourceIds: [lippelt-2016]
 ```
 
 ## Outcomes
 
 ```yaml
-- id: acute-visuospatial-working-memory-null
+- id: choline-bitartrate-memory-null
   study:
-    id: lippelt-2016-exp1
-    design: Randomized double-blind placebo-controlled crossover experiment
-    sampleSize: 28
-    populationLabels:
-      - Healthy young students
-    comparator: Microcrystalline-cellulose placebo
-    route: Oral
-    formulation: 2 g choline bitartrate in orange juice
-    durationDays: 1
-    assessmentTime: Approximately 60 minutes after ingestion
-  conceptId: cognitive-task-performance
-  name: Visuospatial working-memory performance
-  direction: Variable
-  evidence: Human research
-  description: Two grams of choline bitartrate did not improve the proportion of correctly remembered picture locations versus placebo.
-  sourceId: lippelt-2016
-  population: 28 healthy young students
-  exposure: 2 g choline bitartrate, approximately 800 mg choline, single oral dose
-  instrument: Visuospatial picture-location working-memory task
-  magnitude: Choline 66% versus placebo 66%; p=0.780; Bayes factor BF01=6.096 favored the null hypothesis.
-- id: acute-declarative-memory-null
-  study:
-    id: lippelt-2016-exp2
-    design: Randomized double-blind placebo-controlled crossover experiment
-    sampleSize: 26
-    populationLabels:
-      - Healthy young students
-    comparator: Microcrystalline-cellulose placebo
-    route: Oral
-    formulation: 2 g choline bitartrate in orange juice
-    durationDays: 1
-    assessmentTime: Approximately 60 minutes after ingestion
-  conceptId: episodic-memory
-  name: Declarative picture-recognition performance
-  direction: Variable
-  evidence: Human research
-  description: Acute choline bitartrate did not significantly improve recognition of previously presented pictures versus placebo.
-  sourceId: lippelt-2016
-  population: 26 healthy young students
-  exposure: 2 g choline bitartrate, approximately 800 mg choline, single oral dose
-  instrument: Declarative picture-recognition task
-  magnitude: Choline 74% versus placebo 72%; p=0.372; BF01=2.063.
-- id: higher-dose-memory-replication-null
-  study:
-    id: lippelt-2016-exp3
-    design: Randomized double-blind placebo-controlled crossover experiment
-    sampleSize: 37
-    populationLabels:
-      - Healthy young students
-    comparator: Microcrystalline-cellulose placebo
-    route: Oral
-    formulation: 2.5 g choline bitartrate in orange juice
-    durationDays: 1
-    assessmentTime: Approximately 60 minutes after ingestion
-  conceptId: cognitive-task-performance
-  name: Working and declarative memory at the higher acute dose
-  direction: Variable
-  evidence: Human research
-  description: Increasing the acute dose to 2.5 g did not improve visuospatial working memory, declarative retrieval, or verbal working memory.
-  sourceId: lippelt-2016
-  population: 37 participants with complete data
-  exposure: 2.5 g choline bitartrate, described as approximately 1 g choline
-  instrument: Visuospatial working-memory, picture-recognition, and verbal Buschke-type tasks
-  magnitude: Visuospatial 70% versus 72%, p=0.630; declarative 71% versus 72%, p=0.489; forgotten verbal items 35 versus 35, p=0.987; Bayesian analyses favored null effects.
-- id: visuomotor-aiming-precision
-  study:
-    id: naber-2015-visuomotor
-    design: Double-blind placebo-controlled counterbalanced crossover study
-    sampleSize: 28
-    populationLabels:
-      - Healthy young adults
-    comparator: Microcrystalline-cellulose placebo
-    route: Oral
-    formulation: 2 g choline bitartrate in orange juice
-    durationDays: 1
-    assessmentTime: Approximately 70 minutes after ingestion
-  conceptId: visuomotor-accuracy
-  name: Visuomotor aiming accuracy
-  direction: Increased
-  evidence: Human research
-  description: Participants clicked significantly closer to target centers after choline bitartrate, indicating greater aiming precision.
-  sourceId: naber-2015
-  population: 28 healthy young adults
-  exposure: 2 g choline bitartrate, approximately 800 mg choline
-  instrument: Computerized rapid visuomotor aiming task
-  magnitude: Target-center hit distance improved versus placebo; t(27)=2.289, p=0.030. Overall task score was unchanged.
-- id: visuomotor-reaction-time
-  study:
-    id: naber-2015-visuomotor
-    design: Double-blind placebo-controlled counterbalanced crossover study
-    sampleSize: 28
-    populationLabels:
-      - Healthy young adults
-    comparator: Microcrystalline-cellulose placebo
-    route: Oral
-    formulation: 2 g choline bitartrate in orange juice
-    durationDays: 1
-    assessmentTime: Approximately 70 minutes after ingestion
-  conceptId: reaction-time
-  name: Visuomotor reaction time
-  direction: Increased
-  evidence: Human research
-  description: Responses were significantly slower after choline bitartrate, so the accuracy finding represented a shift in the speed–accuracy trade-off rather than uniformly better performance.
-  sourceId: naber-2015
-  population: 28 healthy young adults
-  exposure: 2 g choline bitartrate, approximately 800 mg choline
-  instrument: Computerized rapid visuomotor aiming task
-  magnitude: Reaction time increased versus placebo; t(27)=2.820, p=0.009. Total task score was unchanged, p=0.656.
-- id: postmenopausal-working-memory-null
-  study:
-    id: dumas-2026-pilot
-    design: Randomized double-blind placebo-controlled crossover pilot study
-    sampleSize: 20
-    populationLabels:
-      - Cognitively normal postmenopausal women
-    comparator: Microcrystalline-cellulose placebo
-    route: Oral
-    formulation: Six capsules containing source-reported 1650 mg choline bitartrate
-    durationDays: 1
-    assessmentTime: Approximately 3 hours after administration
-  conceptId: cognitive-task-performance
-  name: N-back working-memory performance
-  direction: Variable
-  evidence: Human research
-  description: The acute challenge changed task-related brain activation and connectivity but did not significantly improve working-memory accuracy.
-  sourceId: dumas-2026
-  population: 20 cognitively normal postmenopausal women aged 50–65 years
-  exposure: 1650 mg source-reported choline bitartrate; the paper's choline-equivalent statement is chemically inconsistent
-  instrument: Verbal N-back task
-  magnitude: No challenge-drug main effect on d-prime; p-values for challenge effects exceeded 0.14. Percent-correct challenge effect was a nonsignificant trend, p=0.07.
-- id: fasd-elicited-imitation-memory
-  study:
-    id: wozniak-2025-cumulative
-    design: Cumulative analysis of three randomized placebo-controlled trials
-    sampleSize: 104
-    populationLabels:
-      - Preschool children with fetal alcohol spectrum disorders or prenatal alcohol exposure
+    id: lippelt-2016-trial
+    design: Three double-blind placebo-controlled crossover experiments
+    sampleSize: 56
+    populationLabels: [Healthy young adults]
     comparator: Placebo
     route: Oral
     formulation: Choline bitartrate
-    assessmentTime: Repeated assessment through 9 months
+    assessmentTime: Acute post-dose testing
   conceptId: episodic-memory
-  name: Elicited-imitation sequential memory
-  direction: Increased
+  name: Declarative and working memory
+  direction: Variable
   evidence: Human research
-  description: Choline-treated children showed better short-delay adjacent-pair sequential memory, with the signal concentrated in the change from 6 to 9 months and stronger response in younger participants.
-  sourceId: wozniak-2025
-  population: 104 children aged 2.5–5.9 years with prenatal alcohol exposure/FASD
-  exposure: Source-reported choline doses approximately 260–500 mg/day administered as choline bitartrate for 9 months
-  instrument: Elicited imitation memory task
-  magnitude: The cumulative report described approximately 25% better short-delay adjacent-pair performance; executive-function and IQ outcomes did not improve. This disease-risk population is not evidence of healthy-person enhancement.
-- id: cyclist-exercise-performance-null
-  study:
-    id: spector-1995-cyclists
-    design: Double-blind crossover exercise study
-    sampleSize: 20
-    populationLabels:
-      - Trained male cyclists
-    comparator: Placebo beverage
-    route: Oral
-    formulation: Choline bitartrate in a beverage
-    durationDays: 1
-    assessmentTime: Exercise testing approximately 1 hour after ingestion
+  description: Acute 2.0–2.5 g salt doses produced no reliable memory benefit; Bayesian analyses generally favored the null.
+  sourceId: lippelt-2016
+  population: Healthy young adults
+  exposure: 2.0–2.5 g oral choline bitartrate
+  instrument: Visuospatial, picture and verbal working-memory tasks
+  magnitude: No reliable between-condition benefit
+  reportType: measured-assessment
+  conflictingSourceIds: [naber-2015]
+- id: choline-bitartrate-exercise-fatigue
   conceptId: exercise
-  name: Cycling fatigue and work performance
+  name: Cycling work and fatigue time
   direction: Variable
   evidence: Human research
-  description: Choline bitartrate increased circulating choline but did not delay fatigue or improve work performance in either brief supramaximal or prolonged submaximal cycling protocols.
+  description: Serum choline rose after 2.43 g bitartrate, but work performed and time to fatigue did not improve in trained cyclists.
   sourceId: spector-1995
-  population: 20 trained men, with 10 assigned to each exercise protocol
-  exposure: 2.43 g choline bitartrate before exercise
-  instrument: Brief and prolonged cycle-ergometer fatigue protocols
-  magnitude: Serum choline increased after supplementation, but exercise-performance endpoints did not differ materially from placebo.
-- id: postmenopausal-plasma-choline
-  study:
-    id: wallace-2012
-    design: Randomized double-blind placebo-controlled trial
-    sampleSize: 42
-    populationLabels:
-      - Healthy postmenopausal women
-    comparator: Placebo
-    route: Oral
-    formulation: 1 g choline/day as choline bitartrate
-    durationDays: 84
-    assessmentTime: Weeks 6 and 12
-  conceptId: plasma-choline
-  name: Fasting plasma free choline
+  population: 20 trained male cyclists
+  exposure: 2.43 g oral choline bitartrate before exercise
+  instrument: Cycling work and time-to-fatigue test
+  magnitude: No improvement in work or fatigue time
+  reportType: measured-assessment
+  conflictingSourceIds: []
+- id: choline-bitartrate-tmao-outcome
+  conceptId: plasma-tmao-concentration
+  name: Plasma TMAO exposure
   direction: Increased
   evidence: Human research
-  description: Twelve-week supplementation increased circulating free choline and betaine relative to placebo.
-  sourceId: wallace-2012
-  population: 42 healthy postmenopausal women
-  exposure: 1 g choline/day supplied as choline bitartrate for 12 weeks
-  instrument: Fasting plasma biochemical analysis
-  magnitude: Choline and betaine increases were significant by week 6 and remained significant at week 12, both p<0.001; plasma lipids were unchanged.
-- id: healthy-men-postprandial-plasma-choline
-  study:
-    id: cho-2020
-    design: Randomized controlled double-blind crossover feeding study
-    sampleSize: 37
-    populationLabels:
-      - Healthy men
-    comparator: No-choline meal and phosphatidylcholine meal
-    route: Oral
-    formulation: Study meal containing choline bitartrate
-    durationDays: 1
-    assessmentTime: Serial sampling through 6 hours
-  conceptId: plasma-choline
-  name: Postprandial plasma free choline
-  direction: Increased
-  evidence: Human research
-  description: Choline bitartrate produced a rapid plasma free-choline rise, with the observed peak at approximately 1 hour.
+  description: Water-soluble bitartrate increased plasma TMAO more than phosphatidylcholine in controlled comparisons; responder variability was substantial. This is a biomarker, not proof of cardiovascular harm.
   sourceId: cho-2020
-  population: 37 healthy men
-  exposure: 600 mg choline supplied as choline bitartrate in a study meal
-  instrument: Serial plasma metabolite analysis
-  magnitude: Free choline peaked at approximately 1 hour and by 6 hours was not different from the no-choline control.
-- id: healthy-men-postprandial-tmao
-  study:
-    id: cho-2020
-    design: Randomized controlled double-blind crossover feeding study
-    sampleSize: 37
-    populationLabels:
-      - Healthy men
-    comparator: No-choline meal and phosphatidylcholine meal
-    route: Oral
-    formulation: Study meal containing choline bitartrate
-    durationDays: 1
-    assessmentTime: Plasma and urine through 6 hours
-  conceptId: trimethylamine-n-oxide
-  name: Postprandial TMAO exposure
+  population: Healthy adults
+  exposure: 600 mg choline-equivalent as bitartrate
+  instrument: Plasma TMAO AUC
+  magnitude: Approximately threefold six-hour AUC versus control in the reported comparison
+  reportType: measured-assessment
+  conflictingSourceIds: [laskaridou-2026]
+- id: choline-bitartrate-fasd-memory
+  conceptId: episodic-memory
+  name: Short-delay sequential memory in FASD
   direction: Increased
   evidence: Human research
-  description: Free choline supplied as choline bitartrate generated substantially more systemic and urinary TMAO than no-choline control or phosphatidylcholine, with pronounced person-to-person variability.
-  sourceId: cho-2020
-  population: 37 healthy men
-  exposure: 600 mg choline supplied as choline bitartrate
-  instrument: Plasma and urinary TMAO measurement
-  magnitude: Plasma TMAO AUC was about threefold higher and urinary TMAO change about 2.5-fold higher; both p=0.01. Individual urinary responses ranged from approximately -80% to +1400%.
-- id: four-week-tmao
-  study:
-    id: wilcox-2021
-    design: Randomized five-arm dietary intervention
-    sampleSize: 82
-    populationLabels:
-      - Healthy adults with normal renal function
-    route: Oral
-    formulation: Two 500 mg choline-bitartrate tablets in the choline-bitartrate-only arm
-    durationDays: 28
-    assessmentTime: Baseline and during 4-week intervention
-  conceptId: trimethylamine-n-oxide
-  name: Fasting plasma TMAO during repeated choline-bitartrate supplementation
-  direction: Increased
-  evidence: Human research
-  description: All intervention arms containing choline bitartrate showed substantial fasting TMAO increases, whereas egg-only and phosphatidylcholine-only arms did not.
-  sourceId: wilcox-2021
-  population: Healthy adults with normal renal function; 20 in the choline-bitartrate-only arm
-  exposure: 1000 mg choline bitartrate/day, reported as 411 mg free choline, for 4 weeks
-  instrument: Fasting plasma TMAO assay
-  magnitude: In the choline-bitartrate-only arm, median plasma TMAO rose from 1.9 [1.4–3.4] to 11.1 [7.1–25.4] micromol/L; p<0.0001.
-- id: four-week-platelet-reactivity
-  study:
-    id: wilcox-2021
-    design: Randomized five-arm dietary intervention
-    sampleSize: 82
-    populationLabels:
-      - Healthy adults with normal renal function
-    route: Oral
-    formulation: Choline-bitartrate-containing interventions
-    durationDays: 28
-    assessmentTime: After 4 weeks
-  conceptId: platelet-reactivity
-  name: Platelet responsiveness
-  direction: Increased
-  evidence: Human research
-  description: Platelet reactivity increased in all three study arms containing choline bitartrate but not in the egg-only or phosphatidylcholine-only arms.
-  sourceId: wilcox-2021
-  population: Healthy adults with normal renal function
-  exposure: Choline-bitartrate-containing interventions for 4 weeks
-  instrument: Platelet aggregometry
-  magnitude: Platelet-reactivity increases were significant in the three choline-bitartrate arms, all p<0.01. The study did not measure cardiovascular events.
-- id: acute-tmao-2026
-  study:
-    id: nct03327805-acute
-    design: Randomized double-blind placebo-controlled crossover study
-    sampleSize: 20
-    populationLabels:
-      - Healthy sedentary adults
-    comparator: Maltodextrin placebo
-    route: Oral
-    formulation: Choline-bitartrate capsules
-    durationDays: 1
-    assessmentTime: Following ingestion the evening before metabolic testing
-  conceptId: trimethylamine-n-oxide
-  name: Acute fasting plasma TMAO
-  direction: Increased
-  evidence: Human research
-  description: A single 1000 mg choline-bitartrate exposure markedly increased fasting plasma TMAO compared with placebo.
-  sourceId: laskaridou-2026
-  population: 20 healthy sedentary adults
-  exposure: 1000 mg choline bitartrate, source-reported as approximately 450 mg choline
-  instrument: UPLC-MS/MS
-  magnitude: "Plasma TMAO was approximately 400% higher after choline: 12.5 ± 10.7 versus 3.1 ± 1.6 micromol/L after placebo."
-- id: four-week-tmao-2026
-  study:
-    id: nct03327805-four-week
-    design: Randomized double-blind placebo-controlled crossover study
-    sampleSize: 23
-    populationLabels:
-      - Healthy sedentary adults
-    comparator: Maltodextrin placebo
-    route: Oral
-    formulation: Choline-bitartrate capsules
-    durationDays: 28
-    assessmentTime: After 4 weeks
-  conceptId: trimethylamine-n-oxide
-  name: Four-week fasting plasma TMAO
-  direction: Increased
-  evidence: Human research
-  description: Daily choline bitartrate for four weeks increased fasting TMAO while placebo did not.
-  sourceId: laskaridou-2026
-  population: 23 healthy sedentary adults
-  exposure: 1000 mg choline bitartrate/day for 4 weeks
-  instrument: UPLC-MS/MS
-  magnitude: Fasting TMAO increased approximately 110% after the choline intervention.
-- id: glucose-homeostasis-null-despite-tmao
-  study:
-    id: nct03327805
-    design: Two randomized double-blind placebo-controlled crossover studies
-    populationLabels:
-      - Healthy sedentary adults
-    comparator: Maltodextrin placebo
-    route: Oral
-    formulation: Choline-bitartrate capsules
-    assessmentTime: Acute and after 4 weeks
-  conceptId: insulin-sensitivity
-  name: Insulin sensitivity and glucose homeostasis
-  direction: Variable
-  evidence: Human research
-  description: Despite substantial TMAO increases, choline bitartrate did not significantly worsen the primary insulin-sensitivity or glucose-tolerance measures acutely or after four weeks.
-  sourceId: laskaridou-2026
-  population: Healthy sedentary adults
-  exposure: 1000 mg choline bitartrate acutely or daily for 4 weeks
-  instrument: 75 g oral glucose tolerance test, Matsuda index, HOMA-IR
-  magnitude: No significant intervention differences were found for Matsuda index, HOMA-IR, fasting glucose, 2-hour glucose, glucose AUC, or incremental AUC in the principal comparisons.
+  description: Completed preschool FASD trials show a qualified memory signal, strongest in younger children, without consistent IQ or executive-function benefit.
+  sourceId: wozniak-2025
+  population: 104 preschool children pooled across three placebo-controlled trials
+  exposure: Approximately 260–500 mg/day choline-equivalent as bitartrate
+  instrument: Sequential-memory and developmental measures
+  magnitude: About 25% better performance on one short-delay measure; no consistent broader benefit
+  reportType: measured-assessment
+  conflictingSourceIds: []
 ```
 
 ## Mechanisms
@@ -843,21 +360,18 @@ Every HTTPS link returned by this run is represented in References. Links whose 
 ## Cautions
 
 ```yaml
-- title: Upper intake level applies to choline, not salt mass
-  description: The U.S. adult tolerable upper intake level is 3500 mg/day of choline from total intake. Choline bitartrate is only about 41.1% choline by molecular mass, so choline-equivalent and total-salt quantities must not be treated as interchangeable.
+- title: Salt mass is not choline-equivalent
+  description: Pure anhydrous choline bitartrate is about 41.1% choline by mass. Product moisture, assay and excipients can change delivered choline; trial salt doses cannot be copied as universal choline targets.
+  sourceId: pubchem
+- title: Excess-choline adverse effects
+  description: NIH guidance for total choline lists fishy body odor, vomiting, sweating, salivation, hypotension and liver toxicity at excessive intake. This is a nutrient-level warning, not bitartrate-specific incidence evidence.
   sourceId: ods-2022
-- title: Fishy body odor during longer-term pediatric supplementation
-  description: In the cumulative pediatric FASD randomized-trial report, fishy body odor occurred in 36% of choline-treated participants versus 8% receiving placebo; other adverse effects were reported as similar between groups.
+- title: Pediatric FASD evidence is specialized
+  description: FASD studies are narrow pediatric disease-population trials. Fishy body odor was the reproducible treatment-attributed event, and attrition-prone follow-up does not establish durable general benefit.
   sourceId: wozniak-2025
-- title: TMAO and platelet biomarkers are not clinical cardiovascular outcomes
-  description: Multiple human studies show that choline bitartrate can markedly raise TMAO, and one four-week trial also found increased platelet responsiveness. These biomarker findings do not establish that the supplement causes myocardial infarction, stroke, or other cardiovascular events.
+- title: TMAO is an intermediate biomarker
+  description: Several bitartrate studies raise TMAO, but they were not powered for myocardial infarction, stroke, thrombosis or mortality; renal-function and gut-microbiome context affect interpretation.
   sourceId: wilcox-2021
-- title: Hygroscopic bulk material
-  description: FCC describes choline bitartrate as a hygroscopic crystalline powder. A current public USP/FCC storage-condition statement was not available in the inspected previews, so a specific pharmacopeial temperature, humidity, or container specification is not asserted here.
-  sourceId: fcc-2022
-- title: Source-level dose inconsistency in a 2026 pilot study
-  description: A 2026 postmenopausal fMRI paper states that 1650 mg choline bitartrate delivered 1650 mg choline cation, which conflicts with the approximately 41.1% theoretical choline fraction. That paper's elemental-dose statement should not be propagated without correction or author clarification.
-  sourceId: dumas-2026
 ```
 
 ## Claims
@@ -1152,494 +666,19 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not applicable to a legislative act.
   conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s1
-  title: "GRN No. 419: L-alpha-glycerylphosphorylcholine"
-  authors: U.S. Food and Drug Administration
-  year: 2012
-  url: https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=419&set=GrASNotices
-  kind: Official GRAS notice record
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s2
-  title: eCFR
-  authors: Not assessed
-  year: 2026
-  url: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-182/subpart-I/section-182.8250
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s3
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.31003/FCC_F100306_04_01
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s4
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/34287673/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s5
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1007/s00394-021-02637-6
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s6
-  title: DRKS00020454
-  authors: Not assessed
-  year: 2026
-  url: https://drks.de/search/en/trial/DRKS00020454
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s8
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1016/j.amjmed.2021.03.016
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s9
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/31652561/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s10
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.3390/nu11102548
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s11
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/32722424/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s12
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.3390/nu12082220
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s13
-  title: NCT04255368
-  authors: Not assessed
-  year: 2026
-  url: https://clinicaltrials.gov/study/NCT04255368
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s14
-  title: Comparison between Egg Intake versus Choline Supplementation on Gut Microbiota and Plasma Carotenoids in Subjects with Metabolic Syndrome
-  authors: Minu S Thomas, Marissa DiBella, Christopher N Blesso, Olga Malysheva, Marie Caudill, Maria Sholola, Jessica L Cooperstone, Maria Luz Fernandez
-  year: 2022
-  url: https://pubmed.ncbi.nlm.nih.gov/35334836/
-  kind: Randomized controlled crossover trial
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-  pmid: "35334836"
-  doi: 10.3390/nu14061179
-- id: dr-choline-bitartrate-s15
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.3390/nu14061179
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s16
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/33066009/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s17
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.3390/nu12103120
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s18
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/27341028/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s19
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1371/journal.pone.0157714
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s20
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/26271904/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s21
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1038/srep13188
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s23
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/26447156/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s24
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.3945/ajcn.114.099168
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s25
-  title: NCT01149538
-  authors: Not assessed
-  year: 2026
-  url: https://clinicaltrials.gov/study/NCT01149538
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s26
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/39956364/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s27
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1016/j.ajcnut.2025.02.009
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s28
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/32164522/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s29
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1186/s11689-020-09312-7
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s30
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/36526961/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s31
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1186/s11689-022-09470-w
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s32
-  title: Registry
-  authors: Not assessed
-  year: 2026
-  url: https://clinicaltrials.gov/study/NCT05108974
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s33
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/41257751/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s34
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1186/s13063-025-09246-2
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s35
-  title: NCT06527391
-  authors: Not assessed
-  year: 2026
-  url: https://clinicaltrials.gov/study/NCT06527391
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s36
-  title: Registry
-  authors: Not assessed
-  year: 2026
-  url: https://clinicaltrials.gov/study/NCT04395196
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s37
-  title: Registry
-  authors: Not assessed
-  year: 2026
-  url: https://clinicaltrials.gov/study/NCT01911299
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s38
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/31766273/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s39
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.3390/nu11112758
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-s40
-  title: USP reference
-  authors: Not assessed
-  year: 2026
-  url: https://store.usp.org/product/1133509
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-choline-bitartrate-link-1
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?set=FoodSubstances&id=CHOLINEBITARTRATE
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
 
 ```yaml
 - jurisdiction: United States
-  activity: Food use as a nutrient supplement
-  status: FDA's Substances Added to Food database lists choline bitartrate (CAS 87-67-2) with technical effect NUTRIENT SUPPLEMENT and points to 21 CFR 182.8250 and SCOGS report 42. This is food-regulatory context, not FDA drug approval or approval of cognitive claims.
-  sourceUrl: https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=CHOLINEBITARTRATE&set=FoodSubstances
-  asOf: 2026-07-28
-- jurisdiction: United States
-  activity: Compendial dietary-supplement quality standard
-  status: The 2026 USP-NF Choline Bitartrate monograph defines the article as containing 99.0%–100.5% choline bitartrate on the anhydrous basis. Monograph status is a quality standard, not evidence of approved therapeutic efficacy.
-  sourceUrl: https://doi.usp.org/USPNF/USPNF_M17300_09_01.html
-  asOf: 2026-10-04
+  activity: Food use
+  status: 21 CFR §182.8250 lists choline bitartrate as GRAS when used according to good manufacturing practice; this is not approval of memory, exercise or FASD treatment claims.
+  sourceUrl: https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-182/subpart-I/section-182.8250
+  asOf: 2026-10-10
 - jurisdiction: European Union
-  activity: Use as a choline source in food categories governed by Regulation (EU) No 609/2013
-  status: The inspected consolidated Annex dated 2017-07-11 lists choline bitartrate among choline sources for the covered special-food categories. This does not constitute medicinal authorization or establish cognitive efficacy.
+  activity: Food ingredient
+  status: The inspected Union-list text includes choline bitartrate among permitted choline sources in specified food categories; this is not a medicinal authorization or efficacy determination.
   sourceUrl: https://eur-lex.europa.eu/eli/reg/2013/609/2017-07-11/eng
-  asOf: 2017-07-11
+  asOf: 2026-10-10
 ```

@@ -49,6 +49,48 @@
       "pubchemCid": 110635,
       "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/110635/PNG?image_size=500x500&record_type=2d",
       "sha256": "0f66ca46969385681d49258d4b81a6cbdbe61ae5cacd22a25a54df8b308578c0"
+    },
+    {
+      "slug": "dihexa",
+      "pubchemCid": 129010512,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/129010512/PNG?image_size=500x500&record_type=2d",
+      "sha256": "34fc114aae296dd25b1e93e4e281aa1feeef6471b75af998da4ce85b277f83c4"
+    },
+    {
+      "slug": "huperzine-a",
+      "pubchemCid": 854026,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/854026/PNG?image_size=500x500&record_type=2d",
+      "sha256": "cf4658be9f8b08980f2bdc84987980557598e7acef347289d449a029aad84c76"
+    },
+    {
+      "slug": "magnesium-citrate",
+      "pubchemCid": 6099959,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6099959/PNG?image_size=500x500&record_type=2d",
+      "sha256": "3adec980f40007a77a2d882ae1d2a7ac3ae3d91eef65fd0c97fb14aff9f71325"
+    },
+    {
+      "slug": "magnesium-glycinate",
+      "pubchemCid": 84645,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/84645/PNG?image_size=500x500&record_type=2d",
+      "sha256": "fb3ef842e261a98b93f548943614921efde96ff4376f677e78abfc1949b5f627"
+    },
+    {
+      "slug": "magnesium-malate",
+      "pubchemCid": 164748,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/164748/PNG?image_size=500x500&record_type=2d",
+      "sha256": "1e2bc5a855562892f75f82a9239cb9a192ae9cdec21aee466daaf5f4583bc52d"
+    },
+    {
+      "slug": "magnesium-oxide",
+      "pubchemCid": 14792,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/14792/PNG?image_size=500x500&record_type=2d",
+      "sha256": "00de3c3b8d8055aaf1ce90a4aca5f3e86a0cc05aa87f4bebd567ef2d812e080a"
+    },
+    {
+      "slug": "quercetin",
+      "pubchemCid": 5280343,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280343/PNG?image_size=500x500&record_type=2d",
+      "sha256": "f0cd48ef6586a0436cf016583f9513c0ed2f08f3216cf2b3298e25c8fb6b6e65"
     }
   ]
 }

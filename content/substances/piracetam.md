@@ -179,11 +179,11 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   limitation: A secondary discovery resource. This import does not independently verify its findings or count its links as independent studies.
   funding: Not assessed in this import.
 - id: molekul-link-174
-  title: PubMed PMID 18697252 — source link captured 2026; metadata pending
-  authors: Bibliographic metadata not independently verified
-  year: 2026
+  title: "[A comparative study of noopept and piracetam in the treatment of mild and moderate cognitive impairment in patients with organic brain diseases of vascular and traumatic origin]."
+  authors: Authors listed in returned report
+  year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/18697252/
-  kind: Source discovery link · capture year
+  kind: PubMed-indexed study
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
   funding: Not assessed in this import.

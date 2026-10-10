@@ -17,16 +17,16 @@ halfLife:
   label: Not established
   low: null
   high: null
-  context: The returned report does not establish a validated universal human terminal half-life.
-  sourceId: S1
+  context: Human sources report time-to-peak and accumulation, but not a validated universal terminal half-life for lutein.
+  sourceId: S18
   observationId: lutein-pk-1
 kinetics:
-  onset: Not established
-  peak: Not established
-  duration: Not established
-  bioavailability: Not established
-  metabolism: Not established
-  sourceId: S1
+  onset: Serum lutein rises within days to weeks; exact onset varies by formulation.
+  peak: Single-dose serum/plasma peaks were reported around 11–16 hours.
+  duration: MPOD changes generally require weeks to months and may persist after serum decline.
+  bioavailability: Dietary fat, food matrix and formulation affect micellarization and plasma exposure.
+  metabolism: Lutein is transported in lipoproteins and can be converted to meso-zeaxanthin in retinal tissue.
+  sourceId: S18
 x-shape:
   - slug
   - name
@@ -59,569 +59,154 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
-
-
 ---
 
 ## Summary
 
-Lutein is a non–provitamin A xanthophyll carotenoid concentrated in the retina, especially in macular pigment. The most reproducible human effect of supplementation is increased serum lutein and macular pigment optical density (MPOD). Lutein-only trials support MPOD augmentation; effects on visual performance are smaller, endpoint-specific, and inconsistent. (S10, S17)
-
-Age-related macular degeneration (AMD) outcome evidence is mainly for **lutein 10 mg plus zeaxanthin 2 mg** within the broader AREDS2 antioxidant/mineral formula, not lutein alone. The original AREDS2 primary analysis found no overall additional benefit from adding the lutein/zeaxanthin mixture, whereas a later exploratory 10-year follow-up found a modest association with lower progression compared with beta-carotene. Cochrane judged lutein/zeaxanthin-alone evidence as low certainty and compatible with little or no effect. (S1–S4)
-
-Cognition is secondary evidence: pooled randomized-trial effects were not statistically significant, and the large AREDS2 cognitive analysis did not show benefit from lutein/zeaxanthin. Lutein has no established deficiency syndrome, recommended dietary allowance, or official tolerable upper intake level. (S10–S12, S16)
-
-- evidence_level: strongest
-  finding: increased serum lutein and MPOD
-  scope: lutein alone or lutein-containing mixtures
-  sourceId: [S6, S7, S9, S10]
-- evidence_level: mixed
-  finding: contrast sensitivity, glare, and photostress outcomes
-  scope: mostly small trials; both lutein-only and mixtures
-  sourceId: [S5, S6, S8, S9]
-- evidence_level: uncertain
-  finding: slowing AMD progression
-  scope: chiefly lutein/zeaxanthin within AREDS2, not lutein monotherapy
-  sourceId: [S1, S3, S4]
-- evidence_level: insufficient
-  finding: cognition, primary AMD prevention, or general visual-acuity enhancement
-  sourceId: [S1, S10–S12]
+Lutein is a dietary xanthophyll concentrated in macular pigment. Oral lutein reliably raises serum lutein and often MPOD, while contrast, glare and photostress findings are endpoint-specific. AMD progression and cognition evidence mainly comes from lutein/zeaxanthin mixtures and remains low-certainty or null.
 
 ## Description
 
-Lutein is a dietary xanthophyll found in leafy green vegetables, egg yolks, corn, squash, avocado, and other plant foods. Humans do not synthesize it. Unlike beta-carotene, lutein does not provide vitamin A activity. (S10, S17)
-
-The human macular pigment consists primarily of lutein, zeaxanthin, and meso-zeaxanthin. Lutein is relatively more abundant in peripheral macular regions, while zeaxanthin and meso-zeaxanthin are relatively enriched toward the foveal center. Many supplements and food databases report lutein together with zeaxanthin, which complicates lutein-specific interpretation. (S10, S17)
-
-- identity: xanthophyll carotenoid
-  vitamin_A_activity: no
-  sourceId: [S10, S17]
-- major_food_sources:
-    - leafy_green_vegetables
-    - egg_yolk
-    - corn
-    - squash
-    - avocado
-  sourceId: [S10, S17]
-- retinal_context: component of macular pigment
-  related_carotenoids:
-    - zeaxanthin
-    - meso-zeaxanthin
-  sourceId: [S10, S17]
-- evidence_boundary: lutein-only results should not be attributed automatically to lutein/zeaxanthin mixtures, or vice versa
-  sourceId: [S2, S4, S10]
+Lutein does not provide vitamin-A activity. Human evidence separates lutein-only trials from AREDS2 and other lutein/zeaxanthin combinations; a raised retinal biomarker is not equivalent to better acuity or delayed AMD.
 
 ## Evidence note
 
-MPOD is a biological and optical surrogate, not the same as preserved visual acuity or delayed AMD. A treatment can raise MPOD without producing a clinically important change in standard acuity or disease progression. (S5, S6, S10)
-
-AREDS2 enrolled 4,203 adults aged approximately 50–85 years with bilateral large drusen or large drusen in one eye and advanced AMD in the fellow eye. The tested carotenoid intervention was lutein 10 mg plus zeaxanthin 2 mg daily, usually alongside vitamins C and E, zinc, and copper. Healthy adults and people without AMD were not the target population. (S1, S2)
-
-Commercial involvement is uneven. AREDS2 was NIH-led but used supplied commercial supplements; the healthy-eye MPOD review was funded through IAFNS/ILSI North America; a lutein-only visual trial included an Omnica-affiliated author; and formulation studies involved company-affiliated investigators or branded ingredients. These facts do not establish bias, but they make independent replication and formulation-specific interpretation relevant. (S3, S9, S10, S13, S14)
-
-- endpoint_hierarchy:
-    - serum_lutein
-    - MPOD
-    - contrast_or_glare_metrics
-    - standard_visual_acuity
-    - AMD_progression
-    - cognition
-  interpretation: evidence generally becomes less direct and less consistent down the list
-  sourceId: [S5, S6, S10]
-- lutein_specific_evidence:
-    strongest: serum_lutein_and_MPOD
-    moderate_or_mixed: contrast_sensitivity_and_glare
-    limited: cognition_and_long_term_disease_outcomes
-  sourceId: [S6, S7, S9, S10, S11]
-- mixture_evidence:
-    principal_AMD_trial: AREDS2
-    intervention: lutein_10_mg_plus_zeaxanthin_2_mg
-    confounder: background_AREDS_antioxidant_mineral_formula
-  sourceId: [S1, S2, S3]
-- commercial_funding_signal:
-    present_in_some_sources: true
-    interpretation: warrants transparency, not automatic dismissal
-    sourceId: [S3, S9, S10, S13, S14]
-
-**Full Deep Research detail retained from the returned report:**
-
-**Doses:**
-
-Studied doses vary by endpoint and formulation. In healthy-eye MPOD research, pooled evidence found clearer increases above 10 mg/day of combined lutein/zeaxanthin, while effects below 5 mg/day and from ordinary dietary intake were less certain; the review found no adequate dose-response evidence for the 5-to-less-than-10 mg/day range. (S10)
-
-Lutein-only AMD trials used 10 or 20 mg/day, while a healthy-adult trial used 12 mg/day. The AREDS2 disease-outcome dose was 10 mg lutein plus 2 mg zeaxanthin daily for five years. These are trial contexts, not an established universal dose. (S2, S6, S7, S9)
-
-- context: average_US_dietary_intake
-  dose: approximately_1_to_2_mg_per_day_lutein_or_lutein_zeaxanthin
-  population: general_adults
-  sourceId: S10
-- context: early_AMD_lutein_only
-  dose: 10_or_20_mg_per_day
-  duration: 48_weeks
-  endpoint: MPOD_and_visual_function
-  sourceId: S6
-- context: early_AMD_lutein_only_or_lutein_plus_zeaxanthin
-  dose: 10_mg_lutein; 20_mg_lutein; or 10_mg_lutein_plus_10_mg_zeaxanthin
-  duration: 2_years
-  endpoint: serum_lutein_MPOD_and_visual_function
-  sourceId: S7
-- context: healthy_adults_lutein_only
-  dose: 12_mg_per_day
-  duration: 16_weeks
-  endpoint: MPOD_contrast_and_glare
-  sourceId: S9
-- context: AREDS2
-  dose: 10_mg_lutein_plus_2_mg_zeaxanthin_per_day
-  duration: 5_years
-  endpoint: AMD_progression
-  sourceId: [S1, S2]
-- regulatory_status:
-    RDA: not_established
-    official_UL: not_established
-    observed_safe_level_in_one_risk_assessment: 20_mg_per_day
-  limitation: observed_safe_level is not an official dietary reference value
-  sourceId: [S10, S16]
-
-**Pharmacokinetics:**
-
-Lutein is lipophilic. Intestinal absorption involves release from the food or supplement matrix, incorporation into mixed micelles, uptake by enterocytes, and transport in lipoprotein-rich particles. Dietary fat, food matrix, particle size, and formulation influence bioavailability. (S10, S13, S17)
-
-Human serum or plasma concentrations typically peak about 11–16 hours after a single oral dose in older pharmacokinetic evaluations. With daily 20 mg supplementation, steady-state plasma concentrations were reported within approximately 30 days. Serum concentrations can fall after discontinuation while MPOD remains elevated for longer. (S15, S18)
-
-Formulation effects can be large: in one eight-person crossover trial, a water-soluble formulation produced approximately twice the plasma and erythrocyte lutein exposure of an oil suspension; in a 48-person single-dose study, a starch-matrix beadlet produced 1.8-fold higher 0–72-hour lutein AUC than an alginate-matrix beadlet. (S13, S14)
-
-Free lutein and lutein esters are both bioavailable. A small randomized study comparing 10 mg free lutein with 20 mg lutein esters equivalent to 10 mg free lutein found no significant between-group difference in serum lutein or MPOD. (S15)
-
-- absorption:
-    route: oral
-    limiting_properties:
-      - hydrophobicity
-      - crystallinity
-    sourceId: [S13, S17]
-- approximate_single_dose_peak:
-    serum_or_plasma: 11_to_16_hours
-    sourceId: S18
-- accumulation:
-    20_mg_per_day: steady_state_reported_within_about_30_days
-    sourceId: S18
-- formulation_comparison:
-    water_soluble_vs_oil: approximately_twofold_higher_exposure_in_small_trial
-    starch_beadlet_vs_alginate_beadlet: 1.8_fold_higher_0_to_72_hour_AUC
-    sourceId: [S13, S14]
-- chemical_form:
-    free_lutein: bioavailable
-    lutein_ester: bioavailable
-    small_trial_difference: not_significant
-    sourceId: S15
-
-**Modifiers:**
-
-Baseline status is a major modifier. People with lower baseline MPOD often show greater increases, although some low-MPOD individuals remain nonresponders despite increased serum lutein. (S6, S10)
-
-Response also depends on dietary lutein/zeaxanthin status, age, disease stage, lipid handling, formulation, meal fat, and potentially variation in transport and uptake proteins such as SR-BI/SCARB1 and CD36. These modifiers explain why the same labeled dose does not produce the same serum or retinal response in every person. (S10, S17)
-
-- baseline_MுபOD:
-    lower_baseline: often_larger_change
-    limitation: low_baseline_does_not_guarantee_response
-    sourceId: [S6, S10]
-- dietary_status:
-    low_lutein_zeaxanthin_intake: possible_larger_incremental_response
-    sourceId: [S1, S3, S10]
-- formulation:
-    effect: can materially_change_serum_exposure
-    sourceId: [S13, S14]
-- meal_context:
-    dietary_fat_and_food_matrix: alter_micellarization_and_absorption
-    sourceId: [S10, S17]
-- host_biology:
-    candidate_modifiers:
-      - lipid_status
-      - age
-      - intestinal_absorption
-      - SCARB1_or_CD36_variation
-    sourceId: [S10, S17]
-
-**Effects:**
-
-The most consistent effect is increased MPOD. Lutein-only studies in AMD and healthy adults increased MPOD, and lutein/zeaxanthin mixtures also commonly increased it. (S5–S10)
-
-Visual-performance effects are less uniform. Lutein-only studies have reported improvements in contrast sensitivity or glare-related measures, but standard visual acuity often did not change significantly. A one-year lutein/zeaxanthin trial improved chromatic contrast and photostress recovery, while glare disability did not significantly improve. (S5, S6, S8, S9)
-
-- effect: serum_lutein
-  certainty: consistent_biomarker_response
-  sourceId: [S6, S7, S9, S13–S15]
-- effect: MPOD
-  certainty: consistent_but_variable
-  sourceId: [S5–S10, S15]
-- effect: contrast_sensitivity
-  certainty: possible_endpoint_specific_benefit
-  sourceId: [S6, S8, S9]
-- effect: glare_or_photostress
-  certainty: mixed
-  sourceId: [S5, S8, S9]
-- effect: standard_visual_acuity
-  certainty: usually_no_clear_change
-  sourceId: [S5, S6, S7, S8]
-- effect: clinical_quality_of_life
-  certainty: insufficient
-  sourceId: [S4, S5]
-
-**Outcomes:**
-
-For AMD, the intervention must be named precisely. The AREDS2 primary trial did **not** find an overall additional reduction in advanced AMD when lutein/zeaxanthin was added to the original AREDS formula. (S1, S2)
-
-A later 10-year follow-up of the AREDS2 cohort reported a hazard ratio of 0.91 for progression to late AMD comparing lutein/zeaxanthin with no lutein/zeaxanthin, and 0.85 comparing lutein/zeaxanthin directly with beta-carotene. This was an exploratory post-trial analysis; during follow-up, nearly all participants were offered the revised AREDS2 formula, so it does not isolate long-term lutein monotherapy. (S3)
-
-The 2023 Cochrane review found low-certainty evidence that lutein with or without zeaxanthin had little or no effect on late AMD progression: risk ratio 0.94, 95% CI 0.87–1.01; neovascular AMD 0.92, 95% CI 0.84–1.02; geographic atrophy 0.92, 95% CI 0.80–1.05; and visual loss 0.98, 95% CI 0.91–1.05. (S4)
-
-AREDS/AREDS2 supplements are not shown to prevent AMD onset in people without AMD, and the trial population was not healthy supplementation for primary prevention. (S1)
-
-Cognition remains secondary evidence. A randomized-trial meta-analysis found nonsignificant effects for complex attention, executive function, and memory; the AREDS2 cognitive trial likewise found no meaningful cognitive benefit from 10 mg lutein plus 2 mg zeaxanthin. (S11, S12)
-
-- outcome: AMD_progression
-  lutein_only: insufficient_direct_evidence
-  lutein_zeaxanthin_mixture: primary_AREDS2_overall_result_null; later_exploratory_followup_favorable_vs_beta_carotene
-  sourceId: [S1–S4]
-- outcome: primary_AMD_prevention
-  conclusion: not_established
-  sourceId: S1
-- outcome: cognition
-  conclusion: pooled_randomized_effects_not_significant
-  sourceId: [S11, S12]
-- outcome: cataract_surgery
-  conclusion: no_overall_additional_effect_in_AREDS2
-  sourceId: S1
-- outcome: MPOD
-  conclusion: reproducibly_increased_more_often_than_clinical_outcomes
-  sourceId: [S5–S10]
-
-**Mechanisms:**
-
-Macular lutein contributes to optical filtering of short-wavelength light and local antioxidant activity. These mechanisms plausibly explain improved glare resistance, chromatic contrast, or photostress recovery in some participants, but mechanistic plausibility does not establish prevention of AMD or cognitive decline. (S8, S17)
-
-Lutein and its related macular carotenoids also occur in brain tissue. Proposed neural mechanisms include antioxidant and anti-inflammatory activity, membrane effects, and modulation of light or oxidative stress; human cognitive trials remain too inconsistent to confirm a clinically meaningful effect. (S11, S17)
-
-Lutein can be converted within the retina to meso-zeaxanthin through an RPE65-associated pathway. This is a retinal metabolism finding and does not demonstrate that a particular supplement formulation is clinically superior. (S17)
-
-- retinal_mechanism:
-    - short_wavelength_light_filtering
-    - local_antioxidant_activity
-    - possible_photostress_modulation
-  clinical_status: biologically_plausible; outcome_evidence_mixed
-  sourceId: [S8, S17]
-- macular_pigment:
-    components:
-      - lutein
-      - zeaxanthin
-      - meso-zeaxanthin
-    sourceId: [S10, S17]
-- retinal_metabolism:
-    lutein_to_meso_zeaxanthin: RPE65_associated_pathway
-    sourceId: S17
-- brain_mechanism:
-    proposed:
-      - antioxidant_activity
-      - anti-inflammatory_activity
-      - membrane_or_neural_effects
-    clinical_confirmation: insufficient
-    sourceId: [S11, S17]
-
-**Cautions:**
-
-Human trials generally report good short- to medium-term tolerability, including large AREDS2 experience. Benign yellow-orange skin discoloration (carotenodermia) has been reported with lutein supplementation and is not the same as vitamin A toxicity. (S3, S16)
-
-Long-term safety above approximately 20 mg/day is less well characterized than safety at commonly studied doses; 20 mg/day is an observed-safe-level estimate from a risk-assessment publication, not an official upper limit. Evidence in pregnancy, lactation, children, inherited carotenoid-metabolism disorders, and unusual retinal diseases is more limited. (S10, S16, S17)
-
-The lung-cancer signal associated with beta-carotene in smokers or former smokers should not be automatically attributed to lutein. In the 10-year AREDS2 follow-up, lutein/zeaxanthin was not associated with a statistically significant increase in lung cancer, whereas beta-carotene was associated with higher risk among former smokers. (S1, S3)
-
-- adverse_effect:
-    carotenodermia: reported; generally_benign
-    sourceId: [S16, S17]
-- serious_adverse_events:
-    AREDS2: no_clear_lutein_zeaxanthin_signal
-    sourceId: [S2, S3]
-- beta_carotene_distinction:
-    smoker_related_lung_cancer_signal: applies_to_beta_carotene_evidence
-    lutein_zeaxanthin_followup_signal: not_statistically_increased
-    sourceId: [S1, S3]
-- long_term_high_dose:
-    above_20_mg_per_day: evidence_less_complete
-    sourceId: [S10, S16]
-- underrepresented_groups:
-    - pregnancy
-    - lactation
-    - children
-    - rare_carotenoid_metabolism_disorders
-  sourceId: S17
-
-**Claims:**
-
-The strongest defensible claim is that lutein supplementation can raise circulating lutein and often raises MPOD. Claims of improved visual function are narrower: contrast, glare, and photostress may change in selected groups, while standard acuity usually does not. (S5–S10)
-
-“Prevents AMD,” “reverses AMD,” “improves cognition,” and “improves eyesight” are broader than the lutein-specific evidence supports. The AREDS2 evidence applies to a defined high-risk AMD population and a multi-ingredient lutein/zeaxanthin formula, not to lutein monotherapy in healthy adults. (S1–S4, S11, S12)
-
-- claim: raises_serum_lutein
-  verdict: supported
-  sourceId: [S6, S7, S9, S13–S15]
-- claim: raises_macular_pigment
-  verdict: supported_but_response_varies
-  sourceId: [S5–S10, S15]
-- claim: improves_contrast_glare_or_photostress
-  verdict: possible_and_endpoint_specific
-  sourceId: [S5, S6, S8, S9]
-- claim: improves_standard_visual_acuity
-  verdict: not_consistently_supported
-  sourceId: [S5–S8]
-- claim: prevents_AMD_in_healthy_people
-  verdict: not_established
-  sourceId: S1
-- claim: lutein_alone_slows_AMD_progression
-  verdict: insufficient_direct_evidence
-  sourceId: [S3, S4]
-- claim: AREDS2_lutein_zeaxanthin_formula_replaces_beta_carotene
-  verdict: supported_in_studied_AMD_context
-  sourceId: [S1, S3]
-- claim: improves_cognition
-  verdict: insufficient_and_pooled_effects_not_significant
-  sourceId: [S11, S12]
-
-**Interactions:**
-
-Lutein absorption is affected by dietary fat, food matrix, formulation, and co-administered carotenoids. Competition among carotenoids has been reported in experimental and human pharmacokinetic work, but the clinical importance varies by dose and formulation. (S10, S17)
-
-A systematic review reported no demonstrated interaction between lutein intake and cytochrome P450 activity, but direct clinical interaction data with prescription medicines are sparse. Therefore, “no established interaction” is not equivalent to proof of universal interaction safety. (S16)
-
-- interaction_type: dietary_fat
-  effect: generally_facilitates_carotenoid_micellarization
-  sourceId: [S10, S17]
-- interaction_type: formulation
-  effect: can_change_serum_exposure_substantially
-  sourceId: [S13, S14]
-- interaction_type: other_carotenoids
-  effect: possible_competition_or altered_absorption
-  sourceId: [S10, S17]
-- interaction_type: cytochrome_P450
-  finding: no_demonstrated_effect_reported_in_review
-  limitation: direct_drug_interaction_trials_sparse
-  sourceId: S16
-- interaction_type: prescription_medicines
-  conclusion: clinically_relevant_interaction_profile_not_established
-  sourceId: [S16, S17]
-
-**Legal:**
-
-This article is an evidence summary, not a treatment directive, product endorsement, medical diagnosis, or jurisdiction-specific legal opinion. Product labels, disease claims, and supplement regulations must be evaluated under the law applicable to the relevant country and product.
-
-- article_status: research_summary
-- medical_status: not_a_diagnosis_or_treatment_instruction
-- product_status: no_product_endorsement
-- legal_status: jurisdiction_specific_details_not_assessed
+The most reproducible human response is serum lutein and MPOD increase. Clinical visual effects are smaller and inconsistent, and no established RDA or official UL exists. Commercial funding and formulation differences are retained in the reference metadata.
 
 ## Doses
 
 ```yaml
-- label: lutein research exposure 1
-  amount: approximately_1_to_2_mg_per_day_lutein_or_lutein_zeaxanthin
-  quantity: null
-  quantityMax: null
-  unit: not established
-  ingredient: lutein
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: general_adults
-  purpose: Research exposure; not a dosing recommendation.
-  sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"context":"average_US_dietary_intake","dose":"approximately_1_to_2_mg_per_day_lutein_or_lutein_zeaxanthin","population":"general_adults","sourceId":"S10"}'
-  sourceId: S10
-- label: lutein research exposure 2
-  amount: 10_or_20_mg_per_day
-  quantity: null
-  quantityMax: null
-  unit: not established
-  ingredient: lutein
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: 48_weeks
-  population: Not established
-  purpose: Research exposure; not a dosing recommendation.
-  sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"context":"early_AMD_lutein_only","dose":"10_or_20_mg_per_day","duration":"48_weeks","endpoint":"MPOD_and_visual_function","sourceId":"S6"}'
+- sourceCategory: research
+  label: Early-AMD lutein trial
+  amount: 10 or 20 mg/day
+  quantity: 10
+  quantityMax: 20
+  unit: mg/day
+  ingredient: Lutein
+  formulation: Study supplement
+  route: oral
+  frequency: daily
+  duration: 48 weeks
+  population: Adults with early AMD
+  purpose: Assess serum lutein, MPOD and visual function
+  note: Trial exposure; not a universal dose.
   sourceId: S6
-- label: lutein research exposure 3
-  amount: 10_mg_lutein; 20_mg_lutein; or 10_mg_lutein_plus_10_mg_zeaxanthin
-  quantity: null
-  quantityMax: null
-  unit: not established
-  ingredient: lutein
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: 2_years
-  population: Not established
-  purpose: Research exposure; not a dosing recommendation.
-  sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"context":"early_AMD_lutein_only_or_lutein_plus_zeaxanthin","dose":"10_mg_lutein; 20_mg_lutein; or 10_mg_lutein_plus_10_mg_zeaxanthin","duration":"2_years","endpoint":"serum_lutein_MPOD_and_visual_function","sourceId":"S7"}'
+- sourceCategory: research
+  label: Two-year early-AMD trial
+  amount: 10 or 20 mg/day lutein; comparator 10 mg lutein + 10 mg zeaxanthin
+  quantity: 10
+  quantityMax: 20
+  unit: mg/day
+  ingredient: Lutein
+  formulation: Lutein-only or lutein/zeaxanthin study arms
+  route: oral
+  frequency: daily
+  duration: 2 years
+  population: Adults with early AMD
+  purpose: Assess serum, MPOD and visual performance
+  note: Combination arm is not lutein-only evidence.
   sourceId: S7
-- label: lutein research exposure 4
-  amount: 12_mg_per_day
-  quantity: null
+- sourceCategory: research
+  label: Healthy-adult high-bioaccessibility trial
+  amount: 12 mg/day
+  quantity: 12
   quantityMax: null
-  unit: not established
-  ingredient: lutein
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: 16_weeks
-  population: Not established
-  purpose: Research exposure; not a dosing recommendation.
-  sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"context":"healthy_adults_lutein_only","dose":"12_mg_per_day","duration":"16_weeks","endpoint":"MPOD_contrast_and_glare","sourceId":"S9"}'
+  unit: mg/day
+  ingredient: Lutein
+  formulation: High-bioaccessibility formulation
+  route: oral
+  frequency: daily
+  duration: 16 weeks
+  population: Healthy adults
+  purpose: Assess MPOD, contrast and glare sensitivity
+  note: Small formulation-specific study.
   sourceId: S9
-- label: lutein research exposure 5
-  amount: 10_mg_lutein_plus_2_mg_zeaxanthin_per_day
-  quantity: null
+- sourceCategory: research
+  label: AREDS2 carotenoid arm
+  amount: 10 mg lutein + 2 mg zeaxanthin/day
+  quantity: 10
   quantityMax: null
-  unit: not established
-  ingredient: lutein
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: 5_years
-  population: Not established
-  purpose: Research exposure; not a dosing recommendation.
-  sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"context":"AREDS2","dose":"10_mg_lutein_plus_2_mg_zeaxanthin_per_day","duration":"5_years","endpoint":"AMD_progression","sourceId":["S1","S2"]}'
-  sourceId: S1
-- label: lutein research exposure 6
-  amount: Not established
-  quantity: null
-  quantityMax: null
-  unit: not established
-  ingredient: lutein
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
-  purpose: Research exposure; not a dosing recommendation.
-  sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"regulatory_status":{"RDA":"not_established","official_UL":"not_established","observed_safe_level_in_one_risk_assessment":"20_mg_per_day"},"limitation":"observed_safe_level is not an official dietary reference value","sourceId":["S10","S16"]}'
+  unit: mg lutein/day
+  ingredient: Lutein
+  formulation: AREDS2 antioxidant/mineral background formula
+  route: oral
+  frequency: daily
+  duration: 5 years
+  population: 4,203 adults with high-risk AMD
+  purpose: Assess progression to advanced AMD
+  note: Mixture and background formula; not lutein monotherapy.
+  sourceId: S2
+- sourceCategory: research
+  label: Dietary exposure context
+  amount: Approximately 1–2 mg/day
+  quantity: 1
+  quantityMax: 2
+  unit: mg/day
+  ingredient: Lutein
+  formulation: Usual diet
+  route: oral
+  frequency: daily
+  duration: Ongoing dietary exposure
+  population: General adults
+  purpose: Describe background intake
+  note: Population intake estimate, not an intervention dose.
   sourceId: S10
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: lutein-pk-1
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
+- sourceId: S18
+  id: lutein-pk-1
+  analyte: lutein
+  route: oral
+  formulation: Free or esterified lutein; formulations vary
+  population: Human supplementation studies
   endpoint: elimination-half-life
   statistic: not-established
   value: null
   low: null
   high: null
   unit: hours
-  context: 'Original Deep Research PK detail: {"absorption":{"route":"oral","limiting_properties":["hydrophobicity","crystallinity"],"sourceId":["S13","S17"]}}'
-  sourceId: S1
+  context: Serum/plasma peaks were reported approximately 11–16 h after single doses; daily 20 mg supplementation reached reported steady state within about 30 days. A universal terminal half-life was not established.
   modelEligible: false
-- id: lutein-pk-2
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
+- sourceId: S13
+  id: lutein-pk-formulation
+  analyte: lutein
+  route: oral
+  formulation: Water-soluble versus oil suspension
+  population: 8 healthy men
   endpoint: elimination-half-life
   statistic: not-established
   value: null
   low: null
   high: null
   unit: hours
-  context: 'Original Deep Research PK detail: {"approximate_single_dose_peak":{"serum_or_plasma":"11_to_16_hours","sourceId":"S18"}}'
-  sourceId: S1
-  modelEligible: false
-- id: lutein-pk-3
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"accumulation":{"20_mg_per_day":"steady_state_reported_within_about_30_days","sourceId":"S18"}}'
-  sourceId: S1
-  modelEligible: false
-- id: lutein-pk-4
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"formulation_comparison":{"water_soluble_vs_oil":"approximately_twofold_higher_exposure_in_small_trial","starch_beadlet_vs_alginate_beadlet":"1.8_fold_higher_0_to_72_hour_AUC","sourceId":["S13","S14"]}}'
-  sourceId: S1
-  modelEligible: false
-- id: lutein-pk-5
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"chemical_form":{"free_lutein":"bioavailable","lutein_ester":"bioavailable","small_trial_difference":"not_significant","sourceId":"S15"}}'
-  sourceId: S1
+  context: Water-soluble formulation produced approximately twice the plasma and erythrocyte exposure of an oil suspension; no terminal half-life was reported.
   modelEligible: false
 ```
 
 ## Modifiers
 
 ```yaml
-- label: Modifier 1
-  effect: Variable
-  detail: '{"baseline_MுபOD":{"lower_baseline":"often_larger_change","limitation":"low_baseline_does_not_guarantee_response","sourceId":["S6","S10"]}}'
-  sourceId: S1
+- label: Baseline MPOD
+  effect: Lower baseline often predicts a larger increase
+  detail: Low baseline does not guarantee response; nonresponders occur despite increased serum lutein.
+  sourceId: S6
   observationId: lutein-pk-1
   factorType: other
   direction: variable
-- label: Modifier 2
-  effect: Variable
-  detail: '{"dietary_status":{"low_lutein_zeaxanthin_intake":"possible_larger_incremental_response","sourceId":["S1","S3","S10"]}}'
-  sourceId: S1
-  observationId: lutein-pk-1
+- label: Food and formulation
+  effect: Absorption varies
+  detail: Dietary fat, particle matrix and water-soluble or beadlet formulation changed exposure in small human PK studies.
+  sourceId: S13
+  observationId: lutein-pk-formulation
   factorType: other
   direction: variable
-- label: Modifier 3
-  effect: Variable
-  detail: '{"formulation":{"effect":"can materially_change_serum_exposure","sourceId":["S13","S14"]}}'
-  sourceId: S1
-  observationId: lutein-pk-1
-  factorType: other
-  direction: variable
-- label: Modifier 4
-  effect: Variable
-  detail: '{"meal_context":{"dietary_fat_and_food_matrix":"alter_micellarization_and_absorption","sourceId":["S10","S17"]}}'
-  sourceId: S1
-  observationId: lutein-pk-1
-  factorType: other
-  direction: variable
-- label: Modifier 5
-  effect: Variable
-  detail: '{"host_biology":{"candidate_modifiers":["lipid_status","age","intestinal_absorption","SCARB1_or_CD36_variation"],"sourceId":["S10","S17"]}}'
-  sourceId: S1
+- label: Dietary carotenoid status
+  effect: Baseline intake may alter incremental response
+  detail: Studies in people with low lutein/zeaxanthin intake may not generalize to high-intake populations.
+  sourceId: S10
   observationId: lutein-pk-1
   factorType: other
   direction: variable
@@ -630,371 +215,193 @@ This article is an evidence summary, not a treatment directive, product endorsem
 ## Effects
 
 ```yaml
-- id: lutein-effect-1
-  conflictingSourceIds: []
-  reportType: measured-assessment
+- sourceId: S9
+  id: lutein-effect-mpod
   conceptId: perception
-  name: lutein effect
+  name: Macular pigment response
+  direction: Increased
+  evidence: Human research
+  description: Lutein-only and mixed-carotenoid trials commonly raise MPOD, but the magnitude depends on baseline status, formulation and measurement method.
+  population: Healthy adults and adults with early AMD
+  exposure: 10–20 mg/day lutein in study-specific formulations
+  instrument: Macular pigment optical-density measurement
+  magnitude: Direction generally increased; magnitude varied
+  reportType: measured-assessment
+  conflictingSourceIds: []
+- sourceId: S8
+  id: lutein-effect-photostress
+  conceptId: perception
+  name: Photostress and glare experience
   direction: Variable
   evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S6
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: lutein-effect-2
-  conflictingSourceIds: []
+  description: A 1-year lutein/zeaxanthin trial improved chromatic contrast and photostress recovery, while glare disability did not significantly improve.
+  population: Healthy young adults
+  exposure: 10 mg lutein + 2 mg zeaxanthin/day
+  instrument: Photostress, glare and chromatic-contrast tests
+  magnitude: Endpoint-specific; mixed
   reportType: measured-assessment
-  conceptId: perception
-  name: lutein effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S5
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: lutein-effect-3
   conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: lutein effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S6
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: lutein-effect-4
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: lutein effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S5
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: lutein-effect-5
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: lutein effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S5
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: lutein-effect-6
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: lutein effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S4
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
 ```
 
 ## Outcomes
 
 ```yaml
-- id: lutein-outcome-1
-  conflictingSourceIds: []
+- sourceId: S9
+  id: lutein-outcome-mpod
+  conceptId: macular-pigment-optical-density
+  name: Macular pigment optical density
+  direction: Increased
+  evidence: Human research
+  description: A 12 mg/day lutein formulation increased MPOD in a 16-week randomized trial.
+  population: Healthy adults
+  exposure: 12 mg/day lutein for 16 weeks
+  instrument: Macular pigment optical-density measurement
+  magnitude: Increased versus placebo; exact effect estimate retained in source
   reportType: measured-assessment
-  conceptId: attention
-  name: AMD_progression
+  conflictingSourceIds: []
+- sourceId: S9
+  id: lutein-outcome-contrast
+  conceptId: contrast-sensitivity
+  name: Contrast sensitivity
+  direction: Increased
+  evidence: Human research
+  description: The same small trial reported improved contrast sensitivity; the result is formulation-specific and not evidence of disease modification.
+  population: Healthy adults
+  exposure: 12 mg/day lutein for 16 weeks
+  instrument: Contrast-sensitivity testing
+  magnitude: Improved versus placebo in the trial
+  reportType: measured-assessment
+  conflictingSourceIds: []
+- sourceId: S2
+  id: lutein-outcome-amd
+  conceptId: visual-acuity
+  name: Advanced AMD progression
   direction: Variable
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: lutein-outcome-2
-  conflictingSourceIds: []
+  description: AREDS2 did not find an overall significant additional reduction in advanced AMD from adding lutein/zeaxanthin to the original formula; a later follow-up was exploratory and nonrandomized.
+  population: 4,203 adults with high-risk AMD
+  exposure: 10 mg lutein + 2 mg zeaxanthin/day with AREDS background
+  instrument: Clinical AMD progression assessment
+  magnitude: Primary overall result null; later exploratory HR 0.91 versus no lutein/zeaxanthin
   reportType: measured-assessment
-  conceptId: attention
-  name: primary_AMD_prevention
+  conflictingSourceIds:
+    - S3
+    - S4
+- sourceId: S4
+  id: lutein-outcome-cognition
+  conceptId: cognitive-performance
+  name: Cognitive performance
   direction: Variable
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: lutein-outcome-3
-  conflictingSourceIds: []
+  description: Meta-analysis and AREDS2 cognitive trial did not show a meaningful, statistically reliable cognitive benefit from lutein/zeaxanthin supplementation.
+  population: Adults in heterogeneous randomized trials and AREDS2
+  exposure: Lutein or lutein/zeaxanthin mixtures
+  instrument: Domain-specific cognitive tests
+  magnitude: Small or non-significant pooled effects
   reportType: measured-assessment
-  conceptId: attention
-  name: cognition
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S11
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: lutein-outcome-4
   conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: attention
-  name: cataract_surgery
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: lutein-outcome-5
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: attention
-  name: MPOD
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S5
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
 ```
 
 ## Mechanisms
 
 ```yaml
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"retinal_mechanism":["short_wavelength_light_filtering","local_antioxidant_activity","possible_photostress_modulation"],"clinical_status":"biologically_plausible; outcome_evidence_mixed","sourceId":["S8","S17"]}'
-  sourceId: S8
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"macular_pigment":{"components":["lutein","zeaxanthin","meso-zeaxanthin"],"sourceId":["S10","S17"]}}'
-  sourceId: S1
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"retinal_metabolism":{"lutein_to_meso_zeaxanthin":"RPE65_associated_pathway","sourceId":"S17"}}'
-  sourceId: S1
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"brain_mechanism":{"proposed":["antioxidant_activity","anti-inflammatory_activity","membrane_or_neural_effects"],"clinical_confirmation":"insufficient","sourceId":["S11","S17"]}}'
-  sourceId: S1
+- title: Macular pigment filtering
+  description: Lutein absorbs short-wavelength light and contributes to macular pigment; this may influence glare or photostress, but mechanism does not prove AMD prevention.
+  sourceId: S17
+- title: Retinal carotenoid metabolism
+  description: Lutein and related carotenoids are transported into retinal tissue and lutein can contribute to meso-zeaxanthin formation.
+  sourceId: S17
+- title: Systemic and neural hypotheses
+  description: Antioxidant, anti-inflammatory and membrane effects are biologically plausible, but human cognition trials remain inconsistent.
+  sourceId: S11
 ```
 
 ## Cautions
 
 ```yaml
-- title: Research caution
-  description: 'Original Deep Research caution: {"adverse_effect":{"carotenodermia":"reported; generally_benign","sourceId":["S16","S17"]}}'
-  sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"serious_adverse_events":{"AREDS2":"no_clear_lutein_zeaxanthin_signal","sourceId":["S2","S3"]}}'
-  sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"beta_carotene_distinction":{"smoker_related_lung_cancer_signal":"applies_to_beta_carotene_evidence","lutein_zeaxanthin_followup_signal":"not_statistically_increased","sourceId":["S1","S3"]}}'
-  sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"long_term_high_dose":{"above_20_mg_per_day":"evidence_less_complete","sourceId":["S10","S16"]}}'
-  sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"underrepresented_groups":["pregnancy","lactation","children","rare_carotenoid_metabolism_disorders"],"sourceId":"S17"}'
-  sourceId: S17
+- title: MPOD is a surrogate
+  description: Raising MPOD does not establish improved acuity, delayed AMD or preserved cognition.
+  sourceId: S10
+- title: Carotenodermia
+  description: Yellow-orange skin discoloration has been reported and is generally benign; it is not vitamin-A toxicity.
+  sourceId: S16
+- title: High-dose evidence is incomplete
+  description: An observed-safe-level estimate around 20 mg/day is not an official UL, and longer-term higher-dose safety is less characterized.
+  sourceId: S10
+- title: Combination evidence
+  description: AREDS2 and many visual trials combine lutein with zeaxanthin or other nutrients; attribution to lutein alone is not valid.
+  sourceId: S2
+- title: Population limits
+  description: Pregnancy, lactation, inherited carotenoid disorders, unusual retinal disease and children remain less studied than healthy adults.
+  sourceId: S16
 ```
 
 ## Claims
 
 ```yaml
-- id: lutein-claim-1
-  assertion: raises_serum_lutein
+- id: lutein-claim-serum-mpod
+  assertion: Lutein raises serum lutein and often MPOD
   relation: evidence-boundary
   participants:
     - entityId: substance:lutein
       role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+    - entityId: tag:macular-pigment-optical-density
+      role: outcome
+  context: Lutein-only and mixed-carotenoid human studies repeatedly show biomarker increases.
   sourceIds:
     - S6
-    - S7
     - S9
-    - S13
-  conflictingSourceIds:
-    - S1
+    - S10
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: lutein-claim-2
-  assertion: raises_macular_pigment
+  limitation: Biomarker response does not establish clinical disease benefit.
+- id: lutein-claim-amd
+  assertion: Lutein alone prevents or slows AMD
   relation: evidence-boundary
   participants:
     - entityId: substance:lutein
       role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+    - entityId: tag:visual-acuity
+      role: disease outcome context
+  context: Direct lutein-only disease-progression evidence is insufficient; AREDS2 is combination evidence.
   sourceIds:
-    - S5
-    - S15
-  conflictingSourceIds:
-    - S1
-  assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: lutein-claim-3
-  assertion: improves_contrast_glare_or_photostress
-  relation: evidence-boundary
-  participants:
-    - entityId: substance:lutein
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
-  sourceIds:
-    - S5
-    - S6
-    - S8
-    - S9
-  conflictingSourceIds:
-    - S1
-  assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: lutein-claim-4
-  assertion: improves_standard_visual_acuity
-  relation: evidence-boundary
-  participants:
-    - entityId: substance:lutein
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
-  sourceIds:
-    - S5
-  conflictingSourceIds:
-    - S1
-  assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: lutein-claim-5
-  assertion: prevents_AMD_in_healthy_people
-  relation: evidence-boundary
-  participants:
-    - entityId: substance:lutein
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
-  sourceIds:
-    - S1
-  conflictingSourceIds:
-    - S1
-  assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: lutein-claim-6
-  assertion: lutein_alone_slows_AMD_progression
-  relation: evidence-boundary
-  participants:
-    - entityId: substance:lutein
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
-  sourceIds:
-    - S3
+    - S2
     - S4
-  conflictingSourceIds:
-    - S1
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: lutein-claim-7
-  assertion: AREDS2_lutein_zeaxanthin_formula_replaces_beta_carotene
+  limitation: High-risk AMD population and background formula prevent clean lutein-monotherapy inference.
+- id: lutein-claim-cognition
+  assertion: Lutein improves cognition
   relation: evidence-boundary
   participants:
     - entityId: substance:lutein
       role: intervention
     - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
-  sourceIds:
-    - S1
-    - S3
-  conflictingSourceIds:
-    - S1
-  assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: lutein-claim-8
-  assertion: improves_cognition
-  relation: evidence-boundary
-  participants:
-    - entityId: substance:lutein
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+      role: outcome
+  context: Pooled randomized cognitive effects were small and not statistically significant.
   sourceIds:
     - S11
     - S12
-  conflictingSourceIds:
-    - S1
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
+  limitation: Cognition was often secondary and interventions were heterogeneous.
 ```
 
 ## Interactions
 
 ```yaml
-- id: interaction-1
-  name: Documented or hypothesized coexposure
+- id: interaction-lutein-fat
+  name: Dietary fat and food matrix
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"interaction_type":"dietary_fat","effect":"generally_facilitates_carotenoid_micellarization","sourceId":["S10","S17"]}'
+  summary: Dietary fat, food matrix and formulation alter carotenoid micellarization and serum exposure.
   sourceId: S10
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-2
-  name: Documented or hypothesized coexposure
+  context: Absorption modifier; clinical importance varies by formulation.
+- id: interaction-lutein-carotenoids
+  name: Other carotenoids
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"interaction_type":"formulation","effect":"can_change_serum_exposure_substantially","sourceId":["S13","S14"]}'
-  sourceId: S13
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-3
-  name: Documented or hypothesized coexposure
-  otherSlug: null
-  summary: 'Original Deep Research interaction: {"interaction_type":"other_carotenoids","effect":"possible_competition_or altered_absorption","sourceId":["S10","S17"]}'
-  sourceId: S10
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-4
-  name: Documented or hypothesized coexposure
-  otherSlug: null
-  summary: 'Original Deep Research interaction: {"interaction_type":"cytochrome_P450","finding":"no_demonstrated_effect_reported_in_review","limitation":"direct_drug_interaction_trials_sparse","sourceId":"S16"}'
-  sourceId: S16
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-5
-  name: Documented or hypothesized coexposure
-  otherSlug: null
-  summary: 'Original Deep Research interaction: {"interaction_type":"prescription_medicines","conclusion":"clinically_relevant_interaction_profile_not_established","sourceId":["S16","S17"]}'
-  sourceId: S16
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
+  summary: Competition or altered absorption among carotenoids has been reported, but direct clinical significance is uncertain.
+  sourceId: S17
+  context: Human prescription-drug interaction evidence is sparse.
 ```
 
 ## Experience links
@@ -1007,73 +414,77 @@ This article is an evidence summary, not a treatment directive, product endorsem
 
 ```yaml
 - id: S1
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: AREDS/AREDS2 Clinical Trials
+  authors: National Eye Institute, National Institutes of Health
+  year: 2025
   url: https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
+  kind: government trial summary
+  insight: Defines the AREDS2 population, 10 mg lutein plus 2 mg zeaxanthin dose and official AMD interpretation.
+  limitation: Secondary government summary rather than a full systematic review.
+  funding: National Institutes of Health
+  sponsorshipStatus: not-reported
+  conflictsOfInterest: Institutional source; personal conflicts not assessed.
   conflictOfInterestStatus: not-assessed
+  disclosureUrl: https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2
 - id: S2
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: "Lutein + Zeaxanthin and Omega-3 Fatty Acids for Age-Related Macular Degeneration: The Age-Related Eye Disease Study 2 (AREDS2) Randomized Clinical Trial"
+  authors: AREDS2 Research Group
+  year: 2013
   url: https://jamanetwork.com/journals/jama/fullarticle/1684847
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
+  kind: randomized clinical trial
+  insight: Tested 10 mg lutein plus 2 mg zeaxanthin in 4,203 people with high-risk AMD; primary overall addition to AREDS was null.
+  limitation: Background AREDS formula and high-risk AMD population prevent isolation of lutein monotherapy or healthy supplementation.
+  funding: National Eye Institute and collaborating NIH institutes; commercial product support reported.
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: Publication disclosures and product supply reported; personal conflicts not fully reconstructed.
+  conflictOfInterestStatus: not-reported
+  disclosureUrl: https://jamanetwork.com/journals/jama/fullarticle/1684847
 - id: S3
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: Long-term Outcomes of Adding Lutein/Zeaxanthin and ω-3 Fatty Acids to the AREDS Supplements on Age-Related Macular Degeneration Progression
+  authors: Emily Y. Chew; Traci E. Clemons; Elvira Agrón; Amitha Domalpally; Tiarnán D. L. Keenan; Susan Vitale; Claire Weber; Douglas C. Smith; William Christen; AREDS2 Research Group
+  year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9164119/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
+  kind: epidemiologic follow-up of randomized trial
+  insight: Ten-year follow-up found HR 0.91 for lutein/zeaxanthin versus no lutein/zeaxanthin and HR 0.85 versus beta-carotene.
+  limitation: Post-trial follow-up was no longer randomized and nearly all participants were offered revised AREDS2 supplements.
+  funding: NIH/NEI and other NIH components; Bausch & Lomb supplied follow-up supplements.
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: NIH held a royalty-bearing AREDS license to Bausch & Lomb until 2021; other disclosures not fully assessed.
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC9164119/
 - id: S4
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: Antioxidant vitamin and mineral supplements for slowing the progression of age-related macular degeneration
+  authors: Jennifer R. Evans; John G. Lawrenson
+  year: 2023
   url: https://www.cochrane.org/evidence/CD000254_do-antioxidant-vitamin-and-mineral-supplements-slow-down-progression-age-related-macular
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  kind: systematic review and meta-analysis
+  insight: Lutein with or without zeaxanthin showed little or no effect on AMD progression with low-certainty evidence.
+  limitation: Most evidence came from AREDS2 participants receiving background supplements; lutein-only evidence was limited.
   funding: Not assessed.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
+  conflictsOfInterest: Not assessed in the retrieved record.
   conflictOfInterestStatus: not-assessed
 - id: S5
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: Effects of lutein supplementation on macular pigment optical density and visual acuity in patients with age-related macular degeneration
+  authors: Günther Weigert; Semira Kaya; Berthold Pemp; Stefan Sacu; Michael Lasta; René Marcel Werkmeister; Nikolaus Dragostinoff; Christian Simader; Gerhard Garhöfer; Ursula Schmidt-Erfurth; Leopold Schmetterer
+  year: 2011
   url: https://pubmed.ncbi.nlm.nih.gov/21873668/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
+  kind: randomized placebo-controlled trial
+  insight: Lutein increased MPOD in AMD, but visual-acuity and microperimetry effects were not statistically significant.
+  limitation: Six-month surrogate-endpoint study without AMD-progression power.
+  funding: Research support, non-U.S. government.
+  sponsorshipStatus: non-industry-funded
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
+  disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/21873668/
 - id: S6
   title: Effect of lutein and zeaxanthin on macular pigment and visual function in patients with early age-related macular degeneration
-  authors: Le Ma, Shao-Fang Yan, Yang-Mu Huang, Xin-Rong Lu, Fang Qian, Hong-Lei Pang, Xian-Rong Xu, Zhi-Yong Zou, Peng-Cheng Dong, Xin Xiao, Xun Wang, Ting-Ting Sun, Hong-Liang Dou, Xiao-Ming Lin
+  authors: Le Ma; Shao-Fang Yan; Yang-Mu Huang; Xin-Rong Lu; Fang Qian; Hong-Lei Pang; Xian-Rong Xu; Zhi-Yong Zou; Peng-Cheng Dong; Xin Xiao; Xun Wang; Ting-Ting Sun; Hong-Liang Dou; Xiao-Ming Lin
   year: 2012
   url: https://pubmed.ncbi.nlm.nih.gov/22858124/
-  kind: randomized double-masked placebo-controlled clinical trial
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  kind: randomized double-masked placebo-controlled trial
+  insight: Compared 10 mg lutein, 20 mg lutein and 10 mg lutein plus 10 mg zeaxanthin for 48 weeks; MPOD increased and some contrast outcomes improved.
+  limitation: Small study with surrogate and visual-function endpoints, not late-AMD progression.
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
@@ -1081,13 +492,13 @@ This article is an evidence summary, not a treatment directive, product endorsem
   pmid: "22858124"
   doi: 10.1016/j.ophtha.2012.06.014
 - id: S7
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: Effect of supplemental lutein and zeaxanthin on serum, macular pigmentation, and visual performance in patients with early age-related macular degeneration
+  authors: Yang-Mu Huang; Hong-Liang Dou; Fei-Fei Huang; Xian-Rong Xu; Zhi-Yong Zou; Xiao-Ming Lin
+  year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/25815324/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  kind: randomized double-blind placebo-controlled trial
+  insight: Two-year 10 or 20 mg lutein and 10 mg lutein plus 10 mg zeaxanthin increased serum levels and MPOD; acuity and flash-recovery effects were not significant.
+  limitation: Small early-AMD trial from one setting with no disease-progression endpoint.
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
@@ -1098,8 +509,8 @@ This article is an evidence summary, not a treatment directive, product endorsem
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/25468896/
   kind: randomized double-blind placebo-controlled clinical trial
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  insight: One year of 10 mg lutein plus 2 mg zeaxanthin increased MPOD and improved chromatic contrast and photostress recovery.
+  limitation: Healthy young adults, small-to-moderate sample and no disease outcome.
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
@@ -1107,160 +518,150 @@ This article is an evidence summary, not a treatment directive, product endorsem
   pmid: "25468896"
   doi: 10.1167/iovs.14-15573
 - id: S9
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: Clinical Effects of Dietary Supplementation of Lutein with High Bio-Accessibility on Macular Pigment Optical Density and Contrast Sensitivity
+  authors: Naomichi Machida; Marie Kosehira; Nobuyoshi Kitaichi
+  year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/32998324/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  kind: randomized placebo-controlled trial
+  insight: Twelve mg/day lutein alone for 16 weeks increased MPOD, contrast sensitivity, glare sensitivity and serum lutein in healthy adults.
+  limitation: Small formulation-specific study; first author was affiliated with Omnica.
   funding: Not assessed.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
+  conflictsOfInterest: Commercial affiliation disclosed through author affiliation.
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/32998324/
 - id: S10
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: "The Effect of Lutein/Zeaxanthin Intake on Human Macular Pigment Optical Density: A Systematic Review and Meta-Analysis"
+  authors: Lisa M. Wilson; Saraniya Tharmarajah; Yuanxi Jia; Richard D. Semba; Debra A. Schaumberg; Karen A. Robinson
+  year: 2021
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8634499/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
+  kind: systematic review and meta-analysis
+  insight: Among 46 studies and 3,189 healthy adults, doses above 10 mg/day more consistently increased MPOD; lower-dose and dietary effects were less clear.
+  limitation: Mixed lutein/zeaxanthin interventions, heterogeneous methods and limited dose coverage.
+  funding: Institute for the Advancement of Food and Nutrition Sciences through an ILSI North America Bioactive Committee grant.
+  sponsorshipStatus: mixed-funding
+  conflictsOfInterest: Authors reported no conflicts; funding organization is industry-supported.
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC8634499/
 - id: S11
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: "Dietary Lutein and Cognitive Function in Adults: A Meta-Analysis of Randomized Controlled Trials"
+  authors: Jeffrey Li; El-Sayed M. Abdel-Aal
+  year: 2021
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8510423/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  kind: meta-analysis of randomized trials
+  insight: Effects on complex attention, executive function and memory were small and not statistically significant.
+  limitation: Small heterogeneous evidence base with mixtures, foods and supplements; cognition was generally secondary.
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: "Effect of Omega-3 Fatty Acids, Lutein/Zeaxanthin, or Other Nutrient Supplementation on Cognitive Function: The AREDS2 Randomized Clinical Trial"
+  authors: Emily Y. Chew; Traci E. Clemons; Elvira Agrón; Lenore J. Launer; Francine Grodstein; Paul S. Bernstein; AREDS2 Research Group
+  year: 2015
   url: https://jamanetwork.com/journals/jama/fullarticle/2429713
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
+  kind: randomized clinical trial
+  insight: Five-year 10 mg lutein plus 2 mg zeaxanthin did not produce a meaningful cognitive benefit.
+  limitation: Older high-risk-AMD population and background nutrient formula; cognition was not the primary trial purpose.
+  funding: National Eye Institute and collaborating NIH institutes; commercial product support reported.
+  sponsorshipStatus: mixed-funding
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
+  disclosureUrl: https://jamanetwork.com/journals/jama/fullarticle/2429713
 - id: S13
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: Randomized controlled trial of a water-soluble formulation of lutein in humans
+  authors: Junya Kobayashi; Etsuko Tominaga; Makoto Ozeki; Tsutomu Okubo; Kiyotaka Nakagawa; Teruo Miyazawa
+  year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/31382835/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
+  kind: randomized crossover pharmacokinetic trial
+  insight: In eight healthy men, a water-soluble formulation produced approximately twice the plasma and erythrocyte exposure of an oil suspension.
+  limitation: Very small, short-term and formulation-specific study.
+  funding: Company-affiliated Taiyo Kagaku investigators; exact funding not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: Effects of formulation on the bioavailability of lutein and zeaxanthin
+  authors: Malkanthi Evans; Mareike Beck; James Elliott; Stephane Etheve; Richard Roberts; Wolfgang Schalch
+  year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23052623/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
+  kind: randomized crossover pharmacokinetic trial
+  insight: In 48 adults receiving 20 mg lutein, starch-matrix beadlets produced higher exposure than alginate-matrix beadlets.
+  limitation: Single-dose comparison of two branded formulations; pharmacokinetics does not establish clinical superiority.
+  funding: Company-affiliated KGK Synergize authors; exact funding not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: S15
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: Comparison of macular pigment and serum lutein concentration changes between free lutein and lutein esters supplements in Japanese subjects
+  authors: Hiroko Yoshizako; Katunori Hara; Yasuyuki Takai; Sachiko Kaidzu; Akira Obana; Akihiro Ohira
+  year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27273910/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  kind: randomized comparative trial
+  insight: Free lutein and esterified lutein produced similar serum and MPOD responses in a small three-month study.
+  limitation: Only 20 healthy Japanese adults and no major visual or disease endpoint.
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: S16
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: An Evidence-Based Systematic Review of Lutein by the Natural Standard Research Collaboration
+  authors: Catherine Ulbricht; Natural Standard Research Collaboration
+  year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/25616151/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  kind: evidence-based systematic review
+  insight: Reviews lutein dosing, pharmacokinetics, adverse effects, interactions and clinical evidence; supports generally favorable tolerability but incomplete high-dose evidence.
+  limitation: Heterogeneous evidence and expert synthesis rather than a definitive long-term safety trial.
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: S17
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: Lutein and Zeaxanthin Isomers in Eye Health and Disease
+  authors: Paul S. Bernstein; Bin Li; Pramod P. Vachali; Anuradha Gorusupudi; Rajashri Shyam; Brian S. Henriksen; John M. Nolan
+  year: 2016
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5611842/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
+  kind: narrative mechanistic and clinical review
+  insight: Reviews macular pigment biology, absorption, transport, metabolism, visual performance and evidence gaps.
+  limitation: Narrative review; many clinical findings involve mixtures rather than lutein alone.
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: S18
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: Lutein from Tagetes erecta L.
+  authors: Joint FAO/WHO Expert Committee on Food Additives
+  year: 2005
   url: https://www.inchem.org/documents/jecfa/jecmono/v54je01.pdf
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
+  kind: international food-safety evaluation
+  insight: Summarizes human timing data, including approximately 11–16-hour post-dose peaks and steady-state observations.
+  limitation: Regulatory safety review with older studies; not a clinical efficacy review or official human UL.
+  funding: World Health Organization and Food and Agriculture Organization
+  sponsorshipStatus: no-external-funding
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
+  disclosureUrl: https://www.inchem.org/documents/jecfa/jecmono/v54je01.pdf
 - id: S19
-  title: Deep Research source
-  authors: Not assessed
-  year: 2026
+  title: Effects of Lutein Supplementation on Macular Pigment Optical Density and Visual Acuity in Patients With Age-related Macular Degeneration
+  authors: ClinicalTrials.gov; National Library of Medicine
+  year: 2009
   url: https://clinicaltrials.gov/study/NCT00879671
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
+  kind: clinical trial registry
+  insight: Registry record for the LISA lutein-only AMD trial.
+  limitation: Registry record rather than a complete results publication.
+  funding: Medical University of Vienna
+  sponsorshipStatus: non-industry-funded
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
+  disclosureUrl: https://clinicaltrials.gov/study/NCT00879671
 ```
 
 ## Legal
 
 ```yaml
-- jurisdiction: Not established
-  activity: Not established
-  status: 'Original Deep Research legal detail: {"article_status":"research_summary"}'
-  sourceUrl: https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2
-  asOf: 2026-10-10
-- jurisdiction: Not established
-  activity: Not established
-  status: 'Original Deep Research legal detail: {"medical_status":"not_a_diagnosis_or_treatment_instruction"}'
-  sourceUrl: https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2
-  asOf: 2026-10-10
-- jurisdiction: Not established
-  activity: Not established
-  status: 'Original Deep Research legal detail: {"product_status":"no_product_endorsement"}'
-  sourceUrl: https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2
-  asOf: 2026-10-10
-- jurisdiction: Not established
-  activity: Not established
-  status: 'Original Deep Research legal detail: {"legal_status":"jurisdiction_specific_details_not_assessed"}'
-  sourceUrl: https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2
+- jurisdiction: General
+  activity: Dietary carotenoid use
+  status: No official lutein RDA or UL was established in the cited evidence; product and disease claims remain jurisdiction-specific.
+  sourceUrl: https://pubmed.ncbi.nlm.nih.gov/25616151/
   asOf: 2026-10-10
 ```

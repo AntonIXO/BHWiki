@@ -173,11 +173,11 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
   funding: Not assessed in this import.
 - id: molekul-link-169
-  title: PubMed PMID 18383733 — source link captured 2026; metadata pending
-  authors: Bibliographic metadata not independently verified
-  year: 2026
+  title: Noopept source record indexed in PubMed
+  authors: Metadata not assessed in the imported source trail
+  year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/18383733/
-  kind: Source discovery link · capture year
+  kind: Source discovery link
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
   funding: Not assessed in this import.

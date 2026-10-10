@@ -9,23 +9,25 @@ molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
+tags:
+  - behavioral-scheduling
+  - energy-buffer
 accent: "#888888"
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
 halfLife:
-  label: Not established
+  label: Not established for a dietary protocol; no drug-style half-life
   low: null
   high: null
-  context: The returned report does not establish a validated universal human terminal half-life.
+  context: Not established for a dietary protocol. Blood βHB reflects changing dietary substrate, insulin, hepatic ketogenesis, tissue use, renal handling, and measurement timing (S1, S12, S16).
   sourceId: S1
-  observationId: ketogenic-diet-pk-1
+  observationId: ketogenic-diet-pk
 kinetics:
-  onset: Not established
-  peak: Not established
-  duration: Not established
-  bioavailability: Not established
-  metabolism: Not established
+  onset: Usually develops over several days of carbohydrate restriction
+  peak: No universal peak; BHB varies with meals, fasting, exercise, and insulin
+  duration: Maintained only while dietary and metabolic conditions sustain ketosis
+  bioavailability: Not applicable
+  metabolism: Liver converts fatty-acid-derived acetyl-CoA to acetoacetate and βHB; tissues oxidize ketones
   sourceId: S1
 x-shape:
   - slug
@@ -59,438 +61,155 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
-
-
 ---
 
 ## Summary
 
-- point: "The ketogenic diet (KD) is a high-fat, carbohydrate-restricted, protein-adequate dietary protocol intended to induce endogenous ketone production. Therapeutic versions may specify a fat:(protein+carbohydrate) gram ratio; lifestyle versions usually specify carbohydrate grams or energy percentage."
-  sourceId: [S1, S6]
-- point: "The strongest controlled-human indication is adjunctive treatment of drug-resistant epilepsy, particularly in children. Weight loss and short-term glycemic improvements are reproducible but usually not uniquely superior to other calorie-reducing diets over 1–2 years."
-  sourceId: [S1, S2, S4, S6]
-- point: "Evidence for cognition in healthy people, general health enhancement, athletic enhancement, and human longevity is limited, heterogeneous, or null on important controlled endpoints."
-  sourceId: [S10, S11, S12, S14, S15]
-- point: "Important trade-offs include gastrointestinal symptoms, nutrient and food-group restriction, hypoglycemia with glucose-lowering therapy, SGLT2-associated ketoacidosis risk, and heterogeneous lipid responses including LDL-C increases."
-  sourceId: [S1, S10, S12, S16]
+The ketogenic diet is a high-fat, carbohydrate-restricted, protein-adequate dietary protocol intended to induce endogenous ketone production. The strongest controlled indication is adjunctive treatment of drug-resistant epilepsy, especially in children; weight and short-term glycemic changes are not uniquely superior to other calorie-reducing diets over 1–2 years (S1, S2, S4, S6).
 
 ## Description
 
-- macronutrients: "No universal KD composition exists. The classical epilepsy KD commonly uses a 3:1 or 4:1 gram ratio of fat to protein plus carbohydrate; the 4:1 form is approximately 80–90% of energy from fat, with protein and carbohydrate supplying the remainder."
-  sourceId: [S1]
-- lifestyle_definition: "Many obesity and diabetes trials define a very-low-carbohydrate ketogenic diet as less than 50 g carbohydrate/day or less than 10% of energy, with moderate protein and variable total energy intake."
-  sourceId: [S6]
-- protein: "Protein is controlled more tightly in the classical epilepsy KD because excess protein can reduce ketogenesis; modified Atkins and other lifestyle protocols generally permit more flexible or higher protein intake."
-  sourceId: [S1]
-- ketosis: "Nutritional ketosis is commonly operationalized as blood beta-hydroxybutyrate (BHB) of at least 0.5 mmol/L. This is an operational threshold, not a validated universal dose-response target for weight loss, cognition, or longevity."
-  sourceId: [S1, S12]
-- ketone_measures: "Blood BHB provides the most direct routine estimate of circulating ketone exposure; urine acetoacetate is affected by renal handling and hydration and may lag behind blood changes. In therapeutic epilepsy practice, blood BHB correlates better with seizure response than urine ketones."
-  sourceId: [S1]
-- variants: "Major therapeutic variants are classical KD, medium-chain-triglyceride KD, modified Atkins diet, and low-glycemic-index treatment; they differ in carbohydrate and protein freedom, fat ratio, palatability, and clinical evidence."
-  sourceId: [S1]
-- scope: "This article concerns food-based endogenous ketosis; a ketone drink or ester can raise BHB without reproducing the KD's carbohydrate restriction, protein prescription, fiber exposure, calorie intake, or lipid exposure."
-  sourceId: [S1, S12]
+Classical epilepsy protocols commonly use a 3:1 or 4:1 gram ratio of fat to protein plus carbohydrate. Lifestyle trials often use less than 50 g carbohydrate/day or less than 10% of energy, with more variable protein and calories. Blood βHB ≥0.5 mmol/L is an operational ketosis threshold, not a universal target for cognition, weight, or longevity (S1, S6, S12).
 
 ## Evidence note
 
-- hierarchy: "Epilepsy has randomized trials and a Cochrane synthesis, but trials are unblinded and rated low or very-low certainty. Weight and diabetes studies often compare broad low-carbohydrate patterns rather than one standardized KD."
-  sourceId: [S2, S4, S6]
-- comparator_effect: "A KD or very-low-carbohydrate diet can outperform a prescribed low-fat comparator at 3–6 months, while differences commonly shrink or disappear by 12–24 months against balanced-carbohydrate weight-reducing diets."
-  sourceId: [S4, S6, S8]
-- endpoint_limits: "Short-term changes in weight, HbA1c, or BHB do not establish reductions in cardiovascular events, dementia progression, or human mortality. LDL-C, ApoB, kidney, bone, and micronutrient outcomes require separate assessment."
-  sourceId: [S1, S4, S6, S12]
-
-**Full Deep Research detail retained from the returned report:**
-
-**Doses:**
-
-- classical_epilepsy: "Typically 3:1 or 4:1 grams of fat for each gram of protein plus carbohydrate; calories, protein, fluid, and initiation method are individualized to age, growth, feeding route, and clinical status."
-  sourceId: [S1]
-- modified_atkins: "A common therapeutic starting allowance is approximately 10–15 g carbohydrate/day, sometimes increasing to 20 g/day; unlike classical KD, protein, calories, and fluids are not fixed by a ketogenic ratio."
-  sourceId: [S1]
-- low_glycemic_index_treatment: "LGIT uses a carbohydrate allowance emphasizing foods with glycemic index below 50 rather than a classical fat ratio."
-  sourceId: [S1]
-- lifestyle_vlck: "Clinical trials commonly use less than 50 g carbohydrate/day or less than 10% of energy; protein and calories vary substantially between studies, so 'keto' labels are not interchangeable."
-  sourceId: [S6]
-- ketosis_measure: "BHB of at least 0.5 mmol/L is a common physiological-ketosis threshold; the relationship between a higher BHB value and better non-epilepsy outcomes has not been established."
-  sourceId: [S1, S12]
-
-**Pharmacokinetics:**
-
-- classification: "A KD has no drug-style single-compartment pharmacokinetics. Its exposure is a dynamic balance among dietary substrate delivery, insulin suppression, hepatic ketogenesis, tissue uptake and oxidation, renal handling, and measurement timing."
-  sourceId: [S1, S12, S16]
-- onset: "Ketosis generally develops over several days of carbohydrate restriction; historical classical-KD protocols used a 2–3-day fast to induce ketones, although fasting is now optional in many programs."
-  sourceId: [S1]
-- production: "The liver converts fatty-acid-derived acetyl-CoA into acetoacetate and BHB; acetoacetate can decarboxylate to acetone. The liver exports ketones for use by the brain, heart, skeletal muscle, and other tissues."
-  sourceId: [S12]
-- tissue_use: "BHB and acetoacetate are converted to acetyl-CoA in ketone-utilizing tissues and enter the citric-acid cycle; the brain can increase ketone use when glucose availability or brain glucose utilization is reduced."
-  sourceId: [S12]
-- variability: "BHB changes with meal timing, carbohydrate and protein intake, fasting, exercise, energy balance, hydration, and insulin availability; a single reading is therefore not a stable summary of dietary exposure."
-  sourceId: [S1, S12]
-- safety_boundary: "Nutritional ketosis normally occurs with preserved glucose regulation and acid-base balance. Diabetic ketoacidosis is a separate high-anion-gap acidotic state and may be euglycemic in people taking SGLT2 inhibitors."
-  sourceId: [S16]
-
-**Modifiers:**
-
-- metabolic: "Insulin availability, carbohydrate dose, protein dose, fasting, exercise, and energy deficit modify the probability and magnitude of BHB elevation."
-  sourceId: [S1, S12, S16]
-- individual_variation: "The same reported carbohydrate intake does not guarantee the same BHB concentration; therapeutic response and adherence vary across age, diabetes status, body composition, and clinical condition."
-  sourceId: [S1, S6]
-- adherence: "Adherence is a major effect modifier. A diabetes meta-analysis identified loss of carbohydrate adherence as a principal limitation, while fewer than 10% of DIETFITS participants reached the study's most extreme ketogenic-like intake pattern."
-  sourceId: [S6, S10]
-- food_matrix: "Fat source, protein source, fiber, vegetable intake, and weight change can alter lipid and gastrointestinal outcomes even when carbohydrate restriction is similar."
-  sourceId: [S1, S10, S12]
-- clinical_context: "Growth, feeding difficulty, renal function, nephrolithiasis history, hyperlipidemia, diabetes, low bone density, pregnancy, and gastrointestinal disease modify feasibility and risk."
-  sourceId: [S1]
-
-**Effects:**
-
-- weight: "Across 61 randomized trials involving 6,925 adults with overweight or obesity, low-carbohydrate weight-reducing diets produced approximately 1.07 kg more short-term loss and 0.93 kg more loss at 1–2 years in participants without diabetes; Cochrane judged the overall difference little to none clinically."
-  sourceId: [S4]
-- diabetes_glycemia: "Across 8 VLCK randomized trials involving 648 adults with type 2 diabetes, HbA1c favored VLCK by 0.61 percentage points at 3 months and 0.58 at 6 months; weight favored VLCK by 2.91 kg and 2.84 kg, respectively."
-  sourceId: [S6]
-- diabetes_duration: "In the same VLCK meta-analysis, the weight advantage was absent at 12 months, although triglycerides, HDL-C, and use of antidiabetic medication still favored VLCK in some analyses."
-  sourceId: [S6]
-- diabetes_comparator: "Across 22 low-carbohydrate versus low-fat randomized trials involving 1,391 adults with type 2 diabetes, HbA1c favored low-carbohydrate diets by 0.41% at 3 months, with short/intermediate-term advantages in weight, fasting insulin, and triglycerides but higher total cholesterol and HDL-C."
-  sourceId: [S8]
-- lipid_heterogeneity: "Lipid responses are heterogeneous. A ketogenic-like DIETFITS subgroup had a transient approximately 12% LDL-C increase with a larger reduction in the triglyceride/HDL ratio, while an Alzheimer disease KD trial reported increases in LDL-C and total cholesterol."
-  sourceId: [S10, S12]
-- GI_nutrients: "In pediatric therapeutic practice, constipation, emesis, and abdominal pain may occur in up to 50% of children, especially early in treatment. Restricted fruits, vegetables, enriched grains, and calcium-rich foods create recurring vitamin, mineral, calcium, vitamin D, and selenium-management issues."
-  sourceId: [S1]
-- exercise: "In trained adults, meta-analysis favored carbohydrate-rich diets for time-trial performance and 1-RM strength, while KD favored total and fat-mass loss; KD was not an enhancement strategy for high-intensity performance."
-  sourceId: [S14]
-- healthy_cognition: "In 11 healthy normal-weight adults, 3 weeks of isocaloric KD produced BHB of approximately 1.0 mmol/L but no difference from a high-carbohydrate, low-fat diet in vigilance, visual learning, working memory, executive function, mood, or subjective sleep."
-  sourceId: [S11]
-- Alzheimer_cognition: "In a 26-person randomized crossover Alzheimer disease trial, 21 completed the KD. Daily function and quality of life improved versus usual diet, but ACE-III cognition did not significantly change; LDL-C and total cholesterol increased."
-  sourceId: [S12]
-
-**Outcomes:**
-
-- indication: "Drug-resistant epilepsy"
-  comparator: "Continued usual care or delayed dietary treatment"
-  controlled_endpoint: "In the Neal randomized trial, 145 children were assigned; at 3 months, mean seizure frequency was 62% of baseline in analyzed KD participants versus 137% of baseline in controls."
-  pooled_result: "Cochrane found child seizure-freedom RR 3.16 (95% CI 1.20–8.35) and seizure-reduction RR 5.80 (95% CI 3.48–9.65) versus usual care, but certainty was very low or low."
-  null_or_limit: "In adults, no participants achieved seizure freedom in the included usual-care comparisons; seizure reduction was not statistically significant, RR 5.03 (95% CI 0.26–97.68)."
-  status: "Established adjunctive therapeutic indication, with stronger evidence in children than adults."
-  sourceId: [S1, S2, S3]
-- indication: "Weight management"
-  comparator: "Balanced-carbohydrate or low-fat calorie-reducing diets"
-  controlled_endpoint: "Small early advantages are common, but the pooled long-term difference is generally less than 1 kg and varies widely by adherence and energy intake."
-  null_or_limit: "The 609-person DIETFITS trial found no significant 12-month weight-loss difference between healthy low-fat and healthy low-carbohydrate diets; its low-carbohydrate arm was not a continuously verified strict KD."
-  status: "Valid dietary option; no durable universal superiority over other calorie-reducing patterns."
-  sourceId: [S4, S5, S10]
-- indication: "Type 2 diabetes"
-  comparator: "Low-fat, moderate-carbohydrate, or recommended diabetes diets"
-  controlled_endpoint: "Short-term HbA1c, weight, triglycerides, HDL-C, and medication use can improve more with VLCK than with some comparators."
-  null_or_limit: "Meta-analytic weight superiority was absent at 12 months, and evidence quality was insufficient to establish durable superiority or cardiovascular-outcome benefit."
-  status: "Metabolically active but adherence-sensitive; not equivalent to proven diabetes remission or event prevention."
-  sourceId: [S6, S7, S8]
-- indication: "Cognition and Alzheimer disease"
-  comparator: "Usual diet, low-fat diet, or high-carbohydrate control"
-  controlled_endpoint: "Small trials report possible improvements in function or quality of life, but cognition has been null or inconsistent."
-  null_or_limit: "A systematic review of epilepsy studies could not isolate a KD-specific cognitive benefit because of heterogeneous tests, self-report, seizure effects, and medication changes."
-  status: "Investigational."
-  sourceId: [S11, S12, S13]
-- indication: "Healthy enhancement and athletic performance"
-  comparator: "Carbohydrate-rich diets"
-  controlled_endpoint: "KD increases fat oxidation and may reduce body mass or fat mass."
-  null_or_limit: "Controlled evidence does not show reliable enhancement of cognition, high-intensity exercise, time-trial performance, or strength."
-  status: "Not established as a general enhancement protocol."
-  sourceId: [S11, S14]
-- indication: "Longevity"
-  comparator: "Standard mouse diets"
-  controlled_endpoint: "One adult-mouse study reported increased median lifespan, survival, healthspan, and memory-related outcomes."
-  null_or_limit: "This is animal evidence; it does not establish human lifespan extension, and animal effects depend on strain, sex, energy intake, diet composition, and comparator."
-  status: "Preclinical claim only."
-  sourceId: [S15]
-
-**Mechanisms:**
-
-- substrate_shift: "Carbohydrate restriction lowers glucose availability and insulin signaling relative to a carbohydrate-rich diet, increasing adipose fatty-acid release, hepatic beta-oxidation, and ketogenesis."
-  sourceId: [S12, S16]
-- brain_fuel: "Ketones provide an alternative brain fuel and may partly compensate for reduced cerebral glucose utilization; this is a mechanistic rationale in Alzheimer disease, not proof of clinical disease modification."
-  sourceId: [S12]
-- seizure_control: "Proposed anticonvulsant mechanisms include altered neuronal fuel use, adenosine signaling, neurotransmitter balance, ion-channel excitability, mitochondrial/redox effects, and other parallel metabolic changes. The epilepsy consensus describes the mechanism as multiple and not clinically resolved."
-  sourceId: [S1]
-- weight: "Weight loss can arise from lower energy intake, increased satiety, reduced dietary energy density, early fluid shifts, and adherence effects; controlled comparisons do not demonstrate that ketones alone create a universal metabolic advantage."
-  sourceId: [S4, S5, S6]
-- diabetes: "Lower carbohydrate delivery reduces postprandial glucose exposure and can reduce insulin requirements; the magnitude and persistence of HbA1c improvement depend on adherence, medication changes, weight loss, and comparator diet."
-  sourceId: [S6, S7, S8]
-- lipids: "LDL-C and triglyceride responses are not determined by carbohydrate percentage alone; baseline phenotype, weight change, saturated-versus-unsaturated fat, and diet quality are plausible contributors to the observed heterogeneity."
-  sourceId: [S4, S8, S10, S12]
-- longevity: "Mouse longevity findings are compatible with hypotheses involving fuel switching, ketone signaling, stress resistance, and metabolic remodeling, but these mechanisms remain preclinical and cannot be treated as human longevity evidence."
-  sourceId: [S15]
-
-**Cautions:**
-
-- absolute_metabolic_contraindications: "Primary carnitine deficiency; carnitine palmitoyltransferase I or II deficiency; carnitine-translocase deficiency; fatty-acid beta-oxidation defects including MCAD, LCAD, SCAD, long-chain 3-hydroxyacyl-CoA, or medium-chain 3-hydroxyacyl-CoA deficiency; pyruvate-carboxylase deficiency; and porphyria."
-  sourceId: [S1]
-- relative_cautions: "Inability to maintain adequate nutrition, a surgically approachable epilepsy lesion, inadequate caregiver capacity, propofol co-use, chronic metabolic acidosis, kidney stones, hyperlipidemia, poor weight gain, reflux, constipation, swallowing difficulty, and cardiomyopathy require protocol-level consideration."
-  sourceId: [S1]
-- hypoglycemia: "Lower carbohydrate intake can reduce glucose requirements; hypoglycemia is particularly relevant when insulin or insulin-secretagogue therapy is continued without accounting for the changed carbohydrate exposure."
-  sourceId: [S7, S16]
-- ketoacidosis: "Nutritional ketosis is not diabetic ketoacidosis. SGLT2 inhibitors, insulin reduction, fasting, dehydration, illness, surgery, and low-carbohydrate intake can combine to produce euglycemic ketoacidosis."
-  sourceId: [S16]
-- renal_and_bone: "Therapeutic KD protocols monitor kidney-stone risk, calcium/vitamin D status, bone health, and acid-base complications; pediatric programs also monitor growth and selenium-related cardiac risk."
-  sourceId: [S1]
-- pregnancy: "Pregnancy safety and efficacy were not established sufficiently for the epilepsy consensus to recommend KD as safe and effective during pregnancy."
-  sourceId: [S1]
-
-**Claims:**
-
-- claim: "Keto cures epilepsy."
-  verdict: "Unsupported. KD is an adjunctive seizure-reduction treatment for some people with drug-resistant epilepsy; controlled trials do not establish a universal cure."
-  sourceId: [S1, S2, S3]
-- claim: "Keto always causes more weight loss."
-  verdict: "Unsupported. Early differences can occur, but pooled long-term advantages are small or absent versus balanced-carbohydrate weight-reducing diets."
-  sourceId: [S4, S5]
-- claim: "Keto reverses type 2 diabetes."
-  verdict: "Overstated. Short-term HbA1c, weight, and medication improvements occur in some trials, but durable remission and cardiovascular-event superiority are not established by the controlled evidence summarized here."
-  sourceId: [S6, S7, S8]
-- claim: "Keto reliably improves mental clarity in healthy people."
-  verdict: "Not established. A controlled healthy-adult trial found no benefit across cognitive, mood, or sleep endpoints."
-  sourceId: [S11]
-- claim: "Keto enhances athletic performance."
-  verdict: "Not established. Evidence is neutral-to-unfavorable for high-intensity performance and strength compared with carbohydrate-rich diets, despite greater fat oxidation."
-  sourceId: [S14]
-- claim: "High LDL-C on keto is harmless."
-  verdict: "Unsupported. Some KD and ketogenic-like studies show LDL-C or total-cholesterol increases; higher HDL-C or lower triglycerides do not by themselves negate LDL-C/ApoB exposure."
-  sourceId: [S4, S10, S12]
-- claim: "Keto extends human lifespan."
-  verdict: "Unsupported. The cited longevity result is in adult mice, not humans."
-  sourceId: [S15]
-
-**Interactions:**
-
-- insulin: "Carbohydrate restriction can lower glucose and insulin requirements; continuing the same insulin exposure may increase hypoglycemia risk. The evidence base supports medication reduction in some trials but does not define a universal adjustment."
-  sourceId: [S7, S16]
-- sulfonylureas_and_secretagogues: "Insulin-secretagogue exposure can become mismatched to lower carbohydrate intake; small randomized diabetes data reported discontinuation of some sulfonylureas or DPP-4 inhibitors in the VLCK arm."
-  sourceId: [S7]
-- sglt2_inhibitors: "SGLT2 inhibitors increase susceptibility to ketogenesis and euglycemic diabetic ketoacidosis in the setting of low-carbohydrate intake, insulin reduction, fasting, dehydration, illness, or surgery."
-  sourceId: [S16]
-- antiseizure_medications: "KD is commonly used with antiseizure drugs, but human pharmacodynamic-interaction data are sparse. One study cited by the epilepsy consensus associated concomitant lamotrigine with lower ketones and reduced diet efficacy."
-  sourceId: [S1]
-- medication_formulations: "Liquid, chewable, or other formulations may contain enough carbohydrate to affect a strict therapeutic ratio; epilepsy programs review medication carbohydrate content."
-  sourceId: [S1]
-- propofol: "Concurrent propofol use is listed as a relative contraindication in pediatric KDT guidance because of concern for a higher propofol-infusion-syndrome risk."
-  sourceId: [S1]
-
-**Legal:**
-
-- scope: "This page is an evidence summary of a nonpharmacologic dietary protocol, not a diagnosis, prescription, individualized medication-adjustment order, or legal determination."
-  sourceId: [S1, S16]
-- status: "Clinical use is indication-specific: epilepsy has the clearest therapeutic evidence, while non-epilepsy applications remain comparator-, adherence-, and endpoint-dependent."
-  sourceId: [S1, S2, S4, S6]
-
-<!-- Deep Research source-link ledger -->
-
-Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
+Epilepsy has randomized trials and Cochrane synthesis, but certainty is low or very low and protocols are unblinded. Weight, diabetes, cognition, athletic, and longevity evidence is heterogeneous; LDL-C, nutrient, kidney, bone, and gastrointestinal effects require separate interpretation (S1, S2, S4, S6, S12, S15).
 
 ## Doses
 
 ```yaml
-- label: ketogenic-diet research exposure 1
-  amount: Not established
+- label: Classical epilepsy ketogenic diet
+  amount: 3:1 or 4:1 grams fat per gram protein plus carbohydrate
   quantity: null
   quantityMax: null
-  unit: not established
-  ingredient: ketogenic-diet
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
-  purpose: Research exposure; not a dosing recommendation.
+  unit: ratio
+  ingredient: Ketogenic diet
+  formulation: Classical therapeutic KD
+  route: Dietary protocol
+  frequency: Daily
+  duration: Individualized
+  population: Children and adults with drug-resistant epilepsy
+  purpose: Research or therapeutic protocol description; not a personal prescription.
+  note: Calories, protein, fluid, and initiation are individualized to age, growth, feeding route, and clinical status (S1).
   sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"classical_epilepsy":"Typically 3:1 or 4:1 grams of fat for each gram of protein plus carbohydrate; calories, protein, fluid, and initiation method are individualized to age, growth, feeding route, and clinical status.","sourceId":["S1"]}'
   sourceId: S1
-- label: ketogenic-diet research exposure 2
-  amount: Not established
-  quantity: null
-  quantityMax: null
-  unit: not established
-  ingredient: ketogenic-diet
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
-  purpose: Research exposure; not a dosing recommendation.
+- label: Modified Atkins diet
+  amount: Approximately 10–15 g carbohydrate/day initially; sometimes up to 20 g/day
+  quantity: 15
+  quantityMax: 20
+  unit: g carbohydrate/day
+  ingredient: Ketogenic diet
+  formulation: Modified Atkins
+  route: Dietary protocol
+  frequency: Daily
+  duration: Individualized
+  population: Therapeutic epilepsy programs
+  purpose: Research or therapeutic protocol description; not a personal prescription.
+  note: Protein, calories, and fluid are less fixed than in classical KD (S1).
   sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"modified_atkins":"A common therapeutic starting allowance is approximately 10–15 g carbohydrate/day, sometimes increasing to 20 g/day; unlike classical KD, protein, calories, and fluids are not fixed by a ketogenic ratio.","sourceId":["S1"]}'
   sourceId: S1
-- label: ketogenic-diet research exposure 3
-  amount: Not established
+- label: Low-glycemic-index treatment
+  amount: Carbohydrate allowance emphasizing foods with glycemic index below 50
   quantity: null
   quantityMax: null
-  unit: not established
-  ingredient: ketogenic-diet
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
-  purpose: Research exposure; not a dosing recommendation.
+  unit: protocol
+  ingredient: Ketogenic diet
+  formulation: LGIT
+  route: Dietary protocol
+  frequency: Daily
+  duration: Individualized
+  population: Therapeutic epilepsy programs
+  purpose: Research or therapeutic protocol description; not a personal prescription.
+  note: LGIT is a therapeutic variant, not a classical 4:1 ratio (S1).
   sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"low_glycemic_index_treatment":"LGIT uses a carbohydrate allowance emphasizing foods with glycemic index below 50 rather than a classical fat ratio.","sourceId":["S1"]}'
   sourceId: S1
-- label: ketogenic-diet research exposure 4
-  amount: Not established
-  quantity: null
+- label: Lifestyle very-low-carbohydrate ketogenic diet
+  amount: Less than 50 g carbohydrate/day or less than 10% of energy
+  quantity: 50
   quantityMax: null
-  unit: not established
-  ingredient: ketogenic-diet
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
-  purpose: Research exposure; not a dosing recommendation.
+  unit: g carbohydrate/day
+  ingredient: Ketogenic diet
+  formulation: Lifestyle VLCK
+  route: Dietary protocol
+  frequency: Daily
+  duration: Study-specific
+  population: Adults with overweight, obesity, or type 2 diabetes in trials
+  purpose: Research protocol description; not a personal prescription.
+  note: Protein and total calories vary substantially; labels such as keto and low-carbohydrate are not interchangeable (S6).
   sourceCategory: research
-  note: "Original Deep Research fields preserved: {\"lifestyle_vlck\":\"Clinical trials commonly use less than 50 g carbohydrate/day or less than 10% of energy; protein and calories vary substantially between studies, so 'keto' labels are not interchangeable.\",\"sourceId\":[\"S6\"]}"
   sourceId: S6
-- label: ketogenic-diet research exposure 5
-  amount: Not established
-  quantity: null
+- label: Operational ketosis measure
+  amount: Blood βHB ≥0.5 mmol/L
+  quantity: 0.5
   quantityMax: null
-  unit: not established
-  ingredient: ketogenic-diet
-  formulation: Not established
-  route: Not established
-  frequency: Not established
-  duration: Not established
-  population: Not established
-  purpose: Research exposure; not a dosing recommendation.
-  sourceCategory: research
-  note: 'Original Deep Research fields preserved: {"ketosis_measure":"BHB of at least 0.5 mmol/L is a common physiological-ketosis threshold; the relationship between a higher BHB value and better non-epilepsy outcomes has not been established.","sourceId":["S1","S12"]}'
+  unit: mmol/L
+  ingredient: Ketogenic diet
+  formulation: Blood βHB measurement
+  route: Capillary blood
+  frequency: Study-specific
+  duration: Point measurement
+  population: People following dietary protocols
+  purpose: Biomarker threshold; not an efficacy target.
+  note: The relationship between a higher BHB value and better non-epilepsy outcomes is not established (S1, S12).
+  sourceCategory: reference
   sourceId: S1
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: ketogenic-diet-pk-1
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
+- id: ketogenic-diet-pk
+  analyte: β-hydroxybutyrate and related ketone markers
+  route: Dietary protocol
+  formulation: Classical, modified, and lifestyle ketogenic diets
+  population: Human KD studies
   endpoint: elimination-half-life
   statistic: not-established
   value: null
   low: null
   high: null
   unit: hours
-  context: 'Original Deep Research PK detail: {"classification":"A KD has no drug-style single-compartment pharmacokinetics. Its exposure is a dynamic balance among dietary substrate delivery, insulin suppression, hepatic ketogenesis, tissue uptake and oxidation, renal handling, and measurement timing.","sourceId":["S1","S12","S16"]}'
+  context: Not established for a dietary protocol; a KD has no drug-style single-compartment PK. Ketosis develops over days and varies with carbohydrate and protein intake, meal timing, fasting, exercise, energy balance, hydration, insulin, and renal handling. Nutritional ketosis is distinct from diabetic ketoacidosis (S1, S12, S16).
   sourceId: S1
-  modelEligible: false
-- id: ketogenic-diet-pk-2
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"onset":"Ketosis generally develops over several days of carbohydrate restriction; historical classical-KD protocols used a 2–3-day fast to induce ketones, although fasting is now optional in many programs.","sourceId":["S1"]}'
-  sourceId: S1
-  modelEligible: false
-- id: ketogenic-diet-pk-3
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"production":"The liver converts fatty-acid-derived acetyl-CoA into acetoacetate and BHB; acetoacetate can decarboxylate to acetone. The liver exports ketones for use by the brain, heart, skeletal muscle, and other tissues.","sourceId":["S12"]}'
-  sourceId: S12
-  modelEligible: false
-- id: ketogenic-diet-pk-4
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"tissue_use":"BHB and acetoacetate are converted to acetyl-CoA in ketone-utilizing tissues and enter the citric-acid cycle; the brain can increase ketone use when glucose availability or brain glucose utilization is reduced.","sourceId":["S12"]}'
-  sourceId: S12
-  modelEligible: false
-- id: ketogenic-diet-pk-5
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"variability":"BHB changes with meal timing, carbohydrate and protein intake, fasting, exercise, energy balance, hydration, and insulin availability; a single reading is therefore not a stable summary of dietary exposure.","sourceId":["S1","S12"]}'
-  sourceId: S1
-  modelEligible: false
-- id: ketogenic-diet-pk-6
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: 'Original Deep Research PK detail: {"safety_boundary":"Nutritional ketosis normally occurs with preserved glucose regulation and acid-base balance. Diabetic ketoacidosis is a separate high-anion-gap acidotic state and may be euglycemic in people taking SGLT2 inhibitors.","sourceId":["S16"]}'
-  sourceId: S16
   modelEligible: false
 ```
 
 ## Modifiers
 
 ```yaml
-- label: Modifier 1
-  effect: Variable
-  detail: '{"metabolic":"Insulin availability, carbohydrate dose, protein dose, fasting, exercise, and energy deficit modify the probability and magnitude of BHB elevation.","sourceId":["S1","S12","S16"]}'
+- label: Carbohydrate, protein, and insulin
+  effect: Insulin availability and carbohydrate or protein dose modify probability and magnitude of BHB elevation.
+  detail: The same reported carbohydrate intake does not guarantee the same BHB concentration.
   sourceId: S1
-  observationId: ketogenic-diet-pk-1
+  observationId: ketogenic-diet-pk
   factorType: other
   direction: variable
-- label: Modifier 2
-  effect: Variable
-  detail: '{"individual_variation":"The same reported carbohydrate intake does not guarantee the same BHB concentration; therapeutic response and adherence vary across age, diabetes status, body composition, and clinical condition.","sourceId":["S1","S6"]}'
-  sourceId: S1
-  observationId: ketogenic-diet-pk-1
-  factorType: other
-  direction: variable
-- label: Modifier 3
-  effect: Variable
-  detail: "{\"adherence\":\"Adherence is a major effect modifier. A diabetes meta-analysis identified loss of carbohydrate adherence as a principal limitation, while fewer than 10% of DIETFITS participants reached the study's most extreme ketogenic-like intake pattern.\",\"sourceId\":[\"S6\",\"S10\"]}"
+- label: Adherence
+  effect: Adherence is a major effect modifier.
+  detail: Loss of carbohydrate adherence is a principal limitation in diabetes studies; fewer than 10% of DIETFITS participants reached the most extreme ketogenic-like intake pattern.
   sourceId: S6
-  observationId: ketogenic-diet-pk-1
+  observationId: ketogenic-diet-pk
   factorType: other
   direction: variable
-- label: Modifier 4
-  effect: Variable
-  detail: '{"food_matrix":"Fat source, protein source, fiber, vegetable intake, and weight change can alter lipid and gastrointestinal outcomes even when carbohydrate restriction is similar.","sourceId":["S1","S10","S12"]}'
-  sourceId: S1
-  observationId: ketogenic-diet-pk-1
+- label: Food matrix and diet quality
+  effect: Fat and protein sources, fiber, vegetable intake, and weight change alter lipid and gastrointestinal outcomes even when carbohydrate restriction is similar.
+  detail: Carbohydrate percentage alone does not determine lipid response.
+  sourceId: S10
+  observationId: ketogenic-diet-pk
   factorType: other
   direction: variable
-- label: Modifier 5
-  effect: Variable
-  detail: '{"clinical_context":"Growth, feeding difficulty, renal function, nephrolithiasis history, hyperlipidemia, diabetes, low bone density, pregnancy, and gastrointestinal disease modify feasibility and risk.","sourceId":["S1"]}'
+- label: Clinical context
+  effect: Growth, renal function, nephrolithiasis history, hyperlipidemia, diabetes, low bone density, pregnancy, and gastrointestinal disease alter feasibility and risk.
+  detail: Therapeutic programs monitor these factors explicitly.
   sourceId: S1
-  observationId: ketogenic-diet-pk-1
+  observationId: ketogenic-diet-pk
+  factorType: other
+  direction: variable
+- label: Exercise and energy balance
+  effect: Exercise and energy deficit alter substrate demand and body-composition interpretation.
+  detail: Ketogenic diets can increase fat oxidation while high-intensity performance remains neutral or unfavorable in meta-analysis.
+  sourceId: S14
+  observationId: ketogenic-diet-pk
   factorType: other
   direction: variable
 ```
@@ -498,425 +217,298 @@ Every HTTPS link returned by this run is represented in References. Links whose 
 ## Effects
 
 ```yaml
-- id: ketogenic-diet-effect-1
-  conflictingSourceIds: []
-  reportType: measured-assessment
+- id: ketogenic-diet-effect-gastrointestinal
   conceptId: perception
-  name: ketogenic-diet effect
+  name: Gastrointestinal tolerance
   direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S4
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: ketogenic-diet-effect-2
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: ketogenic-diet effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S6
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: ketogenic-diet-effect-3
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: ketogenic-diet effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S6
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: ketogenic-diet-effect-4
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: ketogenic-diet effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S8
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: ketogenic-diet-effect-5
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: ketogenic-diet effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S10
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: ketogenic-diet-effect-6
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: ketogenic-diet effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
+  evidence: Subjective reports
+  description: Constipation, emesis, abdominal pain, and other gastrointestinal symptoms are common management issues in therapeutic pediatric practice, especially early in treatment.
   sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: ketogenic-diet-effect-7
-  conflictingSourceIds: []
+  population: Pediatric therapeutic KD practice
+  exposure: Classical and related therapeutic KD protocols
+  instrument: Clinical adverse-event report
+  magnitude: Reported in up to 50% in cited practice context
   reportType: measured-assessment
+  conflictingSourceIds: []
+- id: ketogenic-diet-effect-healthy-cognition
   conceptId: perception
-  name: ketogenic-diet effect
+  name: Subjective mood and sleep
   direction: Variable
   evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S14
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: ketogenic-diet-effect-8
-  conflictingSourceIds: []
-  reportType: measured-assessment
-  conceptId: perception
-  name: ketogenic-diet effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
+  description: In a small isocaloric healthy-adult crossover study, three weeks of ketosis did not differ from a high-carbohydrate diet in mood or subjective sleep.
   sourceId: S11
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: ketogenic-diet-effect-9
-  conflictingSourceIds: []
+  population: 11 healthy normal-weight adults
+  exposure: Approximately 3-week isocaloric KD
+  instrument: Mood and sleep questionnaires
+  magnitude: "Null"
   reportType: measured-assessment
-  conceptId: perception
-  name: ketogenic-diet effect
-  direction: Variable
-  evidence: Human research
-  description: Returned Deep Research effect record; see the preserved report detail in Evidence note.
-  sourceId: S12
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
+  conflictingSourceIds: []
 ```
 
 ## Outcomes
 
 ```yaml
-- id: ketogenic-diet-outcome-1
-  conflictingSourceIds: []
-  reportType: measured-assessment
+- id: ketogenic-diet-outcome-epilepsy
   conceptId: attention
-  name: ketogenic-diet outcome
-  direction: Variable
+  name: Seizure frequency in drug-resistant epilepsy
+  direction: Decreased
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S1
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: ketogenic-diet-outcome-2
-  conflictingSourceIds: []
+  description: In the Neal randomized trial, analyzed KD participants had seizure frequency at 62% of baseline versus 137% of baseline in controls at three months; Cochrane found child seizure-freedom RR 3.16 (95% CI 1.20–8.35) and seizure-reduction RR 5.80 (95% CI 3.48–9.65), with low or very-low certainty.
+  sourceId: S2
+  population: Children with drug-resistant epilepsy
+  exposure: Therapeutic KD versus usual care
+  instrument: Seizure frequency
+  magnitude: RR 3.16 seizure freedom; RR 5.80 seizure reduction
   reportType: measured-assessment
-  conceptId: attention
-  name: ketogenic-diet outcome
-  direction: Variable
+  conflictingSourceIds: []
+  study:
+    id: kd-epilepsy
+    design: Randomized trials and Cochrane synthesis
+    comparator: Usual care
+    route: Dietary protocol
+    formulation: Therapeutic KD
+    assessmentTime: 3 months
+    sampleSize: 145
+- id: ketogenic-diet-outcome-weight
+  conceptId: body-fat-mass
+  name: Weight management
+  direction: Decreased
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
+  description: Low-carbohydrate diets produced small early weight advantages in pooled trials, but Cochrane judged the overall difference little to none clinically and long-term superiority over balanced calorie-reducing diets was not durable.
   sourceId: S4
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: ketogenic-diet-outcome-3
-  conflictingSourceIds: []
+  population: Adults with overweight or obesity
+  exposure: Low-carbohydrate or ketogenic-like diet versus low-fat/balanced comparator
+  instrument: Body weight
+  magnitude: Small early differences; long-term difference generally <1 kg
   reportType: measured-assessment
-  conceptId: attention
-  name: ketogenic-diet outcome
-  direction: Variable
+  conflictingSourceIds: []
+- id: ketogenic-diet-outcome-diabetes
+  conceptId: hba1c
+  name: Type 2 diabetes glycemia
+  direction: Decreased
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
+  description: Across eight VLCK trials, HbA1c favored VLCK by 0.61 percentage points at three months and 0.58 at six months, but weight advantage was absent at 12 months and durable remission or event prevention was not established.
   sourceId: S6
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: ketogenic-diet-outcome-4
-  conflictingSourceIds: []
+  population: 648 adults with type 2 diabetes
+  exposure: Very-low-carbohydrate ketogenic diet versus comparator diets
+  instrument: HbA1c
+  magnitude: −0.61% at 3 months; −0.58% at 6 months
   reportType: measured-assessment
-  conceptId: attention
-  name: ketogenic-diet outcome
+  conflictingSourceIds: []
+- id: ketogenic-diet-outcome-lipids
+  conceptId: ldl-cholesterol
+  name: Lipid response
   direction: Variable
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
+  description: "Lipid responses are heterogeneous: a ketogenic-like DIETFITS subgroup had a transient approximately 12% LDL-C rise, and an Alzheimer disease KD trial increased LDL-C and total cholesterol."
+  sourceId: S10
+  population: Adults in DIETFITS and Alzheimer disease KD trial
+  exposure: Ketogenic-like diet or modified KD
+  instrument: LDL-C and total cholesterol
+  magnitude: Direction heterogeneous
+  reportType: measured-assessment
+  conflictingSourceIds: []
+- id: ketogenic-diet-outcome-healthy-cognition
+  conceptId: cognitive-performance
+  name: Healthy cognition
+  direction: Variable
+  evidence: Human research
+  description: Three weeks of isocaloric KD produced BHB around 1.0 mmol/L but no difference from a high-carbohydrate diet in vigilance, visual learning, working memory, executive function, mood, or sleep.
   sourceId: S11
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: ketogenic-diet-outcome-5
-  conflictingSourceIds: []
+  population: 11 healthy normal-weight adults
+  exposure: Approximately 3-week isocaloric KD
+  instrument: Cognitive battery
+  magnitude: "Null"
   reportType: measured-assessment
-  conceptId: attention
-  name: ketogenic-diet outcome
+  conflictingSourceIds: []
+- id: ketogenic-diet-outcome-exercise
+  conceptId: exercise
+  name: Athletic performance
   direction: Variable
   evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
-  sourceId: S11
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
-- id: ketogenic-diet-outcome-6
-  conflictingSourceIds: []
+  description: A meta-analysis favored carbohydrate-rich diets for time-trial and 1-RM performance, while KD favored total and fat-mass loss; KD was not a reliable high-intensity enhancement strategy.
+  sourceId: S14
+  population: Athletes and trained adults
+  exposure: KD versus carbohydrate-rich comparator
+  instrument: Time trial and 1-RM tests
+  magnitude: Neutral-to-unfavorable for performance
   reportType: measured-assessment
-  conceptId: attention
-  name: ketogenic-diet outcome
+  conflictingSourceIds: []
+- id: ketogenic-diet-outcome-longevity
+  conceptId: body-fat-mass
+  name: Longevity
   direction: Variable
-  evidence: Human research
-  description: Returned Deep Research outcome record; see the preserved report detail in Evidence note.
+  evidence: Limited research
+  description: An adult-mouse study reported increased lifespan and healthspan, but this animal result does not establish human lifespan extension.
   sourceId: S15
-  population: Not established
-  exposure: Not established
-  instrument: null
-  magnitude: null
+  population: Adult mice
+  exposure: Ketogenic diet versus standard mouse diets
+  instrument: Survival and healthspan
+  magnitude: Preclinical only
+  reportType: measured-assessment
+  conflictingSourceIds: []
 ```
 
 ## Mechanisms
 
 ```yaml
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"substrate_shift":"Carbohydrate restriction lowers glucose availability and insulin signaling relative to a carbohydrate-rich diet, increasing adipose fatty-acid release, hepatic beta-oxidation, and ketogenesis.","sourceId":["S12","S16"]}'
+- title: Substrate shift and ketogenesis
+  description: Carbohydrate restriction lowers glucose availability and insulin signaling, increasing adipose fatty-acid release, hepatic β-oxidation, and ketogenesis.
   sourceId: S12
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"brain_fuel":"Ketones provide an alternative brain fuel and may partly compensate for reduced cerebral glucose utilization; this is a mechanistic rationale in Alzheimer disease, not proof of clinical disease modification.","sourceId":["S12"]}'
+- title: Alternative brain fuel
+  description: Ketones can provide alternative brain fuel; this is a rationale for investigation in Alzheimer disease, not proof of disease modification.
   sourceId: S12
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"seizure_control":"Proposed anticonvulsant mechanisms include altered neuronal fuel use, adenosine signaling, neurotransmitter balance, ion-channel excitability, mitochondrial/redox effects, and other parallel metabolic changes. The epilepsy consensus describes the mechanism as multiple and not clinically resolved.","sourceId":["S1"]}'
+- title: Potential anticonvulsant mechanisms
+  description: Proposed pathways include fuel use, adenosine signaling, neurotransmitter balance, ion-channel excitability, mitochondrial and redox effects; the clinical mechanism remains unresolved.
   sourceId: S1
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"weight":"Weight loss can arise from lower energy intake, increased satiety, reduced dietary energy density, early fluid shifts, and adherence effects; controlled comparisons do not demonstrate that ketones alone create a universal metabolic advantage.","sourceId":["S4","S5","S6"]}'
-  sourceId: S4
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"diabetes":"Lower carbohydrate delivery reduces postprandial glucose exposure and can reduce insulin requirements; the magnitude and persistence of HbA1c improvement depend on adherence, medication changes, weight loss, and comparator diet.","sourceId":["S6","S7","S8"]}'
+- title: Weight and glycemic effects
+  description: Weight change can arise from lower energy intake, satiety, fluid shifts, and adherence; reduced carbohydrate delivery can lower postprandial glucose and insulin requirements, with persistence dependent on adherence and comparator diet.
   sourceId: S6
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"lipids":"LDL-C and triglyceride responses are not determined by carbohydrate percentage alone; baseline phenotype, weight change, saturated-versus-unsaturated fat, and diet quality are plausible contributors to the observed heterogeneity.","sourceId":["S4","S8","S10","S12"]}'
-  sourceId: S4
-- title: Research mechanism
-  description: 'Original Deep Research mechanism: {"longevity":"Mouse longevity findings are compatible with hypotheses involving fuel switching, ketone signaling, stress resistance, and metabolic remodeling, but these mechanisms remain preclinical and cannot be treated as human longevity evidence.","sourceId":["S15"]}'
-  sourceId: S15
+- title: Lipid heterogeneity
+  description: LDL-C and triglyceride responses depend on baseline phenotype, weight change, saturated versus unsaturated fat, and overall diet quality rather than carbohydrate percentage alone.
+  sourceId: S10
 ```
 
 ## Cautions
 
 ```yaml
-- title: Research caution
-  description: 'Original Deep Research caution: {"absolute_metabolic_contraindications":"Primary carnitine deficiency; carnitine palmitoyltransferase I or II deficiency; carnitine-translocase deficiency; fatty-acid beta-oxidation defects including MCAD, LCAD, SCAD, long-chain 3-hydroxyacyl-CoA, or medium-chain 3-hydroxyacyl-CoA deficiency; pyruvate-carboxylase deficiency; and porphyria.","sourceId":["S1"]}'
+- title: Metabolic contraindications
+  description: Fatty-acid oxidation defects, primary carnitine deficiency, pyruvate-carboxylase deficiency, and porphyria are among contraindication contexts in therapeutic KD guidance.
   sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"relative_cautions":"Inability to maintain adequate nutrition, a surgically approachable epilepsy lesion, inadequate caregiver capacity, propofol co-use, chronic metabolic acidosis, kidney stones, hyperlipidemia, poor weight gain, reflux, constipation, swallowing difficulty, and cardiomyopathy require protocol-level consideration.","sourceId":["S1"]}'
-  sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"hypoglycemia":"Lower carbohydrate intake can reduce glucose requirements; hypoglycemia is particularly relevant when insulin or insulin-secretagogue therapy is continued without accounting for the changed carbohydrate exposure.","sourceId":["S7","S16"]}'
-  sourceId: S7
-- title: Research caution
-  description: 'Original Deep Research caution: {"ketoacidosis":"Nutritional ketosis is not diabetic ketoacidosis. SGLT2 inhibitors, insulin reduction, fasting, dehydration, illness, surgery, and low-carbohydrate intake can combine to produce euglycemic ketoacidosis.","sourceId":["S16"]}'
+- title: Ketoacidosis and glucose-lowering therapy
+  description: Nutritional ketosis is distinct from diabetic ketoacidosis; SGLT2 inhibitors, insulin reduction, fasting, dehydration, illness, surgery, and low-carbohydrate intake can combine to produce euglycemic ketoacidosis.
   sourceId: S16
-- title: Research caution
-  description: 'Original Deep Research caution: {"renal_and_bone":"Therapeutic KD protocols monitor kidney-stone risk, calcium/vitamin D status, bone health, and acid-base complications; pediatric programs also monitor growth and selenium-related cardiac risk.","sourceId":["S1"]}'
+- title: Renal, bone, and micronutrient monitoring
+  description: Therapeutic protocols monitor kidney stones, calcium/vitamin D, bone health, acid-base status, growth, selenium, gastrointestinal tolerance, and restricted food-group micronutrients.
   sourceId: S1
-- title: Research caution
-  description: 'Original Deep Research caution: {"pregnancy":"Pregnancy safety and efficacy were not established sufficiently for the epilepsy consensus to recommend KD as safe and effective during pregnancy.","sourceId":["S1"]}'
+- title: Pregnancy and growth
+  description: Pregnancy safety and efficacy were not established sufficiently for the epilepsy consensus to recommend KD as safe and effective during pregnancy; pediatric growth requires active monitoring.
   sourceId: S1
+- title: Lipid response
+  description: LDL-C and total cholesterol can rise in some KD trials, so lipid response should not be inferred from weight or BHB alone.
+  sourceId: S12
 ```
 
 ## Claims
 
 ```yaml
-- id: ketogenic-diet-claim-1
-  assertion: Keto cures epilepsy.
-  relation: evidence-boundary
+- id: ketogenic-diet-claim-cure
+  assertion: Keto cures epilepsy
+  relation: evidence-assessment
   participants:
     - entityId: substance:ketogenic-diet
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+      role: subject
+    - entityId: tag:energy-buffer
+      role: context
+  context: Unsupported; KD is an adjunctive seizure-reduction treatment for some people with drug-resistant epilepsy, not a universal cure.
   sourceIds:
     - S1
     - S2
-    - S3
-  conflictingSourceIds:
-    - S1
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: ketogenic-diet-claim-2
-  assertion: Keto always causes more weight loss.
-  relation: evidence-boundary
+  limitation: Trial certainty is low or very low and response is heterogeneous.
+- id: ketogenic-diet-claim-weight
+  assertion: Keto always causes more weight loss
+  relation: evidence-assessment
   participants:
     - entityId: substance:ketogenic-diet
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+      role: subject
+    - entityId: tag:energy-buffer
+      role: context
+  context: Unsupported; early differences can occur, but long-term advantages are small or absent versus balanced calorie-reducing diets.
   sourceIds:
     - S4
     - S5
-  conflictingSourceIds:
-    - S1
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: ketogenic-diet-claim-3
-  assertion: Keto reverses type 2 diabetes.
-  relation: evidence-boundary
+  limitation: Adherence and energy intake vary.
+- id: ketogenic-diet-claim-diabetes
+  assertion: Keto reverses type 2 diabetes
+  relation: evidence-assessment
   participants:
     - entityId: substance:ketogenic-diet
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+      role: subject
+    - entityId: tag:energy-buffer
+      role: context
+  context: Overstated; short-term HbA1c, weight, and medication improvements occur in some trials, but durable remission and cardiovascular superiority are not established.
   sourceIds:
     - S6
     - S7
     - S8
-  conflictingSourceIds:
-    - S1
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: ketogenic-diet-claim-4
-  assertion: Keto reliably improves mental clarity in healthy people.
-  relation: evidence-boundary
+  limitation: VLCK evidence is adherence-sensitive and heterogeneous.
+- id: ketogenic-diet-claim-clarity
+  assertion: Keto reliably improves mental clarity in healthy people
+  relation: evidence-assessment
   participants:
     - entityId: substance:ketogenic-diet
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+      role: subject
+    - entityId: tag:energy-buffer
+      role: context
+  context: Not established; a controlled healthy-adult trial found no benefit across cognitive, mood, or sleep endpoints.
   sourceIds:
     - S11
-  conflictingSourceIds:
-    - S1
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: ketogenic-diet-claim-5
-  assertion: Keto enhances athletic performance.
-  relation: evidence-boundary
+  limitation: Small sample and short duration.
+- id: ketogenic-diet-claim-performance
+  assertion: Keto enhances athletic performance
+  relation: evidence-assessment
   participants:
     - entityId: substance:ketogenic-diet
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+      role: subject
+    - entityId: tag:energy-buffer
+      role: context
+  context: Not established; evidence is neutral-to-unfavorable for high-intensity performance and strength despite increased fat oxidation.
   sourceIds:
     - S14
-  conflictingSourceIds:
-    - S1
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: ketogenic-diet-claim-6
-  assertion: High LDL-C on keto is harmless.
-  relation: evidence-boundary
+  limitation: Performance depends on test, adaptation, and comparator.
+- id: ketogenic-diet-claim-longevity
+  assertion: Keto extends human lifespan
+  relation: evidence-assessment
   participants:
     - entityId: substance:ketogenic-diet
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
-  sourceIds:
-    - S4
-    - S10
-    - S12
-  conflictingSourceIds:
-    - S1
-  assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
-- id: ketogenic-diet-claim-7
-  assertion: Keto extends human lifespan.
-  relation: evidence-boundary
-  participants:
-    - entityId: substance:ketogenic-diet
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
-  context: Returned Deep Research report
+      role: subject
+    - entityId: tag:energy-buffer
+      role: context
+  context: Unproven; mouse longevity evidence cannot establish human benefit.
   sourceIds:
     - S15
-  conflictingSourceIds:
-    - S1
+  conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Source-specific limitation preserved in the returned report.
+  limitation: Animal translation is uncertain.
 ```
 
 ## Interactions
 
 ```yaml
-- id: interaction-1
-  name: Documented or hypothesized coexposure
+- id: ketogenic-diet-interaction-insulin
+  name: Insulin and secretagogues
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"insulin":"Carbohydrate restriction can lower glucose and insulin requirements; continuing the same insulin exposure may increase hypoglycemia risk. The evidence base supports medication reduction in some trials but does not define a universal adjustment.","sourceId":["S7","S16"]}'
+  summary: Reduced carbohydrate intake can lower glucose requirements; continuing insulin or insulin-secretagogue therapy without adjustment can increase hypoglycemia risk.
   sourceId: S7
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-2
-  name: Documented or hypothesized coexposure
+  context: Documented pharmacodynamic concern
+- id: ketogenic-diet-interaction-sglt2
+  name: SGLT2 inhibitors
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"sulfonylureas_and_secretagogues":"Insulin-secretagogue exposure can become mismatched to lower carbohydrate intake; small randomized diabetes data reported discontinuation of some sulfonylureas or DPP-4 inhibitors in the VLCK arm.","sourceId":["S7"]}'
-  sourceId: S7
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-3
-  name: Documented or hypothesized coexposure
-  otherSlug: null
-  summary: 'Original Deep Research interaction: {"sglt2_inhibitors":"SGLT2 inhibitors increase susceptibility to ketogenesis and euglycemic diabetic ketoacidosis in the setting of low-carbohydrate intake, insulin reduction, fasting, dehydration, illness, or surgery.","sourceId":["S16"]}'
+  summary: SGLT2 inhibitors combined with low carbohydrate, insulin reduction, dehydration, illness, or surgery can increase euglycemic ketoacidosis concern.
   sourceId: S16
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-4
-  name: Documented or hypothesized coexposure
+  context: Documented risk context
+- id: ketogenic-diet-interaction-propofol
+  name: Propofol and metabolic disease
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"antiseizure_medications":"KD is commonly used with antiseizure drugs, but human pharmacodynamic-interaction data are sparse. One study cited by the epilepsy consensus associated concomitant lamotrigine with lower ketones and reduced diet efficacy.","sourceId":["S1"]}'
+  summary: Therapeutic KD guidance identifies propofol co-use and chronic metabolic acidosis as protocol-level considerations.
   sourceId: S1
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-5
-  name: Documented or hypothesized coexposure
+  context: Therapeutic guidance
+- id: ketogenic-diet-interaction-diuretics
+  name: Diuretics and renal handling
   otherSlug: null
-  summary: 'Original Deep Research interaction: {"medication_formulations":"Liquid, chewable, or other formulations may contain enough carbohydrate to affect a strict therapeutic ratio; epilepsy programs review medication carbohydrate content.","sourceId":["S1"]}'
+  summary: Fluid, electrolyte, and kidney-stone management can interact with diuretic use and renal risk; direct universal interaction estimates are unavailable.
   sourceId: S1
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
-- id: interaction-6
-  name: Documented or hypothesized coexposure
-  otherSlug: null
-  summary: 'Original Deep Research interaction: {"propofol":"Concurrent propofol use is listed as a relative contraindication in pediatric KDT guidance because of concern for a higher propofol-infusion-syndrome risk.","sourceId":["S1"]}'
-  sourceId: S1
-  context: Evidence context preserved from Deep Research
-  conflictingSourceIds:
-    - S1
+  context: Clinical monitoring context
 ```
 
 ## Experience links
@@ -985,9 +577,10 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   insight: Among 609 adults without diabetes, healthy low-fat and healthy low-carbohydrate diets produced no significant difference in 12-month weight loss.
   limitation: The low-carbohydrate intervention was not continuously verified as a strict KD; results reflect a behavioral diet program.
   funding: NIDDK, NHLBI, Stanford Clinical and Translational Science Award, and Nutrition Science Initiative
-  sponsorshipStatus: not-assessed
+  sponsorshipStatus: mixed-funding
   conflictsOfInterest: Authors reported none; funders reported no role in design, analysis, or publication.
-  conflictOfInterestStatus: not-assessed
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://jamanetwork.com/journals/jama/fullarticle/2673150
 - id: S6
   title: "Effect of a very low-carbohydrate ketogenic diet vs recommended diets in patients with type 2 diabetes: a meta-analysis"
   authors: Mohamed Rafiullah et al.
@@ -1011,7 +604,8 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Stephen Phinney reported Atkins Scientific Advisory Board membership, Virta Health founding, and book authorship; Frederick Hecht reported Virta Health advisory-board membership.
-  conflictOfInterestStatus: not-assessed
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/29269731/
 - id: S8
   title: "Comparison of the Effectiveness of Low Carbohydrate Versus Low Fat Diets, in Type 2 Diabetes: Systematic Review and Meta-Analysis of Randomized Controlled Trials"
   authors: Tanefa A. Apekey; Maria J. Maynard; Monia Kittana; Setor K. Kunutsor
@@ -1023,19 +617,8 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Authors declared no conflict of interest.
-  conflictOfInterestStatus: not-assessed
-- id: S9
-  title: "Weight, insulin resistance, blood lipids, and diet quality changes associated with ketogenic and ultra low-fat dietary patterns: a secondary analysis of the DIETFITS randomized clinical trial"
-  authors: Lara Aronica; Matthew J. Landry; Joseph Rigdon; Christopher D. Gardner
-  year: 2023
-  url: https://doi.org/10.3389/fnut.2023.1220020
-  kind: Secondary analysis of a randomized clinical trial
-  insight: Among small extreme-intake subgroups, ketogenic-like and ultra-low-fat patterns produced similar weight and insulin-resistance changes; ketogenic-like intake showed a transient LDL-C rise and lower triglyceride/HDL ratio.
-  limitation: Participants were not randomized to the extreme intake patterns; fewer than 10% of the parent trial reached those patterns.
-  funding: not-assessed
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: not-assessed
-  conflictOfInterestStatus: not-assessed
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/36297075/
 - id: S10
   title: "Weight, insulin resistance, blood lipids, and diet quality changes associated with ketogenic and ultra low-fat dietary patterns: a secondary analysis of the DIETFITS randomized clinical trial"
   authors: Lara Aronica; Matthew J. Landry; Joseph Rigdon; Christopher D. Gardner
@@ -1120,46 +703,26 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
-- id: dr-ketogenic-diet-link-1
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://charliefoundation.org/
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
+- id: S9
+  title: "Weight, insulin resistance, blood lipids, and diet quality changes associated with ketogenic and ultra low-fat dietary patterns: a secondary analysis of the DIETFITS randomized clinical trial"
+  authors: Lara Aronica; Matthew J. Landry; Joseph Rigdon; Christopher D. Gardner
+  year: 2023
+  url: https://doi.org/10.3389/fnut.2023.1220020
+  kind: Secondary analysis of a randomized clinical trial
+  insight: Among small extreme-intake subgroups, ketogenic-like and ultra-low-fat patterns produced similar weight and insulin-resistance changes; ketogenic-like intake showed a transient LDL-C rise and lower triglyceride/HDL ratio.
+  limitation: Participants were not randomized to the extreme intake patterns; fewer than 10% of the parent trial reached those patterns.
+  funding: not-assessed
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-ketogenic-diet-link-2
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://www.matthewsfriends.org/
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-ketogenic-diet-link-3
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://www.ilae.org/guidelines/guidelines-and-reports/optimal-clinical-management-of-children-receiving-dietary-therapies-for-epilepsy
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
+  conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
 
 ```yaml
-[]
+- jurisdiction: General
+  activity: Dietary protocol
+  status: This article describes dietary research and therapeutic guidance; legal status and clinical availability of ketogenic programs vary by jurisdiction and healthcare setting.
+  sourceUrl: https://www.ilae.org/guidelines/guidelines-and-reports/optimal-clinical-management-of-children-receiving-dietary-therapies-for-epilepsy
+  asOf: 2026-10-10
 ```

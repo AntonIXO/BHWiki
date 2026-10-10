@@ -1,7 +1,7 @@
 ---
 slug: berberine
-name: berberine
-subtitle: Evidence-specific research record.
+name: Berberine
+subtitle: Short-term metabolic evidence with formulation and interaction caveats.
 aliases:
   - berberine
   - Betberine
@@ -12,22 +12,22 @@ smiles: Not established
 category: Research subject
 tags: []
 accent: "#888888"
-reviewedAt: 2026-10-10
+reviewedAt: "2026-10-11"
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
   low: null
   high: null
-  context: The returned report does not establish a validated universal human terminal half-life.
-  sourceId: S1
-  observationId: berberine-pk-1
+  context: The cited sources describe low oral exposure and formulation-specific pharmacokinetics but do not establish a validated universal human terminal half-life for conventional berberine.
+  sourceId: S8
+  observationId: berberine-pk-summary
 kinetics:
   onset: Not established
-  peak: Not established
+  peak: Formulation- and study-specific; no single human value was established.
   duration: Not established
-  bioavailability: Not established
-  metabolism: Not established
-  sourceId: S1
+  bioavailability: Reported oral bioavailability is very low and varies by formulation and assay.
+  metabolism: Demethylation, demethylenation, reduction, hydroxylation, and conjugation have been described; metabolites may contribute to local or systemic activity.
+  sourceId: S7
 x-shape:
   - slug
   - name
@@ -60,345 +60,535 @@ x-shape:
   - references
   - legal
 x-order: 9007199254740991
-
-
 ---
 
 ## Summary
 
-Berberine is a plant-derived protoberberine/isoquinoline alkaloid usually supplied as a chloride/hydrochloride salt or another formulation. Human randomized evidence indicates modest short-term changes in glycemia and lipids, but estimates are heterogeneous, largely from China and Hong Kong, and frequently low or very-low certainty. Weight effects are small and inconsistent, including null randomized trials. Oral exposure is low, metabolites may contribute to activity, gastrointestinal effects are common, and clinically documented enzyme interactions exist. Pregnancy, breastfeeding, and infant exposure carry specific safety concerns related to bilirubin. [S1][S2][S3][S4][S5][S13] ([pubchem.ncbi.nlm.nih.gov](https://pubchem.ncbi.nlm.nih.gov/compound/Berberine-Chloride?utm_source=openai))
+Berberine is a plant-derived protoberberine alkaloid studied mainly as chloride or hydrochloride, with separate evidence for sulfate, phytosome, dihydroberberine, and HTD1801 formulations. Randomized evidence supports modest short-term changes in glucose and lipids, while weight findings conflict and long-term clinical outcomes remain unestablished. [S2][S3][S4][S9][S10][S16][S20]
 
 ## Description
 
-Berberine occurs in plants including *Berberis* and *Coptis*. Berberine chloride and berberine hydrochloride are listed as synonyms for the same chloride salt. Other studied products include berberine sulfate, berberine ursodeoxycholate (HTD1801), berberine Phytosome, and dihydroberberine. These preparations differ in chemical composition, dose basis, pharmacokinetics, and clinical evidence; findings from one should not automatically be assigned to another. [S1][S10][S11][S12][S17][S19] ([pubchem.ncbi.nlm.nih.gov](https://pubchem.ncbi.nlm.nih.gov/compound/Berberine-Chloride?utm_source=openai))
+Berberine occurs in plants including *Berberis* and *Coptis*. Salt, complex, and reduced forms are not interchangeable exposures: their dose basis, absorption, metabolites, and human evidence differ. The records below keep formulation-specific findings separate and label mechanistic or surrogate evidence as such. [S1][S7][S8][S10][S11][S12][S19]
 
 ## Evidence note
 
-**Full Deep Research detail retained from the returned report:**
-
-### Research Report: Research exactly berberine (correct alias Betberine; slug berberine). Return a compact complete BHWiki Markdown article only, <=4500 words. Required headings Summary, Description, Evidence note, Doses, Pharmacokinetics, Modifiers, Effects, Outcomes, Mechanisms, Cautions, Claims, Interactions, Experience links, References, Legal; frontmatter with x-shape; fenced yaml list for every non-prose section. Every factual claim needs a source link or sourceId. References require exact title, named authors/organization, year, HTTPS URL, kind, insight, limitation, funding, sponsorshipStatus, conflictsOfInterest, conflictOfInterestStatus, using not-assessed when unknown. Cover formulation/salts, human randomized glycemia/lipid/weight outcomes and nulls, bias/publication concerns, AMPK mechanisms without clinical inference, PK/metabolites, pregnancy/GI/drug interactions. No preface, metadata, audit tables, citation tokens, or recommendations.
-
----
-slug: berberine
-alias: Betberine
-x-shape: substance
----
-
-### Summary
-
-Berberine is a plant-derived protoberberine/isoquinoline alkaloid usually supplied as a chloride/hydrochloride salt or another formulation. Human randomized evidence indicates modest short-term changes in glycemia and lipids, but estimates are heterogeneous, largely from China and Hong Kong, and frequently low or very-low certainty. Weight effects are small and inconsistent, including null randomized trials. Oral exposure is low, metabolites may contribute to activity, gastrointestinal effects are common, and clinically documented enzyme interactions exist. Pregnancy, breastfeeding, and infant exposure carry specific safety concerns related to bilirubin. [S1][S2][S3][S4][S5][S13] ([pubchem.ncbi.nlm.nih.gov](https://pubchem.ncbi.nlm.nih.gov/compound/Berberine-Chloride?utm_source=openai))
-
-### Description
-
-Berberine occurs in plants including *Berberis* and *Coptis*. Berberine chloride and berberine hydrochloride are listed as synonyms for the same chloride salt. Other studied products include berberine sulfate, berberine ursodeoxycholate (HTD1801), berberine Phytosome, and dihydroberberine. These preparations differ in chemical composition, dose basis, pharmacokinetics, and clinical evidence; findings from one should not automatically be assigned to another. [S1][S10][S11][S12][S17][S19] ([pubchem.ncbi.nlm.nih.gov](https://pubchem.ncbi.nlm.nih.gov/compound/Berberine-Chloride?utm_source=openai))
-
-### Evidence note ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC12016319/?utm_source=openai))
-
-- evidence_base: "A placebo-focused glycemia meta-analysis identified 20 randomized studies and 1,761 participants."
-  sourceId: S2
-- glycemia_certainty: "Pooled effects were statistically favorable, but certainty was low for fasting glucose, HbA1c, fasting insulin, and HOMA-IR; fasting-glucose heterogeneity was high (I2=94%)."
-  sourceId: S2
-- lipid_base: "A lipid meta-analysis included 18 randomized studies and 1,788 participants; 15 of 18 studies were from mainland China or Hong Kong."
-  sourceId: S3
-- duration: "Lipid trials lasted 4–24 weeks; long-term clinical-outcome evidence is limited."
-  sourceId: S3
-- review_quality: "Among 54 systematic reviews, 45 (83.3%) were rated critically low by AMSTAR-2; among 452 assessed outcomes, 312 (69.03%) were graded very low certainty."
-  sourceId: S4
-- bias_concerns: "Publication bias was a downgrading factor for 70.58% of assessed outcomes; only 27.78% of reviews reported prospective registration, and 98.15% did not report funding of included studies."
-  sourceId: S4
-- interpretation: "Biomarker changes should not be interpreted as evidence of reduced cardiovascular events, mortality, diabetes complications, or durable obesity treatment."
-  sourceId: S2
-  note: "Inference from surrogate-endpoint designs and authors' calls for larger trials with clinical outcomes."
-### Doses ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/36941490/))
-
-- preparation: "Conventional berberine in placebo lipid trials"
-  observed_regimen: "900–1,500 mg/day"
-  observed_duration: "4–24 weeks"
-  status: "Research exposure; not a dosing instruction."
-  sourceId: S3
-- preparation: "Berberine hydrochloride/chloride"
-  observed_regimen: "1 g/day"
-  observed_duration: "6 months"
-  population: "Diabetes-free adults with obesity and MASLD"
-  sourceId: S9
-- preparation: "Berberine ursodeoxycholate (HTD1801)"
-  observed_regimen: "500 mg twice daily or 1,000 mg twice daily"
-  observed_duration: "12 weeks"
-  population: "Adults with type 2 diabetes"
-  note: "The stated mass is for the HTD1801 product, an ionic berberine–ursodeoxycholate salt, not an equivalent mass of conventional berberine."
-  sourceId: S10
-- preparation: "Dihydroberberine"
-  observed_regimen: "100 mg or 200 mg per dose; four doses in the crossover protocol"
-  population: "Five healthy men"
-  sourceId: S12
-- preparation: "Berberine sulfate"
-  observed_regimen: "400 mg single dose for acute infectious diarrhea; 1,200 mg with tetracycline in one cholera comparison"
-  note: "This was an acute gastrointestinal-infection trial, not a metabolic trial."
-  sourceId: S17
-### Pharmacokinetics ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/38888754/?utm_source=openai))
-
-- oral_bioavailability: "Review literature reports very low oral bioavailability, commonly described as below 1%; the value depends on species, assay, dose, and formulation."
-  sourceId: S8
-- absorption_limits: "Poor solubility, low intestinal permeability, P-glycoprotein efflux, and intestinal/hepatic first-pass metabolism limit parent-drug exposure."
-  sourceId: S8
-- metabolism: "Reported pathways include demethylation, demethylenation, reduction, hydroxylation, and subsequent glucuronide or sulfate conjugation."
-  sourceId: S7
-- metabolites: "Reported circulating or experimentally active metabolites include berberrubine, demethyleneberberine, columbamine, palmatine, and jatrorrhizine."
-  sourceId: S7
-- metabolite_interpretation: "Low parent-plasma exposure has led reviews to propose that metabolites and local intestinal effects may contribute materially to observed pharmacology."
-  sourceId: S7
-  note: "This is a pharmacokinetic interpretation, not proof of clinical efficacy."
-- phytosome: "A human pharmacokinetic study reported approximately tenfold higher molar AUC for berberine Phytosome than for unformulated berberine."
-  sourceId: S11
-- dihydroberberine: "In a five-person crossover study, 100 mg and 200 mg dihydroberberine produced greater two-hour plasma berberine exposure than 500 mg conventional berberine; glucose and insulin did not differ significantly."
-  sourceId: S12
-- HTD1801: "HTD1801 is an ionic berberine–ursodeoxycholate salt; pharmacokinetic studies report dissociation-related exposure patterns in which ursodeoxycholate appears earlier and at much higher plasma concentrations than berberine."
-  sourceId: S19
-### Modifiers ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/37598753/?utm_source=openai))
-
-- sex: "Glycemic subgroup analyses suggested larger fasting-glucose and HOMA-IR reductions in women than in men, but the comparison involved few studies and requires replication."
-  sourceId: S2
-- sex_and_lipids: "HDL-C increased in women in the lipid meta-analysis but not clearly in men."
-  sourceId: S3
-- baseline_status: "Larger fasting-glucose effects were reported in participants with diabetes and in Asian study populations; these subgroup findings are observational across trials, not definitive effect modifiers."
-  sourceId: S2
-- formulation: "Chloride/hydrochloride, sulfate, HTD1801, Phytosome, and dihydroberberine should be treated as separate evidence categories."
-  sourceId: S1
-  note: "Inference from differing chemical forms and study protocols."
-- dose_and_duration: "Trials varied in daily dose, number of administrations, treatment duration, background medication, and whether doses were taken with meals."
-  sourceId: S3
-- genotype: "A human CYP study found substantial individual variability and suggested that genotype may modify berberine-related enzyme inhibition."
-  sourceId: S5
-- geography: "Concentration of trials in China and Hong Kong limits generalizability to other populations."
-  sourceId: S3
-### Effects ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/37598753/?utm_source=openai))
-
-- domain: glycemia
-  findings: "Across placebo-controlled RCTs, fasting glucose changed by -0.52 mmol/L, HbA1c by -4.48 mmol/mol (-0.41%), fasting insulin by -2.36 mU/L, HOMA-IR by -0.85, and 2-hour postprandial glucose by -1.81 mmol/L."
-  evidence: "20 studies; 1,761 participants; low certainty for most outcomes."
-  sourceId: S2
-- domain: lipids
-  findings: "LDL-C -0.46 mmol/L, total cholesterol -0.48 mmol/L, triglycerides -0.34 mmol/L, apolipoprotein B -0.25 g/L, and HDL-C +0.06 mmol/L."
-  evidence: "18 studies; 1,788 participants; treatment generally 4–24 weeks."
-  sourceId: S3
-- domain: weight_old_meta_analysis
-  findings: "A 2020 meta-analysis found no significant body-weight change: -0.11 kg (95% CI -0.99 to 0.76; P=.79), despite small pooled reductions in BMI and waist circumference."
-  sourceId: S16
-- domain: weight_updated_meta_analysis
-  findings: "A 2026 meta-analysis of 23 RCT articles found pooled reductions of -0.88 kg in body weight, -0.48 kg/m2 in BMI, and -1.32 cm in waist circumference; waist-to-hip ratio was null."
-  limitation: "The review itself identified reporting, blinding, randomization, and formulation-standardization concerns."
-  sourceId: S20
-- domain: adiposity_null_trial
-  findings: "In a six-month, 1-g/day RCT in diabetes-free adults with obesity and MASLD, berberine did not reduce visceral adipose tissue or liver fat; the placebo-adjusted VAT difference was 1.38% (97.5% CI -2.43% to 5.18%; P=.42)."
-  sourceId: S9
-- domain: HTD1801
-  findings: "In a 12-week 113-person RCT, HTD1801 reduced HbA1c versus placebo by -0.4 percentage points at 500 mg twice daily and -0.7 points at 1,000 mg twice daily. The 1,000-mg group also reduced LDL-C by 11.2 mg/dL and total cholesterol by 15.1 mg/dL versus baseline-model estimates."
-  sourceId: S10
-### Outcomes ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/36941490/))
-
-- outcome_type: "surrogate biomarkers"
-  assessment: "The best-supported human effects are modest changes in glucose and lipid measurements over weeks to months."
-  sourceId: S2
-  sourceId_2: S3
-- outcome_type: "body weight"
-  assessment: "Evidence ranges from null body-weight effects to small pooled reductions; the large recent adiposity trial found no VAT or liver-fat benefit."
-  sourceId: S9
-  sourceId_2: S16
-  sourceId_3: S20
-- outcome_type: "clinical events"
-  assessment: "Randomized evidence has not established reductions in cardiovascular events, mortality, diabetes complications, or long-term disease progression."
-  sourceId: S3
-  note: "Inference from the short, surrogate-endpoint trial base and the meta-analysis call for trials assessing clinical outcomes."
-- outcome_type: "weight-loss-drug equivalence"
-  assessment: "The available data do not establish equivalence to GLP-1 receptor agonists, metformin, or approved obesity pharmacotherapies."
-  sourceId: S2
-  sourceId_2: S9
-  note: "Inference; the cited trials were not designed as equivalence trials."
-### Mechanisms ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/28290706/?utm_source=openai))
-
-- pathway: AMPK
-  evidence: "Cell and animal literature describes AMPK activation and downstream effects on energy sensing, glycolysis, fatty-acid oxidation, and lipid synthesis."
-  clinical_inference: "AMPK activation alone does not establish a human clinical benefit."
-  sourceId: S14
-- pathway: glucose_handling
-  evidence: "Preclinical reviews describe effects involving GLUT4, insulin-receptor-substrate signaling, glycolysis, intestinal carbohydrate handling, and pancreatic-cell signaling."
-  clinical_inference: "These are mechanistic observations, not validated causal explanations for every human RCT result."
-  sourceId: S14
-- pathway: lipid_regulation
-  evidence: "Experimental literature discusses AMPK, SREBP-related lipid synthesis, PCSK9, and hepatic lipid pathways."
-  clinical_inference: "Molecular pathway findings cannot be converted directly into cardiovascular-event claims."
-  sourceId: S14
-- pathway: metabolites
-  evidence: "Berberine metabolites can show pharmacology in cellular and animal models, including effects overlapping with the parent compound."
-  clinical_inference: "Human exposure–response relationships for individual metabolites remain incompletely defined."
-  sourceId: S7
-- pathway: gut_liver
-  evidence: "Low systemic parent-drug exposure and formulation-specific pharmacokinetics support possible intestinal and gut–liver contributions."
-  clinical_inference: "This remains a mechanistic hypothesis rather than proof of a distinct clinical mechanism."
-  sourceId: S7
-  sourceId_2: S8
-### Cautions ([ncbi.nlm.nih.gov](https://www.ncbi.nlm.nih.gov/books/NBK600384/?utm_source=openai))
-
-- pregnancy: "Human pregnancy evidence is sparse. MotherToBaby reports that birth-defect risk, miscarriage risk, and pregnancy outcomes are not established; one report involved 218 pregnancies exposed to huang lian, with six reported birth defects, but causality was not demonstrated."
-  sourceId: S13
-- breastfeeding_and_infants: "Berberine can pass into breast milk in an unknown amount and may increase neonatal bilirubin-related risk. NCCIH identifies pregnancy, breastfeeding, and infancy as contexts in which berberine should not be used."
-  sourceId: S13
-  sourceId_2: S18
-- neonatal_risk: "Berberine can alter bilirubin binding; neonatal bilirubin accumulation can cause kernicterus and brain injury."
-  sourceId: S13
-  sourceId_2: S18
-- gastrointestinal: "Reported effects include nausea, diarrhea, bloating, constipation, abdominal pain, and vomiting. In lipid RCTs, gastrointestinal events were reported in roughly 2–23% with berberine versus 2–15% with placebo."
-  sourceId: S3
-- formulation_specific_tolerability: "In the HTD1801 RCT, treatment-emergent adverse events occurred in 71.1% at 1,000 mg twice daily versus 39.5% with placebo; this result is specific to HTD1801 and its study population."
-  sourceId: S10
-- long_term_safety: "Most metabolic trials were short; long-term safety, sustained efficacy, and effects in people with major comorbidity remain incompletely characterized."
-  sourceId: S3
-  sourceId_2: S4
-- product_variability: "Different studies used different salts, extracts, complexes, doses, and analytical specifications, limiting direct product-to-product comparison."
-  sourceId: S4
-### Claims ([pubmed.ncbi.nlm.nih.gov](https://pubmed.ncbi.nlm.nih.gov/37598753/?utm_source=openai))
-
-- claim: "Berberine lowers blood sugar."
-  assessment: "Partly supported as a modest short-term biomarker effect in RCTs, with low certainty and substantial heterogeneity."
-  sourceId: S2
-- claim: "Berberine lowers cholesterol and triglycerides."
-  assessment: "Supported for modest short-term LDL-C, total-cholesterol, and triglyceride changes; clinical-event benefit is unestablished."
-  sourceId: S3
-- claim: "Berberine is a reliable weight-loss drug or 'nature's Ozempic.'"
-  assessment: "Not established. Weight meta-analyses conflict, and a recent six-month adiposity RCT was null for VAT and liver fat."
-  sourceId: S9
-  sourceId_2: S16
-  sourceId_3: S20
-- claim: "Berberine can replace metformin or GLP-1 therapy."
-  assessment: "Unsupported by equivalence trials or clinical-outcome evidence."
-  sourceId: S2
-  sourceId_2: S9
-- claim: "AMPK activation proves clinical effectiveness."
-  assessment: "Mechanistically invalid; AMPK findings are primarily preclinical and do not substitute for clinical outcomes."
-  sourceId: S14
-- claim: "Natural means safe."
-  assessment: "Incomplete: gastrointestinal effects, CYP interactions, product variability, and pregnancy/infant concerns are documented."
-  sourceId: S3
-  sourceId_2: S5
-  sourceId_3: S13
-- claim: "Berberine prevents cardiovascular disease, extends lifespan, or treats cancer."
-  assessment: "Not established by the cited human randomized outcome evidence."
-  sourceId: S3
-  sourceId_2: S4
-### Interactions ([pmc.ncbi.nlm.nih.gov](https://pmc.ncbi.nlm.nih.gov/articles/PMC4898966))
-
-- interaction: CYP3A4 substrates
-  human_evidence: "After berberine 300 mg three times daily for 14 days in healthy men, midazolam Cmax increased 38%, AUC increased 40%, and oral clearance decreased 27%."
-  sourceId: S5
-- interaction: CYP2D6 substrates
-  human_evidence: "The urinary dextromethorphan/dextrorphan ratio increased approximately ninefold after repeated berberine, indicating reduced CYP2D6 activity."
-  sourceId: S5
-- interaction: CYP2C9 substrates
-  human_evidence: "The losartan/E-3174 ratio approximately doubled, indicating reduced CYP2C9 activity in that study."
-  sourceId: S5
-- interaction: cyclosporine
-  human_evidence: "In six renal-transplant recipients receiving berberine 0.2 g three times daily for 12 days, cyclosporine AUC increased 34.5% and trough concentration increased 88.3%."
-  sourceId: S6
-- interaction: victim_drug_scope
-  evidence_tier: "Direct human evidence exists for probe drugs and cyclosporine; extension to other CYP3A4, CYP2D6, or CYP2C9 substrates is extrapolation."
-  sourceId: S5
-  sourceId_2: S6
-- interaction: transporters
-  evidence_tier: "P-glycoprotein and other transporter interactions are supported mainly by mechanistic or preclinical studies; clinical magnitude is not established."
-  sourceId: S8
-- interaction: glucose_lowering_medicines
-  evidence_tier: "Additive glucose-lowering effects are biologically plausible, but the RCT literature does not quantify symptomatic hypoglycemia risk across medication combinations."
-  sourceId: S2
-  note: "Inference from glucose-lowering effects and heterogeneous combination trials."
-### Experience links
-
-- label: "NCCIH consumer evidence and safety overview"
-  url: "https://www.nccih.nih.gov/health/in-the-news-berberine"
-  sourceId: S18
-- label: "Recent randomized adiposity trial"
-  url: "https://pubmed.ncbi.nlm.nih.gov/41543854/"
-  sourceId: S9
-- label: "Berberine ursodeoxycholate randomized diabetes trial"
-  url: "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2830820"
-  sourceId: S10
-- label: "Human berberine/dihydroberberine pharmacokinetic crossover"
-  url: "https://pubmed.ncbi.nlm.nih.gov/35010998/"
-  sourceId: S12
-- label: "Glycemic randomized-trial meta-analysis"
-  url: "https://pubmed.ncbi.nlm.nih.gov/37598753/"
-  sourceId: S2
-- note: "Personal anecdotes are not used as efficacy or safety evidence."
-  sourceId: S4
-
-<!-- Deep Research source-link ledger -->
-
-Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
+Human randomized metabolic outcomes, formulation-specific PK, interactions, pregnancy and infant cautions, and preclinical mechanisms are covered. Glycemic and lipid estimates are heterogeneous and mostly short-term; cardiovascular, mortality, and durable obesity benefits remain unestablished. [S2][S3][S4][S5][S6]
 
 ## Doses
 
 ```yaml
-[]
+- label: Conventional berberine in placebo lipid trials
+  amount: 900–1,500 mg/day
+  quantity: null
+  quantityMax: null
+  unit: mg/day
+  ingredient: Berberine
+  formulation: Conventional berberine; individual salt or extract varied
+  route: Oral
+  frequency: Study-specific divided dosing
+  duration: 4–24 weeks
+  population: Adults in randomized dyslipidemia trials
+  purpose: Research exposure; not a dosing recommendation.
+  sourceCategory: research
+  note: Trials differed in salt, background treatment, and administration schedule.
+  sourceId: S3
+- label: Berberine hydrochloride/chloride in obesity and MASLD trial
+  amount: 1 g/day
+  quantity: 1000
+  quantityMax: null
+  unit: mg/day
+  ingredient: Berberine hydrochloride/chloride
+  formulation: Berberine hydrochloride/chloride
+  route: Oral
+  frequency: Study-specific
+  duration: 6 months
+  population: Diabetes-free adults with obesity and MASLD
+  purpose: Research exposure; not a dosing recommendation.
+  sourceCategory: research
+  note: The randomized trial was null for visceral adipose tissue and liver fat.
+  sourceId: S9
+- label: Berberine ursodeoxycholate (HTD1801)
+  amount: 500 mg twice daily or 1,000 mg twice daily
+  quantity: null
+  quantityMax: null
+  unit: mg per dose
+  ingredient: HTD1801
+  formulation: Ionic berberine–ursodeoxycholate salt
+  route: Oral
+  frequency: Twice daily
+  duration: 12 weeks
+  population: Adults with type 2 diabetes
+  purpose: Research exposure; not a dosing recommendation.
+  sourceCategory: research
+  note: Product mass is not equivalent to conventional berberine mass.
+  sourceId: S10
+- label: Dihydroberberine crossover exposure
+  amount: 100 mg or 200 mg per dose
+  quantity: null
+  quantityMax: null
+  unit: mg per dose
+  ingredient: Dihydroberberine
+  formulation: Dihydroberberine
+  route: Oral
+  frequency: Four crossover doses
+  duration: Acute pharmacokinetic pilot
+  population: Five healthy men
+  purpose: Research exposure; not a dosing recommendation.
+  sourceCategory: research
+  note: Higher short-window plasma exposure did not produce a significant glucose or insulin difference.
+  sourceId: S12
+- label: Berberine sulfate infectious-diarrhea trial
+  amount: 400 mg single dose; 1,200 mg with tetracycline in one cholera comparison
+  quantity: null
+  quantityMax: null
+  unit: mg
+  ingredient: Berberine sulfate
+  formulation: Berberine sulfate
+  route: Oral
+  frequency: Protocol-specific
+  duration: Acute infectious-diarrhea treatment
+  population: Patients with enterotoxigenic Escherichia coli or Vibrio cholerae diarrhea
+  purpose: Research exposure; not a dosing recommendation.
+  sourceCategory: research
+  note: Historical disease-specific evidence; not evidence for metabolic use.
+  sourceId: S17
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: berberine-pk-1
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
+- id: berberine-pk-summary
+  analyte: Berberine and reported metabolites
+  route: Oral
+  formulation: Conventional berberine preparations; formulation differs by study
+  population: Humans represented in pharmacology and bioavailability reviews
   endpoint: elimination-half-life
   statistic: not-established
   value: null
   low: null
   high: null
   unit: hours
-  context: No validated universal terminal half-life was established in the returned report.
-  sourceId: S1
+  context: No validated universal terminal half-life was established. Reviews describe very low parent-drug exposure, limited solubility and permeability, P-glycoprotein efflux, first-pass metabolism, and conjugated or reduced metabolites.
+  sourceId: S8
+  modelEligible: false
+- id: berberine-pk-phytosome
+  analyte: Berberine
+  route: Oral
+  formulation: Berberine Phytosome versus unformulated berberine
+  population: Healthy human volunteers
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: Approximately tenfold higher molar AUC was reported for berberine Phytosome; this is an exposure comparison, not a half-life estimate or efficacy result.
+  sourceId: S11
+  modelEligible: false
+- id: berberine-pk-dihydroberberine
+  analyte: Plasma berberine after dihydroberberine
+  route: Oral
+  formulation: Dihydroberberine versus conventional berberine
+  population: Five healthy men in a randomized crossover pilot
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: Dihydroberberine 100 mg and 200 mg produced greater two-hour plasma berberine exposure than 500 mg conventional berberine; glucose and insulin did not differ significantly.
+  sourceId: S12
+  modelEligible: false
+- id: berberine-pk-htd1801
+  analyte: Berberine and ursodeoxycholate
+  route: Oral
+  formulation: HTD1801 (berberine ursodeoxycholate/BUDCA)
+  population: Patients with hyperlipidemia
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: HTD1801 is an ionic salt with dissociation-related exposure; ursodeoxycholate appears earlier and at much higher plasma concentrations than berberine. Findings cannot be generalized to conventional berberine chloride.
+  sourceId: S19
   modelEligible: false
 ```
 
 ## Modifiers
 
 ```yaml
-[]
+- label: Sex subgroup
+  effect: Variable
+  detail: Glycemic subgroup analyses suggested larger fasting-glucose and HOMA-IR reductions in women than in men, but few studies contributed and replication is needed.
+  sourceId: S2
+  observationId: berberine-pk-summary
+  factorType: other
+  direction: variable
+- label: Diabetes status and study population
+  effect: Variable
+  detail: Larger fasting-glucose effects were reported in participants with diabetes and in Asian study populations; these are cross-trial subgroup observations, not definitive effect modifiers.
+  sourceId: S2
+  observationId: berberine-pk-summary
+  factorType: other
+  direction: variable
+- label: Formulation
+  effect: Variable
+  detail: Chloride or hydrochloride, sulfate, HTD1801, Phytosome, and dihydroberberine represent separate evidence categories with different exposure data.
+  sourceId: S1
+  observationId: berberine-pk-summary
+  factorType: other
+  direction: variable
+- label: Dose and treatment duration
+  effect: Variable
+  detail: Trials varied in total daily dose, divided dosing, duration, background medication, and meal timing, limiting direct comparisons.
+  sourceId: S3
+  observationId: berberine-pk-summary
+  factorType: other
+  direction: variable
+- label: Genotype and CYP activity
+  effect: Variable
+  detail: The human CYP study found substantial individual variability and suggested that genotype may modify berberine-related enzyme inhibition.
+  sourceId: S5
+  observationId: berberine-pk-summary
+  factorType: genotype
+  direction: variable
+- label: Geography
+  effect: Variable
+  detail: Most dyslipidemia studies came from mainland China or Hong Kong, limiting generalizability to other populations.
+  sourceId: S3
+  observationId: berberine-pk-summary
+  factorType: other
+  direction: variable
 ```
 
 ## Effects
 
 ```yaml
-[]
+- id: berberine-effect-gastrointestinal
+  conceptId: perception
+  name: Gastrointestinal tolerability
+  direction: Variable
+  evidence: Human research
+  description: Nausea, diarrhea, bloating, constipation, abdominal pain, and vomiting were reported in randomized lipid studies; rates varied by trial and placebo exposure.
+  sourceId: S3
+  population: Adults in randomized dyslipidemia trials
+  exposure: Berberine preparations at study-specific doses
+  instrument: Adverse-event reporting
+  magnitude: Approximately 2–23% with berberine versus 2–15% with placebo across reviewed trials
+  reportType: measured-assessment
+  conflictingSourceIds: []
+- id: berberine-effect-subjective-gap
+  conceptId: perception
+  name: Subjective benefit evidence gap
+  direction: Variable
+  evidence: Limited research
+  description: The cited evidence base does not establish a reproducible subjective cognitive, mood, or general-well-being effect; most human studies measured metabolic or pharmacokinetic endpoints.
+  sourceId: S18
+  population: Populations summarized in a government evidence overview
+  exposure: Varied berberine products and doses
+  instrument: Not assessed
+  magnitude: Not established
+  reportType: measured-assessment
+  conflictingSourceIds: []
 ```
 
 ## Outcomes
 
 ```yaml
-[]
+- id: berberine-outcome-glycemia
+  conceptId: glycemic-control
+  name: Glycemic biomarkers
+  direction: Decreased
+  evidence: Human research
+  description: A meta-analysis of 20 randomized studies involving 1,761 participants found pooled reductions in fasting glucose, HbA1c, fasting insulin, HOMA-IR, and two-hour postprandial glucose, with low certainty for most outcomes and high fasting-glucose heterogeneity.
+  sourceId: S2
+  population: Adults in placebo-controlled randomized trials
+  exposure: Study-specific berberine formulations and doses
+  instrument: Fasting glucose, HbA1c, fasting insulin, HOMA-IR, and two-hour postprandial glucose
+  magnitude: Fasting glucose -0.52 mmol/L; HbA1c -4.48 mmol/mol (-0.41%); HOMA-IR -0.85
+  reportType: measured-assessment
+  conflictingSourceIds: []
+- id: berberine-outcome-lipids
+  conceptId: ldl-cholesterol
+  name: Lipid biomarkers
+  direction: Decreased
+  evidence: Human research
+  description: A meta-analysis of 18 randomized placebo-controlled studies involving 1,788 participants found modest reductions in LDL-C, total cholesterol, triglycerides, and ApoB; HDL-C increased slightly overall.
+  sourceId: S3
+  population: Adults in randomized dyslipidemia trials
+  exposure: Conventional berberine products at approximately 900–1,500 mg/day in many studies
+  instrument: LDL-C, total cholesterol, triglycerides, ApoB, and HDL-C
+  magnitude: LDL-C -0.46 mmol/L; total cholesterol -0.48 mmol/L; triglycerides -0.34 mmol/L; ApoB -0.25 g/L; HDL-C +0.06 mmol/L
+  reportType: measured-assessment
+  conflictingSourceIds: []
+- id: berberine-outcome-weight-old
+  conceptId: glycemic-control
+  name: Body weight in earlier meta-analysis
+  direction: Variable
+  evidence: Human research
+  description: The 2020 obesity meta-analysis found no significant pooled body-weight change despite small pooled reductions in BMI and waist circumference.
+  sourceId: S16
+  population: Participants in 10 randomized studies
+  exposure: Heterogeneous berberine preparations and doses
+  instrument: Body weight, BMI, and waist circumference
+  magnitude: Body weight -0.11 kg (95% CI -0.99 to 0.76; P=.79)
+  reportType: measured-assessment
+  conflictingSourceIds: [S20]
+- id: berberine-outcome-weight-updated
+  conceptId: glycemic-control
+  name: Body-size indices in updated meta-analysis
+  direction: Decreased
+  evidence: Human research
+  description: An updated meta-analysis of 23 randomized trial articles reported small pooled reductions in body weight, BMI, and waist circumference, while waist-to-hip ratio was null; reporting, blinding, randomization, and formulation-standardization concerns were noted.
+  sourceId: S20
+  population: Participants in 23 randomized trial articles
+  exposure: Heterogeneous berberine formulations
+  instrument: Body weight, BMI, waist circumference, and waist-to-hip ratio
+  magnitude: Body weight -0.88 kg; BMI -0.48 kg/m2; waist circumference -1.32 cm; waist-to-hip ratio null
+  reportType: measured-assessment
+  conflictingSourceIds: [S16]
+- id: berberine-outcome-adiposity-null
+  conceptId: glycemic-control
+  name: Visceral adipose tissue and liver fat
+  direction: Variable
+  evidence: Human research
+  description: In a six-month randomized trial among diabetes-free adults with obesity and MASLD, 1 g/day berberine did not reduce visceral adipose tissue or liver fat.
+  sourceId: S9
+  population: Diabetes-free adults with obesity and MASLD
+  exposure: Berberine hydrochloride/chloride, 1 g/day for six months
+  instrument: Visceral adipose tissue and liver-fat measurements
+  magnitude: Placebo-adjusted VAT difference 1.38% (97.5% CI -2.43% to 5.18%; P=.42)
+  reportType: measured-assessment
+  conflictingSourceIds: [S20]
+- id: berberine-outcome-htd1801
+  conceptId: hba1c
+  name: HTD1801 glycemic and lipid biomarkers
+  direction: Decreased
+  evidence: Human research
+  description: A 12-week phase 2 randomized trial found dose-dependent HbA1c reductions with HTD1801; the higher dose also reduced LDL-C and total cholesterol in the reported model estimates.
+  sourceId: S10
+  population: 113 adults with type 2 diabetes
+  exposure: HTD1801 500 mg twice daily or 1,000 mg twice daily
+  instrument: HbA1c, LDL-C, and total cholesterol
+  magnitude: HbA1c -0.4 percentage points at 500 mg twice daily and -0.7 points at 1,000 mg twice daily; higher-dose LDL-C -11.2 mg/dL and total cholesterol -15.1 mg/dL
+  reportType: measured-assessment
+  conflictingSourceIds: []
+- id: berberine-outcome-diarrhea
+  conceptId: diarrhea-duration
+  name: Acute infectious diarrhea
+  direction: Decreased
+  evidence: Human research
+  description: A historical randomized trial studied berberine sulfate for enterotoxigenic Escherichia coli and Vibrio cholerae diarrhea; this disease-specific result does not establish metabolic or general gastrointestinal benefit.
+  sourceId: S17
+  population: Patients with acute bacterial diarrhea
+  exposure: Berberine sulfate under protocol-specific regimens
+  instrument: Diarrhea duration and clinical response
+  magnitude: Exact estimate not normalized in the returned report
+  reportType: measured-assessment
+  conflictingSourceIds: []
+- id: berberine-outcome-clinical-events
+  conceptId: glycemic-control
+  name: Long-term clinical events
+  direction: Variable
+  evidence: Limited research
+  description: The cited randomized evidence has not established reductions in cardiovascular events, mortality, diabetes complications, or long-term disease progression.
+  sourceId: S3
+  population: Populations represented in short randomized biomarker trials
+  exposure: Heterogeneous berberine products
+  instrument: Clinical events were not adequately assessed
+  magnitude: Not established
+  reportType: measured-assessment
+  conflictingSourceIds: []
 ```
 
 ## Mechanisms
 
 ```yaml
-[]
+- title: AMPK and energy metabolism
+  description: Cellular and animal literature describes AMPK activation with downstream effects on energy sensing, glycolysis, fatty-acid oxidation, and lipid synthesis; this does not establish a human clinical benefit.
+  sourceId: S14
+- title: Glucose-handling pathways
+  description: Preclinical reviews discuss GLUT4, insulin-receptor-substrate signaling, glycolysis, intestinal carbohydrate handling, and pancreatic-cell signaling. These observations are not validated causal explanations for every human trial result.
+  sourceId: S14
+- title: Lipid-regulation pathways
+  description: Experimental literature discusses AMPK, SREBP-related lipid synthesis, PCSK9, and hepatic lipid pathways; molecular pathway findings cannot be converted directly into cardiovascular-event claims.
+  sourceId: S14
+- title: Metabolite pharmacology
+  description: Berberine metabolites can show pharmacology in experimental systems, but human exposure–response relationships remain incompletely defined.
+  sourceId: S7
+- title: Gut–liver contribution
+  description: Low parent-drug exposure and formulation-specific pharmacokinetics support possible intestinal and gut–liver contributions; this remains a mechanistic hypothesis rather than proof of a distinct clinical mechanism.
+  sourceId: S7
 ```
 
 ## Cautions
 
 ```yaml
-[]
+- title: Pregnancy evidence is sparse
+  description: MotherToBaby reports that birth-defect risk, miscarriage risk, and pregnancy outcomes are not established; a report of 218 pregnancies exposed to huang lian included six birth defects without demonstrated causality.
+  sourceId: S13
+- title: Breastfeeding and infancy
+  description: The amount entering breast milk is unknown, and bilirubin-related neonatal risk is a concern. NCCIH identifies pregnancy, breastfeeding, and infancy as contexts in which berberine should not be used.
+  sourceId: S13
+- title: Neonatal bilirubin risk
+  description: Berberine can alter bilirubin binding; neonatal bilirubin accumulation can cause kernicterus and brain injury.
+  sourceId: S13
+- title: Gastrointestinal adverse events
+  description: Nausea, diarrhea, bloating, constipation, abdominal pain, and vomiting were reported; rates varied across randomized lipid studies and products.
+  sourceId: S3
+- title: Formulation-specific tolerability
+  description: In the HTD1801 trial, treatment-emergent adverse events occurred in 71.1% at 1,000 mg twice daily versus 39.5% with placebo; this estimate is specific to HTD1801 and its study population.
+  sourceId: S10
+- title: Long-term safety gap
+  description: Most metabolic trials were short, so sustained efficacy and long-term safety in people with major comorbidity remain incompletely characterized.
+  sourceId: S3
+- title: Product variability
+  description: Salts, extracts, complexes, doses, and analytical specifications differed across studies, limiting direct product-to-product comparison.
+  sourceId: S4
 ```
 
 ## Claims
 
 ```yaml
-[]
+- id: berberine-claim-glycemia
+  assertion: Berberine lowers blood sugar.
+  relation: evidence-boundary
+  participants:
+    - entityId: substance:berberine
+      role: intervention
+    - entityId: tag:glycemic-control
+      role: reported-outcome
+  context: Partly supported as a modest short-term biomarker effect in randomized trials, with low certainty and substantial heterogeneity.
+  sourceIds: [S2]
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Biomarker changes do not establish long-term clinical benefit.
+- id: berberine-claim-lipids
+  assertion: Berberine lowers cholesterol and triglycerides.
+  relation: evidence-boundary
+  participants:
+    - entityId: substance:berberine
+      role: intervention
+    - entityId: tag:ldl-cholesterol
+      role: reported-outcome
+  context: Supported for modest short-term lipid changes in meta-analysis, while clinical-event benefit is unestablished.
+  sourceIds: [S3]
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Trials were short and geographically concentrated.
+- id: berberine-claim-weight-loss
+  assertion: Berberine is a reliable weight-loss drug.
+  relation: evidence-boundary
+  participants:
+    - entityId: substance:berberine
+      role: intervention
+    - entityId: tag:glycemic-control
+      role: reported-outcome-context
+  context: "Not established: weight meta-analyses conflict and a six-month adiposity trial was null for visceral adipose tissue and liver fat."
+  sourceIds: [S9, S16, S20]
+  conflictingSourceIds: [S16, S20]
+  assessment: not-formally-assessed
+  limitation: Formulations and study quality varied.
+- id: berberine-claim-replacement
+  assertion: Berberine can replace metformin or GLP-1 therapy.
+  relation: evidence-boundary
+  participants:
+    - entityId: substance:berberine
+      role: intervention
+    - entityId: tag:glycemic-control
+      role: comparator-context
+  context: Unsupported by equivalence trials or clinical-outcome evidence.
+  sourceIds: [S2, S9]
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: The cited studies were not equivalence trials.
+- id: berberine-claim-ampk
+  assertion: AMPK activation proves clinical effectiveness.
+  relation: evidence-boundary
+  participants:
+    - entityId: substance:berberine
+      role: intervention
+    - entityId: tag:insulin-sensitivity
+      role: proposed-mechanism
+  context: "Mechanistically invalid: AMPK findings are primarily preclinical and do not substitute for clinical outcomes."
+  sourceIds: [S14]
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Molecular pathway evidence does not quantify human benefit.
+- id: berberine-claim-natural-safe
+  assertion: Natural means safe.
+  relation: evidence-boundary
+  participants:
+    - entityId: substance:berberine
+      role: intervention
+    - entityId: tag:perception
+      role: safety-claim
+  context: "Incomplete: gastrointestinal effects, CYP interactions, formulation variability, and pregnancy or infant concerns are documented."
+  sourceIds: [S3, S5, S13]
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Safety depends on formulation, dose, co-medications, and population.
+- id: berberine-claim-prevention
+  assertion: Berberine prevents cardiovascular disease, extends lifespan, or treats cancer.
+  relation: evidence-boundary
+  participants:
+    - entityId: substance:berberine
+      role: intervention
+    - entityId: tag:glycemic-control
+      role: surrogate-evidence-context
+  context: Not established by the cited human randomized outcome evidence.
+  sourceIds: [S3, S4]
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: The evidence base is mainly short surrogate-endpoint research.
 ```
 
 ## Interactions
 
 ```yaml
-[]
+- id: berberine-interaction-cyp3a4
+  name: CYP3A4 substrates
+  otherSlug: null
+  summary: After berberine 300 mg three times daily for 14 days in healthy men, midazolam Cmax increased 38%, AUC increased 40%, and oral clearance decreased 27%.
+  sourceId: S5
+  context: Direct human probe-drug evidence; extension to every CYP3A4 substrate is extrapolation.
+  conflictingSourceIds: []
+- id: berberine-interaction-cyp2d6
+  name: CYP2D6 substrates
+  otherSlug: null
+  summary: The urinary dextromethorphan/dextrorphan ratio increased approximately ninefold after repeated berberine, indicating reduced CYP2D6 activity in that study.
+  sourceId: S5
+  context: Direct human probe-drug evidence; clinical magnitude for other substrates is not established.
+  conflictingSourceIds: []
+- id: berberine-interaction-cyp2c9
+  name: CYP2C9 substrates
+  otherSlug: null
+  summary: The losartan/E-3174 ratio approximately doubled after repeated berberine, indicating reduced CYP2C9 activity in that study.
+  sourceId: S5
+  context: Direct human probe-drug evidence; extension to other substrates is extrapolation.
+  conflictingSourceIds: []
+- id: berberine-interaction-cyclosporine
+  name: Cyclosporine
+  otherSlug: null
+  summary: In six renal-transplant recipients receiving berberine 0.2 g three times daily for 12 days, cyclosporine AUC increased 34.5% and trough concentration increased 88.3%.
+  sourceId: S6
+  context: Small transplant-recipient study; clinical context and therapeutic monitoring matter.
+  conflictingSourceIds: []
+- id: berberine-interaction-transporters
+  name: P-glycoprotein and other transporters
+  otherSlug: null
+  summary: Transporter interactions are supported mainly by mechanistic or preclinical evidence; clinical magnitude is not established.
+  sourceId: S8
+  context: Mechanistic evidence does not quantify a clinical interaction for a specific co-medication.
+  conflictingSourceIds: []
+- id: berberine-interaction-glucose-medicines
+  name: Glucose-lowering medicines
+  otherSlug: null
+  summary: Additive glucose-lowering effects are biologically plausible, but the randomized literature does not quantify symptomatic hypoglycemia risk across medication combinations.
+  sourceId: S2
+  context: Inference from biomarker effects and heterogeneous combination trials; a patient-specific risk estimate is not established.
+  conflictingSourceIds: []
 ```
 
 ## Experience links
@@ -462,14 +652,15 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   title: Repeated administration of berberine inhibits cytochromes P450 in humans
   authors: Ying Guo et al.; Central South University and University of Kansas Medical Center
   year: 2016
-  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4898966/
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4898966
   kind: randomized human pharmacokinetic interaction study
   insight: Human CYP3A4, CYP2D6, and CYP2C9 probe-drug effects.
   limitation: Small, healthy male sample; short exposure; genotype variability.
   funding: NIH, National Natural Science Foundation of China, Hunan Provincial Innovation Foundation, and Chinese government programs
-  sponsorshipStatus: not-assessed
+  sponsorshipStatus: mixed-funding
   conflictsOfInterest: Authors reported no conflict of interest.
-  conflictOfInterestStatus: not-assessed
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC4898966
 - id: S6
   title: "Effects of berberine on the blood concentration of cyclosporin A in renal transplanted recipients: clinical and pharmacokinetic study"
   authors: National Library of Medicine PubMed record; authors not-assessed
@@ -577,9 +768,10 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: One author was employed by China Traditional Chinese Medicine Holdings Co. Limited and Guangdong e-fong Pharmaceutical Co., Ltd.; remaining authors reported no commercial conflicts.
-  conflictOfInterestStatus: not-assessed
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/38957396/
 - id: S15
-  title: FOOD AND DRUG ADMINISTRATION COMPLIANCE PROGRAM 7321.008
+  title: "FOOD AND DRUG ADMINISTRATION COMPLIANCE PROGRAM 7321.008"
   authors: U.S. Food and Drug Administration
   year: 2024
   url: https://www.fda.gov/files/food/published/CP7321.008-DietarySupplements-09182024.pdf
@@ -587,9 +779,10 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   insight: Dietary-supplement disease claims and labeling requirements.
   limitation: U.S.-specific; does not determine legal status in other jurisdictions.
   funding: U.S. government
-  sponsorshipStatus: not-assessed
+  sponsorshipStatus: non-industry-funded
   conflictsOfInterest: none stated
-  conflictOfInterestStatus: not-assessed
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://www.fda.gov/files/food/published/CP7321.008-DietarySupplements-09182024.pdf
 - id: S16
   title: "The effect of berberine supplementation on obesity indices: A dose-response meta-analysis and systematic review of randomized controlled trials"
   authors: Pan Xiong et al.
@@ -603,13 +796,15 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S17
-  title: Randomized controlled trial of berberine sulfate therapy for diarrhea due to enterotoxigenic Escherichia coli and Vibrio cholerae
+  title: "Randomized controlled trial of berberine sulfate therapy for diarrhea due to enterotoxigenic Escherichia coli and Vibrio cholerae"
   authors: G. H. Rabbani, T. Butler, J. Knight, S. C. Sanyal, K. Alam
-  year: 3549923
-  url: https://www.nccih.nih.gov/health/in-the-news-berberine"
+  year: 1987
+  url: https://pubmed.ncbi.nlm.nih.gov/3549923/
   kind: randomized clinical trial
   insight: Human evidence for a berberine sulfate formulation in acute infectious diarrhea.
   limitation: Historical, disease-specific, and not evidence for metabolic use.
+  pmid: "3549923"
+  doi: 10.1093/infdis/155.5.979
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
@@ -623,11 +818,12 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   insight: Summarizes modest metabolic evidence, GI effects, pregnancy/infant cautions, and interaction concerns.
   limitation: Narrative consumer summary rather than a new systematic review.
   funding: U.S. government
-  sponsorshipStatus: not-assessed
+  sponsorshipStatus: non-industry-funded
   conflictsOfInterest: none stated
-  conflictOfInterestStatus: not-assessed
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://www.nccih.nih.gov/health/in-the-news-berberine
 - id: S19
-  title: Pharmacokinetics and pharmacodynamics of HTD1801 (berberine ursodeoxycholate, BUDCA) in patients with hyperlipidemia
+  title: "Pharmacokinetics and pharmacodynamics of HTD1801 (berberine ursodeoxycholate, BUDCA) in patients with hyperlipidemia"
   authors: National Library of Medicine PubMed/PMC record; authors not-assessed
   year: 2020
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7661247/
@@ -650,94 +846,24 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
-- id: dr-berberine-link-1
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://pubchem.ncbi.nlm.nih.gov/compound/Berberine-Chloride?utm_source=openai
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-berberine-link-2
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12016319/?utm_source=openai
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-berberine-link-3
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/38888754/?utm_source=openai
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-berberine-link-4
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/37598753/?utm_source=openai
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-berberine-link-5
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/28290706/?utm_source=openai
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-berberine-link-6
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://www.ncbi.nlm.nih.gov/books/NBK600384/?utm_source=openai
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-berberine-link-7
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4898966
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
 
 ```yaml
-[]
+- jurisdiction: United States
+  activity: Disease claims for dietary supplements
+  status: FDA materials state that a dietary supplement cannot make claims that it diagnoses, mitigates, treats, cures, or prevents disease; structure/function claims have separate substantiation and disclaimer requirements.
+  sourceUrl: https://www.fda.gov/files/food/published/CP7321.008-DietarySupplements-09182024.pdf
+  asOf: 2026-10-11
+- jurisdiction: United States
+  activity: Product-specific marketing and classification
+  status: The rule addresses marketing claims and does not establish clinical efficacy, safety, or approval of a particular berberine salt, extract, or product.
+  sourceUrl: https://www.fda.gov/files/food/published/CP7321.008-DietarySupplements-09182024.pdf
+  asOf: 2026-10-11
+- jurisdiction: Other jurisdictions
+  activity: Regulatory classification
+  status: Legal treatment varies by country and by whether the item is marketed as a supplement, food, drug, or investigational formulation.
+  sourceUrl: https://www.fda.gov/files/food/published/CP7321.008-DietarySupplements-09182024.pdf
+  asOf: 2026-10-11
 ```

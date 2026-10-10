@@ -26,7 +26,7 @@ halfLife:
   high: null
   context: Human radiolabel studies tracked parent-derived radioactivity and metabolites rather than a validated unchanged-citicoline terminal elimination curve.
   sourceId: dinsdale1983
-  observationId: citicoline-unresolved
+  observationId: citicoline-radiolabel
 kinetics:
   onset: Not established as a clinical-effect onset
   peak: Oral radiolabel-derived plasma radioactivity showed peaks near 1 and 24 hours; these are not parent-specific citicoline peaks
@@ -66,262 +66,39 @@ x-shape:
   - interactions
   - experienceLinks
 x-order: 9
-
-
 ---
 
 ## Summary
 
 Citicoline (CDP-choline) is a phosphatidylcholine-pathway intermediate studied as a drug and food ingredient. Large stroke and traumatic-brain-injury trials were negative, while limited cognition trials show endpoint-specific, inconsistent signals.
 
-Deep Research synthesis: Citicoline — compact evidence extension — returned Deep Research evidence record.
-
 ## Description
 
-Citicoline is CDP-choline, not dietary choline itself: it is a nucleotide containing a choline moiety and a cytidine-derived moiety, and exogenous doses are extensively metabolized. Human studies report rises in circulating choline plus pyrimidine metabolites; later work found uridine, rather than reliably detectable cytidine, after oral dosing. Spain authorizes citicoline-sodium medicines for neurological/cognitive disorders associated with stroke and head trauma, whereas EU food law separately permits citicoline as a novel-food ingredient under defined limits. These medicinal, nutritional and research contexts are not interchangeable. Cognizin-branded cognition studies also require attention to commercial sponsorship and related method-of-use patents.
-
-Deep Research synthesis: The full returned Deep Research report is preserved in the pending acquisition folder for citicoline.
+Citicoline is CDP-choline, not dietary choline itself: it is a nucleotide containing a choline moiety and a cytidine-derived moiety, and exogenous doses are extensively metabolized. Human studies report rises in circulating choline plus pyrimidine metabolites; later work found uridine, rather than reliably detectable cytidine, after oral dosing.
 
 ## Evidence note
 
-Evidence is indication- and endpoint-specific. ICTUS and COBRIT found no functional/cognitive benefit in acute ischemic stroke and traumatic brain injury; a 2020 Cochrane review likewise found little or no stroke benefit with low-certainty evidence. A 2021 industry-funded older-adult trial missed its primary working-memory endpoint but improved secondary episodic-memory measures; EFSA concluded in 2024 that a memory cause-effect relationship was not established. Parent-citicoline half-life remains unresolved because human disposition studies primarily measured radiolabel or metabolites. The current extension adds null vascular-dementia evidence, a biased open post-stroke signal, a negative pediatric ADHD pilot, preliminary TBI and glaucoma findings, and the 2025 EU refusal of the proposed memory claim; these do not establish a general nootropic or neuroprotective effect.
-
-<!-- Deep Research integration: citicoline -->
-
-**Full Deep Research detail retained from the returned report:**
-
----
-slug: citicoline
-name: Citicoline
-aliases: [CDP-choline, cytidine diphosphate choline, cytidine 5′-diphosphocholine, citicoline sodium, Cognizin]
-reviewedAt: '2026-10-10'
-editorialStatus: sourced-draft
-reportType: additive-research-extension
-baseRecordReviewedAt: '2026-10-04'
-targetRecord: citicoline
-halfLife:
-  label: Not established for unchanged citicoline
-  low: null
-  high: null
-  sourceId: dinsdale1983
-  observationId: citicoline-unresolved
----
-
-### Citicoline — compact evidence extension
-
-**Merge scope.** Extend only `citicoline`. The existing Library deliverable was consulted; this file is a research extension, not an applied repository patch. Preserve unrelated records, existing identity metadata, and curated identifiers. Branded ingredient, sodium-salt medicine, oral supplement and injectable preparations must retain separate formulation fields. Source IDs below are stable Markdown footnote IDs.
-
-### Essence / evidence note
-
-Citicoline is a phospholipid-pathway intermediate, not interchangeable evidence for dietary choline, choline chloride/bitartrate, Alpha-GPC, phosphatidylcholine/lecithin, cytidine or uridine. Metabolic precursor availability does not establish clinical benefit.[^efsa2013][^wurtman2000] **ICTUS and COBRIT were negative on their prespecified clinical outcomes.** The 2020 Cochrane stroke synthesis found little or no benefit, with low-certainty evidence.[^davalos2012][^zafonte2012][^cochrane2020] The industry-funded 2021 older-adult trial missed its primary working-memory endpoint despite positive secondary episodic/composite scores; EFSA’s 2024 assessment did not establish a memory cause–effect relationship.[^nakazaki2021][^efsa2024] **A terminal half-life for unchanged citicoline remains unestablished** in the retrieved human disposition studies.[^dinsdale1983][^lopez1987]
-
-### Identity, formulation and dose basis
-
-The EU food specification identifies citicoline’s inner salt as **C14H26N4O11P2, 488.32 g/mol, CAS 987-78-0**, with a specified microbial production process and ≥98% dry-basis assay. Health Canada separately identifies the **monosodium salt, CAS 33818-15-4**. Cognizin is the branded citicoline ingredient used in some trials, not a different active molecule or proof of equivalence between finished products.[^eu-novel-food-2026][^hc-citicoline-sodium][^nakazaki2021]
-
-**Calculated stoichiometry, not measured bioavailability:** one citicoline molecule contains one choline moiety, C5H14NO+, approximately 104.17 g/mol. Replacing one acidic hydrogen with sodium gives anhydrous monosodium C14H25N4NaO11P2, approximately 510.30 g/mol. Thus:
-
-| Explicitly specified ingredient mass | Calculation | Theoretical choline-equivalent |
-|---|---|---:|
-| 500 mg anhydrous citicoline inner salt | 500 × 104.17 / 488.32 | **106.7 mg; 21.33% by mass** |
-| 500 mg anhydrous citicoline monosodium salt | 500 × 104.17 / 510.30 | **102.1 mg; 20.41% by mass** |
-
-These are calculations from chemical identity, not estimates of brain acetylcholine exposure. Hydration, assay and the manufacturer’s stated dose basis matter. Do not automatically convert a label reading “citicoline (as sodium salt)” into free-inner-salt equivalents; retain the reported dose until the product specification establishes its basis. Spanish oral labeling uses precisely this salt wording.[^eu-novel-food-2026][^hc-citicoline-sodium][^aemps-somazina]
-
-**Dose interpretation:** the following are studied exposures or jurisdiction-specific label limits, not a universal supplementation schedule. Milligrams in trials are reported as the investigators stated them; they are not milligrams of choline.
-
-### Human pharmacokinetics — analyte-specific
-
-| Source / exposure | What was measured | Supported interpretation |
-|---|---|---|
-| Dinsdale; six adults, single **300 mg oral 14C-CDP-choline** | Total plasma radioactivity; fecal, urinary and expired-carbon recovery. Less than 1% recovered in feces over five days; radioactivity peaks around 1 and 24 hours. | Extensive absorption of **label-derived material**, not demonstrated ≥99% absolute bioavailability of intact parent. Carbon dioxide and urinary elimination include metabolic products. Neither peak is a parent-specific Tmax.[^dinsdale1983] |
-| López-Coviella; oral **2 g**, and human **30-minute IV infusion** | Parent CDP-choline and circulating choline/cytidine. Parent became undetectable almost immediately after infusion stopped; metabolites remained elevated for at least six hours. | IV bypasses intestinal absorption but does not prevent rapid hydrolysis. Assay non-detection is not a fitted terminal elimination half-life. Only the human component of this mixed human/animal paper is used.[^lopez1987] |
-| Wurtman; 12 mildly hypertensive, otherwise healthy adults; randomized oral **500, 2,000 or 4,000 mg** | Choline elevated approximately 5, 8 or 10 hours respectively; uridine 5–6 hours; cytidine not reliably detectable, <100 nM. | These are **metabolite concentration windows**, not parent half-life or duration of cognitive benefit. The later uridine-dominant result must remain distinct from the older cytidine assay findings.[^wurtman2000] |
-
-**Schema constraint:** no validated unchanged-parent terminal half-life, absolute oral parent bioavailability, parent Cmax or clinical-effect onset/duration is entered from these studies. Radiolabel persistence, excretion-phase durations and metabolite peaks cannot populate a parent decay model. Likewise, precursor delivery does not demonstrate intact citicoline crossing the human blood–brain barrier.[^dinsdale1983][^lopez1987][^wurtman2000]
-
-### Cognitive tests and aging — not established everyday benefit
-
-| Population / design | Exact exposure | Finding and boundary |
-|---|---|---|
-| **Older adults with age-associated memory impairment**, n=100, randomized double-blind placebo-controlled; Nakazaki 2021 | Cognizin **500 mg/day, 12 weeks** | **Primary Spatial Span working memory: no significant benefit.** Secondary paired-associate episodic memory: change 0.15 vs 0.06, P=.0025; composite memory: 3.78 vs 0.72, P=.0052. These are test scores, not reduced dementia incidence or improved independence. Industry-funded; multiplicity correction used.[^nakazaki2021] |
-| Older volunteers 50–85, n=95; Spiers 1996 | **1,000 mg/day, three months**; subsequent selected n=32 crossover **2,000 mg/day, two months per condition** | Initial delayed-recall benefit confined to a **post hoc low-memory subgroup**; selected crossover favored citicoline. Not confirmation of a general memory effect in all older adults.[^spiers1996] |
-| Healthy women 40–60, n=60, small three-arm trial; McGlade 2012 | **250 or 500 mg/day, 28 days** | Selected sustained-attention error measures improved; endpoint/dose results were not uniformly significant. Industry-affiliated authors; independent replication and real-world importance remain unresolved.[^mcglade2012] |
-| Healthy adolescent males 13–18, n=75; McGlade, online 2015 / issue 2019 | Cognizin **250 or 500 mg/day, 28 days** | Attention and psychomotor-speed tests favored citicoline (P=.02 and .03). Male-only short trial; **not an ADHD treatment trial**, school-performance trial or long-term pediatric safety study.[^mcglade2019] |
-
-**Regulatory interpretation:** EFSA weighed the memory evidence, including inconsistent corroboration in other populations, and did **not** establish the proposed memory relationship. That assessment is narrower than “citicoline never affects any test,” but incompatible with presenting a proven general memory-maintenance benefit.[^efsa2024]
-
-### Vascular cognitive impairment and Alzheimer disease
-
-| Evidence | Exposure / outcome | Interpretation |
-|---|---|---|
-| Cohen 2003; **30 vascular-dementia patients**, double-blind randomized placebo-controlled | **500 mg twice daily for 12 months**; no advantage in neuropsychological performance or MRI measures | Direct long-term null finding; do not omit it in favor of uncontrolled positive studies.[^cohen2003] |
-| IDEALE 2013; **349 older adults with mild vascular cognitive impairment**, open nonrandomized controlled study | **500 mg twice daily, nine months**; MMSE remained stable relative to declining controls; **no ADL/IADL difference** | A cognitive-screening signal with substantial allocation/masking bias, not demonstrated preservation of daily independence.[^cotroneo2013] |
-| Alvarez 1999; **30 Alzheimer patients**, randomized double-blind placebo-controlled | **1,000 mg/day, 12 weeks**; selected subgroup/ADAS-total findings; ADAS-cog comparisons were not convincingly positive | Small, subgroup-dependent evidence. EEG/perfusion changes are biomarkers, not proof of disease modification or a validated APOE-guided treatment rule.[^alvarez1999] |
-
-A 2023 systematic review located additional positive cognitive studies but judged their overall quality poor, with substantial bias favoring treatment. Its pooled signal is context, not independent confirmation; retrospective add-on combinations are not upgraded to randomized citicoline monotherapy evidence.[^bonvicini2023]
-
-### Stroke, traumatic brain injury and recovery
-
-| Study / outcome level | Exposure and result | Boundary |
-|---|---|---|
-| **ICTUS 2012**, n=2,298; patient-important global recovery | Started within 24 hours; **1,000 mg every 12 hours IV for three days, then oral, total six weeks**. Ninety-day global recovery OR **1.03 (95% CI 0.86–1.25)**; stopped for futility. | **Negative prespecified outcome** in moderate-to-severe acute ischemic stroke. Ferrer-funded. No significant safety difference does not imply efficacy.[^davalos2012][^nct00331890] |
-| **Cochrane 2020**, 10 RCTs / 4,281 participants; clinical outcomes | **500–2,000 mg/day**, oral/IV/combined. Mortality RR **0.94 (0.83–1.07)**; little or no difference in disability, functional or neurological recovery. | **Low-certainty evidence**, high risk of bias, poor harms reporting; no included quality-of-life assessment. Six trials were industry-sponsored.[^cochrane2020] |
-| **COBRIT 2012**, n=1,213; functional/cognitive global outcome | **2,000 mg/day orally/enterally for 90 days**. Ninety-day global OR **0.98 (0.83–1.15)**; 180-day OR **0.87 (0.72–1.04)**. | **Negative prespecified outcome**; stopped for futility. Low adherence limits interpretation but does not turn the trial positive; adherence analyses did not establish benefit.[^zafonte2012][^nct00545662] |
-| Post-stroke cognition; Alvarez-Sabín 2013, n=347, open randomized usual-care comparison | **1,000 mg/day for 12 months**, beginning six weeks after first ischemic stroke. Attention/executive and temporal-orientation domains favored treatment; only **199** had one-year neuropsychological assessment. | Attrition and open treatment weaken inference. Functional independence result, mRS≤2, **57.3% vs 48.7%, P=.186**, was not significant. Not reversal of ICTUS.[^alvarez-sabin2013] |
-| **New conflicting TBI pilot**, n=60; Shakeri Bavali Oleyayi 2026 | **1,000 mg/day, 90 days**, single-center triple-blind placebo-controlled. Primary MMSE **25.2 vs 21.5, P<.001**; Barthel and GOSE secondary outcomes also favored treatment. | Preliminary positive evidence in mild-to-moderate TBI; not a replication at COBRIT scale. Published online **1 September 2026**; journal issue dated **3 November 2026**. Included by online date, not future issue date.[^shakeri2026] |
-| Citicoline–amantadine trial, n=45; Badre 2026 | Three active-treatment arms, no placebo. Citicoline: **1 g every 12 hours for seven days, then 500 mg twice daily**; the abstract’s phase-duration wording is ambiguous | Combination was not significantly better than amantadine alone; citicoline-alone outcomes were poorer. Does not establish an added citicoline benefit or a safe general-purpose “stack.”[^badre2026] |
-
-### Pediatric, visual and exercise claims
-
-**Pediatric ADHD: negative pilot.** Hübner 2024 was double-blind, placebo-controlled and crossover in children 7–12. The matching registry reports 27 recruited/22 completing, **250 mg/day for 28 days per period**, with a 28-day washout. No significant benefit on assessed parameters; no adverse effects reported. Small numbers cannot establish broad pediatric safety. The registry was posted after enrollment began.[^hubner2024][^rbr-3jpnxqw]
-
-**Vision — keep outcome types separate.** A multicenter glaucoma crossover trial used **500 mg/day oral solution** and found a modest primary **patient-reported VFQ-25 quality-of-life** advantage (P=.0413); treatment-sequence and placebo improvements complicate interpretation. It does not demonstrate prevention of blindness.[^rossetti2023] Separately, a 29-person randomized trial used **500 mg/day for 12 months** and reported PERG/VEP and retinocortical-conduction improvements. These are **electrophysiological biomarkers**; the reported MRI association was not significant. “Synaptic plasticity” is an interpretation, not a directly established patient-important outcome. Neither trial establishes healthy-person visual enhancement or interchangeability with eye drops/injections.[^parisi2025]
-
-**Exercise:** no citicoline-specific strength/endurance claim is entered. A retrieved 2026 cycling trial tested citicoline inside a carbohydrate/caffeine/other-ingredient mixture; it cannot isolate citicoline’s contribution. Alpha-GPC and other choline-product results are excluded.[^hannon2026]
-
-### Mechanisms, subjective effects and biomarker boundaries
-
-Citicoline’s role in phosphatidylcholine synthesis and human choline/pyrimidine-metabolite availability supports a **precursor mechanism**, not demonstrated treatment efficacy. Plasma choline/uridine, EEG, MRI and retinal electrophysiology belong in biomarker/mechanism records, not a pooled “cognition improved” outcome.[^efsa2013][^wurtman2000][^alvarez1999][^parisi2025] No reproducible subjective “focus,” stimulation, motivation or energy effect is entered from these sources. The glaucoma quality-of-life result remains a distinct patient-reported outcome, not a general nootropic experience.[^rossetti2023]
-
-### Cautions and adverse effects
-
-**Contraindications / parasympathetic effects:** Spanish labeling contraindicates hypersensitivity to citicoline/excipients and **parasympathetic hypertonia**. This is a label caution, not proof that ordinary oral doses universally cause a cholinergic syndrome. Injectable use requires slow professional administration; persistent intracranial hemorrhage has a product-specific **1,000 mg/day ceiling with very slow IV delivery**.[^aemps-somazina-injectable]
-
-**Reported reactions:** the Spanish injectable label lists very rare reports, including hallucinations, headache/vertigo, **hypertension or hypotension**, dyspnea, nausea/vomiting/diarrhea, flushing/rash/urticaria/purpura, chills and edema. Its frequency category includes individual reports and is not a precise incidence estimate from controlled trials.[^aemps-somazina-injectable] Canadian guidance lists headache/GI disturbance. Oral Somazina’s colorant/preservatives can cause allergy; sorbitol matters in hereditary fructose intolerance.[^hc-cognitive-2025][^aemps-somazina]
-
-**Trial safety:** the 2021 selected older-adult trial found no serious adverse events or significant between-group BP/laboratory safety differences over 12 weeks. This does not establish multi-year safety or safety in major organ disease.[^nakazaki2021] Cochrane found harms incompletely reported; a nonsignificant safety comparison must not be rewritten as “risk-free.”[^cochrane2020]
-
-**Special populations:** pregnancy data are insufficient; Spain restricts use to clear necessity. Canada advises professional review during pregnancy/breastfeeding. Adequate human milk-transfer and infant-outcome evidence was not identified; no lactation safety claim is entered.[^aemps-somazina][^hc-cognitive-2025] The retrieved labels provide no evidence-based renal/hepatic impairment dose algorithm. Normal laboratory results in selected trial participants are not dedicated renal/hepatic PK studies. Pediatric medicinal experience is limited; adult food-use permissions do not authorize pediatric use.[^aemps-somazina][^nakazaki2021][^eu-novel-food-2026]
-
-### Interactions — distinguish label evidence from hypotheses
-
-| Coexposure | Classification / action boundary |
-|---|---|
-| **Levodopa** | **Labeled potentiation** in Spain; magnitude and required dose adjustment are not specified. Do not automatically reduce levodopa from a supplement calculation.[^aemps-somazina] |
-| **Meclofenoxate / centrophenoxine** | Spanish label says not to coadminister. Preserve existing `citicoline-meclofenoxate` interaction.[^aemps-somazina-injectable] |
-| Other **dopaminergic or cholinergic drugs**, including cholinesterase inhibitors | **Regulatory precaution:** Canada advises professional review. This does not prove a clinically quantified interaction with every dopamine agonist, stimulant or cholinergic agent.[^hc-cognitive-2025] |
-| **Anticholinergics** | Pharmacodynamic opposition is a **hypothesis**, not a demonstrated citicoline antidote or established dose-adjustment rule. The Canadian monograph’s separate anticholinergic warning is assigned to huperzine products, not its citicoline row; do not copy it as a citicoline-specific proven interaction.[^hc-cognitive-2025] |
-| **Other choline sources** | Count actual choline-equivalent exposure separately. Additive exposure is plausible from human metabolism, but these studies do not establish combination efficacy or a quantified toxicity threshold. Do not transfer another choline compound’s cardiovascular/TMAO findings to citicoline.[^wurtman2000] |
-
-### Regulatory and product-quality status — checked 10 October 2026
-
-| Jurisdiction | Status and limits |
-|---|---|
-| **Spain** | AEMPS lists Somazina sodium-salt medicines for stroke-/head-trauma-associated neurological/cognitive disorders. Product-specific adult oral/injectable dose **500–2,000 mg/day**. National medicinal authorization is distinct from the negative clinical-evidence assessment above.[^aemps-somazina][^aemps-somazina-injectable] |
-| **EU foods** | Union-list permission: supplements **500 mg/day**; foods for special medical purposes **250 mg/serving, up to 1,000 mg/day**; labeling excludes children. Applies to the specified ingredient, not every formulation or disease claim.[^eu-novel-food-2026] |
-| **EU memory claim** | Following EFSA 2024, Regulation **2025/2223** refused the proposed memory claim; effective **25 November 2025**. This is **not a ban on the authorized novel-food ingredient**.[^efsa2024][^eu-memory-claim-2025] |
-| **United States** | Dietary supplements are not FDA-preapproved for effectiveness. FDA’s 2019 letter specifically challenged disease-treatment claims for a seller’s CDP-choline/citicoline product as unapproved-drug claims. Neither supplement sale nor a food-safety/GRAS assertion demonstrates medicinal approval. No U.S. citicoline medicinal approval is established by the regulator records cited here.[^fda-supplements][^fda-warning-2019] |
-| **Canada** | The 2025 adult oral NHP monograph supports specified licensing claims: sustained attention **250–1,000 mg/day**, older-adult cognitive health **500–1,000 mg/day**, maximum **500 mg/single dose**. This is a product-licensing framework, not blanket approval of every retail product or stroke/TBI treatment; verify the actual product licence and label.[^hc-cognitive-2025] |
-
-**Quality boundary:** specification compliance, dose basis, excipients, batch assay and finished-product identity must be checked separately from efficacy. The EU ≥98% dry-basis ingredient specification is not a certificate for an arbitrary online product. No representative citicoline-market adulteration/contamination survey or comparative batch assay was verified here; do not imply either universal purity or a demonstrated citicoline-wide contamination problem.[^eu-novel-food-2026][^fda-supplements]
-
-### Conversion / merge notes
-
-Retain `citicoline-unresolved` with null half-life values and `modelEligible: false`. Preserve existing outcome IDs `nakazaki-spatial-span-primary`, `nakazaki-paired-associate-secondary`, `spiers-verbal-memory`, `mcglade-attention`, `ictus-global-recovery`, `cochrane-stroke-disability`, and `cobrit-global-recovery`; do not change null primary outcomes into positive “effects.” Add new study-specific outcomes rather than replacing the pivotal studies. Keep regulatory permissions under `legal`, contraindications under `cautions`, and labeled/theoretical interactions distinguishable.
-
-Preserve the existing `citicoline-cognition-patent` entry without using it as efficacy evidence. Patent ownership/status was not reverified under this report’s restricted evidence-source set; **unknown patent disclosures do not mean absence of patent interests**. No unrelated relationship, nutrient or substance record is rewritten. No general subjective enhancement entry is proposed.
-
-**Search limits:** targeted primary-study/registry and official-regulator verification, not a new exhaustive systematic review. Reviews were used for context and study location, not to substitute for accessible primary trials. Abstract-only sources cannot establish undisclosed funding or COI. Publication date, online-first date and trial date were kept separate where material. Links identify the primary publication, registry or official regulator record. Some full-text declarations remained inaccessible; link inclusion does not imply full-text disclosure verification.
-
-<!-- Deep Research source-link ledger -->
-
-Every HTTPS link returned by this run is represented in References. Links whose full publication metadata was not recoverable remain explicitly labeled as source links.
+Citicoline is a precursor whose oral and intravenous doses generate choline and pyrimidine metabolites; an unchanged-parent half-life is not established. Large stroke and traumatic-brain-injury trials were negative on prespecified global outcomes, while small cognition, visual and TBI studies remain endpoint-specific and mixed. Regulatory permissions and labels are not efficacy evidence.
 
 ## Doses
 
 ```yaml
-- label: Spanish adult oral medicinal label
-  amount: 500–2000 mg/day
-  quantity: 500
-  quantityMax: 2000
-  unit: mg/day
-  ingredient: Citicoline as sodium salt
-  formulation: Somazina oral solution
-  route: Oral
-  frequency: Daily dose according to clinical severity
-  duration: Not specified in the cited label
-  population: Adults with labelled cerebrovascular- or head-trauma-associated neurological/cognitive disorders
-  purpose: Approved medicinal use in Spain
-  sourceCategory: approved-label
-  note: Product-specific Spanish dosing; not a general supplement recommendation.
-  sourceId: aemps-somazina
-- label: Spanish elderly oral medicinal label
-  amount: 500–2000 mg/day; no age-specific dose adjustment required
-  quantity: 500
-  quantityMax: 2000
-  unit: mg/day
-  ingredient: Citicoline as sodium salt
-  formulation: Somazina oral solution
-  route: Oral
-  frequency: Daily dose according to clinical severity
-  duration: Not specified in the cited label
-  population: Older adults
-  purpose: Approved medicinal use in Spain
-  sourceCategory: approved-label
-  note: The SmPC states that no specific dosage adjustment is required solely for older age.
-  sourceId: aemps-somazina
-- label: Spanish pediatric medicinal-label limitation
-  amount: No established pediatric dose
-  quantity: null
+- label: Radiolabeled oral disposition study
+  amount: 300 mg
+  quantity: 300
   quantityMax: null
-  unit: not established
-  ingredient: Citicoline as sodium salt
-  formulation: Somazina oral solution
-  route: Oral
-  frequency: Not established
-  duration: Not established
-  population: Children
-  purpose: Medicinal use only when expected therapeutic benefit exceeds possible risk
-  sourceCategory: approved-label
-  note: Pediatric experience is limited; this is not a pediatric dosing recommendation.
-  sourceId: aemps-somazina
-- label: Spanish injectable medicinal label
-  amount: 500–2000 mg/day
-  quantity: 500
-  quantityMax: 2000
-  unit: mg/day
-  ingredient: Citicoline as sodium salt
-  formulation: Somazina 500 mg or 1000 mg injectable solution
-  route: Intramuscular or slow intravenous
-  frequency: Daily dose according to clinical severity
-  duration: Not specified in the cited label
-  population: Adults with acute/subacute stroke-associated or head-trauma-associated neurological/cognitive disorders
-  purpose: Approved medicinal use in Spain
-  sourceCategory: approved-label
-  note: For persistent intracranial hemorrhage, the cited SmPC advises not exceeding 1000 mg/day by very slow IV administration.
-  sourceId: aemps-somazina-injectable
-- label: ICTUS acute ischemic stroke trial
-  amount: 2000 mg/day
-  quantity: 2000
-  quantityMax: null
-  unit: mg/day
+  unit: mg
   ingredient: Citicoline
-  formulation: IV study drug for 3 days followed by oral 500 mg tablets
-  route: Intravenous then oral
-  frequency: 1000 mg every 12 hours
-  duration: 6 weeks
-  population: Adults with moderate-to-severe acute ischemic stroke treated within 24 hours
-  purpose: Test 90-day global recovery versus placebo
+  formulation: Oral 14C-CDP-choline
+  route: Oral
+  frequency: Single dose
+  duration: 5-day recovery
+  population: Six adults
+  purpose: Absorption, metabolism and excretion research
   sourceCategory: research
-  note: Trial exposure; ICTUS was stopped for futility and did not show efficacy.
-  sourceId: davalos2012
-- label: COBRIT traumatic brain injury trial
-  amount: 2000 mg/day
-  quantity: 2000
-  quantityMax: null
-  unit: mg/day
-  ingredient: Citicoline
-  formulation: Study citicoline
-  route: Oral or enteral
-  frequency: Daily
-  duration: 90 days
-  population: Adults with complicated mild, moderate or severe nonpenetrating traumatic brain injury
-  purpose: Test functional and cognitive recovery versus placebo
-  sourceCategory: research
-  note: Trial exposure; COBRIT showed no improvement in the primary global outcome.
-  sourceId: zafonte2012
-- label: Older-adult memory trial
+  note: Less than 1% of radiolabel was recovered in feces; this does not establish intact-parent bioavailability.
+  sourceId: dinsdale1983
+- label: Age-associated memory trial
   amount: 500 mg/day
   quantity: 500
   quantityMax: null
@@ -329,105 +106,90 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   ingredient: Citicoline
   formulation: Cognizin capsules
   route: Oral
-  frequency: Once daily with breakfast
+  frequency: Once daily
   duration: 12 weeks
   population: 100 adults aged 50–85 with age-associated memory impairment
-  purpose: Compare computerized memory-test changes with placebo
+  purpose: Cognitive-task research
   sourceCategory: research
-  note: Industry-funded selected-population trial; the primary Spatial Span endpoint was not significantly different from placebo.
+  note: Primary Spatial Span outcome was null; a paired-associate secondary outcome favored citicoline.
   sourceId: nakazaki2021
-- label: Adolescent attention trial
-  amount: 250–500 mg/day
-  quantity: 250
-  quantityMax: 500
+- label: Acute ischemic stroke trial
+  amount: 1,000 mg every 12 hours IV, then oral; 2,000 mg/day
+  quantity: 2000
+  quantityMax: null
   unit: mg/day
   ingredient: Citicoline
-  formulation: Cognizin
+  formulation: Intravenous followed by oral citicoline
+  route: Intravenous then oral
+  frequency: Twice daily initially
+  duration: 6 weeks
+  population: 2,298 adults with moderate-to-severe acute ischemic stroke
+  purpose: Global stroke-recovery research
+  sourceCategory: research
+  note: ICTUS stopped for futility on the prespecified global outcome.
+  sourceId: davalos2012
+- label: COBRIT traumatic-brain-injury trial
+  amount: 2,000 mg/day
+  quantity: 2000
+  quantityMax: null
+  unit: mg/day
+  ingredient: Citicoline
+  formulation: Oral or enteral citicoline
+  route: Oral or enteral
+  frequency: Daily
+  duration: 90 days
+  population: 1,213 adults treated at eight US level-1 trauma centers
+  purpose: Functional and cognitive recovery research
+  sourceCategory: research
+  note: Prespecified global outcome was null and the trial stopped for futility.
+  sourceId: zafonte2012
+- label: Pediatric ADHD pilot
+  amount: 250 mg/day
+  quantity: 250
+  quantityMax: null
+  unit: mg/day
+  ingredient: Citicoline
+  formulation: Oral study product
   route: Oral
   frequency: Daily
-  duration: 28 days
-  population: 75 healthy males aged 13–18 years
-  purpose: Test attention, psychomotor speed and impulsivity versus placebo
+  duration: 28 days per crossover period
+  population: Children aged 7–12 with ADHD
+  purpose: Attention and behavior research
   sourceCategory: research
-  note: Research exposure in adolescents, not a pediatric clinical-use recommendation.
-  sourceId: mcglade2019
-- label: EU food-supplement maximum
-  amount: Up to 500 mg/day
-  quantity: 500
-  quantityMax: null
-  unit: mg/day
-  ingredient: Citicoline
-  formulation: Food supplement
-  route: Oral
-  frequency: Daily maximum
-  duration: Not specified
-  population: Adults
-  purpose: Authorized novel-food condition of use in the European Union
-  sourceCategory: reference
-  note: This is a regulatory maximum, not an efficacy dose; EU labeling must state that foods containing citicoline are not intended for children.
-  sourceId: eu-novel-food-2026
-- label: Memory-task trial
-  amount: 500 mg/day
-  quantity: 500
-  quantityMax: null
-  unit: mg
-  ingredient: Citicoline
-  formulation: Study capsules
-  route: Oral
-  frequency: Once daily with breakfast
-  duration: 12 weeks
-  population: 100 adults aged 50–85 with age-associated memory impairment
-  purpose: Compare memory-test changes with placebo
-  sourceCategory: research
-  note: Selected population and study formulation; not evidence for benefit in all ages.
-  sourceId: nakazaki2021
-- label: Health Canada adult cognitive-function monograph range
-  amount: 250–1000 mg/day; maximum 500 mg/single dose
-  quantity: 250
-  quantityMax: 1000
-  unit: mg/day
-  ingredient: Citicoline
-  formulation: Licensed natural-health-product ingredient framework
-  route: Oral
-  frequency: According to product claim and label
-  duration: Not specified
-  population: Adults
-  purpose: Jurisdiction-specific product-licensing conditions for sustained attention or older-adult cognitive health
-  sourceCategory: reference
-  note: A licensing monograph is not proof of efficacy for every product or indication; verify the actual product licence.
-  sourceId: hc-cognitive-2025
+  note: Registry-matched pilot reported no significant benefit; small numbers limit safety inference.
+  sourceId: hubner2024
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: citicoline-unresolved
-  analyte: Unchanged citicoline
+- id: citicoline-radiolabel
+  analyte: Total plasma radiolabel
   route: Oral
-  formulation: 14C-labelled CDP-choline
-  population: Six healthy adult volunteers
+  formulation: 300 mg oral 14C-CDP-choline
+  population: Six adults
   endpoint: elimination-half-life
   statistic: not-established
   value: null
   low: null
   high: null
   unit: hours
-  context: The study measured total radiolabel-derived plasma radioactivity and excretion; it did not establish a terminal half-life for unchanged parent citicoline.
+  context: Radioactivity showed peaks near 1 and 24 hours and less than 1% fecal recovery over five days; labeled metabolites and excretion cannot be treated as parent citicoline Cmax, bioavailability or terminal half-life.
   sourceId: dinsdale1983
   modelEligible: false
-- id: dr-citicoline-citicoline-pk-1
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
+- id: citicoline-metabolite-window
+  analyte: Plasma choline and uridine/cytidine metabolites
+  route: Oral
+  formulation: 500–4,000 mg citicoline in human studies
+  population: Healthy and mildly hypertensive adults
   endpoint: elimination-half-life
   statistic: not-established
   value: null
   low: null
   high: null
   unit: hours
-  context: No validated universal terminal half-life was established in the returned report.
-  sourceId: dr-citicoline-s1
+  context: Metabolite elevations persisted for several hours and uridine was detected more reliably than cytidine in later work; these concentration windows do not establish unchanged-parent kinetics or cognitive duration.
+  sourceId: wurtman2000
   modelEligible: false
 ```
 
@@ -440,7 +202,19 @@ Every HTTPS link returned by this run is represented in References. Links whose 
 ## Effects
 
 ```yaml
-[]
+- id: citicoline-subjective-boundary
+  conceptId: perception
+  name: Subjective enhancement
+  direction: Variable
+  evidence: Limited research
+  description: The reviewed trials do not provide a reproducible subjective focus, stimulation, motivation or energy effect. Cognitive task results remain separate measured outcomes.
+  sourceId: nakazaki2021
+  population: Adults studied in controlled cognition trials
+  exposure: 250–1,000 mg/day oral citicoline across studies
+  instrument: Subjective measures were not a consistent primary endpoint
+  magnitude: Not established
+  reportType: measured-assessment
+  conflictingSourceIds: [efsa2024]
 ```
 
 ## Outcomes
@@ -781,183 +555,88 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   sourceId: hubner2024
   population: Children aged 7–12 with ADHD; registry reports 27 recruited and 22 completing
   exposure: 250 mg/day for 28 days per period with a 28-day washout
-  instrument: Study-specific ADHD attention and behavioral measures
+  instrument: ADHD attention and behavioral assessment battery
   magnitude: No significant between-condition benefit reported.
 ```
 
 ## Mechanisms
 
 ```yaml
-- title: Endogenous phosphatidylcholine-pathway intermediate
-  description: Citicoline is CDP-choline, an endogenous intermediate in phosphatidylcholine synthesis; this identity is distinct from dietary choline itself.
-  sourceId: efsa2024
-  conceptId: choline-precursor
-- title: Oral metabolism to choline and uridine in humans
-  description: In 12 adults, 500–4000 mg oral citicoline increased plasma choline and uridine; cytidine was not reliably detectable, supporting extensive presystemic/systemic transformation rather than intact-parent exposure.
+- title: Phosphatidylcholine precursor pathway
+  description: Citicoline supplies a choline-containing phospholipid-pathway intermediate and is extensively hydrolyzed to choline and cytidine/uridine-related metabolites. This precursor mechanism does not establish clinical efficacy or intact parent brain entry.
   sourceId: wurtman2000
   conceptId: choline-precursor
-- title: Earlier human metabolism study
-  description: Oral and IV work reported rapid parent disappearance and increases in circulating choline and cytidine; this differs from the later uridine-dominant oral study and underscores assay/pathway uncertainty.
-  sourceId: lopez1987
-  conceptId: choline-precursor
-- title: Precursor metabolism
-  description: Measurements after administration support conversion to choline and cytidine; the parent compound and its metabolites require separate interpretation.
-  sourceId: lopez1987
+- title: Metabolite availability after oral dosing
+  description: Human disposition studies show increased circulating choline and pyrimidine metabolites after citicoline; measured metabolites must not be collapsed into a single parent-compound PK curve.
+  sourceId: dinsdale1983
   conceptId: choline-precursor
 ```
 
 ## Cautions
 
 ```yaml
-- title: Acute ischemic stroke efficacy is not established
-  description: ICTUS showed no recovery advantage, and a 2020 Cochrane review found little or no benefit for mortality, disability, functional recovery or neurological recovery.
+- title: Prespecified stroke outcomes were negative
+  description: ICTUS and COBRIT did not improve their prespecified global recovery outcomes, and a Cochrane review judged overall stroke evidence low certainty.
   sourceId: cochrane2020
-- title: Traumatic brain injury efficacy is not established
-  description: The 1213-person COBRIT phase 3 trial found no improvement in functional or cognitive status at 90 days.
-  sourceId: zafonte2012
-- title: Current acute-stroke guideline context
-  description: The 2026 AHA/ASA acute ischemic stroke guideline states that current neuroprotective trials have not produced sufficient evidence to warrant clinical use; it does not give a citicoline-specific recommendation.
-  sourceId: aha-stroke-2026
-- title: Spanish medicinal-label contraindications
-  description: Somazina is contraindicated with hypersensitivity to citicoline/excipients and in patients with hypertonia of the parasympathetic nervous system.
-  sourceId: aemps-somazina
-- title: Labelled adverse reactions
-  description: The Spanish SmPC lists very rare reports including hallucinations, headache, vertigo, hypertension or hypotension, dyspnea, nausea, vomiting, occasional diarrhea, rash/urticaria/purpura, chills and edema.
-  sourceId: aemps-somazina
-- title: Pregnancy and lactation uncertainty
-  description: Spanish labels report insufficient pregnancy data and advise use only when clearly necessary; an injectable label states that excretion into human milk is unknown and neonatal risk cannot be excluded.
+- title: Label-specific adverse effects
+  description: Spanish citicoline labeling lists rare headache, dizziness, blood-pressure changes, gastrointestinal symptoms, rash and hypersensitivity reactions; frequencies are not precise incidence estimates from controlled oral trials.
   sourceId: aemps-somazina-injectable
-- title: Pediatric evidence is limited
-  description: The Spanish medicinal label provides no established pediatric dose, and EU novel-food labeling requires a statement that citicoline-containing foods are not intended for children.
+- title: Pregnancy and organ-impairment gaps
+  description: Adequate pregnancy/lactation evidence and dedicated renal/hepatic impairment dose-adjustment studies were not identified. Normal laboratory results in selected trials do not establish safety in organ disease.
+  sourceId: hc-cognitive-2025
+- title: Formulation and salt basis
+  description: Inner-salt citicoline, monosodium citicoline, branded Cognizin, oral products and injectable medicines require separate dose and quality interpretation.
   sourceId: eu-novel-food-2026
-- title: Healthy-memory evidence is inconsistent
-  description: The positive 2021 episodic-memory finding was secondary, the primary working-memory endpoint was null, and EFSA judged the broader memory claim unsubstantiated after weighing other trials.
-  sourceId: efsa2024
-- title: Disease outcomes do not transfer
-  description: The large ICTUS trial did not demonstrate improved recovery after moderate-to-severe acute stroke.
-  sourceId: davalos2012
-- title: Limited safety horizon
-  description: A short trial in selected older adults does not establish long-term safety across all populations.
-  sourceId: nakazaki2021
-- title: Pediatric ADHD pilot was negative
-  description: The small double-blind crossover ADHD pilot did not show a significant benefit and cannot establish broad pediatric safety or a treatment role.
-  sourceId: hubner2024
-- title: Preliminary TBI signal needs replication
-  description: The 2026 single-center TBI pilot reported better MMSE and functional secondary outcomes, but it is small, later than COBRIT, and its funding disclosure was not verified.
-  sourceId: shakeri2026
-- title: Proposed EU memory claim refused
-  description: The European Commission refused the proposed citicoline memory health claim in Regulation (EU) 2025/2223; this does not ban the authorized ingredient or resolve every endpoint-specific trial.
-  sourceId: eu-memory-claim-2025
 ```
 
 ## Claims
 
 ```yaml
-- id: citicoline-versus-dietary-choline
-  assertion: Citicoline and dietary choline are not synonymous; citicoline is CDP-choline, while choline is an essential nutrient used in membrane phospholipids and acetylcholine synthesis.
-  relation: identity-distinction
+- id: citicoline-precursor-boundary
+  assertion: Citicoline is a phosphatidylcholine-pathway precursor that generates choline and pyrimidine metabolites.
+  relation: precursor-of
   participants:
     - entityId: substance:citicoline
-      role: cd-p-choline-substance
+      role: precursor
     - entityId: tag:choline-precursor
-      role: choline-related-mechanism
-  context: Chemical and nutritional identity distinction
-  sourceIds:
-    - efsa2024
-    - nih-choline
+      role: metabolic-product
+  context: Human ADME studies support metabolite availability, but not intact parent BBB passage or general cognitive benefit.
+  sourceIds: [dinsdale1983, wurtman2000]
   conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: This distinction does not establish superiority of citicoline over dietary choline for any clinical outcome.
-- id: citicoline-stroke-efficacy
-  assertion: Citicoline has not demonstrated a clinically meaningful recovery benefit in the pivotal ICTUS acute-ischemic-stroke trial or the later Cochrane synthesis.
-  relation: clinical-evidence
+  limitation: Metabolite exposure is not a clinical outcome.
+- id: citicoline-stroke-null
+  assertion: Large citicoline stroke and TBI trials did not improve prespecified global recovery outcomes.
+  relation: tested-with-null-result
   participants:
     - entityId: substance:citicoline
       role: intervention
     - entityId: tag:stroke-recovery
       role: outcome
-  context: Acute ischemic stroke
-  sourceIds:
-    - davalos2012
-    - cochrane2020
-  conflictingSourceIds: []
+  context: ICTUS and COBRIT were stopped for futility on their primary global endpoints.
+  sourceIds: [davalos2012, zafonte2012]
+  conflictingSourceIds: [shakeri2026]
   assessment: not-formally-assessed
-  limitation: Cochrane rated the pooled evidence low certainty; this does not address every stroke subtype, timing or rehabilitation context.
-- id: citicoline-tbi-efficacy
-  assertion: Citicoline did not improve the prespecified global functional/cognitive outcome in the phase 3 COBRIT traumatic-brain-injury trial.
-  relation: clinical-evidence
-  participants:
-    - entityId: substance:citicoline
-      role: intervention
-    - entityId: tag:traumatic-brain-injury-recovery
-      role: outcome
-  context: Complicated mild, moderate and severe nonpenetrating traumatic brain injury
-  sourceIds:
-    - zafonte2012
-  conflictingSourceIds: []
-  assessment: not-formally-assessed
-  limitation: Trial adherence was incomplete, but adherent-patient analyses did not reverse the null primary conclusion.
-- id: citicoline-memory-health-claim
-  assertion: EFSA concluded that a cause-and-effect relationship was not established between citicoline consumption and improvement, maintenance or reduced loss of memory in middle-aged or older adults with age-associated subjective memory impairment.
-  relation: regulatory-evidence-assessment
-  participants:
-    - entityId: substance:citicoline
-      role: food-constituent
-    - entityId: tag:episodic-memory
-      role: memory-domain
-  context: EU health-claim scientific assessment
-  sourceIds:
-    - efsa2024
-  conflictingSourceIds: []
-  assessment: not-formally-assessed
-  limitation: EFSA evaluated a specific proposed food-health claim and target population, not all neurological indications.
-- id: citicoline-cognition-patent
-  assertion: A Kyowa Hakko Bio patent family contains method-of-use claims involving citicoline or its salts for cognitive, attentional and motor performance.
-  relation: patent-claim
-  participants:
-    - entityId: substance:citicoline
-      role: claimed-agent
-    - entityId: tag:cognitive-task-performance
-      role: claimed-domain
-  context: Intellectual-property record associated with commercial citicoline applications
-  sourceIds:
-    - kyowa-patent-2024
-  conflictingSourceIds: []
-  assessment: not-formally-assessed
-  limitation: Patent issuance establishes intellectual-property rights, not clinical efficacy or regulatory approval.
-- id: citicoline-choline
-  assertion: Administered citicoline is converted into circulating metabolites including choline.
-  relation: metabolic-precursor
-  participants:
-    - entityId: substance:citicoline
-      role: substance
-    - entityId: tag:choline-precursor
-      role: mechanism
-  context: Human and animal metabolism experiments distinguished parent compound from metabolites
-  sourceIds:
-    - lopez1987
-  conflictingSourceIds: []
-  assessment: not-formally-assessed
-  limitation: Metabolite availability alone does not establish a memory benefit.
+  limitation: A newer small TBI pilot is preliminary and not a replication of either large trial.
 ```
 
 ## Interactions
 
 ```yaml
 - id: citicoline-levodopa
-  name: Levodopa-containing medicines
+  name: Levodopa
   otherSlug: null
-  summary: The Spanish Somazina SmPC states that citicoline potentiates the effects of medicines containing L-Dopa.
+  summary: Spanish medicinal labeling describes potentiation with levodopa; magnitude and dose-adjustment requirements are not quantified.
   sourceId: aemps-somazina
-  context: Product-label interaction statement; mechanism and clinical magnitude are not specified in the cited SmPC.
-  conflictingSourceIds: []
+  mechanism: Label-described pharmacodynamic potentiation
+  context: Regulatory label statement, not a controlled interaction trial.
 - id: citicoline-meclofenoxate
-  name: Meclofenoxate (centrophenoxine)
-  otherSlug: meclofenoxate
-  summary: The Spanish Somazina SmPC states that citicoline should not be administered together with meclofenoxate; the injectable label also names centrophenoxine.
-  sourceId: aemps-somazina
-  context: Product-label contraindicated coadministration statement; no quantitative interaction magnitude is provided.
-  conflictingSourceIds: []
+  name: Meclofenoxate / centrophenoxine
+  otherSlug: null
+  summary: Spanish injectable labeling says not to coadminister; the evidence is product-label specific.
+  sourceId: aemps-somazina-injectable
+  mechanism: Label contraindication/avoidance
+  context: Does not quantify risk for every oral supplement product.
 ```
 
 ## Experience links
@@ -1301,526 +980,24 @@ Every HTTPS link returned by this run is represented in References. Links whose 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Commercial assignee is identified by the patent record; clinical-publication COI status is not applicable.
   conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s1
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.2903/j.efsa.2013.3421
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s3
-  title: Ingredient record
-  authors: Not assessed
-  year: 2026
-  url: https://webprod.hc-sc.gc.ca/nhpid-bdipsn/ingredReq?id=13786
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s6
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1016/0197-0186(87
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s8
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1016/S0006-2952(00
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s10
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1093/jn/nxab119
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s11
-  title: Full text
-  authors: Not assessed
-  year: 2026
-  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8349115/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s13
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1001/archneur.1996.00550050071026
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s14
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.4236/fns.2012.36103
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s16
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1177/1087054715593633
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s17
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.2903/j.efsa.2024.8861
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s19
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1159/000071116
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s21
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.2147/CIA.S38420
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s22
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/10669911/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s23
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/36678257/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s24
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.3390/nu15020386
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s26
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1016/S0140-6736(12
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s27
-  title: Registry
-  authors: Not assessed
-  year: 2026
-  url: https://clinicaltrials.gov/study/NCT00331890
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s29
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1001/jama.2012.13256
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s30
-  title: Disclosure text
-  authors: Not assessed
-  year: 2026
-  url: https://jamanetwork.com/journals/jama/fullarticle/1392561
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s31
-  title: Registry
-  authors: Not assessed
-  year: 2026
-  url: https://clinicaltrials.gov/study/NCT00545662
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s33
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1002/14651858.CD013066.pub2
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s34
-  title: Disclosure text
-  authors: Not assessed
-  year: 2026
-  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8406786/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s36
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1159/000346602
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s38
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1016/j.neuroscience.2026.08.058
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s39
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/41027417/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s40
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1177/08977151251375914
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s42
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1097/WNF.0000000000000602
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s43
-  title: Registry
-  authors: Not assessed
-  year: 2026
-  url: https://ensaiosclinicos.gov.br/rg/RBR-3jpnxqw
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s44
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/36639525/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s45
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1007/s00417-022-05947-5
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s46
-  title: Full text
-  authors: Not assessed
-  year: 2026
-  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10199108/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s47
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/41517474/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s48
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.3390/jcm15010223
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s49
-  title: Full text
-  authors: Not assessed
-  year: 2026
-  url: https://www.mdpi.com/2077-0383/15/1/223
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s50
-  title: PubMed
-  authors: Not assessed
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/42552237/
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s51
-  title: DOI
-  authors: Not assessed
-  year: 2026
-  url: https://doi.org/10.1152/ajpendo.00139.2026
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s52
-  title: Official label
-  authors: Not assessed
-  year: 2026
-  url: https://cima.aemps.es/cima/dochtml/ft/53168/FT_53168.html
-  kind: Deep Research source
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-s57
-  title: Information for Consumers on Using Dietary Supplements
-  authors: U.S. Food and Drug Administration
-  year: 2026
-  url: https://www.fda.gov/food/dietary-supplements/information-consumers-using-dietary-supplements
-  kind: Official regulatory guidance
-  insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-link-1
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://doi.org/10.1016/0197-0186(87)90049-0
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-link-2
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://doi.org/10.1016/S0006-2952(00)00436-6
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
-- id: dr-citicoline-link-3
-  title: Deep Research source link
-  authors: Deep Research returned source; metadata not separately normalized
-  year: 2026
-  url: https://doi.org/10.1016/S0140-6736(12)60813-7
-  kind: Deep Research source link
-  insight: Direct link returned by the completed Deep Research report; the article's Evidence note preserves the associated finding and limitation.
-  limitation: Bibliographic metadata was not separately normalized from the capture.
-  funding: Not assessed.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
-  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
 
 ```yaml
 - jurisdiction: Spain
-  activity: Medicinal use of Somazina oral and injectable citicoline-sodium products
-  status: AEMPS product information lists treatment of neurological/cognitive disorders associated with cerebrovascular accidents; Somazina also lists head-trauma-associated disorders, with product-specific dosing and precautions.
-  sourceUrl: https://cima.aemps.es/cima/dochtml/ft/53168
-  asOf: 2026-10-04
-- jurisdiction: European Union
-  activity: Novel-food use in food supplements and foods for special medical purposes
-  status: Consolidated Union-list conditions permit 500 mg/day in food supplements and 250 mg per serving up to 1000 mg/day in foods for special medical purposes; labeling must state the product is not intended for children.
-  sourceUrl: https://eur-lex.europa.eu/eli/reg_impl/2017/2470/2026-07-02/eng/
-  asOf: 2026-10-04
-- jurisdiction: United States
-  activity: Disease-treatment marketing claims for CDP-choline/citicoline supplement products
-  status: An FDA warning letter treated cited disease claims for a seller's CDP-choline/citicoline products as drug claims contributing to unapproved-new-drug violations; the letter is firm-specific and not an ingredient-wide approval determination.
-  sourceUrl: https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/pure-nootropics-llc-565425-02052019
-  asOf: 2026-10-04
-- jurisdiction: European Union
-  activity: Proposed citicoline memory health claim
-  status: Regulation (EU) 2025/2223 refused the proposed memory-function claim effective 25 November 2025; this is not a ban on the authorized novel-food ingredient.
-  sourceUrl: https://eur-lex.europa.eu/eli/reg/2025/2223/oj/eng
+  activity: Medicinal oral and injectable citicoline
+  status: AEMPS lists Somazina sodium-salt medicines with product-specific adult dosing; medicinal authorization is distinct from the mixed stroke and TBI efficacy evidence.
+  sourceUrl: https://cima.aemps.es/cima/publico/lista.html
   asOf: 2026-10-10
-- jurisdiction: Canada
-  activity: Natural health product citicoline cognitive-function claims
-  status: Health Canada’s 2025 monograph provides product-licensing ranges for sustained attention and older-adult cognitive health, including a 500 mg single-dose maximum; this is not blanket approval of every retail product or stroke/TBI treatment.
-  sourceUrl: https://webprod.hc-sc.gc.ca/nhpid-bdipsn/atReq?atid=fonc.cognitive.func&lang=eng&wbdisable=true
+- jurisdiction: European Union
+  activity: Novel-food supplement use
+  status: Union-list permission covers specified citicoline food uses and limits; Regulation 2025/2223 refused the proposed memory health claim.
+  sourceUrl: https://eur-lex.europa.eu/eli/reg_impl/2025/2223/oj/eng
+  asOf: 2026-10-10
+- jurisdiction: United States
+  activity: Dietary supplements
+  status: FDA dietary supplements are not preapproved for effectiveness; a warning letter challenged disease-treatment claims for a citicoline product as unapproved-drug claims.
+  sourceUrl: https://www.fda.gov/food/dietary-supplements
   asOf: 2026-10-10
 ```
