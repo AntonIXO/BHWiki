@@ -11,6 +11,7 @@ REPO_DIR="${BHWIKI_REPO_DIR:-/opt/BHWiki}"
 REMOTE="${BHWIKI_REMOTE:-origin}"
 BRANCH="${BHWIKI_BRANCH:-main}"
 DB_DEPLOY="${BHWIKI_DB_DEPLOY:-/opt/optihealth_db/deploy/tenants/bhwiki.sh}"
+DB_CONTAINER="${BHWIKI_DB_CONTAINER:-supa-oriole-db}"
 COMPOSE_FILE="$REPO_DIR/deploy/compose.yaml"
 COMPOSE_ENV="${BHWIKI_COMPOSE_ENV:-/etc/bhwiki/compose.env}"
 RUNTIME_ENV="${BHWIKI_RUNTIME_ENV:-/etc/bhwiki/runtime.env}"
@@ -27,6 +28,7 @@ trap 'fatal "failed at line $LINENO: $BASH_COMMAND"' ERR
 [[ "$EUID" -eq 0 ]] || fatal "run as root"
 [[ -d "$REPO_DIR/.git" ]] || fatal "not a Git checkout: $REPO_DIR"
 [[ -x "$DB_DEPLOY" ]] || fatal "database deployment script is not executable: $DB_DEPLOY"
+[[ -f "$REPO_DIR/deploy/consolidate-sources.sql" ]] || fatal "missing source consolidation SQL"
 [[ -f "$COMPOSE_ENV" ]] || fatal "missing production Compose env: $COMPOSE_ENV"
 [[ -f "$RUNTIME_ENV" ]] || fatal "missing runtime env: $RUNTIME_ENV"
 
@@ -79,7 +81,10 @@ log "Building Docker image $IMAGE"
 docker build --tag "$IMAGE" "$REPO_DIR"
 
 log "Publishing content to OrioleDB"
+bash -c "docker exec -i '$DB_CONTAINER' psql -X -U postgres -d postgres -v ON_ERROR_STOP=1 -q" < "$REPO_DIR/deploy/consolidate-sources.sql"
 bash "$DB_DEPLOY" seed
+log "Consolidating source identities created during publication"
+bash -c "docker exec -i '$DB_CONTAINER' psql -X -U postgres -d postgres -v ON_ERROR_STOP=1 -q" < "$REPO_DIR/deploy/consolidate-sources.sql"
 
 log "Pinning production image $IMAGE"
 STAMP="$(date +%Y%m%d-%H%M%S)"
