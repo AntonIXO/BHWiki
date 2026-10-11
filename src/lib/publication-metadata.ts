@@ -39,7 +39,21 @@ export function validateEditorialMetadata(substances: Substance[], input: unknow
 }
 
 export function sourceIdentity(ref: Reference) {
-  return { doi: ref.doi?.replace(/^https?:\/\/(dx\.)?doi\.org\//i, "").toLowerCase() ?? null, pmid: ref.pmid ?? null, url: ref.url };
+  const pubmedId = ref.url.match(/^https?:\/\/(?:www\.)?pubmed\.ncbi\.nlm\.nih\.gov\/(\d+)(?:\/|$)/i)?.[1] ?? null;
+  const doiUrl = ref.url.match(/^https?:\/\/(?:dx\.)?doi\.org\/(.+)$/i)?.[1]?.replace(/[?#].*$/, "").replace(/\/$/, "") ?? null;
+  return {
+    doi: (ref.doi ?? doiUrl)?.replace(/^https?:\/\/(dx\.)?doi\.org\//i, "").toLowerCase() ?? null,
+    pmid: ref.pmid ?? pubmedId,
+    url: ref.url,
+  };
+}
+
+function declaredSourceIdentity(ref: Reference) {
+  return {
+    doi: ref.doi?.replace(/^https?:\/\/(dx\.)?doi\.org\//i, "").toLowerCase() ?? null,
+    pmid: ref.pmid ?? null,
+    url: ref.url,
+  };
 }
 
 /** Article-specific interpretations can differ; bibliographic identity cannot. */
@@ -48,7 +62,7 @@ export function validateCanonicalSources(references: Reference[]): void {
   const find = (index: number): number => parents[index] === index ? index : (parents[index] = find(parents[index]));
   const keys = new Map<string, number>();
   references.forEach((ref, index) => {
-    const identity = sourceIdentity(ref);
+    const identity = declaredSourceIdentity(ref);
     for (const [field, value] of Object.entries(identity)) {
       if (!value) continue;
       const key = `${field}:${value}`;
@@ -62,7 +76,7 @@ export function validateCanonicalSources(references: Reference[]): void {
   for (const refs of groups.values()) {
     const base = refs[0];
     for (const field of ["doi", "pmid"] as const) {
-      const identities = new Set(refs.map((ref) => sourceIdentity(ref)[field]).filter(Boolean));
+      const identities = new Set(refs.map((ref) => declaredSourceIdentity(ref)[field]).filter(Boolean));
       if (identities.size > 1) throw new Error(`Conflicting canonical source ${field}: ${base.title}`);
     }
     for (const field of ["title", "authors", "year", "url", "kind"] as const) {

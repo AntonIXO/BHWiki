@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { substances } from "../src/lib/content";
-import { contentHash, validateCanonicalSources, validateEditorialMetadata } from "../src/lib/publication-metadata";
+import { contentHash, sourceIdentity, validateCanonicalSources, validateEditorialMetadata } from "../src/lib/publication-metadata";
 
 test("sourced drafts permit absent review metadata and stale attestations fail", () => {
   assert.equal(validateEditorialMetadata(substances, { version: 1, articles: {} }).size, 0);
@@ -27,4 +27,17 @@ test("canonical source metadata agrees across articles; interpretations may diff
   assert.throws(() => validateCanonicalSources([{ ...source, doi: "10.1/one" }, { ...source, doi: "10.1/two" }]), /Conflicting canonical source doi/);
   assert.throws(() => validateCanonicalSources([{ ...source, pmid: "123" }, { ...source, pmid: "456" }]), /Conflicting canonical source pmid/);
   validateCanonicalSources(substances.flatMap((article) => article.references));
+});
+
+test("source identity derives PMID and DOI from canonical URLs", () => {
+  assert.deepEqual(sourceIdentity({ id: "pubmed", title: "", authors: "", year: 2020, url: "https://pubmed.ncbi.nlm.nih.gov/12345678/", kind: "", insight: "", limitation: "" }), {
+    doi: null,
+    pmid: "12345678",
+    url: "https://pubmed.ncbi.nlm.nih.gov/12345678/",
+  });
+  assert.deepEqual(sourceIdentity({ id: "doi", title: "", authors: "", year: 2020, url: "https://doi.org/10.1234/Example.1/", kind: "", insight: "", limitation: "" }), {
+    doi: "10.1234/example.1",
+    pmid: null,
+    url: "https://doi.org/10.1234/Example.1/",
+  });
 });
