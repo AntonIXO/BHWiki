@@ -8,6 +8,7 @@ const root = path.resolve(import.meta.dirname, "..");
 const imageDir = path.join(root, "public/molecules");
 const cacheFile = "/tmp/bhwiki-portal-cache.json";
 const skipFile = "/tmp/bhwiki-portal-skips.json";
+const includeIdentityStubs = process.argv.includes("--include-identity-stubs");
 const reviewedAt = "2026-10-03";
 const pauseMs = 220;
 const userAgent = "BHWiki/0.1 (PubChem identity curation)";
@@ -239,6 +240,10 @@ for (const spec of portalManifest) {
     skips.push({ slug: spec.slug, name: spec.name, query: spec.query, reason: "Reserved or duplicate slug" });
     continue;
   }
+  if (!includeIdentityStubs) {
+    skips.push({ slug: spec.slug, name: spec.name, query: spec.query, reason: "Identity-only publication disabled" });
+    continue;
+  }
   seen.add(spec.slug);
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(spec.slug)) {
     skips.push({ slug: spec.slug, name: spec.name, query: spec.query, reason: "Invalid slug" });
@@ -289,4 +294,4 @@ for (const [index, record] of substances.entries()) {
   written += 1;
 }
 await writeFile(skipFile, JSON.stringify(skips, null, 2));
-console.log(`wrote ${written} stubs, kept ${substances.length - written}, skipped ${skips.length}`);
+console.log(`wrote ${written} stubs, kept ${substances.length - written}, skipped ${skips.length}${includeIdentityStubs ? "" : " (pass --include-identity-stubs to publish identity-only records)"}`);

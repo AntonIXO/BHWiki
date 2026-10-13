@@ -48,6 +48,9 @@ export function validateSubstance(value:unknown):asserts value is Substance {
  objects(s.legal,p+'.legal',(r,k)=>{fields(r,['jurisdiction','activity','status','asOf'],k);https(r.sourceUrl,k+'.sourceUrl');if(!/^\d{4}-\d{2}-\d{2}$/.test(String(r.asOf)))fail(k,'invalid legal date');});
  objects(s.claims,p+'.claims',(r,k)=>{fields(r,['id','assertion','relation','context','limitation'],k);choice(r.assessment,['not-formally-assessed'],k+'.assessment');texts(r.sourceIds,k+'.sourceIds');texts(r.conflictingSourceIds,k+'.conflictingSourceIds');if(!(r.sourceIds as string[]).length)fail(k,'claim needs a source');objects(r.participants,k+'.participants',(m,j)=>fields(m,['entityId','role'],j));if((r.participants as unknown[]).length<2)fail(k,'claim needs participants');});
  const typed=value as Substance;
+ const hasSourceTrail=typed.references.some(reference=>reference.id!=='pubchem');
+ const hasEvidence=[typed.doses,typed.modifiers,typed.effects,typed.outcomes,typed.mechanisms,typed.cautions,typed.claims,typed.interactions,typed.legal,typed.identificationTests??[]].some(items=>items.length>0);
+ if(!hasSourceTrail&&!hasEvidence)fail(p,'published substance needs a non-identity source or evidence record');
  const sources=new Set(typed.references.map(r=>r.id));if(sources.size!==typed.references.length)fail(p,'duplicate reference ID');
  for(const statement of [...typed.effects,...typed.outcomes,...typed.doses,...typed.modifiers,...typed.mechanisms,...typed.cautions,...typed.interactions,...typed.pkObservations,...(typed.identificationTests ?? []),typed.halfLife,typed.kinetics])if(!sources.has(statement.sourceId))fail(p,`unknown source ${statement.sourceId}`);
  for(const route of typed.kinetics.timeline??[])if(!sources.has(route.sourceId))fail(p,`unknown source ${route.sourceId}`);

@@ -1,6 +1,6 @@
 # Content provenance and editorial conventions
 
-Curated on 2026-09-29, with a catalog fill on 2026-10-03. The launch collection contains ten original articles covering supplements, medications and psychoactive substances. The later fill adds twelve sourced articles and 169 identity stubs. Every article is a **sourced draft**; none has passed independent editorial review. `reviewedAt` records the source-curation date, not approval by a clinician or review board.
+Curated on 2026-09-29, with catalog fills through 2026-10-13. The published collection contains 158 sourced drafts. Identity-only PubChem stubs are kept out of the wiki; published records retain a non-identity source trail or source-linked research, safety, legal, interaction, or identification record. None has passed independent editorial review. `reviewedAt` records the source-curation date, not approval by a clinician or review board.
 
 The editable source is one Markdown file per substance, concept, and relationship under `content/`. Those files compile into the same article, concept, and relationship records the pages and the publisher use. `content/editorial.json` remains the separate review attestation and is empty for this collection.
 
@@ -40,7 +40,7 @@ Source titles and canonical identifiers in the content files are authoritative f
 
 ## Molecular identity and assets
 
-The ten local `public/molecules/<slug>.png` files are real 2D chemical diagrams from NCBI PubChem PUG REST, not generated illustrations. Formula, molecular weight and connectivity refer to the cited compound record; salts, hydrates, stereoisomers and commercial preparations may differ. Connectivity SMILES alone do not encode every stereochemical distinction; the PubChem CID identifies the depicted compound.
+The local `public/molecules/<slug>.png` files are real 2D chemical diagrams from NCBI PubChem PUG REST, not generated illustrations. Only published substances retain an image. Formula, molecular weight and connectivity refer to the cited compound record; salts, hydrates, stereoisomers and commercial preparations may differ. Connectivity SMILES alone do not encode every stereochemical distinction; the PubChem CID identifies the depicted compound.
 
 | Slug | PubChem record |
 | --- | --- |
@@ -63,9 +63,9 @@ Each concept has an original definition, type, aliases, source URLs and optional
 
 Hyperedges persist all participating entities and their roles. IDs use `substance:<slug>` and `tag:<id>`. A contextual relationship remains complete when filtering: for example, the caffeine–CYP1A2–tobacco-smoke relation must retain the smoke exposure member. Co-study does not mean synergy or a recommendation to combine substances, and an outcome relationship can describe an adverse result.
 
-## Catalog fill — 2026-10-03
+## Catalog fill and evidence cleanup — 2026-10-03 to 2026-10-13
 
-The bundled catalog now has 191 sourced drafts: the original ten articles, twelve articles written from inspected labels and papers, and 169 identity-only stubs. A stub records a PubChem formula, molecular weight, CID, connectivity SMILES, and a structure image. Its effects, doses, interactions, pharmacokinetics, and legal status stay unassessed.
+The bundled catalog formerly included identity-only PubChem stubs. Those pages and their unused structure assets were removed on 2026-10-13. The current catalog retains the sourced articles, research-atlas profiles, and enriched records whose source trails or evidence sections support publication.
 
 [Molekul](https://molekul.io/) and PsychonautWiki supplied names to look up. Their prose was not copied. Molekul is a peptide and actoprotector atlas without a reuse license used here. No vendor, donation, wearable, diary, extraction, cultivation, conversion, or trip-report text was imported. An experience link, when present, is one PsychonautWiki substance URL. The report itself is not hosted.
 
@@ -88,11 +88,11 @@ These names did not resolve to a single PubChem compound and were skipped: delta
 
 Class tags are a browse index. Their descriptions do not claim that every member shares a mechanism. Opioid cites Pathan and Williams, PMID 26516461. Benzodiazepine cites Griffin 2013, PMID 23789008, and does not state a GABA-A mechanism. Dissociative and arylcyclohexylamine cite Pelletier 2022, PMID 36555217. Cannabinoid cites the dronabinol label. Deliriant cites the diphenhydramine label as one anticholinergic example. PMIDs 27982573, 26516546, 24781744, and 28861491 are not concept sources.
 
-New structure files use `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/<CID>/PNG?image_size=600x400`. `scripts/generate-portal.ts` resolves a stub identity and writes a missing Markdown file. It leaves an existing file unchanged. The Markdown under `content/` is what the pages load.
+New structure files use `https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/<CID>/PNG?image_size=600x400`. `scripts/generate-portal.ts` skips identity-only records by default; `--include-identity-stubs` is an explicit opt-in for acquisition work. The Markdown under `content/` is what the pages load.
 
 ## Molekul profile import — 2026-10-04
 
-Chrome extraction covered all **95** compound profiles in the [Molekul index](https://molekul.io/compounds). This adds **87** records and enriches **8** existing identity articles; the current bundled catalog contains **281** sourced drafts. The eight existing records are Bemitil, Bromantane, Chlodantane, Kemantane, Noopept, phenylpiracetam (Molekul's Phenotropil), Picamilon and Piracetam. Previously curated clinical articles remain unchanged.
+Chrome extraction covered all **95** compound profiles in the [Molekul index](https://molekul.io/compounds). This adds **87** records and enriches **8** existing identity articles; the current bundled catalog contains **158** sourced drafts. The eight existing records are Bemitil, Bromantane, Chlodantane, Kemantane, Noopept, phenylpiracetam (Molekul's Phenotropil), Picamilon and Piracetam. Previously curated clinical articles remain unchanged.
 
 Each profile contains an original identity-lead note, aliases, a working browse classification, and the collected research-document links. Molecular identity, dose protocols, efficacy observations, half-lives and safety conclusions are not inferred from the source atlas. Existing PubChem identities are preserved. Newly imported preparations and unresolved candidates have `pubchemCid: null`; the interface explicitly displays the missing structure rather than assigning a surrogate molecule.
 
