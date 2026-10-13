@@ -100,7 +100,7 @@ test("comparison and interaction pages handle URL selections and incomplete reco
       () => document.documentElement.scrollWidth <= innerWidth + 1,
     ),
   ).toBeTruthy();
-  await page.goto("/compare?substances=not-a-substance,2c-b");
+  await page.goto("/compare?substances=not-a-substance,cerebrolysin");
   await expect(
     page.getByText("Unknown substance: not-a-substance"),
   ).toBeVisible();
@@ -155,7 +155,7 @@ test("figures and pharmacokinetics render only from committed data", async ({ pa
   await expect(page.getByText("100%", { exact: true })).toHaveCount(0);
   await expect(page.getByText("72%", { exact: true })).toHaveCount(0);
 
-  await page.goto("/substances/2c-b");
+  await page.goto("/substances/cerebrolysin");
   await expect(page.locator("#kinetics")).toHaveCount(0);
   await expect(page.locator(".kinetics-rail")).toHaveCount(0);
   await expect(page.getByRole("link", { name: "Pharmacokinetics", exact: true })).toHaveCount(0);

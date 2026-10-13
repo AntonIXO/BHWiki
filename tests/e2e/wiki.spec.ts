@@ -6,6 +6,7 @@ test('imported preparation has a source trail without a fabricated molecule', as
  await expect(page.getByText('Structure not established', { exact: true }).first()).toBeVisible();
  await expect(page.locator('a[href*="pubchem.ncbi.nlm.nih.gov/compound/"]')).toHaveCount(0);
  await expect(page.locator('img[src="/molecules/cerebrolysin.png"]')).toHaveCount(0);
+ await page.getByRole('button', { name: /Show research sources/ }).click();
  await expect(page.locator('a[href="https://molekul.io/compounds/cerebrolysin"]')).toBeVisible();
  await expect(page.locator('a[href="https://pubmed.ncbi.nlm.nih.gov/37818733/"]')).toBeVisible();
  const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
@@ -127,7 +128,7 @@ test('read APIs are compact and validate parameters',async({request})=>{
  expect((await request.get('/api/graph?limit=-1')).status()).toBe(400);
 });
 
-test('class index, a stub, and a sourced interaction hold on desktop and a phone width',async({page})=>{
+test('class index, removed stubs, and sourced interactions hold on desktop and a phone width',async({page})=>{
  await page.setViewportSize({width:1280,height:800});
  await page.goto('/');
  await page.getByRole('link',{name:'Opioid',exact:true}).click();
@@ -146,9 +147,8 @@ test('class index, a stub, and a sourced interaction hold on desktop and a phone
  await expect(page.locator('.substance-card').first()).toBeVisible();
  await expect(page.locator('.substance-card').filter({hasText:'Caffeine'})).toHaveCount(0);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
- await page.goto('/substances/2c-b');
- await expect(page.locator('#effects')).toContainText('Not assessed');
- await expect(page.locator('#safety')).toContainText('Not assessed');
+ const removed=await page.goto('/substances/2c-b');
+ expect(removed?.status()).toBe(404);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
 });
 test('reading surfaces meet automated accessibility checks',async({page})=>{
