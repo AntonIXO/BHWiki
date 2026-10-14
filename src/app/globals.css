@@ -199,6 +199,46 @@
 .article-page[data-entity-kind="substance"] .section-heading-icon { color: var(--article-accent, var(--primary)); border-color: color-mix(in oklch, var(--article-accent, var(--primary)) 25%, var(--border)); background: color-mix(in oklch, var(--article-accent, var(--primary)) 10%, var(--card)); }
 .article-page[data-entity-kind="substance"] .outcome-row-icon { color: var(--article-accent, var(--primary)); background: color-mix(in oklch, var(--article-accent, var(--primary)) 10%, var(--card)); }
 
+.route-dose-tabs { display: flex; min-width: 0; flex-direction: column; gap: .75rem; }
+.route-dose-tab-scroll { max-width: 100%; overflow-x: auto; padding: .15rem .2rem .25rem; scrollbar-width: thin; }
+.route-dose-tablist { display: inline-flex; min-width: max-content; align-items: center; gap: .15rem; border: 1px solid var(--border); border-radius: 999px; background: color-mix(in oklch, var(--muted) 68%, var(--card)); padding: .25rem; }
+.route-dose-tab { --route-color: var(--primary); position: relative; display: inline-flex; min-height: 2.2rem; min-width: 0; align-items: center; justify-content: center; border: 0; border-radius: 999px; background: transparent; padding: .35rem .7rem; color: var(--muted-foreground); font-size: .76rem; font-weight: 650; line-height: 1.15; outline: none; transition: color 160ms var(--ease-out); }
+.route-dose-tab:hover { color: var(--foreground); }
+.route-dose-tab:focus-visible { box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--route-color); }
+.route-dose-tab--oral { --route-color: oklch(.53 .14 160); }
+.route-dose-tab--intravenous { --route-color: oklch(.52 .14 235); }
+.route-dose-tab--sublingual { --route-color: oklch(.54 .14 305); }
+.route-dose-tab--other { --route-color: oklch(.52 .04 255); }
+.route-dose-tab-indicator { position: absolute; z-index: 0; inset: 0; border-radius: inherit; background: var(--route-color); box-shadow: 0 .2rem .7rem color-mix(in oklch, var(--route-color) 22%, transparent); }
+.route-dose-tab-label { position: relative; z-index: 1; display: inline-flex; align-items: center; gap: .35rem; white-space: nowrap; }
+.route-dose-tab[data-active="true"], .route-dose-tab[aria-selected="true"] { color: white; }
+.route-dose-tab-label small { display: inline-grid; min-width: 1.15rem; place-items: center; border-radius: 999px; background: color-mix(in oklch, currentColor 14%, transparent); padding: .13rem .28rem; font-size: .64rem; font-weight: 750; line-height: 1; }
+.route-dose-panel { min-width: 0; }
+.route-dose-panel-caption { margin: 0 0 .65rem; color: var(--muted-foreground); font-size: .75rem; }
+.route-dose-panel-caption span { color: var(--foreground); font-weight: 700; }
+.route-dose-card { min-width: 0; border-inline-start: .2rem solid var(--route-color); }
+.route-dose-card--oral { --route-color: oklch(.53 .14 160); }
+.route-dose-card--intravenous { --route-color: oklch(.52 .14 235); }
+.route-dose-card--sublingual { --route-color: oklch(.54 .14 305); }
+.route-dose-card--other { --route-color: oklch(.52 .04 255); }
+.route-dose-card [data-slot="card-title"] h3 { overflow-wrap: anywhere; font-size: .92rem; }
+.route-dose-card [data-slot="card-action"] { max-width: 58%; }
+.route-dose-card [data-slot="card-action"] [data-slot="badge"] { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: .66rem; }
+.route-dose-context { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem .8rem; border-top: 1px solid var(--border); padding-top: .65rem; }
+.route-dose-context > div { display: flex; min-width: 0; flex-direction: column; gap: .12rem; }
+.route-dose-context dt { color: var(--muted-foreground); font-size: .67rem; line-height: 1.25; }
+.route-dose-context dd { min-width: 0; overflow-wrap: anywhere; font-size: .78rem; line-height: 1.35; }
+.route-dose-note { margin: 0; color: var(--muted-foreground); font-size: .76rem; line-height: 1.45; }
+.route-dose-note strong { color: var(--foreground); }
+
+@media (max-width: 640px) {
+  .route-dose-context { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-dose-tab { transition: none; }
+}
+
 /* Keep linked entity labels scannable when a page mixes substances, concepts,
    and evidence types. The same palette is reused by cards and graph text. */
 .entity-tag {

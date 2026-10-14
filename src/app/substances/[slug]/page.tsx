@@ -1,6 +1,7 @@
 import { EvidenceButton } from "@/components/evidence";
 import { SourceDisclosures } from "@/components/source-disclosures";
 import { EffectPreview } from "@/components/effect-preview";
+import { RouteDoseTabs } from "@/components/route-dose-tabs";
 import { TimingExplorer } from "@/components/timing-explorer";
 import { MechanismExplorer } from "@/components/mechanism-explorer";
 import { StudyPlots } from "@/components/study-plots";
@@ -29,7 +30,7 @@ import { Item, ItemContent, ItemDescription, ItemMedia, ItemTitle } from "@/comp
 import { Separator } from "@/components/ui/separator";
 import { indexEntities, type EntityIndex } from "@/lib/entities";
 import { getSubstance, getCatalog, getConcepts, getKnowledgeGraph } from "@/lib/repository";
-import { conceptPath, type DoseContext, type ExternalWikiService, type Observation, type Substance } from "@/lib/types";
+import { conceptPath, type ExternalWikiService, type Observation, type Substance } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 type Props = { params: Promise<{ slug: string }> };
@@ -50,26 +51,6 @@ function dateLabel(value: string) {
   const date = new Date(value);
   return Number.isNaN(date.getTime()) ? "Not recorded" : date.toLocaleDateString("en", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
 }
-
-function doseQuantity(dose: DoseContext) {
-  if (dose.quantity === null) return dose.amount || "Amount not established";
-  const quantity = new Intl.NumberFormat("en", { maximumFractionDigits: 6 }).format(dose.quantity);
-  const maximum = dose.quantityMax === null ? "" : `–${new Intl.NumberFormat("en", { maximumFractionDigits: 6 }).format(dose.quantityMax)}`;
-  return `${quantity}${maximum} ${dose.unit}`;
-}
-
-const foodRelationLabels: Record<NonNullable<DoseContext["foodRelation"]>, string> = {
-  "empty-stomach": "Empty stomach",
-  "with-food": "With food",
-  "with-or-without-food": "With or without food",
-  "food-effect-not-established": "Food effect not established",
-};
-const solubilityLabels: Record<NonNullable<DoseContext["solubility"]>, string> = {
-  "water-soluble": "Water-soluble",
-  "fat-soluble": "Fat-soluble",
-  "formulation-dependent": "Formulation-dependent solubility",
-  "solubility-not-established": "Solubility not established",
-};
 
 type ExternalWikiIconService = "wikipedia" | "examine" | "psychonaut";
 
@@ -97,16 +78,6 @@ function externalWikiLinks(substance: Substance) {
     .filter((link) => link.publisher === "PsychonautWiki" && !configured.some((item) => item.service === "psychonaut"))
     .map((link) => ({ service: "psychonaut" as const, label: link.publisher, href: link.url }));
   return [...configured, ...legacyPsychonaut];
-}
-
-function IntakeBadges({ dose }: { dose: DoseContext }) {
-  if (!dose.foodRelation && !dose.solubility) return null;
-  return (
-    <div className="flex flex-wrap gap-2" aria-label="Intake and absorption details">
-      {dose.foodRelation && <Badge variant="outline" className="border-emerald-300 bg-emerald-50 text-emerald-900 dark:border-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-100">{foodRelationLabels[dose.foodRelation]}</Badge>}
-      {dose.solubility && <Badge variant="outline" className="border-violet-300 bg-violet-50 text-violet-900 dark:border-violet-800 dark:bg-violet-950/40 dark:text-violet-100">{solubilityLabels[dose.solubility]}</Badge>}
-    </div>
-  );
 }
 
 function EntityLink({ id, entities }: { id: string; entities: EntityIndex }) {
@@ -166,7 +137,6 @@ function ContextList({ items }: { items: { term: string; detail: ReactNode }[] }
   );
 }
 
-const doseCategories = { research: "Research exposure", "approved-label": "Approved-label context", reference: "Reference description", community: "Community description" } as const;
 const statisticLabels = { "reported-range": "Reported range", "study-mean": "Study mean", approximate: "Approximate estimate", "not-established": "No numeric estimate" } as const;
 
 function Direction({ direction }: { direction: Observation["direction"] }) {
@@ -446,30 +416,7 @@ export default async function SubstancePage({ params }: Props) {
             <p className="text-muted-foreground">Published exposure records, distinguished by source category. These describe study or reference context and are not personal dosing recommendations.</p>
             {hasIntakeDetails && <p className="text-sm text-muted-foreground">Food timing and solubility labels describe the cited route or formulation. Solubility alone does not establish whether food changes absorption.</p>}
             {substance.doses.length ? (
-              <div className="flex flex-col gap-4">
-                {substance.doses.map((dose, index) => (
-                  <Card key={`${dose.label}-${index}`}>
-                    <CardHeader>
-                      <CardTitle><h3>{dose.label}</h3></CardTitle>
-                      <CardAction><Badge variant="outline">{doseCategories[dose.sourceCategory]}</Badge></CardAction>
-                    </CardHeader>
-                    <CardContent className="flex flex-col gap-4">
-                      <p className="text-lg font-medium">{doseQuantity(dose)} <Source substance={substance} id={dose.sourceId} /></p>
-                      <IntakeBadges dose={dose} />
-                      <ContextList items={[
-                        { term: "Ingredient / form", detail: `${dose.ingredient || "Not established"} · ${dose.formulation || "Formulation not established"}` },
-                        { term: "Route", detail: dose.route || "Not established" },
-                        { term: "Frequency", detail: dose.frequency || "Not established" },
-                        { term: "Duration", detail: dose.duration || "Not established" },
-                        { term: "Population", detail: dose.population || "Not established" },
-                        { term: "Purpose", detail: dose.purpose || "Not assessed" },
-                      ]} />
-                      {dose.absorptionNote && <p><strong>Absorption context</strong> {dose.absorptionNote}</p>}
-                      <p>{dose.note}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+              <RouteDoseTabs doses={substance.doses} references={substance.references} />
             ) : <DataEmpty>Not assessed. No sourced exposure records have been curated.</DataEmpty>}
           </section>
 
