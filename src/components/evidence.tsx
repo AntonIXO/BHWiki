@@ -188,9 +188,9 @@ export function EvidenceContents({ record }: { record: EvidenceRecord }) {
   const studyContext = record.context.filter((context) =>
     studyLabels.has(context.label),
   );
-  const resultContext = record.context.filter((context) =>
-    resultLabels.has(context.label),
-  );
+  const resultContext = record.result
+    ? []
+    : record.context.filter((context) => resultLabels.has(context.label));
   const reportingContext = record.context.filter(
     (context) => !studyLabels.has(context.label) && !resultLabels.has(context.label),
   );
@@ -199,13 +199,6 @@ export function EvidenceContents({ record }: { record: EvidenceRecord }) {
     <div className="evidence-contents">
       <div className="evidence-status-row">
         <Badge variant="secondary">{record.kind}</Badge>
-        {record.editorialStatus && (
-          <Badge variant="outline">
-            {record.editorialStatus === "editorially-reviewed"
-              ? "Editorially reviewed"
-              : "Sourced draft"}
-          </Badge>
-        )}
       </div>
       <div className="evidence-assertion"><Prose text={record.assertion} /></div>
       {record.result && (
@@ -217,7 +210,6 @@ export function EvidenceContents({ record }: { record: EvidenceRecord }) {
       {studyContext.length > 0 && <EvidenceFieldGroup icon={<FlaskConical size={15} aria-hidden="true" />} label="Study context" fields={studyContext} tone="study" />}
       {resultContext.length > 0 && <EvidenceFieldGroup icon={<Target size={15} aria-hidden="true" />} label="Result detail" fields={resultContext} tone="result" />}
       {reportingContext.length > 0 && <EvidenceFieldGroup icon={<FileText size={15} aria-hidden="true" />} label="Reporting details" fields={reportingContext} tone="reporting" />}
-      <div className="evidence-limit"><CircleAlert size={17} aria-hidden="true" /><p><strong>Limits of this assertion</strong>{record.limitation}</p></div>
       {(
         [
           ["Sources supporting this record", record.sources, "supporting"],
@@ -235,16 +227,12 @@ export function EvidenceContents({ record }: { record: EvidenceRecord }) {
                 <a className="evidence-source-title" href={r.url} target="_blank" rel="noreferrer">{r.title}</a>
                 {(r.authors || r.year || r.kind) && <p className="evidence-source-meta">{[r.authors, r.year && String(r.year), r.kind].filter(Boolean).join(" · ")}</p>}
                 {r.insight && <div className="evidence-source-insight"><Beaker size={16} aria-hidden="true" /><Prose text={r.insight} /></div>}
-                <div className="evidence-source-limit"><CircleAlert size={16} aria-hidden="true" /><p><strong>Study limitations</strong>{r.limitation ?? "Not assessed"}</p></div>
-                <SourceDisclosures reference={r} />
+                {r.limitation?.trim() && !/^not (?:assessed|reported)\.?$/i.test(r.limitation.trim()) && <div className="evidence-source-limit"><CircleAlert size={16} aria-hidden="true" /><p><strong>Study limitations</strong><Prose text={r.limitation} inline /></p></div>}
+                <SourceDisclosures reference={r} hideUnassessed />
               </article>
           ))}
         </section>
       ))}
-      <p className="evidence-footnote">
-        Editorial review status does not grade evidence certainty. Unassessed
-        information is not evidence of absence.
-      </p>
       {record.articleSlug && (
         <Link
           className="underline underline-offset-4"
@@ -272,11 +260,22 @@ function EvidenceFieldGroup({
     <section className={`evidence-field-group evidence-field-group--${tone}`}>
       <div className="evidence-section-heading"><span className="evidence-section-icon">{icon}</span><h3>{label}</h3><span className="evidence-field-count">{fields.length} {fields.length === 1 ? "field" : "fields"}</span></div>
       <dl className="evidence-field-grid">
-        {fields.map((field, index) => {
-          const unknown = /^Not assessed|^Not quantified/.test(field.value);
-          return <div key={`${field.label}-${index}`} className={`evidence-field ${unknown ? "evidence-field--unknown" : ""}`}><dt>{field.label}</dt><dd>{field.value}</dd></div>;
-        })}
+        {fields.map((field, index) => (
+          <div key={`${field.label}-${index}`} className="evidence-field">
+            <dt>{field.label}</dt>
+            <dd><EvidenceFieldValue field={field} /></dd>
+          </div>
+        ))}
       </dl>
     </section>
   );
+}
+
+function EvidenceFieldValue({ field }: { field: EvidenceRecord["context"][number] }) {
+  // Preserve authored Markdown; emphasize quantities in existing plain-text records.
+  if (!["Population", "Exposure", "Sample size"].includes(field.label) || /[*_`\[\]<>]/.test(field.value)) {
+    return <Prose text={field.value} inline />;
+  }
+  return field.value.split(/(\b\d+(?:[.,]\d+)?(?:\s?(?:mg|μg|µg|mcg|g|kg|mL|ml|minutes?|hours?|days?))?\b)/g)
+    .map((part, index) => index % 2 ? <strong key={index}>{part}</strong> : part);
 }

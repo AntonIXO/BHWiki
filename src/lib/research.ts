@@ -40,15 +40,16 @@ export function evidenceKey(
   return `${slug}~${kind}~${recordId(record)}`;
 }
 const context = (pairs: [string, unknown][]) =>
-  pairs.map(([label, value]) => ({
-    label,
-    value:
+  pairs.flatMap(([label, value]) => {
+    const text =
       typeof value === "number"
         ? String(value)
-        : typeof value === "string" && value
-          ? value
-          : "Not assessed",
-  }));
+        : typeof value === "string"
+          ? value.trim()
+          : "";
+    if (!text || /^(?:not assessed|not reported|not quantified in this summary)\.?$/i.test(text)) return [];
+    return [{ label, value: text }];
+  });
 export function observationRows(
   s: Substance,
   kind: "effect" | "outcome",
@@ -101,7 +102,7 @@ export function articleEvidence(s: Substance): EvidenceRecord[] {
           ["Population", o.population],
           ["Exposure", o.exposure],
           ["Instrument", o.result?.instrument ?? o.instrument],
-          ["Reported magnitude", observationMagnitude(o)],
+          ["Reported magnitude", o.result ? observationMagnitude(o) : o.magnitude],
           ["Study", o.study?.id],
           ["Design", o.study?.design],
           ["Sample size", o.study?.sampleSize],
