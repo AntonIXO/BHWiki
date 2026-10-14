@@ -164,6 +164,12 @@ export function ActionSearchBar({
         </div>
       </form>
 
+      {!isFocused && !query ? (
+        <p className="mt-1 text-[0.68rem] text-muted-foreground">
+          Press Ctrl+S to jump to search
+        </p>
+      ) : null}
+
       {isFocused ? (
         <div
           id={listId}
@@ -202,7 +208,7 @@ export function ActionSearchBar({
             {isLoading ? <p className="px-2.5 py-1.5 text-xs text-muted-foreground" role="status">Searching…</p> : null}
           </div>
           <div className="flex items-center justify-between border-t border-border px-3 py-2 text-[0.68rem] text-muted-foreground">
-            <span>Ctrl+S to jump to search</span>
+            <span>Search the BHWiki library</span>
             <kbd className="rounded border border-border px-1.5 py-0.5 font-mono">ESC</kbd>
           </div>
         </div>
