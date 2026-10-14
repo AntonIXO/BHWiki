@@ -156,19 +156,18 @@ export function ActionSearchBar({
             aria-expanded={isFocused}
             aria-autocomplete="list"
             aria-keyshortcuts="Control+S"
-            className="h-10 rounded-lg pe-9 ps-3 text-sm focus-visible:ring-offset-0"
+            className="h-10 rounded-lg pe-24 ps-3 text-sm focus-visible:ring-offset-0"
           />
+          {!isFocused && !query ? (
+            <kbd className="pointer-events-none absolute end-9 top-1/2 -translate-y-1/2 rounded border border-border/80 bg-muted/70 px-1.5 py-0.5 text-[0.62rem] font-medium text-muted-foreground">
+              Ctrl+S
+            </kbd>
+          ) : null}
           <span className="pointer-events-none absolute end-3 top-1/2 grid size-4 -translate-y-1/2 place-items-center text-muted-foreground" aria-hidden="true">
             {query ? <Send className="size-4" /> : <Search className="size-4" />}
           </span>
         </div>
       </form>
-
-      {!isFocused && !query ? (
-        <p className="mt-1 text-[0.68rem] text-muted-foreground">
-          Press Ctrl+S to jump to search
-        </p>
-      ) : null}
 
       {isFocused ? (
         <div

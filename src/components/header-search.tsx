@@ -96,7 +96,7 @@ export function HeaderSearch() {
   }
 
   return (
-    <div className="w-[clamp(22rem,36vw,34rem)] max-[640px]:w-[min(22rem,calc(100vw-13rem))] max-[480px]:w-36">
+    <div className="w-[clamp(20rem,30vw,30rem)] max-[640px]:w-[min(20rem,calc(100vw-13rem))] max-[480px]:w-36">
       <ActionSearchBar
         actions={actions}
         onSearch={searchLibrary}
