@@ -8,9 +8,13 @@ import { Button } from "@/components/ui/button";
 export default function MechanismCanvas({
   data,
   onSelect,
+  hoveredId,
+  onHover,
 }: {
   data: KnowledgeGraphData;
   onSelect: (id: string) => void;
+  hoveredId?: string | null;
+  onHover?: (id: string | null) => void;
 }) {
   const host = useRef<HTMLDivElement>(null),
     instance = useRef<Core | null>(null);
@@ -27,6 +31,20 @@ export default function MechanismCanvas({
           elements: model.elements,
           style: [
             ...graphStyle,
+            {
+              selector: ".mechanism-hovered",
+              style: {
+                "border-width": 3,
+                "border-color": "#315440",
+                "overlay-opacity": 0.08,
+                "overlay-color": "#315440",
+              },
+            },
+            {
+              selector: ".mechanism-related",
+              style: { "border-width": 2, "border-color": "#6c9475" },
+            },
+            { selector: ".mechanism-muted", style: { opacity: 0.2 } },
             {
               selector: "edge[directed]",
               style: {
@@ -53,6 +71,8 @@ export default function MechanismCanvas({
         cy.on("tap", "edge[directed]", (event) =>
           onSelect(event.target.data("evidenceKey")),
         );
+        cy.on("mouseover", "node", (event) => onHover?.(event.target.id()));
+        cy.on("mouseout", "node", () => onHover?.(null));
         observer = new ResizeObserver(() => {
           cy.resize();
           cy.fit(undefined, 35);
@@ -68,7 +88,21 @@ export default function MechanismCanvas({
       instance.current?.destroy();
       instance.current = null;
     };
-  }, [data, onSelect]);
+  }, [data, onHover, onSelect]);
+  useEffect(() => {
+    const cy = instance.current;
+    if (!cy || cy.destroyed()) return;
+    cy.batch(() => {
+      cy.elements().removeClass("mechanism-hovered mechanism-related mechanism-muted");
+      if (!hoveredId) return;
+      const focus = cy.getElementById(hoveredId);
+      if (focus.empty()) return;
+      const neighborhood = focus.closedNeighborhood();
+      focus.addClass("mechanism-hovered");
+      neighborhood.difference(focus).addClass("mechanism-related");
+      cy.elements().difference(neighborhood).addClass("mechanism-muted");
+    });
+  }, [hoveredId]);
   return (
     <div className="flex flex-col gap-3">
       {error ? (
@@ -79,7 +113,7 @@ export default function MechanismCanvas({
       ) : (
         <div
           ref={host}
-          className="h-[420px] rounded-lg border"
+          className="h-[280px] rounded-lg border sm:h-[320px]"
           role="img"
           aria-label="Mechanistic relationships. Use the accessible list below for keyboard navigation."
         />

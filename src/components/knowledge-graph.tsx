@@ -558,7 +558,9 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
             <Button type="button" variant="ghost" size="icon-sm" className="absolute top-2 right-2" aria-label="Close node details" onClick={() => setSelectedId(null)}>
               <X />
             </Button>
-            <p className="text-xs font-medium tracking-wide text-muted-foreground uppercase">{selected.kind === "tag" ? selected.tagKind : selected.kind === "relationship" ? selected.relation : "Substance"}</p>
+            <p className={cn("text-xs font-medium tracking-wide uppercase", selected.kind === "tag" && selected.tagKind ? `entity-kind-label entity-kind-label--${selected.tagKind}` : "text-muted-foreground")}>
+              {selected.kind === "tag" ? selected.tagKind : selected.kind === "relationship" ? selected.relation : "Substance"}
+            </p>
             <CardTitle><h3>{selected.label}</h3></CardTitle>
           </CardHeader>
           <CardContent className="flex flex-col gap-2 text-sm">
@@ -610,7 +612,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
                       <Item key={node.id} variant="muted" size="xs" role="listitem">
                         <ItemContent>
                           <ItemTitle>
-                            <Link href={node.href!} className="underline underline-offset-4">{node.label}</Link>
+                            <Link href={node.href!} className={cn("underline underline-offset-4", node.tagKind && `entity-link entity-link--${node.tagKind}`)}>{node.label}</Link>
                           </ItemTitle>
                         </ItemContent>
                         <ItemActions>
@@ -628,9 +630,9 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
                       <Item key={node.id} variant="muted" size="xs" role="listitem">
                         <ItemContent>
                           <ItemTitle>
-                            <Link href={node.href!} className="underline underline-offset-4">{node.label}</Link>
+                            <Link href={node.href!} className={cn("underline underline-offset-4", node.tagKind && `entity-link entity-link--${node.tagKind}`)}>{node.label}</Link>
                           </ItemTitle>
-                          <ItemDescription>{node.tagKind}</ItemDescription>
+                          <ItemDescription className={node.tagKind ? `entity-kind-label entity-kind-label--${node.tagKind}` : undefined}>{node.tagKind}</ItemDescription>
                         </ItemContent>
                         <ItemActions>
                           <Button type="button" variant="ghost" size="sm" onClick={() => selectNode(node)} aria-label={`Locate ${node.label} in graph`}>Locate in graph</Button>

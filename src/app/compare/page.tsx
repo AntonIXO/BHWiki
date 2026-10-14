@@ -1,12 +1,12 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { getCatalog, getComparison, getConcepts } from "@/lib/repository";
 import {
   evidenceKey,
   observationMagnitude,
   selectionSlugs,
 } from "@/lib/research";
-import type { Substance } from "@/lib/types";
+import { conceptPath, type Substance } from "@/lib/types";
 import { EvidenceButton } from "@/components/evidence";
 import { SubstanceSelectors } from "@/components/substance-selectors";
 import { Breadcrumb } from "@/components/shell";
@@ -65,7 +65,17 @@ export default async function ComparePage({
       render: (s) => (
         <dl className="flex flex-col gap-2">
           <dt>Classification</dt>
-          <dd>{s.category}</dd>
+          <dd className="flex flex-wrap gap-1.5">
+            <span className="entity-tag entity-tag--class" data-kind="class">{s.category}</span>
+            {s.tags
+              .map((id) => concepts.find((concept) => concept.id === id))
+              .filter((concept) => concept && (concept.kind === "class" || concept.kind === "chemical-family") && concept.label.toLowerCase() !== s.category.toLowerCase())
+              .map((concept) => concept && (
+                <Link key={concept.id} href={conceptPath(concept)} className={`entity-tag entity-tag--${concept.kind}`} data-kind={concept.kind}>
+                  {concept.label}
+                </Link>
+              ))}
+          </dd>
           <dt>Formula / molecular weight</dt>
           <dd>
             {s.formula} · {s.molecularWeight}
@@ -260,7 +270,8 @@ export default async function ComparePage({
                   {selected.map((s) => (
                     <TableHead key={s.slug}>
                       <Link
-                        className="underline"
+                        className="substance-link"
+                        style={{ "--substance-accent": s.accent } as CSSProperties}
                         href={`/substances/${s.slug}`}
                       >
                         {s.name}
@@ -296,7 +307,7 @@ export default async function ComparePage({
                   <Card key={s.slug}>
                     <CardHeader>
                       <CardTitle>
-                        <Link href={`/substances/${s.slug}`}>{s.name}</Link>
+                        <Link href={`/substances/${s.slug}`} className="substance-link" style={{ "--substance-accent": s.accent } as CSSProperties}>{s.name}</Link>
                       </CardTitle>
                     </CardHeader>
                     <CardContent>{section.render(s)}</CardContent>

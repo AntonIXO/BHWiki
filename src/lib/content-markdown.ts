@@ -29,7 +29,7 @@ const substanceLists = [
   ["References", "references"],
   ["Legal", "legal"],
 ] as const;
-const optionalSubstanceLists = [["Identification tests", "identificationTests"]] as const;
+const optionalSubstanceLists = [["Identification tests", "identificationTests"], ["External wiki links", "externalWikiLinks"]] as const;
 
 const substanceProseFields = new Set<string>(substanceProse.map(([, field]) => field));
 const substanceListFields = new Set<string>(substanceLists.map(([, field]) => field));
@@ -182,6 +182,7 @@ function substanceRecord(relativePath: string, source: string): ContentRecord {
     parts[field] = value;
   }
   if (!Object.prototype.hasOwnProperty.call(parts, "identificationTests") && shape.includes("identificationTests")) parts.identificationTests = [];
+  if (!Object.prototype.hasOwnProperty.call(parts, "externalWikiLinks") && shape.includes("externalWikiLinks")) parts.externalWikiLinks = [];
   if (sections.timeline !== undefined) {
     if (!isRecord(parts.kinetics)) fail(file, "Duration requires a kinetics map in frontmatter");
     parts.kinetics = { ...parts.kinetics, timeline: sections.timeline };

@@ -117,22 +117,25 @@ export default function Catalog({
             <Button type="button" variant="ghost" size="sm" onClick={clear}>Reset filters</Button>
           </div>
           <div className="grid items-start gap-4 sm:grid-cols-2">
+            {/* Keep the card surface outside the fieldset: native legends sit on its top edge. */}
             {kinds.map((kind) => (
-              <FieldSet key={kind} className="min-w-0 rounded-lg bg-card p-3 ring-1 ring-foreground/10">
-                <FieldLegend className="capitalize">{kind.replaceAll("-", " ")}</FieldLegend>
-                <FieldGroup className="gap-2">
-                  {concepts.filter((concept) => concept.kind === kind).map((tag) => (
-                    <Field key={tag.id} orientation="horizontal">
-                      <Checkbox
-                        id={`tag-${tag.id}`}
-                        checked={selectedTags.includes(tag.id)}
-                        onCheckedChange={() => toggleTag(tag.id)}
-                      />
-                      <FieldLabel htmlFor={`tag-${tag.id}`}>{tag.label}</FieldLabel>
-                    </Field>
-                  ))}
-                </FieldGroup>
-              </FieldSet>
+              <div key={kind} className="min-w-0 rounded-lg bg-card p-3 ring-1 ring-foreground/10">
+                <FieldSet className="min-w-0">
+                  <FieldLegend className="capitalize">{kind.replaceAll("-", " ")}</FieldLegend>
+                  <FieldGroup className="gap-2">
+                    {concepts.filter((concept) => concept.kind === kind).map((tag) => (
+                      <Field key={tag.id} orientation="horizontal">
+                        <Checkbox
+                          id={`tag-${tag.id}`}
+                          checked={selectedTags.includes(tag.id)}
+                          onCheckedChange={() => toggleTag(tag.id)}
+                        />
+                        <FieldLabel htmlFor={`tag-${tag.id}`}>{tag.label}</FieldLabel>
+                      </Field>
+                    ))}
+                  </FieldGroup>
+                </FieldSet>
+              </div>
             ))}
           </div>
         </CollapsibleContent>
@@ -208,7 +211,7 @@ export default function Catalog({
               <Card className={cn("h-full", view === "list" && "md:flex-row md:items-stretch")}>
                 <CardHeader className={cn(view === "list" && "md:flex-1")}>
                   <div className="flex items-center justify-between gap-2">
-                    <Badge variant="secondary">{substance.category}</Badge>
+                    <Badge variant="outline" className="entity-tag entity-tag--class" data-kind="class">{substance.category}</Badge>
                     <ArrowUpRight className="text-muted-foreground" aria-hidden="true" />
                   </div>
                   <CardTitle>
@@ -228,7 +231,7 @@ export default function Catalog({
                   <Prose className="line-clamp-3 text-sm text-muted-foreground" text={substance.summary} />
                   <div className="flex flex-wrap gap-1.5">
                     {conceptTags.map((tag) => (
-                      <Badge key={tag!.id} variant="outline">{tag!.label}</Badge>
+                      <Badge key={tag!.id} variant="outline" className={`entity-tag entity-tag--${tag!.kind}`} data-kind={tag!.kind}>{tag!.label}</Badge>
                     ))}
                   </div>
                 </CardContent>

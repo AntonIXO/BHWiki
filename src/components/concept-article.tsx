@@ -82,7 +82,7 @@ function SubstanceCard({ substance }: { substance: CatalogSubstance }) {
     <Link className="block h-full" href={`/substances/${substance.slug}`}>
       <Card className="h-full">
         <CardHeader>
-          <CardDescription>{substance.category}</CardDescription>
+          <CardDescription><span className="entity-kind-label entity-kind-label--class" data-kind="class">{substance.category}</span></CardDescription>
           <CardTitle><h3 className="inline-flex items-center gap-1">{substance.name}<ArrowUpRight aria-hidden="true" size={16} /></h3></CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col gap-3">
@@ -135,11 +135,11 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
   };
 
   return (
-    <main id="main" className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 py-8 sm:px-8">
+    <main id="main" data-entity-kind={concept.kind} className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 py-8 sm:px-8">
       <Breadcrumb items={[{ href: "/", label: "Library" }, { href: `/${section}`, label: sections[section].title }, { label: concept.label }]} />
       <header className="flex flex-col gap-4">
         <div className="flex flex-wrap items-center gap-3">
-          <p className="text-xs font-medium tracking-wide text-muted-foreground uppercase">{kindLabels[concept.kind].toUpperCase()}</p>
+          <p className={`entity-kind-label entity-kind-label--${concept.kind} text-xs font-medium tracking-wide uppercase`} data-kind={concept.kind}>{kindLabels[concept.kind].toUpperCase()}</p>
           <Badge variant="secondary">Definition: {concept.sourceUrls?.length ? "sourced draft" : "sources not assessed"}</Badge>
         </div>
         <h1 className="text-4xl font-medium">{concept.label}</h1>
@@ -147,7 +147,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
         {Boolean(concept.aliases?.length) && <p>Also called {concept.aliases!.join(", ")}</p>}
         <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
           <a href="#definition-sources" className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline"><BookOpen aria-hidden="true" size={15} />{concept.sourceUrls?.length ?? 0} definition sources</a>
-          <Link href={`/graph?focus=${encodeURIComponent(memberId)}`} className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline"><GitBranch aria-hidden="true" size={15} />Explore connections <ArrowUpRight aria-hidden="true" size={14} /></Link>
+          <Link href={`/graph?focus=${encodeURIComponent(memberId)}`} className="page-action-link page-action-link--connections"><GitBranch aria-hidden="true" size={15} />Explore connections <ArrowUpRight aria-hidden="true" size={14} /></Link>
         </div>
       </header>
       <SectionNav
@@ -191,7 +191,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
           <section className="flex scroll-mt-24 flex-col gap-4" id="connections">
             <div className="flex flex-wrap items-baseline justify-between gap-3">
               <h2 className="text-2xl font-medium">Connections & claims</h2>
-              <Link href={`/graph?focus=${encodeURIComponent(memberId)}`} className="inline-flex items-center gap-1 text-sm underline underline-offset-4">Open graph <ArrowUpRight aria-hidden="true" size={14} /></Link>
+              <Link href={`/graph?focus=${encodeURIComponent(memberId)}`} className="page-action-link page-action-link--connections">Open graph <ArrowUpRight aria-hidden="true" size={14} /></Link>
             </div>
             <p className="text-muted-foreground">Each relationship keeps its participants and their roles together. Source details explain what the connection supports.</p>
             <div className="flex flex-col gap-4">
@@ -323,7 +323,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
                   {related.map((item) => (
                     <li key={item.id}>
                       <Link href={conceptPath(item)} className="flex flex-col gap-0.5 underline-offset-4 hover:underline">
-                        <span className="text-sm text-muted-foreground">{kindLabels[item.kind]}</span>
+                        <span className={`entity-kind-label entity-kind-label--${item.kind} text-sm`} data-kind={item.kind}>{kindLabels[item.kind]}</span>
                         <span className="inline-flex items-center gap-1">{item.label}<ArrowUpRight aria-hidden="true" size={14} /></span>
                       </Link>
                     </li>

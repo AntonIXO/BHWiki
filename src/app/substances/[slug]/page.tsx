@@ -10,7 +10,7 @@ import type { CSSProperties, ReactNode } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowDown, ArrowRight, ArrowUp, ArrowUpRight, BookOpen, BookOpenCheck, Brain, ChartColumnBig, CircleDot, Clock3, Compass, FlaskConical, GitBranch, Globe, HeartPulse, History, Layers3, MoveHorizontal, Network, Pill, Scale, ShieldAlert, ShieldCheck, Target, TriangleAlert } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUp, ArrowUpRight, BookOpen, BookOpenCheck, ChartColumnBig, CircleDot, Clock3, Compass, FlaskConical, GitBranch, HeartPulse, History, Layers3, MoveHorizontal, Network, Pill, Scale, ShieldAlert, ShieldCheck, Target, TriangleAlert } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Citation } from "@/components/citation";
 import { Prose } from "@/components/prose";
@@ -29,7 +29,7 @@ import { Item, ItemContent, ItemDescription, ItemMedia, ItemTitle } from "@/comp
 import { Separator } from "@/components/ui/separator";
 import { indexEntities, type EntityIndex } from "@/lib/entities";
 import { getSubstance, getCatalog, getConcepts, getKnowledgeGraph } from "@/lib/repository";
-import { conceptPath, type DoseContext, type Observation, type Substance } from "@/lib/types";
+import { conceptPath, type DoseContext, type ExternalWikiService, type Observation, type Substance } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 type Props = { params: Promise<{ slug: string }> };
@@ -70,6 +70,34 @@ const solubilityLabels: Record<NonNullable<DoseContext["solubility"]>, string> =
   "formulation-dependent": "Formulation-dependent solubility",
   "solubility-not-established": "Solubility not established",
 };
+
+type ExternalWikiIconService = "wikipedia" | "examine" | "psychonaut";
+
+function ExternalBrandIcon({ service }: { service: ExternalWikiIconService }) {
+  const src = {
+    wikipedia: "/external-icons/wikipedia.png",
+    examine: "/external-icons/examine.png",
+    psychonaut: "/external-icons/psychonautwiki.ico",
+  }[service];
+  return <img className="external-brand-icon" src={src} alt="" aria-hidden="true" />;
+}
+
+function externalWikiLinks(substance: Substance) {
+  const serviceKey: Record<ExternalWikiService, "wikipedia" | "examine" | "psychonaut"> = {
+    Wikipedia: "wikipedia",
+    Examine: "examine",
+    PsychonautWiki: "psychonaut",
+  };
+  const configured = (substance.externalWikiLinks ?? []).map((link) => ({
+    service: serviceKey[link.service],
+    label: link.service,
+    href: link.url,
+  }));
+  const legacyPsychonaut = substance.experienceLinks
+    .filter((link) => link.publisher === "PsychonautWiki" && !configured.some((item) => item.service === "psychonaut"))
+    .map((link) => ({ service: "psychonaut" as const, label: link.publisher, href: link.url }));
+  return [...configured, ...legacyPsychonaut];
+}
 
 function IntakeBadges({ dose }: { dose: DoseContext }) {
   if (!dose.foodRelation && !dose.solubility) return null;
@@ -143,7 +171,7 @@ const statisticLabels = { "reported-range": "Reported range", "study-mean": "Stu
 
 function Direction({ direction }: { direction: Observation["direction"] }) {
   const Icon = direction === "Increased" ? ArrowUp : direction === "Decreased" ? ArrowDown : MoveHorizontal;
-  return <Badge variant="outline"><Icon aria-hidden="true" />{direction}</Badge>;
+  return <Badge variant="outline" className={`direction-badge direction-badge-${direction.toLowerCase()}`}><Icon aria-hidden="true" />{direction}</Badge>;
 }
 
 function ObservationMatrix({ observations, substance, entities, measured = false }: { observations: Observation[]; substance: Substance; entities: EntityIndex; measured?: boolean }) {
@@ -175,16 +203,16 @@ function ObservationMatrix({ observations, substance, entities, measured = false
       {observations.map((effect, index) => {
         const concept = entities.conceptById.get(effect.conceptId);
         return (
-          <Card key={`${effect.conceptId}-${index}`}>
+          <Card key={`${effect.conceptId}-${index}`} className={`subjective-effect-card subjective-effect-${effect.direction.toLowerCase()}`}>
             <CardHeader>
               <CardTitle>
-                <h3>{concept ? <Link href={conceptPath(concept)} className="underline underline-offset-4">{effect.name}</Link> : effect.name}</h3>
+                <h3>{concept?.kind === "effect" ? <EffectPreview effect={concept} /> : concept ? <Link href={conceptPath(concept)} className="underline underline-offset-4">{effect.name}</Link> : effect.name}</h3>
               </CardTitle>
               <CardAction><Direction direction={effect.direction} /></CardAction>
               <CardDescription>{effect.evidence}</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col gap-4">
-              <p><Prose text={effect.description} inline /> <Source substance={substance} id={effect.sourceId} /></p><div className="flex flex-wrap gap-2"><EvidenceButton evidenceKey={evidenceKey(substance.slug,measured?"outcome":"effect",effect)}/>{concept?.kind === "effect" && <EffectPreview effect={concept}/>}</div>
+              <p><Prose text={effect.description} inline /> <Source substance={substance} id={effect.sourceId} /></p><div className="flex flex-wrap gap-2"><EvidenceButton evidenceKey={evidenceKey(substance.slug,measured?"outcome":"effect",effect)}/></div>
               <ContextList items={[
                 { term: "Population", detail: effect.population || "Not established" },
                 { term: "Exposure context", detail: effect.exposure || "Not established" },
@@ -241,7 +269,7 @@ function KineticsRail({ substance }: { substance: Substance }) {
     <Card className="kinetics-rail">
       <CardHeader>
         <CardDescription className="inline-flex items-center gap-1.5"><span className="rail-kicker-icon"><Clock3 aria-hidden="true" size={15} /></span>Sourced kinetics</CardDescription>
-        <CardDescription>Activate a marker to inspect its cited value.</CardDescription>
+        <CardDescription>Hover a phase to highlight the sourced progression.</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-3">
         <KineticsTimingVisual {...timing} />
@@ -304,6 +332,7 @@ export default async function SubstancePage({ params }: Props) {
   const hasOutcomePlots = plotGroups(outcomePlotRows).length > 0;
   const curatedPKObservations = substance.pkObservations.filter(hasCuratedPKObservation);
   const hasHalfLifeEstimate = substance.halfLife.low !== null || substance.halfLife.high !== null || hasCuratedKineticsText(substance.halfLife.label);
+  const wikiLinks = externalWikiLinks(substance);
   const identityReference = substance.pubchemCid === null
     ? substance.references.find(r => r.id === "molekul-profile") ?? substance.references[0]
     : substance.references.find(r => r.id === "pubchem") ?? substance.references.find(r => /pubchem\.ncbi\.nlm\.nih\.gov\/(?:compound|rest\/pug\/compound)\//.test(r.url));
@@ -337,7 +366,7 @@ export default async function SubstancePage({ params }: Props) {
             {substanceTags.map(tag => (
               <HoverCard key={tag.id}>
                 <HoverCardTrigger delay={200} closeDelay={100} render={<Link href={conceptPath(tag)} />}>
-                  <Badge variant="outline">{tag.label}</Badge>
+                  <Badge variant="outline" className={`entity-tag entity-tag--${tag.kind}`} data-kind={tag.kind}>{tag.label}</Badge>
                 </HoverCardTrigger>
                 <HoverCardContent>
                   <div className="flex flex-col gap-1.5">
@@ -349,18 +378,21 @@ export default async function SubstancePage({ params }: Props) {
               </HoverCard>
             ))}
           </div>
-          <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 text-sm text-muted-foreground">
             <span className="inline-flex items-center gap-1.5"><BookOpen aria-hidden="true" size={16} />{substance.references.length} sources</span>
-            <span>Content date {dateLabel(substance.reviewedAt)}</span><Link className="underline underline-offset-4" href={`/compare?substances=${slug}`}>Compare</Link>
-            <Link href={`/graph?focus=${substance.slug}`} className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline">Explore connections <GitBranch aria-hidden="true" size={16} /></Link>
-            <Link href={`/substances/${slug}/history`} className="inline-flex items-center gap-1.5 underline-offset-4 hover:underline">Revision history <History aria-hidden="true" size={16} /></Link>
+            <span>Content date {dateLabel(substance.reviewedAt)}</span>
+            <Link className="page-action-link page-action-link--compare" href={`/compare?substances=${slug}`}>Compare</Link>
+            <Link href={`/graph?focus=${substance.slug}`} className="page-action-link page-action-link--connections"><GitBranch aria-hidden="true" size={16} />Explore connections</Link>
+            <Link href={`/substances/${slug}/history`} className="page-action-link page-action-link--history"><History aria-hidden="true" size={16} />Revision history</Link>
           </div>
-          <div className="external-wiki-links" aria-label="Related external wikis">
+          {wikiLinks.length > 0 && <div className="external-wiki-links" aria-label="Related external wikis">
             <span className="text-xs font-medium tracking-wide text-muted-foreground uppercase">Elsewhere</span>
-            <a href={`https://en.wikipedia.org/wiki/${encodeURIComponent(substance.name)}`} target="_blank" rel="noreferrer"><Globe aria-hidden="true" size={13} />Wikipedia <ArrowUpRight aria-hidden="true" size={13} /></a>
-            <a href="https://examine.com/" target="_blank" rel="noreferrer"><BookOpenCheck aria-hidden="true" size={13} />Examine <ArrowUpRight aria-hidden="true" size={13} /></a>
-            <a href="https://psychonautwiki.org/" target="_blank" rel="noreferrer"><Brain aria-hidden="true" size={13} />PsychonautWiki <ArrowUpRight aria-hidden="true" size={13} /></a>
-          </div>
+            {wikiLinks.map(({ service, label, href }) => (
+              <a key={service} className={`external-wiki-link external-wiki-link--${service}`} href={href} target="_blank" rel="noreferrer" aria-label={`${label} page for ${substance.name}`}>
+                <ExternalBrandIcon service={service} />{label} <ArrowUpRight aria-hidden="true" size={13} />
+              </a>
+            ))}
+          </div>}
         </div>
         <MoleculeImage src={substance.pubchemCid === null ? undefined : `/molecules/${substance.slug}.png`} alt={`Chemical identity depiction of ${substance.name}`} wellClassName="h-52 w-full" width={270} height={230} />
       </header>

@@ -133,7 +133,7 @@ export function DurationTimeline({
     <Card>
       <CardHeader>
         <CardTitle>Published timing map</CardTitle>
-        <CardDescription>Activate a marker to inspect its cited value.</CardDescription>
+        <CardDescription>Hover a phase to highlight the sourced progression.</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-3">
         <KineticsTimingVisual onset={curatedTiming(kinetics.onset) } peak={curatedTiming(kinetics.peak)} duration={curatedTiming(kinetics.duration)} />

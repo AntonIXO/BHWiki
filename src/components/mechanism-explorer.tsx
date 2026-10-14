@@ -19,7 +19,8 @@ export function MechanismExplorer({
   slug: string;
 }) {
   const [shown, setShown] = useState(false),
-    [selected, setSelected] = useState<string>();
+    [selected, setSelected] = useState<string>(),
+    [hoveredId, setHoveredId] = useState<string | null>(null);
   const open = useEvidence();
   const model = useMemo(() => buildMechanismModel(data), [data]);
   const select = useCallback(
@@ -50,7 +51,12 @@ export function MechanismExplorer({
             records; arrows appear only for explicitly sourced steps. Diamonds
             retain the participants of a contextual relationship.
           </p>
-          <Canvas data={data} onSelect={select} />
+          <Canvas
+            data={data}
+            onSelect={select}
+            hoveredId={hoveredId}
+            onHover={setHoveredId}
+          />
           {node && (
             <Card>
               <CardHeader>
@@ -67,52 +73,67 @@ export function MechanismExplorer({
             </Card>
           )}
           <section
-            className="flex flex-col gap-3"
+            className="mechanism-relationships flex flex-col gap-2"
             aria-label="Mechanism text alternative"
           >
-            <h4 className="font-medium">Relationships and participants</h4>
+            <h4 className="text-sm font-medium">Relationships and participants</h4>
             {model.relationships.length ? (
-              model.relationships.map((edge) => (
-                <Card key={edge.id}>
-                  <CardHeader>
-                    <CardTitle>{edge.label}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="flex flex-col gap-3">
-                    <p>
-                      {edge.relation === "tag membership"
-                        ? "Classification membership; no causal step is asserted."
-                        : edge.description}
-                    </p>
-                    <ul className="flex flex-col gap-2">
-                      {edge.members.map((member) => {
-                        const entity = model.nodes.find((n) => n.id === member);
-                        return (
-                          <li key={member}>
-                            <Button
-                              variant="ghost"
-                              size="sm"
-                              onClick={() => select(member)}
+              <div className="grid gap-2 lg:grid-cols-2">
+                {model.relationships.map((edge) => (
+                  <Card
+                    key={edge.id}
+                    size="sm"
+                    className="mechanism-relationship-card"
+                    data-highlighted={hoveredId === `relationship:${edge.id}` || undefined}
+                  >
+                    <CardHeader className="px-3 py-2">
+                      <CardTitle>{edge.label}</CardTitle>
+                    </CardHeader>
+                    <CardContent className="flex flex-col gap-2 px-3">
+                      <p className="text-sm text-muted-foreground">
+                        {edge.relation === "tag membership"
+                          ? "Classification membership; no causal step is asserted."
+                          : edge.description}
+                      </p>
+                      <ul className="grid gap-1 sm:grid-cols-2">
+                        {edge.members.map((member) => {
+                          const entity = model.nodes.find((n) => n.id === member);
+                          return (
+                            <li
+                              key={member}
+                              className="mechanism-participant-row"
+                              data-highlighted={hoveredId === member || undefined}
+                              onMouseEnter={() => setHoveredId(member)}
+                              onMouseLeave={() => setHoveredId(null)}
                             >
-                              {entity?.label ?? member}
-                            </Button>
-                            <span className="text-sm text-muted-foreground">
-                              {" "}
-                              · {edge.memberRoles[member]}
-                            </span>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                    {edge.relation !== "tag membership" && (
-                      <div>
-                        <EvidenceButton
-                          evidenceKey={`relationship~${edge.id}`}
-                        />
-                      </div>
-                    )}
-                  </CardContent>
-                </Card>
-              ))
+                              <Button
+                                variant="ghost"
+                                size="xs"
+                                onClick={() => select(member)}
+                                onFocus={() => setHoveredId(member)}
+                                onBlur={() => setHoveredId(null)}
+                              >
+                                {entity?.label ?? member}
+                              </Button>
+                              <span className="text-xs text-muted-foreground">
+                                {" "}
+                                · {edge.memberRoles[member]}
+                              </span>
+                            </li>
+                          );
+                        })}
+                      </ul>
+                      {edge.relation !== "tag membership" && (
+                        <div>
+                          <EvidenceButton
+                            evidenceKey={`relationship~${edge.id}`}
+                          />
+                        </div>
+                      )}
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             ) : (
               <p>No sourced mechanism relationships have been assessed.</p>
             )}

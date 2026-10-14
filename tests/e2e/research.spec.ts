@@ -74,9 +74,9 @@ test("outcome and effect explorers preserve filters, views, and empty states", a
   await page.goto("/substances/caffeine");
   await page
     .locator("#effects")
-    .getByRole("button", { name: "Preview effect" })
+    .getByRole("link", { name: "Subjective alertness", exact: true })
     .first()
-    .click();
+    .hover();
   await expect(
     page.getByRole("link", { name: "Explore subjective alertness" }),
   ).toBeVisible();
@@ -141,9 +141,9 @@ test("figures and pharmacokinetics render only from committed data", async ({ pa
   await expect(page.getByText("Choose image", { exact: true })).toHaveCount(0);
   await expect(page.getByText("Study-result plots", { exact: true })).toHaveCount(0);
   await expect(page.locator(".kinetics-rail")).toHaveCount(1);
-  await expect(page.locator(".kinetics-rail .kinetics-visual-marker-label")).toHaveText(["Onset", "Peak", "Duration", "Half-life"]);
-  await page.locator(".kinetics-rail .kinetics-visual-marker-peak").click();
-  await expect(page.getByText(/Serum peak around 2 hours/)).toBeVisible();
+  await expect(page.locator(".kinetics-rail [data-component='kinetics-funnel-chart']")).toBeVisible();
+  await expect(page.locator(".kinetics-rail .kinetics-funnel-chart svg")).toHaveCount(4);
+  await expect(page.locator(".kinetics-rail [aria-label='Reported kinetics timing values']")).toContainText(/Serum peak around 2 hours/);
 
   await page.goto("/substances/2c-b");
   await expect(page.locator("#kinetics")).toHaveCount(0);

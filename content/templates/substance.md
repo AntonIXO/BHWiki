@@ -56,6 +56,7 @@ x-shape:
   - interactions
   - identificationTests
   - experienceLinks
+  - externalWikiLinks
   - references
   - legal
 ---
@@ -139,6 +140,14 @@ Use `presumptive-reagent` for reagent results such as Ehrlich and `instrumental-
 ## Experience links
 
 ```yaml
+[]
+```
+
+## External wiki links
+
+```yaml
+# Add only direct, substance-specific pages that were verified.
+# Supported services: Wikipedia, Examine, PsychonautWiki.
 []
 ```
 

@@ -59,6 +59,8 @@ export type IdentificationTest = {
   sourceId: string;
 };
 export type ExperienceLink = { title: string; url: string; publisher: "PsychonautWiki" };
+export type ExternalWikiService = "Wikipedia" | "Examine" | "PsychonautWiki";
+export type ExternalWikiLink = { service: ExternalWikiService; url: string; title?: string };
 export type Substance = {
   slug: string; name: string; subtitle: string; summary: string; description: string;
   aliases: string[]; formula: string; molecularWeight: string; pubchemCid: number | null; smiles: string;
@@ -73,7 +75,7 @@ export type Substance = {
   cautions: { title: string; description: string; sourceId: string }[];
   interactions: Interaction[];
   identificationTests?: IdentificationTest[];
-  experienceLinks: ExperienceLink[];
+  experienceLinks: ExperienceLink[]; externalWikiLinks?: ExternalWikiLink[];
   references: Reference[];
   legal: { jurisdiction: string; activity: string; status: string; sourceUrl: string; asOf: string }[];
 };

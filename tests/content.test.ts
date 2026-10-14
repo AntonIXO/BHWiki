@@ -46,6 +46,17 @@ test('identity stubs stay empty and experience links stay on one PsychonautWiki 
   }
  }
 });
+test('external wiki links are optional and must be direct Markdown-backed pages',()=>{
+ const s=structuredClone(substances[0]);
+ s.externalWikiLinks=[
+  {service:'Wikipedia',url:'https://en.wikipedia.org/wiki/Caffeine'},
+  {service:'Examine',url:'https://examine.com/supplements/caffeine/'},
+  {service:'PsychonautWiki',url:'https://psychonautwiki.org/wiki/Caffeine'},
+ ];
+ validateSubstance(s);
+ s.externalWikiLinks[1].url='https://examine.com/search/?q=Caffeine';
+ assert.throws(()=>validateSubstance(s),/external wiki URL|direct Examine page/);
+});
 test('a deep-article interaction cites a reference on that article',()=>{
  const ketamine=substances.find(substance=>substance.slug==='ketamine')!;
  assert.ok(ketamine.interactions.length>=1);

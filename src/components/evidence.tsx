@@ -23,6 +23,14 @@ import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Prose } from "@/components/prose";
 import { SourceDisclosures } from "@/components/source-disclosures";
+import {
+  Beaker,
+  BookOpen,
+  CircleAlert,
+  FileText,
+  FlaskConical,
+  Target,
+} from "lucide-react";
 
 type FocusTarget = HTMLElement | SVGElement;
 const EvidenceContext = createContext<
@@ -170,9 +178,26 @@ function EvidencePanel({
   );
 }
 export function EvidenceContents({ record }: { record: EvidenceRecord }) {
+  const studyLabels = new Set([
+    "Evidence type",
+    "Population",
+    "Exposure",
+    "Instrument",
+  ]);
+  const resultLabels = new Set(["Reported magnitude"]);
+  const studyContext = record.context.filter((context) =>
+    studyLabels.has(context.label),
+  );
+  const resultContext = record.context.filter((context) =>
+    resultLabels.has(context.label),
+  );
+  const reportingContext = record.context.filter(
+    (context) => !studyLabels.has(context.label) && !resultLabels.has(context.label),
+  );
+
   return (
-    <>
-      <div className="flex flex-wrap gap-2">
+    <div className="evidence-contents">
+      <div className="evidence-status-row">
         <Badge variant="secondary">{record.kind}</Badge>
         {record.editorialStatus && (
           <Badge variant="outline">
@@ -182,73 +207,41 @@ export function EvidenceContents({ record }: { record: EvidenceRecord }) {
           </Badge>
         )}
       </div>
-      <Prose text={record.assertion} />
-      <dl className="grid gap-3 sm:grid-cols-2">
-        {record.context.map((c, i) => (
-          <div key={`${c.label}-${i}`}>
-            <dt className="text-sm text-muted-foreground">{c.label}</dt>
-            <dd className="break-words">{c.value}</dd>
-          </div>
-        ))}
-      </dl>
+      <div className="evidence-assertion"><Prose text={record.assertion} /></div>
       {record.result && (
-        <p>
-          <strong>Structured result:</strong> {record.result.estimate}{" "}
-          {record.result.unit} ({record.result.measure})
-          {record.result.confidenceInterval &&
-            `; ${record.result.confidenceInterval.level}% CI ${record.result.confidenceInterval.lower}–${record.result.confidenceInterval.upper}`}
-        </p>
+        <section className="evidence-result">
+          <div className="evidence-section-heading"><span className="evidence-section-icon evidence-section-icon--result"><Target size={15} aria-hidden="true" /></span><div><p>Structured result</p><h3>{record.result.estimate} {record.result.unit}</h3></div></div>
+          <p>{record.result.measure}{record.result.confidenceInterval && ` · ${record.result.confidenceInterval.level}% CI ${record.result.confidenceInterval.lower}–${record.result.confidenceInterval.upper}`}</p>
+        </section>
       )}
-      <p>
-        <strong>Limits of this assertion:</strong> {record.limitation}
-      </p>
+      {studyContext.length > 0 && <EvidenceFieldGroup icon={<FlaskConical size={15} aria-hidden="true" />} label="Study context" fields={studyContext} tone="study" />}
+      {resultContext.length > 0 && <EvidenceFieldGroup icon={<Target size={15} aria-hidden="true" />} label="Result detail" fields={resultContext} tone="result" />}
+      {reportingContext.length > 0 && <EvidenceFieldGroup icon={<FileText size={15} aria-hidden="true" />} label="Reporting details" fields={reportingContext} tone="reporting" />}
+      <div className="evidence-limit"><CircleAlert size={17} aria-hidden="true" /><p><strong>Limits of this assertion</strong>{record.limitation}</p></div>
       {(
         [
-          ["Sources supporting this record", record.sources],
-          ["Conflicting sources", record.conflictingSources],
+          ["Sources supporting this record", record.sources, "supporting"],
+          ["Conflicting sources", record.conflictingSources, "conflicting"],
         ] as const
-      ).map(([title, sources]) => (
-        <section key={title} className="flex flex-col gap-3">
-          <h3 className="font-medium">{title}</h3>
-          {sources.length ? (
-            sources.map((r) => (
+      ).filter(([, sources]) => sources.length > 0).map(([title, sources, tone]) => (
+        <section key={title} className={`evidence-sources evidence-sources--${tone}`}>
+          <div className="evidence-sources-heading"><div><p>{tone === "supporting" ? "Source context" : "Contradictory evidence"}</p><h3>{title}</h3></div><span>{sources.length} {sources.length === 1 ? "source" : "sources"}</span></div>
+          {sources.map((r) => (
               <article
                 key={r.id}
-                className="flex flex-col gap-2 rounded-lg border p-3"
+                className="evidence-source-card"
               >
-                <a
-                  className="font-medium underline underline-offset-4"
-                  href={r.url}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {r.title}
-                </a>
-                {r.authors && (
-                  <p>
-                    {r.authors}
-                    {r.year ? ` · ${r.year}` : ""}
-                  </p>
-                )}
-                {r.kind && (
-                  <p className="text-sm text-muted-foreground">{r.kind}</p>
-                )}
-                {r.insight && <Prose text={r.insight} />}
-                <p>
-                  <strong>Study limitations:</strong>{" "}
-                  {r.limitation ?? "Not assessed"}
-                </p>
+                <div className="evidence-source-topline"><span><BookOpen size={14} aria-hidden="true" /> Supporting source</span><a href={r.url} target="_blank" rel="noreferrer">Open source <span aria-hidden="true">↗</span></a></div>
+                <a className="evidence-source-title" href={r.url} target="_blank" rel="noreferrer">{r.title}</a>
+                {(r.authors || r.year || r.kind) && <p className="evidence-source-meta">{[r.authors, r.year && String(r.year), r.kind].filter(Boolean).join(" · ")}</p>}
+                {r.insight && <div className="evidence-source-insight"><Beaker size={16} aria-hidden="true" /><Prose text={r.insight} /></div>}
+                <div className="evidence-source-limit"><CircleAlert size={16} aria-hidden="true" /><p><strong>Study limitations</strong>{r.limitation ?? "Not assessed"}</p></div>
                 <SourceDisclosures reference={r} />
               </article>
-            ))
-          ) : (
-            <p className="text-muted-foreground">
-              No conflicting sources have been curated for this record.
-            </p>
-          )}
+          ))}
         </section>
       ))}
-      <p className="text-sm text-muted-foreground">
+      <p className="evidence-footnote">
         Editorial review status does not grade evidence certainty. Unassessed
         information is not evidence of absence.
       </p>
@@ -260,6 +253,30 @@ export function EvidenceContents({ record }: { record: EvidenceRecord }) {
           Read {record.articleName}
         </Link>
       )}
-    </>
+    </div>
+  );
+}
+
+function EvidenceFieldGroup({
+  icon,
+  label,
+  fields,
+  tone,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  fields: EvidenceRecord["context"];
+  tone: "study" | "result" | "reporting";
+}) {
+  return (
+    <section className={`evidence-field-group evidence-field-group--${tone}`}>
+      <div className="evidence-section-heading"><span className="evidence-section-icon">{icon}</span><h3>{label}</h3><span className="evidence-field-count">{fields.length} {fields.length === 1 ? "field" : "fields"}</span></div>
+      <dl className="evidence-field-grid">
+        {fields.map((field, index) => {
+          const unknown = /^Not assessed|^Not quantified/.test(field.value);
+          return <div key={`${field.label}-${index}`} className={`evidence-field ${unknown ? "evidence-field--unknown" : ""}`}><dt>{field.label}</dt><dd>{field.value}</dd></div>;
+        })}
+      </dl>
+    </section>
   );
 }

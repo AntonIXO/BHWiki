@@ -72,15 +72,16 @@ export function Header() {
     <header className="site-header">
       <div className="mx-auto flex w-full max-w-6xl items-center gap-2 px-5 py-3 sm:gap-3 sm:px-8">
         <Logo />
-        <nav aria-label="Main navigation" className="ms-4 hidden md:flex">
+        <nav aria-label="Main navigation" className="ms-4 hidden shrink-0 md:flex">
           <NavigationMenu>
-            <NavigationMenuList>
+            <NavigationMenuList className="flex-nowrap">
               {links.map((link) => {
                 const current = isCurrent(link.href, pathname);
                 return (
                   <NavigationMenuItem key={link.href}>
                     <NavigationMenuLink
                       active={current}
+                      className="whitespace-nowrap"
                       render={<Link href={link.href} aria-current={current ? "page" : undefined} />}
                     >
                       {link.label}
