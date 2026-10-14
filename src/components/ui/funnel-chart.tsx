@@ -1,11 +1,12 @@
 "use client";
 
-import { motion, useSpring, useTransform } from "motion/react";
+import { motion, useReducedMotion, useSpring, useTransform } from "motion/react";
 import {
   type CSSProperties,
   type ReactNode,
   useCallback,
   useEffect,
+  useId,
   useRef,
   useState,
 } from "react";
@@ -89,6 +90,12 @@ export interface FunnelStage {
   label: string;
   value: number;
   displayValue?: string;
+  /** Short badge shown inside the segment. */
+  badge?: string;
+  /** Width at the end of this segment; useful for an intentionally nonlinear taper. */
+  endValue?: number;
+  /** Full sourced explanation revealed by the consumer on hover or click. */
+  detail?: string;
   color?: string;
   gradient?: FunnelGradientStop[];
 }
@@ -105,6 +112,9 @@ export interface FunnelChartProps {
   showLabels?: boolean;
   hoveredIndex?: number | null;
   onHoverChange?: (index: number | null) => void;
+  onSelect?: (index: number) => void;
+  selectedIndex?: number | null;
+  detailId?: string;
   formatPercentage?: (pct: number) => string;
   formatValue?: (value: number) => string;
   staggerDelay?: number;
@@ -200,6 +210,7 @@ function HRing({
   totalRings: number;
 }) {
   const extraScale = 1 + (ringIndex / Math.max(totalRings - 1, 1)) * 0.12;
+  const reducedMotion = useReducedMotion();
   const ringSpring = {
     stiffness: 300 - ringIndex * 60,
     damping: 24 - ringIndex * 3,
@@ -215,7 +226,7 @@ function HRing({
       d={d}
       fill={fill ?? color}
       opacity={opacity}
-      style={{ scaleY, transformOrigin: "center center" }}
+      style={{ scaleY: reducedMotion ? 1 : scaleY, transformOrigin: "center center" }}
     />
   );
 }
@@ -238,6 +249,7 @@ function VRing({
   totalRings: number;
 }) {
   const extraScale = 1 + (ringIndex / Math.max(totalRings - 1, 1)) * 0.12;
+  const reducedMotion = useReducedMotion();
   const ringSpring = {
     stiffness: 300 - ringIndex * 60,
     damping: 24 - ringIndex * 3,
@@ -253,7 +265,7 @@ function VRing({
       d={d}
       fill={fill ?? color}
       opacity={opacity}
-      style={{ scaleX, transformOrigin: "center center" }}
+      style={{ scaleX: reducedMotion ? 1 : scaleX, transformOrigin: "center center" }}
     />
   );
 }
@@ -289,8 +301,10 @@ function HSegment({
   straight: boolean;
   gradientStops?: FunnelGradientStop[];
 }) {
-  const patternId = `funnel-h-pattern-${index}`;
-  const gradientId = `funnel-h-grad-${index}`;
+  const id = useId();
+  const patternId = `${id}-pattern`;
+  const gradientId = `${id}-gradient`;
+  const reducedMotion = useReducedMotion();
   const growProgress = useSpring(0, springConfig);
   const entranceScaleX = useTransform(growProgress, [0, 1], [0, 1]);
   const entranceScaleY = useTransform(growProgress, [0, 1], [0, 1]);
@@ -330,14 +344,14 @@ function HSegment({
       <motion.div
         className="absolute inset-0 overflow-visible"
         style={{
-          scaleX: entranceScaleX,
-          scaleY: entranceScaleY,
+          scaleX: reducedMotion ? 1 : entranceScaleX,
+          scaleY: reducedMotion ? 1 : entranceScaleY,
           transformOrigin: "left center",
         }}
       >
         <svg
           aria-hidden="true"
-          className="absolute inset-0 h-full w-full overflow-visible"
+          className="funnel-stage-svg absolute inset-0 h-full w-full overflow-visible"
           preserveAspectRatio="none"
           role="presentation"
           viewBox={`0 0 ${segW} ${fullH}`}
@@ -416,8 +430,10 @@ function VSegment({
   straight: boolean;
   gradientStops?: FunnelGradientStop[];
 }) {
-  const patternId = `funnel-v-pattern-${index}`;
-  const gradientId = `funnel-v-grad-${index}`;
+  const id = useId();
+  const patternId = `${id}-pattern`;
+  const gradientId = `${id}-gradient`;
+  const reducedMotion = useReducedMotion();
   const growProgress = useSpring(0, springConfig);
   const entranceScaleY = useTransform(growProgress, [0, 1], [0, 1]);
   const entranceScaleX = useTransform(growProgress, [0, 1], [0, 1]);
@@ -457,14 +473,14 @@ function VSegment({
       <motion.div
         className="absolute inset-0 overflow-visible"
         style={{
-          scaleY: entranceScaleY,
-          scaleX: entranceScaleX,
+          scaleY: reducedMotion ? 1 : entranceScaleY,
+          scaleX: reducedMotion ? 1 : entranceScaleX,
           transformOrigin: "center top",
         }}
       >
         <svg
           aria-hidden="true"
-          className="absolute inset-0 h-full w-full overflow-visible"
+          className="funnel-stage-svg absolute inset-0 h-full w-full overflow-visible"
           preserveAspectRatio="none"
           role="presentation"
           viewBox={`0 0 ${fullW} ${segH}`}
@@ -545,24 +561,25 @@ function SegmentLabel({
   orientation?: "vertical" | "horizontal";
   align?: "center" | "start" | "end";
 }) {
+  const reducedMotion = useReducedMotion();
   const display = stage.displayValue ?? formatValue(stage.value);
 
   const valueEl = showValues && (
     <span
-      className="block w-full max-w-[90%] min-w-0 overflow-hidden text-ellipsis whitespace-nowrap text-center font-semibold text-foreground text-sm"
+      className="block max-w-full overflow-hidden text-ellipsis whitespace-nowrap px-1 font-semibold text-foreground text-sm"
       title={display}
     >
       {display}
     </span>
   );
-  const pctEl = showPercentage && (
-    <span className="rounded-full bg-foreground px-3 py-1 font-bold text-background text-xs shadow-sm">
-      {formatPercentage(pct)}
+  const pctEl = (stage.badge || showPercentage) && (
+    <span className="funnel-stage-badge">
+      {stage.badge ?? formatPercentage(pct)}
     </span>
   );
   const labelEl = showLabels && (
     <span
-      className="block w-full max-w-[90%] min-w-0 overflow-hidden text-ellipsis whitespace-nowrap text-center font-medium text-muted-foreground text-xs"
+      className="block max-w-full overflow-hidden text-ellipsis whitespace-nowrap px-1 font-medium text-muted-foreground text-xs"
       title={stage.label}
     >
       {stage.label}
@@ -577,22 +594,22 @@ function SegmentLabel({
           "absolute inset-0 flex",
           isHorizontal ? "flex-col items-center" : "flex-row items-center"
         )}
-        initial={{ opacity: 0 }}
+        initial={reducedMotion ? false : { opacity: 0 }}
         transition={{
-          delay: index * staggerDelay + 0.25,
-          duration: 0.35,
+          delay: reducedMotion ? 0 : index * staggerDelay + 0.25,
+          duration: reducedMotion ? 0 : 0.35,
           ease: "easeOut",
         }}
       >
         {isHorizontal ? (
           <>
-            <div className="flex h-[16%] min-w-0 w-full items-end justify-center overflow-hidden pb-1">
+            <div className="flex h-[16%] items-end justify-center pb-1">
               {valueEl}
             </div>
             <div className="flex flex-1 items-center justify-center">
               {pctEl}
             </div>
-            <div className="flex h-[16%] min-w-0 w-full items-start justify-center overflow-hidden pt-1">
+            <div className="flex h-[16%] items-start justify-center pt-1">
               {labelEl}
             </div>
           </>
@@ -678,6 +695,9 @@ export function FunnelChart({
   showLabels = true,
   hoveredIndex: hoveredIndexProp,
   onHoverChange,
+  onSelect,
+  selectedIndex: selectedIndexProp,
+  detailId,
   formatPercentage = fmtPct,
   formatValue = fmtVal,
   staggerDelay = 0.12,
@@ -694,6 +714,8 @@ export function FunnelChart({
   const [internalHoveredIndex, setInternalHoveredIndex] = useState<
     number | null
   >(null);
+  const [internalSelectedIndex, setInternalSelectedIndex] = useState<number | null>(null);
+  const reducedMotion = useReducedMotion();
 
   const isControlled = hoveredIndexProp !== undefined;
   const hoveredIndex = isControlled ? hoveredIndexProp : internalHoveredIndex;
@@ -707,6 +729,16 @@ export function FunnelChart({
     },
     [isControlled, onHoverChange]
   );
+
+  const selectedIndex = selectedIndexProp ?? internalSelectedIndex;
+  const isSelectedControlled = selectedIndexProp !== undefined;
+  const focusedIndex = hoveredIndex ?? selectedIndex;
+  const selectIndex = useCallback((index: number) => {
+    if (!isSelectedControlled) {
+      setInternalSelectedIndex((current) => (current === index ? null : index));
+    }
+    onSelect?.(index);
+  }, [isSelectedControlled, onSelect]);
 
   const measure = useCallback(() => {
     if (!ref.current) return;
@@ -726,7 +758,7 @@ export function FunnelChart({
   const first = data[0];
   if (!first) return null;
 
-  const max = first.value;
+  const max = Math.max(1, ...data.map((stage) => stage.value));
   const n = data.length;
   const norms = data.map((d) => d.value / max);
   const horiz = orientation === "horizontal";
@@ -807,7 +839,9 @@ export function FunnelChart({
           >
             {data.map((stage, i) => {
               const normStart = norms[i] ?? 0;
-              const normEnd = norms[Math.min(i + 1, n - 1)] ?? 0;
+              const normEnd = stage.endValue !== undefined
+                ? stage.endValue / max
+                : (norms[Math.min(i + 1, n - 1)] ?? 0);
               const firstStop = stage.gradient?.[0];
               const segColor = firstStop
                 ? firstStop.color
@@ -816,10 +850,10 @@ export function FunnelChart({
               return horiz ? (
                 <HSegment
                   color={segColor}
-                  dimmed={hoveredIndex !== null && hoveredIndex !== i}
+                  dimmed={focusedIndex !== null && focusedIndex !== i}
                   fullH={H}
                   gradientStops={stage.gradient}
-                  hovered={hoveredIndex === i}
+                  hovered={focusedIndex === i}
                   index={i}
                   key={stage.label}
                   layers={layers}
@@ -833,10 +867,10 @@ export function FunnelChart({
               ) : (
                 <VSegment
                   color={segColor}
-                  dimmed={hoveredIndex !== null && hoveredIndex !== i}
+                  dimmed={focusedIndex !== null && focusedIndex !== i}
                   fullW={W}
                   gradientStops={stage.gradient}
-                  hovered={hoveredIndex === i}
+                  hovered={focusedIndex === i}
                   index={i}
                   key={stage.label}
                   layers={layers}
@@ -900,18 +934,25 @@ export function FunnelChart({
             const posStyle: CSSProperties = horiz
               ? { left: (segW + gap) * i, width: segW, top: 0, height: H }
               : { top: (segH + gap) * i, height: segH, left: 0, width: W };
-            const isDimmed = hoveredIndex !== null && hoveredIndex !== i;
+            const isDimmed = focusedIndex !== null && focusedIndex !== i;
+            const display = stage.displayValue ?? formatValue(stage.value);
 
             return (
-              <motion.div
+              <motion.button
+                type="button"
+                aria-label={`${stage.label}: ${display}`}
+                aria-controls={detailId}
+                aria-pressed={selectedIndex === i}
                 animate={{ opacity: isDimmed ? 0.4 : 1 }}
-                aria-label={`${stage.label}: ${stage.displayValue ?? formatValue(stage.value)}`}
-                className="absolute cursor-pointer"
+                className="funnel-stage-trigger absolute cursor-pointer"
                 key={`lbl-${stage.label}`}
+                onClick={() => selectIndex(i)}
+                onFocus={() => setHoveredIndex(i)}
+                onBlur={() => setHoveredIndex(null)}
                 onMouseEnter={() => setHoveredIndex(i)}
                 onMouseLeave={() => setHoveredIndex(null)}
                 style={{ ...posStyle, zIndex: 20 }}
-                transition={{ type: "spring", stiffness: 300, damping: 24 }}
+                transition={reducedMotion ? { duration: 0 } : { type: "spring", stiffness: 300, damping: 24 }}
               >
                 <SegmentLabel
                   align={labelAlign}
@@ -928,7 +969,7 @@ export function FunnelChart({
                   stage={stage}
                   staggerDelay={staggerDelay}
                 />
-              </motion.div>
+              </motion.button>
             );
           })}
         </>

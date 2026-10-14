@@ -269,10 +269,10 @@ function KineticsRail({ substance }: { substance: Substance }) {
     <Card className="kinetics-rail">
       <CardHeader>
         <CardDescription className="inline-flex items-center gap-1.5"><span className="rail-kicker-icon"><Clock3 aria-hidden="true" size={15} /></span>Sourced kinetics</CardDescription>
-        <CardDescription>Hover a phase to highlight the sourced progression.</CardDescription>
+        <CardDescription>Hover a phase to highlight it; click to pin the full sourced text.</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-3">
-        <KineticsTimingVisual {...timing} />
+        <KineticsTimingVisual compact {...timing} />
         <Link href="#kinetics" className="inline-flex items-center gap-1.5 text-sm underline underline-offset-4">View full kinetics <ArrowRight aria-hidden="true" size={14} /></Link>
       </CardContent>
     </Card>

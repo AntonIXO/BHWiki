@@ -142,7 +142,7 @@ test("figures and pharmacokinetics render only from committed data", async ({ pa
   await expect(page.getByText("Study-result plots", { exact: true })).toHaveCount(0);
   await expect(page.locator(".kinetics-rail")).toHaveCount(1);
   await expect(page.locator(".kinetics-rail [data-component='kinetics-funnel-chart']")).toBeVisible();
-  await expect(page.locator(".kinetics-rail .kinetics-funnel-chart svg")).toHaveCount(4);
+  await expect(page.locator(".kinetics-rail .kinetics-funnel-chart .funnel-stage-svg")).toHaveCount(4);
   await expect(page.locator(".kinetics-rail [aria-label='Reported kinetics timing values']")).toContainText(/Serum peak around 2 hours/);
 
   await page.goto("/substances/2c-b");

@@ -562,10 +562,15 @@
 .kinetics-rail-meta dd { margin: 0; line-height: 1.35; }
 .kinetics-visual { position: relative; padding: .35rem .1rem .15rem; }
 .kinetics-funnel-chart { min-height: 8rem; }
+.funnel-stage-trigger { margin: 0; border: 0; background: transparent; padding: 0; color: inherit; text-align: inherit; }
+.funnel-stage-trigger:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border-radius: .55rem; }
+.funnel-stage-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 3.1rem; border-radius: 999px; background: var(--foreground); padding: .3rem .7rem; color: var(--background); font-size: .75rem; font-weight: 750; line-height: 1; box-shadow: 0 .25rem .7rem color-mix(in oklch, var(--foreground) 20%, transparent); white-space: nowrap; }
+.kinetics-visual-compact .funnel-stage-badge { min-width: 2.7rem; padding-inline: .5rem; font-size: .68rem; }
 .funnel-chart-detail { display: grid; gap: .35rem; margin-top: .65rem; padding: .75rem .9rem; border: 1px solid color-mix(in oklch, var(--primary) 20%, var(--border)); border-radius: .9rem; background: color-mix(in oklch, var(--card) 92%, var(--primary)); box-shadow: 0 .5rem 1.5rem color-mix(in oklch, var(--foreground) 10%, transparent); }
 .funnel-chart-detail-heading { display: flex; align-items: baseline; justify-content: space-between; gap: .75rem; color: var(--foreground); font-size: .82rem; }
 .funnel-chart-detail-heading span { flex: 0 0 auto; border-radius: 999px; background: var(--foreground); padding: .15rem .5rem; color: var(--background); font-size: .7rem; font-weight: 700; }
-.funnel-chart-detail p { margin: 0; color: var(--muted-foreground); font-size: .82rem; line-height: 1.45; }
+.funnel-chart-detail p { margin: 0; color: var(--foreground); font-size: .86rem; line-height: 1.5; }
+.funnel-chart-detail small { color: var(--muted-foreground); font-size: .72rem; line-height: 1.4; }
 .funnel-chart-detail-close { justify-self: start; margin-top: .15rem; border: 0; background: transparent; padding: 0; color: var(--foreground); font-size: .72rem; text-decoration: underline; text-underline-offset: .2em; }
 
 @media (prefers-reduced-motion: reduce) {
