@@ -45,10 +45,12 @@ export function ActionSearchBar({
   const inputId = useId();
   const listId = useId();
   const rootRef = useRef<HTMLDivElement>(null);
+  const optionRefs = useRef<Array<HTMLButtonElement | null>>([]);
   const [query, setQuery] = useState("");
   const [isFocused, setIsFocused] = useState(false);
   const [results, setResults] = useState<Action[]>(actions);
   const [isLoading, setIsLoading] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(-1);
   const debouncedQuery = useDebounce(query);
 
   const matchingActions = useMemo(() => {
@@ -90,6 +92,19 @@ export function ActionSearchBar({
   }, [debouncedQuery, isFocused, matchingActions, onSearch]);
 
   useEffect(() => {
+    setActiveIndex((current) => (current >= 0 && current < results.length ? current : -1));
+  }, [results]);
+
+  useEffect(() => {
+    setActiveIndex(-1);
+  }, [debouncedQuery]);
+
+  useEffect(() => {
+    if (activeIndex < 0) return;
+    optionRefs.current[activeIndex]?.scrollIntoView({ block: "nearest" });
+  }, [activeIndex]);
+
+  useEffect(() => {
     function onDocumentPointerDown(event: PointerEvent) {
       if (!rootRef.current?.contains(event.target as Node)) {
         setIsFocused(false);
@@ -108,6 +123,7 @@ export function ActionSearchBar({
 
   function selectAction(action: Action) {
     setQuery("");
+    setActiveIndex(-1);
     onActionSelect?.(action);
     setIsFocused(false);
   }
@@ -117,6 +133,7 @@ export function ActionSearchBar({
     const trimmed = query.trim();
     if (trimmed) {
       setQuery("");
+      setActiveIndex(-1);
       setIsFocused(false);
       onSubmit?.(trimmed);
     }
@@ -145,9 +162,26 @@ export function ActionSearchBar({
             onChange={handleInputChange}
             onFocus={() => setIsFocused(true)}
             onKeyDown={(event) => {
+              if (event.key === "ArrowDown" || event.key === "ArrowUp") {
+                if (results.length === 0) return;
+                event.preventDefault();
+                setActiveIndex((current) => {
+                  const direction = event.key === "ArrowDown" ? 1 : -1;
+                  return current < 0
+                    ? direction === 1 ? 0 : results.length - 1
+                    : (current + direction + results.length) % results.length;
+                });
+                return;
+              }
+              if (event.key === "Enter" && activeIndex >= 0 && results[activeIndex]) {
+                event.preventDefault();
+                selectAction(results[activeIndex]);
+                return;
+              }
               if (event.key === "Escape") {
                 setIsFocused(false);
                 setQuery("");
+                setActiveIndex(-1);
               }
             }}
             placeholder={placeholder}
@@ -155,6 +189,7 @@ export function ActionSearchBar({
             aria-controls={listId}
             aria-expanded={isFocused}
             aria-autocomplete="list"
+            aria-activedescendant={activeIndex >= 0 ? `${listId}-option-${activeIndex}` : undefined}
             aria-keyshortcuts="Control+S"
             className="h-10 rounded-lg pe-24 ps-3 text-sm focus-visible:ring-offset-0"
           />
@@ -178,14 +213,18 @@ export function ActionSearchBar({
         >
           <div className="max-h-80 overflow-y-auto p-1">
             {results.length > 0 ? (
-              results.map((action) => (
+              results.map((action, index) => (
                 <button
                   key={action.id}
                   type="button"
                   role="option"
+                  id={`${listId}-option-${index}`}
+                  ref={(element) => { optionRefs.current[index] = element; }}
+                  aria-selected={index === activeIndex}
                   onMouseDown={(event) => event.preventDefault()}
+                  onMouseEnter={() => setActiveIndex(index)}
                   onClick={() => selectAction(action)}
-                  className="grid w-full grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)_auto] items-center gap-3 rounded-md px-3 py-2.5 text-left text-sm transition-colors hover:bg-muted focus-visible:bg-muted focus-visible:outline-none"
+                  className={`grid w-full grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)_auto] items-center gap-3 rounded-md px-3 py-2.5 text-left text-sm transition-colors hover:bg-muted focus-visible:bg-muted focus-visible:outline-none ${index === activeIndex ? "bg-muted" : ""}`}
                 >
                   <span className="flex min-w-0 items-center gap-2">
                     <span className="grid size-5 shrink-0 place-items-center text-muted-foreground" aria-hidden="true">
@@ -208,7 +247,10 @@ export function ActionSearchBar({
           </div>
           <div className="flex items-center justify-between border-t border-border px-3 py-2 text-[0.68rem] text-muted-foreground">
             <span>Search the BHWiki library</span>
-            <kbd className="rounded border border-border px-1.5 py-0.5 font-mono">ESC</kbd>
+            <span className="flex items-center gap-2">
+              <span><kbd className="rounded border border-border px-1 py-0.5 font-mono">↑</kbd><kbd className="ms-0.5 rounded border border-border px-1 py-0.5 font-mono">↓</kbd> navigate</span>
+              <kbd className="rounded border border-border px-1.5 py-0.5 font-mono">ESC</kbd>
+            </span>
           </div>
         </div>
       ) : null}
