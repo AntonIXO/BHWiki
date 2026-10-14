@@ -3,18 +3,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ChevronDown, Code2, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Logo } from "@/components/logo";
 import { HeaderSearch } from "@/components/header-search";
 import { Button } from "@/components/ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuGroup,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -101,31 +93,6 @@ export function Header() {
         </nav>
         <div className="ms-auto flex items-center gap-1.5">
           <HeaderSearch />
-          <DropdownMenu>
-            <DropdownMenuTrigger render={<Button variant="ghost" size="sm" className="hidden md:inline-flex" />}>
-              Browse
-              <ChevronDown data-icon="inline-end" />
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="end">
-              <DropdownMenuGroup>
-                <DropdownMenuLabel>Collections</DropdownMenuLabel>
-                {browse.map((link) => (
-                  <DropdownMenuItem key={link.href} render={<Link href={link.href} />}>
-                    {link.label}
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuGroup>
-            </DropdownMenuContent>
-          </DropdownMenu>
-          <Button
-            variant="outline"
-            size="sm"
-            nativeButton={false}
-            render={<Link href="/contribute" />}
-          >
-            <Code2 data-icon="inline-start" />
-            Contribute
-          </Button>
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger
               className="md:hidden"
