@@ -878,18 +878,6 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
-- id: dr-berberine-s17
-  title: Randomized controlled trial of berberine sulfate therapy for diarrhea due to enterotoxigenic Escherichia coli and Vibrio cholerae
-  authors: G. H. Rabbani, T. Butler, J. Knight, S. C. Sanyal, K. Alam
-  year: 3549923
-  url: https://www.nccih.nih.gov/health/in-the-news-berberine"
-  kind: randomized clinical trial
-  insight: Human evidence for a berberine sulfate formulation in acute infectious diarrhea.
-  limitation: Historical, disease-specific, and not evidence for metabolic use.
-  funding: not-assessed
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: not-assessed
-  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
