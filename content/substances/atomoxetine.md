@@ -16,7 +16,7 @@ tags:
   - major-cardiovascular-events
   - blood-pressure
 accent: "#8e9cb8"
-reviewedAt: "2026-10-11"
+reviewedAt: 2026-10-11
 editorialStatus: sourced-draft
 halfLife:
   label: 5.2 hours in most CYP2D6 metabolizer types; 21.6 hours in poor metabolizers
@@ -206,6 +206,20 @@ This page converts the completed research into source-linked cards. Label dosing
   context: Plasma peak and elimination half-life are not therapeutic-onset measures. Adult symptom effects were detectable by week 1, larger by week 4, and further improved on average through week 26.
   sourceId: faraone2016
   modelEligible: false
+- id: dr-atomoxetine-atomoxetine-pk-1
+  analyte: Parent compound or reported analyte
+  route: Not established
+  formulation: Not established
+  population: Humans
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: No validated universal terminal half-life was established in the returned report.
+  sourceId: atomoxetine-label
+  modelEligible: false
 ```
 
 ## Modifiers
@@ -352,7 +366,8 @@ This page converts the completed research into source-linked cards. Label dosing
   instrument: Stop-signal, probabilistic-learning, neuroimaging, and ADHD rating measures
   magnitude: No general enhancement estimate established
   reportType: measured-assessment
-  conflictingSourceIds: [marquand2011]
+  conflictingSourceIds:
+    - marquand2011
 - id: atomoxetine-outcome-comparative
   conceptId: attention
   name: Comparative short-term ADHD symptom effect
@@ -411,7 +426,8 @@ This page converts the completed research into source-linked cards. Label dosing
     - entityId: tag:cognitive-performance
       role: classification-context
   context: The label describes selective norepinephrine reuptake inhibition, no controlled-substance status, and no stimulant or euphoriant properties in the cited abuse-potential study.
-  sourceIds: [atomoxetine-label]
+  sourceIds:
+    - atomoxetine-label
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Regulatory classification and an abuse-potential study do not establish that misuse or adverse effects are impossible.
@@ -424,7 +440,9 @@ This page converts the completed research into source-linked cards. Label dosing
     - entityId: tag:attention
       role: claimed-outcome
   context: Peak concentration occurs earlier than the week-to-month symptom trajectory observed in adult trials.
-  sourceIds: [atomoxetine-label, faraone2016]
+  sourceIds:
+    - atomoxetine-label
+    - faraone2016
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Group trial averages do not predict an individual onset or response.
@@ -437,7 +455,10 @@ This page converts the completed research into source-linked cards. Label dosing
     - entityId: tag:cognitive-performance
       role: claimed-outcome
   context: The indication is ADHD; healthy studies show selective laboratory effects and null findings rather than broad real-world enhancement.
-  sourceIds: [atomoxetine-label, chamberlain2006, marquand2011]
+  sourceIds:
+    - atomoxetine-label
+    - chamberlain2006
+    - marquand2011
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Healthy laboratory findings are not a comprehensive test of every possible cognitive domain.
@@ -450,7 +471,8 @@ This page converts the completed research into source-linked cards. Label dosing
     - entityId: tag:attention
       role: metabolizing-enzyme
   context: Poor metabolizer status and strong CYP2D6 inhibition increase exposure and can increase adverse effects.
-  sourceIds: [atomoxetine-label]
+  sourceIds:
+    - atomoxetine-label
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Exposure differences do not provide a personal dose recommendation.
@@ -463,7 +485,9 @@ This page converts the completed research into source-linked cards. Label dosing
     - entityId: tag:attention
       role: measured-outcome
   context: The U.S. label reports no additional pediatric benefit above 1.2 mg/kg/day, and a 2026 dose-effect network meta-analysis found no dose-effect pattern for atomoxetine in fixed-dose studies.
-  sourceIds: [atomoxetine-label, nourredine2026]
+  sourceIds:
+    - atomoxetine-label
+    - nourredine2026
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Aggregate fixed-dose analyses do not determine an individual's optimal dose.
@@ -611,7 +635,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC1867315/
 - id: marquand2011
-  title: "Pattern classification of working memory networks reveals differential effects of methylphenidate, atomoxetine, and placebo in healthy volunteers"
+  title: Pattern classification of working memory networks reveals differential effects of methylphenidate, atomoxetine, and placebo in healthy volunteers
   authors: Andre F. Marquand, Sara De Simoni, Owen G. O'Daly, Steven C. R. Williams, Janaina Mourão-Miranda, Mitul A. Mehta
   year: 2011
   url: https://pubmed.ncbi.nlm.nih.gov/21346736/
@@ -637,7 +661,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/42134365/
 - id: atomoxetine-label-older
-  title: "STRATTERA (atomoxetine) capsules, for oral use; earlier U.S. label revision"
+  title: STRATTERA (atomoxetine) capsules, for oral use; earlier U.S. label revision
   authors: U.S. Food and Drug Administration
   year: 2026
   url: https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/021411s000lbl.pdf

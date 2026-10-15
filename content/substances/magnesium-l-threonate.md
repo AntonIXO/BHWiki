@@ -13,7 +13,7 @@ smiles: Not established
 category: Research subject
 tags: []
 accent: "#888888"
-reviewedAt: "2026-10-10"
+reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -230,6 +230,20 @@ Short-term cognitive or subjective sleep signals remain uncertain; broad enhance
   unit: hours
   context: EFSA cites mean plasma L-threonate half-life of about 2.5 hours, fasting Tmax around 2 hours and fed Tmax around 3 hours; food increased AUC by about 33% and Cmax by about 21%, and four days of repeated dosing produced no accumulation. These findings describe the separate L-threonate moiety and cannot establish magnesium L-threonate magnesium or CNS pharmacokinetics.
   sourceId: efsa-2024
+  modelEligible: false
+- id: dr-magnesium-l-threonate-magnesium-l-threonate-pk-1
+  analyte: Parent compound or reported analyte
+  route: Not established
+  formulation: Not established
+  population: Humans
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: No validated universal terminal half-life was established in the returned report.
+  sourceId: dr-magnesium-l-threonate-s1
   modelEligible: false
 ```
 
@@ -537,16 +551,25 @@ Short-term cognitive or subjective sleep signals remain uncertain; broad enhance
 
 ```yaml
 - id: efsa-2024
-  title: Safety of magnesium L-threonate as a novel food pursuant to Regulation (EU) 2015/2283 and bioavailability of magnesium from this source in the context of Directive 2002/46/EC
-  authors: EFSA Panel on Nutrition, Novel Foods and Food Allergens; Turck D, Bohn T, Castenmiller J, et al.
+  title: Safety of magnesium L-threonate as a novel food pursuant to Regulation (EU)
+    2015/2283 and bioavailability of magnesium from this source in the context of
+    Directive 2002/46/EC
+  authors: EFSA Panel on Nutrition, Novel Foods and Food Allergens; Turck D, Bohn
+    T, Castenmiller J, et al.
   year: 2024
   url: https://doi.org/10.2903/j.efsa.2024.8656
   kind: EFSA scientific opinion and regulatory assessment
-  insight: Supports product composition, proposed intake, animal absorption and CSF findings, 2016 peripheral magnesium findings, adverse-event context, and the distinction between anhydrous study material and the assessed monohydrate.
-  limitation: The opinion does not establish superior human brain delivery or a universal magnesium L-threonate half-life. Applicant-supplied proprietary data informed the assessment.
-  funding: EFSA regulatory assessment requested by the European Commission; applicant AIDP Inc. supplied proprietary application data.
+  insight: Supports product composition, proposed intake, animal absorption and CSF
+    findings, 2016 peripheral magnesium findings, adverse-event context, and the distinction
+    between anhydrous study material and the assessed monohydrate.
+  limitation: The opinion does not establish superior human brain delivery or a universal
+    magnesium L-threonate half-life. Applicant-supplied proprietary data informed
+    the assessment.
+  funding: EFSA regulatory assessment requested by the European Commission; applicant
+    AIDP Inc. supplied proprietary application data.
   sponsorshipStatus: mixed-funding
-  conflictsOfInterest: EFSA formal declarations-of-interest process; the applicant had a commercial interest in authorization.
+  conflictsOfInterest: EFSA formal declarations-of-interest process; the applicant
+    had a commercial interest in authorization.
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.2903/j.efsa.2024.8656
   doi: 10.2903/j.efsa.2024.8656
@@ -556,110 +579,148 @@ Short-term cognitive or subjective sleep signals remain uncertain; broad enhance
   year: 2026
   url: https://ods.od.nih.gov/factsheets/magnesium-healthprofessional/
   kind: Official nutrient monograph
-  insight: Supports elemental-magnesium labeling, adult supplemental upper limit, renal toxicity context, absorption comparisons, and medication-binding interactions.
-  limitation: General magnesium guidance is not a magnesium L-threonate-specific efficacy or pharmacokinetic trial.
+  insight: Supports elemental-magnesium labeling, adult supplemental upper limit,
+    renal toxicity context, absorption comparisons, and medication-binding interactions.
+  limitation: General magnesium guidance is not a magnesium L-threonate-specific efficacy
+    or pharmacokinetic trial.
   funding: U.S. federal government informational resource.
   sponsorshipStatus: non-industry-funded
   conflictsOfInterest: No journal-style individual statement.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/
 - id: lopresti-smith-2026
-  title: "The effects of magnesium L-threonate (Magtein®) on cognitive performance and sleep quality in adults: a randomised, double-blind, placebo-controlled trial"
+  title: 'The effects of magnesium L-threonate (Magtein®) on cognitive performance
+    and sleep quality in adults: a randomised, double-blind, placebo-controlled trial'
   authors: Adrian L Lopresti, Stephen J Smith
   year: 2026
   url: https://doi.org/10.3389/fnut.2025.1729164
   kind: randomized double-blind placebo-controlled trial
-  insight: Six-week Magtein trial in 100 younger adults; selected cognition and subjective sleep-related impairment signals with null domain and objective sleep findings.
-  limitation: Small, short-term study with commercial funding, product supply, sponsor design involvement, and commercially relevant CRO relationships; a correction clarified two-tailed analysis wording.
+  insight: Six-week Magtein trial in 100 younger adults; selected cognition and subjective
+    sleep-related impairment signals with null domain and objective sleep findings.
+  limitation: Small, short-term study with commercial funding, product supply, sponsor
+    design involvement, and commercially relevant CRO relationships; a correction
+    clarified two-tailed analysis wording.
   funding: Threotech Inc.; product supplied by Threotech.
   sponsorshipStatus: industry-funded
-  conflictsOfInterest: Adrian Lopresti disclosed leadership of Clinical Research Australia, a nutraceutical-industry-funded CRO; Stephen Smith was employed by the CRO.
+  conflictsOfInterest: Adrian Lopresti disclosed leadership of Clinical Research Australia,
+    a nutraceutical-industry-funded CRO; Stephen Smith was employed by the CRO.
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.3389/fnut.2026.2010644
   doi: 10.3389/fnut.2025.1729164
 - id: liu-2016
-  title: "Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled Trial."
+  title: 'Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating
+    Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled
+    Trial.'
   authors: Guosong Liu, Jason G Weinger, Zhong-Lin Lu, Feng Xue, Safa Sadeghpour
   year: 2016
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4927823/
   kind: randomized double-blind placebo-controlled trial
-  insight: Twelve-week body-weight-banded L-TAMS trial with a positive composite cognition signal and several null domain findings.
-  limitation: Small sample; Neurocentria and Miami Research Associates designed the study, analyzed endpoints, and wrote the manuscript; anhydrous material differs from the assessed monohydrate.
+  insight: Twelve-week body-weight-banded L-TAMS trial with a positive composite cognition
+    signal and several null domain findings.
+  limitation: Small sample; Neurocentria and Miami Research Associates designed the
+    study, analyzed endpoints, and wrote the manuscript; anhydrous material differs
+    from the assessed monohydrate.
   funding: Neurocentria Inc.
   sponsorshipStatus: industry-funded
-  conflictsOfInterest: External author-disclosure record was referenced; exact historical wording was not recovered.
+  conflictsOfInterest: External author-disclosure record was referenced; exact historical
+    wording was not recovered.
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.3233/JAD-150538
-  pmid: "26519439"
+  pmid: '26519439'
   doi: 10.3233/JAD-150538
 - id: zhang-2022
-  title: A Magtein, Magnesium L-Threonate, Based Formula Improves Brain Cognitive Functions in Healthy Chinese Adults
+  title: A Magtein, Magnesium L-Threonate, Based Formula Improves Brain Cognitive
+    Functions in Healthy Chinese Adults
   authors: Zhang C; Hu Q; Li S; Dai F; Qian W; Hewlings S; Yan T; Wang Y
   year: 2022
   url: https://doi.org/10.3390/nu14245235
   kind: Randomized, double-blind, placebo-controlled multi-ingredient trial
-  insight: Thirty-day MagteinPS formula trial reporting favorable memory-test domains and Memory Quotient.
-  limitation: The formula also contained phosphatidylserine and vitamins C, B6, and D3; elemental magnesium was not reported, so attribution to magnesium L-threonate is not possible.
-  funding: Industry support involving Wu-xi Magtein Bioscience; formulation supplied by Magceutics Inc.
+  insight: Thirty-day MagteinPS formula trial reporting favorable memory-test domains
+    and Memory Quotient.
+  limitation: The formula also contained phosphatidylserine and vitamins C, B6, and
+    D3; elemental magnesium was not reported, so attribution to magnesium L-threonate
+    is not possible.
+  funding: Industry support involving Wu-xi Magtein Bioscience; formulation supplied
+    by Magceutics Inc.
   sponsorshipStatus: industry-funded
-  conflictsOfInterest: No known competing financial interests or personal relationships stated; study-level commercial involvement remains relevant.
+  conflictsOfInterest: No known competing financial interests or personal relationships
+    stated; study-level commercial involvement remains relevant.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://doi.org/10.3390/nu14245235
-  pmid: "36558392"
+  pmid: '36558392'
   doi: 10.3390/nu14245235
 - id: ni-2023
-  title: A Randomized, Double-Blind, Placebo-Controlled Trial to Evaluate the Therapeutic Effect of Magnesium-L-Threonate Supplementation for Persistent Pain After Breast Cancer Surgery
+  title: A Randomized, Double-Blind, Placebo-Controlled Trial to Evaluate the Therapeutic
+    Effect of Magnesium-L-Threonate Supplementation for Persistent Pain After Breast
+    Cancer Surgery
   authors: Ni Y; Deng F; Yu S; Zhang J; Zhang X; Huang D; Zhou H
   year: 2023
   url: https://doi.org/10.2147/BCTT.S413435
   kind: Randomized, double-blind, placebo-controlled trial
-  insight: Twelve-week trial using 1,200 mg/day salt mass and 91.8 mg/day elemental magnesium; no significant advantage for cognition, sleep, anxiety, depression, or pain.
-  limitation: Clinically different postoperative population; exact funding statement was not recovered.
-  funding: Exact funding statement not recovered; product supplied by Wuxi Naomisu Biopharmaceutical Technology Co., Ltd.
+  insight: Twelve-week trial using 1,200 mg/day salt mass and 91.8 mg/day elemental
+    magnesium; no significant advantage for cognition, sleep, anxiety, depression,
+    or pain.
+  limitation: Clinically different postoperative population; exact funding statement
+    was not recovered.
+  funding: Exact funding statement not recovered; product supplied by Wuxi Naomisu
+    Biopharmaceutical Technology Co., Ltd.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Authors reported no conflicts; funding detail remains incomplete.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://doi.org/10.2147/BCTT.S413435
-  pmid: "37520407"
+  pmid: '37520407'
   doi: 10.2147/BCTT.S413435
 - id: hausenblas-2024
-  title: "Magnesium-L-threonate improves sleep quality and daytime functioning in adults with self-reported sleep problems: A randomized controlled trial."
-  authors: Heather A Hausenblas, Tarah Lynch, Stephanie Hooper, Aahana Shrestha, Doug Rosendale, Jennifer Gu
+  title: 'Magnesium-L-threonate improves sleep quality and daytime functioning in
+    adults with self-reported sleep problems: A randomized controlled trial.'
+  authors: Heather A Hausenblas, Tarah Lynch, Stephanie Hooper, Aahana Shrestha, Doug
+    Rosendale, Jennifer Gu
   year: 2024
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11381753/
   kind: randomized double-blind placebo-controlled trial
-  insight: Twenty-one-day trial reporting selected Oura and daytime-function signals amid a non-significant overall insomnia interaction and multiple null sleep endpoints.
-  limitation: Commercially commissioned and funded; retrospective registration; corrigendum disclosed paid consultants, an industry vice president, and relevant patent ownership.
+  insight: Twenty-one-day trial reporting selected Oura and daytime-function signals
+    amid a non-significant overall insomnia interaction and multiple null sleep endpoints.
+  limitation: Commercially commissioned and funded; retrospective registration; corrigendum
+    disclosed paid consultants, an industry vice president, and relevant patent ownership.
   funding: AIDP Inc.; Magtein supplied by Threotech.
   sponsorshipStatus: industry-funded
-  conflictsOfInterest: Rosendale and Shrestha were paid AIDP consultants; Gu was AIDP vice president of research and development; other authors declared no known competing interests.
+  conflictsOfInterest: Rosendale and Shrestha were paid AIDP consultants; Gu was AIDP
+    vice president of research and development; other authors declared no known competing
+    interests.
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.1016/j.sleepx.2024.100121
-  pmid: "39252819"
+  pmid: '39252819'
   doi: 10.1016/j.sleepx.2024.100121
 - id: surman-2021
-  title: "L-Threonic Acid Magnesium Salt Supplementation in ADHD: An Open-Label Pilot Study"
+  title: 'L-Threonic Acid Magnesium Salt Supplementation in ADHD: An Open-Label Pilot
+    Study'
   authors: Surman C; Vaudreuil C; Boland H; Rhodewalt L; DiSalvo M; Biederman J
   year: 2021
   url: https://doi.org/10.1080/19390211.2020.1731044
   kind: Open-label pilot study
-  insight: Small ADHD pilot reporting symptom improvement and 47% meeting its composite responder definition.
-  limitation: Uncontrolled, very small study; expectancy, regression to the mean, and time effects cannot be separated; individual funding and conflict wording were not recovered.
-  funding: Not recovered from the accessible primary record; Massachusetts General Hospital lead sponsor with Neurocentria Inc. collaborator.
+  insight: Small ADHD pilot reporting symptom improvement and 47% meeting its composite
+    responder definition.
+  limitation: Uncontrolled, very small study; expectancy, regression to the mean,
+    and time effects cannot be separated; individual funding and conflict wording
+    were not recovered.
+  funding: Not recovered from the accessible primary record; Massachusetts General
+    Hospital lead sponsor with Neurocentria Inc. collaborator.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Commercial collaborator present; individual status not recovered.
   conflictOfInterestStatus: not-assessed
-  pmid: "32162987"
+  pmid: '32162987'
   doi: 10.1080/19390211.2020.1731044
 - id: lopresti-corrigendum-2026
-  title: "Correction: The effects of magnesium L-threonate on cognitive performance and sleep quality in adults"
+  title: 'Correction: The effects of magnesium L-threonate on cognitive performance
+    and sleep quality in adults'
   authors: Lopresti AL; Smith SJ
   year: 2026
   url: https://doi.org/10.3389/fnut.2026.2010644
   kind: Published correction
-  insight: Corrects one-tailed critical-p wording in the trial report; the correction states the analyses were two-tailed and the results and interpretation were unchanged.
+  insight: Corrects one-tailed critical-p wording in the trial report; the correction
+    states the analyses were two-tailed and the results and interpretation were unchanged.
   limitation: This correction does not add independent efficacy or safety evidence.
-  funding: "Same underlying trial context: Threotech Inc."
+  funding: 'Same underlying trial context: Threotech Inc.'
   sponsorshipStatus: industry-funded
   conflictsOfInterest: Same declared commercial involvement as the underlying trial.
   conflictOfInterestStatus: declared
@@ -672,7 +733,8 @@ Short-term cognitive or subjective sleep signals remain uncertain; broad enhance
   url: https://clinicaltrials.gov/study/NCT02558790
   kind: ClinicalTrials.gov registry record
   insight: Registry context for the ADHD L-TAMS pilot and its Neurocentria collaboration.
-  limitation: Registry metadata and a publication do not convert an open-label pilot into controlled efficacy evidence.
+  limitation: Registry metadata and a publication do not convert an open-label pilot
+    into controlled efficacy evidence.
   funding: Massachusetts General Hospital lead sponsor; Neurocentria Inc. collaborator.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Journal-style individual disclosure not recovered.
@@ -683,76 +745,280 @@ Short-term cognitive or subjective sleep signals remain uncertain; broad enhance
   year: 2026
   url: https://clinicaltrials.gov/study/NCT07640685
   kind: ClinicalTrials.gov registry record
-  insight: Planned comparison of magnesium glycinate, magnesium L-threonate, and placebo in varsity athletes; no posted efficacy results in the reviewed record.
+  insight: Planned comparison of magnesium glycinate, magnesium L-threonate, and placebo
+    in varsity athletes; no posted efficacy results in the reviewed record.
   limitation: A registry entry without results is not comparative efficacy evidence.
   funding: Not stated in the compact registry record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: No journal-style disclosure.
   conflictOfInterestStatus: not-assessed
 - id: nct07706283
-  title: Sex-Divergent Effects of Magnesium L-Threonate Supplementation on Sleep Quality, Cognitive Performance, and Neuromuscular Function in Healthy Adults
+  title: Sex-Divergent Effects of Magnesium L-Threonate Supplementation on Sleep Quality,
+    Cognitive Performance, and Neuromuscular Function in Healthy Adults
   authors: Barry University; ClinicalTrials.gov
   year: 2026
   url: https://clinicaltrials.gov/study/NCT07706283
   kind: ClinicalTrials.gov registry record
-  insight: Registry reported 81 healthy adults enrolled for six weeks and completion in March 2026 without posted results in the reviewed record.
-  limitation: Absence of posted registry results is neither positive nor negative evidence.
+  insight: Registry reported 81 healthy adults enrolled for six weeks and completion
+    in March 2026 without posted results in the reviewed record.
+  limitation: Absence of posted registry results is neither positive nor negative
+    evidence.
   funding: Not reported in journal-publication format.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported in journal-publication format.
   conflictOfInterestStatus: not-assessed
 - id: nct07015047
-  title: Effects of Magnesium L-Threonate on Sleep, Recovery, and Athletic Performance in Collegiate Athletes
+  title: Effects of Magnesium L-Threonate on Sleep, Recovery, and Athletic Performance
+    in Collegiate Athletes
   authors: University of California, Los Angeles
   year: 2025
   url: https://clinicaltrials.gov/study/NCT07015047
   kind: ClinicalTrials.gov registry record
-  insight: Registry record for a 100-athlete sleep, recovery, and performance study listed active, not recruiting, without posted results in the reviewed record.
+  insight: Registry record for a 100-athlete sleep, recovery, and performance study
+    listed active, not recruiting, without posted results in the reviewed record.
   limitation: Registry status does not establish efficacy or authorization.
   funding: Not stated in the recovered compact record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not stated in the recovered compact record.
   conflictOfInterestStatus: not-assessed
 - id: hausenblas-corrigendum-2025
-  title: Corrigendum to Magnesium-L-threonate improves sleep quality and daytime functioning in adults with self-reported sleep problems
+  title: Corrigendum to Magnesium-L-threonate improves sleep quality and daytime functioning
+    in adults with self-reported sleep problems
   authors: Hausenblas HA; Lynch T; Hooper S; Shrestha A; Rosendale D; Gu J
   year: 2025
   url: https://doi.org/10.1016/j.sleepx.2025.100141
   kind: Published corrigendum
-  insight: Corrects and clarifies the study's commercial relationships and disclosure context.
+  insight: Corrects and clarifies the study's commercial relationships and disclosure
+    context.
   limitation: This corrigendum does not add independent efficacy evidence.
   funding: AIDP Inc.
   sponsorshipStatus: industry-funded
-  conflictsOfInterest: Paid consultant and employee relationships were corrected and made explicit; AIDP owned relevant patents.
+  conflictsOfInterest: Paid consultant and employee relationships were corrected and
+    made explicit; AIDP owned relevant patents.
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.1016/j.sleepx.2025.100141
   doi: 10.1016/j.sleepx.2025.100141
 - id: surman-pilot-record
-  title: "L-Threonic Acid Magnesium Salt Supplementation in ADHD: An Open-Label Pilot Study"
+  title: 'L-Threonic Acid Magnesium Salt Supplementation in ADHD: An Open-Label Pilot
+    Study'
   authors: Surman C; Vaudreuil C; Boland H; Rhodewalt L; DiSalvo M; Biederman J
   year: 2021
   url: https://doi.org/10.1080/19390211.2020.1731044
   kind: Open-label pilot study
-  insight: This additional registry-linked record resolves to the same DOI as the primary ADHD pilot publication and adds no independent study estimate.
-  limitation: This duplicate-linked record adds no independent efficacy estimate or safety result.
+  insight: This additional registry-linked record resolves to the same DOI as the
+    primary ADHD pilot publication and adds no independent study estimate.
+  limitation: This duplicate-linked record adds no independent efficacy estimate or
+    safety result.
   funding: Not recovered.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not recovered.
   conflictOfInterestStatus: not-assessed
   doi: 10.1080/19390211.2020.1731044
 - id: wroolie-2017
-  title: An 8-week open label trial of L-Threonic Acid Magnesium Salt in patients with mild to moderate dementia
-  authors: Wroolie TE; Chen K; Watson KT; Iagaru A; Sonni I; Snyder N; Lee W; Reiman EM; Rasgon NL
+  title: An 8-week open label trial of L-Threonic Acid Magnesium Salt in patients
+    with mild to moderate dementia
+  authors: Wroolie TE; Chen K; Watson KT; Iagaru A; Sonni I; Snyder N; Lee W; Reiman
+    EM; Rasgon NL
   year: 2017
   url: https://doi.org/10.1016/j.pmip.2017.07.001
   kind: Open-label exploratory trial
-  insight: Small eight-week trial of anhydrous magnesium L-threonate with vitamins C and D reporting exploratory cognitive signals.
-  limitation: Uncontrolled and multi-ingredient; funding and publication-level conflict wording were not recovered; EFSA did not treat this evidence as sufficient for monohydrate safety.
-  funding: Not recovered; Stanford University lead sponsor with Magceutics Inc. registry collaborator.
+  insight: Small eight-week trial of anhydrous magnesium L-threonate with vitamins
+    C and D reporting exploratory cognitive signals.
+  limitation: Uncontrolled and multi-ingredient; funding and publication-level conflict
+    wording were not recovered; EFSA did not treat this evidence as sufficient for
+    monohydrate safety.
+  funding: Not recovered; Stanford University lead sponsor with Magceutics Inc. registry
+    collaborator.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Commercial collaborator present; publication-level disclosure not recovered.
+  conflictsOfInterest: Commercial collaborator present; publication-level disclosure
+    not recovered.
   conflictOfInterestStatus: not-assessed
   doi: 10.1016/j.pmip.2017.07.001
+- id: dr-magnesium-l-threonate-s1
+  title: Safety of magnesium L-threonate as a novel food pursuant to Regulation (EU)
+    2015/2283 and bioavailability of magnesium from this source in the context of
+    Directive 2002/46/EC
+  authors: EFSA Panel on Nutrition, Novel Foods and Food Allergens (NDA); Turck D,
+    Bohn T, Castenmiller J, et al.
+  year: 2024
+  url: https://pubmed.ncbi.nlm.nih.gov/38481468/
+  kind: Regulatory safety assessment
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully
+    recovered in the capture.
+  funding: EFSA regulatory assessment; applicant AIDP supplied proprietary application
+    data.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Applicant commercial interest and EFSA declarations-of-interest
+    process.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-l-threonate-s4
+  title: 'The effects of magnesium L-threonate (Magtein) on cognitive performance
+    and sleep quality in adults: a randomised, double-blind, placebo-controlled trial'
+  authors: Lopresti AL, Smith SJ
+  year: 2026
+  url: https://pubmed.ncbi.nlm.nih.gov/41601871/
+  kind: Randomized, double-blind, placebo-controlled trial
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully
+    recovered in the capture.
+  funding: Threotech Inc.; product supplied by Threotech.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Commercial sponsor involvement and CRO leadership/employment
+    disclosed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-l-threonate-s6
+  title: 'Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating
+    Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled
+    Trial'
+  authors: Liu G, Weinger JG, Lu Z-L, Xue F, Sadeghpour S
+  year: 2016
+  url: https://pubmed.ncbi.nlm.nih.gov/26519439/
+  kind: Randomized, double-blind, placebo-controlled trial
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully
+    recovered in the capture.
+  funding: Neurocentria Inc.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Neurocentria design, endpoint analysis and manuscript involvement
+    disclosed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-l-threonate-s7
+  title: 'Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating
+    Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled
+    Trial'
+  authors: Liu G, Weinger JG, Lu Z-L, Xue F, Sadeghpour S
+  year: 2016
+  url: https://doi.org/10.3233/JAD-150538
+  kind: Randomized, double-blind, placebo-controlled trial
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully
+    recovered in the capture.
+  funding: Neurocentria Inc.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Neurocentria design, endpoint analysis and manuscript involvement
+    disclosed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-l-threonate-s8
+  title: 'Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating
+    Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled
+    Trial'
+  authors: ClinicalTrials.gov registry NCT02363634
+  year: 2015
+  url: https://clinicaltrials.gov/study/NCT02363634
+  kind: Clinical trial registry
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully
+    recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-l-threonate-s9
+  title: A Magtein, Magnesium L-Threonate, -Based Formula Improves Brain Cognitive
+    Functions in Healthy Chinese Adults
+  authors: Zhang C, Hu Q, Li S, Dai F, Qian W, Hewlings S, Yan T, Wang Y
+  year: 2022
+  url: https://pubmed.ncbi.nlm.nih.gov/36558392/
+  kind: Randomized, double-blind, placebo-controlled trial
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully
+    recovered in the capture.
+  funding: Wu-xi Magtein Bioscience and Magceutics product support.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Commercial formulation support disclosed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-l-threonate-s11
+  title: A Randomized, Double-Blind, Placebo-Controlled Trial to Evaluate the Therapeutic
+    Effect of Magnesium-L-Threonate Supplementation for Persistent Pain After Breast
+    Cancer Surgery
+  authors: Ni Y, Deng F, Yu S, Zhang J, Zhang X, Huang D, Zhou H
+  year: 2023
+  url: https://pubmed.ncbi.nlm.nih.gov/37520407/
+  kind: Randomized, double-blind, placebo-controlled trial
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully
+    recovered in the capture.
+  funding: Not recovered; product source reported.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Authors reported no conflicts; funding detail incomplete.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-l-threonate-s13
+  title: 'Magnesium-L-threonate improves sleep quality and daytime functioning in
+    adults with self-reported sleep problems: A randomized controlled trial'
+  authors: Hausenblas HA, Lynch T, Hooper S, Shrestha A, Rosendale D, Gu J
+  year: 2024
+  url: https://pubmed.ncbi.nlm.nih.gov/39252819/
+  kind: Randomized controlled trial
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully
+    recovered in the capture.
+  funding: AIDP Inc.; Magtein supplied by Threotech.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Corrigendum reports paid AIDP consultants and an AIDP VP of
+    R&D among authors.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-l-threonate-s14
+  title: 'Magnesium-L-threonate improves sleep quality and daytime functioning in
+    adults with self-reported sleep problems: A randomized controlled trial'
+  authors: Hausenblas HA, Lynch T, Hooper S, Shrestha A, Rosendale D, Gu J
+  year: 2024
+  url: https://doi.org/10.1016/j.sleepx.2024.100121
+  kind: Randomized controlled trial
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully
+    recovered in the capture.
+  funding: AIDP Inc.; Magtein supplied by Threotech.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Corrigendum reports paid AIDP consultants and an AIDP VP of
+    R&D among authors.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-l-threonate-s15
+  title: 'Magnesium-L-threonate improves sleep quality and daytime functioning in
+    adults with self-reported sleep problems: A randomized controlled trial'
+  authors: ISRCTN registry ISRCTN14728094
+  year: 2024
+  url: https://www.isrctn.com/ISRCTN14728094
+  kind: Clinical trial registry
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully
+    recovered in the capture.
+  funding: Not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-l-threonate-s16
+  title: 'L-Threonic Acid Magnesium Salt Supplementation in ADHD: An Open-Label Pilot
+    Study'
+  authors: Surman C, Vaudreuil C, Boland H, Rhodewalt L, DiSalvo M, Biederman J
+  year: 2021
+  url: https://pubmed.ncbi.nlm.nih.gov/32162987/
+  kind: Open-label pilot study
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully
+    recovered in the capture.
+  funding: Not recovered; Massachusetts General Hospital lead sponsor and Neurocentria
+    collaborator.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Commercial collaborator present; individual disclosure not
+    recovered.
+  conflictOfInterestStatus: not-assessed
+- id: dr-magnesium-l-threonate-s25
+  title: An 8-week open label trial of L-Threonic Acid Magnesium Salt in patients
+    with mild to moderate dementia
+  authors: Wroolie TE, Chen K, Watson KT, Iagaru A, Sonni I, Snyder N, Lee W, Reiman
+    EM, Rasgon NL
+  year: 2017
+  url: https://clinicaltrials.gov/study/NCT02210286
+  kind: Open-label exploratory trial
+  insight: Source cited by the returned Deep Research report.
+  limitation: Publication metadata, funding, or disclosure details were not fully
+    recovered in the capture.
+  funding: Not recovered; Stanford University lead sponsor and Magceutics collaborator.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Commercial collaborator present; publication disclosure not
+    recovered.
+  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal

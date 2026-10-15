@@ -15,7 +15,8 @@ tags:
   - dopamine
   - attention
 accent: "#a9b993"
-reviewedAt: "2026-10-10"
+reviewedAt: 2026-10-10
+editorialStatus: sourced-draft
 halfLife:
   label: Parent-compound half-life not established
   low: null
@@ -30,7 +31,6 @@ kinetics:
   bioavailability: An absolute oral bioavailability percentage was not established in the cited human studies.
   metabolism: Free L-tyrosine enters protein and catecholamine pathways. NALT is a distinct acetylated precursor with sparse human conversion data.
   sourceId: tyrosine-r11
-editorialStatus: sourced-draft
 x-shape:
   - slug
   - name
@@ -275,6 +275,20 @@ The page separates free L-tyrosine from NALT, plasma observations from cognitive
   unit: hours
   context: Plasma NALT rose rapidly, plasma free tyrosine increased by approximately 25%, and 56% of administered NALT appeared unchanged in urine within 4 hours; no net splanchnic production of tyrosine was detected.
   sourceId: tyrosine-r13
+  modelEligible: false
+- id: dr-tyrosine-tyrosine-pk-1
+  analyte: Parent compound or reported analyte
+  route: Not established
+  formulation: Not established
+  population: Humans
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: No validated universal terminal half-life was established in the returned report.
+  sourceId: tyrosine-r1
   modelEligible: false
 ```
 
@@ -670,7 +684,7 @@ The page separates free L-tyrosine from NALT, plasma observations from cognitive
   authors: Adrian Hase; Sophie E. Jung; Marije aan het Rot
   year: 2015
   url: https://doi.org/10.1016/j.pbb.2015.03.008
-  doi: "10.1016/j.pbb.2015.03.008"
+  doi: 10.1016/j.pbb.2015.03.008
   kind: Systematic review
   insight: Fifteen placebo-controlled healthy-adult studies showed context-dependent cognitive effects.
   limitation: Small samples and predominantly single-session loading limit generalization.
@@ -796,7 +810,7 @@ The page separates free L-tyrosine from NALT, plasma observations from cognitive
   authors: Bruce S. Glaeser; Eldad Melamed; John H. Growdon; Richard J. Wurtman
   year: 1979
   url: https://doi.org/10.1016/0024-3205(79)90294-7
-  doi: "10.1016/0024-3205(79)90294-7"
+  doi: 10.1016/0024-3205(79)90294-7
   kind: Human pharmacokinetic study
   insight: 100–150 mg/kg produced a plasma peak near 2 hours and raised the tyrosine ratio.
   limitation: Twelve fasting subjects and no cognition endpoint; no validated elimination half-life was reported.
@@ -851,7 +865,7 @@ The page separates free L-tyrosine from NALT, plasma observations from cognitive
   title: PHENELZINE SULFATE tablet, film coated
   authors: U.S. Food and Drug Administration; Mylan Pharmaceuticals Inc.
   year: 2026
-  url: "https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fa041652-fdde-4794-a8d2-279dd309e075&version=13"
+  url: https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=fa041652-fdde-4794-a8d2-279dd309e075&version=13
   kind: Official prescribing label
   insight: Lists L-tyrosine among compounds not to take with phenelzine.
   limitation: Label warning does not quantify tyrosine-specific risk.
@@ -863,7 +877,7 @@ The page separates free L-tyrosine from NALT, plasma observations from cognitive
   title: Carbidopa and Levodopa Tablets, USP
   authors: U.S. Food and Drug Administration; U.S. National Library of Medicine
   year: 2026
-  url: "https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=d1bb319b-82a3-4b66-9cdc-f77fdb8383ce&type=display"
+  url: https://dailymed.nlm.nih.gov/dailymed/fda/fdaDrugXsl.cfm?setid=d1bb319b-82a3-4b66-9cdc-f77fdb8383ce&type=display
   kind: Official prescribing label
   insight: Levodopa competes with certain amino acids and high-protein intake can impair absorption in some patients.
   limitation: The label does not quantify discrete L-tyrosine supplement effects.
@@ -888,7 +902,7 @@ The page separates free L-tyrosine from NALT, plasma observations from cognitive
   title: "Dietary Supplements: How FDA Helps Keep You Safe"
   authors: U.S. Food and Drug Administration
   year: 2022
-  url: "https://www.fda.gov/media/158340/download?attachment="
+  url: https://www.fda.gov/media/158340/download?attachment=
   kind: Official regulatory guidance
   insight: Dietary supplements are not FDA-approved for safety or effectiveness before sale; manufacturers bear primary compliance responsibility.
   limitation: General supplement regulation, not L-tyrosine-specific quality or efficacy.
@@ -904,6 +918,6 @@ The page separates free L-tyrosine from NALT, plasma observations from cognitive
 - jurisdiction: United States
   activity: Dietary-supplement marketing and disease-treatment claims
   status: Dietary supplements are not FDA-approved for safety or effectiveness before marketing; manufacturers remain responsible for safety, truthful labeling, and compliance. Disease-treatment claims can cause a product to be regulated as a drug.
-  sourceUrl: "https://www.fda.gov/media/158340/download?attachment="
-  asOf: "2026-10-10"
+  sourceUrl: https://www.fda.gov/media/158340/download?attachment=
+  asOf: 2026-10-10
 ```

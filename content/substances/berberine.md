@@ -12,7 +12,7 @@ smiles: Not established
 category: Research subject
 tags: []
 accent: "#888888"
-reviewedAt: "2026-10-11"
+reviewedAt: 2026-10-11
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -213,6 +213,20 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   context: HTD1801 is an ionic salt with dissociation-related exposure; ursodeoxycholate appears earlier and at much higher plasma concentrations than berberine. Findings cannot be generalized to conventional berberine chloride.
   sourceId: S19
   modelEligible: false
+- id: dr-berberine-berberine-pk-1
+  analyte: Parent compound or reported analyte
+  route: Not established
+  formulation: Not established
+  population: Humans
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: No validated universal terminal half-life was established in the returned report.
+  sourceId: S1
+  modelEligible: false
 ```
 
 ## Modifiers
@@ -334,7 +348,8 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   instrument: Body weight, BMI, and waist circumference
   magnitude: Body weight -0.11 kg (95% CI -0.99 to 0.76; P=.79)
   reportType: measured-assessment
-  conflictingSourceIds: [S20]
+  conflictingSourceIds:
+    - S20
 - id: berberine-outcome-weight-updated
   conceptId: glycemic-control
   name: Body-size indices in updated meta-analysis
@@ -347,7 +362,8 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   instrument: Body weight, BMI, waist circumference, and waist-to-hip ratio
   magnitude: Body weight -0.88 kg; BMI -0.48 kg/m2; waist circumference -1.32 cm; waist-to-hip ratio null
   reportType: measured-assessment
-  conflictingSourceIds: [S16]
+  conflictingSourceIds:
+    - S16
 - id: berberine-outcome-adiposity-null
   conceptId: glycemic-control
   name: Visceral adipose tissue and liver fat
@@ -360,7 +376,8 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   instrument: Visceral adipose tissue and liver-fat measurements
   magnitude: Placebo-adjusted VAT difference 1.38% (97.5% CI -2.43% to 5.18%; P=.42)
   reportType: measured-assessment
-  conflictingSourceIds: [S20]
+  conflictingSourceIds:
+    - S20
 - id: berberine-outcome-htd1801
   conceptId: hba1c
   name: HTD1801 glycemic and lipid biomarkers
@@ -460,7 +477,8 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
     - entityId: tag:glycemic-control
       role: reported-outcome
   context: Partly supported as a modest short-term biomarker effect in randomized trials, with low certainty and substantial heterogeneity.
-  sourceIds: [S2]
+  sourceIds:
+    - S2
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Biomarker changes do not establish long-term clinical benefit.
@@ -473,7 +491,8 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
     - entityId: tag:ldl-cholesterol
       role: reported-outcome
   context: Supported for modest short-term lipid changes in meta-analysis, while clinical-event benefit is unestablished.
-  sourceIds: [S3]
+  sourceIds:
+    - S3
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Trials were short and geographically concentrated.
@@ -486,8 +505,13 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
     - entityId: tag:glycemic-control
       role: reported-outcome-context
   context: "Not established: weight meta-analyses conflict and a six-month adiposity trial was null for visceral adipose tissue and liver fat."
-  sourceIds: [S9, S16, S20]
-  conflictingSourceIds: [S16, S20]
+  sourceIds:
+    - S9
+    - S16
+    - S20
+  conflictingSourceIds:
+    - S16
+    - S20
   assessment: not-formally-assessed
   limitation: Formulations and study quality varied.
 - id: berberine-claim-replacement
@@ -499,7 +523,9 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
     - entityId: tag:glycemic-control
       role: comparator-context
   context: Unsupported by equivalence trials or clinical-outcome evidence.
-  sourceIds: [S2, S9]
+  sourceIds:
+    - S2
+    - S9
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: The cited studies were not equivalence trials.
@@ -512,7 +538,8 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
     - entityId: tag:insulin-sensitivity
       role: proposed-mechanism
   context: "Mechanistically invalid: AMPK findings are primarily preclinical and do not substitute for clinical outcomes."
-  sourceIds: [S14]
+  sourceIds:
+    - S14
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Molecular pathway evidence does not quantify human benefit.
@@ -525,7 +552,10 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
     - entityId: tag:perception
       role: safety-claim
   context: "Incomplete: gastrointestinal effects, CYP interactions, formulation variability, and pregnancy or infant concerns are documented."
-  sourceIds: [S3, S5, S13]
+  sourceIds:
+    - S3
+    - S5
+    - S13
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Safety depends on formulation, dose, co-medications, and population.
@@ -538,7 +568,9 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
     - entityId: tag:glycemic-control
       role: surrogate-evidence-context
   context: Not established by the cited human randomized outcome evidence.
-  sourceIds: [S3, S4]
+  sourceIds:
+    - S3
+    - S4
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: The evidence base is mainly short surrogate-endpoint research.
@@ -771,7 +803,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/38957396/
 - id: S15
-  title: "FOOD AND DRUG ADMINISTRATION COMPLIANCE PROGRAM 7321.008"
+  title: FOOD AND DRUG ADMINISTRATION COMPLIANCE PROGRAM 7321.008
   authors: U.S. Food and Drug Administration
   year: 2024
   url: https://www.fda.gov/files/food/published/CP7321.008-DietarySupplements-09182024.pdf
@@ -796,7 +828,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S17
-  title: "Randomized controlled trial of berberine sulfate therapy for diarrhea due to enterotoxigenic Escherichia coli and Vibrio cholerae"
+  title: Randomized controlled trial of berberine sulfate therapy for diarrhea due to enterotoxigenic Escherichia coli and Vibrio cholerae
   authors: G. H. Rabbani, T. Butler, J. Knight, S. C. Sanyal, K. Alam
   year: 1987
   url: https://pubmed.ncbi.nlm.nih.gov/3549923/
@@ -823,7 +855,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://www.nccih.nih.gov/health/in-the-news-berberine
 - id: S19
-  title: "Pharmacokinetics and pharmacodynamics of HTD1801 (berberine ursodeoxycholate, BUDCA) in patients with hyperlipidemia"
+  title: Pharmacokinetics and pharmacodynamics of HTD1801 (berberine ursodeoxycholate, BUDCA) in patients with hyperlipidemia
   authors: National Library of Medicine PubMed/PMC record; authors not-assessed
   year: 2020
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7661247/
@@ -842,6 +874,18 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   kind: updated systematic review and meta-analysis
   insight: Twenty-three RCT articles produced small pooled reductions in weight, BMI, and waist circumference, with null waist-to-hip ratio.
   limitation: The authors noted common reporting, blinding, randomization, and biochemical-standardization concerns.
+  funding: not-assessed
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: not-assessed
+  conflictOfInterestStatus: not-assessed
+- id: dr-berberine-s17
+  title: Randomized controlled trial of berberine sulfate therapy for diarrhea due to enterotoxigenic Escherichia coli and Vibrio cholerae
+  authors: G. H. Rabbani, T. Butler, J. Knight, S. C. Sanyal, K. Alam
+  year: 3549923
+  url: https://www.nccih.nih.gov/health/in-the-news-berberine"
+  kind: randomized clinical trial
+  insight: Human evidence for a berberine sulfate formulation in acute infectious diarrhea.
+  limitation: Historical, disease-specific, and not evidence for metabolic use.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed

@@ -152,229 +152,248 @@
       "slug": "tyrosine",
       "name": "L-tyrosine",
       "focus": "L-tyrosine versus N-acetyl-L-tyrosine; controlled cognition/working-memory under cold/stress/sleep deprivation versus rested healthy subjects; amino-acid competition and catecholamine precursor mechanism without dopamine-benefit inference; interaction and dose-context evidence.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "atomoxetine",
       "name": "Atomoxetine",
       "focus": "Strattera generic identity; ADHD RCT/label clinical outcomes versus healthy cognition; onset of clinical response separate from plasma half-life; CYP2D6 genotype/inhibitors, hepatic factors; suicidality/hepatic/cardiovascular warnings and MAOI interactions; sponsor COI.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "berberine",
       "name": "Berberine",
       "focus": "Correct Betberine alias; salts/formulation and primary metabolic RCTs for glycemia/lipids/weight; trial quality and publication bias, comparators and endpoints; distinguish AMPK/preclinical claims; low oral availability/metabolites; pregnancy/GI/drug metabolism interactions.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "fasting",
       "name": "Fasting",
       "focus": "One fasting protocol family: distinguish time-restricted eating, alternate-day and prolonged fasting with exact windows and comparator calories. Controlled human weight/glycemic/BP outcomes versus calorie restriction; adherence, lean mass, sex/population contexts; autophagy/longevity claims not clinical proof; risks.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "ketogenic-diet",
       "name": "Ketogenic diet",
       "focus": "Exact ketogenic diet carbohydrate/fat/protein definition, energy intake and ketosis measure; epilepsy indications versus weight/diabetes/cognition and healthy enhancement; RCT endpoints/nulls/comparators; lipid/LDL heterogeneity, nutrient/GI risks and glucose-lowering drug interactions.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "exogenous-ketones",
       "name": "Exogenous ketones",
       "focus": "Ketone salts versus ketone monoester and D/L beta-hydroxybutyrate; product-specific human exercise/cognition/glycemic trials including nulls; ketosis biomarker not clinical benefit; PK/analyte, sodium/mineral/GI burden; sponsor patents and industry ties.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "modafinil",
       "name": "Modafinil",
       "focus": "Preserve existing source-grounded records; approved narcolepsy/OSA/shift-work disorder versus rested healthy cognition; objective wake/attention tasks and subjective alertness; label PK/CYP interactions, hormonal contraception and rash/cardiovascular/psychiatric warnings; sponsor COI.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6ac961ea-59c4-83ed-929e-194929b4df2e"
     },
     {
       "slug": "armodafinil",
       "name": "Armodafinil",
       "focus": "R-modafinil versus racemic modafinil, Nuvigil official labels and controlled wakefulness trials; do not borrow estimates across enantiomers; indication/patient versus healthy cognitive claims; PK late exposure, interactions and severe rash/psychiatric risks; sponsorship.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6ac96621-d19c-83ed-8f4d-23c5302edfd5"
     },
     {
       "slug": "quercetin",
       "name": "Quercetin",
       "focus": "Normalize Quercetine alias; aglycone/glycoside/phytosome formulations; primary human respiratory/exercise/BP/metabolic trials, inconsistent/null findings; oxidative biomarkers not benefit; formulation PK and clinical interaction evidence versus enzyme-tube studies; sponsored combinations.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "lutein",
       "name": "Lutein",
       "focus": "Lutein-specific versus lutein/zeaxanthin combinations; controlled visual/macular pigment and AMD endpoints with population/AREDS2 distinctions; cognition secondary evidence; source/formulation/absorption; exact dose context and commercial funding.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "lutemax",
       "name": "Lutemax",
       "focus": "One branded carotenoid mixture topic: distinguish Lutemax 2020/other formulations and lutein/zeaxanthin/meso ratios; exact-product human visual/cognitive/sleep trials, primary versus secondary endpoints/nulls and repeated cohorts; OmniActive/manufacturer/employee/patent COI.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "pqq",
       "name": "PQQ",
       "focus": "Pyrroloquinoline quinone disodium and product identity; controlled human cognition/fatigue trials versus mitochondrial cell/animal claims; small samples and sponsor interests; safety/PK human evidence and regulatory evaluations; no unsupported mitochondrial count/longevity claims.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "spermidine",
       "name": "Spermidine",
       "focus": "Normalize Spermedine alias; dietary spermidine versus enriched wheat-germ extracts and combination doses; placebo-controlled cognition/memory trials including negative SMARTAGE findings; observational diet/longevity associations separate from interventions; autophagy species and sponsor/COI.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "magnesium-citrate",
       "name": "Magnesium citrate",
       "focus": "This form only: elemental amount versus citrate mass, oral bioavailability compared with oxide and documented GI/laxative uses; distinguish comparative absorption from clinical sleep/cognition proof; renal risk and medication binding; no borrowed threonate evidence.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "magnesium-glycinate",
       "name": "Magnesium glycinate",
       "focus": "Bisglycinate identity and buffered products versus pure chelate, actual elemental dose; direct controlled sleep/cognition/deficiency trials and absence thereof; glycine coingredient not proven form advantage; comparative absorption and tolerance; manufacturer disclosure.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "magnesium-oxide",
       "name": "Magnesium oxide",
       "focus": "Form-specific absorption and elemental dose; constipation/migraine/deficiency controlled contexts and actual outcomes; lower absorption versus clinical adequacy distinction, laxative endpoint; renal hypermagnesemia risks; no generalized sleep benefit from other salts.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "magnesium-malate",
       "name": "Magnesium malate",
       "focus": "Malate salt and actual elemental magnesium; direct human fibromyalgia/pain/energy trials including combination-product attribution limits; no efficacy inferred from Krebs-cycle mechanism; absorption/form comparisons and evidence gaps; safety.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "magnesium-l-threonate",
       "name": "Magnesium L-threonate",
       "focus": "Magtein/threonate form, salt versus elemental dose; original controlled cognition/sleep trials, endpoint instruments, primary/secondary/nulls and combined formulations; animal brain-Mg claims versus human clinical evidence; manufacturer patents/funding and actual PK.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6ac95d30-99c0-83eb-a98b-e2f87061ba18"
     },
     {
       "slug": "magnesium-taurate",
       "name": "Magnesium taurate",
       "focus": "This magnesium/taurine salt only; direct human trials and evidence gaps for BP/cardiac/sleep claims; do not attribute separate taurine or generic magnesium findings to salt; elemental content, salt identity, safety and interaction evidence.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6acffd7c-9e6c-83eb-90cf-aac9d93e5c4d"
     },
     {
       "slug": "magnesium-chloride",
       "name": "Magnesium chloride",
       "focus": "Oral versus IV versus topical/oil uses separated, elemental amount; direct human correction/metabolic trials and clinical endpoints; critically assess transdermal absorption claims; renal/electrolyte/GI risks and official sources.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6acffd93-aa00-83eb-8a93-3c0d6b51e080"
     },
     {
       "slug": "magnesium-sulfate",
       "name": "Magnesium sulfate",
       "focus": "Epsom salt and IV medication contexts separated; official obstetric/eclampsia and acute care evidence versus unsupported bath/transdermal biohacking claims; elemental versus salt mass, route-specific PK and toxicity; no home IV/dosing regimen.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6acffdb8-18c8-83eb-a505-d2315cbe2ddc"
     },
     {
       "slug": "huperzine-a",
       "name": "Huperzine A",
       "focus": "Purified Huperzine A versus Huperzia extracts, stereochemistry; controlled Alzheimer/cognition trials including inconsistent/negative primary endpoints; healthy enhancement gaps; cholinesterase inhibition, PK and cholinergic adverse events/interactions; funding and risk of bias.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "phosphatidylserine",
       "name": "Phosphatidylserine",
       "focus": "Soy/sunflower versus historical bovine cortex preparations; dementia/healthy cognition/stress/exercise RCTs and null findings; different mixtures/formulations not interchangeable; cortisol biomarker versus experienced benefit; product-specific sponsorship and safety.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "resveratrol",
       "name": "Resveratrol",
       "focus": "Trans/cis and formulation; human metabolic/cognition/vascular trial effects and nulls, surrogate endpoints versus clinical benefit; oral metabolism/bioavailability; animal longevity claims not human proof; high-dose/GI/interaction evidence; sponsor interests.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6ac959b4-2efc-83eb-adb4-f6b124bda78f"
     },
     {
       "slug": "melatonin",
       "name": "Melatonin",
       "focus": "Preserve existing records; circadian phase/delayed sleep phase versus nonspecific insomnia and healthy sleep; IR/PR and timing/light context; actual sleep endpoints/effect estimates, phase response versus elimination; CYP1A2 modifiers, product-content variability and safety.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6aca5d9c-264c-83eb-9609-0cfc1319e98a"
     },
     {
       "slug": "dihexa",
       "name": "Dihexa",
       "focus": "Chemical identity and preclinical-only HGF/c-Met/cognition research; explicitly search human trials/PK and report absence when verified; no clinical efficacy/dose recommendations from rodents; mechanistic tumor-risk concern versus observed human harm; patents/authors and COI.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "psilocybin-microdosing",
       "name": "Psilocybin microdosing",
       "focus": "Microdosing only, explicitly defined dose range in each study; controlled placebo/blinding/expectancy RCTs, null cognitive/mood outcomes versus uncontrolled anecdotes; do not borrow macrodose depression data; active psilocin PK versus repeated protocol timing; cardiac/psychiatric uncertainties and law.",
-      "status": "queued"
+      "status": "imported"
     },
     {
       "slug": "lsd-microdosing",
       "name": "LSD microdosing",
       "focus": "Microdosing only with exact study definition; placebo-controlled repeated/acute cognition/mood findings and null results; blinding/expectancy, healthy populations and instruments; LSD analyte PK, repeated-use uncertainty/valvular theory distinct from demonstrated harm; no home regimen.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6acffdc3-d688-83ed-8234-8cfb63bc8829"
     },
     {
       "slug": "amphetamine",
       "name": "Amphetamine",
       "focus": "Generic amphetamine overview with d/l stereoisomers distinguished; clinical ADHD/narcolepsy evidence versus healthy enhancement; DAT/NET and source-supported mechanism graph, subjective versus measured outcomes; route/formulation PK; abuse/dependence/cardiovascular/psychiatric/MAOI risks.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6acffe36-0018-83ed-a071-c9789b19a259"
     },
     {
       "slug": "lisdexamfetamine",
       "name": "Lisdexamfetamine",
       "focus": "Vyvanse/Elvanse prodrug only, not mg-equivalent to d-amphetamine; official ADHD/binge-eating label contexts and trial endpoints; preserve existing identity; parent versus active d-amphetamine PK/red-cell conversion, durations not half-life; controlled risks and sponsor COI.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6ad0041a-ee5c-83ed-917a-fd5ce72d1a0b"
     },
     {
       "slug": "mixed-amphetamine-salts",
       "name": "Mixed amphetamine salts",
       "focus": "Adderall only, exact mixed salts/d:l formulation and IR versus XR; primary ADHD outcome trials/official labels; product dose not pure base equivalent; formulation timing/active analyte half-life, variability; healthy enhancement gaps, dependence/contraindications and sponsor disclosures.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6acffddb-4f2c-83eb-aa2f-f8938208ffcb"
     },
     {
       "slug": "dextroamphetamine",
       "name": "Dextroamphetamine",
       "focus": "Dexedrine/Zenzedi d-amphetamine only; IR/extended formulations, base versus sulfate mass; official indication and primary human outcome data; separate healthy cognition and subjective stimulant effects; source-specific PK/timing and serious risks/interactions.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6acffdf1-2d64-83ed-95ff-a9c8feaf8ac3"
     },
     {
       "slug": "bromantane",
       "name": "Bromantane",
       "focus": "Ladasten/бромантан regional controlled asthenia studies versus healthy biohacking claims; clinical instruments/design/translation limits; mechanistic dopaminergic transcription and species; original PK rather than repeated online values; adverse data limits, official sport/regulatory sources and manufacturer COI.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6acffe93-4564-83eb-9e9e-f6f510d2dc5a"
     },
     {
       "slug": "omega-3",
       "name": "Omega-3",
       "focus": "EPA/DHA formulations, dose of active EPA/DHA versus fish-oil mass; primary clinical cardiovascular/depression/cognitive RCTs and nulls, prescription EPA versus general oils; triglyceride biomarker versus events, AF/bleeding risks and sponsor COI.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6ac969be-7e1c-83ed-a39e-77288887c1fc"
     },
     {
       "slug": "vitamin-d",
       "name": "Vitamin D",
       "focus": "D3/D2 and deficiency/repletion versus routine high-dose supplementation in replete people; primary skeletal/falls/infection/mood/cardiovascular outcomes including large negative trials; calcium coadministration, 25-OH metabolite measurement, hypercalcemia and sponsor disclosures.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6acffc81-7244-83ed-ac09-9030f2a37d11"
     },
     {
       "slug": "coenzyme-q10",
       "name": "Coenzyme Q10",
       "focus": "Ubiquinone versus ubiquinol formulations; heart-failure/migraine/statin-symptom controlled outcomes and evidence quality/nulls; absorption, placebo/comparator, actual study populations; drug interactions and manufacturer sponsorship, no generalized energy guarantee.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6ac9709e-0604-83ed-af64-460566ccdfbd"
     },
     {
       "slug": "glycine",
       "name": "Glycine",
       "focus": "Oral glycine supplement evidence for sleep and metabolic endpoints, small crossover trials and nulls; clinical measures versus subjective sleep ratings; amino-acid mechanisms/species, actual study exposures/PK and safety; sponsor/COI.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6acffe06-e420-83ed-94dd-b43b92bfb3fd"
     },
     {
       "slug": "taurine",
       "name": "Taurine",
       "focus": "Oral taurine human BP/metabolic/exercise RCTs and nulls versus animal aging/longevity claims; exact endpoint instruments/estimates/populations; energy drink mixtures not isolated taurine evidence; absorption/renal handling, risks and sponsor/COI.",
-      "status": "queued"
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6acffe1d-26d4-83ed-b762-d06ec53fc51d"
     }
   ]
 }
