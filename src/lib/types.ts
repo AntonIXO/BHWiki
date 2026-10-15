@@ -28,6 +28,11 @@ export type DurationRoute = {
   route: string; population: string; sourceId: string; note: string;
   total: TimeSpan | null; phases: DurationPhase[];
 };
+export type TimingMarker = {
+  id: string; label: string; analyte: string; population: string;
+  measurement: "subjective" | "plasma"; at: number; unit: TimeUnit;
+  note: string; sourceId: string;
+};
 export type DoseContext = {
   label: string; amount: string; quantity: number | null; quantityMax: number | null; unit: string;
   ingredient: string; formulation: string; route: string; frequency: string; duration: string;
@@ -68,7 +73,7 @@ export type Substance = {
   evidenceNote: string; reviewedAt: string; editorialStatus: EditorialStatus;
   halfLife: { label: string; low: number | null; high: number | null; context: string; sourceId: string; observationId: string };
   pkObservations: PKObservation[];
-  kinetics: { onset: string; peak: string; duration: string; bioavailability: string; metabolism: string; sourceId: string; timeline?: DurationRoute[] };
+  kinetics: { onset: string; peak: string; duration: string; bioavailability: string; metabolism: string; sourceId: string; timeline?: DurationRoute[]; markers?: TimingMarker[] };
   modifiers: { label: string; effect: string; detail: string; sourceId: string; observationId: string; factorType: "smoking" | "pregnancy" | "enzyme" | "genotype" | "other"; direction: "slower" | "faster" | "variable" }[];
   doses: DoseContext[]; effects: Observation[]; outcomes: Observation[]; claims: Claim[];
   mechanisms: { title: string; description: string; sourceId: string; conceptId?: string }[];

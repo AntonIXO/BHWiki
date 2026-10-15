@@ -18,7 +18,7 @@ const curatedHashes = [
   "082d24f9e76ac73efcaec2874d0132ac78316efa1c012df7949b359d98dd0c2e",
   "b5f9d77395bcccfec7595383c83ed4dd4b1181eb2b6d182bc65014584565c731",
   "804044a8ef78689b374091ff6d627bb4205a1713905c07f15bce3dc6c67c542b",
-  "3179b9870698eca5678e1b0e73161735d62c40f84d567247b46dedd6629cf69a",
+  "adab4d22f85bcc87cd9f73dacfc2eaee8db43508c575ea990bef2e27954de809",
 ];
 
 test("markdown files preserve the curated records", () => {

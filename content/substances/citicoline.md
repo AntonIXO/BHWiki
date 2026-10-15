@@ -34,6 +34,25 @@ kinetics:
   bioavailability: Less than 1% of an oral radiolabeled dose was recovered in feces over 5 days, indicating extensive absorption of label-derived material but not unchanged-parent bioavailability
   metabolism: The radiolabel study supports extensive gut-wall and hepatic metabolism, with parent-derived material entering biosynthetic, tissue-metabolic and excretory pathways
   sourceId: dinsdale1983
+  markers:
+    - id: citicoline-radiolabel-early-peak
+      label: Early plasma radioactivity peak
+      analyte: Total plasma radiolabel
+      population: Six adults
+      measurement: plasma
+      at: 1
+      unit: hours
+      note: Oral radiolabel-derived plasma radioactivity showed a peak near 1 hour; this is not a parent-specific citicoline Cmax.
+      sourceId: dinsdale1983
+    - id: citicoline-radiolabel-late-peak
+      label: Later plasma radioactivity peak
+      analyte: Total plasma radiolabel
+      population: Six adults
+      measurement: plasma
+      at: 24
+      unit: hours
+      note: A later radiolabel-derived plasma peak appeared near 24 hours; labeled metabolites and excretion cannot be treated as parent-citicoline elimination.
+      sourceId: dinsdale1983
 x-shape:
   - slug
   - name

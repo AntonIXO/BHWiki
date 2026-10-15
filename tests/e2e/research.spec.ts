@@ -145,6 +145,16 @@ test("figures and pharmacokinetics render only from committed data", async ({ pa
   await expect(page.locator(".kinetics-rail .kinetics-funnel-chart .funnel-stage-svg")).toHaveCount(4);
   await expect(page.locator(".kinetics-rail [aria-label='Reported kinetics timing values']")).toContainText(/Serum peak around 2 hours/);
 
+  await page.goto("/substances/citicoline");
+  await expect(page.locator(".timing-marker-chart")).toBeVisible();
+  await expect(page.locator(".timing-marker-chart canvas")).toHaveCount(1);
+  await expect(page.locator(".timing-marker-readout")).toContainText("1 h");
+  await expect(page.locator(".timing-marker-readout")).toContainText("24 h");
+  await expect(page.locator(".timing-marker-chart .elapsed-timing-chart-legend")).toContainText("Peak");
+  await expect(page.locator(".timing-marker-chart .elapsed-timing-chart-legend")).not.toContainText("Plasma");
+  await expect(page.getByText("100%", { exact: true })).toHaveCount(0);
+  await expect(page.getByText("72%", { exact: true })).toHaveCount(0);
+
   await page.goto("/substances/2c-b");
   await expect(page.locator("#kinetics")).toHaveCount(0);
   await expect(page.locator(".kinetics-rail")).toHaveCount(0);

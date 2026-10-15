@@ -150,14 +150,13 @@ function ObservationMatrix({ observations, substance, entities, measured = false
     <div className="outcome-list">
       {observations.map((effect, index) => {
         const concept = entities.conceptById.get(effect.conceptId);
-        const Icon = effect.direction === "Increased" ? ArrowUp : effect.direction === "Decreased" ? ArrowDown : MoveHorizontal;
         return (
           <article key={`${effect.conceptId}-${index}`} className={`outcome-row outcome-${effect.direction.toLowerCase()}`}>
             <span className="outcome-row-icon" aria-hidden="true"><Target size={18} /></span>
             <div className="outcome-row-main">
               <div className="outcome-row-title">
                 <h3>{concept ? <Link href={conceptPath(concept)} className="underline underline-offset-4">{effect.name}</Link> : effect.name}</h3>
-                <Badge variant="outline"><Icon aria-hidden="true" />{effect.direction}</Badge>
+                <Direction direction={effect.direction} />
               </div>
               <p>{<Prose text={effect.description} inline />} <Source substance={substance} id={effect.sourceId} /></p>
               <div className="outcome-row-meta"><span><strong>Population</strong>{effect.population || "Not established"}</span><span><strong>Exposure</strong>{effect.exposure || "Not established"}</span><span><strong>Measure</strong>{effect.result?.instrument || effect.instrument || "Not assessed"}</span></div>
@@ -222,7 +221,7 @@ function hasKineticsData(substance: Substance) {
   const halfLifeLabel = hasCuratedKineticsText(substance.halfLife.label);
   const halfLifeContext = hasCuratedKineticsText(substance.halfLife.context);
   const kineticsSummary = [substance.kinetics.onset, substance.kinetics.peak, substance.kinetics.duration, substance.kinetics.bioavailability, substance.kinetics.metabolism].some(hasCuratedKineticsText);
-  const timingData = (substance.kinetics.timeline ?? []).some((route) => route.total !== null || route.phases.length > 0 || hasCuratedKineticsText(route.note));
+  const timingData = (substance.kinetics.timeline ?? []).some((route) => route.total !== null || route.phases.length > 0 || hasCuratedKineticsText(route.note)) || Boolean(substance.kinetics.markers?.length);
   return halfLifeEstimate || halfLifeLabel || halfLifeContext || kineticsSummary || timingData || substance.pkObservations.some(hasCuratedPKObservation) || substance.modifiers.length > 0;
 }
 
@@ -238,8 +237,8 @@ function KineticsRail({ substance }: { substance: Substance }) {
   return (
     <Card className="kinetics-rail">
       <CardHeader>
-        <CardDescription className="inline-flex items-center gap-1.5"><span className="rail-kicker-icon"><Clock3 aria-hidden="true" size={15} /></span>Sourced kinetics</CardDescription>
-        <CardDescription>Hover a phase to highlight it; click to pin the full sourced text.</CardDescription>
+        <CardDescription className="inline-flex items-center gap-1.5"><span className="rail-kicker-icon"><Clock3 aria-hidden="true" size={15} /></span>Sourced timing summary</CardDescription>
+        <CardDescription>Phase context at a glance; open the full section for numeric timing charts.</CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col gap-3">
         <KineticsTimingVisual compact {...timing} />
@@ -456,7 +455,7 @@ export default async function SubstancePage({ params }: Props) {
               </CardHeader>
               <CardContent><Source substance={substance} id={substance.halfLife.sourceId} /></CardContent>
             </Card>}
-            {(substance.kinetics.timeline?.length || curatedPKObservations.length) ? <TimingExplorer slug={slug} kinetics={substance.kinetics} observations={curatedPKObservations} initialId={substance.halfLife.observationId} references={substance.references}/> : <ContextList items={[
+            {(substance.kinetics.timeline?.length || substance.kinetics.markers?.length || curatedPKObservations.length) ? <TimingExplorer slug={slug} kinetics={substance.kinetics} observations={curatedPKObservations} initialId={substance.halfLife.observationId} references={substance.references}/> : <ContextList items={[
               ...(hasCuratedKineticsText(substance.kinetics.onset) ? [{ term: "Onset", detail: substance.kinetics.onset }] : []),
               ...(hasCuratedKineticsText(substance.kinetics.peak) ? [{ term: "Peak", detail: substance.kinetics.peak }] : []),
               ...(hasCuratedKineticsText(substance.kinetics.duration) ? [{ term: "Duration", detail: substance.kinetics.duration }] : []),
