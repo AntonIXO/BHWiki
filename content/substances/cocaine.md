@@ -118,33 +118,63 @@ For `jeffcoat1989`, `smith2001`, `foltin2004`, `mittleman1999`, `majlesi2010`, `
   sourceCategory: research
   note: Studied doses were 0.06, 0.34, 0.69, and 1.37 mg/kg.
   sourceId: foltin2004
-- label: Oral and intravenous comparative exposures
-  amount: 62.5–250 mg oral; 12.5–50 mg IV per 70 kg
+- label: Oral comparative exposures
+  amount: 62.5–250 mg/70 kg
   quantity: null
   quantityMax: null
   unit: mg
   ingredient: Cocaine
   formulation: Controlled human laboratory cocaine
-  route: Oral and intravenous
+  route: Oral
   frequency: Single experimental doses
   duration: Acute within-subject study
   population: Volunteers with histories of cocaine abuse
-  purpose: Compare physiological, subjective, and reinforcing effects
+  purpose: Compare physiological, subjective, and reinforcing effects after oral exposure
   sourceCategory: research
-  note: Oral doses were 62.5, 125, and 250 mg/70 kg; IV doses were 12.5, 25, and 50 mg/70 kg.
+  note: Oral doses were 62.5, 125, and 250 mg/70 kg.
   sourceId: smith2001
-- label: Oral and IV pharmacokinetic exposures
-  amount: 100 or 200 mg oral; 40 mg IV
+- label: Intravenous comparative exposures
+  amount: 12.5–50 mg/70 kg
   quantity: null
   quantityMax: null
   unit: mg
   ingredient: Cocaine
-  formulation: Oral capsules or IV solution
-  route: Oral and intravenous
+  formulation: Controlled human laboratory cocaine
+  route: Intravenous
+  frequency: Single experimental doses
+  duration: Acute within-subject study
+  population: Volunteers with histories of cocaine abuse
+  purpose: Compare physiological, subjective, and reinforcing effects after IV exposure
+  sourceCategory: research
+  note: IV doses were 12.5, 25, and 50 mg/70 kg.
+  sourceId: smith2001
+- label: Oral pharmacokinetic exposure
+  amount: 100 or 200 mg
+  quantity: null
+  quantityMax: null
+  unit: mg
+  ingredient: Cocaine
+  formulation: Oral capsules
+  route: Oral
   frequency: Single dose per session, sessions separated by at least 48 hours
   duration: Plasma sampling through 24 hours
   population: 14 inpatient participants with current cocaine-use histories
   purpose: Determine oral bioavailability and pharmacokinetics
+  sourceCategory: research
+  note: Oral doses were 100 and 200 mg. No adverse effects were observed among the 14 study completers under the protocol's screened and monitored conditions.
+  sourceId: coe2018
+- label: Intravenous pharmacokinetic exposure
+  amount: 40 mg
+  quantity: 40
+  quantityMax: null
+  unit: mg
+  ingredient: Cocaine
+  formulation: IV solution
+  route: Intravenous
+  frequency: Single dose per session, sessions separated by at least 48 hours
+  duration: Plasma sampling through 24 hours
+  population: 14 inpatient participants with current cocaine-use histories
+  purpose: Determine intravenous pharmacokinetics
   sourceCategory: research
   note: No adverse effects were observed among the 14 study completers under the protocol's screened and monitored conditions.
   sourceId: coe2018

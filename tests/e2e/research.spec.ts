@@ -166,8 +166,7 @@ test("timing selection changes the sourced model and mechanism diagram exposes e
 }) => {
   await page.goto("/substances/methylphenidate");
   await expect(page.locator(".kinetics-slider")).toHaveCount(0);
-  await page.getByRole("combobox", { name: "Elimination observation" }).click();
-  await page.getByRole("option", { name: /reported-range/ }).click();
+  await page.getByRole("tab", { name: /reported-range/ }).click();
   await expect(page.locator(".kinetics-svg")).toHaveCount(0);
   await expect(
     page.getByText(

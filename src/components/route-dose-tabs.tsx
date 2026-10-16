@@ -4,17 +4,17 @@
  * Compact, route-specific adaptation of KokonutUI's Smooth Tab pattern:
  * https://kokonutui.com/docs/navigation/smooth-tab
  */
-import { AnimatePresence, LayoutGroup, motion, useReducedMotion } from "motion/react";
-import { Droplets, Layers3, Pill, Syringe } from "lucide-react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { Cigarette, Droplets, Layers3, Pill, Syringe } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
-import { useId, useMemo, useRef, useState } from "react";
-import type { KeyboardEvent } from "react";
+import { useMemo, useState } from "react";
 import { Citation } from "@/components/citation";
+import { SwitchingTabs } from "@/components/switching-tabs";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardAction, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import type { DoseContext, Reference } from "@/lib/types";
 
-type RouteId = "oral" | "intravenous" | "sublingual" | "other";
+type RouteId = "intranasal" | "oral" | "intravenous" | "sublingual" | "smoking" | "other";
 
 type RouteGroup = {
   id: RouteId;
@@ -25,9 +25,11 @@ type RouteGroup = {
 };
 
 const routeConfig: Omit<RouteGroup, "doses">[] = [
+  { id: "intranasal", label: "Intranasal", hint: "Through the nasal mucosa", icon: Droplets },
   { id: "oral", label: "Oral", hint: "By mouth", icon: Pill },
   { id: "intravenous", label: "Intravenous", hint: "Into a vein", icon: Syringe },
   { id: "sublingual", label: "Sublingual", hint: "Under the tongue", icon: Droplets },
+  { id: "smoking", label: "Smoking", hint: "By smoking", icon: Cigarette },
   { id: "other", label: "Other routes", hint: "Other or unspecified", icon: Layers3 },
 ];
 
@@ -61,14 +63,18 @@ function present(value: string | null | undefined) {
 
 function routeId(route: string) {
   const value = route.trim().toLowerCase();
+  const intranasal = /\b(?:intranasal|nasal)\b/.test(value);
   const oral = /\b(?:oral|by mouth|per os|po)\b/.test(value);
   const intravenous = /\b(?:intravenous|iv)\b/.test(value);
   const sublingual = /\b(?:sublingual|under the tongue|sl)\b/.test(value);
-  const knownRoutes = [oral, intravenous, sublingual].filter(Boolean).length;
+  const smoking = /\b(?:smok(?:e|ed|ing)|inhal(?:ed|ation))\b/.test(value);
+  const knownRoutes = [intranasal, oral, intravenous, sublingual, smoking].filter(Boolean).length;
   if (knownRoutes !== 1 || /(?:,|\bor\b|\band\b|\bthen\b|combined|\/)/.test(value)) return "other" as const;
+  if (intranasal) return "intranasal" as const;
   if (oral) return "oral" as const;
   if (intravenous) return "intravenous" as const;
   if (sublingual) return "sublingual" as const;
+  if (smoking) return "smoking" as const;
   return "other" as const;
 }
 
@@ -154,72 +160,21 @@ export function RouteDoseTabs({ doses, references }: { doses: DoseContext[]; ref
   const [selectedId, setSelectedId] = useState<RouteId | undefined>(groups[0]?.id);
   const activeGroup = groups.find((group) => group.id === selectedId) ?? groups[0];
   const reducedMotion = useReducedMotion();
-  const baseId = useId();
-  const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
   if (!activeGroup) return null;
 
-  const activeIndex = groups.findIndex((group) => group.id === activeGroup.id);
-  const select = (index: number) => {
-    const next = groups[index];
-    if (next) setSelectedId(next.id);
-  };
-  const handleKeyDown = (event: KeyboardEvent<HTMLButtonElement>, index: number) => {
-    const nextIndex = event.key === "ArrowRight"
-      ? (index + 1) % groups.length
-      : event.key === "ArrowLeft"
-        ? (index - 1 + groups.length) % groups.length
-        : event.key === "Home"
-          ? 0
-          : event.key === "End"
-            ? groups.length - 1
-            : -1;
-    if (nextIndex < 0) return;
-    event.preventDefault();
-    select(nextIndex);
-    tabRefs.current[nextIndex]?.focus();
-  };
-
   return (
-    <div className="route-dose-tabs">
-      <LayoutGroup id={`${baseId}-routes`}>
-        <div className="route-dose-tab-scroll">
-          <div aria-label="Dose routes" className="route-dose-tablist" role="tablist">
-            {groups.map((group, index) => {
-              const Icon = group.icon;
-              const selected = index === activeIndex;
-              return (
-                <button
-                  aria-label={`${group.label}, ${group.doses.length} ${group.doses.length === 1 ? "record" : "records"}`}
-                  aria-controls={`${baseId}-panel-${group.id}`}
-                  aria-selected={selected}
-                  className={`route-dose-tab route-dose-tab--${group.id}`}
-                  id={`${baseId}-tab-${group.id}`}
-                  key={group.id}
-                  onClick={() => select(index)}
-                  onKeyDown={(event) => handleKeyDown(event, index)}
-                  ref={(element) => { tabRefs.current[index] = element; }}
-                  role="tab"
-                  tabIndex={selected ? 0 : -1}
-                  type="button"
-                >
-                  {selected && <motion.span aria-hidden="true" className="route-dose-tab-indicator" layoutId="route-dose-tab-indicator" transition={reducedMotion ? { duration: 0 } : { type: "spring", stiffness: 450, damping: 36 }} />}
-                  <span className="route-dose-tab-label"><Icon aria-hidden="true" size={15} /><span>{group.label}</span><small>{group.doses.length}</small></span>
-                </button>
-              );
-            })}
-          </div>
-        </div>
+    <SwitchingTabs
+      ariaLabel="Dose routes"
+      items={groups.map((group) => ({ id: group.id, label: group.label, icon: group.icon, tone: group.id, count: group.doses.length }))}
+      onChange={(id) => setSelectedId(id as RouteId)}
+      panel={(
         <AnimatePresence initial={false} mode="wait">
           <motion.div
             animate={{ opacity: 1, y: 0 }}
-            className="route-dose-panel"
             exit={{ opacity: 0, y: reducedMotion ? 0 : 5 }}
-            id={`${baseId}-panel-${activeGroup.id}`}
             initial={{ opacity: 0, y: reducedMotion ? 0 : 5 }}
             key={activeGroup.id}
-            role="tabpanel"
-            aria-labelledby={`${baseId}-tab-${activeGroup.id}`}
             transition={reducedMotion ? { duration: 0 } : { duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
           >
             <p className="route-dose-panel-caption"><span>{activeGroup.label}</span> · {activeGroup.hint} · {activeGroup.doses.length} {activeGroup.doses.length === 1 ? "record" : "records"}</p>
@@ -228,7 +183,8 @@ export function RouteDoseTabs({ doses, references }: { doses: DoseContext[]; ref
             </div>
           </motion.div>
         </AnimatePresence>
-      </LayoutGroup>
-    </div>
+      )}
+      value={activeGroup.id}
+    />
   );
 }
