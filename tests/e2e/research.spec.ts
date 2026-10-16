@@ -19,8 +19,7 @@ test("evidence opens, survives a direct link, restores focus, and follows browse
   ).toBeVisible();
   await expect(sheet).toContainText("Comparator");
   await expect(sheet).toContainText("Funding:");
-  await expect(sheet).toContainText("Conflicts of interest:");
-  await expect(sheet).toContainText("Conflicts not assessed");
+  await expect(sheet).not.toContainText("Conflicts of interest:");
   const direct = page.url();
   await page.keyboard.press("Escape");
   await expect(sheet).not.toBeVisible();
@@ -243,7 +242,7 @@ test("new reading surfaces and open evidence meet accessibility checks", async (
   await expect(
     page
       .getByRole("dialog")
-      .getByText("Study limitations:", { exact: false })
+      .getByText("Study limitations", { exact: false })
       .first(),
   ).toBeVisible();
   await expect(page.getByRole("dialog")).toHaveCSS("opacity", "1");

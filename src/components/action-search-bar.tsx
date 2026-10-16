@@ -50,6 +50,7 @@ export function ActionSearchBar({
   const [isFocused, setIsFocused] = useState(false);
   const [results, setResults] = useState<Action[]>(actions);
   const [isLoading, setIsLoading] = useState(false);
+  const [searchError, setSearchError] = useState(false);
   const [activeIndex, setActiveIndex] = useState(-1);
   const debouncedQuery = useDebounce(query);
 
@@ -67,6 +68,7 @@ export function ActionSearchBar({
     let active = true;
     const trimmed = debouncedQuery.trim();
     setResults(matchingActions);
+    setSearchError(false);
     if (!trimmed || !onSearch) {
       setIsLoading(false);
       return () => {
@@ -77,10 +79,16 @@ export function ActionSearchBar({
     setIsLoading(true);
     onSearch(trimmed)
       .then((searchResults) => {
-        if (active) setResults([...matchingActions, ...searchResults]);
+        if (active) {
+          setSearchError(false);
+          setResults([...matchingActions, ...searchResults]);
+        }
       })
       .catch(() => {
-        if (active) setResults(matchingActions);
+        if (active) {
+          setSearchError(true);
+          setResults([]);
+        }
       })
       .finally(() => {
         if (active) setIsLoading(false);
@@ -158,6 +166,7 @@ export function ActionSearchBar({
           <Input
             id={inputId}
             type="text"
+            role="combobox"
             value={query}
             onChange={handleInputChange}
             onFocus={() => setIsFocused(true)}
@@ -187,6 +196,7 @@ export function ActionSearchBar({
             placeholder={placeholder}
             autoComplete="off"
             aria-controls={listId}
+            aria-haspopup="listbox"
             aria-expanded={isFocused}
             aria-autocomplete="list"
             aria-activedescendant={activeIndex >= 0 ? `${listId}-option-${activeIndex}` : undefined}
@@ -212,7 +222,9 @@ export function ActionSearchBar({
           className="absolute inset-x-0 top-[calc(100%+0.4rem)] z-50 overflow-hidden rounded-lg border border-border bg-popover text-popover-foreground shadow-lg"
         >
           <div className="max-h-80 overflow-y-auto p-1">
-            {results.length > 0 ? (
+            {searchError ? (
+              <p className="px-2.5 py-3 text-sm text-destructive" role="status">Search is temporarily unavailable.</p>
+            ) : results.length > 0 ? (
               results.map((action, index) => (
                 <button
                   key={action.id}
