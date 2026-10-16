@@ -394,6 +394,48 @@
       "focus": "Oral taurine human BP/metabolic/exercise RCTs and nulls versus animal aging/longevity claims; exact endpoint instruments/estimates/populations; energy drink mixtures not isolated taurine evidence; absorption/renal handling, risks and sponsor/COI.",
       "status": "imported",
       "chatUrl": "https://chatgpt.com/c/6acffe1d-26d4-83ed-b762-d06ec53fc51d"
+    },
+    {
+      "slug": "gabapentin",
+      "name": "Gabapentin",
+      "focus": "Parent gabapentin versus gabapentin enacarbil/pregabalin; U.S. Neurontin and Gralise indication-specific labels; randomized evidence for postherpetic neuralgia, focal seizures, restless legs, anxiety and healthy cognition; renal/hemodialysis PK, formulation noninterchangeability, respiratory depression, withdrawal/misuse and jurisdiction-specific regulation.",
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6ad158ad-616c-83ed-a79f-62462c5dfe39"
+    },
+    {
+      "slug": "cocaine",
+      "name": "Cocaine",
+      "focus": "Route-specific stimulant and local-anesthetic evidence; cocaine hydrochloride/freebase identity, human PK, acute cardiovascular and neurologic outcomes, dependence, pregnancy, interactions and U.S. scheduling.",
+      "status": "imported",
+      "sourceFile": "data/research/pending-2026-10-16/cocaine-user-file/deep-research.md"
+    },
+    {
+      "slug": "dextromethorphan",
+      "name": "Dextromethorphan",
+      "focus": "OTC antitussive versus off-label and nonmedical claims; CYP2D6-dependent PK, dose-related dissociation, cough endpoints, serotonin toxicity, dependence, pregnancy and regulation.",
+      "status": "imported",
+      "sourceFile": "data/research/pending-2026-10-16/dextromethorphan-user-file/deep-research.md"
+    },
+    {
+      "slug": "ethanol",
+      "name": "Ethanol",
+      "focus": "Acute dose-response and psychomotor effects, capacity-limited elimination, liver/brain/cardiovascular harms, dependence and withdrawal, pregnancy, interactions and official guidance.",
+      "status": "imported",
+      "sourceFile": "data/research/pending-2026-10-16/ethanol-user-file/deep-research.md"
+    },
+    {
+      "slug": "ketamine",
+      "name": "Ketamine",
+      "focus": "Racemic ketamine versus esketamine; anesthesia, depression and pain evidence, dissociation, route-specific PK, urinary/cardiovascular risks, dependence, interactions and regulatory labels.",
+      "status": "imported",
+      "sourceFile": "data/research/pending-2026-10-16/ketamine-user-file/deep-research.md"
+    },
+    {
+      "slug": "psilocybin",
+      "name": "Psilocybin",
+      "focus": "Isolated psilocybin versus whole-mushroom formulations; mixed depression evidence, PTSD and cancer-related distress boundaries, substance-use outcomes with behavioral support, acute PK/PD, interactions, screening and regulatory status.",
+      "status": "imported",
+      "sourceFile": "data/research/pending-2026-10-16/psilocybin-user-file/deep-research.md"
     }
   ]
 }

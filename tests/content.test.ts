@@ -83,7 +83,7 @@ test('roles cannot disappear from a contextual relationship',()=>{const b=struct
 test('caffeine smoking is a metabolic context and psilocin is the modeled analyte',()=>{
  const c=substances.find(s=>s.slug==='caffeine')!;assert.ok(c.modifiers.some(m=>m.factorType==='smoking'));assert.ok(c.doses.every(d=>!/smok/i.test(d.route)));
  const edge=hyperedges.find(h=>h.members.includes('tag:tobacco-smoke'))!;assert.ok(edge.members.includes('substance:caffeine'));assert.ok(edge.members.includes('tag:cyp1a2'));
- const p=substances.find(s=>s.slug==='psilocybin')!;const pk=p.pkObservations.find(o=>o.id===p.halfLife.observationId)!;assert.match(pk.analyte,/psilocin/i);assert.equal(pk.statistic,'study-mean');
+ const p=substances.find(s=>s.slug==='psilocybin')!;const pk=p.pkObservations.find(o=>o.id===p.halfLife.observationId)!;assert.match(pk.analyte,/psilocin/i);assert.equal(pk.statistic,'reported-range');
 });
 test('compact catalog never includes article projections or citations',()=>{for(const s of substances){const item=toCatalogSubstance(s);assert.ok(!('references' in item));assert.ok(!('claims' in item));assert.ok(!('doses' in item));}});
 test('catalog supports aliases, concept aliases and combined filters',()=>{
