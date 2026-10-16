@@ -460,6 +460,21 @@
       "status": "imported",
       "chatUrl": "https://chatgpt.com/c/6ad28c11-6bfc-83eb-90f7-5caa0edbbf35",
       "sourceFile": "data/research/pending-2026-10-16/diphenhydramine-chrome-pro/deep-research.md"
+    },
+    {
+      "slug": "phenobarbital",
+      "name": "Phenobarbital",
+      "focus": "Phenobarbital-only neonatal and generalized/partial seizure evidence, therapeutic monitoring, long half-life and enzyme induction, dose/formulation context, dependence and respiratory risk, pregnancy and antiseizure interactions, and U.S. scheduling.",
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6ad29806-3888-83eb-b905-3e16809b4c7d",
+      "sourceFile": "data/research/pending-2026-10-16/phenobarbital-chrome-pro/deep-research.md"
+    },
+    {
+      "slug": "dmt",
+      "name": "DMT",
+      "focus": "N,N-dimethyltryptamine-only evidence: rapid IV bolus and infusion pharmacokinetics, acute psychedelic and autonomic effects, protocol-dependent duration and tolerance, controlled-setting cautions, DMT-plus-MAOI distinction, early MDD evidence, and jurisdiction-specific scheduling.",
+      "status": "imported",
+      "sourceFile": "data/research/pending-2026-10-16/dmt-user-file/deep-research.md"
     }
   ]
 }

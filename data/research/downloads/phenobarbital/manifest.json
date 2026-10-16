@@ -1,0 +1,29 @@
+{
+  "topic": "phenobarbital",
+  "sourceUrl": "https://chatgpt.com/c/6ad29806-3888-83eb-b905-3e16809b4c7d",
+  "importedAt": "2026-10-16T21:51:09.247Z",
+  "method": "One topic per ChatGPT Deep Research using Chrome",
+  "editorialStatus": "sourced-draft",
+  "files": [
+    {
+      "path": "substances/phenobarbital.md",
+      "archive": "aa8bd1001c36/substances/phenobarbital.md",
+      "sha256": "aa8bd1001c36f94e0b1065786d517403e0a3f48c9ceeb1e4712257781302480b"
+    },
+    {
+      "path": "outcomes/bioavailability.md",
+      "archive": "322af6a6cf88/outcomes/bioavailability.md",
+      "sha256": "322af6a6cf88845a1cc5209a025ddcf9a52302ffe10c14a715849d3a0721db44"
+    },
+    {
+      "path": "outcomes/enzyme-induction.md",
+      "archive": "192bd9a82cbb/outcomes/enzyme-induction.md",
+      "sha256": "192bd9a82cbb9411ae03286c05dcdb263bb43d47bddc2a584202f36785456803"
+    },
+    {
+      "path": "outcomes/drug-clearance.md",
+      "archive": "43479854cd97/outcomes/drug-clearance.md",
+      "sha256": "43479854cd97748955c803e089bad02bcd6f13f95cfca890ac28e05f3e35d663"
+    }
+  ]
+}

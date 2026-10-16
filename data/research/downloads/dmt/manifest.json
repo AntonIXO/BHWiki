@@ -1,0 +1,29 @@
+{
+  "topic": "dmt",
+  "sourceUrl": null,
+  "importedAt": "2026-10-17T09:33:13.221Z",
+  "method": "One topic per ChatGPT Deep Research using Chrome",
+  "editorialStatus": "sourced-draft",
+  "files": [
+    {
+      "path": "substances/dmt.md",
+      "archive": "454a5b2c5fb2/substances/dmt.md",
+      "sha256": "454a5b2c5fb2af20ddfdc4f2c7308401739de729c4889520941ea51be5b23627"
+    },
+    {
+      "path": "outcomes/postural-stability.md",
+      "archive": "8bb71221602b/outcomes/postural-stability.md",
+      "sha256": "8bb71221602b001621bcfa97f9fa1288884a2286734f2faa0a3ad246f8d04da4"
+    },
+    {
+      "path": "outcomes/bdnf.md",
+      "archive": "38815d626cf1/outcomes/bdnf.md",
+      "sha256": "38815d626cf166472245fb15d673fab72fb0d321ad498aa8f5786e8506cca43f"
+    },
+    {
+      "path": "concepts/mechanism/acute-tolerance.md",
+      "archive": "b805280f8031/concepts/mechanism/acute-tolerance.md",
+      "sha256": "b805280f80319bb865b7b4ee4c2bb98ea5ae6d2a6133e1d15c0298d1250a3694"
+    }
+  ]
+}
