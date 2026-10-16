@@ -436,6 +436,30 @@
       "focus": "Isolated psilocybin versus whole-mushroom formulations; mixed depression evidence, PTSD and cancer-related distress boundaries, substance-use outcomes with behavioral support, acute PK/PD, interactions, screening and regulatory status.",
       "status": "imported",
       "sourceFile": "data/research/pending-2026-10-16/psilocybin-user-file/deep-research.md"
+    },
+    {
+      "slug": "caffeine",
+      "name": "Caffeine",
+      "focus": "Caffeine-only acute alertness and attention, dose- and timing-dependent sleep, tolerance and withdrawal, CYP1A2-mediated pharmacokinetics, smoking/pregnancy/contraceptive/liver modifiers, interactions and scoped labeling guidance.",
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6ad2814d-28bc-83ed-878f-3606db4b820f",
+      "sourceFile": "data/research/pending-2026-10-16/caffeine-chrome-pro/deep-research.md"
+    },
+    {
+      "slug": "alprazolam",
+      "name": "Alprazolam",
+      "focus": "Alprazolam-only panic and generalized-anxiety evidence, dose- and formulation-specific sedation and psychomotor effects, CYP3A pharmacokinetics, dependence and withdrawal, pregnancy and interaction risks, and current U.S. scheduling.",
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6ad28727-783c-83ed-ae36-e1e9c3010e16",
+      "sourceFile": "data/research/pending-2026-10-16/alprazolam-chrome-pro/deep-research.md"
+    },
+    {
+      "slug": "diphenhydramine",
+      "name": "Diphenhydramine",
+      "focus": "Diphenhydramine-only allergy, occasional sleeplessness and motion-sickness evidence, central H1 and antimuscarinic effects, dose- and formulation-specific sedation and driving impairment, PK and age modifiers, misuse and interaction risks.",
+      "status": "imported",
+      "chatUrl": "https://chatgpt.com/c/6ad28c11-6bfc-83eb-90f7-5caa0edbbf35",
+      "sourceFile": "data/research/pending-2026-10-16/diphenhydramine-chrome-pro/deep-research.md"
     }
   ]
 }

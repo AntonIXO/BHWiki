@@ -29,7 +29,7 @@ test("the timeline retains cited prose and requires elapsed semantics for a char
     kinetics: caffeine.kinetics,
     citationFor: () => createElement("span", null, "source"),
   }));
-  assert.match(fallback, /Subjective onset varies/);
+  assert.match(fallback, /Oral caffeine is rapidly absorbed/);
   assert.match(fallback, /Not established/);
   assert.equal(fallback.includes("data-duration-bar"), false);
 

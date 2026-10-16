@@ -93,7 +93,16 @@ test("evidence keys are independent of order and explicit IDs survive correction
 });
 test("filters apply before pagination and expose unassessed metadata", () => {
   const { caffeine, observation } = researchFixture();
-  const base = observationRows(caffeine, "outcome")[0];
+  const first = observationRows(caffeine, "outcome")[0];
+  const base = {
+    ...first,
+    observation: {
+      ...first.observation,
+      study: first.observation.study
+        ? { ...first.observation.study, populationLabels: [], durationDays: undefined }
+        : undefined,
+    },
+  };
   const rows: ObservationRow[] = Array.from({ length: 45 }, (_, i) => ({
     ...base,
     key: String(i),
