@@ -11,6 +11,14 @@
 
 This file is a review proposal. It is not a published BHWiki article and must not be treated as medical guidance.
 
+## Embedded source snapshot
+
+This abstract snapshot is included so an offline reviewer can check abstract-level claims. It is not a substitute for full-text, version, retraction or licensing verification.
+
+### Abstract
+
+> Methylliberine (1,O2,7,9-tetramethyluric acid; 1,2,7,9-MU) and theacrine (1,3,7,9-tetramethyluric acid; 1,3,7,9-MU) are purine alkaloids found in a variety of botanicals and products marketed as dietary supplements. Despite their widespread use, extensive data on their human health effects are lacking. Therefore, methylliberine and theacrine were profiled using multiple new approach methods (NAMs): in silico metabolite predictions, in silico blood-brain barrier (BBB) permeability predictions, and in vitro assays for adenosine receptor binding (A1, A2A), functional activity (A2A), cytochrome P450 inhibition (CYP1A2), and phosphodiesterase inhibition (PDE3A, PDE4B, PDE4D). Like caffeine, methylliberine and theacrine were predicted to be metabolized via desmethylation by multiple in silico models. In silico predictions and cluster analysis also suggested that methylliberine and theacrine may permeate the BBB like caffeine. In vitro assays revealed that methylliberine and its metabolite 1,2,9-MU were CYP1A2 inhibitors (IC<sub>50</sub>, 9.6 and 27 μM, respectively) that agreed with clinical observations and could lead to interactions with drugs and xenobiotics. Both methylliberine and theacrine were A2A receptor antagonists, suggesting a potential for stimulant effects, although their potencies (52-62% inhibition at 100 μM) were weaker than theophylline, paraxanthine, and caffeine (IC<sub>50</sub>, 4.9-23.3 μM). Overall, this study highlights integration of multiple NAMs for profiling two purine alkaloids relevant to human health.
+
 ## Proposed structured change
 
 ```json
