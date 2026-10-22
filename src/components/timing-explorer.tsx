@@ -121,10 +121,7 @@ export function TimingExplorer({
                 transition={reducedMotion ? { duration: 0 } : { duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
               >
                 <p className="route-dose-panel-caption"><span>{pk.route}</span> · {pk.formulation} · {pk.statistic}</p>
-                <KineticsChart observation={pk} sourceHref={`#reference-${pk.sourceId}`} />
-                <div className="mt-3">
-                  <EvidenceButton evidenceKey={evidenceKey(slug, "pk", pk)} />
-                </div>
+                <KineticsChart observation={pk} sourceHref={`#reference-${pk.sourceId}`} evidenceKey={evidenceKey(slug, "pk", pk)} />
               </motion.div>
             </AnimatePresence>
           )}
@@ -132,8 +129,7 @@ export function TimingExplorer({
         />
       ) : (
         <>
-          <KineticsChart observation={pk} sourceHref={`#reference-${pk?.sourceId ?? kinetics.sourceId}`} />
-          {pk && <div className="mt-3"><EvidenceButton evidenceKey={evidenceKey(slug, "pk", pk)} /></div>}
+          <KineticsChart observation={pk} sourceHref={`#reference-${pk?.sourceId ?? kinetics.sourceId}`} evidenceKey={pk ? evidenceKey(slug, "pk", pk) : undefined} />
         </>
       )}
     </div>

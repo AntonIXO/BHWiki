@@ -88,7 +88,7 @@ export async function ConceptIndex({ section, searchParams }: { section: Concept
                   <CardContent>
                     <Prose className="text-muted-foreground" text={concept.description} />
                   </CardContent>
-                  <CardFooter className="text-muted-foreground">
+                  <CardFooter className="mt-auto text-muted-foreground">
                     <span>{count} tagged {count === 1 ? "substance" : "substances"}</span>
                     <span className="ms-auto">{concept.sourceUrls?.length ?? 0} definition sources</span>
                   </CardFooter>

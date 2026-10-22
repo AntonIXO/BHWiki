@@ -5,7 +5,6 @@ import { RouteDoseTabs } from "@/components/route-dose-tabs";
 import { TimingExplorer } from "@/components/timing-explorer";
 import { MechanismExplorer } from "@/components/mechanism-explorer";
 import { StudyPlots } from "@/components/study-plots";
-import { KineticsTimingVisual } from "@/components/kinetics-timing-visual";
 import { evidenceKey, observationMagnitude, observationRows, plotGroups } from "@/lib/research";
 import type { CSSProperties, ReactNode } from "react";
 import type { Metadata } from "next";
@@ -223,29 +222,6 @@ function hasKineticsData(substance: Substance) {
   const kineticsSummary = [substance.kinetics.onset, substance.kinetics.peak, substance.kinetics.duration, substance.kinetics.bioavailability, substance.kinetics.metabolism].some(hasCuratedKineticsText);
   const timingData = (substance.kinetics.timeline ?? []).some((route) => route.total !== null || route.phases.length > 0 || hasCuratedKineticsText(route.note)) || Boolean(substance.kinetics.markers?.length);
   return halfLifeEstimate || halfLifeLabel || halfLifeContext || kineticsSummary || timingData || substance.pkObservations.some(hasCuratedPKObservation) || substance.modifiers.length > 0;
-}
-
-function KineticsRail({ substance }: { substance: Substance }) {
-  if (!hasKineticsData(substance)) return null;
-  const timing = {
-    onset: hasCuratedKineticsText(substance.kinetics.onset) ? substance.kinetics.onset : null,
-    peak: hasCuratedKineticsText(substance.kinetics.peak) ? substance.kinetics.peak : null,
-    duration: hasCuratedKineticsText(substance.kinetics.duration) ? substance.kinetics.duration : null,
-    elimination: hasCuratedKineticsText(substance.halfLife.label) ? substance.halfLife.label : null,
-  };
-  if (!Object.values(timing).some(Boolean)) return null;
-  return (
-    <Card className="kinetics-rail">
-      <CardHeader>
-        <CardDescription className="inline-flex items-center gap-1.5"><span className="rail-kicker-icon"><Clock3 aria-hidden="true" size={15} /></span>Sourced timing summary</CardDescription>
-        <CardDescription>Phase context at a glance; open the full section for numeric timing charts.</CardDescription>
-      </CardHeader>
-      <CardContent className="flex flex-col gap-3">
-        <KineticsTimingVisual compact {...timing} />
-        <Link href="#kinetics" className="inline-flex items-center gap-1.5 text-sm underline underline-offset-4">View full kinetics <ArrowRight aria-hidden="true" size={14} /></Link>
-      </CardContent>
-    </Card>
-  );
 }
 
 function SafetySignal({ caution, index, substance }: { caution: Substance["cautions"][number]; index: number; substance: Substance }) {
@@ -690,7 +666,6 @@ export default async function SubstancePage({ params }: Props) {
         </div>
 
         <aside className="flex flex-col gap-4 lg:sticky lg:top-24 lg:self-start" aria-label="Substance identity and related resources">
-          {showKinetics && <KineticsRail substance={substance} />}
           <Card>
             <CardHeader>
               <CardDescription>Molecular structure</CardDescription>

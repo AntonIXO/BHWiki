@@ -13,7 +13,7 @@ test("evidence opens, survives a direct link, restores focus, and follows browse
   await expect(sheet).toBeVisible();
   await expect(
     sheet.getByRole("heading", {
-      name: "Attention-task accuracy",
+      name: "Attention-switching accuracy",
       exact: true,
     }),
   ).toBeVisible();
@@ -30,7 +30,7 @@ test("evidence opens, survives a direct link, restores focus, and follows browse
   await page.goForward();
   await expect(sheet).toBeVisible();
   await page.goto(direct);
-  await expect(sheet).toContainText("Attention-task accuracy");
+  await expect(sheet).toContainText("Attention-switching accuracy");
   await sheet.getByRole("button", { name: "Close", exact: true }).click();
   await expect(sheet).not.toBeVisible();
   await page.goto("/substances/caffeine?evidence=caffeine~outcome~missing");
@@ -139,10 +139,8 @@ test("figures and pharmacokinetics render only from committed data", async ({ pa
   await expect(page.getByText("Add a figure or dataset", { exact: true })).toHaveCount(0);
   await expect(page.getByText("Choose image", { exact: true })).toHaveCount(0);
   await expect(page.getByText("Study-result plots", { exact: true })).toHaveCount(0);
-  await expect(page.locator(".kinetics-rail")).toHaveCount(1);
-  await expect(page.locator(".kinetics-rail [data-component='kinetics-funnel-chart']")).toBeVisible();
-  await expect(page.locator(".kinetics-rail .kinetics-funnel-chart .funnel-stage-svg")).toHaveCount(4);
-  await expect(page.locator(".kinetics-rail [aria-label='Reported kinetics timing values']")).toContainText(/Serum peak around 2 hours/);
+  await expect(page.locator(".kinetics-rail")).toHaveCount(0);
+  await expect(page.locator(".kinetics-visual")).toHaveCount(0);
 
   await page.goto("/substances/citicoline");
   await expect(page.locator(".timing-marker-chart")).toBeVisible();
@@ -167,11 +165,15 @@ test("timing selection changes the sourced model and mechanism diagram exposes e
   await expect(page.locator(".kinetics-slider")).toHaveCount(0);
   await page.getByRole("tab", { name: /reported-range/ }).click();
   await expect(page.locator(".kinetics-svg")).toHaveCount(0);
-  await expect(
-    page.getByText(
-      "An elimination model is not established for this observation.",
-    ),
-  ).toBeVisible();
+  const unmodeled = page.locator("[data-component='unmodeled-elimination']");
+  await expect(unmodeled).toBeVisible();
+  await expect(unmodeled).toContainText("Measured analyte");
+  await expect(unmodeled).toContainText("Immediate-release");
+  await expect(unmodeled.getByRole("button", { name: "View evidence" })).toBeVisible();
+  const sourceContext = unmodeled.getByRole("link", { name: /Read source context/ });
+  await sourceContext.click();
+  await expect(page.locator("#research-sources")).toHaveAttribute("data-open");
+  await expect(page.locator("#reference-methylphenidate-pk-label")).toBeVisible();
   await page.goto("/substances/caffeine");
   await page.getByRole("button", { name: "Explore mechanism diagram" }).click();
   await expect(

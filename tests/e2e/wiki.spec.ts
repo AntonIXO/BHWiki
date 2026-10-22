@@ -61,12 +61,13 @@ test('articles preserve sourced contexts and the correct modeled analyte',async(
  await page.goto('/substances/psilocybin');
  await expect(page.locator('.article-hero h1')).toContainText('Psilocybin');
  await expect(page.locator('.kinetics-svg title')).toContainText(/psilocin/i);
- await expect(page.locator('.kinetics-slider')).toHaveCount(1);
+ await page.goto('/substances/atomoxetine');
+ const slider=page.getByRole('slider');await expect(slider).toHaveCount(1);
+ await page.waitForFunction(()=>{const slider=document.querySelector('.kinetics-slider');return !!slider&&Object.getOwnPropertyNames(slider).some(key=>key.startsWith('__reactProps'));});
+ await slider.fill('6.02');await expect(page.locator('.kinetics-slider-heading output')).toContainText('6.02');
  await page.goto('/substances/caffeine');
  await expect(page.locator('.article-hero')).toContainText('Sourced draft');
- const slider=page.getByRole('slider');await expect(slider).toBeVisible();
- await page.waitForFunction(()=>{const slider=document.querySelector('.kinetics-slider');return !!slider&&Object.getOwnPropertyNames(slider).some(key=>key.startsWith('__reactProps'));});
- await slider.fill('6');await expect(page.locator('.kinetics-slider-heading output')).toContainText('6');
+ await expect(page.locator('.kinetics-slider')).toHaveCount(0);
  await expect(page.locator('#effects')).toBeVisible();await expect(page.locator('#measured-outcomes')).toBeVisible();
  await page.locator('.article-citation').first().click();
  expect(new URL(page.url()).hash).toMatch(/^#reference-/);
@@ -80,17 +81,17 @@ test('concepts and effects link back to sourced articles',async({page})=>{
  await page.goto('/outcomes/attention');await expect(page.getByRole('heading',{level:1})).toBeVisible();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
 });
-test('elimination dose scales amounts and preserves half-life controls',async({page})=>{
+test('fixed half-life and dose controls scale amounts correctly',async({page})=>{
  await page.goto('/substances/caffeine');
  const dose=page.getByRole('spinbutton',{name:'Illustrative dose of Caffeine (mg, optional)'});
  await expect(page.locator('.kinetics-axis-label')).toContainText('(%)');
+ await expect(page.locator('.kinetics-slider')).toHaveCount(0);
+ await expect(page.locator('.kinetics-readouts')).toContainText('After 4.1 h');
  await dose.fill('200');
  await expect(page.locator('.kinetics-axis-label')).toContainText('(mg)');
  await expect(page.locator('.kinetics-readouts')).toContainText('100 mg remains (50%)');
  await expect(page.locator('.kinetics-readouts')).toContainText('50 mg remains (25%)');
  await expect(page.locator('.kinetics-readouts')).toContainText('6.25 mg remains (3.125%)');
- await page.getByRole('slider').fill('6');
- await expect(page.locator('.kinetics-readouts')).toContainText('6 h');
  await dose.fill('0.5');
  await expect(page.locator('.kinetics-readouts')).toContainText('0.25 mg remains (50%)');
  await dose.fill('-5');

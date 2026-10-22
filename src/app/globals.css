@@ -610,6 +610,25 @@
 .kinetics-rail-meta dt { color: var(--foreground); font-size: .7rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
 .kinetics-rail-meta dd { margin: 0; line-height: 1.35; }
 .kinetics-visual { position: relative; padding: .35rem .1rem .15rem; }
+.kinetics-unmodeled { display: grid; gap: 1rem; border: 1px solid color-mix(in oklch, var(--primary) 22%, var(--border)); border-radius: 1rem; background: color-mix(in oklch, var(--card) 96%, var(--primary)); padding: 1rem; text-align: start; }
+.kinetics-unmodeled-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.kinetics-unmodeled-heading > div { min-width: 0; }
+.kinetics-unmodeled-kicker { margin: .55rem 0 .2rem; color: var(--muted-foreground); font-size: .68rem; font-weight: 750; letter-spacing: .08em; line-height: 1.2; text-transform: uppercase; }
+.kinetics-unmodeled h3 { margin: 0; color: var(--foreground); font-size: 1.05rem; font-weight: 650; line-height: 1.25; }
+.kinetics-unmodeled-status { flex: 0 0 auto; border: 1px solid var(--border); border-radius: 999px; padding: .25rem .55rem; color: var(--muted-foreground); font-size: .68rem; font-weight: 700; white-space: nowrap; }
+.kinetics-unmodeled-lede { margin: 0; color: var(--muted-foreground); font-size: .86rem; line-height: 1.5; }
+.kinetics-unmodeled-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem; margin: 0; }
+.kinetics-unmodeled-fields > div { min-width: 0; border: 1px solid color-mix(in oklch, var(--border) 75%, transparent); border-radius: .7rem; background: color-mix(in oklch, var(--card) 78%, transparent); padding: .65rem .7rem; }
+.kinetics-unmodeled-fields dt { color: var(--muted-foreground); font-size: .68rem; font-weight: 750; letter-spacing: .05em; text-transform: uppercase; }
+.kinetics-unmodeled-fields dd { margin: .25rem 0 0; overflow-wrap: anywhere; color: var(--foreground); font-size: .84rem; line-height: 1.35; }
+.kinetics-unmodeled-context { display: grid; gap: .35rem; border-inline-start: .2rem solid color-mix(in oklch, var(--primary) 55%, var(--border)); border-radius: .15rem .7rem .7rem .15rem; background: color-mix(in oklch, var(--primary) 5%, var(--card)); padding: .75rem .8rem .8rem 1rem; }
+.kinetics-unmodeled-context .kinetics-unmodeled-kicker { margin: 0; }
+.kinetics-unmodeled-context blockquote { margin: 0; color: var(--foreground); font-size: .88rem; line-height: 1.5; }
+.kinetics-source-context-link { display: inline-flex; width: fit-content; align-items: center; gap: .3rem; color: var(--foreground); font-size: .8rem; text-decoration: underline; text-underline-offset: .18em; }
+.kinetics-source-context-link:hover { color: var(--primary); }
+.kinetics-unmodeled-actions, .kinetics-chart-actions { display: flex; align-items: center; justify-content: space-between; gap: .75rem; border-top: 1px solid var(--border); padding-top: .85rem; }
+.kinetics-unmodeled-actions > span { color: var(--muted-foreground); font-size: .75rem; line-height: 1.35; }
+.kinetics-chart-actions { justify-content: flex-start; }
 .kinetics-funnel-chart { min-height: 8rem; }
 .funnel-stage-trigger { margin: 0; border: 0; background: transparent; padding: 0; color: inherit; text-align: inherit; }
 .funnel-stage-trigger:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; border-radius: .55rem; }
@@ -787,6 +806,9 @@
 
 @media (max-width: 640px) {
   .outcome-row-meta { grid-template-columns: 1fr; }
+  .kinetics-unmodeled-heading { flex-direction: column; }
+  .kinetics-unmodeled-fields { grid-template-columns: 1fr; }
+  .kinetics-unmodeled-actions { align-items: flex-start; flex-direction: column; }
   .external-wiki-links { gap: .45rem .75rem; }
 }
 

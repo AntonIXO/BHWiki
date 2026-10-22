@@ -7,7 +7,7 @@
 -- deterministically contains an existing canonical PMID/DOI are merged.
 BEGIN;
 SET LOCAL lock_timeout = '5s';
-SET LOCAL statement_timeout = '60s';
+SET LOCAL statement_timeout = '10min';
 SELECT pg_advisory_xact_lock(674928105);
 SET LOCAL ROLE bhwiki_owner;
 

@@ -1,18 +1,104 @@
 "use client";
 
-import { useId, useState } from "react";
+import { useId, useState, type MouseEvent } from "react";
 import { fractionRemaining, getEliminationModel, type EliminationModel } from "@/lib/kinetics";
 import type { PKObservation } from "@/lib/types";
+import { EvidenceButton } from "@/components/evidence";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Empty, EmptyDescription, EmptyHeader, EmptyTitle } from "@/components/ui/empty";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 
 type KineticsChartProps = {
   observation: PKObservation | undefined;
   sourceHref: string;
+  evidenceKey?: string;
 };
+
+function revealArticleReference(event: MouseEvent<HTMLAnchorElement>, href: string) {
+  if (!href.startsWith("#")) return;
+  const target = document.querySelector(href);
+  if (!(target instanceof HTMLElement)) return;
+  const disclosure = target.closest("#research-sources");
+  const panel = disclosure?.querySelector<HTMLElement>("[data-slot='collapsible-content']");
+  const isHidden = panel && panel.getBoundingClientRect().height === 0;
+  if (!isHidden) return;
+  const trigger = disclosure?.querySelector<HTMLElement>("[data-slot='collapsible-trigger']");
+  if (!trigger) return;
+  event.preventDefault();
+  trigger.click();
+  window.setTimeout(() => target.scrollIntoView({ behavior: "smooth", block: "center" }), 80);
+}
+
+function SourceContextLink({ href }: { href: string }) {
+  return (
+    <a
+      href={href}
+      className="kinetics-source-context-link"
+      onClick={(event) => revealArticleReference(event, href)}
+    >
+      Read source context <span aria-hidden="true">↗</span>
+    </a>
+  );
+}
+
+function UnmodeledElimination({
+  observation,
+  sourceHref,
+  evidenceKey,
+}: {
+  observation: PKObservation;
+  sourceHref: string;
+  evidenceKey?: string;
+}) {
+  return (
+    <div className="kinetics-unmodeled" data-component="unmodeled-elimination">
+      <div className="kinetics-unmodeled-heading">
+        <div>
+          <Badge variant="secondary">Not modeled</Badge>
+          <p className="kinetics-unmodeled-kicker">Elimination model</p>
+          <h3>An elimination model is not established for this observation.</h3>
+        </div>
+        <span className="kinetics-unmodeled-status">Source-bound record</span>
+      </div>
+      <p className="kinetics-unmodeled-lede">
+        This observation provides context about the measured record, but it does not support a first-order elimination curve.
+      </p>
+      <dl className="kinetics-unmodeled-fields">
+        <div><dt>Measured analyte</dt><dd>{observation.analyte}</dd></div>
+        <div><dt>Route</dt><dd>{observation.route}</dd></div>
+        <div><dt>Formulation</dt><dd>{observation.formulation}</dd></div>
+        <div><dt>Population</dt><dd>{observation.population}</dd></div>
+      </dl>
+      <div className="kinetics-unmodeled-context">
+        <p className="kinetics-unmodeled-kicker">Source context</p>
+        <blockquote>{observation.context}</blockquote>
+        <SourceContextLink href={sourceHref} />
+      </div>
+      {evidenceKey && (
+        <div className="kinetics-unmodeled-actions">
+          <span>Review the supporting record and source details.</span>
+          <EvidenceButton evidenceKey={evidenceKey} />
+        </div>
+      )}
+    </div>
+  );
+}
+
+export function KineticsChart({ observation, sourceHref, evidenceKey }: KineticsChartProps) {
+  const model = getEliminationModel(observation);
+  if (!observation || !model) {
+    return observation ? (
+      <UnmodeledElimination observation={observation} sourceHref={sourceHref} evidenceKey={evidenceKey} />
+    ) : (
+      <div className="kinetics-unmodeled" data-component="unmodeled-elimination">
+        <Badge variant="secondary">Not modeled</Badge>
+        <h3>An elimination model is not established for this observation.</h3>
+      </div>
+    );
+  }
+  return <EliminationChart key={`${observation.id}:${model.minimum}:${model.maximum}`} observation={observation} model={model} sourceHref={sourceHref} evidenceKey={evidenceKey} />;
+}
 
 function hours(value: number) {
   return new Intl.NumberFormat("en", { maximumSignificantDigits: 3 }).format(value);
@@ -23,28 +109,7 @@ function px(value: number) {
   return value.toFixed(2);
 }
 
-export function KineticsChart({ observation, sourceHref }: KineticsChartProps) {
-  const model = getEliminationModel(observation);
-  if (!observation || !model) {
-    return (
-      <Empty>
-        <EmptyHeader>
-          <EmptyTitle>An elimination model is not established for this observation.</EmptyTitle>
-          {observation && (
-            <EmptyDescription>
-              <p><b>Measured analyte:</b> {observation.analyte}. <b>Route:</b> {observation.route}. <b>Formulation:</b> {observation.formulation}. <b>Population:</b> {observation.population}.</p>
-              <p>{observation.context}</p>
-              <a href={sourceHref} className="underline underline-offset-4">Read the source context ↗</a>
-            </EmptyDescription>
-          )}
-        </EmptyHeader>
-      </Empty>
-    );
-  }
-  return <EliminationChart key={`${observation.id}:${model.minimum}:${model.maximum}`} observation={observation} model={model} sourceHref={sourceHref} />;
-}
-
-function EliminationChart({ observation, model, sourceHref }: KineticsChartProps & { observation: PKObservation; model: EliminationModel }) {
+function EliminationChart({ observation, model, sourceHref, evidenceKey }: KineticsChartProps & { observation: PKObservation; model: EliminationModel }) {
   const id = useId();
   const [selectedHalfLife, setSelectedHalfLife] = useState(model.initialHalfLife);
   const [doseInput, setDoseInput] = useState("");
@@ -81,7 +146,7 @@ function EliminationChart({ observation, model, sourceHref }: KineticsChartProps
       <CardContent className="flex flex-col gap-3 text-sm">
         <p className="text-muted-foreground">The modeled analyte is <strong className="text-foreground">{model.analyte}</strong>. The curve begins after absorption and distribution; it does not predict onset, felt effects, or an individual’s response.</p>
         <p><strong>Route:</strong> {observation.route}. <strong>Formulation:</strong> {observation.formulation}. <strong>Population:</strong> {observation.population}.</p>
-        <p>{observation.context} <a href={sourceHref} className="underline underline-offset-4">Source & context</a></p>
+        <p>{observation.context} <SourceContextLink href={sourceHref} /></p>
         <p><strong>{model.statisticLabel}:</strong> {hours(model.minimum)}{model.minimum < model.maximum ? `–${hours(model.maximum)}` : ""} hours.</p>
         {model.adjustable ? (
           <>
@@ -173,8 +238,9 @@ function EliminationChart({ observation, model, sourceHref }: KineticsChartProps
           </TableBody>
         </Table>
         <p className="text-muted-foreground">
-          Model: fraction remaining = 2<sup>−time / half-life</sup>.{dose !== null && " Amount remaining = starting amount × fraction remaining."} Assumes a single exposure, instantaneous distribution, and a constant half-life for {model.analyte}. Formation of metabolites, repeated exposure, and interactions are not modeled. <a href={sourceHref} className="text-foreground underline underline-offset-4">Source & context</a>
+          Model: fraction remaining = 2<sup>−time / half-life</sup>.{dose !== null && " Amount remaining = starting amount × fraction remaining."} Assumes a single exposure, instantaneous distribution, and a constant half-life for {model.analyte}. Formation of metabolites, repeated exposure, and interactions are not modeled. <SourceContextLink href={sourceHref} />
         </p>
+        {evidenceKey && <div className="kinetics-chart-actions"><EvidenceButton evidenceKey={evidenceKey} /></div>}
       </CardContent>
     </Card>
   );
