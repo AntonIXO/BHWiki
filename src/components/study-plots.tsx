@@ -43,7 +43,8 @@ function ResultPlot({ rows }: { rows: ObservationRow[] }) {
   const pad = (max - min || Math.max(Math.abs(min), 1)) * 0.12;
   min -= pad;
   max += pad;
-  const x = (v: number) => 68 + ((transform(v) - min) / (max - min)) * 440;
+  const roundCoordinate = (value: number) => Number(value.toFixed(6));
+  const x = (v: number) => roundCoordinate(68 + ((transform(v) - min) / (max - min)) * 440);
   const height = rows.length * 40 + 62;
   const format = (v: number) =>
     new Intl.NumberFormat("en", { maximumSignificantDigits: 3 }).format(v);
@@ -126,7 +127,7 @@ function ResultPlot({ rows }: { rows: ObservationRow[] }) {
               return (
                 <text
                   key={i}
-                  x={68 + (i / 4) * 440}
+                  x={roundCoordinate(68 + (i / 4) * 440)}
                   y={height - 15}
                   textAnchor="middle"
                   fill="currentColor"
