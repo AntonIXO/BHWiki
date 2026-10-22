@@ -11,7 +11,7 @@ const caffeine = substances.find((substance) => substance.slug === "caffeine")!;
 
 test("outcome evidence retains authored study context", () => {
   const record = articleEvidence(caffeine).find(
-    (item) => item.title === "Attention-task accuracy",
+    (item) => item.title === "Attention-switching accuracy",
   );
   assert.ok(record);
   assert.equal(record.context.find((field) => field.label === "Comparator")?.value, "Placebo");

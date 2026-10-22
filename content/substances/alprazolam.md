@@ -717,9 +717,9 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   participants:
     - entityId: substance:alprazolam
       role: intervention
-    - entityId: substance:pregabalin
-      role: active-comparator
-  context: Adults with DSM-IV generalized anxiety disorder; four-week fixed-dose randomized trial
+    - entityId: tag:depressant
+      role: active-comparator-context
+  context: Adults with DSM-IV generalized anxiety disorder; four-week fixed-dose randomized trial with pregabalin as the active comparator
   sourceIds:
     - rickels-gad-2005
   conflictingSourceIds: []
