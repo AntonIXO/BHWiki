@@ -14,6 +14,8 @@ Effects go in `content/effects/`. Measured outcomes go in `content/outcomes/`. O
 
 Keep `editorialStatus` as `sourced-draft` until a reviewer records the review. Link claims to reference ids. Use original wording. Do not copy Effect Index, PsychonautWiki, or Wikipedia prose.
 
+A published substance needs at least one non-identity source reference or a source-linked research, safety, legal, interaction, or identification record. A PubChem identity record alone is not published as an article.
+
 For optional study metadata, numerical results, interactions, timing semantics, effect details, directed mechanism steps, intake context and identification tests, see [research enrichment](research-enrichment.md) and the substance template.
 
 Dose intake fields are route/formulation-specific: use `foodRelation`, `solubility`, and `absorptionNote` only when the cited source supports them. Identification tests are presumptive or instrumental evidence records, not guarantees of identity, purity, concentration, or safety.

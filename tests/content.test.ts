@@ -28,14 +28,16 @@ test('class tags cite the inspected papers',()=>{
  assert.doesNotMatch(live,/27982573|26516546|24781744|28861491/);
  assert.match(tags.find(tag=>tag.id==='opioid')!.sourceUrls!.join(' '),/26516461/);
 });
-test('identity stubs stay empty and experience links stay on one PsychonautWiki page',()=>{
+test('published substances include sourced research or evidence records',()=>{
  const stubs=substances.filter(substance=>substance.subtitle==='Identity record.');
- assert.ok(stubs.length>0);
- for(const substance of stubs){
-  assert.equal(substance.effects.length,0);
-  assert.equal(substance.claims.length,0);
-  assert.equal(substance.interactions.length,0);
-  assert.equal(substance.doses.length,0);
+ assert.equal(stubs.length,0);
+ for(const substance of substances){
+  const hasEvidence=[substance.doses,substance.modifiers,substance.effects,substance.outcomes,substance.mechanisms,substance.cautions,substance.claims,substance.interactions,substance.legal,substance.identificationTests??[]].some(items=>items.length>0);
+  const hasNonIdentitySource=substance.references.some(reference=>reference.id!=='pubchem');
+  assert.ok(hasEvidence||hasNonIdentitySource, substance.slug);
+ }
+ const profiles=substances.filter(substance=>substance.experienceLinks.length>0);
+ for(const substance of profiles){
   assert.ok(substance.experienceLinks.length<=1);
   for(const link of substance.experienceLinks){
    const url=new URL(link.url);

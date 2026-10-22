@@ -6,6 +6,7 @@ test('imported preparation has a source trail without a fabricated molecule', as
  await expect(page.getByText('Structure not established', { exact: true }).first()).toBeVisible();
  await expect(page.locator('a[href*="pubchem.ncbi.nlm.nih.gov/compound/"]')).toHaveCount(0);
  await expect(page.locator('img[src="/molecules/cerebrolysin.png"]')).toHaveCount(0);
+ await page.getByRole('button', { name: /Show research sources/ }).click();
  await expect(page.locator('a[href="https://molekul.io/compounds/cerebrolysin"]')).toBeVisible();
  await expect(page.locator('a[href="https://pubmed.ncbi.nlm.nih.gov/37818733/"]')).toBeVisible();
  const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
@@ -28,9 +29,8 @@ test('library search, aliases, typed filters and empty state',async({page})=>{
 
 test('layout search opens a textable database field and routes to results', async ({ page }) => {
  await page.goto('/substances/caffeine');
- const trigger = page.getByRole('button', { name: 'Search substances' });
- await trigger.click();
- const input = page.getByRole('textbox', { name: 'Search the substance database' });
+ const input = page.getByRole('combobox', { name: 'Search BHWiki' });
+ await input.focus();
  await expect(input).toBeFocused();
  await input.fill('caffeine');
  await expect(page.getByRole('option', { name: /Caffeine/ })).toBeVisible();
@@ -39,10 +39,10 @@ test('layout search opens a textable database field and routes to results', asyn
 
  await page.goto('/effects/alertness');
  await page.keyboard.press('/');
- await expect(page.getByRole('textbox', { name: 'Search the substance database' })).toBeFocused();
+ await expect(page.getByRole('combobox', { name: 'Search BHWiki' })).toBeFocused();
  await page.keyboard.press('Escape');
- await page.getByRole('button', { name: 'Search substances' }).click();
- const enterInput = page.getByRole('textbox', { name: 'Search the substance database' });
+ const enterInput = page.getByRole('combobox', { name: 'Search BHWiki' });
+ await enterInput.focus();
  await enterInput.fill('adenosine');
  await enterInput.press('Enter');
  await expect(page).toHaveURL(/\/?q=adenosine#library$/);
@@ -51,8 +51,8 @@ test('layout search opens a textable database field and routes to results', asyn
 test('layout search reports an API failure without stale results', async ({ page }) => {
  await page.route('**/api/search*', (route) => route.abort());
  await page.goto('/');
- await page.getByRole('button', { name: 'Search substances' }).click();
- const input = page.getByRole('textbox', { name: 'Search the substance database' });
+ const input = page.getByRole('combobox', { name: 'Search BHWiki' });
+ await input.focus();
  await input.fill('caffeine');
  await expect(page.getByText('Search is temporarily unavailable.', { exact: true })).toBeVisible();
  await expect(page.getByRole('option')).toHaveCount(0);
@@ -61,7 +61,7 @@ test('articles preserve sourced contexts and the correct modeled analyte',async(
  await page.goto('/substances/psilocybin');
  await expect(page.locator('.article-hero h1')).toContainText('Psilocybin');
  await expect(page.locator('.kinetics-svg title')).toContainText(/psilocin/i);
- await expect(page.locator('.kinetics-slider')).toHaveCount(0);
+ await expect(page.locator('.kinetics-slider')).toHaveCount(1);
  await page.goto('/substances/caffeine');
  await expect(page.locator('.article-hero')).toContainText('Sourced draft');
  const slider=page.getByRole('slider');await expect(slider).toBeVisible();
@@ -102,7 +102,7 @@ test('elimination dose scales amounts and preserves half-life controls',async({p
  await expect(page.locator('.kinetics-readouts')).toContainText('50% remains');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
  await page.goto('/substances/psilocybin');
- await expect(page.getByRole('spinbutton',{name:/Illustrative dose of Psilocin/})).toBeVisible();
+ await expect(page.getByRole('spinbutton',{name:/Illustrative dose of .*psilocin/i})).toBeVisible();
  await page.goto('/substances/l-theanine');await expect(page.getByRole('spinbutton')).toHaveCount(0);
 });
 test('graph controls and text alternative preserve complete context',async({page})=>{
@@ -127,14 +127,14 @@ test('read APIs are compact and validate parameters',async({request})=>{
  expect((await request.get('/api/graph?limit=-1')).status()).toBe(400);
 });
 
-test('class index, a stub, and a sourced interaction hold on desktop and a phone width',async({page})=>{
+test('class index, removed stubs, and sourced interactions hold on desktop and a phone width',async({page})=>{
  await page.setViewportSize({width:1280,height:800});
  await page.goto('/');
  await page.getByRole('link',{name:'Opioid',exact:true}).click();
  await expect(page.locator('.substance-card').first()).toBeVisible();
  await expect(page.locator('.substance-card').filter({hasText:'Caffeine'})).toHaveCount(0);
  await page.goto('/substances/ketamine');
- await expect(page.locator('#safety')).toContainText(/opioid analgesics/i);
+ await expect(page.locator('#safety')).toContainText(/Opioids, benzodiazepines/i);
  await page.locator('#safety .article-citation').first().click();
  expect(new URL(page.url()).hash).toMatch(/^#reference-/);
  await page.goto('/substances/lsd');
@@ -146,9 +146,8 @@ test('class index, a stub, and a sourced interaction hold on desktop and a phone
  await expect(page.locator('.substance-card').first()).toBeVisible();
  await expect(page.locator('.substance-card').filter({hasText:'Caffeine'})).toHaveCount(0);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
- await page.goto('/substances/2c-b');
- await expect(page.locator('#effects')).toContainText('Not assessed');
- await expect(page.locator('#safety')).toContainText('Not assessed');
+ const removed=await page.goto('/substances/2c-b');
+ expect(removed?.status()).toBe(404);
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
 });
 test('reading surfaces meet automated accessibility checks',async({page})=>{

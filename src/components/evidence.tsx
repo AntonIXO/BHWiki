@@ -194,6 +194,11 @@ export function EvidenceContents({ record }: { record: EvidenceRecord }) {
   const reportingContext = record.context.filter(
     (context) => !studyLabels.has(context.label) && !resultLabels.has(context.label),
   );
+  const qualification = record.limitation.trim();
+  const hasQualification = Boolean(
+    qualification &&
+      !/^evidence certainty has not been formally assessed\.?$/i.test(qualification),
+  );
 
   return (
     <div className="evidence-contents">
@@ -210,6 +215,7 @@ export function EvidenceContents({ record }: { record: EvidenceRecord }) {
       {studyContext.length > 0 && <EvidenceFieldGroup icon={<FlaskConical size={15} aria-hidden="true" />} label="Study context" fields={studyContext} tone="study" />}
       {resultContext.length > 0 && <EvidenceFieldGroup icon={<Target size={15} aria-hidden="true" />} label="Result detail" fields={resultContext} tone="result" />}
       {reportingContext.length > 0 && <EvidenceFieldGroup icon={<FileText size={15} aria-hidden="true" />} label="Reporting details" fields={reportingContext} tone="reporting" />}
+      {hasQualification && <p className="evidence-qualification"><CircleAlert size={16} aria-hidden="true" /><span><strong>Qualification</strong> {record.limitation}</span></p>}
       {(
         [
           ["Sources supporting this record", record.sources, "supporting"],

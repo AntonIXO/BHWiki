@@ -23,8 +23,10 @@ export function SourceDisclosureBadges({ reference, hideUnassessed = false }: { 
 export function SourceDisclosures({ reference, hideUnassessed = false }: { reference: SourceDisclosure; hideUnassessed?: boolean }) {
   const funding = reference.funding?.trim();
   const conflicts = reference.conflictsOfInterest?.trim();
-  const showFunding = Boolean(funding && (!hideUnassessed || !/^not assessed|^funding not assessed/i.test(funding)));
-  const showConflicts = Boolean(conflicts && (!hideUnassessed || !/^not assessed|^conflicts not assessed/i.test(conflicts)));
+  const genericFunding = Boolean(funding && /^(?:funding\s+)?(?:not assessed|not reported|unknown)\.?$/i.test(funding));
+  const genericConflicts = Boolean(conflicts && /^(?:conflicts?(?: of interest)?\s+)?(?:not assessed|not reported|unknown)\.?$/i.test(conflicts));
+  const showFunding = Boolean(funding && (!hideUnassessed || !genericFunding));
+  const showConflicts = Boolean(conflicts && (!hideUnassessed || !genericConflicts));
   const showDisclosure = Boolean(reference.disclosureUrl);
   if (!showFunding && !showConflicts && !showDisclosure && (!reference.sponsorshipStatus || !isAssessedStatus(reference.sponsorshipStatus)) && (!reference.conflictOfInterestStatus || !isAssessedStatus(reference.conflictOfInterestStatus))) return null;
   return (

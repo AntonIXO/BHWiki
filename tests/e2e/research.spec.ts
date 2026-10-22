@@ -19,8 +19,7 @@ test("evidence opens, survives a direct link, restores focus, and follows browse
   ).toBeVisible();
   await expect(sheet).toContainText("Comparator");
   await expect(sheet).toContainText("Funding:");
-  await expect(sheet).toContainText("Conflicts of interest:");
-  await expect(sheet).toContainText("Conflicts not assessed");
+  await expect(sheet).not.toContainText("Conflicts of interest:");
   const direct = page.url();
   await page.keyboard.press("Escape");
   await expect(sheet).not.toBeVisible();
@@ -100,7 +99,7 @@ test("comparison and interaction pages handle URL selections and incomplete reco
       () => document.documentElement.scrollWidth <= innerWidth + 1,
     ),
   ).toBeTruthy();
-  await page.goto("/compare?substances=not-a-substance,2c-b");
+  await page.goto("/compare?substances=not-a-substance,cerebrolysin");
   await expect(
     page.getByText("Unknown substance: not-a-substance"),
   ).toBeVisible();
@@ -155,7 +154,7 @@ test("figures and pharmacokinetics render only from committed data", async ({ pa
   await expect(page.getByText("100%", { exact: true })).toHaveCount(0);
   await expect(page.getByText("72%", { exact: true })).toHaveCount(0);
 
-  await page.goto("/substances/2c-b");
+  await page.goto("/substances/cerebrolysin");
   await expect(page.locator("#kinetics")).toHaveCount(0);
   await expect(page.locator(".kinetics-rail")).toHaveCount(0);
   await expect(page.getByRole("link", { name: "Pharmacokinetics", exact: true })).toHaveCount(0);
@@ -243,7 +242,7 @@ test("new reading surfaces and open evidence meet accessibility checks", async (
   await expect(
     page
       .getByRole("dialog")
-      .getByText("Study limitations:", { exact: false })
+      .getByText("Study limitations", { exact: false })
       .first(),
   ).toBeVisible();
   await expect(page.getByRole("dialog")).toHaveCSS("opacity", "1");

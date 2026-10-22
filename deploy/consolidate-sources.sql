@@ -27,10 +27,10 @@ BEGIN
      AND duplicate.pmid IS NULL
      AND (
        (canonical.pmid IS NOT NULL
-        AND duplicate.url ~* ('^https?://(www\.)?pubmed\.ncbi\.nlm\.nih\.gov/' || canonical.pmid::text || '/?$'))
+        AND rtrim(duplicate.url, '"') ~* ('^https?://(www\.)?pubmed\.ncbi\.nlm\.nih\.gov/' || canonical.pmid::text || '/?$'))
        OR
        (canonical.doi IS NOT NULL
-        AND lower(trim(trailing '/' FROM duplicate.url)) IN (
+        AND lower(trim(trailing '/' FROM rtrim(duplicate.url, '"'))) IN (
           'https://doi.org/' || lower(canonical.doi),
           'http://doi.org/' || lower(canonical.doi),
           'https://dx.doi.org/' || lower(canonical.doi),

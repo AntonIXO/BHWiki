@@ -343,7 +343,7 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   conflictingSourceIds: []
 - id: armodafinil-quetiapine
   name: Quetiapine
-  otherSlug: quetiapine
+  otherSlug: null
   summary: A clinical interaction study found approximately 29% lower quetiapine exposure.
   sourceId: dr-r17
   context: Human interaction study
