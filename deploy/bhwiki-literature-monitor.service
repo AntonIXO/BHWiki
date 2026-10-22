@@ -1,0 +1,20 @@
+[Unit]
+Description=BHWiki literature discovery and LLM triage
+After=network-online.target supabase-oriole.service
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/BHWiki
+EnvironmentFile=/etc/bhwiki/literature.env
+ExecStart=/usr/sbin/bun run content:research-monitor -- --limit=100
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/bhwiki/literature
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+
+[Install]
+WantedBy=multi-user.target

@@ -19,6 +19,8 @@
     "content:research-reconcile": "tsx scripts/reconcile-source-link-metadata.ts",
     "content:research-armodafinil": "tsx scripts/integrate-armodafinil-research.ts",
     "content:research-audit": "tsx scripts/audit-deep-research-pages.ts",
+    "content:research-monitor": "tsx scripts/monitor-literature.ts",
+    "content:research-review": "tsx scripts/review-literature.ts",
     "test:e2e": "playwright test",
     "content:hashes": "tsx scripts/content-hashes.ts",
     "db:verify": "tsx scripts/db-verify.ts",
