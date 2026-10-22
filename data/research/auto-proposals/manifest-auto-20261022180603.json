@@ -1,0 +1,185 @@
+{
+  "runId": "auto-20261022180603",
+  "source": "europepmc",
+  "since": "2026-10-01",
+  "retrievedAt": "2026-10-22T18:06:05.118Z",
+  "llm": {
+    "provider": "openai-compatible",
+    "model": "smoke-fixture"
+  },
+  "papers": [
+    {
+      "id": "pmid:42880479",
+      "title": "Evaluating the biological effects of caffeine-related compounds methylliberine and theacrine by integrated in silico and in vitro new approach methods (NAMs).",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42880479/",
+      "doi": "10.1016/j.fct.2026.116460",
+      "pmid": "42880479",
+      "pmcid": null,
+      "publishedOn": "2026-10-15",
+      "matchedSubstances": [
+        "caffeine"
+      ],
+      "matchedTerms": [
+        "Caffeine",
+        "stimulant",
+        "Stimulant",
+        "adenosine",
+        "Adenosine",
+        "cyp1a2",
+        "CYP1A2"
+      ],
+      "raw": {
+        "id": "42880479",
+        "source": "MED",
+        "pmid": "42880479",
+        "doi": "10.1016/j.fct.2026.116460",
+        "title": "Evaluating the biological effects of caffeine-related compounds methylliberine and theacrine by integrated in silico and in vitro new approach methods (NAMs).",
+        "authorString": "Santillo MF, Sprando RL, Yourick JJ.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Santillo MF",
+              "lastName": "Santillo",
+              "firstName": "Michael F",
+              "initials": "MF",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Toxicology, Office of Chemistry and Toxicology, Office of Laboratory Operations and Applied Science, Human Foods Program, U.S. Food and Drug Administration, 8301 Muirkirk Rd, Laurel, MD 20708, USA. Electronic address: michael.santillo@fda.hhs.gov."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Sprando RL",
+              "lastName": "Sprando",
+              "firstName": "Robert L",
+              "initials": "RL",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Toxicology, Office of Chemistry and Toxicology, Office of Laboratory Operations and Applied Science, Human Foods Program, U.S. Food and Drug Administration, 8301 Muirkirk Rd, Laurel, MD 20708, USA."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Yourick JJ",
+              "lastName": "Yourick",
+              "firstName": "Jeffrey J",
+              "initials": "JJ",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Division of Toxicology, Office of Chemistry and Toxicology, Office of Laboratory Operations and Applied Science, Human Foods Program, U.S. Food and Drug Administration, 8301 Muirkirk Rd, Laurel, MD 20708, USA."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "journalInfo": {
+          "journalIssueId": 4276091,
+          "dateOfPublication": "2026 Oct",
+          "monthOfPublication": 10,
+          "yearOfPublication": 2026,
+          "journal": {
+            "medlineAbbreviation": "Food Chem Toxicol",
+            "title": "Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association",
+            "essn": "1873-6351",
+            "issn": "0278-6915",
+            "nlmid": "8207483",
+            "isoabbreviation": "Food Chem Toxicol"
+          },
+          "printPublicationDate": "2026-10-01"
+        },
+        "pubYear": "2026",
+        "pageInfo": "116460",
+        "abstractText": "Methylliberine (1,O2,7,9-tetramethyluric acid; 1,2,7,9-MU) and theacrine (1,3,7,9-tetramethyluric acid; 1,3,7,9-MU) are purine alkaloids found in a variety of botanicals and products marketed as dietary supplements. Despite their widespread use, extensive data on their human health effects are lacking. Therefore, methylliberine and theacrine were profiled using multiple new approach methods (NAMs): in silico metabolite predictions, in silico blood-brain barrier (BBB) permeability predictions, and in vitro assays for adenosine receptor binding (A1, A2A), functional activity (A2A), cytochrome P450 inhibition (CYP1A2), and phosphodiesterase inhibition (PDE3A, PDE4B, PDE4D). Like caffeine, methylliberine and theacrine were predicted to be metabolized via desmethylation by multiple in silico models. In silico predictions and cluster analysis also suggested that methylliberine and theacrine may permeate the BBB like caffeine. In vitro assays revealed that methylliberine and its metabolite 1,2,9-MU were CYP1A2 inhibitors (IC<sub>50</sub>, 9.6 and 27 μM, respectively) that agreed with clinical observations and could lead to interactions with drugs and xenobiotics. Both methylliberine and theacrine were A2A receptor antagonists, suggesting a potential for stimulant effects, although their potencies (52-62% inhibition at 100 μM) were weaker than theophylline, paraxanthine, and caffeine (IC<sub>50</sub>, 4.9-23.3 μM). Overall, this study highlights integration of multiple NAMs for profiling two purine alkaloids relevant to human health.",
+        "affiliation": "Division of Toxicology, Office of Chemistry and Toxicology, Office of Laboratory Operations and Applied Science, Human Foods Program, U.S. Food and Drug Administration, 8301 Muirkirk Rd, Laurel, MD 20708, USA. Electronic address: michael.santillo@fda.hhs.gov.",
+        "publicationStatus": "aheadofprint",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "US Food and Drug Administration",
+              "orderIn": 0
+            }
+          ]
+        },
+        "keywordList": {
+          "keyword": [
+            "In vitro",
+            "Caffeine",
+            "QSAR",
+            "In silico",
+            "Adenosine receptor",
+            "New Approach Methods (Nams)"
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/j.fct.2026.116460"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 0,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCreation": "2026-10-15",
+        "dateOfRevision": "2026-10-15",
+        "electronicPublicationDate": "2026-10-15",
+        "firstPublicationDate": "2026-10-15",
+        "firstIndexDate": "2026-10-19",
+        "hasEvaluations": "N"
+      }
+    }
+  ],
+  "proposals": [
+    {
+      "id": "proposal:dfcc15e1cbbbcfd0ca5bf7430191736a",
+      "paperId": "pmid:42880479",
+      "substanceSlug": "caffeine",
+      "suggestionType": "new-reference",
+      "payload": {
+        "needsFullText": true
+      },
+      "rationale": "Metadata-only smoke-run proposal; inspect the canonical publication before any editorial use.",
+      "evidenceQuotes": [],
+      "confidence": 0.5
+    }
+  ]
+}
