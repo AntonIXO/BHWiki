@@ -381,6 +381,9 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
 - title: Pregnancy and lactation
   description: Nutrient reference intakes differ from pharmacologic IV exposure; ASCOR has no adequate pregnancy safety data for high-dose use.
   sourceId: ref-ascor-label
+- title: Continuous renal replacement therapy changes micronutrient context
+  description: A 2026 literature review identifies vitamin C among micronutrients that may be lost into dialysis effluent or adsorbed to CRRT tubing or filters, but it reports that evidence is insufficient to define optimal supplementation doses or monitoring parameters.
+  sourceId: pmid-42929728
 ```
 
 ## Claims
@@ -487,6 +490,20 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
 ## References
 
 ```yaml
+- id: pmid-42929728
+  title: "Micronutrient deficiencies in continuous renal replacement therapy: A literature review and the emerging role of the pharmacist."
+  authors: Wang C, Kaarto P, Farina N, Schultz M, Burr L, Nordbeck S.
+  year: 2026
+  pmid: "42929728"
+  doi: 10.1093/ajhp/zxag361
+  url: https://pubmed.ncbi.nlm.nih.gov/42929728/
+  kind: Literature review
+  insight: The review includes vitamin C among micronutrients at risk of loss during continuous renal replacement therapy and emphasizes uncertainty about supplementation and monitoring strategies.
+  limitation: Review-level, population-specific context; it does not establish an optimal vitamin C dose or a general supplementation indication.
+  funding: Full funding and conflict disclosures were not assessed from the abstract-only record.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Full conflict disclosures were not assessed from the abstract-only record.
+  conflictOfInterestStatus: not-assessed
 - id: ref-ods
   title: Vitamin C - Health Professional Fact Sheet
   authors: NIH Office of Dietary Supplements

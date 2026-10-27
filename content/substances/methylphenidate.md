@@ -157,6 +157,18 @@ A treatment response in ADHD does not establish cognitive enhancement in people 
   exposure: Single 30 mg oral study exposure
   instrument: Sustained-attention task; instrument details not assessed in this draft
   magnitude: null
+- conceptId: attention
+  name: Selected cognitive outcomes after traumatic brain injury
+  direction: Variable
+  evidence: Limited research
+  description: A 2026 review describes methylphenidate as having the most consistent evidence among reviewed pharmacological approaches for selected attention and processing-speed outcomes after traumatic brain injury, while emphasizing limited TBI-specific evidence and heterogeneous findings.
+  sourceId: pmid-42929311
+  population: People undergoing neurorehabilitation after traumatic brain injury in the reviewed literature
+  exposure: Methylphenidate in symptom-targeted pharmacotherapy studies
+  instrument: Attention and processing-speed outcomes
+  magnitude: No pooled estimate in the abstract
+  reportType: measured-assessment
+  conflictingSourceIds: []
 ```
 
 ## Mechanisms
@@ -180,6 +192,9 @@ A treatment response in ADHD does not establish cognitive enhancement in people 
 - title: Formulations differ
   description: Immediate-release elimination data do not describe the release profile of every extended-release product.
   sourceId: methylphenidate-pk-label
+- title: TBI evidence is symptom-targeted, not disease-modifying
+  description: The 2026 neurorehabilitation review reports the most consistent evidence for selected attention and processing-speed outcomes but states that no pharmacological treatment is established as disease-modifying after traumatic brain injury.
+  sourceId: pmid-42929311
 ```
 
 ## Claims
@@ -218,6 +233,20 @@ A treatment response in ADHD does not establish cognitive enhancement in people 
 ## References
 
 ```yaml
+- id: pmid-42929311
+  title: "Psychopharmacological advances in neurorehabilitation after traumatic brain injury."
+  authors: Arcani V, Iruthayanathar C, Rauen K.
+  year: 2026
+  pmid: "42929311"
+  doi: 10.1097/wco.0000000000001528
+  url: https://pubmed.ncbi.nlm.nih.gov/42929311/
+  kind: Clinical evidence review
+  insight: The review identifies methylphenidate as having the most consistent evidence for selected attention and processing-speed outcomes after traumatic brain injury, while recommending individualized symptom-targeted treatment.
+  limitation: Review-level, heterogeneous and limited TBI-specific evidence; it does not establish disease modification, universal benefit, or a dosing regimen.
+  funding: Full funding and conflict disclosures were not assessed from the abstract-only record.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Full conflict disclosures were not assessed from the abstract-only record.
+  conflictOfInterestStatus: not-assessed
 - id: methylphenidate-label
   title: "RITALIN immediate-release tablets: prescribing information"
   authors: Novartis Pharmaceuticals

@@ -9,14 +9,14 @@ import type { Substance, TagKind } from "../src/lib/types";
 
 const curatedSlugs = ["caffeine", "l-theanine", "creatine", "melatonin", "nicotine", "psilocybin", "modafinil", "methylphenidate", "diphenhydramine", "citicoline"];
 const curatedHashes = [
-  "acc61ff03205bcc0f97ea8351894939e91d603e6b57cc00d80a984a549d5cc04",
+  "812e10762b85fdb1d4d874cebe6fb4b6eef677b75d77468f24b5542432251222",
   "e6d89068b5725791d19355ed370c901861ce36dced27dde65446deff8508d87e",
-  "553d1f07e52f4e2d4b4330ea14de3d2049b2a75a43d4f4139989b39bad76841b",
-  "71b02be938fd62bd5d48510ea21c9313b8deaca902aec6f77052bbd6e20a4343",
+  "c64573031510eb1cff1df6fbd3eb748bd07542b585b36e8914c040a8e7b1d3bd",
+  "d061d4e0f8ff593971ef57ad23061277131938b525ad0d0d0c2cdc9853cc71e2",
   "167494247d3d6ec5b61e85dc1016352f964e393fcba09ccf63d4e1556863e810",
   "f8c8258e89ff47240104fd22602ac94ef98f991b2fe1bbea7b3b2f5f6d734fe6",
   "082d24f9e76ac73efcaec2874d0132ac78316efa1c012df7949b359d98dd0c2e",
-  "b5f9d77395bcccfec7595383c83ed4dd4b1181eb2b6d182bc65014584565c731",
+  "5b272eedfef9fa03a8fab6e4934b7c308bbbcff1c34d401083bd84bdaa830047",
   "2af40220f322b71b7ac9db93b605a1dea2327a12c1f95a70eb200fe8c55f30de",
   "adab4d22f85bcc87cd9f73dacfc2eaee8db43508c575ea990bef2e27954de809",
 ];
@@ -33,14 +33,14 @@ test("markdown files preserve the curated records", () => {
   assert.deepEqual(kinds, { class: 18, "chemical-family": 8, mechanism: 30, target: 20, neurotransmitter: 6, enzyme: 12, effect: 9, outcome: 138, exposure: 5, legal: 1 });
   assert.equal(hyperedges.length, 63);
   const total = (count: (substance: Substance) => number) => curated.reduce((sum, substance) => sum + count(substance!), 0);
-  assert.equal(total((substance) => substance.references.length), 185);
+  assert.equal(total((substance) => substance.references.length), 191);
   assert.equal(total((substance) => substance.pkObservations.length), 25);
   assert.equal(total((substance) => substance.doses.length), 46);
   assert.equal(total((substance) => substance.mechanisms.length), 18);
-  assert.equal(total((substance) => substance.cautions.length), 46);
+  assert.equal(total((substance) => substance.cautions.length), 49);
   assert.equal(total((substance) => substance.effects.length), 18);
-  assert.equal(total((substance) => substance.outcomes.length), 52);
-  assert.equal(total((substance) => substance.claims.length), 37);
+  assert.equal(total((substance) => substance.outcomes.length), 55);
+  assert.equal(total((substance) => substance.claims.length), 38);
   assert.equal(total((substance) => substance.modifiers.length), 20);
   assert.equal(total((substance) => substance.legal.length), 17);
   assert.equal(total((substance) => substance.interactions.length + substance.experienceLinks.length + (substance.kinetics.timeline?.length ?? 0)), 26);

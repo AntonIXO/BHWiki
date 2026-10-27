@@ -319,6 +319,9 @@ Evidence is strongest for selected circadian disorders and specific prolonged-re
 - title: Product-content variability
   description: Analyses of commercial supplements found substantial label discordance and occasional serotonin contamination; pharmaceutical trial doses should not be assumed equivalent to arbitrary gummies or powders.
   sourceId: nccih-melatonin
+- title: Shift-work recommendations are conditional and safety-sensitive
+  description: The 2026 American Academy of Sleep Medicine guideline conditionally suggests melatonin for daytime sleep disturbance or naps after night shifts, while warning that temporary sleepiness and reduced cognitive performance can increase driving or workplace risk until resolved.
+  sourceId: pmid-42925456
 ```
 
 ## Claims
@@ -392,6 +395,20 @@ Evidence is strongest for selected circadian disorders and specific prolonged-re
 ## References
 
 ```yaml
+- id: pmid-42925456
+  title: "Management of shift work disorder: an American Academy of Sleep Medicine clinical practice guideline."
+  authors: Wright KP, Abbott SM, Ashbrook L, Drake CL, Flynn-Evans E, Framnes-DeBoer S, Kazmi U, Keeler K, McCall C, Morgan R, Shaffer-Hodgeman T, Trotti LM.
+  year: 2026
+  pmid: "42925456"
+  doi: 10.1007/s44470-026-00084-w
+  url: https://pubmed.ncbi.nlm.nih.gov/42925456/
+  kind: Clinical practice guideline
+  insight: For adults with shift-work disorder and daytime sleep disturbance or insomnia after night work, the AASM conditionally suggests melatonin; evidence certainty ranges from very low to low and the guideline warns about temporary sleepiness and reduced cognitive performance.
+  limitation: This is a guideline recommendation for a defined clinical disorder, not a universal sleep recommendation; the abstract-only record does not provide the underlying trial-level estimates.
+  funding: Full funding and conflict disclosures were not assessed from the abstract-only record.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Full conflict disclosures were not assessed from the abstract-only record.
+  conflictOfInterestStatus: not-assessed
 - id: harpsoe2015
   title: "Clinical pharmacokinetics of melatonin: a systematic review."
   authors: Harpsøe NG, Andersen LPH, Gögenur I, Rosenberg J. 2015.

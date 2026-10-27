@@ -446,6 +446,9 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
 - title: Commercial sponsorship
   description: Several product and formulation studies involved manufacturer products, funding or affiliated investigators; sponsorship is recorded in the references and limits independent replication.
   sourceId: ref-ito-2018
+- title: Co-loaded nanoparticle evidence is preclinical
+  description: A 2026 study used an astaxanthin co-loaded nanoparticle with a marine peptide and reported immunosuppression-related endpoint changes in an animal model. The abstract itself limits the evidence to animal endpoints and calls for direct mechanistic validation.
+  sourceId: pmid-42929794
 ```
 
 ## Claims
@@ -536,6 +539,20 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
 ## References
 
 ```yaml
+- id: pmid-42929794
+  title: "Layered glycoprotein nanoparticles co-delivering <i>Meretrix meretrix</i>-derived peptide and astaxanthin attenuate cyclophosphamide-induced immunosuppression."
+  authors: Wu W, Cai J, Wu Z, Cao W, Lin H, Gao J, Fan X, Qin X, Zheng H.
+  year: 2026
+  pmid: "42929794"
+  doi: 10.1039/d6fo04163a
+  url: https://pubmed.ncbi.nlm.nih.gov/42929794/
+  kind: Preclinical nanoparticle study
+  insight: In an animal model, oral HLC10 nanoparticles co-delivering astaxanthin and a marine peptide improved co-encapsulation and bioaccessibility and attenuated cyclophosphamide-induced immunosuppression-related endpoints.
+  limitation: Combination formulation and animal-only endpoint evidence; it does not establish astaxanthin-alone efficacy, human benefit, or clinical dosing.
+  funding: Full funding and conflict disclosures were not assessed from the abstract-only record.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Full conflict disclosures were not assessed from the abstract-only record.
+  conflictOfInterestStatus: not-assessed
 - id: ref-osterlie-2000
   title: Plasma appearance and distribution of astaxanthin E/Z and R/S isomers in plasma lipoproteins of men after single dose administration of astaxanthin
   authors: M Østerlie; B Bjerkeng; S Liaaen-Jensen

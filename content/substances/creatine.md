@@ -75,7 +75,7 @@ Creatine is better understood through tissue stores and repeated supplementation
 
 ## Evidence note
 
-This article covers muscle stores, exercise, and the tested cognitive contexts of normal rest, older age, and acute sleep deprivation. The cognitive findings are heterogeneous, and the meta-analytic estimates are sensitive to correlated-test counting; they do not establish creatine as a general nootropic. [2026 methodological commentary](https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1716285/full)
+This article covers muscle stores, exercise, and the tested cognitive contexts of normal rest, older age, and acute sleep deprivation. The cognitive findings are heterogeneous, and the meta-analytic estimates are sensitive to correlated-test counting; they do not establish creatine as a general nootropic. A 2026 review likewise argues that physiological plausibility has not translated into convincing or consistently interpretable clinical cognitive evidence. [2026 methodological commentary](https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1716285/full) [Machado 2026](https://pubmed.ncbi.nlm.nih.gov/42912797/)
 
 ## Doses
 
@@ -370,6 +370,22 @@ This article covers muscle stores, exercise, and the tested cognitive contexts o
     - creatine-cognition-2024
   assessment: not-formally-assessed
   limitation: Small samples, heterogeneous tests and methodological criticism prevent a general efficacy claim.
+- id: cognitive-evidence-gap-2026
+  assertion: Physiological plausibility for cerebral creatine effects has not yet translated into convincing, consistently interpretable clinical cognitive benefit.
+  relation: evidence-boundary
+  participants:
+    - entityId: substance:creatine
+      role: exposure
+    - entityId: tag:memory
+      role: cognitive-outcome
+    - entityId: tag:attention
+      role: cognitive-outcome
+  context: A 2026 review separates cerebral bioenergetic mechanisms from the still-inconsistent clinical supplementation literature.
+  sourceIds:
+    - pmid-42912797
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Narrative review; it does not replace new randomized outcome data or establish that no subgroup can benefit.
 ```
 
 ## Interactions
@@ -387,6 +403,20 @@ This article covers muscle stores, exercise, and the tested cognitive contexts o
 ## References
 
 ```yaml
+- id: pmid-42912797
+  title: "Creatine and cognitive function: Why has physiological plausibility not translated into convincing clinical evidence?"
+  authors: Machado M.
+  year: 2026
+  pmid: "42912797"
+  doi: 10.1113/ep094109
+  url: https://pubmed.ncbi.nlm.nih.gov/42912797/
+  kind: Narrative review
+  insight: The review argues that cerebral bioenergetic plausibility has not translated into convincing, consistently interpretable clinical cognitive benefit and attributes the gap to biological constraints and methodological weaknesses.
+  limitation: Narrative review; its conclusions do not establish that no subgroup can benefit and do not replace randomized outcome data.
+  funding: Full funding and conflict disclosures were not assessed from the abstract-only record.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Full conflict disclosures were not assessed from the abstract-only record.
+  conflictOfInterestStatus: not-assessed
 - id: hultman1996
   title: Muscle creatine loading in men
   authors: Hultman et al.

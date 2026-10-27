@@ -472,6 +472,29 @@ Primary human experiments were preferred for effects, outcomes, pharmacokinetics
     formulation: Exact dosage form not established from inspected abstract
     assessmentTime: Acute post-dose testing
   conflictingSourceIds: []
+- id: caffeine-inhibitory-control-250mg
+  conceptId: attention
+  name: Acute inhibitory control
+  direction: Variable
+  evidence: Human research
+  description: In a preregistered crossover trial, 250 mg caffeine produced no measurable improvement in active or reactive inhibition in 36 non-clinical young adults; Bayesian analyses supported the null, and ADHD symptom severity did not moderate the result.
+  sourceId: pmid-42830444
+  population: 36 non-clinical young adults
+  exposure: 250 mg caffeine versus placebo, single exposure
+  instrument: Go/No-Go and arrow-flanker tasks
+  magnitude: Null across preregistered inhibition outcomes
+  reportType: measured-assessment
+  study:
+    id: caffeine-inhibitory-control-250mg-study
+    design: Preregistered randomized double-blind placebo-controlled crossover
+    sampleSize: 36
+    populationLabels:
+      - non-clinical young adults
+    comparator: Placebo
+    route: Oral
+    formulation: Study caffeine preparation; exact dosage form not established from inspected abstract
+    assessmentTime: 45 minutes after ingestion
+  conflictingSourceIds: []
 - id: caffeine-sleep-400mg-drake
   conceptId: sleep
   name: Subsequent sleep after 400 mg
@@ -566,6 +589,30 @@ Primary human experiments were preferred for effects, outcomes, pharmacokinetics
     durationDays: 10
     assessmentTime: Subsequent scheduled nighttime sleep
   conflictingSourceIds: []
+- id: caffeine-withdrawal-reaction-time
+  conceptId: attention
+  name: Reaction time after overnight coffee abstinence
+  direction: Decreased
+  evidence: Human research
+  description: Overnight abstinence selectively slowed reaction time in regular coffee consumers compared with their habitual morning coffee condition; memory, executive-function and accuracy measures were not statistically different.
+  sourceId: pmid-42920333
+  population: 30 regular coffee consumers and 25 non-regular consumers
+  exposure: Habitual morning coffee versus overnight abstinence
+  instrument: Reaction-time, processing-speed, working-memory, verbal-memory and Stroop battery
+  magnitude: Selective reaction-time slowing; no exact effect size reported in the abstract
+  reportType: measured-assessment
+  study:
+    id: caffeine-withdrawal-reaction-time-study
+    design: Within-participant comparison with non-regular-consumer comparator
+    sampleSize: 55
+    populationLabels:
+      - regular coffee consumers
+      - non-regular coffee consumers
+    comparator: Habitual morning coffee or non-regular-consumer group
+    route: Oral
+    formulation: Habitual coffee; composition and dose not established from inspected abstract
+    assessmentTime: After overnight abstinence or habitual morning coffee
+  conflictingSourceIds: []
 ```
 
 ## Mechanisms
@@ -614,6 +661,9 @@ Primary human experiments were preferred for effects, outcomes, pharmacokinetics
 - title: CYP1A2 inhibitors and liver dysfunction can markedly prolong exposure
   description: Ciprofloxacin and fluvoxamine have human interaction evidence for slowing caffeine elimination, and cirrhosis can substantially reduce caffeine clearance. Medication and liver-disease context therefore matters when interpreting a nominal caffeine dose.
   sourceId: jeppesen1996
+- title: Shift-work guidance is conditional and sleep timing still matters
+  description: The 2026 American Academy of Sleep Medicine guideline conditionally suggests caffeine before or during a night shift for excessive sleepiness in adults with shift-work disorder, but rates the evidence very low and warns that intake close to bedtime can worsen sleep onset and quality.
+  sourceId: pmid-42925456
 ```
 
 ## Claims
@@ -793,6 +843,48 @@ Primary human experiments were preferred for effects, outcomes, pharmacokinetics
   funding: NCBI public database; no study-specific funding declaration applies and no separate database funding declaration was assessed for this record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: No study-specific conflict declaration applies; no separate conflict disclosure was assessed for this database record.
+  conflictOfInterestStatus: not-assessed
+- id: pmid-42830444
+  title: Acute Caffeine Intake Does Not Modulate Active or Reactive Inhibition in Non-Clinical Young Adults, and ADHD Symptoms Do Not Moderate Its Effects.
+  authors: Altınok A.
+  year: 2026
+  pmid: "42830444"
+  doi: 10.1002/hup.70067
+  url: https://pubmed.ncbi.nlm.nih.gov/42830444/
+  kind: Preregistered randomized double-blind placebo-controlled crossover trial
+  insight: In 36 non-clinical young adults, 250 mg caffeine produced no acute benefit for active or reactive inhibition; Bayesian factors supported the absence of an effect, and ADHD symptom severity did not moderate the result.
+  limitation: Small non-clinical sample; the abstract does not establish whether the null applies to chronic intake or adults with diagnosed ADHD.
+  funding: Full funding and conflict disclosures were not assessed from the abstract-only record.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Full conflict disclosures were not assessed from the abstract-only record.
+  conflictOfInterestStatus: not-assessed
+- id: pmid-42920333
+  title: Should Coffee Consumers Not Have Their Habitual Morning Coffee Before Testing Their Cognitive Functions?
+  authors: Pitsikas N, Nguyen DT, Blokland A.
+  year: 2026
+  pmid: "42920333"
+  doi: 10.1002/hup.70070
+  url: https://pubmed.ncbi.nlm.nih.gov/42920333/
+  kind: Human cognitive comparison study
+  insight: Among 30 regular and 25 non-regular coffee consumers, overnight abstinence selectively slowed reaction time versus habitual morning coffee while memory, executive-function and accuracy measures were unchanged.
+  limitation: The abstract does not report the coffee dose or exact reaction-time effect size; the result is a withdrawal-context finding, not evidence that coffee improves every cognitive domain.
+  funding: Full funding and conflict disclosures were not assessed from the abstract-only record.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Full conflict disclosures were not assessed from the abstract-only record.
+  conflictOfInterestStatus: not-assessed
+- id: pmid-42925456
+  title: "Management of shift work disorder: an American Academy of Sleep Medicine clinical practice guideline."
+  authors: Wright KP, Abbott SM, Ashbrook L, Drake CL, Flynn-Evans E, Framnes-DeBoer S, Kazmi U, Keeler K, McCall C, Morgan R, Shaffer-Hodgeman T, Trotti LM.
+  year: 2026
+  pmid: "42925456"
+  doi: 10.1007/s44470-026-00084-w
+  url: https://pubmed.ncbi.nlm.nih.gov/42925456/
+  kind: Clinical practice guideline
+  insight: For adults with shift-work disorder and excessive sleepiness, the AASM conditionally suggests caffeine before or during the night shift; evidence certainty is very low and the guideline warns about sleep disruption near bedtime.
+  limitation: This is a guideline recommendation for a defined clinical disorder, not a universal performance or dosing recommendation; the abstract-only record does not provide the underlying trial-level estimates.
+  funding: Full funding and conflict disclosures were not assessed from the abstract-only record.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Full conflict disclosures were not assessed from the abstract-only record.
   conflictOfInterestStatus: not-assessed
 - id: owen2008
   title: The combined effects of L-theanine and caffeine on cognitive performance and mood

@@ -174,6 +174,21 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   sourceCategory: research
   note: 'Source-specific research exposure details are preserved in the cited source.'
   sourceId: S1
+- label: COPD deficiency schedule comparison
+  amount: 4000 IU/day or 50000 IU/week vitamin D3
+  quantity: null
+  quantityMax: null
+  unit: IU
+  ingredient: Vitamin D3
+  formulation: Oral vitamin D3; schedule-specific trial exposure
+  route: oral
+  frequency: Daily or weekly
+  duration: 12 weeks
+  population: 49 patients with COPD and baseline serum 25-hydroxyvitamin D below 30 ng/mL
+  purpose: Compare daily and weekly replacement schedules alongside standard COPD treatment
+  sourceCategory: research
+  note: The open-label randomized trial did not establish superiority of the weekly regimen; this is a study exposure, not a universal replacement schedule.
+  sourceId: pmid-42925274
 ```
 
 ## Pharmacokinetics
@@ -575,6 +590,28 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   exposure: Not established
   instrument: null
   magnitude: null
+- id: vitamin-d-copd-schedule
+  study:
+    id: vitamin-d-copd-schedule-study
+    design: Open-label randomized clinical trial
+    sampleSize: 49
+    populationLabels:
+      - COPD with baseline serum 25-hydroxyvitamin D below 30 ng/mL
+    comparator: Daily versus weekly vitamin D3 schedule
+    route: Oral
+    assessmentTime: 12 weeks
+  conflictingSourceIds: []
+  reportType: measured-assessment
+  conceptId: exercise
+  name: Lung function after vitamin D3 replacement in deficient COPD
+  direction: Variable
+  evidence: Human research
+  description: Serum vitamin D and lung-function measures increased from baseline in both schedule groups, but the between-group differences were not statistically significant after adjustment; the weekly regimen was not shown to be superior.
+  sourceId: pmid-42925274
+  population: 49 patients with COPD and baseline serum 25-hydroxyvitamin D below 30 ng/mL
+  exposure: 4000 IU/day or 50000 IU/week vitamin D3 for 12 weeks alongside standard COPD treatment
+  instrument: FEV1 and FEV1 percentage
+  magnitude: Between-group adjusted p=0.079 for absolute FEV1 and p=0.981 for FEV1 percentage
 ```
 
 ## Mechanisms
@@ -742,6 +779,20 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
 ## References
 
 ```yaml
+- id: pmid-42925274
+  title: "Comparison of the efficacy of daily versus weekly vitamin D supplementation on GOLD classification in COPD patients with vitamin D deficiency: An open-label randomized clinical trial."
+  authors: Not established in the abstract-only record.
+  year: 2026
+  pmid: "42925274"
+  doi: 10.1177/02601060261499901
+  url: https://pubmed.ncbi.nlm.nih.gov/42925274/
+  kind: Open-label randomized clinical trial
+  insight: In 49 vitamin-D-deficient people with COPD, 4000 IU/day and 50000 IU/week vitamin D3 both increased serum vitamin D and lung-function measures from baseline; the trial did not demonstrate weekly-schedule superiority after adjustment.
+  limitation: Small open-label trial with 12-week follow-up; between-group evidence was non-significant and does not establish a general COPD treatment effect.
+  funding: Full funding and conflict disclosures were not assessed from the abstract-only record.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Full conflict disclosures were not assessed from the abstract-only record.
+  conflictOfInterestStatus: not-assessed
 - id: S1
   title: "Direct source link: https://clinicaltrials.gov/study/NCT01169259"
   authors: Publication metadata not assessed in the returned report

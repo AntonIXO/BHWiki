@@ -305,6 +305,19 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   magnitude: Not established
   reportType: measured-assessment
   conflictingSourceIds: []
+- id: berberine-effect-preclinical-anticonvulsant
+  conceptId: perception
+  name: Preclinical anticonvulsant signal
+  direction: Decreased
+  evidence: Limited research
+  description: A 16-study animal systematic review reported lower seizure incidence, kindling, seizure-related mortality and severity with berberine, with stronger effects in nano-encapsulated preparations. This is preclinical evidence and does not establish human anticonvulsant efficacy.
+  sourceId: pmid-42918506
+  population: Animal epilepsy models in 16 included studies
+  exposure: Berberine formulations at model-specific doses
+  instrument: Seizure incidence, kindling, mortality, severity and latency
+  magnitude: Status epilepticus/generalized seizure RR 0.73; fully kindled state RR 0.53; seizure-related mortality RR 0.72 in the abstract-level pooled estimates
+  reportType: measured-assessment
+  conflictingSourceIds: []
 ```
 
 ## Outcomes
@@ -463,6 +476,9 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
 - title: Product variability
   description: Salts, extracts, complexes, doses, and analytical specifications differed across studies, limiting direct product-to-product comparison.
   sourceId: S4
+- title: Anticonvulsant findings remain preclinical
+  description: A 2026 systematic review found anticonvulsant signals in animal models, including dose and formulation effects, but the abstract provides no human epilepsy trial evidence. These findings should not be presented as a treatment effect in people.
+  sourceId: pmid-42918506
 ```
 
 ## Claims
@@ -632,6 +648,20 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
 ## References
 
 ```yaml
+- id: pmid-42918506
+  title: "Anticonvulsant activity of berberine: a systematic review and meta-analysis of preclinical studies in animal models."
+  authors: Ullah W, Sulaiman M, Xue M, Xu S, Sun J.
+  year: 2026
+  pmid: "42918506"
+  doi: 10.1016/j.fitote.2026.107526
+  url: https://pubmed.ncbi.nlm.nih.gov/42918506/
+  kind: Systematic review and meta-analysis of preclinical animal studies
+  insight: Sixteen animal studies were pooled; abstract-level estimates favored berberine for several seizure endpoints and suggested stronger effects with nano-encapsulation.
+  limitation: Preclinical models, formulation heterogeneity and abstract-only verification do not establish human anticonvulsant efficacy, dosing or safety.
+  funding: Full funding and conflict disclosures were not assessed from the abstract-only record.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Full conflict disclosures were not assessed from the abstract-only record.
+  conflictOfInterestStatus: not-assessed
 - id: S1
   title: Berberine chloride
   authors: National Center for Biotechnology Information, PubChem
