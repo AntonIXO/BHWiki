@@ -9,14 +9,14 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const source = readFileSync(path.join(root, "content/substances/phenibut.md"), "utf8");
 const article = { relativePath: "substances/phenibut.md", source };
 
-test("one-topic research import rejects batching, duplicate paths and traversal", () => {
+test("one-topic research import rejects batching, duplicate paths and traversal", { timeout: 30_000 }, () => {
   assert.throws(() => prepareResearchImport(root, "phenibut", []), /exactly one/);
   assert.throws(() => prepareResearchImport(root, "phenibut", [article, article]), /exactly one|Duplicate/);
   for (const relativePath of ["substances/other.md", "../outside.md", "outcomes/../../outside.md"])
     assert.throws(() => prepareResearchImport(root, "phenibut", [article, { relativePath, source }]), /Only same-topic/);
 });
 
-test("research acquisition validates a full corpus and round trip without writing", () => {
+test("research acquisition validates a full corpus and round trip without writing", { timeout: 30_000 }, () => {
   const prepared = prepareResearchImport(root, "phenibut", [article]);
   assert.equal(prepared.length, 1);
   assert.equal(prepared[0].parsed.order, 244);

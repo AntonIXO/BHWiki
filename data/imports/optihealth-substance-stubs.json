@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "source": "optihealth",
+  "generatedAt": "2026-10-27T09:00:00.000Z",
+  "candidates": [
+    {
+      "sourceId": "optihealth:substance:famciclovir",
+      "name": "Famciclovir",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Famciclovir",
+      "identityStatus": "unmapped",
+      "canonicalSlug": "famciclovir",
+      "aliases": [],
+      "references": [
+        {
+          "id": "pubchem-famciclovir",
+          "title": "Famciclovir - PubChem",
+          "authors": "National Center for Biotechnology Information",
+          "year": 2026,
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Famciclovir",
+          "kind": "Identity reference",
+          "insight": "The source identifies the candidate by the name Famciclovir.",
+          "limitation": "This identity reference does not establish dosing, efficacy, safety, or a biological relationship."
+        }
+      ]
+    },
+    {
+      "sourceId": "optihealth:substance:tolperisone",
+      "name": "Tolperisone",
+      "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/Tolperisone",
+      "identityStatus": "unmapped",
+      "canonicalSlug": "tolperisone",
+      "aliases": [],
+      "references": [
+        {
+          "id": "pubchem-tolperisone",
+          "title": "Tolperisone - PubChem",
+          "authors": "National Center for Biotechnology Information",
+          "year": 2026,
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/Tolperisone",
+          "kind": "Identity reference",
+          "insight": "The source identifies the candidate by the name Tolperisone.",
+          "limitation": "This identity reference does not establish dosing, efficacy, safety, or a biological relationship."
+        }
+      ]
+    },
+    {
+      "sourceId": "optihealth:product:doctors-best-lutein-review",
+      "name": "Doctor's Best Lutein",
+      "sourceUrl": "https://www.iherb.com/search?kw=Doctor%27s%20Best%20Lutein",
+      "identityStatus": "ambiguous",
+      "canonicalSlug": null,
+      "aliases": [],
+      "candidateSlugs": ["lutein", "lutemax"],
+      "reviewNote": "Exact product SKU and standardized form require source review; no generic or branded identity is selected by this fixture.",
+      "references": [
+        {
+          "id": "iherb-doctors-best-lutein-review",
+          "title": "Doctor's Best Lutein product search",
+          "authors": "iHerb",
+          "year": 2026,
+          "url": "https://www.iherb.com/search?kw=Doctor%27s%20Best%20Lutein",
+          "kind": "Product-source review lead",
+          "insight": "The source is a product-search lead for review, not an exact product identity.",
+          "limitation": "The exact SKU, label, and standardized form are not established by this candidate."
+        }
+      ]
+    }
+  ]
+}

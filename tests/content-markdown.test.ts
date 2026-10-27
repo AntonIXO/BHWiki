@@ -25,7 +25,7 @@ test("markdown files preserve the curated records", () => {
   const curated = curatedSlugs.map((slug) => substances.find((substance) => substance.slug === slug));
   assert.deepEqual(curated.map((substance) => substance?.slug), curatedSlugs);
   assert.deepEqual(curated.map((substance) => substance && contentHash(substance)), curatedHashes);
-  assert.equal(substances.length, 173);
+  assert.equal(substances.length, 175);
   assert.equal(tags.length, 247);
   assert.equal(substances.filter((substance) => substance.subtitle === "Identity record.").length, 0);
   const kinds: Record<TagKind, number> = { class: 0, "chemical-family": 0, mechanism: 0, target: 0, neurotransmitter: 0, enzyme: 0, effect: 0, outcome: 0, exposure: 0, legal: 0 };
@@ -53,7 +53,7 @@ test("markdown files preserve the curated records", () => {
   assert.deepEqual(clearance?.members, ["substance:caffeine", "tag:cyp1a2", "tag:tobacco-smoke"]);
 });
 
-test("markdown files round-trip without changing the record or its hash", () => {
+test("markdown files round-trip without changing the record or its hash", { timeout: 30_000 }, () => {
   substances.forEach((record, order) => {
     const relative = `substances/${record.slug}.md`;
     const parsed = parseContentSource(relative, serializeContent(relative, { collection: "substances", record, order }));

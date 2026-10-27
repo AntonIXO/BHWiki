@@ -25,7 +25,10 @@ export function validateSubstance(value:unknown):asserts value is Substance {
  if(s.pubchemCid===null&&['formula','molecularWeight','smiles'].some(key=>s[key]!=='Not established'))fail(p,'unresolved identity must not claim a molecular structure');
  if(!/^\d{4}-\d{2}-\d{2}$/.test(s.reviewedAt as string)||!Number.isFinite(Date.parse(s.reviewedAt as string)))fail(p,'invalid source check date');
  if('evidenceLevel' in s)fail(p,'global evidence badges are not supported');
- texts(s.aliases,p+'.aliases');texts(s.tags,p+'.tags');choice(s.editorialStatus,['sourced-draft','editorially-reviewed'],p+'.editorialStatus');
+ texts(s.aliases,p+'.aliases');
+ const normalizedAliases=(s.aliases as string[]).map(alias=>alias.trim().toLocaleLowerCase('en'));
+ if(new Set(normalizedAliases).size!==normalizedAliases.length)fail(p+'.aliases','duplicate alias');
+ choice(s.editorialStatus,['sourced-draft','editorially-reviewed'],p+'.editorialStatus');
  const half=record(s.halfLife,p+'.halfLife');fields(half,['label','context','sourceId','observationId'],p+'.halfLife');numberOrNull(half.low,p+'.halfLife.low');numberOrNull(half.high,p+'.halfLife.high');
  const kinetics=record(s.kinetics,p+'.kinetics');fields(kinetics,['onset','peak','duration','bioavailability','metabolism','sourceId'],p+'.kinetics');
  if(kinetics.markers!==undefined){objects(kinetics.markers,p+'.kinetics.markers',(marker,k)=>{fields(marker,['id','label','analyte','population','note','sourceId'],k);if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(String(marker.id)))fail(k+'.id','invalid marker ID');choice(marker.measurement,['subjective','plasma'],k+'.measurement');choice(marker.unit,['minutes','hours'],k+'.unit');numberOrNull(marker.at,k+'.at');if(marker.at===null)fail(k+'.at','marker time must be defined');});const ids=(kinetics.markers as {id:string}[]).map(marker=>marker.id);if(new Set(ids).size!==ids.length)fail(p+'.kinetics.markers','duplicate marker ID');}
