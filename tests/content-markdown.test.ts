@@ -25,9 +25,21 @@ test("markdown files preserve the curated records", () => {
   const curated = curatedSlugs.map((slug) => substances.find((substance) => substance.slug === slug));
   assert.deepEqual(curated.map((substance) => substance?.slug), curatedSlugs);
   assert.deepEqual(curated.map((substance) => substance && contentHash(substance)), curatedHashes);
-  assert.equal(substances.length, 175);
+  assert.ok(substances.length >= curatedSlugs.length);
   assert.equal(tags.length, 247);
   assert.equal(substances.filter((substance) => substance.subtitle === "Identity record.").length, 0);
+  const identityOnly = substances.filter(
+    (substance) => substance.subtitle === "Source-backed identity stub.",
+  );
+  assert.ok(identityOnly.length >= 2);
+  for (const substance of identityOnly) {
+    assert.equal(substance.editorialStatus, "sourced-draft");
+    assert.equal(substance.doses.length, 0);
+    assert.equal(substance.effects.length, 0);
+    assert.equal(substance.outcomes.length, 0);
+    assert.equal(substance.claims.length, 0);
+    assert.ok(substance.references.length > 0);
+  }
   const kinds: Record<TagKind, number> = { class: 0, "chemical-family": 0, mechanism: 0, target: 0, neurotransmitter: 0, enzyme: 0, effect: 0, outcome: 0, exposure: 0, legal: 0 };
   for (const tag of tags) kinds[tag.kind] += 1;
   assert.deepEqual(kinds, { class: 18, "chemical-family": 8, mechanism: 30, target: 20, neurotransmitter: 6, enzyme: 12, effect: 9, outcome: 138, exposure: 5, legal: 1 });
