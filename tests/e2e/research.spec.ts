@@ -134,6 +134,18 @@ test("conditional identity and overlap sections stay scoped to available data", 
   await expect(page.getByText(/overlap is context/i)).toBeVisible();
 });
 
+test("solubility badges use water and fat icons when sourced", async ({ page }) => {
+  await page.goto("/substances/vitamin-c");
+  const waterBadge = page.getByText("Water-soluble", { exact: true }).first();
+  await expect(waterBadge).toBeVisible();
+  await expect(waterBadge.locator("xpath=preceding-sibling::svg")).toHaveCount(1);
+
+  await page.goto("/substances/delta-9-thc");
+  const fatBadge = page.getByText("Fat-soluble", { exact: true }).first();
+  await expect(fatBadge).toBeVisible();
+  await expect(fatBadge.locator("xpath=preceding-sibling::svg")).toHaveCount(1);
+});
+
 test("figures and pharmacokinetics render only from committed data", async ({ page }) => {
   await page.goto("/substances/caffeine");
   await expect(page.getByText("Add a figure or dataset", { exact: true })).toHaveCount(0);

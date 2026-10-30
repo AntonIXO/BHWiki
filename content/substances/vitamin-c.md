@@ -93,6 +93,7 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   duration: Ongoing
   population: Adults
   purpose: Meet nutrient requirements
+  solubility: water-soluble
   note: Reference intake, not a therapeutic recommendation.
   sourceId: ref-ods
 - sourceCategory: research
@@ -108,6 +109,7 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   duration: Varied
   population: General adults and children in prevention trials
   purpose: Assess common-cold incidence and duration
+  solubility: water-soluble
   note: Regular use modestly shortened duration but did not materially reduce general-population incidence.
   sourceId: ref-ods
 - sourceCategory: research
@@ -123,6 +125,7 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   duration: Depletion/repletion study
   population: Healthy volunteers
   purpose: Characterize plasma and leukocyte saturation
+  solubility: water-soluble
   note: Absorption falls at high doses and urinary disposal rises.
   sourceId: ref-levine-1996
 - sourceCategory: research

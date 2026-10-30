@@ -5,7 +5,7 @@
  * https://kokonutui.com/docs/navigation/smooth-tab
  */
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { Cigarette, Droplets, Layers3, Pill, Syringe } from "lucide-react";
+import { Blend, Cigarette, CircleHelp, Droplets, Layers3, Nut, Pill, Syringe } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { useMemo, useState } from "react";
 import { Citation } from "@/components/citation";
@@ -47,11 +47,11 @@ const foodRelationLabels: Record<NonNullable<DoseContext["foodRelation"]>, strin
   "food-effect-not-established": "Food effect not established",
 };
 
-const solubilityLabels: Record<NonNullable<DoseContext["solubility"]>, string> = {
-  "water-soluble": "Water-soluble",
-  "fat-soluble": "Fat-soluble",
-  "formulation-dependent": "Formulation-dependent solubility",
-  "solubility-not-established": "Solubility not established",
+const solubilityMeta: Record<NonNullable<DoseContext["solubility"]>, { label: string; icon: LucideIcon }> = {
+  "water-soluble": { label: "Water-soluble", icon: Droplets },
+  "fat-soluble": { label: "Fat-soluble", icon: Nut },
+  "formulation-dependent": { label: "Formulation-dependent solubility", icon: Blend },
+  "solubility-not-established": { label: "Solubility not established", icon: CircleHelp },
 };
 
 const missingValue = /^(?:amount |formulation )?not established$|^(?:not assessed|not reported|no data|unknown|n\/a)\.?$/i;
@@ -106,10 +106,11 @@ function DoseSource({ dose, references }: { dose: DoseContext; references: Refer
 
 function DoseCard({ dose, references, route }: { dose: DoseContext; references: Reference[]; route: RouteId }) {
   const quantity = doseQuantity(dose);
+  const solubility = dose.solubility ? solubilityMeta[dose.solubility] : null;
   const intakeBadges = [
-    dose.foodRelation ? foodRelationLabels[dose.foodRelation] : null,
-    dose.solubility ? solubilityLabels[dose.solubility] : null,
-  ].filter(Boolean);
+    dose.foodRelation ? { label: foodRelationLabels[dose.foodRelation], icon: null } : null,
+    solubility ? { label: solubility.label, icon: solubility.icon } : null,
+  ].filter((badge): badge is { label: string; icon: LucideIcon | null } => Boolean(badge));
   const context = [
     ["Ingredient / form", [present(dose.ingredient), present(dose.formulation)].filter(Boolean).join(" · ")],
     ["Route", present(dose.route)],
@@ -133,7 +134,12 @@ function DoseCard({ dose, references, route }: { dose: DoseContext; references: 
         )}
         {intakeBadges.length > 0 && (
           <div className="flex flex-wrap gap-1.5" aria-label="Intake and absorption details">
-            {intakeBadges.map((label) => <Badge key={label} variant="outline" className="text-[0.68rem]">{label}</Badge>)}
+            {intakeBadges.map(({ label, icon: Icon }) => (
+              <Badge key={label} variant="outline" className="text-[0.68rem]">
+                {Icon && <Icon aria-hidden="true" />}
+                {label}
+              </Badge>
+            ))}
           </div>
         )}
         {context.length > 0 && (
