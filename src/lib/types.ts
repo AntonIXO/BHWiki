@@ -63,6 +63,12 @@ export type IdentificationTest = {
   limitations: string;
   sourceId: string;
 };
+export type MonitoringItem = {
+  marker: string;
+  target: string;
+  why: string;
+  sourceId: string;
+};
 export type ExperienceLink = { title: string; url: string; publisher: "PsychonautWiki" };
 export type ExternalWikiService = "Wikipedia" | "Examine" | "PsychonautWiki";
 export type ExternalWikiLink = { service: ExternalWikiService; url: string; title?: string };
@@ -78,6 +84,8 @@ export type Substance = {
   doses: DoseContext[]; effects: Observation[]; outcomes: Observation[]; claims: Claim[];
   mechanisms: { title: string; description: string; sourceId: string; conceptId?: string }[];
   cautions: { title: string; description: string; sourceId: string }[];
+  monitoring?: MonitoringItem[];
+  monitoringCadence?: string;
   interactions: Interaction[];
   identificationTests?: IdentificationTest[];
   experienceLinks: ExperienceLink[]; externalWikiLinks?: ExternalWikiLink[];

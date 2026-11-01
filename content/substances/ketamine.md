@@ -58,6 +58,8 @@ x-shape:
   - claims
   - mechanisms
   - cautions
+  - monitoring
+  - monitoringCadence
   - interactions
   - experienceLinks
   - references
@@ -402,6 +404,51 @@ The strongest indication-level evidence here comes from current U.S. prescribing
   description: Human ketamine pregnancy data are concentrated around cesarean anesthesia and have not identified a drug-associated maternal or fetal risk, but the evidence is limited by small samples, retrospective collection and absent long-term follow-up; data for other stages of pregnancy are insufficient to estimate major malformation or miscarriage risk. Animal studies of ketamine or esketamine show developmental toxicity, and prolonged NMDA-blocking anesthetic exposure during fetal brain development causes neuronal apoptosis in primates; the clinical significance for humans remains uncertain.
   sourceId: ketalar-label
 ```
+
+## Monitoring
+
+```yaml
+- marker: Resting blood pressure
+  target: Below 120/80 mmHg before each session
+  why: Ketamine raises it transiently.
+  sourceId: ketalar-label
+- marker: Resting heart rate
+  target: 50–70 bpm
+  why: The same sympathetic surge can raise it.
+  sourceId: ketalar-label
+- marker: ALT
+  target: 10–26 U/L in men, 8–22 U/L in women
+  why: Detects liver-cell injury reported with heavy use.
+  sourceId: ketalar-label
+- marker: ALP and GGT
+  target: ALP 50–100 U/L; GGT below 20 U/L in men, below 15 U/L in women
+  why: Cholestatic bile-duct injury is the pattern seen with ketamine.
+  sourceId: ketalar-label
+- marker: Total bilirubin
+  target: 0.3–1.0 mg/dL
+  why: Completes the cholestatic picture alongside the bile-duct enzymes.
+  sourceId: ketalar-label
+- marker: "Urine dipstick: blood, protein, leukocytes"
+  target: Negative for all three
+  why: Earliest detectable sign of bladder-lining injury.
+  sourceId: ketalar-label
+- marker: Serum creatinine with eGFR
+  target: eGFR above 90 mL/min/1.73 m²
+  why: Upper-tract obstruction follows advanced bladder disease.
+  sourceId: ketalar-label
+- marker: PHQ-9 score
+  target: Below 5, or at least a 50% fall from the individual's own baseline
+  why: Defines response and remission objectively.
+  sourceId: murrough-2013
+- marker: CADSS score
+  target: No established target; track the peak against the individual's own first session
+  why: Quantifies dissociation so escalation can be detected.
+  sourceId: spravato-label
+```
+
+## Monitoring cadence
+
+Baseline liver panel, kidney function and urine dipstick within two weeks of starting. Blood pressure and heart rate every 10 minutes per session until baseline returns. Symptom scores at 24 hours after the first dose, then weekly through induction. Urine dipstick and liver enzymes at 3 months, then every 6 months while dosing continues, and immediately if urinary symptoms appear.
 
 ## Claims
 

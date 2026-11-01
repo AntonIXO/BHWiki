@@ -30,6 +30,7 @@ const substanceLists = [
   ["Legal", "legal"],
 ] as const;
 const optionalSubstanceLists = [["Identification tests", "identificationTests"], ["External wiki links", "externalWikiLinks"]] as const;
+const optionalSubstanceProse = [["Monitoring cadence", "monitoringCadence"]] as const;
 
 const substanceProseFields = new Set<string>(substanceProse.map(([, field]) => field));
 const substanceListFields = new Set<string>(substanceLists.map(([, field]) => field));
@@ -37,6 +38,8 @@ const substanceHeadings = new Map<string, { field: string; kind: "prose" | "list
 for (const [title, field] of substanceProse) substanceHeadings.set(title, { field, kind: "prose" });
 for (const [title, field] of substanceLists) substanceHeadings.set(title, { field, kind: "list" });
 for (const [title, field] of optionalSubstanceLists) substanceHeadings.set(title, { field, kind: "list" });
+for (const [title, field] of optionalSubstanceProse) substanceHeadings.set(title, { field, kind: "prose" });
+substanceHeadings.set("Monitoring", { field: "monitoring", kind: "list" });
 substanceHeadings.set("Duration", { field: "timeline", kind: "list" });
 
 export class ContentFormatError extends Error {
