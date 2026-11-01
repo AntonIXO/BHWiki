@@ -46,20 +46,9 @@ test("coverage audit reports mapped, unmapped, and ambiguous identities determin
   assert.equal(report.ambiguous[0].canonicalSlug, null);
 });
 
-test("identity stubs retain only source-backed identity and remain drafts", () => {
+test("identity-only candidates are never published as empty substances", () => {
   const candidate = fixture.candidates.find((row) => row.name === "Famciclovir")!;
-  const stub = buildOptiHealthSubstanceStub(candidate, fixture.generatedAt);
-  validateSubstance(stub);
-  assert.equal(stub.slug, "famciclovir");
-  assert.equal(stub.editorialStatus, "sourced-draft");
-  assert.equal(stub.pubchemCid, null);
-  assert.equal(stub.formula, "Not established");
-  assert.equal(stub.doses.length, 0);
-  assert.equal(stub.effects.length, 0);
-  assert.equal(stub.outcomes.length, 0);
-  assert.equal(stub.claims.length, 0);
-  assert.equal(stub.interactions.length, 0);
-  assert.match(stub.evidenceNote, /identity only/i);
+  assert.throws(() => buildOptiHealthSubstanceStub(candidate, fixture.generatedAt), /not publishable/);
 });
 
 test("ambiguous branded lutein remains review-only and cannot generate a stub", () => {
@@ -69,9 +58,9 @@ test("ambiguous branded lutein remains review-only and cannot generate a stub", 
   assert.throws(() => buildOptiHealthSubstanceStub(candidate, fixture.generatedAt), /ambiguous candidate is review-only/);
 });
 
-test("re-running after applying the fixture is a deterministic no-op", () => {
+test("identity-only fixture remains a deterministic no-op", () => {
   const plan = planOptiHealthSubstanceStubs(process.cwd(), fixture);
-  assert.deepEqual(plan.report.counts, { mapped: 2, unmapped: 0, ambiguous: 1, total: 3 });
+  assert.deepEqual(plan.report.counts, { mapped: 0, unmapped: 2, ambiguous: 1, total: 3 });
   assert.deepEqual(plan.writes, []);
 });
 

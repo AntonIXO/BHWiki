@@ -41,7 +41,7 @@ WHERE e.entity_type = 'substance'
     FROM bhwiki.articles AS a
     JOIN bhwiki.article_revisions AS r ON r.id = a.published_revision_id
     WHERE a.entity_id = e.id
-      AND r.document->>'subtitle' = 'Reddit index evidence trail.'
+      AND r.document->>'subtitle' IN ('Reddit index evidence trail.', 'Source-backed identity stub.')
       AND coalesce(jsonb_array_length(r.document->'pkObservations'), 0) = 0
       AND coalesce(jsonb_array_length(r.document->'modifiers'), 0) = 0
       AND coalesce(jsonb_array_length(r.document->'doses'), 0) = 0

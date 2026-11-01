@@ -31,17 +31,7 @@ test('class tags cite the inspected papers',()=>{
 test('published substances include sourced research or evidence records',()=>{
  const stubs=substances.filter(substance=>substance.subtitle==='Identity record.');
  assert.equal(stubs.length,0);
- const identityOnly=substances.filter(substance=>substance.subtitle==='Source-backed identity stub.');
- assert.ok(identityOnly.length>=2);
- for(const substance of identityOnly){
-  assert.equal(substance.editorialStatus,'sourced-draft');
-  assert.ok(substance.references.length>0, substance.slug);
-  assert.equal(substance.doses.length,0, substance.slug);
-  assert.equal(substance.effects.length,0, substance.slug);
-  assert.equal(substance.outcomes.length,0, substance.slug);
-  assert.equal(substance.claims.length,0, substance.slug);
-  assert.equal(substance.interactions.length,0, substance.slug);
- }
+ assert.equal(substances.filter(substance=>substance.subtitle==='Source-backed identity stub.').length,0);
  for(const substance of substances){
   const hasEvidence=[substance.doses,substance.modifiers,substance.effects,substance.outcomes,substance.mechanisms,substance.cautions,substance.claims,substance.interactions,substance.legal,substance.identificationTests??[]].some(items=>items.length>0);
   const hasNonIdentitySource=substance.references.some(reference=>reference.id!=='pubchem');

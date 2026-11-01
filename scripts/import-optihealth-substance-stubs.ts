@@ -3,8 +3,6 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
   loadCorpus,
-  parseContentSource,
-  serializeContent,
 } from "../src/lib/content-markdown";
 import {
   validateCanonicalSources,
@@ -209,73 +207,22 @@ export function auditOptiHealthCoverage(input: OptiHealthCandidateFile, corpus: 
 export const auditCoverage = auditOptiHealthCoverage;
 
 /** Build an identity-only sourced draft. No effects, doses, structures, or relations are inferred. */
-export function buildOptiHealthSubstanceStub(candidate: OptiHealthCandidate, generatedAt: string): Substance {
+export function buildOptiHealthSubstanceStub(candidate: OptiHealthCandidate, _generatedAt: string): never {
   if (candidate.identityStatus === "ambiguous") throw new Error(`ambiguous candidate is review-only: ${candidate.name}`);
-  if (!candidate.canonicalSlug) throw new Error(`Candidate has no canonical slug: ${candidate.name}`);
-  const sourceId = candidate.references[0]?.id;
-  if (!sourceId) throw new Error(`Candidate has no identity source: ${candidate.name}`);
-  const identityObservation = `${candidate.canonicalSlug}-identity-unassessed`;
-  const date = generatedAt.slice(0, 10);
-  return {
-    slug: candidate.canonicalSlug,
-    name: candidate.name,
-    subtitle: "Source-backed identity stub.",
-    summary: `${candidate.name} is recorded as a canonical identity from a source-backed OptiHealth candidate. This draft does not assert effects, dosing, safety, or efficacy.`,
-    description: `This page records the source-backed identity label ${candidate.name}. The import preserves the candidate's aliases and source trail only; molecular structure, pharmacokinetics, effects, dosing, safety, and efficacy remain unestablished here.`,
-    aliases: [...candidate.aliases],
-    formula: "Not established",
-    molecularWeight: "Not established",
-    pubchemCid: null,
-    smiles: "Not established",
-    category: "Identity record",
-    tags: [],
-    accent: "#a9b993",
-    evidenceNote: "Identity only import: the cited sources support candidate identity provenance, not an evidence review. No biological relationship or clinical claim is asserted.",
-    reviewedAt: date,
-    editorialStatus: "sourced-draft",
-    halfLife: { label: "Not established", low: null, high: null, context: "No pharmacokinetic observation was supplied by this identity import.", sourceId, observationId: identityObservation },
-    pkObservations: [{ id: identityObservation, analyte: candidate.name, route: "Not assessed", formulation: "Identity-only record", population: "Not assessed", endpoint: "elimination-half-life", statistic: "not-established", value: null, low: null, high: null, unit: "hours", context: "This identity import does not establish a pharmacokinetic observation.", sourceId, modelEligible: false }],
-    kinetics: { onset: "Not established", peak: "Not established", duration: "Not established", bioavailability: "Not established", metabolism: "Not established", sourceId },
-    modifiers: [],
-    doses: [],
-    effects: [],
-    outcomes: [],
-    claims: [],
-    mechanisms: [],
-    cautions: [],
-    interactions: [],
-    experienceLinks: [],
-    references: structuredClone(candidate.references),
-    legal: [],
-  };
+  throw new Error(`Identity-only substance stubs are not publishable: ${candidate.name}`);
 }
 
-function substanceOrder(root: string, corpus: { substances: Substance[] }): number {
-  const orders = corpus.substances.map((substance) => {
-    const file = path.join(root, "content", "substances", `${substance.slug}.md`);
-    return parseContentSource(`substances/${substance.slug}.md`, readFileSync(file, "utf8")).order;
-  }).filter((order) => order !== Number.MAX_SAFE_INTEGER);
-  return (orders.length ? Math.max(...orders) : 0) + 1;
-}
-
-/** Validate the complete corpus and return deterministic source-file writes; do not write by default. */
 export function planOptiHealthSubstanceStubs(root: string, input: unknown): StubImportPlan {
   const file = validateOptiHealthCandidateFile(input);
   const contentRoot = path.join(root, "content");
   const corpus = loadCorpus(contentRoot);
   const report = auditOptiHealthCoverage(file, corpus);
   const candidates = new Map(file.candidates.map((candidate) => [candidate.sourceId, candidate]));
-  let nextOrder = substanceOrder(root, corpus);
   const writes: PlannedStubWrite[] = [];
   for (const coverage of report.unmapped) {
-    const candidate = candidates.get(coverage.sourceId)!;
-    const record = buildOptiHealthSubstanceStub(candidate, file.generatedAt);
-    const relativePath = `substances/${record.slug}.md`;
-    const source = serializeContent(relativePath, { collection: "substances", record, order: nextOrder++ }).replace(/\n+$/, "\n");
-    const roundTrip = parseContentSource(relativePath, source);
-    if (JSON.stringify(roundTrip.record) !== JSON.stringify(record)) throw new Error(`Stub changed during Markdown round trip: ${relativePath}`);
-    corpus.substances.push(record);
-    writes.push({ relativePath, source, record });
+    // Unmapped identity candidates remain in the coverage report only. They do
+    // not become empty public articles without structured evidence.
+    void candidates.get(coverage.sourceId);
   }
   validateContent(corpus);
   validateCanonicalSources(corpus.substances.flatMap((substance) => substance.references));
