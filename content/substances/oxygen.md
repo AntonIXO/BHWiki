@@ -77,10 +77,10 @@ PubMed abstract retrieved for PMID 25703942; no PMC full text was available. The
 
 ```yaml
 - label: Hyperbaric oxygen cognitive study
-  amount: null
+  amount: Not reported in abstract
   quantity: null
   quantityMax: null
-  unit: null
+  unit: not-reported
   ingredient: Hyperbaric oxygen
   formulation: HBO exposure
   route: inhaled under hyperbaric conditions
@@ -88,6 +88,7 @@ PubMed abstract retrieved for PMID 25703942; no PMC full text was available. The
   duration: Not reported in abstract
   population: 20 healthy young adults
   purpose: Research exposure; not a treatment recommendation.
+  sourceCategory: research
   note: Pressure and oxygen concentration were not stated in the PubMed abstract.
   sourceId: reddit-pmid-25703942
 ```
@@ -101,7 +102,7 @@ PubMed abstract retrieved for PMID 25703942; no PMC full text was available. The
   formulation: Hyperbaric oxygen
   population: Healthy young adults
   endpoint: elimination-half-life
-  statistic: not-applicable
+  statistic: not-established
   value: null
   low: null
   high: null

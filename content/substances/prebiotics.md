@@ -71,7 +71,7 @@ This page links PubMed evidence for prebiotics. Study populations, formulations 
 
 The linked randomized human trial compared FOS and B-GOS with maltodextrin for 3 weeks; only B-GOS lowered the cortisol awakening response and shifted emotional attention. No pharmacokinetic estimate was reported.
 
-Reviewed PubMed abstracts for PMID(s) 25449699. Rights-eligible PMC full text reviewed: PMC4410136.
+Reviewed PubMed abstracts for PMID(s) 25449699. PMC citation PMC4410136 was checked; rights-eligible full-text retrieval was not available in this pass.
 
 ## Doses
 
@@ -228,7 +228,7 @@ Reviewed PubMed abstracts for PMID(s) 25449699. Rights-eligible PMC full text re
   url: https://pubmed.ncbi.nlm.nih.gov/25449699/
   kind: PubMed publication
   insight: The salivary cortisol awakening response was significantly lower after B-GOS intake compared with placebo.
-  limitation: PubMed abstract and rights-eligible PMC full text (PMC4410136) were reviewed; applicability remains limited to the reported design and population.
+  limitation: PubMed abstract was reviewed; PMC citation PMC4410136 was identified but rights-eligible full-text retrieval was unavailable in this pass.
   pmid: '25449699'
   doi: 10.1007/s00213-014-3810-0
   pmcid: PMC4410136

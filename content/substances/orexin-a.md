@@ -77,10 +77,10 @@ PubMed abstracts retrieved for PMIDs 19624551 and 23516292; full-text retrieval 
 
 ```yaml
 - label: Hippocampal slice orexin-A experiment
-  amount: null
+  amount: Not reported in abstract
   quantity: null
   quantityMax: null
-  unit: null
+  unit: not-reported
   ingredient: Orexin-A (hypocretin-1)
   formulation: Exogenous peptide in acute mouse brain slices
   route: Ex vivo bath application
@@ -92,10 +92,10 @@ PubMed abstracts retrieved for PMIDs 19624551 and 23516292; full-text retrieval 
   note: Concentration not stated in abstract.
   sourceId: reddit-pmid-19624551
 - label: Nasal Hcrt-1 rescue experiment
-  amount: null
+  amount: Not reported in abstract
   quantity: null
   quantityMax: null
-  unit: null
+  unit: not-reported
   ingredient: Exogenous Hcrt-1 (orexin-A)
   formulation: Nasal administration in mice
   route: intranasal
@@ -103,6 +103,7 @@ PubMed abstracts retrieved for PMIDs 19624551 and 23516292; full-text retrieval 
   duration: Not reported in abstract
   population: Orexin-neuron-depleted transgenic mice
   purpose: Preclinical exposure; not a human dosing recommendation.
+  sourceCategory: research
   note: Amount not stated in abstract.
   sourceId: reddit-pmid-23516292
 ```
@@ -116,7 +117,7 @@ PubMed abstracts retrieved for PMIDs 19624551 and 23516292; full-text retrieval 
   formulation: Peptide
   population: Mouse experiments
   endpoint: elimination-half-life
-  statistic: not-reported
+  statistic: not-established
   value: null
   low: null
   high: null

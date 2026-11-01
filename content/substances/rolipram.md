@@ -71,7 +71,7 @@ This page links PubMed evidence for rolipram. Study populations, formulations an
 
 Corpus import reviewed 3 PubMed abstracts and retained 3 linked source records. Full-text methods, funding, conflicts, and legal context were not comprehensively reviewed.
 
-Reviewed PubMed abstracts for PMID(s) 10633490, 22629087, 9844008. Rights-eligible PMC full text reviewed: PMC24568.
+Reviewed PubMed abstracts for PMID(s) 10633490, 22629087, 9844008. PMC citation PMC24568 was checked; rights-eligible full-text retrieval was not available in this pass.
 
 ## Doses
 
@@ -267,7 +267,7 @@ Reviewed PubMed abstracts for PMID(s) 10633490, 22629087, 9844008. Rights-eligib
   url: https://pubmed.ncbi.nlm.nih.gov/9844008/
   kind: PubMed publication
   insight: In an attempt to improve behavioral memory, we devised a strategy to amplify the signal-to-noise ratio of the cAMP pathway, which plays a central role in hippocampal synaptic plasticity and behavioral memory.
-  limitation: PubMed abstract and rights-eligible PMC full text (PMC24568) were reviewed; applicability remains limited to the reported design and population.
+  limitation: PubMed abstract was reviewed; PMC citation PMC24568 was identified but rights-eligible full-text retrieval was unavailable in this pass.
   pmid: '9844008'
   doi: 10.1073/pnas.95.25.15020
   funding: Not assessed in this corpus pass.

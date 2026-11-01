@@ -88,6 +88,7 @@ PubMed abstracts retrieved for PMIDs 23707331 and 24412554; no PMC full text was
   duration: 9 weeks
   population: 40 healthy elderly volunteers (20 per group)
   purpose: Research exposure; not a dosing recommendation.
+  sourceCategory: research
   note: Compared with placebo.
   sourceId: reddit-pmid-23707331
 - label: Adolescent mood/cognition trial
@@ -102,6 +103,7 @@ PubMed abstracts retrieved for PMIDs 23707331 and 24412554; no PMC full text was
   duration: 4 weeks
   population: 48 healthy males aged 14–17 years
   purpose: Research exposure; not a dosing recommendation.
+  sourceCategory: research
   note: Between-group results were limited; long-term safety not established.
   sourceId: reddit-pmid-24412554
 ```
@@ -115,7 +117,7 @@ PubMed abstracts retrieved for PMIDs 23707331 and 24412554; no PMC full text was
   formulation: Seed capsule
   population: Healthy volunteers
   endpoint: elimination-half-life
-  statistic: not-reported
+  statistic: not-established
   value: null
   low: null
   high: null
@@ -155,7 +157,7 @@ PubMed abstracts retrieved for PMIDs 23707331 and 24412554; no PMC full text was
 - id: reddit-nigella-sativa-cognition-24412554
   conceptId: cognitive-performance
   name: Cognitive Performance
-  direction: Mixed
+  direction: Variable
   evidence: Human research
   description: The adolescent study found selected short- and long-term recall differences, but not a consistent between-group effect across cognition, mood, and anxiety measures.
   sourceId: reddit-pmid-24412554

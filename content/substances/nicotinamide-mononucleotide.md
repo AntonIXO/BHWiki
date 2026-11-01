@@ -18,7 +18,7 @@ halfLife:
   high: null
   context: No pharmacokinetic observation was supplied by this identity import.
   sourceId: optihealth-substance-00000000-0000-4000-a001-000000000008
-  observationId: nicotinamide-mononucleotide-identity-unassessed
+  observationId: nicotinamide-mononucleotide-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -79,10 +79,10 @@ The Reddit-linked Cell paper (PMID 24360282) concerns age-related NAD+ decline a
 
 ```yaml
 - label: NMN mouse metabolic study
-  amount: null
+  amount: Not reported in abstract
   quantity: null
   quantityMax: null
-  unit: null
+  unit: not-reported
   ingredient: Nicotinamide mononucleotide
   formulation: Experimental NMN
   route: Not reported in abstract
@@ -90,6 +90,7 @@ The Reddit-linked Cell paper (PMID 24360282) concerns age-related NAD+ decline a
   duration: Not reported in abstract
   population: Diet- and age-induced diabetes mice
   purpose: Preclinical exposure; not a human dosing recommendation.
+  sourceCategory: research
   note: Dose and route are not stated in the PubMed abstract.
   sourceId: reddit-pmid-21982712
 ```
@@ -103,7 +104,7 @@ The Reddit-linked Cell paper (PMID 24360282) concerns age-related NAD+ decline a
   formulation: Experimental NMN
   population: Mice
   endpoint: elimination-half-life
-  statistic: not-reported
+  statistic: not-established
   value: null
   low: null
   high: null
@@ -131,7 +132,7 @@ The Reddit-linked Cell paper (PMID 24360282) concerns age-related NAD+ decline a
 - id: reddit-nmn-glycemic-control-21982712
   conceptId: glycemic-control
   name: Glucose Intolerance
-  direction: Improved
+  direction: Increased
   evidence: Limited research
   description: NMN ameliorated glucose intolerance in high-fat-diet- and age-induced diabetes mouse models.
   sourceId: reddit-pmid-21982712
@@ -143,7 +144,7 @@ The Reddit-linked Cell paper (PMID 24360282) concerns age-related NAD+ decline a
 - id: reddit-nmn-lipid-profile-21982712
   conceptId: ldl-cholesterol
   name: Lipid Profile
-  direction: Improved
+  direction: Increased
   evidence: Limited research
   description: NMN improved lipid profiles in age-induced diabetes mice.
   sourceId: reddit-pmid-21982712

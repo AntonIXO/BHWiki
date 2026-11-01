@@ -77,10 +77,10 @@ PubMed abstract retrieved for PMID 15729085. No PMC full text was available thro
 
 ```yaml
 - label: N-PEP-12 randomized trial
-  amount: null
+  amount: Not reported in abstract
   quantity: null
   quantityMax: null
-  unit: null
+  unit: not-reported
   ingredient: N-PEP-12
   formulation: Oral N-PEP-12
   route: oral
@@ -102,7 +102,7 @@ PubMed abstract retrieved for PMID 15729085. No PMC full text was available thro
   formulation: N-PEP-12
   population: 54 adults aged 50 years or older
   endpoint: elimination-half-life
-  statistic: not-reported
+  statistic: not-established
   value: null
   low: null
   high: null
@@ -142,7 +142,7 @@ PubMed abstract retrieved for PMID 15729085. No PMC full text was available thro
 - id: reddit-n-pep-12-cognitive-performance-15729085
   conceptId: cognitive-performance
   name: Cognitive Performance
-  direction: Mixed
+  direction: Variable
   evidence: Human research
   description: SKT and clinical ratings favored N-PEP-12, whereas digit cancellation, digit span, verbal fluency, and other tests were not uniformly improved.
   sourceId: reddit-pmid-15729085

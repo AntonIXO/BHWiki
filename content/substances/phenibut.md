@@ -81,7 +81,7 @@ Clinical studies concern adjustment disorder, headache, facial pain, ADHD, vascu
 
 No adequate healthy-volunteer efficacy trial or modern human PK study was identified. Published poison-center and case-series data document CNS depression, coma/airway support, agitation, psychosis, tolerance, dependence and severe withdrawal, while incidence cannot be inferred from passive or case-selected datasets. [dr-phenibut-s16][dr-phenibut-s20]
 
-Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. Rights-eligible PMC full text reviewed: PMC3604470.
+Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. PMC citation PMC3604470 was checked; rights-eligible full-text retrieval was not available in this pass.
 
 ## Doses
 
@@ -720,7 +720,7 @@ Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. Rig
   url: https://pubmed.ncbi.nlm.nih.gov/23391959/
   kind: PubMed publication
   insight: While phenibut was helpful initially, the patient developed dependence including tolerance, significant withdrawal symptoms within 3-4 h of last use and failure to fulfil his roles at work and at home.
-  limitation: PubMed abstract and rights-eligible PMC full text (PMC3604470) were reviewed; applicability remains limited to the reported design and population.
+  limitation: PubMed abstract was reviewed; PMC citation PMC3604470 was identified but rights-eligible full-text retrieval was unavailable in this pass.
   pmid: '23391959'
   doi: 10.1136/bcr-2012-008381
   funding: Not assessed in this corpus pass.

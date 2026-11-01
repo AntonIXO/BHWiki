@@ -18,7 +18,7 @@ halfLife:
   high: null
   context: No pharmacokinetic observation was supplied by this identity import.
   sourceId: optihealth-substance-01a08b04-2f93-78f3-8990-fca1b82c6f4e
-  observationId: nicotinamide-riboside-identity-unassessed
+  observationId: nicotinamide-riboside-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -77,10 +77,10 @@ PubMed abstract retrieved for PMID 22682224; PMC full text retrieval was attempt
 
 ```yaml
 - label: NR metabolic study
-  amount: null
+  amount: Not reported in abstract
   quantity: null
   quantityMax: null
-  unit: null
+  unit: not-reported
   ingredient: Nicotinamide riboside
   formulation: Experimental NR
   route: Not reported in abstract
@@ -88,6 +88,7 @@ PubMed abstract retrieved for PMID 22682224; PMC full text retrieval was attempt
   duration: Not reported in abstract
   population: Mammalian cells and high-fat-diet mice
   purpose: Preclinical exposure; not a human dosing recommendation.
+  sourceCategory: research
   note: Dose and route are not stated in the PubMed abstract.
   sourceId: reddit-pmid-22682224
 ```
@@ -101,7 +102,7 @@ PubMed abstract retrieved for PMID 22682224; PMC full text retrieval was attempt
   formulation: Experimental NR
   population: Cells and mice
   endpoint: elimination-half-life
-  statistic: not-reported
+  statistic: not-established
   value: null
   low: null
   high: null
@@ -129,7 +130,7 @@ PubMed abstract retrieved for PMID 22682224; PMC full text retrieval was attempt
 - id: reddit-nr-metabolic-abnormalities-22682224
   conceptId: glycemic-control
   name: Metabolic Abnormalities
-  direction: Improved
+  direction: Increased
   evidence: Limited research
   description: NR protected against high-fat-diet-induced metabolic abnormalities in mice while increasing NAD+ bioavailability.
   sourceId: reddit-pmid-22682224

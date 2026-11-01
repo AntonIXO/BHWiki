@@ -18,7 +18,7 @@ halfLife:
   high: null
   context: No pharmacokinetic observation was supplied by this identity import.
   sourceId: optihealth-substance-019fe218-43ed-73e7-8a69-12a62ccbc3d9
-  observationId: nefiracetam-identity-unassessed
+  observationId: nefiracetam-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -102,7 +102,7 @@ PubMed abstract retrieved for PMID 26915605; no PMC full text was available. The
   formulation: Nefiracetam
   population: Poststroke apathy trial participants
   endpoint: elimination-half-life
-  statistic: not-reported
+  statistic: not-established
   value: null
   low: null
   high: null
@@ -130,7 +130,7 @@ PubMed abstract retrieved for PMID 26915605; no PMC full text was available. The
 - id: reddit-nefiracetam-apathy-26915605
   conceptId: apathy
   name: Apathy severity
-  direction: Null
+  direction: Variable
   evidence: Human research
   description: Nefiracetam was not more efficacious than placebo for poststroke apathy at 12 weeks.
   sourceId: reddit-pmid-26915605

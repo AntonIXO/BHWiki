@@ -88,6 +88,7 @@ PubMed abstracts retrieved for seven linked publications; PMC full text was retr
   duration: Acute testing 50 minutes post-dose in PMID 18801829; timing varied across studies.
   population: Healthy adult volunteers; sex and sample size varied by study.
   purpose: Research exposure; not a dosing recommendation.
+  sourceCategory: research
   note: Several linked studies used 24 IU; not all abstracts specify dose.
   sourceId: reddit-pmid-18801829
 ```
@@ -101,7 +102,7 @@ PubMed abstracts retrieved for seven linked publications; PMC full text was retr
   formulation: Oxytocin nasal spray
   population: Healthy volunteers
   endpoint: elimination-half-life
-  statistic: not-reported
+  statistic: not-established
   value: null
   low: null
   high: null
@@ -131,7 +132,7 @@ PubMed abstracts retrieved for seven linked publications; PMC full text was retr
   exposure: Single 24 IU intranasal oxytocin
   instrument: Facial-emotion processing tasks
   magnitude: Task-specific reaction-time and classification changes.
-  reportType: randomized-controlled-trial
+  reportType: measured-assessment
 - id: reddit-oxytocin-biological-motion-19679759
   conceptId: perception
   name: Biological-motion perception
@@ -172,11 +173,11 @@ PubMed abstracts retrieved for seven linked publications; PMC full text was retr
   exposure: 24 IU intranasal oxytocin
   instrument: Self/non-self adjective sorting
   magnitude: Stronger positive self-attribution; effect size not reported.
-  reportType: randomized-controlled-trial
+  reportType: measured-assessment
 - id: reddit-oxytocin-social-rejection-20695687
   conceptId: anxiety
   name: Social-rejection response
-  direction: Null
+  direction: Variable
   evidence: Human research
   description: Oxytocin did not reduce acute negative affect or attachment reactions to social rejection, although it increased desire for future interaction after inclusion.
   sourceId: reddit-pmid-20695687
@@ -184,7 +185,7 @@ PubMed abstracts retrieved for seven linked publications; PMC full text was retr
   exposure: Intranasal oxytocin versus placebo
   instrument: Cyberball ostracism paradigm
   magnitude: No buffering of rejection effects; context-specific engagement effect.
-  reportType: randomized-controlled-trial
+  reportType: measured-assessment
 ```
 
 ## Mechanisms

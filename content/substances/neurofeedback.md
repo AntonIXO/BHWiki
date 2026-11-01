@@ -103,6 +103,7 @@ PubMed abstracts retrieved for six linked publications; full-text retrieval was 
   duration: 5 sessions
   population: Healthy adults
   purpose: Research training exposure; not a therapeutic prescription.
+  sourceCategory: research
   note: Eleven of 14 participants showed training success in one study.
   sourceId: reddit-pmid-20850552
 ```
@@ -116,7 +117,7 @@ PubMed abstracts retrieved for six linked publications; full-text retrieval was 
   formulation: Behavioral training
   population: Human research participants
   endpoint: elimination-half-life
-  statistic: not-applicable
+  statistic: not-established
   value: null
   low: null
   high: null
@@ -164,7 +165,7 @@ PubMed abstracts retrieved for six linked publications; full-text retrieval was 
   exposure: Neurofeedback protocols varied across trials
   instrument: ADHD symptom measures
   magnitude: Effectiveness less robust in randomized controlled evidence.
-  reportType: systematic-review
+  reportType: measured-assessment
 ```
 
 ## Mechanisms

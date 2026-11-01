@@ -18,7 +18,7 @@ halfLife:
   high: null
   context: No pharmacokinetic observation was supplied by this identity import.
   sourceId: optihealth-substance-019fe218-43ee-739a-a7f5-85a6321108c6
-  observationId: oxiracetam-019fe218-identity-unassessed
+  observationId: oxiracetam-019fe218-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -88,6 +88,7 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
   duration: Acute and repeated exposure; abstract reports repeated daily 100 mg/kg
   population: Rats
   purpose: Preclinical exposure; not a human dosing recommendation.
+  sourceCategory: research
   note: Oxiracetam 100 mg/kg i.p. antagonized an active-avoidance impairment; 300 mg/kg also increased acetylcholine utilization.
   sourceId: reddit-pmid-3594455
 - label: Neuronal culture study
@@ -102,6 +103,7 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
   duration: Not reported in abstract
   population: Primary cerebellar granule-cell cultures
   purpose: Mechanistic preclinical exposure; not a human dosing recommendation.
+  sourceCategory: research
   note: Exact concentration not stated in abstract.
   sourceId: reddit-pmid-1372342
 ```
@@ -115,7 +117,7 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
   formulation: Experimental oxiracetam
   population: Rats and cultured neurons
   endpoint: elimination-half-life
-  statistic: not-reported
+  statistic: not-established
   value: null
   low: null
   high: null
