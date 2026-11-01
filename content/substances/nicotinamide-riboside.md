@@ -120,18 +120,7 @@ PubMed abstract retrieved for PMID 22682224; PMC full text retrieval was attempt
 ## Effects
 
 ```yaml
-- id: reddit-nr-oxidative-metabolism-22682224
-  conceptId: mitochondrial-biomarkers
-  name: Oxidative Metabolism
-  direction: Improved
-  evidence: Preclinical cell and mouse study
-  description: NR increased NAD+ levels and activated SIRT1/SIRT3, with enhanced oxidative metabolism and protection from high-fat-diet metabolic abnormalities.
-  sourceId: reddit-pmid-22682224
-  population: Mammalian cells and high-fat-diet mice
-  exposure: NR; dose and route not reported in abstract.
-  instrument: NAD+ levels, SIRT1/SIRT3 activity, metabolic phenotypes
-  magnitude: Directional improvement; quantitative estimates not reported in abstract.
-  reportType: preclinical
+[]
 ```
 
 ## Outcomes
@@ -141,7 +130,7 @@ PubMed abstract retrieved for PMID 22682224; PMC full text retrieval was attempt
   conceptId: glycemic-control
   name: Metabolic Abnormalities
   direction: Improved
-  evidence: Preclinical mouse study
+  evidence: Limited research
   description: NR protected against high-fat-diet-induced metabolic abnormalities in mice while increasing NAD+ bioavailability.
   sourceId: reddit-pmid-22682224
   population: High-fat-diet mice

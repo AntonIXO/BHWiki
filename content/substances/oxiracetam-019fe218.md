@@ -134,30 +134,7 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
 ## Effects
 
 ```yaml
-- id: reddit-oxiracetam-ampa-modulation-1372342
-  conceptId: cognitive-performance
-  name: AMPA receptor signaling
-  direction: Increased
-  evidence: In vitro neuronal study
-  description: Micromolar oxiracetam increased the efficacy (not potency) of AMPA-stimulated 45Ca2+ influx and increased AMPA-binding site density in rat cortical synaptic membranes; effects were selective versus kainate/NMDA pathways.
-  sourceId: reddit-pmid-1372342
-  population: Primary cerebellar granule-cell cultures and rat cortical synaptic membranes
-  exposure: Micromolar oxiracetam
-  instrument: AMPA-stimulated 45Ca2+ influx and receptor binding
-  magnitude: Quantitative effect not reported in abstract.
-  reportType: preclinical
-- id: reddit-oxiracetam-cholinergic-3594455
-  conceptId: acetylcholine
-  name: Cholinergic utilization
-  direction: Increased
-  evidence: Preclinical rat study
-  description: Oxiracetam 100 or 300 mg/kg i.p. increased cortical and hippocampal acetylcholine utilization; repeated 100 mg/kg increased hippocampal high-affinity choline uptake by 31%.
-  sourceId: reddit-pmid-3594455
-  population: Rats
-  exposure: Oxiracetam 100–300 mg/kg i.p.
-  instrument: Acetylcholine utilization and high-affinity choline uptake
-  magnitude: 31% increase in hippocampal high-affinity choline uptake after repeated 100 mg/kg.
-  reportType: preclinical
+[]
 ```
 
 ## Outcomes
@@ -167,7 +144,7 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
   conceptId: cognitive-performance
   name: Active-avoidance learning
   direction: Increased
-  evidence: Preclinical rat study
+  evidence: Limited research
   description: Oxiracetam 100 mg/kg i.p. antagonized impairment of active-avoidance acquisition caused by inhibition of acetylcholine synthesis.
   sourceId: reddit-pmid-3594455
   population: Rats

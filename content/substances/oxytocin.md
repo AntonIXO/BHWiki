@@ -124,31 +124,19 @@ PubMed abstracts retrieved for seven linked publications; PMC full text was retr
   conceptId: anxiety
   name: Emotional processing
   direction: Variable
-  evidence: Human randomized studies
-  description: A single 24 IU intranasal dose slowed fearful-face identification and reduced misclassification of positive emotions as negative, without changing subjective mood or anxiety ratings.
+  evidence: Human research
+  description: A single 24 IU intranasal dose altered fearful-face identification and positive-emotion classification without changing subjective anxiety ratings.
   sourceId: reddit-pmid-18801829
   population: 29 healthy male volunteers
   exposure: Single 24 IU intranasal oxytocin
-  instrument: Facial-emotion processing tasks; mood and anxiety ratings
-  magnitude: Task-specific reaction-time and classification changes; no mood/anxiety difference.
-  reportType: randomized-controlled-trial
-- id: reddit-oxytocin-social-memory-19129382
-  conceptId: episodic-memory
-  name: Social recognition memory
-  direction: Increased
-  evidence: Human randomized study
-  description: Intranasal oxytocin improved recognition of previously seen faces but not recollection or memory for nonsocial stimuli.
-  sourceId: reddit-pmid-19129382
-  population: Healthy male volunteers
-  exposure: Intranasal oxytocin; amount not shown in abstract.
-  instrument: Face-recognition task
-  magnitude: Selective improvement; effect size not reported.
+  instrument: Facial-emotion processing tasks
+  magnitude: Task-specific reaction-time and classification changes.
   reportType: randomized-controlled-trial
 - id: reddit-oxytocin-biological-motion-19679759
   conceptId: perception
   name: Biological-motion perception
   direction: Increased
-  evidence: Human randomized study
+  evidence: Human research
   description: Oxytocin increased sensitivity to biological but not nonbiological motion in 20 healthy volunteers.
   sourceId: reddit-pmid-19679759
   population: 20 healthy volunteers
@@ -165,7 +153,7 @@ PubMed abstracts retrieved for seven linked publications; PMC full text was retr
   conceptId: anxiety
   name: Attachment security
   direction: Increased
-  evidence: Human randomized within-subject study
+  evidence: Human research
   description: In 26 healthy men with insecure attachment, a single intranasal dose increased ranking of secure-attachment phrases in 18 participants (69%).
   sourceId: reddit-pmid-19457618
   population: 26 healthy male students with insecure attachment
@@ -174,10 +162,10 @@ PubMed abstracts retrieved for seven linked publications; PMC full text was retr
   magnitude: 18/26 (69%) increased secure-attachment rankings.
   reportType: measured-assessment
 - id: reddit-oxytocin-self-attribution-25439340
-  conceptId: self-esteem
+  conceptId: cognitive-performance
   name: Positive self-attribution
   direction: Increased
-  evidence: Human randomized study
+  evidence: Human research
   description: In 60 healthy men, 24 IU oxytocin increased positive self-attitudes during adjective self/non-self sorting versus placebo.
   sourceId: reddit-pmid-25439340
   population: 60 healthy male participants
@@ -189,7 +177,7 @@ PubMed abstracts retrieved for seven linked publications; PMC full text was retr
   conceptId: anxiety
   name: Social-rejection response
   direction: Null
-  evidence: Human randomized study
+  evidence: Human research
   description: Oxytocin did not reduce acute negative affect or attachment reactions to social rejection, although it increased desire for future interaction after inclusion.
   sourceId: reddit-pmid-20695687
   population: 74 healthy men and women

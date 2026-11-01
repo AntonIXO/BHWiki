@@ -135,30 +135,7 @@ PubMed abstracts retrieved for PMIDs 19624551 and 23516292; full-text retrieval 
 ## Effects
 
 ```yaml
-- id: reddit-orexin-a-synaptic-plasticity-19624551
-  conceptId: cognitive-performance
-  name: Synaptic Plasticity
-  direction: Variable
-  evidence: Preclinical mouse slice study
-  description: Orexin-A induced long-term potentiation in adult slices but long-term depression in juvenile slices; orexin receptor-1 and several kinases mediated the bidirectional effect.
-  sourceId: reddit-pmid-19624551
-  population: Mouse hippocampal slices
-  exposure: Orexin-A ex vivo
-  instrument: Schaffer collateral–CA1 field EPSP recordings
-  magnitude: Age- and inhibitor-dependent direction; quantitative values not in abstract.
-  reportType: preclinical
-- id: reddit-orexin-a-social-memory-23516292
-  conceptId: episodic-memory
-  name: Social Memory
-  direction: Increased
-  evidence: Preclinical mouse study
-  description: Orexin-neuron-depleted mice had impaired long-term social memory; nasal exogenous Hcrt-1 partly restored performance.
-  sourceId: reddit-pmid-23516292
-  population: Orexin/ataxin-3 transgenic mice
-  exposure: Nasal Hcrt-1 rescue
-  instrument: Two-enclosure homecage social-memory test
-  magnitude: Partial restoration; quantitative magnitude not in abstract.
-  reportType: preclinical
+[]
 ```
 
 ## Outcomes
@@ -168,7 +145,7 @@ PubMed abstracts retrieved for PMIDs 19624551 and 23516292; full-text retrieval 
   conceptId: episodic-memory
   name: Social recognition memory
   direction: Increased
-  evidence: Preclinical mouse study
+  evidence: Limited research
   description: Exogenous Hcrt-1 partly rescued long-term social-memory deficits in orexin-neuron-depleted mice.
   sourceId: reddit-pmid-23516292
   population: Orexin/ataxin-3 transgenic mice

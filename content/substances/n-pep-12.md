@@ -121,18 +121,7 @@ PubMed abstract retrieved for PMID 15729085. No PMC full text was available thro
 ## Effects
 
 ```yaml
-- id: reddit-n-pep-12-memory-15729085
-  conceptId: memory
-  name: Memory
-  direction: Increased
-  evidence: Human randomized trial
-  description: After 30 days, N-PEP-12-treated participants performed better than placebo on the primary ADAS-cog Memory score; SKT and clinical ratings also favored treatment, while some secondary tests did not.
-  sourceId: reddit-pmid-15729085
-  population: 54 healthy men and women aged 50 years or older with subjective and objective memory loss
-  exposure: Oral N-PEP-12 daily for 30 days; abstract does not state the amount.
-  instrument: ADAS-cog Memory; Syndrom Kurz Test; digit cancellation; digit span; verbal fluency; clinical ratings
-  magnitude: Primary and selected secondary outcomes favored N-PEP-12; effect size not reported in abstract.
-  reportType: randomized-controlled-trial
+[]
 ```
 
 ## Outcomes
@@ -142,7 +131,7 @@ PubMed abstract retrieved for PMID 15729085. No PMC full text was available thro
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
-  evidence: Human randomized trial
+  evidence: Human research
   description: The primary ADAS-cog Memory score favored N-PEP-12 over placebo after 30 days.
   sourceId: reddit-pmid-15729085
   population: 54 adults aged 50 years or older with age-related memory loss
@@ -154,7 +143,7 @@ PubMed abstract retrieved for PMID 15729085. No PMC full text was available thro
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Mixed
-  evidence: Human randomized trial
+  evidence: Human research
   description: SKT and clinical ratings favored N-PEP-12, whereas digit cancellation, digit span, verbal fluency, and other tests were not uniformly improved.
   sourceId: reddit-pmid-15729085
   population: 54 adults aged 50 years or older

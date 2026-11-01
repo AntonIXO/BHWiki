@@ -134,30 +134,7 @@ PubMed abstracts retrieved for PMIDs 23707331 and 24412554; no PMC full text was
 ## Effects
 
 ```yaml
-- id: reddit-nigella-sativa-cognitive-performance-23707331
-  conceptId: cognitive-performance
-  name: Cognitive Performance
-  direction: Increased
-  evidence: Human randomized trial
-  description: In 40 healthy older adults, 500 mg twice daily for 9 weeks produced significant changes in logical memory, digit span, delayed recall, figure-copy, letter-cancellation, trail-making, and Stroop measures; biochemical cardiac, hepatic, and renal markers did not change significantly.
-  sourceId: reddit-pmid-23707331
-  population: 40 healthy older volunteers
-  exposure: 500 mg Nigella sativa seed capsule twice daily for 9 weeks
-  instrument: Logical memory, digit span, Rey-Osterrieth figure, letter cancellation, trail making, Stroop
-  magnitude: Multiple p<0.05 findings; effect sizes not reported in abstract.
-  reportType: randomized-controlled-trial
-- id: reddit-nigella-sativa-anxiety-24412554
-  conceptId: anxiety
-  name: Anxiety
-  direction: Mixed
-  evidence: Human randomized trial
-  description: In adolescents, some within-group trait-anxiety changes occurred after 4 weeks, but no significant between-group difference was found for state anxiety and the abstract does not support a robust treatment effect.
-  sourceId: reddit-pmid-24412554
-  population: 48 healthy males aged 14–17 years
-  exposure: 500 mg/day Nigella sativa for 4 weeks
-  instrument: State-Trait Anxiety Inventory
-  magnitude: Between-group anxiety effects not significant.
-  reportType: randomized-controlled-trial
+[]
 ```
 
 ## Outcomes
@@ -167,7 +144,7 @@ PubMed abstracts retrieved for PMIDs 23707331 and 24412554; no PMC full text was
   conceptId: memory
   name: Memory
   direction: Increased
-  evidence: Human randomized trial
+  evidence: Human research
   description: Logical memory, digit span, delayed recall, and Rey-Osterrieth figure scores improved in the 9-week older-adult trial.
   sourceId: reddit-pmid-23707331
   population: 40 healthy older adults
@@ -179,7 +156,7 @@ PubMed abstracts retrieved for PMIDs 23707331 and 24412554; no PMC full text was
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Mixed
-  evidence: Human randomized trial
+  evidence: Human research
   description: The adolescent study found selected short- and long-term recall differences, but not a consistent between-group effect across cognition, mood, and anxiety measures.
   sourceId: reddit-pmid-24412554
   population: 48 healthy males aged 14–17 years

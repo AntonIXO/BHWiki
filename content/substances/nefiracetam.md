@@ -121,18 +121,7 @@ PubMed abstract retrieved for PMID 26915605; no PMC full text was available. The
 ## Effects
 
 ```yaml
-- id: reddit-nefiracetam-apathy-26915605
-  conceptId: apathy
-  name: Poststroke apathy
-  direction: Null
-  evidence: Human randomized trial
-  description: Apathy Scale scores decreased overall, but the between-group difference at week 12 was not significant.
-  sourceId: reddit-pmid-26915605
-  population: 13 randomized patients with recent stroke and apathy
-  exposure: Nefiracetam 900 mg/day for 12 weeks versus placebo
-  instrument: 14-item Apathy Scale
-  magnitude: Mean overall change −7.0 points (95% CI −14.6 to 0.6); between-group P > .14.
-  reportType: randomized-controlled-trial
+[]
 ```
 
 ## Outcomes
@@ -142,7 +131,7 @@ PubMed abstract retrieved for PMID 26915605; no PMC full text was available. The
   conceptId: apathy
   name: Apathy severity
   direction: Null
-  evidence: Human randomized trial
+  evidence: Human research
   description: Nefiracetam was not more efficacious than placebo for poststroke apathy at 12 weeks.
   sourceId: reddit-pmid-26915605
   population: 13 randomized participants with poststroke apathy
@@ -178,7 +167,7 @@ PubMed abstract retrieved for PMID 26915605; no PMC full text was available. The
   participants:
   - entityId: substance:nefiracetam
     role: intervention
-  - entityId: tag:apathy
+  - entityId: tag:cognitive-performance
     role: reported endpoint
   context: Patients 8–36 weeks after stroke; 13 randomized.
   sourceIds:

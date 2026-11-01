@@ -122,18 +122,7 @@ The Reddit-linked Cell paper (PMID 24360282) concerns age-related NAD+ decline a
 ## Effects
 
 ```yaml
-- id: reddit-nmn-glucose-intolerance-21982712
-  conceptId: glycemic-control
-  name: Glycemic Control
-  direction: Improved
-  evidence: Preclinical mouse study
-  description: NMN restored NAD+ levels and ameliorated glucose intolerance in high-fat-diet-induced type 2 diabetes mice; it also improved hepatic insulin sensitivity and lipid profiles in age-induced diabetes mice.
-  sourceId: reddit-pmid-21982712
-  population: Diet- and age-induced diabetes mice
-  exposure: NMN; dose and route not reported in abstract.
-  instrument: Glucose tolerance, hepatic insulin sensitivity, lipid profile
-  magnitude: Directional improvements; quantitative estimates not reported in abstract.
-  reportType: preclinical
+[]
 ```
 
 ## Outcomes
@@ -143,7 +132,7 @@ The Reddit-linked Cell paper (PMID 24360282) concerns age-related NAD+ decline a
   conceptId: glycemic-control
   name: Glucose Intolerance
   direction: Improved
-  evidence: Preclinical mouse study
+  evidence: Limited research
   description: NMN ameliorated glucose intolerance in high-fat-diet- and age-induced diabetes mouse models.
   sourceId: reddit-pmid-21982712
   population: Mouse diabetes models
@@ -155,7 +144,7 @@ The Reddit-linked Cell paper (PMID 24360282) concerns age-related NAD+ decline a
   conceptId: ldl-cholesterol
   name: Lipid Profile
   direction: Improved
-  evidence: Preclinical mouse study
+  evidence: Limited research
   description: NMN improved lipid profiles in age-induced diabetes mice.
   sourceId: reddit-pmid-21982712
   population: Age-induced diabetes mice

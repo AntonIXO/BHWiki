@@ -120,18 +120,7 @@ PubMed abstract retrieved for PMID 25703942; no PMC full text was available. The
 ## Effects
 
 ```yaml
-- id: reddit-oxygen-cognitive-performance-25703942
-  conceptId: cognitive-performance
-  name: Cognitive Performance
-  direction: Increased
-  evidence: Human preliminary placebo-controlled study
-  description: Hyperbaric oxygen increased spatial working-memory and memory-quotient scores versus placebo in 20 healthy young adults.
-  sourceId: reddit-pmid-25703942
-  population: 20 healthy young adults
-  exposure: Hyperbaric oxygen; pressure and duration not reported in abstract.
-  instrument: Spatial working-memory task; memory quotient
-  magnitude: Significant post-exposure increase; exact effect size not reported.
-  reportType: randomized-controlled-trial
+[]
 ```
 
 ## Outcomes
@@ -141,7 +130,7 @@ PubMed abstract retrieved for PMID 25703942; no PMC full text was available. The
   conceptId: episodic-memory
   name: Memory
   direction: Increased
-  evidence: Human preliminary placebo-controlled study
+  evidence: Human research
   description: Memory-quotient and spatial working-memory scores increased after hyperbaric oxygen compared with placebo.
   sourceId: reddit-pmid-25703942
   population: 20 healthy young adults

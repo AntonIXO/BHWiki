@@ -135,54 +135,7 @@ PubMed abstracts retrieved for six linked publications; full-text retrieval was 
 ## Effects
 
 ```yaml
-- id: reddit-neurofeedback-cognitive-performance-12543448
-  conceptId: cognitive-performance
-  name: Cognitive Performance
-  direction: Increased
-  evidence: Human experimental study
-  description: Eight sessions of SMR neurofeedback improved cued recall and, to a lesser extent, focused attention; theta training did not produce the targeted EEG change.
-  sourceId: reddit-pmid-12543448
-  population: Healthy adults
-  exposure: Eight sessions of SMR or theta EEG neurofeedback
-  instrument: Semantic working-memory cued recall; continuous-performance attention task
-  magnitude: Protocol-specific; quantitative effect not reported in abstract.
-  reportType: measured-assessment
-- id: reddit-neurofeedback-cognitive-performance-15889581
-  conceptId: cognitive-performance
-  name: Cognitive Performance
-  direction: Increased
-  evidence: Human experimental study
-  description: Participants who successfully increased upper-alpha power performed better on a mental-rotation task; training success correlated with improvement.
-  sourceId: reddit-pmid-15889581
-  population: Human subjects
-  exposure: Upper-alpha/theta neurofeedback
-  instrument: Mental rotation task
-  magnitude: Responder effect; quantitative estimate not reported in abstract.
-  reportType: measured-assessment
-- id: reddit-neurofeedback-cognitive-performance-20850552
-  conceptId: cognitive-performance
-  name: Cognitive Performance
-  direction: Increased
-  evidence: Human controlled study
-  description: Five-session individually tuned upper-alpha neurofeedback improved cognitive performance more than a no-feedback control; 11/14 showed training success.
-  sourceId: reddit-pmid-20850552
-  population: 14 participants
-  exposure: Five upper-alpha neurofeedback sessions within one week
-  instrument: Mental-rotation cognitive test
-  magnitude: Between-group improvement; quantitative estimate not reported in abstract.
-  reportType: measured-assessment
-- id: reddit-neurofeedback-episodic-memory-22254807
-  conceptId: episodic-memory
-  name: Episodic Memory
-  direction: Increased
-  evidence: Human controlled study
-  description: Upper-alpha neurofeedback produced significant working-memory improvement versus control.
-  sourceId: reddit-pmid-22254807
-  population: Healthy users
-  exposure: Upper-alpha EEG neurofeedback
-  instrument: Working-memory assessment
-  magnitude: Quantitative estimate not reported in abstract.
-  reportType: measured-assessment
+[]
 ```
 
 ## Outcomes
@@ -192,7 +145,7 @@ PubMed abstracts retrieved for six linked publications; full-text retrieval was 
   conceptId: attention
   name: Attention
   direction: Increased
-  evidence: Human experimental study
+  evidence: Human research
   description: SMR training showed a smaller improvement in focused-attention accuracy than in cued recall.
   sourceId: reddit-pmid-12543448
   population: Healthy adults
@@ -204,7 +157,7 @@ PubMed abstracts retrieved for six linked publications; full-text retrieval was 
   conceptId: attention
   name: ADHD attention symptoms
   direction: Variable
-  evidence: Systematic review
+  evidence: Limited research
   description: Reviews found positive nonrandomized results, but direct sham-neurofeedback comparisons showed no group differences in three published studies; methodological limitations were emphasized.
   sourceId: reddit-pmid-22930416
   population: Children and adults with ADHD across reviewed studies
