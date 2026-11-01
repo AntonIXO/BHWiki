@@ -396,6 +396,14 @@ def main() -> None:
             # A Reddit PubChem link is retained in the source trail, but does not
             # authorize adding a structure to an existing identity stub.
             records = infer_records(target_stem, str(data.get("name") or name), refs_for_records, pubmed, data)
+            has_existing_evidence = any(read_list(sections, title) for title in ["Doses", "Modifiers", "Effects", "Outcomes", "Mechanisms", "Cautions", "Claims", "Interactions", "Identification tests", "Monitoring", "Experience links", "External wiki links", "Legal"])
+            has_incoming_evidence = any(records[field] for field in ["doses", "effects", "outcomes", "mechanisms", "cautions", "claims"])
+            if str(data.get("subtitle")) == "Reddit index evidence trail." and not has_existing_evidence and not has_incoming_evidence:
+                path.unlink(missing_ok=True)
+                existing.pop(target_stem, None)
+                touched_paths.discard(path)
+                summary["deleted"] = summary.get("deleted", 0) + 1
+                continue
             for field in ["doses", "effects", "outcomes", "mechanisms", "cautions", "claims"]:
                 data[field] = merge_by_id(read_list(sections, {"doses":"Doses", "effects":"Effects", "outcomes":"Outcomes", "mechanisms":"Mechanisms", "cautions":"Cautions", "claims":"Claims"}[field]), records[field])
             note = str(data.get("evidenceNote") or sections.get("Evidence note") or "")
@@ -414,9 +422,12 @@ def main() -> None:
             if target_stem in existing: target_stem = f"{slug}-reddit-index"
             identity_ref = {"id": f"reddit-index-{target_stem}", "title": "Reddit r/Nootropics community index", "authors": "Reddit r/Nootropics community index", "year": 2026, "url": "https://www.reddit.com/r/nootropics/wiki/index", "kind": "Community index", "insight": "The community index lists this substance and links the source trail below.", "limitation": "Community indexing is a discovery aid and does not establish efficacy or safety."}
             all_refs = [identity_ref] + canonicalize_refs(refs, canonical_sources)
+            records = infer_records(target_stem, name, refs, pubmed)
+            if not any(records[field] for field in ["doses", "effects", "outcomes", "mechanisms", "cautions", "claims"]):
+                summary["skippedEmpty"] = summary.get("skippedEmpty", 0) + 1
+                continue
             first_source = all_refs[0]["id"]
             data = {"slug": target_stem, "name": name, "subtitle": "Reddit index evidence trail.", "aliases": [x.strip() for x in re.findall(r"\(([^)]+)\)", name) for x in re.split(r",|/", x) if x.strip()], "formula": "Not established", "molecularWeight": "Not established", "pubchemCid": None, "smiles": "Not established", "category": "Reddit index entry", "tags": ["reddit-index"], "accent": "#a9b993", "reviewedAt": TODAY, "editorialStatus": "sourced-draft", "halfLife": {"label": "Not established", "low": None, "high": None, "context": "No validated elimination observation was imported in this corpus pass.", "sourceId": first_source}, "kinetics": {"onset": "Not established", "peak": "Not established", "duration": "Not established", "bioavailability": "Not established", "metabolism": "Not established", "sourceId": first_source}, "x-shape": list(BASE_SHAPE), "summary": f"{name} has {len(refs)} linked publications in the Reddit Nootropics index; abstract-supported records are listed below.", "description": f"This page imports the Reddit index source trail for {name}. PubMed abstracts are used for structured observations where the abstract supports them; other links remain explicitly labeled as unverified leads.", "evidenceNote": f"Corpus import reviewed {sum(1 for r in refs if r.get('pmid'))} PubMed abstracts and retained {len(refs)} linked source records. Full-text methods, funding, conflicts, and legal context were not comprehensively reviewed.", "pkObservations": [], "modifiers": [], "doses": [], "effects": [], "outcomes": [], "claims": [], "mechanisms": [], "cautions": [], "interactions": [], "experienceLinks": [], "legal": [], "references": all_refs}
-            records = infer_records(target_stem, name, refs, pubmed)
             for field in ["doses", "effects", "outcomes", "mechanisms", "cautions", "claims"]: data[field] = records[field]
             if external: data["externalWikiLinks"] = external
             path = SUBSTANCES / f"{target_stem}.md"

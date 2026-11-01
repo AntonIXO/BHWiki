@@ -545,16 +545,16 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   conflictsOfInterest: 'intrinsic commercial interest. Conflict status: commercially conflicted for efficacy claims; appropriate for formulation, labeled dose, contraindications, adverse reactions, and regulatory instructions.'
   conflictOfInterestStatus: not-assessed
 - id: noopept-pmc4837574
-  title: Noopept source record indexed in PubMed Central
-  authors: Metadata not assessed in the imported source trail
+  title: Molecular Mechanism Underlying the Action of Substituted Pro-Gly Dipeptide Noopept.
+  authors: Y V Vakhitova, S V Sadovnikov, S S Borisevich, R U Ostrovskaya, T A Gudasheva, S B Seredenin
   year: 2016
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4837574/
-  kind: Source discovery link
-  insight: The imported Molekul profile links this source; the link is retained for traceability.
-  limitation: The original article was not independently appraised in this import; the link alone does not establish efficacy.
-  funding: Not assessed.
+  kind: PubMed publication
+  insight: PMC full text for PMID 27099787 is retained as the source trail for this article.
+  limitation: Imported from the PubMed/PMC record; full-text methods and disclosures were not independently appraised in this import.
+  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed.
+  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 - id: noopept-pmid18383733
   title: Noopept source record indexed in PubMed

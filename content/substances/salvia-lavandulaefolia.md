@@ -339,20 +339,7 @@ PMC full-text retrieval for this page returned body text for 0/1 identified PMCI
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-3ad889a4e30c
-  title: ref
-  authors: Not established
-  year: 2026
-  url: '
 
-    https://journal.chemistrycentral.com/content/5/1/44'
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
-  limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
-  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal

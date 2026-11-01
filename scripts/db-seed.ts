@@ -30,10 +30,46 @@ if (!sourceCommit) {
 if (sourceCommit && !/^[a-f0-9]{40,64}$/.test(sourceCommit)) throw new Error("BHWIKI_SOURCE_COMMIT must be a full Git commit hash");
 const statements = ["BEGIN;", "SET LOCAL lock_timeout = '5s';", "SET LOCAL statement_timeout = '60s';", "SELECT pg_advisory_xact_lock(674928105);", "SET LOCAL ROLE bhwiki_owner;"];
 const emit = (sql: string) => statements.push(sql);
+const currentSubstanceSlugs = substances.map((substance) => q(substance.slug)).join(", ");
+emit(`CREATE TEMP TABLE bhwiki_empty_reddit_entities ON COMMIT DROP AS
+SELECT e.id
+FROM bhwiki.entities AS e
+WHERE e.entity_type = 'substance'
+  AND e.slug NOT IN (${currentSubstanceSlugs})
+  AND EXISTS (
+    SELECT 1
+    FROM bhwiki.articles AS a
+    JOIN bhwiki.article_revisions AS r ON r.id = a.published_revision_id
+    WHERE a.entity_id = e.id
+      AND r.document->>'subtitle' = 'Reddit index evidence trail.'
+      AND coalesce(jsonb_array_length(r.document->'pkObservations'), 0) = 0
+      AND coalesce(jsonb_array_length(r.document->'modifiers'), 0) = 0
+      AND coalesce(jsonb_array_length(r.document->'doses'), 0) = 0
+      AND coalesce(jsonb_array_length(r.document->'effects'), 0) = 0
+      AND coalesce(jsonb_array_length(r.document->'outcomes'), 0) = 0
+      AND coalesce(jsonb_array_length(r.document->'mechanisms'), 0) = 0
+      AND coalesce(jsonb_array_length(r.document->'cautions'), 0) = 0
+      AND coalesce(jsonb_array_length(r.document->'claims'), 0) = 0
+      AND coalesce(jsonb_array_length(r.document->'interactions'), 0) = 0
+      AND coalesce(jsonb_array_length(r.document->'identificationTests'), 0) = 0
+      AND coalesce(jsonb_array_length(r.document->'legal'), 0) = 0
+  );
+DELETE FROM bhwiki.claim_members AS cm USING bhwiki.claims AS c, bhwiki_empty_reddit_entities AS stale WHERE cm.claim_id = c.id AND c.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.claim_sources AS cs USING bhwiki.claims AS c, bhwiki_empty_reddit_entities AS stale WHERE cs.claim_id = c.id AND c.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.article_concepts AS ac USING bhwiki_empty_reddit_entities AS stale WHERE ac.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.article_sources AS ars USING bhwiki_empty_reddit_entities AS stale WHERE ars.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.doses AS d USING bhwiki_empty_reddit_entities AS stale WHERE d.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.pk_modifiers AS pm USING bhwiki_empty_reddit_entities AS stale WHERE pm.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.pk_observations AS po USING bhwiki_empty_reddit_entities AS stale WHERE po.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.effect_observations AS eo USING bhwiki_empty_reddit_entities AS stale WHERE eo.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.claims AS c USING bhwiki_empty_reddit_entities AS stale WHERE c.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+UPDATE bhwiki.articles AS a SET published_revision_id = NULL FROM bhwiki_empty_reddit_entities AS stale WHERE a.entity_id = stale.id;
+DELETE FROM bhwiki.articles AS a USING bhwiki_empty_reddit_entities AS stale WHERE a.entity_id = stale.id;
+UPDATE bhwiki.entities AS e SET status = 'archived' FROM bhwiki_empty_reddit_entities AS stale WHERE e.id = stale.id;`);
 const entity = (slug: string) => `(SELECT id FROM bhwiki.entities WHERE slug = ${q(slug.replace(/^(substance|tag):/, ""))})`;
 const insert = (table: string, values: Record<string, string>) => emit(`INSERT INTO bhwiki.${table} (${Object.keys(values).join(", ")}) VALUES (${Object.values(values).join(", ")});`);
 const upsert = (table: string, values: Record<string, string>, keys: string[]) => emit(`INSERT INTO bhwiki.${table} (${Object.keys(values).join(", ")}) VALUES (${Object.values(values).join(", ")}) ON CONFLICT (${keys.join(", ")}) DO UPDATE SET ${Object.keys(values).filter((k) => !keys.includes(k)).map((k) => `${k} = EXCLUDED.${k}`).join(", ")};`);
-const source = (ref: Reference) => `(SELECT id FROM bhwiki.sources WHERE ${sourceMatchSql(ref)})`;
+const source = (ref: Reference) => `(SELECT id FROM bhwiki.sources WHERE ${sourceMatchSql(ref)} OR lower(rtrim(url, '/')) = lower(rtrim(${q(ref.url)}, '/')) LIMIT 1)`;
 
 // Public concepts and article identities exist before participant references are inserted.
 for (const tag of tags) {
@@ -73,10 +109,10 @@ for (const s of substances) {
     for (const id of c.conflictingSourceIds) insert("claim_sources", { claim_id: claim, source_id: reference(id), stance: q("conflicting") });
   }
   for (const d of s.doses) insert("doses", {
-    article_id: article, source_id: reference(d.sourceId), label: q(d.label), amount: q(d.amount), quantity: q(d.quantity), quantity_max: q(d.quantityMax), unit: q(d.unit), ingredient: q(d.ingredient), formulation: q(d.formulation), route: q(d.route), frequency: q(d.frequency), duration: q(d.duration), population: q(d.population), purpose: q(d.purpose), source_category: q(d.sourceCategory), food_relation: q(d.foodRelation), solubility: q(d.solubility), absorption_note: q(d.absorptionNote), note: q(d.note),
+    article_id: article, source_id: reference(d.sourceId), label: q(d.label), amount: q(d.amount), quantity: q(d.quantity), quantity_max: q(d.quantityMax), unit: q(d.unit), ingredient: q(d.ingredient), formulation: q(d.formulation), route: q(d.route ?? "Not established"), frequency: q(d.frequency), duration: q(d.duration), population: q(d.population), purpose: q(d.purpose), source_category: q(d.sourceCategory), food_relation: q(d.foodRelation), solubility: q(d.solubility), absorption_note: q(d.absorptionNote), note: q(d.note),
   });
   for (const p of s.pkObservations) insert("pk_observations", {
-    article_id: article, observation_key: q(p.id), source_id: reference(p.sourceId), analyte: q(p.analyte), route: q(p.route), formulation: q(p.formulation), population: q(p.population), endpoint: q(p.endpoint), statistic: q(p.statistic), value: q(p.value), low: q(p.low), high: q(p.high), unit: q(p.unit), context: q(p.context), model_eligible: q(p.modelEligible),
+    article_id: article, observation_key: q(p.id), source_id: reference(p.sourceId), analyte: q(p.analyte), route: q(p.route ?? "Not established"), formulation: q(p.formulation ?? "Not established"), population: q(p.population ?? "Not established"), endpoint: q(p.endpoint), statistic: q(p.statistic), value: q(p.value), low: q(p.low), high: q(p.high), unit: q(p.unit), context: q(p.context), model_eligible: q(p.modelEligible),
   });
   for (const m of s.modifiers) insert("pk_modifiers", {
     article_id: article, observation_id: `(SELECT id FROM bhwiki.pk_observations WHERE article_id = ${article} AND observation_key = ${q(m.observationId)})`, source_id: reference(m.sourceId), label: q(m.label), effect: q(m.effect), detail: q(m.detail), factor_type: q(m.factorType), direction: q(m.direction),
