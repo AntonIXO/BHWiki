@@ -73,6 +73,7 @@ Identity only import: the cited sources support candidate identity provenance, n
 
 Reviewed PubMed abstracts for PMID(s) 12690999, 25910439. No rights-eligible PMC full text was available among these records.
 
+PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restricted citations checked: PMC3736918.
 ## Doses
 
 ```yaml
@@ -286,17 +287,20 @@ Reviewed PubMed abstracts for PMID(s) 12690999, 25910439. No rights-eligible PMC
   insight: The OptiHealth canonical catalog records this substance identity label.
   limitation: This catalog snapshot is not an independent evidence review and does not establish structure, dose, safety, or efficacy.
 - id: reddit-link-2dd346996818
-  title: Plasma 1,8-cineole correlates with cognitive performance following exposure to rosemary essential oil aroma (2012)
-  authors: Not established
+  title: Plasma 1,8-cineole correlates with cognitive performance following exposure to rosemary essential oil aroma.
+  authors: Mark Moss, Lorraine Oliver
   year: 2012
   url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3736918/
-  kind: PubMed Central publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
-  limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
+  kind: PubMed publication with PMC citation
+  insight: Here we show for the first time that performance on cognitive tasks is significantly related to concentration of absorbed 1,8-cineole following exposure to rosemary aroma, with improved performance at higher concentrations.
+  limitation: PubMed abstract for PMID 23983963 was reviewed; PMC citation PMC3736918 is rights-restricted and full-text retrieval was unavailable in this pass.
   funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
+  pmid: '23983963'
+  pmcid: PMC3736918
+  doi: ''
 - id: reddit-pmid-12690999
   title: Aromas of rosemary and lavender essential oils differentially affect cognition and mood in healthy adults.
   authors: Mark Moss, Jenny Cook, Keith Wesnes, Paul Duckett

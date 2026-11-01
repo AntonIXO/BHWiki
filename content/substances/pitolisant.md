@@ -73,6 +73,7 @@ Corpus import reviewed 1 PubMed abstracts and retained 3 linked source records. 
 
 Reviewed PubMed abstracts for PMID(s) 22356925. No rights-eligible PMC full text was available among these records.
 
+PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restricted citations checked: PMC3111674.
 ## Doses
 
 ```yaml
@@ -233,17 +234,20 @@ Reviewed PubMed abstracts for PMID(s) 22356925. No rights-eligible PMC full text
   conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 - id: reddit-link-4714df29aa73
-  title: 'The histamine H3 receptor: from discovery to clinical trials with pitolisant'
-  authors: Not established
-  year: 2026
+  title: 'The histamine H3 receptor: from discovery to clinical trials with pitolisant.'
+  authors: Jean-Charles Schwartz
+  year: 2011
   url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3111674/
-  kind: PubMed Central publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
-  limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
+  kind: PubMed publication with PMC citation
+  insight: The third histamine receptor was discovered in 1983 by a traditional pharmacological approach, consisting of assessing the inhibitory effect of histamine on its own release from depolarized rat brain slices.
+  limitation: PubMed abstract for PMID 21615387 was reviewed; PMC citation PMC3111674 is rights-restricted and full-text retrieval was unavailable in this pass.
   funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
+  pmid: '21615387'
+  pmcid: PMC3111674
+  doi: ''
 - id: reddit-link-0c26eadb1c99
   title: Long Term Open Label Study in Narcolepsy With BF2.649 (Pitolisant) (HARMONYIII)
   authors: Not established

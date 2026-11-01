@@ -76,6 +76,7 @@ Clinical evidence is small and product-specific: randomized studies enrolled abo
 
 Reviewed PubMed abstracts for PMID(s) 17268846. No rights-eligible PMC full text was available among these records.
 
+PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restricted citations checked: PMC2804159.
 ## Doses
 
 ```yaml
@@ -632,17 +633,20 @@ Reviewed PubMed abstracts for PMID(s) 17268846. No rights-eligible PMC full text
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: Pyrroloquinoline Quinone Stimulates Mitochondrial Biogenesis through cAMP Response Element-binding Protein Phosphorylation and Increased PGC-1α Expression
-  authors: Winyoo Chowanadisai, Kristina A. Bauerly, Edwin Tchaparian, Alex Wong, Geoffrey A. Cortopassi, Robert B. Rucker
+  title: Pyrroloquinoline quinone stimulates mitochondrial biogenesis through cAMP response element-binding protein phosphorylation and increased PGC-1alpha expression.
+  authors: Winyoo Chowanadisai, Kathryn A Bauerly, Eskouhie Tchaparian, Alice Wong, Gino A Cortopassi, Robert B Rucker
   year: 2010
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2804159/
-  kind: Peer-reviewed cell mechanistic study
-  insight: Mouse hepatocyte model linking PQQ exposure to CREB, PGC-1α, respiration, and mitochondrial-related markers.
-  limitation: In vitro mouse-cell exposure; does not establish human pharmacology, mitochondrial number, or clinical benefit.
+  kind: PubMed publication with PMC citation
+  insight: Bioactive compounds reported to stimulate mitochondrial biogenesis are linked to many health benefits such increased longevity, improved energy utilization, and protection from reactive oxygen species.
+  limitation: PubMed abstract for PMID 19861415 was reviewed; PMC citation PMC2804159 is rights-restricted and full-text retrieval was unavailable in this pass.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
+  pmid: '19861415'
+  pmcid: PMC2804159
+  doi: ''
 - id: S13
   title: Pyrroloquinoline Quinone Disodium
   authors: United States Pharmacopeia

@@ -73,6 +73,7 @@ Corpus import reviewed 1 PubMed abstracts and retained 3 linked source records. 
 
 Reviewed PubMed abstracts for PMID(s) 17335395. No rights-eligible PMC full text was available among these records.
 
+PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restricted citations checked: PMC2397546.
 ## Doses
 
 ```yaml
@@ -243,17 +244,20 @@ Reviewed PubMed abstracts for PMID(s) 17335395. No rights-eligible PMC full text
   insight: The community index lists this substance and links the source trail below.
   limitation: Community indexing is a discovery aid and does not establish efficacy or safety.
 - id: reddit-link-060105a40187
-  title: Increased task difficulty results in greater impact of noradrenergic modulation of cognitive flexibility (2007)
-  authors: Not established
-  year: 2007
+  title: Increased task difficulty results in greater impact of noradrenergic modulation of cognitive flexibility.
+  authors: Heather L Campbell, Madalina E Tivarus, Ashleigh Hillier, David Q Beversdorf
+  year: 2008
   url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2397546/
-  kind: PubMed Central publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
-  limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
+  kind: PubMed publication with PMC citation
+  insight: This study compared various doses of beta-adrenergic antagonists for their effect on cognitive flexibility in problem solving, and how task difficulty interacts with this effect, as well as the effect of beta-adrenergic antagonists on other tasks.
+  limitation: PubMed abstract for PMID 17884154 was reviewed; PMC citation PMC2397546 is rights-restricted and full-text retrieval was unavailable in this pass.
   funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
+  pmid: '17884154'
+  pmcid: PMC2397546
+  doi: ''
 - id: reddit-link-f8c1fb46c8cd
   title: Noradrenergic modulation of cognitive flexibility in problem solving (1999)
   authors: Not established

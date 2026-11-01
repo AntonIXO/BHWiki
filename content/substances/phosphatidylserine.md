@@ -76,6 +76,7 @@ The elderly evidence base comprised nine studies and 961 participants, with mixe
 
 Reviewed PubMed abstracts for PMID(s) 11842886, 18616866, 23265497, 23495677. No rights-eligible PMC full text was available among these records.
 
+PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed.
 ## Doses
 
 ```yaml
@@ -771,17 +772,20 @@ Reviewed PubMed abstracts for PMID(s) 11842886, 18616866, 23265497, 23495677. No
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
 - id: S4
-  title: Soybean-derived phosphatidylserine improves memory function of the elderly Japanese subjects with memory complaints
-  authors: A. Kato-Kataoka et al.; Yakult Central Institute for Microbiological Research
+  title: Soybean-derived phosphatidylserine improves memory function of the elderly Japanese subjects with memory complaints.
+  authors: Akito Kato-Kataoka, Masashi Sakai, Rika Ebina, Chiaki Nonaka, Tsuguyoshi Asano, Takashi Miyamori
   year: 2010
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2966935/
-  kind: Randomized, double-blind, placebo-controlled trial
-  insight: 78 randomized; 100 or 300 mg/day soy PS for six months; overall memory-battery comparison was null.
-  limitation: Small sample; subgroup findings and a placebo containing other bioactive nutrients complicate interpretation.
+  kind: PubMed publication with PMC full text
+  insight: A double-blind, randomized controlled study was conducted to investigate the effects of Soy-PS on the cognitive functions of the elderly Japanese subjects with memory complaints.
+  limitation: PubMed abstract and rights-eligible PMC full text (PMC2966935) were reviewed; applicability remains limited to the reported design and population.
   funding: Not reported; PS-20L was made by Yakult Honsha.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
+  pmid: '21103034'
+  pmcid: PMC2966935
+  doi: ''
 - id: S5
   title: Double-blind randomized controlled study of phosphatidylserine in senile demented patients
   authors: P. J. Delwaide; A. M. Gyselynck-Mambourg; A. Hurlet; M. Ylieff
@@ -868,30 +872,36 @@ Reviewed PubMed abstracts for PMID(s) 11842886, 18616866, 23265497, 23495677. No
   conflictOfInterestStatus: declared
   disclosureUrl: https://bmcneurol.biomedcentral.com/articles/10.1186/1471-2377-11-79
 - id: S12
-  title: 'The effect of soybean-derived phosphatidylserine on cognitive performance in elderly with subjective memory complaints: a pilot study'
-  authors: Yael Richter; Yael Herzog; Yael Lifshitz; Rami Hayun; Sigalit Zchut
+  title: 'The effect of soybean-derived phosphatidylserine on cognitive performance in elderly with subjective memory complaints: a pilot study.'
+  authors: Yael Richter, Yael Herzog, Yael Lifshitz, Rami Hayun, Sigalit Zchut
   year: 2013
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3665496/
-  kind: Open-label pilot study
-  insight: 30 older adults received 300 mg/day soy PS for 12 weeks; several cognitive measures improved.
-  limitation: No placebo group, small sample, and all authors were employed by Enzymotec.
+  kind: PubMed publication with PMC full text
+  insight: To evaluate the efficacy and safety of soybean-derived phosphatidylserine (SB-PS) (300 mg/day) in improving cognitive performance in elderly with memory complaints, following a short duration of 12 weeks' SB-PS administration.
+  limitation: PubMed abstract and rights-eligible PMC full text (PMC3665496) were reviewed; applicability remains limited to the reported design and population.
   funding: Not clearly stated; product and investigators were company-affiliated.
   sponsorshipStatus: industry-funded
   conflictsOfInterest: All listed authors were Enzymotec employees.
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC3665496/
+  pmid: '23723695'
+  pmcid: PMC3665496
+  doi: ''
 - id: S13
-  title: 'Phosphatidylserine in the brain: metabolism and function'
-  authors: H. Y. Kim; B. X. Huang; A. A. Spector
+  title: 'Phosphatidylserine in the brain: metabolism and function.'
+  authors: Hee-Yong Kim, Bill X Huang, Arthur A Spector
   year: 2014
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4258547/
-  kind: Mechanistic review
-  insight: Explains endogenous PS metabolism, membrane functions, and unresolved brain-delivery questions.
-  limitation: Mechanistic review; does not establish supplement efficacy.
+  kind: PubMed publication with PMC full text
+  insight: Ethanol decreases DHA-promoted PS synthesis and accumulation in neurons, which may contribute to the deleterious effects of ethanol intake.
+  limitation: PubMed abstract and rights-eligible PMC full text (PMC4258547) were reviewed; applicability remains limited to the reported design and population.
   funding: Not reported.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
+  pmid: '24992464'
+  pmcid: PMC4258547
+  doi: ''
 - id: S14
   title: 'GRAS Notice 636: Phosphatidylserine derived from sunflower lecithin'
   authors: U.S. Food and Drug Administration

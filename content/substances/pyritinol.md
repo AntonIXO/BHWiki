@@ -73,6 +73,7 @@ Identity only import: the cited sources support candidate identity provenance, n
 
 Reviewed PubMed abstracts for PMID(s) 2135070, 3066650, 9679051. No rights-eligible PMC full text was available among these records.
 
+PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restricted citations checked: PMC381054.
 ## Doses
 
 ```yaml
@@ -251,17 +252,20 @@ Reviewed PubMed abstracts for PMID(s) 2135070, 3066650, 9679051. No rights-eligi
   conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 - id: reddit-link-6563664bc58a
-  title: Pyritinol may induce severe cholestatic hepatitis.
-  authors: Not established
-  year: 2026
+  title: Severe cholestatic hepatitis induced by pyritinol.
+  authors: Vasco Maria, Adriana Albuquerque, Ana Loureiro, Ana Sousa, Rui Victorino
+  year: 2004
   url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC381054/
-  kind: PubMed Central publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
-  limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
+  kind: PubMed publication with PMC citation
+  insight: PubMed record returned no abstract; full-text citation was checked separately.
+  limitation: PubMed abstract for PMID 15001508 was reviewed; PMC citation PMC381054 is rights-restricted and full-text retrieval was unavailable in this pass.
   funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
+  pmid: '15001508'
+  pmcid: PMC381054
+  doi: ''
 - id: reddit-pmid-9679051
   title: 'Acute pancreatitis due to pyritinol: an immune-mediated phenomenon.'
   authors: A Straumann, M Bauer, W J Pichler, M Pirovino
