@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, type GraphInput } from "../src/lib/graph";
+import { buildKnowledgeGraph, connectedKnowledgeGraph, largestConnectedKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, type GraphInput } from "../src/lib/graph";
 import { boundKnowledgeGraph } from "../src/lib/graph-data";
 import type { KnowledgeGraphData } from "../src/lib/types";
 
@@ -32,6 +32,25 @@ test("expands a three-member hyperedge into one relationship node and three inci
 test("tag membership is represented as a group containing the tag and its substances", () => {
   const model = buildKnowledgeGraph(input);
   assert.deepEqual(model.relationships.find((edge) => edge.nodeId === "membership:shared")?.members, ["tag:shared", "substance:a", "substance:b"]);
+});
+
+test("landing graph can omit isolated and classification-only records", () => {
+  const model = connectedKnowledgeGraph(buildKnowledgeGraph({
+    ...input,
+    substances: [...input.substances, { slug: "isolated", name: "Isolated", summary: "", aliases: [], tags: ["shared"] }],
+  }), { authoredOnly: true });
+  assert.ok(model.nodes.some((node) => node.id === "substance:a"));
+  assert.ok(!model.nodes.some((node) => node.id === "tag:shared"));
+  assert.ok(!model.nodes.some((node) => node.id === "substance:isolated"));
+  assert.ok(model.elements.every((element) => !element.data.source || model.nodes.some((node) => node.id === element.data.source)));
+});
+
+test("landing overview keeps the largest connected network", () => {
+  const model = largestConnectedKnowledgeGraph(connectedKnowledgeGraph(buildKnowledgeGraph(input), { authoredOnly: true }));
+  assert.ok(model.nodes.some((node) => node.id === "substance:a"));
+  assert.ok(model.nodes.some((node) => node.id === "substance:c"));
+  assert.equal(model.relationships.length, 1);
+  assert.ok(model.elements.every((element) => !element.data.source || model.nodes.some((node) => node.id === element.data.source)));
 });
 
 test("rejects dangling members, duplicate IDs, and degenerate hyperedges", () => {
@@ -102,6 +121,31 @@ test("focused concepts without authored claims still expose classification neigh
   assert.equal(bounded.hyperedges.length, 0);
   assert.equal(bounded.truncated, false);
   assert.equal(buildKnowledgeGraph(bounded).relationships[0].relation, "tag membership");
+});
+
+test("the full graph budget includes every catalog substance and concept", () => {
+  const substances = Array.from({ length: 130 }, (_, index) => ({
+    slug: `substance-${index}`,
+    name: `Substance ${index}`,
+    summary: "A substance",
+    aliases: [],
+    tags: [],
+    formula: "",
+    category: "Reference",
+    editorialStatus: "sourced-draft" as const,
+    reviewedAt: "2026-09-29",
+    halfLifeLabel: "Not established",
+  }));
+  const tags = Array.from({ length: 40 }, (_, index) => ({
+    id: `tag-${index}`,
+    label: `Tag ${index}`,
+    kind: "mechanism" as const,
+    description: "A concept",
+  }));
+  const full = boundKnowledgeGraph({ substances, tags, hyperedges: [] }, { limit: 5000 });
+  assert.equal(full.substances.length, substances.length);
+  assert.equal(full.tags.length, tags.length);
+  assert.equal(full.truncated, false);
 });
 
 test("bounding excludes a whole oversized claim and trims unloaded classification references", () => {

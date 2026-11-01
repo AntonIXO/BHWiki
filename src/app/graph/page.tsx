@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 export default async function GraphPage({ searchParams }: { searchParams: Promise<{ focus?: string | string[] }> }) {
   const params = await searchParams;
   const focus = typeof params.focus === "string" ? params.focus.slice(0, 120) : undefined;
-  const data = await getKnowledgeGraph({ focus, limit: 120 });
+  const data = await getKnowledgeGraph({ focus, limit: focus ? 120 : 5000 });
   return (
     <main id="main" className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-5 py-8 sm:px-8">
       <Breadcrumb current="Knowledge graph" />

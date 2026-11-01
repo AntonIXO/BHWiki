@@ -6,7 +6,7 @@ import { useEffect, useId, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Expand, Maximize, Minimize, Minus, Plus, X } from "lucide-react";
 import type { Core, StylesheetStyle } from "cytoscape";
-import { buildKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, type GraphModel, type GraphNode } from "@/lib/graph";
+import { buildKnowledgeGraph, connectedKnowledgeGraph, largestConnectedKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, type GraphModel, type GraphNode } from "@/lib/graph";
 import type { KnowledgeGraphData, TagKind } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { Prose } from "@/components/prose";
@@ -116,10 +116,18 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
   const repulsionLabelId = useId();
   const distanceLabelId = useId();
   const gravityLabelId = useId();
-  const sourceModel = useMemo(() => {
+  const completeModel = useMemo(() => {
     const built = buildKnowledgeGraph({ substances, tags, hyperedges });
-    return compact ? previewKnowledgeGraph(built) : built;
-  }, [substances, tags, hyperedges, compact]);
+    return connectedKnowledgeGraph(built, { authoredOnly: true });
+  }, [substances, tags, hyperedges]);
+  const sourceModel = useMemo(() => {
+    if (initialFocus) return buildKnowledgeGraph({ substances, tags, hyperedges });
+    if (compact) return previewKnowledgeGraph(buildKnowledgeGraph({ substances, tags, hyperedges }));
+    // The overview starts on the largest connected network. Typing a query
+    // promotes the full connected model so every other network remains
+    // searchable without forcing all of them into the initial viewport.
+    return query.trim() ? completeModel : largestConnectedKnowledgeGraph(completeModel);
+  }, [completeModel, compact, initialFocus, query, substances, tags, hyperedges]);
   const model = useMemo(
     () => (tagKind ? buildKnowledgeGraph({ substances, tags, hyperedges }, tagKind) : sourceModel),
     [sourceModel, tagKind, substances, tags, hyperedges],
@@ -198,19 +206,21 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
     if (visible.empty()) return;
     const forces = forcesRef.current;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const largeGraph = visible.nodes().length > 180;
+    const landingOverview = !compact && !viewRef.current.selectedId;
     visible.layout({
       name: "cose",
       animate: !reduce && !fit,
       animationDuration: 400,
-      randomize: false,
+      randomize: fit,
       fit,
       padding: compact ? 22 : 40,
       nodeRepulsion: () => forces.repulsion,
       idealEdgeLength: () => compact ? 60 : forces.linkDistance,
       edgeElasticity: () => 120,
       gravity: forces.gravity,
-      numIter: 500,
-      componentSpacing: 80,
+      numIter: landingOverview ? 120 : largeGraph ? 180 : 260,
+      componentSpacing: largeGraph ? 36 : 64,
     }).run();
   };
 
@@ -238,9 +248,13 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
         minZoom: 0.15, maxZoom: 2.5, wheelSensitivity: 0.22,
         boxSelectionEnabled: false, autounselectify: false,
         layout: {
-          name: "cose", animate: false, randomize: false, fit: true, padding: compact ? 22 : 40,
-          nodeRepulsion: () => forces.repulsion, idealEdgeLength: () => compact ? 60 : forces.linkDistance,
-          edgeElasticity: () => 120, gravity: forces.gravity, numIter: 600, componentSpacing: 80,
+          name: "cose", animate: false, randomize: true, fit: true, padding: compact ? 22 : 40,
+          nodeRepulsion: () => forces.repulsion,
+          idealEdgeLength: () => compact ? 60 : forces.linkDistance,
+          edgeElasticity: () => 120,
+          gravity: forces.gravity,
+          numIter: sourceRef.current.nodes.length > 180 ? 180 : 120,
+          componentSpacing: sourceRef.current.nodes.length > 180 ? 36 : 64,
         },
       });
       graph.current = cy;
@@ -261,8 +275,6 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
       const resize = () => {
         if (!cy || cy.destroyed()) return;
         cy.resize();
-        const visible = cy.elements().not(".depth-hidden");
-        cy.fit(visible.empty() ? undefined : visible, compact ? 22 : 40);
       };
       observer = new ResizeObserver(resize);
       observer.observe(container.current.parentElement ?? container.current);
@@ -486,6 +498,11 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
       {!compact && truncated && (
         <p className="border-b border-border px-4 py-3 text-sm text-muted-foreground">
           Showing a bounded neighborhood. Focus a node to load its connections, or find another substance in the <Link href="/#library" className="underline underline-offset-4">library</Link>.
+        </p>
+      )}
+      {!compact && !truncated && !initialFocus && !query.trim() && (
+        <p className="border-b border-border px-4 py-3 text-sm text-muted-foreground">
+          Starting with the largest connected network. Search for any other substance or concept to open its connected network.
         </p>
       )}
 
