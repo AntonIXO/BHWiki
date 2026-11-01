@@ -82,14 +82,14 @@ Reviewed PubMed abstracts for PMID(s) 10633490, 22629087, 9844008. PMC citation 
   quantityMax: null
   unit: mg/kg
   ingredient: Rolipram
-  formulation: As described in the PubMed abstract
-  route: Not established from abstract
-  frequency: Study exposure
-  duration: Study exposure
-  population: Population described in the PubMed abstract
+  formulation: Formulation as described in PMID 22629087
+  route: oral or as stated in abstract
+  frequency: Study schedule not stated in abstract
+  duration: Not stated in abstract
+  population: The alteration of GABA content by rolipram as a phosphodiesterase enzyme type-4 inhibitor in the frontal cortex (FCx; as a brain region crucial for the control of emotion and cognition) obtained from male mice exposed to chronic mild stress (CMS)-induced anhedonia (the loss of pleasure or lack of sensitivity to pleasure stimuli) was recorded.
   purpose: Research exposure
   sourceCategory: research
-  note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
+  note: Dose and schedule transcribed from PMID 22629087 abstract; formulation and population are source-specific to this study.
   sourceId: reddit-pmid-22629087
 ```
 
@@ -267,7 +267,7 @@ Reviewed PubMed abstracts for PMID(s) 10633490, 22629087, 9844008. PMC citation 
   url: https://pubmed.ncbi.nlm.nih.gov/9844008/
   kind: PubMed publication
   insight: In an attempt to improve behavioral memory, we devised a strategy to amplify the signal-to-noise ratio of the cAMP pathway, which plays a central role in hippocampal synaptic plasticity and behavioral memory.
-  limitation: PubMed abstract was reviewed; PMC citation PMC24568 was identified but rights-eligible full-text retrieval was unavailable in this pass.
+  limitation: PubMed abstract and rights-eligible PMC full text (PMC24568) were reviewed; applicability remains limited to the reported design and population.
   pmid: '9844008'
   doi: 10.1073/pnas.95.25.15020
   funding: Not assessed in this corpus pass.

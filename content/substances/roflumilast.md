@@ -82,14 +82,14 @@ Reviewed PubMed abstracts for PMID(s) 29098341, 29241652. Rights-eligible PMC fu
   quantityMax: null
   unit: μg
   ingredient: Roflumilast
-  formulation: As described in the PubMed abstract
-  route: Not established from abstract
-  frequency: Study exposure
-  duration: Study exposure
-  population: Population described in the PubMed abstract
+  formulation: Formulation as described in PMID 29098341
+  route: oral or as stated in abstract
+  frequency: Study schedule not stated in abstract
+  duration: Not stated in abstract
+  population: The current study investigated the effects of the PDE4 inhibitor roflumilast in a sensory gating paradigm in 20 healthy young human volunteers (age range 18-30 years).
   purpose: Research exposure
   sourceCategory: research
-  note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
+  note: Dose and schedule transcribed from PMID 29098341 abstract; formulation and population are source-specific to this study.
   sourceId: reddit-pmid-29098341
 - label: PubMed study exposure (29241652)
   amount: 100 μg
@@ -97,14 +97,14 @@ Reviewed PubMed abstracts for PMID(s) 29098341, 29241652. Rights-eligible PMC fu
   quantityMax: null
   unit: μg
   ingredient: Roflumilast
-  formulation: As described in the PubMed abstract
-  route: Not established from abstract
-  frequency: Study exposure
-  duration: Study exposure
-  population: Population described in the PubMed abstract
+  formulation: Formulation as described in PMID 29241652
+  route: oral or as stated in abstract
+  frequency: Study schedule not stated in abstract
+  duration: Not stated in abstract
+  population: Population not stated in the PubMed record.
   purpose: Research exposure
   sourceCategory: research
-  note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
+  note: Dose and schedule transcribed from PMID 29241652 abstract; formulation and population are source-specific to this study.
   sourceId: reddit-pmid-29241652
 ```
 
