@@ -290,14 +290,14 @@ Reviewed PubMed abstracts for PMID(s) 6403074. No rights-eligible PMC full text 
   conceptId: cognitive-performance
   name: Operant behavior and retrograde amnesia
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: In animal experiments, 4-phenylpiracetam activated operant behavior, reduced diazepam-induced psychodepression, inhibited post-rotational nystagmus and prevented retrograde amnesia; high doses produced psychodepressive effects.
   sourceId: reddit-pmid-6403074
   population: Animals in preclinical pharmacology experiments
   exposure: 4-Phenylpiracetam; dose details not stated in abstract
   instrument: null
   magnitude: null
-  reportType: preclinical-assessment
+  reportType: measured-assessment
 ```
 
 ## Mechanisms
