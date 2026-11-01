@@ -1,7 +1,7 @@
 ---
 slug: polygala-tenuifolia
 name: Polygala tenuifolia
-subtitle: Source-backed identity stub.
+subtitle: Reddit index evidence trail.
 aliases: []
 formula: Not established
 molecularWeight: Not established
@@ -9,7 +9,7 @@ pubchemCid: null
 smiles: Not established
 category: Identity record
 tags: []
-accent: "#a9b993"
+accent: '#a9b993'
 reviewedAt: 2026-10-27
 editorialStatus: sourced-draft
 halfLife:
@@ -27,50 +27,51 @@ kinetics:
   metabolism: Not established
   sourceId: optihealth-substance-01a071ac-a832-7a3b-ad07-048cb847b0c1
 x-shape:
-  - slug
-  - name
-  - subtitle
-  - summary
-  - description
-  - aliases
-  - formula
-  - molecularWeight
-  - pubchemCid
-  - smiles
-  - category
-  - tags
-  - accent
-  - evidenceNote
-  - reviewedAt
-  - editorialStatus
-  - halfLife
-  - pkObservations
-  - kinetics
-  - modifiers
-  - doses
-  - effects
-  - outcomes
-  - claims
-  - mechanisms
-  - cautions
-  - interactions
-  - experienceLinks
-  - references
-  - legal
+- slug
+- name
+- subtitle
+- summary
+- description
+- aliases
+- formula
+- molecularWeight
+- pubchemCid
+- smiles
+- category
+- tags
+- accent
+- evidenceNote
+- reviewedAt
+- editorialStatus
+- halfLife
+- pkObservations
+- kinetics
+- modifiers
+- doses
+- effects
+- outcomes
+- claims
+- mechanisms
+- cautions
+- interactions
+- experienceLinks
+- references
+- legal
+- externalWikiLinks
 x-order: 1133
 ---
 
 ## Summary
 
-Polygala tenuifolia is recorded as a canonical identity from a source-backed OptiHealth candidate. This draft does not assert effects, dosing, safety, or efficacy.
-
+Polygala Tenuifolia evidence is source-specific and endpoint-limited. We previously reported that BT-11, the extract of dried roots of Polygala tenuifolia Willdenow, had neuroprotective effects and improved scopolamine- and stress-induced amnesia in rats.
 ## Description
 
-This page records the source-backed identity label Polygala tenuifolia. The import preserves the candidate's aliases and source trail only; molecular structure, pharmacokinetics, effects, dosing, safety, and efficacy remain unestablished here.
-
+This page links PubMed evidence for polygala tenuifolia. Study populations, formulations and endpoints are retained per PMID; non-PubMed links remain provenance leads. Abstracts were retrieved for PMID(s) 19429065.
 ## Evidence note
 
 Identity only import: the cited sources support candidate identity provenance, not an evidence review. No biological relationship or clinical claim is asserted.
+
+Reviewed PubMed abstracts for PMID(s) 19429065. No rights-eligible PMC full text was available among these records.
 
 ## Doses
 
@@ -112,7 +113,18 @@ Identity only import: the cited sources support candidate identity provenance, n
 ## Outcomes
 
 ```yaml
-[]
+- id: reddit-polygala-tenuifolia-episodic-memory-19429065
+  conceptId: episodic-memory
+  name: Episodic Memory
+  direction: Variable
+  evidence: Preclinical or in-vitro research
+  description: We previously reported that BT-11, the extract of dried roots of Polygala tenuifolia Willdenow, had neuroprotective effects and improved scopolamine- and stress-induced amnesia in rats.
+  sourceId: reddit-pmid-19429065
+  population: We previously reported that BT-11, the extract of dried roots of Polygala tenuifolia Willdenow, had neuroprotective effects and improved scopolamine- and stress-induced amnesia in rats.
+  exposure: This study was a randomized, double-blind, placebo-controlled, parallel-group study of BT-11 in healthy adults.
+  instrument: null
+  magnitude: null
+  reportType: measured-assessment
 ```
 
 ## Mechanisms
@@ -130,7 +142,20 @@ Identity only import: the cited sources support candidate identity provenance, n
 ## Claims
 
 ```yaml
-[]
+- id: reddit-claim-polygala-tenuifolia-19429065-0
+  assertion: 'PMID 19429065 reported: We previously reported that BT-11, the extract of dried roots of Polygala tenuifolia Willdenow, had neuroprotective effects and improved scopolamine- and stress-induced amnesia in rats.'
+  relation: associated-with
+  participants:
+  - entityId: substance:polygala-tenuifolia
+    role: intervention or exposure
+  - entityId: tag:episodic-memory
+    role: reported endpoint
+  context: Source-specific result from PMID 19429065; applies to the population and design described in that abstract.
+  sourceIds:
+  - reddit-pmid-19429065
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Abstract result from PMID 19429065; this single study does not establish general efficacy or safety.
 ```
 
 ## Interactions
@@ -145,6 +170,14 @@ Identity only import: the cited sources support candidate identity provenance, n
 []
 ```
 
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Polygala_tenuifolia
+  title: Wikipedia
+```
+
 ## References
 
 ```yaml
@@ -156,6 +189,20 @@ Identity only import: the cited sources support candidate identity provenance, n
   kind: catalog-identity
   insight: The OptiHealth canonical catalog records this substance identity label.
   limitation: This catalog snapshot is not an independent evidence review and does not establish structure, dose, safety, or efficacy.
+- id: reddit-pmid-19429065
+  title: Effects of BT-11 on memory in healthy humans.
+  authors: Jun-Young Lee, Ka Young Kim, Ki Young Shin, Beom Young Won, Hee Yeon Jung, Yoo-Hun Suh
+  year: 2009
+  url: https://pubmed.ncbi.nlm.nih.gov/19429065/
+  kind: PubMed publication
+  insight: We previously reported that BT-11, the extract of dried roots of Polygala tenuifolia Willdenow, had neuroprotective effects and improved scopolamine- and stress-induced amnesia in rats.
+  limitation: PubMed abstract for PMID 19429065 was reviewed; no rights-eligible PMC full text was available in this pass.
+  pmid: '19429065'
+  doi: 10.1016/j.neulet.2009.03.024
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
