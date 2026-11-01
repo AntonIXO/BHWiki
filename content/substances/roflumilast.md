@@ -98,10 +98,10 @@ Reviewed PubMed abstracts for PMID(s) 29098341, 29241652. Rights-eligible PMC fu
   unit: μg
   ingredient: Roflumilast
   formulation: Formulation as described in PMID 29241652
-  route: oral or as stated in abstract
-  frequency: Study schedule not stated in abstract
-  duration: Not stated in abstract
-  population: Population not stated in the PubMed record.
+  route: oral capsule
+  frequency: single dose
+  duration: Acute single dose; testing 1 hour after administration
+  population: Healthy young adults in a randomized, placebo-controlled 4-way crossover study
   purpose: Research exposure
   sourceCategory: research
   note: Dose and schedule transcribed from PMID 29241652 abstract; formulation and population are source-specific to this study.

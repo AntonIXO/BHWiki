@@ -83,10 +83,10 @@ Reviewed PubMed abstracts for PMID(s) 10633490, 22629087, 9844008. PMC citation 
   unit: mg/kg
   ingredient: Rolipram
   formulation: Formulation as described in PMID 22629087
-  route: oral or as stated in abstract
-  frequency: Study schedule not stated in abstract
-  duration: Not stated in abstract
-  population: The alteration of GABA content by rolipram as a phosphodiesterase enzyme type-4 inhibitor in the frontal cortex (FCx; as a brain region crucial for the control of emotion and cognition) obtained from male mice exposed to chronic mild stress (CMS)-induced anhedonia (the loss of pleasure or lack of sensitivity to pleasure stimuli) was recorded.
+  route: oral
+  frequency: daily
+  duration: 3 weeks
+  population: Male mice exposed to chronic mild stress-induced anhedonia
   purpose: Research exposure
   sourceCategory: research
   note: Dose and schedule transcribed from PMID 22629087 abstract; formulation and population are source-specific to this study.
