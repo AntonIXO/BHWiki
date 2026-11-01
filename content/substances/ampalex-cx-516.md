@@ -98,7 +98,6 @@ Two PubMed abstracts were retrieved; neither publication had rights-eligible PMC
   unit: study-specific
   ingredient: Ampalex/ampakine
   formulation: Study drug
-  route: Not established from abstract
   frequency: Single study exposure
   duration: Acute
   population: Healthy human subjects

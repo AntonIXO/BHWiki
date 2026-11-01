@@ -113,8 +113,7 @@ Reddit index source review: Three PubMed abstracts were retrieved; none had righ
   duration: 84 days
   population: 64 children aged 10–14 years with high screen exposure
   purpose: Assess digital-eye-strain symptoms and visual measures
-  note: The trial reported symptom improvement but null findings for several objective
-    ophthalmic endpoints; not a myopia treatment dose.
+  note: The trial reported symptom improvement but null findings for several objective ophthalmic endpoints; not a myopia treatment dose.
   sourceId: ref-hecht-2025
 - sourceCategory: research
   label: Cognition trial
@@ -129,8 +128,7 @@ Reddit index source review: Three PubMed abstracts were retrieved; none had righ
   duration: 12 weeks
   population: 96 middle-aged or older adults reporting forgetfulness
   purpose: Assess CogHealth and maze-task measures
-  note: Within-group changes were reported, but the small trial was not powered to
-    establish superiority to placebo.
+  note: Within-group changes were reported, but the small trial was not powered to establish superiority to placebo.
   sourceId: ref-katagiri-2012
 - sourceCategory: research
   label: Exercise metabolism trial
@@ -145,8 +143,7 @@ Reddit index source review: Three PubMed abstracts were retrieved; none had righ
   duration: 4 weeks
   population: 14 active young men
   purpose: Assess substrate use and oxidative-stress markers during exercise
-  note: Glutathione increased, but fat oxidation and several oxidative markers did
-    not improve.
+  note: Glutathione increased, but fat oxidation and several oxidative markers did not improve.
   sourceId: ref-res-2013
 - sourceCategory: research
   label: Short exercise trial
@@ -161,8 +158,7 @@ Reddit index source review: Three PubMed abstracts were retrieved; none had righ
   duration: 4 days
   population: 10 physically active men
   purpose: Assess cycling time to exhaustion and muscle-damage biomarkers
-  note: Very small hypothesis-generating study; the larger exercise synthesis found
-    no reliable performance effect.
+  note: Very small hypothesis-generating study; the larger exercise synthesis found no reliable performance effect.
   sourceId: ref-tsao-2025
 - sourceCategory: research
   label: Lipid-formulation PK trial
@@ -177,8 +173,7 @@ Reddit index source review: Three PubMed abstracts were retrieved; none had righ
   duration: Plasma sampling over the study PK window
   population: 32 healthy men
   purpose: Compare formulation-dependent bioavailability
-  note: The formulations produced approximately 1.7–3.7-fold differences in exposure;
-    this is a PK study, not a routine dosing recommendation.
+  note: The formulations produced approximately 1.7–3.7-fold differences in exposure; this is a PK study, not a routine dosing recommendation.
   sourceId: ref-odeberg-2003
 - sourceCategory: research
   label: Free-astaxanthin isomer PK study
@@ -193,8 +188,7 @@ Reddit index source review: Three PubMed abstracts were retrieved; none had righ
   duration: Plasma sampling to approximately 72 hours
   population: 3 men aged 37–43 years
   purpose: Characterize plasma appearance and distribution
-  note: Extreme dose and n=3 make this mechanistic PK evidence rather than routine
-    supplementation guidance.
+  note: Extreme dose and n=3 make this mechanistic PK evidence rather than routine supplementation guidance.
   sourceId: ref-osterlie-2000
 - sourceCategory: research
   label: Fatty-acyl-diesters PK study
@@ -209,8 +203,7 @@ Reddit index source review: Three PubMed abstracts were retrieved; none had righ
   duration: Plasma sampling to approximately 168 hours
   population: 3 men aged 41–50 years
   purpose: Compare plasma appearance of esterified material
-  note: Intact esters were not detected in plasma; the reported half-life is not a
-    universal value.
+  note: Intact esters were not detected in plasma; the reported half-life is not a universal value.
   sourceId: ref-coral-2004
 - label: Mouse diet dose-response
   amount: 0.02%, 0.1% or 0.5% diet
@@ -225,8 +218,7 @@ Reddit index source review: Three PubMed abstracts were retrieved; none had righ
   population: Mice
   purpose: Hippocampal neurogenesis and memory research
   sourceCategory: research
-  note: Cell proliferation/survival improved at 0.1–0.5%; mature neurons and spatial
-    memory at 0.5%.
+  note: Cell proliferation/survival improved at 0.1–0.5%; mature neurons and spatial memory at 0.5%.
   sourceId: reddit-pmid-26643409
 - label: Aging/diabetes rodent studies
   amount: Dose not stated in abstract
@@ -235,7 +227,6 @@ Reddit index source review: Three PubMed abstracts were retrieved; none had righ
   unit: study-specific
   ingredient: Astaxanthin
   formulation: Study formulation
-  route: Not established from abstract
   frequency: Study-specific
   duration: Study-specific
   population: Induced-aging rats or diabetic mice

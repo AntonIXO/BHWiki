@@ -82,10 +82,9 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: Hydergine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'The high dose of Hydergine used in this volunteer study was exceptionally well tolerated and did produce significant results on individual measures of central nervous system activity which might suggest the use of similar doses in patient populations.'
+  population: The high dose of Hydergine used in this volunteer study was exceptionally well tolerated and did produce significant results on individual measures of central nervous system activity which might suggest the use of similar doses in patient populations.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.

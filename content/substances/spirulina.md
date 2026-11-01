@@ -83,7 +83,6 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
   unit: g
   ingredient: Spirulina
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: This study tested that hypothesis in a randomized, double blinded, placebo controlled study in men.

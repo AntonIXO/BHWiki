@@ -89,7 +89,6 @@ PubMed MCP abstract review covered 2 PMID-linked records for this Reddit-index e
   unit: mg
   ingredient: Haloperidol
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: this study were healthy volunteers who had no confounding variables typically found in patients with schizophrenia

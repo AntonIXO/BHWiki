@@ -83,7 +83,6 @@ The three Reddit-linked PubMed abstracts were reviewed. They support acute, task
   unit: mg
   ingredient: Galantamine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   purpose: Research exposure
@@ -98,7 +97,6 @@ The three Reddit-linked PubMed abstracts were reviewed. They support acute, task
   unit: μg
   ingredient: Galantamine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   purpose: Research exposure

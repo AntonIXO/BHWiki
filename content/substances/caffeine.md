@@ -232,7 +232,6 @@ Reddit index corpus import (11 linked source records; 11 PubMed abstracts after 
   unit: mg
   ingredient: Caffeine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: scanned in a non-withdrawn state following a workday during which caffeinated products were consumed according to individual normal use (range = 145-595 mg)
@@ -247,7 +246,6 @@ Reddit index corpus import (11 linked source records; 11 PubMed abstracts after 
   unit: mg
   ingredient: Caffeine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -262,7 +260,6 @@ Reddit index corpus import (11 linked source records; 11 PubMed abstracts after 
   unit: mg
   ingredient: Caffeine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract

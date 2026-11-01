@@ -163,10 +163,9 @@ PubMed MCP abstract review: 7 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: lutein
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'To test this, we measured macular pigment density (as a biomarker of lutein and zeaxanthin levels in brain), critical flicker fusion (CFF) thresholds, and visual motor reaction time in young healthy subjects (n = 92).'
+  population: To test this, we measured macular pigment density (as a biomarker of lutein and zeaxanthin levels in brain), critical flicker fusion (CFF) thresholds, and visual motor reaction time in young healthy subjects (n = 92).
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.

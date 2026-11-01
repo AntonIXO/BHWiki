@@ -204,7 +204,6 @@ PMC full-text retrieval for this page returned body text for 0/1 identified PMCI
   unit: iu
   ingredient: Vitamin D
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 'METHODS: Healthy adults (n=82) from northern British Columbia, Canada (54° north latitude) with baseline 25(OH)D levels ≤100nmol/L were randomized and blinded to High Dose (4000IU/d) versus Low Dose (400IU/d) vitamin D3 (cholecalciferol) for 18weeks.'
@@ -219,7 +218,6 @@ PMC full-text retrieval for this page returned body text for 0/1 identified PMCI
   unit: iu
   ingredient: Vitamin D
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 'METHODS: Healthy adults (n=82) from northern British Columbia, Canada (54° north latitude) with baseline 25(OH)D levels ≤100nmol/L were randomized and blinded to High Dose (4000IU/d) versus Low Dose (400IU/d) vitamin D3 (cholecalciferol) for 18weeks.'

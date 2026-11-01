@@ -82,7 +82,6 @@ PubMed MCP abstract review: 5 linked PubMed identifiers were retrieved for this 
   unit: g
   ingredient: Glucose
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: administered drinks containing five different doses of glucose (0 g, 15 g, 25 g, 50 g, and 60 g) and were tested across a range of memory tasks

@@ -108,10 +108,9 @@ PubMed MCP abstract review: 8 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: L-theanine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'Using a double-blind, repeated-measures design, 36 participants received 4 treatments (200 mg caffeine + 0 mg theanine, 0 mg caffeine + 200 mg theanine, 200 mg caffeine + 200 mg theanine, 0 mg caffeine + 0 mg theanine) on separate days.'
+  population: Using a double-blind, repeated-measures design, 36 participants received 4 treatments (200 mg caffeine + 0 mg theanine, 0 mg caffeine + 200 mg theanine, 200 mg caffeine + 200 mg theanine, 0 mg caffeine + 0 mg theanine) on separate days.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -123,10 +122,9 @@ PubMed MCP abstract review: 8 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: L-theanine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'We aimed to determine whether theanine and theanine-caffeine combination have acute positive effects on cognitive and neurophysiological measures of attention, compared to caffeine (a positive control) and a placebo in healthy individuals.'
+  population: We aimed to determine whether theanine and theanine-caffeine combination have acute positive effects on cognitive and neurophysiological measures of attention, compared to caffeine (a positive control) and a placebo in healthy individuals.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -138,10 +136,9 @@ PubMed MCP abstract review: 8 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: L-theanine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'Twenty-seven participants performed the Sustained Attention to Response Task (SART) over a two-hour session on each of four days, on which they were administered caffeine (50 mg), theanine (100 mg), the combination, or placebo in a double-blind, randomized, cross-over fashion.'
+  population: Twenty-seven participants performed the Sustained Attention to Response Task (SART) over a two-hour session on each of four days, on which they were administered caffeine (50 mg), theanine (100 mg), the combination, or placebo in a double-blind, randomized, cross-over fashion.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -153,10 +150,9 @@ PubMed MCP abstract review: 8 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: L-theanine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'nine on behaviour, yet no data exists exploring the impact of the two on cerebral blood flow (CBF)'
+  population: nine on behaviour, yet no data exists exploring the impact of the two on cerebral blood flow (CBF)
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.

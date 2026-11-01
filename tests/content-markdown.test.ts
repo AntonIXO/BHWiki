@@ -9,16 +9,16 @@ import type { Substance, TagKind } from "../src/lib/types";
 
 const curatedSlugs = ["caffeine", "l-theanine", "creatine", "melatonin", "nicotine", "psilocybin", "modafinil", "methylphenidate", "diphenhydramine", "citicoline"];
 const curatedHashes = [
-  "608bbabf9fea1cf80fce8f17fa2fad74821998d85ade8029ba89ced9f772e2d7",
-  "5785e16a2cf0c67e49b2e0393218c49dbd5ec5f72ea5e8890e3ca64121626cfa",
-  "2c723ea2c33788598c640687b8c14baabc9aeecd63e713248a86c9dcd642350c",
+  "a68f5c29584d5303ea355813c6033590f29f144115dd6acf5adb937a30a41017",
+  "89d4e24b9f4441ad36e6e98cad937b05da40d4bbaeeb73fa4eeeec88b0710cad",
+  "3c7f625f039d7bb12eb9c3d0a4a288e98cf2ae9e136baa24055ce2d2db5a9e4e",
   "1b2b542eb4f6133c213b352f4a7a61841f267e102a2d7a6f768bba3d50c88aee",
-  "bc56fa0f20b252b341c4321fe4d1108a826a8685ca0a2d786c7b8fa918bae2f6",
+  "11fc97da3bb572d54d11e96b8d6a569a84d289163a7770fd4358a8334d0b52c5",
   "f8c8258e89ff47240104fd22602ac94ef98f991b2fe1bbea7b3b2f5f6d734fe6",
   "b71d5b488aab7523168792bd996eb11cf508b412ca464cc0695db2747409680c",
   "a8275baaff59fc792278f8dc08809a566ba8aa5d6d2af4390491dcd425b5d64b",
   "2af40220f322b71b7ac9db93b605a1dea2327a12c1f95a70eb200fe8c55f30de",
-  "08515ae44b1d0ab33f87868f1b5ed2c0a20849ef5fe7a493a5cfc3337da9b093",
+  "414f2427a558db923108e90fdfea485ab9f210f32a83245bcd8cc9b40a64cbc3",
 ];
 
 test("markdown files preserve the curated records", () => {

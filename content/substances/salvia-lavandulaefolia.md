@@ -84,7 +84,6 @@ PMC full-text retrieval for this page returned body text for 0/1 identified PMCI
   unit: mg
   ingredient: Salvia lavandulaefolia
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 30 healthy participants attended the laboratory on three separate days, 7 days apart, receiving a different treatment in counterbalanced order on each occasion (placebo, 300, 600 mg dried sage leaf)

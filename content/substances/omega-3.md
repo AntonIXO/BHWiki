@@ -164,7 +164,6 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   unit: mg
   ingredient: Omega-3 long-chain fatty acids — BHWiki deep-research report
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -179,7 +178,6 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   unit: g
   ingredient: Omega-3 long-chain fatty acids — BHWiki deep-research report
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -194,7 +192,6 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   unit: g
   ingredient: Omega-3 long-chain fatty acids — BHWiki deep-research report
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -209,7 +206,6 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   unit: mg
   ingredient: Omega-3 long-chain fatty acids — BHWiki deep-research report
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: assigned to active (n = 20, 5 men
@@ -224,7 +220,6 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   unit: g
   ingredient: Omega-3 long-chain fatty acids — BHWiki deep-research report
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -239,7 +234,6 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   unit: g
   ingredient: Omega-3 long-chain fatty acids — BHWiki deep-research report
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -254,7 +248,6 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   unit: g
   ingredient: Omega-3 long-chain fatty acids — BHWiki deep-research report
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract

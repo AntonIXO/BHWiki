@@ -83,7 +83,6 @@ PubMed/PMC review: retrieved 3 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Zinc
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 387 healthy adults aged 55-87 years
@@ -98,7 +97,6 @@ PubMed/PMC review: retrieved 3 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Zinc
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 46 subjects

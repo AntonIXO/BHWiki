@@ -85,7 +85,6 @@ PMC full-text retrieval for this page returned body text for 1/3 identified PMCI
   unit: mg/kg
   ingredient: St. John's Wort
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Therefore, we investigated possible alterations in affinity and density of 5-HT1 A and 5-HT2 A receptors caused by long-term treatment of rats with St.
@@ -100,7 +99,6 @@ PMC full-text retrieval for this page returned body text for 1/3 identified PMCI
   unit: mg
   ingredient: St. John's Wort
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 54 children aged 6 to 17 years who met Diagnostic and Statistical Manual of Mental Disorders (Fourth Edition) criteria for ADHD by structured interview
@@ -115,7 +113,6 @@ PMC full-text retrieval for this page returned body text for 1/3 identified PMCI
   unit: mg/kg
   ingredient: St. John's Wort
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Middleaged rats (18 month-old) displayed a decline in the acquisition of spatial working memory (p < 0.001) in the Morris water maze (MWM).
@@ -130,7 +127,6 @@ PMC full-text retrieval for this page returned body text for 1/3 identified PMCI
   unit: mg
   ingredient: St. John's Wort
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: A group of rats administered the exogenous corticosterone at the dose of 5 mg kg(-1) daily for 21 days, yielding its similar plasma levels as these observed in stress was run in parallel.

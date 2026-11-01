@@ -83,7 +83,6 @@ PubMed/PMC review: retrieved 2 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Soy
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 'OBJECTIVE: To examine the effects of supervised high versus low soya diets on attention, memory and frontal lobe function in young healthy adults of both sexes.'
@@ -98,7 +97,6 @@ PubMed/PMC review: retrieved 2 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Soy
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 'OBJECTIVE: To examine the effects of supervised high versus low soya diets on attention, memory and frontal lobe function in young healthy adults of both sexes.'
@@ -113,7 +111,6 @@ PubMed/PMC review: retrieved 2 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Soy
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 'Volunteers were randomised to take four capsules/d containing soya isoflavones (116 mg isoflavone equivalents/d: 68 mg daidzein, 12 mg genistein, 36 mg glycitin) or placebo for 6 weeks, and the alternate treatment during the following 6 weeks.'
@@ -128,7 +125,6 @@ PubMed/PMC review: retrieved 2 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Soy
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 'Volunteers were randomised to take four capsules/d containing soya isoflavones (116 mg isoflavone equivalents/d: 68 mg daidzein, 12 mg genistein, 36 mg glycitin) or placebo for 6 weeks, and the alternate treatment during the following 6 weeks.'
@@ -143,7 +139,6 @@ PubMed/PMC review: retrieved 2 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Soy
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 'Volunteers were randomised to take four capsules/d containing soya isoflavones (116 mg isoflavone equivalents/d: 68 mg daidzein, 12 mg genistein, 36 mg glycitin) or placebo for 6 weeks, and the alternate treatment during the following 6 weeks.'

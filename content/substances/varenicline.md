@@ -84,7 +84,6 @@ PMC full-text retrieval for this page returned body text for 0/1 identified PMCI
   unit: mg
   ingredient: Varenicline
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 41 subjects were randomized, with 38 subjects included in the analysis

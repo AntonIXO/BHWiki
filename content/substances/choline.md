@@ -583,7 +583,6 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   unit: mg/kg
   ingredient: Choline
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract

@@ -241,7 +241,6 @@ Reddit index corpus import (2 linked source records; both resolved to PubMed abs
   unit: mg
   ingredient: GABA
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   purpose: Research exposure

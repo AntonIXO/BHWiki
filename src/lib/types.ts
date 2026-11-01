@@ -35,7 +35,7 @@ export type TimingMarker = {
 };
 export type DoseContext = {
   label: string; amount: string; quantity: number | null; quantityMax: number | null; unit: string;
-  ingredient: string; formulation: string; route: string; frequency: string; duration: string;
+  ingredient: string; formulation: string; route?: string; frequency: string; duration: string;
   population: string; purpose: string; sourceCategory: "research" | "approved-label" | "reference" | "community";
   foodRelation?: "empty-stomach" | "with-food" | "with-or-without-food" | "food-effect-not-established";
   solubility?: "water-soluble" | "fat-soluble" | "formulation-dependent" | "solubility-not-established";

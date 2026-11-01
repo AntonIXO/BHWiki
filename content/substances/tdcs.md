@@ -84,7 +84,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: ma
   ingredient: tDCS
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 11 healthy male participants for this single-blind, sham-controlled crossover trial
@@ -99,7 +98,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: min
   ingredient: tDCS
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Ten participants undertook three experimental sessions in which they received 10 min of anodal tDCS (active comparator), tRNS or sham tDCS whilst performing the Sternberg WM task
@@ -114,7 +112,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: min
   ingredient: tDCS
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Twelve healthy participants underwent three stimulation sessions consisting of 20 min of either 1 mA anodal tDCS, 2 mA anodal tDCS, or sham tDCS to the left dorsolateral prefrontal cortex (DLPFC) localized v
@@ -129,7 +126,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: ma
   ingredient: tDCS
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Twelve healthy participants underwent three stimulation sessions consisting of 20 min of either 1 mA anodal tDCS, 2 mA anodal tDCS, or sham tDCS to the left dorsolateral prefrontal cortex (DLPFC) localized v
@@ -144,7 +140,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: ma
   ingredient: tDCS
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Twelve healthy participants underwent three stimulation sessions consisting of 20 min of either 1 mA anodal tDCS, 2 mA anodal tDCS, or sham tDCS to the left dorsolateral prefrontal cortex (DLPFC) localized v
@@ -159,7 +154,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: ma
   ingredient: tDCS
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 15 healthy participants
@@ -174,7 +168,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: min
   ingredient: tDCS
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 'Our stimulation protocol included 3 conditions, each with 12 neurotypical participants: (i) left cathodal stimulation together with right anodal stimulation, (ii) left anodal stimulation together with right cathodal stimulation, and (iii) sham (control) stimulation.'
@@ -189,7 +182,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: min
   ingredient: tDCS
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 13 healthy volunteers (aged 19-28 yr) in a blinded, sham-controlled, cross-over design
@@ -204,7 +196,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: ma
   ingredient: tDCS
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 13 healthy volunteers (aged 19-28 yr) in a blinded, sham-controlled, cross-over design
@@ -219,7 +210,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: min
   ingredient: tDCS
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Population described in the PubMed abstract.

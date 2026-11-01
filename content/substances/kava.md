@@ -89,10 +89,9 @@ PubMed MCP abstract review covered 12 PMID-linked records for this Reddit-index 
   unit: mg/kg
   ingredient: Kava
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'A small dose of kava extract (20 mg/kg body weight i.p.) caused changes in rat behaviour and concentrations of dopamine in the nucleus accumbens.'
+  population: A small dose of kava extract (20 mg/kg body weight i.p.) caused changes in rat behaviour and concentrations of dopamine in the nucleus accumbens.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -104,10 +103,9 @@ PubMed MCP abstract review covered 12 PMID-linked records for this Reddit-index 
   unit: mg/kg
   ingredient: Kava
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'As the first of a series of studies on the neuropharmacological interactions of kava with CNS receptors we tested purified pyrones and kava resin for activity on GABA and benzodiazepine binding sites in rat and mouse brain membranes.'
+  population: As the first of a series of studies on the neuropharmacological interactions of kava with CNS receptors we tested purified pyrones and kava resin for activity on GABA and benzodiazepine binding sites in rat and mouse brain membranes.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -119,10 +117,9 @@ PubMed MCP abstract review covered 12 PMID-linked records for this Reddit-index 
   unit: mg
   ingredient: Kava
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'Forster) on emotional reactivity and cognitive performance were investigated in a double-blind randomized placebo-controlled trial involving healthy volunteers.'
+  population: Forster) on emotional reactivity and cognitive performance were investigated in a double-blind randomized placebo-controlled trial involving healthy volunteers.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -134,7 +131,6 @@ PubMed MCP abstract review covered 12 PMID-linked records for this Reddit-index 
   unit: mg
   ingredient: Kava
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 'TREATMENT AND CLINICAL COURSE: The patient''s physical condition deteriorated.'

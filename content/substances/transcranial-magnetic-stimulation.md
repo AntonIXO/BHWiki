@@ -84,7 +84,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Population not specified in the returned PubMed abstract.
@@ -99,7 +98,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Population not specified in the returned PubMed abstract.
@@ -114,7 +112,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Population not specified in the returned PubMed abstract.
@@ -129,7 +126,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Twenty healthy volunteers with left language lateralization, as determined by functional transcranial Dopplersonography, performed picture-word verification prior to and after rTMS (1 Hz for 600 s at 110%
@@ -144,7 +140,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Sixteen healthy volunteers participated
@@ -159,7 +154,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Forty healthy volunteers participated in our study
@@ -174,7 +168,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: sessions
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Forty healthy volunteers participated in our study
@@ -189,7 +182,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Normal healthy subjects received rTMS (1 Hz, 10 mins) over right or left parietal cortex.
@@ -204,7 +196,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: mins
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Normal healthy subjects received rTMS (1 Hz, 10 mins) over right or left parietal cortex.
@@ -219,7 +210,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: minutes
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 12 healthy volunteers received 20 minutes of slow rTMS over the left OFC, placebo treatment over the left OFC and rTMS over the left dorsolateral portion of the prefrontal cortex
@@ -234,7 +224,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Short trains of TMS pulses (12 Hz) were applied to a site overlying the right intraparietal sulcus/inferior parietal lobe while subjects performed either object identification tasks (i.e., picture-word verification and categorizing objects as natural or manufactured) or object orientation judgment t
@@ -249,7 +238,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 14 healthy subjects, visually evoked event-related potentials (ERP) and mean choice reaction time were measured before and after 20 Hz rTMS of the left and of the right prefrontal cortex
@@ -264,7 +252,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 14 healthy subjects, visually evoked event-related potentials (ERP) and mean choice reaction time were measured before and after 20 Hz rTMS of the left and of the right prefrontal cortex
@@ -279,7 +266,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Population not specified in the returned PubMed abstract.
@@ -294,7 +280,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: In 16 healthy right-hand male subjects, trains of 1 Hz or 20 Hz were applied over either Wernicke's area, Broca's area, or the primary visual cortex.
@@ -309,7 +294,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: In 16 healthy right-hand male subjects, trains of 1 Hz or 20 Hz were applied over either Wernicke's area, Broca's area, or the primary visual cortex.
@@ -324,7 +308,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Fifty-two healthy persons received either 100% resting motor threshold TMS at 5 Hz (real TMS) or sham TMS while engaged in a spatial WM task or a control visuospatial attention task.
@@ -339,7 +322,6 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
   unit: hz
   ingredient: Transcranial Magnetic Stimulation
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Subjects, who showed little gain in tactile performance after coactivation alone, showed the largest improvement after coac + rTMS implying that the combined application was selective for poor learners.

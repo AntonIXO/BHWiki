@@ -83,7 +83,6 @@ PubMed/PMC review: retrieved 2 PubMed records linked from this Reddit index entr
   unit: mg/kg
   ingredient: Sulbutiamine
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Thiamine deficiency in both man and animals is known to produce memory dysfunction and cognitive disorders which have been related to an impairment of cholinergic activity.

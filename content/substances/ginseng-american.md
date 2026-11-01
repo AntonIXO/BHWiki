@@ -83,7 +83,6 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: Ginseng (American)
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 'METHODS: This randomised, double-blind, placebo-controlled, crossover trial (N = 32, healthy young adults) assessed the acute mood, neurocognitive and glycaemic effects of three doses (100, 200 400 mg) of Cereboost™ (P. quinquefolius standardised to 10.65% ginsenosides).'
@@ -98,7 +97,6 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: Ginseng (American)
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 'OBJECTIVE: A ginsenoside-rich extract of American ginseng (Panax quinquefolius L.), Cereboost(TM), was previously shown to improve working memory and mood in healthy young individuals.'

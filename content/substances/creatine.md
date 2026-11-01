@@ -180,7 +180,6 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   unit: mg/kg
   ingredient: Creatine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: supplemented daily with 36 mg/kg body weight (BW) of GAA for the first 4 wk of the intervention

@@ -83,7 +83,6 @@ PubMed/PMC review: retrieved 4 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Thiamine
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: twenty young adult females took either a placebo or 50 mg thiamine, each day for 2 months
@@ -98,7 +97,6 @@ PubMed/PMC review: retrieved 4 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Thiamine
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: For treatment, subjects were randomly assigned to either thiamin (10 mg daily) or placebo groups.

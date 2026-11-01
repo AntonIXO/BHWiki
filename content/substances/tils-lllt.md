@@ -86,7 +86,6 @@ PMC full-text retrieval for this page returned body text for 4/4 identified PMCI
   unit: min
   ingredient: TILS (LLLT)
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 'Sixty healthy young adults were randomly assigned to one of the following four treatments: (1) low-level laser therapy (LLLT) with infrared laser to two forehead sites while seated (total 8 min, 1064 nm con'
@@ -101,7 +100,6 @@ PMC full-text retrieval for this page returned body text for 4/4 identified PMCI
   unit: sessions
   ingredient: TILS (LLLT)
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Four patients with MDD with mean age 47 ± 14 (SD) years (1 woman and 3 men) were exposed to irradiance of 700 mW/cm(2) and a fluence of 84 J/cm(2) for a total NIR energy of 2
@@ -131,7 +129,6 @@ PMC full-text retrieval for this page returned body text for 4/4 identified PMCI
   unit: min
   ingredient: TILS (LLLT)
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Sixty healthy young adults

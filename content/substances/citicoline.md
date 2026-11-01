@@ -187,7 +187,6 @@ Reddit index corpus import (9 linked source records; 7 PubMed abstracts). Full-t
   unit: mg
   ingredient: Citicoline
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -217,7 +216,6 @@ Reddit index corpus import (9 linked source records; 7 PubMed abstracts). Full-t
   unit: mg
   ingredient: Citicoline
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -247,7 +245,6 @@ Reddit index corpus import (9 linked source records; 7 PubMed abstracts). Full-t
   unit: mg
   ingredient: Citicoline
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: assessed for auditory gating as indexed by suppression of the P50 event-related potential (ERP) in a paired-stimulus (S1, S2) paradigm, and for executive function as measured by the Groton Maze Learning Task (GMLT) of the CogState Schizophrenia Battery

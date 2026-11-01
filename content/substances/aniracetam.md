@@ -89,7 +89,6 @@ Reddit index source review: Four PubMed abstracts were retrieved; PMC4123976 was
   unit: mg/kg
   ingredient: Aniracetam
   formulation: Study formulation
-  route: Not established from abstract
   frequency: Acute
   duration: Acute behavioral tests
   population: Mice
@@ -104,7 +103,6 @@ Reddit index source review: Four PubMed abstracts were retrieved; PMC4123976 was
   unit: mg/kg
   ingredient: Aniracetam
   formulation: Study formulation
-  route: Not established from abstract
   frequency: Acute before training
   duration: After 96 h sleep deprivation
   population: Male Wistar rats

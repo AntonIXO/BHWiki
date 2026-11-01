@@ -83,7 +83,6 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: Greek Mountain Tea (Sideritis scardica)
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: older adults, as well as blood pressure (BP) and CBF, in a subsample, utilizing near-infrared spectroscopy (NIRS)

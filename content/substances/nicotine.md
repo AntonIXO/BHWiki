@@ -165,7 +165,6 @@ PubMed abstracts retrieved for all 49 linked PMIDs. Full-text retrieval was atte
   unit: mg
   ingredient: Nicotine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: N = 44 healthy adult non-smokers performed antisaccade, stop signal, Stroop, go/no-go, flanker, shape matching and Simon tasks, as well as the attentional network test (ANT) and a continuous performance task (CPT)
@@ -180,7 +179,6 @@ PubMed abstracts retrieved for all 49 linked PMIDs. Full-text retrieval was atte
   unit: mg
   ingredient: Nicotine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -195,7 +193,6 @@ PubMed abstracts retrieved for all 49 linked PMIDs. Full-text retrieval was atte
   unit: mg
   ingredient: Nicotine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: administered a 7 mg/day nicotine transdermal patch for 4
@@ -210,7 +207,6 @@ PubMed abstracts retrieved for all 49 linked PMIDs. Full-text retrieval was atte
   unit: mg/kg
   ingredient: Nicotine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -225,7 +221,6 @@ PubMed abstracts retrieved for all 49 linked PMIDs. Full-text retrieval was atte
   unit: mg
   ingredient: Nicotine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -240,7 +235,6 @@ PubMed abstracts retrieved for all 49 linked PMIDs. Full-text retrieval was atte
   unit: mg
   ingredient: Nicotine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -255,7 +249,6 @@ PubMed abstracts retrieved for all 49 linked PMIDs. Full-text retrieval was atte
   unit: mg
   ingredient: Nicotine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract

@@ -85,7 +85,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: mg
   ingredient: Silybum marianum
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: five adult outpatients who met the DSM-IV-TR criteria for OCD based on the structured clinical interview participated in the trial
@@ -100,7 +99,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: mg
   ingredient: Silybum marianum
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: five adult outpatients who met the DSM-IV-TR criteria for OCD based on the structured clinical interview participated in the trial
@@ -115,7 +113,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: mcg
   ingredient: Silybum marianum
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: In the present study, we observed that neonatal iron (120 μg/g body weight) supplementation resulted in significant abnormality of behavior and depletion of striatal dopamine (DA) in the aging male and female rats while it did not do so in the young male and female rats.
@@ -130,7 +127,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: mg/kg
   ingredient: Silybum marianum
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: In the present study, we observed that neonatal iron (120 μg/g body weight) supplementation resulted in significant abnormality of behavior and depletion of striatal dopamine (DA) in the aging male and female rats while it did not do so in the young male and female rats.

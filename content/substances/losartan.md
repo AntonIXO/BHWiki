@@ -82,10 +82,9 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   unit: mg/kg
   ingredient: Losartan
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'Nootropic activity of losartan in mice was assessed by using passive avoidance step-down task and elevated plus-maze as a measure of short-term working and spatial memory respectively.'
+  population: Nootropic activity of losartan in mice was assessed by using passive avoidance step-down task and elevated plus-maze as a measure of short-term working and spatial memory respectively.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.

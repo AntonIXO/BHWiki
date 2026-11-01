@@ -82,7 +82,6 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   unit: mg/kg
   ingredient: Hazelnut
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 'METHODS: In this study, rats were fed with hazelnut kernel [(without skin) 800 mg/kg/day] during 1 week before stereotaxic surgery to 24 hours before behavioral testing (in general, for 16 consecutive days) and the effect of hazelnut eating on memory, anxiety, neuroinflammation and apoptosis was assessed in the amyloid beta-injected rat.'

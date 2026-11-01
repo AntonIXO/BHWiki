@@ -89,10 +89,9 @@ PubMed MCP abstract review covered 11 PMID-linked records for this Reddit-index 
   unit: mg
   ingredient: Lavender
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'In this study 318 adult out-patients with MADD according to ICD-10 criteria, a total score ≥18 points on the Hamilton Anxiety Rating Scale (HAMA), and at least moderately severe anxious and depressed mood were randomized and received 1×80mg Silexan or placebo in double-blind fashion for a scheduled period of 70 days.'
+  population: In this study 318 adult out-patients with MADD according to ICD-10 criteria, a total score ≥18 points on the Hamilton Anxiety Rating Scale (HAMA), and at least moderately severe anxious and depressed mood were randomized and received 1×80mg Silexan or placebo in double-blind fashion for a scheduled period of 70 days.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -104,10 +103,9 @@ PubMed MCP abstract review covered 11 PMID-linked records for this Reddit-index 
   unit: mg
   ingredient: Lavender
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'In this randomized, double-blind, double-dummy trial 539 adults with GAD according to DSM-5 criteria and a Hamilton Anxiety Scale (HAMA) total score ⩾ 18 points participated and received 160 or 80 mg Silexan, 20 mg paroxetine, or placebo once daily for 10 wk.'
+  population: In this randomized, double-blind, double-dummy trial 539 adults with GAD according to DSM-5 criteria and a Hamilton Anxiety Scale (HAMA) total score ⩾ 18 points participated and received 160 or 80 mg Silexan, 20 mg paroxetine, or placebo once daily for 10 wk.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -119,7 +117,6 @@ PubMed MCP abstract review covered 11 PMID-linked records for this Reddit-index 
   unit: mg
   ingredient: Lavender
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 'RESULTS: In patients with subsyndromal anxiety or generalised anxiety disorder (GAD) an anxiolytic effect of Silexan was evident after 2 weeks.'
@@ -134,10 +131,9 @@ PubMed MCP abstract review covered 11 PMID-linked records for this Reddit-index 
   unit: mg
   ingredient: Lavender
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'Patients treated with silexan showed a total score decrease by 16.0+/-8.3 points (mean+/-SD, 59.3%) for the HAMA and by 5.5+/-4.4 points (44.7%) for the PSQI compared to 9.5+/-9.1 (35.4%) and 3.8+/-4.1 points (30.9%) in the placebo group (P<0.01 one-sided, intention to treat).'
+  population: Patients treated with silexan showed a total score decrease by 16.0+/-8.3 points (mean+/-SD, 59.3%) for the HAMA and by 5.5+/-4.4 points (44.7%) for the PSQI compared to 9.5+/-9.1 (35.4%) and 3.8+/-4.1 points (30.9%) in the placebo group (P<0.01 one-sided, intention to treat).
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -149,10 +145,9 @@ PubMed MCP abstract review covered 11 PMID-linked records for this Reddit-index 
   unit: mg
   ingredient: Lavender
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'Given the high prevalence of anxiety and restlessness in younger women, oral contraceptives and Silexan will likely be co-administered.'
+  population: Given the high prevalence of anxiety and restlessness in younger women, oral contraceptives and Silexan will likely be co-administered.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -164,7 +159,6 @@ PubMed MCP abstract review covered 11 PMID-linked records for this Reddit-index 
   unit: mg
   ingredient: Lavender
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 'SUBJECTS AND METHODS: Sixteen healthy male or female Caucasians completed this double-blind, randomized, 2-fold crossover study.'

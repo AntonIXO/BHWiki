@@ -84,7 +84,6 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: Ispronicline (AZD-3480, TC-1734)
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 'MATERIALS AND METHODS: Electroencephalography (EEG) techniques and computerized cognitive tests were performed in young, healthy male volunteers during two double-blind and placebo-controlled studies: a rising single dose crossover study (from 2 to 320 mg) and a rising repeated dose study with a parallel group design (50, 100, and 200 mg).'

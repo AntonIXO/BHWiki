@@ -212,7 +212,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: mg/kg
   ingredient: Tyrosine
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Tyrosine administration elevates striatal levels of dopamine metabolites in animals given treatments that accelerate nigrostriatal firing, but not in untreated rats.
@@ -227,7 +226,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   unit: mg/kg
   ingredient: Tyrosine
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Ten men and 10 women subjects underwent these batteries 1 h after ingesting 150 mg/kg of l-tyrosine or placebo

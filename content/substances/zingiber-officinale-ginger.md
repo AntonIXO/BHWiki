@@ -85,7 +85,6 @@ PMC full-text retrieval for this page returned body text for 1/1 identified PMCI
   unit: mg
   ingredient: Zingiber officinale (Ginger)
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Sixty participants were randomly assigned to receive a placebo or standardized plant extract at doses of 400 and 800 mg once daily for 2 months

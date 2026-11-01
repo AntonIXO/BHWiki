@@ -83,7 +83,6 @@ PubMed/PMC review: retrieved 3 PubMed records linked from this Reddit index entr
   unit: mg/kg
   ingredient: Sunifiram
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: DM 232 and DM 235 reversed the antagonism induced by kynurenic acid of the NMDA-mediated release of [(3)H]NA in the kynurenate test performed in rat hippocampal slices.
@@ -98,7 +97,6 @@ PubMed/PMC review: retrieved 3 PubMed records linked from this Reddit index entr
   unit: mg/kg
   ingredient: Sunifiram
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: DM 232 and DM 235 reversed the antagonism induced by kynurenic acid of the NMDA-mediated release of [(3)H]NA in the kynurenate test performed in rat hippocampal slices.
@@ -113,7 +111,6 @@ PubMed/PMC review: retrieved 3 PubMed records linked from this Reddit index entr
   unit: mg/kg
   ingredient: Sunifiram
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: We have previously reported that olfactory bulbectomized (OBX) mice show hippocampus-dependent memory impairment as assessed by memory-related behavioral tasks and hippocampal long-term potentiation (LTP).
@@ -128,7 +125,6 @@ PubMed/PMC review: retrieved 3 PubMed records linked from this Reddit index entr
   unit: mg/kg
   ingredient: Sunifiram
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: We have previously reported that olfactory bulbectomized (OBX) mice show hippocampus-dependent memory impairment as assessed by memory-related behavioral tasks and hippocampal long-term potentiation (LTP).

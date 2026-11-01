@@ -82,10 +82,9 @@ PubMed MCP abstract review covered 3 PMID-linked records for this Reddit-index e
   unit: g
   ingredient: Lysine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: '108 healthy Japanese adults'
+  population: 108 healthy Japanese adults
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -97,10 +96,9 @@ PubMed MCP abstract review covered 3 PMID-linked records for this Reddit-index e
   unit: g
   ingredient: Lysine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: '29 healthy subjects with high trait anxiety'
+  population: 29 healthy subjects with high trait anxiety
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.

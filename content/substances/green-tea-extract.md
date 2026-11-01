@@ -89,10 +89,9 @@ PubMed MCP abstract review covered 1 PMID-linked records for this Reddit-index e
   unit: mg
   ingredient: Green Tea Extract
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'nine, and epigallocatechin gallate (EGCG) repeatedly demonstrated benefits on mood and cognitive performance'
+  population: nine, and epigallocatechin gallate (EGCG) repeatedly demonstrated benefits on mood and cognitive performance
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.

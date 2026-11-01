@@ -83,7 +83,6 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   unit: mg
   ingredient: N-Acetylcysteine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -98,7 +97,6 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   unit: g/kg
   ingredient: N-Acetylcysteine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract

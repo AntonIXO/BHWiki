@@ -82,10 +82,9 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   unit: g
   ingredient: Lecithin
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'In a double-blind, placebo-controlled, crossover study of the effect of lecithin on memory test performance, nine normal paid volunteers (age range = 22-55 years) took single oral doses of placebo and lecithin (20 g) 5 hours before cognitive testing.'
+  population: In a double-blind, placebo-controlled, crossover study of the effect of lecithin on memory test performance, nine normal paid volunteers (age range = 22-55 years) took single oral doses of placebo and lecithin (20 g) 5 hours before cognitive testing.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.

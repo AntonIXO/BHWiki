@@ -61,8 +61,8 @@ function present(value: string | null | undefined) {
   return trimmed && !missingValue.test(trimmed) ? trimmed : null;
 }
 
-function routeId(route: string) {
-  const value = route.trim().toLowerCase();
+function routeId(route: string | undefined) {
+  const value = route?.trim().toLowerCase() ?? "";
   const intranasal = /\b(?:intranasal|nasal)\b/.test(value);
   const oral = /\b(?:oral|by mouth|per os|po)\b/.test(value);
   const intravenous = /\b(?:intravenous|iv)\b/.test(value);

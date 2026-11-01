@@ -84,7 +84,6 @@ PMC full-text retrieval for this page returned body text for 1/1 identified PMCI
   unit: mg
   ingredient: Zembrin
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: '21 subjects (mean age: 54'

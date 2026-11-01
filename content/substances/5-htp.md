@@ -85,7 +85,6 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   unit: mg
   ingredient: 5-HTP
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 46 undergraduates participated, and each received either two 50 mg 5-HTP capsules or placebos, and completed the IGT and POMS following an absorption period
@@ -100,7 +99,6 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   unit: mg
   ingredient: 5-HTP
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -115,7 +113,6 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   unit: mg/kg
   ingredient: 5-HTP
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: examined again from the clinical and EEG points of view and (5) after 6 months, a structured interview in order to evaluate the clinical outcome

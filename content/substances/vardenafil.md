@@ -82,7 +82,6 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Vardenafil
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Participants were selected out of a group of volunteers, based on their performance on a memory screening and they were orally treated with vardenafil (10-20 mg or placebo).
@@ -97,7 +96,6 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Vardenafil
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Participants were selected out of a group of volunteers, based on their performance on a memory screening and they were orally treated with vardenafil (10-20 mg or placebo).

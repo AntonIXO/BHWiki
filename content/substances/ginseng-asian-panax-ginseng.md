@@ -84,7 +84,6 @@ PubMed MCP abstract review: 15 linked PubMed identifiers were retrieved for this
   unit: mg
   ingredient: Ginseng (Asian, Panax ginseng)
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 'INTRODUCTION: Dehydroepiandrosterone (DHEA) has been proposed to improve pregnancy rates in women with diminished ovarian reserve undergoing in vitro fertilisation (IVF) treatment.'
@@ -99,10 +98,9 @@ PubMed MCP abstract review: 15 linked PubMed identifiers were retrieved for this
   unit: mg
   ingredient: Ginseng (Asian, Panax ginseng)
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'The present study assessed the effects of Panax ginseng (G115) on subjective mood and aspects of ''working'' memory processes, following a single dose and following sub-chronic (7 days) ingestion, in healthy volunteers.'
+  population: The present study assessed the effects of Panax ginseng (G115) on subjective mood and aspects of 'working' memory processes, following a single dose and following sub-chronic (7 days) ingestion, in healthy volunteers.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -114,10 +112,9 @@ PubMed MCP abstract review: 15 linked PubMed identifiers were retrieved for this
   unit: mg
   ingredient: Ginseng (Asian, Panax ginseng)
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'Single doses of the traditional herbal treatment Panax ginseng have recently been shown to lower blood glucose levels and elicit cognitive improvements in healthy, overnight-fasted volunteers.'
+  population: Single doses of the traditional herbal treatment Panax ginseng have recently been shown to lower blood glucose levels and elicit cognitive improvements in healthy, overnight-fasted volunteers.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -129,10 +126,9 @@ PubMed MCP abstract review: 15 linked PubMed identifiers were retrieved for this
   unit: mg
   ingredient: Ginseng (Asian, Panax ginseng)
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'Single doses of the traditional herbal treatment Panax ginseng have recently been shown to elicit cognitive improvements in healthy young volunteers.'
+  population: Single doses of the traditional herbal treatment Panax ginseng have recently been shown to elicit cognitive improvements in healthy young volunteers.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -144,7 +140,6 @@ PubMed MCP abstract review: 15 linked PubMed identifiers were retrieved for this
   unit: mg
   ingredient: Ginseng (Asian, Panax ginseng)
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 'In this double-blind, counterbalanced, placebo-controlled study, the cognitive and mood effects of separate single doses of: 75 mg of a dried ethanolic extract of guarana (approx 12% caffeine), 200 mg of Panax ginseng (G115), and their combination (75 mg/200 mg), were assessed in 28 healthy young (18-24) participants.'
@@ -159,10 +154,9 @@ PubMed MCP abstract review: 15 linked PubMed identifiers were retrieved for this
   unit: mg
   ingredient: Ginseng (Asian, Panax ginseng)
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'It has previously been demonstrated in separate studies that single doses of Ginkgo biloba, Panax ginseng, and a combination of the two extracts can improve different aspects of cognitive performance in healthy young volunteers.'
+  population: It has previously been demonstrated in separate studies that single doses of Ginkgo biloba, Panax ginseng, and a combination of the two extracts can improve different aspects of cognitive performance in healthy young volunteers.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.

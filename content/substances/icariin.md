@@ -82,10 +82,9 @@ PubMed MCP abstract review: 6 linked PubMed identifiers were retrieved for this 
   unit: mg/kg
   ingredient: Icariin
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'The behavioral, neurochemical and neuroendocrine effects of icariin isolated from Epimedium brevicornum were investigated in behavioral despair models of KunMing strain of male mice.'
+  population: The behavioral, neurochemical and neuroendocrine effects of icariin isolated from Epimedium brevicornum were investigated in behavioral despair models of KunMing strain of male mice.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.

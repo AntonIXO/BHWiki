@@ -82,7 +82,6 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: Guanfacine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: randomised into three groups

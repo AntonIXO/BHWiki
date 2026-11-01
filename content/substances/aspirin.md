@@ -97,7 +97,6 @@ Three PubMed abstracts were retrieved; PMC full text was retrieved for PMID 2365
   unit: study-specific
   ingredient: Aspirin
   formulation: Study formulation
-  route: Not established from abstract
   frequency: Daily
   duration: 10 weeks
   population: Aged rats

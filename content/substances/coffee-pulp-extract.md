@@ -85,7 +85,6 @@ Reddit index corpus import (4 linked source records; 4 PubMed abstracts). Full-t
   unit: mg
   ingredient: Coffee Pulp Extract
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract

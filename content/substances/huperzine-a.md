@@ -272,7 +272,6 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   unit: μg
   ingredient: Huperzine A
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 34 matched pairs of junior-middle-school students with reported memory inadequacy

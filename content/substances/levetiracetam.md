@@ -82,7 +82,6 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: Levetiracetam
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 'METHODS: Twelve healthy subjects (5 men and 7 women; mean age, 30.08 years, standard deviation, 4.71) were recruited for this study.'

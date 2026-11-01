@@ -97,7 +97,6 @@ Reviewed all 4 PubMed links and retrieved PMC full text for PMID 27098858 (PMC48
   unit: mg/kg
   ingredient: Cytisine
   formulation: Experimental dosing
-  route: Not established from abstract
   frequency: Acute/pre-treatment paradigms
   duration: Study-specific
   population: Adult Wistar rats

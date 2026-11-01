@@ -82,7 +82,6 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Theobromine
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Twenty-four men (age, 23 [3] years) completed 6 double-blind trials during which they consumed experimental beverages, assessed their mood using standardized self-report questionnaires, and completed a 2-hour visual vigilance task.
@@ -97,7 +96,6 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Theobromine
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Twenty-four men (age, 23 [3] years) completed 6 double-blind trials during which they consumed experimental beverages, assessed their mood using standardized self-report questionnaires, and completed a 2-hour visual vigilance task.
@@ -112,7 +110,6 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Theobromine
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Twenty-four men (age, 23 [3] years) completed 6 double-blind trials during which they consumed experimental beverages, assessed their mood using standardized self-report questionnaires, and completed a 2-hour visual vigilance task.

@@ -82,7 +82,6 @@ PubMed MCP abstract review: 5 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: L-Dopa
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: trained on an artificial vocabulary using a high-frequency repetitive approach
@@ -97,10 +96,9 @@ PubMed MCP abstract review: 5 linked PubMed identifiers were retrieved for this 
   unit: mg
   ingredient: L-Dopa
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'This preliminary study investigated the impact of increased synaptic dopamine levels on new-word learning ability in healthy young adults using an explicit learning paradigm.'
+  population: This preliminary study investigated the impact of increased synaptic dopamine levels on new-word learning ability in healthy young adults using an explicit learning paradigm.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.

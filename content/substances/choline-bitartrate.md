@@ -166,7 +166,6 @@ Reddit index corpus import (2 linked source records; 1 PubMed abstract and 1 non
   unit: g
   ingredient: Choline bitartrate
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract

@@ -8,7 +8,9 @@ leads. Existing article content is preserved and merged by source URL/PMID.
 from __future__ import annotations
 
 import hashlib
+import argparse
 import re
+import sys
 from datetime import date
 from pathlib import Path
 from typing import Any
@@ -224,7 +226,7 @@ def infer_records(slug: str, name: str, refs: list[dict[str, Any]], pubmed: dict
         if dose_match and ref["id"] not in used_source and re.search(r"administer|receiv|dose|ingest|supplement", abstract, re.I):
             amount, unit = dose_match.groups(); unit = unit.lower().replace("µg", "mcg")
             quantity = float(amount) if "." in amount else int(amount)
-            doses.append({"label": f"PubMed study exposure ({pmid})", "amount": f"{amount} {unit}", "quantity": quantity, "quantityMax": None, "unit": unit, "ingredient": name, "formulation": "As described in the PubMed abstract", "route": "Not established from abstract", "frequency": "Study exposure", "duration": "Study exposure", "population": population, "purpose": "Research exposure", "sourceCategory": "research", "note": "Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.", "sourceId": ref["id"]})
+            doses.append({"label": f"PubMed study exposure ({pmid})", "amount": f"{amount} {unit}", "quantity": quantity, "quantityMax": None, "unit": unit, "ingredient": name, "formulation": "As described in the PubMed abstract", "frequency": "Study exposure", "duration": "Study exposure", "population": population, "purpose": "Research exposure", "sourceCategory": "research", "note": "Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.", "sourceId": ref["id"]})
             used_source.add(ref["id"])
         if re.search(r"receptor|dopamine|serotonin|gaba|nmda|adenosine|bdnf|cyp1a2|mechanis", text):
             mechanisms.append({"title": f"Mechanistic finding from PMID {pmid}", "description": first_sentence(abstract, "The abstract reports a mechanistic observation."), "sourceId": ref["id"]})
@@ -316,8 +318,16 @@ def render(data: dict[str, Any], sections: dict[str, str]) -> str:
     return f"---\n{front}\n---\n\n" + "\n\n".join(body) + "\n"
 
 def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--pubmed-path", type=Path, default=PUBMED_PATH, help="Optional PubMed batch (JSON/YAML). Without it, linked publications remain discovery leads.")
+    args = parser.parse_args()
     reddit = (ROOT / "reddit.md").read_text(encoding="utf-8")
-    pubmed_data = yaml.safe_load(PUBMED_PATH.read_text(encoding="utf-8"))
+    pubmed_path = args.pubmed_path if args.pubmed_path.is_absolute() else ROOT / args.pubmed_path
+    if pubmed_path.exists():
+        pubmed_data = yaml.safe_load(pubmed_path.read_text(encoding="utf-8")) or {}
+    else:
+        print(f"PubMed batch not found at {pubmed_path}; importing links without abstract-derived records.", file=sys.stderr)
+        pubmed_data = {}
     pubmed = {str(a["pmid"]): a for a in pubmed_data.get("articles", [])}
     matches = list(HEAD_RE.finditer(reddit))
     existing: dict[str, tuple[Path, dict[str, Any], str]] = {}

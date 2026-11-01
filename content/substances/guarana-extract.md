@@ -89,10 +89,9 @@ PubMed MCP abstract review covered 3 PMID-linked records for this Reddit-index e
   unit: mg
   ingredient: Guarana Extract
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'n=26) assessed the acute mood and cognitive effects throughout the day of four different doses (37'
+  population: n=26) assessed the acute mood and cognitive effects throughout the day of four different doses (37
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -104,7 +103,6 @@ PubMed MCP abstract review covered 3 PMID-linked records for this Reddit-index e
   unit: mg
   ingredient: Guarana Extract
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 'In this double-blind, counterbalanced, placebo-controlled study, the cognitive and mood effects of separate single doses of: 75 mg of a dried ethanolic extract of guarana (approx 12% caffeine), 200 mg of Panax ginseng (G115), and their combination (75 mg/200 mg), were assessed in 28 healthy young (18-24) participants.'

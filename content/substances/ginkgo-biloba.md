@@ -89,7 +89,6 @@ PubMed MCP abstract review covered 11 PMID-linked records for this Reddit-index 
   unit: mg
   ingredient: Ginkgo Biloba
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: 'RATIONALE: Acute doses of Ginkgo biloba have been shown to improve attention and memory in young, healthy participants, but there has been a lack of investigation into possible effects on executive function.'
@@ -104,10 +103,9 @@ PubMed MCP abstract review covered 11 PMID-linked records for this Reddit-index 
   unit: mg
   ingredient: Ginkgo Biloba
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'Twenty participants received 120 mg, 240 mg and 360 mg of a standardised extract of Ginkgo (GK501, Pharmaton, SA) or a matching placebo.'
+  population: Twenty participants received 120 mg, 240 mg and 360 mg of a standardised extract of Ginkgo (GK501, Pharmaton, SA) or a matching placebo.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
@@ -119,7 +117,6 @@ PubMed MCP abstract review covered 11 PMID-linked records for this Reddit-index 
   unit: mg
   ingredient: Ginkgo Biloba
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: randomly assigned to receive ginkgo, 40 mg 3 times per day (n = 115), or matching placebo (n = 115)
@@ -134,10 +131,9 @@ PubMed MCP abstract review covered 11 PMID-linked records for this Reddit-index 
   unit: mg
   ingredient: Ginkgo Biloba
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
-  population: 'It has previously been demonstrated in separate studies that single doses of Ginkgo biloba, Panax ginseng, and a combination of the two extracts can improve different aspects of cognitive performance in healthy young volunteers.'
+  population: It has previously been demonstrated in separate studies that single doses of Ginkgo biloba, Panax ginseng, and a combination of the two extracts can improve different aspects of cognitive performance in healthy young volunteers.
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.

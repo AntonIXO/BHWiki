@@ -85,7 +85,6 @@ PMC full-text retrieval for this page returned body text for 2/2 identified PMCI
   unit: mg
   ingredient: Theacrine
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 'Sixty healthy men (mean ± SD age, height, weight: 22'
@@ -100,7 +99,6 @@ PMC full-text retrieval for this page returned body text for 2/2 identified PMCI
   unit: mg
   ingredient: Theacrine
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 'Sixty healthy men (mean ± SD age, height, weight: 22'
@@ -115,7 +113,6 @@ PMC full-text retrieval for this page returned body text for 2/2 identified PMCI
   unit: mg
   ingredient: Theacrine
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 10 healthy men (20

@@ -83,7 +83,6 @@ PubMed/PMC review: retrieved 4 PubMed records linked from this Reddit index entr
   unit: mg
   ingredient: Vinpocetine
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Twelve healthy female volunteers received pre-treatments with vinpocetine 10, 20, 40 mg and placebo (t

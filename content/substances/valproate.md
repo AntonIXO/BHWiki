@@ -85,7 +85,6 @@ PMC full-text retrieval for this page returned body text for 3/3 identified PMCI
   unit: mg/kg
   ingredient: Valproate
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 'METHODS AND RESULTS: VPA (500 mg/kg orally for 14 days in rats) evoked prominent hepatotoxicity that appeared as a marked rise (2- to 4-fold) in serum hepatic enzymes (γ-glutamyl transferase [γ-GT], alanine aminotransferase [ALT], and alkaline phosphatase [ALP]), increased hepatic lipid peroxide (LP'
@@ -100,7 +99,6 @@ PMC full-text retrieval for this page returned body text for 3/3 identified PMCI
   unit: mg/kg
   ingredient: Valproate
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: 'METHODS AND RESULTS: VPA (500 mg/kg orally for 14 days in rats) evoked prominent hepatotoxicity that appeared as a marked rise (2- to 4-fold) in serum hepatic enzymes (γ-glutamyl transferase [γ-GT], alanine aminotransferase [ALT], and alkaline phosphatase [ALP]), increased hepatic lipid peroxide (LP'
