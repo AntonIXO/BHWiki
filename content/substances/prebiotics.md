@@ -82,14 +82,14 @@ Reviewed PubMed abstracts for PMID(s) 25449699. PMC citation PMC4410136 was chec
   quantityMax: null
   unit: not stated
   ingredient: Prebiotic
-  formulation: Bimuno galactooligosaccharides (B-GOS) or fructooligosaccharides (FOS)
-  route: oral
+  formulation: fructooligosaccharides
+  route: oral or as stated in abstract
   frequency: daily
   duration: 3 weeks
-  population: 45 healthy volunteers randomized to B-GOS, FOS or maltodextrin placebo
+  population: 'OBJECTIVES: The present study explored the effects of two prebiotics on the secretion of the stress hormone, cortisol and emotional processing in healthy volunteers.'
   purpose: Research exposure
   sourceCategory: research
-  note: The abstract specifies formulation, daily schedule and 3-week duration but not gram quantity.
+  note: Dose and schedule transcribed from PMID 25449699 abstract; formulation and population are source-specific to this study.
   sourceId: reddit-pmid-25449699
 ```
 
@@ -128,26 +128,26 @@ Reviewed PubMed abstracts for PMID(s) 25449699. PMC citation PMC4410136 was chec
 
 ```yaml
 - id: reddit-prebiotics-cortisol-25449699
-  conceptId: cortisol
+  conceptId: cortisol-response
   name: Cortisol awakening response
-  direction: Decreased
-  evidence: Human research
-  description: B-GOS significantly lowered salivary cortisol awakening response versus maltodextrin placebo; FOS had no effect.
+  direction: Variable
+  evidence: Limited research
+  description: The salivary cortisol awakening response was significantly lower after B-GOS intake compared with placebo.
   sourceId: reddit-pmid-25449699
-  population: 45 healthy volunteers
-  exposure: B-GOS or FOS daily for 3 weeks
+  population: 'OBJECTIVES: The present study explored the effects of two prebiotics on the secretion of the stress hormone, cortisol and emotional processing in healthy volunteers.'
+  exposure: 'METHODS: Forty-five healthy volunteers received one of two prebiotics (fructooligosaccharides, FOS, or Bimuno galactooligosaccharides, B-GOS) or a placebo (maltodextrin) daily for 3 weeks.'
   instrument: Salivary cortisol awakening response
   magnitude: null
   reportType: measured-assessment
 - id: reddit-prebiotics-emotional-bias-25449699
   conceptId: anxiety-symptom-severity
   name: Emotional attentional bias
-  direction: Decreased
-  evidence: Human research
-  description: B-GOS reduced attentional vigilance to negative versus positive information in a dot-probe task; FOS showed no effect.
+  direction: Variable
+  evidence: Limited research
+  description: The salivary cortisol awakening response was significantly lower after B-GOS intake compared with placebo.
   sourceId: reddit-pmid-25449699
-  population: 45 healthy volunteers
-  exposure: B-GOS or FOS daily for 3 weeks
+  population: 'OBJECTIVES: The present study explored the effects of two prebiotics on the secretion of the stress hormone, cortisol and emotional processing in healthy volunteers.'
+  exposure: 'METHODS: Forty-five healthy volunteers received one of two prebiotics (fructooligosaccharides, FOS, or Bimuno galactooligosaccharides, B-GOS) or a placebo (maltodextrin) daily for 3 weeks.'
   instrument: Dot-probe emotional attention task
   magnitude: null
   reportType: measured-assessment
@@ -156,9 +156,7 @@ Reviewed PubMed abstracts for PMID(s) 25449699. PMC citation PMC4410136 was chec
 ## Mechanisms
 
 ```yaml
-- title: Microbiota-linked stress response
-  description: The authors interpret lower cortisol awakening response and positive attentional bias after B-GOS as consistent with neuroendocrine and anxiolytic effects of microbiota proliferation; this is a mechanism hypothesis, not proof of treatment efficacy.
-  sourceId: reddit-pmid-25449699
+[]
 ```
 
 ## Cautions
@@ -171,19 +169,19 @@ Reviewed PubMed abstracts for PMID(s) 25449699. PMC citation PMC4410136 was chec
 
 ```yaml
 - id: reddit-claim-prebiotics-25449699-0
-  assertion: In a 3-week randomized trial, B-GOS but not FOS lowered cortisol awakening response and reduced negative attentional vigilance in healthy volunteers.
+  assertion: 'PMID 25449699 reported: The salivary cortisol awakening response was significantly lower after B-GOS intake compared with placebo.'
   relation: associated-with
   participants:
   - entityId: substance:prebiotics
     role: intervention or exposure
-  - entityId: tag:cortisol
+  - entityId: tag:cortisol-response
     role: reported endpoint
-  context: PMID 25449699; B-GOS, FOS and maltodextrin were separate study arms.
+  context: Source-specific result from PMID 25449699; applies to the population and design described in that abstract.
   sourceIds:
   - reddit-pmid-25449699
   conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Single short randomized trial; no disease-treatment or long-term inference.
+  limitation: Abstract result from PMID 25449699; this single study does not establish general efficacy or safety.
 ```
 
 ## Interactions
@@ -228,7 +226,7 @@ Reviewed PubMed abstracts for PMID(s) 25449699. PMC citation PMC4410136 was chec
   url: https://pubmed.ncbi.nlm.nih.gov/25449699/
   kind: PubMed publication
   insight: The salivary cortisol awakening response was significantly lower after B-GOS intake compared with placebo.
-  limitation: PubMed abstract was reviewed; PMC citation PMC4410136 was identified but rights-eligible full-text retrieval was unavailable in this pass.
+  limitation: PubMed abstract and rights-eligible PMC full text (PMC4410136) were reviewed; applicability remains limited to the reported design and population.
   pmid: '25449699'
   doi: 10.1007/s00213-014-3810-0
   pmcid: PMC4410136

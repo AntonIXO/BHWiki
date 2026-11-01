@@ -69,7 +69,7 @@ Polygala Tenuifolia evidence is source-specific and endpoint-limited. We previou
 This page links PubMed evidence for polygala tenuifolia. Study populations, formulations and endpoints are retained per PMID; non-PubMed links remain provenance leads. Abstracts were retrieved for PMID(s) 19429065.
 ## Evidence note
 
-Identity only import: the cited sources support candidate identity provenance, not an evidence review. No biological relationship or clinical claim is asserted.
+The structured records below summarize the linked publication abstracts and any retrieved full text; they do not establish broad efficacy or safety beyond the reported populations and endpoints.
 
 Reviewed PubMed abstracts for PMID(s) 19429065. No rights-eligible PMC full text was available among these records.
 
@@ -117,7 +117,7 @@ Reviewed PubMed abstracts for PMID(s) 19429065. No rights-eligible PMC full text
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: We previously reported that BT-11, the extract of dried roots of Polygala tenuifolia Willdenow, had neuroprotective effects and improved scopolamine- and stress-induced amnesia in rats.
   sourceId: reddit-pmid-19429065
   population: We previously reported that BT-11, the extract of dried roots of Polygala tenuifolia Willdenow, had neuroprotective effects and improved scopolamine- and stress-induced amnesia in rats.

@@ -416,7 +416,7 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Fish oil during early postnatal period may modulate the impact of oxidative stress in the developing brain and thus improve memory and cognitive behaviour.
   sourceId: reddit-pmid-23265497
   population: DHA and PS may serve to protect cells from oxidative stress and further improve learning and memory ability in vivo.
@@ -428,7 +428,7 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Fish oil during early postnatal period may modulate the impact of oxidative stress in the developing brain and thus improve memory and cognitive behaviour.
   sourceId: reddit-pmid-23265497
   population: DHA and PS may serve to protect cells from oxidative stress and further improve learning and memory ability in vivo.
@@ -440,7 +440,7 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Decreased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: The main finding of the study was that chronic supplementation of phosphatidylserine significantly decreases Beta-1 power in right hemispheric frontal brain regions (F8; P < 0.05) before and after induced stress.
   sourceId: reddit-pmid-18616866
   population: After familiarization, 16 healthy subjects completed cognitive tasks after induced stress in a test-re-test design (T1 and T2).
@@ -752,6 +752,7 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   authors: B. L. Jorissen; F. Brouns; M. P. Van Boxtel; R. W. Ponds; F. R. Verhey; J. Jolles; W. J. Riedel
   year: 2001
   url: https://pubmed.ncbi.nlm.nih.gov/11842880/
+  pmid: '11842880'
   kind: Randomized, double-blind, placebo-controlled trial
   insight: 120 older adults; 300 or 600 mg/day soy PS for 12 weeks; no significant cognitive benefit.
   limitation: Short duration; age-associated memory impairment rather than dementia.
@@ -764,6 +765,7 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   authors: T. H. Crook; J. Tinklenberg; J. Yesavage; W. Petrie; M. G. Nunzi; D. C. Massari
   year: 1991
   url: https://pubmed.ncbi.nlm.nih.gov/2027477/
+  pmid: '2027477'
   kind: Randomized, placebo-controlled clinical trial
   insight: 149 participants; 300 mg/day BC-PS for 12 weeks; selective learning and memory improvement.
   limitation: Historical bovine product, short duration, and apparent baseline-severity interaction.
@@ -785,12 +787,12 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   conflictOfInterestStatus: not-assessed
   pmid: '21103034'
   pmcid: PMC2966935
-  doi: ''
 - id: S5
   title: Double-blind randomized controlled study of phosphatidylserine in senile demented patients
   authors: P. J. Delwaide; A. M. Gyselynck-Mambourg; A. Hurlet; M. Ylieff
   year: 1986
   url: https://pubmed.ncbi.nlm.nih.gov/3518329/
+  pmid: '3518329'
   kind: Randomized, double-blind, placebo-controlled trial
   insight: 42 hospitalized patients; 300 mg/day BC-PS for six weeks; selected behavioral-scale signal.
   limitation: 35 completers, short duration, historical bovine product, limited generalizability.
@@ -803,6 +805,7 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   authors: T. Crook; W. Petrie; C. Wells; D. C. Massari
   year: 1992
   url: https://pubmed.ncbi.nlm.nih.gov/1609044/
+  pmid: '1609044'
   kind: Randomized, placebo-controlled clinical trial
   insight: 51 probable-AD patients; 300 mg/day BC-PS for 12 weeks; selected cognitive improvements.
   limitation: Small, short trial; effects were greatest in less severe disease and did not establish disease modification.
@@ -815,6 +818,7 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   authors: M. I. Moré et al.
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/25414047/
+  pmid: '25414047'
   kind: Pilot randomized, double-blind, placebo-controlled studies
   insight: PS+PA product showed memory or short-term functional-stability signals and rapid serum PS kinetics.
   limitation: Proprietary mixture, per-protocol analyses, short duration, and limited independent replication.
@@ -827,6 +831,7 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   authors: J. Hellhammer; E. Fries; C. Buss; V. Engert; A. Tuch; D. Rutenberg; D. Hellhammer
   year: 2004
   url: https://pubmed.ncbi.nlm.nih.gov/15512856/
+  pmid: '15512856'
   kind: Randomized controlled trial
   insight: 400 mg/day PAS reduced ACTH and cortisol responses; larger PAS doses did not reproduce the effect.
   limitation: Small groups, composite PAS product, acute stress test, and no disease outcome.
@@ -839,6 +844,7 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   authors: P. Monteleone; M. Maj; L. Beinat; M. Natale; D. Kemali
   year: 1992
   url: https://pubmed.ncbi.nlm.nih.gov/1325348/
+  pmid: '1325348'
   kind: Placebo-controlled clinical trial
   insight: Nine men; 800 mg/day BC-PS for 10 days; blunted exercise-induced ACTH and cortisol.
   limitation: Extremely small sample, historical bovine product, biomarker-only outcome.
@@ -851,6 +857,7 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   authors: Michael I. Kingsley; Daniel Wadsworth; Liam P. Kilduff; Jane McEneny; David Benton
   year: 2005
   url: https://pubmed.ncbi.nlm.nih.gov/16118575/
+  pmid: '16118575'
   kind: Randomized, double-blind, placebo-controlled exercise trial
   insight: 16 soccer players; 750 mg/day soy PS for 10 days; no cortisol, soreness, muscle-damage, or oxidative-stress benefit.
   limitation: Small sample and short intervention; performance trend was nonsignificant.
@@ -886,7 +893,6 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC3665496/
   pmid: '23723695'
   pmcid: PMC3665496
-  doi: ''
 - id: S13
   title: 'Phosphatidylserine in the brain: metabolism and function.'
   authors: Hee-Yong Kim, Bill X Huang, Arthur A Spector
@@ -901,7 +907,6 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   conflictOfInterestStatus: not-assessed
   pmid: '24992464'
   pmcid: PMC4258547
-  doi: ''
 - id: S14
   title: 'GRAS Notice 636: Phosphatidylserine derived from sunflower lecithin'
   authors: U.S. Food and Drug Administration
@@ -944,6 +949,7 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   authors: D. Hellhammer et al.
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/25081826/
+  pmid: '25081826'
   kind: Randomized, placebo-controlled trial
   insight: 400/400 mg/day PS/PA normalized ACTH and cortisol responses in highly chronically stressed men.
   limitation: 75 healthy men, subgroup analysis, composite product, and no significant psychological-stress effect.
@@ -956,6 +962,7 @@ PMC coverage in this pass: PMC2966935, PMC3665496, PMC4258547 full text reviewed
   authors: Huilian Duan; Ning Xu; Tong Yang; Moyan Wang; Chunlai Zhang; Jiangang Zhao; Zhenshu Li; Yongjie Chen; Jing Yan; Meilin Zhang; Wen Li; Zhongbao Yue; Fei Ma; Ruikun He; Guowei Huang
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/39317299/
+  pmid: '39317299'
   kind: Randomized, double-blind, placebo-controlled trial
   insight: 190 MCI participants; 12-month PS/ALA/ginkgo/vitamin/folate product improved selected cognitive measures.
   limitation: PS was one component of a multinutrient product; no isolated-PS inference.

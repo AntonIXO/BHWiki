@@ -199,7 +199,7 @@ The most reproducible exact-product result is serum carotenoid and MPOD increase
   direction: variable
 - label: Isomer ratio
   effect: Batch composition varies
-  detail: RR-zeaxanthin:meso-zeaxanthin ratios vary by reported batch or formulation, so total zeaxanthin does not specify the isomer split.
+  detail: "RR-zeaxanthin:meso-zeaxanthin ratios vary by reported batch or formulation, so total zeaxanthin does not specify the isomer split."
   sourceId: S3
   observationId: lutemax-pk-1
   factorType: other
@@ -451,7 +451,7 @@ The most reproducible exact-product result is serum carotenoid and MPOD increase
 
 ```yaml
 - id: S1
-  title: "Lutemax 2020: Lutein Extract for Eye & Brain Health"
+  title: 'Lutemax 2020: Lutein Extract for Eye & Brain Health'
   authors: OmniActive Health Technologies Ltd.
   year: 2026
   url: https://omniactives.com/product/lutemax2020/
@@ -477,7 +477,7 @@ The most reproducible exact-product result is serum carotenoid and MPOD increase
   conflictOfInterestStatus: declared
   disclosureUrl: https://lutemax.com/faq/
 - id: S3
-  title: "Bioavailability of lutein/zeaxanthin isomers and macular pigment optical density response to macular carotenoid supplementation: A randomized double blind placebo controlled study"
+  title: 'Bioavailability of lutein/zeaxanthin isomers and macular pigment optical density response to macular carotenoid supplementation: A randomized double blind placebo controlled study'
   authors: Vijaya Juturu, James P. Bowman, Nicole T. Stringham, James M. Stringham
   year: 2016
   url: https://doi.org/10.15761/NFO.1000132
@@ -529,7 +529,7 @@ The most reproducible exact-product result is serum carotenoid and MPOD increase
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/31425700/
 - id: S7
-  title: "Lutein and Zeaxanthin Supplementation Improves Dynamic Visual and Cognitive Performance in Children: A Randomized, Double-Blind, Parallel, Placebo-Controlled Study"
+  title: 'Lutein and Zeaxanthin Supplementation Improves Dynamic Visual and Cognitive Performance in Children: A Randomized, Double-Blind, Parallel, Placebo-Controlled Study'
   authors: Rajesh Parekh, Billy R. Hammond Jr., Divya Chandradhara
   year: 2024
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10960892/
@@ -542,7 +542,7 @@ The most reproducible exact-product result is serum carotenoid and MPOD increase
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC10960892/
 - id: S8
-  title: "Overall skin tone and skin-lightening-improving effects with oral supplementation of lutein and zeaxanthin isomers: a double-blind, placebo-controlled clinical trial"
+  title: 'Overall skin tone and skin-lightening-improving effects with oral supplementation of lutein and zeaxanthin isomers: a double-blind, placebo-controlled clinical trial'
   authors: Vijaya Juturu, James P. Bowman, Jayant Deshpande
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27785083/
@@ -567,7 +567,7 @@ The most reproducible exact-product result is serum carotenoid and MPOD increase
   conflictsOfInterest: not-assessed
   disclosureUrl: https://doi.org/10.1038/s41598-020-66962-2
 - id: S10
-  title: "Safety assessment of lutein and zeaxanthin (Lutemax 2020): Subchronic toxicity and mutagenicity studies"
+  title: 'Safety assessment of lutein and zeaxanthin (Lutemax 2020): Subchronic toxicity and mutagenicity studies'
   authors: R. Ravikrishnan, Shraddha Rusia, G. Ilamurugan, Ulhas Salunkhe, Jayant Deshpande, J. Shankaranarayanan, M. L. Shankaranarayana, Madhu G. Soni
   year: 2011
   url: https://pubmed.ncbi.nlm.nih.gov/21872637/

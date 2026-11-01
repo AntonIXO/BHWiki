@@ -860,7 +860,7 @@ The page separates combination-product outcomes from isolated magnesium malate c
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/
 - id: mmm-abraham
-  title: "Management of Fibromyalgia: Rationale for the Use of Magnesium and Malic Acid"
+  title: 'Management of Fibromyalgia: Rationale for the Use of Magnesium and Malic Acid'
   authors: Guy E. Abraham; Jorge D. Flechas
   year: 1992
   url: https://doi.org/10.3109/13590849208997961
@@ -874,7 +874,7 @@ The page separates combination-product outcomes from isolated magnesium malate c
   disclosureUrl: https://doi.org/10.3109/13590849208997961
   doi: 10.3109/13590849208997961
 - id: mmm-russell
-  title: "Treatment of fibromyalgia syndrome with Super Malic: randomized, double blind, placebo controlled, crossover pilot"
+  title: 'Treatment of fibromyalgia syndrome with Super Malic: randomized, double blind, placebo controlled, crossover pilot'
   authors: I. J. Russell; J. E. Michalek; J. D. Flechas; G. E. Abraham
   year: 1995
   url: https://pubmed.ncbi.nlm.nih.gov/8587088/
@@ -886,7 +886,7 @@ The page separates combination-product outcomes from isolated magnesium malate c
   conflictsOfInterest: G. E. Abraham was Medical Director of Optimox; manufacturer involvement disclosed.
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/8587088/
-  pmid: "8587088"
+  pmid: '8587088'
 - id: mmm-ferreira
   title: Magnesium and malic acid supplement for fibromyalgia
   authors: Isadora Ferreira; Ángela Ortigoza; Philippa Moore
@@ -900,7 +900,7 @@ The page separates combination-product outcomes from isolated magnesium malate c
   conflictsOfInterest: Authors declared no relevant interests.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/31150373/
-  pmid: "31150373"
+  pmid: '31150373'
 - id: mmm-efsa
   title: Evaluation of di-magnesium malate as a novel food ingredient and magnesium source
   authors: EFSA Panel on Food Additives and Nutrient Sources added to Food
@@ -915,7 +915,7 @@ The page separates combination-product outcomes from isolated magnesium malate c
   conflictOfInterestStatus: not-assessed
   doi: 10.2903/j.efsa.2018.5292
 - id: mmm-weiss
-  title: "Scottsdale Magnesium Study: Absorption, Cellular Uptake, and Clinical Effectiveness of a Timed-Release Magnesium Supplement"
+  title: 'Scottsdale Magnesium Study: Absorption, Cellular Uptake, and Clinical Effectiveness of a Timed-Release Magnesium Supplement'
   authors: Decker Weiss; Debra K. Brunk; Dennis A. Goodman
   year: 2018
   url: https://doi.org/10.1080/07315724.2017.1398686

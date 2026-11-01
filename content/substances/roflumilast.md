@@ -170,7 +170,7 @@ Reviewed PubMed abstracts for PMID(s) 29098341, 29241652. Rights-eligible PMC fu
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Phosphodiesterase inhibitors (PDE-Is) have proven efficacy as cognitive enhancers based on their positive effects in numerous preclinical studies.
   sourceId: reddit-pmid-29241652
   population: Population not stated in the PubMed record.
@@ -182,7 +182,7 @@ Reviewed PubMed abstracts for PMID(s) 29098341, 29241652. Rights-eligible PMC fu
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Phosphodiesterase inhibitors (PDE-Is) have proven efficacy as cognitive enhancers based on their positive effects in numerous preclinical studies.
   sourceId: reddit-pmid-29241652
   population: Population not stated in the PubMed record.
@@ -266,7 +266,7 @@ Reviewed PubMed abstracts for PMID(s) 29098341, 29241652. Rights-eligible PMC fu
 
 ```yaml
 - id: reddit-index-roflumilast
-  title: Reddit Nootropics index entry
+  title: Reddit Nootropics index entry for Black Currant
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

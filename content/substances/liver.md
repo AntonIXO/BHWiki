@@ -420,7 +420,7 @@ Liver has nutrient-density and food-safety implications rather than a unitary PK
   conflictOfInterestStatus: not-reported
   disclosureUrl: https://www.jameslindlibrary.org/wp-data/uploads/2010/05/Minot_GR_Murphy_WP_1926.pdf
 - id: ref-minot-murphy-1927
-  title: "A DIET RICH IN LIVER IN THE TREATMENT OF PERNICIOUS ANEMIA: STUDY OF ONE HUNDRED AND FIVE CASES"
+  title: 'A DIET RICH IN LIVER IN THE TREATMENT OF PERNICIOUS ANEMIA: STUDY OF ONE HUNDRED AND FIVE CASES'
   authors: George R. Minot; William P. Murphy
   year: 1927
   url: https://jamanetwork.com/journals/jama/article-abstract/249738
@@ -440,7 +440,7 @@ Liver has nutrient-density and food-safety implications rather than a unitary PK
   kind: comparative clinical study
   insight: Historical comparison of crystalline vitamin B12 and liver extract for pernicious anemia, illustrating the transition from organ extract to a defined active nutrient.
   limitation: The inspected PubMed record did not provide an abstract, and detailed methods/results were not independently reconstructed here.
-  pmid: "13002627"
+  pmid: '13002627'
   doi: 10.1056/NEJM195211272472203
   funding: Not assessed.
   sponsorshipStatus: not-assessed
@@ -483,7 +483,7 @@ Liver has nutrient-density and food-safety implications rather than a unitary PK
   conflictsOfInterest: Not assessed as a clinical-study disclosure.
   conflictOfInterestStatus: not-assessed
 - id: ref-ods-pregnancy
-  title: "Dietary Supplements and Life Stages: Pregnancy — Fact Sheet for Health Professionals"
+  title: 'Dietary Supplements and Life Stages: Pregnancy — Fact Sheet for Health Professionals'
   authors: National Institutes of Health, Office of Dietary Supplements
   year: 2025
   url: https://ods.od.nih.gov/factsheets/Pregnancy-HealthProfessional/
@@ -502,7 +502,7 @@ Liver has nutrient-density and food-safety implications rather than a unitary PK
   kind: prospective observational cohort
   insight: Among 22,748 pregnancies, high preformed-vitamin-A intake was associated with increased prevalence of defects involving cranial-neural-crest-derived tissues; risk was concentrated with high early-pregnancy exposure.
   limitation: Observational and not liver-specific; exposure combined food and/or supplements, so it cannot quantify the risk of any particular liver serving.
-  pmid: "7477116"
+  pmid: '7477116'
   doi: 10.1056/NEJM199511233332101
   funding: Not assessed from an inspected full-text funding disclosure.
   sponsorshipStatus: not-assessed
@@ -561,14 +561,14 @@ Liver has nutrient-density and food-safety implications rather than a unitary PK
   conflictsOfInterest: Not assessed from an accessible full-text disclosure.
   conflictOfInterestStatus: not-assessed
 - id: ref-sistik-2025
-  title: "Chicken liver and eggshell crackers are a safe and affordable animal source food for overcoming micronutrient deficits during pregnancy and lactation in Indonesia: a double-blind, cluster randomized controlled trial (SISTIK Growth Study)"
+  title: 'Chicken liver and eggshell crackers are a safe and affordable animal source food for overcoming micronutrient deficits during pregnancy and lactation in Indonesia: a double-blind, cluster randomized controlled trial (SISTIK Growth Study)'
   authors: Aly Diana; Sofa Rahmannia; Yenni Zuhairini Suhadi; Dimas Erlangga Luftimas; Haidar Rizqi; Afini Dwi Purnamasari; Ayunda Jihadillah; Mohammad Brachim Ansari; Dearly Ayu Zahrotun Haq; Aisyah Nur Pratiwi; Dina Novtyana Puspita; Yeni Intan Kusuma Dewi Affandy; Christopher M. A. Frampton; Umi Fahmida; Lisa A. Houghton; Rosalind S. Gibson
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/40770284/
   kind: double-blind cluster randomized controlled trial
   insight: A chicken-liver-and-eggshell cracker intervention from early pregnancy through 5 months postpartum did not show a significant maternal hemoglobin advantage at late pregnancy; study batches underwent vitamin A, heavy-metal and microbiological safety testing.
   limitation: Multi-ingredient intervention, adherence was far below the intended 75 g/day, and results cannot be attributed to liver alone or generalized to ordinary liver servings or supplements.
-  pmid: "40770284"
+  pmid: '40770284'
   doi: 10.1186/s12884-025-07899-0
   funding: Supported by Wellcome Trust and the UK Department of Health and Social Care/NIHR under grant 216447/Z/19/Z; the article reports that funders had no role in study conduct or reporting.
   sponsorshipStatus: non-industry-funded
@@ -576,7 +576,7 @@ Liver has nutrient-density and food-safety implications rather than a unitary PK
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12330069/
 - id: ref-franca-2025
-  title: "Uso de fígado bovino reduz anemia em lactentes: um ensaio clínico randomizado"
+  title: 'Uso de fígado bovino reduz anemia em lactentes: um ensaio clínico randomizado'
   authors: Lídia Maria de Sousa França
   year: 2025
   url: https://repositorio.ufc.br/handle/riufc/84414
@@ -588,7 +588,7 @@ Liver has nutrient-density and food-safety implications rather than a unitary PK
   conflictsOfInterest: Not assessed from the full thesis.
   conflictOfInterestStatus: not-assessed
 - id: ref-nice-b12-2024
-  title: "Vitamin B12 deficiency in over 16s: diagnosis and management"
+  title: 'Vitamin B12 deficiency in over 16s: diagnosis and management'
   authors: National Institute for Health and Care Excellence (NICE)
   year: 2024
   url: https://www.nice.org.uk/guidance/ng239/chapter/recommendations
@@ -625,7 +625,7 @@ Liver has nutrient-density and food-safety implications rather than a unitary PK
   conflictOfInterestStatus: not-assessed
 - id: ref-ctgov-whole-package-2026
   title: Evaluating Heart & Soil's Whole Package on Men's Health
-  authors: "ClinicalTrials.gov; sponsor: Efforia, Inc."
+  authors: 'ClinicalTrials.gov; sponsor: Efforia, Inc.'
   year: 2026
   url: https://clinicaltrials.gov/study/NCT07256639
   kind: clinical-trial registry record

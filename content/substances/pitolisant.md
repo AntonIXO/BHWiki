@@ -212,7 +212,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
 
 ```yaml
 - id: reddit-index-pitolisant
-  title: Reddit Nootropics index entry
+  title: Reddit Nootropics index entry for Black Currant
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index
@@ -247,7 +247,6 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   conflictOfInterestStatus: not-assessed
   pmid: '21615387'
   pmcid: PMC3111674
-  doi: ''
 - id: reddit-link-0c26eadb1c99
   title: Long Term Open Label Study in Narcolepsy With BF2.649 (Pitolisant) (HARMONYIII)
   authors: Not established

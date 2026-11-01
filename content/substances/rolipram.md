@@ -131,7 +131,7 @@ Reviewed PubMed abstracts for PMID(s) 10633490, 22629087, 9844008. PMC citation 
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: In an attempt to improve behavioral memory, we devised a strategy to amplify the signal-to-noise ratio of the cAMP pathway, which plays a central role in hippocampal synaptic plasticity and behavioral memory.
   sourceId: reddit-pmid-9844008
   population: We therefore examined the biochemical, physiological, and behavioral effects in mice of partial inhibition of a hippocampal cAMP phosphodiesterase.
@@ -143,7 +143,7 @@ Reviewed PubMed abstracts for PMID(s) 10633490, 22629087, 9844008. PMC citation 
   conceptId: depression-severity
   name: Depression Severity
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Furthermore, rolipram showed a significant reduction in duration of immobility in long-term behavioral changes recorded by the FST.
   sourceId: reddit-pmid-22629087
   population: The alteration of GABA content by rolipram as a phosphodiesterase enzyme type-4 inhibitor in the frontal cortex (FCx; as a brain region crucial for the control of emotion and cognition) obtained from male mice exposed to chronic mild stress (CMS)-induced anhedonia (the loss of pleasure or lack of sensitivity to pleasure stimuli) was recorded.
@@ -155,7 +155,7 @@ Reviewed PubMed abstracts for PMID(s) 10633490, 22629087, 9844008. PMC citation 
   conceptId: depression-severity
   name: Depression Severity
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Coadministration of rolipram or Ro 20-1724 with an antidepressant (either desipramine or Org 4428) for 21 d resulted in a significant induction of BDNF mRNA in hippocampus relative to administration of vehicle.
   sourceId: reddit-pmid-10633490
   population: Population not stated in the PubMed record.
@@ -253,7 +253,7 @@ Reviewed PubMed abstracts for PMID(s) 10633490, 22629087, 9844008. PMC citation 
 
 ```yaml
 - id: reddit-index-rolipram
-  title: Reddit Nootropics index entry
+  title: Reddit Nootropics index entry for Black Currant
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

@@ -155,7 +155,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 
 ```yaml
 - id: molekul-profile
-  title: "Binavit: Molekul research profile"
+  title: 'Binavit: Molekul research profile'
   authors: Molekul
   year: 2026
   url: https://molekul.io/compounds/binavit

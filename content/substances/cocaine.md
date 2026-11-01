@@ -555,7 +555,7 @@ For `jeffcoat1989`, `smith2001`, `foltin2004`, `mittleman1999`, `majlesi2010`, `
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubchem.ncbi.nlm.nih.gov/compound/446220
 - id: numbrino-label
-  title: "These highlights do not include all the information needed to use NUMBRINO safely and effectively. See full prescribing information for NUMBRINO. NUMBRINO (cocaine hydrochloride) nasal solution, CII Initial U.S. Approval: 2017"
+  title: 'These highlights do not include all the information needed to use NUMBRINO safely and effectively. See full prescribing information for NUMBRINO. NUMBRINO (cocaine hydrochloride) nasal solution, CII Initial U.S. Approval: 2017'
   authors: Omnivium Pharmaceuticals LLC.
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d724b5b4-6654-4bf5-9eed-e2c7943084ed
@@ -571,7 +571,7 @@ For `jeffcoat1989`, `smith2001`, `foltin2004`, `mittleman1999`, `majlesi2010`, `
   title: Cocaine disposition in humans after intravenous injection, nasal insufflation (snorting), or smoking.
   authors: A R Jeffcoat; M Perez-Reyes; J M Hill; B M Sadler; C E Cook
   year: 1989
-  pmid: "2565204"
+  pmid: '2565204'
   url: https://pubmed.ncbi.nlm.nih.gov/2565204/
   kind: Human comparative pharmacokinetic study
   insight: Reports smoked and intranasal absorption rates, intranasal bioavailability, IV distribution and elimination, pooled elimination half-life, and major urinary metabolites.
@@ -585,7 +585,7 @@ For `jeffcoat1989`, `smith2001`, `foltin2004`, `mittleman1999`, `majlesi2010`, `
   title: Bioavailability and Pharmacokinetics of Oral Cocaine in Humans.
   authors: Marion A Coe; Rebecca A Jufer Phipps; Edward J Cone; Sharon L Walsh
   year: 2018
-  pmid: "29462364"
+  pmid: '29462364'
   doi: 10.1093/jat/bky007
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5952935/
   kind: Within-subject human pharmacokinetic study
@@ -600,7 +600,7 @@ For `jeffcoat1989`, `smith2001`, `foltin2004`, `mittleman1999`, `majlesi2010`, `
   title: Physiological, subjective and reinforcing effects of oral and intravenous cocaine in humans.
   authors: B J Smith; H E Jones; R R Griffiths
   year: 2001
-  pmid: "11498721"
+  pmid: '11498721'
   doi: 10.1007/s002130100740
   url: https://pubmed.ncbi.nlm.nih.gov/11498721/
   kind: Double-blind within-subject human laboratory study
@@ -612,10 +612,10 @@ For `jeffcoat1989`, `smith2001`, `foltin2004`, `mittleman1999`, `majlesi2010`, `
   conflictOfInterestStatus: not-reported
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/11498721/
 - id: foltin2004
-  title: "Intranasal cocaine in humans: acute tolerance, cardiovascular and subjective effects."
+  title: 'Intranasal cocaine in humans: acute tolerance, cardiovascular and subjective effects.'
   authors: Richard W Foltin; Margaret Haney
   year: 2004
-  pmid: "15159138"
+  pmid: '15159138'
   doi: 10.1016/j.pbb.2004.02.018
   url: https://pubmed.ncbi.nlm.nih.gov/15159138/
   kind: Human repeated-dose laboratory study
@@ -630,7 +630,7 @@ For `jeffcoat1989`, `smith2001`, `foltin2004`, `mittleman1999`, `majlesi2010`, `
   title: Relationship between subjective effects of cocaine and dopamine transporter occupancy.
   authors: N D Volkow; G J Wang; M W Fischman; R W Foltin; J S Fowler; N N Abumrad; S Vitkun; J Logan; S J Gatley; N Pappas; R Hitzemann; C E Shea
   year: 1997
-  pmid: "9126740"
+  pmid: '9126740'
   doi: 10.1038/386827a0
   url: https://pubmed.ncbi.nlm.nih.gov/9126740/
   kind: Human PET pharmacology study
@@ -645,7 +645,7 @@ For `jeffcoat1989`, `smith2001`, `foltin2004`, `mittleman1999`, `majlesi2010`, `
   title: Triggering of myocardial infarction by cocaine.
   authors: M A Mittleman; D Mintzer; M Maclure; G H Tofler; J B Sherwood; J E Muller
   year: 1999
-  pmid: "10351966"
+  pmid: '10351966'
   doi: 10.1161/01.CIR.99.21.2737
   url: https://pubmed.ncbi.nlm.nih.gov/10351966/
   kind: Case-crossover observational study
@@ -660,7 +660,7 @@ For `jeffcoat1989`, `smith2001`, `foltin2004`, `mittleman1999`, `majlesi2010`, `
   title: Cocaine Use and Risk of Ischemic Stroke in Young Adults.
   authors: Yu-Ching Cheng; Kathleen A Ryan; Saad A Qadwai; Jay Shah; Mary J Sparks; Marcella A Wozniak; Barney J Stern; Michael S Phipps; Carolyn A Cronin; Laurence S Magder; John W Cole; Steven J Kittner
   year: 2016
-  pmid: "26965853"
+  pmid: '26965853'
   doi: 10.1161/STROKEAHA.115.011417
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6128285/
   kind: Population-based case-control study
@@ -675,7 +675,7 @@ For `jeffcoat1989`, `smith2001`, `foltin2004`, `mittleman1999`, `majlesi2010`, `
   title: Cocaine-associated seizures and incidence of status epilepticus.
   authors: Nima Majlesi; Richard Shih; Frederick W Fiesseler; Oliver Hung; Renato Debellonio
   year: 2010
-  pmid: "20823966"
+  pmid: '20823966'
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2908651/
   kind: Multicenter retrospective observational study
   insight: Describes 43 cocaine-associated seizure presentations, most of which were single tonic-clonic seizures.
@@ -686,10 +686,10 @@ For `jeffcoat1989`, `smith2001`, `foltin2004`, `mittleman1999`, `majlesi2010`, `
   conflictOfInterestStatus: not-reported
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC2908651/
 - id: coffey2000
-  title: "Acute and protracted cocaine abstinence in an outpatient population: a prospective study of mood, sleep and withdrawal symptoms."
+  title: 'Acute and protracted cocaine abstinence in an outpatient population: a prospective study of mood, sleep and withdrawal symptoms.'
   authors: S F Coffey; B S Dansky; M H Carrigan; K T Brady
   year: 2000
-  pmid: "10812287"
+  pmid: '10812287'
   doi: 10.1016/S0376-8716(99)00126-X
   url: https://pubmed.ncbi.nlm.nih.gov/10812287/
   kind: Prospective abstinence study
@@ -701,10 +701,10 @@ For `jeffcoat1989`, `smith2001`, `foltin2004`, `mittleman1999`, `majlesi2010`, `
   conflictOfInterestStatus: not-reported
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/10812287/
 - id: bandstra2001
-  title: "Intrauterine growth of full-term infants: impact of prenatal cocaine exposure."
+  title: 'Intrauterine growth of full-term infants: impact of prenatal cocaine exposure.'
   authors: E S Bandstra; C E Morrow; J C Anthony; S S Churchill; D C Chitwood; B W Steele; A Y Ofir; L Xue
   year: 2001
-  pmid: "11731653"
+  pmid: '11731653'
   doi: 10.1542/peds.108.6.1309
   url: https://pubmed.ncbi.nlm.nih.gov/11731653/
   kind: Prospective pregnancy cohort
@@ -716,10 +716,10 @@ For `jeffcoat1989`, `smith2001`, `foltin2004`, `mittleman1999`, `majlesi2010`, `
   conflictOfInterestStatus: not-reported
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/11731653/
 - id: farre1997
-  title: "Cocaine and alcohol interactions in humans: neuroendocrine effects and cocaethylene metabolism."
+  title: 'Cocaine and alcohol interactions in humans: neuroendocrine effects and cocaethylene metabolism.'
   authors: M Farré; R de la Torre; M L González; M T Terán; P N Roset; E Menoyo; J Camí
   year: 1997
-  pmid: "9336321"
+  pmid: '9336321'
   url: https://pubmed.ncbi.nlm.nih.gov/9336321/
   kind: Randomized crossover human interaction study
   insight: Shows greater cardiovascular and pleasurable subjective effects with alcohol plus intranasal cocaine and documents cocaethylene formation.

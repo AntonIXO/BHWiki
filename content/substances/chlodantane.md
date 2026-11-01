@@ -159,7 +159,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 
 ```yaml
 - id: pubchem
-  title: "Chlodantane: compound identity and structure"
+  title: 'Chlodantane: compound identity and structure'
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/959689
@@ -168,7 +168,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   limitation: The parent compound identity is distinct from salts, formulations, and commercial product quality.
   funding: US National Library of Medicine.
 - id: molekul-profile
-  title: "Chlodantane: Molekul research profile"
+  title: 'Chlodantane: Molekul research profile'
   authors: Molekul
   year: 2026
   url: https://molekul.io/compounds/chlodantane

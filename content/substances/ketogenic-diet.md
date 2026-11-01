@@ -120,7 +120,7 @@ Epilepsy has randomized trials and Cochrane synthesis, but certainty is low or v
   duration: Individualized
   population: Therapeutic epilepsy programs
   purpose: Research or therapeutic protocol description; not a personal prescription.
-  note: LGIT is a therapeutic variant, not a classical 4:1 ratio (S1).
+  note: "LGIT is a therapeutic variant, not a classical 4:1 ratio (S1)."
   sourceCategory: research
   sourceId: S1
 - label: Lifestyle very-low-carbohydrate ketogenic diet
@@ -521,7 +521,7 @@ Epilepsy has randomized trials and Cochrane synthesis, but certainty is low or v
 
 ```yaml
 - id: S1
-  title: "Optimal clinical management of children receiving dietary therapies for epilepsy: Updated recommendations of the International Ketogenic Diet Study Group"
+  title: 'Optimal clinical management of children receiving dietary therapies for epilepsy: Updated recommendations of the International Ketogenic Diet Study Group'
   authors: Eric H. Kossoff et al.; Charlie Foundation; Matthew's Friends; Practice Committee of the Child Neurology Society
   year: 2018
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5983110/
@@ -545,7 +545,7 @@ Epilepsy has randomized trials and Cochrane synthesis, but certainty is low or v
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S3
-  title: "The ketogenic diet for the treatment of childhood epilepsy: a randomised controlled trial"
+  title: 'The ketogenic diet for the treatment of childhood epilepsy: a randomised controlled trial'
   authors: Elizabeth G. Neal; Hannah Chaffe; Ruby H. Schwartz; Margaret S. Lawson; Nicole Edwards; Geogianna Fitzsimmons; Andrea Whitney; J. Helen Cross
   year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/18456557/
@@ -569,7 +569,7 @@ Epilepsy has randomized trials and Cochrane synthesis, but certainty is low or v
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S5
-  title: "Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial"
+  title: 'Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial'
   authors: Christopher D. Gardner et al.
   year: 2018
   url: https://jamanetwork.com/journals/jama/fullarticle/2673150
@@ -582,7 +582,7 @@ Epilepsy has randomized trials and Cochrane synthesis, but certainty is low or v
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://jamanetwork.com/journals/jama/fullarticle/2673150
 - id: S6
-  title: "Effect of a very low-carbohydrate ketogenic diet vs recommended diets in patients with type 2 diabetes: a meta-analysis"
+  title: 'Effect of a very low-carbohydrate ketogenic diet vs recommended diets in patients with type 2 diabetes: a meta-analysis'
   authors: Mohamed Rafiullah et al.
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/34338787/
@@ -607,7 +607,7 @@ Epilepsy has randomized trials and Cochrane synthesis, but certainty is low or v
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/29269731/
 - id: S8
-  title: "Comparison of the Effectiveness of Low Carbohydrate Versus Low Fat Diets, in Type 2 Diabetes: Systematic Review and Meta-Analysis of Randomized Controlled Trials"
+  title: 'Comparison of the Effectiveness of Low Carbohydrate Versus Low Fat Diets, in Type 2 Diabetes: Systematic Review and Meta-Analysis of Randomized Controlled Trials'
   authors: Tanefa A. Apekey; Maria J. Maynard; Monia Kittana; Setor K. Kunutsor
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/36297075/
@@ -620,7 +620,7 @@ Epilepsy has randomized trials and Cochrane synthesis, but certainty is low or v
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/36297075/
 - id: S10
-  title: "Weight, insulin resistance, blood lipids, and diet quality changes associated with ketogenic and ultra low-fat dietary patterns: a secondary analysis of the DIETFITS randomized clinical trial"
+  title: 'Weight, insulin resistance, blood lipids, and diet quality changes associated with ketogenic and ultra low-fat dietary patterns: a secondary analysis of the DIETFITS randomized clinical trial'
   authors: Lara Aronica; Matthew J. Landry; Joseph Rigdon; Christopher D. Gardner
   year: 2023
   url: https://doi.org/10.3389/fnut.2023.1220020
@@ -632,7 +632,7 @@ Epilepsy has randomized trials and Cochrane synthesis, but certainty is low or v
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: "Three consecutive weeks of nutritional ketosis has no effect on cognitive function, sleep, and mood compared with a high-carbohydrate, low-fat diet in healthy individuals: a randomized, crossover, controlled trial"
+  title: 'Three consecutive weeks of nutritional ketosis has no effect on cognitive function, sleep, and mood compared with a high-carbohydrate, low-fat diet in healthy individuals: a randomized, crossover, controlled trial'
   authors: Stella Iacovides; David Goble; Bronwyn Paterson; Rebecca M. Meiring
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/31098615/
@@ -656,7 +656,7 @@ Epilepsy has randomized trials and Cochrane synthesis, but certainty is low or v
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S13
-  title: "Ketogenic diet, epilepsy and cognition: what do we know so far? A systematic review"
+  title: 'Ketogenic diet, epilepsy and cognition: what do we know so far? A systematic review'
   authors: Maiara Cristina Lima et al.
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/35535020/
@@ -668,7 +668,7 @@ Epilepsy has randomized trials and Cochrane synthesis, but certainty is low or v
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: "Effects of the ketogenic diet on performance and body composition in athletes and trained adults: a systematic review and Bayesian multivariate multilevel meta-analysis and meta-regression"
+  title: 'Effects of the ketogenic diet on performance and body composition in athletes and trained adults: a systematic review and Bayesian multivariate multilevel meta-analysis and meta-regression'
   authors: Ana Clara C. Koerich et al.
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/35757868/
@@ -704,7 +704,7 @@ Epilepsy has randomized trials and Cochrane synthesis, but certainty is low or v
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S9
-  title: "Weight, insulin resistance, blood lipids, and diet quality changes associated with ketogenic and ultra low-fat dietary patterns: a secondary analysis of the DIETFITS randomized clinical trial"
+  title: 'Weight, insulin resistance, blood lipids, and diet quality changes associated with ketogenic and ultra low-fat dietary patterns: a secondary analysis of the DIETFITS randomized clinical trial'
   authors: Lara Aronica; Matthew J. Landry; Joseph Rigdon; Christopher D. Gardner
   year: 2023
   url: https://doi.org/10.3389/fnut.2023.1220020

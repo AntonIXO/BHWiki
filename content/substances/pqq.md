@@ -560,6 +560,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   authors: Yuji Itoh, Kyoko Hine, Hiroshi Miura, Tatsuo Uetake, Masahiko Nakano, Naohiro Takemura, Kaoru Sakatani
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/26782228/
+  pmid: '26782228'
   kind: Peer-reviewed randomized placebo-controlled human trial
   insight: 41 healthy older adults; 20 mg/day for 12 weeks; selected Stroop and Touch-M findings.
   limitation: Small sample, selective endpoints, subgroup finding, limited duration.
@@ -573,6 +574,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   authors: Masahiko Nakano, Yuta Murayama, Lizhen Hu, Kazuto Ikemoto, Tatsuo Uetake, Kaoru Sakatani
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27526146/
+  pmid: '27526146'
   kind: Peer-reviewed randomized human neuroimaging study
   insight: 20 healthy adults; 20 mg/day for 12 weeks; small NIRS changes in prefrontal physiology.
   limitation: Small surrogate-endpoint study; no independent clinical outcome.
@@ -586,6 +588,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   authors: Yoshiaki Shiojima, Megumi Takahashi, Ryohei Takahashi, Hiroyoshi Moriyama, Debasis Bagchi, Manashi Bagchi, Masanori Akanuma
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/34415830/
+  pmid: '34415830'
   kind: Peer-reviewed randomized placebo-controlled human trial
   insight: 64 randomized; 58 completers; 21.5 mg/day for 12 weeks; multiple Cognitrax-domain findings.
   limitation: Small sample, multiple cognitive outcomes, short duration, industry-linked affiliations.
@@ -625,6 +628,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   authors: Paul S. Hwang, Steven B. Machek, Thomas D. Cardaci, Dylan T. Wilburn, Caelin S. Kim, Emiliya S. Suezaki, Darryn S. Willoughby
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/31860387/
+  pmid: '31860387'
   kind: Peer-reviewed randomized placebo-controlled exercise trial
   insight: 23 men; 20 mg/day for six weeks with endurance training; PGC-1α increased but performance and body composition did not.
   limitation: Small all-male sample, short duration, surrogate mitochondrial marker.
@@ -646,7 +650,6 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   conflictOfInterestStatus: not-assessed
   pmid: '19861415'
   pmcid: PMC2804159
-  doi: ''
 - id: S13
   title: Pyrroloquinoline Quinone Disodium
   authors: United States Pharmacopeia

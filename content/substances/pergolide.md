@@ -117,7 +117,7 @@ Reviewed PubMed abstracts for PMID(s) 12680735, 15765257. No rights-eligible PMC
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: The role of dopamine D1 and D2 receptors in modulating object working memory in humans is poorly understood.
   sourceId: reddit-pmid-12680735
   population: Twelve healthy subjects underwent testing under three conditions (0.05 mg pergolide (D1/D2 receptor agonist), 2.5 mg bromocriptine (D2 receptor agonist) and placebo] in a double-blind, placebo-controlled repeated measures design.
@@ -129,7 +129,7 @@ Reviewed PubMed abstracts for PMID(s) 12680735, 15765257. No rights-eligible PMC
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: EC has been associated with networks involving the prefrontal cortex (PFC).
   sourceId: reddit-pmid-15765257
   population: Forty male healthy subjects participated in this randomized, double-blind, placebo-controlled, crossover study.
@@ -205,7 +205,7 @@ Reviewed PubMed abstracts for PMID(s) 12680735, 15765257. No rights-eligible PMC
 
 ```yaml
 - id: reddit-index-pergolide
-  title: Reddit Nootropics index entry
+  title: Reddit Nootropics index entry for Black Currant
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

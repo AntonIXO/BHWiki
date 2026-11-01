@@ -111,7 +111,7 @@ Reviewed PubMed abstracts for PMID(s) 21919588, 23234490, 25205943, 26421634, 26
   conceptId: alertness
   name: Alertness
   direction: Decreased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Expectancies have been shown to play a role in the withdrawal syndrome of many drugs of addiction; however, no studies have examined the effects of expectancies across a broad range of caffeine withdrawal symptoms, including craving.
   sourceId: reddit-pmid-26933153
   population: One-half of the participants were led to believe the coffee was regular caffeinated coffee (the 'Told Caffeine' condition) and one-half were told that it was decaffeinated (the 'Told Decaf' condition).
@@ -123,7 +123,7 @@ Reviewed PubMed abstracts for PMID(s) 21919588, 23234490, 25205943, 26421634, 26
   conceptId: craving
   name: Craving
   direction: Decreased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Expectancies have been shown to play a role in the withdrawal syndrome of many drugs of addiction; however, no studies have examined the effects of expectancies across a broad range of caffeine withdrawal symptoms, including craving.
   sourceId: reddit-pmid-26933153
   population: One-half of the participants were led to believe the coffee was regular caffeinated coffee (the 'Told Caffeine' condition) and one-half were told that it was decaffeinated (the 'Told Decaf' condition).
@@ -140,7 +140,7 @@ Reviewed PubMed abstracts for PMID(s) 21919588, 23234490, 25205943, 26421634, 26
   conceptId: fatigue-severity
   name: Fatigue Severity
   direction: Decreased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Expectancies have been shown to play a role in the withdrawal syndrome of many drugs of addiction; however, no studies have examined the effects of expectancies across a broad range of caffeine withdrawal symptoms, including craving.
   sourceId: reddit-pmid-26933153
   population: One-half of the participants were led to believe the coffee was regular caffeinated coffee (the 'Told Caffeine' condition) and one-half were told that it was decaffeinated (the 'Told Decaf' condition).
@@ -176,7 +176,7 @@ Reviewed PubMed abstracts for PMID(s) 21919588, 23234490, 25205943, 26421634, 26
   conceptId: attention
   name: Attention
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Imaging studies show that placebo enhance release of dopamine in the mesolimbic and mesocortical tracts.
   sourceId: reddit-pmid-25205943
   population: Population not stated in the PubMed record.
@@ -188,7 +188,7 @@ Reviewed PubMed abstracts for PMID(s) 21919588, 23234490, 25205943, 26421634, 26
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Imaging studies show that placebo enhance release of dopamine in the mesolimbic and mesocortical tracts.
   sourceId: reddit-pmid-25205943
   population: Population not stated in the PubMed record.
@@ -200,7 +200,7 @@ Reviewed PubMed abstracts for PMID(s) 21919588, 23234490, 25205943, 26421634, 26
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: We examined how a sham cognitive enhancing drug might improve people's performance on a prospective memory task.
   sourceId: reddit-pmid-21919588
   population: Population not stated in the PubMed record.
@@ -212,7 +212,7 @@ Reviewed PubMed abstracts for PMID(s) 21919588, 23234490, 25205943, 26421634, 26
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: We examined how a sham cognitive enhancing drug might improve people's performance on a prospective memory task.
   sourceId: reddit-pmid-21919588
   population: Population not stated in the PubMed record.
@@ -410,7 +410,7 @@ Reviewed PubMed abstracts for PMID(s) 21919588, 23234490, 25205943, 26421634, 26
 
 ```yaml
 - id: reddit-index-placebo
-  title: Reddit Nootropics index entry
+  title: Reddit Nootropics index entry for Black Currant
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

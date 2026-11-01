@@ -69,7 +69,7 @@ Probiotics evidence is source-specific and endpoint-limited. Changes in gut micr
 This page links PubMed evidence for probiotics. Study populations, formulations and endpoints are retained per PMID; non-PubMed links remain provenance leads. Abstracts were retrieved for PMID(s) 23474283.
 ## Evidence note
 
-Identity only import: the cited sources support candidate identity provenance, not an evidence review. No biological relationship or clinical claim is asserted.
+The structured records below summarize the linked publication abstracts and any retrieved full text; they do not establish broad efficacy or safety beyond the reported populations and endpoints.
 
 Reviewed PubMed abstracts for PMID(s) 23474283. Rights-eligible PMC full text reviewed: PMC3839572.
 
@@ -117,7 +117,7 @@ Reviewed PubMed abstracts for PMID(s) 23474283. Rights-eligible PMC full text re
   conceptId: attention
   name: Attention
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Changes in gut microbiota have been reported to alter signaling mechanisms, emotional behavior, and visceral nociceptive reflexes in rodents.
   sourceId: reddit-pmid-23474283
   population: Participants underwent functional magnetic resonance imaging before and after the intervention to measure brain response to an emotional faces attention task and resting brain activity.

@@ -819,7 +819,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Full declaration not accessed.
   conflictOfInterestStatus: not-assessed
 - id: S6
-  title: "Effects of combined low-dose caffeine and taurine on anaerobic, neuromuscular, and cognitive performance: a double-blind randomized placebo-controlled crossover study."
+  title: 'Effects of combined low-dose caffeine and taurine on anaerobic, neuromuscular, and cognitive performance: a double-blind randomized placebo-controlled crossover study.'
   authors: Köse Y; Ulaş M; Atay E
   year: 2026
   url: https://doi.org/10.1186/s13102-026-01863-x
@@ -831,7 +831,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Authors declared no competing interests.
   conflictOfInterestStatus: not-assessed
 - id: S7
-  title: "Taurine Supplementation Lowers Blood Pressure and Improves Vascular Function in Prehypertension: Randomized, Double-Blind, Placebo-Controlled Study."
+  title: 'Taurine Supplementation Lowers Blood Pressure and Improves Vascular Function in Prehypertension: Randomized, Double-Blind, Placebo-Controlled Study.'
   authors: Sun Q; Wang B; Li Y; Sun F; Li P; Xia W; Zhou X; Li Q; Wang X; Chen J; Zeng X; Zhao Z; He H; Liu D; Zhu Z
   year: 2016
   url: https://doi.org/10.1161/HYPERTENSIONAHA.115.06624
@@ -843,7 +843,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Publisher disclosure states none.
   conflictOfInterestStatus: not-assessed
 - id: S8
-  title: "Taurine ameliorates blood pressure and vascular function in patients with type 2 diabetes: Randomized, double-blind, placebo-controlled trial."
+  title: 'Taurine ameliorates blood pressure and vascular function in patients with type 2 diabetes: Randomized, double-blind, placebo-controlled trial.'
   authors: Li Y; Wang Q; Liu Y; Li Q; Xia W; Lin S; Yang Q; Scholze A; Zhao Z; He H; Zhang H; Yan Z; Tepel M; Mu H; Zhu Z; Liu D
   year: 2025
   url: https://doi.org/10.1016/j.isci.2025.112719
@@ -855,7 +855,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Authors declared no competing interests.
   conflictOfInterestStatus: not-assessed
 - id: S9
-  title: "The effects of taurine supplementation on glycemic control and serum lipid profile in patients with type 2 diabetes: a randomized, double-blind, placebo-controlled trial."
+  title: 'The effects of taurine supplementation on glycemic control and serum lipid profile in patients with type 2 diabetes: a randomized, double-blind, placebo-controlled trial.'
   authors: Maleki V; Alizadeh M; Esmaeili F; Mahdavi R
   year: 2020
   url: https://doi.org/10.1007/s00726-020-02859-8
@@ -879,7 +879,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Full declaration not accessed.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: "Therapeutic effect of taurine in congestive heart failure: a double-blind crossover trial."
+  title: 'Therapeutic effect of taurine in congestive heart failure: a double-blind crossover trial.'
   authors: Azuma J; Sawamura A; Awata N; Ohta H; Hamaguchi T; Harada H; Takihara K; Hasegawa H; Yamagami T; Ishiyama T
   year: 1985
   url: https://doi.org/10.1002/clc.4960080507
@@ -903,7 +903,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: S13
-  title: "Differential cognitive effects of energy drink ingredients: caffeine, taurine, and glucose."
+  title: 'Differential cognitive effects of energy drink ingredients: caffeine, taurine, and glucose.'
   authors: Giles GE; Mahoney CR; Brunyé TT; Gardony AL; Taylor HA; Kanarek RB
   year: 2012
   url: https://doi.org/10.1016/j.pbb.2012.07.004
@@ -939,7 +939,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Full declaration not accessed.
   conflictOfInterestStatus: not-assessed
 - id: S16
-  title: "Randomised clinical trial: oral taurine supplementation versus placebo reduces muscle cramps in patients with chronic liver disease."
+  title: 'Randomised clinical trial: oral taurine supplementation versus placebo reduces muscle cramps in patients with chronic liver disease.'
   authors: Vidot H; Cvejic E; Carey S; Strasser SI; McCaughan GW; Allman-Farinelli M; Shackel NA
   year: 2018
   url: https://doi.org/10.1111/apt.14950
@@ -975,7 +975,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Full declaration not accessed.
   conflictOfInterestStatus: not-assessed
 - id: S19
-  title: "Taurine Intake, Plasma Taurine Concentration, and Dementia Risk: Findings From the Malmö Diet and Cancer Study."
+  title: 'Taurine Intake, Plasma Taurine Concentration, and Dementia Risk: Findings From the Malmö Diet and Cancer Study.'
   authors: Zhang N; Borné Y; Hagberg E; Palmqvist S; Glans I; Ottosson F; Samuelsson J; Nägga K; Hansson O; Duarte JMN; Sonestedt E
   year: 2025
   url: https://doi.org/10.1111/jnc.70298

@@ -422,6 +422,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Not established
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/33198336/
+  pmid: '33198336'
   kind: Reddit index publication link
   insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.

@@ -155,7 +155,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 
 ```yaml
 - id: molekul-profile
-  title: "DSIP: Molekul research profile"
+  title: 'DSIP: Molekul research profile'
   authors: Molekul
   year: 2026
   url: https://molekul.io/compounds/dsip
@@ -217,6 +217,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
   funding: Not assessed in this import.
+  pmid: '8553617'
 - id: molekul-link-138
   title: PubMed PMID 10395980 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
@@ -226,6 +227,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
   funding: Not assessed in this import.
+  pmid: '10395980'
 - id: molekul-link-139
   title: PubMed PMID 7779981 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified

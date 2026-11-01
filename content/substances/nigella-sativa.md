@@ -230,7 +230,7 @@ PubMed abstracts retrieved for PMIDs 23707331 and 24412554; no PMC full text was
 
 ```yaml
 - id: reddit-index-nigella-sativa
-  title: Reddit Nootropics index entry
+  title: Reddit Nootropics index entry for Black Currant
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

@@ -277,6 +277,10 @@ export function serializeContent(relativePath: string, parsed: ContentRecord): s
     if (Array.isArray(identificationTests) && identificationTests.length > 0) {
       sections.push(listSection("Identification tests", identificationTests));
     }
+    const externalWikiLinks = record.externalWikiLinks;
+    if (Array.isArray(externalWikiLinks) && externalWikiLinks.length > 0) {
+      sections.push(listSection("External wiki links", externalWikiLinks));
+    }
     const kinetics = record.kinetics;
     if (isRecord(kinetics) && Object.prototype.hasOwnProperty.call(kinetics, "timeline")) {
       const durationAt = sections.findIndex((section) => section.startsWith("## Modifiers"));

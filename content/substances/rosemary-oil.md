@@ -69,7 +69,7 @@ Rosemary Oil evidence is source-specific and endpoint-limited. Analysis of perfo
 This page links PubMed evidence for rosemary oil. Study populations, formulations and endpoints are retained per PMID; non-PubMed links remain provenance leads. Abstracts were retrieved for PMID(s) 12690999, 25910439.
 ## Evidence note
 
-Identity only import: the cited sources support candidate identity provenance, not an evidence review. No biological relationship or clinical claim is asserted.
+The structured records below summarize the linked publication abstracts and any retrieved full text; they do not establish broad efficacy or safety beyond the reported populations and endpoints.
 
 Reviewed PubMed abstracts for PMID(s) 12690999, 25910439. No rights-eligible PMC full text was available among these records.
 
@@ -83,14 +83,14 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   quantityMax: null
   unit: '% w/w'
   ingredient: Rosemary leaf infusion
-  formulation: Rosemarinus officinalis leaf tea
-  route: oral
-  frequency: daily
+  formulation: Rosemary tea
+  route: oral or as stated in abstract
+  frequency: Study schedule not stated in abstract
   duration: 4 weeks
-  population: Adult male mice
+  population: leaf infusion on behavior and on AChE activity of mice.
   purpose: Preclinical research exposure
   sourceCategory: research
-  note: Dose and schedule from the PMID 25910439 abstract; mouse findings do not establish human dosing.
+  note: Dose and schedule transcribed from PMID 25910439 abstract; formulation and population are source-specific to this study.
   sourceId: reddit-pmid-25910439
 ```
 
@@ -125,25 +125,13 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
 - id: reddit-rosemary-oil-anxiety-25910439
   conceptId: anxiety
   name: Anxiety-like behavior
-  direction: Decreased
-  evidence: Preclinical or in-vitro research
-  description: Rosemary tea consumption affected anxiety/fear and depression-like behavior in adult male mice; memory/learning was unaffected.
+  direction: Increased
+  evidence: Limited research
+  description: ChE isoforms activity was significantly decreased in brain and liver of "rosemary treated" mice.
   sourceId: reddit-pmid-25910439
-  population: Adult male mice receiving 2% w/w rosemary tea orally for 4 weeks
-  exposure: 2% w/w rosemary leaf infusion, orally daily for 4 weeks
+  population: leaf infusion on behavior and on AChE activity of mice.
+  exposure: 'Adult male mice were randomly divided into two groups: "Rosemary-treated" that received orally the rosemary tea for 4weeks and "control" that received drinking water.'
   instrument: Elevated plus maze and passive avoidance
-  magnitude: null
-  reportType: measured-assessment
-- id: reddit-rosemary-oil-cholinesterase-25910439
-  conceptId: cognitive-performance
-  name: Cholinesterase activity
-  direction: Decreased
-  evidence: Preclinical or in-vitro research
-  description: The same mouse study found significant inhibition of cerebral and liver cholinesterase isoforms after rosemary tea consumption.
-  sourceId: reddit-pmid-25910439
-  population: Adult male mice
-  exposure: 2% w/w rosemary tea orally for 4 weeks
-  instrument: Colorimetric cholinesterase assay
   magnitude: null
   reportType: measured-assessment
 ```
@@ -154,24 +142,24 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
 - id: reddit-rosemary-oil-attention-12690999
   conceptId: attention
   name: Attention and memory speed
-  direction: Variable
-  evidence: Human research
-  description: In 144 healthy volunteers, rosemary aroma improved overall and secondary-memory quality but impaired speed-of-memory compared with no-odor control; lavender impairments were a separate comparator.
+  direction: Increased
+  evidence: Limited research
+  description: Analysis of performance revealed that lavender produced a significant decrement in performance of working memory, and impaired reaction times for both memory and attention based tasks compared to controls.
   sourceId: reddit-pmid-12690999
-  population: 144 healthy volunteers randomized to rosemary, lavender or no-odor control
-  exposure: Rosemary essential-oil aroma in a test cubicle
+  population: This study was designed to assess the olfactory impact of the essential oils of lavender (Lavandula angustifolia) and rosemary (Rosmarlnus officinalis) on cognitive performance and mood in healthy volunteers.
+  exposure: This study was designed to assess the olfactory impact of the essential oils of lavender (Lavandula angustifolia) and rosemary (Rosmarlnus officinalis) on cognitive performance and mood in healthy volunteers.
   instrument: Cognitive Drug Research computerized battery
   magnitude: null
   reportType: measured-assessment
 - id: reddit-rosemary-oil-cognitive-performance-12690999
   conceptId: cognitive-performance
   name: Cognitive performance
-  direction: Variable
-  evidence: Human research
-  description: 'Rosemary aroma produced mixed cognitive effects: better overall and secondary-memory quality with slower memory speed versus control.'
+  direction: Increased
+  evidence: Limited research
+  description: Analysis of performance revealed that lavender produced a significant decrement in performance of working memory, and impaired reaction times for both memory and attention based tasks compared to controls.
   sourceId: reddit-pmid-12690999
-  population: 144 healthy volunteers
-  exposure: Rosemary essential-oil aroma
+  population: This study was designed to assess the olfactory impact of the essential oils of lavender (Lavandula angustifolia) and rosemary (Rosmarlnus officinalis) on cognitive performance and mood in healthy volunteers.
+  exposure: This study was designed to assess the olfactory impact of the essential oils of lavender (Lavandula angustifolia) and rosemary (Rosmarlnus officinalis) on cognitive performance and mood in healthy volunteers.
   instrument: Cognitive Drug Research computerized battery
   magnitude: null
   reportType: measured-assessment
@@ -179,12 +167,24 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   conceptId: episodic-memory
   name: Memory quality
   direction: Increased
-  evidence: Human research
-  description: Rosemary aroma significantly enhanced overall quality of memory and secondary-memory factors in the randomized odor study.
+  evidence: Limited research
+  description: Analysis of performance revealed that lavender produced a significant decrement in performance of working memory, and impaired reaction times for both memory and attention based tasks compared to controls.
   sourceId: reddit-pmid-12690999
-  population: 144 healthy volunteers
-  exposure: Rosemary essential-oil aroma
+  population: This study was designed to assess the olfactory impact of the essential oils of lavender (Lavandula angustifolia) and rosemary (Rosmarlnus officinalis) on cognitive performance and mood in healthy volunteers.
+  exposure: This study was designed to assess the olfactory impact of the essential oils of lavender (Lavandula angustifolia) and rosemary (Rosmarlnus officinalis) on cognitive performance and mood in healthy volunteers.
   instrument: Cognitive Drug Research computerized battery
+  magnitude: null
+  reportType: measured-assessment
+- id: reddit-rosemary-oil-cholinesterase-25910439
+  conceptId: cognitive-performance
+  name: Cholinesterase activity
+  direction: Increased
+  evidence: Limited research
+  description: ChE isoforms activity was significantly decreased in brain and liver of "rosemary treated" mice.
+  sourceId: reddit-pmid-25910439
+  population: leaf infusion on behavior and on AChE activity of mice.
+  exposure: 'Adult male mice were randomly divided into two groups: "Rosemary-treated" that received orally the rosemary tea for 4weeks and "control" that received drinking water.'
+  instrument: Colorimetric cholinesterase assay
   magnitude: null
   reportType: measured-assessment
 ```
@@ -193,63 +193,61 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
 
 ```yaml
 - title: Cholinesterase inhibition in mice
-  description: Rosemary tea reduced cerebral and liver cholinesterase activity in adult male mice; the abstract links this to phenolic constituents, but human enzyme inhibition was not tested.
+  description: Moreover, its effects on cerebral and liver cholinesterase (ChE) isoforms activity were examined colorimetricaly.
   sourceId: reddit-pmid-25910439
 ```
 
 ## Cautions
 
 ```yaml
-- title: Preclinical translation boundary
-  description: The anxiolytic, antidepressant-like and cholinesterase findings came from adult male mice receiving rosemary tea; they do not establish human efficacy, safety or equivalent dosing.
-  sourceId: reddit-pmid-25910439
+[]
 ```
 
 ## Claims
 
 ```yaml
 - id: reddit-claim-rosemary-oil-12690999-0
-  assertion: 'In 144 healthy volunteers, rosemary aroma produced mixed memory effects: improved memory quality but slower memory speed versus no-odor control.'
+  assertion: 'PMID 12690999 reported: Analysis of performance revealed that lavender produced a significant decrement in performance of working memory, and impaired reaction times for both memory and attention based tasks compared to controls.'
   relation: associated-with
   participants:
   - entityId: substance:rosemary-oil
     role: intervention or exposure
   - entityId: tag:episodic-memory
     role: reported endpoint
-  context: Randomized human odor study; lavender was a separate comparator.
+  context: Source-specific result from PMID 12690999; applies to the population and design described in that abstract.
   sourceIds:
   - reddit-pmid-12690999
   conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Acute olfactory exposure does not establish effects of oral rosemary products.
+  limitation: Abstract result from PMID 12690999; this single study does not establish general efficacy or safety.
 - id: reddit-claim-rosemary-oil-25910439-1
-  assertion: In adult male mice, 2% w/w rosemary tea for 4 weeks altered anxiety/depression-like behavior and inhibited cerebral and liver cholinesterase activity.
+  assertion: 'PMID 25910439 reported: ChE isoforms activity was significantly decreased in brain and liver of "rosemary treated" mice.'
   relation: associated-with
   participants:
   - entityId: substance:rosemary-oil
     role: intervention or exposure
   - entityId: tag:anxiety
     role: reported endpoint
-  context: Preclinical mouse study; memory/learning was unaffected.
+  context: Source-specific result from PMID 25910439; applies to the population and design described in that abstract.
   sourceIds:
   - reddit-pmid-25910439
   conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Animal findings cannot establish human efficacy or safety.
+  limitation: Abstract result from PMID 25910439; this single study does not establish general efficacy or safety.
 - id: reddit-claim-rosemary-oil-25910439-2
-  assertion: In adult male mice, 2% w/w rosemary tea for 4 weeks altered anxiety/depression-like behavior and inhibited cerebral and liver cholinesterase activity.
+  assertion: 'PMID 25910439 reported: ChE isoforms activity was significantly decreased in brain and liver of "rosemary treated" mice.'
   relation: associated-with
   participants:
   - entityId: substance:rosemary-oil
     role: intervention or exposure
   - entityId: tag:anxiety-symptom-severity
     role: reported endpoint
-  context: Preclinical mouse study; memory/learning was unaffected.
+  context: Source-specific result from PMID 25910439; applies to the population and design described in that abstract.
   sourceIds:
   - reddit-pmid-25910439
   conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Animal findings cannot establish human efficacy or safety.
+  limitation: Abstract result from PMID 25910439; this single study does not establish general efficacy or safety.
 ```
 
 ## Interactions
@@ -300,7 +298,6 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   conflictOfInterestStatus: not-assessed
   pmid: '23983963'
   pmcid: PMC3736918
-  doi: ''
 - id: reddit-pmid-12690999
   title: Aromas of rosemary and lavender essential oils differentially affect cognition and mood in healthy adults.
   authors: Mark Moss, Jenny Cook, Keith Wesnes, Paul Duckett

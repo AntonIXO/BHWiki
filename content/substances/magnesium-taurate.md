@@ -569,7 +569,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   conflictOfInterestStatus: not-assessed
 - id: S4
   title: ClinicalTrials.gov Noopept/omberacetam/GVS-111 searches, searched October 10, 2026
-  authors: "URLs:"
+  authors: 'URLs:'
   year: 2026
   url: https://clinicaltrials.gov/search?intr=Noopept
   kind: Regulatory or registry source
@@ -603,9 +603,9 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not established from the accessible abstract.
   conflictOfInterestStatus: not-assessed
-  pmid: "21199787"
+  pmid: '21199787'
 - id: S7
-  title: "Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial."
+  title: 'Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial.'
   authors: Julius Schuster, Igor Cycelskij, Adrian Lopresti, Andreas Hahn
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12412596/
@@ -616,10 +616,10 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Lopresti disclosed directing Clinical Research Australia, a contract-research organization; the complete disclosure was not retrieved.
   conflictOfInterestStatus: not-assessed
-  pmid: "40918053"
+  pmid: '40918053'
   doi: 10.2147/NSS.S524348
 - id: S8
-  title: "Oral magnesium supplementation improves insulin sensitivity and metabolic control in type 2 diabetic subjects: a randomized double-blind controlled trial."
+  title: 'Oral magnesium supplementation improves insulin sensitivity and metabolic control in type 2 diabetic subjects: a randomized double-blind controlled trial.'
   authors: Martha Rodríguez-Morán, Fernando Guerrero-Romero
   year: 2003
   url: https://pubmed.ncbi.nlm.nih.gov/12663588/
@@ -631,7 +631,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   conflictsOfInterest: Not established from the accessible abstract.
   conflictOfInterestStatus: not-assessed
 - id: S9
-  title: "Oral magnesium supplementation does not affect insulin sensitivity in people with insulin-treated type 2 diabetes and a low serum magnesium: a randomised controlled trial."
+  title: 'Oral magnesium supplementation does not affect insulin sensitivity in people with insulin-treated type 2 diabetes and a low serum magnesium: a randomised controlled trial.'
   authors: Linda C A Drenthen, Jeroen H F de Baaij, Laura Rodwell, Antonius E van Herwaarden, Cees J Tack, Bastiaan E de Galan
   year: 2024
   url: https://link.springer.com/article/10.1007/s00125-023-06029-9
@@ -643,7 +643,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   conflictsOfInterest: De Galan was a Diabetologia associate editor, excluded from handling; other authors declared no biasing relationships.
   conflictOfInterestStatus: not-assessed
 - id: S10
-  title: "Long-term magnesium supplementation improves arterial stiffness in overweight and obese adults: results of a randomized, double-blind, placebo-controlled intervention trial."
+  title: 'Long-term magnesium supplementation improves arterial stiffness in overweight and obese adults: results of a randomized, double-blind, placebo-controlled intervention trial.'
   authors: Peter J Joris, Jogchum Plat, Stephan J L Bakker, Ronald P Mensink
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27053384/
@@ -655,7 +655,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   conflictsOfInterest: Complete declaration was not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: "Effects of Magnesium Citrate, Magnesium Oxide, and Magnesium Sulfate Supplementation on Arterial Stiffness: A Randomized, Double-Blind, Placebo-Controlled Intervention Trial."
+  title: 'Effects of Magnesium Citrate, Magnesium Oxide, and Magnesium Sulfate Supplementation on Arterial Stiffness: A Randomized, Double-Blind, Placebo-Controlled Intervention Trial.'
   authors: Joëlle C. Schutten; Peter J. Joris; Iris Groendijk; Coby Eelderink; Dion Groothof; Yvonne van der Veen; Robert Westerhuis; Femke Goorman; Ronald M. Danel; Martin H. de Borst; Stephan J. L. Bakker
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9075273/
@@ -667,7 +667,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   conflictsOfInterest: Commercial employment disclosed for Goorman and Danel with Nedmag/Magnesium Health Institute.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: "Complementary vascular-protective actions of magnesium and taurine: a rationale for magnesium taurate."
+  title: 'Complementary vascular-protective actions of magnesium and taurine: a rationale for magnesium taurate.'
   authors: M F McCarty
   year: 1996
   url: https://pubmed.ncbi.nlm.nih.gov/8692051/
@@ -762,8 +762,6 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not an intervention study.
   conflictOfInterestStatus: not-assessed
-
-
 ```
 
 ## Legal

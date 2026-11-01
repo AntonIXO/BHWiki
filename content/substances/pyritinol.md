@@ -69,7 +69,7 @@ Pyritinol evidence is source-specific and endpoint-limited. Significant improvem
 This page links PubMed evidence for pyritinol. Study populations, formulations and endpoints are retained per PMID; non-PubMed links remain provenance leads. Abstracts were retrieved for PMID(s) 2135070, 3066650, 9679051.
 ## Evidence note
 
-Identity only import: the cited sources support candidate identity provenance, not an evidence review. No biological relationship or clinical claim is asserted.
+The structured records below summarize the linked publication abstracts and any retrieved full text; they do not establish broad efficacy or safety beyond the reported populations and endpoints.
 
 Reviewed PubMed abstracts for PMID(s) 2135070, 3066650, 9679051. No rights-eligible PMC full text was available among these records.
 
@@ -132,7 +132,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Significant improvements in CFFT and CRT were found after pyritinol.
   sourceId: reddit-pmid-2135070
   population: Twelve healthy male volunteers received pyritinol 600 or 1,200 mg or placebo for 3 days according to a randomised, double-blind crossover design.
@@ -265,7 +265,6 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   conflictOfInterestStatus: not-assessed
   pmid: '15001508'
   pmcid: PMC381054
-  doi: ''
 - id: reddit-pmid-9679051
   title: 'Acute pancreatitis due to pyritinol: an immune-mediated phenomenon.'
   authors: A Straumann, M Bauer, W J Pichler, M Pirovino

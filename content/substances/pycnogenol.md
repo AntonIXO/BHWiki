@@ -69,7 +69,7 @@ Pycnogenol evidence is source-specific and endpoint-limited. Pycnogenol, an extr
 This page links PubMed evidence for pycnogenol. Study populations, formulations and endpoints are retained per PMID; non-PubMed links remain provenance leads. Abstracts were retrieved for PMID(s) 16699814, 16984739, 18019397, 22108481.
 ## Evidence note
 
-Identity only import: the cited sources support candidate identity provenance, not an evidence review. No biological relationship or clinical claim is asserted.
+The structured records below summarize the linked publication abstracts and any retrieved full text; they do not establish broad efficacy or safety beyond the reported populations and endpoints.
 
 Reviewed PubMed abstracts for PMID(s) 16699814, 16984739, 18019397, 22108481. No rights-eligible PMC full text was available among these records.
 
@@ -146,7 +146,7 @@ Reviewed PubMed abstracts for PMID(s) 16699814, 16984739, 18019397, 22108481. No
   conceptId: attention
   name: Attention
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Pycnogenol® was used in healthy students; the supplement was used with the aim of enhancing "normal" mental performances.
   sourceId: reddit-pmid-22108481
   population: Population not stated in the PubMed record.
@@ -158,7 +158,7 @@ Reviewed PubMed abstracts for PMID(s) 16699814, 16984739, 18019397, 22108481. No
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Pycnogenol® was used in healthy students; the supplement was used with the aim of enhancing "normal" mental performances.
   sourceId: reddit-pmid-22108481
   population: Population not stated in the PubMed record.
@@ -170,7 +170,7 @@ Reviewed PubMed abstracts for PMID(s) 16699814, 16984739, 18019397, 22108481. No
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Pycnogenol® was used in healthy students; the supplement was used with the aim of enhancing "normal" mental performances.
   sourceId: reddit-pmid-22108481
   population: Population not stated in the PubMed record.

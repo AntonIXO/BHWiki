@@ -437,7 +437,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Unknown.
   conflictOfInterestStatus: not-assessed
 - id: S2
-  title: "Direct source link: https://doi.org/10.1039/c8fo00971f"
+  title: 'Direct source link: https://doi.org/10.1039/c8fo00971f'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1039/c8fo00971f
@@ -449,7 +449,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S3
-  title: "Direct source link: https://clinicaltrials.gov/study/NCT03020680"
+  title: 'Direct source link: https://clinicaltrials.gov/study/NCT03020680'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://clinicaltrials.gov/study/NCT03020680
@@ -461,7 +461,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S4
-  title: "The effect of coenzyme Q10 on morbidity and mortality in chronic heart failure: results from Q-SYMBIO"
+  title: 'The effect of coenzyme Q10 on morbidity and mortality in chronic heart failure: results from Q-SYMBIO'
   authors: Mortensen SA, Rosenfeldt F, Kumar A, et al.
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/25282031/
@@ -473,7 +473,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Unknown disclosure.
   conflictOfInterestStatus: not-assessed
 - id: S5
-  title: "Direct source link: https://doi.org/10.1016/j.jchf.2014.06.008"
+  title: 'Direct source link: https://doi.org/10.1016/j.jchf.2014.06.008'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1016/j.jchf.2014.06.008
@@ -485,7 +485,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S6
-  title: "Coenzyme Q10 to manage chronic heart failure with a reduced ejection fraction: a systematic review and economic evaluation"
+  title: 'Coenzyme Q10 to manage chronic heart failure with a reduced ejection fraction: a systematic review and economic evaluation'
   authors: Claxton L, Simmonds M, Beresford L, et al.
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/35076012/
@@ -497,7 +497,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Author disclosure incompletely extracted.
   conflictOfInterestStatus: not-assessed
 - id: S7
-  title: "Direct source link: https://doi.org/10.3310/KVOU6959"
+  title: 'Direct source link: https://doi.org/10.3310/KVOU6959'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.3310/KVOU6959
@@ -509,7 +509,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S8
-  title: "Direct source link: https://www.journalslibrary.nihr.ac.uk/hta/KVOU6959"
+  title: 'Direct source link: https://www.journalslibrary.nihr.ac.uk/hta/KVOU6959'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://www.journalslibrary.nihr.ac.uk/hta/KVOU6959
@@ -533,7 +533,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Financial disclosure unknown; product supplier involved.
   conflictOfInterestStatus: not-assessed
 - id: S10
-  title: "Direct source link: https://doi.org/10.1016/j.atherosclerosis.2014.12.016"
+  title: 'Direct source link: https://doi.org/10.1016/j.atherosclerosis.2014.12.016'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1016/j.atherosclerosis.2014.12.016
@@ -545,7 +545,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: "Direct source link: https://clinicaltrials.gov/study/NCT01140308"
+  title: 'Direct source link: https://clinicaltrials.gov/study/NCT01140308'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://clinicaltrials.gov/study/NCT01140308
@@ -569,7 +569,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Unknown.
   conflictOfInterestStatus: not-assessed
 - id: S13
-  title: "Direct source link: https://doi.org/10.12659/MSM.890777"
+  title: 'Direct source link: https://doi.org/10.12659/MSM.890777'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.12659/MSM.890777
@@ -581,7 +581,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: "Effects of coenzyme Q10 supplementation on myopathy in statin-treated patients: a systematic review and meta-analysis"
+  title: 'Effects of coenzyme Q10 supplementation on myopathy in statin-treated patients: a systematic review and meta-analysis'
   authors: Kovacic S, Habicht SD, Eckert GP
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/41158831/
@@ -593,7 +593,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Authors reported no competing interests.
   conflictOfInterestStatus: not-assessed
 - id: S15
-  title: "Direct source link: https://doi.org/10.1017/jns.2025.10043"
+  title: 'Direct source link: https://doi.org/10.1017/jns.2025.10043'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1017/jns.2025.10043
@@ -605,7 +605,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S16
-  title: "Efficacy of coenzyme Q10 in migraine prophylaxis: a randomized controlled trial"
+  title: 'Efficacy of coenzyme Q10 in migraine prophylaxis: a randomized controlled trial'
   authors: Sándor PS, Di Clemente L, Coppola G, et al.
   year: 2005
   url: https://pubmed.ncbi.nlm.nih.gov/15728298/
@@ -617,7 +617,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Unknown.
   conflictOfInterestStatus: not-assessed
 - id: S17
-  title: "Direct source link: https://doi.org/10.1212/01.WNL.0000151975.03598.ED"
+  title: 'Direct source link: https://doi.org/10.1212/01.WNL.0000151975.03598.ED'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1212/01.WNL.0000151975.03598.ED
@@ -641,7 +641,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: None declared.
   conflictOfInterestStatus: not-assessed
 - id: S19
-  title: "Direct source link: https://doi.org/10.1136/bmjopen-2020-039358"
+  title: 'Direct source link: https://doi.org/10.1136/bmjopen-2020-039358'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1136/bmjopen-2020-039358
@@ -665,7 +665,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Unknown.
   conflictOfInterestStatus: not-assessed
 - id: S21
-  title: "Direct source link: https://doi.org/10.1016/j.nut.2011.07.010"
+  title: 'Direct source link: https://doi.org/10.1016/j.nut.2011.07.010'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1016/j.nut.2011.07.010
@@ -689,7 +689,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Unknown.
   conflictOfInterestStatus: not-assessed
 - id: S23
-  title: "Direct source link: https://doi.org/10.1016/j.nut.2007.12.007"
+  title: 'Direct source link: https://doi.org/10.1016/j.nut.2007.12.007'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1016/j.nut.2007.12.007
@@ -701,7 +701,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S24
-  title: "Effect of Ubiquinol on Cognitive Function, Blood Pressure, Arterial Stiffness, and Biomarkers of Oxidative Stress and Inflammation in the Elderly: A Randomized Trial"
+  title: 'Effect of Ubiquinol on Cognitive Function, Blood Pressure, Arterial Stiffness, and Biomarkers of Oxidative Stress and Inflammation in the Elderly: A Randomized Trial'
   authors: Nankivell MC, Rosenfeldt F, Reddan JM, et al.
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/42510537/
@@ -713,7 +713,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Unknown.
   conflictOfInterestStatus: not-assessed
 - id: S25
-  title: "Direct source link: https://doi.org/10.3390/antiox15070806"
+  title: 'Direct source link: https://doi.org/10.3390/antiox15070806'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.3390/antiox15070806
@@ -737,7 +737,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Unknown.
   conflictOfInterestStatus: not-assessed
 - id: S27
-  title: "Direct source link: https://doi.org/10.1016/j.nut.2018.05.020"
+  title: 'Direct source link: https://doi.org/10.1016/j.nut.2018.05.020'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1016/j.nut.2018.05.020
@@ -761,7 +761,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Unknown; named product involvement.
   conflictOfInterestStatus: not-assessed
 - id: S29
-  title: "Direct source link: https://doi.org/10.1002/biof.5520250127"
+  title: 'Direct source link: https://doi.org/10.1002/biof.5520250127'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1002/biof.5520250127
@@ -785,7 +785,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Unknown.
   conflictOfInterestStatus: not-assessed
 - id: S31
-  title: "Coenzyme Q10 improves blood pressure and glycaemic control: a controlled trial in subjects with type 2 diabetes"
+  title: 'Coenzyme Q10 improves blood pressure and glycaemic control: a controlled trial in subjects with type 2 diabetes'
   authors: Hodgson JM, Watts GF, Playford DA, et al.
   year: 2002
   url: https://pubmed.ncbi.nlm.nih.gov/12428181/
@@ -797,7 +797,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Author disclosure unknown.
   conflictOfInterestStatus: not-assessed
 - id: S32
-  title: "Direct source link: https://doi.org/10.1038/sj.ejcn.1601464"
+  title: 'Direct source link: https://doi.org/10.1038/sj.ejcn.1601464'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1038/sj.ejcn.1601464
@@ -833,7 +833,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Author financial COI unknown.
   conflictOfInterestStatus: not-assessed
 - id: S35
-  title: "Direct source link: https://doi.org/10.1016/j.ijgo.2008.11.033"
+  title: 'Direct source link: https://doi.org/10.1016/j.ijgo.2008.11.033'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1016/j.ijgo.2008.11.033
@@ -845,7 +845,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S36
-  title: "Direct source link: https://clinicaltrials.gov/study/NCT00300937"
+  title: 'Direct source link: https://clinicaltrials.gov/study/NCT00300937'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://clinicaltrials.gov/study/NCT00300937
@@ -857,7 +857,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S37
-  title: "The effects of coenzyme Q10 supplementation on glycemic control in diabetic and non-diabetic individuals: a systematic review and meta-analysis"
+  title: 'The effects of coenzyme Q10 supplementation on glycemic control in diabetic and non-diabetic individuals: a systematic review and meta-analysis'
   authors: Collares LDN, Messenburger GP, Nuñez FF, Pieniz S
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/41630501/
@@ -869,7 +869,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Unknown.
   conflictOfInterestStatus: not-assessed
 - id: S38
-  title: "Direct source link: https://doi.org/10.1080/10408398.2026.2624477"
+  title: 'Direct source link: https://doi.org/10.1080/10408398.2026.2624477'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1080/10408398.2026.2624477
@@ -905,7 +905,7 @@ Evidence is disease- and endpoint-specific: Q-SYMBIO reported a heart-failure si
   conflictsOfInterest: Author disclosures incomplete.
   conflictOfInterestStatus: not-assessed
 - id: S41
-  title: "Direct source link: https://doi.org/10.1002/pds.1818"
+  title: 'Direct source link: https://doi.org/10.1002/pds.1818'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1002/pds.1818

@@ -706,7 +706,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Individual disclosures not supplied by registry.
   conflictOfInterestStatus: not-assessed
 - id: S2
-  title: "LSDDEP2: study protocol for a randomised, double-dummy, triple-blind, active placebo-controlled, parallel groups trial of LSD microdosing in patients with major depressive disorder"
+  title: 'LSDDEP2: study protocol for a randomised, double-dummy, triple-blind, active placebo-controlled, parallel groups trial of LSD microdosing in patients with major depressive disorder'
   authors: Daldegan-Bueno D; Donegan CJ; Forsyth A; Sumner RL; Murphy RJ; Menkes DB; Evans W; Hoeh N; Sundram F; Reynolds LM; Ponton R; Cavadino A; Smith T; Roop P; Allen N; Abeysinghe B; Svirskis D; Bansal M; Muthukumaraswamy S.
   year: 2024
   url: https://doi.org/10.1186/s13063-024-08384-3
@@ -754,7 +754,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Liechti disclosed Mind Medicine consultancy; the company had no funding or conduct role. Other authors declared none.
   conflictOfInterestStatus: not-assessed
 - id: S6
-  title: "Acute Mood-Elevating Properties of Microdosed Lysergic Acid Diethylamide in Healthy Volunteers: A Home-Administered Randomized Controlled Trial."
+  title: 'Acute Mood-Elevating Properties of Microdosed Lysergic Acid Diethylamide in Healthy Volunteers: A Home-Administered Randomized Controlled Trial.'
   authors: Murphy RJ; Sumner R; Evans W; Ponton R; Ram S; Godfrey K; Forsyth A; Cavadino A; Krishnamurthy Naga V; Smith T; Hoeh NR; Menkes DB; Muthukumaraswamy S.
   year: 2023
   url: https://doi.org/10.1016/j.biopsych.2023.03.013
@@ -814,7 +814,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Complete disclosure not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: "Safety and Efficacy of Repeated Low-Dose LSD for ADHD Treatment in Adults: A Randomized Clinical Trial."
+  title: 'Safety and Efficacy of Repeated Low-Dose LSD for ADHD Treatment in Adults: A Randomized Clinical Trial.'
   authors: Mueller L; Santos de Jesus J; Schmid Y; Müller F; Becker A; Klaiber A; Straumann I; Luethi D; Haijen ECHM; Hurks PPM; Kuypers KPC; Liechti ME.
   year: 2025
   url: https://doi.org/10.1001/jamapsychiatry.2025.0044
@@ -826,7 +826,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Mueller disclosed study funding; Liechti disclosed Mind Medicine consultancy/grants; Kuypers disclosed unrelated institutional Clerkenwell Health funding.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: "Effects of repeated low-dose LSD on neuropsychological functioning in adults with ADHD: a randomized placebo-controlled study."
+  title: 'Effects of repeated low-dose LSD on neuropsychological functioning in adults with ADHD: a randomized placebo-controlled study.'
   authors: Haijen-Bongers ECHM; Hurks PPM; Schepers J; Vizeli P; Santos de Jesus J; Mueller L; Schmid Y; Liechti ME; Kuypers KPC.
   year: 2026
   url: https://doi.org/10.1007/s00213-026-07107-7
@@ -838,7 +838,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Liechti disclosed unrelated Definium and Lykos consultancy/grants; remaining authors declared no relevant commercial relationships.
   conflictOfInterestStatus: not-assessed
 - id: S13
-  title: "LSD microdosing in major depressive disorder: results from an open-label trial."
+  title: 'LSD microdosing in major depressive disorder: results from an open-label trial.'
   authors: Daldegan-Bueno D; Donegan CJ; Sumner R; Forsyth A; Evans W; Alshakhouri M; Reynolds L; Ponton R; Smith T; Roop P; Hoeh N; Allen N; Sundram F; Menkes D; Muthukumaraswamy S.
   year: 2026
   url: https://doi.org/10.1016/j.neuropharm.2025.110762
@@ -850,7 +850,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Complete publication-specific disclosure not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: "230. LSD microdosing for depression: hype or hope? A randomised controlled trial in major depressive disorder"
+  title: '230. LSD microdosing for depression: hype or hope? A randomised controlled trial in major depressive disorder'
   authors: Donegan C; Forsyth A; Sumner R; Miller E; Alshakhouri M; Murphy R; Evans W; Sundram F; Hoeh N; Menkes D; Douglass H; Reynolds L; Muthukumaraswamy S.
   year: 2026
   url: https://doi.org/10.1093/ijnp/pyag040.021
@@ -862,7 +862,7 @@ x-order: 9007199254740991
   conflictsOfInterest: No publication-specific disclosure available in the retrieved abstract.
   conflictOfInterestStatus: not-assessed
 - id: S15
-  title: "LSDDEP2: study protocol for a randomised, double-dummy, triple-blind, active placebo-controlled, parallel groups trial of LSD microdosing in patients with major depressive disorder"
+  title: 'LSDDEP2: study protocol for a randomised, double-dummy, triple-blind, active placebo-controlled, parallel groups trial of LSD microdosing in patients with major depressive disorder'
   authors: Daldegan-Bueno D; Donegan CJ; Forsyth A; Sumner RL; Murphy RJ; Menkes DB; Evans W; Hoeh N; Sundram F; Reynolds LM; Ponton R; Cavadino A; Smith T; Roop P; Allen N; Abeysinghe B; Svirskis D; Bansal M; Muthukumaraswamy S.
   year: 2024
   url: https://doi.org/10.1186/s13063-024-08384-3
@@ -946,7 +946,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Declaration not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S22
-  title: "New-Onset Seizures in an Adolescent Following Use of LSD while on Low-Dose Lithium Therapy: A Case Study."
+  title: 'New-Onset Seizures in an Adolescent Following Use of LSD while on Low-Dose Lithium Therapy: A Case Study.'
   authors: Edwards C; Van Gerpen S; Anand V.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38986146/

@@ -434,6 +434,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Authors listed in returned report
   year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/18697252/
+  pmid: '18697252'
   kind: PubMed-indexed study
   insight: Source R3 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -458,6 +459,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Authors listed in returned report
   year: 2007
   url: https://pubmed.ncbi.nlm.nih.gov/18318195/
+  pmid: '18318195'
   kind: PubMed-indexed study
   insight: Source R5 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -470,6 +472,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Authors listed in returned report
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/30877834/
+  pmid: '30877834'
   kind: PubMed-indexed study
   insight: Source R6 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -482,6 +485,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Authors listed in returned report
   year: 2011
   url: https://pubmed.ncbi.nlm.nih.gov/22500312/
+  pmid: '22500312'
   kind: PubMed-indexed study
   insight: Source R7 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -494,6 +498,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Authors listed in returned report
   year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/19008801/
+  pmid: '19008801'
   kind: PubMed-indexed study
   insight: Source R8 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -506,6 +511,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Authors listed in returned report
   year: 2004
   url: https://pubmed.ncbi.nlm.nih.gov/15079908/
+  pmid: '15079908'
   kind: PubMed-indexed study
   insight: Source R9 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -518,6 +524,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Authors listed in returned report
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/40558871/
+  pmid: '40558871'
   kind: PubMed-indexed study
   insight: Source R10 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -554,6 +561,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Metadata not assessed in the imported source trail
   year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/18383733/
+  pmid: '18383733'
   kind: Source discovery link
   insight: The imported Molekul profile links this PubMed record; the link is retained for traceability.
   limitation: The original article was not independently appraised in this import; the link alone does not establish efficacy.
@@ -566,6 +574,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/7793100/
+  pmid: '7793100'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification.
@@ -578,6 +587,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/23593416/
+  pmid: '23593416'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this source record.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification.
@@ -614,6 +624,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Authors listed in returned report
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/30877834/
+  pmid: '30877834'
   kind: PubMed-indexed study
   insight: Source R12 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -626,6 +637,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Authors listed in returned report
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19938275/
+  pmid: '19938275'
   kind: PubMed-indexed study
   insight: Source R13 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -638,6 +650,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Authors listed in returned report
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19565831/
+  pmid: '19565831'
   kind: PubMed-indexed study
   insight: Source R14 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -650,6 +663,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Authors listed in returned report
   year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/19253467/
+  pmid: '19253467'
   kind: PubMed-indexed study
   insight: Source R15 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -662,6 +676,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Authors listed in returned report
   year: 2021
   url: https://pubmed.ncbi.nlm.nih.gov/34484905/
+  pmid: '34484905'
   kind: PubMed-indexed study
   insight: Source R16 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -734,6 +749,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/19240853/
+  pmid: '19240853'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification.
@@ -746,6 +762,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/11177296/
+  pmid: '11177296'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification.
@@ -758,6 +775,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/11548439/
+  pmid: '11548439'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification.
@@ -770,6 +788,7 @@ PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/9606516/
+  pmid: '9606516'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification.

@@ -112,7 +112,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   conceptId: anxiety
   name: Anxiety
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Stress-induced activation of the locus ceruleus-norepinephrine (LC-NE) system produces significant cognitive and behavioral effects, including enhanced arousal and attention.
   sourceId: reddit-pmid-17335395
   population: The Trier Social Stress Test, a public-speaking and mental arithmetic stressor, was presented to participants for the stress sessions, whereas a similar, but nonstressful, control task (reading, counting) was utilized for the no-stress sessions.
@@ -129,7 +129,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   conceptId: attention
   name: Attention
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Stress-induced activation of the locus ceruleus-norepinephrine (LC-NE) system produces significant cognitive and behavioral effects, including enhanced arousal and attention.
   sourceId: reddit-pmid-17335395
   population: The Trier Social Stress Test, a public-speaking and mental arithmetic stressor, was presented to participants for the stress sessions, whereas a similar, but nonstressful, control task (reading, counting) was utilized for the no-stress sessions.
@@ -141,7 +141,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Stress-induced activation of the locus ceruleus-norepinephrine (LC-NE) system produces significant cognitive and behavioral effects, including enhanced arousal and attention.
   sourceId: reddit-pmid-17335395
   population: The Trier Social Stress Test, a public-speaking and mental arithmetic stressor, was presented to participants for the stress sessions, whereas a similar, but nonstressful, control task (reading, counting) was utilized for the no-stress sessions.
@@ -153,7 +153,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Stress-induced activation of the locus ceruleus-norepinephrine (LC-NE) system produces significant cognitive and behavioral effects, including enhanced arousal and attention.
   sourceId: reddit-pmid-17335395
   population: The Trier Social Stress Test, a public-speaking and mental arithmetic stressor, was presented to participants for the stress sessions, whereas a similar, but nonstressful, control task (reading, counting) was utilized for the no-stress sessions.
@@ -165,7 +165,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   conceptId: anxiety-symptom-severity
   name: Anxiety Symptom Severity
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Stress-induced activation of the locus ceruleus-norepinephrine (LC-NE) system produces significant cognitive and behavioral effects, including enhanced arousal and attention.
   sourceId: reddit-pmid-17335395
   population: The Trier Social Stress Test, a public-speaking and mental arithmetic stressor, was presented to participants for the stress sessions, whereas a similar, but nonstressful, control task (reading, counting) was utilized for the no-stress sessions.
@@ -236,7 +236,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
 
 ```yaml
 - id: reddit-index-propranolol
-  title: Reddit Nootropics index entry
+  title: Reddit Nootropics index entry for Black Currant
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index
@@ -257,7 +257,6 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   conflictOfInterestStatus: not-assessed
   pmid: '17884154'
   pmcid: PMC2397546
-  doi: ''
 - id: reddit-link-f8c1fb46c8cd
   title: Noradrenergic modulation of cognitive flexibility in problem solving (1999)
   authors: Not established

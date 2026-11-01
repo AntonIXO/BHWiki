@@ -423,7 +423,7 @@ Clinical evidence is formulation-specific and often heterogeneous. Positive sign
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.3920/BM2020.0062
 - id: ref-ibs-network-2024
-  title: "Efficacy of Probiotics, Prebiotics, Synbiotics, and FMT in IBS: Systematic Review and Network Meta-Analysis"
+  title: 'Efficacy of Probiotics, Prebiotics, Synbiotics, and FMT in IBS: Systematic Review and Network Meta-Analysis'
   authors: Wu J et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38999862/
@@ -475,7 +475,7 @@ Clinical evidence is formulation-specific and often heterogeneous. Positive sign
   conflictsOfInterest: Disclosure incomplete.
   conflictOfInterestStatus: not-assessed
 - id: ref-rossi-2016
-  title: "SYNERGY: A Randomized Trial"
+  title: 'SYNERGY: A Randomized Trial'
   authors: Rossi M et al.
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/26772193/

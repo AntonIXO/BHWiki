@@ -69,7 +69,7 @@ Psychedelic 01A08B04 evidence is source-specific and endpoint-limited. Previousl
 This page links PubMed evidence for psychedelic 01a08b04. Study populations, formulations and endpoints are retained per PMID; non-PubMed links remain provenance leads. Abstracts were retrieved for PMID(s) 12496954.
 ## Evidence note
 
-Identity only import: the cited sources support candidate identity provenance, not an evidence review. No biological relationship or clinical claim is asserted.
+The structured records below summarize the linked publication abstracts and any retrieved full text; they do not establish broad efficacy or safety beyond the reported populations and endpoints.
 
 Reviewed PubMed abstracts for PMID(s) 12496954. No rights-eligible PMC full text was available among these records.
 
@@ -117,7 +117,7 @@ Reviewed PubMed abstracts for PMID(s) 12496954. No rights-eligible PMC full text
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Previously the NMDA (N-methyl-D-aspartate) receptor (NMDAR) antagonist ketamine was shown to disrupt generation of the auditory event-related potential (ERP) mismatch negativity (MMN) and the performance of an 'AX'-type continuous performance test (AX-CPT)--measures of auditory and visual context-dependent information processing--in a similar manner as observed in schizophrenia.
   sourceId: reddit-pmid-12496954
   population: This placebo-controlled study investigated effects of the 5-HT(2A) receptor agonist psilocybin on the same measures in 18 healthy volunteers.

@@ -262,12 +262,12 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   route: oral
   formulation: Piracar 270 mg piracetam/330 mg L-carnitine vs Nootropil 800 mg
   population: Healthy volunteers of both sexes
-  endpoint: bioavailability
-  statistic: geometric mean test/reference ratio
-  value: 88.49% Cmax/dose; 102.55% AUCinf/dose
-  low: 81.19% Cmax/dose; 100.62% AUCinf/dose
-  high: 96.46% Cmax/dose; 104.51% AUCinf/dose
-  unit: percent
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
   context: A rapid, sensitive and specific method for quantifying piracetam in human plasma using Piracetam d-8 as the internal standard (IS) is described.
   sourceId: reddit-pmid-26248695
   modelEligible: false
@@ -277,8 +277,8 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   formulation: 12 g IV infusion or 12 g oral syrup
   population: 18 healthy volunteers under transient hypoxic hypoxidosis
   endpoint: elimination-half-life
-  statistic: mean
-  value: 4.3
+  statistic: not-established
+  value: null
   low: null
   high: null
   unit: hours
@@ -317,7 +317,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: The blockade of the memory-enhancing effects of piracetam resulting from adrenalectomy can be abolished by substitution with either corticosterone or aldosterone.
   sourceId: reddit-pmid-2149831
   population: Population not stated in the PubMed record.
@@ -329,7 +329,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: for 14 days) elevates N-methyl-D-aspartate (NMDA) receptor density by about 20% and normalizes the enhanced affinity of L-glutamate for the NMDA receptor.
   sourceId: reddit-pmid-8234409
   population: Subchronic treatment of aged mice with piracetam (500 mg/kg p.o.
@@ -341,7 +341,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: In order to test the hypothesis that piracetam improves cognitive functions by restoring biochemical deficits of the aging brain, we investigated the effects of piracetam treatment (300 mg/kg daily for 6 weeks) on the active avoidance performance of young and aged rats.
   sourceId: reddit-pmid-10338103
   population: In order to test the hypothesis that piracetam improves cognitive functions by restoring biochemical deficits of the aging brain, we investigated the effects of piracetam treatment (300 mg/kg daily for 6 weeks) on the active avoidance performance of young and aged rats.
@@ -389,7 +389,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Nineteen time segments were found.
   sourceId: reddit-pmid-8272204
   population: In 6 subjects, 42-channel event-related EEG potential maps (ERP) were recorded during a task requiring subjects to watch single digits presented in a pseudorandom order on a screen and to press a button after all triplets of three consecutive odd or even digits.
@@ -901,6 +901,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   authors: Authors listed in returned report
   year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/18697252/
+  pmid: '18697252'
   kind: PubMed-indexed study
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
@@ -921,6 +922,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/22972044/
+  pmid: '22972044'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
@@ -930,6 +932,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/7865703/
+  pmid: '7865703'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
@@ -939,6 +942,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/9316679/
+  pmid: '9316679'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
@@ -957,6 +961,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/8553617/
+  pmid: '8553617'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
@@ -966,6 +971,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/10395980/
+  pmid: '10395980'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
@@ -975,6 +981,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/826948/
+  pmid: '826948'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
@@ -984,6 +991,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/3835497/
+  pmid: '3835497'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
@@ -993,6 +1001,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/38878641/
+  pmid: '38878641'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
@@ -1002,6 +1011,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/785952/
+  pmid: '785952'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
@@ -1011,6 +1021,7 @@ Reviewed PubMed abstracts for PMID(s) 10338103, 11405971, 116285, 12006732, 1755
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/10555876/
+  pmid: '10555876'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.

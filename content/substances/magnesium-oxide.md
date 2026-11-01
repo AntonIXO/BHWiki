@@ -951,10 +951,8 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   year: 2001
   url: https://pubmed.ncbi.nlm.nih.gov/11794633/
   kind: Human crossover bioavailability study
-  insight: MgO fractional absorption was approximately 4% by indirect urinary excretion;
-    chloride, lactate and aspartate were higher.
-  limitation: Small healthy-volunteer study using an indirect endpoint and commercial
-    preparations.
+  insight: MgO fractional absorption was approximately 4% by indirect urinary excretion; chloride, lactate and aspartate were higher.
+  limitation: Small healthy-volunteer study using an indirect endpoint and commercial preparations.
   funding: Not reported.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported.
@@ -962,14 +960,12 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/30798472/
   pmid: '11794633'
 - id: mgo-walker
-  title: Mg citrate found more bioavailable than other Mg preparations in a randomised,
-    double-blind study.
+  title: Mg citrate found more bioavailable than other Mg preparations in a randomised, double-blind study.
   authors: Ann F Walker, Georgios Marakis, Samantha Christie, Martyn Byng
   year: 2003
   url: https://pubmed.ncbi.nlm.nih.gov/14596323/
   kind: randomized double-blind placebo-controlled comparative bioavailability trial
-  insight: At 300 mg elemental Mg/day for 60 days, citrate and amino-acid chelate
-    produced greater urinary magnesium excretion than MgO.
+  insight: At 300 mg elemental Mg/day for 60 days, citrate and amino-acid chelate produced greater urinary magnesium excretion than MgO.
   limitation: Surrogate bioavailability outcomes, 46 healthy participants.
   funding: Research support, non-U.S. government indexed.
   sponsorshipStatus: not-assessed
@@ -977,14 +973,12 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictOfInterestStatus: not-assessed
   pmid: '14596323'
 - id: mgo-constipation
-  title: A Randomized Double-blind Placebo-controlled Trial on the Effect of Magnesium
-    Oxide in Patients With Chronic Constipation
-  authors: Sumire Mori; Toshihiko Tomita; Kazuki Fujimura; et al.
+  title: A Randomized Double-blind Placebo-controlled Trial on the Effect of Magnesium Oxide in Patients With Chronic Constipation
+  authors: Sumire Mori; Toshihiko Tomita; Kazuki Fujimura; Haruki Asano; Tomohiro Ogawa; Takahisa Yamasaki; Takashi Kondo; Tomoaki Kono; Katsuyuki Tozawa; Tadayuki Oshima; Hirokazu Fukui; Takeshi Kimura; Jiro Watari; Hiroto Miwa
   year: 2019
-  url: https://pubmed.ncbi.nlm.nih.gov/31587548/
-  kind: Randomized placebo-controlled clinical trial
-  insight: 1.5 g/day MgO for four weeks improved constipation response, bowel movements,
-    stool form, transit time and quality of life.
+  url: https://pubmed.ncbi.nlm.nih.gov/31587548/"
+  kind: Randomized double-blind placebo-controlled clinical trial
+  insight: 1.5 g/day MgO for four weeks improved constipation response, bowel movements, stool form, transit time and quality of life.
   limitation: Small Japanese single-site sample, predominantly female and short duration.
   funding: Not reported.
   sponsorshipStatus: not-assessed
@@ -992,29 +986,25 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictOfInterestStatus: not-assessed
   pmid: '31587548'
 - id: mgo-guideline
-  title: 'AGA-ACG Clinical Practice Guideline: Pharmacological Management of Chronic
-    Idiopathic Constipation'
+  title: 'AGA-ACG Clinical Practice Guideline: Pharmacological Management of Chronic Idiopathic Constipation'
   authors: American Gastroenterological Association; American College of Gastroenterology
   year: 2023
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10544839/
   kind: Clinical practice guideline
-  insight: Pooled MgO trials improved bowel-movement outcomes; renal insufficiency
-    is a key caution.
-  limitation: Very low certainty for some frequency estimates; trials were short and
-    largely Japanese.
+  insight: Pooled MgO trials improved bowel-movement outcomes; renal insufficiency is a key caution.
+  limitation: Very low certainty for some frequency estimates; trials were short and largely Japanese.
   funding: Guideline-specific funding not reproduced in summary.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Article disclosures reported in source.
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC10544839/
 - id: mgo-pediatric
-  title: Oral magnesium oxide prophylaxis of frequent migrainous headache in children
-  authors: Fong Wang; Stephen K. Van Den Eeden; Lynn M. Ackerson; et al.
+  title: 'Oral magnesium oxide prophylaxis of frequent migrainous headache in children: a randomized, double-blind, placebo-controlled trial'
+  authors: Fong Wang; Stephen K. Van Den Eeden; Lynn M. Ackerson; Susan E. Salk; Robyn H. Reince; Ronald J. Elin
   year: 2003
-  url: https://pubmed.ncbi.nlm.nih.gov/12786918/
-  kind: Pediatric randomized placebo-controlled trial
-  insight: 9 mg/kg/day MgO reduced headache severity and time trends, but did not
-    establish a significant between-group frequency slope.
+  url: https://pubmed.ncbi.nlm.nih.gov/12786918/"
+  kind: Pediatric randomized double-blind placebo-controlled trial
+  insight: 9 mg/kg/day MgO reduced headache severity and time trends, but did not establish a significant between-group frequency slope.
   limitation: High attrition and incomplete placebo superiority.
   funding: Not reported.
   sponsorshipStatus: not-assessed
@@ -1022,16 +1012,13 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictOfInterestStatus: not-assessed
   pmid: '12786918'
 - id: mgo-migraine
-  title: The efficacy of magnesium oxide and sodium valproate in prevention of migraine
-    headache
+  title: The efficacy of magnesium oxide and sodium valproate in prevention of migraine headache
   authors: Narges Karimi; Azadeh Razian; Mohammad Heidari
   year: 2021
   url: https://pubmed.ncbi.nlm.nih.gov/30798472/
   kind: Randomized active-comparator crossover trial
-  insight: 500 mg/day MgO produced migraine outcomes similar to sodium valproate in
-    the analyzed sample.
-  limitation: Small single-center trial, active comparator without placebo and seven
-    dropouts.
+  insight: 500 mg/day MgO produced migraine outcomes similar to sodium valproate in the analyzed sample.
+  limitation: Small single-center trial, active comparator without placebo and seven dropouts.
   funding: Grant 791/Mazandaran University of Medical Sciences.
   sponsorshipStatus: non-industry-funded
   conflictsOfInterest: Not reported.
@@ -1039,28 +1026,25 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/30798472/
   pmid: '30798472'
 - id: mgo-cisplatin
-  title: Effect of Oral Magnesium Oxide Supplementation on Cisplatin-Induced Hypomagnesemia
+  title: 'Effect of Oral Magnesium Oxide Supplementation on Cisplatin-Induced Hypomagnesemia in Cancer Patients: A Randomized Controlled Trial'
   authors: Maryam Zarif Yeganeh; Masoud Vakili; Ali Shahriari-Ahmadi; Marzieh Nojomi
   year: 2016
-  url: https://pubmed.ncbi.nlm.nih.gov/27057522/
-  kind: Open-label randomized prevention trial
+  url: https://pubmed.ncbi.nlm.nih.gov/27057522/"
+  kind: Open-label randomized controlled prevention trial
   insight: Dose-linked MgO reduced serum-magnesium decline during cisplatin chemotherapy.
-  limitation: Small open-label cancer-specific study; prevention rather than generalized
-    deficiency treatment.
+  limitation: Small open-label cancer-specific study; prevention rather than generalized deficiency treatment.
   funding: Not reported.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
   pmid: '27057522'
 - id: mgo-risk
-  title: Risk factors for development of hypermagnesemia in patients prescribed magnesium
-    oxide
-  authors: Eri Wakai; Kenji Ikemura; Hiroko Sugimoto; et al.
+  title: 'Risk factors for the development of hypermagnesemia in patients prescribed magnesium oxide: a retrospective cohort study'
+  authors: Eri Wakai; Kenji Ikemura; Hiroko Sugimoto; Takuya Iwamoto; Masahiro Okuda
   year: 2019
-  url: https://pubmed.ncbi.nlm.nih.gov/30805197/
+  url: https://pubmed.ncbi.nlm.nih.gov/30805197/"
   kind: Retrospective hospital cohort
-  insight: Hypermagnesemia occurred in 23%; lower eGFR, higher BUN, dose and duration
-    were independent risk factors.
+  insight: Hypermagnesemia occurred in 23%; lower eGFR, higher BUN, dose and duration were independent risk factors.
   limitation: Hospital retrospective design; limited generalizability.
   funding: Not reported.
   sponsorshipStatus: not-assessed
@@ -1073,8 +1057,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/30136128/
   kind: Case series
-  insight: Four elderly patients with renal dysfunction developed symptomatic MgO-associated
-    hypermagnesemia; one course was fatal.
+  insight: Four elderly patients with renal dysfunction developed symptomatic MgO-associated hypermagnesemia; one course was fatal.
   limitation: Small uncontrolled case series; incidence cannot be estimated.
   funding: Not reported.
   sponsorshipStatus: not-assessed
@@ -1088,8 +1071,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=3aba26ec-5ebe-433e-9524-fb355c5a0198&version=104
   kind: Current U.S. OTC label
-  insight: 400 mg MgO supplies 241.3 mg elemental magnesium; label includes antacid
-    use, kidney warning and drug-interaction warning.
+  insight: 400 mg MgO supplies 241.3 mg elemental magnesium; label includes antacid use, kidney warning and drug-interaction warning.
   limitation: Product-specific labeling, not an efficacy trial.
   funding: Manufacturer label in regulatory database.
   sponsorshipStatus: not-assessed
@@ -1109,13 +1091,12 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://ods.od.nih.gov/factsheets/magnesium-healthprofessional/
 - id: mgo-levothyroxine
-  title: Intestinal adsorption of levothyroxine by antacids and laxatives
+  title: 'Intestinal adsorption of levothyroxine by antacids and laxatives: case stories and in vitro experiments'
   authors: H. Mersebach; A. K. Rasmussen; L. Kirkegaard; U. Feldt-Rasmussen
   year: 1999
-  url: https://pubmed.ncbi.nlm.nih.gov/10193669/
+  url: https://pubmed.ncbi.nlm.nih.gov/10193669/"
   kind: Case reports and in vitro interaction study
-  insight: Reported levothyroxine under-replacement with magnesium-containing laxative
-    use; MgO alone did not show same in vitro signal.
+  insight: Reported levothyroxine under-replacement with magnesium-containing laxative use; MgO alone did not show same in vitro signal.
   limitation: Two cases and in vitro data; product combinations differed.
   funding: Not reported.
   sponsorshipStatus: not-assessed
@@ -1128,8 +1109,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   year: 2026
   url: https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements
   kind: official regulatory guidance
-  insight: Disease-treatment claims can make a supplement a drug; structure/function
-    claims require disclaimer.
+  insight: Disease-treatment claims can make a supplement a drug; structure/function claims require disclaimer.
   limitation: U.S.-specific.
   funding: U.S. federal government.
   sponsorshipStatus: non-industry-funded
@@ -1153,160 +1133,133 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   title: Bioavailability of US commercial magnesium preparations
   authors: Muhammad Firoz; Mark Graber
   year: 2001
-  url: https://pubmed.ncbi.nlm.nih.gov/11794633/"
-  kind: Human open-label randomized crossover bioavailability study
-  insight: MgO fractional absorption was approximately 4%; chloride, lactate, and
-    aspartate were higher and approximately equivalent.
-  limitation: Small healthy-volunteer study using urinary magnesium excretion as an
-    indirect endpoint and commercial preparations.
+  url: https://pubmed.ncbi.nlm.nih.gov/11794633/
+  kind: Human crossover bioavailability study
+  insight: MgO fractional absorption was approximately 4%; chloride, lactate, and aspartate were higher and approximately equivalent.
+  limitation: Small healthy-volunteer study using urinary magnesium excretion as an indirect endpoint and commercial preparations.
   funding: Not reported in the cited record
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported
   conflictOfInterestStatus: not-assessed
+  pmid: '11794633'
 - id: dr-magnesium-oxide-s2
-  title: Mg citrate found more bioavailable than other Mg preparations in a randomised,
-    double-blind study
-  authors: Ann F Walker; Georgios Marakis; Samantha Christie; Martyn Byng
+  title: Mg citrate found more bioavailable than other Mg preparations in a randomised, double-blind study.
+  authors: Ann F Walker, Georgios Marakis, Samantha Christie, Martyn Byng
   year: 2003
-  url: https://pubmed.ncbi.nlm.nih.gov/14596323/"
-  kind: Randomized double-blind placebo-controlled human trial
-  insight: At 300 mg elemental magnesium/day for 60 days, citrate and amino-acid chelate
-    produced greater urinary magnesium excretion than MgO.
-  limitation: 46 healthy participants; surrogate bioavailability outcomes rather than
-    clinical deficiency correction.
+  url: https://pubmed.ncbi.nlm.nih.gov/14596323/
+  kind: randomized double-blind placebo-controlled comparative bioavailability trial
+  insight: At 300 mg elemental magnesium/day for 60 days, citrate and amino-acid chelate produced greater urinary magnesium excretion than MgO.
+  limitation: 46 healthy participants; surrogate bioavailability outcomes rather than clinical deficiency correction.
   funding: Research Support, Non-U.S. Gov't indexed; specific funder not stated
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported
   conflictOfInterestStatus: not-assessed
+  pmid: '14596323'
 - id: dr-magnesium-oxide-s3
-  title: A Randomized Double-blind Placebo-controlled Trial on the Effect of Magnesium
-    Oxide in Patients With Chronic Constipation
-  authors: Sumire Mori; Toshihiko Tomita; Kazuki Fujimura; Haruki Asano; Tomohiro
-    Ogawa; Takahisa Yamasaki; Takashi Kondo; Tomoaki Kono; Katsuyuki Tozawa; Tadayuki
-    Oshima; Hirokazu Fukui; Takeshi Kimura; Jiro Watari; Hiroto Miwa
+  title: A Randomized Double-blind Placebo-controlled Trial on the Effect of Magnesium Oxide in Patients With Chronic Constipation
+  authors: Sumire Mori; Toshihiko Tomita; Kazuki Fujimura; Haruki Asano; Tomohiro Ogawa; Takahisa Yamasaki; Takashi Kondo; Tomoaki Kono; Katsuyuki Tozawa; Tadayuki Oshima; Hirokazu Fukui; Takeshi Kimura; Jiro Watari; Hiroto Miwa
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/31587548/"
   kind: Randomized double-blind placebo-controlled clinical trial
-  insight: 1.5 g/day MgO for 4 weeks improved overall constipation response, spontaneous
-    bowel movements, stool form, transit time, and constipation-related quality of
-    life.
+  insight: 1.5 g/day MgO for 4 weeks improved overall constipation response, spontaneous bowel movements, stool form, transit time, and constipation-related quality of life.
   limitation: Small Japanese single-site sample, predominantly female, short duration.
   funding: Not reported in the cited record
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-oxide-s4
-  title: 'American Gastroenterological Association-American College of Gastroenterology
-    Clinical Practice Guideline: Pharmacological Management of Chronic Idiopathic
-    Constipation'
+  title: 'American Gastroenterological Association-American College of Gastroenterology Clinical Practice Guideline: Pharmacological Management of Chronic Idiopathic Constipation'
   authors: American Gastroenterological Association and American College of Gastroenterology
   year: 2023
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10544839/"
   kind: Clinical practice guideline and evidence synthesis
-  insight: Pooled MgO trials showed increased spontaneous and complete spontaneous
-    bowel movements and higher response rates; renal insufficiency is a key caution.
-  limitation: Very low certainty for some frequency estimates; trials were short and
-    largely Japanese.
+  insight: Pooled MgO trials showed increased spontaneous and complete spontaneous bowel movements and higher response rates; renal insufficiency is a key caution.
+  limitation: Very low certainty for some frequency estimates; trials were short and largely Japanese.
   funding: Guideline-specific funding not reproduced in the cited summary
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Article disclosures are reported in the source
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-oxide-s5
-  title: 'Oral magnesium oxide prophylaxis of frequent migrainous headache in children:
-    a randomized, double-blind, placebo-controlled trial'
-  authors: Fong Wang; Stephen K. Van Den Eeden; Lynn M. Ackerson; Susan E. Salk; Robyn
-    H. Reince; Ronald J. Elin
+  title: 'Oral magnesium oxide prophylaxis of frequent migrainous headache in children: a randomized, double-blind, placebo-controlled trial'
+  authors: Fong Wang; Stephen K. Van Den Eeden; Lynn M. Ackerson; Susan E. Salk; Robyn H. Reince; Ronald J. Elin
   year: 2003
   url: https://pubmed.ncbi.nlm.nih.gov/12786918/"
   kind: Pediatric randomized double-blind placebo-controlled trial
-  insight: 9 mg/kg/day MgO reduced headache frequency over time and reduced severity,
-    but did not establish a significant between-group frequency slope.
-  limitation: High attrition and incomplete placebo superiority; pediatric population
-    only.
+  insight: 9 mg/kg/day MgO reduced headache frequency over time and reduced severity, but did not establish a significant between-group frequency slope.
+  limitation: High attrition and incomplete placebo superiority; pediatric population only.
   funding: Not reported in the cited abstract
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-oxide-s6
-  title: 'The efficacy of magnesium oxide and sodium valproate in prevention of migraine
-    headache: a randomized, controlled, double-blind, crossover study'
+  title: The efficacy of magnesium oxide and sodium valproate in prevention of migraine headache
   authors: Narges Karimi; Azadeh Razian; Mohammad Heidari
   year: 2021
-  url: https://pubmed.ncbi.nlm.nih.gov/30798472/"
-  kind: Randomized double-blind active-comparator crossover trial
-  insight: 500 mg/day MgO produced migraine outcomes similar to sodium valproate in
-    the analyzed sample.
+  url: https://pubmed.ncbi.nlm.nih.gov/30798472/
+  kind: Randomized active-comparator crossover trial
+  insight: 500 mg/day MgO produced migraine outcomes similar to sodium valproate in the analyzed sample.
   limitation: Small single-center trial, active comparator without placebo, 7 dropouts.
   funding: Grant 791/Mazandaran University of Medical Sciences
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported in the cited record
   conflictOfInterestStatus: not-assessed
+  pmid: '30798472'
 - id: dr-magnesium-oxide-s7
-  title: 'Effect of Oral Magnesium Oxide Supplementation on Cisplatin-Induced Hypomagnesemia
-    in Cancer Patients: A Randomized Controlled Trial'
+  title: 'Effect of Oral Magnesium Oxide Supplementation on Cisplatin-Induced Hypomagnesemia in Cancer Patients: A Randomized Controlled Trial'
   authors: Maryam Zarif Yeganeh; Masoud Vakili; Ali Shahriari-Ahmadi; Marzieh Nojomi
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27057522/"
   kind: Open-label randomized controlled prevention trial
-  insight: Dose-linked MgO reduced serum-magnesium decline and final hypomagnesemia
-    prevalence during cisplatin chemotherapy.
-  limitation: Small open-label cancer-specific study; prevention rather than treatment
-    of generalized deficiency.
+  insight: Dose-linked MgO reduced serum-magnesium decline and final hypomagnesemia prevalence during cisplatin chemotherapy.
+  limitation: Small open-label cancer-specific study; prevention rather than treatment of generalized deficiency.
   funding: Not reported in the cited record
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-oxide-s8
-  title: 'Risk factors for the development of hypermagnesemia in patients prescribed
-    magnesium oxide: a retrospective cohort study'
+  title: 'Risk factors for the development of hypermagnesemia in patients prescribed magnesium oxide: a retrospective cohort study'
   authors: Eri Wakai; Kenji Ikemura; Hiroko Sugimoto; Takuya Iwamoto; Masahiro Okuda
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/30805197/"
   kind: Retrospective hospital cohort
-  insight: Hypermagnesemia occurred in 23% of the analyzed MgO users; lower eGFR,
-    higher BUN, higher dose, and longer duration were independent risk factors.
-  limitation: Hospital-based retrospective design; applicability to healthy supplement
-    users is limited.
+  insight: Hypermagnesemia occurred in 23% of the analyzed MgO users; lower eGFR, higher BUN, higher dose, and longer duration were independent risk factors.
+  limitation: Hospital-based retrospective design; applicability to healthy supplement users is limited.
   funding: Not reported in the cited record
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-oxide-s9
   title: 'Severe hypermagnesemia induced by magnesium oxide ingestion: a case series'
-  authors: Hiroki Yamaguchi; Hisaki Shimada; Kazuhiro Yoshita; Yutaka Tsubata; Kouzou
-    Ikarashi; Tetsuo Morioka; Noriko Saito; Shinji Sakai; Ichiei Narita
+  authors: Hiroki Yamaguchi; Hisaki Shimada; Kazuhiro Yoshita; et al.
   year: 2019
-  url: https://pubmed.ncbi.nlm.nih.gov/30136128/"
+  url: https://pubmed.ncbi.nlm.nih.gov/30136128/
   kind: Case series
-  insight: Four elderly patients with renal dysfunction developed symptomatic MgO-associated
-    hypermagnesemia; one course was fatal.
+  insight: Four elderly patients with renal dysfunction developed symptomatic MgO-associated hypermagnesemia; one course was fatal.
   limitation: Small uncontrolled case series; cannot estimate incidence.
   funding: Not reported
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Authors declared that no conflict of interest existed
   conflictOfInterestStatus: not-assessed
+  pmid: '30136128'
 - id: dr-magnesium-oxide-s11
   title: Magnesium - Health Professional Fact Sheet
   authors: National Institutes of Health, Office of Dietary Supplements
   year: 2026
   url: https://ods.od.nih.gov/factsheets/magnesium-healthprofessional/"
   kind: Government evidence and interaction fact sheet
-  insight: Summarizes relative bioavailability, laxative effects, and interactions
-    with antibiotics, bisphosphonates, diuretics, proton-pump inhibitors, and zinc.
+  insight: Summarizes relative bioavailability, laxative effects, and interactions with antibiotics, bisphosphonates, diuretics, proton-pump inhibitors, and zinc.
   limitation: Secondary synthesis; web content is periodically updated.
   funding: U.S. federal government
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-oxide-s12
-  title: 'Intestinal adsorption of levothyroxine by antacids and laxatives: case stories
-    and in vitro experiments'
+  title: 'Intestinal adsorption of levothyroxine by antacids and laxatives: case stories and in vitro experiments'
   authors: H. Mersebach; A. K. Rasmussen; L. Kirkegaard; U. Feldt-Rasmussen
   year: 1999
   url: https://pubmed.ncbi.nlm.nih.gov/10193669/"
   kind: Case reports and in vitro interaction study
-  insight: Reported levothyroxine under-replacement with magnesium-containing laxative
-    use, but in vitro MgO alone did not show the same adsorption signal.
+  insight: Reported levothyroxine under-replacement with magnesium-containing laxative use, but in vitro MgO alone did not show the same adsorption signal.
   limitation: Two cases and in vitro data; product combinations and mechanisms differed.
   funding: Not reported
   sponsorshipStatus: not-assessed
@@ -1318,9 +1271,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   year: 2026
   url: https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements"
   kind: U.S. regulatory guidance
-  insight: A dietary supplement represented as treating, preventing, or curing a specific
-    disease is regulated as a drug; structure/function claims require the statutory
-    disclaimer.
+  insight: A dietary supplement represented as treating, preventing, or curing a specific disease is regulated as a drug; structure/function claims require the statutory disclaimer.
   limitation: U.S.-specific regulatory information; not clinical evidence.
   funding: U.S. federal government
   sponsorshipStatus: not-assessed

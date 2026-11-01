@@ -98,7 +98,7 @@ Reviewed PubMed abstracts for PMID(s) 6403074. No rights-eligible PMC full text 
   population: Adults covered by the Russian label
   purpose: Approved-label context
   sourceCategory: approved-label
-  note: Take after food; avoid after 15:00 because of insomnia risk. These are label instructions, not healthy-athlete efficacy evidence.
+  note: "Take after food; avoid after 15:00 because of insomnia risk. These are label instructions, not healthy-athlete efficacy evidence."
   sourceId: dr-phenylpiracetam-s20
 - label: Stroke rehabilitation study
   amount: 400 mg/day
@@ -193,7 +193,7 @@ Reviewed PubMed abstracts for PMID(s) 6403074. No rights-eligible PMC full text 
   direction: variable
 - label: Administration time
   effect: Late dosing may worsen insomnia
-  detail: The current label discourages administration after 15:00.
+  detail: "The current label discourages administration after 15:00."
   sourceId: dr-phenylpiracetam-s20
   observationId: phenylpiracetam-pk-1
   factorType: other
@@ -289,12 +289,12 @@ Reviewed PubMed abstracts for PMID(s) 6403074. No rights-eligible PMC full text 
 - id: reddit-phenylpiracetam-cognitive-performance-6403074
   conceptId: cognitive-performance
   name: Operant behavior and retrograde amnesia
-  direction: Increased
+  direction: Variable
   evidence: Limited research
-  description: In animal experiments, 4-phenylpiracetam activated operant behavior, reduced diazepam-induced psychodepression, inhibited post-rotational nystagmus and prevented retrograde amnesia; high doses produced psychodepressive effects.
+  description: 4-Phenylpyracetam was found to activate the operant behavior more powerfully, to remove psychodepressant effects of diazepam, to inhibit post-rotational nystagmus, and to prevent the development of retrograde amnesia.
   sourceId: reddit-pmid-6403074
-  population: Animals in preclinical pharmacology experiments
-  exposure: 4-Phenylpiracetam; dose details not stated in abstract
+  population: Population not stated in the PubMed record.
+  exposure: When given in high doses, the compound under study produces psychodepressant effects.
   instrument: null
   magnitude: null
   reportType: measured-assessment
@@ -307,9 +307,6 @@ Reviewed PubMed abstracts for PMID(s) 6403074. No rights-eligible PMC full text 
   conceptId: dopamine-transporter
   description: R/MRZ-9547 and S-phenylpiracetam DAT findings are preclinical; they do not establish human DAT occupancy, abuse liability or cognition.
   sourceId: dr-phenylpiracetam-s14
-- title: Preclinical neurotropic and anticonvulsant activity
-  description: The 1983 animal study reported central neurotropic and anticonvulsant effects of 4-phenylpiracetam relative to piracetam; this does not establish human DAT activity or cognition.
-  sourceId: reddit-pmid-6403074
 ```
 
 ## Cautions
@@ -324,9 +321,6 @@ Reviewed PubMed abstracts for PMID(s) 6403074. No rights-eligible PMC full text 
 - title: Dependence and long-term cardiovascular uncertainty
   description: No dedicated primary human abuse-liability, dependence, withdrawal, organ-impairment PK or long-term cardiovascular trial was located.
   sourceId: dr-phenylpiracetam-s20
-- title: High-dose psychodepression in animals
-  description: High doses produced psychodepressive effects in the animal study; human dose-response and safety were not established.
-  sourceId: reddit-pmid-6403074
 ```
 
 ## Claims
@@ -366,19 +360,19 @@ Reviewed PubMed abstracts for PMID(s) 6403074. No rights-eligible PMC full text 
   assessment: not-formally-assessed
   limitation: Do not merge enantiomer and racemate evidence.
 - id: reddit-claim-phenylpiracetam-6403074-0
-  assertion: Animal experiments with 4-phenylpiracetam reported operant-behavior activation and anticonvulsant effects, with psychodepression at high doses.
+  assertion: 'PMID 6403074 reported: 4-Phenylpyracetam was found to activate the operant behavior more powerfully, to remove psychodepressant effects of diazepam, to inhibit post-rotational nystagmus, and to prevent the development of retrograde amnesia.'
   relation: evidence-boundary
   participants:
   - entityId: substance:phenylpiracetam
     role: intervention or exposure
   - entityId: tag:cognitive-performance
     role: preclinical outcome
-  context: PMID 6403074; English abstract of a 1983 animal study.
+  context: Source-specific result from PMID 6403074; applies to the population and design described in that abstract.
   sourceIds:
   - reddit-pmid-6403074
   conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Preclinical findings cannot establish human efficacy, safety or suitable dosing.
+  limitation: Abstract result from PMID 6403074; this single study does not establish general efficacy or safety.
 ```
 
 ## Interactions
@@ -737,8 +731,8 @@ Reviewed PubMed abstracts for PMID(s) 6403074. No rights-eligible PMC full text 
   year: 1983
   url: https://pubmed.ncbi.nlm.nih.gov/6403074/
   kind: PubMed publication (metadata verified)
-  insight: Animal experiments reported central neurotropic and anticonvulsant effects, with psychodepressive effects at high doses.
-  limitation: English abstract of a preclinical study; no human efficacy or safety inference.
+  insight: 4-Phenylpyracetam was found to activate the operant behavior more powerfully, to remove psychodepressant effects of diazepam, to inhibit post-rotational nystagmus, and to prevent the development of retrograde amnesia.
+  limitation: PubMed abstract for PMID 6403074 was reviewed; no rights-eligible PMC full text was available in this pass.
   pmid: '6403074'
   funding: Not assessed in this pass.
   sponsorshipStatus: not-assessed

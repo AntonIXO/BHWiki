@@ -548,6 +548,7 @@ Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. PMC
   authors: '*Safety and Tolerability of the Anxiolytic and Nootropic Drug Phenibut: A Systematic Review of Clinical Trials and Case Reports*. 2020.'
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/32340063/
+  pmid: '32340063'
   kind: PubMed-indexed study
   insight: Source R5 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -560,6 +561,7 @@ Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. PMC
   authors: '*Efficacy of Noofen 250 mg Capsules for the Management of Anxious-Neurotic Symptoms in Patients with Adjustment Disorder*. 2025.'
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/40807194/
+  pmid: '40807194'
   kind: PubMed-indexed study
   insight: Source R6 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -572,6 +574,7 @@ Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. PMC
   authors: '*[Preventive treatment of tension headache in children and adolescents]*. 2017.'
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/28805758/
+  pmid: '28805758'
   kind: PubMed-indexed study
   insight: Source R7 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -584,6 +587,7 @@ Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. PMC
   authors: '*[Emotional and personality disorders in atypical facial pain]*. 2015.'
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/26978495/
+  pmid: '26978495'
   kind: PubMed-indexed study
   insight: Source R8 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -596,6 +600,7 @@ Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. PMC
   authors: '*[Impulsivity in adolescents with attention deficit hyperactivity disorder]*. 2016.'
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/28300808/
+  pmid: '28300808'
   kind: PubMed-indexed study
   insight: Source R9 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -608,6 +613,7 @@ Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. PMC
   authors: '*Therapeutic Approaches to the Correction of Cognitive Impairment in Patients with Hypertension and Type 2 Diabetes*. 2020.'
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/33454680/
+  pmid: '33454680'
   kind: PubMed-indexed study
   insight: Source R10 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -620,6 +626,7 @@ Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. PMC
   authors: '*Clinical Presentations and Treatment of Phenibut Toxicity and Withdrawal: A Systematic Literature Review*. 2023.'
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/37579098/
+  pmid: '37579098'
   kind: PubMed-indexed study
   insight: Source R11 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -632,6 +639,7 @@ Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. PMC
   authors: '*A systematic review of phenibut withdrawal focusing on complications, therapeutic approaches, and single substance versus polysubstance withdrawal*. 2023.'
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/38112312/
+  pmid: '38112312'
   kind: PubMed-indexed study
   insight: Source R12 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -656,6 +664,7 @@ Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. PMC
   authors: '*Phenibut exposures and clinical effects reported to a regional poison center*. 2019.'
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/30878413/
+  pmid: '30878413'
   kind: PubMed-indexed study
   insight: Source R14 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -668,6 +677,7 @@ Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. PMC
   authors: '*Phenibutan—an Illegal Food Supplement With Psychotropic Effects and Health Risks*. 2024; includes GIZ-Nord poison-center data.'
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38377332/
+  pmid: '38377332'
   kind: PubMed-indexed study
   insight: Source R15 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
@@ -720,7 +730,7 @@ Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. PMC
   url: https://pubmed.ncbi.nlm.nih.gov/23391959/
   kind: PubMed publication
   insight: While phenibut was helpful initially, the patient developed dependence including tolerance, significant withdrawal symptoms within 3-4 h of last use and failure to fulfil his roles at work and at home.
-  limitation: PubMed abstract was reviewed; PMC citation PMC3604470 was identified but rights-eligible full-text retrieval was unavailable in this pass.
+  limitation: PubMed abstract and rights-eligible PMC full text (PMC3604470) were reviewed; applicability remains limited to the reported design and population.
   pmid: '23391959'
   doi: 10.1136/bcr-2012-008381
   funding: Not assessed in this corpus pass.

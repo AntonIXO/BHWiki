@@ -2,14 +2,10 @@
 id: plasma-choline
 label: Plasma choline
 kind: outcome
-aliases:
-  - Circulating free choline
-relatedIds:
-  - choline-precursor
+aliases: []
+relatedIds: []
 sourceUrls:
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC7468900/
-  - https://pmc.ncbi.nlm.nih.gov/articles/PMC8783899/
-  - https://pubmed.ncbi.nlm.nih.gov/22172554/
+  - https://pubmed.ncbi.nlm.nih.gov/22673596/
 x-shape:
   - id
   - label
@@ -18,10 +14,8 @@ x-shape:
   - aliases
   - relatedIds
   - sourceUrls
-x-order: 9007199254740991
 ---
 
 ## Definition
 
-Measured concentration of free choline in plasma. It is an exposure and nutrient-metabolism biomarker; an increase after choline bitartrate does not by itself demonstrate increased brain acetylcholine, cognitive enhancement, or clinical benefit.
-
+Measured circulating choline concentration after an exposure, distinct from a subjective cholinergic effect or a claim of cognitive benefit.

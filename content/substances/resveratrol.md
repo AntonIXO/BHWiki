@@ -361,12 +361,12 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   route: oral
   formulation: 250 or 500 mg trans-resveratrol
   population: Healthy adults (22 efficacy participants; separate plasma cohort n=9)
-  endpoint: plasma parent and conjugate detection
-  statistic: qualitative HPLC confirmation
-  value: Detected
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
   low: null
   high: null
-  unit: qualitative
+  unit: hours
   context: The many putative beneficial effects of the polyphenol resveratrol include an ability to bolster endogenous antioxidant defenses, modulate nitric oxide synthesis, and promote vasodilation, which thereby improves blood flow.
   sourceId: reddit-pmid-20357044
   modelEligible: false
@@ -618,7 +618,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Single doses of resveratrol have previously been shown to increase cerebral blood flow (CBF) with no clear effect on cognitive function or mood in healthy adults.
   sourceId: reddit-pmid-26344014
   population: Population not stated in the PubMed record.
@@ -630,7 +630,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   conceptId: sleep
   name: Sleep
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Single doses of resveratrol have previously been shown to increase cerebral blood flow (CBF) with no clear effect on cognitive function or mood in healthy adults.
   sourceId: reddit-pmid-26344014
   population: Population not stated in the PubMed record.
@@ -642,7 +642,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   conceptId: fatigue-severity
   name: Fatigue Severity
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Single doses of resveratrol have previously been shown to increase cerebral blood flow (CBF) with no clear effect on cognitive function or mood in healthy adults.
   sourceId: reddit-pmid-26344014
   population: Population not stated in the PubMed record.
@@ -678,7 +678,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: We find that in rat primary neurons, resveratrol can rapidly increase AMPAR protein level, AMPAR synaptic accumulation and the strength of excitatory synaptic transmission.
   sourceId: reddit-pmid-25791529
   population: Population not stated in the PubMed record.
@@ -963,6 +963,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: A. Veronica Witte; Lucia Kerti; Daniel S. Margulies; Agnes Flöel
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/24899709/
+  pmid: '24899709'
   kind: Deep Research source
   insight: Positive word-retention signal from a resveratrol–quercetin combination.
   limitation: Small matched-completer analysis; ingredient effects not separable.
@@ -975,6 +976,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Sebastian Huhn; Frauke Beyer; Rui Zhang; et al.
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/29548848/
+  pmid: '29548848'
   kind: Deep Research source
   insight: No significant improvement in the primary verbal-memory outcome.
   limitation: Complete formulation and full disclosure statements not verified from retrieved primary material.
@@ -987,6 +989,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: R. Scott Turner; Ronald G. Thomas; Suzanne Craft; et al.; Alzheimer's Disease Cooperative Study
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/26362286/
+  pmid: '26362286'
   kind: Deep Research source
   insight: Biomarker effects and increased MRI volume loss without established cognitive efficacy.
   limitation: Phase 2 safety/biomarker trial; clinical outcomes secondary.
@@ -999,6 +1002,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Emma L. Wightman; Jonathon L. Reay; Crystal F. Haskell; Gary Williamson; Tristan P. Dew; David O. Kennedy
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/24804871/
+  pmid: '24804871'
   kind: Deep Research source
   insight: Perfusion changed without cognitive benefit or demonstrated pharmacokinetic enhancement.
   limitation: Acute experiment; pharmacokinetic subgroup numbered six.
@@ -1011,6 +1015,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Silvie Timmers; Ellen Konings; Lena Bilet; et al.
   year: 2011
   url: https://pubmed.ncbi.nlm.nih.gov/22055504/
+  pmid: '22055504'
   kind: Deep Research source
   insight: Metabolic and muscle-signaling changes with 150 mg/day resVida.
   limitation: Eleven men; short mechanistic crossover.
@@ -1023,6 +1028,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Morten M. Poulsen; Poul F. Vestergaard; Berthil F. Clasen; et al.
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23193181/
+  pmid: '23193181'
   kind: Deep Research source
   insight: Clamp-measured insulin sensitivity and other metabolic endpoints were null.
   limitation: Twenty-four men; four weeks; specific high-dose formulation.
@@ -1035,6 +1041,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Ali Movahed; Iraj Nabipour; Xavier Lieben Louis; et al.
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/24073011/
+  pmid: '24073011'
   kind: Deep Research source
   insight: Glycemic changes favored 1 g/day added to existing treatment.
   limitation: Baseline imbalances, multiple endpoints, and only 45 days.
@@ -1047,6 +1054,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: S. Bo; V. Ponzo; G. Ciccone; et al.
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27520400/
+  pmid: '27520400'
   kind: Deep Research source
   insight: Larger diabetes trial found no significant CRP or glycemic benefit.
   limitation: Formulation details and full disclosures not verified.
@@ -1059,6 +1067,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Rachel H. X. Wong; Narelle M. Berry; Alison M. Coates; et al.
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23743811/
+  pmid: '23743811'
   kind: Deep Research source
   insight: Flow-mediated dilation improved; blood pressure and Stroop performance did not.
   limitation: Twenty-eight participants; vascular surrogate rather than cardiovascular events.
@@ -1071,6 +1080,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Lasse Gliemann; Jakob Friis Schmidt; Jesper Olesen; et al.
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23878368/
+  pmid: '23878368'
   kind: Deep Research source
   insight: Some training gains were attenuated with 250 mg/day.
   limitation: Small older-male sample; not all exercise regimens or populations.
@@ -1083,6 +1093,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Kristine R. Polley; Nathan Jenkins; Patrick O'Connor; Kevin McCully
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/26638911/
+  pmid: '26638911'
   kind: Deep Research source
   insight: Resveratrol–piperine combination improved a local muscle physiological estimate.
   limitation: Sixteen participants; combination product; not whole-body performance.
@@ -1095,6 +1106,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Mary M. McDermott; Christiaan Leeuwenburgh; Jack M. Guralnik; et al.
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/28403379/
+  pmid: '28403379'
   kind: Deep Research source
   insight: No consistent walking benefit across doses and functional tests.
   limitation: Small pilot with a prespecified one-sided 0.10 threshold.
@@ -1107,6 +1119,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Mary M. McDermott; Christopher R. Martens; Kathryn J. Domanchuk; et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38871717/
+  pmid: '38871717'
   kind: Deep Research source
   insight: Adding resveratrol did not demonstrate extra walking benefit.
   limitation: Small trial with one-sided 0.10 testing and differential adherence.
@@ -1119,6 +1132,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Daniel M. Riche; Krista D. Riche; Chad T. Blackshear; et al.
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/25057276/
+  pmid: '25057276'
   kind: Deep Research source
   insight: Pterostilbene monotherapy increased LDL; higher dose lowered blood pressure.
   limitation: Small short trial; different findings for the grape-extract combination.
@@ -1131,6 +1145,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Daniel M. Riche; Corey L. McEwen; Krista D. Riche; et al.
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23431291/
+  pmid: '23431291'
   kind: Deep Research source
   insight: Short-term laboratory and reported adverse-event assessment.
   limitation: Same cohort as the metabolic report; not long-term safety.
@@ -1143,6 +1158,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Jonas Brorson Jensen; Ole L. Dollerup; Andreas B. Møller; et al.
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/35998039/
+  pmid: '35998039'
   kind: Deep Research source
   insight: Combination did not improve assessed muscle regeneration.
   limitation: Thirty-two participants; induced injury; ingredients not separated.
@@ -1155,6 +1171,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Thomas Walle; Faye Hsieh; Mark H. DeLegge; John E. Oatis; U. Kristina Walle
   year: 2004
   url: https://pubmed.ncbi.nlm.nih.gov/15333514/
+  pmid: '15333514'
   kind: Deep Research source
   insight: High absorption with extensive metabolism and little circulating unchanged parent.
   limitation: Six volunteers; radiolabel-derived half-life is not parent-specific.
@@ -1167,6 +1184,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: David J. Boocock; Guy E. S. Faust; Ketan R. Patel; et al.
   year: 2007
   url: https://pubmed.ncbi.nlm.nih.gov/17548692/
+  pmid: '17548692'
   kind: Deep Research source
   insight: Dose-specific parent and conjugate exposure after single doses.
   limitation: Ten participants per dose; no efficacy or chronic-safety test.
@@ -1179,6 +1197,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Luis Almeida; Manuel Vaz-da-Silva; Amílcar Falcão; et al.
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19194969/
+  pmid: '19194969'
   kind: Deep Research source
   insight: Measured parent half-life and exposure under a specified repeated-dose regimen.
   limitation: Brief study; frequent dosing; substantial between-person variability.
@@ -1191,6 +1210,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Victoria A. Brown; Ketan R. Patel; Maria Viskaduraki; et al.
   year: 2010
   url: https://pubmed.ncbi.nlm.nih.gov/20935227/
+  pmid: '20935227'
   kind: Deep Research source
   insight: Repeated gram-level exposure, conjugate predominance, and gastrointestinal intolerance.
   limitation: Forty volunteers; 29 days; biomarker comparisons lacked placebo control.
@@ -1203,6 +1223,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Lynne M. Howells; D. P. Berry; P. J. Elliott; et al.
   year: 2011
   url: https://pubmed.ncbi.nlm.nih.gov/21680702/
+  pmid: '21680702'
   kind: Deep Research source
   insight: Micronized-product exposure and a tumor-tissue biomarker signal.
   limitation: Small preoperative study; historical formulation comparison; no clinical cancer endpoint.
@@ -1215,6 +1236,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Rakesh Popat; Torben Plesner; Faith Davies; et al.
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23205612/
+  pmid: '23205612'
   kind: Deep Research source
   insight: Serious renal toxicity and limited efficacy in the SRT501 myeloma study.
   limitation: Advanced disease, renal vulnerability, and dehydration complicate attribution.
@@ -1239,6 +1261,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: H-H Sherry Chow; Linda L. Garland; Chiu-Hsieh Hsu; et al.
   year: 2010
   url: https://pubmed.ncbi.nlm.nih.gov/20716633/
+  pmid: '20716633'
   kind: Deep Research source
   insight: Human probe-drug evidence for altered CYP activity after 1 g/day.
   limitation: Uncontrolled four-week study; substrate-specific clinical harms not established.
@@ -1251,6 +1274,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Ahmed A. Albassam; Reginald F. Frye
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/30976185/
+  pmid: '30976185'
   kind: Deep Research source
   insight: Pterostilbene inhibited CYP2C8 and UGT1A6 in vitro.
   limitation: No clinical interaction outcome or validated human exposure threshold.
@@ -1263,6 +1287,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Izet M. Kapetanovic; Miguel Muzzio; Zhihua Huang; Thomas N. Thompson; David L. McCormick
   year: 2011
   url: https://pubmed.ncbi.nlm.nih.gov/21116625/
+  pmid: '21116625'
   kind: Deep Research source
   insight: Source of frequently repeated comparative bioavailability figures.
   limitation: Rat experiment, not human pharmacokinetics or clinical superiority.
@@ -1275,6 +1300,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Victoria H. J. Roberts; Lynley D. Pound; Stephanie R. Thorn; et al.
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/24563374/
+  pmid: '24563374'
   kind: Deep Research source
   insight: Maternal benefits accompanied an unexpected fetal-pancreas developmental signal.
   limitation: Nonhuman primates on a specific diet; not human pregnancy-risk quantification.

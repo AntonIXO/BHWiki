@@ -700,92 +700,67 @@ This record separates prescribing information, primary randomized outcomes, regi
 ```yaml
 - id: S1
   title: Full Prescribing Information
-  authors: use, C-IV — Full Prescribing Information. Apotex Corp.; DailyMed/National
-    Library of Medicine. 2026; SPL v21, effective July 21, 2026. [Direct regulator
-    URL](
+  authors: use, C-IV — Full Prescribing Information. Apotex Corp.; DailyMed/National Library of Medicine. 2026; SPL v21, effective July 21, 2026. [Direct regulator URL](
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=944daf47-49a6-93ca-e348-4a0f1b6d937e
   kind: Regulatory or registry source
-  insight: Defines IR composition, salt/base units, ADHD and narcolepsy indications,
-    dosing, human PK and warnings.
-  limitation: Prescribing information combines product-specific and class evidence;
-    version 21.
-  funding: Manufacturer-submitted regulatory labeling; not an independent clinical
-    study.
+  insight: Defines IR composition, salt/base units, ADHD and narcolepsy indications, dosing, human PK and warnings.
+  limitation: Prescribing information combines product-specific and class evidence; version 21.
+  funding: Manufacturer-submitted regulatory labeling; not an independent clinical study.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: The labeler has a commercial interest in the product.
   conflictOfInterestStatus: not-assessed
 - id: S2
   title: Full Prescribing Information
-  authors: use, C-IV — Full Prescribing Information. Apotex Corp.; DailyMed/National
-    Library of Medicine. 2026; SPL v21, effective July 21, 2026. [Direct regulator
-    URL](
+  authors: use, C-IV — Full Prescribing Information. Apotex Corp.; DailyMed/National Library of Medicine. 2026; SPL v21, effective July 21, 2026. [Direct regulator URL](
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=944daf47-49a6-93ca-e348-4a0f1b6d937e
   kind: Regulatory or registry source
-  insight: Current XR identity, age restrictions, dosing, PK, contraindications and
-    boxed warning.
-  limitation: Version 38, effective April 30, 2026; some risk estimates are pooled
-    stimulant-class evidence.
+  insight: Current XR identity, age restrictions, dosing, PK, contraindications and boxed warning.
+  limitation: Version 38, effective April 30, 2026; some risk estimates are pooled stimulant-class evidence.
   funding: Manufacturer-submitted regulatory labeling.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: The labeler has a commercial interest in the product.
   conflictOfInterestStatus: not-assessed
 - id: S3
   title: Full Prescribing Information
-  authors: use, C-IV — Full Prescribing Information. Apotex Corp.; DailyMed/National
-    Library of Medicine. 2026; SPL v21, effective July 21, 2026. [Direct regulator
-    URL](
+  authors: use, C-IV — Full Prescribing Information. Apotex Corp.; DailyMed/National Library of Medicine. 2026; SPL v21, effective July 21, 2026. [Direct regulator URL](
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=944daf47-49a6-93ca-e348-4a0f1b6d937e
   kind: Regulatory or registry source
-  insight: Defines triple-bead delivery, ADHD indication from age 13, dosing, renal
-    limits and substitution warning.
-  limitation: Version 13, effective April 30, 2026; not an independent comparison
-    with other formulations.
+  insight: Defines triple-bead delivery, ADHD indication from age 13, dosing, renal limits and substitution warning.
+  limitation: Version 13, effective April 30, 2026; not an independent comparison with other formulations.
   funding: Manufacturer-submitted regulatory labeling.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: The labeler has a commercial interest in the product.
   conflictOfInterestStatus: not-assessed
 - id: S4
-  title: 'A comparison of ritalin and adderall: efficacy and time-course in children
-    with attention-deficit/hyperactivity disorder.'
-  authors: W E Pelham; H R Aronoff; J K Midlam; C J Shapiro; E M Gnagy; A M Chronis;
-    A N Onyango; G Forehand; A Nguyen; J Waxmonsky
+  title: 'A comparison of ritalin and adderall: efficacy and time-course in children with attention-deficit/hyperactivity disorder.'
+  authors: W E Pelham; H R Aronoff; J K Midlam; C J Shapiro; E M Gnagy; A M Chronis; A N Onyango; G Forehand; A Nguyen; J Waxmonsky
   year: 1999
   url: https://pubmed.ncbi.nlm.nih.gov/10103335/
   kind: Deep Research source
   insight: Direct IR MAS, methylphenidate and placebo comparison.
-  limitation: 25 children, intensive concurrent behavioral treatment and non-equivalent
-    functional potency.
-  funding: Publisher acknowledgement identifies a grant from Shire Richwood, Adderall's
-    manufacturer.
+  limitation: 25 children, intensive concurrent behavioral treatment and non-equivalent functional potency.
+  funding: Publisher acknowledgement identifies a grant from Shire Richwood, Adderall's manufacturer.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Manufacturer funding established; complete individual disclosures
-    were not verified.
+  conflictsOfInterest: Manufacturer funding established; complete individual disclosures were not verified.
   conflictOfInterestStatus: not-assessed
 - id: S5
-  title: A randomized, double-blind, placebo-controlled, parallel-group study of SLI381
-    (Adderall XR) in children with attention-deficit/hyperactivity disorder.
+  title: A randomized, double-blind, placebo-controlled, parallel-group study of SLI381 (Adderall XR) in children with attention-deficit/hyperactivity disorder.
   authors: Joseph Biederman; Frank A Lopez; Samuel W Boellner; Mark C Chandler
   year: 2002
   url: https://pubmed.ncbi.nlm.nih.gov/12165576/
   kind: Deep Research source
   insight: Large short-term pediatric XR efficacy trial.
-  limitation: Three weeks; detailed funding and disclosure text unavailable in accessed
-    abstract.
+  limitation: Three weeks; detailed funding and disclosure text unavailable in accessed abstract.
   funding: Not independently verified from accessible material.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not verified; unavailable disclosure is not evidence of no
-    conflicts.
+  conflictsOfInterest: Not verified; unavailable disclosure is not evidence of no conflicts.
   conflictOfInterestStatus: not-assessed
 - id: S6
-  title: 'Efficacy and safety of mixed amphetamine salts extended release (Adderall
-    XR) in the management of attention-deficit/hyperactivity disorder in adolescent
-    patients: a 4-week, randomized, double-blind, placebo-controlled, parallel-group
-    study.'
-  authors: Thomas J Spencer; Timothy E Wilens; Joseph Biederman; Richard H Weisler;
-    Stephanie C Read; Raymond Pratt
+  title: 'Efficacy and safety of mixed amphetamine salts extended release (Adderall XR) in the management of attention-deficit/hyperactivity disorder in adolescent patients: a 4-week, randomized, double-blind, placebo-controlled, parallel-group study.'
+  authors: Thomas J Spencer; Timothy E Wilens; Joseph Biederman; Richard H Weisler; Stephanie C Read; Raymond Pratt
   year: 2006
   url: https://pubmed.ncbi.nlm.nih.gov/16678648/
   kind: Deep Research source
@@ -796,10 +771,8 @@ This record separates prescribing information, primary randomized outcomes, regi
   conflictsOfInterest: Complete author disclosures not verified.
   conflictOfInterestStatus: not-assessed
 - id: S7
-  title: 'Mixed amphetamine salts extended-release in the treatment of adult ADHD:
-    a randomized, controlled trial.'
-  authors: Richard H Weisler; Joseph Biederman; Thomas J Spencer; Timothy E Wilens;
-    Stephen V Faraone; Allan K Chrisman; Stephanie C Read; Simon J Tulloch
+  title: 'Mixed amphetamine salts extended-release in the treatment of adult ADHD: a randomized, controlled trial.'
+  authors: Richard H Weisler; Joseph Biederman; Thomas J Spencer; Timothy E Wilens; Stephen V Faraone; Allan K Chrisman; Stephanie C Read; Simon J Tulloch
   year: 2006
   url: https://pubmed.ncbi.nlm.nih.gov/16871129/
   kind: Deep Research source
@@ -807,31 +780,23 @@ This record separates prescribing information, primary randomized outcomes, regi
   limitation: Four-week trial; severity-related dose findings were post hoc.
   funding: Supported in part by Shire, as stated in the author-posted article.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Investigators disclosed multiple industry relationships including
-    Shire; author affiliations identify Read and Tulloch as Shire employees.
+  conflictsOfInterest: Investigators disclosed multiple industry relationships including Shire; author affiliations identify Read and Tulloch as Shire employees.
   conflictOfInterestStatus: not-assessed
 - id: S8
-  title: 'Efficacy and Safety of SHP465 Mixed Amphetamine Salts in the Treatment of
-    Attention-Deficit/Hyperactivity Disorder in Adults: Results of a Randomized, Double-Blind,
-    Placebo-Controlled, Forced-Dose Clinical Study'
-  authors: Richard H Weisler; Michael Greenbaum; Valerie Arnold; Ming Yu; Brian Yan;
-    Margo Jaffee; Brigitte Robertson
+  title: 'Efficacy and Safety of SHP465 Mixed Amphetamine Salts in the Treatment of Attention-Deficit/Hyperactivity Disorder in Adults: Results of a Randomized, Double-Blind, Placebo-Controlled, Forced-Dose Clinical Study'
+  authors: Richard H Weisler; Michael Greenbaum; Valerie Arnold; Ming Yu; Brian Yan; Margo Jaffee; Brigitte Robertson
   year: 2017
   url: https://doi.org/10.1007/s40263-017-0455-7
   kind: Deep Research source
   insight: Mydayis-specific placebo-controlled efficacy.
   limitation: Short, selected-population, forced-dose study.
-  funding: Shire Development funded research, writing assistance and publication;
-    sponsor participated in design, analysis and reporting.
+  funding: Shire Development funded research, writing assistance and publication; sponsor participated in design, analysis and reporting.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Four authors were Shire employees with stock interests; investigators
-    disclosed industry payments.
+  conflictsOfInterest: Four authors were Shire employees with stock interests; investigators disclosed industry payments.
   conflictOfInterestStatus: not-assessed
 - id: S9
-  title: 'Modafinil Versus Amphetamine-Dextroamphetamine For Idiopathic Hypersomnia
-    and Narcolepsy Type 2: A Randomized, Blinded, Non-inferiority Trial'
-  authors: Lynn Marie Trotti; Tyler Blake; Romy Hoque; David B Rye; Surina Sharma;
-    Donald L Bliwise
+  title: 'Modafinil Versus Amphetamine-Dextroamphetamine For Idiopathic Hypersomnia and Narcolepsy Type 2: A Randomized, Blinded, Non-inferiority Trial'
+  authors: Lynn Marie Trotti; Tyler Blake; Romy Hoque; David B Rye; Surina Sharma; Donald L Bliwise
   year: 2024
   url: https://doi.org/10.1007/s40263-024-01122-y
   kind: Deep Research source
@@ -839,48 +804,39 @@ This record separates prescribing information, primary randomized outcomes, regi
   limitation: Small mixed-diagnosis sample, predominantly idiopathic hypersomnia.
   funding: American Academy of Sleep Medicine Foundation; NIH UL1TR002378 and R01NS111280.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Trotti disclosed society/foundation board roles arising after
-    the award; Rye disclosed Jazz and Takeda consulting.
+  conflictsOfInterest: Trotti disclosed society/foundation board roles arising after the award; Rye disclosed Jazz and Takeda consulting.
   conflictOfInterestStatus: not-assessed
 - id: S10
-  title: Objective and subjective cognitive enhancing effects of mixed amphetamine
-    salts in healthy people.
+  title: Objective and subjective cognitive enhancing effects of mixed amphetamine salts in healthy people.
   authors: Irena Ilieva; Joseph Boland; Martha J Farah
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/22884611/
   kind: Deep Research source
   insight: Dissociation between general objective performance and perceived enhancement.
-  limitation: Abstract and indexed author-manuscript excerpts accessed; complete PDF
-    retrieval failed.
+  limitation: Abstract and indexed author-manuscript excerpts accessed; complete PDF retrieval failed.
   funding: Full funding declaration not verified.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Full declaration not verified.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: 'Neurocognitive, Autonomic, and Mood Effects of Adderall: A Pilot Study of
-    Healthy College Students'
-  authors: Lisa L Weyandt; Tara L White; Bergljot Gyda Gudmundsdottir; Adam Z Nitenson;
-    Emma S Rathkey; Kelvin A De Leon; Stephanie A Bjorn
+  title: 'Neurocognitive, Autonomic, and Mood Effects of Adderall: A Pilot Study of Healthy College Students'
+  authors: Lisa L Weyandt; Tara L White; Bergljot Gyda Gudmundsdottir; Adam Z Nitenson; Emma S Rathkey; Kelvin A De Leon; Stephanie A Bjorn
   year: 2018
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6165228/
   kind: Deep Research source
   insight: Acute 30 mg MAS produced more prominent activation than cognitive improvement.
   limitation: 13 completers and multiple exploratory outcomes.
-  funding: Rhode Island neuroscience institutions, NIH and NSF grants; funders reported
-    no role beyond financial support.
+  funding: Rhode Island neuroscience institutions, NIH and NSF grants; funders reported no role beyond financial support.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Authors explicitly reported no competing biomedical financial
-    interests or potential conflicts.
+  conflictsOfInterest: Authors explicitly reported no competing biomedical financial interests or potential conflicts.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: Long-term cardiovascular effects of mixed amphetamine salts extended release
-    in adults with ADHD.
+  title: Long-term cardiovascular effects of mixed amphetamine salts extended release in adults with ADHD.
   authors: Richard H Weisler; Joseph Biederman; Thomas J Spencer; Timothy E Wilens
   year: 2005
   url: https://pubmed.ncbi.nlm.nih.gov/16344839/
   kind: Deep Research source
-  insight: Longer MAS-specific cardiovascular follow-up, including cardiovascular
-    discontinuations.
+  insight: Longer MAS-specific cardiovascular follow-up, including cardiovascular discontinuations.
   limitation: Selected healthy adults; insufficient to quantify rare-event risk.
   funding: Not verified from accessible abstract.
   sponsorshipStatus: not-assessed
@@ -888,23 +844,18 @@ This record separates prescribing information, primary randomized outcomes, regi
   conflictOfInterestStatus: not-assessed
 - id: S13
   title: Risk of Incident Psychosis and Mania With Prescription Amphetamines.
-  authors: Lauren V. Moran, Joseph P. Skinner, Ann K. Shinn, Kathryn Nielsen, Vinod
-    Rao, S. Trevor Taylor, Talia R. Cohen, Cemre Erkol, Jaisal Merchant, Christin
-    A. Mujica, Roy H. Perlis, Dost Ongur
+  authors: Lauren V. Moran, Joseph P. Skinner, Ann K. Shinn, Kathryn Nielsen, Vinod Rao, S. Trevor Taylor, Talia R. Cohen, Cemre Erkol, Jaisal Merchant, Christin A. Mujica, Roy H. Perlis, Dost Ongur
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/39262211/
   kind: observational-case-control
-  insight: Observational association between amphetamine exposure, dose and psychosis
-    or mania.
-  limitation: Hospital-control selection; pooled amphetamine products; no MAS-specific
-    incidence.
+  insight: Observational association between amphetamine exposure, dose and psychosis or mania.
+  limitation: Hospital-control selection; pooled amphetamine products; no MAS-specific incidence.
   funding: NIMH grant R01MH122427.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Complete author disclosure text not verified.
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: Safety and Efficacy Study of SHP465 in Adults Aged 18-55 Years With Attention-deficit/
-    Hyperactivity Disorder (ADHD)
+  title: Safety and Efficacy Study of SHP465 in Adults Aged 18-55 Years With Attention-deficit/ Hyperactivity Disorder (ADHD)
   authors: Shire; ClinicalTrials.gov
   year: 2021
   url: https://clinicaltrials.gov/study/NCT02604407
@@ -913,12 +864,10 @@ This record separates prescribing information, primary randomized outcomes, regi
   limitation: Sponsor-submitted record; year reflects last posted update.
   funding: Lead sponsor Shire.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Sponsor is the product developer; registry does not replace
-    author disclosures.
+  conflictsOfInterest: Sponsor is the product developer; registry does not replace author disclosures.
   conflictOfInterestStatus: not-assessed
 - id: S15
-  title: Modafinil Versus Amphetamines for the Treatment of Narcolepsy Type 2 and
-    Idiopathic Hypersomnia
+  title: Modafinil Versus Amphetamines for the Treatment of Narcolepsy Type 2 and Idiopathic Hypersomnia
   authors: Emory University; ClinicalTrials.gov
   year: 2024
   url: https://clinicaltrials.gov/study/NCT03772314
@@ -927,8 +876,7 @@ This record separates prescribing information, primary randomized outcomes, regi
   limitation: Sponsor-submitted record; not independent efficacy adjudication.
   funding: Emory University sponsor; American Academy of Sleep Medicine collaborator.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Individual investigator disclosures are reported in the publication,
-    not established by registry fields.
+  conflictsOfInterest: Individual investigator disclosures are reported in the publication, not established by registry fields.
   conflictOfInterestStatus: not-assessed
 - id: S16
   title: 21 CFR § 1308.12 — Schedule II.
@@ -937,8 +885,7 @@ This record separates prescribing information, primary randomized outcomes, regi
   url: https://www.ecfr.gov/current/title-21/chapter-II/part-1308/subject-group-ECFRf62f8e189108c4d/section-1308.12
   kind: regulation
   insight: Amphetamine, its salts, optical isomers, and their salts are Schedule II.
-  limitation: U.S. federal scheduling only; does not establish other jurisdictions'
-    rules.
+  limitation: U.S. federal scheduling only; does not establish other jurisdictions' rules.
   funding: Government regulatory publication; not a clinical study.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not applicable to a statutory scheduling document.
@@ -950,8 +897,7 @@ This record separates prescribing information, primary randomized outcomes, regi
   url: https://www.ecfr.gov/current/title-21/chapter-II/part-1308/subject-group-ECFRf62f8e189108c4d/section-1308.12"
   kind: regulation
   insight: Amphetamine, its salts, optical isomers, and their salts are Schedule II.
-  limitation: U.S. federal scheduling only; does not establish other jurisdictions'
-    rules.
+  limitation: U.S. federal scheduling only; does not establish other jurisdictions' rules.
   funding: Government regulatory publication; not a clinical study.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not applicable to a statutory scheduling document.

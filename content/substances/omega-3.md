@@ -632,7 +632,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   name: Attention
   direction: Increased
   evidence: Human research
-  description: A diet including 2-3 portions of fatty fish per week, which corresponds to the intake of 1.25 g EPA (20:5n-3) + DHA (22:6n-3) per day, has been officially recommended on the basis of epidemiological findings showing a beneficial role of these n-3 long-chain PUFA in the prevention of cardiovascular and inflammatory diseases.
+  description: "A diet including 2-3 portions of fatty fish per week, which corresponds to the intake of 1.25 g EPA (20:5n-3) + DHA (22:6n-3) per day, has been officially recommended on the basis of epidemiological findings showing a beneficial role of these n-3 long-chain PUFA in the prevention of cardiovascular and inflammatory diseases."
   sourceId: reddit-pmid-9637947
   population: Population described in the PubMed abstract
   exposure: A diet including 2-3 portions of fatty fish per week, which corresponds to the intake of 1.25 g EPA (20:5n-3) + DHA (22:6n-3) per day, has been officially recommended on the basis of epidemiological findings showing a beneficial role of these n-3 long-chain PUFA in the prevention of cardiovascular and inflammatory diseases.
@@ -644,7 +644,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   name: Cognitive Performance
   direction: Increased
   evidence: Human research
-  description: A diet including 2-3 portions of fatty fish per week, which corresponds to the intake of 1.25 g EPA (20:5n-3) + DHA (22:6n-3) per day, has been officially recommended on the basis of epidemiological findings showing a beneficial role of these n-3 long-chain PUFA in the prevention of cardiovascular and inflammatory diseases.
+  description: "A diet including 2-3 portions of fatty fish per week, which corresponds to the intake of 1.25 g EPA (20:5n-3) + DHA (22:6n-3) per day, has been officially recommended on the basis of epidemiological findings showing a beneficial role of these n-3 long-chain PUFA in the prevention of cardiovascular and inflammatory diseases."
   sourceId: reddit-pmid-9637947
   population: Population described in the PubMed abstract
   exposure: A diet including 2-3 portions of fatty fish per week, which corresponds to the intake of 1.25 g EPA (20:5n-3) + DHA (22:6n-3) per day, has been officially recommended on the basis of epidemiological findings showing a beneficial role of these n-3 long-chain PUFA in the prevention of cardiovascular and inflammatory diseases.
@@ -1148,6 +1148,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Bhatt DL, Steg PG, Miller M, et al.
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/30415628/
+  pmid: '30415628'
   kind: Randomized cardiovascular-outcomes trial
   insight: Icosapent ethyl 4 g/day reduced major cardiovascular events in statin-treated hypertriglyceridemia.
   limitation: Product-specific trial with Amarin sponsorship; not OTC fish-oil evidence.
@@ -1184,6 +1185,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/42070013/
+  pmid: '42070013'
   kind: Research source link
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
@@ -1208,6 +1210,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Nicholls SJ, Lincoff AM, Garcia M, et al.
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/33190147/
+  pmid: '33190147'
   kind: Randomized cardiovascular-outcomes trial
   insight: 4 g/day EPA/DHA carboxylic acids did not reduce cardiovascular events and the trial stopped for futility.
   limitation: Industry-sponsored trial; formulation differs from icosapent ethyl.
@@ -1244,6 +1247,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Manson JE, Cook NR, Lee IM, et al.
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/30415637/
+  pmid: '30415637'
   kind: Randomized primary-prevention trial
   insight: VITAL found no significant major cardiovascular benefit from 1 g/day fish oil in generally healthy adults.
   limitation: Primary-prevention population and combined EPA/DHA dose.
@@ -1280,6 +1284,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: ASCEND Study Collaborative Group
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/30146932/
+  pmid: '30146932'
   kind: Randomized trial
   insight: 1 g/day n-3 supplementation did not significantly reduce serious vascular events in diabetes.
   limitation: Diabetes population and modest dose.
@@ -1316,6 +1321,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Kalstad AA, Myhre PL, Laake K, et al.
   year: 2021
   url: https://pubmed.ncbi.nlm.nih.gov/33191772/
+  pmid: '33191772'
   kind: Randomized post-MI trial
   insight: OMEMI did not show a significant cardiovascular benefit from n-3 supplementation after myocardial infarction.
   limitation: Post-MI population and dose/formulation-specific result.
@@ -1352,6 +1358,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Yokoyama M, Origasa H, Matsuzaki M, et al.
   year: 2007
   url: https://pubmed.ncbi.nlm.nih.gov/17398308/
+  pmid: '17398308'
   kind: Randomized cardiovascular trial
   insight: JELIS evaluated 1.8 g/day EPA added to statin therapy and reported a coronary-event reduction in its enrolled population.
   limitation: Open-label Japanese trial with product- and population-specific applicability.
@@ -1388,6 +1395,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Miyauchi K, et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38873793/
+  pmid: '38873793'
   kind: Randomized cardiovascular trial
   insight: RESPECT-EPA primary result was borderline and requires product/population-specific interpretation.
   limitation: Trial-specific formulation and endpoint; funding/COI incompletely extracted.
@@ -1424,6 +1432,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Khan SU, Lone AN, et al.
   year: 2021
   url: https://pubmed.ncbi.nlm.nih.gov/34505026/
+  pmid: '34505026'
   kind: Systematic review and meta-analysis
   insight: Pooled cardiovascular effects varied by formulation and endpoint.
   limitation: Heterogeneous trials and products.
@@ -1448,6 +1457,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Gencer B, Djousse L, et al.
   year: 2021
   url: https://pubmed.ncbi.nlm.nih.gov/34612056/
+  pmid: '34612056'
   kind: Meta-analysis
   insight: Long-term marine omega-3 exposure was associated with an atrial-fibrillation risk signal in some dose contexts.
   limitation: Dose and population heterogeneity.
@@ -1472,6 +1482,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Quinn JF, Raman R, Thomas RG, et al.
   year: 2010
   url: https://pubmed.ncbi.nlm.nih.gov/21045096/
+  pmid: '21045096'
   kind: Randomized Alzheimer-disease trial
   insight: DHA supplementation did not slow cognitive or functional decline overall.
   limitation: Disease-stage and subgroup limits; no general prevention inference.
@@ -1508,6 +1519,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/17030655/
+  pmid: '17030655'
   kind: Research source link
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
@@ -1532,6 +1544,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/22696350/
+  pmid: '22696350'
   kind: Research source link
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
@@ -1556,6 +1569,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Yaghoobi E, et al.
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/42124047/
+  pmid: '42124047'
   kind: Systematic review and meta-analysis
   insight: Possible reductions in DOMS and CK were reported, but overall evidence was equivocal and methodologically limited.
   limitation: Small heterogeneous exercise trials.
@@ -1604,6 +1618,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Davidson MH, Johnson J, Rooney MW, et al.
   year: 2012
   url: https://pubmed.ncbi.nlm.nih.gov/23312053/
+  pmid: '23312053'
   kind: Human formulation bioavailability study
   insight: Free-fatty-acid and ethyl-ester exposure differed by meal fat and formulation.
   limitation: Acute bioavailability does not establish chronic clinical superiority.
@@ -1628,6 +1643,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/20959577/
+  pmid: '20959577'
   kind: Research source link
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
@@ -1664,6 +1680,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/31509674/
+  pmid: '31509674'
   kind: Research source link
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
@@ -1700,6 +1717,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/20638827/
+  pmid: '20638827'
   kind: Research source link
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
@@ -1772,6 +1790,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Javaid M, et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38742535/
+  pmid: '38742535'
   kind: Systematic review and meta-analysis
   insight: No clear overall major-bleeding increase was found across omega-3 trials.
   limitation: Dose, anticoagulant, and product heterogeneity.
@@ -1796,6 +1815,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/34817851/
+  pmid: '34817851'
   kind: Research source link
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
@@ -1820,6 +1840,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/30480773/
+  pmid: '30480773'
   kind: Research source link
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
@@ -1844,6 +1865,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Vors C, et al.
   year: 2021
   url: https://pubmed.ncbi.nlm.nih.gov/32790827/
+  pmid: '32790827'
   kind: Systematic review and meta-analysis
   insight: EPA and DHA had broadly similar effects on CRP, IL-6, TNF-alpha, and adiponectin biomarkers.
   limitation: Biomarkers are not clinical outcomes; funding/COI incomplete.
@@ -1868,6 +1890,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/35108375/
+  pmid: '35108375'
   kind: Research source link
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
@@ -2117,7 +2140,7 @@ PubMed abstracts retrieved for all 13 linked PMIDs. PMC full text was retrieved 
   conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 - id: reddit-pmid-9637947
-  title: 'Can adults adequately convert alpha-linolenic acid (18:3n-3) to eicosapentaenoic acid (20:5n-3) and docosahexaenoic acid (22:6n-3)?'
+  title: Can adults adequately convert alpha-linolenic acid (18:3n-3) to eicosapentaenoic acid (20:5n-3) and docosahexaenoic acid (22:6n-3)?
   authors: H Gerster
   year: 1998
   url: https://pubmed.ncbi.nlm.nih.gov/9637947/

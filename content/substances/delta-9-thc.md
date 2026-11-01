@@ -249,7 +249,7 @@ The terminal range is not modeled as one half-life. The initial 4-hour figure is
 
 ```yaml
 - id: dronabinol-label
-  title: "Dronabinol capsules: prescribing information"
+  title: 'Dronabinol capsules: prescribing information'
   authors: Major Pharmaceuticals
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd8c5d57-0173-4f62-8ff0-d8147986a976
@@ -258,7 +258,7 @@ The terminal range is not modeled as one half-life. The initial 4-hour figure is
   limitation: Capsule labeling for specified adult indications. Retrieval year is 2026. Cannabis flower is outside this label.
   funding: Manufacturer prescribing information hosted by the US National Library of Medicine.
 - id: pubchem
-  title: "Delta-9-THC: compound identity and structure"
+  title: 'Delta-9-THC: compound identity and structure'
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/16078

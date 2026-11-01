@@ -2400,6 +2400,7 @@ PubMed abstracts retrieved for all 49 linked PMIDs. Full-text retrieval was atte
   authors: Not established
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/32373212/
+  pmid: '32373212'
   kind: Reddit index publication link
   insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.

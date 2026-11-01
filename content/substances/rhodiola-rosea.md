@@ -69,7 +69,7 @@ Rhodiola Rosea evidence is source-specific and endpoint-limited. A statistically
 This page links PubMed evidence for rhodiola rosea. Study populations, formulations and endpoints are retained per PMID; non-PubMed links remain provenance leads. Abstracts were retrieved for PMID(s) 11081987, 12725561, 18501890, 19168123, 22309741, 25172797, 25413939, 25837277….
 ## Evidence note
 
-Identity only import: the cited sources support candidate identity provenance, not an evidence review. No biological relationship or clinical claim is asserted.
+The structured records below summarize the linked publication abstracts and any retrieved full text; they do not establish broad efficacy or safety beyond the reported populations and endpoints.
 
 Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22309741, 25172797, 25413939, 25837277…. Rights-eligible PMC full text reviewed: PMC4385215, PMC4805150.
 
@@ -125,7 +125,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: anxiety
   name: Anxiety
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: An interactive pathway analysis of the downstream effects was performed using datasets containing significantly up- and down-regulated genes, and the effects on cellular functions and diseases were predicted.
   sourceId: reddit-pmid-25172797
   population: The aim of this study was to identify the targets (genes, interactive signaling pathways, and molecular networks) of Rhodiola rosea extract in isolated neuroglia cells and to predict the effects of Rhodiola extract on cellular functions and diseases.
@@ -137,7 +137,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: anxiety
   name: Anxiety
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: extract on self-reported anxiety, stress, cognition, and other mood symptoms.
   sourceId: reddit-pmid-26502953
   population: Eighty mildly anxious participants were randomized into two different groups of either Rhodiola rosea L (2 × 200 mg dose Vitano®, 1 tablet taken before breakfast and 1tablet before lunch) or a control condition (no treatment).
@@ -154,7 +154,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: depression-severity
   name: Depression Severity
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: An interactive pathway analysis of the downstream effects was performed using datasets containing significantly up- and down-regulated genes, and the effects on cellular functions and diseases were predicted.
   sourceId: reddit-pmid-25172797
   population: The aim of this study was to identify the targets (genes, interactive signaling pathways, and molecular networks) of Rhodiola rosea extract in isolated neuroglia cells and to predict the effects of Rhodiola extract on cellular functions and diseases.
@@ -166,7 +166,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: anxiety-symptom-severity
   name: Anxiety Symptom Severity
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: An interactive pathway analysis of the downstream effects was performed using datasets containing significantly up- and down-regulated genes, and the effects on cellular functions and diseases were predicted.
   sourceId: reddit-pmid-25172797
   population: The aim of this study was to identify the targets (genes, interactive signaling pathways, and molecular networks) of Rhodiola rosea extract in isolated neuroglia cells and to predict the effects of Rhodiola extract on cellular functions and diseases.
@@ -178,7 +178,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: depression-severity
   name: Depression Severity
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: (Crassulaceae) is traditionally used in Eastern Europe and Asia to stimulate the nervous system, enhance physical and mental performance, treat fatigue, psychological stress and depression.
   sourceId: reddit-pmid-19168123
   population: Population not stated in the PubMed record.
@@ -190,7 +190,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: fatigue-severity
   name: Fatigue Severity
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: (Crassulaceae) is traditionally used in Eastern Europe and Asia to stimulate the nervous system, enhance physical and mental performance, treat fatigue, psychological stress and depression.
   sourceId: reddit-pmid-19168123
   population: Population not stated in the PubMed record.
@@ -202,7 +202,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Placebo produced no significant effects on all neurocognitive tests measure P > 0.05 in normal healthy volunteers, G.
   sourceId: reddit-pmid-27069717
   population: A total number of 112 volunteers were enrolled to study the effect of G.
@@ -214,7 +214,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Placebo produced no significant effects on all neurocognitive tests measure P > 0.05 in normal healthy volunteers, G.
   sourceId: reddit-pmid-27069717
   population: A total number of 112 volunteers were enrolled to study the effect of G.
@@ -226,7 +226,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: extract on self-reported anxiety, stress, cognition, and other mood symptoms.
   sourceId: reddit-pmid-26502953
   population: Eighty mildly anxious participants were randomized into two different groups of either Rhodiola rosea L (2 × 200 mg dose Vitano®, 1 tablet taken before breakfast and 1tablet before lunch) or a control condition (no treatment).
@@ -238,7 +238,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: depression-severity
   name: Depression Severity
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: extract on self-reported anxiety, stress, cognition, and other mood symptoms.
   sourceId: reddit-pmid-26502953
   population: Eighty mildly anxious participants were randomized into two different groups of either Rhodiola rosea L (2 × 200 mg dose Vitano®, 1 tablet taken before breakfast and 1tablet before lunch) or a control condition (no treatment).
@@ -250,7 +250,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: anxiety-symptom-severity
   name: Anxiety Symptom Severity
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: extract on self-reported anxiety, stress, cognition, and other mood symptoms.
   sourceId: reddit-pmid-26502953
   population: Eighty mildly anxious participants were randomized into two different groups of either Rhodiola rosea L (2 × 200 mg dose Vitano®, 1 tablet taken before breakfast and 1tablet before lunch) or a control condition (no treatment).
@@ -262,7 +262,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: depression-severity
   name: Depression Severity
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: rosea would have similar therapeutic effects as sertraline but with less adverse events.
   sourceId: reddit-pmid-25837277
   population: 57 subjects were randomized to 12 weeks of standardized R.
@@ -274,7 +274,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: A statistically significant improvement in these tests was observed in the treatment group (RRE) during the first two weeks period.
   sourceId: reddit-pmid-11081987
   population: Population not stated in the PubMed record.
@@ -286,7 +286,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: A statistically significant improvement in these tests was observed in the treatment group (RRE) during the first two weeks period.
   sourceId: reddit-pmid-11081987
   population: Population not stated in the PubMed record.
@@ -298,7 +298,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: fatigue-severity
   name: Fatigue Severity
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: A statistically significant improvement in these tests was observed in the treatment group (RRE) during the first two weeks period.
   sourceId: reddit-pmid-11081987
   population: Population not stated in the PubMed record.
@@ -310,7 +310,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
   conceptId: fatigue-severity
   name: Fatigue Severity
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: All groups were found to have very similar initial data, with no significant difference with regard to any parameter.
   sourceId: reddit-pmid-12725561
   population: Population not stated in the PubMed record.
@@ -335,6 +335,7 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
 - title: Source-specific finding from PMID 26613955
   description: The aim of the present study was to evaluate the effect of the herbal drug Rhodiola rosea on the activity of the cytochrome P-450 (CYP) enzymes CYP1A2, CYP2C9, CYP2C19, CYP2D6, and CYP3A4 in humans.
   sourceId: reddit-pmid-26613955
+  otherSlug: null
 ```
 
 ## Cautions
@@ -665,12 +666,16 @@ Reviewed PubMed abstracts for PMID(s) 11081987, 12725561, 18501890, 19168123, 22
 
 ```yaml
 - id: rhodiola-cyp2c9-human
-  title: CYP2C9 inhibition in healthy volunteers
-  description: rosea product (Arctic Root, produced by the Swedish Herbal Institute).
+  name: CYP2C9 inhibition in healthy volunteers
+  summary: Rhodiola rosea product (Arctic Root, produced by the Swedish Herbal Institute) inhibited CYP2C9 activity; potential interactions with narrow-therapeutic-index substrates remain clinically uncertain.
   sourceId: reddit-pmid-26613955
+  otherSlug: null
   population: 13 healthy volunteers
   context: Potential interaction with narrow-therapeutic-index CYP2C9 substrates such as warfarin or phenytoin; clinical magnitude remains uncertain.
-  severity: moderate
+  severity:
+    label: moderate
+    sourceId: reddit-pmid-26613955
+  description: rosea product (Arctic Root, produced by the Swedish Herbal Institute).
 ```
 
 ## Experience links

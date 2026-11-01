@@ -131,7 +131,7 @@ Reviewed PubMed abstracts for PMID(s) 23001939. No rights-eligible PMC full text
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Relative to the controls, volunteers taking OPLE had improved (P < 0.05) short-term memory, after 1 month of intervention which became highly significant (P < 0.005) after 2 months.
   sourceId: reddit-pmid-23001939
   population: The OPLE (0.5 g day(-1) ) was supplemented to young, healthy, adult human volunteers, and their cognitive learning abilities were compared to placebo-controlled groups (N = 15).
@@ -143,7 +143,7 @@ Reviewed PubMed abstracts for PMID(s) 23001939. No rights-eligible PMC full text
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: Relative to the controls, volunteers taking OPLE had improved (P < 0.05) short-term memory, after 1 month of intervention which became highly significant (P < 0.005) after 2 months.
   sourceId: reddit-pmid-23001939
   population: The OPLE (0.5 g day(-1) ) was supplemented to young, healthy, adult human volunteers, and their cognitive learning abilities were compared to placebo-controlled groups (N = 15).
@@ -202,7 +202,7 @@ Reviewed PubMed abstracts for PMID(s) 23001939. No rights-eligible PMC full text
 
 ```yaml
 - id: reddit-index-palm-leaf-extract
-  title: Reddit Nootropics index entry
+  title: Reddit Nootropics index entry for Black Currant
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

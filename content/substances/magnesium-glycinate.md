@@ -888,31 +888,25 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://ods.od.nih.gov/factsheets/magnesium-healthProfessional/
 - id: mgc-sleep
-  title: 'Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor
-    Sleep: A Randomized, Placebo-Controlled Trial.'
+  title: 'Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial.'
   authors: Julius Schuster, Igor Cycelskij, Adrian Lopresti, Andreas Hahn
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12412596/
   kind: randomized double-blind placebo-controlled trial
-  insight: 250 mg/day elemental magnesium plus 1,523 mg/day glycine modestly improved
-    self-reported insomnia severity over four weeks.
-  limitation: Short duration, subjective primary outcome, no objective sleep measure
-    and no glycine-only comparator.
-  funding: Institute of Food and One Health, Leibniz University Hannover; Biogena
-    supplied test product.
+  insight: 250 mg/day elemental magnesium plus 1,523 mg/day glycine modestly improved self-reported insomnia severity over four weeks.
+  limitation: Short duration, subjective primary outcome, no objective sleep measure and no glycine-only comparator.
+  funding: Institute of Food and One Health, Leibniz University Hannover; Biogena supplied test product.
   sponsorshipStatus: mixed-funding
   conflictsOfInterest: Manufacturer relationship beyond product supply is unclear.
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12412596/
 - id: mgc-cognition
-  title: 'Ca:Mg Ratio, APOE Cytosine Modifications, and Cognitive Function: Results
-    from a Randomized Trial'
+  title: 'Ca:Mg Ratio, APOE Cytosine Modifications, and Cognitive Function: Results from a Randomized Trial'
   authors: Xiaoli Zhu; Adam R. Borenstein; Yujing Zheng; Wen Zhang; et al.
   year: 2020
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7737669/
   kind: Randomized trial ancillary cognition analysis
-  insight: No overall MoCA benefit; exploratory signal in participants older than
-    65 years with high Ca:Mg intake ratios.
+  insight: No overall MoCA benefit; exploratory signal in participants older than 65 years with high Ca:Mg intake ratios.
   limitation: Ancillary subset, possible practice effect and no dementia endpoint.
   funding: National Cancer Institute grants and institutional resources.
   sponsorshipStatus: non-industry-funded
@@ -920,14 +914,12 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC7737669/
 - id: mgc-pregnancy
-  title: 'Oral magnesium for relief in pregnancy-induced leg cramps: a randomised
-    controlled trial'
+  title: 'Oral magnesium for relief in pregnancy-induced leg cramps: a randomised controlled trial'
   authors: Chayanis Supakatisant; Vorapong Phupong
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/22909270/
   kind: Randomized placebo-controlled human trial
-  insight: 300 mg/day elemental magnesium as bisglycinate for four weeks improved
-    50-percent responder rates for cramp frequency and intensity.
+  insight: 300 mg/day elemental magnesium as bisglycinate for four weeks improved 50-percent responder rates for cramp frequency and intensity.
   limitation: Small, short, pregnancy-specific study.
   funding: Independent funding.
   sponsorshipStatus: not-assessed
@@ -935,45 +927,35 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   conflictOfInterestStatus: not-assessed
   pmid: '22909270'
 - id: mgc-deficiency
-  title: Efficacy and safety of magnesium glycinate as add on therapy in hypomagnesemic
-    asthma and chronic obstructive pulmonary disease patients
+  title: Efficacy and safety of magnesium glycinate as add on therapy in hypomagnesemic asthma and chronic obstructive pulmonary disease patients
   authors: Maneesh Kumar Maddirevula; Muhasaparur G. Rajanandh; Boman Wesley
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/42633850/
   kind: Randomized placebo-controlled human trial
-  insight: In hypomagnesemic adults with asthma or COPD, reported magnesium glycinate
-    was associated with lower CRP and improved pulmonary measures.
-  limitation: Ahead-of-print abstract; 440 mg/day was not identified as elemental
-    magnesium.
+  insight: In hypomagnesemic adults with asthma or COPD, reported magnesium glycinate was associated with lower CRP and improved pulmonary measures.
+  limitation: Ahead-of-print abstract; 440 mg/day was not identified as elemental magnesium.
   funding: Not reported in PubMed record.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Authors declared no known competing financial interests or
-    relationships.
+  conflictsOfInterest: Authors declared no known competing financial interests or relationships.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/42633850/
   pmid: '42633850'
 - id: mgc-brilli
-  title: 'Magnesium bioavailability after administration of sucrosomial magnesium:
-    comparative crossover study'
+  title: 'Magnesium bioavailability after administration of sucrosomial magnesium: comparative crossover study'
   authors: E. Brilli; S. Khadge; A. Fabiano; et al.
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/29630135/
   kind: Single-day comparative crossover PK study
-  insight: Included a bisglycinate arm and measured blood, urine and red-cell magnesium
-    after 350 mg magnesium.
-  limitation: Healthy volunteers and proprietary comparator; no universal superiority
-    claim.
-  funding: Research support listed as non-U.S. government; authors affiliated with
-    PharmaNutra.
+  insight: Included a bisglycinate arm and measured blood, urine and red-cell magnesium after 350 mg magnesium.
+  limitation: Healthy volunteers and proprietary comparator; no universal superiority claim.
+  funding: Research support listed as non-U.S. government; authors affiliated with PharmaNutra.
   sponsorshipStatus: industry-funded
-  conflictsOfInterest: Commercial affiliation creates potential relevance; detailed
-    COI unclear.
+  conflictsOfInterest: Commercial affiliation creates potential relevance; detailed COI unclear.
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/29630135/
   pmid: '29630135'
 - id: mgc-review
-  title: Intestinal Absorption and Factors Influencing Bioavailability of Magnesium—An
-    Update
+  title: Intestinal Absorption and Factors Influencing Bioavailability of Magnesium—An Update
   authors: J. P. Schuchardt; A. Hahn
   year: 2017
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5652077/
@@ -990,8 +972,7 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   year: 2021
   url: https://www.tga.gov.au/resources/artg/363829
   kind: Regulatory product record
-  insight: Documents a buffered product containing magnesium oxide and magnesium glycinate
-    dihydrate.
+  insight: Documents a buffered product containing magnesium oxide and magnesium glycinate dihydrate.
   limitation: One registered product; not every glycinate product.
   funding: Australian Government regulatory system.
   sponsorshipStatus: non-industry-funded
@@ -1038,34 +1019,27 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://www.fda.gov/food/dietary-supplements/structurefunction-claims
 - id: dr-magnesium-glycinate-s3
-  title: 'Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor
-    Sleep: A Randomized, Placebo-Controlled Trial.'
+  title: 'Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial.'
   authors: Julius Schuster, Igor Cycelskij, Adrian Lopresti, Andreas Hahn
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12412596/
   kind: randomized double-blind placebo-controlled trial
-  insight: 250 mg/day elemental magnesium plus 1523 mg/day glycine modestly improved
-    self-reported insomnia severity over 4 weeks.
-  limitation: Short duration, subjective primary outcome, no objective sleep measures,
-    and no glycine-only comparator.
+  insight: 250 mg/day elemental magnesium plus 1523 mg/day glycine modestly improved self-reported insomnia severity over 4 weeks.
+  limitation: Short duration, subjective primary outcome, no objective sleep measures, and no glycine-only comparator.
   funding: Institute of Food and One Health, Leibniz University Hannover.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: No commercial funding was reported in the accessible funding
-    statement; manufacturer relationship beyond product supply is unclear.
+  conflictsOfInterest: No commercial funding was reported in the accessible funding statement; manufacturer relationship beyond product supply is unclear.
   conflictOfInterestStatus: not-assessed
   pmid: '40918053'
   doi: 10.2147/NSS.S524348
 - id: dr-magnesium-glycinate-s9
-  title: EFSA opinion on certain bisglycinates as sources of copper, zinc, calcium,
-    magnesium and glycinate nicotinate as a source of chromium in foods
+  title: EFSA opinion on certain bisglycinates as sources of copper, zinc, calcium, magnesium and glycinate nicotinate as a source of chromium in foods
   authors: EFSA Panel on Food Additives and Nutrient Sources added to Food (ANS)
   year: 2008
   url: https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2008.718
   kind: Clinical trial registry
-  insight: Evaluates specified bisglycinates as mineral sources, including magnesium
-    bisglycinate.
-  limitation: Regulatory source-safety assessment, not proof of clinical superiority
-    or finished-product purity.
+  insight: Evaluates specified bisglycinates as mineral sources, including magnesium bisglycinate.
+  limitation: Regulatory source-safety assessment, not proof of clinical superiority or finished-product purity.
   funding: European Food Safety Authority.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Institutional assessment; no commercial conflict stated.

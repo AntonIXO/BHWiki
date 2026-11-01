@@ -151,7 +151,7 @@ PubMed abstracts retrieved for seven linked publications; PMC full text was retr
 
 ```yaml
 - id: reddit-oxytocin-attachment-security-19457618
-  conceptId: anxiety
+  conceptId: anxiety-symptom-severity
   name: Attachment security
   direction: Increased
   evidence: Human research
@@ -175,7 +175,7 @@ PubMed abstracts retrieved for seven linked publications; PMC full text was retr
   magnitude: Stronger positive self-attribution; effect size not reported.
   reportType: measured-assessment
 - id: reddit-oxytocin-social-rejection-20695687
-  conceptId: anxiety
+  conceptId: anxiety-symptom-severity
   name: Social-rejection response
   direction: Variable
   evidence: Human research
@@ -254,7 +254,7 @@ PubMed abstracts retrieved for seven linked publications; PMC full text was retr
 
 ```yaml
 - id: reddit-index-oxytocin
-  title: Reddit Nootropics index entry
+  title: Reddit Nootropics index entry for Black Currant
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

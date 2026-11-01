@@ -69,7 +69,7 @@ Pramiracetam 019Fe218 evidence is source-specific and endpoint-limited. The resu
 This page links PubMed evidence for pramiracetam 019fe218. Study populations, formulations and endpoints are retained per PMID; non-PubMed links remain provenance leads. Abstracts were retrieved for PMID(s) 1786500, 8557218.
 ## Evidence note
 
-Identity only import: the cited sources support candidate identity provenance, not an evidence review. No biological relationship or clinical claim is asserted.
+The structured records below summarize the linked publication abstracts and any retrieved full text; they do not establish broad efficacy or safety beyond the reported populations and endpoints.
 
 Reviewed PubMed abstracts for PMID(s) 1786500, 8557218. No rights-eligible PMC full text was available among these records.
 
@@ -131,7 +131,7 @@ Reviewed PubMed abstracts for PMID(s) 1786500, 8557218. No rights-eligible PMC f
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Variable
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: A dose of 300 mg/kg (i.p.) of this nootropic produced an approximately 20% increase in NOS activity in rat brain cortical homogenates but not in hippocampal homogenates; no significant changes were observed in NOS mRNA expression in the cortex and hippocampus.
   sourceId: reddit-pmid-8557218
   population: The effect of systemic administration of pramiracetam on neuronal type nitric oxide synthase (NOS) activity and NOS mRNA expression were studied in the hippocampus and cerebral cortex in rats.
@@ -143,7 +143,7 @@ Reviewed PubMed abstracts for PMID(s) 1786500, 8557218. No rights-eligible PMC f
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: The results of the study indicate that subject performance in measures of memory, especially delayed recall, evidenced clinically significant improvements after the administration of pramiracetam sulphate as compared to placebo.
   sourceId: reddit-pmid-1786500
   population: The results of the study indicate that subject performance in measures of memory, especially delayed recall, evidenced clinically significant improvements after the administration of pramiracetam sulphate as compared to placebo.
@@ -155,7 +155,7 @@ Reviewed PubMed abstracts for PMID(s) 1786500, 8557218. No rights-eligible PMC f
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
-  evidence: Preclinical or in-vitro research
+  evidence: Limited research
   description: The results of the study indicate that subject performance in measures of memory, especially delayed recall, evidenced clinically significant improvements after the administration of pramiracetam sulphate as compared to placebo.
   sourceId: reddit-pmid-1786500
   population: The results of the study indicate that subject performance in measures of memory, especially delayed recall, evidenced clinically significant improvements after the administration of pramiracetam sulphate as compared to placebo.

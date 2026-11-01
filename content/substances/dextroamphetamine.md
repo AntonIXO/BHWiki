@@ -636,7 +636,7 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
   conflictsOfInterest: Labeler and developer have commercial interests in the product.
   conflictOfInterestStatus: not-assessed
 - id: S5
-  title: "Methylphenidate versus dexamphetamine in children with attention deficit hyperactivity disorder: A double-blind, crossover trial."
+  title: 'Methylphenidate versus dexamphetamine in children with attention deficit hyperactivity disorder: A double-blind, crossover trial.'
   authors: D. Efron, F. Jarman, M. Barker
   year: 1997
   url: https://pubmed.ncbi.nlm.nih.gov/9382907/
@@ -660,7 +660,7 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
   conflictsOfInterest: Full disclosure statement not recovered.
   conflictOfInterestStatus: not-assessed
 - id: S7
-  title: "Efficacy and Safety of Dextroamphetamine Transdermal System for the Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents: Results from a Pivotal Phase 2 Study."
+  title: 'Efficacy and Safety of Dextroamphetamine Transdermal System for the Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents: Results from a Pivotal Phase 2 Study.'
   authors: Andrew J. Cutler, Katsumi Suzuki, Brittney Starling, Kanan Balakrishnan, Marina Komaroff, Mariacristina Castelli, Suzanne Meeves, Ann C. Childress
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/35020462/
