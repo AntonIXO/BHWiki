@@ -159,14 +159,14 @@ The review covers several anesthetic gases. Nothing in the text used here is a n
   title: Inhalational Anesthetic
   authors: Miller et al.
   year: 2023
-  pmid: "32119427"
+  pmid: '32119427'
   url: https://pubmed.ncbi.nlm.nih.gov/32119427/
   kind: Review
   insight: Surveys inhaled anesthetics used for induction and maintenance of general anesthesia, including nitrous oxide.
   limitation: Not a nitrous-only study. No MAC, half-life, or interaction specific to nitrous oxide was extracted.
   funding: Not assessed in this draft.
 - id: pubchem
-  title: "Nitrous oxide: compound identity and structure"
+  title: 'Nitrous oxide: compound identity and structure'
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/948

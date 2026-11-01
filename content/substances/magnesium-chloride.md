@@ -659,9 +659,9 @@ x-order: 9007199254740991
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Disclosure unavailable in the accessed record.
   conflictOfInterestStatus: not-assessed
-  pmid: "11794633"
+  pmid: '11794633'
 - id: S5
-  title: "Circulating Ionized Magnesium as a Measure of Supplement Bioavailability: Results from a Pilot Study for Randomized Clinical Trial."
+  title: 'Circulating Ionized Magnesium as a Measure of Supplement Bioavailability: Results from a Pilot Study for Randomized Clinical Trial.'
   authors: Jiada Zhan, Taylor C Wallace, Sarah J Butts, Sisi Cao, Velarie Ansu, Lisa A Spence, Connie M Weaver, Nana Gletsu-Miller
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/32353962/
@@ -673,7 +673,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Wallace disclosed Vitamin Shoppe advisory-board service and Pfizer Consumer Healthcare grants. Weaver disclosed Yogurt in Nutrition Initiative and FDA advisory service and ILSI trusteeship; other authors declared none.
   conflictOfInterestStatus: not-assessed
 - id: S6
-  title: "Oral magnesium supplementation improves insulin sensitivity and metabolic control in type 2 diabetic subjects: a randomized double-blind controlled trial."
+  title: 'Oral magnesium supplementation improves insulin sensitivity and metabolic control in type 2 diabetic subjects: a randomized double-blind controlled trial.'
   authors: Martha Rodríguez-Morán, Fernando Guerrero-Romero
   year: 2003
   url: https://doi.org/10.2337/diacare.26.4.1147
@@ -685,7 +685,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Disclosure unavailable.
   conflictOfInterestStatus: not-assessed
 - id: S7
-  title: "The effect of lowering blood pressure by magnesium supplementation in diabetic hypertensive adults with low serum magnesium levels: a randomized, double-blind, placebo-controlled clinical trial."
+  title: 'The effect of lowering blood pressure by magnesium supplementation in diabetic hypertensive adults with low serum magnesium levels: a randomized, double-blind, placebo-controlled clinical trial.'
   authors: F Guerrero-Romero, M Rodríguez-Morán
   year: 2009
   url: https://doi.org/10.1038/jhh.2008.129
@@ -697,7 +697,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Disclosure unavailable.
   conflictOfInterestStatus: not-assessed
 - id: S8
-  title: "Oral magnesium supplementation improves glycaemic status in subjects with prediabetes and hypomagnesaemia: A double-blind placebo-controlled randomized trial."
+  title: 'Oral magnesium supplementation improves glycaemic status in subjects with prediabetes and hypomagnesaemia: A double-blind placebo-controlled randomized trial.'
   authors: F Guerrero-Romero, L E Simental-Mendía, G Hernández-Ronquillo, M Rodriguez-Morán
   year: 2015
   url: https://doi.org/10.1016/j.diabet.2015.03.010
@@ -709,7 +709,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Disclosure unavailable.
   conflictOfInterestStatus: not-assessed
 - id: S9
-  title: "Oral Magnesium Supplementation and Metabolic Syndrome: A Randomized Double-Blind Placebo-Controlled Clinical Trial."
+  title: 'Oral Magnesium Supplementation and Metabolic Syndrome: A Randomized Double-Blind Placebo-Controlled Clinical Trial.'
   authors: Martha Rodríguez-Morán, Luis E Simental-Mendía, Claudia I Gamboa-Gómez, Fernando Guerrero-Romero
   year: 2018
   url: https://doi.org/10.1053/j.ackd.2018.02.011
@@ -721,7 +721,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Disclosure unavailable.
   conflictOfInterestStatus: not-assessed
 - id: S10
-  title: "Efficacy of potassium and magnesium in essential hypertension: a double-blind, placebo controlled, crossover study."
+  title: 'Efficacy of potassium and magnesium in essential hypertension: a double-blind, placebo controlled, crossover study.'
   authors: P S Patki, J Singh, S V Gokhale, P M Bulakh, D S Shrotri, B Patwardhan
   year: 1990
   url: https://doi.org/10.1136/bmj.301.6751.521
@@ -733,7 +733,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Disclosure unavailable.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: "Short-Term Magnesium Therapy Alleviates Moderate Stress in Patients with Fibromyalgia: A Randomized Double-Blind Clinical Trial."
+  title: 'Short-Term Magnesium Therapy Alleviates Moderate Stress in Patients with Fibromyalgia: A Randomized Double-Blind Clinical Trial.'
   authors: Nicolas Macian, Christian Dualé, Marion Voute, Vincent Leray, Marion Courrent, Paula Bodé, Fatiha Giron, Sylvie Sonneville, Lise Bernard, Fabienne Joanny, Katell Menard, Gilles Ducheix, Bruno Pereira, Gisèle Pickering
   year: 2022
   url: https://doi.org/10.3390/nu14102088
@@ -745,7 +745,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Authors declared none.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: "Huperzine A for Alzheimer’s Disease: Systematic Review and Meta-Analysis"
+  title: 'Huperzine A for Alzheimer’s Disease: Systematic Review and Meta-Analysis'
   authors: Gao-Yuan Yang; Yan-Ying Wang; coauthors
   year: 2013
   url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0074916
@@ -758,7 +758,7 @@ x-order: 9007199254740991
   conflictOfInterestStatus: not-assessed
   doi: 10.1371/journal.pone.0074916
 - id: S13
-  title: "Short-Term Magnesium Supplementation Has Modest Detrimental Effects on Cycle Ergometer Exercise Performance and Skeletal Muscle Mitochondria and Negligible Effects on the Gut Microbiota: A Randomized Crossover Clinical Trial."
+  title: 'Short-Term Magnesium Supplementation Has Modest Detrimental Effects on Cycle Ergometer Exercise Performance and Skeletal Muscle Mitochondria and Negligible Effects on the Gut Microbiota: A Randomized Crossover Clinical Trial.'
   authors: Matthew C Bomar, Taylor R Ewell, Reagan L Brown, David M Brown, Beatrice S Kwarteng, Kieran S S Abbotts, Hannah M Butterklee, Natasha N B Williams, Scott D Wrigley, Maureen A Walsh, Karyn L Hamilton, David P Thomson, Tiffany L Weir, Christopher Bell
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/40077784/
@@ -770,7 +770,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Authors declared none.
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: "Oral magnesium supplementation does not affect insulin sensitivity in people with insulin-treated type 2 diabetes and a low serum magnesium: a randomised controlled trial."
+  title: 'Oral magnesium supplementation does not affect insulin sensitivity in people with insulin-treated type 2 diabetes and a low serum magnesium: a randomised controlled trial.'
   authors: Linda C A Drenthen, Jeroen H F de Baaij, Laura Rodwell, Antonius E van Herwaarden, Cees J Tack, Bastiaan E de Galan
   year: 2024
   url: https://doi.org/10.1007/s00125-023-06029-9
@@ -842,7 +842,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Petition submitted on behalf of the Center for Magnesium Education and Research LLC; FDA response is a separate regulatory assessment.
   conflictOfInterestStatus: not-assessed
 - id: S20
-  title: "GRN No. 419: L-alpha-glycerylphosphorylcholine"
+  title: 'GRN No. 419: L-alpha-glycerylphosphorylcholine'
   authors: U.S. Food and Drug Administration
   year: 2012
   url: https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=419&set=GrASNotices

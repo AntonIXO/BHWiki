@@ -3,14 +3,14 @@ slug: lutein
 name: lutein
 subtitle: Evidence-specific research record.
 aliases:
-  - lutein
+- lutein
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
 tags: []
-accent: "#888888"
+accent: '#888888'
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
 halfLife:
@@ -28,36 +28,37 @@ kinetics:
   metabolism: Lutein is transported in lipoproteins and can be converted to meso-zeaxanthin in retinal tissue.
   sourceId: S18
 x-shape:
-  - slug
-  - name
-  - subtitle
-  - summary
-  - description
-  - evidenceNote
-  - aliases
-  - formula
-  - molecularWeight
-  - pubchemCid
-  - smiles
-  - category
-  - tags
-  - accent
-  - reviewedAt
-  - editorialStatus
-  - halfLife
-  - pkObservations
-  - kinetics
-  - modifiers
-  - doses
-  - effects
-  - outcomes
-  - claims
-  - mechanisms
-  - cautions
-  - interactions
-  - experienceLinks
-  - references
-  - legal
+- slug
+- name
+- subtitle
+- summary
+- description
+- evidenceNote
+- aliases
+- formula
+- molecularWeight
+- pubchemCid
+- smiles
+- category
+- tags
+- accent
+- reviewedAt
+- editorialStatus
+- halfLife
+- pkObservations
+- kinetics
+- modifiers
+- doses
+- effects
+- outcomes
+- claims
+- mechanisms
+- cautions
+- interactions
+- experienceLinks
+- references
+- legal
+- externalWikiLinks
 x-order: 9007199254740991
 ---
 
@@ -72,6 +73,10 @@ Lutein does not provide vitamin-A activity. Human evidence separates lutein-only
 ## Evidence note
 
 The most reproducible human response is serum lutein and MPOD increase. Clinical visual effects are smaller and inconsistent, and no established RDA or official UL exists. Commercial funding and formulation differences are retained in the reference metadata.
+
+Reddit index corpus import (8 linked source records; 8 PubMed abstracts). Full-text methods, funding, and conflicts remain unassessed where the source record says so.
+
+PubMed MCP abstract review: 7 linked PubMed identifiers were retrieved for this Reddit-index entry; structured fields below are limited to abstract-supported findings. PMC full text was used where rights-eligible and available; remaining methods, funding, and conflicts are unassessed.
 
 ## Doses
 
@@ -151,6 +156,20 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
   purpose: Describe background intake
   note: Population intake estimate, not an intervention dose.
   sourceId: S10
+- label: PubMed study exposure (25251377)
+  amount: 20 mg
+  quantity: 20
+  quantityMax: null
+  unit: mg
+  ingredient: lutein
+  formulation: As described in the PubMed abstract
+  frequency: Study exposure
+  duration: Study exposure
+  population: To test this, we measured macular pigment density (as a biomarker of lutein and zeaxanthin levels in brain), critical flicker fusion (CFF) thresholds, and visual motor reaction time in young healthy subjects (n = 92).
+  purpose: Research exposure
+  sourceCategory: research
+  note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
+  sourceId: reddit-pmid-25251377
 ```
 
 ## Pharmacokinetics
@@ -285,8 +304,8 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
   magnitude: Primary overall result null; later exploratory HR 0.91 versus no lutein/zeaxanthin
   reportType: measured-assessment
   conflictingSourceIds:
-    - S3
-    - S4
+  - S3
+  - S4
 - sourceId: S4
   id: lutein-outcome-cognition
   conceptId: cognitive-performance
@@ -300,6 +319,90 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
   magnitude: Small or non-significant pooled effects
   reportType: measured-assessment
   conflictingSourceIds: []
+- id: reddit-lutein-attention-29135938
+  conceptId: attention
+  name: Attention
+  direction: Increased
+  evidence: Human research
+  description: 'Results: Supplementation increased MPOD significantly over the course of the year, vs. placebo (p < 0.001). Daily supplementation with L + Z and increases in MPOD resulted in significant improvements in spatial memory (p < 0.04), reasoning ability (p < 0.05) and complex attention (p < 0.04), above and beyond improvements due to practice effects.  Conclusions: Supplementation with L + Z improves CNS xanthophyll levels and cognitive function in young, healthy adults. Magnitudes of effects are similar to previous work reporting correlations between MPOD and cognition in other populations.'
+  sourceId: reddit-pmid-29135938
+  population: recruited as part of a larger study on xanthophylls and cognitive function
+  exposure: 'Results: Supplementation increased MPOD significantly over the course of the year, vs. placebo (p < 0.001). Daily supplementation with L + Z and increases in MPOD resulted in significant improvements in spatial memory (p < 0.04), reasoning ability (p < 0.05) and complex attention (p < 0.04), above and beyond improvements due to practice effects.  Conclusions: Supplementation with L + Z improves CNS xanthophyll levels and cognitive function in young, healthy adults. Magnitudes of effects are similar to previous work reporting correlations between MPOD and cognition in other populations.'
+  instrument: null
+  magnitude: null
+  reportType: measured-assessment
+- id: reddit-lutein-cognitive-performance-29135938
+  conceptId: cognitive-performance
+  name: Cognitive Performance
+  direction: Increased
+  evidence: Human research
+  description: 'Results: Supplementation increased MPOD significantly over the course of the year, vs. placebo (p < 0.001). Daily supplementation with L + Z and increases in MPOD resulted in significant improvements in spatial memory (p < 0.04), reasoning ability (p < 0.05) and complex attention (p < 0.04), above and beyond improvements due to practice effects.  Conclusions: Supplementation with L + Z improves CNS xanthophyll levels and cognitive function in young, healthy adults. Magnitudes of effects are similar to previous work reporting correlations between MPOD and cognition in other populations.'
+  sourceId: reddit-pmid-29135938
+  population: recruited as part of a larger study on xanthophylls and cognitive function
+  exposure: 'Results: Supplementation increased MPOD significantly over the course of the year, vs. placebo (p < 0.001). Daily supplementation with L + Z and increases in MPOD resulted in significant improvements in spatial memory (p < 0.04), reasoning ability (p < 0.05) and complex attention (p < 0.04), above and beyond improvements due to practice effects.  Conclusions: Supplementation with L + Z improves CNS xanthophyll levels and cognitive function in young, healthy adults. Magnitudes of effects are similar to previous work reporting correlations between MPOD and cognition in other populations.'
+  instrument: null
+  magnitude: null
+  reportType: measured-assessment
+- id: reddit-lutein-episodic-memory-29135938
+  conceptId: episodic-memory
+  name: Episodic Memory
+  direction: Increased
+  evidence: Human research
+  description: 'Results: Supplementation increased MPOD significantly over the course of the year, vs. placebo (p < 0.001). Daily supplementation with L + Z and increases in MPOD resulted in significant improvements in spatial memory (p < 0.04), reasoning ability (p < 0.05) and complex attention (p < 0.04), above and beyond improvements due to practice effects.  Conclusions: Supplementation with L + Z improves CNS xanthophyll levels and cognitive function in young, healthy adults. Magnitudes of effects are similar to previous work reporting correlations between MPOD and cognition in other populations.'
+  sourceId: reddit-pmid-29135938
+  population: recruited as part of a larger study on xanthophylls and cognitive function
+  exposure: 'Results: Supplementation increased MPOD significantly over the course of the year, vs. placebo (p < 0.001). Daily supplementation with L + Z and increases in MPOD resulted in significant improvements in spatial memory (p < 0.04), reasoning ability (p < 0.05) and complex attention (p < 0.04), above and beyond improvements due to practice effects.  Conclusions: Supplementation with L + Z improves CNS xanthophyll levels and cognitive function in young, healthy adults. Magnitudes of effects are similar to previous work reporting correlations between MPOD and cognition in other populations.'
+  instrument: null
+  magnitude: null
+  reportType: measured-assessment
+- id: reddit-lutein-cognitive-performance-27776568
+  conceptId: cognitive-performance
+  name: Cognitive Performance
+  direction: Increased
+  evidence: Human research
+  description: 'RESULTS: Following first-level contrasts of encoding and retrieval trials minus control trials (p<.05, family-wise error corrected, minimum voxel cluster=8), L and Z were found to significantly and negatively relate to blood-oxygen-level-dependent signal in central and parietal operculum cortex, inferior frontal gyrus, supramarginal gyrus, planum polare, frontal and middle temporal gyrus, superior parietal lobule, postcentral gyrus, precentral gyrus, occipital cortex bilaterally, and cerebellar regions.  CONCLUSIONS: To the authors'' knowledge, the present study represents the first attempt to investigate neural mechanisms underlying the relation of L and Z to cognition using fMRI. The observ'
+  sourceId: reddit-pmid-27776568
+  population: 'METHODS: Forty-three community-dwelling older adults (mean age=72 years; 58% female; 100% Caucasian) were asked to learn and recall pairs of unrelated words in an fMRI-adapted paradigm.'
+  exposure: 'RESULTS: Following first-level contrasts of encoding and retrieval trials minus control trials (p<.05, family-wise error corrected, minimum voxel cluster=8), L and Z were found to significantly and negatively relate to blood-oxygen-level-dependent signal in central and parietal operculum cortex, inferior frontal gyrus, supramarginal gyrus, planum polare, frontal and middle temporal gyrus, superior parietal lobule, postcentral gyrus, precentral gyrus, occipital cortex bilaterally, and cerebellar regions.  CONCLUSIONS: To the authors'' knowledge, the present study represents the first attempt to investigate neural mechanisms underlying the relation of L and Z to cognition using fMRI. The observ'
+  instrument: null
+  magnitude: null
+  reportType: measured-assessment
+- id: reddit-lutein-cognitive-performance-25008466
+  conceptId: cognitive-performance
+  name: Cognitive Performance
+  direction: Increased
+  evidence: Human research
+  description: 'RESULTS: MP density was related to many, but not all, of the puretone thresholds we tested: 250 Hz (F(6,32) = 4.36, P < 0.01), 500 Hz (F(6,32) = 2.25, P < 0.05), 1000 Hz (F(6,32) = 3.22, P < 0.05), and 6000 Hz (F(6,32) = 2.56, P < 0.05).  CONCLUSION: The overall pattern of results is consistent with a role for L and Z in maintaining optimal auditory function.'
+  sourceId: reddit-pmid-25008466
+  exposure: 'RESULTS: MP density was related to many, but not all, of the puretone thresholds we tested: 250 Hz (F(6,32) = 4.36, P < 0.01), 500 Hz (F(6,32) = 2.25, P < 0.05), 1000 Hz (F(6,32) = 3.22, P < 0.05), and 6000 Hz (F(6,32) = 2.56, P < 0.05).  CONCLUSION: The overall pattern of results is consistent with a role for L and Z in maintaining optimal auditory function.'
+  instrument: null
+  magnitude: null
+  reportType: measured-assessment
+  population: Population description was not available in the retrieved abstract.
+- id: reddit-lutein-cognitive-performance-26317757
+  conceptId: cognitive-performance
+  name: Cognitive Performance
+  direction: Variable
+  evidence: Human research
+  description: Lutein is a dietary carotenoid well known for its role as an antioxidant in the macula, and recent reports implicate a role for lutein in cognitive function. Lutein is the dominant carotenoid in both pediatric and geriatric brain tissue.
+  sourceId: reddit-pmid-26317757
+  population: In addition, cognitive function in older adults correlated with macular and postmortem brain lutein concentrations.
+  exposure: Lutein is a dietary carotenoid well known for its role as an antioxidant in the macula, and recent reports implicate a role for lutein in cognitive function. Lutein is the dominant carotenoid in both pediatric and geriatric brain tissue.
+  instrument: null
+  magnitude: null
+  reportType: measured-assessment
+- id: reddit-lutein-episodic-memory-26317757
+  conceptId: episodic-memory
+  name: Episodic Memory
+  direction: Variable
+  evidence: Human research
+  description: Lutein is a dietary carotenoid well known for its role as an antioxidant in the macula, and recent reports implicate a role for lutein in cognitive function. Lutein is the dominant carotenoid in both pediatric and geriatric brain tissue.
+  sourceId: reddit-pmid-26317757
+  population: In addition, cognitive function in older adults correlated with macular and postmortem brain lutein concentrations.
+  exposure: Lutein is a dietary carotenoid well known for its role as an antioxidant in the macula, and recent reports implicate a role for lutein in cognitive function. Lutein is the dominant carotenoid in both pediatric and geriatric brain tissue.
+  instrument: null
+  magnitude: null
+  reportType: measured-assessment
 ```
 
 ## Mechanisms
@@ -314,6 +417,15 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
 - title: Systemic and neural hypotheses
   description: Antioxidant, anti-inflammatory and membrane effects are biologically plausible, but human cognition trials remain inconsistent.
   sourceId: S11
+- title: Source-specific finding from PMID 25251377
+  description: 'Lutein and zeaxanthin are major carotenoids in the eye but are also found in post-receptoral visual pathways. It has been hypothesized that these pigments influence the processing of visual signals within and post-retina, and that increasing lutein and zeaxanthin levels within the visual system will lead to increased visual processing speeds.'
+  sourceId: reddit-pmid-25251377
+- title: Source-specific finding from PMID 27776568
+  description: 'RESULTS: Following first-level contrasts of encoding and retrieval trials minus control trials (p<.05, family-wise error corrected, minimum voxel cluster=8), L and Z were found to significantly and negatively relate to blood-oxygen-level-dependent signal in central and parietal operculum cortex, inferior frontal gyrus, supramarginal gyrus, planum polare, frontal and middle temporal gyrus, superior parietal lobule, postcentral gyrus, precentral gyrus, occipital cortex bilaterally, and cerebellar regions.  CONCLUSIONS: To the authors'' knowledge, the present study represents the first attempt to investigate neural mechanisms underlying the relation of L and Z to cognition using fMRI. The observ'
+  sourceId: reddit-pmid-27776568
+- title: Source-specific finding from PMID 26317757
+  description: 'Lutein is a dietary carotenoid well known for its role as an antioxidant in the macula, and recent reports implicate a role for lutein in cognitive function. Lutein is the dominant carotenoid in both pediatric and geriatric brain tissue.'
+  sourceId: reddit-pmid-26317757
 ```
 
 ## Cautions
@@ -334,6 +446,9 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
 - title: Population limits
   description: Pregnancy, lactation, inherited carotenoid disorders, unusual retinal disease and children remain less studied than healthy adults.
   sourceId: S16
+- title: Source-specific finding from PMID 26566524
+  description: 'Lutein is one of the most prevalent carotenoids in nature and in the human diet. Together with zeaxanthin, it is highly concentrated as macular pigment in the foveal retina of primates, attenuating blue light exposure, providing protection from photo-oxidation and enhancing visual performance.'
+  sourceId: reddit-pmid-26566524
 ```
 
 ## Claims
@@ -343,15 +458,15 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
   assertion: Lutein raises serum lutein and often MPOD
   relation: evidence-boundary
   participants:
-    - entityId: substance:lutein
-      role: intervention
-    - entityId: tag:macular-pigment-optical-density
-      role: outcome
+  - entityId: substance:lutein
+    role: intervention
+  - entityId: tag:macular-pigment-optical-density
+    role: outcome
   context: Lutein-only and mixed-carotenoid human studies repeatedly show biomarker increases.
   sourceIds:
-    - S6
-    - S9
-    - S10
+  - S6
+  - S9
+  - S10
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Biomarker response does not establish clinical disease benefit.
@@ -359,14 +474,14 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
   assertion: Lutein alone prevents or slows AMD
   relation: evidence-boundary
   participants:
-    - entityId: substance:lutein
-      role: intervention
-    - entityId: tag:visual-acuity
-      role: disease outcome context
+  - entityId: substance:lutein
+    role: intervention
+  - entityId: tag:visual-acuity
+    role: disease outcome context
   context: Direct lutein-only disease-progression evidence is insufficient; AREDS2 is combination evidence.
   sourceIds:
-    - S2
-    - S4
+  - S2
+  - S4
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: High-risk AMD population and background formula prevent clean lutein-monotherapy inference.
@@ -374,17 +489,129 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
   assertion: Lutein improves cognition
   relation: evidence-boundary
   participants:
-    - entityId: substance:lutein
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: outcome
+  - entityId: substance:lutein
+    role: intervention
+  - entityId: tag:cognitive-performance
+    role: outcome
   context: Pooled randomized cognitive effects were small and not statistically significant.
   sourceIds:
-    - S11
-    - S12
+  - S11
+  - S12
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Cognition was often secondary and interventions were heterogeneous.
+- id: reddit-claim-lutein-29135938-0
+  assertion: 'PMID 29135938 reports: Results: Supplementation increased MPOD significantly over the course of the year, vs. placebo (p < 0.001). Daily supplementation with L + Z and increases in MPOD resulted in significant improvements in spatial memory (p < 0.04), reasoning ability (p < 0.05) and complex attention (p < 0.04), above and beyond improvements due to practice effects.  Conclusions: Supplementation with L + Z improves CNS xanthophyll levels and cognitive function in young, healthy adults. Magnitudes of effects are similar to previous work reporting correlations between MPOD and cognition in other populations.'
+  relation: associated-with
+  participants:
+  - entityId: substance:lutein
+    role: intervention or exposure
+  - entityId: tag:episodic-memory
+    role: reported endpoint
+  context: Publication abstract; direction and population are retained on the linked observation.
+  sourceIds:
+  - reddit-pmid-29135938
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
+- id: reddit-claim-lutein-25483230-1
+  assertion: lutein is associated with the reported episodic memory finding in this publication.
+  relation: associated-with
+  participants:
+  - entityId: substance:lutein
+    role: intervention or exposure
+  - entityId: tag:episodic-memory
+    role: reported endpoint
+  context: Publication abstract; direction and population are retained on the linked observation.
+  sourceIds:
+  - reddit-pmid-25483230
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
+- id: reddit-claim-lutein-25251377-2
+  assertion: 'PMID 25251377 reports: Lutein and zeaxanthin are major carotenoids in the eye but are also found in post-receptoral visual pathways. It has been hypothesized that these pigments influence the processing of visual signals within and post-retina, and that increasing lutein and zeaxanthin levels within the visual system will lead to increased visual processing speeds.'
+  relation: associated-with
+  participants:
+  - entityId: substance:lutein
+    role: intervention or exposure
+  - entityId: tag:episodic-memory
+    role: reported endpoint
+  context: Publication abstract; direction and population are retained on the linked observation.
+  sourceIds:
+  - reddit-pmid-25251377
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
+- id: reddit-claim-lutein-27776568-3
+  assertion: 'PMID 27776568 reports: RESULTS: Following first-level contrasts of encoding and retrieval trials minus control trials (p<.05, family-wise error corrected, minimum voxel cluster=8), L and Z were found to significantly and negatively relate to blood-oxygen-level-dependent signal in central and parietal operculum cortex, inferior frontal gyrus, supramarginal gyrus, planum polare, frontal and middle temporal gyrus, superior parietal lobule, postcentral gyrus, precentral gyrus, occipital cortex bilaterally, and cerebellar regions.  CONCLUSIONS: To the authors'' knowledge, the present study represents the first attempt to investigate neural mechanisms underlying the relation of L and Z to cognition using fMRI. The observ'
+  relation: associated-with
+  participants:
+  - entityId: substance:lutein
+    role: intervention or exposure
+  - entityId: tag:cognitive-performance
+    role: reported endpoint
+  context: Publication abstract; direction and population are retained on the linked observation.
+  sourceIds:
+  - reddit-pmid-27776568
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
+- id: reddit-claim-lutein-25008466-4
+  assertion: 'PMID 25008466 reports: RESULTS: MP density was related to many, but not all, of the puretone thresholds we tested: 250 Hz (F(6,32) = 4.36, P < 0.01), 500 Hz (F(6,32) = 2.25, P < 0.05), 1000 Hz (F(6,32) = 3.22, P < 0.05), and 6000 Hz (F(6,32) = 2.56, P < 0.05).  CONCLUSION: The overall pattern of results is consistent with a role for L and Z in maintaining optimal auditory function.'
+  relation: associated-with
+  participants:
+  - entityId: substance:lutein
+    role: intervention or exposure
+  - entityId: tag:cognitive-performance
+    role: reported endpoint
+  context: Publication abstract; direction and population are retained on the linked observation.
+  sourceIds:
+  - reddit-pmid-25008466
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
+- id: reddit-claim-lutein-26317757-5
+  assertion: 'PMID 26317757 reports: Lutein is a dietary carotenoid well known for its role as an antioxidant in the macula, and recent reports implicate a role for lutein in cognitive function. Lutein is the dominant carotenoid in both pediatric and geriatric brain tissue.'
+  relation: associated-with
+  participants:
+  - entityId: substance:lutein
+    role: intervention or exposure
+  - entityId: tag:episodic-memory
+    role: reported endpoint
+  context: Publication abstract; direction and population are retained on the linked observation.
+  sourceIds:
+  - reddit-pmid-26317757
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
+- id: reddit-claim-lutein-16988120-6
+  assertion: 'PMID 16988120 reports: Lutein and zeaxanthin accumulate in the macular pigment of the retina, and are reported to be associated with a reduced incidence of age-related macular degeneration. A rich source of lutein and zeaxanthin in the American diet is the yolk of chicken eggs.'
+  relation: associated-with
+  participants:
+  - entityId: substance:lutein
+    role: intervention or exposure
+  - entityId: tag:episodic-memory
+    role: reported endpoint
+  context: Publication abstract; direction and population are retained on the linked observation.
+  sourceIds:
+  - reddit-pmid-16988120
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
+- id: reddit-claim-lutein-26566524-7
+  assertion: 'PMID 26566524 reports: Lutein is one of the most prevalent carotenoids in nature and in the human diet. Together with zeaxanthin, it is highly concentrated as macular pigment in the foveal retina of primates, attenuating blue light exposure, providing protection from photo-oxidation and enhancing visual performance.'
+  relation: associated-with
+  participants:
+  - entityId: substance:lutein
+    role: intervention or exposure
+  - entityId: tag:episodic-memory
+    role: reported endpoint
+  context: Publication abstract; direction and population are retained on the linked observation.
+  sourceIds:
+  - reddit-pmid-26566524
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
 ```
 
 ## Interactions
@@ -410,6 +637,17 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
 []
 ```
 
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Lutein
+  title: Wikipedia
+- service: Examine
+  url: https://examine.com/supplements/lutein
+  title: Examine.com
+```
+
 ## References
 
 ```yaml
@@ -427,7 +665,7 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://www.nei.nih.gov/eye-health-information/clinical-trials/age-related-eye-disease-studies-aredsareds2/about-areds-and-areds2
 - id: S2
-  title: "Lutein + Zeaxanthin and Omega-3 Fatty Acids for Age-Related Macular Degeneration: The Age-Related Eye Disease Study 2 (AREDS2) Randomized Clinical Trial"
+  title: 'Lutein + Zeaxanthin and Omega-3 Fatty Acids for Age-Related Macular Degeneration: The Age-Related Eye Disease Study 2 (AREDS2) Randomized Clinical Trial'
   authors: AREDS2 Research Group
   year: 2013
   url: https://jamanetwork.com/journals/jama/fullarticle/1684847
@@ -489,7 +727,7 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
-  pmid: "22858124"
+  pmid: '22858124'
   doi: 10.1016/j.ophtha.2012.06.014
 - id: S7
   title: Effect of supplemental lutein and zeaxanthin on serum, macular pigmentation, and visual performance in patients with early age-related macular degeneration
@@ -515,7 +753,7 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
-  pmid: "25468896"
+  pmid: '25468896'
   doi: 10.1167/iovs.14-15573
 - id: S9
   title: Clinical Effects of Dietary Supplementation of Lutein with High Bio-Accessibility on Macular Pigment Optical Density and Contrast Sensitivity
@@ -531,7 +769,7 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/32998324/
 - id: S10
-  title: "The Effect of Lutein/Zeaxanthin Intake on Human Macular Pigment Optical Density: A Systematic Review and Meta-Analysis"
+  title: 'The Effect of Lutein/Zeaxanthin Intake on Human Macular Pigment Optical Density: A Systematic Review and Meta-Analysis'
   authors: Lisa M. Wilson; Saraniya Tharmarajah; Yuanxi Jia; Richard D. Semba; Debra A. Schaumberg; Karen A. Robinson
   year: 2021
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8634499/
@@ -544,7 +782,7 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC8634499/
 - id: S11
-  title: "Dietary Lutein and Cognitive Function in Adults: A Meta-Analysis of Randomized Controlled Trials"
+  title: 'Dietary Lutein and Cognitive Function in Adults: A Meta-Analysis of Randomized Controlled Trials'
   authors: Jeffrey Li; El-Sayed M. Abdel-Aal
   year: 2021
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8510423/
@@ -556,7 +794,7 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: "Effect of Omega-3 Fatty Acids, Lutein/Zeaxanthin, or Other Nutrient Supplementation on Cognitive Function: The AREDS2 Randomized Clinical Trial"
+  title: 'Effect of Omega-3 Fatty Acids, Lutein/Zeaxanthin, or Other Nutrient Supplementation on Cognitive Function: The AREDS2 Randomized Clinical Trial'
   authors: Emily Y. Chew; Traci E. Clemons; Elvira Agrón; Lenore J. Launer; Francine Grodstein; Paul S. Bernstein; AREDS2 Research Group
   year: 2015
   url: https://jamanetwork.com/journals/jama/fullarticle/2429713
@@ -654,6 +892,118 @@ The most reproducible human response is serum lutein and MPOD increase. Clinical
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://clinicaltrials.gov/study/NCT00879671
+- id: reddit-pmid-29135938
+  title: 'Effects of a Lutein and Zeaxanthin Intervention on Cognitive Function: A Randomized, Double-Masked, Placebo-Controlled Trial of Younger Healthy Adults.'
+  authors: Lisa M Renzi-Hammond, Emily R Bovier, Laura M Fletcher, L Stephen Miller, Catherine M Mewborn, Cutter A Lindbergh, Jeffrey H Baxter, Billy R Hammond
+  year: 2017
+  url: https://pubmed.ncbi.nlm.nih.gov/29135938/
+  kind: PubMed publication
+  insight: 'Results: Supplementation increased MPOD significantly over the course of the year, vs. placebo (p < 0.001). Daily supplementation with L + Z and increases in MPOD resulted in significant improvements in spatial memory (p < 0.04), reasoning ability (p < 0.05) and complex attention (p < 0.04), above and beyond improvements due to practice effects.  Conclusions: Supplementation with L + Z improves CNS xanthophyll levels and cognitive function in young, healthy adults. Magnitudes of effects are similar to previous work reporting correlations between MPOD and cognition in other populations.'
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '29135938'
+  doi: 10.3390/nu9111246
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-25483230
+  title: A randomized placebo-controlled study on the effects of lutein and zeaxanthin on visual processing speed in young healthy subjects.
+  authors: Emily R Bovier, Billy R Hammond
+  year: 2015
+  url: https://pubmed.ncbi.nlm.nih.gov/25483230/
+  kind: PubMed publication
+  insight: Speed of processing is a particularly important characteristic of the visual system.
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '25483230'
+  doi: 10.1016/j.abb.2014.11.012
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-25251377
+  title: A double-blind, placebo-controlled study on the effects of lutein and zeaxanthin on neural processing speed and efficiency.
+  authors: Emily R Bovier, Lisa M Renzi, Billy R Hammond
+  year: 2014
+  url: https://pubmed.ncbi.nlm.nih.gov/25251377/
+  kind: PubMed publication
+  insight: Lutein and zeaxanthin are major carotenoids in the eye but are also found in post-receptoral visual pathways. It has been hypothesized that these pigments influence the processing of visual signals within and post-retina, and that increasing lutein and zeaxanthin levels within the visual system will lead to increased visual processing speeds.
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '25251377'
+  doi: 10.1371/journal.pone.0108178
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-27776568
+  title: 'Relationship of Lutein and Zeaxanthin Levels to Neurocognitive Functioning: An fMRI Study of Older Adults.'
+  authors: Cutter A Lindbergh, Catherine M Mewborn, Billy R Hammond, Lisa M Renzi-Hammond, Joanne M Curran-Celentano, L Stephen Miller
+  year: 2017
+  url: https://pubmed.ncbi.nlm.nih.gov/27776568/
+  kind: PubMed publication
+  insight: 'RESULTS: Following first-level contrasts of encoding and retrieval trials minus control trials (p<.05, family-wise error corrected, minimum voxel cluster=8), L and Z were found to significantly and negatively relate to blood-oxygen-level-dependent signal in central and parietal operculum cortex, inferior frontal gyrus, supramarginal gyrus, planum polare, frontal and middle temporal gyrus, superior parietal lobule, postcentral gyrus, precentral gyrus, occipital cortex bilaterally, and cerebellar regions.  CONCLUSIONS: To the authors'' knowledge, the present study represents the first attempt to investigate neural mechanisms underlying the relation of L and Z to cognition using fMRI. The observ'
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '27776568'
+  doi: 10.1017/S1355617716000850
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-25008466
+  title: Lutein and zeaxanthin status and auditory thresholds in a sample of young healthy adults.
+  authors: Jennifer C Wong, Holly S Kaplan, Billy R Hammond
+  year: 2017
+  url: https://pubmed.ncbi.nlm.nih.gov/25008466/
+  kind: PubMed publication
+  insight: 'RESULTS: MP density was related to many, but not all, of the puretone thresholds we tested: 250 Hz (F(6,32) = 4.36, P < 0.01), 500 Hz (F(6,32) = 2.25, P < 0.05), 1000 Hz (F(6,32) = 3.22, P < 0.05), and 6000 Hz (F(6,32) = 2.56, P < 0.05).  CONCLUSION: The overall pattern of results is consistent with a role for L and Z in maintaining optimal auditory function.'
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '25008466'
+  doi: 10.1179/1476830514Y.0000000138
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-26317757
+  title: Exploratory Metabolomic Analyses Reveal Compounds Correlated with Lutein Concentration in Frontal Cortex, Hippocampus, and Occipital Cortex of Human Infant Brain.
+  authors: Jacqueline C Lieblein-Boff, Elizabeth J Johnson, Adam D Kennedy, Chron-Si Lai, Matthew J Kuchan
+  year: 2015
+  url: https://pubmed.ncbi.nlm.nih.gov/26317757/
+  kind: PubMed publication
+  insight: Lutein is a dietary carotenoid well known for its role as an antioxidant in the macula, and recent reports implicate a role for lutein in cognitive function. Lutein is the dominant carotenoid in both pediatric and geriatric brain tissue.
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '26317757'
+  doi: 10.1371/journal.pone.0136904
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-16988120
+  title: Consumption of one egg per day increases serum lutein and zeaxanthin concentrations in older adults without altering serum lipid and lipoprotein cholesterol concentrations.
+  authors: Elizabeth F Goodrow, Thomas A Wilson, Susan Crocker Houde, Rohini Vishwanathan, Patrick A Scollin, Garry Handelman, Robert J Nicolosi
+  year: 2006
+  url: https://pubmed.ncbi.nlm.nih.gov/16988120/
+  kind: PubMed publication
+  insight: Lutein and zeaxanthin accumulate in the macular pigment of the retina, and are reported to be associated with a reduced incidence of age-related macular degeneration. A rich source of lutein and zeaxanthin in the American diet is the yolk of chicken eggs.
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '16988120'
+  doi: 10.1093/jn/136.10.2519
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-26566524
+  title: Lutein and Brain Function.
+  authors: John W Erdman, Joshua W Smith, Matthew J Kuchan, Emily S Mohn, Elizabeth J Johnson, Stanislav S Rubakhin, Lin Wang, Jonathan V Sweedler, Martha Neuringer
+  year: 2015
+  url: https://pubmed.ncbi.nlm.nih.gov/26566524/
+  kind: PubMed publication
+  insight: Lutein is one of the most prevalent carotenoids in nature and in the human diet. Together with zeaxanthin, it is highly concentrated as macular pigment in the foveal retina of primates, attenuating blue light exposure, providing protection from photo-oxidation and enhancing visual performance.
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '26566524'
+  doi: 10.3390/foods4040547
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal

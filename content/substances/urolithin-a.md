@@ -491,7 +491,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   kind: preclinical mechanistic study
   insight: Established UA-induced mitophagy and functional effects in C. elegans and rodent muscle models.
   limitation: Predominantly preclinical evidence; lifespan and muscle effects cannot be directly extrapolated to humans.
-  pmid: "27400265"
+  pmid: '27400265'
   doi: 10.1038/nm.4132
   funding: Funding details were not fully reassessed from the primary declaration during this run.
   sponsorshipStatus: not-assessed
@@ -505,7 +505,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   kind: preclinical toxicology and safety assessment
   insight: Genotoxicity and repeated-dose toxicology testing did not identify target-organ toxicity at the highest tested rat exposures and supported subsequent regulatory safety assessment.
   limitation: Animal toxicology cannot be converted into a human therapeutic dose or long-term human safety guarantee.
-  pmid: "28757461"
+  pmid: '28757461'
   doi: 10.1016/j.fct.2017.07.050
   funding: The underlying data were associated with commercial development of UA; complete publication funding wording was not independently reassessed.
   sponsorshipStatus: not-assessed
@@ -531,7 +531,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   kind: first-in-human randomized phase I study
   insight: Single and repeated oral UA was bioavailable and had a favorable short-term safety profile; 500 and 1,000 mg/day for 28 days altered plasma acylcarnitines and skeletal-muscle mitochondrial gene expression.
   limitation: Small early-phase study emphasizing safety and molecular biomarkers rather than clinical efficacy; detailed analyte-specific PK values were in supplementary information not independently retrievable in this review.
-  pmid: "32694802"
+  pmid: '32694802'
   doi: 10.1038/s42255-019-0073-4
   funding: Amazentis SA was the clinical-study sponsor; the publication also acknowledged grant support from Fondation Suisse de Recherche sur les Maladies Musculaires and Fondation Marcel Levaillant.
   sponsorshipStatus: mixed-funding
@@ -546,7 +546,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   kind: randomized crossover bioavailability study
   insight: Among 100 healthy adults, direct 500 mg UA produced far greater and more consistent circulating exposure than pomegranate juice; only a subset efficiently generated UA from dietary precursors.
   limitation: Open-label acute bioavailability study; it establishes exposure differences, not comparative clinical benefit of UA versus pomegranate.
-  pmid: "34117375"
+  pmid: '34117375'
   doi: 10.1038/s41430-021-00950-1
   funding: Amazentis SA was the registered lead sponsor of NCT04160312.
   sponsorshipStatus: industry-funded
@@ -554,14 +554,14 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC8821002/
 - id: liu-2022-energize
-  title: "Effect of Urolithin A Supplementation on Muscle Endurance and Mitochondrial Health in Older Adults: A Randomized Clinical Trial"
+  title: 'Effect of Urolithin A Supplementation on Muscle Endurance and Mitochondrial Health in Older Adults: A Randomized Clinical Trial'
   authors: Sophia Liu, Davide D'Amico, Eric Shankland, Saakshi Bhayana, Jose M Garcia, Patrick Aebischer, Chris Rinsch, Anurag Singh, David J Marcinek
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8777576/
   kind: randomized double-blind placebo-controlled clinical trial
   insight: 1,000 mg/day for four months improved selected muscle-endurance and plasma biomarker measures, while 6-minute-walk distance and maximal ATP-production primary outcomes were not significantly better than placebo.
   limitation: Only 66 participants; all participants were White and approximately three quarters were women; positive findings were predominantly secondary outcomes.
-  pmid: "35050355"
+  pmid: '35050355'
   doi: 10.1001/jamanetworkopen.2021.44279
   funding: Research was supported by Amazentis SA; the funder was reported to have roles in study design/conduct, data handling and analysis/interpretation, manuscript activities and the decision to submit.
   sponsorshipStatus: industry-funded
@@ -576,7 +576,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   kind: randomized double-blind placebo-controlled clinical trial
   insight: Selected hamstring-strength measures improved with 500 and 1,000 mg/day UA, and muscle molecular analyses showed mitochondrial/mitophagy-associated changes; the prespecified peak-power endpoint was not significantly improved.
   limitation: Proof-of-concept trial with 88 randomized participants, multiple exploratory/secondary outcomes and some favorable changes driven partly by deterioration in placebo; several whole-body comparisons did not reach significance.
-  pmid: "35584623"
+  pmid: '35584623'
   doi: 10.1016/j.xcrm.2022.100633
   funding: The study was funded by Amazentis SA.
   sponsorshipStatus: industry-funded
@@ -584,14 +584,14 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC9133463/
 - id: zhao-2024-athletes
-  title: "Assessment of Urolithin A effects on muscle endurance, strength, inflammation, oxidative stress, and protein metabolism in male athletes with resistance training: an 8-week randomized, double-blind, placebo-controlled study"
+  title: 'Assessment of Urolithin A effects on muscle endurance, strength, inflammation, oxidative stress, and protein metabolism in male athletes with resistance training: an 8-week randomized, double-blind, placebo-controlled study'
   authors: Haotian Zhao, Hongkang Zhu, Hezhang Yun, Jingqi Liu, Ge Song, Jin Teng, Dixin Zou, Naiyan Lu, Chang Liu
   year: 2024
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11536656/
   kind: randomized double-blind placebo-controlled clinical trial
   insight: In 20 resistance-trained men, 1,000 mg/day improved MVIC and repetitions to failure versus placebo, whereas bench-press and squat 1RM changes were not significant.
   limitation: Very small single-sex study; multiple endpoints and no reported confidence intervals for the principal between-group findings.
-  pmid: "39487653"
+  pmid: '39487653'
   doi: 10.1080/15502783.2024.2419388
   funding: Supported by the 14th Five-Year Education Plan of Jiangsu Province (C/2022/01/78).
   sponsorshipStatus: non-industry-funded
@@ -606,7 +606,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   kind: randomized double-blind placebo-controlled clinical trial
   insight: 1,000 mg/day during a four-week altitude camp reduced selected muscle-damage/recovery signals and altered muscle proteomic pathways but did not significantly improve 3,000 m time-trial performance.
   limitation: Only 42 male elite runners; time-trial and biopsy analyses used still smaller subsets and concurrent altitude training strongly influenced physiological adaptation.
-  pmid: "40839339"
+  pmid: '40839339'
   doi: 10.1007/s40279-025-02292-5
   funding: Research funding from Amazentis SA was disclosed to senior investigators.
   sponsorshipStatus: industry-funded
@@ -614,14 +614,14 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12628386/
 - id: denk-2025-immune
-  title: "Effect of the mitophagy inducer urolithin A on age-related immune decline: a randomized, placebo-controlled trial"
+  title: 'Effect of the mitophagy inducer urolithin A on age-related immune decline: a randomized, placebo-controlled trial'
   authors: Dominic Denk, Anurag Singh, Herbert G Kasler, Davide D'Amico, Julia Rey, Lucía Alcober-Boquet, Johanna M Gorol, Christoph Steup, Ritesh Tiwari, Ryan Kwok, Rafael J Argüello, Julie Faitg, Kathrin Sprinzl, Stefan Zeuzem, Valentina Nekljudova, Sibylle Loibl, Eric Verdin, Chris Rinsch, Florian R Greten
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12618261/
   kind: randomized double-blind placebo-controlled clinical trial
   insight: 1,000 mg/day for four weeks altered CD8 T-cell phenotype and fatty-acid-oxidation capacity and changed additional immune-cell functional and transcriptional endpoints.
   limitation: Short 50-person trial focused on cellular immune phenotypes and ex-vivo functions rather than infection rates or other patient-centered clinical endpoints.
-  pmid: "41174221"
+  pmid: '41174221'
   doi: 10.1038/s43587-025-00996-x
   funding: Amazentis SA funded the study and supplied the investigational product.
   sponsorshipStatus: industry-funded
@@ -636,7 +636,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   kind: systematic review and meta-analysis
   insight: Five RCTs with 236 participants were identified. Pooled 6-minute-walk improvement was +17.03 m (95% CI -5.33 to 39.40) and statistically inconclusive; GRADE certainty was low, while other outcomes were too heterogeneous for quantitative pooling.
   limitation: Only two studies contributed to the pooled 6-minute-walk analysis and the included populations, outcomes and training states were heterogeneous.
-  pmid: "42559151"
+  pmid: '42559151'
   doi: 10.3389/fnut.2026.1834344
   funding: The full funding declaration was not independently extracted during this review.
   sponsorshipStatus: not-assessed
@@ -693,7 +693,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictOfInterestStatus: declared
   disclosureUrl: https://www.amazentis.com/
 - id: ec-urolithin-a-novel-food-application
-  title: "Novel Food application: Urolithin A — Amazentis SA"
+  title: 'Novel Food application: Urolithin A — Amazentis SA'
   authors: European Commission
   year: 2018
   url: https://food.ec.europa.eu/document/download/8f10d273-65cb-4450-85cb-4bf389d8670c_en?filename=novel-food_sum_ongoing-app_2018-0538.pdf
@@ -705,19 +705,21 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: Not applicable to regulatory record; classified as not-assessed.
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s1
-  title: "Direct source link: https://pubmed.ncbi.nlm.nih.gov/32694802/"
-  authors: Publication metadata not assessed in the returned report
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/32694802/
-  kind: Research source link
+  title: The mitophagy activator urolithin A is safe and induces a molecular signature of improved mitochondrial and cellular health in humans
+  authors: Pénélope A Andreux, William Blanco-Bose, Dongryeol Ryu, Frédéric Burdet, Mark Ibberson, Patrick Aebischer, Johan Auwerx, Anurag Singh, Chris Rinsch
+  year: 2019
+  url: https://www.nature.com/articles/s42255-019-0073-4
+  kind: first-in-human randomized phase I study
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
+  doi: 10.1038/s42255-019-0073-4
+  pmid: '32694802'
 - id: dr-urolithin-a-s2
-  title: "Direct source link: https://doi.org/10.1038/s42255-019-0073-4"
+  title: 'Direct source link: https://doi.org/10.1038/s42255-019-0073-4'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1038/s42255-019-0073-4
@@ -729,7 +731,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s3
-  title: "Direct source link: https://clinicaltrials.gov/study/NCT02655393"
+  title: 'Direct source link: https://clinicaltrials.gov/study/NCT02655393'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://clinicaltrials.gov/study/NCT02655393
@@ -741,19 +743,21 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s4
-  title: "Direct source link: https://pubmed.ncbi.nlm.nih.gov/34117375/"
-  authors: Publication metadata not assessed in the returned report
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/34117375/
-  kind: Research source link
+  title: Direct supplementation with Urolithin A overcomes limitations of dietary exposure and gut microbiome variability in healthy adults to achieve consistent levels across the population
+  authors: Anurag Singh, Davide D'Amico, Pénélope A Andreux, Gillian Dunngalvin, Timo Kern, William Blanco-Bose, Johan Auwerx, Patrick Aebischer, Chris Rinsch
+  year: 2022
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8821002/
+  kind: randomized crossover bioavailability study
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
+  doi: 10.1038/s41430-021-00950-1
+  pmid: '34117375'
 - id: dr-urolithin-a-s5
-  title: "Direct source link: https://doi.org/10.1038/s41430-021-00950-1"
+  title: 'Direct source link: https://doi.org/10.1038/s41430-021-00950-1'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1038/s41430-021-00950-1
@@ -765,19 +769,21 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s6
-  title: "Direct source link: https://pubmed.ncbi.nlm.nih.gov/35050355/"
-  authors: Publication metadata not assessed in the returned report
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/35050355/
-  kind: Research source link
+  title: 'Effect of Urolithin A Supplementation on Muscle Endurance and Mitochondrial Health in Older Adults: A Randomized Clinical Trial'
+  authors: Sophia Liu, Davide D'Amico, Eric Shankland, Saakshi Bhayana, Jose M Garcia, Patrick Aebischer, Chris Rinsch, Anurag Singh, David J Marcinek
+  year: 2022
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8777576/
+  kind: randomized double-blind placebo-controlled clinical trial
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
+  doi: 10.1001/jamanetworkopen.2021.44279
+  pmid: '35050355'
 - id: dr-urolithin-a-s7
-  title: "Direct source link: https://doi.org/10.1001/jamanetworkopen.2021.44279"
+  title: 'Direct source link: https://doi.org/10.1001/jamanetworkopen.2021.44279'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1001/jamanetworkopen.2021.44279
@@ -789,7 +795,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s8
-  title: "Direct source link: https://clinicaltrials.gov/study/NCT03283462"
+  title: 'Direct source link: https://clinicaltrials.gov/study/NCT03283462'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://clinicaltrials.gov/study/NCT03283462
@@ -801,19 +807,21 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s9
-  title: "Direct source link: https://pubmed.ncbi.nlm.nih.gov/35584623/"
-  authors: Publication metadata not assessed in the returned report
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/35584623/
-  kind: Research source link
+  title: Urolithin A improves muscle strength, exercise performance, and biomarkers of mitochondrial health in a randomized trial in middle-aged adults
+  authors: Anurag Singh, Davide D'Amico, Pénélope A Andreux, Andréane M Fouassier, William Blanco-Bose, Mal Evans, Patrick Aebischer, Johan Auwerx, Chris Rinsch
+  year: 2022
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9133463/
+  kind: randomized double-blind placebo-controlled clinical trial
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
+  doi: 10.1016/j.xcrm.2022.100633
+  pmid: '35584623'
 - id: dr-urolithin-a-s10
-  title: "Direct source link: https://doi.org/10.1016/j.xcrm.2022.100633"
+  title: 'Direct source link: https://doi.org/10.1016/j.xcrm.2022.100633'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1016/j.xcrm.2022.100633
@@ -825,7 +833,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s11
-  title: "Direct source link: https://clinicaltrials.gov/study/NCT03464500"
+  title: 'Direct source link: https://clinicaltrials.gov/study/NCT03464500'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://clinicaltrials.gov/study/NCT03464500
@@ -837,19 +845,21 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s12
-  title: "Direct source link: https://pubmed.ncbi.nlm.nih.gov/39487653/"
-  authors: Publication metadata not assessed in the returned report
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/39487653/
-  kind: Research source link
+  title: 'Assessment of Urolithin A effects on muscle endurance, strength, inflammation, oxidative stress, and protein metabolism in male athletes with resistance training: an 8-week randomized, double-blind, placebo-controlled study'
+  authors: Haotian Zhao, Hongkang Zhu, Hezhang Yun, Jingqi Liu, Ge Song, Jin Teng, Dixin Zou, Naiyan Lu, Chang Liu
+  year: 2024
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11536656/
+  kind: randomized double-blind placebo-controlled clinical trial
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
+  doi: 10.1080/15502783.2024.2419388
+  pmid: '39487653'
 - id: dr-urolithin-a-s13
-  title: "Direct source link: https://doi.org/10.1080/15502783.2024.2419388"
+  title: 'Direct source link: https://doi.org/10.1080/15502783.2024.2419388'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1080/15502783.2024.2419388
@@ -861,7 +871,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s14
-  title: "Direct source link: https://pubmed.ncbi.nlm.nih.gov/38415449/"
+  title: 'Direct source link: https://pubmed.ncbi.nlm.nih.gov/38415449/'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/38415449/
@@ -873,7 +883,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s15
-  title: "Direct source link: https://doi.org/10.2174/0115748871279354240209101604"
+  title: 'Direct source link: https://doi.org/10.2174/0115748871279354240209101604'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.2174/0115748871279354240209101604
@@ -885,19 +895,21 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s16
-  title: "Direct source link: https://pubmed.ncbi.nlm.nih.gov/40839339/"
-  authors: Publication metadata not assessed in the returned report
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/40839339/
-  kind: Research source link
+  title: Evaluating the Impact of Urolithin A Supplementation on Running Performance, Recovery, and Mitochondrial Biomarkers in Highly Trained Male Distance Runners
+  authors: Jamie Whitfield, Alannah K A McKay, Nicolin Tee, Rachel McCormick, Aimee Morabito, Leonidas G Karagounis, Andréane M Fouassier, Davide D'Amico, Anurag Singh, Louise M Burke, John A Hawley
+  year: 2025
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12628386/
+  kind: randomized double-blind placebo-controlled clinical trial
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
+  doi: 10.1007/s40279-025-02292-5
+  pmid: '40839339'
 - id: dr-urolithin-a-s17
-  title: "Direct source link: https://doi.org/10.1007/s40279-025-02292-5"
+  title: 'Direct source link: https://doi.org/10.1007/s40279-025-02292-5'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1007/s40279-025-02292-5
@@ -909,7 +921,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s18
-  title: "Direct source link: https://clinicaltrials.gov/study/NCT04783207"
+  title: 'Direct source link: https://clinicaltrials.gov/study/NCT04783207'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://clinicaltrials.gov/study/NCT04783207
@@ -921,19 +933,21 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s19
-  title: "Direct source link: https://pubmed.ncbi.nlm.nih.gov/41174221/"
-  authors: Publication metadata not assessed in the returned report
-  year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/41174221/
-  kind: Research source link
+  title: 'Effect of the mitophagy inducer urolithin A on age-related immune decline: a randomized, placebo-controlled trial'
+  authors: Dominic Denk, Anurag Singh, Herbert G Kasler, Davide D'Amico, Julia Rey, Lucía Alcober-Boquet, Johanna M Gorol, Christoph Steup, Ritesh Tiwari, Ryan Kwok, Rafael J Argüello, Julie Faitg, Kathrin Sprinzl, Stefan Zeuzem, Valentina Nekljudova, Sibylle Loibl, Eric Verdin, Chris Rinsch, Florian R Greten
+  year: 2025
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12618261/
+  kind: randomized double-blind placebo-controlled clinical trial
   insight: Direct source link preserved from the returned Deep Research bibliography.
   limitation: The capture did not recover a complete title, author list, funding, or disclosure statement for this link.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
+  doi: 10.1038/s43587-025-00996-x
+  pmid: '41174221'
 - id: dr-urolithin-a-s20
-  title: "Direct source link: https://doi.org/10.1038/s43587-025-00996-x"
+  title: 'Direct source link: https://doi.org/10.1038/s43587-025-00996-x'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1038/s43587-025-00996-x
@@ -945,7 +959,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s21
-  title: "Direct source link: https://clinicaltrials.gov/study/NCT05735886"
+  title: 'Direct source link: https://clinicaltrials.gov/study/NCT05735886'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://clinicaltrials.gov/study/NCT05735886
@@ -957,7 +971,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s22
-  title: "Direct source link: https://pubmed.ncbi.nlm.nih.gov/41245402/"
+  title: 'Direct source link: https://pubmed.ncbi.nlm.nih.gov/41245402/'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/41245402/
@@ -969,7 +983,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s23
-  title: "Direct source link: https://doi.org/10.3389/fnut.2025.1674446"
+  title: 'Direct source link: https://doi.org/10.3389/fnut.2025.1674446'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.3389/fnut.2025.1674446
@@ -981,7 +995,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s24
-  title: "Direct source link: https://pubmed.ncbi.nlm.nih.gov/42853569/"
+  title: 'Direct source link: https://pubmed.ncbi.nlm.nih.gov/42853569/'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/42853569/
@@ -993,7 +1007,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s25
-  title: "Direct source link: https://doi.org/10.1001/jamanetworkopen.2026.38047"
+  title: 'Direct source link: https://doi.org/10.1001/jamanetworkopen.2026.38047'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1001/jamanetworkopen.2026.38047
@@ -1005,7 +1019,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s26
-  title: "Direct source link: https://clinicaltrials.gov/study/NCT05921266"
+  title: 'Direct source link: https://clinicaltrials.gov/study/NCT05921266'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://clinicaltrials.gov/study/NCT05921266
@@ -1018,16 +1032,18 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s27
   title: Effects of Urolithin A supplementation on muscle health outcomes in humans from randomized controlled trials
-  authors: Dao T, Nguyen TT, Gariani K, Kim HJ, Ryu D
+  authors: Tam Dao, Thanh T Nguyen, Karim Gariani, Hyun Jin Kim, Dongryeol Ryu
   year: 2026
-  url: https://pubmed.ncbi.nlm.nih.gov/42559151/
-  kind: Systematic review and meta-analysis
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13440176/
+  kind: systematic review and meta-analysis
   insight: Five randomized trials and 236 participants; pooled 6-minute-walk effect was +17.03 m with 95% CI −5.33 to 39.40 and low certainty.
   limitation: Heterogeneous small trials and low GRADE certainty; no longevity endpoint.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
+  doi: 10.3389/fnut.2026.1834344
+  pmid: '42559151'
 - id: dr-urolithin-a-s28
   title: Effects of Urolithin A supplementation on muscle health outcomes in humans from randomized controlled trials
   authors: Dao T, Nguyen TT, Gariani K, Kim HJ, Ryu D
@@ -1041,7 +1057,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s29
-  title: "Direct source link: https://www.crd.york.ac.uk/PROSPERO/view/CRD420251270987"
+  title: 'Direct source link: https://www.crd.york.ac.uk/PROSPERO/view/CRD420251270987'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://www.crd.york.ac.uk/PROSPERO/view/CRD420251270987
@@ -1053,7 +1069,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s30
-  title: "Targeting aging with urolithin A in humans: A systematic review"
+  title: 'Targeting aging with urolithin A in humans: A systematic review'
   authors: Hodzic Kuerec A, Lim XK, Khoo AL, et al.
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/39002645/
@@ -1065,7 +1081,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s31
-  title: "Targeting aging with urolithin A in humans: A systematic review"
+  title: 'Targeting aging with urolithin A in humans: A systematic review'
   authors: Hodzic Kuerec A, Lim XK, Khoo AL, et al.
   year: 2026
   url: https://doi.org/10.1016/j.arr.2024.102406
@@ -1077,7 +1093,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s32
-  title: "Urolithin A in kidney stones: a case series"
+  title: 'Urolithin A in kidney stones: a case series'
   authors: Best et al.
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/42058113/
@@ -1089,7 +1105,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s33
-  title: "Direct source link: https://doi.org/10.1016/j.ekir.2026.106515"
+  title: 'Direct source link: https://doi.org/10.1016/j.ekir.2026.106515'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://doi.org/10.1016/j.ekir.2026.106515
@@ -1101,7 +1117,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s34
-  title: "Direct source link: https://www.fda.gov/food/food-ingredients-packaging/generally-recognized-safe-gras"
+  title: 'Direct source link: https://www.fda.gov/food/food-ingredients-packaging/generally-recognized-safe-gras'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://www.fda.gov/food/food-ingredients-packaging/generally-recognized-safe-gras
@@ -1113,7 +1129,7 @@ Phase I tested 250–2,000 mg single doses and 250–1,000 mg/day for 28 days; l
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-urolithin-a-s35
-  title: "Direct source link: https://clinicaltrials.gov/"
+  title: 'Direct source link: https://clinicaltrials.gov/'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://clinicaltrials.gov/

@@ -544,7 +544,7 @@ This page converts the completed research into source-linked cards. Label dosing
 
 ```yaml
 - id: atomoxetine-label
-  title: "STRATTERA (atomoxetine) capsules, for oral use; Initial U.S. Approval: 2002"
+  title: 'STRATTERA (atomoxetine) capsules, for oral use; Initial U.S. Approval: 2002'
   authors: U.S. Food and Drug Administration
   year: 2026
   url: https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/021411s053lbl.pdf
@@ -557,7 +557,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/021411s053lbl.pdf
 - id: cortese2018
-  title: "Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults: a systematic review and network meta-analysis"
+  title: 'Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults: a systematic review and network meta-analysis'
   authors: Samuele Cortese, Ashmita Adamo, Claudia Del Giovane, et al.
   year: 2018
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6109107/
@@ -570,7 +570,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC6109107/
 - id: asherson2014
-  title: "Efficacy of atomoxetine in adults with attention deficit hyperactivity disorder: an integrated analysis of the complete database of multicenter placebo-controlled trials"
+  title: 'Efficacy of atomoxetine in adults with attention deficit hyperactivity disorder: an integrated analysis of the complete database of multicenter placebo-controlled trials'
   authors: Philip Asherson, Chris Bushe, Keith Saylor, Yoko Tanaka, Walter Deberdt, Himanshu Upadhyaya
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/25035246/
@@ -583,7 +583,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/25035246/
 - id: faraone2016
-  title: "Atomoxetine Increased Effect over Time in Adults with Attention-Deficit/Hyperactivity Disorder Treated for up to 6 Months: Pooled Analysis of Two Double-Blind, Placebo-Controlled, Randomized Trials"
+  title: 'Atomoxetine Increased Effect over Time in Adults with Attention-Deficit/Hyperactivity Disorder Treated for up to 6 Months: Pooled Analysis of Two Double-Blind, Placebo-Controlled, Randomized Trials'
   authors: Stephen V. Faraone et al.
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/26922462/
@@ -596,7 +596,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/26922462/
 - id: ravishankar2016
-  title: "The efficacy of atomoxetine in treating adult attention deficit hyperactivity disorder (ADHD): A meta-analysis of controlled trials"
+  title: 'The efficacy of atomoxetine in treating adult attention deficit hyperactivity disorder (ADHD): A meta-analysis of controlled trials'
   authors: Vinutha Ravishankar, Suresh Vedaveni Chowdappa, Vivek Benegal, Kesavan Muralidharan
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27931908/
@@ -609,7 +609,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/27931908/
 - id: isfandnia2024
-  title: "The effects of chronic administration of stimulant and non-stimulant medications on executive functions in ADHD: A systematic review and meta-analysis"
+  title: 'The effects of chronic administration of stimulant and non-stimulant medications on executive functions in ADHD: A systematic review and meta-analysis'
   authors: Ferdous Isfandnia et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38718988/
@@ -648,7 +648,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/21346736/
 - id: nourredine2026
-  title: "Pharmacological interventions for ADHD: a systematic review and dose-effect network meta-analysis"
+  title: 'Pharmacological interventions for ADHD: a systematic review and dose-effect network meta-analysis'
   authors: Mikail Nourredine, Lucie Jurek, Tasnim Hamza, Andrea Cipriani, Fabien Subtil, Valeria Parlatini, Luis C. Farhat, Guilherme Fusetto Veronesi, Orestis Efthimiou, Georgia Salanti, Samuele Cortese
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/42134365/

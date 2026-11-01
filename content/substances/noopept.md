@@ -3,16 +3,16 @@ slug: noopept
 name: Noopept
 subtitle: Source-linked research profile.
 aliases:
-  - Omberacetam
-  - Ноопепт
+- Omberacetam
+- Ноопепт
 formula: C17H22N2O4
 molecularWeight: 318.4 g/mol
 pubchemCid: 180496
 smiles: CCOC(=O)CNC(=O)C1CCCN1C(=O)CC2=CC=CC=C2
 category: Nootropic
 tags:
-  - nootropic-research
-accent: "#a9b993"
+- nootropic-research
+accent: '#a9b993'
 reviewedAt: 2026-10-11
 editorialStatus: sourced-draft
 halfLife:
@@ -30,36 +30,37 @@ kinetics:
   metabolism: Label lists metabolites; direct human plasma study did not detect them
   sourceId: boyko-2004-pk
 x-shape:
-  - slug
-  - name
-  - subtitle
-  - summary
-  - description
-  - aliases
-  - formula
-  - molecularWeight
-  - pubchemCid
-  - smiles
-  - category
-  - tags
-  - accent
-  - evidenceNote
-  - reviewedAt
-  - editorialStatus
-  - halfLife
-  - pkObservations
-  - kinetics
-  - modifiers
-  - doses
-  - effects
-  - outcomes
-  - claims
-  - mechanisms
-  - cautions
-  - interactions
-  - experienceLinks
-  - references
-  - legal
+- slug
+- name
+- subtitle
+- summary
+- description
+- aliases
+- formula
+- molecularWeight
+- pubchemCid
+- smiles
+- category
+- tags
+- accent
+- evidenceNote
+- reviewedAt
+- editorialStatus
+- halfLife
+- pkObservations
+- kinetics
+- modifiers
+- doses
+- effects
+- outcomes
+- claims
+- mechanisms
+- cautions
+- interactions
+- experienceLinks
+- references
+- legal
+- externalWikiLinks
 x-order: 237
 ---
 
@@ -73,7 +74,7 @@ The registered product is distinct from online powders, sprays and supplement pr
 
 ## Evidence note
 
-No compound-specific ClinicalTrials.gov study or systematic review was located under the searched aliases at the cutoff. Human PK is sparse and the human publication did not detect metabolites in plasma; common online PK figures should remain unverified. [boyko-2004-pk][dr-noopept-link-3]
+PubMed abstracts retrieved for all six linked PMIDs. PMC full text was retrieved for PMID 27099787 (PMC4837574); the other five had no PMC match. Existing clinical, preclinical, dose, mechanism, and caution records are retained; no human dose recommendation is implied.
 
 ## Doses
 
@@ -139,6 +140,7 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   note: The abstract is internally inconsistent about treatment duration.
   sourceId: amelin-2011
 ```
+
 ## Pharmacokinetics
 
 ```yaml
@@ -243,6 +245,18 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   magnitude: Not established
   reportType: measured-assessment
   conflictingSourceIds: []
+- id: reddit-noopept-episodic-memory-16224581
+  conceptId: episodic-memory
+  name: Episodic Memory
+  direction: Decreased
+  evidence: Human research
+  description: We studied the effect of a new nootropic dipeptide Noopept and reference nootropic preparation piracetam injected subcutaneously on days 8-20 of life on learning of alternative feeding response in a 6-arm-maze in male and female rats.
+  sourceId: reddit-pmid-16224581
+  population: Population described in the PubMed abstract
+  exposure: We studied the effect of a new nootropic dipeptide Noopept and reference nootropic preparation piracetam injected subcutaneously on days 8-20 of life on learning of alternative feeding response in a 6-arm-maze in male and female rats.
+  instrument: null
+  magnitude: null
+  reportType: measured-assessment
 ```
 
 ## Mechanisms
@@ -251,6 +265,15 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
 - title: Preclinical neurotrophic hypotheses
   description: NGF/BDNF, receptor and metabolite hypotheses are preclinical or label-derived and should not be treated as demonstrated human mechanisms of benefit.
   sourceId: russia-label-2024
+- title: Source-specific finding from PMID 27099787
+  description: This study was performed in order to reveal the effect of Noopept (ethyl ester of N-phenylacetyl-Lprolylglycine, GVS-111) on the DNA-binding activity of transcriptional factors (TF) in HEK293 cells transiently transfected with luciferase reporter constructs containing sequences for CREB, NFAT, NF-κB, p53, STAT1, GAS, VDR, HSF1, and HIF-1.
+  sourceId: reddit-pmid-27099787
+- title: Source-specific finding from PMID 21395007
+  description: The influence of noopept (N-phenylacetyl-L-prolylglycine ethyl ester, GVS-111)--a drug combining the nootrope and neuroprotector properties--on the activity of mitogen-activated protein kinases (MAPKs) and the level of NGF and BDNF gene and protein expression in the frontal cortex, hippocampus, and hypothalamus has been studied in rats.
+  sourceId: reddit-pmid-21395007
+- title: Source-specific finding from PMID 12711349
+  description: 'The neuroprotective activity of a novel N-acylprolyl-containing dipeptide analog of the nootropic 2-oxo-1-pyrrolidine acetamide (Piracetam) designated as GVS-111 (DVD-111/Noopept) was tested in two in vitro models of neuronal degeneration mediated by oxidative stress: normal human cortical neurons treated with H(2)O(2), and Down''s syndrome (DS) cortical neurons.'
+  sourceId: reddit-pmid-12711349
 ```
 
 ## Cautions
@@ -265,6 +288,9 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
 - title: Dependence evidence gap
   description: A label statement that withdrawal was not observed is not equivalent to a dedicated abuse-liability or controlled-withdrawal study.
   sourceId: russia-label-2024
+- title: Source-specific finding from PMID 27099787
+  description: This study was performed in order to reveal the effect of Noopept (ethyl ester of N-phenylacetyl-Lprolylglycine, GVS-111) on the DNA-binding activity of transcriptional factors (TF) in HEK293 cells transiently transfected with luciferase reporter constructs containing sequences for CREB, NFAT, NF-κB, p53, STAT1, GAS, VDR, HSF1, and HIF-1.
+  sourceId: reddit-pmid-27099787
 ```
 
 ## Claims
@@ -274,15 +300,15 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   assertion: Noopept reliably improves memory or focus in healthy users.
   relation: evidence-boundary
   participants:
-    - entityId: substance:noopept
-      role: intervention
-    - entityId: tag:cognitive-task-performance
-      role: reported-context
+  - entityId: substance:noopept
+    role: intervention
+  - entityId: tag:cognitive-task-performance
+    role: reported-context
   context: The retrieved human evidence concerns clinical populations and does not establish healthy-user enhancement.
   sourceIds:
-    - molekul-link-175
-    - dr-noopept-s9
-    - dr-noopept-s11
+  - molekul-link-175
+  - dr-noopept-s9
+  - dr-noopept-s11
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Open, small or active-comparator studies and absent modern placebo trials limit inference.
@@ -290,17 +316,31 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   assertion: Current online Noopept products are equivalent to registered tablets.
   relation: evidence-boundary
   participants:
-    - entityId: substance:noopept
-      role: intervention
-    - entityId: tag:cognitive-task-performance
-      role: reported-context
+  - entityId: substance:noopept
+    role: intervention
+  - entityId: tag:cognitive-task-performance
+    role: reported-context
   context: Market-surveillance studies found inaccurate quantities and undeclared substances.
   sourceIds:
-    - dr-noopept-s16
-    - dr-noopept-s22
+  - dr-noopept-s16
+  - dr-noopept-s22
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Product identity, purity and dose must be verified separately.
+- id: reddit-claim-noopept-16224581-0
+  assertion: Noopept is associated with the reported episodic memory finding in this publication.
+  relation: associated-with
+  participants:
+  - entityId: substance:noopept
+    role: intervention or exposure
+  - entityId: tag:episodic-memory
+    role: reported endpoint
+  context: Publication abstract; direction and population are retained on the linked observation.
+  sourceIds:
+  - reddit-pmid-16224581
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
 ```
 
 ## Interactions
@@ -337,11 +377,22 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   publisher: PsychonautWiki
 ```
 
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Noopept
+  title: Wikipedia
+- service: Examine
+  url: https://examine.com/supplements/Noopept
+  title: Examine
+```
+
 ## References
 
 ```yaml
 - id: molekul-profile
-  title: "Noopept: Molekul research profile"
+  title: 'Noopept: Molekul research profile'
   authors: Molekul
   year: 2026
   url: https://molekul.io/compounds/noopept
@@ -360,9 +411,9 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   kind: Research source
   insight: Source R1 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "not applicable to administrative registration. Sponsorship: not a clinical study; commercial authorization holder OTISIFARM. COI: not applicable to regulator record. Conflict status: authoritative administrative source for registration/product identity; does not independently establish efficacy."
+  funding: 'not applicable to administrative registration. Sponsorship: not a clinical study; commercial authorization holder OTISIFARM. COI: not applicable to regulator record. Conflict status: authoritative administrative source for registration/product identity; does not independently establish efficacy.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "not applicable to regulator record. Conflict status: authoritative administrative source for registration/product identity; does not independently establish efficacy."
+  conflictsOfInterest: 'not applicable to regulator record. Conflict status: authoritative administrative source for registration/product identity; does not independently establish efficacy.'
   conflictOfInterestStatus: not-assessed
 - id: molekul-link-175
   title: Comparative studies of Noopept and piracetam in the treatment of patients with mild cognitive disorders in organic brain diseases of vascular and traumatic origin
@@ -372,21 +423,24 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   kind: Human randomized active-comparator study
   insight: Source R2 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship/COI: unknown/not reported in accessible bibliographic record. Conflict status: unknown disclosure status."
+  funding: 'sponsorship/COI: unknown/not reported in accessible bibliographic record. Conflict status: unknown disclosure status.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported in accessible bibliographic record. Conflict status: unknown disclosure status."
+  conflictsOfInterest: 'unknown/not reported in accessible bibliographic record. Conflict status: unknown disclosure status.'
   conflictOfInterestStatus: not-assessed
+  doi: 10.1007/s11055-009-9128-4
+  pmid: '19234797'
 - id: molekul-link-174
-  title: "[A comparative study of noopept and piracetam in the treatment of mild and moderate cognitive impairment in patients with organic brain diseases of vascular and traumatic origin]."
+  title: '[A comparative study of noopept and piracetam in the treatment of mild and moderate cognitive impairment in patients with organic brain diseases of vascular and traumatic origin].'
   authors: Authors listed in returned report
   year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/18697252/
+  pmid: '18697252'
   kind: PubMed-indexed study
   insight: Source R3 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship/COI: unknown/not reported. Conflict status: unknown; Russian original/overlapping publication, not an independent replication."
+  funding: 'sponsorship/COI: unknown/not reported. Conflict status: unknown; Russian original/overlapping publication, not an independent replication.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown; Russian original/overlapping publication, not an independent replication."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown; Russian original/overlapping publication, not an independent replication.'
   conflictOfInterestStatus: not-assessed
 - id: dr-noopept-s9
   title: Possibilities nootropic drugs in non-demented patients with vascular cognitive disorders.
@@ -396,93 +450,99 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   kind: Research source
   insight: Source R4 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship: explicitly sponsored by OTISIFARM. COI: article states conflict did not affect results, not no conflict. Conflict status: declared commercial sponsorship/conflict."
+  funding: 'sponsorship: explicitly sponsored by OTISIFARM. COI: article states conflict did not affect results, not no conflict. Conflict status: declared commercial sponsorship/conflict.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "article states conflict did not affect results, not no conflict. Conflict status: declared commercial sponsorship/conflict."
+  conflictsOfInterest: 'article states conflict did not affect results, not no conflict. Conflict status: declared commercial sponsorship/conflict.'
   conflictOfInterestStatus: not-assessed
 - id: dr-noopept-s11
-  title: "[Meteoadaptogenic properties of peptide drugs in healthy volunteers]."
+  title: '[Meteoadaptogenic properties of peptide drugs in healthy volunteers].'
   authors: Authors listed in returned report
   year: 2007
   url: https://pubmed.ncbi.nlm.nih.gov/18318195/
+  pmid: '18318195'
   kind: PubMed-indexed study
   insight: Source R5 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship/COI: unknown/not reported. Conflict status: unknown."
+  funding: 'sponsorship/COI: unknown/not reported. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-noopept-r12-12
-  title: "[The influence of self-massage combined with drug Noopept on the professional performance of teachers older]."
+  title: '[The influence of self-massage combined with drug Noopept on the professional performance of teachers older].'
   authors: Authors listed in returned report
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/30877834/
+  pmid: '30877834'
   kind: PubMed-indexed study
   insight: Source R6 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship/COI: unknown/not reported. Conflict status: unknown."
+  funding: 'sponsorship/COI: unknown/not reported. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: amelin-2011
-  title: "[Noopept in the treatment of mild cognitive impairment in patients with stroke]."
+  title: '[Noopept in the treatment of mild cognitive impairment in patients with stroke].'
   authors: Authors listed in returned report
   year: 2011
   url: https://pubmed.ncbi.nlm.nih.gov/22500312/
+  pmid: '22500312'
   kind: PubMed-indexed study
   insight: Source R7 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship/COI: unknown/not reported. Conflict status: unknown."
+  funding: 'sponsorship/COI: unknown/not reported. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: molekul-link-177
-  title: "[Clinical and electroencephalographic characteristic of noopept in patients with mild cognitive impairment of posttraumatic and vascular origin]."
+  title: '[Clinical and electroencephalographic characteristic of noopept in patients with mild cognitive impairment of posttraumatic and vascular origin].'
   authors: Authors listed in returned report
   year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/19008801/
+  pmid: '19008801'
   kind: PubMed-indexed study
   insight: Source R8 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship/COI: unknown/not reported. Conflict status: unknown."
+  funding: 'sponsorship/COI: unknown/not reported. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: boyko-2004-pk
-  title: "[Interspecies differences of noopept pharmacokinetics]."
+  title: '[Interspecies differences of noopept pharmacokinetics].'
   authors: Authors listed in returned report
   year: 2004
   url: https://pubmed.ncbi.nlm.nih.gov/15079908/
+  pmid: '15079908'
   kind: PubMed-indexed study
   insight: Source R9 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship: unknown/not reported. COI: no formal disclosure in PubMed record; developer-investigator proximity noted. Conflict status: formal disclosure unknown."
+  funding: 'sponsorship: unknown/not reported. COI: no formal disclosure in PubMed record; developer-investigator proximity noted. Conflict status: formal disclosure unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "no formal disclosure in PubMed record; developer-investigator proximity noted. Conflict status: formal disclosure unknown."
+  conflictsOfInterest: 'no formal disclosure in PubMed record; developer-investigator proximity noted. Conflict status: formal disclosure unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-noopept-s16
-  title: "The Occurrence of Illicit Smart Drugs or Nootropics in Europe and Australia and Their Associated Dangers: Results from a Market Surveillance Study by 12 Official Medicines Control Laboratories."
+  title: 'The Occurrence of Illicit Smart Drugs or Nootropics in Europe and Australia and Their Associated Dangers: Results from a Market Surveillance Study by 12 Official Medicines Control Laboratories.'
   authors: Authors listed in returned report
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/40558871/
+  pmid: '40558871'
   kind: PubMed-indexed study
   insight: Source R10 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "no external funding. Sponsorship: official medicines-control-laboratory surveillance. COI: institutional employment disclosed for one author; no relevant commercial sponsorship identified. Conflict status: institutional employment disclosed."
+  funding: 'no external funding. Sponsorship: official medicines-control-laboratory surveillance. COI: institutional employment disclosed for one author; no relevant commercial sponsorship identified. Conflict status: institutional employment disclosed.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "institutional employment disclosed for one author; no relevant commercial sponsorship identified. Conflict status: institutional employment disclosed."
+  conflictsOfInterest: 'institutional employment disclosed for one author; no relevant commercial sponsorship identified. Conflict status: institutional employment disclosed.'
   conflictOfInterestStatus: not-assessed
 - id: russia-label-2024
   title: current instruction for use
-  authors: "on for use. OTISIFARM / Noopept product information, registration ЛП-N(004920)-(РГ-RU), current registration dated 2024. URL:"
+  authors: 'on for use. OTISIFARM / Noopept product information, registration ЛП-N(004920)-(РГ-RU), current registration dated 2024. URL:'
   year: 2024
   url: https://noopept.ru/instruction/
   kind: Research source
   insight: Source R11 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "not applicable as a trial. Sponsorship: manufacturer/marketing-holder source. COI: intrinsic commercial interest. Conflict status: commercially conflicted for efficacy claims; appropriate for formulation, labeled dose, contraindications, adverse reactions, and regulatory instructions."
+  funding: 'not applicable as a trial. Sponsorship: manufacturer/marketing-holder source. COI: intrinsic commercial interest. Conflict status: commercially conflicted for efficacy claims; appropriate for formulation, labeled dose, contraindications, adverse reactions, and regulatory instructions.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "intrinsic commercial interest. Conflict status: commercially conflicted for efficacy claims; appropriate for formulation, labeled dose, contraindications, adverse reactions, and regulatory instructions."
+  conflictsOfInterest: 'intrinsic commercial interest. Conflict status: commercially conflicted for efficacy claims; appropriate for formulation, labeled dose, contraindications, adverse reactions, and regulatory instructions.'
   conflictOfInterestStatus: not-assessed
 - id: noopept-pmc4837574
   title: Noopept source record indexed in PubMed Central
@@ -501,6 +561,7 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   authors: Metadata not assessed in the imported source trail
   year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/18383733/
+  pmid: '18383733'
   kind: Source discovery link
   insight: The imported Molekul profile links this PubMed record; the link is retained for traceability.
   limitation: The original article was not independently appraised in this import; the link alone does not establish efficacy.
@@ -513,6 +574,7 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/7793100/
+  pmid: '7793100'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification.
@@ -525,6 +587,7 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/23593416/
+  pmid: '23593416'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this source record.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification.
@@ -557,86 +620,91 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: dr-noopept-r12
-  title: "[The influence of self-massage combined with drug Noopept on the professional performance of teachers older]."
+  title: '[The influence of self-massage combined with drug Noopept on the professional performance of teachers older].'
   authors: Authors listed in returned report
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/30877834/
+  pmid: '30877834'
   kind: PubMed-indexed study
   insight: Source R12 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship/COI: unknown/not reported. Conflict status: unknown."
+  funding: 'sponsorship/COI: unknown/not reported. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: molekul-link-176
-  title: "[Efficacy of noopept in discirculatory encephalopathy]."
+  title: '[Efficacy of noopept in discirculatory encephalopathy].'
   authors: Authors listed in returned report
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19938275/
+  pmid: '19938275'
   kind: PubMed-indexed study
   insight: Source R13 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship/COI: unknown/not reported. Conflict status: unknown."
+  funding: 'sponsorship/COI: unknown/not reported. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: mordyk-2009
-  title: "[Prevention of neuro- and cardiotoxic side effects of tuberculosis chemotherapy with noopept]."
+  title: '[Prevention of neuro- and cardiotoxic side effects of tuberculosis chemotherapy with noopept].'
   authors: Authors listed in returned report
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19565831/
+  pmid: '19565831'
   kind: PubMed-indexed study
   insight: Source R14 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship/COI: unknown/not reported. Conflict status: unknown."
+  funding: 'sponsorship/COI: unknown/not reported. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-noopept-s21
-  title: "[The using of noopept in treatment of neurasthenia]."
+  title: '[The using of noopept in treatment of neurasthenia].'
   authors: Authors listed in returned report
   year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/19253467/
+  pmid: '19253467'
   kind: PubMed-indexed study
   insight: Source R15 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship/COI: unknown/not reported. Conflict status: unknown."
+  funding: 'sponsorship/COI: unknown/not reported. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-noopept-s22
   title: Five Unapproved Drugs Found in Cognitive Enhancement Supplements.
   authors: Authors listed in returned report
   year: 2021
   url: https://pubmed.ncbi.nlm.nih.gov/34484905/
+  pmid: '34484905'
   kind: PubMed-indexed study
   insight: Source R16 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "no targeted funding reported. Sponsorship: no Noopept manufacturer/product-company sponsorship reported. COI: non-Noopept interests disclosed. Conflict status: disclosed non-Noopept interests; no identified Noopept commercial sponsorship."
+  funding: 'no targeted funding reported. Sponsorship: no Noopept manufacturer/product-company sponsorship reported. COI: non-Noopept interests disclosed. Conflict status: disclosed non-Noopept interests; no identified Noopept commercial sponsorship.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "non-Noopept interests disclosed. Conflict status: disclosed non-Noopept interests; no identified Noopept commercial sponsorship."
+  conflictsOfInterest: 'non-Noopept interests disclosed. Conflict status: disclosed non-Noopept interests; no identified Noopept commercial sponsorship.'
   conflictOfInterestStatus: not-assessed
 - id: dr-noopept-link-3
   title: ClinicalTrials.gov Noopept/omberacetam/GVS-111 searches, searched October 10, 2026
-  authors: "URLs:"
+  authors: 'URLs:'
   year: 2026
   url: https://clinicaltrials.gov/search?intr=Noopept
   kind: Regulatory or registry source
   insight: Source R17 supports the section-specific finding cited in this article.
   limitation: Registry or search evidence does not establish efficacy without posted results.
-  funding: "sponsorship: not applicable; no matching study records returned. Conflict status: registry search source."
+  funding: 'sponsorship: not applicable; no matching study records returned. Conflict status: registry search source.'
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the returned source metadata.
   conflictOfInterestStatus: not-assessed
 - id: dr-noopept-s4
   title: PubMed systematic-review/meta-analysis search, searched through October 10, 2026
-  authors: "URL:"
+  authors: 'URL:'
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/?term=%28noopept+OR+omberacetam+OR+GVS-111%29+AND+%28systematic+review%5BPublication+Type%5D+OR+meta-analysis%5BPublication+Type%5D%29
   kind: PubMed-indexed study
   insight: Source R18 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship: not applicable; zero compound-specific records located. Conflict status: bibliographic search source."
+  funding: 'sponsorship: not applicable; zero compound-specific records located. Conflict status: bibliographic search source.'
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the returned source metadata.
   conflictOfInterestStatus: not-assessed
@@ -681,6 +749,7 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/19240853/
+  pmid: '19240853'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification.
@@ -693,6 +762,7 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/11177296/
+  pmid: '11177296'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification.
@@ -705,6 +775,7 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/11548439/
+  pmid: '11548439'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification.
@@ -717,12 +788,118 @@ No compound-specific ClinicalTrials.gov study or systematic review was located u
   authors: Bibliographic metadata not independently verified
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/9606516/
+  pmid: '9606516'
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification.
   funding: Not assessed in this import.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-27099787
+  title: Molecular Mechanism Underlying the Action of Substituted Pro-Gly Dipeptide Noopept.
+  authors: Y V Vakhitova, S V Sadovnikov, S S Borisevich, R U Ostrovskaya, T A Gudasheva, S B Seredenin
+  year: 2016
+  url: https://pubmed.ncbi.nlm.nih.gov/27099787/
+  kind: PubMed publication
+  insight: This study was performed in order to reveal the effect of Noopept (ethyl ester of N-phenylacetyl-Lprolylglycine, GVS-111) on the DNA-binding activity of transcriptional factors (TF) in HEK293 cells transiently transfected with luciferase reporter constructs containing sequences for CREB, NFAT, NF-κB, p53, STAT1, GAS, VDR, HSF1, and HIF-1.
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '27099787'
+  pmcid: PMC4837574
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-link-42c990cccbe6
+  title: Noopept stimulates the expression of NGF and BDNF in rat hippocampus
+  authors: Not established
+  year: 2026
+  url: https://link.springer.com/article/10.1007%2Fs10517-008-0297-x?LI=true
+  kind: Reddit index publication link
+  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-21395007
+  title: '[On the mechanism of noopept action: decrease in activity of stress-induced kinases and increase in expression of neutrophines].'
+  authors: R U Ostrovskaia, Iu V Vakhitova, M Kh Salimgareeva, R S Iamidanov, S V Sadovnikov, I G Kapitsa, S B Seredenin
+  year: 2010
+  url: https://pubmed.ncbi.nlm.nih.gov/21395007/
+  kind: PubMed publication
+  insight: The influence of noopept (N-phenylacetyl-L-prolylglycine ethyl ester, GVS-111)--a drug combining the nootrope and neuroprotector properties--on the activity of mitogen-activated protein kinases (MAPKs) and the level of NGF and BDNF gene and protein expression in the frontal cortex, hippocampus, and hypothalamus has been studied in rats.
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '21395007'
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-12711349
+  title: GVS-111 prevents oxidative damage and apoptosis in normal and Down's syndrome human cortical neurons.
+  authors: Alejandra Pelsman, Carlos Hoyo-Vadillo, Tatiana A Gudasheva, Sergei B Seredenin, Rita U Ostrovskaya, Jorge Busciglio
+  year: 2003
+  url: https://pubmed.ncbi.nlm.nih.gov/12711349/
+  kind: PubMed publication
+  insight: 'The neuroprotective activity of a novel N-acylprolyl-containing dipeptide analog of the nootropic 2-oxo-1-pyrrolidine acetamide (Piracetam) designated as GVS-111 (DVD-111/Noopept) was tested in two in vitro models of neuronal degeneration mediated by oxidative stress: normal human cortical neurons treated with H(2)O(2), and Down''s syndrome (DS) cortical neurons.'
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '12711349'
+  doi: 10.1016/s0736-5748(03)00031-5
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-20382202
+  title: Novel nootropic dipeptide Noopept increases inhibitory synaptic transmission in CA1 pyramidal cells.
+  authors: Rodion V Kondratenko, Vladimir I Derevyagin, Vladimir G Skrebitsky
+  year: 2010
+  url: https://pubmed.ncbi.nlm.nih.gov/20382202/
+  kind: PubMed publication
+  insight: Effects of newly synthesized nootropic and anxiolytic dipeptide Noopept on inhibitory synaptic transmission in hippocampal CA1 pyramidal cells were investigated using patch-clamp technique in whole-cell configuration.
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '20382202'
+  doi: 10.1016/j.neulet.2010.04.005
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-16224581
+  title: Early postnatal effects of noopept and piracetam on declarative and procedural memory of adult male and female rats.
+  authors: S S Trofimov, T A Voronina, L S Guzevatykh
+  year: 2005
+  url: https://pubmed.ncbi.nlm.nih.gov/16224581/
+  kind: PubMed publication
+  insight: We studied the effect of a new nootropic dipeptide Noopept and reference nootropic preparation piracetam injected subcutaneously on days 8-20 of life on learning of alternative feeding response in a 6-arm-maze in male and female rats.
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '16224581'
+  doi: 10.1007/s10517-005-0378-z
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-link-cd4ca4b2160c
+  title: CDP-choline
+  authors: Not established
+  year: 2026
+  url: https://www.reddit.com/r/Nootropics/wiki/cdpcholine
+  kind: Reddit index publication link
+  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-link-06793fa56a12
+  title: Alpha-GPC
+  authors: Not established
+  year: 2026
+  url: https://www.reddit.com/r/nootropics/wiki/alphagpc
+  kind: Reddit index publication link
+  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 

@@ -66,9 +66,9 @@ function UnmodeledElimination({
       </p>
       <dl className="kinetics-unmodeled-fields">
         <div><dt>Measured analyte</dt><dd>{observation.analyte}</dd></div>
-        <div><dt>Route</dt><dd>{observation.route}</dd></div>
-        <div><dt>Formulation</dt><dd>{observation.formulation}</dd></div>
-        <div><dt>Population</dt><dd>{observation.population}</dd></div>
+        {observation.route && <div><dt>Route</dt><dd>{observation.route}</dd></div>}
+        {observation.formulation && <div><dt>Formulation</dt><dd>{observation.formulation}</dd></div>}
+        {observation.population && <div><dt>Population</dt><dd>{observation.population}</dd></div>}
       </dl>
       <div className="kinetics-unmodeled-context">
         <p className="kinetics-unmodeled-kicker">Source context</p>
@@ -145,7 +145,11 @@ function EliminationChart({ observation, model, sourceHref, evidenceKey }: Kinet
       </CardHeader>
       <CardContent className="flex flex-col gap-3 text-sm">
         <p className="text-muted-foreground">The modeled analyte is <strong className="text-foreground">{model.analyte}</strong>. The curve begins after absorption and distribution; it does not predict onset, felt effects, or an individual’s response.</p>
-        <p><strong>Route:</strong> {observation.route}. <strong>Formulation:</strong> {observation.formulation}. <strong>Population:</strong> {observation.population}.</p>
+        <p>{[
+          observation.route && <span key="route"><strong>Route:</strong> {observation.route}. </span>,
+          observation.formulation && <span key="formulation"><strong>Formulation:</strong> {observation.formulation}. </span>,
+          observation.population && <span key="population"><strong>Population:</strong> {observation.population}.</span>,
+        ].filter(Boolean)}</p>
         <p>{observation.context} <SourceContextLink href={sourceHref} /></p>
         <p><strong>{model.statisticLabel}:</strong> {hours(model.minimum)}{model.minimum < model.maximum ? `–${hours(model.maximum)}` : ""} hours.</p>
         {model.adjustable ? (

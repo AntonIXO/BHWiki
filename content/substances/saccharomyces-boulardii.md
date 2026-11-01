@@ -361,7 +361,7 @@ Evidence is strongest for selected adjunctive gastrointestinal uses and remains 
   conflictOfInterestStatus: declared
   disclosureUrl: https://clinicaltrials.gov/study/NCT01473368
 - id: ref-szajewska-2015
-  title: "Systematic review with meta-analysis: Saccharomyces boulardii in the prevention of antibiotic-associated diarrhoea"
+  title: 'Systematic review with meta-analysis: Saccharomyces boulardii in the prevention of antibiotic-associated diarrhoea'
   authors: Szajewska H; Kołodziej M
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/26216624/
@@ -374,7 +374,7 @@ Evidence is strongest for selected adjunctive gastrointestinal uses and remains 
   conflictsOfInterest: Disclosure incomplete in retrieved record.
   conflictOfInterestStatus: not-assessed
 - id: ref-pozzoni-2012
-  title: "Saccharomyces boulardii for the prevention of antibiotic-associated diarrhea in adult hospitalized patients"
+  title: Saccharomyces boulardii for the prevention of antibiotic-associated diarrhea in adult hospitalized patients
   authors: Pozzoni P et al.
   year: 2012
   url: https://pubmed.ncbi.nlm.nih.gov/22472744/
@@ -399,7 +399,7 @@ Evidence is strongest for selected adjunctive gastrointestinal uses and remains 
   conflictsOfInterest: Older disclosure incomplete.
   conflictOfInterestStatus: not-assessed
 - id: ref-chitapanarux-2025
-  title: "Efficacy and safety of Saccharomyces boulardii as adjunct therapy with Vancomycin in treating Clostridioides difficile infection: A randomized controlled trial"
+  title: 'Efficacy and safety of Saccharomyces boulardii as adjunct therapy with Vancomycin in treating Clostridioides difficile infection: A randomized controlled trial'
   authors: Chitapanarux T et al.
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/40457042/
@@ -426,7 +426,7 @@ Evidence is strongest for selected adjunctive gastrointestinal uses and remains 
   conflictsOfInterest: Disclosure not recovered.
   conflictOfInterestStatus: not-assessed
 - id: ref-szajewska-2020
-  title: "Systematic review with meta-analysis: Saccharomyces boulardii for treating acute gastroenteritis in children — a 2020 update"
+  title: 'Systematic review with meta-analysis: Saccharomyces boulardii for treating acute gastroenteritis in children — a 2020 update'
   authors: Szajewska H; Kołodziej M; Zalewski BM
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/32056266/

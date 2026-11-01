@@ -3,16 +3,16 @@ slug: armodafinil
 name: Armodafinil
 subtitle: Wakefulness in diagnosed sleepiness disorders; healthy-person enhancement remains unestablished.
 aliases:
-  - Nuvigil
-  - R-modafinil
+- Nuvigil
+- R-modafinil
 formula: C15H15NO2S
 molecularWeight: 273.4 g/mol
 pubchemCid: 9690109
 smiles: C1=CC=C(C=C1)C(C2=CC=CC=C2)S(=O)CC(=O)N
 category: Wake-promoting medicine
 tags:
-  - stimulant
-accent: "#bea17c"
+- stimulant
+accent: '#bea17c'
 reviewedAt: 2026-10-11
 editorialStatus: sourced-draft
 halfLife:
@@ -30,36 +30,37 @@ kinetics:
   metabolism: CYP3A4/5 induction and CYP2C19 inhibition
   sourceId: dr-r16
 x-shape:
-  - slug
-  - name
-  - subtitle
-  - summary
-  - description
-  - aliases
-  - formula
-  - molecularWeight
-  - pubchemCid
-  - smiles
-  - category
-  - tags
-  - accent
-  - evidenceNote
-  - reviewedAt
-  - editorialStatus
-  - halfLife
-  - pkObservations
-  - kinetics
-  - modifiers
-  - doses
-  - effects
-  - outcomes
-  - claims
-  - mechanisms
-  - cautions
-  - interactions
-  - experienceLinks
-  - references
-  - legal
+- slug
+- name
+- subtitle
+- summary
+- description
+- aliases
+- formula
+- molecularWeight
+- pubchemCid
+- smiles
+- category
+- tags
+- accent
+- evidenceNote
+- reviewedAt
+- editorialStatus
+- halfLife
+- pkObservations
+- kinetics
+- modifiers
+- doses
+- effects
+- outcomes
+- claims
+- mechanisms
+- cautions
+- interactions
+- experienceLinks
+- references
+- legal
+- externalWikiLinks
 x-order: 154
 ---
 
@@ -74,6 +75,8 @@ The U.S. NUVIGIL label uses 150–250 mg each morning for narcolepsy or residual
 ## Evidence note
 
 The strongest evidence is condition-specific wakefulness and pharmacokinetics. Serious rash, psychiatric effects, cardiovascular monitoring, misuse/dependence, CYP interactions and combined modafinil/armodafinil pregnancy data remain important limits. [dr-r1][dr-r19]
+
+Reddit index corpus import (1 linked source records; 0 PubMed abstracts). Full-text methods, funding, and conflicts remain unassessed where the source record says so.
 
 ## Doses
 
@@ -139,6 +142,7 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   note: Supports wakefulness during acute sleep loss, not complex judgment or chronic sleep restriction.
   sourceId: dr-r11
 ```
+
 ## Pharmacokinetics
 
 ```yaml
@@ -294,16 +298,16 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   assertion: Armodafinil broadly enhances cognition in healthy rested people.
   relation: evidence-boundary
   participants:
-    - entityId: substance:armodafinil
-      role: intervention
-    - entityId: tag:cognitive-task-performance
-      role: reported-context
+  - entityId: substance:armodafinil
+    role: intervention
+  - entityId: tag:cognitive-task-performance
+    role: reported-context
   context: Direct R-modafinil evidence supports wakefulness during diagnosed sleep disorders and acute sleep loss, not broad rested cognition.
   sourceIds:
-    - dr-r11
-    - dr-r13
-    - dr-r14
-    - dr-r15
+  - dr-r11
+  - dr-r13
+  - dr-r14
+  - dr-r15
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Racemic-modafinil null findings and an unpublished registry cannot establish armodafinil efficacy.
@@ -311,14 +315,14 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   assertion: Armodafinil is milligram-equivalent to racemic modafinil.
   relation: evidence-boundary
   participants:
-    - entityId: substance:armodafinil
-      role: intervention
-    - entityId: tag:wakefulness
-      role: reported-context
+  - entityId: substance:armodafinil
+    role: intervention
+  - entityId: tag:wakefulness
+    role: reported-context
   context: R and S enantiomers have different clearance and exposure; equal nominal doses are not interchangeable.
   sourceIds:
-    - dr-r1
-    - dr-r16
+  - dr-r1
+  - dr-r16
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Comparisons require formulation and enantiomer context.
@@ -369,9 +373,9 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: Regulatory or registry source
   insight: Source R1 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "not applicable as journal study; manufacturer-submitted labeling. Sponsorship: Cephalon/Teva product. COI: journal-style author disclosure not applicable. Status: regulatory/manufacturer-submitted source."
+  funding: 'not applicable as journal study; manufacturer-submitted labeling. Sponsorship: Cephalon/Teva product. COI: journal-style author disclosure not applicable. Status: regulatory/manufacturer-submitted source.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "journal-style author disclosure not applicable. Status: regulatory/manufacturer-submitted source."
+  conflictsOfInterest: 'journal-style author disclosure not applicable. Status: regulatory/manufacturer-submitted source.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r2
   title: The efficacy and safety of armodafinil as treatment for adults with excessive sleepiness associated with narcolepsy
@@ -381,9 +385,9 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: PubMed-indexed study
   insight: Source R2 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "exact statement not available in retrieved metadata. Sponsorship: matching Phase 3 trial Cephalon-sponsored. COI: publication disclosures unavailable in retrieved record. Status: industry-sponsored/disclosure unknown."
+  funding: 'exact statement not available in retrieved metadata. Sponsorship: matching Phase 3 trial Cephalon-sponsored. COI: publication disclosures unavailable in retrieved record. Status: industry-sponsored/disclosure unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "publication disclosures unavailable in retrieved record. Status: industry-sponsored/disclosure unknown."
+  conflictsOfInterest: 'publication disclosures unavailable in retrieved record. Status: industry-sponsored/disclosure unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r3
   title: NCT00080288, Safety/Efficacy Study With Armodafinil in Chronic SWSD
@@ -393,9 +397,9 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: Regulatory or registry source
   insight: Source R3 supports the section-specific finding cited in this article.
   limitation: Registry or search evidence does not establish efficacy without posted results.
-  funding: "not separately reported. Sponsorship: Cephalon. COI: not reported in registry format. Status: industry-sponsored registry."
+  funding: 'not separately reported. Sponsorship: Cephalon. COI: not reported in registry format. Status: industry-sponsored registry.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "not reported in registry format. Status: industry-sponsored registry."
+  conflictsOfInterest: 'not reported in registry format. Status: industry-sponsored registry.'
   conflictOfInterestStatus: not-assessed
 - id: dr-armodafinil-r6-6
   title: Effects of armodafinil in residual excessive sleepiness associated with OSA
@@ -405,9 +409,9 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: PubMed-indexed study
   insight: Source R4 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "exact statement not retrieved. Sponsorship: corresponding development trial Cephalon-sponsored. COI: exact disclosures not retrieved. Status: industry-sponsored/disclosure unknown."
+  funding: 'exact statement not retrieved. Sponsorship: corresponding development trial Cephalon-sponsored. COI: exact disclosures not retrieved. Status: industry-sponsored/disclosure unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "exact disclosures not retrieved. Status: industry-sponsored/disclosure unknown."
+  conflictsOfInterest: 'exact disclosures not retrieved. Status: industry-sponsored/disclosure unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r5
   title: NCT00078325, Armodafinil in OSAHS
@@ -417,9 +421,9 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: Regulatory or registry source
   insight: Source R5 supports the section-specific finding cited in this article.
   limitation: Registry or search evidence does not establish efficacy without posted results.
-  funding: "not separately reported. Sponsorship: Cephalon. COI: registry format does not report journal-style disclosure. Status: industry-sponsored registry."
+  funding: 'not separately reported. Sponsorship: Cephalon. COI: registry format does not report journal-style disclosure. Status: industry-sponsored registry.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "registry format does not report journal-style disclosure. Status: industry-sponsored registry."
+  conflictsOfInterest: 'registry format does not report journal-style disclosure. Status: industry-sponsored registry.'
   conflictOfInterestStatus: not-assessed
 - id: dr-armodafinil-r6
   title: Effects of armodafinil in residual excessive sleepiness associated with OSA
@@ -429,7 +433,7 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: PubMed-indexed study
   insight: Source R6 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship: Cephalon development program; exact publication disclosure not retrieved. Status: industry-sponsored/disclosure unknown."
+  funding: 'sponsorship: Cephalon development program; exact publication disclosure not retrieved. Status: industry-sponsored/disclosure unknown.'
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the returned source metadata.
   conflictOfInterestStatus: not-assessed
@@ -441,21 +445,21 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: PubMed-indexed study
   insight: Source R7 supports the section-specific finding cited in this article.
   limitation: Registry or search evidence does not establish efficacy without posted results.
-  funding: "exact statement not retrieved. Sponsorship: Cephalon according to registry. COI: detailed disclosures not retrieved. Status: industry-sponsored/disclosure unknown."
+  funding: 'exact statement not retrieved. Sponsorship: Cephalon according to registry. COI: detailed disclosures not retrieved. Status: industry-sponsored/disclosure unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "detailed disclosures not retrieved. Status: industry-sponsored/disclosure unknown."
+  conflictsOfInterest: 'detailed disclosures not retrieved. Status: industry-sponsored/disclosure unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r8
-  title: "Comparative efficacy and safety of wakefulness-promoting agents in OSA: network meta-analysis"
+  title: 'Comparative efficacy and safety of wakefulness-promoting agents in OSA: network meta-analysis'
   authors: Pitre T, Mah J, Roberts S, Desai K, Gu Y, Ryan C, Busse JW, Zeraatkar D. 2023. [PubMed](
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/37155992/
   kind: PubMed-indexed study
   insight: Source R8 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "none as primary source. Sponsorship: investigator-led review. COI: detailed individual disclosure not extracted. Status: no primary funding; author COI unknown."
+  funding: 'none as primary source. Sponsorship: investigator-led review. COI: detailed individual disclosure not extracted. Status: no primary funding; author COI unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "detailed individual disclosure not extracted. Status: no primary funding; author COI unknown."
+  conflictsOfInterest: 'detailed individual disclosure not extracted. Status: no primary funding; author COI unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r9
   title: Armodafinil for SWD randomized trial
@@ -465,9 +469,9 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: PubMed-indexed study
   insight: Source R9 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship: Cephalon funded the study and developed the protocol with authors. COI: industry relationships disclosed. Status: industry-sponsored/disclosed."
+  funding: 'sponsorship: Cephalon funded the study and developed the protocol with authors. COI: industry relationships disclosed. Status: industry-sponsored/disclosed.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "industry relationships disclosed. Status: industry-sponsored/disclosed."
+  conflictsOfInterest: 'industry relationships disclosed. Status: industry-sponsored/disclosed.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r10
   title: Pharmacological interventions for sleepiness and sleep disturbances caused by shift work.
@@ -477,9 +481,9 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: PubMed-indexed study
   insight: Source R10 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "exact review statement not extracted. Sponsorship: Cochrane review. COI: exact declarations not extracted. Status: funding/COI unknown in retrieved record."
+  funding: 'exact review statement not extracted. Sponsorship: Cochrane review. COI: exact declarations not extracted. Status: funding/COI unknown in retrieved record.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "exact declarations not extracted. Status: funding/COI unknown in retrieved record."
+  conflictsOfInterest: 'exact declarations not extracted. Status: funding/COI unknown in retrieved record.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r11
   title: Pharmacodynamic effects of armodafinil during acute sleep loss
@@ -489,9 +493,9 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: PubMed-indexed study
   insight: Source R11 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship: unknown from retrieved primary metadata. COI: publication-level disclosure not retrieved. Status: unknown."
+  funding: 'sponsorship: unknown from retrieved primary metadata. COI: publication-level disclosure not retrieved. Status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "publication-level disclosure not retrieved. Status: unknown."
+  conflictsOfInterest: 'publication-level disclosure not retrieved. Status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r12
   title: NCT02468856, armodafinil effects on simulated driving/EEG/cognition after sleep deprivation
@@ -501,9 +505,9 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: Regulatory or registry source
   insight: Source R12 supports the section-specific finding cited in this article.
   limitation: Registry or search evidence does not establish efficacy without posted results.
-  funding: "not separately reported. Sponsorship: University of Florida. COI: registry has no journal-style disclosures; no posted results/publication. Status: academic-sponsored registry; COI unknown."
+  funding: 'not separately reported. Sponsorship: University of Florida. COI: registry has no journal-style disclosures; no posted results/publication. Status: academic-sponsored registry; COI unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "registry has no journal-style disclosures; no posted results/publication. Status: academic-sponsored registry; COI unknown."
+  conflictsOfInterest: 'registry has no journal-style disclosures; no posted results/publication. Status: academic-sponsored registry; COI unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r13
   title: Modafinil affects mood, but not cognitive function, in healthy young volunteers
@@ -513,10 +517,12 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: PubMed-indexed study
   insight: Source R13 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship/COI: unknown in accessible metadata."
+  funding: 'sponsorship/COI: unknown in accessible metadata.'
   sponsorshipStatus: not-assessed
   conflictsOfInterest: unknown in accessible metadata.
   conflictOfInterestStatus: not-assessed
+  doi: 10.1002/hup.456
+  pmid: '12672167'
 - id: dr-r14
   title: Cognitive-enhancing properties of modafinil limited in non-sleep-deprived middle-aged volunteers
   authors: Randall DC, Fleck NL, Shneerson JM, File SE. 2004; racemic modafinil. [PubMed](
@@ -525,9 +531,9 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: PubMed-indexed study
   insight: Source R14 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "non-U.S.-government research support indexed; exact funder unavailable. Sponsorship/COI: unknown. Status: incomplete disclosure metadata."
+  funding: 'non-U.S.-government research support indexed; exact funder unavailable. Sponsorship/COI: unknown. Status: incomplete disclosure metadata.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown. Status: incomplete disclosure metadata."
+  conflictsOfInterest: 'unknown. Status: incomplete disclosure metadata.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r15
   title: Does modafinil enhance cognitive performance in young volunteers who are not sleep-deprived? Delia C
@@ -537,21 +543,21 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: PubMed-indexed study
   insight: Source R15 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "non-U.S.-government support indexed; exact funder unavailable. Sponsorship/COI: unknown."
+  funding: 'non-U.S.-government support indexed; exact funder unavailable. Sponsorship/COI: unknown.'
   sponsorshipStatus: not-assessed
   conflictsOfInterest: unknown.
   conflictOfInterestStatus: not-assessed
 - id: dr-r16
-  title: "Pharmacokinetic profile of armodafinil in healthy subjects: pooled analysis of three randomized studies"
+  title: 'Pharmacokinetic profile of armodafinil in healthy subjects: pooled analysis of three randomized studies'
   authors: Darwish M, Kirby M, Hellriegel ET, Yang R, Robertson P. 2009. [PubMed](
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19133704/
   kind: PubMed-indexed study
   insight: Source R16 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship: Cephalon-sponsored; editorial assistance Cephalon-funded. COI: authors were Cephalon employees during analysis/manuscript development. Status: industry-sponsored/disclosed."
+  funding: 'sponsorship: Cephalon-sponsored; editorial assistance Cephalon-funded. COI: authors were Cephalon employees during analysis/manuscript development. Status: industry-sponsored/disclosed.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "authors were Cephalon employees during analysis/manuscript development. Status: industry-sponsored/disclosed."
+  conflictsOfInterest: 'authors were Cephalon employees during analysis/manuscript development. Status: industry-sponsored/disclosed.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r17
   title: Interaction profile of armodafinil with CYP1A2, CYP3A4, and CYP2C19 substrates
@@ -561,33 +567,33 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: PubMed-indexed study
   insight: Source R17 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship/COI: not fully resolved from retrieved record; status unknown."
+  funding: 'sponsorship/COI: not fully resolved from retrieved record; status unknown.'
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not fully resolved from retrieved record; status unknown.
   conflictOfInterestStatus: not-assessed
 - id: dr-r18
-  title: "Modafinil and cardiovascular events: three U.S"
+  title: 'Modafinil and cardiovascular events: three U.S'
   authors: claims databases. Kaplan S, Goehring EL Jr, Melamed-Gal S, Nguyen-Khoa BA, Knebel H, Jones JK. 2018; racemic modafinil. [PubMed](
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/30106194/
   kind: PubMed-indexed study
   insight: Source R18 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship: Teva-funded. COI: Teva employees/contractor relationships disclosed. Status: industry-sponsored/disclosed."
+  funding: 'sponsorship: Teva-funded. COI: Teva employees/contractor relationships disclosed. Status: industry-sponsored/disclosed.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "Teva employees/contractor relationships disclosed. Status: industry-sponsored/disclosed."
+  conflictsOfInterest: 'Teva employees/contractor relationships disclosed. Status: industry-sponsored/disclosed.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r19
-  title: "Pregnancy and fetal outcomes following prenatal modafinil/armodafinil exposure: 14-year registry"
+  title: 'Pregnancy and fetal outcomes following prenatal modafinil/armodafinil exposure: 14-year registry'
   authors: Kaplan S, Carneal-Frazer N, Braverman DL, Parsley L, Robinson C, Benjamin DK, Albano JD. 2025. [PubMed](
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/41070135/
   kind: PubMed-indexed study
   insight: Source R19 supports the section-specific finding cited in this article.
   limitation: Registry or search evidence does not establish efficacy without posted results.
-  funding: "sponsorship: manufacturer registry associated with Teva/Cephalon. COI: Teva employment/consulting relationships disclosed. Status: industry-registry/disclosed."
+  funding: 'sponsorship: manufacturer registry associated with Teva/Cephalon. COI: Teva employment/consulting relationships disclosed. Status: industry-registry/disclosed.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "Teva employment/consulting relationships disclosed. Status: industry-registry/disclosed."
+  conflictsOfInterest: 'Teva employment/consulting relationships disclosed. Status: industry-registry/disclosed.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r20
   title: Malformations after early pregnancy exposure to modafinil in Sweden/Norway
@@ -597,21 +603,21 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: PubMed-indexed study
   insight: Source R20 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "NordForsk and Research Council of Norway; funders had no study role. Sponsorship: public/non-industry. COI: no conflicts reported. Status: non-industry/no conflicts reported."
+  funding: 'NordForsk and Research Council of Norway; funders had no study role. Sponsorship: public/non-industry. COI: no conflicts reported. Status: non-industry/no conflicts reported.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "no conflicts reported. Status: non-industry/no conflicts reported."
+  conflictsOfInterest: 'no conflicts reported. Status: non-industry/no conflicts reported.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r21
-  title: "Assessing the Risk of Adverse Maternal and Infant Outcomes Following Prenatal Modafinil Exposure: French Nationwide Cohort Study"
-  authors: "Sigal Kaplan, Julie de Nascimento, Andrea Contini. 2026. [PubMed]("
+  title: 'Assessing the Risk of Adverse Maternal and Infant Outcomes Following Prenatal Modafinil Exposure: French Nationwide Cohort Study'
+  authors: Sigal Kaplan, Julie de Nascimento, Andrea Contini. 2026. [PubMed](
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/42274903/
   kind: PubMed-indexed study
   insight: Source R21 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "sponsorship: Cephalon affiliate of Teva. COI: Kaplan was Teva employee; other authors IQVIA employees under Teva contract. Status: industry-sponsored/disclosed."
+  funding: 'sponsorship: Cephalon affiliate of Teva. COI: Kaplan was Teva employee; other authors IQVIA employees under Teva contract. Status: industry-sponsored/disclosed.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "Kaplan was Teva employee; other authors IQVIA employees under Teva contract. Status: industry-sponsored/disclosed."
+  conflictsOfInterest: 'Kaplan was Teva employee; other authors IQVIA employees under Teva contract. Status: industry-sponsored/disclosed.'
   conflictOfInterestStatus: not-assessed
 - id: dr-r22
   title: Prenatal modafinil and major congenital/neonatal/pediatric outcomes
@@ -621,9 +627,21 @@ The strongest evidence is condition-specific wakefulness and pharmacokinetics. S
   kind: PubMed-indexed study
   insight: Source R22 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "no study funding declared; open-access funding COUPERIN CY26. Sponsorship: investigator-led national-database study. COI: authors declare none. Status: non-industry/no conflicts reported."
+  funding: 'no study funding declared; open-access funding COUPERIN CY26. Sponsorship: investigator-led national-database study. COI: authors declare none. Status: non-industry/no conflicts reported.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "authors declare none. Status: non-industry/no conflicts reported."
+  conflictsOfInterest: 'authors declare none. Status: non-industry/no conflicts reported.'
+  conflictOfInterestStatus: not-assessed
+- id: reddit-link-fcdac276071c
+  title: Pharmacodynamic effects on alertness of single doses of armodafinil in healthy subjects during a nocturnal period of acute sleep loss (2006)
+  authors: Not established
+  year: 2006
+  url: https://www.tandfonline.com/doi/abs/10.1185/030079906X80378
+  kind: Reddit index publication link
+  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 

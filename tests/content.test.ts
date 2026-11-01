@@ -91,10 +91,24 @@ test('intake and identification records are optional but strictly typed and sour
  s.doses[0].foodRelation='invalid' as never;assert.throws(()=>validateSubstance(s),/foodRelation/);
 });
 test('negative and unknown half-lives cannot become numeric models',()=>{const s=structuredClone(substances[0]);s.pkObservations[0].low=-2;assert.throws(()=>validateSubstance(s),/nonnegative/);s.pkObservations[0].low=null;s.pkObservations[0].statistic='not-established';assert.throws(()=>validateSubstance(s),/cannot be modeled/);});
+test('Reddit PK gaps omit unknown context instead of rendering placeholders',()=>{
+ const placeholders=/^(?:Not assessed|Not established|Not established from abstract|Index entry|Study formulation as stated in the abstract|Study formulation not reported as a PK parameter|Route not stated in abstract|Population not specified in the returned PubMed abstract\.?|Preparation identity requires verification)$/i;
+ for(const substance of substances) for(const observation of substance.pkObservations){
+  if(!String(observation.sourceId).startsWith('reddit-')) continue;
+  assert.doesNotMatch(String(observation.route??''),placeholders,`${substance.slug}:${observation.id}:route`);
+  assert.doesNotMatch(String(observation.formulation??''),placeholders,`${substance.slug}:${observation.id}:formulation`);
+  assert.doesNotMatch(String(observation.population??''),placeholders,`${substance.slug}:${observation.id}:population`);
+ }
+ for(const substance of substances) for(const dose of substance.doses){
+  if(!String(dose.sourceId).startsWith('reddit-')) continue;
+  assert.doesNotMatch(String(dose.route??''),/^(?:Not assessed|Not established|Not established from abstract|Route not stated in abstract|Not reported)$/i,`${substance.slug}:${dose.label}:route`);
+ }
+ assert.equal(substances.flatMap(s=>s.pkObservations).filter(o=>String(o.sourceId).startsWith('reddit-index-')).length,0);
+});
 test('a measured outcome cannot masquerade as a subjective effect',()=>{const b=structuredClone(bundle);b.substances[0].effects[0].conceptId='attention';assert.throws(()=>validateContent(b),/must be a effect/);});
 test('roles cannot disappear from a contextual relationship',()=>{const b=structuredClone(bundle);delete b.hyperedges[0].memberRoles[b.hyperedges[0].members[0]];assert.throws(()=>validateContent(b),/role/);});
 test('caffeine smoking is a metabolic context and psilocin is the modeled analyte',()=>{
- const c=substances.find(s=>s.slug==='caffeine')!;assert.ok(c.modifiers.some(m=>m.factorType==='smoking'));assert.ok(c.doses.every(d=>!/smok/i.test(d.route)));
+ const c=substances.find(s=>s.slug==='caffeine')!;assert.ok(c.modifiers.some(m=>m.factorType==='smoking'));assert.ok(c.doses.every(d=>!/smok/i.test(d.route??'')));
  const edge=hyperedges.find(h=>h.members.includes('tag:tobacco-smoke'))!;assert.ok(edge.members.includes('substance:caffeine'));assert.ok(edge.members.includes('tag:cyp1a2'));
  const p=substances.find(s=>s.slug==='psilocybin')!;const pk=p.pkObservations.find(o=>o.id===p.halfLife.observationId)!;assert.match(pk.analyte,/psilocin/i);assert.equal(pk.statistic,'reported-range');
 });

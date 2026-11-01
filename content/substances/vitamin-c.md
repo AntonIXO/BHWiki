@@ -494,10 +494,10 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
 
 ```yaml
 - id: pmid-42929728
-  title: "Micronutrient deficiencies in continuous renal replacement therapy: A literature review and the emerging role of the pharmacist."
+  title: 'Micronutrient deficiencies in continuous renal replacement therapy: A literature review and the emerging role of the pharmacist.'
   authors: Wang C, Kaarto P, Farina N, Schultz M, Burr L, Nordbeck S.
   year: 2026
-  pmid: "42929728"
+  pmid: '42929728'
   doi: 10.1093/ajhp/zxag361
   url: https://pubmed.ncbi.nlm.nih.gov/42929728/
   kind: Literature review
@@ -539,7 +539,7 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   kind: controlled human depletion-repletion study
   insight: Described the sequence of clinical scurvy during prolonged experimental vitamin C deprivation; five completing volunteers developed full clinical scurvy after approximately 84 to 97 days.
   limitation: Very small historical study in incarcerated adult men under research standards that predate modern ethical norms; limited generalizability.
-  pmid: "5090631"
+  pmid: '5090631'
   doi: 10.1093/ajcn/24.4.432
   funding: U.S. Army Medical Research and Development Command contract DADA17-67-C-7111 and grant/support AM5306-08 were reported.
   sponsorshipStatus: non-industry-funded
@@ -547,28 +547,28 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   conflictOfInterestStatus: not-reported
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/5090631/
 - id: ref-levine-1996
-  title: "Vitamin C pharmacokinetics in healthy volunteers: evidence for a recommended dietary allowance"
+  title: 'Vitamin C pharmacokinetics in healthy volunteers: evidence for a recommended dietary allowance'
   authors: Levine M, Conry-Cantilena C, Wang Y, Welch RW, Washko PW, Dhariwal KR, Park JB, Lazarev A, Graumlich JF, King J, Cantilena LR
   year: 1996
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC39676/
   kind: controlled depletion-repletion pharmacokinetic study
   insight: In seven hospitalized healthy volunteers, steady-state plasma concentrations followed sigmoid dose-response kinetics; leukocytes saturated near 100 mg/day, oral bioavailability was complete at a 200 mg single dose, fell at 500 mg and above, and urinary excretion rose with higher doses.
   limitation: Seven participants and an intensive metabolic-ward design limit population generalizability.
-  pmid: "8623000"
+  pmid: '8623000'
   doi: 10.1073/pnas.93.8.3704
   funding: Funding and sponsorship were not fully re-audited from the accessible record for this article.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Competing-interest disclosure was not assessed.
   conflictOfInterestStatus: not-assessed
 - id: ref-padayatty-2004
-  title: "Vitamin C pharmacokinetics: implications for oral and intravenous use"
+  title: 'Vitamin C pharmacokinetics: implications for oral and intravenous use'
   authors: Padayatty SJ, Sun H, Wang Y, Riordan HD, Hewitt SM, Katz A, Wesley RA, Levine M
   year: 2004
   url: https://pubmed.ncbi.nlm.nih.gov/15068981/
   kind: human dose-concentration study and pharmacokinetic modeling
   insight: In 17 healthy hospitalized volunteers, 1.25 g oral vitamin C produced mean peak plasma concentration 134.8 µmol/L versus 885 µmol/L after IV administration; modeled high-dose IV exposure was far above oral exposure.
   limitation: Very high IV-dose concentrations were partly modeled; patient data did not validate the high-dose cancer context.
-  pmid: "15068981"
+  pmid: '15068981'
   doi: 10.7326/0003-4819-140-7-200404060-00010
   funding: Source-level funding details were not fully assessed from the accessible record.
   sponsorshipStatus: not-assessed
@@ -582,7 +582,7 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   kind: systematic review and meta-analysis of placebo-controlled trials
   insight: General-population incidence RR 0.97 (95% CI 0.94–1.00); severe-physical-stress subgroup RR 0.48 (0.35–0.64); regular supplementation shortened adult cold duration about 8%, while therapeutic post-onset trials showed no consistent effect.
   limitation: Many trials were old and heterogeneous in dose, population and outcome definitions; subgroup findings are context-specific.
-  pmid: "23440782"
+  pmid: '23440782'
   doi: 10.1002/14651858.CD000980.pub4
   funding: Review support included Australian National University and the Australian Commonwealth Department of Health and Ageing; no commercial trial sponsor was reported for the review.
   sponsorshipStatus: non-industry-funded
@@ -590,14 +590,14 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC8078152/
 - id: ref-phs-cvd
-  title: "Vitamins E and C in the prevention of cardiovascular disease in men: the Physicians' Health Study II randomized controlled trial"
+  title: 'Vitamins E and C in the prevention of cardiovascular disease in men: the Physicians'' Health Study II randomized controlled trial'
   authors: Sesso HD, Buring JE, Christen WG, Kurth T, Belanger C, MacFadyen J, Bubes V, Manson JE, Glynn RJ, Gaziano JM
   year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/18997197/
   kind: randomized double-blind placebo-controlled factorial trial
-  insight: "Vitamin C 500 mg/day for a mean 8 years did not reduce major cardiovascular events: HR 0.99 (95% CI 0.89–1.11)."
+  insight: 'Vitamin C 500 mg/day for a mean 8 years did not reduce major cardiovascular events: HR 0.99 (95% CI 0.89–1.11).'
   limitation: Male physicians age 50 years and older; limited generalizability to women, deficiency states and lower-resource populations.
-  pmid: "18997197"
+  pmid: '18997197'
   doi: 10.1001/jama.2008.600
   funding: NIH grants plus an investigator-initiated BASF grant; BASF, Wyeth and DSM provided study agents/packaging.
   sponsorshipStatus: mixed-funding
@@ -605,14 +605,14 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC2586922/
 - id: ref-phs-cancer
-  title: "Vitamins E and C in the prevention of prostate and total cancer in men: the Physicians' Health Study II randomized controlled trial"
+  title: 'Vitamins E and C in the prevention of prostate and total cancer in men: the Physicians'' Health Study II randomized controlled trial'
   authors: Gaziano JM, Glynn RJ, Christen WG, Kurth T, Belanger C, MacFadyen J, Bubes V, Manson JE, Sesso HD, Buring JE
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19066368/
   kind: randomized double-blind placebo-controlled factorial trial
   insight: Vitamin C 500 mg/day did not reduce total cancer (HR 1.01, 95% CI 0.92–1.10) or prostate cancer (HR 1.02, 95% CI 0.90–1.15).
   limitation: Same predominantly well-nourished male-physician cohort as the cardiovascular analysis.
-  pmid: "19066368"
+  pmid: '19066368'
   doi: 10.1001/jama.2008.862
   funding: NIH support with study agents/packaging and an investigator-initiated grant involving commercial manufacturers.
   sponsorshipStatus: mixed-funding
@@ -620,14 +620,14 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC2774210/
 - id: ref-citris
-  title: "Effect of Vitamin C Infusion on Organ Failure and Biomarkers of Inflammation and Vascular Injury in Patients With Sepsis and Severe Acute Respiratory Failure: The CITRIS-ALI Randomized Clinical Trial"
+  title: 'Effect of Vitamin C Infusion on Organ Failure and Biomarkers of Inflammation and Vascular Injury in Patients With Sepsis and Severe Acute Respiratory Failure: The CITRIS-ALI Randomized Clinical Trial'
   authors: Fowler AA 3rd, Truwit JD, Hite RD, Morris PE, DeWilde C, Priday A, Fisher B, Thacker LR 2nd, Natarajan R, Brophy DF, et al.
   year: 2019
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6777268/
   kind: randomized double-blind placebo-controlled multicenter trial
   insight: IV vitamin C 50 mg/kg every 6 h for 96 h did not improve the primary modified SOFA, C-reactive-protein or thrombomodulin endpoints.
   limitation: Preliminary trial with multiple endpoints; exploratory mortality findings were not the primary efficacy endpoint and later evidence changed the balance.
-  pmid: "31573637"
+  pmid: '31573637'
   doi: 10.1001/jama.2019.11825
   funding: NIH/NHLBI and other academic/public support; McGuff supplied vitamin C study material.
   sponsorshipStatus: mixed-funding
@@ -642,7 +642,7 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   kind: randomized blinded placebo-controlled multicenter trial
   insight: The day-28 composite of death or persistent organ dysfunction occurred in 44.5% with IV vitamin C versus 38.5% with placebo, RR 1.21 (95% CI 1.04–1.40).
   limitation: ICU sepsis population receiving vasopressors; findings do not address ordinary dietary supplementation or treatment of confirmed nutritional deficiency.
-  pmid: "35704292"
+  pmid: '35704292'
   doi: 10.1056/NEJMoa2200644
   funding: Lotte and John Hecht Memorial Foundation; Nova Biomedical Canada supplied glucometers/strips/control solutions; vitamin C was purchased from Mylan at Canadian and New Zealand sites.
   sponsorshipStatus: mixed-funding
@@ -650,7 +650,7 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   conflictOfInterestStatus: declared
   disclosureUrl: https://www.nejm.org/doi/10.1056/NEJMoa2200644
 - id: ref-ssc-2026
-  title: "Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026"
+  title: 'Surviving Sepsis Campaign: International Guidelines for Management of Sepsis and Septic Shock 2026'
   authors: Society of Critical Care Medicine
   year: 2026
   url: https://sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-campaign-international-guidelines-for-management-of-sepsis-and-septic-shock-2026
@@ -667,9 +667,9 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9527503/
   kind: randomized open-label multicenter phase 3 trial
-  insight: "Overall PFS was not significantly improved by adding IV vitamin C: median 8.6 vs 8.3 months; HR 0.86 (95% CI 0.70–1.05)."
+  insight: 'Overall PFS was not significantly improved by adding IV vitamin C: median 8.6 vs 8.3 months; HR 0.86 (95% CI 0.70–1.05).'
   limitation: Open-label design; positive RAS-mutant subgroup finding was not the overall primary result and requires confirmation.
-  pmid: "35929990"
+  pmid: '35929990'
   doi: 10.1158/1078-0432.CCR-22-0655
   funding: Sun Yat-sen University Clinical Research 5010 Program, National Natural Science Foundation of China and provincial/municipal public research programs.
   sponsorshipStatus: non-industry-funded
@@ -677,14 +677,14 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC9527503/
 - id: ref-paller
-  title: "High-Dose Intravenous Vitamin C Combined with Docetaxel in Men with Metastatic Castration-Resistant Prostate Cancer: A Randomized Placebo-Controlled Phase II Trial"
+  title: 'High-Dose Intravenous Vitamin C Combined with Docetaxel in Men with Metastatic Castration-Resistant Prostate Cancer: A Randomized Placebo-Controlled Phase II Trial'
   authors: Paller CJ, Zahurak ML, Mandl A, Metri NA, Lalji A, Heath E, Kelly WK, Hoimes C, Barata P, Taksey J, et al.
   year: 2024
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11333993/
   kind: randomized double-blind placebo-controlled phase 2 trial
   insight: Adding IV vitamin C 1 g/kg to docetaxel did not significantly improve PSA50 response, radiographic PFS, overall survival or toxicity; the study stopped for futility.
   limitation: Small, heavily pretreated population and early futility termination reduce precision.
-  pmid: "39076107"
+  pmid: '39076107'
   doi: 10.1158/2767-9764.CRC-24-0225
   funding: U.S. Department of Defense, NIH and Billi Marcus Foundation support were reported.
   sponsorshipStatus: non-industry-funded
@@ -699,7 +699,7 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   kind: randomized phase 2 clinical trial
   insight: In 36 randomized patients, adding 75 g IV ascorbate three times weekly was associated with OS HR 0.46 (90% CI 0.23–0.92) and PFS HR 0.43 (90% CI 0.20–0.92).
   limitation: Very small sample, 34 treated patients, and use of 90% confidence intervals; findings require independent confirmation.
-  pmid: "39369582"
+  pmid: '39369582'
   doi: 10.1016/j.redox.2024.103375
   funding: NIH P01CA217797 and Holden Comprehensive Cancer Center P30 support were reported.
   sponsorshipStatus: non-industry-funded
@@ -719,7 +719,7 @@ The evidence is strongest for correcting deficiency and weakest for extrapolatin
   conflictsOfInterest: Not assessed for the PDQ editorial process in this article.
   conflictOfInterestStatus: not-assessed
 - id: ref-fda-supplements
-  title: "FDA 101: Dietary Supplements"
+  title: 'FDA 101: Dietary Supplements'
   authors: U.S. Food and Drug Administration
   year: 2025
   url: https://www.fda.gov/consumers/consumer-updates/fda-101-dietary-supplements

@@ -30,7 +30,7 @@ export function TimingExplorer({
   slug: string;
   kinetics: Substance["kinetics"];
   observations: Substance["pkObservations"];
-  initialId: string;
+  initialId?: string;
   references: Substance["references"];
 }) {
   const routes = kinetics.timeline ?? [];
@@ -60,7 +60,7 @@ export function TimingExplorer({
     icon: modelIcon(modelTone(observation.route)),
     tone: modelTone(observation.route),
     badge: observation.statistic,
-    ariaLabel: `${observation.analyte} · ${observation.route} · ${observation.formulation} · ${observation.statistic}`,
+    ariaLabel: [observation.analyte, observation.route, observation.formulation, observation.statistic].filter(Boolean).join(" · "),
   }));
   return (
     <div className="flex flex-col gap-5">
@@ -120,7 +120,7 @@ export function TimingExplorer({
                 key={pk.id}
                 transition={reducedMotion ? { duration: 0 } : { duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
               >
-                <p className="route-dose-panel-caption"><span>{pk.route}</span> · {pk.formulation} · {pk.statistic}</p>
+                <p className="route-dose-panel-caption">{[pk.route, pk.formulation, pk.statistic].filter(Boolean).join(" · ")}</p>
                 <KineticsChart observation={pk} sourceHref={`#reference-${pk.sourceId}`} evidenceKey={evidenceKey(slug, "pk", pk)} />
               </motion.div>
             </AnimatePresence>
@@ -138,8 +138,8 @@ export function TimingExplorer({
 
 type ModelTone = "intranasal" | "oral" | "intravenous" | "smoking" | "other";
 
-function modelTone(route: string): ModelTone {
-  const value = route.toLowerCase();
+function modelTone(route: string | undefined): ModelTone {
+  const value = route?.toLowerCase() ?? "";
   const tones: [ModelTone, RegExp][] = [
     ["intranasal", /\b(?:intranasal|nasal)\b/],
     ["oral", /\b(?:oral|by mouth|per os|po)\b/],
@@ -150,8 +150,8 @@ function modelTone(route: string): ModelTone {
   return matches.length === 1 ? matches[0] : "other";
 }
 
-function modelLabel(route: string) {
-  const value = route.toLowerCase();
+function modelLabel(route: string | undefined) {
+  const value = route?.toLowerCase() ?? "";
   const matches = [
     /\b(?:intranasal|nasal)\b/.test(value),
     /\b(?:oral|by mouth|per os|po)\b/.test(value),
@@ -163,7 +163,7 @@ function modelLabel(route: string) {
   if (/\b(?:oral|by mouth|per os|po)\b/.test(value)) return "Oral";
   if (/\b(?:smok(?:e|ed|ing)|inhal(?:ed|ation))\b/.test(value)) return "Smoking";
   if (/\b(?:intranasal|nasal)\b/.test(value)) return /\btopical\b/.test(value) ? "Topical intranasal" : "Intranasal";
-  return route;
+  return route ?? "Other";
 }
 
 function modelIcon(tone: ModelTone): LucideIcon {

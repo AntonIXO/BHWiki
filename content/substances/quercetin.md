@@ -639,10 +639,8 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
 
 ```yaml
 - id: S1
-  title: 'Quercetin supplementation and upper respiratory tract infection: A randomized
-    community clinical trial'
-  authors: Serena A. Heinz; Dru A. Henson; Melanie D. Austin; Fuxia Jin; David C.
-    Nieman
+  title: 'Quercetin supplementation and upper respiratory tract infection: A randomized community clinical trial'
+  authors: Serena A. Heinz; Dru A. Henson; Melanie D. Austin; Fuxia Jin; David C. Nieman
   year: 2010
   url: https://pubmed.ncbi.nlm.nih.gov/20478383/
   kind: Primary randomized controlled trial
@@ -658,16 +656,14 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   year: 2007
   url: https://pubmed.ncbi.nlm.nih.gov/17805089/
   kind: Primary randomized controlled trial
-  insight: URTI incidence fell after intensive cycling without changes in measured
-    immune markers.
+  insight: URTI incidence fell after intensive cycling without changes in measured immune markers.
   limitation: Small trained-male exercise cohort.
   funding: Not assessed in the returned report.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S3
-  title: Post-160-km race illness rates and decreases in granulocyte respiratory burst
-    and salivary IgA output are not countered by quercetin ingestion
+  title: Post-160-km race illness rates and decreases in granulocyte respiratory burst and salivary IgA output are not countered by quercetin ingestion
   authors: David C. Nieman; et al.
   year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/18213545/
@@ -691,8 +687,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S5
-  title: Long-term quercetin supplementation reduces lipid peroxidation but does not
-    improve performance in endurance runners
+  title: Long-term quercetin supplementation reduces lipid peroxidation but does not improve performance in endurance runners
   authors: Shane D. Scholten; Igor N. Sergeev
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/24379709/
@@ -718,9 +713,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/17951477/
 - id: S7
-  title: 'Quercetin reduces systolic blood pressure and plasma oxidised low-density
-    lipoprotein concentrations in overweight subjects with a high-cardiovascular disease
-    risk phenotype: a double-blinded, placebo-controlled cross-over study'
+  title: 'Quercetin reduces systolic blood pressure and plasma oxidised low-density lipoprotein concentrations in overweight subjects with a high-cardiovascular disease risk phenotype: a double-blinded, placebo-controlled cross-over study'
   authors: Sarah Egert; Christine Boesch-Saadatmandi; Siegfried Wolffram; et al.
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19402938/
@@ -732,9 +725,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S8
-  title: 'Effects of a quercetin-rich onion skin extract on 24 h ambulatory blood
-    pressure and endothelial function in overweight-to-obese patients with (pre-)hypertension:
-    a randomised double-blinded placebo-controlled cross-over trial'
+  title: 'Effects of a quercetin-rich onion skin extract on 24 h ambulatory blood pressure and endothelial function in overweight-to-obese patients with (pre-)hypertension: a randomised double-blinded placebo-controlled cross-over trial'
   authors: Verena Brüll; Constanze Burak; Birgit Stoffel-Wagner; et al.
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/26328470/
@@ -746,9 +737,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S9
-  title: 'Acute intake of quercetin from onion skin extract does not influence postprandial
-    blood pressure and endothelial function in overweight-to-obese adults with hypertension:
-    a randomized, double-blind, placebo-controlled, crossover trial'
+  title: 'Acute intake of quercetin from onion skin extract does not influence postprandial blood pressure and endothelial function in overweight-to-obese adults with hypertension: a randomized, double-blind, placebo-controlled, crossover trial'
   authors: Verena Brüll; Constanze Burak; Birgit Stoffel-Wagner; et al.
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/26924303/
@@ -760,57 +749,48 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S10
-  title: 'The effects of Quercetin supplementation on cardiometabolic outcomes: An
-    umbrella review of meta-analyses of randomized controlled trials'
+  title: 'The effects of Quercetin supplementation on cardiometabolic outcomes: An umbrella review of meta-analyses of randomized controlled trials'
   authors: Seyyed Mostafa Arabi; et al.
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/37654199/
   kind: Umbrella review
-  insight: Small SBP and insulin signals; no consistent DBP, lipid, glucose, inflammation,
-    or anthropometric effects.
+  insight: Small SBP and insulin signals; no consistent DBP, lipid, glucose, inflammation, or anthropometric effects.
   limitation: High heterogeneity; certainty very low to moderate.
   funding: Not assessed in the returned report.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: 'Effect of quercetin supplementation on plasma lipid profiles, blood pressure,
-    and glucose levels: a systematic review and meta-analysis'
+  title: 'Effect of quercetin supplementation on plasma lipid profiles, blood pressure, and glucose levels: a systematic review and meta-analysis'
   authors: Haohai Huang; Dan Liao; Yong Dong; Rong Pu
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/31940027/
   kind: Systematic review and meta-analysis
-  insight: BP decreased in 17 trials; pooled glucose and lipid effects were generally
-    null.
+  insight: BP decreased in 17 trials; pooled glucose and lipid effects were generally null.
   limitation: Subgroup effects depended on design and duration.
   funding: Not assessed in the returned report.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: 'Effects of Quercetin on Adiponectin-Mediated Insulin Sensitivity in Polycystic
-    Ovary Syndrome: A Randomized Placebo-Controlled Double-Blind Clinical Trial'
+  title: 'Effects of Quercetin on Adiponectin-Mediated Insulin Sensitivity in Polycystic Ovary Syndrome: A Randomized Placebo-Controlled Double-Blind Clinical Trial'
   authors: N. Rezvan; A. Moini; L. Janani; et al.
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/27824398/
   kind: Primary randomized controlled trial
-  insight: 1 g/day for 12 weeks improved HOMA-IR, adiponectin, testosterone, and LH
-    in 84 women with PCOS.
+  insight: 1 g/day for 12 weeks improved HOMA-IR, adiponectin, testosterone, and LH in 84 women with PCOS.
   limitation: Single disease-specific cohort.
   funding: Not assessed in the returned report.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S13
-  title: 'Benefits of Quercetin on Glycated Hemoglobin, Blood Pressure, PiKo-6 Readings,
-    Night-Time Sleep, Anxiety, and Quality of Life in Patients with Type 2 Diabetes
-    Mellitus: A Randomized Controlled Trial'
+  title: 'Benefits of Quercetin on Glycated Hemoglobin, Blood Pressure, PiKo-6 Readings, Night-Time Sleep, Anxiety, and Quality of Life in Patients with Type 2 Diabetes Mellitus: A Randomized Controlled Trial'
   authors: Aikaterini E. Mantadaki; et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38930033/
   kind: Primary randomized controlled trial
-  insight: Adjunctive 500 mg/day was associated with HbA1c and SBP improvements over
-    the study protocol.
+  insight: Adjunctive 500 mg/day was associated with HbA1c and SBP improvements over the study protocol.
   limitation: 88 completers, single trial, and standard-care control.
   funding: Not assessed in the returned report.
   sponsorshipStatus: not-assessed
@@ -829,8 +809,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S15
-  title: Higher plasma quercetin levels following oral administration of an onion
-    skin extract compared with pure quercetin dihydrate in humans
+  title: Higher plasma quercetin levels following oral administration of an onion skin extract compared with pure quercetin dihydrate in humans
   authors: Sarah Egert; et al.
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/26482244/
@@ -842,15 +821,12 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S16
-  title: Improved Oral Absorption of Quercetin from Quercetin Phytosome®, a New Delivery
-    System Based on Food Grade Lecithin
-  authors: Antonella Riva; Massimo Ronchi; Giovanna Petrangolini; Stefania Bosisio;
-    Pietro Allegrini
+  title: Improved Oral Absorption of Quercetin from Quercetin Phytosome®, a New Delivery System Based on Food Grade Lecithin
+  authors: Antonella Riva; Massimo Ronchi; Giovanna Petrangolini; Stefania Bosisio; Pietro Allegrini
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/30328058/
   kind: Human randomized crossover PK study
-  insight: Lecithin phytosome produced markedly higher exposure than unformulated
-    quercetin.
+  insight: Lecithin phytosome produced markedly higher exposure than unformulated quercetin.
   limitation: N=12; all authors were affiliated with Indena SpA.
   funding: Not assessed in the returned report.
   sponsorshipStatus: industry-funded
@@ -858,50 +834,43 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Company affiliation disclosed; formal statement not assessed.
   conflictOfInterestStatus: declared
 - id: S17
-  title: 'A Pharmacokinetic Study of Different Quercetin Formulations in Healthy Participants:
-    A Diet-Controlled, Crossover, Single- and Multiple-Dose Pilot Study'
+  title: 'A Pharmacokinetic Study of Different Quercetin Formulations in Healthy Participants: A Diet-Controlled, Crossover, Single- and Multiple-Dose Pilot Study'
   authors: Julie Solnier; et al.
   year: 2023
   url: https://onlinelibrary.wiley.com/doi/10.1155/2023/9727539
   kind: Human crossover PK pilot
-  insight: Micellar LipoMicel increased AUC and Cmax and sustained concentrations
-    over 72 hours.
+  insight: Micellar LipoMicel increased AUC and Cmax and sustained concentrations over 72 hours.
   limitation: N=10, open-label, formulation-specific pilot.
   funding: Not assessed in the returned report.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S18
-  title: The Influence of Single-Dose and Short-Term Administration of Quercetin on
-    the Pharmacokinetics of Midazolam in Humans
+  title: The Influence of Single-Dose and Short-Term Administration of Quercetin on the Pharmacokinetics of Midazolam in Humans
   authors: University Medical Center Mainz clinical pharmacology group
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/25988261/
   kind: Human randomized PK interaction study
-  insight: Single-dose quercetin was null; repeated high-dose exposure tended to lower
-    oral midazolam exposure.
+  insight: Single-dose quercetin was null; repeated high-dose exposure tended to lower oral midazolam exposure.
   limitation: Small sample; intravenous substudy included three subjects.
   funding: Not assessed in the returned report.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S19
-  title: Short-term effect of quercetin on the pharmacokinetics of fexofenadine, a
-    substrate of P-glycoprotein, in healthy volunteers
+  title: Short-term effect of quercetin on the pharmacokinetics of fexofenadine, a substrate of P-glycoprotein, in healthy volunteers
   authors: Kyoung-Ah Kim; Pil-Whan Park; Ji-Young Park
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19221726/
   kind: Human randomized PK interaction study
-  insight: 500 mg three times daily for seven days reduced fexofenadine oral clearance
-    by 37%.
+  insight: 500 mg three times daily for seven days reduced fexofenadine oral clearance by 37%.
   limitation: N=12 healthy volunteers; probe-drug result.
   funding: Not assessed in the returned report.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S20
-  title: Effect of quercetin on the plasma and intracellular concentrations of saquinavir
-    in healthy adults
+  title: Effect of quercetin on the plasma and intracellular concentrations of saquinavir in healthy adults
   authors: Robert DiCenzo; Valerie Frerichs; Panupong Larppanichpoonphol; et al.
   year: 2006
   url: https://pubmed.ncbi.nlm.nih.gov/16945047/
@@ -913,16 +882,13 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S21
-  title: Effect of single-dose and short-term administration of quercetin on the pharmacokinetics
-    of talinolol in humans – Implications for the evaluation of transporter-mediated
-    flavonoid–drug interactions
+  title: Effect of single-dose and short-term administration of quercetin on the pharmacokinetics of talinolol in humans – Implications for the evaluation of transporter-mediated flavonoid–drug interactions
   authors: German Research Foundation-supported human PK study group
   year: 2014
   url: https://www.sciencedirect.com/science/article/abs/pii/S0928098714000189
   kind: Human PK interaction study
   insight: Talinolol exposure tended to decrease rather than increase.
-  limitation: Transporter attribution was uncertain and intersubject variability was
-    high.
+  limitation: Transporter attribution was uncertain and intersubject variability was high.
   funding: Grant LA563/7-1, German Research Foundation
   sponsorshipStatus: non-industry-funded
   conflictsOfInterest: Not assessed in the returned report.
@@ -934,8 +900,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9608098/
   kind: Case report
-  insight: INR rose to 7.5 after a quercetin-containing supplement and normalized
-    after discontinuation.
+  insight: INR rose to 7.5 after a quercetin-containing supplement and normalized after discontinuation.
   limitation: One case; supplement also contained vitamin C; no controlled rechallenge.
   funding: No financial support
   sponsorshipStatus: no-external-funding
@@ -943,22 +908,19 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC9608098/
 - id: S23
-  title: 'Interaction of quercetin and its metabolites with warfarin: displacement
-    of warfarin from serum albumin and inhibition of CYP2C9 enzyme'
+  title: 'Interaction of quercetin and its metabolites with warfarin: displacement of warfarin from serum albumin and inhibition of CYP2C9 enzyme'
   authors: M. Poór; G. Boda; P. W. Needs; et al.
   year: 2017
   url: https://doi.org/10.1016/j.biopha.2017.01.092
   kind: In-vitro mechanistic study
-  insight: Quercetin and metabolites bound albumin and inhibited CYP2C9 in experimental
-    systems.
+  insight: Quercetin and metabolites bound albumin and inhibited CYP2C9 in experimental systems.
   limitation: Tube findings do not quantify clinical interaction risk.
   funding: Not assessed in the returned report.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S24
-  title: 'The Pharmacological Activity, Biochemical Properties, and Pharmacokinetics
-    of the Major Natural Polyphenolic Flavonoid: Quercetin'
+  title: 'The Pharmacological Activity, Biochemical Properties, and Pharmacokinetics of the Major Natural Polyphenolic Flavonoid: Quercetin'
   authors: G. S. Batiha; A. M. Beshbishy; L. G. Wasef; et al.
   year: 2020
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7143931/
@@ -976,8 +938,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   year: 2010
   url: https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=341&set=GRASNotices
   kind: Regulatory food-ingredient notice
-  insight: Lists specified food uses up to 500 mg per serving and an FDA no-questions
-    letter.
+  insight: Lists specified food uses up to 500 mg per serving and an FDA no-questions letter.
   limitation: Food-use determination, not therapeutic efficacy approval.
   funding: Not applicable
   sponsorshipStatus: not-assessed
@@ -989,35 +950,29 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   year: 2020
   url: https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/frs-international-llc-606701-06152020
   kind: Regulatory warning letter
-  insight: COVID-19 treatment and prevention claims involving quercetin were treated
-    as disease claims.
+  insight: COVID-19 treatment and prevention claims involving quercetin were treated as disease claims.
   limitation: Enforcement example, not a clinical efficacy review.
   funding: Not applicable
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not applicable
   conflictOfInterestStatus: not-assessed
 - id: S27
-  title: 'The effect of quercetin on the prevention or treatment of COVID-19 and other
-    respiratory tract infections in humans: A rapid review'
-  authors: University of California, Los Angeles and Griffith University evidence-review
-    team
+  title: 'The effect of quercetin on the prevention or treatment of COVID-19 and other respiratory tract infections in humans: A rapid review'
+  authors: University of California, Los Angeles and Griffith University evidence-review team
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/32837891/
   kind: Rapid review
-  insight: Human respiratory evidence was limited and insufficient to establish COVID-19
-    treatment or prevention efficacy.
+  insight: Human respiratory evidence was limited and insufficient to establish COVID-19 treatment or prevention efficacy.
   limitation: Search and evidence base predated later trials.
   funding: Not assessed in the returned report.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s1
-  title: 'Quercetin supplementation and upper respiratory tract infection: A randomized
-    community clinical trial'
-  authors: Serena A. Heinz; Dru A. Henson; Melanie D. Austin; Fuxia Jin; David C.
-    Nieman
+  title: 'Quercetin supplementation and upper respiratory tract infection: A randomized community clinical trial'
+  authors: Serena A. Heinz; Dru A. Henson; Melanie D. Austin; Fuxia Jin; David C. Nieman
   year: 2010
-  url: https://pubmed.ncbi.nlm.nih.gov/20478383/"
+  url: https://pubmed.ncbi.nlm.nih.gov/20478383/
   kind: Primary randomized controlled trial
   insight: N=1002; no overall URTI benefit; selected fit older subgroup improved.
   limitation: Subgroup and self-reported symptom findings.
@@ -1029,21 +984,19 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   title: Quercetin reduces illness but not immune perturbations after intensive exercise
   authors: David C. Nieman; Dru A. Henson; Sarah J. Gross; et al.
   year: 2007
-  url: https://pubmed.ncbi.nlm.nih.gov/17805089/"
+  url: https://pubmed.ncbi.nlm.nih.gov/17805089/
   kind: Primary randomized controlled trial
-  insight: URTI incidence fell after intensive cycling without changes in measured
-    immune markers.
+  insight: URTI incidence fell after intensive cycling without changes in measured immune markers.
   limitation: Small trained-male exercise cohort.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s3
-  title: Post-160-km race illness rates and decreases in granulocyte respiratory burst
-    and salivary IgA output are not countered by quercetin ingestion
+  title: Post-160-km race illness rates and decreases in granulocyte respiratory burst and salivary IgA output are not countered by quercetin ingestion
   authors: David C. Nieman; et al.
   year: 2008
-  url: https://pubmed.ncbi.nlm.nih.gov/18213545/"
+  url: https://pubmed.ncbi.nlm.nih.gov/18213545/
   kind: Primary randomized controlled trial
   insight: No postrace illness or immune benefit in ultramarathoners.
   limitation: Only 39 of 63 randomized participants completed the race.
@@ -1055,7 +1008,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   title: Quercetin's effect on cycling efficiency and substrate utilization
   authors: Charles L. Dumke; David C. Nieman; Alan C. Utter; et al.
   year: 2009
-  url: https://pubmed.ncbi.nlm.nih.gov/20029506/"
+  url: https://pubmed.ncbi.nlm.nih.gov/20029506/
   kind: Primary randomized controlled trial
   insight: No effect on power, efficiency, substrate use, or perceived effort.
   limitation: Small, well-trained cyclist sample.
@@ -1064,11 +1017,10 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s5
-  title: Long-term quercetin supplementation reduces lipid peroxidation but does not
-    improve performance in endurance runners
+  title: Long-term quercetin supplementation reduces lipid peroxidation but does not improve performance in endurance runners
   authors: Shane D. Scholten; Igor N. Sergeev
   year: 2013
-  url: https://pubmed.ncbi.nlm.nih.gov/24379709/"
+  url: https://pubmed.ncbi.nlm.nih.gov/24379709/
   kind: Primary randomized controlled trial
   insight: MDA decreased, but performance and aerobic outcomes did not.
   limitation: Young male runners; six-week duration.
@@ -1080,7 +1032,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   title: Quercetin reduces blood pressure in hypertensive subjects
   authors: R. L. Edwards; T. Lyon; S. E. Litwin; A. Rabovsky; J. D. Symons; T. Jalili
   year: 2007
-  url: https://pubmed.ncbi.nlm.nih.gov/17951477/"
+  url: https://pubmed.ncbi.nlm.nih.gov/17951477/
   kind: Primary randomized crossover trial
   insight: 730 mg/day lowered stage-1-hypertensive BP but not prehypertensive BP.
   limitation: N=41 and 28-day intervention.
@@ -1089,12 +1041,10 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s7
-  title: 'Quercetin reduces systolic blood pressure and plasma oxidised low-density
-    lipoprotein concentrations in overweight subjects with a high-cardiovascular disease
-    risk phenotype: a double-blinded, placebo-controlled cross-over study'
+  title: 'Quercetin reduces systolic blood pressure and plasma oxidised low-density lipoprotein concentrations in overweight subjects with a high-cardiovascular disease risk phenotype: a double-blinded, placebo-controlled cross-over study'
   authors: Sarah Egert; Christine Boesch-Saadatmandi; Siegfried Wolffram; et al.
   year: 2009
-  url: https://pubmed.ncbi.nlm.nih.gov/19402938/"
+  url: https://pubmed.ncbi.nlm.nih.gov/19402938/
   kind: Primary randomized crossover trial
   insight: 150 mg/day lowered SBP by about 2.6 mmHg in 93 overweight adults.
   limitation: Short crossover study; clinical events not assessed.
@@ -1103,12 +1053,10 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s8
-  title: 'Effects of a quercetin-rich onion skin extract on 24 h ambulatory blood
-    pressure and endothelial function in overweight-to-obese patients with (pre-)hypertension:
-    a randomised double-blinded placebo-controlled cross-over trial'
+  title: 'Effects of a quercetin-rich onion skin extract on 24 h ambulatory blood pressure and endothelial function in overweight-to-obese patients with (pre-)hypertension: a randomised double-blinded placebo-controlled cross-over trial'
   authors: Verena Brüll; Constanze Burak; Birgit Stoffel-Wagner; et al.
   year: 2015
-  url: https://pubmed.ncbi.nlm.nih.gov/26328470/"
+  url: https://pubmed.ncbi.nlm.nih.gov/26328470/
   kind: Primary randomized crossover trial
   insight: No total-group ABP effect; smaller hypertensive-subgroup SBP effect.
   limitation: Extract formulation and subgroup analysis.
@@ -1117,12 +1065,10 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s9
-  title: 'Acute intake of quercetin from onion skin extract does not influence postprandial
-    blood pressure and endothelial function in overweight-to-obese adults with hypertension:
-    a randomized, double-blind, placebo-controlled, crossover trial'
+  title: 'Acute intake of quercetin from onion skin extract does not influence postprandial blood pressure and endothelial function in overweight-to-obese adults with hypertension: a randomized, double-blind, placebo-controlled, crossover trial'
   authors: Verena Brüll; Constanze Burak; Birgit Stoffel-Wagner; et al.
   year: 2017
-  url: https://pubmed.ncbi.nlm.nih.gov/26924303/"
+  url: https://pubmed.ncbi.nlm.nih.gov/26924303/
   kind: Primary randomized crossover trial
   insight: A single 54 mg dose did not modify postprandial vascular or metabolic responses.
   limitation: N=22 and acute exposure.
@@ -1131,57 +1077,48 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s10
-  title: 'The effects of Quercetin supplementation on cardiometabolic outcomes: An
-    umbrella review of meta-analyses of randomized controlled trials'
+  title: 'The effects of Quercetin supplementation on cardiometabolic outcomes: An umbrella review of meta-analyses of randomized controlled trials'
   authors: Seyyed Mostafa Arabi; et al.
   year: 2023
-  url: https://pubmed.ncbi.nlm.nih.gov/37654199/"
+  url: https://pubmed.ncbi.nlm.nih.gov/37654199/
   kind: Umbrella review
-  insight: Small SBP and insulin signals; no consistent DBP, lipid, glucose, inflammation,
-    or anthropometric effects.
+  insight: Small SBP and insulin signals; no consistent DBP, lipid, glucose, inflammation, or anthropometric effects.
   limitation: High heterogeneity; certainty very low to moderate.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s11
-  title: 'Effect of quercetin supplementation on plasma lipid profiles, blood pressure,
-    and glucose levels: a systematic review and meta-analysis'
+  title: 'Effect of quercetin supplementation on plasma lipid profiles, blood pressure, and glucose levels: a systematic review and meta-analysis'
   authors: Haohai Huang; Dan Liao; Yong Dong; Rong Pu
   year: 2020
-  url: https://pubmed.ncbi.nlm.nih.gov/31940027/"
+  url: https://pubmed.ncbi.nlm.nih.gov/31940027/
   kind: Systematic review and meta-analysis
-  insight: BP decreased in 17 trials; pooled glucose and lipid effects were generally
-    null.
+  insight: BP decreased in 17 trials; pooled glucose and lipid effects were generally null.
   limitation: Subgroup effects depended on design and duration.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s12
-  title: 'Effects of Quercetin on Adiponectin-Mediated Insulin Sensitivity in Polycystic
-    Ovary Syndrome: A Randomized Placebo-Controlled Double-Blind Clinical Trial'
+  title: 'Effects of Quercetin on Adiponectin-Mediated Insulin Sensitivity in Polycystic Ovary Syndrome: A Randomized Placebo-Controlled Double-Blind Clinical Trial'
   authors: N. Rezvan; A. Moini; L. Janani; et al.
   year: 2017
-  url: https://pubmed.ncbi.nlm.nih.gov/27824398/"
+  url: https://pubmed.ncbi.nlm.nih.gov/27824398/
   kind: Primary randomized controlled trial
-  insight: 1 g/day for 12 weeks improved HOMA-IR, adiponectin, testosterone, and LH
-    in 84 women with PCOS.
+  insight: 1 g/day for 12 weeks improved HOMA-IR, adiponectin, testosterone, and LH in 84 women with PCOS.
   limitation: Single disease-specific cohort.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s13
-  title: 'Benefits of Quercetin on Glycated Hemoglobin, Blood Pressure, PiKo-6 Readings,
-    Night-Time Sleep, Anxiety, and Quality of Life in Patients with Type 2 Diabetes
-    Mellitus: A Randomized Controlled Trial'
+  title: 'Benefits of Quercetin on Glycated Hemoglobin, Blood Pressure, PiKo-6 Readings, Night-Time Sleep, Anxiety, and Quality of Life in Patients with Type 2 Diabetes Mellitus: A Randomized Controlled Trial'
   authors: Aikaterini E. Mantadaki; et al.
   year: 2024
-  url: https://pubmed.ncbi.nlm.nih.gov/38930033/"
+  url: https://pubmed.ncbi.nlm.nih.gov/38930033/
   kind: Primary randomized controlled trial
-  insight: Adjunctive 500 mg/day was associated with HbA1c and SBP improvements over
-    the study protocol.
+  insight: Adjunctive 500 mg/day was associated with HbA1c and SBP improvements over the study protocol.
   limitation: 88 completers, single trial, and standard-care control.
   funding: not-assessed
   sponsorshipStatus: not-assessed
@@ -1200,11 +1137,10 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s15
-  title: Higher plasma quercetin levels following oral administration of an onion
-    skin extract compared with pure quercetin dihydrate in humans
+  title: Higher plasma quercetin levels following oral administration of an onion skin extract compared with pure quercetin dihydrate in humans
   authors: Sarah Egert; et al.
   year: 2015
-  url: https://pubmed.ncbi.nlm.nih.gov/26482244/"
+  url: https://pubmed.ncbi.nlm.nih.gov/26482244/
   kind: Human randomized crossover PK study
   insight: Onion-skin matrix increased AUC about 4.8-fold and Cmax about 5.4-fold.
   limitation: N=12 and one-dose comparison.
@@ -1213,68 +1149,58 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s16
-  title: Improved Oral Absorption of Quercetin from Quercetin Phytosome®, a New Delivery
-    System Based on Food Grade Lecithin
-  authors: Antonella Riva; Massimo Ronchi; Giovanna Petrangolini; Stefania Bosisio;
-    Pietro Allegrini
+  title: Improved Oral Absorption of Quercetin from Quercetin Phytosome®, a New Delivery System Based on Food Grade Lecithin
+  authors: Antonella Riva; Massimo Ronchi; Giovanna Petrangolini; Stefania Bosisio; Pietro Allegrini
   year: 2019
-  url: https://pubmed.ncbi.nlm.nih.gov/30328058/"
+  url: https://pubmed.ncbi.nlm.nih.gov/30328058/
   kind: Human randomized crossover PK study
-  insight: Lecithin phytosome produced markedly higher exposure than unformulated
-    quercetin.
+  insight: Lecithin phytosome produced markedly higher exposure than unformulated quercetin.
   limitation: N=12; all authors were affiliated with Indena SpA.
   funding: No specific grant stated
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Company affiliation disclosed; formal statement not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s17
-  title: 'A Pharmacokinetic Study of Different Quercetin Formulations in Healthy Participants:
-    A Diet-Controlled, Crossover, Single- and Multiple-Dose Pilot Study'
+  title: 'A Pharmacokinetic Study of Different Quercetin Formulations in Healthy Participants: A Diet-Controlled, Crossover, Single- and Multiple-Dose Pilot Study'
   authors: Julie Solnier; et al.
   year: 2023
   url: https://onlinelibrary.wiley.com/doi/10.1155/2023/9727539"
   kind: Human crossover PK pilot
-  insight: Micellar LipoMicel increased AUC and Cmax and sustained concentrations
-    over 72 hours.
+  insight: Micellar LipoMicel increased AUC and Cmax and sustained concentrations over 72 hours.
   limitation: N=10, open-label, formulation-specific pilot.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s18
-  title: The Influence of Single-Dose and Short-Term Administration of Quercetin on
-    the Pharmacokinetics of Midazolam in Humans
+  title: The Influence of Single-Dose and Short-Term Administration of Quercetin on the Pharmacokinetics of Midazolam in Humans
   authors: University Medical Center Mainz clinical pharmacology group
   year: 2015
-  url: https://pubmed.ncbi.nlm.nih.gov/25988261/"
+  url: https://pubmed.ncbi.nlm.nih.gov/25988261/
   kind: Human randomized PK interaction study
-  insight: Single-dose quercetin was null; repeated high-dose exposure tended to lower
-    oral midazolam exposure.
+  insight: Single-dose quercetin was null; repeated high-dose exposure tended to lower oral midazolam exposure.
   limitation: Small sample; intravenous substudy included three subjects.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s19
-  title: Short-term effect of quercetin on the pharmacokinetics of fexofenadine, a
-    substrate of P-glycoprotein, in healthy volunteers
+  title: Short-term effect of quercetin on the pharmacokinetics of fexofenadine, a substrate of P-glycoprotein, in healthy volunteers
   authors: Kyoung-Ah Kim; Pil-Whan Park; Ji-Young Park
   year: 2009
-  url: https://pubmed.ncbi.nlm.nih.gov/19221726/"
+  url: https://pubmed.ncbi.nlm.nih.gov/19221726/
   kind: Human randomized PK interaction study
-  insight: 500 mg three times daily for seven days reduced fexofenadine oral clearance
-    by 37%.
+  insight: 500 mg three times daily for seven days reduced fexofenadine oral clearance by 37%.
   limitation: N=12 healthy volunteers; probe-drug result.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s20
-  title: Effect of quercetin on the plasma and intracellular concentrations of saquinavir
-    in healthy adults
+  title: Effect of quercetin on the plasma and intracellular concentrations of saquinavir in healthy adults
   authors: Robert DiCenzo; Valerie Frerichs; Panupong Larppanichpoonphol; et al.
   year: 2006
-  url: https://pubmed.ncbi.nlm.nih.gov/16945047/"
+  url: https://pubmed.ncbi.nlm.nih.gov/16945047/
   kind: Human prospective PK interaction study
   insight: Plasma saquinavir PK was unchanged; intracellular findings were inconclusive.
   limitation: N=10 and high variability.
@@ -1283,16 +1209,13 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s21
-  title: Effect of single-dose and short-term administration of quercetin on the pharmacokinetics
-    of talinolol in humans – Implications for the evaluation of transporter-mediated
-    flavonoid–drug interactions
+  title: Effect of single-dose and short-term administration of quercetin on the pharmacokinetics of talinolol in humans – Implications for the evaluation of transporter-mediated flavonoid–drug interactions
   authors: German Research Foundation-supported human PK study group
   year: 2014
   url: https://www.sciencedirect.com/science/article/abs/pii/S0928098714000189"
   kind: Human PK interaction study
   insight: Talinolol exposure tended to decrease rather than increase.
-  limitation: Transporter attribution was uncertain and intersubject variability was
-    high.
+  limitation: Transporter attribution was uncertain and intersubject variability was high.
   funding: Grant LA563/7-1, German Research Foundation
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
@@ -1303,30 +1226,26 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9608098/"
   kind: Case report
-  insight: INR rose to 7.5 after a quercetin-containing supplement and normalized
-    after discontinuation.
+  insight: INR rose to 7.5 after a quercetin-containing supplement and normalized after discontinuation.
   limitation: One case; supplement also contained vitamin C; no controlled rechallenge.
   funding: No financial support
   sponsorshipStatus: not-assessed
   conflictsOfInterest: No potential conflicts declared
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s23
-  title: 'Interaction of quercetin and its metabolites with warfarin: displacement
-    of warfarin from serum albumin and inhibition of CYP2C9 enzyme'
+  title: 'Interaction of quercetin and its metabolites with warfarin: displacement of warfarin from serum albumin and inhibition of CYP2C9 enzyme'
   authors: M. Poór; G. Boda; P. W. Needs; et al.
   year: 2017
   url: https://doi.org/10.1016/j.biopha.2017.01.092"
   kind: In-vitro mechanistic study
-  insight: Quercetin and metabolites bound albumin and inhibited CYP2C9 in experimental
-    systems.
+  insight: Quercetin and metabolites bound albumin and inhibited CYP2C9 in experimental systems.
   limitation: Tube findings do not quantify clinical interaction risk.
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s24
-  title: 'The Pharmacological Activity, Biochemical Properties, and Pharmacokinetics
-    of the Major Natural Polyphenolic Flavonoid: Quercetin'
+  title: 'The Pharmacological Activity, Biochemical Properties, and Pharmacokinetics of the Major Natural Polyphenolic Flavonoid: Quercetin'
   authors: G. S. Batiha; A. M. Beshbishy; L. G. Wasef; et al.
   year: 2020
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7143931/"
@@ -1343,23 +1262,19 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   year: 2020
   url: https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/frs-international-llc-606701-06152020"
   kind: Regulatory warning letter
-  insight: COVID-19 treatment and prevention claims involving quercetin were treated
-    as disease claims.
+  insight: COVID-19 treatment and prevention claims involving quercetin were treated as disease claims.
   limitation: Enforcement example, not a clinical efficacy review.
   funding: not-applicable
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-applicable
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s27
-  title: 'The effect of quercetin on the prevention or treatment of COVID-19 and other
-    respiratory tract infections in humans: A rapid review'
-  authors: University of California, Los Angeles and Griffith University evidence-review
-    team
+  title: 'The effect of quercetin on the prevention or treatment of COVID-19 and other respiratory tract infections in humans: A rapid review'
+  authors: University of California, Los Angeles and Griffith University evidence-review team
   year: 2020
-  url: https://pubmed.ncbi.nlm.nih.gov/32837891/"
+  url: https://pubmed.ncbi.nlm.nih.gov/32837891/
   kind: Rapid review
-  insight: Human respiratory evidence was limited and insufficient to establish COVID-19
-    treatment or prevention efficacy.
+  insight: Human respiratory evidence was limited and insufficient to establish COVID-19 treatment or prevention efficacy.
   limitation: Search and evidence base predated later trials.
   funding: not-assessed
   sponsorshipStatus: not-assessed

@@ -519,7 +519,7 @@ The controlled literature is small, short, and dominated by healthy or screened 
 
 ```yaml
 - id: S1
-  title: "Microdosing with psilocybin mushrooms: a double-blind placebo-controlled study"
+  title: 'Microdosing with psilocybin mushrooms: a double-blind placebo-controlled study'
   authors: Federico Cavanna, Stephanie Muller, Laura Alethia de la Fuente, Federico Zamberlan, Matías Palmucci, Lucie Janeckova, Martin Kuchar, Carla Pallavicini, and Enzo Tagliazucchi
   year: 2022
   url: https://doi.org/10.1038/s41398-022-02039-0
@@ -531,7 +531,7 @@ The controlled literature is small, short, and dominated by healthy or screened 
   conflictsOfInterest: Not stated in the retrieved article record.
   conflictOfInterestStatus: not-assessed
 - id: S2
-  title: "Psilocybin microdosing does not affect emotion-related symptoms and processing: A preregistered field and lab-based study"
+  title: 'Psilocybin microdosing does not affect emotion-related symptoms and processing: A preregistered field and lab-based study'
   authors: Josephine Marschall et al.; Leiden University and collaborators
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8801668/
@@ -556,7 +556,7 @@ The controlled literature is small, short, and dominated by healthy or screened 
   conflictsOfInterest: Not stated in the retrieved article record.
   conflictOfInterestStatus: not-assessed
 - id: S4
-  title: "Cognitive and subjective effects of psilocybin microdosing: Results from two double-blind placebo-controlled longitudinal trials"
+  title: 'Cognitive and subjective effects of psilocybin microdosing: Results from two double-blind placebo-controlled longitudinal trials'
   authors: Luisa Prochazkova, Josephine Marschall, Dominique Patrick Lippelt, Neil R. Schon, Martin Kuchař, and Bernhard Hommel
   year: 2026
   url: https://doi.org/10.1016/j.neuropharm.2025.110722
@@ -605,7 +605,7 @@ The controlled literature is small, short, and dominated by healthy or screened 
   conflictsOfInterest: Not stated in the retrieved article record.
   conflictOfInterestStatus: not-assessed
 - id: S8
-  title: "Considerations and cautions for the integration of psilocybin into routine clinical care: a consensus statement from the US National Network of Depression Centers' Task Group on Psychedelics and Related Compounds"
+  title: 'Considerations and cautions for the integration of psilocybin into routine clinical care: a consensus statement from the US National Network of Depression Centers'' Task Group on Psychedelics and Related Compounds'
   authors: US National Network of Depression Centers, Task Group on Psychedelics and Related Compounds
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12495261/
@@ -618,7 +618,7 @@ The controlled literature is small, short, and dominated by healthy or screened 
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12495261/
 - id: S9
-  title: "Drugs of Abuse: A DEA Resource Guide, 2024 Edition"
+  title: 'Drugs of Abuse: A DEA Resource Guide, 2024 Edition'
   authors: United States Drug Enforcement Administration
   year: 2024
   url: https://www.dea.gov/sites/default/files/2025-01/Psilocybin-Drug-Fact-Sheet.pdf

@@ -666,12 +666,12 @@ Therapeutic drug monitoring is context-dependent rather than reducible here to o
   conflictsOfInterest: Not applicable to a regulatory database entry.
   conflictOfInterestStatus: not-assessed
 - id: sharpe2020
-  title: "Levetiracetam Versus Phenobarbital for Neonatal Seizures: A Randomized Controlled Trial"
+  title: 'Levetiracetam Versus Phenobarbital for Neonatal Seizures: A Randomized Controlled Trial'
   authors: Cynthia Sharpe; Gail E. Reiner; Suzanne L. Davis; Mark Nespeca; Jeffrey J. Gold; Maynard Rasmussen; Rachel Kuperman; Mary Jo Harbert; David Michelson; Priscilla Joe; Sonya Wang; Neggy Rismanchi; Ngoc Minh Le; Andrew Mower; Jae Kim; Malcolm R. Battin; Brian Lane; Jose Honold; Ellen Knodel; Kathy Arnell; Renee Bridge; Lilly Lee; Karin Ernstrom; Rema Raman; Richard H. Haas; NEOLEV2 Investigators
   year: 2020
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7263056/
   kind: Primary human randomized controlled trial
-  pmid: "32385134"
+  pmid: '32385134'
   doi: 10.1542/peds.2019-3182
   insight: Multicenter blinded phase IIb trial comparing first-line levetiracetam and phenobarbital for neonatal seizures; 24-hour EEG-confirmed seizure freedom occurred in 80% of phenobarbital-assigned versus 28% of levetiracetam-assigned participants in the modified intention-to-treat analysis.
   limitation: Phase IIb trial with a small phenobarbital arm and no definitive long-term comparative outcome conclusion; the authors called for larger studies with long-term outcomes.
@@ -698,7 +698,7 @@ Therapeutic drug monitoring is context-dependent rather than reducible here to o
   year: 1989
   url: https://pubmed.ncbi.nlm.nih.gov/2763578/
   kind: Primary healthy-volunteer pharmacokinetic study
-  pmid: "2763578"
+  pmid: '2763578'
   doi: 10.1177/1060028089023007-806
   insight: Seven healthy adults received 5 mg/kg phenobarbital sodium intramuscularly and rectally in a crossover design; reported half-lives were 112 and 113 hours, Tmax 2.1 and 4.4 hours, and rectal relative bioavailability approximately 90%.
   limitation: Very small, older study using parenteral solution by IM and rectal routes; it does not establish oral bioavailability, modern therapeutic targets, clinical seizure outcomes or a standardized subjective felt duration.
@@ -712,7 +712,7 @@ Therapeutic drug monitoring is context-dependent rather than reducible here to o
   year: 1996
   url: https://pubmed.ncbi.nlm.nih.gov/8923333/
   kind: Primary healthy-volunteer controlled pharmacology study
-  pmid: "8923333"
+  pmid: '8923333'
   doi: 10.1021/js950443e
   insight: In a 48-volunteer parallel study, the phenobarbital group received 30 mg every 6 hours for 17 days and showed increased antipyrine total/nonrenal clearance and 6-beta-hydroxycortisol excretion with a shortened antipyrine half-life, directly demonstrating enzyme induction in humans.
   limitation: The study was designed around mixed-function oxidase probe endpoints rather than seizure treatment, phenobarbital therapeutic efficacy or subjective effects; participants were healthy men and exposure was short-term.
@@ -726,7 +726,7 @@ Therapeutic drug monitoring is context-dependent rather than reducible here to o
   year: 2021
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8214808/
   kind: Primary human population pharmacokinetic study
-  pmid: "32960986"
+  pmid: '32960986'
   doi: 10.1002/jcph.1743
   insight: Retrospective single-center population-PK study of 35 neonates and infants on ECMO with 194 phenobarbital concentrations; CVVHDF was associated with approximately 6.2-fold higher clearance, and the authors strongly recommended therapeutic drug monitoring during renal replacement therapy.
   limitation: Specialized critically ill ECMO population, retrospective design and only five children on CVVHDF; its simulated doses and 20–40 mg/L concentration goal should not be generalized to routine phenobarbital treatment.

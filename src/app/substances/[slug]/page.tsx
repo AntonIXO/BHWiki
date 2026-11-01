@@ -271,6 +271,7 @@ export default async function SubstancePage({ params }: Props) {
   const selectedObservation = substance.pkObservations.find(item => item.id === substance.halfLife.observationId);
   const reviewed = substance.editorialStatus === "editorially-reviewed";
   const identificationTests = substance.identificationTests ?? [];
+  const monitoring = substance.monitoring ?? [];
   const hasIntakeDetails = substance.doses.some(dose => dose.foodRelation || dose.solubility || dose.absorptionNote);
   const showKinetics = hasKineticsData(substance);
   const outcomePlotRows = observationRows(substance, "outcome");
@@ -289,6 +290,7 @@ export default async function SubstancePage({ params }: Props) {
     ...(identificationTests.length ? [{ id: "identification-tests", name: "Identification tests" }] : []),
     ...(showKinetics ? [{ id: "kinetics", name: "Pharmacokinetics" }] : []),
     { id: "safety", name: "Safety" },
+    ...(monitoring.length ? [{ id: "monitoring", name: "Monitoring" }] : []),
     { id: "evidence", name: "Research" },
     { id: "connections", name: "Connections" },
     { id: "legal", name: "Legal context" },
@@ -456,9 +458,9 @@ export default async function SubstancePage({ params }: Props) {
                         <Source substance={substance} id={observation.sourceId} />
                       </p>
                       <ContextList items={[
-                        { term: "Route / formulation", detail: `${observation.route} · ${observation.formulation}` },
+                        { term: "Route / formulation", detail: [observation.route, observation.formulation].filter(Boolean).join(" · ") },
                         { term: "Population", detail: observation.population },
-                      ]} />
+                      ].filter((item) => Boolean(item.detail))} />
                       <p>{observation.context}</p>
                     </CardContent>
                   </Card>
@@ -526,8 +528,30 @@ export default async function SubstancePage({ params }: Props) {
             ) : <DataEmpty>Not assessed. No sourced interaction has been curated.</DataEmpty>}
           </section>
 
+          {monitoring.length > 0 && (
+            <section id="monitoring" className="flex scroll-mt-24 flex-col gap-4">
+              <SectionHeading number="06" title="Monitoring" />
+              <p className="text-muted-foreground">Track the markers below alongside the cited treatment context. Targets are reference ranges and response goals, not a substitute for clinical judgment.</p>
+              <div className="monitoring-table-wrap">
+                <table className="monitoring-table">
+                  <thead><tr><th scope="col">Marker</th><th scope="col">Target</th><th scope="col">Why</th></tr></thead>
+                  <tbody>
+                    {monitoring.map((item) => (
+                      <tr key={item.marker}>
+                        <th scope="row">{item.marker}</th>
+                        <td className="monitoring-target">{item.target}</td>
+                        <td>{item.why} <Source substance={substance} id={item.sourceId} /></td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              {substance.monitoringCadence && <p className="monitoring-cadence"><strong>Cadence:</strong> {substance.monitoringCadence}</p>}
+            </section>
+          )}
+
           <section id="evidence" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="06" title="Research & sources" extra={<Badge variant="secondary">{substance.references.length}</Badge>} />
+            <SectionHeading number={monitoring.length ? "07" : "06"} title="Research & sources" extra={<Badge variant="secondary">{substance.references.length}</Badge>} />
             <p className="text-muted-foreground">The source, the finding and its limitations. Funding information is reported where curated; an unassessed disclosure does not mean a study had no commercial funding.</p>
             <Collapsible className="research-disclosure rounded-lg border" id="research-sources">
               <CollapsibleTrigger className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left font-medium">
@@ -595,7 +619,7 @@ export default async function SubstancePage({ params }: Props) {
           </section>
 
           <section id="connections" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="07" title="Connected claims" />
+            <SectionHeading number={monitoring.length ? "08" : "07"} title="Connected claims" />
             <p className="text-muted-foreground">Each relationship retains its participants, roles and context. Shared membership does not imply that substances should be combined.</p>
             {substance.claims.length ? (
               <div className="claim-list">
@@ -606,7 +630,7 @@ export default async function SubstancePage({ params }: Props) {
           </section>
 
           <section id="legal" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="08" title="Legal context" />
+            <SectionHeading number={monitoring.length ? "09" : "08"} title="Legal context" />
             {substance.legal.length > 0 ? (
               <div className="flex flex-col gap-4">
                 {substance.legal.map(item => (
@@ -629,7 +653,7 @@ export default async function SubstancePage({ params }: Props) {
           </section>
 
           <section id="editorial-history" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="09" title="Editorial history" />
+            <SectionHeading number={monitoring.length ? "10" : "09"} title="Editorial history" />
             <p>{reviewed ? "This article is marked editorially reviewed. Review attribution is recorded with its published revisions." : "This article is a sourced draft. Editorial review has not been recorded."} Content date: {dateLabel(substance.reviewedAt)}.</p>
             <div className="flex flex-wrap gap-3">
               <Button nativeButton={false} variant="outline" render={<Link href={`/substances/${slug}/history`} />}>

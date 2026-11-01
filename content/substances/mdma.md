@@ -196,17 +196,17 @@ The severity result belongs to a supervised therapy protocol. The milligram expo
 
 ```yaml
 - id: mitchell2021
-  title: "MDMA-assisted therapy for severe PTSD: a randomized, double-blind, placebo-controlled phase 3 study"
+  title: 'MDMA-assisted therapy for severe PTSD: a randomized, double-blind, placebo-controlled phase 3 study'
   authors: Mitchell et al.
   year: 2021
-  pmid: "33972795"
+  pmid: '33972795'
   url: https://pubmed.ncbi.nlm.nih.gov/33972795/
   kind: Randomized double-blind placebo-controlled trial
   insight: Reports the CAPS-5 primary result and the Sheehan Disability Scale secondary result in severe PTSD.
   limitation: The inspected abstract omits the milligram dose. Sponsor employment, medication washout, and supervised therapy limit generalization. A later moderate-to-severe trial was not re-extracted.
   funding: The inspected abstract discloses sponsor employment. Full funding details were not re-extracted.
 - id: pubchem
-  title: "MDMA: compound identity and structure"
+  title: 'MDMA: compound identity and structure'
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/1615

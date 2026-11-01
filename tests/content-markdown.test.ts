@@ -9,16 +9,16 @@ import type { Substance, TagKind } from "../src/lib/types";
 
 const curatedSlugs = ["caffeine", "l-theanine", "creatine", "melatonin", "nicotine", "psilocybin", "modafinil", "methylphenidate", "diphenhydramine", "citicoline"];
 const curatedHashes = [
-  "812e10762b85fdb1d4d874cebe6fb4b6eef677b75d77468f24b5542432251222",
-  "e6d89068b5725791d19355ed370c901861ce36dced27dde65446deff8508d87e",
-  "c64573031510eb1cff1df6fbd3eb748bd07542b585b36e8914c040a8e7b1d3bd",
-  "d061d4e0f8ff593971ef57ad23061277131938b525ad0d0d0c2cdc9853cc71e2",
-  "167494247d3d6ec5b61e85dc1016352f964e393fcba09ccf63d4e1556863e810",
+  "a68f5c29584d5303ea355813c6033590f29f144115dd6acf5adb937a30a41017",
+  "89d4e24b9f4441ad36e6e98cad937b05da40d4bbaeeb73fa4eeeec88b0710cad",
+  "3c7f625f039d7bb12eb9c3d0a4a288e98cf2ae9e136baa24055ce2d2db5a9e4e",
+  "1b2b542eb4f6133c213b352f4a7a61841f267e102a2d7a6f768bba3d50c88aee",
+  "11fc97da3bb572d54d11e96b8d6a569a84d289163a7770fd4358a8334d0b52c5",
   "f8c8258e89ff47240104fd22602ac94ef98f991b2fe1bbea7b3b2f5f6d734fe6",
-  "082d24f9e76ac73efcaec2874d0132ac78316efa1c012df7949b359d98dd0c2e",
-  "5b272eedfef9fa03a8fab6e4934b7c308bbbcff1c34d401083bd84bdaa830047",
+  "b71d5b488aab7523168792bd996eb11cf508b412ca464cc0695db2747409680c",
+  "a8275baaff59fc792278f8dc08809a566ba8aa5d6d2af4390491dcd425b5d64b",
   "2af40220f322b71b7ac9db93b605a1dea2327a12c1f95a70eb200fe8c55f30de",
-  "adab4d22f85bcc87cd9f73dacfc2eaee8db43508c575ea990bef2e27954de809",
+  "414f2427a558db923108e90fdfea485ab9f210f32a83245bcd8cc9b40a64cbc3",
 ];
 
 test("markdown files preserve the curated records", () => {
@@ -26,7 +26,7 @@ test("markdown files preserve the curated records", () => {
   assert.deepEqual(curated.map((substance) => substance?.slug), curatedSlugs);
   assert.deepEqual(curated.map((substance) => substance && contentHash(substance)), curatedHashes);
   assert.ok(substances.length >= curatedSlugs.length);
-  assert.equal(tags.length, 247);
+  assert.equal(tags.length, 356);
   assert.equal(substances.filter((substance) => substance.subtitle === "Identity record.").length, 0);
   const identityOnly = substances.filter(
     (substance) => substance.subtitle === "Source-backed identity stub.",
@@ -42,17 +42,17 @@ test("markdown files preserve the curated records", () => {
   }
   const kinds: Record<TagKind, number> = { class: 0, "chemical-family": 0, mechanism: 0, target: 0, neurotransmitter: 0, enzyme: 0, effect: 0, outcome: 0, exposure: 0, legal: 0 };
   for (const tag of tags) kinds[tag.kind] += 1;
-  assert.deepEqual(kinds, { class: 18, "chemical-family": 8, mechanism: 30, target: 20, neurotransmitter: 6, enzyme: 12, effect: 9, outcome: 138, exposure: 5, legal: 1 });
+  assert.deepEqual(kinds, { class: 19, "chemical-family": 8, mechanism: 30, target: 20, neurotransmitter: 6, enzyme: 12, effect: 54, outcome: 201, exposure: 5, legal: 1 });
   assert.equal(hyperedges.length, 63);
   const total = (count: (substance: Substance) => number) => curated.reduce((sum, substance) => sum + count(substance!), 0);
-  assert.equal(total((substance) => substance.references.length), 191);
+  assert.equal(total((substance) => substance.references.length), 337);
   assert.equal(total((substance) => substance.pkObservations.length), 25);
-  assert.equal(total((substance) => substance.doses.length), 46);
-  assert.equal(total((substance) => substance.mechanisms.length), 18);
-  assert.equal(total((substance) => substance.cautions.length), 49);
-  assert.equal(total((substance) => substance.effects.length), 18);
-  assert.equal(total((substance) => substance.outcomes.length), 55);
-  assert.equal(total((substance) => substance.claims.length), 38);
+  assert.equal(total((substance) => substance.doses.length), 83);
+  assert.equal(total((substance) => substance.mechanisms.length), 45);
+  assert.equal(total((substance) => substance.cautions.length), 68);
+  assert.equal(total((substance) => substance.effects.length), 25);
+  assert.equal(total((substance) => substance.outcomes.length), 113);
+  assert.equal(total((substance) => substance.claims.length), 152);
   assert.equal(total((substance) => substance.modifiers.length), 20);
   assert.equal(total((substance) => substance.legal.length), 17);
   assert.equal(total((substance) => substance.interactions.length + substance.experienceLinks.length + (substance.kinetics.timeline?.length ?? 0)), 26);

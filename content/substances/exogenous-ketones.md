@@ -563,7 +563,7 @@ The evidence is mainly acute crossover work in healthy adults, with small short 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
   id: EK-02
-- title: "Effects of Exogenous Ketone Supplementation on Blood Glucose: A Systematic Review and Meta-analysis"
+- title: 'Effects of Exogenous Ketone Supplementation on Blood Glucose: A Systematic Review and Meta-analysis'
   authors: Kaja Falkenhain, Ali Daraei, Shelby C. Forbes, Jonathan P. Little
   year: 2022
   url: https://doi.org/10.1093/advances/nmac036
@@ -696,7 +696,7 @@ The evidence is mainly acute crossover work in healthy adults, with small short 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
   id: EK-13
-- title: "14-Day Ketone Supplementation Lowers Glucose and Improves Vascular Function in Obesity: A Randomized Crossover Trial"
+- title: '14-Day Ketone Supplementation Lowers Glucose and Improves Vascular Function in Obesity: A Randomized Crossover Trial'
   authors: Jeremy J. Walsh, Helena Neudorf, Jonathan P. Little
   year: 2020
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7993591/
@@ -709,7 +709,7 @@ The evidence is mainly acute crossover work in healthy adults, with small short 
   conflictOfInterestStatus: declared
   id: EK-14
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC7993591/
-- title: "Short-term Ketone Monoester Supplementation Improves Cerebral Blood Flow and Cognition in Obesity: A Randomized Cross-over Trial"
+- title: 'Short-term Ketone Monoester Supplementation Improves Cerebral Blood Flow and Cognition in Obesity: A Randomized Cross-over Trial'
   authors: Jeremy J. Walsh, Hannah G. Caldwell, Helena Neudorf, Philip N. Ainslie, Jonathan P. Little
   year: 2021
   url: https://doi.org/10.1113/JP281988
@@ -721,7 +721,7 @@ The evidence is mainly acute crossover work in healthy adults, with small short 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
   id: EK-15
-- title: "A Ketone Monoester Drink Reduces Postprandial Blood Glucose Concentrations in Adults with Type 2 Diabetes: A Randomised Controlled Trial"
+- title: 'A Ketone Monoester Drink Reduces Postprandial Blood Glucose Concentrations in Adults with Type 2 Diabetes: A Randomised Controlled Trial'
   authors: Alistair J. Monteyne, Kaja Falkenhain, Gráinne Whelehan, et al.
   year: 2024
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11058041/
@@ -784,7 +784,7 @@ The evidence is mainly acute crossover work in healthy adults, with small short 
   conflictOfInterestStatus: declared
   id: EK-P2
   disclosureUrl: https://patents.google.com/patent/EP3030231B1/en
-- title: "FDA 101: Dietary Supplements"
+- title: 'FDA 101: Dietary Supplements'
   authors: U.S. Food and Drug Administration
   year: 2025
   url: https://www.fda.gov/consumers/consumer-updates/fda-101-dietary-supplements
@@ -797,7 +797,7 @@ The evidence is mainly acute crossover work in healthy adults, with small short 
   conflictOfInterestStatus: none-declared
   id: EK-L1
   disclosureUrl: https://www.fda.gov/consumers/consumer-updates/fda-101-dietary-supplements
-- title: "Dietary Supplement Labeling Guide: Chapter VI. Claims"
+- title: 'Dietary Supplement Labeling Guide: Chapter VI. Claims'
   authors: U.S. Food and Drug Administration
   year: 2026
   url: https://www.fda.gov/food/dietary-supplements-guidance-documents-regulatory-information/dietary-supplement-labeling-guide-chapter-vi-claims

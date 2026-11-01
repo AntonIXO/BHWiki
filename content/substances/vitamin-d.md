@@ -3,16 +3,16 @@ slug: vitamin-d
 name: Vitamin D
 subtitle: D2/D3 forms, deficiency repletion, and clinical outcome evidence.
 aliases:
-  - vitamin d
-  - "- Vitamin D2"
+- vitamin d
+- '- Vitamin D2'
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
 tags: []
-accent: "#888888"
-reviewedAt: "2026-10-15"
+accent: '#888888'
+reviewedAt: '2026-11-01'
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -29,36 +29,37 @@ kinetics:
   metabolism: Not established
   sourceId: S1
 x-shape:
-  - slug
-  - name
-  - subtitle
-  - summary
-  - description
-  - evidenceNote
-  - aliases
-  - formula
-  - molecularWeight
-  - pubchemCid
-  - smiles
-  - category
-  - tags
-  - accent
-  - reviewedAt
-  - editorialStatus
-  - halfLife
-  - pkObservations
-  - kinetics
-  - modifiers
-  - doses
-  - effects
-  - outcomes
-  - claims
-  - mechanisms
-  - cautions
-  - interactions
-  - experienceLinks
-  - references
-  - legal
+- slug
+- name
+- subtitle
+- summary
+- description
+- evidenceNote
+- aliases
+- formula
+- molecularWeight
+- pubchemCid
+- smiles
+- category
+- tags
+- accent
+- reviewedAt
+- editorialStatus
+- halfLife
+- pkObservations
+- kinetics
+- modifiers
+- doses
+- effects
+- outcomes
+- claims
+- mechanisms
+- cautions
+- interactions
+- experienceLinks
+- references
+- legal
+- externalWikiLinks
 x-order: 9007199254740991
 ---
 
@@ -69,11 +70,13 @@ Vitamin D has an established nutritional role in preventing deficiency-related r
 Large randomized trials in generally vitamin-D-sufficient or unselected older adults found no significant reduction in fractures, major cardiovascular events, or depression with the regimens tested. These results do not establish what happens when treating symptomatic deficiency. (sourceId: vital-fractures-2022; sourceId: vital-2019; sourceId: vital-dep-2020)
 
 Results also depend on formulation, schedule, population, and outcome: D3 outperformed D2 on a blood-status marker in one head-to-head trial, while annual 500,000-IU D3 increased falls and fractures. Neither a higher blood concentration nor a larger administered dose necessarily means greater clinical benefit. (sourceId: tripkovic-2017; sourceId: sanders-2010)
+
 ## Description
 
 Vitamin D comprises fat-soluble precursors, principally ergocalciferol, D2, and cholecalciferol, D3. They are distinct compounds, not interchangeable names for a single molecular structure. Circulating 25-hydroxyvitamin D, abbreviated 25(OH)D, is the usual status marker; it is distinct from the active hormone 1,25-dihydroxyvitamin D. (sourceId: nih-2025)
 
 For vitamin D, 1 microgram equals 40 IU; a 50,000-IU ergocalciferol capsule contains 1.25 mg. Capsule strength does not specify an administration schedule. (sourceId: ergocalciferol-label-2026)
+
 ## Evidence note
 
 This article separates biochemical repletion, skeletal surrogate measurements, and patient-important outcomes. VITAL publications share participants and are not independent replications; the same applies to the D-Health reports. VITAL registered cancer and major cardiovascular events as primary endpoints, whereas the D-Health cardiovascular analysis examined a prespecified tertiary endpoint. (sourceId: vital-registry; sourceId: dhealth-cv-2023)
@@ -81,6 +84,11 @@ This article separates biochemical repletion, skeletal surrogate measurements, a
 Low measured 25(OH)D is not synonymous with symptomatic deficiency disease: the Mongolian fracture trial enrolled children with widespread low concentrations but excluded clinical rickets. Its null fracture result therefore does not test treatment of rickets. (sourceId: ganmaa-2024)
 
 The evidence selection emphasizes primary randomized reports, not an exhaustive systematic review. Full-text and disclosure access varied. References distinguish verified funding, reported conflicts, and information that remained unassessed; an unavailable declaration is not treated as absence of conflicts.
+
+Reddit-linked PubMed review: 4 linked records were checked against PubMed metadata and abstracts; 1 returned PMCID identifiers. Added records remain source-specific and do not replace curated evidence.
+
+PMC full-text retrieval for this page returned body text for 0/1 identified PMCID records; 1 returned no retrievable body or a tool error.
+
 ## Doses
 
 ```yaml
@@ -97,7 +105,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   population: Generally healthy adults
   purpose: Population nutritional reference intake, not a deficiency-repletion protocol
   sourceCategory: research
-  note: 'Source-specific research exposure details are preserved in the cited source.'
+  note: Source-specific research exposure details are preserved in the cited source.
   sourceId: S1
 - label: Daily D2 versus D3 biochemical comparison
   amount: 1000 IU/day D2, 1000 IU/day D3, or 500 IU/day of each
@@ -112,7 +120,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   population: Adults aged 18–84 years
   purpose: Measured 25(OH)D response
   sourceCategory: research
-  note: 'Source-specific research exposure details are preserved in the cited source.'
+  note: Source-specific research exposure details are preserved in the cited source.
   sourceId: S1
 - label: VITAL prevention exposure
   amount: 2000 IU/day D3
@@ -127,7 +135,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   population: Men aged at least 50 and women aged at least 55 years
   purpose: Primary prevention, not targeted deficiency treatment
   sourceCategory: research
-  note: 'Source-specific research exposure details are preserved in the cited source.'
+  note: Source-specific research exposure details are preserved in the cited source.
   sourceId: S1
 - label: D-Health intermittent exposure
   amount: 60000 IU D3 once monthly
@@ -142,7 +150,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   population: Australians aged 60–84 years
   purpose: Population prevention trial; monthly exposure is not assumed equivalent to daily dosing
   sourceCategory: research
-  note: 'Source-specific research exposure details are preserved in the cited source.'
+  note: Source-specific research exposure details are preserved in the cited source.
   sourceId: S1
 - label: Annual regimen associated with harm
   amount: 500000 IU D3 once annually in autumn or winter
@@ -157,7 +165,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   population: Community-dwelling women aged at least 70 years
   purpose: Trial exposure that increased falls and fractures
   sourceCategory: research
-  note: 'Source-specific research exposure details are preserved in the cited source.'
+  note: Source-specific research exposure details are preserved in the cited source.
   sourceId: S1
 - label: Prescription formulation strength
   amount: 50000 IU ergocalciferol per capsule
@@ -172,7 +180,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   population: Not established
   purpose: Product-specific prescription label; not a universal replacement course
   sourceCategory: research
-  note: 'Source-specific research exposure details are preserved in the cited source.'
+  note: Source-specific research exposure details are preserved in the cited source.
   sourceId: S1
 - label: COPD deficiency schedule comparison
   amount: 4000 IU/day or 50000 IU/week vitamin D3
@@ -189,6 +197,34 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   sourceCategory: research
   note: The open-label randomized trial did not establish superiority of the weekly regimen; this is a study exposure, not a universal replacement schedule.
   sourceId: pmid-42925274
+- label: 'PMID 28167237 study exposure: 4000 iu'
+  amount: 4000 iu
+  quantity: 4000
+  quantityMax: null
+  unit: iu
+  ingredient: Vitamin D
+  formulation: Study formulation as stated in the abstract
+  frequency: As stated in the abstract
+  duration: Study duration as stated in the abstract
+  population: 'METHODS: Healthy adults (n=82) from northern British Columbia, Canada (54° north latitude) with baseline 25(OH)D levels ≤100nmol/L were randomized and blinded to High Dose (4000IU/d) versus Low Dose (400IU/d) vitamin D3 (cholecalciferol) for 18weeks.'
+  purpose: Research exposure; not a general-use recommendation
+  sourceCategory: research
+  note: 'METHODS: Healthy adults (n=82) from northern British Columbia, Canada (54° north latitude) with baseline 25(OH)D levels ≤100nmol/L were randomized and blinded to High Dose (4000IU/d) versus Low Dose (400IU/d) vitamin D3 (cholecalciferol) for 18weeks'
+  sourceId: reddit-pmid-28167237
+- label: 'PMID 28167237 study exposure: 400 iu'
+  amount: 400 iu
+  quantity: 400
+  quantityMax: null
+  unit: iu
+  ingredient: Vitamin D
+  formulation: Study formulation as stated in the abstract
+  frequency: As stated in the abstract
+  duration: Study duration as stated in the abstract
+  population: 'METHODS: Healthy adults (n=82) from northern British Columbia, Canada (54° north latitude) with baseline 25(OH)D levels ≤100nmol/L were randomized and blinded to High Dose (4000IU/d) versus Low Dose (400IU/d) vitamin D3 (cholecalciferol) for 18weeks.'
+  purpose: Research exposure; not a general-use recommendation
+  sourceCategory: research
+  note: lts (n=82) from northern British Columbia, Canada (54° north latitude) with baseline 25(OH)D levels ≤100nmol/L were randomized and blinded to High Dose (4000IU/d) versus Low Dose (400IU/d) vitamin D3 (cholecalciferol) for 18weeks
+  sourceId: reddit-pmid-28167237
 ```
 
 ## Pharmacokinetics
@@ -205,7 +241,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   low: null
   high: null
   unit: hours
-  context: 'Source-specific pharmacokinetic detail is preserved in the cited source.'
+  context: Source-specific pharmacokinetic detail is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: vitamin-d-pk-2
@@ -219,7 +255,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   low: null
   high: null
   unit: hours
-  context: 'Source-specific pharmacokinetic detail is preserved in the cited source.'
+  context: Source-specific pharmacokinetic detail is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: vitamin-d-pk-3
@@ -233,7 +269,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   low: null
   high: null
   unit: hours
-  context: 'Source-specific pharmacokinetic detail is preserved in the cited source.'
+  context: Source-specific pharmacokinetic detail is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 ```
@@ -278,7 +314,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   study:
     id: vitamin-d-effects-1
     populationLabels:
-      - 335 healthy South Asian and white European women in the United Kingdom
+    - 335 healthy South Asian and white European women in the United Kingdom
     comparator: Matched food vehicles and placebo
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -296,7 +332,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   study:
     id: vitamin-d-effects-2
     populationLabels:
-      - Adults aged 18–84; 60% met the study’s deficiency definition
+    - Adults aged 18–84; 60% met the study’s deficiency definition
     comparator: Placebo and a mixed D2/D3 arm
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -314,7 +350,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   study:
     id: vitamin-d-effects-3
     populationLabels:
-      - 311 adults aged 55–70 without osteoporosis
+    - 311 adults aged 55–70 without osteoporosis
     comparator: 400-IU/day arm; calcium supplied when dietary intake was below 1200 mg/day
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -338,7 +374,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-1
     design: Double-blind randomized trial
     populationLabels:
-      - 3270 older women; mean age 84 years
+    - 3270 older women; mean age 84 years
     comparator: Double placebo
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -357,7 +393,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-2
     design: Randomized placebo-controlled trial
     populationLabels:
-      - 36282 postmenopausal women aged 50–79
+    - 36282 postmenopausal women aged 50–79
   conflictingSourceIds: []
   reportType: measured-assessment
   conceptId: attention
@@ -375,7 +411,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-3
     design: Randomized placebo-controlled trial
     populationLabels:
-      - 25871 adults not selected for deficiency, osteoporosis, or low bone mass
+    - 25871 adults not selected for deficiency, osteoporosis, or low bone mass
   conflictingSourceIds: []
   reportType: measured-assessment
   conceptId: attention
@@ -393,7 +429,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-4
     design: Randomized placebo-controlled trial
     populationLabels:
-      - 2495 older Finnish adults; baseline mean 25(OH)D 74.8 nmol/L in the measured subcohort
+    - 2495 older Finnish adults; baseline mean 25(OH)D 74.8 nmol/L in the measured subcohort
   conflictingSourceIds: []
   reportType: measured-assessment
   conceptId: attention
@@ -411,7 +447,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-5
     design: Double-blind randomized placebo-controlled trial
     populationLabels:
-      - 8851 randomized children aged 6–13; 8348 in fracture analyses; 95.5% of that analysis population had baseline 25(OH)D below 50 nmol/L
+    - 8851 randomized children aged 6–13; 8348 in fracture analyses; 95.5% of that analysis population had baseline 25(OH)D below 50 nmol/L
   conflictingSourceIds: []
   reportType: measured-assessment
   conceptId: attention
@@ -429,7 +465,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-6
     design: Double-blind randomized placebo-controlled trial
     populationLabels:
-      - 2256 women aged at least 70 with elevated fracture risk
+    - 2256 women aged at least 70 with elevated fracture risk
   conflictingSourceIds: []
   reportType: measured-assessment
   conceptId: attention
@@ -447,7 +483,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-7
     design: Two-stage response-adaptive randomized trial
     populationLabels:
-      - 688 adults aged at least 70; elevated fall risk and 25(OH)D 10–29 ng/mL
+    - 688 adults aged at least 70; elevated fall risk and 25(OH)D 10–29 ng/mL
     comparator: 200 IU/day D3, not placebo
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -466,7 +502,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-8
     design: Cluster-randomized, double-blind comparison
     populationLabels:
-      - 247 Mongolian schoolchildren within a larger trial; baseline median 25(OH)D 7 ng/mL
+    - 247 Mongolian schoolchildren within a larger trial; baseline median 25(OH)D 7 ng/mL
     comparator: Unfortified milk
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -485,7 +521,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-9
     design: Open-label randomized test-and-treat trial
     populationLabels:
-      - 6200 UK participants aged at least 16
+    - 6200 UK participants aged at least 16
     comparator: No testing or supplementation offer
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -504,7 +540,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-10
     design: Randomized placebo-controlled ancillary analysis
     populationLabels:
-      - 15373 survey respondents and 2598 diary participants from the parent trial
+    - 15373 survey respondents and 2598 diary participants from the parent trial
   conflictingSourceIds: []
   reportType: measured-assessment
   conceptId: attention
@@ -522,7 +558,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-11
     design: Randomized placebo-controlled ancillary trial
     populationLabels:
-      - 18353 adults without clinically relevant depressive symptoms at baseline
+    - 18353 adults without clinically relevant depressive symptoms at baseline
   conflictingSourceIds: []
   reportType: measured-assessment
   conceptId: attention
@@ -540,7 +576,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-12
     design: Randomized double-blind factorial trial
     populationLabels:
-      - 25871 adults; baseline mean 25(OH)D 30.8 ng/mL in those measured
+    - 25871 adults; baseline mean 25(OH)D 30.8 ng/mL in those measured
     comparator: placebo
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -559,7 +595,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-13
     design: Randomized placebo-controlled analysis of a prespecified tertiary endpoint
     populationLabels:
-      - 21302 older adults included in analysis
+    - 21302 older adults included in analysis
   conflictingSourceIds: []
   reportType: measured-assessment
   conceptId: attention
@@ -577,7 +613,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     id: vitamin-d-outcomes-14
     design: Randomized placebo-controlled trial
     populationLabels:
-      - 21315 older Australians randomized
+    - 21315 older Australians randomized
   conflictingSourceIds: []
   reportType: measured-assessment
   conceptId: attention
@@ -596,7 +632,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
     design: Open-label randomized clinical trial
     sampleSize: 49
     populationLabels:
-      - COPD with baseline serum 25-hydroxyvitamin D below 30 ng/mL
+    - COPD with baseline serum 25-hydroxyvitamin D below 30 ng/mL
     comparator: Daily versus weekly vitamin D3 schedule
     route: Oral
     assessmentTime: 12 weeks
@@ -612,6 +648,43 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   exposure: 4000 IU/day or 50000 IU/week vitamin D3 for 12 weeks alongside standard COPD treatment
   instrument: FEV1 and FEV1 percentage
   magnitude: Between-group adjusted p=0.079 for absolute FEV1 and p=0.981 for FEV1 percentage
+- id: reddit-vitamin-d-memory-28167237
+  conceptId: memory
+  name: Memory
+  direction: Increased
+  evidence: Human research
+  description: There were no significant baseline differences between Low (n=40) and High (n=42) dose groups. Serum 25(OH)D increased significantly more in the High Dose (from 67.2±20 to 130.6±26nmol/L) than the Low Dose group (60.5±22 to 85.9±16nmol/L), p=0.0001. Performance improved in the High Dose group on nonverbal (visual) memory, as assessed by the Pattern Recognition Memory task (PRM), from 84.1±14.9 to 88.3±13.2, p=0.043 (d=0.3) and Paired Associates Learning Task, (PAL) number of stages completed, from 4.86±0.35 to 4.95±0.22, p=0.044 (d=0.5), but not in the Low Dose Group. Mixed effects modeling controlling for age, education, sex and baseline performance revealed that the degree of improvement was comparatively greater in the High Dose Group for these tasks, Nonverbal (visual) memory seems to benefit from higher doses of vitamin D supplementation, particularly among those who are insufficient (<75nmol/L) at baseline, while verbal memory and other cognitive domains do not. These
+    findings are consistent with recent cross-sectional and longitudinal studies, which have demonstrated significant positive associations between 25(OH)D levels and nonverbal, but not verbal, memory. While our findings require confirmation, they suggest that higher 25(OH)D is particularly important for higher level cognitive functioning, specifically nonverbal (visual) memory, which also utilizes executive functioning processes.
+  sourceId: reddit-pmid-28167237
+  population: 'METHODS: Healthy adults (n=82) from northern British Columbia, Canada (54° north latitude) with baseline 25(OH)D levels ≤100nmol/L were randomized and blinded to High Dose (4000IU/d) versus Low Dose (400IU/d) vitamin D3 (cholecalciferol) for 18weeks.'
+  exposure: Healthy adults (n=82) from northern British Columbia, Canada (54° north latitude) with baseline 25(OH)D levels ≤100nmol/L were randomized and blinded to High Dose (4000IU/d) versus Low Dose (400IU/d) vitamin D3 (cholecalciferol) for 18weeks. Baseline and follow-up serum 25(OH)D and cognitive performance were assessed and
+  instrument: null
+  magnitude: There were no significant baseline differences between Low (n=40) and High (n=42) dose groups. Serum 25(OH)D increased significantly more in the High Dose (from 67.2±20 to 130.6±26nmol/L) than the Low Dose group (60.5±22 to 85.9±16nmol/L), p=0.0001. Performance improved in the High Dose group on nonverbal (visual) memo
+  reportType: measured-assessment
+- id: reddit-vitamin-d-cognitive-performance-22185082
+  conceptId: cognitive-performance
+  name: Cognitive Performance
+  direction: Variable
+  evidence: Human research
+  description: Results revealed that the high vitamin D group had significantly more correct responses than the low vitamin D group on the executive function task.
+  sourceId: reddit-pmid-22185082
+  population: Participants were divided into high vitamin D and low vitamin D groups based on established criteria (high level > or = 50 nmol/L; low level < 50 nmol/L).
+  exposure: Participants were divided into high vitamin D and low vitamin D groups based on established criteria (high level > or = 50 nmol/L; low level < 50 nmol/L).
+  instrument: reaction time data indicated that the high levels of correct responses in the high vitamin D group on t
+  magnitude: Results revealed that the high vitamin D group had significantly more correct responses than the low vitamin D group on the executive function task.
+  reportType: measured-assessment
+- id: reddit-vitamin-d-depression-severity-24423304
+  conceptId: depression-severity
+  name: Depression Severity
+  direction: Variable
+  evidence: Human research
+  description: Six RCTs were identified with 1203 participants (72% females) including 71 depressed patients; five of the studies involved adults at risk of depression, and one trial used depressed patients. Results of the classical meta-analysis showed no significant effect of Vit D supplementation on postintervention depression scores (standardized mean difference = -0.14, 95% confidence interval = -0.41 to 0.13, P = .32; odds ratio = 0.93, 95% confidence interval = 0.54 to 1.59, P = .79). The quality of evidence was low. No significant differences were demonstrated in subgroup or sensitivity analyses. Similar results were found when Bayesian meta-analyses were applied. There is insufficient evidence to support the efficacy of Vit D supplementation in depression symptoms, and more RCTs using depressed patients are warranted.
+  sourceId: reddit-pmid-24423304
+  population: 1203 participants (72% females) including 71 depressed patients
+  exposure: 'OBJECTIVE: We aim to summarize the evidence of RCTs to assess the efficacy of oral Vit D supplementation in depression compared to placebo.'
+  instrument: null
+  magnitude: Six RCTs were identified with 1203 participants (72% females) including 71 depressed patients; five of the studies involved adults at risk of depression, and one trial used depressed patients. Results of the classical meta-analysis showed no significant effect of Vit D supplementation on postintervention depression sco
+  reportType: measured-assessment
 ```
 
 ## Mechanisms
@@ -623,6 +696,9 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
 - title: Immune-related biological rationale
   description: Proposed immune benefits motivated respiratory-infection trials, but correcting the measured status marker in CORONAVIT did not produce the anticipated infection reduction.
   sourceId: S1
+- title: Explicit mechanistic or disposition finding (PMID 23352937)
+  description: In particular, there is evidence from rodent models that prenatal vitamin D deficiency alters the development of dopaminergic pathways and this disruption is associated with altered behavior and neurochemistry in the adult brain.
+  sourceId: reddit-pmid-23352937
 ```
 
 ## Cautions
@@ -652,77 +728,120 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   assertion: D3 is clinically superior to D2 for every outcome
   relation: evidence-boundary
   participants:
-    - entityId: substance:vitamin-d
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
+  - entityId: substance:vitamin-d
+    role: intervention
+  - entityId: tag:cognitive-performance
+    role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-    - S1
+  - S1
   conflictingSourceIds:
-    - S1
+  - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: vitamin-d-claim-2
   assertion: Higher vitamin D levels necessarily produce stronger bones
   relation: evidence-boundary
   participants:
-    - entityId: substance:vitamin-d
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
+  - entityId: substance:vitamin-d
+    role: intervention
+  - entityId: tag:cognitive-performance
+    role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-    - S1
+  - S1
   conflictingSourceIds:
-    - S1
+  - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: vitamin-d-claim-3
   assertion: D-Health proves cardiovascular protection in people taking cardiovascular medication
   relation: evidence-boundary
   participants:
-    - entityId: substance:vitamin-d
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
+  - entityId: substance:vitamin-d
+    role: intervention
+  - entityId: tag:cognitive-performance
+    role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-    - S1
+  - S1
   conflictingSourceIds:
-    - S1
+  - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: vitamin-d-claim-4
   assertion: Vitamin D has an established cancer-mortality benefit
   relation: evidence-boundary
   participants:
-    - entityId: substance:vitamin-d
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
+  - entityId: substance:vitamin-d
+    role: intervention
+  - entityId: tag:cognitive-performance
+    role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-    - S1
+  - S1
   conflictingSourceIds:
-    - S1
+  - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: vitamin-d-claim-5
   assertion: USP verification proves clinical effectiveness
   relation: evidence-boundary
   participants:
-    - entityId: substance:vitamin-d
-      role: intervention
-    - entityId: tag:cognitive-performance
-      role: reported-outcome-context
+  - entityId: substance:vitamin-d
+    role: intervention
+  - entityId: tag:cognitive-performance
+    role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-    - S1
+  - S1
   conflictingSourceIds:
-    - S1
+  - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
+- id: reddit-claim-vitamin-d-28167237
+  assertion: There were no significant baseline differences between Low (n=40) and High (n=42) dose groups. Serum 25(OH)D increased significantly more in the High Dose (from 67.2±20 to 130.6±26nmol/L) than the Low Dose group (60.5±22 to 85.9±16nmol/L), p=0.0001. Performance improved in the High Dose group on nonverbal (visual) memory, as assessed by the Pattern Recognition Memory task (PRM), from 84.1±14.9 to 88.3±13.2, p=0.043 (d=0.3) and Paired Associates Learning Task, (PAL) number of stages completed, from 4.86±0.35 to 4.95±0.22, p=0.044 (d=0.5), but not in the Low Dose Group. Mixed effects modeling controlling for age, education, sex and baseline performance revealed that the degree of improvement was comparatively greater in the High Dose Group for these tasks, Nonverbal (visual) memory seems to benefit from higher doses of vitamin D supplementation, particularly among those who are insufficient (<75nmol/L) at baseline, while verbal memory and other cognitive domains do not. These
+    findings are consistent with recent cross-sectional and longitudinal studies, which have demonstrated significant positive associations between 25(OH)D levels and nonverbal, but not verbal, memory. While our findings require confirmation, they suggest that higher 25(OH)D is particularly important for higher level cognitive functioning, specifically nonverbal (visual) memory, which also utilizes executive functioning processes.
+  relation: associated-with
+  participants:
+  - entityId: substance:vitamin-d
+    role: intervention or exposure
+  - entityId: tag:memory
+    role: reported endpoint
+  context: PMID 28167237 abstract result/conclusion; direction and population are retained on the linked observation.
+  sourceIds:
+  - reddit-pmid-28167237
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Single publication; the abstract does not establish general efficacy or safety.
+- id: reddit-claim-vitamin-d-22185082
+  assertion: Results revealed that the high vitamin D group had significantly more correct responses than the low vitamin D group on the executive function task.
+  relation: associated-with
+  participants:
+  - entityId: substance:vitamin-d
+    role: intervention or exposure
+  - entityId: tag:cognitive-performance
+    role: reported endpoint
+  context: PMID 22185082 abstract result/conclusion; direction and population are retained on the linked observation.
+  sourceIds:
+  - reddit-pmid-22185082
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Single publication; the abstract does not establish general efficacy or safety.
+- id: reddit-claim-vitamin-d-24423304
+  assertion: Six RCTs were identified with 1203 participants (72% females) including 71 depressed patients; five of the studies involved adults at risk of depression, and one trial used depressed patients. Results of the classical meta-analysis showed no significant effect of Vit D supplementation on postintervention depression scores (standardized mean difference = -0.14, 95% confidence interval = -0.41 to 0.13, P = .32; odds ratio = 0.93, 95% confidence interval = 0.54 to 1.59, P = .79). The quality of evidence was low. No significant differences were demonstrated in subgroup or sensitivity analyses. Similar results were found when Bayesian meta-analyses were applied. There is insufficient evidence to support the efficacy of Vit D supplementation in depression symptoms, and more RCTs using depressed patients are warranted.
+  relation: associated-with
+  participants:
+  - entityId: substance:vitamin-d
+    role: intervention or exposure
+  - entityId: tag:depression-severity
+    role: reported endpoint
+  context: PMID 24423304 abstract result/conclusion; direction and population are retained on the linked observation.
+  sourceIds:
+  - reddit-pmid-24423304
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Single publication; the abstract does not establish general efficacy or safety.
 ```
 
 ## Interactions
@@ -731,43 +850,43 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
 - id: interaction-1
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific interaction evidence is preserved in the cited source.'
+  summary: Source-specific interaction evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-    - S1
+  - S1
 - id: interaction-2
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific interaction evidence is preserved in the cited source.'
+  summary: Source-specific interaction evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-    - S1
+  - S1
 - id: interaction-3
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific interaction evidence is preserved in the cited source.'
+  summary: Source-specific interaction evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-    - S1
+  - S1
 - id: interaction-4
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific interaction evidence is preserved in the cited source.'
+  summary: Source-specific interaction evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-    - S1
+  - S1
 - id: interaction-5
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific interaction evidence is preserved in the cited source.'
+  summary: Source-specific interaction evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-    - S1
+  - S1
 ```
 
 ## Experience links
@@ -776,14 +895,25 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
 []
 ```
 
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Vitamin_D
+  title: Wikipedia
+- service: Examine
+  url: https://examine.com/supplements/Vitamin+D
+  title: Examine
+```
+
 ## References
 
 ```yaml
 - id: pmid-42925274
-  title: "Comparison of the efficacy of daily versus weekly vitamin D supplementation on GOLD classification in COPD patients with vitamin D deficiency: An open-label randomized clinical trial."
+  title: 'Comparison of the efficacy of daily versus weekly vitamin D supplementation on GOLD classification in COPD patients with vitamin D deficiency: An open-label randomized clinical trial.'
   authors: Not established in the abstract-only record.
   year: 2026
-  pmid: "42925274"
+  pmid: '42925274'
   doi: 10.1177/02601060261499901
   url: https://pubmed.ncbi.nlm.nih.gov/42925274/
   kind: Open-label randomized clinical trial
@@ -794,7 +924,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   conflictsOfInterest: Full conflict disclosures were not assessed from the abstract-only record.
   conflictOfInterestStatus: not-assessed
 - id: S1
-  title: "Direct source link: https://clinicaltrials.gov/study/NCT01169259"
+  title: 'Direct source link: https://clinicaltrials.gov/study/NCT01169259'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://clinicaltrials.gov/study/NCT01169259
@@ -818,7 +948,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   conflictsOfInterest: No individual conflict declaration located.
   conflictOfInterestStatus: not-assessed
 - id: S3
-  title: "Daily supplementation with 15 μg vitamin D2 compared with vitamin D3 to increase wintertime 25-hydroxyvitamin D status in healthy South Asian and white European women: a 12-wk randomized, placebo-controlled food-fortification trial"
+  title: 'Daily supplementation with 15 μg vitamin D2 compared with vitamin D3 to increase wintertime 25-hydroxyvitamin D status in healthy South Asian and white European women: a 12-wk randomized, placebo-controlled food-fortification trial'
   authors: Laura Tripkovic; Louise R. Wilson; Kathryn Hart; et al.
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/28679555/
@@ -902,7 +1032,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   conflictsOfInterest: Complete individual disclosure forms not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S10
-  title: "Effect of Long-term Vitamin D3 Supplementation vs Placebo on Risk of Depression or Clinically Relevant Depressive Symptoms and on Change in Mood Scores: A Randomized Clinical Trial"
+  title: 'Effect of Long-term Vitamin D3 Supplementation vs Placebo on Risk of Depression or Clinically Relevant Depressive Symptoms and on Change in Mood Scores: A Randomized Clinical Trial'
   authors: Olivia I. Okereke; Charles F. Reynolds III; David Mischoulon; et al.
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/32749491/
@@ -914,7 +1044,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   conflictsOfInterest: Disclosures included Buring’s Pharmavite fees and spouse’s advisory role, Mischoulon’s supplement-company relationships, and Manson’s Mars Symbioscience grants.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: "Annual high-dose oral vitamin D and falls and fractures in older women: a randomized controlled trial"
+  title: 'Annual high-dose oral vitamin D and falls and fractures in older women: a randomized controlled trial'
   authors: Kerrie M. Sanders; Amanda L. Stuart; Elizabeth J. Williamson; et al.
   year: 2010
   url: https://pubmed.ncbi.nlm.nih.gov/20460620/
@@ -926,7 +1056,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   conflictsOfInterest: Full declaration unavailable.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: "The Effects of Four Doses of Vitamin D Supplements on Falls in Older Adults: A Response-Adaptive, Randomized Clinical Trial"
+  title: 'The Effects of Four Doses of Vitamin D Supplements on Falls in Older Adults: A Response-Adaptive, Randomized Clinical Trial'
   authors: Lawrence J. Appel; Erin D. Michos; Christine M. Mitchell; et al.
   year: 2021
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8240534/
@@ -938,7 +1068,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   conflictsOfInterest: NIH/NIA support disclosed; complete individual forms were not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S13
-  title: "Effect of High-Dose Vitamin D Supplementation on Volumetric Bone Density and Bone Strength: A Randomized Clinical Trial"
+  title: 'Effect of High-Dose Vitamin D Supplementation on Volumetric Bone Density and Bone Strength: A Randomized Clinical Trial'
   authors: Lauren A. Burt; Emma O. Billington; Marianne S. Rose; et al.
   year: 2019
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6714464/
@@ -950,7 +1080,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   conflictsOfInterest: Billington disclosed Amgen and Eli Lilly relationships; additional author financial relationships were reported.
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: "Vitamin D supplements for fracture prevention in schoolchildren in Mongolia: analysis of secondary outcomes from a multicentre, double-blind, randomised, placebo-controlled trial"
+  title: 'Vitamin D supplements for fracture prevention in schoolchildren in Mongolia: analysis of secondary outcomes from a multicentre, double-blind, randomised, placebo-controlled trial'
   authors: Davaasambuu Ganmaa; Polyna Khudyakov; Uyanga Buyanjargal; et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38048799/
@@ -974,7 +1104,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   conflictsOfInterest: Publisher’s article disclosure states no relevant financial relationships.
   conflictOfInterestStatus: not-assessed
 - id: S16
-  title: "Effect of a test-and-treat approach to vitamin D supplementation on risk of all cause acute respiratory tract infection and covid-19: phase 3 randomised controlled trial (CORONAVIT)"
+  title: 'Effect of a test-and-treat approach to vitamin D supplementation on risk of all cause acute respiratory tract infection and covid-19: phase 3 randomised controlled trial (CORONAVIT)'
   authors: David A. Jolliffe; Hayley Holt; Matthew Greenig; et al.
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9449358/
@@ -986,7 +1116,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   conflictsOfInterest: Martineau disclosed vitamin D research support from companies manufacturing or selling vitamin D products; complete declarations only partly recovered.
   conflictOfInterestStatus: not-assessed
 - id: S17
-  title: "The effect of vitamin D supplementation on acute respiratory tract infection in older Australian adults: an analysis of data from the D-Health Trial"
+  title: 'The effect of vitamin D supplementation on acute respiratory tract infection in older Australian adults: an analysis of data from the D-Health Trial'
   authors: Hai Pham; Mary Waterhouse; Catherine Baxter; et al.
   year: 2021
   url: https://pubmed.ncbi.nlm.nih.gov/33444565/
@@ -998,7 +1128,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   conflictsOfInterest: Full individual declarations not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S18
-  title: "Vitamin D supplementation and major cardiovascular events: D-Health randomised controlled trial"
+  title: 'Vitamin D supplementation and major cardiovascular events: D-Health randomised controlled trial'
   authors: Bridie Thompson; Mary Waterhouse; Dallas R. English; et al.
   year: 2023
   url: https://www.bmj.com/content/381/bmj-2023-075230
@@ -1010,7 +1140,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   conflictsOfInterest: Disclosure statement identified, but its complete individual details were not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S19
-  title: "The D-Health Trial: a randomised controlled trial of the effect of vitamin D on mortality"
+  title: 'The D-Health Trial: a randomised controlled trial of the effect of vitamin D on mortality'
   authors: Rachel E. Neale; Catherine Baxter; Briony Duarte Romero; et al.
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/35026158/
@@ -1046,7 +1176,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   conflictsOfInterest: Manufacturer is the product’s commercial stakeholder; individual declarations not applicable.
   conflictOfInterestStatus: not-assessed
 - id: S22
-  title: "Direct source link: https://clinicaltrials.gov/study/NCT01169259"
+  title: 'Direct source link: https://clinicaltrials.gov/study/NCT01169259'
   authors: Publication metadata not assessed in the returned report
   year: 2026
   url: https://clinicaltrials.gov/study/NCT01169259
@@ -1058,7 +1188,7 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   conflictsOfInterest: Registry does not replace author financial-disclosure forms.
   conflictOfInterestStatus: not-assessed
 - id: S23
-  title: "FAQs: USP Verification Services"
+  title: 'FAQs: USP Verification Services'
   authors: United States Pharmacopeia
   year: 2026
   url: https://www.usp.org/frequently-asked-questions/usp-verification-services
@@ -1092,6 +1222,98 @@ The evidence selection emphasizes primary randomized reports, not an exhaustive 
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-28167237
+  title: 'Does high dose vitamin D supplementation enhance cognition?: A randomized trial in healthy adults.'
+  authors: Jacqueline A Pettersen
+  year: 2017
+  url: https://pubmed.ncbi.nlm.nih.gov/28167237/
+  kind: PubMed publication
+  insight: There were no significant baseline differences between Low (n=40) and High (n=42) dose groups. Serum 25(OH)D increased significantly more in the High Dose (from 67.2±20 to 130.6±26nmol/L) than the Low Dose group (60.5±22 to 85.9±16nmol/L), p=0.0001. Performance improved in the High Dose group on nonverbal (visual) memory, as assessed by the Pattern Recognition Memory task (PRM), from 84.1±14.9 to 88.3±13.2, p=0.043 (d=0.3) and Paired Associates Learning Task, (PAL) number of stages completed, from 4.86±0.35 to 4.95±0.22, p=0.044 (d=0.5), but not in the Low Dose Group. Mixed effects modeling controlling for age, education, sex and baseline performance revealed that the degree of improvement w
+  limitation: PubMed abstract retrieved 2026-11-01. No PubMed Central full text identifier was returned.
+  pmid: '28167237'
+  doi: 10.1016/j.exger.2017.01.019
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-link-d0f7a02e3d8c
+  title: Effects of Vitamin D Supplementation on Cognitive and Emotional Functioning in Young Adults – A Randomised Controlled Trial (2011)
+  authors: Not established
+  year: 2011
+  url: https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0025966
+  kind: Reddit index publication link
+  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-22185082
+  title: 'Vitamin D and executive function: a preliminary report.'
+  authors: Anita L Hansen, Lisbeth Dahl, Lene Bakke, Julian F Thayer
+  year: 2011
+  url: https://pubmed.ncbi.nlm.nih.gov/22185082/
+  kind: PubMed publication
+  insight: Results revealed that the high vitamin D group had significantly more correct responses than the low vitamin D group on the executive function task.
+  limitation: PubMed abstract retrieved 2026-11-01. No PubMed Central full text identifier was returned.
+  pmid: '22185082'
+  doi: 10.2466/02.09.13.15.16.PMS.113.5.677-685
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-link-b4dbcbf3e612
+  title: Vitamin D supplementation for prevention of mortality in adults (2014)
+  authors: Not established
+  year: 2014
+  url: https://summaries.cochrane.org/CD007470/vitamin-d-supplementation-for-prevention-of-mortality-in-adults
+  kind: Reddit index publication link
+  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-23352937
+  title: The vitamin D receptor in dopamine neurons; its presence in human substantia nigra and its ontogenesis in rat midbrain.
+  authors: X Cui, M Pelekanos, P-Y Liu, T H J Burne, J J McGrath, D W Eyles
+  year: 2013
+  url: https://pubmed.ncbi.nlm.nih.gov/23352937/
+  kind: PubMed publication
+  insight: In particular, there is evidence from rodent models that prenatal vitamin D deficiency alters the development of dopaminergic pathways and this disruption is associated with altered behavior and neurochemistry in the adult brain. Consistent evidence based on immunohistochemistry, real-time PCR and western blot confirmed a pattern of increasing VDR expression in the rat midbrain until weaning. The nuclear expression of VDR in TH-positive neurons during critical periods of brain development suggests that alterations in early life vitamin D status may influence the orderly development of dopaminergic neurons.
+  limitation: PubMed abstract retrieved 2026-11-01. No PubMed Central full text identifier was returned.
+  pmid: '23352937'
+  doi: 10.1016/j.neuroscience.2013.01.035
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-24423304
+  title: 'Efficacy of vitamin D supplementation in depression in adults: a systematic review.'
+  authors: Guowei Li, Lawrence Mbuagbaw, Zainab Samaan, Maicon Falavigna, Shiyuan Zhang, Jonathan D Adachi, Ji Cheng, Alexandra Papaioannou, Lehana Thabane
+  year: 2014
+  url: https://pubmed.ncbi.nlm.nih.gov/24423304/
+  kind: PubMed publication
+  insight: 'Six RCTs were identified with 1203 participants (72% females) including 71 depressed patients; five of the studies involved adults at risk of depression, and one trial used depressed patients. Results of the classical meta-analysis showed no significant effect of Vit D supplementation on postintervention depression scores (standardized mean difference = -0.14, 95% confidence interval = -0.41 to 0.13, P = .32; odds ratio = 0.93, 95% confidence interval = 0.54 to 1.59, P = .79). The quality of evidence was low. No significant differences were demonstrated in subgroup or sensitivity analyses. Similar results were found when Bayesian meta-analyses were applied. There is insufficient evidence to '
+  limitation: PubMed abstract retrieved 2026-11-01. PMC full text identifier PMC5112012 is available at https://pmc.ncbi.nlm.nih.gov/articles/PMC5112012/; methods and disclosures are not inferred beyond the retrieved source.
+  pmid: '24423304'
+  doi: 10.1210/jc.2013-3450
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-link-54f0440eaf32
+  title: Vitamin D Sufficiency Status May Effect Circulating Levels of the Anti-Aging Protein Klotho (2014)
+  authors: Not established
+  year: 2014
+  url: https://online.liebertpub.com/doi/abs/10.1089/acm.2014.5238.abstract
+  kind: Reddit index publication link
+  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 

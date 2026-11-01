@@ -729,56 +729,43 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   url: https://pubchem.ncbi.nlm.nih.gov/compound/24083
   kind: Deep Research source
   insight: Canonical anhydrous compound identity and molecular weight.
-  limitation: Dynamic database; year denotes access, not a clinical publication. Does
-    not characterize every hydrate or commercial formulation.
+  limitation: Dynamic database; year denotes access, not a clinical publication. Does not characterize every hydrate or commercial formulation.
   funding: US National Institutes of Health infrastructure
   sponsorshipStatus: not-assessed
   conflictsOfInterest: No author-specific declaration applicable to the identity record.
   conflictOfInterestStatus: not-assessed
 - id: S2
   title: Full Prescribing Information
-  authors: use, C-IV — Full Prescribing Information. Apotex Corp.; DailyMed/National
-    Library of Medicine. 2026; SPL v21, effective July 21, 2026. [Direct regulator
-    URL](
+  authors: use, C-IV — Full Prescribing Information. Apotex Corp.; DailyMed/National Library of Medicine. 2026; SPL v21, effective July 21, 2026. [Direct regulator URL](
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=944daf47-49a6-93ca-e348-4a0f1b6d937e
   kind: Regulatory or registry source
-  insight: Oral saline-laxative indication, elemental content per teaspoon, dosing,
-    onset, and warnings.
-  limitation: Product labeling, not a comparative trial; SPL effective October 2,
-    2026. Soaking claims do not establish systemic benefits.
+  insight: Oral saline-laxative indication, elemental content per teaspoon, dosing, onset, and warnings.
+  limitation: Product labeling, not a comparative trial; SPL effective October 2, 2026. Soaking claims do not establish systemic benefits.
   funding: Trial funding not applicable; commercial labeler supplied the product information.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Walgreens has a commercial interest in the labeled product.
   conflictOfInterestStatus: not-assessed
 - id: S3
   title: Full Prescribing Information
-  authors: use, C-IV — Full Prescribing Information. Apotex Corp.; DailyMed/National
-    Library of Medicine. 2026; SPL v21, effective July 21, 2026. [Direct regulator
-    URL](
+  authors: use, C-IV — Full Prescribing Information. Apotex Corp.; DailyMed/National Library of Medicine. 2026; SPL v21, effective July 21, 2026. [Direct regulator URL](
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=944daf47-49a6-93ca-e348-4a0f1b6d937e
   kind: Regulatory or registry source
-  insight: Heptahydrate identity, electrolyte replacement, parenteral-nutrition use,
-    anticonvulsant effects, dilution, and safety.
-  limitation: Current SPL effective April 23, 2026 contains prescribing text internally
-    revised May 2020; product-specific, not a modern comparative trial.
+  insight: Heptahydrate identity, electrolyte replacement, parenteral-nutrition use, anticonvulsant effects, dilution, and safety.
+  limitation: Current SPL effective April 23, 2026 contains prescribing text internally revised May 2020; product-specific, not a modern comparative trial.
   funding: Trial funding not applicable; manufacturer labeling.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Hospira has a commercial interest in the injectable product.
   conflictOfInterestStatus: not-assessed
 - id: S4
   title: Full Prescribing Information
-  authors: use, C-IV — Full Prescribing Information. Apotex Corp.; DailyMed/National
-    Library of Medicine. 2026; SPL v21, effective July 21, 2026. [Direct regulator
-    URL](
+  authors: use, C-IV — Full Prescribing Information. Apotex Corp.; DailyMed/National Library of Medicine. 2026; SPL v21, effective July 21, 2026. [Direct regulator URL](
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=944daf47-49a6-93ca-e348-4a0f1b6d937e
   kind: Regulatory or registry source
-  insight: Obstetric dosing, renal limits, population-specific pharmacokinetics, contraindications,
-    fetal toxicity, and interactions.
-  limitation: SPL effective August 24, 2026; applies to this intravenous premix. Some
-    interaction evidence is case-based rather than adequately controlled.
+  insight: Obstetric dosing, renal limits, population-specific pharmacokinetics, contraindications, fetal toxicity, and interactions.
+  limitation: SPL effective August 24, 2026; applies to this intravenous premix. Some interaction evidence is case-based rather than adequately controlled.
   funding: Trial funding not applicable; manufacturer labeling.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Hospira has a commercial interest in the labeled product.
@@ -789,8 +776,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   year: 2026
   url: https://ods.od.nih.gov/factsheets/magnesium-healthprofessional/
   kind: Official nutrient monograph
-  insight: Nutritional upper limit, osmotic laxation, and magnesium-class medication
-    interactions.
+  insight: Nutritional upper limit, osmotic laxation, and magnesium-class medication interactions.
   limitation: General magnesium guidance, not sulfate-specific efficacy evidence.
   funding: US federal government
   sponsorshipStatus: not-assessed
@@ -803,32 +789,22 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   url: https://pubmed.ncbi.nlm.nih.gov/3430654/
   kind: Deep Research source
   insight: Human urinary recovery following a defined oral sulfate cathartic exposure.
-  limitation: Six men; diarrhea; no intravenous reference or absolute bioavailability
-    determination.
+  limitation: Six men; diarrhea; no intravenous reference or absolute bioavailability determination.
   funding: US Public Health Service support indexed; exact grant details not retrieved.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: No declaration available in the accessed abstract.
   conflictOfInterestStatus: not-assessed
 - id: S7
-  title: 'Effects of Magnesium Citrate, Magnesium Oxide, and Magnesium Sulfate Supplementation
-    on Arterial Stiffness: A Randomized, Double-Blind, Placebo-Controlled Intervention
-    Trial.'
-  authors: Joëlle C. Schutten; Peter J. Joris; Iris Groendijk; Coby Eelderink; Dion
-    Groothof; Yvonne van der Veen; Robert Westerhuis; Femke Goorman; Ronald M. Danel;
-    Martin H. de Borst; Stephan J. L. Bakker
+  title: 'Effects of Magnesium Citrate, Magnesium Oxide, and Magnesium Sulfate Supplementation on Arterial Stiffness: A Randomized, Double-Blind, Placebo-Controlled Intervention Trial.'
+  authors: Joëlle C. Schutten; Peter J. Joris; Iris Groendijk; Coby Eelderink; Dion Groothof; Yvonne van der Veen; Robert Westerhuis; Femke Goorman; Ronald M. Danel; Martin H. de Borst; Stephan J. L. Bakker
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9075273/
   kind: Deep Research source
-  insight: Direct equal-elemental-dose comparison; overall vascular nulls despite
-    magnesium biomarker changes.
-  limitation: Surrogate endpoints, largely replete population, and exploratory subgroup/formulation
-    analyses.
-  funding: Nedmag Industries Mining and Manufacturing BV and NIGRAM2+, supported through
-    the Top Sector Life Sciences & Health PPP Allowance to the Dutch Kidney Foundation.
+  insight: Direct equal-elemental-dose comparison; overall vascular nulls despite magnesium biomarker changes.
+  limitation: Surrogate endpoints, largely replete population, and exploratory subgroup/formulation analyses.
+  funding: Nedmag Industries Mining and Manufacturing BV and NIGRAM2+, supported through the Top Sector Life Sciences & Health PPP Allowance to the Dutch Kidney Foundation.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Goorman was employed by Nedmag and Danel by Magnesium Health
-    Institute; remaining authors reported no disclosures. Funders were reported to
-    have no input into design, collection, analysis, or publication.
+  conflictsOfInterest: Goorman was employed by Nedmag and Danel by Magnesium Health Institute; remaining authors reported no disclosures. Funders were reported to have no input into design, collection, analysis, or publication.
   conflictOfInterestStatus: not-assessed
 - id: S8
   title: Magnesium and Vascular Stiffness
@@ -836,12 +812,9 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   year: 2018
   url: https://clinicaltrials.gov/study/NCT03632590
   kind: Deep Research source
-  insight: Registered design, planned enrollment, outcomes, university sponsor, and
-    Nedmag collaborator.
-  limitation: Last posted update was in 2018; estimated enrollment and ambiguous arm
-    wording are superseded by the completed publication for actual exposure and results.
-  funding: University sponsorship and Nedmag collaboration recorded; financial allocation
-    not specified.
+  insight: Registered design, planned enrollment, outcomes, university sponsor, and Nedmag collaborator.
+  limitation: Last posted update was in 2018; estimated enrollment and ambiguous arm wording are superseded by the completed publication for actual exposure and results.
+  funding: University sponsorship and Nedmag collaboration recorded; financial allocation not specified.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Registry does not provide author-level conflict declarations.
   conflictOfInterestStatus: not-assessed
@@ -851,158 +824,117 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   year: 2014
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4219896/
   kind: Deep Research source
-  insight: Sulfate-specific oral randomized trial with favorable glucose measurements
-    but null HbA1c and HOMA-IR.
-  limitation: Small completer analysis, medication adjustment, attrition, and multiple
-    endpoints.
-  funding: No funding statement located in accessed full-text material; capsules were
-    prepared by Tehran University of Medical Sciences' Herbal Drugs Research Center.
+  insight: Sulfate-specific oral randomized trial with favorable glucose measurements but null HbA1c and HOMA-IR.
+  limitation: Small completer analysis, medication adjustment, attrition, and multiple endpoints.
+  funding: No funding statement located in accessed full-text material; capsules were prepared by Tehran University of Medical Sciences' Herbal Drugs Research Center.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: No conflict declaration located in accessed material.
   conflictOfInterestStatus: not-assessed
 - id: S10
-  title: 'Do women with pre-eclampsia, and their babies, benefit from magnesium sulphate?
-    The Magpie Trial: a randomised placebo-controlled trial.'
-  authors: Douglas Altman; Guillermo Carroli; Lelia Duley; et al.; Magpie Trial Collaboration
-    Group
+  title: 'Do women with pre-eclampsia, and their babies, benefit from magnesium sulphate? The Magpie Trial: a randomised placebo-controlled trial.'
+  authors: Douglas Altman; Guillermo Carroli; Lelia Duley; et al.; Magpie Trial Collaboration Group
   year: 2002
   url: https://pubmed.ncbi.nlm.nih.gov/12057549/
   kind: Deep Research source
-  insight: Large randomized evidence for preventing eclampsia, with maternal and infant
-    mortality uncertainty retained.
-  limitation: Obstetric parenteral treatment; frequent side effects; no basis for
-    supplement extrapolation.
-  funding: UK Medical Research Council, UK Department for International Development,
-    UNDP/UNFPA/WHO/World Bank Human Reproduction Programme, and European Commission.
+  insight: Large randomized evidence for preventing eclampsia, with maternal and infant mortality uncertainty retained.
+  limitation: Obstetric parenteral treatment; frequent side effects; no basis for supplement extrapolation.
+  funding: UK Medical Research Council, UK Department for International Development, UNDP/UNFPA/WHO/World Bank Human Reproduction Programme, and European Commission.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Authors declared no conflicts.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: Which anticonvulsant for women with eclampsia? Evidence from the Collaborative
-    Eclampsia Trial.
+  title: Which anticonvulsant for women with eclampsia? Evidence from the Collaborative Eclampsia Trial.
   authors: Eclampsia Trial Collaborative Group
   year: 1995
   url: https://pubmed.ncbi.nlm.nih.gov/7769899/
   kind: Deep Research source
   insight: Fewer recurrent eclamptic seizures than with diazepam or phenytoin.
-  limitation: Historical hospital regimens; exact dosing and full disclosure sections
-    were not recovered.
+  limitation: Historical hospital regimens; exact dosing and full disclosure sections were not recovered.
   funding: Specific funders not established from accessed material.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Full author conflict statement not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: A randomized, controlled trial of magnesium sulfate for the prevention of
-    cerebral palsy.
-  authors: Dwight J. Rouse; Deborah G. Hirtz; Elizabeth Thom; et al.; Eunice Kennedy
-    Shriver NICHD Maternal-Fetal Medicine Units Network
+  title: A randomized, controlled trial of magnesium sulfate for the prevention of cerebral palsy.
+  authors: Dwight J. Rouse; Deborah G. Hirtz; Elizabeth Thom; et al.; Eunice Kennedy Shriver NICHD Maternal-Fetal Medicine Units Network
   year: 2008
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2803083/
   kind: Deep Research source
-  insight: Reduced moderate/severe cerebral palsy component alongside a null primary
-    death-or-cerebral-palsy composite.
+  insight: Reduced moderate/severe cerebral palsy component alongside a null primary death-or-cerebral-palsy composite.
   limitation: Earlier-preterm obstetric population; mortality was not reduced.
   funding: NICHD and National Institute of Neurological Disorders and Stroke grants.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: No relevant potential conflict was reported.
   conflictOfInterestStatus: not-assessed
 - id: S13
-  title: 'Prenatal Intravenous Magnesium at 30-34 Weeks'' Gestation and Neurodevelopmental
-    Outcomes in Offspring: The MAGENTA Randomized Clinical Trial.'
-  authors: Caroline A. Crowther; Pat Ashwood; Philippa F. Middleton; Andrew McPhee;
-    Thach Tran; Jane E. Harding; MAGENTA Study Group
+  title: 'Prenatal Intravenous Magnesium at 30-34 Weeks'' Gestation and Neurodevelopmental Outcomes in Offspring: The MAGENTA Randomized Clinical Trial.'
+  authors: Caroline A. Crowther; Pat Ashwood; Philippa F. Middleton; Andrew McPhee; Thach Tran; Jane E. Harding; MAGENTA Study Group
   year: 2023
   url: https://jamanetwork.com/journals/jama/fullarticle/2808328
   kind: Deep Research source
-  insight: No demonstrated improvement in survival without cerebral palsy at later
-    preterm gestations.
-  limitation: Incomplete two-year ascertainment and limited power; numerous secondary
-    comparisons.
-  funding: Australian NHMRC grant 1022968 and Cerebral Palsy Alliance Research Foundation
-    grants PG5716 and PG01817.
+  insight: No demonstrated improvement in survival without cerebral palsy at later preterm gestations.
+  limitation: Incomplete two-year ascertainment and limited power; numerous secondary comparisons.
+  funding: Australian NHMRC grant 1022968 and Cerebral Palsy Alliance Research Foundation grants PG5716 and PG01817.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: None reported; funders reported no role in conduct, analysis,
-    or publication decisions.
+  conflictsOfInterest: None reported; funders reported no role in conduct, analysis, or publication decisions.
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: 'IV magnesium sulfate in the treatment of acute severe asthma: a multicenter
-    randomized controlled trial.'
-  authors: Robert A. Silverman; Harold Osborn; Jeffrey Runge; et al.; Acute Asthma/Magnesium
-    Study Group
+  title: 'IV magnesium sulfate in the treatment of acute severe asthma: a multicenter randomized controlled trial.'
+  authors: Robert A. Silverman; Harold Osborn; Jeffrey Runge; et al.; Acute Asthma/Magnesium Study Group
   year: 2002
   url: https://pubmed.ncbi.nlm.nih.gov/12171821/
   kind: Deep Research source
-  insight: Improved spirometry in severe obstruction without an overall admission
-    benefit.
-  limitation: Endpoint and severity dependence; complete funding and conflict sections
-    not accessed.
+  insight: Improved spirometry in severe obstruction without an overall admission benefit.
+  limitation: Endpoint and severity dependence; complete funding and conflict sections not accessed.
   funding: Not established from accessed material.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Full declaration not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S15
-  title: 'The 3Mg trial: a randomised controlled trial of intravenous or nebulised
-    magnesium sulphate versus placebo in adults with acute severe asthma.'
-  authors: Steve Goodacre; Judith Cohen; Mike Bradburn; John Stevens; Alasdair Gray;
-    Jonathan Benger; Tim Coats; 3Mg Research Team
+  title: 'The 3Mg trial: a randomised controlled trial of intravenous or nebulised magnesium sulphate versus placebo in adults with acute severe asthma.'
+  authors: Steve Goodacre; Judith Cohen; Mike Bradburn; John Stevens; Alasdair Gray; Jonathan Benger; Tim Coats; 3Mg Research Team
   year: 2014
   url: https://www.journalslibrary.nihr.ac.uk/hta/HTA18220
   kind: Deep Research source
-  insight: Full trial report documenting nonsignificant admission and breathlessness
-    outcomes.
+  insight: Full trial report documenting nonsignificant admission and breathlessness outcomes.
   limitation: Recruitment below target and exclusion of life-threatening presentations.
-  funding: NIHR Health Technology Assessment programme; sponsor Sheffield Teaching
-    Hospitals NHS Foundation Trust.
+  funding: NIHR Health Technology Assessment programme; sponsor Sheffield Teaching Hospitals NHS Foundation Trust.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Author-specific declaration not located in accessed HTML; public-hospital
-    pharmacy and Tayside Pharmaceuticals manufacturing arrangements were reported.
+  conflictsOfInterest: Author-specific declaration not located in accessed HTML; public-hospital pharmacy and Tayside Pharmaceuticals manufacturing arrangements were reported.
   conflictOfInterestStatus: not-assessed
 - id: S16
-  title: 'Effect of Nebulized Magnesium vs Placebo Added to Albuterol on Hospitalization
-    Among Children With Refractory Acute Asthma Treated in the Emergency Department:
-    A Randomized Clinical Trial.'
-  authors: Suzanne Schuh; Judy Sweeney; Maggie Rumantir; et al.; Pediatric Emergency
-    Research Canada Network
+  title: 'Effect of Nebulized Magnesium vs Placebo Added to Albuterol on Hospitalization Among Children With Refractory Acute Asthma Treated in the Emergency Department: A Randomized Clinical Trial.'
+  authors: Suzanne Schuh; Judy Sweeney; Maggie Rumantir; et al.; Pediatric Emergency Research Canada Network
   year: 2020
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7686869/
   kind: Deep Research source
-  insight: Large pediatric nebulized-treatment trial with no significant hospitalization
-    benefit.
+  insight: Large pediatric nebulized-treatment trial with no significant hospitalization benefit.
   limitation: Does not test intravenous magnesium.
-  funding: Canadian Institutes of Health Research, Thrasher Research Fund, Physicians'
-    Services Incorporated Foundation, and Hospital for Sick Children.
+  funding: Canadian Institutes of Health Research, Thrasher Research Fund, Physicians' Services Incorporated Foundation, and Hospital for Sick Children.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Investigators disclosed research grants; Francine Ducharme
-    disclosed pharmaceutical/device research funding and personal fees outside this
-    study. Funders reported no role in study conduct or publication.
+  conflictsOfInterest: Investigators disclosed research grants; Francine Ducharme disclosed pharmaceutical/device research funding and personal fees outside this study. Funders reported no role in study conduct or publication.
   conflictOfInterestStatus: not-assessed
 - id: S17
   title: Treatment of torsade de pointes with magnesium sulfate.
-  authors: D. Tzivoni; S. Banai; C. Schuger; J. Benhorin; A. Keren; S. Gottlieb; S.
-    Stern
+  authors: D. Tzivoni; S. Banai; C. Schuger; J. Benhorin; A. Keren; S. Gottlieb; S. Stern
   year: 1988
   url: https://pubmed.ncbi.nlm.nih.gov/3338130/
   kind: Deep Research source
-  insight: Historical clinical observations distinguish QT-prolongation-associated
-    torsades from other polymorphic ventricular tachycardia.
+  insight: Historical clinical observations distinguish QT-prolongation-associated torsades from other polymorphic ventricular tachycardia.
   limitation: Small uncontrolled series; not a mortality trial.
   funding: Not established from accessed abstract.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Full declaration not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S18
-  title: 'Early administration of intravenous magnesium to high-risk patients with
-    acute myocardial infarction in the Magnesium in Coronaries (MAGIC) Trial: a randomised
-    controlled trial.'
+  title: 'Early administration of intravenous magnesium to high-risk patients with acute myocardial infarction in the Magnesium in Coronaries (MAGIC) Trial: a randomised controlled trial.'
   authors: Magnesium in Coronaries Trial Investigators
   year: 2002
   url: https://pubmed.ncbi.nlm.nih.gov/12401244/
   kind: Deep Research source
   insight: Large null trial for 30-day mortality after high-risk myocardial infarction.
-  limitation: Acute intravenous intervention; not a deficiency-replacement or oral
-    prevention study.
-  funding: US Public Health Service research support indexed; detailed funding statement
-    not retrieved.
+  limitation: Acute intravenous intervention; not a deficiency-replacement or oral prevention study.
+  funding: US Public Health Service research support indexed; detailed funding statement not retrieved.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Full author declaration not retrieved.
   conflictOfInterestStatus: not-assessed
@@ -1016,8 +948,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   limitation: Suspected acute stroke population; not healthy cognition or oral supplementation.
   funding: National Institute of Neurological Disorders and Stroke.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Article links to separate author disclosure forms; their individual
-    contents were not verified.
+  conflictsOfInterest: Article links to separate author disclosure forms; their individual contents were not verified.
   conflictOfInterestStatus: not-assessed
 - id: S20
   title: Prehospital use of magnesium sulfate as neuroprotection in acute stroke.
@@ -1026,8 +957,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4920545/"
   kind: Randomized clinical trial
   insight: Source cited by the returned Deep Research report.
-  limitation: Publication metadata, funding, or disclosure details were not fully
-    recovered in the capture.
+  limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.

@@ -1,21 +1,21 @@
 ---
 slug: gaba
 name: GABA
-subtitle: "Oral gamma-aminobutyric acid supplement: rapidly absorbed systemically, with limited and formulation-specific human evidence for stress, sleep, and cognition."
+subtitle: 'Oral gamma-aminobutyric acid supplement: rapidly absorbed systemically, with limited and formulation-specific human evidence for stress, sleep, and cognition.'
 aliases:
-  - Gamma-aminobutyric acid
-  - γ-Aminobutyric acid
-  - 4-aminobutanoic acid
+- Gamma-aminobutyric acid
+- γ-Aminobutyric acid
+- 4-aminobutanoic acid
 formula: C4H9NO2
 molecularWeight: 103.12 g/mol
 pubchemCid: 119
 smiles: C(CC(=O)O)CN
 category: Amino acid supplement
 tags:
-  - amino-acid
-  - gaba-a-receptor
-  - gaba-b-receptor
-accent: "#6E7B8B"
+- amino-acid
+- gaba-a-receptor
+- gaba-b-receptor
+accent: '#6E7B8B'
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
 halfLife:
@@ -33,36 +33,37 @@ kinetics:
   metabolism: Endogenous GABA is transaminated to succinate semialdehyde and then oxidized to succinate; supplement-specific fractional metabolism in humans is not established.
   sourceId: de-bie-2022
 x-shape:
-  - slug
-  - name
-  - subtitle
-  - summary
-  - description
-  - aliases
-  - formula
-  - molecularWeight
-  - pubchemCid
-  - smiles
-  - category
-  - tags
-  - accent
-  - evidenceNote
-  - reviewedAt
-  - editorialStatus
-  - halfLife
-  - pkObservations
-  - kinetics
-  - modifiers
-  - doses
-  - effects
-  - outcomes
-  - claims
-  - mechanisms
-  - cautions
-  - interactions
-  - experienceLinks
-  - references
-  - legal
+- slug
+- name
+- subtitle
+- summary
+- description
+- aliases
+- formula
+- molecularWeight
+- pubchemCid
+- smiles
+- category
+- tags
+- accent
+- evidenceNote
+- reviewedAt
+- editorialStatus
+- halfLife
+- pkObservations
+- kinetics
+- modifiers
+- doses
+- effects
+- outcomes
+- claims
+- mechanisms
+- cautions
+- interactions
+- experienceLinks
+- references
+- legal
+- externalWikiLinks
 x-order: 9007199254740991
 ---
 
@@ -77,6 +78,8 @@ Gamma-aminobutyric acid (GABA; 4-aminobutanoic acid) is an endogenous inhibitory
 ## Evidence note
 
 Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB transfer is unproven. Small trials report mixed stress, sleep, cognition and exercise findings, with formulation and sponsorship differences. A prolonged controlled-release trial adds a credible liver-injury signal; no ordinary oral-GABA interaction or half-life is established.
+
+Reddit index corpus import (2 linked source records; both resolved to PubMed abstracts). PMCID PMC4521208 and PMCID PMC4639630 full texts were reviewed; funding and disclosures are recorded where available.
 
 ## Doses
 
@@ -156,6 +159,36 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   sourceCategory: research
   note: Compared with tomato puree containing approximately 1044 mg GABA and with water control.
   sourceId: de-bie-2022
+- label: Healthy-volunteer PK/PD single-dose period
+  amount: 2 g
+  quantity: 2
+  quantityMax: null
+  unit: g
+  ingredient: GABA
+  formulation: GABA tablet
+  route: Oral
+  frequency: Single dose
+  duration: Single experimental period
+  population: 12 healthy volunteers (one withdrew before single-dose period)
+  purpose: Pharmacokinetics, endocrine pharmacodynamics and safety
+  sourceCategory: research
+  note: Open-label three-period self-controlled study; 7-day washout between periods.
+  sourceId: reddit-pmid-26617516
+- label: Healthy-volunteer PK/PD repeated-dose period
+  amount: 2 g three times daily
+  quantity: 2
+  quantityMax: null
+  unit: g
+  ingredient: GABA
+  formulation: GABA tablet
+  route: Oral
+  frequency: Three times daily
+  duration: 7 days
+  population: 12 healthy volunteers
+  purpose: Pharmacokinetics, endocrine pharmacodynamics and safety
+  sourceCategory: research
+  note: Doses were given before meals during the repeated period; no accumulation was observed.
+  sourceId: reddit-pmid-26617516
 - label: Acute cognition crossover study
   amount: 800 mg
   quantity: 800
@@ -201,6 +234,20 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   sourceCategory: research
   note: Product was described as greater than 95% purity naturally fermented GABA; study was industry-funded.
   sourceId: hara-2025
+- label: PubMed study exposure (26227783)
+  amount: 800 mg
+  quantity: 800
+  quantityMax: null
+  unit: mg
+  ingredient: GABA
+  formulation: As described in the PubMed abstract
+  frequency: Study exposure
+  duration: Study exposure
+  purpose: Research exposure
+  sourceCategory: research
+  note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
+  sourceId: reddit-pmid-26227783
+  population: Population description was not available in the retrieved abstract.
 ```
 
 ## Pharmacokinetics
@@ -248,6 +295,20 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   context: 200, 600 and 1,200 mg doses produced dose-related plasma exposure over serial sampling to 24 hours; no CSF, PET or direct brain endpoint was measured.
   sourceId: usp-2021
   modelEligible: false
+- id: gaba-half-life-li-2015
+  analyte: Plasma GABA
+  route: Oral
+  formulation: 2 g GABA tablet, single and repeated dosing
+  population: 12 healthy volunteers
+  endpoint: elimination-half-life
+  statistic: not-established
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: Open-label self-controlled study reported mean half-life 5.08 h after single dosing and 5.24 h after 2 g three-times-daily dosing; Tmax about 1–1.5 h and no meaningful accumulation (RA 1.11).
+  sourceId: reddit-pmid-26617516
+  modelEligible: false
 ```
 
 ## Duration
@@ -263,11 +324,11 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   note: Mean plasma tmax was about 0.50 hours for the aqueous solution and 0.36 hours for tomato puree. This is plasma timing, not subjective-effect duration.
   total: null
   phases:
-    - name: peak
-      basis: elapsed-since-exposure
-      min: 0.36
-      max: 0.5
-      unit: hours
+  - name: peak
+    basis: elapsed-since-exposure
+    min: 0.36
+    max: 0.5
+    unit: hours
 ```
 
 ## Modifiers
@@ -291,7 +352,8 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   instrument: EEG alpha/beta power with mood ratings
   magnitude: Physiological signal; subjective results mixed
   reportType: measured-assessment
-  conflictingSourceIds: [hepsomali-2020]
+  conflictingSourceIds:
+  - hepsomali-2020
 - id: gaba-sleep-onset
   conceptId: drowsiness
   name: Sleep-onset experience
@@ -304,7 +366,9 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   instrument: Polysomnography and sleep questionnaires
   magnitude: Recurrent sleep-onset signal with limited replication
   reportType: measured-assessment
-  conflictingSourceIds: [yoon-2022, hepsomali-2020]
+  conflictingSourceIds:
+  - yoon-2022
+  - hepsomali-2020
 - id: gaba-cognitive-experience
   conceptId: perception
   name: Healthy-person cognitive experience
@@ -317,7 +381,32 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   instrument: Visual search, temporal attention and task-switching tests
   magnitude: Mixed and partly detrimental findings
   reportType: measured-assessment
-  conflictingSourceIds: [yoto-2012]
+  conflictingSourceIds:
+  - yoto-2012
+- id: gaba-insulin-secretion
+  conceptId: insulin-response
+  name: Circulating insulin
+  direction: Increased
+  evidence: Human research
+  description: In 12 healthy volunteers, 2 g oral GABA increased insulin exposure under fasting and fed conditions; repeated dosing produced larger insulin AUC than single dosing.
+  sourceId: reddit-pmid-26617516
+  population: 12 healthy volunteers
+  exposure: 2 g once or 2 g three times daily for 7 days
+  instrument: Serum insulin AUC
+  magnitude: Fasting insulin 1.6-fold single and 2.0-fold repeated; fed 1.4-fold single and 1.6-fold repeated, p<0.01
+  reportType: measured-assessment
+- id: gaba-glucagon
+  conceptId: glucagon
+  name: Circulating glucagon
+  direction: Increased
+  evidence: Human research
+  description: GABA increased glucagon during fasting conditions, with no significant change in insulin-to-glucagon ratio or instantaneous blood glucose.
+  sourceId: reddit-pmid-26617516
+  population: 12 healthy volunteers
+  exposure: 2 g once or 2 g three times daily for 7 days
+  instrument: Plasma glucagon AUC
+  magnitude: Fasting glucagon 1.3-fold single and 1.5-fold repeated; p<0.05 and p<0.01
+  reportType: measured-assessment
 ```
 
 ## Outcomes
@@ -329,7 +418,7 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
     design: Randomized single-blind placebo-controlled crossover study
     sampleSize: 63
     populationLabels:
-      - Healthy adults
+    - Healthy adults
     comparator: Dextrin placebo
     route: Oral
     formulation: Capsule
@@ -342,7 +431,7 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   description: GABA attenuated the task-associated decrease in EEG alpha and beta activity around 30 minutes after ingestion; subjective tension/anxiety, arousal, and relaxation findings were not consistently significant in later systematic review extraction.
   sourceId: yoto-2012
   conflictingSourceIds:
-    - hepsomali-2020
+  - hepsomali-2020
   population: 63 healthy adults
   exposure: Single 100 mg GABA capsule
   instrument: EEG alpha/beta power; POMS and visual-analog ratings
@@ -353,9 +442,9 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
     design: Randomized double-blind placebo-controlled parallel trial
     sampleSize: 40
     populationLabels:
-      - Adults with insomnia symptoms
-      - PSQI greater than 5
-      - ISI greater than 8
+    - Adults with insomnia symptoms
+    - PSQI greater than 5
+    - ISI greater than 8
     comparator: Maltodextrin placebo
     route: Oral
     formulation: Fermented rice-germ GABA tablet
@@ -385,7 +474,7 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
     design: Randomized double-blind placebo-controlled parallel trial
     sampleSize: 54
     populationLabels:
-      - Adults with insomnia
+    - Adults with insomnia
     comparator: Placebo
     route: Oral
     formulation: Natural GABA from unpolished rice germ
@@ -415,7 +504,7 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
     design: Randomized double-blind placebo-controlled crossover trial
     sampleSize: 32
     populationLabels:
-      - Healthy young adults
+    - Healthy young adults
     comparator: Microcrystalline-cellulose placebo
     route: Oral
     formulation: 800 mg GABA dissolved in orange juice
@@ -437,9 +526,9 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
     design: Randomized double-blind placebo-controlled parallel trial
     sampleSize: 52
     populationLabels:
-      - Prediabetes
-      - Age 50–70 years
-      - BMI at least 25 kg/m2
+    - Prediabetes
+    - Age 50–70 years
+    - BMI at least 25 kg/m2
     comparator: Placebo
     route: Oral
     formulation: GABA supplement
@@ -462,7 +551,7 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
     design: Randomized double-blind placebo-controlled crossover trial
     sampleSize: 8
     populationLabels:
-      - Healthy male university esports players
+    - Healthy male university esports players
     comparator: Dextrin placebo
     route: Oral
     formulation: Greater than 95% purity fermented GABA
@@ -496,7 +585,7 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
     design: Randomized double-blind placebo-controlled crossover trial
     sampleSize: 8
     populationLabels:
-      - Healthy male university esports players
+    - Healthy male university esports players
     comparator: Dextrin placebo
     route: Oral
     formulation: Greater than 95% purity fermented GABA
@@ -523,6 +612,51 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   exposure: Single 200 mg fermented GABA dose
   instrument: Mobalytics Proving Ground
   magnitude: GABA 1170.66 versus placebo 1075.16, p=0.006
+- id: gaba-insulin-pkpd-li
+  study:
+    id: gaba-26617516-trial
+    design: Open-label three-period self-controlled phase 1 study
+    sampleSize: 12
+    populationLabels:
+    - Healthy volunteers
+    comparator: Placebo period
+    route: Oral
+    formulation: GABA tablet
+    durationDays: 22
+    assessmentTime: Single 2 g dose and after 2 g three times daily for 7 days
+  reportType: measured-assessment
+  conceptId: endocrine-response
+  name: Insulin and glucagon response
+  direction: Increased
+  evidence: Human research
+  description: Oral GABA was rapidly absorbed (Tmax 0.5–1.5 h; half-life about 5 h), increased insulin and fasting glucagon exposure, and lowered glycated albumin after repeated dosing without changing instantaneous blood glucose.
+  sourceId: reddit-pmid-26617516
+  population: 12 healthy volunteers
+  exposure: 2 g GABA once or 2 g three times daily for 7 days
+  instrument: Plasma PK, insulin, glucagon, glucose and glycated albumin assays
+  magnitude: Insulin 1.4–2.0 fold; no significant glucose change; repeated-dose glycated albumin lower, p<0.01
+- id: action-cascading-steenbergen
+  study:
+    id: gaba-26227783-trial
+    design: Double-blind randomized between-group placebo-controlled study
+    sampleSize: 30
+    populationLabels:
+    - Healthy adults
+    comparator: Microcrystalline cellulose placebo
+    route: Oral
+    formulation: Synthetic GABA powder dissolved in orange juice
+    assessmentTime: 30 minutes after dosing and task session
+  reportType: measured-assessment
+  conceptId: action-selection
+  name: Action cascading and response inhibition
+  direction: Increased
+  evidence: Human research
+  description: Compared with placebo, 800 mg GABA produced faster stop-change responses in simultaneous and delayed-change conditions and a shorter stop-signal reaction time; simple GO-response speed did not differ. The PubMed record is marked as a retracted publication, so this result should not be treated as reliable efficacy evidence.
+  sourceId: reddit-pmid-26227783
+  population: 30 healthy adults (15 GABA, 15 placebo)
+  exposure: Single 800 mg oral synthetic GABA dose
+  instrument: Stop-change paradigm and stop-signal reaction time
+  magnitude: SCD0 991 vs 1283 ms; SCD300 816 vs 1104 ms; SSRT 236 vs 316 ms; abstract/full text report significant group differences
 ```
 
 ## Mechanisms
@@ -548,6 +682,9 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   description: GABA is transaminated by GABA transaminase to succinate semialdehyde, which succinate-semialdehyde dehydrogenase oxidizes to succinate.
   sourceId: uniprot-aldh5a1
   conceptId: gaba-transaminase
+- title: GABAergic modulation of action cascading
+  description: In a double-blind randomized study, 800 mg synthetic GABA was reported to speed stop-change responses and shorten stop-signal reaction time without changing simple GO responses, consistent with a possible role of GABAergic signaling in action selection and inhibition.
+  sourceId: reddit-pmid-26227783
 ```
 
 ## Cautions
@@ -565,6 +702,15 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
 - title: Mixture pharmacovigilance limitation
   description: Most adverse-event reports mentioning GABA involved multi-ingredient products, preventing clean attribution to GABA alone.
   sourceId: usp-2021
+- title: Open-label endocrine PK/PD study
+  description: The 2 g single/repeated-dose study was open-label, self-controlled and limited to 12 healthy volunteers; endocrine changes and lower glycated albumin do not establish diabetes treatment benefit.
+  sourceId: reddit-pmid-26617516
+- title: Dose- and duration-related transient adverse effects
+  description: Repeated 2 g three-times-daily dosing produced more minor events (including sore throat, throat burning, headache and dizziness) than single dosing; four men had transient ALT/AST elevations that normalized without intervention.
+  sourceId: reddit-pmid-26617516
+- title: Retracted action-selection publication
+  description: PubMed metadata labels PMID 26227783 as a Retracted Publication. Its reported 800 mg action-selection effects should be treated as unreliable until the retraction basis is resolved.
+  sourceId: reddit-pmid-26227783
 ```
 
 ## Claims
@@ -574,13 +720,13 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   assertion: GABA is an endogenous agonist at GABA-A receptors.
   relation: agonist-at
   participants:
-    - entityId: substance:gaba
-      role: ligand
-    - entityId: tag:gaba-a-receptor
-      role: target
+  - entityId: substance:gaba
+    role: ligand
+  - entityId: tag:gaba-a-receptor
+    role: target
   context: Established receptor pharmacology; does not establish human CNS exposure after oral supplementation.
   sourceIds:
-    - iuphar-gabaa
+  - iuphar-gabaa
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Receptor pharmacology is not evidence of oral supplement brain penetration or clinical efficacy.
@@ -588,13 +734,13 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   assertion: GABA is an agonist at the GABA-B receptor.
   relation: agonist-at
   participants:
-    - entityId: substance:gaba
-      role: ligand
-    - entityId: tag:gaba-b-receptor
-      role: target
+  - entityId: substance:gaba
+    role: ligand
+  - entityId: tag:gaba-b-receptor
+    role: target
   context: Established receptor pharmacology; baclofen is a distinct pharmacological GABA-B agonist and is not oral GABA.
   sourceIds:
-    - iuphar-gabab
+  - iuphar-gabab
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Receptor affinity does not demonstrate central target engagement after oral GABA.
@@ -602,14 +748,14 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   assertion: Oral GABA is absorbed into systemic plasma in humans.
   relation: produces-systemic-exposure
   participants:
-    - entityId: substance:gaba
-      role: orally administered substance
-    - entityId: tag:oral-systemic-exposure
-      role: exposure state
+  - entityId: substance:gaba
+    role: orally administered substance
+  - entityId: tag:oral-systemic-exposure
+    role: exposure state
   context: Healthy men received aqueous GABA or GABA-containing tomato puree with serial plasma sampling.
   sourceIds:
-    - de-bie-2022
-    - yamatsu-2016
+  - de-bie-2022
+  - yamatsu-2016
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Systemic exposure does not establish absolute bioavailability, brain exposure, or subjective-effect duration.
@@ -631,6 +777,17 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
 
 ```yaml
 []
+```
+
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Gamma-Aminobutyric_acid
+  title: Wikipedia
+- service: Examine
+  url: https://examine.com/supplements/gaba
+  title: Examine.com
 ```
 
 ## References
@@ -716,7 +873,7 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   kind: Primary animal pharmacokinetic study
   insight: Rat BBB experiments found GABA efflux clearance substantially greater than influx, supporting active restriction of brain GABA exposure.
   limitation: Rat BBB data cannot quantify human brain entry after oral GABA.
-  pmid: "11595763"
+  pmid: '11595763'
   doi: 10.1046/j.1471-4159.2001.00540.x
   funding: Not assessed.
   sponsorshipStatus: not-assessed
@@ -730,7 +887,7 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   kind: Randomized controlled crossover study
   insight: In 63 adults, 100 mg GABA attenuated stress-task-associated EEG alpha/beta changes around 30 minutes after dosing.
   limitation: Single-blind acute study; subjective effects were not consistently significant in later systematic extraction.
-  pmid: "22203366"
+  pmid: '22203366'
   doi: 10.1007/s00726-011-1206-6
   funding: Not assessed; PubMed indexing as non-U.S.-government research support was not treated as sponsorship evidence.
   sponsorshipStatus: not-assessed
@@ -744,21 +901,21 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   kind: Human crossover sleep and absorption study
   insight: Reported rapid blood GABA rise peaking near 30 minutes and shorter sleep latency with 100 mg oral GABA.
   limitation: Very small poor-sleeper sample; explicit sponsorship and conflict declarations were not verified in this review.
-  pmid: "30263304"
+  pmid: '30263304'
   doi: 10.1007/s10068-016-0076-9
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: byun-2018
-  title: "Safety and Efficacy of Gamma-Aminobutyric Acid from Fermented Rice Germ in Patients with Insomnia Symptoms: A Randomized, Double-Blind Trial"
+  title: 'Safety and Efficacy of Gamma-Aminobutyric Acid from Fermented Rice Germ in Patients with Insomnia Symptoms: A Randomized, Double-Blind Trial'
   authors: Jung Ick Byun, Yu Yong Shin, Sung Eun Chung, Won Chul Shin
   year: 2018
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6031986/
   kind: Randomized double-blind placebo-controlled trial
   insight: Four weeks of 300 mg fermented rice-germ GABA produced a significant group-by-time interaction for PSG sleep latency.
   limitation: Small single-center trial with imbalanced 30:10 randomization and baseline PSG differences.
-  pmid: "29856155"
+  pmid: '29856155'
   doi: 10.3988/jcn.2018.14.3.291
   funding: Natural Way Co. Ltd. financially supported the study and supplied the fermented rice-germ GABA.
   sponsorshipStatus: industry-funded
@@ -766,14 +923,14 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC6031986/
 - id: hepsomali-2020
-  title: "Effects of Oral Gamma-Aminobutyric Acid (GABA) Administration on Stress and Sleep in Humans: A Systematic Review"
+  title: 'Effects of Oral Gamma-Aminobutyric Acid (GABA) Administration on Stress and Sleep in Humans: A Systematic Review'
   authors: Piril Hepsomali, John A Groeger, Jun Nishihira, Andrew Scholey
   year: 2020
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7527439/
   kind: Systematic review
   insight: Fourteen placebo-controlled studies yielded limited stress evidence and very limited sleep evidence with substantial methodological heterogeneity.
   limitation: Search ended in February 2020 and included heterogeneous formulations, small samples, and frequent industry-employed authors.
-  pmid: "33041752"
+  pmid: '33041752'
   doi: 10.3389/fnins.2020.00923
   funding: Not assessed in this draft.
   sponsorshipStatus: not-assessed
@@ -794,14 +951,14 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://www.mdpi.com/2072-6643/13/8/2742
 - id: yoon-2022
-  title: "Efficacy and Safety of Low-Dose Gamma-Aminobutyric Acid From Unpolished Rice Germ as a Health Functional Food for Promoting Sleep: A Randomized, Double-Blind, Placebo-Controlled Trial"
+  title: 'Efficacy and Safety of Low-Dose Gamma-Aminobutyric Acid From Unpolished Rice Germ as a Health Functional Food for Promoting Sleep: A Randomized, Double-Blind, Placebo-Controlled Trial'
   authors: Seonmin Yoon, Jung-Ick Byun, Won Chul Shin
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9262463/
   kind: Randomized double-blind placebo-controlled trial
   insight: In 50 completers, 75 mg natural GABA increased N3 sleep within the GABA arm; sleep-latency change was not significant versus placebo.
   limitation: Brief report; several emphasized findings are within-group comparisons rather than clearly demonstrated between-group effects.
-  pmid: "35796273"
+  pmid: '35796273'
   doi: 10.3988/jcn.2022.18.4.478
   funding: Natural Way Co. Ltd. supported the study and supplied GABA; the paper states the funder had no study or reporting role.
   sponsorshipStatus: industry-funded
@@ -816,7 +973,7 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   kind: Randomized human pharmacokinetic crossover study
   insight: In 11 healthy men, oral GABA peaked rapidly; tomato-matrix GABA showed broadly similar bioavailability to aqueous GABA.
   limitation: Small male-only acute study using approximately 0.9–1.0 g GABA; no elimination half-life or CNS exposure was established.
-  pmid: "35852458"
+  pmid: '35852458'
   doi: 10.1039/d2fo01358d
   funding: Commercial partners Agrico Research, Nunhems Netherlands and AVEBE participated through Dutch public-private Topsector Agri-Food grant AF17048.
   sponsorshipStatus: mixed-funding
@@ -824,14 +981,14 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pubs.rsc.org/en/content/articlehtml/2022/fo/d2fo01358d
 - id: altinok-2023
-  title: "Effects of gamma-aminobutyric acid on working memory and attention: A randomized, double-blinded, placebo-controlled, crossover trial"
+  title: 'Effects of gamma-aminobutyric acid on working memory and attention: A randomized, double-blinded, placebo-controlled, crossover trial'
   authors: Ahmet Al Tınok, Aytaç Karabay, Joost de Jong, Gülşen Balta, Elkan G Akyürek
   year: 2023
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10291391/
   kind: Randomized double-blind placebo-controlled crossover trial
   insight: In 32 young adults, 800 mg GABA slowed visual search without improving accuracy, temporal attention, or visual-working-memory precision.
   limitation: Acute laboratory study in young healthy adults; no pharmacokinetic or brain-exposure measurement.
-  pmid: "36988214"
+  pmid: '36988214'
   doi: 10.1177/02698811231161579
   funding: Authors stated they received no financial support for the research, authorship, or publication.
   sponsorshipStatus: no-external-funding
@@ -839,28 +996,28 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://journals.sagepub.com/doi/full/10.1177/02698811231161579
 - id: de-bie-2023
-  title: "Effects of γ-aminobutyric acid supplementation on glucose control in adults with prediabetes: A double-blind, randomized, placebo-controlled trial"
+  title: 'Effects of γ-aminobutyric acid supplementation on glucose control in adults with prediabetes: A double-blind, randomized, placebo-controlled trial'
   authors: Tessa H de Bie, Renger F Witkamp, Michiel GJ Balvers, Maarten A Jongsma
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/37495019/
   kind: Randomized double-blind placebo-controlled trial
   insight: 1500 mg/day for 95 days did not improve glucose response; corrected exploratory secondary outcomes, including sleep, were also nonsignificant.
   limitation: Prediabetes population and cardiometabolic primary endpoint; publication disclosure text was not inspected in this draft.
-  pmid: "37495019"
+  pmid: '37495019'
   doi: 10.1016/j.ajcnut.2023.07.017
   funding: Not assessed from an inspected declaration.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from an inspected declaration.
   conflictOfInterestStatus: not-assessed
 - id: hara-2025
-  title: "γ-Aminobutyric Acid Intake Improves Psychological State and Performance in Esports: A Randomized, Placebo-Controlled, Double-Blind Crossover Study"
+  title: 'γ-Aminobutyric Acid Intake Improves Psychological State and Performance in Esports: A Randomized, Placebo-Controlled, Double-Blind Crossover Study'
   authors: Yoshihiro Hara, Utano Nakamura, Keita Koga, Yusuke Yamashita, Youngil Kim, Goichi Hagiwara, Ryousuke Furukado
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12157149/
   kind: Randomized double-blind placebo-controlled crossover trial
   insight: In eight analyzed men, 200 mg fermented GABA reduced POMS2 fatigue/confusion scores and increased a standardized esports-task score.
   limitation: Extremely small male-only sample; proprietary task algorithm and substantial commercial involvement limit generalizability.
-  pmid: "40507139"
+  pmid: '40507139'
   doi: 10.3390/nu17111870
   funding: Pharma Foods International Co. Ltd. financially supported the study under an industry-sponsored tripartite research agreement.
   sponsorshipStatus: industry-funded
@@ -875,7 +1032,7 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   kind: Randomized controlled safety and efficacy trial
   insight: Six-month controlled-release GABA exposure included treatment-associated transaminase elevations, including one idiosyncratic approximately seven-fold AST/ALT event that resolved after withdrawal.
   limitation: Small type-1-diabetes sample and controlled-release formulation do not establish incidence for ordinary retail oral GABA.
-  pmid: "40185824"
+  pmid: '40185824'
   doi: 10.1038/s41598-025-95751-y
   funding: Barndiabetesfonden, Swedish Research Council, Diabetesfonden, EXODIAB, Göran Gustafsson Foundation, Swedish Society for Medical Research, Diamyd Medical and institutional support.
   sponsorshipStatus: mixed-funding
@@ -893,6 +1050,49 @@ Oral GABA is measurably absorbed into peripheral plasma, but direct human BBB tr
   funding: Not applicable to this regulatory document.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not applicable to this regulatory document.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-26617516
+  title: 'Study of GABA in Healthy Volunteers: Pharmacokinetics and Pharmacodynamics'
+  authors: Junfeng Li, Zhaoyun Zhang, Xiaoxia Liu, et al.
+  year: 2015
+  url: https://pubmed.ncbi.nlm.nih.gov/26617516/
+  kind: PubMed phase 1 PK/PD study with PMC full text
+  insight: In 12 healthy volunteers, 2 g GABA once or 2 g three times daily for 7 days gave Tmax about 0.5–1.5 h, half-life about 5 h, increased insulin and fasting glucagon, lowered glycated albumin after repeated dosing, and caused more minor transient adverse events with repeated dosing.
+  limitation: Open-label, self-controlled, small healthy sample; endocrine findings do not establish diabetes efficacy. Full text available at PMCID PMC4639630.
+  pmid: '26617516'
+  pmcid: PMC4639630
+  doi: 10.3389/fphar.2015.00260
+  funding: Juvenile Diabetes Research Foundation and other institutional grants reported in the full text.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Authors declared no commercial or financial conflicts.
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC4639630/
+- id: reddit-pmid-26227783
+  title: 'γ-Aminobutyric acid (GABA) administration improves action selection processes: a randomised controlled trial.'
+  authors: Laura Steenbergen, Roberta Sellaro, Ann-Kathrin Stock, Christian Beste, Lorenza S Colzato
+  year: 2015
+  url: https://pubmed.ncbi.nlm.nih.gov/26227783/
+  kind: PubMed publication
+  insight: In 30 healthy adults, a single 800 mg synthetic GABA dose was reported to improve stop-change action selection and shorten stop-signal reaction time without changing simple GO responses.
+  limitation: PubMed metadata marks this record as a Retracted Publication; treat the reported behavioral effects as unreliable. PMCID PMC4521208 full text was reviewed for methods and results, but retraction rationale was not independently retrieved in this pass.
+  pmid: '26227783'
+  pmcid: PMC4521208
+  doi: 10.1038/srep12770
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-link-2f51b0991ed4
+  title: 'Study of GABA in Healthy Volunteers: Pharmacokinetics and Pharmacodynamics (2015)'
+  authors: Not established
+  year: 2015
+  url: https://journal.frontiersin.org/article/10.3389/fphar.2015.00260/full
+  kind: Reddit index publication link
+  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 

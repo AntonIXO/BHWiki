@@ -217,24 +217,24 @@ Two small inhaled-dose studies support timing and subjective findings. The recep
   title: Human psychopharmacology and dose-effects of salvinorin A, a kappa opioid agonist hallucinogen present in the plant Salvia divinorum
   authors: Johnson et al.
   year: 2011
-  pmid: "21131142"
+  pmid: '21131142'
   url: https://pubmed.ncbi.nlm.nih.gov/21131142/
   kind: Human dose-effect study
   insight: Reports inhaled ascending doses, a 2-minute peak, resolution by about 20 minutes, and the kappa-opioid agonist description.
   limitation: Four participants. No elimination half-life is reported.
   funding: Not assessed in this draft.
 - id: maclean2013
-  title: "Dose-related effects of salvinorin A in humans: dissociative, hallucinogenic, and memory effects"
+  title: 'Dose-related effects of salvinorin A in humans: dissociative, hallucinogenic, and memory effects'
   authors: MacLean et al.
   year: 2013
-  pmid: "23135605"
+  pmid: '23135605'
   url: https://pubmed.ncbi.nlm.nih.gov/23135605/
   kind: Double-blind placebo-controlled study
   insight: Reports dose-related dissociative effects, memory impairment during the session, and no persisting adverse effects at one month.
   limitation: Eight participants. Session narratives are not reproduced here.
   funding: Not assessed in this draft.
 - id: pubchem
-  title: "Salvinorin A: compound identity and structure"
+  title: 'Salvinorin A: compound identity and structure'
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/128563

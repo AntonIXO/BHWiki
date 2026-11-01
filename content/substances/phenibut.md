@@ -3,21 +3,21 @@ slug: phenibut
 name: Phenibut
 subtitle: GABA analogue · limited clinical efficacy evidence and documented dependence risk.
 aliases:
-  - β-phenyl-GABA
-  - Noofen
-  - Noophen
-  - Anvifen
-  - Фенибут
+- β-phenyl-GABA
+- Noofen
+- Noophen
+- Anvifen
+- Фенибут
 formula: C10H13NO2
 molecularWeight: 179.22 g/mol
 pubchemCid: 14113
 smiles: C1=CC=C(C=C1)C(CC(=O)O)CN
 category: Depressant
 tags:
-  - depressant
-  - gaba-b-receptor
-  - alpha2delta-vgcc
-accent: "#c3b093"
+- depressant
+- gaba-b-receptor
+- alpha2delta-vgcc
+accent: '#c3b093'
 reviewedAt: 2026-10-11
 editorialStatus: sourced-draft
 halfLife:
@@ -35,36 +35,37 @@ kinetics:
   metabolism: Not established
   sourceId: dr-phenibut-s1
 x-shape:
-  - slug
-  - name
-  - subtitle
-  - summary
-  - description
-  - aliases
-  - formula
-  - molecularWeight
-  - pubchemCid
-  - smiles
-  - category
-  - tags
-  - accent
-  - evidenceNote
-  - reviewedAt
-  - editorialStatus
-  - halfLife
-  - pkObservations
-  - kinetics
-  - modifiers
-  - doses
-  - effects
-  - outcomes
-  - claims
-  - mechanisms
-  - cautions
-  - interactions
-  - experienceLinks
-  - references
-  - legal
+- slug
+- name
+- subtitle
+- summary
+- description
+- aliases
+- formula
+- molecularWeight
+- pubchemCid
+- smiles
+- category
+- tags
+- accent
+- evidenceNote
+- reviewedAt
+- editorialStatus
+- halfLife
+- pkObservations
+- kinetics
+- modifiers
+- doses
+- effects
+- outcomes
+- claims
+- mechanisms
+- cautions
+- interactions
+- experienceLinks
+- references
+- legal
+- externalWikiLinks
 x-order: 244
 ---
 
@@ -79,6 +80,8 @@ Clinical studies concern adjustment disorder, headache, facial pain, ADHD, vascu
 ## Evidence note
 
 No adequate healthy-volunteer efficacy trial or modern human PK study was identified. Published poison-center and case-series data document CNS depression, coma/airway support, agitation, psychosis, tolerance, dependence and severe withdrawal, while incidence cannot be inferred from passive or case-selected datasets. [dr-phenibut-s16][dr-phenibut-s20]
+
+Reviewed PubMed abstracts for PMID(s) 20841974, 23391959, 23717928, 2431377. PMC citation PMC3604470 was checked; rights-eligible full-text retrieval was not available in this pass.
 
 ## Doses
 
@@ -143,7 +146,23 @@ No adequate healthy-volunteer efficacy trial or modern human PK study was identi
   sourceCategory: research
   note: Accessible reporting does not establish blinded placebo-controlled efficacy.
   sourceId: dr-phenibut-s13
+- label: PubMed study exposure (23391959)
+  amount: 10 mg
+  quantity: 10
+  quantityMax: null
+  unit: mg
+  ingredient: Phenibut
+  formulation: Formulation as described in PMID 23391959
+  route: oral or as stated in abstract
+  frequency: Study schedule not stated in abstract
+  duration: Not stated in abstract
+  population: We present a case of a patient who used phenibut to self-medicate anxiety, insomnia and cravings for alcohol.
+  purpose: Research exposure
+  sourceCategory: research
+  note: Dose and schedule transcribed from PMID 23391959 abstract; formulation and population are source-specific to this study.
+  sourceId: reddit-pmid-23391959
 ```
+
 ## Pharmacokinetics
 
 ```yaml
@@ -211,6 +230,30 @@ No adequate healthy-volunteer efficacy trial or modern human PK study was identi
   magnitude: Coma 6.2% in 1,320 poison-center exposures
   reportType: measured-assessment
   conflictingSourceIds: []
+- id: reddit-phenibut-anxiety-23391959
+  conceptId: anxiety
+  name: Anxiety
+  direction: Decreased
+  evidence: Human research
+  description: While phenibut was helpful initially, the patient developed dependence including tolerance, significant withdrawal symptoms within 3-4 h of last use and failure to fulfil his roles at work and at home.
+  sourceId: reddit-pmid-23391959
+  population: We present a case of a patient who used phenibut to self-medicate anxiety, insomnia and cravings for alcohol.
+  exposure: In Western countries, phenibut is not a registered medication but is available through online stores as a supplement.
+  instrument: null
+  magnitude: null
+  reportType: measured-assessment
+- id: reddit-phenibut-craving-23391959
+  conceptId: craving
+  name: Craving
+  direction: Decreased
+  evidence: Human research
+  description: While phenibut was helpful initially, the patient developed dependence including tolerance, significant withdrawal symptoms within 3-4 h of last use and failure to fulfil his roles at work and at home.
+  sourceId: reddit-pmid-23391959
+  population: We present a case of a patient who used phenibut to self-medicate anxiety, insomnia and cravings for alcohol.
+  exposure: In Western countries, phenibut is not a registered medication but is available through online stores as a supplement.
+  instrument: null
+  magnitude: null
+  reportType: measured-assessment
 ```
 
 ## Outcomes
@@ -242,6 +285,18 @@ No adequate healthy-volunteer efficacy trial or modern human PK study was identi
   magnitude: 12.6% major effects; 3 deaths
   reportType: measured-assessment
   conflictingSourceIds: []
+- id: reddit-phenibut-anxiety-symptom-severity-23391959
+  conceptId: anxiety-symptom-severity
+  name: Anxiety Symptom Severity
+  direction: Decreased
+  evidence: Human research
+  description: While phenibut was helpful initially, the patient developed dependence including tolerance, significant withdrawal symptoms within 3-4 h of last use and failure to fulfil his roles at work and at home.
+  sourceId: reddit-pmid-23391959
+  population: We present a case of a patient who used phenibut to self-medicate anxiety, insomnia and cravings for alcohol.
+  exposure: In Western countries, phenibut is not a registered medication but is available through online stores as a supplement.
+  instrument: null
+  magnitude: null
+  reportType: measured-assessment
 ```
 
 ## Mechanisms
@@ -250,6 +305,12 @@ No adequate healthy-volunteer efficacy trial or modern human PK study was identi
 - title: GABAergic analogue
   description: WHO supports GABA_B and α2δ-related pharmacology mainly from nonhuman or in-vitro evidence; the often-repeated GABA_A claim was not adequately substantiated.
   sourceId: dr-phenibut-s1
+- title: Source-specific finding from PMID 2431377
+  description: Experiments reported in this study have been performed in order to investigate cholinergic and GABA-ergic neurotransmitter systems and substance P in the realization of internal inhibition and pain reinforcement.
+  sourceId: reddit-pmid-2431377
+- title: Source-specific finding from PMID 23391959
+  description: Phenibut is a γ-aminobutyric acid (GABA) agonist designed and used as an anxiolytic in Russia.
+  sourceId: reddit-pmid-23391959
 ```
 
 ## Cautions
@@ -264,6 +325,9 @@ No adequate healthy-volunteer efficacy trial or modern human PK study was identi
 - title: Pregnancy, renal and hepatic evidence gaps
   description: No adequate human pregnancy, lactation, renal-impairment or hepatic-impairment studies were identified.
   sourceId: dr-phenibut-s1
+- title: Source-specific finding from PMID 23391959
+  description: We present a case of a patient who used phenibut to self-medicate anxiety, insomnia and cravings for alcohol.
+  sourceId: reddit-pmid-23391959
 ```
 
 ## Claims
@@ -273,15 +337,15 @@ No adequate healthy-volunteer efficacy trial or modern human PK study was identi
   assertion: Phenibut is an effective nootropic for healthy users.
   relation: evidence-boundary
   participants:
-    - entityId: substance:phenibut
-      role: intervention
-    - entityId: tag:cognitive-task-performance
-      role: reported-context
+  - entityId: substance:phenibut
+    role: intervention
+  - entityId: tag:cognitive-task-performance
+    role: reported-context
   context: Eligible human studies are clinical-population studies with weak or unclear methods; no adequate healthy-volunteer efficacy trial was found.
   sourceIds:
-    - dr-phenibut-s1
-    - dr-phenibut-link-1
-    - kupats2020
+  - dr-phenibut-s1
+  - dr-phenibut-link-1
+  - kupats2020
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Marketing language cannot substitute for randomized evidence.
@@ -289,18 +353,102 @@ No adequate healthy-volunteer efficacy trial or modern human PK study was identi
   assertion: Phenibut withdrawal is benign.
   relation: evidence-boundary
   participants:
-    - entityId: substance:phenibut
-      role: intervention
-    - entityId: tag:cognitive-task-performance
-      role: reported-context
+  - entityId: substance:phenibut
+    role: intervention
+  - entityId: tag:cognitive-task-performance
+    role: reported-context
   context: Published toxicity and withdrawal reports include severe CNS depression, seizures, intubation and ICU care.
   sourceIds:
-    - dr-phenibut-s16
-    - feldman2023
-    - dr-phenibut-s20
+  - dr-phenibut-s16
+  - feldman2023
+  - dr-phenibut-s20
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Case-series selection prevents a population incidence estimate, but benignity is not supported.
+- id: reddit-claim-phenibut-23391959-0
+  assertion: 'PMID 23391959 reported: While phenibut was helpful initially, the patient developed dependence including tolerance, significant withdrawal symptoms within 3-4 h of last use and failure to fulfil his roles at work and at home.'
+  relation: associated-with
+  participants:
+  - entityId: substance:phenibut
+    role: intervention or exposure
+  - entityId: tag:craving
+    role: reported endpoint
+  context: Source-specific result from PMID 23391959; applies to the population and design described in that abstract.
+  sourceIds:
+  - reddit-pmid-23391959
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Abstract result from PMID 23391959; this single study does not establish general efficacy or safety.
+- id: reddit-claim-phenibut-23391959-1
+  assertion: 'PMID 23391959 reported: While phenibut was helpful initially, the patient developed dependence including tolerance, significant withdrawal symptoms within 3-4 h of last use and failure to fulfil his roles at work and at home.'
+  relation: associated-with
+  participants:
+  - entityId: substance:phenibut
+    role: intervention or exposure
+  - entityId: tag:anxiety-symptom-severity
+    role: reported endpoint
+  context: Source-specific result from PMID 23391959; applies to the population and design described in that abstract.
+  sourceIds:
+  - reddit-pmid-23391959
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Abstract result from PMID 23391959; this single study does not establish general efficacy or safety.
+- id: reddit-claim-phenibut-20841974-2
+  assertion: 'PMID 20841974 reported: The PubMed record returned no abstract; publication-specific results remain unassessed.'
+  relation: associated-with
+  participants:
+  - entityId: substance:phenibut
+    role: intervention or exposure
+  - entityId: tag:craving
+    role: reported endpoint
+  context: Source-specific result from PMID 20841974; applies to the population and design described in that abstract.
+  sourceIds:
+  - reddit-pmid-20841974
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Abstract result from PMID 20841974; this single study does not establish general efficacy or safety.
+- id: reddit-claim-phenibut-20841974-3
+  assertion: 'PMID 20841974 reported: The PubMed record returned no abstract; publication-specific results remain unassessed.'
+  relation: associated-with
+  participants:
+  - entityId: substance:phenibut
+    role: intervention or exposure
+  - entityId: tag:anxiety-symptom-severity
+    role: reported endpoint
+  context: Source-specific result from PMID 20841974; applies to the population and design described in that abstract.
+  sourceIds:
+  - reddit-pmid-20841974
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Abstract result from PMID 20841974; this single study does not establish general efficacy or safety.
+- id: reddit-claim-phenibut-23717928-4
+  assertion: 'PMID 23717928 reported: The PubMed record returned no abstract; publication-specific results remain unassessed.'
+  relation: associated-with
+  participants:
+  - entityId: substance:phenibut
+    role: intervention or exposure
+  - entityId: tag:craving
+    role: reported endpoint
+  context: Source-specific result from PMID 23717928; applies to the population and design described in that abstract.
+  sourceIds:
+  - reddit-pmid-23717928
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Abstract result from PMID 23717928; this single study does not establish general efficacy or safety.
+- id: reddit-claim-phenibut-23717928-5
+  assertion: 'PMID 23717928 reported: The PubMed record returned no abstract; publication-specific results remain unassessed.'
+  relation: associated-with
+  participants:
+  - entityId: substance:phenibut
+    role: intervention or exposure
+  - entityId: tag:anxiety-symptom-severity
+    role: reported endpoint
+  context: Source-specific result from PMID 23717928; applies to the population and design described in that abstract.
+  sourceIds:
+  - reddit-pmid-23717928
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Abstract result from PMID 23717928; this single study does not establish general efficacy or safety.
 ```
 
 ## Interactions
@@ -349,15 +497,15 @@ No adequate healthy-volunteer efficacy trial or modern human PK study was identi
 ```yaml
 - id: dr-phenibut-s1
   title: World Health Organization
-  authors: "*Phenibut: Critical Review Report, 44th Expert Committee on Drug Dependence*. 2021."
+  authors: '*Phenibut: Critical Review Report, 44th Expert Committee on Drug Dependence*. 2021.'
   year: 2021
   url: https://cdn.who.int/media/docs/default-source/essential-medicines/unedited--advance-copy-44th-ecdd-critical-review-report_phenibut.pdf?sfvrsn=a2859d7_3&download=true
   kind: Regulatory or registry source
   insight: Source R1 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "WHO/ECDD institutional review; separate project funding not stated. Sponsorship: intergovernmental public-health source, non-commercial. COI: source-level author disclosures not identified in the report. Conflict status: unknown disclosure; no commercial sponsor identified."
+  funding: 'WHO/ECDD institutional review; separate project funding not stated. Sponsorship: intergovernmental public-health source, non-commercial. COI: source-level author disclosures not identified in the report. Conflict status: unknown disclosure; no commercial sponsor identified.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "source-level author disclosures not identified in the report. Conflict status: unknown disclosure; no commercial sponsor identified."
+  conflictsOfInterest: 'source-level author disclosures not identified in the report. Conflict status: unknown disclosure; no commercial sponsor identified.'
   conflictOfInterestStatus: not-assessed
 - id: dr-phenibut-s2
   title: U.S
@@ -367,9 +515,9 @@ No adequate healthy-volunteer efficacy trial or modern human PK study was identi
   kind: Regulatory or registry source
   insight: Source R2 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "U.S. federal agency. Sponsorship: regulator/public, non-commercial. COI: not applicable to regulatory notice. Conflict status: institutional regulatory source."
+  funding: 'U.S. federal agency. Sponsorship: regulator/public, non-commercial. COI: not applicable to regulatory notice. Conflict status: institutional regulatory source.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "not applicable to regulatory notice. Conflict status: institutional regulatory source."
+  conflictsOfInterest: 'not applicable to regulatory notice. Conflict status: institutional regulatory source.'
   conflictOfInterestStatus: not-assessed
 - id: fda2019
   title: U.S
@@ -379,177 +527,243 @@ No adequate healthy-volunteer efficacy trial or modern human PK study was identi
   kind: Regulatory or registry source
   insight: Source R3 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "U.S. federal agency. Sponsorship: regulator/public. COI: not applicable. Conflict status: institutional regulatory source."
+  funding: 'U.S. federal agency. Sponsorship: regulator/public. COI: not applicable. Conflict status: institutional regulatory source.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "not applicable. Conflict status: institutional regulatory source."
+  conflictsOfInterest: 'not applicable. Conflict status: institutional regulatory source.'
   conflictOfInterestStatus: not-assessed
 - id: dr-phenibut-link-1
   title: ClinicalTrials.gov
-  authors: "*Phenibut intervention search*, accessed 2026-10-10."
+  authors: '*Phenibut intervention search*, accessed 2026-10-10.'
   year: 2026
   url: https://clinicaltrials.gov/search?intr=phenibut
   kind: Regulatory or registry source
   insight: Source R4 supports the section-specific finding cited in this article.
   limitation: Registry or search evidence does not establish efficacy without posted results.
-  funding: "U.S. NLM registry infrastructure. Trial sponsor: none applicable because zero phenibut intervention records were returned. COI: not applicable to search. Conflict status: registry source."
+  funding: 'U.S. NLM registry infrastructure. Trial sponsor: none applicable because zero phenibut intervention records were returned. COI: not applicable to search. Conflict status: registry source.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "not applicable to search. Conflict status: registry source."
+  conflictsOfInterest: 'not applicable to search. Conflict status: registry source.'
   conflictOfInterestStatus: not-assessed
 - id: kupats2020
   title: Kupats E, Vrublevska J, Zvejniece B, Vavers E, Stelfa G, Zvejniece L, Dambrova M
-  authors: "*Safety and Tolerability of the Anxiolytic and Nootropic Drug Phenibut: A Systematic Review of Clinical Trials and Case Reports*. 2020."
+  authors: '*Safety and Tolerability of the Anxiolytic and Nootropic Drug Phenibut: A Systematic Review of Clinical Trials and Case Reports*. 2020.'
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/32340063/
+  pmid: '32340063'
   kind: PubMed-indexed study
   insight: Source R5 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "unknown/not established from accessible disclosure. Sponsorship: unknown. COI: unknown/not established from accessible disclosure. Conflict status: unknown."
+  funding: 'unknown/not established from accessible disclosure. Sponsorship: unknown. COI: unknown/not established from accessible disclosure. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not established from accessible disclosure. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not established from accessible disclosure. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-phenibut-s7
   title: Tērauds E, Dansone G, Troshina Y
-  authors: "*Efficacy of Noofen 250 mg Capsules for the Management of Anxious-Neurotic Symptoms in Patients with Adjustment Disorder*. 2025."
+  authors: '*Efficacy of Noofen 250 mg Capsules for the Management of Anxious-Neurotic Symptoms in Patients with Adjustment Disorder*. 2025.'
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/40807194/
+  pmid: '40807194'
   kind: PubMed-indexed study
   insight: Source R6 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "JSC Olpha support. Sponsorship: industry-supported/manufacturer-linked. COI: Tērauds disclosed pharmaceutical-company relationships including Olpha; Dansone and Troshina were JSC Olpha employees; Olpha produces Noofen. Conflict status: declared material commercial conflict."
+  funding: 'JSC Olpha support. Sponsorship: industry-supported/manufacturer-linked. COI: Tērauds disclosed pharmaceutical-company relationships including Olpha; Dansone and Troshina were JSC Olpha employees; Olpha produces Noofen. Conflict status: declared material commercial conflict.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "Tērauds disclosed pharmaceutical-company relationships including Olpha; Dansone and Troshina were JSC Olpha employees; Olpha produces Noofen. Conflict status: declared material commercial conflict."
+  conflictsOfInterest: 'Tērauds disclosed pharmaceutical-company relationships including Olpha; Dansone and Troshina were JSC Olpha employees; Olpha produces Noofen. Conflict status: declared material commercial conflict.'
   conflictOfInterestStatus: not-assessed
 - id: dr-phenibut-s9
   title: Shypilova EM, Zavadenko NN, Nesterovskiy YuE
-  authors: "*[Preventive treatment of tension headache in children and adolescents]*. 2017."
+  authors: '*[Preventive treatment of tension headache in children and adolescents]*. 2017.'
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/28805758/
+  pmid: '28805758'
   kind: PubMed-indexed study
   insight: Source R7 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "unknown/not reported in accessible PubMed record. Sponsorship: unknown. COI: unknown/not reported. Conflict status: unknown."
+  funding: 'unknown/not reported in accessible PubMed record. Sponsorship: unknown. COI: unknown/not reported. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-phenibut-s11
   title: Maximova MYu, Suanova ET
-  authors: "*[Emotional and personality disorders in atypical facial pain]*. 2015."
+  authors: '*[Emotional and personality disorders in atypical facial pain]*. 2015.'
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/26978495/
+  pmid: '26978495'
   kind: PubMed-indexed study
   insight: Source R8 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "unknown/not reported in accessible record. Sponsorship: unknown. COI: unknown/not reported. Conflict status: unknown."
+  funding: 'unknown/not reported in accessible record. Sponsorship: unknown. COI: unknown/not reported. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-phenibut-s13
   title: Chutko LS, Surushkina EYu, Yakovenko EA, Kropotov YuD, Anisimova TI, Sergeev AV
-  authors: "*[Impulsivity in adolescents with attention deficit hyperactivity disorder]*. 2016."
+  authors: '*[Impulsivity in adolescents with attention deficit hyperactivity disorder]*. 2016.'
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/28300808/
+  pmid: '28300808'
   kind: PubMed-indexed study
   insight: Source R9 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "unknown/not reported in accessible record. Sponsorship: unknown. COI: unknown/not reported. Conflict status: unknown."
+  funding: 'unknown/not reported in accessible record. Sponsorship: unknown. COI: unknown/not reported. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-phenibut-s15
   title: Osovska NY, Knyazkova II, Kuzminova NV, Mazur YV, Shchepina NV
-  authors: "*Therapeutic Approaches to the Correction of Cognitive Impairment in Patients with Hypertension and Type 2 Diabetes*. 2020."
+  authors: '*Therapeutic Approaches to the Correction of Cognitive Impairment in Patients with Hypertension and Type 2 Diabetes*. 2020.'
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/33454680/
+  pmid: '33454680'
   kind: PubMed-indexed study
   insight: Source R10 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "unknown/not reported. Sponsorship: unknown. COI: unknown/not reported. Conflict status: unknown."
+  funding: 'unknown/not reported. Sponsorship: unknown. COI: unknown/not reported. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-phenibut-s16
   title: Weleff J, Kovacevich A, Burson J, Nero N, Anand A
-  authors: "*Clinical Presentations and Treatment of Phenibut Toxicity and Withdrawal: A Systematic Literature Review*. 2023."
+  authors: '*Clinical Presentations and Treatment of Phenibut Toxicity and Withdrawal: A Systematic Literature Review*. 2023.'
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/37579098/
+  pmid: '37579098'
   kind: PubMed-indexed study
   insight: Source R11 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "unknown/not established from accessible record. Sponsorship: no commercial sponsor identified; otherwise unknown. COI: authors reported no conflicts in the publication record located during research. Conflict status: declared no COI."
+  funding: 'unknown/not established from accessible record. Sponsorship: no commercial sponsor identified; otherwise unknown. COI: authors reported no conflicts in the publication record located during research. Conflict status: declared no COI.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "authors reported no conflicts in the publication record located during research. Conflict status: declared no COI."
+  conflictsOfInterest: 'authors reported no conflicts in the publication record located during research. Conflict status: declared no COI.'
   conflictOfInterestStatus: not-assessed
 - id: feldman2023
   title: Feldman R, Autry B, Dukes J, Lofy T, Marchetti G, Patt A, Batterman N, Theobald J
-  authors: "*A systematic review of phenibut withdrawal focusing on complications, therapeutic approaches, and single substance versus polysubstance withdrawal*. 2023."
+  authors: '*A systematic review of phenibut withdrawal focusing on complications, therapeutic approaches, and single substance versus polysubstance withdrawal*. 2023.'
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/38112312/
+  pmid: '38112312'
   kind: PubMed-indexed study
   insight: Source R12 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "unknown/not reported in accessible record. Sponsorship: unknown; no commercial sponsor identified. COI: unknown/not established. Conflict status: unknown."
+  funding: 'unknown/not reported in accessible record. Sponsorship: unknown; no commercial sponsor identified. COI: unknown/not established. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not established. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not established. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-phenibut-s20
   title: Graves JM, Dilley J, Kubsad S, Liebelt E
-  authors: "*Notes from the Field: Phenibut Exposures Reported to Poison Centers — United States, 2009–2019*. 2020. CDC:"
+  authors: '*Notes from the Field: Phenibut Exposures Reported to Poison Centers — United States, 2009–2019*. 2020. CDC:'
   year: 2009
   url: https://www.cdc.gov/mmwr/volumes/69/wr/mm6935a5.htm
   kind: Regulatory or registry source
   insight: Source R13 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "public-health surveillance analysis; separate external funding not stated. Sponsorship: CDC/state poison-center public-health source. COI: not separately established from accessible record. Conflict status: unknown disclosure; no commercial sponsor identified."
+  funding: 'public-health surveillance analysis; separate external funding not stated. Sponsorship: CDC/state poison-center public-health source. COI: not separately established from accessible record. Conflict status: unknown disclosure; no commercial sponsor identified.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "not separately established from accessible record. Conflict status: unknown disclosure; no commercial sponsor identified."
+  conflictsOfInterest: 'not separately established from accessible record. Conflict status: unknown disclosure; no commercial sponsor identified.'
   conflictOfInterestStatus: not-assessed
 - id: mccabe2019
   title: McCabe DJ, Bangh SA, Arens AM, Cole JB
-  authors: "*Phenibut exposures and clinical effects reported to a regional poison center*. 2019."
+  authors: '*Phenibut exposures and clinical effects reported to a regional poison center*. 2019.'
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/30878413/
+  pmid: '30878413'
   kind: PubMed-indexed study
   insight: Source R14 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "unknown/not reported in accessible PubMed record. Sponsorship: poison-center observational study; commercial sponsorship not identified. COI: unknown/not reported. Conflict status: unknown."
+  funding: 'unknown/not reported in accessible PubMed record. Sponsorship: poison-center observational study; commercial sponsorship not identified. COI: unknown/not reported. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not reported. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not reported. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-phenibut-s25
   title: Bonnet U, Scherbaum N, Schaper A, Soyka M
-  authors: "*Phenibutan—an Illegal Food Supplement With Psychotropic Effects and Health Risks*. 2024; includes GIZ-Nord poison-center data."
+  authors: '*Phenibutan—an Illegal Food Supplement With Psychotropic Effects and Health Risks*. 2024; includes GIZ-Nord poison-center data.'
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38377332/
+  pmid: '38377332'
   kind: PubMed-indexed study
   insight: Source R15 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "unknown/not established from accessible record. Sponsorship: academic/poison-center; commercial sponsorship not identified. COI: unknown/not established. Conflict status: unknown."
+  funding: 'unknown/not established from accessible record. Sponsorship: academic/poison-center; commercial sponsorship not identified. COI: unknown/not established. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not established. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not established. Conflict status: unknown.'
   conflictOfInterestStatus: not-assessed
 - id: dr-phenibut-s27
   title: Latvian State Agency of Medicines (Zāļu valsts aģentūra)
-  authors: "*Medicinal Product Register — Noofen search*."
+  authors: '*Medicinal Product Register — Noofen search*.'
   year: 2026
   url: https://dati.zva.gov.lv/zalu-registrs/?iss=1&q=Noofen&IK-1=1&IK-2=2&NAC=on&SAT=on&DEC=on&ESC=on&ESI=on&PIM=on&RNE=on
   kind: Research source
   insight: Source R16 supports the section-specific finding cited in this article.
   limitation: Registry or search evidence does not establish efficacy without posted results.
-  funding: "Latvian government regulator. Sponsorship: regulator/public. COI: not applicable to official registry. Conflict status: institutional regulatory source."
+  funding: 'Latvian government regulator. Sponsorship: regulator/public. COI: not applicable to official registry. Conflict status: institutional regulatory source.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "not applicable to official registry. Conflict status: institutional regulatory source."
+  conflictsOfInterest: 'not applicable to official registry. Conflict status: institutional regulatory source.'
   conflictOfInterestStatus: not-assessed
 - id: dr-phenibut-s29
   title: Vorob’eva OV
-  authors: "*Efficacy and Safety of Noofen in the Treatment of Chronic Fatigue Syndrome in Patients with Chronic Cerebrovascular Failure*. 2019."
+  authors: '*Efficacy and Safety of Noofen in the Treatment of Chronic Fatigue Syndrome in Patients with Chronic Cerebrovascular Failure*. 2019.'
   year: 2019
   url: https://link.springer.com/article/10.1007/s11055-019-00722-2
   kind: Research source
   insight: Source R17 supports the section-specific finding cited in this article.
   limitation: Study-specific population, formulation, design and disclosure limits remain as described in the report.
-  funding: "unknown/not established from accessible indexed record. Sponsorship: unknown. COI: unknown/not established. Conflict status: unknown."
+  funding: 'unknown/not established from accessible indexed record. Sponsorship: unknown. COI: unknown/not established. Conflict status: unknown.'
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: "unknown/not established. Conflict status: unknown."
+  conflictsOfInterest: 'unknown/not established. Conflict status: unknown.'
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-2431377
+  title: On neurotransmitter mechanisms of reinforcement and internal inhibition.
+  authors: G I Shulgina
+  year: 1986
+  url: https://pubmed.ncbi.nlm.nih.gov/2431377/
+  kind: PubMed publication
+  insight: Experiments reported in this study have been performed in order to investigate cholinergic and GABA-ergic neurotransmitter systems and substance P in the realization of internal inhibition and pain reinforcement.
+  limitation: PubMed abstract for PMID 2431377 was reviewed; no rights-eligible PMC full text was available in this pass.
+  pmid: '2431377'
+  doi: 10.1007/BF02734511
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-23391959
+  title: Phenibut dependence.
+  authors: Andriy V Samokhvalov, C Lindsay Paton-Gay, Kam Balchand, Jürgen Rehm
+  year: 2013
+  url: https://pubmed.ncbi.nlm.nih.gov/23391959/
+  kind: PubMed publication
+  insight: While phenibut was helpful initially, the patient developed dependence including tolerance, significant withdrawal symptoms within 3-4 h of last use and failure to fulfil his roles at work and at home.
+  limitation: PubMed abstract and rights-eligible PMC full text (PMC3604470) were reviewed; applicability remains limited to the reported design and population.
+  pmid: '23391959'
+  doi: 10.1136/bcr-2012-008381
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+  pmcid: PMC3604470
+- id: reddit-pmid-20841974
+  title: Withdrawal symptoms after Internet purchase of phenibut (β-phenyl-γ-aminobutyric acid HCl).
+  authors: Rhanda Marie M Magsalin, Ahsan Y Khan
+  year: 2010
+  url: https://pubmed.ncbi.nlm.nih.gov/20841974/
+  kind: PubMed publication
+  insight: The PubMed record returned no abstract; publication-specific results remain unassessed.
+  limitation: PubMed abstract for PMID 20841974 was reviewed; no rights-eligible PMC full text was available in this pass.
+  pmid: '20841974'
+  doi: 10.1097/JCP.0b013e3181f057c8
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-23717928
+  title: '[Phenibut yielded withdrawal symptoms and psychosis. Drugs for cosmonauts--now marketed as dietary supplements online].'
+  authors: Lovisa Högberg, István Szabó, Jaan Ruusa
+  year: 2013
+  url: https://pubmed.ncbi.nlm.nih.gov/23717928/
+  kind: PubMed publication
+  insight: The PubMed record returned no abstract; publication-specific results remain unassessed.
+  limitation: PubMed abstract for PMID 23717928 was reviewed; no rights-eligible PMC full text was available in this pass.
+  pmid: '23717928'
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 

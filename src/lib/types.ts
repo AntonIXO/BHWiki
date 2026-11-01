@@ -35,7 +35,7 @@ export type TimingMarker = {
 };
 export type DoseContext = {
   label: string; amount: string; quantity: number | null; quantityMax: number | null; unit: string;
-  ingredient: string; formulation: string; route: string; frequency: string; duration: string;
+  ingredient: string; formulation: string; route?: string; frequency: string; duration: string;
   population: string; purpose: string; sourceCategory: "research" | "approved-label" | "reference" | "community";
   foodRelation?: "empty-stomach" | "with-food" | "with-or-without-food" | "food-effect-not-established";
   solubility?: "water-soluble" | "fat-soluble" | "formulation-dependent" | "solubility-not-established";
@@ -43,7 +43,7 @@ export type DoseContext = {
   note: string; sourceId: string;
 };
 export type PKObservation = {
-  id: string; analyte: string; route: string; formulation: string; population: string;
+  id: string; analyte: string; route?: string; formulation?: string; population?: string;
   endpoint: "elimination-half-life"; statistic: "approximate" | "study-mean" | "reported-range" | "not-established";
   value: number | null; low: number | null; high: number | null; unit: "hours";
   context: string; sourceId: string; modelEligible: boolean;
@@ -63,6 +63,12 @@ export type IdentificationTest = {
   limitations: string;
   sourceId: string;
 };
+export type MonitoringItem = {
+  marker: string;
+  target: string;
+  why: string;
+  sourceId: string;
+};
 export type ExperienceLink = { title: string; url: string; publisher: "PsychonautWiki" };
 export type ExternalWikiService = "Wikipedia" | "Examine" | "PsychonautWiki";
 export type ExternalWikiLink = { service: ExternalWikiService; url: string; title?: string };
@@ -71,13 +77,15 @@ export type Substance = {
   aliases: string[]; formula: string; molecularWeight: string; pubchemCid: number | null; smiles: string;
   category: string; tags: string[]; accent: string;
   evidenceNote: string; reviewedAt: string; editorialStatus: EditorialStatus;
-  halfLife: { label: string; low: number | null; high: number | null; context: string; sourceId: string; observationId: string };
+  halfLife: { label: string; low: number | null; high: number | null; context: string; sourceId: string; observationId?: string };
   pkObservations: PKObservation[];
   kinetics: { onset: string; peak: string; duration: string; bioavailability: string; metabolism: string; sourceId: string; timeline?: DurationRoute[]; markers?: TimingMarker[] };
   modifiers: { label: string; effect: string; detail: string; sourceId: string; observationId: string; factorType: "smoking" | "pregnancy" | "enzyme" | "genotype" | "other"; direction: "slower" | "faster" | "variable" }[];
   doses: DoseContext[]; effects: Observation[]; outcomes: Observation[]; claims: Claim[];
   mechanisms: { title: string; description: string; sourceId: string; conceptId?: string }[];
   cautions: { title: string; description: string; sourceId: string }[];
+  monitoring?: MonitoringItem[];
+  monitoringCadence?: string;
   interactions: Interaction[];
   identificationTests?: IdentificationTest[];
   experienceLinks: ExperienceLink[]; externalWikiLinks?: ExternalWikiLink[];

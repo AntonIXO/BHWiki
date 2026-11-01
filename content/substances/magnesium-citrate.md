@@ -353,7 +353,7 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
 ```yaml
 - label: Elemental-magnesium fraction
   effect: Variable by salt form and product
-  detail: USP 3:2 chemistry and hydration/assay basis mean total compound mass is not elemental magnesium mass; label declarations control interpretation.
+  detail: "USP 3:2 chemistry and hydration/assay basis mean total compound mass is not elemental magnesium mass; label declarations control interpretation."
   sourceId: mc-usp
   observationId: magnesium-citrate-pk-unestablished
   factorType: other
@@ -380,7 +380,7 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   factorType: other
   direction: variable
 - label: Modifier 1
-  effect: 3:2, dibasic, hydrated, and commercial preparations can differ in elemental-Mg fraction; label declarations supersede generic arithmetic.
+  effect: "3:2, dibasic, hydrated, and commercial preparations can differ in elemental-Mg fraction; label declarations supersede generic arithmetic."
   detail: Source-specific modifier evidence is preserved in the cited reference.
   sourceId: mc-cipro
   observationId: dr-magnesium-citrate-magnesium-citrate-pk-1
@@ -893,7 +893,7 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   conflictsOfInterest: Labeler has a commercial interest in the marketed product.
   conflictOfInterestStatus: not-assessed
 - id: mc-fda-lax
-  title: "OTC Monograph M007: Laxative Drug Products for Over-the-Counter Human Use"
+  title: 'OTC Monograph M007: Laxative Drug Products for Over-the-Counter Human Use'
   authors: U.S. Food and Drug Administration
   year: 2023
   url: https://dps-admin.fda.gov/omuf/sites/omuf/files/monograph-documents/2023-05/OTC%20Monograph_M007-Laxative%20Drug%20Products%20for%20OTC%20Human%20Use%2005.02.2023.pdf
@@ -931,7 +931,8 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   conflictsOfInterest: No conflict reported in the PubMed record.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/2407766/
-  pmid: "2407766"
+  pmid: '2407766'
+  doi: 10.1080/07315724.1990.10720349
 - id: mc-kappeler
   title: Higher bioavailability of magnesium citrate as compared to magnesium oxide shown by evaluation of urinary excretion and serum levels after single-dose administration in a randomized cross-over study
   authors: Dominik Kappeler; Irene Heimbeck; Christiane Herpich; Natalie Naue; Josef Höfler; Wolfgang Timmer; Bernhard Michalke; et al.
@@ -958,7 +959,7 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/21199787/
-  pmid: "21199787"
+  pmid: '21199787'
 - id: mc-restless
   title: Magnesium citrate monotherapy improves restless legs syndrome symptoms and multiple suggested immobilization test scores in an open-label pilot study
   authors: Sasikanth Gorantla; Ashwath Ravisankar; Lynn Marie Trotti
@@ -972,9 +973,9 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   conflictsOfInterest: No study-specific conflict reported; one author serves on the AASM board.
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/38738598/
-  pmid: "38738598"
+  pmid: '38738598'
 - id: mc-sleep-review
-  title: "Magnesium Supplementation for Sleep in Adults: A Systematic Review of Randomized Controlled Trials."
+  title: 'Magnesium Supplementation for Sleep in Adults: A Systematic Review of Randomized Controlled Trials.'
   authors: Adrian L Lopresti, Stephen J Smith, Peter D Drummond
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/42661485/
@@ -987,8 +988,9 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.1080/19390211.2026.2719670
   doi: 10.1080/19390211.2026.2719670
+  pmid: '42661485'
 - id: mc-cognition
-  title: "Magnesium and Cognitive Health in Adults: A Systematic Review and Meta-Analysis"
+  title: 'Magnesium and Cognitive Health in Adults: A Systematic Review and Meta-Analysis'
   authors: Fan Chen; Jifan Wang; Yijie Cheng; Ruogu Li; Katherine L. Tucker; et al.
   year: 2024
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11362647/
@@ -1060,10 +1062,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   sponsorshipStatus: not-assessed
   conflictsOfInterest: No conflict reported in the PubMed record.
   conflictOfInterestStatus: not-assessed
-  pmid: "2407766"
+  pmid: '2407766'
   doi: 10.1080/07315724.1990.10720349
 - id: dr-magnesium-citrate-s8
-  title: "Magnesium Supplementation for Sleep in Adults: A Systematic Review of Randomized Controlled Trials"
+  title: 'Magnesium Supplementation for Sleep in Adults: A Systematic Review of Randomized Controlled Trials'
   authors: Adrian L. Lopresti; Stephen J. Smith; Peter D. Drummond
   year: 2026
   url: https://doi.org/10.1080/19390211.2026.2719670

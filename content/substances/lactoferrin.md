@@ -494,7 +494,7 @@ Evidence is heterogeneous and population-specific. Lactoferrin may be better tol
   kind: Double-blind randomized controlled noninferiority trial
   insight: In 555 nonpregnant women with IDA, 200 and 400 mg/day unsaturated bLF were inferior to 60 mg/day elemental iron as ferrous sulfate for hemoglobin and ferritin at 12 weeks; adverse events were broadly comparable.
   limitation: Primary analysis was per protocol and only 349 of 555 randomized participants reached the 12-week primary assessment; findings are preparation- and context-specific.
-  pmid: "42302886"
+  pmid: '42302886'
   doi: 10.1016/j.tjnut.2026.101672
   funding: Saving Lives at Birth and the UK Medical Research Council; funders were reported to have no role in study design, data collection, analysis, interpretation, or report writing.
   sponsorshipStatus: non-industry-funded
@@ -502,28 +502,28 @@ Evidence is heterogeneous and population-specific. Lactoferrin may be better tol
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://jn.nutrition.org/article/S0022-3166%2826%2900321-4/fulltext
 - id: ref-nappi-2009
-  title: "Efficacy and tolerability of oral bovine lactoferrin compared to ferrous sulfate in pregnant women with iron deficiency anemia: a prospective controlled randomized study."
+  title: 'Efficacy and tolerability of oral bovine lactoferrin compared to ferrous sulfate in pregnant women with iron deficiency anemia: a prospective controlled randomized study.'
   authors: Carmine Nappi, Giovanni Antonio Tommaselli, Ilaria Morra, Mariangela Massaro, Carmen Formisano, Costantino Di Carlo
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19639462/
   kind: Prospective randomized controlled double-blind trial
   insight: In pregnant women with IDA, both bLF 100 mg twice daily and ferrous sulfate improved hematologic measures over 30 days without significant between-group efficacy differences; abdominal pain and constipation scores were higher with ferrous sulfate.
   limitation: Accessible evidence was abstract-level; complete funding, COI, attrition, and quantitative between-group estimates were not inspected.
-  pmid: "19639462"
+  pmid: '19639462'
   doi: 10.1080/00016340903117994
   funding: Not assessed from accessible full publication declarations.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from accessible full publication declarations.
   conflictOfInterestStatus: not-assessed
 - id: ref-elamrousy-2022
-  title: "Lactoferrin for iron-deficiency anemia in children with inflammatory bowel disease: a clinical trial."
+  title: 'Lactoferrin for iron-deficiency anemia in children with inflammatory bowel disease: a clinical trial.'
   authors: Doaa El Amrousy, Dalia El-Afify, Abdallah Elsawy, Mai Elsheikh, Amr Donia, Mohammed Nassar
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9556315/
   kind: Randomized controlled clinical trial
   insight: Among 80 completers with IBD-associated IDA, 100 mg/day bLF for 3 months was associated with higher post-treatment hemoglobin, serum iron, transferrin saturation, and ferritin and fewer reported gastrointestinal complaints than ferrous sulfate.
   limitation: Small study, complete-case analysis after 12 losses/exclusions, short follow-up, and internal inconsistencies between participant-flow and side-effect reporting.
-  pmid: "35681097"
+  pmid: '35681097'
   doi: 10.1038/s41390-022-02136-2
   funding: Research-study funding was not explicitly identified in the inspected article; open-access publication funding was provided by the Science, Technology & Innovation Funding Authority in cooperation with the Egyptian Knowledge Bank.
   sponsorshipStatus: not-reported
@@ -538,35 +538,35 @@ Evidence is heterogeneous and population-specific. Lactoferrin may be better tol
   kind: Randomized open-label trial
   insight: In 185 patients with CKD-associated IDA, adding lactoferrin 100 mg twice daily to 30 mg/day liposomal iron produced larger hemoglobin improvements than liposomal iron alone in nondialysis and dialysis-dependent strata.
   limitation: Combination trial rather than lactoferrin monotherapy; only abstract-level details were available in this research pass.
-  pmid: "42684832"
+  pmid: '42684832'
   doi: 10.2215/CJN.0000001204
   funding: Not assessed from a complete publication funding declaration.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from a complete publication disclosure.
   conflictOfInterestStatus: not-assessed
 - id: ref-manzoni-2009
-  title: "Bovine lactoferrin supplementation for prevention of late-onset sepsis in very low-birth-weight neonates: a randomized trial."
+  title: 'Bovine lactoferrin supplementation for prevention of late-onset sepsis in very low-birth-weight neonates: a randomized trial.'
   authors: Paolo Manzoni, Matteo Rinaldi, Silvia Cattani, et al.
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19809023/
   kind: Multicenter double-blind placebo-controlled randomized trial
   insight: bLF 100 mg/day reduced first late-onset-sepsis incidence versus placebo in very-low-birth-weight infants; a separate bLF-plus-LGG arm was also positive.
   limitation: Earlier and much smaller than the later ELFIN trial; bLF-alone and bLF-plus-probiotic effects must remain distinct.
-  pmid: "19809023"
+  pmid: '19809023'
   doi: 10.1001/jama.2009.1403
   funding: PubMed indexes non-U.S.-government research support, but the full funding declaration was not assessed in this research pass.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Full publication disclosure not assessed.
   conflictOfInterestStatus: not-assessed
 - id: ref-elfin-2019
-  title: "Enteral lactoferrin supplementation for very preterm infants: a randomised placebo-controlled trial."
+  title: 'Enteral lactoferrin supplementation for very preterm infants: a randomised placebo-controlled trial.'
   authors: ELFIN trial investigators group
   year: 2019
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6356450/
   kind: Multicenter randomized placebo-controlled trial
   insight: In 2,203 very preterm infants, bLF 150 mg/kg/day did not reduce confirmed or suspected late-onset infection, other major morbidity, or mortality.
   limitation: Conducted in UK neonatal services; applicability to substantially different care settings or formulations may differ.
-  pmid: "30635141"
+  pmid: '30635141'
   doi: 10.1016/S0140-6736(18)32221-9
   funding: UK National Institute for Health Research Health Technology Assessment programme 10/57/49; the inspected full text states the funder did not participate in design, data collection, analysis, interpretation, or writing.
   sponsorshipStatus: non-industry-funded
@@ -574,14 +574,14 @@ Evidence is heterogeneous and population-specific. Lactoferrin may be better tol
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC6356450/
 - id: ref-ariff-2025
-  title: "Evaluation of Bovine Lactoferrin for Prevention of Late-Onset Sepsis in Low-Birth-Weight Infants: A Double-Blind Randomized Controlled Trial."
+  title: 'Evaluation of Bovine Lactoferrin for Prevention of Late-Onset Sepsis in Low-Birth-Weight Infants: A Double-Blind Randomized Controlled Trial.'
   authors: Shabina Ariff, Sajid Bashir Soofi, Uswa Jiwani, Almas Aamir, Uzair Ansari, Arjumand Rizvi, Michelle D'Almeida, Ashraful Alam, Michael Dibley
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/40507041/
   kind: Three-arm double-blind placebo-controlled randomized trial
   insight: Culture-proven sepsis was lower at 150 mg/day bLF but not significantly lower at 300 mg/day; investigators concluded the small trial did not establish overall late-onset-sepsis prevention.
   limitation: Small sample, dose-inconsistent result, and limited power.
-  pmid: "40507041"
+  pmid: '40507041'
   doi: 10.3390/nu17111774
   funding: Not assessed from the complete publication funding declaration.
   sponsorshipStatus: not-assessed
@@ -595,21 +595,21 @@ Evidence is heterogeneous and population-specific. Lactoferrin may be better tol
   kind: Community randomized double-blind placebo-controlled trial
   insight: In 555 previously weaned children, bLF did not reduce diarrhea incidence but modestly reduced longitudinal prevalence, episode duration, dehydration severity, and liquid-stool burden.
   limitation: Several favorable measures were secondary despite a null primary incidence result.
-  pmid: "22939927"
+  pmid: '22939927'
   doi: 10.1016/j.jpeds.2012.07.043
   funding: PubMed indexes NIH extramural research support, but the complete publication funding declaration was not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Complete publication disclosure not assessed.
   conflictOfInterestStatus: not-assessed
 - id: ref-wronowski-2021
-  title: "Bovine Lactoferrin in the Prevention of Antibiotic-Associated Diarrhea in Children: A Randomized Clinical Trial."
+  title: 'Bovine Lactoferrin in the Prevention of Antibiotic-Associated Diarrhea in Children: A Randomized Clinical Trial.'
   authors: Michal F Wronowski, Maria Kotowska, Marcin Banasiuk, Artur Kotowski, Weronika Kuzmicka, Piotr Albrecht
   year: 2021
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8215102/
   kind: Prospective randomized double-blind placebo-controlled trial
   insight: Antibiotic-associated diarrhea occurred in 21.3% of the bLF group and 9.3% of placebo recipients; OR 2.6, 95% CI 1.02-6.8.
   limitation: Single-center trial, small event count, some baseline imbalances, and no established mechanism for the unexpected diarrhea signal.
-  pmid: "34164360"
+  pmid: '34164360'
   doi: 10.3389/fped.2021.675606
   funding: No explicit monetary research-funding statement was identified in the inspected full text; Pharmabest donated lactoferrin and placebo and was stated not to be involved in study design, conduct, analysis, interpretation, writing, or submission.
   sponsorshipStatus: not-reported
@@ -617,14 +617,14 @@ Evidence is heterogeneous and population-specific. Lactoferrin may be better tol
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC8215102/
 - id: ref-dimario-2006
-  title: "Bovine lactoferrin for Helicobacter pylori eradication: an open, randomized, multicentre study."
+  title: 'Bovine lactoferrin for Helicobacter pylori eradication: an open, randomized, multicentre study.'
   authors: F Di Mario, G Aragona, N Dal Bó, et al.
   year: 2006
   url: https://pubmed.ncbi.nlm.nih.gov/16611285/
   kind: Prospective open randomized multicenter trial
   insight: Concurrent bLF 200 mg twice daily added to esomeprazole, clarithromycin, and tinidazole yielded a higher H. pylori eradication proportion than the corresponding triple regimen without bLF.
   limitation: Open design, older antibiotic regimen, combination attribution, and current antibiotic-resistance patterns limit present-day interpretation.
-  pmid: "16611285"
+  pmid: '16611285'
   doi: 10.1111/j.1365-2036.2006.02851.x
   funding: Not assessed from complete publication declarations.
   sponsorshipStatus: not-assessed
@@ -638,7 +638,7 @@ Evidence is heterogeneous and population-specific. Lactoferrin may be better tol
   kind: Randomized crossover human gastric-digestion study
   insight: Substantial amounts of apo/partially iron-saturated and holo bLF survived gastric transit; measured survival was approximately 62%-64% for apo conditions and 79% for holo-LF.
   limitation: Only 12 healthy adults, unusually large 4.5-g test exposure, nasogastric administration/sampling, and no measurement of systemic elimination kinetics.
-  pmid: "11481401"
+  pmid: '11481401'
   doi: 10.1093/jn/131.8.2101
   funding: Not assessed from complete publication declarations.
   sponsorshipStatus: not-assessed
@@ -652,7 +652,7 @@ Evidence is heterogeneous and population-specific. Lactoferrin may be better tol
   kind: Direct human gastric-sampling study
   insight: Lactoferricin and incompletely hydrolyzed lactoferrin fragments were detected in gastric contents after ingestion of bovine lactoferrin.
   limitation: Very small mechanistic human experiment including direct sampling from an adult; it does not establish clinical antimicrobial efficacy.
-  pmid: "9920391"
+  pmid: '9920391'
   doi: 10.1016/S0167-4838(98)00224-6
   funding: Not assessed from complete publication declarations.
   sponsorshipStatus: not-assessed
@@ -666,7 +666,7 @@ Evidence is heterogeneous and population-specific. Lactoferrin may be better tol
   kind: Randomized double-blind active-controlled human safety and immunogenicity trial
   insight: rhLF at 0.34 or 3.4 g/day for 28 days did not increase anti-hLF antibodies; 3.4 g/day bLF increased anti-bLF antibody signal, while measured safety outcomes remained similar across groups.
   limitation: 66 randomized healthy adults, 28-day exposure, not powered for rare adverse events, and substantial manufacturer involvement.
-  pmid: "39465888"
+  pmid: '39465888'
   doi: 10.1177/10915818241293723
   funding: Helaina Inc. funded the research and was involved in study design, data interpretation, report writing, and the decision to submit.
   sponsorshipStatus: industry-funded
@@ -674,42 +674,42 @@ Evidence is heterogeneous and population-specific. Lactoferrin may be better tol
   conflictOfInterestStatus: declared
   disclosureUrl: https://journals.sagepub.com/doi/abs/10.1177/10915818241293723
 - id: ref-berthon-2026
-  title: "Oral lactoferrin reduces systemic inflammation, enhances anti-viral responses and modulates immune cell profiles: a randomised controlled trial in healthy, older adults."
+  title: 'Oral lactoferrin reduces systemic inflammation, enhances anti-viral responses and modulates immune cell profiles: a randomised controlled trial in healthy, older adults.'
   authors: Bronwyn S Berthon, Evan J Williams, Lily M Williams, Kurtis F Budden, Sarah A Hiles, Nathan W Bartlett, Lisa G Wood
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/41634901/
   kind: Randomized controlled biomarker trial
   insight: Four weeks of 200 or 600 mg/day oral lactoferrin altered selected inflammatory, immune-cell, and ex-vivo virus-stimulated cytokine endpoints in adults aged at least 50 years.
   limitation: Biomarker and ex-vivo immune outcomes are not evidence that lactoferrin prevents clinical viral infection; complete funding and COI declarations were not inspected here.
-  pmid: "41634901"
+  pmid: '41634901'
   doi: 10.1017/S000711452610631X
   funding: Not assessed from complete publication declarations.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from complete publication declarations.
   conflictOfInterestStatus: not-assessed
 - id: ref-christofi-2024
-  title: "The effectiveness of oral bovine lactoferrin compared to iron supplementation in patients with a low hemoglobin profile: A systematic review and meta-analysis of randomized clinical trials."
+  title: 'The effectiveness of oral bovine lactoferrin compared to iron supplementation in patients with a low hemoglobin profile: A systematic review and meta-analysis of randomized clinical trials.'
   authors: Maria-Dolores Christofi, Konstantinos Giannakou, Meropi Mpouzika, Anastasios Merkouris, Maria Vergoulidou-Stylianide, Andreas Charalambous
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38291525/
   kind: Systematic review and meta-analysis of randomized clinical trials
   insight: The review found pooled older evidence favoring lactoferrin over ferrous sulfate for hemoglobin.
   limitation: Search ended June 2022, pooled comparison had very high heterogeneity (I2 95.8%), and the review predates the large negative 2026 Bangladesh RCT and the 2023 retraction of a prominent pregnancy trial.
-  pmid: "38291525"
+  pmid: '38291525'
   doi: 10.1186/s40795-023-00818-6
   funding: Complete review funding declaration not assessed in this research pass.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Complete publication disclosure not assessed in this research pass.
   conflictOfInterestStatus: not-assessed
 - id: ref-abuhashim-2017
-  title: "Lactoferrin or ferrous salts for iron deficiency anemia in pregnancy: A meta-analysis of randomized trials."
+  title: 'Lactoferrin or ferrous salts for iron deficiency anemia in pregnancy: A meta-analysis of randomized trials.'
   authors: Hatem Abu Hashim, Osama Foda, Essam Ghayaty
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/29059584/
   kind: Systematic review and meta-analysis of pregnancy randomized trials
   insight: Four trials involving 600 women produced a pooled 4-week hemoglobin estimate favoring lactoferrin and fewer gastrointestinal side effects.
   limitation: Published before the later retraction of a prominent pregnancy RCT and before the large negative 2026 nonpregnant-women trial; subgroup results were heterogeneous.
-  pmid: "29059584"
+  pmid: '29059584'
   doi: 10.1016/j.ejogrb.2017.10.003
   funding: Inspected publisher page lists acknowledgement as nil; no specific study-funding source was identified.
   sponsorshipStatus: not-reported
@@ -717,14 +717,14 @@ Evidence is heterogeneous and population-specific. Lactoferrin may be better tol
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://www.sciencedirect.com/science/article/abs/pii/S0301211517304633
 - id: ref-rezk-retraction-2023
-  title: "RETRACTED ARTICLE: Lactoferrin versus ferrous sulphate for the treatment of iron deficiency anemia during pregnancy: a randomized clinical trial."
+  title: 'RETRACTED ARTICLE: Lactoferrin versus ferrous sulphate for the treatment of iron deficiency anemia during pregnancy: a randomized clinical trial.'
   authors: No authors listed
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/37466255/
   kind: Retraction notice
   insight: Editors and publisher retracted the Rezk et al. trial after significant concerns about data/result integrity; authors did not provide original data or sufficient supporting information and did not agree with the retraction.
   limitation: Retraction notice addresses research integrity rather than providing new clinical outcome data.
-  pmid: "37466255"
+  pmid: '37466255'
   doi: 10.1080/14767058.2023.2235773
   funding: The retraction page reports no funding associated with the featured work.
   sponsorshipStatus: not-assessed

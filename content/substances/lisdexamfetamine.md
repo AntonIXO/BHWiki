@@ -709,7 +709,7 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
 
 ```yaml
 - id: pubchem
-  title: "Lisdexamfetamine: compound identity and structure"
+  title: 'Lisdexamfetamine: compound identity and structure'
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/11597698

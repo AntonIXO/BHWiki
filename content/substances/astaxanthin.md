@@ -3,16 +3,16 @@ slug: astaxanthin
 name: Astaxanthin
 subtitle: Xanthophyll carotenoid with formulation-sensitive pharmacokinetics and endpoint-specific human evidence
 aliases:
-  - AST
-  - ASX
-  - astaxanthine
+- AST
+- ASX
+- astaxanthine
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: carotenoid
 tags: []
-accent: "#D7471E"
+accent: '#D7471E'
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
 halfLife:
@@ -30,36 +30,37 @@ kinetics:
   metabolism: Plasma contained unesterified astaxanthin after diester dosing, consistent with hydrolysis during absorption.
   sourceId: ref-odeberg-2003
 x-shape:
-  - slug
-  - name
-  - subtitle
-  - summary
-  - description
-  - aliases
-  - formula
-  - molecularWeight
-  - pubchemCid
-  - smiles
-  - category
-  - tags
-  - accent
-  - evidenceNote
-  - reviewedAt
-  - editorialStatus
-  - halfLife
-  - pkObservations
-  - kinetics
-  - modifiers
-  - doses
-  - effects
-  - outcomes
-  - claims
-  - mechanisms
-  - cautions
-  - interactions
-  - experienceLinks
-  - references
-  - legal
+- slug
+- name
+- subtitle
+- summary
+- description
+- aliases
+- formula
+- molecularWeight
+- pubchemCid
+- smiles
+- category
+- tags
+- accent
+- evidenceNote
+- reviewedAt
+- editorialStatus
+- halfLife
+- pkObservations
+- kinetics
+- modifiers
+- doses
+- effects
+- outcomes
+- claims
+- mechanisms
+- cautions
+- interactions
+- experienceLinks
+- references
+- legal
+- externalWikiLinks
 x-order: 9007199254740991
 ---
 
@@ -67,13 +68,19 @@ x-order: 9007199254740991
 
 Astaxanthin is a lipid-soluble carotenoid whose human exposure depends strongly on formulation and meal context. Small trials suggest modest changes in selected skin and digital-eye-strain measures, while cognition, exercise performance, cardiometabolic treatment, retinal disease treatment, and fertility benefits remain unestablished. Each finding below names its population and source.
 
+Reddit index evidence: Astaxanthin improved oxidative, inflammatory or neurogenesis-related endpoints and spatial memory in diabetic/aging rodent models. The linked evidence is entirely preclinical and does not establish a human cognitive dose.
+
 ## Description
 
 Human studies used free or esterified astaxanthin, algal extracts, oils, micellar products, and multi-carotenoid combinations. Combination studies cannot establish an astaxanthin-specific effect, and biomarker changes are kept separate from clinical outcomes.
 
+Reddit index evidence: The studies used dietary astaxanthin in mice or rats with induced aging/diabetes or healthy supplementation. Abstracts do not report a common human-equivalent dose.
+
 ## Evidence note
 
 The strongest recurring signals are formulation-sensitive plasma exposure and small, endpoint-specific skin findings. The exercise meta-analysis found no reliable performance benefit, and no qualifying human trial establishes disease treatment. Short safety trials do not characterize rare or chronic toxicity.
+
+Reddit index source review: Three PubMed abstracts were retrieved; none had rights-eligible PMC full text. No human PK, efficacy or safety study is linked. Full-text retrieval status is recorded per reference; 0 of 3 linked PubMed records had a PMC identifier in this set.
 
 ## Doses
 
@@ -198,6 +205,35 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   purpose: Compare plasma appearance of esterified material
   note: Intact esters were not detected in plasma; the reported half-life is not a universal value.
   sourceId: ref-coral-2004
+- label: Mouse diet dose-response
+  amount: 0.02%, 0.1% or 0.5% diet
+  quantity: 0.02
+  quantityMax: 0.5
+  unit: '% diet'
+  ingredient: Astaxanthin
+  formulation: Astaxanthin-supplemented diet
+  route: Oral
+  frequency: Dietary
+  duration: Study-specific
+  population: Mice
+  purpose: Hippocampal neurogenesis and memory research
+  sourceCategory: research
+  note: Cell proliferation/survival improved at 0.1–0.5%; mature neurons and spatial memory at 0.5%.
+  sourceId: reddit-pmid-26643409
+- label: Aging/diabetes rodent studies
+  amount: Dose not stated in abstract
+  quantity: null
+  quantityMax: null
+  unit: study-specific
+  ingredient: Astaxanthin
+  formulation: Study formulation
+  frequency: Study-specific
+  duration: Study-specific
+  population: Induced-aging rats or diabetic mice
+  purpose: Neuroprotection research
+  sourceCategory: research
+  note: Abstracts do not report quantity.
+  sourceId: reddit-pmid-24326685
 ```
 
 ## Pharmacokinetics
@@ -266,21 +302,24 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
 ```yaml
 - label: Lipid formulation
   effect: Systemic exposure varied by formulation
-  detail: Three lipid-based vehicles produced approximately 1.7–3.7-fold higher bioavailability than a reference product after 40 mg.
+  detail: Three lipid-based vehicles produced approximately 1.7–3.7-fold higher bioavailability
+    than a reference product after 40 mg.
   sourceId: ref-odeberg-2003
   observationId: pk-odeberg-40mg
   factorType: other
   direction: variable
 - label: Meal timing
   effect: After-meal administration increased exposure
-  detail: In a small H. pluvialis study, nonsmoker AUC0–168 was higher after a meal than before it.
+  detail: In a small H. pluvialis study, nonsmoker AUC0–168 was higher after a meal
+    than before it.
   sourceId: ref-okada-2009
   observationId: pk-okada-meal-smoking
   factorType: other
   direction: variable
 - label: Smoking
   effect: Elimination was shorter in smokers in one small study
-  detail: The accessible abstract does not provide numerical smoker half-lives, so the size of the effect is unknown.
+  detail: The accessible abstract does not provide numerical smoker half-lives, so
+    the size of the effect is unknown.
   sourceId: ref-okada-2009
   observationId: pk-okada-meal-smoking
   factorType: smoking
@@ -296,11 +335,14 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   name: Skin appearance
   direction: Variable
   evidence: Human research
-  description: A 4 mg/day, 9-week trial reported favorable change in minimal erythema dose and attenuation of UV-related moisture loss, while transepidermal water loss and several subjective endpoints were null.
+  description: A 4 mg/day, 9-week trial reported favorable change in minimal erythema
+    dose and attenuation of UV-related moisture loss, while transepidermal water loss
+    and several subjective endpoints were null.
   population: 23 healthy Japanese adults
   exposure: 4 mg/day H. pluvialis astaxanthin for 9 weeks
   instrument: Minimal erythema dose and skin measurements
-  magnitude: Direction favored astaxanthin for selected endpoints; several endpoints null
+  magnitude: Direction favored astaxanthin for selected endpoints; several endpoints
+    null
   reportType: measured-assessment
   conflictingSourceIds: []
 - sourceId: ref-hecht-2025
@@ -309,7 +351,9 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   name: Digital-eye-strain symptoms
   direction: Increased
   evidence: Human research
-  description: Children receiving 4 mg/day for 84 days improved questionnaire-based digital-eye-strain and visual-fatigue scores more than placebo; visual acuity and several objective measures were not significantly different.
+  description: Children receiving 4 mg/day for 84 days improved questionnaire-based
+    digital-eye-strain and visual-fatigue scores more than placebo; visual acuity
+    and several objective measures were not significantly different.
   population: 64 children aged 10–14 years with high screen exposure
   exposure: 4 mg/day astaxanthin soft capsule for 84 days
   instrument: Computer Vision Syndrome Questionnaire and visual-fatigue score
@@ -322,7 +366,9 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   name: Subjective cognitive function
   direction: Variable
   evidence: Human research
-  description: A 12-week trial reported within-group improvement in the 12 mg/day group, but investigators stated that the sample was too small to show significant superiority to placebo.
+  description: A 12-week trial reported within-group improvement in the 12 mg/day
+    group, but investigators stated that the sample was too small to show significant
+    superiority to placebo.
   population: 96 middle-aged or older adults reporting forgetfulness
   exposure: 6 or 12 mg/day H. pluvialis extract for 12 weeks
   instrument: CogHealth and Groton Maze tasks
@@ -340,7 +386,8 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   name: Skin hydration
   direction: Increased
   evidence: Human research
-  description: A systematic review/meta-analysis of 11 human studies found improved skin moisture, SMD 0.53 (95% CI 0.05–1.01), with moderate heterogeneity.
+  description: A systematic review/meta-analysis of 11 human studies found improved
+    skin moisture, SMD 0.53 (95% CI 0.05–1.01), with moderate heterogeneity.
   population: Adults in 11 human studies
   exposure: Oral astaxanthin at study-specific doses
   instrument: Study-specific skin-moisture measures
@@ -353,7 +400,8 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   name: Skin elasticity
   direction: Increased
   evidence: Human research
-  description: The same review found improved elasticity, but heterogeneity was high and studies were small.
+  description: The same review found improved elasticity, but heterogeneity was high
+    and studies were small.
   population: Adults in 11 human studies
   exposure: Oral astaxanthin at study-specific doses
   instrument: Study-specific elasticity measures
@@ -379,7 +427,8 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   name: VO₂max
   direction: Variable
   evidence: Human research
-  description: A 2026 meta-analysis of 24 RCTs found no significant effect on VO₂max, time-trial performance or maximal workload/power.
+  description: A 2026 meta-analysis of 24 RCTs found no significant effect on VO₂max,
+    time-trial performance or maximal workload/power.
   population: Athletes and physically active or healthy participants in 24 RCTs
   exposure: Approximately 4–28 mg/day for 4 days to 16 weeks
   instrument: Exercise performance tests
@@ -392,7 +441,8 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   name: Creatine kinase
   direction: Decreased
   evidence: Human research
-  description: The exercise meta-analysis found a modest pooled CK reduction, while performance endpoints remained null.
+  description: The exercise meta-analysis found a modest pooled CK reduction, while
+    performance endpoints remained null.
   population: Athletes and physically active or healthy participants in 24 RCTs
   exposure: Approximately 4–28 mg/day for 4 days to 16 weeks
   instrument: Blood creatine kinase
@@ -405,50 +455,117 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   name: Cardiometabolic surrogate outcomes
   direction: Variable
   evidence: Human research
-  description: A 2020 synthesis was null for fasting glucose, HbA1c, LDL-C, triglycerides, body weight and blood pressure; later meta-analyses differed, so disease treatment is not established.
+  description: A 2020 synthesis was null for fasting glucose, HbA1c, LDL-C, triglycerides,
+    body weight and blood pressure; later meta-analyses differed, so disease treatment
+    is not established.
   population: Adults at risk of metabolic syndrome in randomized trials
   exposure: Astaxanthin at study-specific doses
   instrument: Blood glucose, lipids and blood pressure
   magnitude: Mostly null; small HDL/CRP subgroup signals
   reportType: measured-assessment
   conflictingSourceIds: []
+- id: reddit-astaxanthin-memory-26643409
+  conceptId: spatial-memory
+  name: Spatial memory
+  direction: Increased
+  evidence: Limited research
+  description: A 0.5% astaxanthin diet increased adult hippocampal neurogenesis and
+    enhanced spatial memory in mice.
+  sourceId: reddit-pmid-26643409
+  population: Mice
+  exposure: 0.02–0.5% dietary astaxanthin
+  instrument: Hippocampal neurogenesis and spatial-memory task
+  magnitude: Memory benefit at 0.5%
+  reportType: measured-assessment
+- id: reddit-astaxanthin-cognition-26272354
+  conceptId: cognitive-performance
+  name: Spatial learning in diabetic encephalopathy
+  direction: Increased
+  evidence: Limited research
+  description: Astaxanthin reduced Morris-maze latency and increased target-quadrant
+    distance/time in streptozotocin-diabetic mice while preserving neurons.
+  sourceId: reddit-pmid-26272354
+  population: Streptozotocin-diabetic ICR mice
+  exposure: Dose not stated in abstract
+  instrument: Morris water maze and neuronal survival
+  magnitude: Improved vs diabetic controls
+  reportType: measured-assessment
+- id: reddit-astaxanthin-brain-aging-24326685
+  conceptId: neuroprotection-outcome
+  name: Brain-aging oxidative and trophic markers
+  direction: Increased
+  evidence: Limited research
+  description: In D-galactose-aged rats, astaxanthin restored antioxidant enzymes,
+    reduced lipid/protein/DNA oxidation and COX-2, and restored BDNF and hippocampal
+    histology.
+  sourceId: reddit-pmid-24326685
+  population: D-galactose-treated rats
+  exposure: Dose not stated in abstract
+  instrument: GSH-PX, SOD, GSH, MDA, 8-OHdG, BDNF
+  magnitude: Multi-marker improvement
+  reportType: measured-assessment
 ```
 
 ## Mechanisms
 
 ```yaml
 - title: Lipid-mediated absorption
-  description: Astaxanthin is lipid-soluble; carrier lipids, surfactants and meal context change micellarization and systemic exposure. This PK mechanism does not establish clinical benefit.
+  description: Astaxanthin is lipid-soluble; carrier lipids, surfactants and meal
+    context change micellarization and systemic exposure. This PK mechanism does not
+    establish clinical benefit.
   sourceId: ref-odeberg-2003
 - title: Plasma hydrolysis and lipoprotein transport
-  description: After fatty-acyl-diesters, circulating unesterified astaxanthin was detected and intact esters were not, consistent with hydrolysis during absorption and transport in lipoprotein fractions.
+  description: After fatty-acyl-diesters, circulating unesterified astaxanthin was
+    detected and intact esters were not, consistent with hydrolysis during absorption
+    and transport in lipoprotein fractions.
   sourceId: ref-coral-2004
 - title: Antioxidant/redox hypothesis
-  description: Selected redox and inflammatory biomarkers changed in some trials, but exercise and clinical-outcome studies show that biomarker shifts do not reliably translate to performance or disease benefit.
+  description: Selected redox and inflammatory biomarkers changed in some trials,
+    but exercise and clinical-outcome studies show that biomarker shifts do not reliably
+    translate to performance or disease benefit.
   sourceId: ref-exercise-meta-2026
+- title: Antioxidant and anti-inflammatory actions
+  description: Astaxanthin reduced oxidative-stress markers and COX-2 in aging rats;
+    in diabetic mice it inhibited NF-κB p65 nuclear translocation and TNF-α.
+  sourceId: reddit-pmid-24326685
 ```
 
 ## Cautions
 
 ```yaml
 - title: Evidence is endpoint-specific
-  description: Skin and digital-eye-strain signals come from small studies; no robust human evidence establishes retinal disease, diabetes, cardiovascular, fertility or nootropic treatment.
+  description: Skin and digital-eye-strain signals come from small studies; no robust
+    human evidence establishes retinal disease, diabetes, cardiovascular, fertility
+    or nootropic treatment.
   sourceId: ref-ng-2021
 - title: Short-term safety only
-  description: An 8-week randomized safety trial supports tolerability at 6 mg/day in healthy adults, but sample size and duration cannot detect rare or chronic harms.
+  description: An 8-week randomized safety trial supports tolerability at 6 mg/day
+    in healthy adults, but sample size and duration cannot detect rare or chronic
+    harms.
   sourceId: ref-efsa-2020
 - title: Pregnancy and lactation evidence gap
-  description: No dedicated qualifying human supplementation trial in pregnancy or lactation was identified in the reviewed evidence.
+  description: No dedicated qualifying human supplementation trial in pregnancy or
+    lactation was identified in the reviewed evidence.
   sourceId: ref-ito-2018
 - title: Renal impairment evidence gap
-  description: No dedicated renal-impairment PK or dose-adjustment study was identified; normal short-term findings in healthy adults do not establish CKD safety.
+  description: No dedicated renal-impairment PK or dose-adjustment study was identified;
+    normal short-term findings in healthy adults do not establish CKD safety.
   sourceId: ref-ito-2018
 - title: Commercial sponsorship
-  description: Several product and formulation studies involved manufacturer products, funding or affiliated investigators; sponsorship is recorded in the references and limits independent replication.
+  description: Several product and formulation studies involved manufacturer products,
+    funding or affiliated investigators; sponsorship is recorded in the references
+    and limits independent replication.
   sourceId: ref-ito-2018
 - title: Co-loaded nanoparticle evidence is preclinical
-  description: A 2026 study used an astaxanthin co-loaded nanoparticle with a marine peptide and reported immunosuppression-related endpoint changes in an animal model. The abstract itself limits the evidence to animal endpoints and calls for direct mechanistic validation.
+  description: A 2026 study used an astaxanthin co-loaded nanoparticle with a marine
+    peptide and reported immunosuppression-related endpoint changes in an animal model.
+    The abstract itself limits the evidence to animal endpoints and calls for direct
+    mechanistic validation.
   sourceId: pmid-42929794
+- title: Preclinical-only evidence
+  description: All linked studies are rodent experiments; human cognitive efficacy,
+    dosing and safety are not established.
+  sourceId: reddit-pmid-26643409
 ```
 
 ## Claims
@@ -458,27 +575,29 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   assertion: Astaxanthin improves selected skin-moisture or elasticity measures
   relation: evidence-boundary
   participants:
-    - entityId: substance:astaxanthin
-      role: intervention
-    - entityId: tag:attention
-      role: reported-outcome-context
-  context: Small human studies and a meta-analysis support endpoint-specific changes, with heterogeneity and no wrinkle-depth benefit.
+  - entityId: substance:astaxanthin
+    role: intervention
+  - entityId: tag:attention
+    role: reported-outcome-context
+  context: Small human studies and a meta-analysis support endpoint-specific changes,
+    with heterogeneity and no wrinkle-depth benefit.
   sourceIds:
-    - ref-ng-2021
+  - ref-ng-2021
   conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Does not establish prevention of UV-induced disease or replacement of sunscreen.
+  limitation: Does not establish prevention of UV-induced disease or replacement of
+    sunscreen.
 - id: astaxanthin-claim-nootropic
   assertion: Astaxanthin is a proven nootropic
   relation: evidence-boundary
   participants:
-    - entityId: substance:astaxanthin
-      role: intervention
-    - entityId: tag:attention
-      role: reported-outcome-context
+  - entityId: substance:astaxanthin
+    role: intervention
+  - entityId: tag:attention
+    role: reported-outcome-context
   context: Human cognitive accuracy and reaction-time evidence is small or non-significant.
   sourceIds:
-    - ref-katagiri-2012
+  - ref-katagiri-2012
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: A within-group change cannot establish placebo superiority.
@@ -486,13 +605,14 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   assertion: Astaxanthin reliably improves exercise performance
   relation: evidence-boundary
   participants:
-    - entityId: substance:astaxanthin
-      role: intervention
-    - entityId: tag:attention
-      role: reported-outcome-context
-  context: The largest current exercise synthesis found no significant VO₂max, time-trial or maximal-workload effect.
+  - entityId: substance:astaxanthin
+    role: intervention
+  - entityId: tag:attention
+    role: reported-outcome-context
+  context: The largest current exercise synthesis found no significant VO₂max, time-trial
+    or maximal-workload effect.
   sourceIds:
-    - ref-exercise-meta-2026
+  - ref-exercise-meta-2026
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: A CK change is a biomarker and not proof of better performance or recovery.
@@ -500,17 +620,70 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   assertion: Astaxanthin treats cardiometabolic or retinal disease
   relation: evidence-boundary
   participants:
-    - entityId: substance:astaxanthin
-      role: intervention
-    - entityId: tag:attention
-      role: reported-outcome-context
-  context: No qualifying robust astaxanthin-alone trial establishes a hard clinical disease benefit.
+  - entityId: substance:astaxanthin
+    role: intervention
+  - entityId: tag:attention
+    role: reported-outcome-context
+  context: No qualifying robust astaxanthin-alone trial establishes a hard clinical
+    disease benefit.
   sourceIds:
-    - ref-leung-2022
-    - ref-hecht-2025
+  - ref-leung-2022
+  - ref-hecht-2025
   conflictingSourceIds: []
   assessment: not-formally-assessed
-  limitation: Combination studies and surrogate endpoints cannot be generalized to disease treatment.
+  limitation: Combination studies and surrogate endpoints cannot be generalized to
+    disease treatment.
+- id: reddit-claim-astaxanthin-26643409-0
+  assertion: Astaxanthin enhanced hippocampal neurogenesis and spatial memory in mice
+    at 0.5% dietary concentration.
+  relation: associated-with
+  participants:
+  - entityId: substance:astaxanthin
+    role: intervention or exposure
+  - entityId: tag:spatial-memory
+    role: reported endpoint
+  context: Publication abstract and/or retrieved PMC text; this is not a pooled efficacy
+    estimate.
+  sourceIds:
+  - reddit-pmid-26643409
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Publication-level association; direction and generalizability depend
+    on the cited study.
+- id: reddit-claim-astaxanthin-26272354-1
+  assertion: Astaxanthin improved cognition and reduced inflammatory signaling in
+    diabetic mice.
+  relation: associated-with
+  participants:
+  - entityId: substance:astaxanthin
+    role: intervention or exposure
+  - entityId: tag:cognitive-performance
+    role: reported endpoint
+  context: Publication abstract and/or retrieved PMC text; this is not a pooled efficacy
+    estimate.
+  sourceIds:
+  - reddit-pmid-26272354
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Publication-level association; direction and generalizability depend
+    on the cited study.
+- id: reddit-claim-astaxanthin-24326685-2
+  assertion: Astaxanthin attenuated oxidative brain-aging markers and restored BDNF
+    in rats.
+  relation: associated-with
+  participants:
+  - entityId: substance:astaxanthin
+    role: intervention or exposure
+  - entityId: tag:neuroprotection
+    role: reported endpoint
+  context: Publication abstract and/or retrieved PMC text; this is not a pooled efficacy
+    estimate.
+  sourceIds:
+  - reddit-pmid-24326685
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Publication-level association; direction and generalizability depend
+    on the cited study.
 ```
 
 ## Interactions
@@ -519,13 +692,16 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
 - id: interaction-astaxanthin-drugs
   name: Prescription drug interactions
   otherSlug: null
-  summary: No dedicated human clinical drug–drug interaction study was identified; interactions with anticoagulants, glucose-lowering drugs, antihypertensives and CYP substrates remain uncharacterized.
+  summary: No dedicated human clinical drug–drug interaction study was identified;
+    interactions with anticoagulants, glucose-lowering drugs, antihypertensives and
+    CYP substrates remain uncharacterized.
   sourceId: ref-efsa-2020
   context: Evidence gap; absence of a study is not proof of universal safety.
 - id: interaction-astaxanthin-meal
   name: Meal and lipid formulation
   otherSlug: null
-  summary: Taking an H. pluvialis extract after a meal and using lipid-based formulations increased exposure in small human PK studies.
+  summary: Taking an H. pluvialis extract after a meal and using lipid-based formulations
+    increased exposure in small human PK studies.
   sourceId: ref-okada-2009
   context: Pharmacokinetic modifier rather than a demonstrated clinical interaction.
 ```
@@ -540,10 +716,10 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
 
 ```yaml
 - id: pmid-42929794
-  title: "Layered glycoprotein nanoparticles co-delivering <i>Meretrix meretrix</i>-derived peptide and astaxanthin attenuate cyclophosphamide-induced immunosuppression."
+  title: Layered glycoprotein nanoparticles co-delivering <i>Meretrix meretrix</i>-derived peptide and astaxanthin attenuate cyclophosphamide-induced immunosuppression.
   authors: Wu W, Cai J, Wu Z, Cao W, Lin H, Gao J, Fan X, Qin X, Zheng H.
   year: 2026
-  pmid: "42929794"
+  pmid: '42929794'
   doi: 10.1039/d6fo04163a
   url: https://pubmed.ncbi.nlm.nih.gov/42929794/
   kind: Preclinical nanoparticle study
@@ -561,7 +737,7 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   kind: human-pharmacokinetic-study
   insight: Three men received a 100 mg single meal dose. Mean Cmax was 1.3±0.1 mg/L, Tmax 6.7±1.2 h and plasma elimination half-life 21±11 h; astaxanthin distributed among VLDL/chylomicron, LDL and HDL fractions and showed selective geometric-isomer uptake.
   limitation: Only three men; unusually high single dose; not an efficacy or population-safety study.
-  pmid: "11120445"
+  pmid: '11120445'
   doi: 10.1016/S0955-2863(00)00104-2
   funding: Full funding disclosure not inspected in the accessible record.
   sponsorshipStatus: not-assessed
@@ -575,7 +751,7 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   kind: human-pharmacokinetic-study
   insight: In 32 healthy men receiving a single 40 mg dose, mean elimination half-life was 15.9±5.3 h and three lipid-based formulations produced approximately 1.7-3.7 times the bioavailability of the reference formulation.
   limitation: Single-dose, male-only pharmacokinetic study; efficacy and chronic safety were not tested.
-  pmid: "12885395"
+  pmid: '12885395'
   doi: 10.1016/S0928-0987(03)00135-0
   funding: Full funding disclosure not inspected in the accessible record.
   sponsorshipStatus: not-assessed
@@ -589,35 +765,35 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   kind: human-pharmacokinetic-study
   insight: Three men received astaxanthin-equivalent fatty-acyl diesters. After the 100 mg-equivalent dose, Cmax was 0.28±0.1 mg/L, Tmax 11.5 h and elimination half-life 52±40 h; intact astaxanthin esters were not detected in plasma.
   limitation: Only three participants; high single-dose exposure; half-life estimate has very large dispersion.
-  pmid: "15556071"
+  pmid: '15556071'
   doi: 10.1016/j.cca.2004.09.011
   funding: PubMed indexes non-U.S.-government research support; detailed funder role was not inspected.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Full conflict-of-interest disclosure not inspected.
   conflictOfInterestStatus: not-assessed
 - id: ref-okada-2009
-  title: "Bioavailability of astaxanthin in Haematococcus algal extract: the effects of timing of diet and smoking habits"
+  title: 'Bioavailability of astaxanthin in Haematococcus algal extract: the effects of timing of diet and smoking habits'
   authors: Yumika Okada; Masaharu Ishikura; Takashi Maoka
   year: 2009
   url: https://doi.org/10.1271/bbb.90078
   kind: human-pharmacokinetic-study
   insight: Post-meal administration produced much greater AUC0-168 than pre-meal administration in nonsmokers, and smoking significantly shortened elimination half-life.
   limitation: Small groups; numeric smoking-specific half-life estimates are not available in the accessible abstract.
-  pmid: "19734684"
+  pmid: '19734684'
   doi: 10.1271/bbb.90078
   funding: Full funding statement not inspected.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Full conflict-of-interest statement not inspected.
   conflictOfInterestStatus: not-assessed
 - id: ref-katagiri-2012
-  title: "Effects of astaxanthin-rich Haematococcus pluvialis extract on cognitive function: a randomised, double-blind, placebo-controlled study"
+  title: 'Effects of astaxanthin-rich Haematococcus pluvialis extract on cognitive function: a randomised, double-blind, placebo-controlled study'
   authors: Mikiyuki Katagiri; Akira Satoh; Shinji Tsuji; Takuji Shirasawa
   year: 2012
   url: https://doi.org/10.3164/jcbn.D-11-00017
   kind: randomized-controlled-trial
   insight: Ninety-six adults with subjective age-related forgetfulness were randomized to placebo, 6 mg/day or 12 mg/day for 12 weeks. Some within-group cognitive changes occurred, but a significant between-group cognitive benefit was not established.
   limitation: Modest sample, repeated cognitive testing and product-specific intervention.
-  pmid: "22962526"
+  pmid: '22962526'
   doi: 10.3164/jcbn.D-11-00017
   funding: Full funding declaration was not established from the inspected text.
   sponsorshipStatus: not-assessed
@@ -631,7 +807,7 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   kind: randomized-controlled-trial
   insight: Thirty-two well-trained male cyclists/triathletes received 20 mg/day for four weeks; no improvement occurred in fat oxidation, total plasma antioxidant capacity, malondialdehyde or time-trial performance.
   limitation: Male trained-athlete population and four-week intervention.
-  pmid: "23274592"
+  pmid: '23274592'
   doi: 10.1249/MSS.0b013e31827fddc4
   funding: Full funding disclosure not inspected.
   sponsorshipStatus: not-assessed
@@ -645,7 +821,7 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   kind: randomized-controlled-trial
   insight: Four mg/day for nine weeks favored change in minimal erythema dose and attenuated UV-related moisture loss, while raw post-treatment MED and TEWL comparisons did not show a significant between-group difference.
   limitation: Twenty-two analyzed participants, predominantly women; per-protocol analysis; proprietary formulation.
-  pmid: "29941810"
+  pmid: '29941810'
   doi: 10.3390/nu10070817
   funding: FUJIFILM preparation and FUJIFILM-affiliated investigators were reported; publication stated no external funding.
   sponsorshipStatus: industry-funded
@@ -653,28 +829,28 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.3390/nu10070817
 - id: ref-ng-2021
-  title: "Effects of Astaxanthin Supplementation on Skin Health: A Systematic Review of Clinical Studies"
+  title: 'Effects of Astaxanthin Supplementation on Skin Health: A Systematic Review of Clinical Studies'
   authors: Qin Xiang Ng; Michelle Lee Zhi Qing De Deyn; Wayren Loke; Nadine Xinhui Foo; Hwei Wuen Chan; Wee Song Yeo
   year: 2021
   url: https://doi.org/10.1080/19390211.2020.1739187
   kind: systematic-review
   insight: The review identified eleven human skin studies, including six randomized placebo-controlled double-blind trials, and noted generally small samples and frequent commercial involvement in the underlying literature.
   limitation: Includes heterogeneous open-label and randomized evidence and does not by itself establish efficacy for individual outcomes.
-  pmid: "32202443"
+  pmid: '32202443'
   doi: 10.1080/19390211.2020.1739187
   funding: Review funding disclosure not inspected in full.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: The review explicitly notes commercial funding and potential conflicts in the underlying astaxanthin skin literature.
   conflictOfInterestStatus: not-assessed
 - id: ref-leung-2022
-  title: "Astaxanthin Influence on Health Outcomes of Adults at Risk of Metabolic Syndrome: A Systematic Review and Meta-Analysis"
+  title: 'Astaxanthin Influence on Health Outcomes of Adults at Risk of Metabolic Syndrome: A Systematic Review and Meta-Analysis'
   authors: Leona Yuen-Ling Leung; Sidney Man-Ngai Chan; Hon-Lon Tam; Emily Sze-Wan Wong
   year: 2022
   url: https://doi.org/10.3390/nu14102050
   kind: systematic-review-meta-analysis
   insight: Seven RCTs were synthesized for metabolic-syndrome risk factors, with generally small trials and heterogeneous populations.
   limitation: The article contains apparent internal inconsistencies in direction/sign for portions of the lipid results; those estimates were not used as plot-ready outcomes here.
-  pmid: "35631193"
+  pmid: '35631193'
   doi: 10.3390/nu14102050
   funding: Full disclosure not reassessed for the final extraction.
   sponsorshipStatus: not-assessed
@@ -682,28 +858,28 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC9148008/
 - id: ref-hecht-2025
-  title: "Astaxanthin (AstaReal®) Improved Acute and Chronic Digital Eye Strain in Children: A Randomized Double-Blind Placebo-Controlled Trial"
+  title: 'Astaxanthin (AstaReal®) Improved Acute and Chronic Digital Eye Strain in Children: A Randomized Double-Blind Placebo-Controlled Trial'
   authors: Karen A Hecht; Megha Marwah; Vincent Wood; Yasuhiro Nishida; Austin E Bach; Jeffry Gerson; Milton M Hom; Joerg Schnackenberg; Sonal Raote; Shalini Srivastava; Pankaj Negi; Eric Caston
   year: 2025
   url: https://doi.org/10.1007/s12325-025-03125-7
   kind: randomized-controlled-trial
   insight: Sixty-four children received 4 mg/day or placebo for 84 days. CVS-Q and visual-fatigue scores favored astaxanthin; several other visual measures were null.
   limitation: Single modest-sized pediatric trial with many secondary endpoints; independent replication is needed.
-  pmid: "40014233"
+  pmid: '40014233'
   doi: 10.1007/s12325-025-03125-7
   funding: PubMed indexes non-U.S.-government research support; complete funder role was not inspected.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Complete author conflict-of-interest disclosures were not inspected.
   conflictOfInterestStatus: not-assessed
 - id: ref-tsao-2025
-  title: "Effect of astaxanthin supplementation on cycling performance, muscle damage biomarkers and oxidative stress in young adults: a randomized controlled trial"
+  title: 'Effect of astaxanthin supplementation on cycling performance, muscle damage biomarkers and oxidative stress in young adults: a randomized controlled trial'
   authors: Jung-Piao Tsao; Pei-Yu Wu; Hsu-Tung Kuo; Wei-Hsien Hong; Chih-Chieh Chen; Min-Yu Wang; Mallikarjuna Korivi; I-Shiung Cheng
   year: 2025
   url: https://doi.org/10.1186/s13102-025-01221-3
   kind: randomized-controlled-trial
   insight: Ten active young men completed an astaxanthin/placebo crossover; 28 mg/day for four days increased cycling time to exhaustion and altered selected muscle-damage/oxidative-stress biomarkers.
   limitation: Extremely small sample and short exposure; the ClinicalTrials.gov record was posted after study completion.
-  pmid: "40615903"
+  pmid: '40615903'
   doi: 10.1186/s13102-025-01221-3
   funding: ClinicalTrials.gov lists China Medical University Hospital as lead sponsor, with National Science and Technology Council and China Medical University as collaborators.
   sponsorshipStatus: non-industry-funded
@@ -711,14 +887,14 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://clinicaltrials.gov/study/NCT06593535
 - id: ref-exercise-meta-2026
-  title: "The Effects of Astaxanthin Supplementation on Exercise Recovery Biomarkers and Exercise Performance: A Systematic Review and Meta-Analysis"
+  title: 'The Effects of Astaxanthin Supplementation on Exercise Recovery Biomarkers and Exercise Performance: A Systematic Review and Meta-Analysis'
   authors: Shuning Liu; Wenqian Yao; Yan Wei; Samuhaer Azhati; Yutong Wu; Wen Zhong; Pengda Wang; Heping Dai; Kai Zhao; Chang Liu
   year: 2026
   url: https://doi.org/10.3390/nu18101570
   kind: systematic-review-meta-analysis
   insight: Twenty-four RCTs were included. CK and LDH favored astaxanthin, whereas malondialdehyde, IL-6, VO2max, time-trial performance and maximal workload/power did not show significant pooled benefits.
   limitation: Dose, duration, training status and exercise protocol varied; LDH heterogeneity was substantial.
-  pmid: "42197030"
+  pmid: '42197030'
   doi: 10.3390/nu18101570
   funding: Full review funding declaration not inspected.
   sponsorshipStatus: not-assessed
@@ -749,6 +925,56 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not applicable to a legal act.
   conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-26643409
+  title: Astaxanthin supplementation enhances adult hippocampal neurogenesis and spatial memory in mice.
+  authors: Jang Soo Yook, Masahiro Okamoto, Randeep Rakwal, Junko Shibato, Min Chul Lee, Takashi Matsui, Hyukki Chang, Joon Yong Cho, Hideaki Soya
+  year: 2016
+  url: https://pubmed.ncbi.nlm.nih.gov/26643409/
+  kind: PubMed publication
+  insight: Dietary astaxanthin 0.1–0.5% increased hippocampal neurogenesis; 0.5% improved spatial memory in mice.
+  limitation: Abstract reviewed; rights-eligible PMC full text was unavailable for this publication.
+  pmid: '26643409'
+  doi: 10.1002/mnfr.201500634
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-26272354
+  title: Inhibition of inflammation by astaxanthin alleviates cognition deficits in diabetic mice.
+  authors: Xiaoyan Zhou, Fang Zhang, Xiaotong Hu, Jing Chen, Xiangru Wen, Ying Sun, Yonghai Liu, Renxian Tang, Kuiyang Zheng, Yuanjian Song
+  year: 2015
+  url: https://pubmed.ncbi.nlm.nih.gov/26272354/
+  kind: PubMed publication
+  insight: In streptozotocin-diabetic mice, astaxanthin improved Morris-maze performance and inhibited NF-κB/TNF-α signaling.
+  limitation: Abstract reviewed; rights-eligible PMC full text was unavailable for this publication.
+  pmid: '26272354'
+  doi: 10.1016/j.physbeh.2015.08.015
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-pmid-24326685
+  title: Astaxanthin alleviates brain aging in rats by attenuating oxidative stress and increasing BDNF levels.
+  authors: Wanqiang Wu, Xin Wang, Qisen Xiang, Xu Meng, Ye Peng, Na Du, Zhigang Liu, Quancai Sun, Chan Wang, Xuebo Liu
+  year: 2014
+  url: https://pubmed.ncbi.nlm.nih.gov/24326685/
+  kind: PubMed publication
+  insight: In D-galactose-aged rats, astaxanthin improved antioxidant enzymes, reduced oxidative damage/COX-2, and restored BDNF and hippocampal histology.
+  limitation: Abstract reviewed; rights-eligible PMC full text was unavailable for this publication.
+  pmid: '24326685'
+  doi: 10.1039/c3fo60400d
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
+- id: reddit-index-astaxanthin
+  title: Reddit r/Nootropics community index
+  authors: Reddit r/Nootropics community index
+  year: 2026
+  url: https://www.reddit.com/r/nootropics/wiki/index
+  kind: Community index
+  insight: Reddit index discovery link; it does not establish efficacy, dose or safety.
+  limitation: Community index used as a discovery aid; publication evidence is evaluated in the linked records.
 ```
 
 ## Legal
@@ -756,12 +982,14 @@ The strongest recurring signals are formulation-sensitive plasma exposure and sm
 ```yaml
 - jurisdiction: United States
   activity: Food ingredient use
-  status: FDA GRAS notices concern defined H. pluvialis ingredients and food conditions; they are not drug approval or efficacy evidence.
+  status: FDA GRAS notices concern defined H. pluvialis ingredients and food conditions;
+    they are not drug approval or efficacy evidence.
   sourceUrl: https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=294&set=GRASNotices
   asOf: 2026-10-10
 - jurisdiction: European Union
   activity: Novel-food astaxanthin
-  status: EFSA and EU conditions apply to specified astaxanthin-rich oleoresins and intakes; they are food-safety determinations, not therapeutic authorization.
+  status: EFSA and EU conditions apply to specified astaxanthin-rich oleoresins and
+    intakes; they are food-safety determinations, not therapeutic authorization.
   sourceUrl: https://eur-lex.europa.eu/eli/reg_impl/2023/1581/oj
   asOf: 2026-10-10
 ```
