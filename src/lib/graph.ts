@@ -18,6 +18,29 @@ export type GraphNode = {
 };
 export type GraphModel = { nodes: GraphNode[]; relationships: (Hyperedge & { nodeId: string })[]; elements: ElementDefinition[] };
 
+/**
+ * Keep only nodes that participate in a sourced relationship. The catalog also
+ * contains identity-only and classification-only records; rendering those as
+ * isolated nodes makes the landing graph look like a giant spreadsheet and
+ * gives the layout engine work with no navigational value.
+ */
+export function connectedKnowledgeGraph(model: GraphModel, options: { authoredOnly?: boolean } = {}): GraphModel {
+  const relationships = options.authoredOnly
+    ? model.relationships.filter((edge) => edge.relation !== "tag membership")
+    : model.relationships;
+  const visible = new Set(relationships.flatMap((edge) => [edge.nodeId, ...edge.members]));
+  return {
+    nodes: model.nodes.filter((node) => visible.has(node.id)),
+    relationships,
+    elements: model.elements.filter((element) => {
+      const data = element.data;
+      return data.source
+        ? visible.has(data.source) && visible.has(data.target)
+        : visible.has(data.id!);
+    }),
+  };
+}
+
 /** A hyperedge is a node in the incidence graph, never an invented pairwise claim. */
 export function buildKnowledgeGraph(input: GraphInput, tagKind?: TagKind): GraphModel {
   const ids = new Set<string>();
