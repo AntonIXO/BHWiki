@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-cytisine
-  observationId: cytisine-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -126,20 +125,7 @@ Reviewed all 4 PubMed links and retrieved PMC full text for PMID 27098858 (PMC48
 ## Pharmacokinetics
 
 ```yaml
-- id: cytisine-reddit-pk-unestablished
-  analyte: Cytisine
-  route: Not established
-  formulation: Index evidence set
-  population: Not established
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No pharmacokinetic estimate was reported in the linked abstracts reviewed here.
-  sourceId: reddit-index-cytisine
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -280,7 +266,7 @@ Reviewed all 4 PubMed links and retrieved PMC full text for PMID 27098858 (PMC48
 
 ```yaml
 - id: reddit-index-cytisine
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

@@ -327,8 +327,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   modelEligible: false
 - id: tyrosine-pk-3214752
   analyte: Tyrosine
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
   population: Tyrosine administration elevates striatal levels of dopamine metabolites in animals given treatments that accelerate nigrostriatal firing, but not in untreated rats.
   endpoint: elimination-half-life
   statistic: not-established

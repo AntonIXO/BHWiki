@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-b-vitamin-complex
-  observationId: b-vitamin-complex-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -141,20 +140,7 @@ Reviewed PubMed abstracts for PMIDs 12042457, 21905094, 20454891 and 25137514; r
 ## Pharmacokinetics
 
 ```yaml
-- id: b-vitamin-complex-reddit-pk-unestablished
-  analyte: b-vitamin-complex
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No elimination-half-life observation was established in the inspected linked publications.
-  sourceId: reddit-index-b-vitamin-complex
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -302,7 +288,7 @@ Reviewed PubMed abstracts for PMIDs 12042457, 21905094, 20454891 and 25137514; r
 
 ```yaml
 - id: reddit-index-b-vitamin-complex
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

@@ -206,21 +206,6 @@ Reddit index source review: Seven PubMed abstracts were retrieved; PMC full text
   context: This identity import does not establish a pharmacokinetic observation.
   sourceId: optihealth-substance-00000000-0000-4000-a001-000000000007
   modelEligible: false
-- id: ashwagandha-pk-unestablished
-  analyte: Ashwagandha
-  route: Not established from abstract
-  formulation: Study formulation not reported as a PK parameter
-  population: Not established
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated elimination or concentration parameter was reported in the
-    retrieved linked abstracts.
-  sourceId: reddit-index-ashwagandha
-  modelEligible: false
 ```
 
 ## Modifiers
@@ -549,7 +534,7 @@ Reddit index source review: Seven PubMed abstracts were retrieved; PMC full text
   conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 - id: reddit-index-ashwagandha
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

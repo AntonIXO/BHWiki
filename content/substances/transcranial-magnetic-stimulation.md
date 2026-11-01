@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-transcranial-magnetic-stimulation
-  observationId: transcranial-magnetic-stimulation-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -353,20 +352,7 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
 ## Pharmacokinetics
 
 ```yaml
-- id: transcranial-magnetic-stimulation-pk-unestablished
-  analyte: Transcranial Magnetic Stimulation
-  route: Not assessed
-  formulation: No source-specific PK endpoint in linked abstracts
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: Linked PubMed abstracts did not establish a validated elimination half-life.
-  sourceId: reddit-index-transcranial-magnetic-stimulation
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -1014,7 +1000,7 @@ PMC full-text retrieval for this page returned body text for 8/13 identified PMC
 
 ```yaml
 - id: reddit-index-transcranial-magnetic-stimulation
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

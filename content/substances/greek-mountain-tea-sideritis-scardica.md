@@ -20,7 +20,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-greek-mountain-tea-sideritis-scardica
-  observationId: greek-mountain-tea-sideritis-scardica-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -97,20 +96,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
 ## Pharmacokinetics
 
 ```yaml
-- id: greek-mountain-tea-sideritis-scardica-reddit-pk-unestablished
-  analyte: Greek Mountain Tea (Sideritis scardica)
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-greek-mountain-tea-sideritis-scardica
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -240,7 +226,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
 
 ```yaml
 - id: reddit-index-greek-mountain-tea-sideritis-scardica
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

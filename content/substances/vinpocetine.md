@@ -112,9 +112,6 @@ PubMed/PMC review: retrieved 4 PubMed records linked from this Reddit index entr
   modelEligible: false
 - id: vinpocetine-pk-6322804
   analyte: Vinpocetine
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
-  population: Population not specified in the returned PubMed abstract.
   endpoint: elimination-half-life
   statistic: not-established
   value: null
@@ -127,8 +124,6 @@ PubMed/PMC review: retrieved 4 PubMed records linked from this Reddit index entr
 - id: vinpocetine-pk-15760651
   analyte: Vinpocetine
   route: intravenous
-  formulation: Study formulation as stated in the abstract
-  population: Population not specified in the returned PubMed abstract.
   endpoint: elimination-half-life
   statistic: not-established
   value: null
@@ -140,9 +135,6 @@ PubMed/PMC review: retrieved 4 PubMed records linked from this Reddit index entr
   modelEligible: false
 - id: vinpocetine-pk-11478921
   analyte: Vinpocetine
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
-  population: Population not specified in the returned PubMed abstract.
   endpoint: elimination-half-life
   statistic: not-established
   value: null

@@ -145,8 +145,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
 ```yaml
 - id: silybum-marianum-pk-25028567
   analyte: Silybum marianum
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
   population: nine healthy volunteers before and after exposure to a standardized milk thistle extract given thrice daily for 14 days
   endpoint: elimination-half-life
   statistic: not-established
@@ -232,7 +230,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
 
 ```yaml
 - id: reddit-index-silybum-marianum
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

@@ -20,7 +20,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-ampalex-cx-516
-  observationId: ampalex-cx-516-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -112,21 +111,7 @@ Two PubMed abstracts were retrieved; neither publication had rights-eligible PMC
 ## Pharmacokinetics
 
 ```yaml
-- id: ampalex-cx-516-reddit-pk-unestablished
-  analyte: Ampalex Cx 516
-  route: Not established from abstract
-  formulation: Study formulation not reported as a PK parameter
-  population: Not established
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated elimination or concentration parameter was reported in the
-    retrieved linked abstracts.
-  sourceId: reddit-index-ampalex-cx-516
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -248,7 +233,7 @@ Two PubMed abstracts were retrieved; neither publication had rights-eligible PMC
 
 ```yaml
 - id: reddit-index-ampalex-cx-516
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

@@ -84,9 +84,6 @@ PubMed/PMC review: retrieved 6 PubMed records linked from this Reddit index entr
 ```yaml
 - id: walnut-pk-25214070
   analyte: Walnut
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
-  population: Population not specified in the returned PubMed abstract.
   endpoint: elimination-half-life
   statistic: not-established
   value: null
@@ -98,8 +95,6 @@ PubMed/PMC review: retrieved 6 PubMed records linked from this Reddit index entr
   modelEligible: false
 - id: walnut-pk-22917841
   analyte: Walnut
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
   population: Walnuts, rich in omega fatty acids, have been shown to improve memory, cognition and neuronal effects related to oxidative stress (OS) and inflammation (INF) in animals and human trials.
   endpoint: elimination-half-life
   statistic: not-established
@@ -241,7 +236,7 @@ PubMed/PMC review: retrieved 6 PubMed records linked from this Reddit index entr
 
 ```yaml
 - id: reddit-index-walnut
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

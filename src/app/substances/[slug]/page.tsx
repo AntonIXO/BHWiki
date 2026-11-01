@@ -458,9 +458,9 @@ export default async function SubstancePage({ params }: Props) {
                         <Source substance={substance} id={observation.sourceId} />
                       </p>
                       <ContextList items={[
-                        { term: "Route / formulation", detail: `${observation.route} · ${observation.formulation}` },
+                        { term: "Route / formulation", detail: [observation.route, observation.formulation].filter(Boolean).join(" · ") },
                         { term: "Population", detail: observation.population },
-                      ]} />
+                      ].filter((item) => Boolean(item.detail))} />
                       <p>{observation.context}</p>
                     </CardContent>
                   </Card>

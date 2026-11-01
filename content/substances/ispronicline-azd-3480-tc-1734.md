@@ -21,7 +21,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-ispronicline-azd-3480-tc-1734
-  observationId: ispronicline-azd-3480-tc-1734-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -98,20 +97,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
 ## Pharmacokinetics
 
 ```yaml
-- id: ispronicline-azd-3480-tc-1734-reddit-pk-unestablished
-  analyte: Ispronicline (AZD-3480, TC-1734)
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-ispronicline-azd-3480-tc-1734
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -224,7 +210,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
 
 ```yaml
 - id: reddit-index-ispronicline-azd-3480-tc-1734
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

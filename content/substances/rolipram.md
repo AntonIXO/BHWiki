@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-rolipram
-  observationId: rolipram-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -96,20 +95,7 @@ Reviewed PubMed abstracts for PMID(s) 10633490, 22629087, 9844008. PMC citation 
 ## Pharmacokinetics
 
 ```yaml
-- id: rolipram-reddit-pk-unestablished
-  analyte: Rolipram
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-rolipram
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -253,7 +239,7 @@ Reviewed PubMed abstracts for PMID(s) 10633490, 22629087, 9844008. PMC citation 
 
 ```yaml
 - id: reddit-index-rolipram
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

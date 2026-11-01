@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-chewing-gum
-  observationId: chewing-gum-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -82,20 +81,7 @@ The linked evidence includes a 2016 11-person stress experiment, a 2009 crossove
 ## Pharmacokinetics
 
 ```yaml
-- id: chewing-gum-reddit-pk-unestablished
-  analyte: Chewing gum
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-chewing-gum
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -227,7 +213,7 @@ The linked evidence includes a 2016 11-person stress experiment, a 2009 crossove
 
 ```yaml
 - id: reddit-index-chewing-gum
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

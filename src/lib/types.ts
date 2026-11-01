@@ -43,7 +43,7 @@ export type DoseContext = {
   note: string; sourceId: string;
 };
 export type PKObservation = {
-  id: string; analyte: string; route: string; formulation: string; population: string;
+  id: string; analyte: string; route?: string; formulation?: string; population?: string;
   endpoint: "elimination-half-life"; statistic: "approximate" | "study-mean" | "reported-range" | "not-established";
   value: number | null; low: number | null; high: number | null; unit: "hours";
   context: string; sourceId: string; modelEligible: boolean;
@@ -77,7 +77,7 @@ export type Substance = {
   aliases: string[]; formula: string; molecularWeight: string; pubchemCid: number | null; smiles: string;
   category: string; tags: string[]; accent: string;
   evidenceNote: string; reviewedAt: string; editorialStatus: EditorialStatus;
-  halfLife: { label: string; low: number | null; high: number | null; context: string; sourceId: string; observationId: string };
+  halfLife: { label: string; low: number | null; high: number | null; context: string; sourceId: string; observationId?: string };
   pkObservations: PKObservation[];
   kinetics: { onset: string; peak: string; duration: string; bioavailability: string; metabolism: string; sourceId: string; timeline?: DurationRoute[]; markers?: TimingMarker[] };
   modifiers: { label: string; effect: string; detail: string; sourceId: string; observationId: string; factorType: "smoking" | "pregnancy" | "enzyme" | "genotype" | "other"; direction: "slower" | "faster" | "variable" }[];

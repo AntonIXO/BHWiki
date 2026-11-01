@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-self-esteem
-  observationId: self-esteem-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -84,20 +83,7 @@ PMC full-text retrieval for this page returned body text for 1/1 identified PMCI
 ## Pharmacokinetics
 
 ```yaml
-- id: self-esteem-pk-unestablished
-  analyte: Self-Esteem
-  route: Not assessed
-  formulation: No source-specific PK endpoint in linked abstracts
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: Linked PubMed abstracts did not establish a validated elimination half-life.
-  sourceId: reddit-index-self-esteem
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -184,7 +170,7 @@ PMC full-text retrieval for this page returned body text for 1/1 identified PMCI
 
 ```yaml
 - id: reddit-index-self-esteem
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

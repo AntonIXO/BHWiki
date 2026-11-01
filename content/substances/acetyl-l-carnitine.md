@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-acetyl-l-carnitine
-  observationId: acetyl-l-carnitine-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -141,21 +140,7 @@ Seven PubMed abstracts were retrieved; PMC full text was retrieved for PMIDs 118
 ## Pharmacokinetics
 
 ```yaml
-- id: acetyl-l-carnitine-reddit-pk-unestablished
-  analyte: Acetyl L Carnitine
-  route: Not established from abstract
-  formulation: Study formulation not reported as a PK parameter
-  population: Not established
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated elimination or concentration parameter was reported in the
-    retrieved linked abstracts.
-  sourceId: reddit-index-acetyl-l-carnitine
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -375,7 +360,7 @@ Seven PubMed abstracts were retrieved; PMC full text was retrieved for PMIDs 118
 
 ```yaml
 - id: reddit-index-acetyl-l-carnitine
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

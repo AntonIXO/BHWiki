@@ -20,7 +20,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-avena-sativa-oat-herb-extract
-  observationId: avena-sativa-oat-herb-extract-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -142,21 +141,7 @@ Four PubMed abstracts were retrieved; no rights-eligible PMC full text was avail
 ## Pharmacokinetics
 
 ```yaml
-- id: avena-sativa-oat-herb-extract-reddit-pk-unestablished
-  analyte: Avena Sativa Oat Herb Extract
-  route: Not established from abstract
-  formulation: Study formulation not reported as a PK parameter
-  population: Not established
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated elimination or concentration parameter was reported in the
-    retrieved linked abstracts.
-  sourceId: reddit-index-avena-sativa-oat-herb-extract
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -324,7 +309,7 @@ Four PubMed abstracts were retrieved; no rights-eligible PMC full text was avail
 
 ```yaml
 - id: reddit-index-avena-sativa-oat-herb-extract
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

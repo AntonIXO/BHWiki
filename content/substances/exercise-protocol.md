@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: Exercise is a non-pharmacologic exposure; the linked studies report no analyte half-life or pharmacokinetic endpoint.
   sourceId: reddit-index-exercise-protocol
-  observationId: exercise-protocol-pk-unestablished
 kinetics:
   onset: Exercise is an acute physiologic exposure rather than a drug with an onset pharmacokinetic parameter.
   peak: No analyte peak was measured in the linked exercise protocols.
@@ -170,20 +169,7 @@ Nine PubMed abstracts (PMIDs 24149158, 27146330, 27117045, 26950138, 26706889, 2
 ## Pharmacokinetics
 
 ```yaml
-- id: exercise-protocol-pk-unestablished
-  analyte: Exercise exposure
-  route: Non-pharmacologic exposure
-  formulation: Human exercise protocols
-  population: Linked exercise studies
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: Exercise has no drug elimination half-life; the linked publications measured BDNF, cognition, HRV, and fitness rather than pharmacokinetics.
-  sourceId: reddit-index-exercise-protocol
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -478,7 +464,7 @@ Nine PubMed abstracts (PMIDs 24149158, 27146330, 27117045, 26950138, 26706889, 2
 
 ```yaml
 - id: reddit-index-exercise-protocol
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

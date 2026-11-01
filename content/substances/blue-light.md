@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-blue-light
-  observationId: blue-light-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -126,20 +125,7 @@ Reviewed seven PubMed-linked abstracts and retrieved full text for PMIDs 2385964
 ## Pharmacokinetics
 
 ```yaml
-- id: blue-light-reddit-pk-unestablished
-  analyte: blue-light
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No elimination-half-life observation was established in the inspected linked publications.
-  sourceId: reddit-index-blue-light
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -281,7 +267,7 @@ Reviewed seven PubMed-linked abstracts and retrieved full text for PMIDs 2385964
 
 ```yaml
 - id: reddit-index-blue-light
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

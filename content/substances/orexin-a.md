@@ -213,7 +213,7 @@ PubMed abstracts retrieved for PMIDs 19624551 and 23516292; full-text retrieval 
 
 ```yaml
 - id: reddit-index-orexin-a
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

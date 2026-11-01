@@ -21,7 +21,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-ginseng-asian-panax-ginseng
-  observationId: ginseng-asian-panax-ginseng-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -173,20 +172,7 @@ PubMed MCP abstract review: 15 linked PubMed identifiers were retrieved for this
 ## Pharmacokinetics
 
 ```yaml
-- id: ginseng-asian-panax-ginseng-reddit-pk-unestablished
-  analyte: Ginseng (Asian, Panax ginseng)
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-ginseng-asian-panax-ginseng
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -683,7 +669,7 @@ PubMed MCP abstract review: 15 linked PubMed identifiers were retrieved for this
 
 ```yaml
 - id: reddit-index-ginseng-asian-panax-ginseng
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

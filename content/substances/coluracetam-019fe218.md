@@ -274,7 +274,7 @@ Reviewed three PubMed abstracts. No linked article had PMC full text available t
   insight: Canonical identity provenance retained for the existing article record.
   limitation: Catalog identity does not establish current efficacy, dosing, safety, or pharmacokinetics.
 - id: reddit-index-coluracetam-019fe218
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

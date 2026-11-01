@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-farampator
-  observationId: farampator-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -104,20 +103,6 @@ One Reddit-linked publication was resolved to PMID 17119538 and its PubMed abstr
 ## Pharmacokinetics
 
 ```yaml
-- id: farampator-reddit-pk-unestablished
-  analyte: Farampator
-  route: Not assessed
-  formulation: Identity-only record
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This record does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-farampator
-  modelEligible: false
 - id: farampator-plasma-levels-side-effects
   analyte: Farampator
   route: Oral
@@ -290,7 +275,7 @@ One Reddit-linked publication was resolved to PMID 17119538 and its PubMed abstr
 
 ```yaml
 - id: reddit-index-farampator
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

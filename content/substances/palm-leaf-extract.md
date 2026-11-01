@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-palm-leaf-extract
-  observationId: palm-leaf-extract-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -96,20 +95,7 @@ Reviewed PubMed abstracts for PMID(s) 23001939. No rights-eligible PMC full text
 ## Pharmacokinetics
 
 ```yaml
-- id: palm-leaf-extract-reddit-pk-unestablished
-  analyte: Palm Leaf Extract
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-palm-leaf-extract
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -202,7 +188,7 @@ Reviewed PubMed abstracts for PMID(s) 23001939. No rights-eligible PMC full text
 
 ```yaml
 - id: reddit-index-palm-leaf-extract
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

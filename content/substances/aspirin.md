@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-aspirin
-  observationId: aspirin-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -111,21 +110,7 @@ Three PubMed abstracts were retrieved; PMC full text was retrieved for PMID 2365
 ## Pharmacokinetics
 
 ```yaml
-- id: aspirin-reddit-pk-unestablished
-  analyte: Aspirin
-  route: Not established from abstract
-  formulation: Study formulation not reported as a PK parameter
-  population: Not established
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated elimination or concentration parameter was reported in the
-    retrieved linked abstracts.
-  sourceId: reddit-index-aspirin
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -308,7 +293,7 @@ Three PubMed abstracts were retrieved; PMC full text was retrieved for PMID 2365
 
 ```yaml
 - id: reddit-index-aspirin
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

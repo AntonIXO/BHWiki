@@ -387,7 +387,7 @@ Reviewed seven PubMed abstracts and retrieved complete PMC full text for PMC4754
   insight: Canonical identity provenance retained for the existing article record.
   limitation: Catalog identity does not establish current efficacy, dosing, safety, or pharmacokinetics.
 - id: reddit-index-curcumin
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

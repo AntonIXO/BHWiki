@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-luteolin
-  observationId: luteolin-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -82,20 +81,7 @@ PubMed MCP abstract review: 3 linked PubMed identifiers were retrieved for this 
 ## Pharmacokinetics
 
 ```yaml
-- id: luteolin-reddit-pk-unestablished
-  analyte: Luteolin
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-luteolin
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -160,7 +146,7 @@ PubMed MCP abstract review: 3 linked PubMed identifiers were retrieved for this 
 
 ```yaml
 - id: reddit-index-luteolin
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

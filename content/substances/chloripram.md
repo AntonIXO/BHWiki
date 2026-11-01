@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-chloripram
-  observationId: chloripram-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -126,20 +125,7 @@ PMID 24113523 reports chlorbipram doses of 0.075–0.6 mg/kg in mice, 0.5–1.5 
 ## Pharmacokinetics
 
 ```yaml
-- id: chloripram-reddit-pk-unestablished
-  analyte: Chloripram
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-chloripram
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -234,7 +220,7 @@ PMID 24113523 reports chlorbipram doses of 0.075–0.6 mg/kg in mice, 0.5–1.5 
 
 ```yaml
 - id: reddit-index-chloripram
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-cocoa-flavanols
-  observationId: cocoa-flavanols-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -141,20 +140,7 @@ The linked human evidence includes randomized crossover and parallel trials in 3
 ## Pharmacokinetics
 
 ```yaml
-- id: cocoa-flavanols-reddit-pk-unestablished
-  analyte: Cocoa Flavanols
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-cocoa-flavanols
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -304,7 +290,7 @@ The linked human evidence includes randomized crossover and parallel trials in 3
 
 ```yaml
 - id: reddit-index-cocoa-flavanols
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

@@ -384,7 +384,7 @@ Five PubMed abstracts (PMIDs 27457068, 22127270, 22389082, 26783711, and 1137487
 
 ```yaml
 - id: reddit-index-egcg-epigallocatechin-gallate
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

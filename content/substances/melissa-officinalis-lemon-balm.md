@@ -264,7 +264,7 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
 
 ```yaml
 - id: reddit-index-melissa-officinalis-lemon-balm
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

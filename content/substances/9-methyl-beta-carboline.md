@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-9-methyl-beta-carboline
-  observationId: 9-methyl-beta-carboline-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -82,20 +81,7 @@ Corpus import reviewed 1 PubMed abstracts and retained 1 linked source records. 
 ## Pharmacokinetics
 
 ```yaml
-- id: 9-methyl-beta-carboline-reddit-pk-unestablished
-  analyte: 9-Methyl-beta-carboline
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-9-methyl-beta-carboline
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -154,7 +140,7 @@ Corpus import reviewed 1 PubMed abstracts and retained 1 linked source records. 
 
 ```yaml
 - id: reddit-index-9-methyl-beta-carboline
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

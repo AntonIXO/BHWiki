@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-donepezil
-  observationId: donepezil-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -126,20 +125,7 @@ Reviewed all three linked PubMed abstracts and retrieved PMC full text for PMID 
 ## Pharmacokinetics
 
 ```yaml
-- id: donepezil-reddit-pk-unestablished
-  analyte: Donepezil
-  route: Oral
-  formulation: Human study exposures
-  population: Healthy volunteers in linked studies
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: The linked abstracts report doses and pharmacodynamic outcomes but no PK estimate.
-  sourceId: reddit-index-donepezil
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -292,7 +278,7 @@ Reviewed all three linked PubMed abstracts and retrieved PMC full text for PMID 
 
 ```yaml
 - id: reddit-index-donepezil
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

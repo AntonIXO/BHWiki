@@ -345,7 +345,7 @@ Reviewed both PubMed abstracts and retrieved PMC full text for PMID 26933803 (PM
   pmid: '25554623'
   doi: 10.1016/j.jpsychires.2014.12.007
 - id: reddit-index-d-serine
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

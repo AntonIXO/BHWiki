@@ -115,8 +115,6 @@ PMC full-text retrieval for this page returned body text for 3/3 identified PMCI
 ```yaml
 - id: valproate-pk-24733439
   analyte: Valproate
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
   population: 'METHODS AND RESULTS: VPA (500 mg/kg orally for 14 days in rats) evoked prominent hepatotoxicity that appeared as a marked rise (2- to 4-fold) in serum hepatic enzymes (γ-glutamyl transferase [γ-GT], alanine aminotransferase [ALT], and alkaline phosphatase [ALP]), increased hepatic lipid peroxide (LP'
   endpoint: elimination-half-life
   statistic: not-established
@@ -129,9 +127,6 @@ PMC full-text retrieval for this page returned body text for 3/3 identified PMCI
   modelEligible: false
 - id: valproate-pk-24868521
   analyte: Valproate
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
-  population: Population not specified in the returned PubMed abstract.
   endpoint: elimination-half-life
   statistic: not-established
   value: null
@@ -205,7 +200,7 @@ PMC full-text retrieval for this page returned body text for 3/3 identified PMCI
 
 ```yaml
 - id: reddit-index-valproate
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

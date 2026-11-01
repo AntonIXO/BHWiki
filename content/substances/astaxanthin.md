@@ -260,8 +260,7 @@ Reddit index source review: Three PubMed abstracts were retrieved; none had righ
   low: null
   high: null
   unit: hours
-  context: Mean 15.9 h (SD 5.3 h); formulation changed bioavailability by approximately
-    1.7–3.7-fold.
+  context: Mean 15.9 h (SD 5.3 h); formulation changed bioavailability by approximately 1.7–3.7-fold.
   modelEligible: true
 - sourceId: ref-osterlie-2000
   id: pk-osterlie-100mg-free
@@ -303,24 +302,7 @@ Reddit index source review: Three PubMed abstracts were retrieved; none had righ
   low: null
   high: null
   unit: hours
-  context: After-meal nonsmoker AUC0–168 was 7,219 ± 3,118 versus 2,968 ± 959 μg·h/L
-    before a meal; the abstract reports shorter elimination in smokers without numeric
-    values.
-  modelEligible: false
-- id: astaxanthin-pk-unestablished
-  analyte: Astaxanthin
-  route: Not established from abstract
-  formulation: Study formulation not reported as a PK parameter
-  population: Not established
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated elimination or concentration parameter was reported in the
-    retrieved linked abstracts.
-  sourceId: reddit-index-astaxanthin
+  context: After-meal nonsmoker AUC0–168 was 7,219 ± 3,118 versus 2,968 ± 959 μg·h/L before a meal; the abstract reports shorter elimination in smokers without numeric values.
   modelEligible: false
 ```
 
@@ -995,7 +977,7 @@ Reddit index source review: Three PubMed abstracts were retrieved; none had righ
   conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 - id: reddit-index-astaxanthin
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

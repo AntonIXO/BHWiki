@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-amisulpride
-  observationId: amisulpride-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -96,21 +95,7 @@ One PubMed abstract was retrieved; no rights-eligible PMC full text was availabl
 ## Pharmacokinetics
 
 ```yaml
-- id: amisulpride-reddit-pk-unestablished
-  analyte: Amisulpride
-  route: Not established from abstract
-  formulation: Study formulation not reported as a PK parameter
-  population: Not established
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated elimination or concentration parameter was reported in the
-    retrieved linked abstracts.
-  sourceId: reddit-index-amisulpride
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -241,7 +226,7 @@ One PubMed abstract was retrieved; no rights-eligible PMC full text was availabl
 
 ```yaml
 - id: reddit-index-amisulpride
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

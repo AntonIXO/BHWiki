@@ -127,8 +127,6 @@ PubMed/PMC review: retrieved 3 PubMed records linked from this Reddit index entr
   modelEligible: false
 - id: zinc-pk-20368377
   analyte: Zinc
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
   population: Hemoglobin, serum ferritin, and plasma zinc were estimated on a fasting blood sample.
   endpoint: elimination-half-life
   statistic: not-established

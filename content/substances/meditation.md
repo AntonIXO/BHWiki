@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-meditation
-  observationId: meditation-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -171,20 +170,7 @@ Reviewed 6 PubMed abstracts and retrieved full text for PMC3132583 (PMID 2048382
 ## Pharmacokinetics
 
 ```yaml
-- id: meditation-reddit-pk-unestablished
-  analyte: Meditation
-  route: Not applicable
-  formulation: Behavioral intervention
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: Meditation is not a chemical exposure; the reviewed publications report practice schedules and outcomes rather than drug pharmacokinetics.
-  sourceId: reddit-index-meditation
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -415,7 +401,7 @@ Reviewed 6 PubMed abstracts and retrieved full text for PMC3132583 (PMID 2048382
 
 ```yaml
 - id: reddit-index-meditation
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

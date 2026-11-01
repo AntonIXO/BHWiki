@@ -99,8 +99,6 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
 - id: s-adenosyl-l-methionine-pk-12420702
   analyte: S-adenosyl-L-methionine
   route: oral
-  formulation: Study formulation as stated in the abstract
-  population: Population not specified in the returned PubMed abstract.
   endpoint: elimination-half-life
   statistic: not-established
   value: null
@@ -192,7 +190,7 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
 
 ```yaml
 - id: reddit-index-s-adenosyl-l-methionine
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

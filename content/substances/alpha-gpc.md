@@ -213,18 +213,14 @@ Reddit index source review: Two PubMed abstracts were retrieved; neither publica
   analyte: Plasma free choline
   route: Oral
   formulation: 1,200 mg Alpha-GPC film-coated tablet or soft-gel reference
-  population: 48 healthy Korean men completing a fasting crossover bioequivalence
-    study
+  population: 48 healthy Korean men completing a fasting crossover bioequivalence study
   endpoint: elimination-half-life
   statistic: not-established
   value: null
   low: null
   high: null
   unit: hours
-  context: Baseline-corrected plasma choline was measured by LC-MS/MS. Mean AUC0-inf
-    was 3.428 versus 3.305 microgram-hours/mL, Cmax 0.365 versus 0.380 microgram/mL,
-    and Tmax 3.51 versus 3.85 hours across formulations. These are downstream choline
-    metrics; intact Alpha-GPC half-life was not measured.
+  context: Baseline-corrected plasma choline was measured by LC-MS/MS. Mean AUC0-inf was 3.428 versus 3.305 microgram-hours/mL, Cmax 0.365 versus 0.380 microgram/mL, and Tmax 3.51 versus 3.85 hours across formulations. These are downstream choline metrics; intact Alpha-GPC half-life was not measured.
   sourceId: min-2019
   modelEligible: false
 - id: alpha-gpc-free-choline-efsa
@@ -238,9 +234,7 @@ Reddit index source review: Two PubMed abstracts were retrieved; neither publica
   low: null
   high: null
   unit: hours
-  context: Plasma free choline increased from about 0.75 hours and reached a reported
-    maximum near 2 hours after 1,200 mg Alpha-GPC. This supports a downstream biomarker
-    response, not intact-parent absorption or elimination.
+  context: Plasma free choline increased from about 0.75 hours and reached a reported maximum near 2 hours after 1,200 mg Alpha-GPC. This supports a downstream biomarker response, not intact-parent absorption or elimination.
   sourceId: efsa-2026
   modelEligible: false
 - id: alpha-gpc-free-choline-marcus
@@ -254,25 +248,8 @@ Reddit index source review: Two PubMed abstracts were retrieved; neither publica
   low: null
   high: null
   unit: hours
-  context: Serum free choline rose in the 250 and 500 mg/day groups, while psychomotor
-    vigilance did not improve. A biomarker increase cannot be treated as cognitive
-    efficacy or as a parent-compound half-life.
+  context: Serum free choline rose in the 250 and 500 mg/day groups, while psychomotor vigilance did not improve. A biomarker increase cannot be treated as cognitive efficacy or as a parent-compound half-life.
   sourceId: marcus-2017
-  modelEligible: false
-- id: alpha-gpc-pk-unestablished
-  analyte: Alpha Gpc
-  route: Not established from abstract
-  formulation: Study formulation not reported as a PK parameter
-  population: Not established
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated elimination or concentration parameter was reported in the
-    retrieved linked abstracts.
-  sourceId: reddit-index-alpha-gpc
   modelEligible: false
 ```
 
@@ -867,7 +844,7 @@ Reddit index source review: Two PubMed abstracts were retrieved; neither publica
   conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 - id: reddit-index-alpha-gpc
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

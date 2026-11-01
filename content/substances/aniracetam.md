@@ -131,21 +131,6 @@ Reddit index source review: Four PubMed abstracts were retrieved; PMC4123976 was
   context: This identity import does not establish a pharmacokinetic observation.
   sourceId: optihealth-substance-019fe218-43e3-7c72-bd49-37f334347502
   modelEligible: false
-- id: aniracetam-pk-unestablished
-  analyte: Aniracetam
-  route: Not established from abstract
-  formulation: Study formulation not reported as a PK parameter
-  population: Not established
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated elimination or concentration parameter was reported in the
-    retrieved linked abstracts.
-  sourceId: reddit-index-aniracetam
-  modelEligible: false
 ```
 
 ## Modifiers
@@ -389,7 +374,7 @@ Reddit index source review: Four PubMed abstracts were retrieved; PMC4123976 was
   pmid: '25099639'
   doi: 10.1371/journal.pone.0104443
 - id: reddit-index-aniracetam
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

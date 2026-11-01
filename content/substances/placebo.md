@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-placebo
-  observationId: placebo-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -82,20 +81,7 @@ Reviewed PubMed abstracts for PMID(s) 21919588, 23234490, 25205943, 26421634, 26
 ## Pharmacokinetics
 
 ```yaml
-- id: placebo-reddit-pk-unestablished
-  analyte: Placebo
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-placebo
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -410,7 +396,7 @@ Reviewed PubMed abstracts for PMID(s) 21919588, 23234490, 25205943, 26421634, 26
 
 ```yaml
 - id: reddit-index-placebo
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

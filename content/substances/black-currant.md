@@ -218,7 +218,7 @@ Exact PMID/PMC mapping for the Reddit ScienceDirect link was not found in PubMed
 
 ```yaml
 - id: reddit-index-black-currant
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

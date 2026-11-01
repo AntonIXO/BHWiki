@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-desmopressin
-  observationId: desmopressin-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -111,20 +110,7 @@ Reviewed both linked PubMed abstracts. No PMC full text was available through th
 ## Pharmacokinetics
 
 ```yaml
-- id: desmopressin-reddit-pk-unestablished
-  analyte: Desmopressin
-  route: Intranasal
-  formulation: DDAVP
-  population: Healthy volunteers in linked studies
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: The linked abstracts report dose and memory outcomes but no PK estimate.
-  sourceId: reddit-index-desmopressin
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -226,7 +212,7 @@ Reviewed both linked PubMed abstracts. No PMC full text was available through th
 
 ```yaml
 - id: reddit-index-desmopressin
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

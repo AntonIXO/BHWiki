@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-citalopram
-  observationId: citalopram-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -96,20 +95,7 @@ The evidence supports a serotonin-related memory-consolidation signal under a si
 ## Pharmacokinetics
 
 ```yaml
-- id: citalopram-reddit-pk-unestablished
-  analyte: Citalopram
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-citalopram
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -218,7 +204,7 @@ The evidence supports a serotonin-related memory-consolidation signal under a si
 
 ```yaml
 - id: reddit-index-citalopram
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

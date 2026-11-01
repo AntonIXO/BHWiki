@@ -146,8 +146,6 @@ PMC full-text retrieval for this page returned body text for 4/4 identified PMCI
 ```yaml
 - id: tils-lllt-pk-27267860
   analyte: TILS (LLLT)
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
   population: 'OBJECTIVE/HYPOTHESIS: This randomized, sham-controlled proof-of-principle study is the first to test the hypothesis that augmentative LLLT will improve the effects of ABM among adults with elevated symptoms of depression.'
   endpoint: elimination-half-life
   statistic: not-established
@@ -160,8 +158,6 @@ PMC full-text retrieval for this page returned body text for 4/4 identified PMCI
   modelEligible: false
 - id: tils-lllt-pk-22850314
   analyte: TILS (LLLT)
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
   population: Specifically, we tested this hypothesis in rats using fear extinction memory, a form of memory modulated by prefrontal cortex activation.
   endpoint: elimination-half-life
   statistic: not-established
@@ -404,7 +400,7 @@ PMC full-text retrieval for this page returned body text for 4/4 identified PMCI
 
 ```yaml
 - id: reddit-index-tils-lllt
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

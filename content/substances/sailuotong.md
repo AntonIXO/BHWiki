@@ -101,7 +101,6 @@ PMC full-text retrieval for this page returned body text for 1/1 identified PMCI
 - id: sailuotong-pk-24761653
   analyte: SaiLuoTong
   route: intragastric
-  formulation: Study formulation as stated in the abstract
   population: An LC-MS/MS method was developed for the determination of 7 ginsenosides in rat plasma simultaneously.
   endpoint: elimination-half-life
   statistic: reported-range
@@ -194,7 +193,7 @@ PMC full-text retrieval for this page returned body text for 1/1 identified PMCI
 
 ```yaml
 - id: reddit-index-sailuotong
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

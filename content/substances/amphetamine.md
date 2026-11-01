@@ -327,8 +327,7 @@ Reddit index source review: Ten PubMed abstracts were retrieved; PMC full text w
   low: null
   high: null
   unit: hours
-  context: The citation identifies the compound rather than reporting an elimination
-    half-life.
+  context: The citation identifies the compound rather than reporting an elimination half-life.
   sourceId: pubchem
   modelEligible: false
 - id: dr-amphetamine-amphetamine-pk-1
@@ -400,21 +399,6 @@ Reddit index source review: Ten PubMed abstracts were retrieved; PMC full text w
   unit: hours
   context: Source-specific evidence is preserved in the cited source.
   sourceId: dr-amphetamine-s1
-  modelEligible: false
-- id: amphetamine-pk-unestablished
-  analyte: Amphetamine
-  route: Not established from abstract
-  formulation: Study formulation not reported as a PK parameter
-  population: Not established
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated elimination or concentration parameter was reported in the
-    retrieved linked abstracts.
-  sourceId: reddit-index-amphetamine
   modelEligible: false
 ```
 
@@ -1410,7 +1394,7 @@ Reddit index source review: Ten PubMed abstracts were retrieved; PMC full text w
   conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 - id: reddit-index-amphetamine
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

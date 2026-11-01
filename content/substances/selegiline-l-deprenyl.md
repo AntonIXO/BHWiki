@@ -99,9 +99,6 @@ PubMed/PMC review: retrieved 4 PubMed records linked from this Reddit index entr
 ```yaml
 - id: selegiline-l-deprenyl-pk-15279565
   analyte: Selegiline (l-deprenyl)
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
-  population: Population not specified in the returned PubMed abstract.
   endpoint: elimination-half-life
   statistic: not-established
   value: null
@@ -113,8 +110,6 @@ PubMed/PMC review: retrieved 4 PubMed records linked from this Reddit index entr
   modelEligible: false
 - id: selegiline-l-deprenyl-pk-3927932
   analyte: Selegiline (l-deprenyl)
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
   population: 12 healthy volunteers aged from 20-30 to determine psychomotor efficiency under the influence of the new antiparkinson drug selegiline (Eldepryl)
   endpoint: elimination-half-life
   statistic: not-established
@@ -127,8 +122,6 @@ PubMed/PMC review: retrieved 4 PubMed records linked from this Reddit index entr
   modelEligible: false
 - id: selegiline-l-deprenyl-pk-9330975
   analyte: Selegiline (l-deprenyl)
-  route: Route not stated in abstract
-  formulation: Study formulation as stated in the abstract
   population: 15 subjects in whom both MAO B and LCMRglu was measured, there was a trend (p < 0
   endpoint: elimination-half-life
   statistic: not-established
@@ -282,7 +275,7 @@ PubMed/PMC review: retrieved 4 PubMed records linked from this Reddit index entr
 
 ```yaml
 - id: reddit-index-selegiline-l-deprenyl
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

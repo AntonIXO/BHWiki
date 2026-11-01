@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-pitolisant
-  observationId: pitolisant-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -83,20 +82,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
 ## Pharmacokinetics
 
 ```yaml
-- id: pitolisant-reddit-pk-unestablished
-  analyte: Pitolisant
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-pitolisant
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -212,7 +198,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
 
 ```yaml
 - id: reddit-index-pitolisant
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

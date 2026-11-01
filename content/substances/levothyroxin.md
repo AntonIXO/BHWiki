@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-levothyroxin
-  observationId: levothyroxin-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -82,20 +81,7 @@ PubMed MCP abstract review covered 1 PMID-linked records for this Reddit-index e
 ## Pharmacokinetics
 
 ```yaml
-- id: levothyroxin-reddit-pk-unestablished
-  analyte: Levothyroxin
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-levothyroxin
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -176,7 +162,7 @@ PubMed MCP abstract review covered 1 PMID-linked records for this Reddit-index e
 
 ```yaml
 - id: reddit-index-levothyroxin
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

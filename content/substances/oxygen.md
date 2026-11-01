@@ -195,7 +195,7 @@ PubMed abstract retrieved for PMID 25703942; no PMC full text was available. The
 
 ```yaml
 - id: reddit-index-oxygen
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

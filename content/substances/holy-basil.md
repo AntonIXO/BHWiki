@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-holy-basil
-  observationId: holy-basil-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -82,20 +81,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
 ## Pharmacokinetics
 
 ```yaml
-- id: holy-basil-reddit-pk-unestablished
-  analyte: Holy Basil
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This corpus import does not establish a pharmacokinetic observation.
-  sourceId: reddit-index-holy-basil
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -222,7 +208,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
 
 ```yaml
 - id: reddit-index-holy-basil
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

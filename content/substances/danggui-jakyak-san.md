@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-danggui-jakyak-san
-  observationId: danggui-jakyak-san-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -82,32 +81,13 @@ Reviewed the single linked PubMed abstract. No PMC full text was available throu
 ## Pharmacokinetics
 
 ```yaml
-- id: danggui-jakyak-san-reddit-pk-unestablished
-  analyte: Danggui-Jakyak-San
-  route: Not established
-  formulation: Herbal prescription
-  population: No human PK population in linked record
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: The linked mouse LTP/memory abstract provides no pharmacokinetic estimate.
-  sourceId: reddit-index-danggui-jakyak-san
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
 
 ```yaml
-- label: ERK1/2 blockade
-  effect: Blocked DJS-induced ERK1/2/CREB/BDNF activation and LTP enhancement
-  detail: PD198306 was used as a pathway probe in mouse hippocampal slices; this is not a clinical interaction.
-  sourceId: reddit-pmid-26453932
-  observationId: danggui-jakyak-san-reddit-pk-unestablished
-  factorType: other
-  direction: variable
+[]
 ```
 
 ## Effects
@@ -198,7 +178,7 @@ Reviewed the single linked PubMed abstract. No PMC full text was available throu
 
 ```yaml
 - id: reddit-index-danggui-jakyak-san
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-bf-7
-  observationId: bf-7-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -82,20 +81,7 @@ Reviewed PMID 19627215 abstract. Two additional Reddit links were non-PubMed lea
 ## Pharmacokinetics
 
 ```yaml
-- id: bf-7-reddit-pk-unestablished
-  analyte: bf-7
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No elimination-half-life observation was established in the inspected linked publications.
-  sourceId: reddit-index-bf-7
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -199,7 +185,7 @@ Reviewed PMID 19627215 abstract. Two additional Reddit links were non-PubMed lea
 
 ```yaml
 - id: reddit-index-bf-7
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

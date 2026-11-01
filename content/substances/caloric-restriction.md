@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-caloric-restriction
-  observationId: caloric-restriction-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -111,20 +110,7 @@ Reviewed PubMed abstracts for PMIDs 21304942, 23565247 and 30968820. Only the CA
 ## Pharmacokinetics
 
 ```yaml
-- id: caloric-restriction-reddit-pk-unestablished
-  analyte: caloric-restriction
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No elimination-half-life observation was established in the inspected linked publications.
-  sourceId: reddit-index-caloric-restriction
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -238,7 +224,7 @@ Reviewed PubMed abstracts for PMIDs 21304942, 23565247 and 30968820. Only the CA
 
 ```yaml
 - id: reddit-index-caloric-restriction
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

@@ -19,7 +19,6 @@ halfLife:
   high: null
   context: No validated elimination observation was imported in this corpus pass.
   sourceId: reddit-index-bupropion
-  observationId: bupropion-reddit-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -96,20 +95,7 @@ Reviewed PMID 18489015 abstract. PMC4270475 was not rights-eligible for automate
 ## Pharmacokinetics
 
 ```yaml
-- id: bupropion-reddit-pk-unestablished
-  analyte: bupropion
-  route: Not assessed
-  formulation: Index entry
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No elimination-half-life observation was established in the inspected linked publications.
-  sourceId: reddit-index-bupropion
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -216,7 +202,7 @@ Reviewed PMID 18489015 abstract. PMC4270475 was not rights-eligible for automate
 
 ```yaml
 - id: reddit-index-bupropion
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index

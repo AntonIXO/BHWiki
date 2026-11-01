@@ -192,7 +192,7 @@ PubMed abstract PMID 23296837 was retrieved and used for the records below. The 
 
 ```yaml
 - id: reddit-index-eicosanoyl-5-hydroxytryptamide
-  title: Reddit Nootropics index entry for Black Currant
+  title: Reddit r/Nootropics community index
   authors: Reddit r/Nootropics community index
   year: 2026
   url: https://www.reddit.com/r/nootropics/wiki/index
