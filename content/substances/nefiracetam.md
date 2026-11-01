@@ -1,7 +1,7 @@
 ---
 slug: nefiracetam
 name: Nefiracetam
-subtitle: Source-backed identity stub.
+subtitle: Reddit index evidence trail.
 aliases: []
 formula: Not established
 molecularWeight: Not established
@@ -9,7 +9,7 @@ pubchemCid: null
 smiles: Not established
 category: Identity record
 tags: []
-accent: "#a9b993"
+accent: '#a9b993'
 reviewedAt: 2026-10-27
 editorialStatus: sourced-draft
 halfLife:
@@ -27,42 +27,43 @@ kinetics:
   metabolism: Not established
   sourceId: optihealth-substance-019fe218-43ed-73e7-8a69-12a62ccbc3d9
 x-shape:
-  - slug
-  - name
-  - subtitle
-  - summary
-  - description
-  - aliases
-  - formula
-  - molecularWeight
-  - pubchemCid
-  - smiles
-  - category
-  - tags
-  - accent
-  - evidenceNote
-  - reviewedAt
-  - editorialStatus
-  - halfLife
-  - pkObservations
-  - kinetics
-  - modifiers
-  - doses
-  - effects
-  - outcomes
-  - claims
-  - mechanisms
-  - cautions
-  - interactions
-  - experienceLinks
-  - references
-  - legal
+- slug
+- name
+- subtitle
+- summary
+- description
+- aliases
+- formula
+- molecularWeight
+- pubchemCid
+- smiles
+- category
+- tags
+- accent
+- evidenceNote
+- reviewedAt
+- editorialStatus
+- halfLife
+- pkObservations
+- kinetics
+- modifiers
+- doses
+- effects
+- outcomes
+- claims
+- mechanisms
+- cautions
+- interactions
+- experienceLinks
+- references
+- legal
+- externalWikiLinks
 x-order: 1108
 ---
 
 ## Summary
 
-Nefiracetam is recorded as a canonical identity from a source-backed OptiHealth candidate. This draft does not assert effects, dosing, safety, or efficacy.
+In a 12-week randomized, placebo-controlled, double-blind trial of poststroke apathy, nefiracetam 900 mg/day did not significantly outperform placebo. Only 13 participants were randomized, so the null result is imprecise and does not establish efficacy or safety for other uses. [reddit-pmid-26915605]
 
 ## Description
 
@@ -70,30 +71,44 @@ This page records the source-backed identity label Nefiracetam. The import prese
 
 ## Evidence note
 
-Identity only import: the cited sources support candidate identity provenance, not an evidence review. No biological relationship or clinical claim is asserted.
+PubMed abstract retrieved for PMID 26915605; no PMC full text was available. The abstract reports 13 randomized patients and no significant between-group difference at 12 weeks. Detailed adverse-event and funding data remain unreviewed.
 
 ## Doses
 
 ```yaml
-[]
+- label: Poststroke apathy trial
+  amount: 900 mg/day
+  quantity: 900
+  quantityMax: null
+  unit: mg
+  ingredient: Nefiracetam
+  formulation: Oral nefiracetam (route inferred from trial drug administration; abstract does not explicitly state route)
+  route: oral
+  frequency: daily
+  duration: 12 weeks
+  population: Patients 8–36 weeks after stroke with apathy
+  purpose: Research exposure; not a dosing recommendation.
+  sourceCategory: research
+  note: Randomized placebo-controlled trial; only 13 participants randomized.
+  sourceId: reddit-pmid-26915605
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: nefiracetam-identity-unassessed
+- id: nefiracetam-reddit-pk-unestablished
   analyte: Nefiracetam
-  route: Not assessed
-  formulation: Identity-only record
-  population: Not assessed
+  route: oral
+  formulation: Nefiracetam
+  population: Poststroke apathy trial participants
   endpoint: elimination-half-life
-  statistic: not-established
+  statistic: not-reported
   value: null
   low: null
   high: null
   unit: hours
-  context: This identity import does not establish a pharmacokinetic observation.
-  sourceId: optihealth-substance-019fe218-43ed-73e7-8a69-12a62ccbc3d9
+  context: The abstract gives dose and duration but no concentration-time or elimination parameters.
+  sourceId: reddit-pmid-26915605
   modelEligible: false
 ```
 
@@ -106,13 +121,35 @@ Identity only import: the cited sources support candidate identity provenance, n
 ## Effects
 
 ```yaml
-[]
+- id: reddit-nefiracetam-apathy-26915605
+  conceptId: apathy
+  name: Poststroke apathy
+  direction: Null
+  evidence: Human randomized trial
+  description: Apathy Scale scores decreased overall, but the between-group difference at week 12 was not significant.
+  sourceId: reddit-pmid-26915605
+  population: 13 randomized patients with recent stroke and apathy
+  exposure: Nefiracetam 900 mg/day for 12 weeks versus placebo
+  instrument: 14-item Apathy Scale
+  magnitude: Mean overall change −7.0 points (95% CI −14.6 to 0.6); between-group P > .14.
+  reportType: randomized-controlled-trial
 ```
 
 ## Outcomes
 
 ```yaml
-[]
+- id: reddit-nefiracetam-apathy-26915605
+  conceptId: apathy
+  name: Apathy severity
+  direction: Null
+  evidence: Human randomized trial
+  description: Nefiracetam was not more efficacious than placebo for poststroke apathy at 12 weeks.
+  sourceId: reddit-pmid-26915605
+  population: 13 randomized participants with poststroke apathy
+  exposure: 900 mg/day nefiracetam for 12 weeks
+  instrument: Apathy Scale
+  magnitude: No significant between-group difference; P > .14.
+  reportType: measured-assessment
 ```
 
 ## Mechanisms
@@ -124,13 +161,31 @@ Identity only import: the cited sources support candidate identity provenance, n
 ## Cautions
 
 ```yaml
-[]
+- title: Very small randomized sample
+  description: Only 13 participants were randomized; the authors identify sample size as the main limitation.
+  sourceId: reddit-pmid-26915605
+- title: Null efficacy result
+  description: The trial did not show nefiracetam superiority to placebo for poststroke apathy.
+  sourceId: reddit-pmid-26915605
 ```
 
 ## Claims
 
 ```yaml
-[]
+- id: reddit-claim-nefiracetam-26915605-0
+  assertion: Nefiracetam 900 mg/day did not significantly improve poststroke apathy versus placebo over 12 weeks in a 13-person randomized trial.
+  relation: no-difference
+  participants:
+  - entityId: substance:nefiracetam
+    role: intervention
+  - entityId: tag:apathy
+    role: reported endpoint
+  context: Patients 8–36 weeks after stroke; 13 randomized.
+  sourceIds:
+  - reddit-pmid-26915605
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Very small trial; no full-text safety review.
 ```
 
 ## Interactions
@@ -145,6 +200,14 @@ Identity only import: the cited sources support candidate identity provenance, n
 []
 ```
 
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Nefiracetam
+  title: Wikipedia
+```
+
 ## References
 
 ```yaml
@@ -156,6 +219,20 @@ Identity only import: the cited sources support candidate identity provenance, n
   kind: catalog-identity
   insight: The OptiHealth canonical catalog records this substance identity label.
   limitation: This catalog snapshot is not an independent evidence review and does not establish structure, dose, safety, or efficacy.
+- id: reddit-pmid-26915605
+  title: A Randomized, Placebo-Controlled, Double-Blind Efficacy Study of Nefiracetam to Treat Poststroke Apathy.
+  authors: Sergio E Starkstein, Simone Brockman, Katherine K Hatch, David G Bruce, Osvaldo P Almeida, Wendy A Davis, Robert G Robinson
+  year: 2016
+  url: https://pubmed.ncbi.nlm.nih.gov/26915605/
+  kind: PubMed publication
+  insight: 'BACKGROUND: To evaluate the efficacy of treatment with nefiracetam compared to placebo in poststroke apathy.'
+  limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
+  pmid: '26915605'
+  doi: 10.1016/j.jstrokecerebrovasdis.2016.01.032
+  funding: Not assessed in this corpus pass.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed in this corpus pass.
+  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal
