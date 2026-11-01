@@ -140,17 +140,36 @@ export async function getKnowledgeGraph(options: { focus?: string; limit?: numbe
     WITH focus_entity AS MATERIALIZED (
       SELECT id FROM bhwiki.entities WHERE slug = ${focus} AND status = 'published'
     ), candidates AS MATERIALIZED (
-      SELECT relationship_id FROM bhwiki.relationship_members
-      WHERE entity_id = (SELECT id FROM focus_entity) ORDER BY relationship_id LIMIT ${limit + 1}
+      SELECT m.relationship_id FROM bhwiki.relationship_members m
+      JOIN bhwiki.relationships r ON r.id = m.relationship_id
+      WHERE m.entity_id = (SELECT id FROM focus_entity) AND r.status = 'published'
+      ORDER BY m.relationship_id LIMIT ${limit + 1}
+    )
+    , relationship_sizes AS (
+      SELECT relationship_id, count(*)::integer AS member_count
+      FROM bhwiki.relationship_members
+      WHERE relationship_id IN (SELECT relationship_id FROM candidates)
+      GROUP BY relationship_id
     )
     SELECT r.id AS "dbId", r.slug AS id, r.label, r.relation, r.description, r.source_url AS "sourceUrl", r.source_urls AS "sourceUrls", r.directed_steps AS "directedSteps",
-      (SELECT count(*)::integer FROM bhwiki.relationship_members size WHERE size.relationship_id = r.id) AS "memberCount"
+      COALESCE(size.member_count, 0) AS "memberCount"
     FROM candidates c JOIN bhwiki.relationships r ON r.id = c.relationship_id
+      LEFT JOIN relationship_sizes size ON size.relationship_id = r.id
     ORDER BY r.label
   ` : await sql<EdgeRow[]>`
+    WITH candidates AS MATERIALIZED (
+      SELECT id AS relationship_id FROM bhwiki.relationships
+      WHERE status = 'published' ORDER BY label LIMIT ${limit + 1}
+    ), relationship_sizes AS (
+      SELECT relationship_id, count(*)::integer AS member_count
+      FROM bhwiki.relationship_members
+      WHERE relationship_id IN (SELECT relationship_id FROM candidates)
+      GROUP BY relationship_id
+    )
     SELECT r.id AS "dbId", r.slug AS id, r.label, r.relation, r.description, r.source_url AS "sourceUrl", r.source_urls AS "sourceUrls", r.directed_steps AS "directedSteps",
-      (SELECT count(*)::integer FROM bhwiki.relationship_members size WHERE size.relationship_id = r.id) AS "memberCount"
-    FROM bhwiki.relationships r WHERE r.status = 'published'
+      COALESCE(size.member_count, 0) AS "memberCount"
+    FROM candidates c JOIN bhwiki.relationships r ON r.id = c.relationship_id
+      LEFT JOIN relationship_sizes size ON size.relationship_id = r.id
     ORDER BY r.label LIMIT ${limit + 1}
   `;
   const candidates = selectGraphCandidates(edges, limit);
@@ -161,13 +180,13 @@ export async function getKnowledgeGraph(options: { focus?: string; limit?: numbe
     FROM bhwiki.relationship_members m JOIN bhwiki.entities e ON e.id = m.entity_id
     WHERE m.relationship_id IN ${sql(edgeIds)} ORDER BY m.relationship_id, m.entity_id
   ` : [];
-  const extras = await sql<{ id: string }[]>`
+  const extras = focus ? await sql<{ id: string }[]>`
     SELECT id FROM bhwiki.entities WHERE status = 'published'
     AND (${focus ?? null}::text IS NULL OR slug = ${focus ?? null}
       OR id IN (SELECT ac.article_id FROM bhwiki.article_concepts ac JOIN bhwiki.entities e ON e.id = ac.concept_id WHERE e.slug = ${focus ?? null})
       OR id IN (SELECT ac.concept_id FROM bhwiki.article_concepts ac JOIN bhwiki.entities e ON e.id = ac.article_id WHERE e.slug = ${focus ?? null}))
     ORDER BY (slug = ${focus ?? null}) DESC NULLS LAST, label LIMIT ${limit + 1}
-  `;
+  ` : [];
   const ids = [...new Set([...members.map((m) => m.entityId), ...extras.slice(0, limit).map((e) => e.id)])];
   if (!ids.length) return { substances: [], tags: [], hyperedges: [], truncated: false };
   const [articles, concepts] = await Promise.all([

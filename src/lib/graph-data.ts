@@ -1,7 +1,7 @@
 import type { CatalogSubstance, Hyperedge, KnowledgeGraphData, Tag } from "./types";
 
 export function graphLimit(limit = 200): number {
-  return Number.isFinite(limit) ? Math.max(1, Math.min(200, Math.floor(limit))) : 200;
+  return Number.isFinite(limit) ? Math.max(1, Math.min(5000, Math.floor(limit))) : 5000;
 }
 
 export function normalizeGraphFocus(focus?: string): string | undefined {
