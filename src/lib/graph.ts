@@ -41,6 +41,48 @@ export function connectedKnowledgeGraph(model: GraphModel, options: { authoredOn
   };
 }
 
+/** Keep the most useful connected networks for the initial overview. */
+export function largestConnectedKnowledgeGraph(model: GraphModel, componentCount = 1): GraphModel {
+  const adjacency = new Map(model.nodes.map((node) => [node.id, new Set<string>()]));
+  for (const edge of model.relationships) {
+    const [anchor, ...neighbors] = [edge.nodeId, ...edge.members];
+    for (const neighbor of neighbors) {
+      adjacency.get(anchor)?.add(neighbor);
+      adjacency.get(neighbor)?.add(anchor);
+    }
+  }
+  const seen = new Set<string>();
+  const components: Set<string>[] = [];
+  for (const node of model.nodes) {
+    if (seen.has(node.id)) continue;
+    const component = new Set<string>([node.id]);
+    const queue = [node.id];
+    seen.add(node.id);
+    while (queue.length) {
+      const current = queue.pop()!;
+      for (const neighbor of adjacency.get(current) ?? []) {
+        if (seen.has(neighbor)) continue;
+        seen.add(neighbor);
+        component.add(neighbor);
+        queue.push(neighbor);
+      }
+    }
+    components.push(component);
+  }
+  const visible = new Set(components
+    .sort((left, right) => right.size - left.size)
+    .slice(0, Math.max(1, componentCount))
+    .flatMap((component) => [...component]));
+  return {
+    nodes: model.nodes.filter((node) => visible.has(node.id)),
+    relationships: model.relationships.filter((edge) => visible.has(edge.nodeId)),
+    elements: model.elements.filter((element) => {
+      const data = element.data;
+      return data.source ? visible.has(data.source) && visible.has(data.target) : visible.has(data.id!);
+    }),
+  };
+}
+
 /** A hyperedge is a node in the incidence graph, never an invented pairwise claim. */
 export function buildKnowledgeGraph(input: GraphInput, tagKind?: TagKind): GraphModel {
   const ids = new Set<string>();

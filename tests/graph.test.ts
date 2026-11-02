@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildKnowledgeGraph, connectedKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, type GraphInput } from "../src/lib/graph";
+import { buildKnowledgeGraph, connectedKnowledgeGraph, largestConnectedKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, type GraphInput } from "../src/lib/graph";
 import { boundKnowledgeGraph } from "../src/lib/graph-data";
 import type { KnowledgeGraphData } from "../src/lib/types";
 
@@ -42,6 +42,14 @@ test("landing graph can omit isolated and classification-only records", () => {
   assert.ok(model.nodes.some((node) => node.id === "substance:a"));
   assert.ok(!model.nodes.some((node) => node.id === "tag:shared"));
   assert.ok(!model.nodes.some((node) => node.id === "substance:isolated"));
+  assert.ok(model.elements.every((element) => !element.data.source || model.nodes.some((node) => node.id === element.data.source)));
+});
+
+test("landing overview keeps the largest connected network", () => {
+  const model = largestConnectedKnowledgeGraph(connectedKnowledgeGraph(buildKnowledgeGraph(input), { authoredOnly: true }));
+  assert.ok(model.nodes.some((node) => node.id === "substance:a"));
+  assert.ok(model.nodes.some((node) => node.id === "substance:c"));
+  assert.equal(model.relationships.length, 1);
   assert.ok(model.elements.every((element) => !element.data.source || model.nodes.some((node) => node.id === element.data.source)));
 });
 

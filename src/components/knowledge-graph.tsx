@@ -6,7 +6,7 @@ import { useEffect, useId, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Expand, Maximize, Minimize, Minus, Plus, X } from "lucide-react";
 import type { Core, StylesheetStyle } from "cytoscape";
-import { buildKnowledgeGraph, connectedKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, type GraphModel, type GraphNode } from "@/lib/graph";
+import { buildKnowledgeGraph, connectedKnowledgeGraph, largestConnectedKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, type GraphModel, type GraphNode } from "@/lib/graph";
 import type { KnowledgeGraphData, TagKind } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { Prose } from "@/components/prose";
@@ -116,14 +116,16 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
   const repulsionLabelId = useId();
   const distanceLabelId = useId();
   const gravityLabelId = useId();
-  const sourceModel = useMemo(() => {
+  const completeModel = useMemo(() => {
     const built = buildKnowledgeGraph({ substances, tags, hyperedges });
-    if (compact || initialFocus) return compact ? previewKnowledgeGraph(built) : built;
-    // The landing view is a map of sourced connections. Classification-only
-    // and isolated catalog records remain discoverable through the library and
-    // focused graph links, but do not dominate the initial layout.
     return connectedKnowledgeGraph(built, { authoredOnly: true });
-  }, [substances, tags, hyperedges, compact, initialFocus]);
+  }, [substances, tags, hyperedges]);
+  const sourceModel = useMemo(() => {
+    if (initialFocus) return buildKnowledgeGraph({ substances, tags, hyperedges });
+    if (compact) return previewKnowledgeGraph(buildKnowledgeGraph({ substances, tags, hyperedges }));
+    // Keep the overview readable while allowing search to reach every sourced network.
+    return query.trim() ? completeModel : largestConnectedKnowledgeGraph(completeModel);
+  }, [completeModel, compact, initialFocus, query, substances, tags, hyperedges]);
   const model = useMemo(
     () => (tagKind ? buildKnowledgeGraph({ substances, tags, hyperedges }, tagKind) : sourceModel),
     [sourceModel, tagKind, substances, tags, hyperedges],
@@ -503,6 +505,11 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
       {!compact && truncated && (
         <p className="border-b border-border px-4 py-3 text-sm text-muted-foreground">
           Showing a bounded neighborhood. Focus a node to load its connections, or find another substance in the <Link href="/#library" className="underline underline-offset-4">library</Link>.
+        </p>
+      )}
+      {!compact && !truncated && !initialFocus && !query.trim() && (
+        <p className="border-b border-border px-4 py-3 text-sm text-muted-foreground">
+          Starting with the largest connected network. Search for any other substance or concept to open its connected network.
         </p>
       )}
 
