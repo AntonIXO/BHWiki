@@ -1,0 +1,45 @@
+# Automated editorial proposal
+
+- Proposal ID: proposal:c04f98c3997ce3cc1d41e1edbad9890c
+- Substance: histidine
+- Suggestion type: new-effect
+- Source: [Oligo-Modified Poly(β-Amino Ester)-Mediated mRNA Delivery: A Protocol for Gene Editing Applications.](https://pubmed.ncbi.nlm.nih.gov/42771318/)
+- PMID: 42771318
+- DOI: 10.1007/978-1-0716-5547-4_15
+- Published: 2027-01-01
+- Journal: not stated
+
+This file is a review proposal. It is not a published BHWiki article and must not be treated as medical guidance.
+
+## Embedded source snapshot
+
+This abstract snapshot is included so an offline reviewer can check abstract-level claims. It is not a substitute for full-text, version, retraction or licensing verification.
+
+### Abstract
+
+> Oligopeptide-modified poly(β-amino ester)s (OM-pBAEs) are polymer-based delivery systems that enable the encapsulation and intracellular transport of nucleic acids, including messenger RNA (mRNA) and mixtures of mRNA with DNA. OM-pBAEs form cationic nanoparticles (NPs) through electrostatic interactions with nucleic acids, protecting them from degradation and enhancing cellular uptake. Terminal oligopeptides composed of lysine, arginine, or histidine enhance polyplex stability, nucleic acid binding, and endosomal escape. This chapter describes a protocol for preparing OM-pBAE nanoparticles, including polymer synthesis, peptide modification, controlled mixing with nucleic acids to form polyplexes, precipitation in RNase-free water, stabilization with excipients, and optional freeze-drying for long-term storage. Nanoparticle formation occurs at a constant temperature of 25°C, with incubation to ensure reproducible self-assembly. Nanoparticles are characterized by using dynamic light scattering (DLS) to determine particle size, polydispersity, and surface charge, while nucleic acid encapsulation efficiency is assessed to evaluate loading capacity. This protocol provides a versatile, nonviral platform for efficient nucleic acid delivery, supporting applications such as gene-editing experiments.
+
+## Proposed structured change
+
+```json
+{
+  "effect": "Terminal oligopeptides composed of histidine enhance polyplex stability, nucleic acid binding, and endosomal escape in OM-pBAE nanoparticle delivery systems.",
+  "context": "mRNA and nucleic-acid delivery"
+}
+```
+
+## Model rationale
+
+The abstract identifies histidine-containing terminal oligopeptides as a component that enhances key properties of OM-pBAE polyplexes, although the statement applies collectively to lysine, arginine, or histidine.
+
+## Verbatim evidence from the abstract
+
+> Terminal oligopeptides composed of lysine, arginine, or histidine enhance polyplex stability, nucleic acid binding, and endosomal escape.
+
+## Human review
+
+- [ ] Open the canonical publication and inspect the strongest permitted full text.
+- [ ] Verify article version, retraction/correction state, population, exposure, comparator, outcome and limitations.
+- [ ] Verify funding/conflict and reuse rights; remove any unsupported field.
+- [ ] Apply changes manually to the appropriate Markdown source; do not edit this proposal into public content.
+- [ ] Run `bun run content:validate`, `bun run test`, and the normal publisher before merging.
