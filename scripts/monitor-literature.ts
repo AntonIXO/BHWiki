@@ -9,6 +9,7 @@ import {
   deduplicatePapers,
   europePmcPaper,
   extractQuotedEvidence,
+  matchWatchTerms,
   validateSuggestion,
   type LiteraturePaper,
   type SuggestionDraft,
@@ -57,12 +58,6 @@ async function fetchEuropePmc(query: string): Promise<Record<string, unknown>[]>
   if (!response.ok) throw new Error(`Europe PMC HTTP ${response.status}`);
   const body = await response.json() as EuropePmcResponse;
   return body.resultList?.result ?? [];
-}
-
-function termMatches(target: WatchTarget, result: Record<string, unknown>): string[] {
-  const text = `${result.title ?? ""} ${result.abstractText ?? result.abstract ?? ""}`.toLocaleLowerCase();
-  const terms = [target.name, ...target.aliases, ...target.tags, ...target.tags.map((tag) => tagLabels.get(tag) ?? "")];
-  return [...new Set(terms.filter((term) => term.length >= 2 && text.includes(term.toLocaleLowerCase())))];
 }
 
 async function callLlm(paper: LiteraturePaper): Promise<LlmResult> {
@@ -137,7 +132,7 @@ async function main(): Promise<void> {
     const query = buildEuropePmcQuery(target, tagLabels, since);
     const results = await fetchEuropePmc(query);
     for (const result of results) {
-      const matchedTerms = termMatches(target, result);
+      const matchedTerms = matchWatchTerms(target, tagLabels, result);
       if (!matchedTerms.length) continue;
       fetched.push(europePmcPaper(result, target, matchedTerms));
     }

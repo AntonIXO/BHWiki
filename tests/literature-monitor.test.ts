@@ -6,6 +6,7 @@ import {
   deduplicatePapers,
   europePmcPaper,
   extractQuotedEvidence,
+  matchWatchTerms,
   validateSuggestion,
   renderEditorialProposal,
   type LiteraturePaper,
@@ -152,4 +153,22 @@ test("maps a Europe PMC core record's journal and author names", () => {
   );
   assert.equal(paper.journal, "Food Chem Toxicol");
   assert.deepEqual(paper.authors, ["Santillo MF", "Sprando RL", "Yourick JJ"]);
+});
+
+test("matches watch terms once regardless of casing", () => {
+  const terms = matchWatchTerms(
+    { slug: "caffeine", name: "Caffeine", aliases: ["CYP1A2"], tags: ["stimulant", "cyp1a2"] },
+    new Map([["stimulant", "Stimulant"], ["cyp1a2", "CYP1A2"]]),
+    { title: "Caffeine as a stimulant", abstractText: "CYP1A2 metabolises caffeine." },
+  );
+  assert.deepEqual(terms, ["Caffeine", "CYP1A2", "stimulant"]);
+});
+
+test("merging duplicate papers keeps one matched term per case-insensitive value", () => {
+  const target = { slug: "caffeine", name: "Caffeine", aliases: [], tags: [] };
+  const [merged] = deduplicatePapers([
+    europePmcPaper({ pmid: "7", title: "A study", abstractText: "short" }, target, ["Caffeine"]),
+    europePmcPaper({ pmid: "7", title: "A study", abstractText: "longer abstract" }, target, ["caffeine", "sleep"]),
+  ]);
+  assert.deepEqual(merged.matchedTerms, ["Caffeine", "sleep"]);
 });

@@ -46,8 +46,14 @@ function escapeTerm(value: string): string {
   return `"${normalizeSpace(value).toLocaleLowerCase().replaceAll('"', "\\\"")}"`;
 }
 
+/** Drop short terms and case-insensitive repeats, keeping the first casing seen. */
 function uniqueTerms(values: string[]): string[] {
-  return [...new Set(values.map(normalizeSpace).filter((value) => value.length >= 2))];
+  const byKey = new Map<string, string>();
+  for (const value of values.map(normalizeSpace)) {
+    const key = value.toLocaleLowerCase();
+    if (value.length >= 2 && !byKey.has(key)) byKey.set(key, value);
+  }
+  return [...byKey.values()];
 }
 
 /** Build a conservative TITLE_ABS query; no generic tag is queried without a substance. */
@@ -57,6 +63,13 @@ export function buildEuropePmcQuery(target: WatchTarget, tagLabels: Map<string, 
   const substances = substanceTerms.map(escapeTerm).join(" OR ");
   const tags = tagTerms.length ? ` AND TITLE_ABS:(${tagTerms.map(escapeTerm).join(" OR ")})` : "";
   return `TITLE_ABS:(${substances})${tags} AND FIRST_PDATE:[${since} TO *]`;
+}
+
+/** Watch terms (name, aliases, tag ids and labels) that occur in a record's title or abstract. */
+export function matchWatchTerms(target: WatchTarget, tagLabels: Map<string, string>, result: Record<string, unknown>): string[] {
+  const text = normalizeSpace(`${result.title ?? ""} ${result.abstractText ?? result.abstract ?? ""}`).toLocaleLowerCase();
+  const candidates = [target.name, ...target.aliases, ...target.tags, ...target.tags.map((tag) => tagLabels.get(tag) ?? "")];
+  return uniqueTerms(candidates).filter((term) => text.includes(term.toLocaleLowerCase()));
 }
 
 export function canonicalPaperId(paper: Pick<LiteraturePaper, "pmid" | "doi" | "title" | "publishedOn" | "id">): string {
@@ -76,7 +89,7 @@ function mergePaper(first: LiteraturePaper, second: LiteraturePaper): Literature
     pmid: first.pmid ?? second.pmid,
     pmcid: first.pmcid ?? second.pmcid,
     matchedSubstances: [...new Set([...first.matchedSubstances, ...second.matchedSubstances])],
-    matchedTerms: [...new Set([...first.matchedTerms, ...second.matchedTerms])],
+    matchedTerms: uniqueTerms([...first.matchedTerms, ...second.matchedTerms]),
     authors: [...new Set([...first.authors, ...second.authors])],
     raw: { ...first.raw, ...second.raw },
   };
