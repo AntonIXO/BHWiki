@@ -79,6 +79,11 @@ export function canonicalPaperId(paper: Pick<LiteraturePaper, "pmid" | "doi" | "
   return `title:${createHash("sha256").update(basis).digest("hex").slice(0, 24)}`;
 }
 
+/** File stem for a spooled paper or suggestion id. `:` → `_` keeps existing spool names; URI-encoding the rest stops a DOI's `/` from creating directories or folding two DOIs into one file. */
+export function spoolFileStem(id: string): string {
+  return encodeURIComponent(id.replaceAll(":", "_"));
+}
+
 function mergePaper(first: LiteraturePaper, second: LiteraturePaper): LiteraturePaper {
   const preferred = second.abstract.length > first.abstract.length ? second : first;
   return {

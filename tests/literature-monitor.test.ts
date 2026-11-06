@@ -7,6 +7,7 @@ import {
   europePmcPaper,
   extractQuotedEvidence,
   matchWatchTerms,
+  spoolFileStem,
   validateSuggestion,
   renderEditorialProposal,
   type LiteraturePaper,
@@ -171,4 +172,11 @@ test("merging duplicate papers keeps one matched term per case-insensitive value
     europePmcPaper({ pmid: "7", title: "A study", abstractText: "longer abstract" }, target, ["caffeine", "sleep"]),
   ]);
   assert.deepEqual(merged.matchedTerms, ["Caffeine", "sleep"]);
+});
+
+test("spool file stems keep existing names and keep DOI slashes out of paths", () => {
+  assert.equal(spoolFileStem("pmid:42880479"), "pmid_42880479");
+  assert.equal(spoolFileStem("suggestion:abc123"), "suggestion_abc123");
+  assert.equal(spoolFileStem("doi:10.64898/2026.09.30.26363751"), "doi_10.64898%2F2026.09.30.26363751");
+  assert.notEqual(spoolFileStem("doi:10.1000/a_b"), spoolFileStem("doi:10.1000/a/b"));
 });

@@ -8,7 +8,7 @@
 
 **Spec reference:** Review comment on PR #1: <https://github.com/AntonIXO/BHWiki/pull/1#issuecomment-6697648522>.
 
-**Out of scope:** The raw Europe PMC payload with author emails in committed manifests. The worker that writes `data/research/auto-proposals/manifest-*.json` is not in this repository, so that fix belongs in the worker.
+**Handled elsewhere:** Committed manifests embed the raw Europe PMC payload, including author emails. That manifest writer, and the copy of the mapping code that produced the PR #1 artifacts, live in `AntonIXO/bhwiki-literature-monitor` and are fixed there.
 
 ---
 
@@ -119,8 +119,44 @@ git commit -m "fix(literature): dedupe matched terms case-insensitively"
 
 ---
 
+## Task 3: Spool file names for DOI ids
+
+Found during the verification smoke run. `saveSpool` and `review-literature.ts` replaced only `:` in ids, so for a DOI-only paper (`doi:10.64898/2026.09.30.26363751`) the `/` became a subdirectory and the write failed with ENOENT. An id containing `../` could also escape the spool directory.
+
+**Files**
+- Modify: `src/lib/literature-monitor.ts` (new export `spoolFileStem`)
+- Modify: `scripts/monitor-literature.ts` (`saveSpool`), `scripts/review-literature.ts` (drop `filenameForId`)
+- Test: `tests/literature-monitor.test.ts`
+
+**Produces:** `spoolFileStem(id)` maps `:` to `_` (existing `pmid_…`, `title_…`, `suggestion_…` names are unchanged) and URI-encodes everything else, so `/` becomes `%2F`. The writer and the reader share this one function.
+
+### Step 1: Write the failing test
+
+```ts
+test("spool file stems keep existing names and keep DOI slashes out of paths", () => {
+  assert.equal(spoolFileStem("pmid:42880479"), "pmid_42880479");
+  assert.equal(spoolFileStem("suggestion:abc123"), "suggestion_abc123");
+  assert.equal(spoolFileStem("doi:10.64898/2026.09.30.26363751"), "doi_10.64898%2F2026.09.30.26363751");
+  assert.notEqual(spoolFileStem("doi:10.1000/a_b"), spoolFileStem("doi:10.1000/a/b"));
+});
+```
+
+### Step 2: Confirm the test fails
+
+`bunx tsx --test tests/literature-monitor.test.ts` should fail because `spoolFileStem` is not exported.
+
+### Step 3: Minimal implementation
+
+`spoolFileStem = (id) => encodeURIComponent(id.replaceAll(":", "_"))`. Replace every `id.replaceAll(":", "_")` in `saveSpool` and every `filenameForId` call in `review-literature.ts` with it.
+
+### Step 4: Confirm the test passes, then smoke both scripts
+
+Run the monitor with `--no-llm --spool=<tmp>` over substances that return DOI-only preprints. Then add a suggestion for a DOI paper and run `content:research-review -- --id=… --decision=approve --spool=<tmp>`. The review should find the paper and write the proposal.
+
+---
+
 ## Verification
 
 1. `bun run test` passes in full.
 2. `bunx tsc --noEmit` passes.
-3. Smoke run: `bun run content:research-monitor -- --max-substances=1 --limit=5 --no-llm --spool=<tmp>`. The spooled papers should have a non-null `journal`, author names without a trailing period, and no case-duplicate `matchedTerms`.
+3. Smoke run: `bun run content:research-monitor -- --max-substances=3 --limit=10 --no-llm --since=2026-09-01 --spool=<tmp>`. The run should finish, and the spooled papers should have a non-null `journal` when the source has one, author names without a trailing period, no case-duplicate `matchedTerms`, and no nested directories under `papers/`.
