@@ -172,6 +172,17 @@ export function renderEditorialProposal(input: {
   ].join("\n");
 }
 
+function stringField(value: unknown): string | null {
+  return typeof value === "string" && value.trim() ? normalizeSpace(value) : null;
+}
+
+/** `resultType=lite` exposes `journalTitle`; `resultType=core` nests the journal under `journalInfo.journal`. */
+function europePmcJournal(result: Record<string, unknown>): string | null {
+  const journalInfo = result.journalInfo as { journal?: Record<string, unknown> } | undefined;
+  const journal = journalInfo?.journal ?? {};
+  return stringField(result.journalTitle) ?? stringField(journal.medlineAbbreviation) ?? stringField(journal.isoabbreviation) ?? stringField(journal.title);
+}
+
 export function europePmcPaper(result: Record<string, unknown>, target: WatchTarget, matchedTerms: string[]): LiteraturePaper {
   const pmid = typeof result.pmid === "string" ? result.pmid : null;
   const doi = typeof result.doi === "string" ? result.doi : null;
@@ -186,8 +197,8 @@ export function europePmcPaper(result: Record<string, unknown>, target: WatchTar
     pmid,
     pmcid,
     publishedOn: typeof result.firstPublicationDate === "string" ? result.firstPublicationDate : null,
-    journal: typeof result.journalTitle === "string" ? result.journalTitle : null,
-    authors: typeof result.authorString === "string" ? result.authorString.split(",").map(normalizeSpace).filter(Boolean) : [],
+    journal: europePmcJournal(result),
+    authors: typeof result.authorString === "string" ? result.authorString.replace(/\.\s*$/, "").split(",").map(normalizeSpace).filter(Boolean) : [],
     sourceKind: "europepmc",
     matchedSubstances: [target.slug],
     matchedTerms,

@@ -4,6 +4,7 @@ import {
   buildEuropePmcQuery,
   canonicalPaperId,
   deduplicatePapers,
+  europePmcPaper,
   extractQuotedEvidence,
   validateSuggestion,
   renderEditorialProposal,
@@ -127,4 +128,28 @@ test("renders an approval artifact without silently publishing it", () => {
   assert.match(markdown, /Status: \*\*approved\*\*/);
   assert.match(markdown, /Caffeine improved reaction time by 4 ms/);
   assert.match(markdown, /Apply the change manually/);
+});
+
+test("maps a Europe PMC core record's journal and author names", () => {
+  const paper = europePmcPaper(
+    {
+      pmid: "42880479",
+      doi: "10.1016/j.fct.2026.116460",
+      title: "Evaluating the biological effects of caffeine-related compounds methylliberine and theacrine.",
+      authorString: "Santillo MF, Sprando RL, Yourick JJ.",
+      journalInfo: {
+        journal: {
+          title: "Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association",
+          medlineAbbreviation: "Food Chem Toxicol",
+          isoabbreviation: "Food Chem Toxicol",
+        },
+      },
+      abstractText: "Methylliberine and theacrine were profiled.",
+      firstPublicationDate: "2026-10-15",
+    },
+    { slug: "caffeine", name: "Caffeine", aliases: [], tags: [] },
+    ["Caffeine"],
+  );
+  assert.equal(paper.journal, "Food Chem Toxicol");
+  assert.deepEqual(paper.authors, ["Santillo MF", "Sprando RL", "Yourick JJ"]);
 });
