@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildKnowledgeGraph, connectedKnowledgeGraph, largestConnectedKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, type GraphInput } from "../src/lib/graph";
+import { buildKnowledgeGraph, connectedKnowledgeGraph, largestConnectedKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, withoutGraphMembers, type GraphInput } from "../src/lib/graph";
 import { boundKnowledgeGraph } from "../src/lib/graph-data";
 import type { KnowledgeGraphData } from "../src/lib/types";
 
@@ -51,6 +51,18 @@ test("landing overview keeps the largest connected network", () => {
   assert.ok(model.nodes.some((node) => node.id === "substance:c"));
   assert.equal(model.relationships.length, 1);
   assert.ok(model.elements.every((element) => !element.data.source || model.nodes.some((node) => node.id === element.data.source)));
+});
+
+test("curated graph can remove noisy context assertions without orphaning endpoints", () => {
+  const model = buildKnowledgeGraph({
+    substances: [{ slug: "a", name: "Alpha", summary: "First", aliases: [], tags: ["age"] }, { slug: "b", name: "Beta", summary: "Second", aliases: [], tags: [] }],
+    tags: [{ id: "age", label: "Age context", kind: "exposure", description: "Age context" }],
+    hyperedges: [{ id: "age-claim", label: "Age claim", relation: "pharmacokinetics", description: "Context", sourceUrl: "https://example.org", members: ["substance:a", "tag:age"], memberRoles: { "substance:a": "probe", "tag:age": "context" } }],
+  });
+  const filtered = withoutGraphMembers(model, ["tag:age"]);
+  assert.equal(filtered.relationships.length, 0);
+  assert.equal(filtered.nodes.length, 0);
+  assert.equal(filtered.elements.length, 0);
 });
 
 test("rejects dangling members, duplicate IDs, and degenerate hyperedges", () => {

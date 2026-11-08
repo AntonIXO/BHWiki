@@ -180,13 +180,22 @@ export async function getKnowledgeGraph(options: { focus?: string; limit?: numbe
     FROM bhwiki.relationship_members m JOIN bhwiki.entities e ON e.id = m.entity_id
     WHERE m.relationship_id IN ${sql(edgeIds)} ORDER BY m.relationship_id, m.entity_id
   ` : [];
+  // The un-focused graph is the catalog overview. Load the catalog entities
+  // independently of relationship membership so substances with no authored
+  // claim still appear in the normal view. Focused graphs stay bounded to the
+  // requested neighborhood and its classification neighbors.
   const extras = focus ? await sql<{ id: string }[]>`
     SELECT id FROM bhwiki.entities WHERE status = 'published'
     AND (${focus ?? null}::text IS NULL OR slug = ${focus ?? null}
       OR id IN (SELECT ac.article_id FROM bhwiki.article_concepts ac JOIN bhwiki.entities e ON e.id = ac.concept_id WHERE e.slug = ${focus ?? null})
       OR id IN (SELECT ac.concept_id FROM bhwiki.article_concepts ac JOIN bhwiki.entities e ON e.id = ac.article_id WHERE e.slug = ${focus ?? null}))
     ORDER BY (slug = ${focus ?? null}) DESC NULLS LAST, label LIMIT ${limit + 1}
-  ` : [];
+  ` : await sql<{ id: string }[]>`
+    SELECT id FROM bhwiki.entities
+    WHERE status = 'published'
+    ORDER BY (entity_type = 'substance') DESC, label
+    LIMIT ${limit + 1}
+  `;
   const ids = [...new Set([...members.map((m) => m.entityId), ...extras.slice(0, limit).map((e) => e.id)])];
   if (!ids.length) return { substances: [], tags: [], hyperedges: [], truncated: false };
   const [articles, concepts] = await Promise.all([

@@ -18,6 +18,24 @@ export type GraphNode = {
 };
 export type GraphModel = { nodes: GraphNode[]; relationships: (Hyperedge & { nodeId: string })[]; elements: ElementDefinition[] };
 
+/** Remove authored assertions that contain excluded context members. */
+export function withoutGraphMembers(model: GraphModel, excludedMembers: Iterable<string>): GraphModel {
+  const excluded = new Set(excludedMembers);
+  const relationships = model.relationships.filter((edge) => !edge.members.some((member) => excluded.has(member)));
+  const relationshipIds = new Set(relationships.map((edge) => edge.nodeId));
+  const visible = new Set(relationships.flatMap((edge) => [edge.nodeId, ...edge.members]));
+  return {
+    nodes: model.nodes.filter((node) => visible.has(node.id)),
+    relationships,
+    elements: model.elements.filter((element) => {
+      const data = element.data;
+      return data.source
+        ? relationshipIds.has(data.source) && visible.has(data.target)
+        : visible.has(data.id!);
+    }),
+  };
+}
+
 /**
  * Keep only nodes that participate in a sourced relationship. The catalog also
  * contains identity-only and classification-only records; rendering those as
