@@ -80,6 +80,21 @@ export const graphStyle: StylesheetStyle[] = [
     style: { "font-weight": 600, "font-size": 13 },
   },
   {
+    selector: 'node[kind = "substance"][catalogOnly]',
+    style: {
+      label: "",
+      width: 9,
+      height: 9,
+      "background-color": "#9ab8a0",
+      "border-color": "#6c9475",
+      "border-width": 1,
+    },
+  },
+  {
+    selector: "node[catalogOnly]:selected",
+    style: { label: "data(label)", width: 126, height: 46, "border-width": 3 },
+  },
+  {
     selector: 'node[kind = "relationship"]',
     style: {
       shape: "diamond",

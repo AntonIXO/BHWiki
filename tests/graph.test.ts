@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildKnowledgeGraph, connectedKnowledgeGraph, largestConnectedKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, withoutGraphMembers, type GraphInput } from "../src/lib/graph";
+import { buildKnowledgeGraph, catalogKnowledgeGraph, connectedKnowledgeGraph, largestConnectedKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, withoutGraphMembers, type GraphInput } from "../src/lib/graph";
 import { boundKnowledgeGraph } from "../src/lib/graph-data";
 import type { KnowledgeGraphData } from "../src/lib/types";
 
@@ -63,6 +63,19 @@ test("curated graph can remove noisy context assertions without orphaning endpoi
   assert.equal(filtered.relationships.length, 0);
   assert.equal(filtered.nodes.length, 0);
   assert.equal(filtered.elements.length, 0);
+});
+
+test("catalog graph keeps every substance while dropping membership groups", () => {
+  const model = buildKnowledgeGraph({
+    ...input,
+    substances: [...input.substances, { slug: "isolated", name: "Isolated", summary: "", aliases: [], tags: [] }],
+  });
+  const catalog = catalogKnowledgeGraph(model, ["tag:shared"]);
+  assert.deepEqual(catalog.nodes.filter((node) => node.kind === "substance").map((node) => node.id), ["substance:a", "substance:b", "substance:c", "substance:isolated"]);
+  assert.equal(catalog.nodes.find((node) => node.id === "substance:isolated")?.catalogOnly, true);
+  assert.equal(catalog.relationships.length, 1);
+  assert.equal(catalog.relationships[0].id, "three-way");
+  assert.ok(catalog.elements.some((element) => element.data.source === "relationship:three-way"));
 });
 
 test("rejects dangling members, duplicate IDs, and degenerate hyperedges", () => {

@@ -15,6 +15,8 @@ export type GraphNode = {
   sourceUrl?: string;
   sourceUrls?: string[];
   searchText: string;
+  /** Catalog-only substances are shown as lightweight overview points. */
+  catalogOnly?: boolean;
 };
 export type GraphModel = { nodes: GraphNode[]; relationships: (Hyperedge & { nodeId: string })[]; elements: ElementDefinition[] };
 
@@ -32,6 +34,40 @@ export function withoutGraphMembers(model: GraphModel, excludedMembers: Iterable
       return data.source
         ? relationshipIds.has(data.source) && visible.has(data.target)
         : visible.has(data.id!);
+    }),
+  };
+}
+
+/** Keep every substance while omitting editorial classification groups. */
+export function catalogKnowledgeGraph(model: GraphModel, excludedMembers: Iterable<string> = []): GraphModel {
+  const excluded = new Set(excludedMembers);
+  const relationships = model.relationships.filter((edge) =>
+    edge.relation !== "tag membership" && !edge.members.some((member) => excluded.has(member)),
+  );
+  const relationshipIds = new Set(relationships.map((edge) => edge.nodeId));
+  const substanceIds = new Set(model.nodes.filter((node) => node.kind === "substance").map((node) => node.id));
+  const visible = new Set([
+    ...model.nodes.filter((node) => node.kind === "substance").map((node) => node.id),
+    ...relationships.flatMap((edge) => [edge.nodeId, ...edge.members]),
+  ]);
+  const authoredNodeIds = new Set(relationships.flatMap((edge) => [edge.nodeId, ...edge.members]));
+  const nodes = model.nodes
+    .filter((node) => visible.has(node.id))
+    .map((node) => node.kind === "substance" && !authoredNodeIds.has(node.id)
+      ? { ...node, catalogOnly: true }
+      : node);
+  const nodeIds = new Set(nodes.map((node) => node.id));
+  const nodesById = new Map(nodes.map((node) => [node.id, node]));
+  return {
+    nodes,
+    relationships,
+    elements: model.elements.flatMap((element) => {
+      const data = element.data;
+      if (data.source) return relationshipIds.has(data.source) && nodeIds.has(data.target) ? [element] : [];
+      const node = nodesById.get(data.id!);
+      return node && (substanceIds.has(data.id!) || relationshipIds.has(data.id!) || nodeIds.has(data.id!))
+        ? [{ data: node }]
+        : [];
     }),
   };
 }

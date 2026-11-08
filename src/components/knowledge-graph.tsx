@@ -6,7 +6,7 @@ import { useEffect, useId, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Expand, Maximize, Minimize, Minus, Plus, X } from "lucide-react";
 import type { Core, StylesheetStyle } from "cytoscape";
-import { buildKnowledgeGraph, connectedKnowledgeGraph, largestConnectedKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, withoutGraphMembers, type GraphModel, type GraphNode } from "@/lib/graph";
+import { buildKnowledgeGraph, catalogKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, type GraphModel, type GraphNode } from "@/lib/graph";
 import type { KnowledgeGraphData, TagKind } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { Prose } from "@/components/prose";
@@ -126,33 +126,22 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
       .map((tag) => `tag:${tag.id}`),
     [tags],
   );
-  const curatedModel = useMemo(
-    () => largestConnectedKnowledgeGraph(
-      connectedKnowledgeGraph(
-        withoutGraphMembers(fullModel, excludedContextIds),
-        { authoredOnly: true },
-      ),
-    ),
-    [excludedContextIds, fullModel],
-  );
-  const searchableModel = useMemo(
-    () => connectedKnowledgeGraph(
-      withoutGraphMembers(fullModel, excludedContextIds),
-      { authoredOnly: true },
-    ),
+  const catalogModel = useMemo(
+    () => catalogKnowledgeGraph(fullModel, excludedContextIds),
     [excludedContextIds, fullModel],
   );
   const sourceModel = useMemo(() => {
     if (initialFocus) return fullModel;
     if (compact) return previewKnowledgeGraph(fullModel);
-    // The landing graph shows authored relationships only. Classification-only
-    // catalog records stay searchable through focused views without turning the
-    // default canvas into a dense index dump.
-    return query.trim() ? searchableModel : curatedModel;
-  }, [compact, curatedModel, fullModel, initialFocus, query, searchableModel]);
+    // The landing graph keeps every substance while dropping classification-only
+    // membership groups that would overwhelm the layout.
+    return catalogModel;
+  }, [catalogModel, compact, fullModel, initialFocus]);
   const model = useMemo(
-    () => (tagKind ? buildKnowledgeGraph({ substances, tags, hyperedges }, tagKind) : sourceModel),
-    [sourceModel, tagKind, substances, tags, hyperedges],
+    () => (tagKind
+      ? catalogKnowledgeGraph(buildKnowledgeGraph({ substances, tags, hyperedges }, tagKind), excludedContextIds)
+      : sourceModel),
+    [excludedContextIds, sourceModel, tagKind, substances, tags, hyperedges],
   );
   const appliedSource = useRef<GraphModel | null>(null);
   const sourceRef = useRef(sourceModel);
@@ -229,7 +218,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
     const forces = forcesRef.current;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const largeGraph = visible.nodes().length > 180;
-    const fastLanding = fit && !viewRef.current.selectedId && !viewRef.current.compact && visible.nodes().length > 180;
+    const fastLanding = false;
     visible.layout({
       // The landing graph has many independent sourced components. A
       // breadth-first forest is discrete (O(V+E)) and paints immediately;
@@ -238,7 +227,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
       name: fastLanding ? "breadthfirst" : "cose",
       animate: !reduce && !fit,
       animationDuration: 400,
-      randomize: false,
+      randomize: largeGraph,
       fit,
       padding: compact ? 22 : 40,
       directed: false,
@@ -278,8 +267,8 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
         minZoom: 0.15, maxZoom: 2.5, wheelSensitivity: 0.22,
         boxSelectionEnabled: false, autounselectify: false,
         layout: {
-          name: initialFocus || compact || initial.nodes.length <= 180 ? "cose" : "breadthfirst", animate: false, randomize: false, fit: true, padding: compact ? 22 : 40,
-          directed: false, spacingFactor: initial.nodes.length > 180 ? 1.1 : 1,
+          name: "cose", animate: false, randomize: initial.nodes.length > 180, fit: true, padding: compact ? 22 : 40,
+          spacingFactor: initial.nodes.length > 180 ? 1.1 : 1,
           nodeRepulsion: () => forces.repulsion, idealEdgeLength: () => compact ? 60 : forces.linkDistance,
           edgeElasticity: () => 120, gravity: forces.gravity,
           numIter: sourceRef.current.nodes.length > 180 ? 180 : 320,
@@ -533,7 +522,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
       )}
       {!compact && !truncated && !initialFocus && !query.trim() && (
         <p className="border-b border-border px-4 py-3 text-sm text-muted-foreground">
-          Showing sourced relationships between substances and concepts. Search or select a node to inspect its neighborhood.
+          Showing the full substance catalog with sourced relationships. Catalog-only substances are green points; select one to reveal its label.
         </p>
       )}
 
