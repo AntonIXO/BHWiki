@@ -355,10 +355,10 @@ export default async function SubstancePage({ params }: Props) {
             {substance.mechanisms.length > 0 && (
             <div className="flex flex-col gap-3">
               <h3 className="text-lg font-medium">How it works</h3>
-              {substance.mechanisms.length ? substance.mechanisms.map(mechanism => {
+              {substance.mechanisms.length ? substance.mechanisms.map((mechanism, index) => {
                 const concept = mechanism.conceptId ? entities.conceptById.get(mechanism.conceptId) : undefined;
                 return (
-                  <div key={mechanism.title} className="flex gap-3">
+                  <div key={`${mechanism.title}-${index}`} className="flex gap-3">
                     <CircleDot aria-hidden="true" className="mt-0.5 shrink-0 text-muted-foreground" size={17} />
                     <div className="flex min-w-0 flex-col gap-1">
                       <h4 className="font-medium">{concept ? <Link href={conceptPath(concept)} className="underline underline-offset-4">{mechanism.title}</Link> : mechanism.title}</h4>
@@ -501,7 +501,7 @@ export default async function SubstancePage({ params }: Props) {
             <p className="text-muted-foreground">Adverse effects and interactions reported in the cited studies.</p>
             {substance.cautions.length ? (
               <div className="safety-signals">
-                {substance.cautions.map((caution, index) => <SafetySignal key={caution.title} caution={caution} index={index} substance={substance} />)}
+                {substance.cautions.map((caution, index) => <SafetySignal key={`${caution.title}-${index}`} caution={caution} index={index} substance={substance} />)}
               </div>
             ) : <DataEmpty>Safety not assessed.</DataEmpty>}
             <h3 className="text-lg font-medium">Interactions in cited sources</h3><Link className="underline underline-offset-4" href={`/interactions?a=${slug}`}>Explore a pair of substances</Link>
@@ -641,8 +641,8 @@ export default async function SubstancePage({ params }: Props) {
             <SectionHeading number={sectionNumber("legal")} title="Legal context" />
             {substance.legal.length > 0 ? (
               <div className="flex flex-col gap-4">
-                {substance.legal.map(item => (
-                  <Card key={`${item.jurisdiction}-${item.activity}`}>
+                {substance.legal.map((item, index) => (
+                  <Card key={`${item.jurisdiction}-${item.activity}-${index}`}>
                     <CardHeader>
                       <CardTitle><h3>{item.jurisdiction}</h3></CardTitle>
                     </CardHeader>
