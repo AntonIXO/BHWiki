@@ -52,7 +52,7 @@ export function boundKnowledgeGraph(data: KnowledgeGraphData, options: { focus?:
   }
   const selectedTags: Tag[] = [...tags].filter(([id]) => selected.has(id)).map(([, tag]) => tag);
   const tagIds = new Set(selectedTags.map((t) => t.id));
-  const selectedSubstances: CatalogSubstance[] = [...substances].filter(([id]) => selected.has(id)).map(([, s]) => ({ ...s, tags: s.tags.filter((id) => tagIds.has(id)) }));
+  const selectedSubstances: CatalogSubstance[] = [...substances].filter(([id]) => selected.has(id)).map(([, s]) => ({ ...s, tags: s.tags.filter((id) => tagIds.has(id)), ...(s.linkedConceptIds ? { linkedConceptIds: s.linkedConceptIds.filter(id => tagIds.has(id)) } : {}) }));
   return { substances: selectedSubstances, tags: selectedTags, hyperedges, truncated };
 }
 

@@ -135,5 +135,62 @@ export const graphStyle: StylesheetStyle[] = [
     selector: "edge.highlighted",
     style: { "line-color": "#171717", width: 2, opacity: 1 },
   },
+  {
+    selector: 'node.network[kind != "relationship"]',
+    style: {
+      width: 20, height: 20, "border-width": 1.4,
+      "text-valign": "bottom", "text-margin-y": 7, "font-size": 13,
+    },
+  },
+  {
+    selector: 'node.network[kind = "substance"]',
+    style: { width: 28, height: 20 },
+  },
+  {
+    selector: 'node.network[kind = "relationship"]',
+    style: { width: 7, height: 7 },
+  },
+  // The overview is a map of entities. Thousands of evidence diamonds remain
+  // present, but recede until zoom or selection makes their detail useful.
+  {
+    selector: 'node.overview[kind != "relationship"]',
+    style: { label: "", width: 20, height: 20, "border-width": 1.4 },
+  },
+  {
+    selector: 'node.overview[kind = "substance"]',
+    style: { width: 28, height: 20, "background-color": "#93b99c", "border-color": "#477e56" },
+  },
+  {
+    selector: 'node.overview[kind = "tag"]',
+    style: { "background-color": "#c5b5e1", "border-color": "#8c70b2" },
+  },
+  {
+    selector: "node.overview[tagKind = 'effect']",
+    style: { "background-color": "#e9c675", "border-color": "#b8892d" },
+  },
+  {
+    selector: "node.overview[tagKind = 'outcome']",
+    style: { "background-color": "#95c4df", "border-color": "#4c8fb5" },
+  },
+  {
+    selector: 'node.overview[kind = "relationship"]',
+    style: { width: 4, height: 4, opacity: 0.25 },
+  },
+  {
+    selector: "edge.overview",
+    style: { "curve-style": "straight", width: 1.1, "line-color": "#829aab", opacity: 0.14 },
+  },
+  {
+    selector: "node.overview.hub, node.hovered, node.search-match, node:selected",
+    style: {
+      label: "data(label)", "text-valign": "bottom", "text-margin-y": 7,
+      "text-background-color": "#ffffff", "text-background-opacity": 0.9,
+      "text-background-padding": "3px", "text-background-shape": "roundrectangle",
+      "font-weight": 600, "z-index": 20,
+    },
+  },
+  { selector: "node.overview.muted", style: { opacity: 0.12 } },
+  { selector: "edge.overview.muted", style: { opacity: 0.015 } },
+  { selector: "edge.overview.highlighted", style: { "line-color": "#3a6950", opacity: 0.8, width: 2 } },
   { selector: ".depth-hidden", style: { display: "none" } },
 ];

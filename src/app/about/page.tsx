@@ -43,7 +43,7 @@ export default function About() {
         <AccordionItem value="relationships">
           <AccordionTrigger>Relationships you can inspect</AccordionTrigger>
           <AccordionContent>
-            <p>The graph connects a statement to all of its participants, including contextual factors. Selecting a connection reveals its role and source. Shared classification does not imply equal effects, equal risks, or a reason to combine substances.</p>
+            <p>The graph connects a statement to all of its participants, including contextual factors. Selecting a connection reveals its role and source. Linked-substance counts include recorded evidence and explicitly labeled textual or shared-source links. Related concepts and named mentions provide navigation; they do not by themselves establish a biological effect. Shared classification does not imply equal effects, equal risks, or a reason to combine substances.</p>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="publication">

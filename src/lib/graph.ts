@@ -12,6 +12,7 @@ export type GraphNode = {
   href?: string;
   tagKind?: TagKind;
   relation?: string;
+  evidenceKey?: string;
   sourceUrl?: string;
   sourceUrls?: string[];
   searchText: string;
@@ -205,7 +206,7 @@ export function buildKnowledgeGraph(input: GraphInput, tagKind?: TagKind): Graph
   for (const edge of relationships) {
     nodes.push({
       id: edge.nodeId, label: edge.label, kind: "relationship", relation: edge.relation,
-      description: edge.description, sourceUrl: edge.sourceUrl, sourceUrls: edge.sourceUrls,
+      description: edge.description, evidenceKey: edge.evidenceKey, sourceUrl: edge.sourceUrl, sourceUrls: edge.sourceUrls,
       searchText: `${edge.id} ${edge.label} ${edge.relation} ${edge.description}`.toLowerCase(),
     });
   }

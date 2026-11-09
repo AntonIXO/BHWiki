@@ -4,6 +4,7 @@ import postgres from "postgres";
 import { createHash } from "node:crypto";
 import { catalog as bundledCatalog, conceptById, hyperedges as bundledHyperedges, substanceBySlug, substances as bundledSubstances, tags as bundledTags } from "./content";
 import { type CatalogSubstance, type Hyperedge, type KnowledgeGraphData, type Revision, type Substance, type Tag } from "./types";
+import { completeKnowledgeGraph, type GraphEvidenceArticle } from "./graph-evidence";
 import { boundKnowledgeGraph, graphLimit, normalizeGraphFocus, selectGraphCandidates } from "./graph-data";
 import { validateSubstance } from "./validate-content";
 
@@ -128,7 +129,7 @@ export async function getRevisions(slug: string): Promise<Revision[]> {
   return rows.map((row) => ({ ...row, publishedAt: new Date(row.publishedAt).toISOString() }));
 }
 
-export async function getKnowledgeGraph(options: { focus?: string; limit?: number } = {}): Promise<KnowledgeGraphData> {
+async function getAuthoredKnowledgeGraph(options: { focus?: string; limit?: number } = {}): Promise<KnowledgeGraphData> {
   const sql = database();
   if (!sql) return boundKnowledgeGraph({ substances: bundledCatalog, tags: bundledTags, hyperedges: bundledHyperedges }, options);
   const limit = graphLimit(options.limit);
@@ -210,6 +211,40 @@ export async function getKnowledgeGraph(options: { focus?: string; limit?: numbe
     truncated: candidates.truncated || extras.length > limit }, options);
 }
 
+/** Read only evidence fields, never historical revisions or unpublished drafts. */
+const getCompleteKnowledgeGraph = cache(async (): Promise<KnowledgeGraphData> => {
+  const data = await getAuthoredKnowledgeGraph({ limit: 5000 });
+  const sql = database();
+  if (!sql) return completeKnowledgeGraph(data, bundledSubstances);
+  if (!data.substances.length) return data;
+  const rows = await sql<{ article: GraphEvidenceArticle }[]>`
+    SELECT jsonb_build_object(
+      'slug', e.slug,
+      'description', coalesce(r.document->>'description', ''),
+      'effects', coalesce(r.document->'effects', '[]'::jsonb),
+      'outcomes', coalesce(r.document->'outcomes', '[]'::jsonb),
+      'mechanisms', coalesce(r.document->'mechanisms', '[]'::jsonb),
+      'claims', coalesce(r.document->'claims', '[]'::jsonb),
+      'interactions', coalesce(r.document->'interactions', '[]'::jsonb),
+      'cautions', coalesce(r.document->'cautions', '[]'::jsonb),
+      'references', coalesce(r.document->'references', '[]'::jsonb)
+    ) AS article
+    FROM bhwiki.entities e JOIN bhwiki.articles a ON a.entity_id = e.id
+    JOIN bhwiki.article_revisions r ON r.id = a.published_revision_id
+    WHERE e.status = 'published' AND e.slug IN ${sql(data.substances.map(s => s.slug))}
+  `;
+  return completeKnowledgeGraph(data, rows.map(row => row.article));
+});
+
+export async function getKnowledgeGraph(options: { focus?: string; limit?: number } = {}): Promise<KnowledgeGraphData> {
+  return boundKnowledgeGraph(await getCompleteKnowledgeGraph(), options);
+}
+
+/** Full membership is independent of a focused graph's display budget. */
+export async function getLinkedCatalog(): Promise<CatalogSubstance[]> {
+  return (await getCompleteKnowledgeGraph()).substances;
+}
+
 /** Query the concept's observation projection, independently of linked-substance pagination. */
 export async function getObservationPage(conceptId:string,kind:"effect"|"outcome",filters:import("./research-types").ObservationFilters={},page=1) {
   const { observationRows, filterObservations, evidenceKey } = await import("./research");
@@ -230,6 +265,7 @@ export async function getObservationPage(conceptId:string,kind:"effect"|"outcome
 }
 
 export async function getRelationship(id:string):Promise<Hyperedge|undefined>{
+  if (id.startsWith("concept-")) return (await getCompleteKnowledgeGraph()).hyperedges.find(edge => edge.id === id);
   const sql=database();if(!sql)return bundledHyperedges.find(e=>e.id===id);
   const [edge]=await sql<{id:string;label:string;relation:string;description:string;sourceUrl:string;sourceUrls:string[];directedSteps:Hyperedge["directedSteps"];dbId:string}[]>`
     SELECT id AS "dbId",slug AS id,label,relation,description,source_url AS "sourceUrl",source_urls AS "sourceUrls",directed_steps AS "directedSteps"
@@ -241,7 +277,7 @@ export async function getRelationship(id:string):Promise<Hyperedge|undefined>{
 }
 export async function getEvidenceRecord(key:string){
   const {articleEvidence,relationshipEvidence}=await import("./research");
-  if(key.length>250||!/^[a-z0-9~-]+$/.test(key))return undefined;
+  if(key.length>250||!/^[a-z0-9~-]+$/i.test(key))return undefined;
   const [slug,kind,id,...extra]=key.split("~");if(extra.length)return undefined;
   if(slug==="relationship"&&!id){const edge=await getRelationship(kind);return edge?relationshipEvidence(edge):undefined;}
   if(!id)return undefined;

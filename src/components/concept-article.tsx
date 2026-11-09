@@ -17,7 +17,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Empty, EmptyDescription, EmptyHeader } from "@/components/ui/empty";
 import { indexEntities } from "@/lib/entities";
-import { getCatalog, getConcept, getConcepts, getKnowledgeGraph, getSubstancesBySlugs } from "@/lib/repository";
+import { getLinkedCatalog, getConcept, getConcepts, getKnowledgeGraph, getSubstancesBySlugs } from "@/lib/repository";
 import { conceptPath, type CatalogSubstance, type Claim, type Observation, type Reference, type Substance } from "@/lib/types";
 
 function ObservationCard({ observation, substance }: { observation: Observation; substance: Substance }) {
@@ -106,12 +106,12 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
   const concept = await getConcept(slug);
   if (!concept) notFound();
   if (sectionFor(concept) !== section) redirect(conceptPath(concept));
-  const [concepts, catalog, graph] = await Promise.all([getConcepts(), getCatalog(), getKnowledgeGraph({ focus: `tag:${concept.id}`, limit: 40 })]);
+  const [concepts, catalog, graph] = await Promise.all([getConcepts(), getLinkedCatalog(), getKnowledgeGraph({ focus: `tag:${concept.id}`, limit: 40 })]);
   const entities = indexEntities(catalog, concepts);
   const memberId = `tag:${concept.id}`;
   const connections = graph.hyperedges.filter((edge) => edge.members.includes(memberId));
   const connectedSlugs = new Set(connections.flatMap((edge) => edge.members.filter((member) => member.startsWith("substance:")).map((member) => member.slice("substance:".length))));
-  const linkedCatalog = catalog.filter((substance) => substance.tags.includes(concept.id) || connectedSlugs.has(substance.slug)).sort((a, b) => a.name.localeCompare(b.name));
+  const linkedCatalog = catalog.filter((substance) => (substance.linkedConceptIds ?? substance.tags).includes(concept.id) || connectedSlugs.has(substance.slug)).sort((a, b) => a.name.localeCompare(b.name));
   const pageSize = 12;
   const totalPages = Math.max(1, Math.ceil(linkedCatalog.length / pageSize));
   const page = Math.min(pageNumber(searchParams.substancesPage), totalPages);
@@ -206,7 +206,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
                     <CardTitle><h3>{edge.label}</h3></CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-col gap-3">
-                    <Prose text={edge.description} /><div><EvidenceButton evidenceKey={`relationship~${edge.id}`}/></div>
+                    <Prose text={edge.description} /><div><EvidenceButton evidenceKey={edge.evidenceKey ?? `relationship~${edge.id}`}/></div>
                     <ul className="flex flex-col gap-2">
                       {edge.members.map((member) => {
                         const record = memberRecord(member);
@@ -241,7 +241,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
               <h2 className="text-2xl font-medium">Linked substances</h2>
               <span className="text-sm text-muted-foreground">{linkedCatalog.length} entries</span>
             </div>
-            <p className="text-muted-foreground">Tagged articles and participants in the relationships above. A shared tag alone does not establish a causal effect.</p>
+            <p className="text-muted-foreground">Articles linked through tags, recorded findings, mechanisms, relationship participants, or shared definition sources. A link alone does not establish a causal effect.</p>
             {visibleCatalog.length ? (
               <div className="grid gap-4 sm:grid-cols-2">
                 {visibleCatalog.map((substance) => <SubstanceCard key={substance.slug} substance={substance} />)}

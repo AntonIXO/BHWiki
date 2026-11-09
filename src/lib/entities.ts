@@ -9,7 +9,7 @@ export type EntityIndex = {
   substanceLink: (id: string) => EntityRecord;
   graphMember: (member: string) => EntityRecord;
   conceptsFor: (ids: string[]) => Tag[];
-  taggedCount: (tagId: string) => number;
+  linkedCount: (tagId: string) => number;
   relatedSubstances: (slug: string, tagIds: string[], limit?: number) => { item: CatalogSubstance; shared: number }[];
 };
 
@@ -52,7 +52,7 @@ function createIndex(
         return concept ? [concept] : [];
       });
     },
-    taggedCount(tagId) {
+    linkedCount(tagId) {
       return new Set((catalogByTag.get(tagId) ?? []).map((item) => item.slug)).size;
     },
     relatedSubstances(slug, tagIds, limit = 3) {
@@ -77,7 +77,7 @@ function mapsFor(catalog: CatalogSubstance[], concepts: Tag[]) {
   const conceptById = new Map(concepts.map((concept) => [concept.id, concept]));
   const catalogByTag = new Map<string, CatalogSubstance[]>();
   for (const substance of catalog) {
-    for (const tagId of substance.tags) {
+    for (const tagId of substance.linkedConceptIds ?? substance.tags) {
       const list = catalogByTag.get(tagId);
       if (list) list.push(substance);
       else catalogByTag.set(tagId, [substance]);

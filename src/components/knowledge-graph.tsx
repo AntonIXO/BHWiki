@@ -5,7 +5,8 @@ import { pageTypes, graphStyle } from "@/lib/graph-style";
 import { useEffect, useId, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, Expand, Maximize, Minimize, Minus, Plus, X } from "lucide-react";
-import type { Core, StylesheetStyle } from "cytoscape";
+import type { Core } from "cytoscape";
+import type { layoutKnowledgeGraph } from "@/lib/graph-layout";
 import { buildKnowledgeGraph, catalogKnowledgeGraph, previewKnowledgeGraph, searchKnowledgeGraph, type GraphModel, type GraphNode } from "@/lib/graph";
 import type { KnowledgeGraphData, TagKind } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -88,6 +89,8 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
   const hoverRef = useRef<string | null>(null);
   const paintRef = useRef<() => void>(() => {});
   const layoutRef = useRef<(fit: boolean) => void>(() => {});
+  const layoutEngine = useRef<typeof layoutKnowledgeGraph | null>(null);
+  const detailRef = useRef<() => void>(() => {});
   const forceReady = useRef(false);
   const viewFitted = useRef(false);
   const fullscreenFitted = useRef(false);
@@ -99,6 +102,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
     return tag ? `tag:${tag.id}` : null;
   }
   const [query, setQuery] = useState("");
+  const [relationshipPage, setRelationshipPage] = useState(0);
   const [tagKind, setTagKind] = useState<TagKind | "">("");
   const [selectedId, setSelectedId] = useState<string | null>(focusNode(initialFocus));
   const [depth, setDepth] = useState(3);
@@ -120,15 +124,9 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
     () => buildKnowledgeGraph({ substances, tags, hyperedges }),
     [substances, tags, hyperedges],
   );
-  const excludedContextIds = useMemo(
-    () => tags
-      .filter((tag) => /child|pediatric|infant|neonatal|age[- ]?context/i.test(`${tag.id} ${tag.label}`))
-      .map((tag) => `tag:${tag.id}`),
-    [tags],
-  );
   const catalogModel = useMemo(
-    () => catalogKnowledgeGraph(fullModel, excludedContextIds),
-    [excludedContextIds, fullModel],
+    () => catalogKnowledgeGraph(fullModel),
+    [fullModel],
   );
   const sourceModel = useMemo(() => {
     if (initialFocus) return fullModel;
@@ -139,13 +137,13 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
   }, [catalogModel, compact, fullModel, initialFocus]);
   const model = useMemo(
     () => (tagKind
-      ? catalogKnowledgeGraph(buildKnowledgeGraph({ substances, tags, hyperedges }, tagKind), excludedContextIds)
+      ? catalogKnowledgeGraph(buildKnowledgeGraph({ substances, tags, hyperedges }, tagKind))
       : sourceModel),
-    [excludedContextIds, sourceModel, tagKind, substances, tags, hyperedges],
+    [sourceModel, tagKind, substances, tags, hyperedges],
   );
   const appliedSource = useRef<GraphModel | null>(null);
-  const sourceRef = useRef(sourceModel);
-  sourceRef.current = sourceModel;
+  const sourceRef = useRef(model);
+  sourceRef.current = model;
   const viewRef = useRef({ query, depth, selectedId, model, compact });
   const forcesRef = useRef({ repulsion, linkDistance, gravity });
   viewRef.current = { query, depth, selectedId, model, compact };
@@ -156,6 +154,10 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
   const noMatches = term.length > 0 && searched.nodes.length === 0;
   const listedNodes = noMatches ? [] : searched.nodes.filter((node) => depthIds.has(node.id));
   const listedRelationships = noMatches ? [] : searched.relationships.filter((edge) => depthIds.has(edge.nodeId));
+  const relationshipPages = Math.max(1, Math.ceil(listedRelationships.length / 50));
+  const currentRelationshipPage = Math.min(relationshipPage, relationshipPages - 1);
+  const textRelationships = listedRelationships.slice(currentRelationshipPage * 50, (currentRelationshipPage + 1) * 50);
+  const forceLayoutAvailable = model.nodes.filter(node => node.kind !== "relationship").length <= 120;
   const selected = model.nodes.find((node) => node.id === selectedId);
   const related = selected ? model.relationships.filter((edge) => edge.nodeId === selected.id || edge.members.includes(selected.id)) : [];
   const visibleSubstances = listedNodes.filter((node) => node.kind === "substance");
@@ -174,7 +176,8 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
     const origin = view.compact ? null : view.selectedId;
     const withinDepth = idsWithinDepth(view.model, origin, view.depth);
     cy.batch(() => {
-      cy.elements().removeClass("muted highlighted depth-hidden");
+      cy.elements().removeClass("muted highlighted depth-hidden hovered search-match");
+      if (hoverId) cy.getElementById(hoverId).addClass("hovered");
       if (!hoverId) cy.elements().unselect();
       const focusId = hoverId || (!view.compact ? view.selectedId : null);
       let neighborhood: Set<string> | null = null;
@@ -192,6 +195,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
         : !!(kept && (!kept.has(sourceId) || !kept.has(targetId)));
       cy.nodes().forEach((node) => {
         const id = node.id();
+        if (searchTerm && node.data("searchText")?.includes(searchTerm)) node.addClass("search-match");
         if (emptySearch || !withinDepth.has(id)) {
           node.addClass("depth-hidden");
           return;
@@ -210,38 +214,49 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
     });
   };
 
-  layoutRef.current = (fit: boolean) => {
+  detailRef.current = () => {
     const cy = graph.current;
     if (!cy || cy.destroyed()) return;
-    const visible = cy.elements().not(".depth-hidden");
-    if (visible.empty()) return;
-    const forces = forcesRef.current;
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const largeGraph = visible.nodes().length > 180;
-    const fastLanding = false;
-    visible.layout({
-      // The landing graph has many independent sourced components. A
-      // breadth-first forest is discrete (O(V+E)) and paints immediately;
-      // force-directed Cose remains available for focused neighborhoods and
-      // for the user-controlled force sliders below.
-      name: fastLanding ? "breadthfirst" : "cose",
-      animate: !reduce && !fit,
-      animationDuration: 400,
-      randomize: largeGraph,
-      fit,
-      padding: compact ? 22 : 40,
-      directed: false,
-      spacingFactor: largeGraph ? 1.1 : 1,
-      nodeRepulsion: () => forces.repulsion,
-      idealEdgeLength: () => compact ? 60 : forces.linkDistance,
-      edgeElasticity: () => 120,
-      gravity: forces.gravity,
-      // Cose scales poorly across many components. The landing graph uses a
-      // discrete forest layout; focused/small views retain Cose for detail.
-      numIter: largeGraph ? 180 : 320,
-      componentSpacing: largeGraph ? 36 : 64,
-    }).run();
+    const network = viewRef.current.model.nodes.length > 180;
+    const overview = network && cy.zoom() < 1.4;
+    cy.batch(() => {
+      cy.elements().toggleClass("network", network).toggleClass("overview", overview);
+      // Only a few landmarks are labelled at overview scale; all labels return on zoom.
+      cy.nodes(".hub").removeStyle("font-size text-max-width").removeClass("hub");
+      if (overview) {
+        const occupied: { x: number; y: number }[] = [];
+        const landmarks = cy.nodes('[kind != "relationship"]')
+          .map(node => ({ node, degree: node.degree() }))
+          .sort((a, b) => b.degree - a.degree || a.node.id().localeCompare(b.node.id()));
+        for (const { node, degree } of landmarks) {
+          const point = node.renderedPosition();
+          if (!degree || occupied.some(other => Math.abs(point.x - other.x) < 125 && Math.abs(point.y - other.y) < 42)) continue;
+          node.addClass("hub").style({ "font-size": Math.max(13, 10 / cy.zoom()), "text-max-width": Math.max(108, 115 / cy.zoom()) });
+          occupied.push(point);
+          if (occupied.length === 12) break;
+        }
+      }
+    });
   };
+
+  layoutRef.current = (fit: boolean) => {
+    const cy = graph.current;
+    const engine = layoutEngine.current;
+    if (!cy || cy.destroyed() || !engine) return;
+    const positions = engine(viewRef.current.model, {
+      width: cy.width(), height: cy.height(), ...forcesRef.current,
+    });
+    cy.nodes().positions(node => positions[node.id()] ?? { x: 0, y: 0 });
+
+    detailRef.current();
+    if (fit) {
+      const visible = cy.elements().not(".depth-hidden");
+      if (visible.nonempty()) cy.fit(visible, compact ? 22 : 54);
+    }
+    detailRef.current();
+  };
+
+  useEffect(() => { setRelationshipPage(0); }, [query, tagKind, selectedId, depth]);
 
   useEffect(() => {
     if (previousFocus.current === initialFocus) return;
@@ -257,25 +272,21 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
     let cy: Core | undefined;
     setReady(false);
     setLoadError(false);
-    import("cytoscape").then(({ default: cytoscape }) => {
+    Promise.all([import("cytoscape"), import("@/lib/graph-layout")]).then(([{ default: cytoscape }, { layoutKnowledgeGraph }]) => {
+      layoutEngine.current = layoutKnowledgeGraph;
       if (cancelled || !container.current) return;
-      const forces = forcesRef.current;
       const initial = sourceRef.current;
       appliedSource.current = initial;
       cy = cytoscape({
         container: container.current, elements: initial.elements, style: graphStyle,
-        minZoom: 0.15, maxZoom: 2.5, wheelSensitivity: 0.22,
+        minZoom: 0.005, maxZoom: 3,
         boxSelectionEnabled: false, autounselectify: false,
-        layout: {
-          name: "cose", animate: false, randomize: initial.nodes.length > 180, fit: true, padding: compact ? 22 : 40,
-          spacingFactor: initial.nodes.length > 180 ? 1.1 : 1,
-          nodeRepulsion: () => forces.repulsion, idealEdgeLength: () => compact ? 60 : forces.linkDistance,
-          edgeElasticity: () => 120, gravity: forces.gravity,
-          numIter: sourceRef.current.nodes.length > 180 ? 180 : 320,
-          componentSpacing: sourceRef.current.nodes.length > 180 ? 36 : 64,
-        },
+        layout: { name: "preset", fit: false },
       });
       graph.current = cy;
+      paintRef.current();
+      layoutRef.current(true);
+      cy.on("zoom", () => detailRef.current());
       cy.on("tap", "node", (event) => setSelectedId(event.target.id()));
       cy.on("tap", (event) => { if (event.target === cy) setSelectedId(null); });
       cy.on("mouseover", "node", (event) => {
@@ -297,7 +308,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
         cy.fit(visible.empty() ? undefined : visible, compact ? 22 : 40);
       };
       observer = new ResizeObserver(resize);
-      observer.observe(container.current.parentElement ?? container.current);
+      observer.observe(container.current);
       requestAnimationFrame(resize);
       setReady(true);
     }).catch(() => { if (!cancelled) setLoadError(true); });
@@ -313,22 +324,22 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
   useEffect(() => {
     if (!ready) return;
     const cy = graph.current;
-    if (!cy || cy.destroyed() || appliedSource.current === sourceModel) return;
-    appliedSource.current = sourceModel;
+    if (!cy || cy.destroyed() || appliedSource.current === model) return;
+    appliedSource.current = model;
     cy.batch(() => {
       cy.elements().remove();
-      cy.add(sourceModel.elements);
+      cy.add(model.elements);
     });
     paintRef.current();
     layoutRef.current(true);
-  }, [sourceModel, ready, compact]);
+  }, [model, ready, compact]);
 
   useEffect(() => {
     if (!ready) return;
     paintRef.current();
   }, [query, selectedId, depth, ready, model]);
 
-  // Depth and concept type hide nodes on the layout from mount. Force sliders are what rerun cose.
+  // Filtering and selection fit the existing positions; force controls recompute local layouts.
   useEffect(() => {
     if (!ready || compact) {
       if (!ready) viewFitted.current = false;
@@ -341,8 +352,9 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
     const cy = graph.current;
     if (!cy || cy.destroyed()) return;
     const visible = cy.elements().not(".depth-hidden");
-    cy.fit(visible.empty() ? undefined : visible, 40);
-  }, [depth, tagKind, ready, compact]);
+    const matches = viewRef.current.query.trim() ? visible.filter(element => !element.hasClass("muted")) : visible;
+    cy.fit(matches.empty() ? undefined : matches, 54);
+  }, [depth, tagKind, selectedId, query, ready, compact]);
 
   useEffect(() => {
     if (!ready) {
@@ -495,23 +507,24 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
               <span id={repulsionLabelId}>Repulsion</span>
               <span className="tabular-nums text-foreground">{Math.round(repulsion / 1000)}</span>
             </span>
-            <input aria-labelledby={repulsionLabelId} className="graph-range" type="range" min={40000} max={360000} step={20000} value={repulsion} onChange={(event) => setRepulsion(Number(event.target.value))} />
+            <input disabled={!forceLayoutAvailable} aria-labelledby={repulsionLabelId} className="graph-range" type="range" min={40000} max={360000} step={20000} value={repulsion} onChange={(event) => setRepulsion(Number(event.target.value))} />
           </label>
           <label className="flex min-w-0 flex-col gap-1 text-xs text-muted-foreground">
             <span className="flex items-center justify-between gap-2">
               <span id={distanceLabelId}>Link distance</span>
               <span className="tabular-nums text-foreground">{linkDistance}</span>
             </span>
-            <input aria-labelledby={distanceLabelId} className="graph-range" type="range" min={40} max={200} step={10} value={linkDistance} onChange={(event) => setLinkDistance(Number(event.target.value))} />
+            <input disabled={!forceLayoutAvailable} aria-labelledby={distanceLabelId} className="graph-range" type="range" min={40} max={200} step={10} value={linkDistance} onChange={(event) => setLinkDistance(Number(event.target.value))} />
           </label>
           <label className="flex min-w-0 flex-col gap-1 text-xs text-muted-foreground">
             <span className="flex items-center justify-between gap-2">
               <span id={gravityLabelId}>Center force</span>
               <span className="tabular-nums text-foreground">{gravity.toFixed(2)}</span>
             </span>
-            <input aria-labelledby={gravityLabelId} className="graph-range" type="range" min={0} max={1} step={0.05} value={gravity} onChange={(event) => setGravity(Number(event.target.value))} />
+            <input disabled={!forceLayoutAvailable} aria-labelledby={gravityLabelId} className="graph-range" type="range" min={0} max={1} step={0.05} value={gravity} onChange={(event) => setGravity(Number(event.target.value))} />
           </label>
         </div>
+        {!forceLayoutAvailable && <p className="px-4 pb-3 text-xs text-muted-foreground">Open a focused neighborhood to adjust its layout.</p>}
         <Separator />
         </>
       )}
@@ -522,7 +535,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
       )}
       {!compact && !truncated && !initialFocus && !query.trim() && (
         <p className="border-b border-border px-4 py-3 text-sm text-muted-foreground">
-          Showing the full substance catalog with sourced relationships. Catalog-only substances are green points; select one to reveal its label.
+          All substances are on the map. Zoom to read labels, search by name, or select a node to explore its connections.
         </p>
       )}
 
@@ -533,7 +546,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
       )}>
       <div className={cn(
         "relative shrink-0 bg-[radial-gradient(circle,var(--border)_0.6px,transparent_0.6px)] [background-size:18px_18px]",
-        compact ? "h-full min-h-56" : "h-[32rem] sm:h-[36rem]",
+        compact ? "h-full min-h-56" : "h-[32rem] sm:h-[42rem]",
         !compact && fullscreen && "h-auto min-h-0 flex-1 sm:h-auto",
       )}>
         <div ref={container} className="h-full w-full cursor-grab" role="img" aria-label="Interactive knowledge graph connecting substances, concepts, and shared relationships" aria-describedby={helpId} />
@@ -602,7 +615,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
           </CardHeader>
           <CardContent className="flex flex-col gap-2 text-sm">
             <Prose className="text-muted-foreground" text={selected.description} />
-            {selected.id.startsWith("relationship:") && <div><EvidenceButton evidenceKey={`relationship~${selected.id.slice(13)}`}/></div>}
+            {selected.id.startsWith("relationship:") && <div><EvidenceButton evidenceKey={selected.evidenceKey ?? `relationship~${selected.id.slice(13)}`}/></div>}
             {selected.href && <Link href={selected.href} className="inline-flex items-center gap-1 underline underline-offset-4">{selected.kind === "substance" ? "Read substance profile" : "Read concept article"} <ArrowUpRight aria-hidden="true" /></Link>}
             {selected.kind !== "relationship" && <Link href={`/graph?focus=${encodeURIComponent(selected.id)}`} className="inline-flex items-center gap-1 underline underline-offset-4">Focus neighborhood <ArrowUpRight aria-hidden="true" /></Link>}
             {selectedSources.map((source, index) => <a key={source} href={source} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 underline underline-offset-4">View source{selectedSources.length > 1 ? ` ${index + 1}` : ""} <ArrowUpRight aria-hidden="true" /></a>)}
@@ -637,7 +650,6 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
         <Collapsible className="border-t border-border">
           <CollapsibleTrigger className="px-4 py-3 text-sm underline underline-offset-4">Explore an accessible text view</CollapsibleTrigger>
           <CollapsibleContent
-            keepMounted
             className="transition-[opacity,transform] duration-180 ease-[var(--ease-out)] data-ending-style:scale-95 data-ending-style:opacity-0 data-starting-style:scale-95 data-starting-style:opacity-0"
           >
             <div className={cn("grid gap-6 px-4 pt-2 pb-4 md:grid-cols-[1fr_2fr]", fullscreen && "max-h-[min(24rem,40dvh)] overflow-y-auto")}>
@@ -682,12 +694,19 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
               </div>
               <section className="flex flex-col gap-2">
                 <h3 className="text-sm font-medium">Relationships</h3>
+                {relationshipPages > 1 && (
+                  <div className="flex items-center gap-2">
+                    <Button size="sm" variant="outline" disabled={currentRelationshipPage === 0} onClick={() => setRelationshipPage(currentRelationshipPage - 1)}>Previous relationships</Button>
+                    <span className="text-xs text-muted-foreground">{currentRelationshipPage * 50 + 1}–{Math.min((currentRelationshipPage + 1) * 50, listedRelationships.length)} of {listedRelationships.length}</span>
+                    <Button size="sm" variant="outline" disabled={currentRelationshipPage + 1 >= relationshipPages} onClick={() => setRelationshipPage(currentRelationshipPage + 1)}>Next relationships</Button>
+                  </div>
+                )}
                 <ul className="flex flex-col gap-4">
-                  {listedRelationships.map((edge) => (
+                  {textRelationships.map((edge) => (
                     <li key={edge.nodeId} className="flex flex-col gap-2 border-b border-border pb-3 text-sm">
                       <Button type="button" variant="link" className="h-auto justify-start px-0" onClick={() => { const node = model.nodes.find((item) => item.id === edge.nodeId); if (node) selectNode(node); }}>{edge.label}</Button>
                       <Prose className="text-muted-foreground" text={edge.description} />
-                      {edge.relation !== "tag membership" && <div><EvidenceButton evidenceKey={`relationship~${edge.id}`}/></div>}
+                      {edge.relation !== "tag membership" && <div><EvidenceButton evidenceKey={edge.evidenceKey ?? `relationship~${edge.id}`}/></div>}
                       <ul className="flex flex-col gap-1">
                         {edge.members.map((id) => {
                           const node = model.nodes.find((item) => item.id === id)!;

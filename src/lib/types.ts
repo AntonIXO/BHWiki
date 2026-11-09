@@ -92,8 +92,8 @@ export type Substance = {
   references: Reference[];
   legal: { jurisdiction: string; activity: string; status: string; sourceUrl: string; asOf: string }[];
 };
-export type CatalogSubstance = Pick<Substance, "slug" | "name" | "summary" | "aliases" | "formula" | "category" | "tags" | "editorialStatus" | "reviewedAt"> & { halfLifeLabel: string };
-export type Hyperedge = { id: string; label: string; relation: string; members: string[]; memberRoles: Record<string,string>; description: string; sourceUrl: string; sourceUrls?: string[]; directedSteps?: DirectedStep[] };
+export type CatalogSubstance = Pick<Substance, "slug" | "name" | "summary" | "aliases" | "formula" | "category" | "tags" | "editorialStatus" | "reviewedAt"> & { halfLifeLabel: string; linkedConceptIds?: string[] };
+export type Hyperedge = { id: string; label: string; relation: string; members: string[]; memberRoles: Record<string,string>; description: string; sourceUrl: string; sourceUrls?: string[]; directedSteps?: DirectedStep[]; evidenceKey?: string };
 export type KnowledgeGraphData = { substances: CatalogSubstance[]; tags: Tag[]; hyperedges: Hyperedge[]; truncated?: boolean };
 export type Revision = { revision: number; publishedAt: string; sourceCommit: string | null; contributors: string[]; reviewers: string[]; editorialStatus: EditorialStatus; summary: string; contentHash: string };
 export function toCatalogSubstance(s: Substance): CatalogSubstance { return {slug:s.slug,name:s.name,summary:s.summary,aliases:s.aliases,formula:s.formula,category:s.category,tags:s.tags,editorialStatus:s.editorialStatus,reviewedAt:s.reviewedAt,halfLifeLabel:s.halfLife.label}; }

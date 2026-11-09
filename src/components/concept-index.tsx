@@ -11,11 +11,11 @@ import { Field, FieldGroup, FieldLabel } from "@/components/ui/field";
 import { InputGroup, InputGroupAddon, InputGroupButton, InputGroupInput } from "@/components/ui/input-group";
 import { Breadcrumb } from "@/components/shell";
 import { indexEntities } from "@/lib/entities";
-import { getCatalog, getConcepts } from "@/lib/repository";
+import { getLinkedCatalog, getConcepts } from "@/lib/repository";
 import { conceptPath } from "@/lib/types";
 
 export async function ConceptIndex({ section, searchParams }: { section: ConceptSection; searchParams: ReadingSearchParams }) {
-  const [concepts, catalog] = await Promise.all([getConcepts(), getCatalog()]);
+  const [concepts, catalog] = await Promise.all([getConcepts(), getLinkedCatalog()]);
   const entities = indexEntities(catalog, concepts);
   const collection = concepts.filter((concept) => sectionFor(concept) === section);
   const query = first(searchParams.q).trim().slice(0, 200);
@@ -77,7 +77,7 @@ export async function ConceptIndex({ section, searchParams }: { section: Concept
       {visible.length ? (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {visible.map((concept) => {
-            const count = entities.taggedCount(concept.id);
+            const count = entities.linkedCount(concept.id);
             return (
               <Link className="block h-full" href={conceptPath(concept)} key={concept.id}>
                 <Card className="h-full">
@@ -89,7 +89,7 @@ export async function ConceptIndex({ section, searchParams }: { section: Concept
                     <Prose className="text-muted-foreground" text={concept.description} />
                   </CardContent>
                   <CardFooter className="mt-auto text-muted-foreground">
-                    <span>{count} tagged {count === 1 ? "substance" : "substances"}</span>
+                    <span>{count} linked {count === 1 ? "substance" : "substances"}</span>
                     <span className="ms-auto">{concept.sourceUrls?.length ?? 0} definition sources</span>
                   </CardFooter>
                 </Card>

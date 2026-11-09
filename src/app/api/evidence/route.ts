@@ -1,7 +1,7 @@
 import { getEvidenceRecord } from "@/lib/repository";
 export async function GET(request: Request) {
   const key = new URL(request.url).searchParams.get("key");
-  if (!key || key.length > 250 || !/^[a-z0-9~-]+$/.test(key))
+  if (!key || key.length > 250 || !/^[a-z0-9~-]+$/i.test(key))
     return Response.json({ error: "Invalid evidence key" }, { status: 400 });
   const record = await getEvidenceRecord(key);
   return record

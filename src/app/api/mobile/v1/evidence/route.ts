@@ -4,7 +4,7 @@ import { mobileError, mobileEvidenceResponse } from "@/lib/mobile-api";
 export const dynamic = "force-dynamic";
 
 const CACHE_CONTROL = "public, max-age=60, stale-while-revalidate=300";
-const evidenceKeyPattern = /^[a-z0-9~-]+$/;
+const evidenceKeyPattern = /^[a-z0-9~-]+$/i;
 
 export async function GET(request: Request) {
   const key = new URL(request.url).searchParams.get("key");
