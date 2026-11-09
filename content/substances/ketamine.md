@@ -14,6 +14,9 @@ tags:
   - dissociative
   - arylcyclohexylamine
   - nmda-receptor
+  - dissociation
+  - depression-severity
+  - postoperative-pain
 accent: "#9fbab0"
 reviewedAt: 2026-10-16
 editorialStatus: sourced-draft
@@ -31,6 +34,44 @@ kinetics:
   bioavailability: The cited KETALAR label does not establish absolute bioavailability for non-IV racemic-ketamine routes.
   metabolism: Ketamine undergoes N-dealkylation to active norketamine, primarily through CYP2B6 and CYP3A4; norketamine is subsequently hydroxylated and conjugated.
   sourceId: ketalar-label
+monitoring:
+  - marker: Resting blood pressure
+    target: Below 120/80 mmHg before each session
+    why: Ketamine raises it transiently.
+    sourceId: ketalar-label
+  - marker: Resting heart rate
+    target: 50–70 bpm
+    why: The same sympathetic surge can raise it.
+    sourceId: ketalar-label
+  - marker: ALT
+    target: 10–26 U/L in men, 8–22 U/L in women
+    why: Detects liver-cell injury reported with heavy use.
+    sourceId: ketalar-label
+  - marker: ALP and GGT
+    target: ALP 50–100 U/L; GGT below 20 U/L in men, below 15 U/L in women
+    why: Cholestatic bile-duct injury is the pattern seen with ketamine.
+    sourceId: ketalar-label
+  - marker: Total bilirubin
+    target: 0.3–1.0 mg/dL
+    why: Completes the cholestatic picture alongside the bile-duct enzymes.
+    sourceId: ketalar-label
+  - marker: "Urine dipstick: blood, protein, leukocytes"
+    target: Negative for all three
+    why: Earliest detectable sign of bladder-lining injury.
+    sourceId: ketalar-label
+  - marker: Serum creatinine with eGFR
+    target: eGFR above 90 mL/min/1.73 m²
+    why: Upper-tract obstruction follows advanced bladder disease.
+    sourceId: ketalar-label
+  - marker: PHQ-9 score
+    target: Below 5, or at least a 50% fall from the individual's own baseline
+    why: Defines response and remission objectively.
+    sourceId: murrough-2013
+  - marker: CADSS score
+    target: No established target; track the peak against the individual's own first session
+    why: Quantifies dissociation so escalation can be detected.
+    sourceId: spravato-label
+monitoringCadence: Baseline liver panel, kidney function and urine dipstick within two weeks of starting. Blood pressure and heart rate every 10 minutes per session until baseline returns. Symptom scores at 24 hours after the first dose, then weekly through induction. Urine dipstick and liver enzymes at 3 months, then every 6 months while dosing continues, and immediately if urinary symptoms appear.
 x-shape:
   - slug
   - name
@@ -69,9 +110,7 @@ x-order: 402
 
 ## Summary
 
-Ketamine is a chiral arylcyclohexylamine used clinically as a dissociative general anesthetic. The U.S. KETALAR product is racemic ketamine: a mixture containing both ketamine enantiomers. Esketamine is the S-enantiomer and is marketed separately as intranasal SPRAVATO. KETALAR is approved for anesthesia, not depression; SPRAVATO is approved in U.S. adults for treatment-resistant depression, as monotherapy or with an oral antidepressant, and for depressive symptoms in major depressive disorder with acute suicidal ideation or behavior when used with an oral antidepressant. The SPRAVATO label specifically states that prevention of suicide or reduction of suicidal ideation or behavior has not been demonstrated. Sources: ketalar-label, spravato-label.
-
-Human evidence supports rapid short-term antidepressant effects after a single 0.5 mg/kg IV racemic-ketamine infusion in selected treatment-resistant depression populations and after repeated intranasal esketamine in treatment-resistant depression. Perioperative IV ketamine also produces small average reductions in acute postoperative pain and opioid consumption across randomized trials. Dissociation, sedation and transient blood-pressure elevation are prominent acute effects. Recurrent or high exposure is associated with abuse and dependence, urinary-tract injury and hepatobiliary injury; important neuropsychiatric and respiratory adverse effects are also documented in labeling. Sources: murrough-2013, janik-2025, brinck-2018, ketalar-label, spravato-label.
+Ketamine is a dissociative anaesthetic that blocks NMDA receptors. Research examines altered perception, pain and rapid changes in mood.
 
 ## Description
 
@@ -181,20 +220,6 @@ The strongest indication-level evidence here comes from current U.S. prescribing
 ## Pharmacokinetics
 
 ```yaml
-- id: racemic-terminal-unresolved
-  analyte: ketamine
-  endpoint: elimination-half-life
-  statistic: not-established
-  route: intravenous
-  formulation: ketamine hydrochloride injection
-  population: clinical labeling population
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: KETALAR reports an initial alpha phase lasting about 45 minutes with a 10–15 minute half-life and a roughly 2.5-hour redistribution half-life from CNS to slower-equilibrating tissues. These are distribution/redistribution parameters, not a reported terminal elimination half-life.
-  sourceId: ketalar-label
-  modelEligible: false
 - id: esketamine-intranasal-terminal
   analyte: esketamine
   endpoint: elimination-half-life
@@ -208,6 +233,20 @@ The strongest indication-level evidence here comes from current U.S. prescribing
   unit: hours
   context: After intranasal Cmax, esketamine declines rapidly for the first 2–4 hours and has a mean terminal half-life of 7–12 hours. Mean absolute intranasal bioavailability is about 48%, and Tmax is 20–40 minutes after the final spray of a treatment session. Esketamine is metabolized chiefly by CYP2B6 and CYP3A4 to noresketamine. These values describe esketamine and should not be substituted for route-independent racemic-ketamine PK.
   sourceId: spravato-label
+  modelEligible: false
+- id: racemic-terminal-unresolved
+  analyte: ketamine
+  endpoint: elimination-half-life
+  statistic: not-established
+  route: intravenous
+  formulation: ketamine hydrochloride injection
+  population: clinical labeling population
+  value: null
+  low: null
+  high: null
+  unit: hours
+  context: KETALAR reports an initial alpha phase lasting about 45 minutes with a 10–15 minute half-life and a roughly 2.5-hour redistribution half-life from CNS to slower-equilibrating tissues. These are distribution/redistribution parameters, not a reported terminal elimination half-life.
+  sourceId: ketalar-label
   modelEligible: false
 ```
 
@@ -405,51 +444,6 @@ The strongest indication-level evidence here comes from current U.S. prescribing
   sourceId: ketalar-label
 ```
 
-## Monitoring
-
-```yaml
-- marker: Resting blood pressure
-  target: Below 120/80 mmHg before each session
-  why: Ketamine raises it transiently.
-  sourceId: ketalar-label
-- marker: Resting heart rate
-  target: 50–70 bpm
-  why: The same sympathetic surge can raise it.
-  sourceId: ketalar-label
-- marker: ALT
-  target: 10–26 U/L in men, 8–22 U/L in women
-  why: Detects liver-cell injury reported with heavy use.
-  sourceId: ketalar-label
-- marker: ALP and GGT
-  target: ALP 50–100 U/L; GGT below 20 U/L in men, below 15 U/L in women
-  why: Cholestatic bile-duct injury is the pattern seen with ketamine.
-  sourceId: ketalar-label
-- marker: Total bilirubin
-  target: 0.3–1.0 mg/dL
-  why: Completes the cholestatic picture alongside the bile-duct enzymes.
-  sourceId: ketalar-label
-- marker: "Urine dipstick: blood, protein, leukocytes"
-  target: Negative for all three
-  why: Earliest detectable sign of bladder-lining injury.
-  sourceId: ketalar-label
-- marker: Serum creatinine with eGFR
-  target: eGFR above 90 mL/min/1.73 m²
-  why: Upper-tract obstruction follows advanced bladder disease.
-  sourceId: ketalar-label
-- marker: PHQ-9 score
-  target: Below 5, or at least a 50% fall from the individual's own baseline
-  why: Defines response and remission objectively.
-  sourceId: murrough-2013
-- marker: CADSS score
-  target: No established target; track the peak against the individual's own first session
-  why: Quantifies dissociation so escalation can be detected.
-  sourceId: spravato-label
-```
-
-## Monitoring cadence
-
-Baseline liver panel, kidney function and urine dipstick within two weeks of starting. Blood pressure and heart rate every 10 minutes per session until baseline returns. Symptom scores at 24 hours after the first dose, then weekly through induction. Urine dipstick and liver enzymes at 3 months, then every 6 months while dosing continues, and immediately if urinary symptoms appear.
-
 ## Claims
 
 ```yaml
@@ -570,7 +564,7 @@ Baseline liver panel, kidney function and urine dipstick within two weeks of sta
   conflictsOfInterest: Not applicable to a compound database record.
   conflictOfInterestStatus: not-assessed
 - id: ketalar-label
-  title: 'These highlights do not include all the information needed to use KETALAR® safely and effectively. See full prescribing information for KETALAR. KETALAR (ketamine hydrochloride) injection, for intravenous or intramuscular use, CIII Initial U.S. Approval: 1970'
+  title: "These highlights do not include all the information needed to use KETALAR® safely and effectively. See full prescribing information for KETALAR. KETALAR (ketamine hydrochloride) injection, for intravenous or intramuscular use, CIII Initial U.S. Approval: 1970"
   authors: Par Health USA, LLC
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=14e8f864-8b8a-4e7e-8439-e510d3107063
@@ -582,7 +576,7 @@ Baseline liver panel, kidney function and urine dipstick within two weeks of sta
   conflictsOfInterest: Manufacturer-authored regulatory labeling; conventional investigator conflict disclosures are not applicable.
   conflictOfInterestStatus: not-assessed
 - id: spravato-label
-  title: 'These highlights do not include all the information needed to use SPRAVATO safely and effectively. See full prescribing information for SPRAVATO. SPRAVATO® (esketamine) nasal spray, CIII Initial U.S. Approval: 1970 (ketamine)'
+  title: "These highlights do not include all the information needed to use SPRAVATO safely and effectively. See full prescribing information for SPRAVATO. SPRAVATO® (esketamine) nasal spray, CIII Initial U.S. Approval: 1970 (ketamine)"
   authors: Janssen Pharmaceuticals, Inc.
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d81a6a79-a74a-44b7-822c-0dfa3036eaed
@@ -594,12 +588,12 @@ Baseline liver panel, kidney function and urine dipstick within two weeks of sta
   conflictsOfInterest: Manufacturer-authored regulatory labeling; conventional investigator conflict disclosures are not applicable.
   conflictOfInterestStatus: not-assessed
 - id: murrough-2013
-  title: 'Antidepressant Efficacy of Ketamine in Treatment-Resistant Major Depression: A Two-Site Randomized Controlled Trial'
+  title: "Antidepressant Efficacy of Ketamine in Treatment-Resistant Major Depression: A Two-Site Randomized Controlled Trial"
   authors: James W Murrough; Dan V Iosifescu; Lee C Chang; Rayan K Al Jurdi; Charles E Green; Andrew M Perez; Syed Iqbal; Sarah Pillemer; Alexandra Foulkes; Asim Shah; Dennis S Charney; Sanjay J Mathew
   year: 2013
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3992936/
   kind: Randomized double-blind active-controlled trial
-  pmid: '23982301'
+  pmid: "23982301"
   doi: 10.1176/appi.ajp.2013.13030392
   insight: A single 0.5 mg/kg IV racemic-ketamine infusion improved depression scores versus midazolam at 24 hours; the between-group advantage was not statistically significant at day 7, and transient dissociation and hemodynamic stopping events occurred.
   limitation: Selected treatment-resistant population, exclusion of psychotic and substance-use disorders, medication washout, one infusion, brief follow-up and recognizable psychoactive effects limit generalization and long-term inference.
@@ -609,12 +603,12 @@ Baseline liver panel, kidney function and urine dipstick within two weeks of sta
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC3992936/
 - id: janik-2025
-  title: 'Esketamine Monotherapy in Adults With Treatment-Resistant Depression: A Randomized Clinical Trial'
+  title: "Esketamine Monotherapy in Adults With Treatment-Resistant Depression: A Randomized Clinical Trial"
   authors: Adam Janik; Xin Qiu; Rosanne Lane; Vanina Popova; Wayne C Drevets; Carla M Canuso; Matthew Macaluso; Gregory W Mattingly; Richard C Shelton; John M Zajecka; Dong-Jing Fu
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12224050/
   kind: Phase 4 randomized double-blind placebo-controlled trial
-  pmid: '40601310'
+  pmid: "40601310"
   doi: 10.1001/jamapsychiatry.2025.1317
   insight: Fixed-dose intranasal esketamine monotherapy at 56 or 84 mg twice weekly reduced MADRS scores versus placebo by day 28, with separation also present approximately 24 hours after the first dose.
   limitation: Significant psychiatric or medical comorbidity and substance dependence were excluded; racial and ethnic diversity was limited; adverse effects could reveal assignment, with 71.1% of the 56-mg group and 78.3% of the 84-mg group strongly believing they had received esketamine; the extension phase was uncontrolled.
@@ -629,7 +623,7 @@ Baseline liver panel, kidney function and urine dipstick within two weeks of sta
   year: 2018
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6360925/
   kind: Cochrane systematic review and meta-analysis of randomized controlled trials
-  pmid: '30570761'
+  pmid: "30570761"
   doi: 10.1002/14651858.CD012033.pub4
   insight: Across 130 studies with 8341 participants, perioperative IV ketamine modestly reduced postoperative pain and opioid consumption; pooled CNS adverse events were not significantly different from control.
   limitation: Operations, regimens and study sizes were heterogeneous; many arms contained fewer than 50 participants, small-study effects affected certainty, and the primary pooled analysis was not stratified by dose.
@@ -671,4 +665,3 @@ Baseline liver panel, kidney function and urine dipstick within two weeks of sta
   sourceUrl: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=d81a6a79-a74a-44b7-822c-0dfa3036eaed
   asOf: 2026-10-16
 ```
-

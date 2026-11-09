@@ -16,17 +16,17 @@ For each change:
 4. Name the measured analyte in pharmacokinetics. Distinguish a study mean, interval and range across studies. Tobacco-smoke exposure is a metabolic context, not a caffeine administration route. Psilocin observations must not be relabeled psilocybin.
 5. Link shared entities using canonical IDs. A hyperedge must keep all qualifying members and their roles, including context; association does not establish causation or suggest combined use.
 6. Scope legal claims to jurisdiction, activity/form, date and authoritative source. Leave unassessed contexts unknown.
-7. Record limitations, funding/conflicts when assessed, molecular-image provenance, contributor information and the actual review state. Update `docs/content-sources.md` for new sources or assets.
+7. Record limitations, funding/conflicts when assessed, molecular-image provenance, contributor information and publication history. Update `docs/content-sources.md` for new sources or assets.
 
-“Sourced draft” means source-linked editorial content without a completed independent review. Do not change it to reviewed merely because automated checks pass. Unpublished visibility and review status are separate fields. Unknown data is neither zero nor evidence of absence.
+Content is processed through automated validation. Unknown fields are omitted; missing values are never inferred.
 
 Contributions must fit an independent reference wiki. Do not add referral links, promotional integration, personal health records, vendor listings or purchasing information. Never commit credentials or private reviewer correspondence. Browser editing, accounts and community ratings are outside this release.
 
 ## Review and publication
 
-The workflow is **propose → validate → review the diff and sources → merge → publish transactionally**. Reviewers check that the source supports the actual assertion and population, that wording is proportionate to evidence, and that licensing permits any reused material. Source verification is required separately from test results.
+The workflow is **propose → validate → merge → publish transactionally**. Automated checks validate source references, structured observations and graph membership.
 
-The publisher uses the reviewed source commit and records contributor/reviewer metadata. Normalized facts, public article projections and published-revision pointers change atomically. Reversions append a new publication event; unchanged imports do not add duplicate events. The runtime reader has no publishing privileges. See [database operations](docs/database.md).
+The publisher uses the source commit and records contributor metadata. Normalized facts, public article projections and published-revision pointers change atomically. Reversions append a new publication event; unchanged imports do not add duplicate events. The runtime reader has no publishing privileges. See [database operations](docs/database.md).
 
 ## Checks
 

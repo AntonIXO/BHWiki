@@ -1,20 +1,25 @@
 ---
 slug: creatine
 name: Creatine
-subtitle: An energy reserve, studied over time.
+subtitle: Amino acid derivative
 aliases:
-- Creatine monohydrate (supplement form)
+  - Creatine monohydrate (supplement form)
 formula: C4H9N3O2
 molecularWeight: 131.13 g/mol
 pubchemCid: 586
 smiles: CN(CC(=O)O)C(=N)N
 category: Amino acid derivative
 tags:
-- amino-acid
-- energy-buffer
-- exercise
-- muscle-stores
-accent: '#c3b093'
+  - amino-acid
+  - energy-buffer
+  - exercise
+  - muscle-stores
+  - brain-energy-metabolism
+  - cognitive-performance
+  - brain-creatine
+  - attention
+  - androgen-metabolism
+accent: "#c3b093"
 reviewedAt: 2026-10-08
 halfLife:
   label: Tissue stores matter
@@ -32,43 +37,43 @@ kinetics:
   sourceId: hultman1996
 editorialStatus: sourced-draft
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- halfLife
-- kinetics
-- modifiers
-- doses
-- effects
-- mechanisms
-- cautions
-- references
-- legal
-- editorialStatus
-- pkObservations
-- outcomes
-- claims
-- interactions
-- experienceLinks
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - halfLife
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - mechanisms
+  - cautions
+  - references
+  - legal
+  - editorialStatus
+  - pkObservations
+  - outcomes
+  - claims
+  - interactions
+  - experienceLinks
+  - externalWikiLinks
 x-order: 2
 ---
 
 ## Summary
 
-An endogenous compound used in muscle energy metabolism. Supplementation reliably raises muscle creatine stores, while evidence for cognitive enhancement is context-dependent and not established for healthy, well-rested young adults. [2018 systematic review](https://pubmed.ncbi.nlm.nih.gov/29704637/) [2024 EFSA assessment](https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2024.9100)
+An endogenous compound used in muscle energy metabolism. Supplementation reliably raises muscle creatine stores, while evidence for cognitive enhancement is context-dependent and not established for healthy, well-rested young adults.
 
 ## Description
 
@@ -76,9 +81,7 @@ Creatine is better understood through tissue stores and repeated supplementation
 
 ## Evidence note
 
-This article covers muscle stores, exercise, and the tested cognitive contexts of normal rest, older age, and acute sleep deprivation. The cognitive findings are heterogeneous, and the meta-analytic estimates are sensitive to correlated-test counting; they do not establish creatine as a general nootropic. A 2026 review likewise argues that physiological plausibility has not translated into convincing or consistently interpretable clinical cognitive evidence. [2026 methodological commentary](https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1716285/full) [Machado 2026](https://pubmed.ncbi.nlm.nih.gov/42912797/)
-
-Reddit index corpus import (18 linked source records; 10 PubMed abstracts including PMC-only links resolved to PMIDs 17185404 and 14561278). Full-text methods, funding, and conflicts remain unassessed where the source record says so.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -97,7 +100,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   purpose: Cerebral energetics research
   sourceCategory: research
   note: Abstract reports a 7-day protocol but not the administered dose.
-  sourceId: reddit-pmid-17185404
+  sourceId: pubmed-17185404
 - label: Vegetarian young-adult crossover trial (PMID 14561278)
   amount: 5 g/day
   quantity: 5
@@ -112,7 +115,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   purpose: Intelligence and working-memory research
   sourceCategory: research
   note: Double-blind placebo-controlled crossover exposure; not a general dosing recommendation.
-  sourceId: reddit-pmid-14561278
+  sourceId: pubmed-14561278
 - label: Gradual muscle-loading study
   amount: 3 g daily for 28 days
   route: Oral
@@ -165,7 +168,6 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   unit: g/kg
   ingredient: Creatine
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -186,7 +188,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
-  sourceId: reddit-pmid-27497517
+  sourceId: pubmed-27497517
 - label: PubMed study exposure (10484486)
   amount: 4 x 5 g/day
   quantity: 5
@@ -201,7 +203,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   purpose: Measure brain total-creatine concentration by proton MRS
   sourceCategory: research
   note: Mean brain total creatine increased 8.7% (0.6 mM); regional changes were reversible by at least 3 months.
-  sourceId: reddit-pmid-10484486
+  sourceId: pubmed-10484486
 - label: PubMed study exposure (12850248)
   amount: 0.3 g/kg/day for 7 days, then 0.03 g/kg/day for 7 days
   quantity: 0.3
@@ -216,7 +218,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   purpose: Brain creatine and high-energy phosphate MRS
   sourceCategory: research
   note: Brain creatine ratios increased 8.1% and 9.3% versus placebo; beta-NTP decreased 7.8% and PCr increased 3.4%.
-  sourceId: reddit-pmid-12850248
+  sourceId: pubmed-12850248
 - label: PubMed study exposure (16416332)
   amount: 5 g four times daily
   quantity: 5
@@ -231,7 +233,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   purpose: Cognitive, psychomotor, mood, and endocrine outcomes during 24-hour sleep deprivation
   sourceCategory: research
   note: At 24 hours, the creatine group showed less change in random-movement generation, choice reaction time, balance, and mood.
-  sourceId: reddit-pmid-16416332
+  sourceId: pubmed-16416332
 - label: PubMed study exposure (19741313)
   amount: 25 g/day loading for 7 days, then 5 g/day for 14 days
   quantity: 25
@@ -246,7 +248,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   purpose: Serum testosterone and dihydrotestosterone ratios
   sourceCategory: research
   note: DHT increased 56% after loading and remained 40% above baseline after maintenance; T did not change.
-  sourceId: reddit-pmid-19741313
+  sourceId: pubmed-19741313
 ```
 
 ## Pharmacokinetics
@@ -293,7 +295,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   direction: Increased
   evidence: Human research
   description: Seven days of oral creatine supplementation changed brain high-energy phosphate and metabolite ratios on 31P/1H MRS; PCr/ATP increased while NAA/Cr decreased, with larger effects in regions with lower baseline PCr/ATP.
-  sourceId: reddit-pmid-17185404
+  sourceId: pubmed-17185404
   conceptId: brain-energy-metabolism
   population: Healthy adults
   exposure: Oral creatine for 7 days; dose not stated in abstract
@@ -304,7 +306,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   direction: Increased
   evidence: Human research
   description: In 45 young adult vegetarians, 5 g/day creatine monohydrate for six weeks improved backward digit span and Raven's Advanced Progressive Matrices in a double-blind crossover trial.
-  sourceId: reddit-pmid-14561278
+  sourceId: pubmed-14561278
   conceptId: cognitive-performance
   population: 45 young adult vegetarian participants
   exposure: 5 g/day creatine monohydrate for 6 weeks
@@ -326,7 +328,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   direction: Increased
   evidence: Human research
   description: Four weeks of 4 x 5 g/day creatine monohydrate increased mean brain total creatine 8.7% (0.6 mM) in six healthy young volunteers; regional changes were reversible by at least three months.
-  sourceId: reddit-pmid-10484486
+  sourceId: pubmed-10484486
   conceptId: brain-creatine
   population: 6 healthy young volunteers
   exposure: 4 x 5 g/day creatine monohydrate for 4 weeks
@@ -337,7 +339,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   direction: Increased
   evidence: Human research
   description: In 15 healthy men, 0.3 g/kg/day for 7 days followed by 0.03 g/kg/day for 7 days increased brain creatine ratios and modestly increased phosphocreatine.
-  sourceId: reddit-pmid-12850248
+  sourceId: pubmed-12850248
   conceptId: brain-energy-metabolism
   population: 10 creatine and 5 placebo healthy men
   exposure: 0.3 g/kg/day for 7 days then 0.03 g/kg/day for 7 days
@@ -359,7 +361,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   direction: Variable
   evidence: Human research
   description: After 24 hours of sleep deprivation, participants preloaded with 5 g creatine four times daily for 7 days showed less change in random-movement generation, choice reaction time, static balance, and mood than placebo.
-  sourceId: reddit-pmid-16416332
+  sourceId: pubmed-16416332
   conceptId: attention
   population: 10 creatine and 9 placebo participants
   exposure: 5 g creatine monohydrate four times daily for 7 days
@@ -370,7 +372,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   direction: Variable
   evidence: Human research
   description: In 15 healthy adults, seven days of creatine supplementation increased brain creatine by 9.2% and restored attention during 90 minutes of 10% oxygen exposure; corticomotor excitability also increased.
-  sourceId: reddit-pmid-25632150
+  sourceId: pubmed-25632150
   conceptId: attention
   population: 15 healthy adults
   exposure: Creatine and placebo treatments for 7 days
@@ -381,7 +383,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   direction: Increased
   evidence: Human research
   description: In 20 college-aged male rugby players, 25 g/day loading for 7 days then 5 g/day for 14 days increased DHT 56% after loading and 40% above baseline after maintenance; testosterone did not change.
-  sourceId: reddit-pmid-19741313
+  sourceId: pubmed-19741313
   conceptId: androgen-metabolism
   population: 20 male rugby players
   exposure: 25 g/day for 7 days then 5 g/day for 14 days
@@ -399,16 +401,16 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   conceptId: energy-buffer
 - title: Source-specific finding from PMID 21448658
   description: The pleiotropic effects of creatine (Cr) are based mostly on the functions of the enzyme creatine kinase (CK) and its high-energy product phosphocreatine (PCr).
-  sourceId: reddit-pmid-21448658
+  sourceId: pubmed-21448658
 - title: Source-specific finding from PMID 25632150
   description: In 15 healthy adults, seven days of creatine increased brain creatine by 9.2%; during 10% oxygen exposure, attention decrements were restored and corticomotor excitability increased.
-  sourceId: reddit-pmid-25632150
+  sourceId: pubmed-25632150
 - title: Source-specific finding from PMID 16416332
   description: After 24-hour sleep deprivation, 5 g creatine four times daily for 7 days reduced changes in random-movement generation, choice reaction time, balance, and mood versus placebo.
-  sourceId: reddit-pmid-16416332
+  sourceId: pubmed-16416332
 - title: Source-specific finding from PMID 19741313
   description: In 20 male rugby players, DHT increased 56% after 7 days of 25 g/day loading and remained 40% above baseline after 14 days of 5 g/day maintenance; testosterone did not change.
-  sourceId: reddit-pmid-19741313
+  sourceId: pubmed-19741313
 ```
 
 ## Cautions
@@ -428,13 +430,13 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   sourceId: young-adults-2008
 - title: Source-specific finding from PMID 27497517
   description: In five healthy men, oral GAA at 36 mg/kg/day for four weeks (titrated up to 60 mg/kg/day) increased creatine in cerebellum and white/gray matter; no neurologic adverse events were reported.
-  sourceId: reddit-pmid-27497517
+  sourceId: pubmed-27497517
 - title: Source-specific finding from PMID 12850248
   description: In 15 healthy men, oral creatine increased brain creatine ratios 8.1–9.3% over 14 days and changed beta-NTP, phosphocreatine, and inorganic phosphate signals.
-  sourceId: reddit-pmid-12850248
+  sourceId: pubmed-12850248
 - title: Source-specific finding from PMID 19741313
   description: In 20 male rugby players, DHT increased 56% after 7 days of 25 g/day loading and remained 40% above baseline after 14 days of 5 g/day maintenance; testosterone did not change.
-  sourceId: reddit-pmid-19741313
+  sourceId: pubmed-19741313
 ```
 
 ## Claims
@@ -444,13 +446,13 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   assertion: Repeated supplementation raised muscle total creatine concentration.
   relation: measured-outcome
   participants:
-  - entityId: substance:creatine
-    role: exposure
-  - entityId: tag:muscle-stores
-    role: measured-outcome
+    - entityId: substance:creatine
+      role: exposure
+    - entityId: tag:muscle-stores
+      role: measured-outcome
   context: Men receiving the studied supplementation protocols.
   sourceIds:
-  - hultman1996
+    - hultman1996
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Muscle concentration is not itself a subjective or cognitive outcome.
@@ -458,15 +460,15 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   assertion: Creatine participates in phosphocreatine energy buffering.
   relation: metabolic-pathway
   participants:
-  - entityId: substance:creatine
-    role: substrate
-  - entityId: tag:energy-buffer
-    role: mechanism
-  - entityId: tag:exercise
-    role: related-outcome
+    - entityId: substance:creatine
+      role: substrate
+    - entityId: tag:energy-buffer
+      role: mechanism
+    - entityId: tag:exercise
+      role: related-outcome
   context: Exercise physiology reviewed in a professional-society position stand.
   sourceIds:
-  - kreider2017
+    - kreider2017
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Individual exercise outcomes depend on task and training context.
@@ -474,34 +476,34 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   assertion: Creatine's cognitive effects, if present, depend on population and metabolic context rather than constituting a general nootropic effect.
   relation: evidence-scope
   participants:
-  - entityId: substance:creatine
-    role: exposure
-  - entityId: tag:memory
-    role: cognitive-outcome
-  - entityId: tag:attention
-    role: cognitive-outcome
+    - entityId: substance:creatine
+      role: exposure
+    - entityId: tag:memory
+      role: cognitive-outcome
+    - entityId: tag:attention
+      role: cognitive-outcome
   context: Healthy adults studied during normal rest, older age, or acute sleep deprivation.
   sourceIds:
-  - efsa-creatine-2024
-  - creatine-memory-2023
-  - sleep-deprivation-2024
+    - efsa-creatine-2024
+    - creatine-memory-2023
+    - sleep-deprivation-2024
   conflictingSourceIds:
-  - creatine-cognition-2024
+    - creatine-cognition-2024
   assessment: not-formally-assessed
   limitation: Small samples, heterogeneous tests and methodological criticism prevent a general efficacy claim.
 - id: cognitive-evidence-gap-2026
   assertion: Physiological plausibility for cerebral creatine effects has not yet translated into convincing, consistently interpretable clinical cognitive benefit.
   relation: evidence-boundary
   participants:
-  - entityId: substance:creatine
-    role: exposure
-  - entityId: tag:memory
-    role: cognitive-outcome
-  - entityId: tag:attention
-    role: cognitive-outcome
+    - entityId: substance:creatine
+      role: exposure
+    - entityId: tag:memory
+      role: cognitive-outcome
+    - entityId: tag:attention
+      role: cognitive-outcome
   context: A 2026 review separates cerebral bioenergetic mechanisms from the still-inconsistent clinical supplementation literature.
   sourceIds:
-  - pmid-42912797
+    - pmid-42912797
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Narrative review; it does not replace new randomized outcome data or establish that no subgroup can benefit.
@@ -509,13 +511,13 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   assertion: Six weeks of creatine did not improve the tested cognitive or psychomotor measures in non-sleep-deprived young adults.
   relation: measured-outcome
   participants:
-  - entityId: substance:creatine
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: endpoint
+    - entityId: substance:creatine
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: endpoint
   context: 22 healthy adults receiving 0.03 g/kg/day for 6 weeks.
   sourceIds:
-  - young-adults-2008
+    - young-adults-2008
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Small study in healthy young adults.
@@ -523,13 +525,13 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   assertion: Seven-day creatine loading preserved selected cognitive, balance, and mood measures after 24 hours of sleep deprivation.
   relation: measured-outcome
   participants:
-  - entityId: substance:creatine
-    role: intervention
-  - entityId: tag:attention
-    role: endpoint
+    - entityId: substance:creatine
+      role: intervention
+    - entityId: tag:attention
+      role: endpoint
   context: 10 creatine and 9 placebo participants; 5 g four times daily for 7 days.
   sourceIds:
-  - reddit-pmid-16416332
+    - pubmed-16416332
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Small sleep-deprivation study.
@@ -537,13 +539,13 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   assertion: Seven-day creatine supplementation restored attention during acute 10% oxygen exposure in healthy adults.
   relation: measured-outcome
   participants:
-  - entityId: substance:creatine
-    role: intervention
-  - entityId: tag:attention
-    role: endpoint
+    - entityId: substance:creatine
+      role: intervention
+    - entityId: tag:attention
+      role: endpoint
   context: 15 healthy adults; brain creatine increased 9.2% and corticomotor excitability increased.
   sourceIds:
-  - reddit-pmid-25632150
+    - pubmed-25632150
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Acute hypoxia model; does not establish everyday cognitive enhancement.
@@ -551,13 +553,13 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   assertion: Oral creatine changed brain creatine and high-energy phosphate MRS signals in healthy men.
   relation: measured-outcome
   participants:
-  - entityId: substance:creatine
-    role: intervention
-  - entityId: tag:brain-energy-metabolism
-    role: endpoint
+    - entityId: substance:creatine
+      role: intervention
+    - entityId: tag:brain-energy-metabolism
+      role: endpoint
   context: 0.3 g/kg/day for 7 days followed by 0.03 g/kg/day for 7 days.
   sourceIds:
-  - reddit-pmid-12850248
+    - pubmed-12850248
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Metabolic signal changes are not clinical cognitive outcomes.
@@ -565,13 +567,13 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   assertion: Creatine loading and maintenance increased serum DHT but not testosterone in male rugby players.
   relation: measured-outcome
   participants:
-  - entityId: substance:creatine
-    role: intervention
-  - entityId: tag:androgen-metabolism
-    role: endpoint
+    - entityId: substance:creatine
+      role: intervention
+    - entityId: tag:androgen-metabolism
+      role: endpoint
   context: 25 g/day for 7 days followed by 5 g/day for 14 days in 20 college-aged men.
   sourceIds:
-  - reddit-pmid-19741313
+    - pubmed-19741313
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Small sports cohort; long-term clinical significance is unknown.
@@ -579,13 +581,13 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   assertion: Experimental GAA supplementation increased creatine in several brain regions in five healthy men.
   relation: measured-outcome
   participants:
-  - entityId: substance:creatine
-    role: related-exposure
-  - entityId: tag:brain-creatine
-    role: endpoint
+    - entityId: substance:creatine
+      role: related-exposure
+    - entityId: tag:brain-creatine
+      role: endpoint
   context: 36 mg/kg/day GAA for 4 weeks titrated to ≤60 mg/kg/day over 8 weeks.
   sourceIds:
-  - reddit-pmid-27497517
+    - pubmed-27497517
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: GAA is an experimental precursor, not the creatine intervention itself.
@@ -603,25 +605,14 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
 []
 ```
 
-## External wiki links
-
-```yaml
-- service: Wikipedia
-  url: https://en.wikipedia.org/wiki/Creatine
-  title: Wikipedia
-- service: Examine
-  url: https://examine.com/supplements/Creatine
-  title: Examine
-```
-
 ## References
 
 ```yaml
 - id: pmid-42912797
-  title: 'Creatine and cognitive function: Why has physiological plausibility not translated into convincing clinical evidence?'
+  title: "Creatine and cognitive function: Why has physiological plausibility not translated into convincing clinical evidence?"
   authors: Machado M.
   year: 2026
-  pmid: '42912797'
+  pmid: "42912797"
   doi: 10.1113/ep094109
   url: https://pubmed.ncbi.nlm.nih.gov/42912797/
   kind: Narrative review
@@ -640,10 +631,10 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   insight: Compared muscle accumulation with different supplementation patterns in 31 men.
   limitation: Male-only sample; muscle concentration is not itself an exercise or cognitive outcome.
   funding: Not assessed; consult the original disclosure.
-  pmid: '8828669'
+  pmid: "8828669"
   doi: 10.1152/jappl.1996.81.1.232
 - id: kreider2017
-  title: 'International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine'
+  title: "International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine"
   authors: Kreider et al.
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/28615996/
@@ -651,10 +642,10 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   insight: Summarizes muscle energy metabolism and exercise supplementation research.
   limitation: A professional-society position stand, not an independent trial; proposed clinical uses vary in evidence strength.
   funding: Not assessed; consult the original disclosure.
-  pmid: '28615996'
+  pmid: "28615996"
   doi: 10.1186/s12970-017-0173-z
 - id: creatine-cognition-2018
-  title: 'Effects of creatine supplementation on cognitive function of healthy individuals: A systematic review of randomized controlled trials'
+  title: "Effects of creatine supplementation on cognitive function of healthy individuals: A systematic review of randomized controlled trials"
   authors: Kyriakos I. Avgerinos, Nikolaos Spyrou, Konstantinos I. Bougioukas, Dimitrios Kapogiannis
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/29704637/
@@ -665,10 +656,10 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the Deep Research report.
   conflictOfInterestStatus: not-assessed
-  pmid: '29704637'
+  pmid: "29704637"
   doi: 10.1016/j.exger.2018.04.013
 - id: creatine-memory-2023
-  title: 'Effects of creatine supplementation on memory in healthy individuals: a systematic review and meta-analysis of randomized controlled trials'
+  title: "Effects of creatine supplementation on memory in healthy individuals: a systematic review and meta-analysis of randomized controlled trials"
   authors: Konstantinos Prokopidis, Petros Giannos, Konstantinos K. Triantafyllidis, Konstantinos S. Kechagias, Scott C. Forbes, Darren G. Candow
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/35984306/
@@ -679,10 +670,10 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the Deep Research report.
   conflictOfInterestStatus: not-assessed
-  pmid: '35984306'
+  pmid: "35984306"
   doi: 10.1093/nutrit/nuac064
 - id: creatine-cognition-2024
-  title: 'The effects of creatine supplementation on cognitive function in adults: a systematic review and meta-analysis'
+  title: "The effects of creatine supplementation on cognitive function in adults: a systematic review and meta-analysis"
   authors: Chen Xu, Siyuan Bi, Wenxin Zhang, Lin Luo
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/39070254/
@@ -693,10 +684,10 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the Deep Research report.
   conflictOfInterestStatus: not-assessed
-  pmid: '39070254'
+  pmid: "39070254"
   doi: 10.3389/fnut.2024.1424972
 - id: efsa-creatine-2024
-  title: 'Creatine and improvement in cognitive function: Evaluation of a health claim pursuant to Article 13(5) of Regulation (EC) No 1924/2006'
+  title: "Creatine and improvement in cognitive function: Evaluation of a health claim pursuant to Article 13(5) of Regulation (EC) No 1924/2006"
   authors: EFSA Panel on Nutrition, Novel Foods and Food Allergens
   year: 2024
   url: https://efsa.onlinelibrary.wiley.com/doi/full/10.2903/j.efsa.2024.9100
@@ -719,9 +710,9 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the Deep Research report.
   conflictOfInterestStatus: not-assessed
-  pmid: '18579168'
+  pmid: "18579168"
 - id: commentary-2026
-  title: 'Commentary: The effects of creatine supplementation on cognitive function in adults: a systematic review and meta-analysis'
+  title: "Commentary: The effects of creatine supplementation on cognitive function in adults: a systematic review and meta-analysis"
   authors: Thomas Citherlet
   year: 2026
   url: https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1716285/full
@@ -732,10 +723,10 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the Deep Research report.
   conflictOfInterestStatus: not-assessed
-  pmid: '42039906'
+  pmid: "42039906"
   doi: 10.3389/fnut.2026.1716285
 - id: creatine-aging-2025
-  title: 'Creatine and Cognition in Aging: A Systematic Review of Evidence in Older Adults'
+  title: "Creatine and Cognition in Aging: A Systematic Review of Evidence in Older Adults"
   authors: Samantha Marshall, Alexandra Kitzan, Jasmine Wright, Laura Bocicariu, Lindsay S. Nagamatsu
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12793482/
@@ -746,7 +737,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed in the Deep Research report.
   conflictOfInterestStatus: not-assessed
-  pmid: '40971619'
+  pmid: "40971619"
   doi: 10.1093/nutrit/nuaf135
 - id: creatine-aging-2026
   title: Effects of creatine supplementation with and without exercise and diet intervention on body composition, cognitive function, and markers of health in middle-aged and older adults
@@ -774,7 +765,7 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   conflictOfInterestStatus: not-assessed
   doi: 10.1038/s41598-024-54249-9
 - id: pubchem
-  title: 'Creatine: compound record and molecular structure'
+  title: "Creatine: compound record and molecular structure"
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/586
@@ -782,21 +773,19 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   insight: Source for molecular identity, formula, molecular weight and the structure diagram.
   limitation: A compound record does not establish a product's purity, identity or clinical benefit.
   funding: Public database maintained by NCBI.
-- id: reddit-link-e3a75cb29d01
+- id: publication-link-e3a75cb29d01
   title: Cerebral energetic effects of creatine supplementation in humans.
   authors: J W Pan; K Takahashi
   year: 2007
   url: https://pubmed.ncbi.nlm.nih.gov/17185404/
   kind: PubMed publication
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-  pmid: '17185404'
+  pmid: "17185404"
   doi: 10.1152/ajpregu.00717.2006
-- id: reddit-pmid-21448658
+- id: pubmed-21448658
   title: The creatine kinase system and pleiotropic effects of creatine.
   authors: Theo Wallimann, Malgorzata Tokarska-Schlattner, Uwe Schlattner
   year: 2011
@@ -804,103 +793,87 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   kind: PubMed publication
   insight: The pleiotropic effects of creatine (Cr) are based mostly on the functions of the enzyme creatine kinase (CK) and its high-energy product phosphocreatine (PCr).
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '21448658'
+  pmid: "21448658"
   doi: 10.1007/s00726-011-0877-3
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-4eb60436497c
+- id: publication-link-4eb60436497c
   title: Does brain creatine content rely on exogenous creatine in healthy youth? A proof-of-principle study(2016)
   authors: Not established
   year: 2016
   url: https://www.nrcresearchpress.com/doi/abs/10.1139/apnm-2016-0406#.V_0yCe1Otps
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-5635dcfd7c41
+- id: publication-link-5635dcfd7c41
   title: Cognitive effects of creatine ethyl ester supplementation
   authors: Not established
   year: 2026
   url: https://jtoomim.org/files/Ling_2009-Cognitive_effects_of_creatine_ethyl_ester_supplementation.pdf
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-4a303028b0ed
-  title: 'Creatine Supplementation Associated or Not with Strength Training upon Emotional and Cognitive Measures in Older Women: A Randomized Double-Blind Study '
+- id: publication-link-4a303028b0ed
+  title: "Creatine Supplementation Associated or Not with Strength Training upon Emotional and Cognitive Measures in Older Women: A Randomized Double-Blind Study "
   authors: Not established
   year: 2026
   url: https://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0076301
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-c413e7dfdbeb
-  title: 'The influence of creatine supplementation on the cognitive functioning
-
-    of vegetarians and omnivores'
+- id: publication-link-c413e7dfdbeb
+  title: |-
+    The influence of creatine supplementation on the cognitive functioning
+    of vegetarians and omnivores
   authors: Not established
   year: 2026
   url: https://img2.timg.co.il/forums/1_161120651.pdf
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-6850d86dc36e
-  title: 'Effects of creatine on mental fatigue and cerebral hemoglobin
-
-    oxygenation'
+- id: publication-link-6850d86dc36e
+  title: |-
+    Effects of creatine on mental fatigue and cerebral hemoglobin
+    oxygenation
   authors: Not established
   year: 2026
   url: https://jtoomim.org/brain-training/watanabe2001-creatine-reduces-mentalfatigue.pdf
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-c1a7e998496e
-  title: 'Oral creatine monohydrate supplementation improves brain performance: a double-blind, placebo-controlled, cross-over trial.'
+- id: publication-link-c1a7e998496e
+  title: "Oral creatine monohydrate supplementation improves brain performance: a double-blind, placebo-controlled, cross-over trial."
   authors: Caroline Rae; Alison L Digney; Sally R McEwan; Tim Bates
   year: 2003
   url: https://pubmed.ncbi.nlm.nih.gov/14561278/
   kind: PubMed publication
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-  pmid: '14561278'
+  pmid: "14561278"
   doi: 10.1098/rspb.2003.2492
-- id: reddit-link-3c2bf8e16c45
+- id: publication-link-3c2bf8e16c45
   title: Dietary supplementation of creatine monohydrate reduces the human fMRI BOLD signal
   authors: Not established
   year: 2026
   url: https://www.researchgate.net/publication/44694983_Dietary_supplementation_of_creatine_monohydrate_reduces_the_human_fMRI_BOLD_signal/file/9fcfd50bb2b9e2fba1.pdf
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-25632150
+- id: pubmed-25632150
   title: Creatine supplementation enhances corticomotor excitability and cognitive performance during oxygen deprivation.
   authors: Clare E Turner, Winston D Byblow, Nicholas Gant
   year: 2015
@@ -908,14 +881,12 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   kind: PubMed publication
   insight: Seven-day creatine supplementation increased brain creatine 9.2% and restored attention during 10% oxygen exposure in 15 healthy adults.
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '25632150'
+  pmid: "25632150"
   pmcid: PMC6795258
   doi: 10.1523/JNEUROSCI.3113-14.2015
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-27497517
+- id: pubmed-27497517
   title: Dietary guanidinoacetic acid increases brain creatine levels in healthy men.
   authors: Sergej M Ostojic, Jelena Ostojic, Patrik Drid, Milan Vranes, Pavle Jovanov
   year: 2017
@@ -923,25 +894,21 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   kind: PubMed publication
   insight: Five healthy men received 36 mg/kg/day GAA for four weeks, titrated up to 60 mg/kg/day; brain creatine increased in several regions and no neurologic adverse events were reported.
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '27497517'
+  pmid: "27497517"
   doi: 10.1016/j.nut.2016.06.001
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-ab5bf80c0ba9
-  title: 'Biomarkers and Long-term Labour Market Outcomes: The Case of Creatine'
+- id: publication-link-ab5bf80c0ba9
+  title: "Biomarkers and Long-term Labour Market Outcomes: The Case of Creatine"
   authors: Not established
   year: 2026
   url: https://ftp.iza.org/dp8029.pdf
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-10484486
+- id: pubmed-10484486
   title: Increase of total creatine in human brain after oral supplementation of creatine-monohydrate.
   authors: P Dechent, P J Pouwels, B Wilken, F Hanefeld, J Frahm
   year: 1999
@@ -949,13 +916,11 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   kind: PubMed publication
   insight: The effect of oral creatine supplementation on brain metabolite concentrations was investigated in gray matter, white matter, cerebellum, and thalamus of healthy young volunteers by means of quantitative localized proton magnetic resonance spectroscopy in vivo (2.0 T, stimulated echo acquisition mode sequence; repetition time = 6,000 ms, echo time = 20 ms, middle interval = 10 ms, automated spectral evaluation).
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '10484486'
+  pmid: "10484486"
   doi: 10.1152/ajpregu.1999.277.3.R698
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-12850248
+- id: pubmed-12850248
   title: Multinuclear magnetic resonance spectroscopy of high-energy phosphate metabolites in human brain following oral supplementation of creatine-monohydrate.
   authors: In Kyoon Lyoo, Sek Won Kong, Seung Mo Sung, Fuyuki Hirashima, Aimee Parow, John Hennen, Bruce M Cohen, Perry F Renshaw
   year: 2003
@@ -963,13 +928,11 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   kind: PubMed publication
   insight: Fifteen healthy men received 0.3 g/kg/day creatine for 7 days then 0.03 g/kg/day for 7 days; brain creatine ratios increased and beta-NTP decreased.
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '12850248'
+  pmid: "12850248"
   doi: 10.1016/s0925-4927(03)00046-5
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-16416332
+- id: pubmed-16416332
   title: Effect of creatine supplementation and sleep deprivation, with mild exercise, on cognitive and psychomotor performance, mood state, and plasma concentrations of catecholamines and cortisol.
   authors: T McMorris, R C Harris, J Swain, J Corbett, K Collard, R J Dyson, L Dye, C Hodgson, N Draper
   year: 2006
@@ -977,13 +940,11 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   kind: PubMed publication
   insight: Ten creatine and nine placebo participants took 5 g creatine four times daily for 7 days; after 24-hour sleep deprivation, creatine preserved several cognitive, balance, and mood measures.
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '16416332'
+  pmid: "16416332"
   doi: 10.1007/s00213-005-0269-z
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-19741313
+- id: pubmed-19741313
   title: Three weeks of creatine monohydrate supplementation affects dihydrotestosterone to testosterone ratio in college-aged rugby players.
   authors: Johann van der Merwe, Naomi E Brooks, Kathryn H Myburgh
   year: 2009
@@ -991,25 +952,21 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   kind: PubMed publication
   insight: Twenty male rugby players received 25 g/day creatine loading for 7 days then 5 g/day for 14 days; DHT rose while testosterone did not change.
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '19741313'
+  pmid: "19741313"
   doi: 10.1097/JSM.0b013e3181b8b52f
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-237b30b664e6
+- id: publication-link-237b30b664e6
   title: Inhibition of the Mitochondrial Permeability Transition by Creatine Kinase Substrates
   authors: Not established
   year: 2026
   url: https://www.jbc.org/content/278/20/17760.short
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-17185404
+- id: pubmed-17185404
   title: Cerebral energetic effects of creatine supplementation in humans.
   authors: J W Pan; K Takahashi
   year: 2007
@@ -1017,18 +974,18 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
   kind: PubMed publication
   insight: Seven-day oral creatine supplementation shifted brain PCr/ATP and NAA/Cr ratios on high-field MRS in healthy adults.
   limitation: Abstract does not state dose; biochemical changes are not direct proof of cognitive benefit.
-  pmid: '17185404'
+  pmid: "17185404"
   pmcid: PMC3570026
   doi: 10.1152/ajpregu.00717.2006
-- id: reddit-pmid-14561278
-  title: 'Oral creatine monohydrate supplementation improves brain performance: a double-blind, placebo-controlled, cross-over trial.'
+- id: pubmed-14561278
+  title: "Oral creatine monohydrate supplementation improves brain performance: a double-blind, placebo-controlled, cross-over trial."
   authors: Caroline Rae; Alison L Digney; Sally R McEwan; Tim Bates
   year: 2003
   url: https://pubmed.ncbi.nlm.nih.gov/14561278/
   kind: PubMed publication
   insight: Five grams/day creatine for six weeks improved backward digit span and Raven matrices in 45 young vegetarian adults.
   limitation: Selected vegetarian sample and single trial; generalizability and long-term safety remain uncertain.
-  pmid: '14561278'
+  pmid: "14561278"
   pmcid: PMC1691485
   doi: 10.1098/rspb.2003.2492
 ```
@@ -1037,4 +994,15 @@ Reddit index corpus import (18 linked source records; 10 PubMed abstracts includ
 
 ```yaml
 []
+```
+
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Creatine
+  title: Wikipedia
+- service: Examine
+  url: https://examine.com/supplements/Creatine
+  title: Examine
 ```

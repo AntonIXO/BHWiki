@@ -1,15 +1,18 @@
 ---
 slug: oxiracetam-019fe218
 name: Oxiracetam
-subtitle: Reddit index evidence trail.
+subtitle: Racetam
 aliases: []
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
-category: Identity record
-tags: []
-accent: '#a9b993'
+category: Racetam
+tags:
+  - cognitive-performance
+  - nootropic-research
+  - acetylcholine
+accent: "#a9b993"
 reviewedAt: 2026-10-27
 editorialStatus: sourced-draft
 halfLife:
@@ -18,7 +21,6 @@ halfLife:
   high: null
   context: No pharmacokinetic observation was supplied by this identity import.
   sourceId: optihealth-substance-019fe218-43ee-739a-a7f5-85a6321108c6
-  observationId: oxiracetam-019fe218-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -27,51 +29,51 @@ kinetics:
   metabolism: Not established
   sourceId: optihealth-substance-019fe218-43ee-739a-a7f5-85a6321108c6
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 1109
 ---
 
 ## Summary
 
-Oxiracetam evidence in the linked publications is preclinical. In cultured neurons, micromolar oxiracetam potentiated AMPA-receptor-mediated calcium influx; in rats, 100–300 mg/kg intraperitoneally increased hippocampal/cortical acetylcholine utilization and improved an active-avoidance deficit. A linked commercial page remains an unverified lead. [reddit-pmid-1372342][reddit-pmid-3594455]
+Oxiracetam is a racetam compound studied for learning and memory.
 
 ## Description
 
-This page records the source-backed identity label Oxiracetam. The import preserves the candidate's aliases and source trail only; molecular structure, pharmacokinetics, effects, dosing, safety, and efficacy remain unestablished here.
+Oxiracetam is a racetam compound studied for learning and memory.
 
 ## Evidence note
 
-PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was available. The Reddit-linked commercial EEG page could not be resolved to a PubMed record and remains an explicit unverified lead. The evidence is cell and rat research, not human efficacy or safety evidence.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -90,7 +92,7 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
   purpose: Preclinical exposure; not a human dosing recommendation.
   sourceCategory: research
   note: Oxiracetam 100 mg/kg i.p. antagonized an active-avoidance impairment; 300 mg/kg also increased acetylcholine utilization.
-  sourceId: reddit-pmid-3594455
+  sourceId: pubmed-3594455
 - label: Neuronal culture study
   amount: Micromolar concentrations
   quantity: null
@@ -105,26 +107,13 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
   purpose: Mechanistic preclinical exposure; not a human dosing recommendation.
   sourceCategory: research
   note: Exact concentration not stated in abstract.
-  sourceId: reddit-pmid-1372342
+  sourceId: pubmed-1372342
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: oxiracetam-019fe218-pk-unestablished
-  analyte: Oxiracetam
-  route: intraperitoneal or cell culture
-  formulation: Experimental oxiracetam
-  population: Rats and cultured neurons
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: Linked abstracts report pharmacodynamic outcomes but no concentration-time or elimination measurements.
-  sourceId: reddit-pmid-3594455
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -142,13 +131,13 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
 ## Outcomes
 
 ```yaml
-- id: reddit-oxiracetam-avoidance-learning-3594455
+- id: research-oxiracetam-avoidance-learning-3594455
   conceptId: cognitive-performance
   name: Active-avoidance learning
   direction: Increased
   evidence: Limited research
   description: Oxiracetam 100 mg/kg i.p. antagonized impairment of active-avoidance acquisition caused by inhibition of acetylcholine synthesis.
-  sourceId: reddit-pmid-3594455
+  sourceId: pubmed-3594455
   population: Rats
   exposure: Oxiracetam 100 mg/kg i.p.
   instrument: Pole-climbing active-avoidance acquisition
@@ -161,10 +150,10 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
 ```yaml
 - title: Positive AMPA modulation
   description: Oxiracetam increased AMPA-mediated calcium influx efficacy and AMPA binding-site density in neuronal preparations; the study did not establish in vivo human mechanism.
-  sourceId: reddit-pmid-1372342
+  sourceId: pubmed-1372342
 - title: Septohippocampal cholinergic enhancement
   description: Rat data indicate increased acetylcholine utilization and high-affinity choline uptake in hippocampus, consistent with enhanced cholinergic pathway activity.
-  sourceId: reddit-pmid-3594455
+  sourceId: pubmed-3594455
 ```
 
 ## Cautions
@@ -172,26 +161,26 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
 ```yaml
 - title: Preclinical evidence only
   description: The linked PubMed studies used cultured neurons or rats; they do not establish human efficacy, dose, pharmacokinetics, or safety.
-  sourceId: reddit-pmid-1372342
+  sourceId: pubmed-1372342
 - title: Unverified commercial EEG link
-  description: The Reddit index includes a commercial page about oxiracetam EEG effects, but no PubMed record was identified in this pass; it remains an unverified lead.
-  sourceId: reddit-link-921e1e009393
+  description: The research index includes a commercial page about oxiracetam EEG effects, but no PubMed record was identified in this pass; it remains an unverified lead.
+  sourceId: publication-link-921e1e009393
 ```
 
 ## Claims
 
 ```yaml
-- id: reddit-claim-oxiracetam-3594455-0
+- id: research-claim-oxiracetam-3594455-0
   assertion: In rats, oxiracetam 100 mg/kg i.p. increased cholinergic utilization and antagonized an active-avoidance learning deficit.
   relation: preclinical-support
   participants:
-  - entityId: substance:oxiracetam-019fe218
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported endpoint
+    - entityId: substance:oxiracetam-019fe218
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported endpoint
   context: Experimental rat study; no human translation established.
   sourceIds:
-  - reddit-pmid-3594455
+    - pubmed-3594455
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Preclinical evidence and limited abstract detail.
@@ -209,14 +198,6 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
 []
 ```
 
-## External wiki links
-
-```yaml
-- service: Wikipedia
-  url: https://en.wikipedia.org/wiki/Oxiracetam
-  title: Wikipedia
-```
-
 ## References
 
 ```yaml
@@ -228,7 +209,7 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
   kind: catalog-identity
   insight: The OptiHealth canonical catalog records this substance identity label.
   limitation: This catalog snapshot is not an independent evidence review and does not establish structure, dose, safety, or efficacy.
-- id: reddit-pmid-1372342
+- id: pubmed-1372342
   title: Nootropic drugs positively modulate alpha-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid-sensitive glutamate receptors in neuronal cultures.
   authors: A Copani, A A Genazzani, G Aleppo, G Casabona, P L Canonico, U Scapagnini, F Nicoletti
   year: 1992
@@ -236,13 +217,11 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
   kind: PubMed publication
   insight: Micromolar concentrations of piracetam, aniracetam, and oxiracetam enhanced alpha-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid (AMPA)-stimulated 45Ca2+ influx in primary cultures of cerebellar granule cells.
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '1372342'
+  pmid: "1372342"
   doi: 10.1111/j.1471-4159.1992.tb11329.x
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-3594455
+- id: pubmed-3594455
   title: Effect of oxiracetam and piracetam on central cholinergic mechanisms and active-avoidance acquisition.
   authors: G Spignoli, F Pedata, L Giovannelli, S Banfi, F Moroni, G Pepeu
   year: 1986
@@ -250,22 +229,18 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
   kind: PubMed publication
   insight: Oxiracetam at 100 and 300 mg/kg i.p.
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '3594455'
-  funding: Not assessed in this corpus pass.
+  pmid: "3594455"
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-921e1e009393
+- id: publication-link-921e1e009393
   title: Effects of oxiracetam on electroencephalogram at rest in healthy young subjects single and repeated dose investigation
   authors: Not established
   year: 2026
   url: https://triscience.com/General/effects-of-oxiracetam-on-electroencephalogram-at-rest-in-healthy-young-subjects-single-and-repeated-dose-investigation/doculite_view
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 
@@ -273,4 +248,12 @@ PubMed abstracts retrieved for PMIDs 1372342 and 3594455; no PMC full text was a
 
 ```yaml
 []
+```
+
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Oxiracetam
+  title: Wikipedia
 ```

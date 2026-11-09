@@ -1,21 +1,28 @@
 ---
 slug: tyrosine
 name: Tyrosine
-subtitle: State-dependent catecholamine precursor evidence.
+subtitle: Nootropic
 aliases:
-- L-tyrosine
-- free L-tyrosine
+  - L-tyrosine
+  - free L-tyrosine
 formula: C9H11NO3
 molecularWeight: 181.19 g/mol
 pubchemCid: 6057
 smiles: C1=CC(=CC=C1CC(C(=O)O)N)O
 category: Nootropic
 tags:
-- amino-acid
-- dopamine
-- attention
-accent: '#a9b993'
-reviewedAt: '2026-11-01'
+  - amino-acid
+  - dopamine
+  - attention
+  - reaction-time
+  - cognitive-task-performance
+  - sleep
+  - exercise
+  - episodic-memory
+  - cognitive-performance
+  - stress-response
+accent: "#a9b993"
+reviewedAt: 2026-11-01
 editorialStatus: sourced-draft
 halfLife:
   label: Parent-compound half-life not established
@@ -32,43 +39,43 @@ kinetics:
   metabolism: Free L-tyrosine enters protein and catecholamine pathways. NALT is a distinct acetylated precursor with sparse human conversion data.
   sourceId: tyrosine-r11
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 265
 ---
 
 ## Summary
 
-Acute free L-tyrosine has the clearest human signal when cold exposure, prolonged wakefulness, or another demand challenges catecholamine function. Rested-state findings are often null, and one high-load study found worse flexibility; a universal focus effect is unsupported. NALT is a separate form whose IV data do not establish oral equivalence. [tyrosine-r1] [tyrosine-r2] [tyrosine-r9] [tyrosine-r13]
+Acute free L-tyrosine has the clearest human signal when cold exposure, prolonged wakefulness, or another demand challenges catecholamine function.
 
 ## Description
 
@@ -76,11 +83,7 @@ Tyrosine is an amino-acid precursor used in protein synthesis and in pathways le
 
 ## Evidence note
 
-The page separates free L-tyrosine from NALT, plasma observations from cognitive outcomes, and stress preservation from broad enhancement. Evidence is mostly acute and heterogeneous; a four-week safety study does not establish a parent half-life or long-term benefit. Funding and conflict disclosures are retained per reference. [tyrosine-r1] [tyrosine-r2] [tyrosine-r14]
-
-Reddit-linked PubMed review: 9 linked records were checked against PubMed metadata and abstracts; 2 returned PMCID identifiers. Added records remain source-specific and do not replace curated evidence.
-
-PMC full-text retrieval for this page returned body text for 1/2 identified PMCID records; 1 returned no retrievable body or a tool error.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -205,7 +208,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   sourceCategory: research
   note: Plasma free tyrosine rose only modestly and 56% of administered NALT was excreted unchanged within 4 hours; this does not establish oral NALT performance.
   sourceId: tyrosine-r13
-- label: 'PMID 3214752 study exposure: 200 mg/kg'
+- label: "PMID 3214752 study exposure: 200 mg/kg"
   amount: 200 mg/kg
   quantity: 200
   quantityMax: null
@@ -218,8 +221,8 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   purpose: Research exposure; not a general-use recommendation
   sourceCategory: research
   note: Tyrosine administration (50-200 mg/kg IP) did indeed cause a dose related increase in extracellular fluid dopamine levels with minor elevations in levels of DOPAC and HVA, its major metabolites, which were not dose-related
-  sourceId: reddit-pmid-3214752
-- label: 'PMID 10548261 study exposure: 150 mg/kg'
+  sourceId: pubmed-3214752
+- label: "PMID 10548261 study exposure: 150 mg/kg"
   amount: 150 mg/kg
   quantity: 150
   quantityMax: null
@@ -232,15 +235,14 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   purpose: Research exposure; not a general-use recommendation
   sourceCategory: research
   note: Ten men and 10 women subjects underwent these batteries 1 h after ingesting 150 mg/kg of l-tyrosine or placebo
-  sourceId: reddit-pmid-10548261
-- label: 'PMID 8029265 study exposure: 150 mg/kg'
+  sourceId: pubmed-10548261
+- label: "PMID 8029265 study exposure: 150 mg/kg"
   amount: 150 mg/kg
   quantity: 150
   quantityMax: null
   unit: mg/kg
   ingredient: Tyrosine
   formulation: Study formulation as stated in the abstract
-  route: Route not stated in abstract
   frequency: As stated in the abstract
   duration: Study duration as stated in the abstract
   population: Population described in the PubMed abstract.
@@ -309,20 +311,6 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   context: Plasma NALT rose rapidly, plasma free tyrosine increased by approximately 25%, and 56% of administered NALT appeared unchanged in urine within 4 hours; no net splanchnic production of tyrosine was detected.
   sourceId: tyrosine-r13
   modelEligible: false
-- id: dr-tyrosine-tyrosine-pk-1
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated universal terminal half-life was established in the returned report.
-  sourceId: tyrosine-r1
-  modelEligible: false
 - id: tyrosine-pk-3214752
   analyte: Tyrosine
   population: Tyrosine administration elevates striatal levels of dopamine metabolites in animals given treatments that accelerate nigrostriatal firing, but not in untreated rats.
@@ -333,7 +321,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   high: null
   unit: hours
   context: Tyrosine administration elevates striatal levels of dopamine metabolites in animals given treatments that accelerate nigrostriatal firing, but not in untreated rats.
-  sourceId: reddit-pmid-3214752
+  sourceId: pubmed-3214752
   modelEligible: false
 ```
 
@@ -385,7 +373,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
     design: Randomized crossover cold-water immersion study
     sampleSize: 19
     populationLabels:
-    - Healthy participants
+      - Healthy participants
     comparator: Placebo during cold-water immersion
     route: Oral
     formulation: Free L-tyrosine, 150 mg/kg before each immersion
@@ -406,7 +394,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
     id: tyrosine-neri-1995
     design: Randomized double-blind placebo-controlled extended-wakefulness trial
     populationLabels:
-    - Healthy adults undergoing prolonged wakefulness
+      - Healthy adults undergoing prolonged wakefulness
     comparator: Placebo
     route: Oral
     formulation: Free L-tyrosine, split 150 mg/kg exposure
@@ -428,7 +416,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
     design: Randomized controlled sleep-deprivation comparison study
     sampleSize: 76
     populationLabels:
-    - Healthy men after sleep deprivation
+      - Healthy men after sleep deprivation
     comparator: Placebo and active comparators including d-amphetamine
     route: Oral
     formulation: Free L-tyrosine, 150 mg/kg
@@ -450,7 +438,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
     design: Randomized controlled sleep-deprivation comparison study
     sampleSize: 76
     populationLabels:
-    - Healthy men after prolonged sleep deprivation
+      - Healthy men after prolonged sleep deprivation
     comparator: Placebo and active comparators
     route: Oral
     formulation: Free L-tyrosine, 150 mg/kg
@@ -471,7 +459,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
     id: tyrosine-coull-2016
     design: Randomized heat-stress crossover study
     populationLabels:
-    - Military participants in heat-exercise testing
+      - Military participants in heat-exercise testing
     comparator: Placebo
     route: Oral
     formulation: Free L-tyrosine study exposure
@@ -493,7 +481,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
     design: Randomized double-blind placebo-controlled study
     sampleSize: 70
     populationLabels:
-    - Healthy adults
+      - Healthy adults
     comparator: Placebo after high cognitive load
     route: Oral
     formulation: Free L-tyrosine, 2 g
@@ -521,75 +509,75 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   exposure: Acute free L-tyrosine study exposures
   instrument: Study-specific cognitive tasks
   magnitude: Evidence is context-dependent and heterogeneous rather than a reproducible broad focus effect.
-- id: reddit-tyrosine-episodic-memory-27403851
+- id: research-tyrosine-episodic-memory-27403851
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
   evidence: Human research
-  description: 'l-Tyrosine (TYR), the precursor of dopamine (DA), has been shown to enhance facets of cognitive control in situations with high cognitive demands. However some previous outcomes were mixed: some studies reported significant improvements, while other did not. Given that TYR increases DA level in the brain, we investigated, in a double-blind, randomized, placebo-controlled design, whether the C957T genotypes of a functional synonymous polymorphism in the human dopamine D2 receptor (DRD2) gene (rs6277) contribute to individual differences in the reactivity to TYR administration and whether this factor predicts the magnitude of TYR-induced performance differences on inhibiting behavioral responses in a stop-signal task and working memory (WM) updating in a N-back task.'
-  sourceId: reddit-pmid-27403851
+  description: "l-Tyrosine (TYR), the precursor of dopamine (DA), has been shown to enhance facets of cognitive control in situations with high cognitive demands. However some previous outcomes were mixed: some studies reported significant improvements, while other did not. Given that TYR increases DA level in the brain, we investigated, in a double-blind, randomized, placebo-controlled design, whether the C957T genotypes of a functional synonymous polymorphism in the human dopamine D2 receptor (DRD2) gene (rs6277) contribute to individual differences in the reactivity to TYR administration and whether this factor predicts the magnitude of TYR-induced performance differences on inhibiting behavioral responses in a stop-signal task and working memory (WM) updating in a N-back task."
+  sourceId: pubmed-27403851
   population: Population not specified in the returned PubMed abstract.
   exposure: l-Tyrosine (TYR), the precursor of dopamine (DA), has been shown to enhance facets of cognitive control in situations with high cognitive demands.
   instrument: null
-  magnitude: 'l-Tyrosine (TYR), the precursor of dopamine (DA), has been shown to enhance facets of cognitive control in situations with high cognitive demands. However some previous outcomes were mixed: some studies reported significant improvements, while other did not. Given that TYR increases DA level in the brain, we investigat'
+  magnitude: "l-Tyrosine (TYR), the precursor of dopamine (DA), has been shown to enhance facets of cognitive control in situations with high cognitive demands. However some previous outcomes were mixed: some studies reported significant improvements, while other did not. Given that TYR increases DA level in the brain, we investigat"
   reportType: measured-assessment
-- id: reddit-tyrosine-cognitive-performance-25598314
+- id: research-tyrosine-cognitive-performance-25598314
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
   evidence: Human research
   description: Tyrosine (TYR), an amino acid found in various foods, has been shown to increase dopamine (DA) levels in the brain. Recent studies have provided evidence that TYR supplementation can improve facets of cognitive control in situations with high cognitive demands. reduced switching costs).
-  sourceId: reddit-pmid-25598314
+  sourceId: pubmed-25598314
   population: 22 healthy adults performed in a task-switching paradigm
   exposure: Tyrosine (TYR), an amino acid found in various foods, has been shown to increase dopamine (DA) levels in the brain.
   instrument: null
   magnitude: Tyrosine (TYR), an amino acid found in various foods, has been shown to increase dopamine (DA) levels in the brain. Recent studies have provided evidence that TYR supplementation can improve facets of cognitive control in situations with high cognitive demands. reduced switching costs).
   reportType: measured-assessment
-- id: reddit-tyrosine-episodic-memory-10548261
+- id: research-tyrosine-episodic-memory-10548261
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
   evidence: Human research
   description: Previous studies indicate that tyrosine may prove useful in promoting improved performance in situations in which performance is compromised by stress. Administration of tyrosine significantly enhanced accuracy and decreased frequency of list retrieval on the working memory task during the multiple task battery compared with placebo. However, tyrosine induced no significant changes in performance on the arithmetic, visual, or auditory tasks during the Multiple Task, or modified any performance measures during the Simple Task battery.
-  sourceId: reddit-pmid-10548261
+  sourceId: pubmed-10548261
   population: Ten men and 10 women subjects underwent these batteries 1 h after ingesting 150 mg/kg of l-tyrosine or placebo
   exposure: Ten men and 10 women subjects underwent these batteries 1 h after ingesting 150 mg/kg of l-tyrosine or placebo.
   instrument: working memory task during the multiple task battery compared with placebo
   magnitude: Previous studies indicate that tyrosine may prove useful in promoting improved performance in situations in which performance is compromised by stress. Administration of tyrosine significantly enhanced accuracy and decreased frequency of list retrieval on the working memory task during the multiple task battery compare
   reportType: measured-assessment
-- id: reddit-tyrosine-episodic-memory-28384480
+- id: research-tyrosine-episodic-memory-28384480
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
   evidence: Limited research
   description: Experiment 1 showed Tyr administration enhances performance in a verbal N-back task. Experiment 2 showed Tyr modulates the effect of bilateral tDCS over DLPFC on WM. Specifically, tDCS had opposite effects on performance depending on current direction through the brain and Tyr administration. The present study provides two major findings. First, we replicate Tyr's beneficial effect on verbal WM. Second, our results indicate a causal role for DA in the effect of tDCS on cognition. For this reason, we encourage future studies to consider the modulating effect of DA, as a step towards more consistent and replicable results regarding the efficacy of tDCS.
-  sourceId: reddit-pmid-28384480
+  sourceId: pubmed-28384480
   population: Population not specified in the returned PubMed abstract.
   exposure: In Experiment 1 we aimed to replicate previous findings showing administration of DA's precursor l-Tyrosine (Tyr), presumably by inducing a modest increase in DA level, can enhance working memory (WM) performance as assessed with a verbal N-back task. In Experiment 2 we investigated the effect of Tyr administration on bilateral tDCS over dorsolateral prefrontal cortex (DLPFC) and WM.
   instrument: null
   magnitude: Experiment 1 showed Tyr administration enhances performance in a verbal N-back task. Experiment 2 showed Tyr modulates the effect of bilateral tDCS over DLPFC on WM. Specifically, tDCS had opposite effects on performance depending on current direction through the brain and Tyr administration. The present study provides
   reportType: measured-assessment
-- id: reddit-tyrosine-cognitive-performance-25339925
+- id: research-tyrosine-cognitive-performance-25339925
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Variable
   evidence: Limited research
   description: The full-text opinion article argues that tyrosine may support cognitive control when dopamine resources are depleted by demanding conditions, while baseline dopamine differences may produce variable responses; it does not provide a controlled efficacy estimate.
-  sourceId: reddit-pmid-25339925
+  sourceId: pubmed-25339925
   population: Population not specified in the returned PubMed abstract.
   exposure: Exposure details were not stated in the returned PubMed abstract.
   instrument: null
   magnitude: Opinion article; proposed moderator framework rather than a new effect-size estimate.
   reportType: measured-assessment
-- id: reddit-tyrosine-episodic-memory-8029265
+- id: research-tyrosine-episodic-memory-8029265
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Decreased
   evidence: Human research
-  description: 'Acute exposure to cold stress has been shown to impair short-term, or working, memory, which may be related to reduction in, or disruption of, sustained release of brain catecholamines. '
+  description: "Acute exposure to cold stress has been shown to impair short-term, or working, memory, which may be related to reduction in, or disruption of, sustained release of brain catecholamines. "
   sourceId: tyrosine-r3
   population: Population described in the PubMed abstract.
-  exposure: 'Acute exposure to cold stress has been shown to impair short-term, or working, memory, which may be related to reduction in, or disruption of, sustained release of brain catecholamines. '
+  exposure: "Acute exposure to cold stress has been shown to impair short-term, or working, memory, which may be related to reduction in, or disruption of, sustained release of brain catecholamines. "
   instrument: null
   magnitude: null
   reportType: measured-assessment
@@ -616,25 +604,25 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   conceptId: amino-acid
 - title: Explicit mechanistic or disposition finding (PMID 3214752)
   description: Tyrosine administration elevates striatal levels of dopamine metabolites in animals given treatments that accelerate nigrostriatal firing, but not in untreated rats.
-  sourceId: reddit-pmid-3214752
+  sourceId: pubmed-3214752
 - title: Explicit mechanistic or disposition finding (PMID 27403851)
   description: l-Tyrosine (TYR), the precursor of dopamine (DA), has been shown to enhance facets of cognitive control in situations with high cognitive demands.
-  sourceId: reddit-pmid-27403851
+  sourceId: pubmed-27403851
 - title: Explicit mechanistic or disposition finding (PMID 25257259)
   description: In this study, we investigated whether creativity in convergent- and divergent-thinking tasks is promoted by the food supplement L-Tyrosine (TYR)-a biochemical precursor of dopamine, which is assumed to drive cognitive control and creativity.
-  sourceId: reddit-pmid-25257259
+  sourceId: pubmed-25257259
 - title: Explicit mechanistic or disposition finding (PMID 25598314)
   description: Tyrosine (TYR), an amino acid found in various foods, has been shown to increase dopamine (DA) levels in the brain.
-  sourceId: reddit-pmid-25598314
+  sourceId: pubmed-25598314
 - title: Explicit mechanistic or disposition finding (PMID 28384480)
   description: It is speculated dopamine (DA) might play an important role in this inconsistency, by determining the direction and strength of the cognitive-behavioral effects of tDCS.
-  sourceId: reddit-pmid-28384480
+  sourceId: pubmed-28384480
 - title: Explicit mechanistic or disposition finding (PMID 23995581)
   description: Dopamine (DA) neurotransmission is critical for motivational processing.
-  sourceId: reddit-pmid-23995581
+  sourceId: pubmed-23995581
 - title: Dopamine-precursor mechanism discussed in full text (PMCID PMC4186281)
   description: The article describes tyrosine as a precursor that can raise dopamine availability and proposes that baseline dopamine function, COMT/DRD2/DAT1 variation, and task demand may moderate cognitive effects; these are mechanistic hypotheses summarized from prior literature, not new causal measurements in this paper.
-  sourceId: reddit-pmid-25339925
+  sourceId: pubmed-25339925
 ```
 
 ## Cautions
@@ -664,13 +652,13 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   assertion: Free L-tyrosine supplies substrate for catecholamine synthesis.
   relation: biosynthetic-precursor
   participants:
-  - entityId: substance:tyrosine
-    role: substrate
-  - entityId: tag:dopamine
-    role: downstream-neurotransmitter
+    - entityId: substance:tyrosine
+      role: substrate
+    - entityId: tag:dopamine
+      role: downstream-neurotransmitter
   context: Tyrosine hydroxylase and downstream catecholamine pathways; biochemical precursor status does not establish a uniform cognitive benefit.
   sourceIds:
-  - tyrosine-r14
+    - tyrosine-r14
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Human cognition effects vary with stressor, dose, transport competition, and baseline state.
@@ -678,16 +666,16 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   assertion: Tyrosine may preserve selected task performance after sleep deprivation without replacing sleep.
   relation: partial-support
   participants:
-  - entityId: substance:tyrosine
-    role: intervention
-  - entityId: tag:cognitive-task-performance
-    role: measured-outcome
-  - entityId: tag:sleep
-    role: unmet-physiological-need
+    - entityId: substance:tyrosine
+      role: intervention
+    - entityId: tag:cognitive-task-performance
+      role: measured-outcome
+    - entityId: tag:sleep
+      role: unmet-physiological-need
   context: Cognitive and motor improvements were selective, while sleep and recovery measures remained unchanged.
   sourceIds:
-  - tyrosine-r6
-  - tyrosine-r7
+    - tyrosine-r6
+    - tyrosine-r7
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Short-term task preservation cannot be treated as sleep restoration.
@@ -695,97 +683,97 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   assertion: NALT is not established as more bioavailable or cognitively equivalent to free L-tyrosine.
   relation: formulation-boundary
   participants:
-  - entityId: substance:tyrosine
-    role: free-form intervention
-  - entityId: tag:amino-acid
-    role: formulation-context
+    - entityId: substance:tyrosine
+      role: free-form intervention
+    - entityId: tag:amino-acid
+      role: formulation-context
   context: The cited human NALT study used intravenous infusion, found modest free-tyrosine conversion, and observed substantial unchanged urinary excretion.
   sourceIds:
-  - tyrosine-r13
+    - tyrosine-r13
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Sparse intravenous data cannot establish oral comparative bioavailability or cognition.
-- id: reddit-claim-tyrosine-27403851
-  assertion: 'l-Tyrosine (TYR), the precursor of dopamine (DA), has been shown to enhance facets of cognitive control in situations with high cognitive demands. However some previous outcomes were mixed: some studies reported significant improvements, while other did not. Given that TYR increases DA level in the brain, we investigated, in a double-blind, randomized, placebo-controlled design, whether the C957T genotypes of a functional synonymous polymorphism in the human dopamine D2 receptor (DRD2) gene (rs6277) contribute to individual differences in the reactivity to TYR administration and whether this factor predicts the magnitude of TYR-induced performance differences on inhibiting behavioral responses in a stop-signal task and working memory (WM) updating in a N-back task.'
+- id: research-claim-tyrosine-27403851
+  assertion: "l-Tyrosine (TYR), the precursor of dopamine (DA), has been shown to enhance facets of cognitive control in situations with high cognitive demands. However some previous outcomes were mixed: some studies reported significant improvements, while other did not. Given that TYR increases DA level in the brain, we investigated, in a double-blind, randomized, placebo-controlled design, whether the C957T genotypes of a functional synonymous polymorphism in the human dopamine D2 receptor (DRD2) gene (rs6277) contribute to individual differences in the reactivity to TYR administration and whether this factor predicts the magnitude of TYR-induced performance differences on inhibiting behavioral responses in a stop-signal task and working memory (WM) updating in a N-back task."
   relation: associated-with
   participants:
-  - entityId: substance:tyrosine
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:tyrosine
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: PMID 27403851 abstract result/conclusion; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-27403851
+    - pubmed-27403851
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Single publication; the abstract does not establish general efficacy or safety.
-- id: reddit-claim-tyrosine-25598314
+- id: research-claim-tyrosine-25598314
   assertion: Tyrosine (TYR), an amino acid found in various foods, has been shown to increase dopamine (DA) levels in the brain. Recent studies have provided evidence that TYR supplementation can improve facets of cognitive control in situations with high cognitive demands. reduced switching costs).
   relation: associated-with
   participants:
-  - entityId: substance:tyrosine
-    role: intervention or exposure
-  - entityId: tag:cognitive-performance
-    role: reported endpoint
+    - entityId: substance:tyrosine
+      role: intervention or exposure
+    - entityId: tag:cognitive-performance
+      role: reported endpoint
   context: PMID 25598314 abstract result/conclusion; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-25598314
+    - pubmed-25598314
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Single publication; the abstract does not establish general efficacy or safety.
-- id: reddit-claim-tyrosine-10548261
+- id: research-claim-tyrosine-10548261
   assertion: Previous studies indicate that tyrosine may prove useful in promoting improved performance in situations in which performance is compromised by stress. Administration of tyrosine significantly enhanced accuracy and decreased frequency of list retrieval on the working memory task during the multiple task battery compared with placebo. However, tyrosine induced no significant changes in performance on the arithmetic, visual, or auditory tasks during the Multiple Task, or modified any performance measures during the Simple Task battery.
   relation: associated-with
   participants:
-  - entityId: substance:tyrosine
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:tyrosine
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: PMID 10548261 abstract result/conclusion; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-10548261
+    - pubmed-10548261
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Single publication; the abstract does not establish general efficacy or safety.
-- id: reddit-claim-tyrosine-28384480
+- id: research-claim-tyrosine-28384480
   assertion: Experiment 1 showed Tyr administration enhances performance in a verbal N-back task. Experiment 2 showed Tyr modulates the effect of bilateral tDCS over DLPFC on WM. Specifically, tDCS had opposite effects on performance depending on current direction through the brain and Tyr administration. The present study provides two major findings. First, we replicate Tyr's beneficial effect on verbal WM. Second, our results indicate a causal role for DA in the effect of tDCS on cognition. For this reason, we encourage future studies to consider the modulating effect of DA, as a step towards more consistent and replicable results regarding the efficacy of tDCS.
   relation: associated-with
   participants:
-  - entityId: substance:tyrosine
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:tyrosine
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: PMID 28384480 abstract result/conclusion; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-28384480
+    - pubmed-28384480
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Single publication; the abstract does not establish general efficacy or safety.
-- id: reddit-claim-tyrosine-25339925
+- id: research-claim-tyrosine-25339925
   assertion: The full-text opinion article proposes that tyrosine effects on cognitive control vary with dopamine availability and task-induced depletion; it presents a moderator hypothesis rather than a new efficacy trial.
   relation: associated-with
   participants:
-  - entityId: substance:tyrosine
-    role: intervention or exposure
-  - entityId: tag:cognitive-performance
-    role: reported endpoint
+    - entityId: substance:tyrosine
+      role: intervention or exposure
+    - entityId: tag:cognitive-performance
+      role: reported endpoint
   context: PMCID PMC4186281 full-text discussion; no new controlled exposure was administered.
   sourceIds:
-  - reddit-pmid-25339925
+    - pubmed-25339925
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Single publication; the abstract does not establish general efficacy or safety.
-- id: reddit-claim-tyrosine-8029265
-  assertion: 'Acute exposure to cold stress has been shown to impair short-term, or working, memory, which may be related to reduction in, or disruption of, sustained release of brain catecholamines. '
+- id: research-claim-tyrosine-8029265
+  assertion: "Acute exposure to cold stress has been shown to impair short-term, or working, memory, which may be related to reduction in, or disruption of, sustained release of brain catecholamines. "
   relation: associated-with
   participants:
-  - entityId: substance:tyrosine
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:tyrosine
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: PMID 8029265 abstract result/conclusion; direction and population are retained on the linked observation.
   sourceIds:
-  - tyrosine-r3
+    - tyrosine-r3
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Single publication; the abstract does not establish general efficacy or safety.
@@ -832,22 +820,11 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   publisher: PsychonautWiki
 ```
 
-## External wiki links
-
-```yaml
-- service: Wikipedia
-  url: https://en.wikipedia.org/wiki/Tyrosine
-  title: Wikipedia
-- service: Examine
-  url: https://examine.com/supplements/L-Tyrosine
-  title: Examine
-```
-
 ## References
 
 ```yaml
 - id: pubchem
-  title: 'Tyrosine: compound identity and structure'
+  title: "Tyrosine: compound identity and structure"
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/6057
@@ -863,7 +840,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   authors: Bryant J. Jongkees; Bernhard Hommel; Simone Kühn; Lorenza S. Colzato
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/26424423/
-  pmid: '26424423'
+  pmid: "26424423"
   kind: Narrative review
   insight: Benefits appear concentrated in acute stressful or cognitively demanding conditions.
   limitation: Heterogeneous, mostly small acute studies; review-level synthesis is not an independent replication.
@@ -891,7 +868,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   authors: D Shurtleff, J R Thomas, J Schrot, K Kowalski, R Harford
   year: 1994
   url: https://pubmed.ncbi.nlm.nih.gov/8029265/
-  pmid: '8029265'
+  pmid: "8029265"
   kind: PubMed publication
   insight: Acute exposure to cold stress has been shown to impair short-term, or working, memory, which may be related to reduction in, or disruption of, sustained release of brain catecholamines. Administering a supplemental dose of the catecholamine precursor tyrosine may alleviate cold stress-induced memory impairments by preventing cold-induced deficits in brain catecholamine levels. The present experiment determined whether administration of tyrosine would prevent a cold-induced working memory deficit, using a computer-based delayed matching-to-sample (DMTS) memory task.
   limitation: PubMed abstract retrieved 2026-11-01. No PubMed Central full text identifier was returned.
@@ -906,7 +883,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   authors: C. R. Mahoney; J. Castellani; F. M. Kramer; A. Young; H. R. Lieberman
   year: 2007
   url: https://pubmed.ncbi.nlm.nih.gov/17585971/
-  pmid: '17585971'
+  pmid: "17585971"
   kind: Randomized crossover trial
   insight: Two 150 mg/kg free L-tyrosine exposures improved selected cognition during cold-water immersion.
   limitation: Nineteen participants and acute within-subject design.
@@ -920,7 +897,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   authors: D. F. Neri; D. Wiegmann; R. R. Stanny; S. A. Shappell; A. McCardie; D. L. McKay
   year: 1995
   url: https://pubmed.ncbi.nlm.nih.gov/7794222/
-  pmid: '7794222'
+  pmid: "7794222"
   kind: Randomized double-blind trial
   insight: Split 150 mg/kg dosing reduced selected vigilance and psychomotor deterioration during prolonged wakefulness.
   limitation: Short-lived and task-specific effects.
@@ -934,7 +911,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   authors: Richard A. Magill; William F. Waters; George A. Bray; Julia Volaufova; Steven R. Smith; Harris R. Lieberman; Nancy McNevin; Donna H. Ryan
   year: 2003
   url: https://pubmed.ncbi.nlm.nih.gov/12887140/
-  pmid: '12887140'
+  pmid: "12887140"
   kind: Randomized controlled trial
   insight: 150 mg/kg improved several cognitive and motor outcomes after sleep deprivation.
   limitation: Multiple comparators and task outcomes; effects were not universal.
@@ -948,7 +925,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   authors: William F. Waters; Richard A. Magill; George A. Bray; Julia Volaufova; Steven R. Smith; Harris R. Lieberman; Jennifer Rood; Mark Hurry; Tai Anderson; Donna H. Ryan
   year: 2003
   url: https://pubmed.ncbi.nlm.nih.gov/12887139/
-  pmid: '12887139'
+  pmid: "12887139"
   kind: Randomized controlled trial
   insight: Tyrosine did not alter sleep quantity, quality, or recovery measures after sleep deprivation, though prolactin increased.
   limitation: Sleep outcomes were primary; this is not a broad cognition study.
@@ -962,7 +939,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   authors: Nicole Coull; Bryna Chrismas; Phillip Watson; Rachel Horsfall; Lee Taylor
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/26285023/
-  pmid: '26285023'
+  pmid: "26285023"
   kind: Randomized heat-stress study
   insight: Serum tyrosine increased without cognitive or physical-performance benefit in the military heat-exercise crossover.
   limitation: Small study and heat-specific context.
@@ -976,7 +953,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   authors: Anna Robson; Lee Wei Lim; Luca Aquili
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/31521870/
-  pmid: '31521870'
+  pmid: "31521870"
   kind: Randomized double-blind trial
   insight: A 2 g dose worsened cognitive flexibility after high cognitive load.
   limitation: Physiological stress markers were not measured.
@@ -990,7 +967,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   authors: O. van de Rest; M. Bloemendaal; R. A. A. de Heus; E. Aarts
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/29168741/
-  pmid: '29168741'
+  pmid: "29168741"
   kind: Randomized crossover trial
   insight: Older adults had dose-dependent plasma exposure and poorer working-memory performance at higher doses.
   limitation: Seventeen older adults and acute testing.
@@ -1014,11 +991,11 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   conflictOfInterestStatus: not-reported
   disclosureUrl: https://doi.org/10.1016/0024-3205(79)90294-7
 - id: tyrosine-r12
-  title: 'Plasma tyrosine in normal humans: effects of oral tyrosine and protein-containing meals'
+  title: "Plasma tyrosine in normal humans: effects of oral tyrosine and protein-containing meals"
   authors: E. Melamed; B. Glaeser; J. H. Growdon; R. J. Wurtman
   year: 1980
   url: https://pubmed.ncbi.nlm.nih.gov/7190187/
-  pmid: '7190187'
+  pmid: "7190187"
   kind: Human nutrient-transport study
   insight: Oral tyrosine increased plasma tyrosine ratios during a protein-containing diet.
   limitation: Eleven subjects and no cognitive endpoint.
@@ -1032,7 +1009,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   authors: I. Magnusson; L. Ekman; M. Wångdahl; J. Wahren
   year: 1989
   url: https://pubmed.ncbi.nlm.nih.gov/2507878/
-  pmid: '2507878'
+  pmid: "2507878"
   kind: Human pharmacokinetic study
   insight: Intravenous NALT showed limited conversion relative to unchanged urinary excretion.
   limitation: Intravenous design and no oral or cognitive outcomes.
@@ -1042,11 +1019,11 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   conflictOfInterestStatus: not-reported
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/2507878/
 - id: tyrosine-r14
-  title: 'Evaluation of the Safety and Tolerability of L-Tyrosine Supplementation in Healthy Adult Men: A Randomized Crossover Trial'
+  title: "Evaluation of the Safety and Tolerability of L-Tyrosine Supplementation in Healthy Adult Men: A Randomized Crossover Trial"
   authors: Hideki Matsumoto; Naoki Miura; Masaki Naito; Rajavel Elango
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/42356406/
-  pmid: '42356406'
+  pmid: "42356406"
   kind: Randomized crossover safety trial
   insight: 1–4 g/day for four weeks produced no serious adverse events or clinically meaningful dose-related laboratory abnormalities in healthy men.
   limitation: Short duration, male-only healthy sample, and no efficacy endpoint.
@@ -1080,7 +1057,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   conflictsOfInterest: Not applicable.
   conflictOfInterestStatus: not-assessed
 - id: tyrosine-r17
-  title: 'Guidelines for the Treatment of Hypothyroidism: Prepared by the American Thyroid Association Task Force on Thyroid Hormone Replacement'
+  title: "Guidelines for the Treatment of Hypothyroidism: Prepared by the American Thyroid Association Task Force on Thyroid Hormone Replacement"
   authors: Jacqueline Jonklaas; Antonio C. Bianco; Andrew J. Bauer; Kenneth D. Burman; Alex R. Cappola; Francis S. Celi; David S. Cooper; Brian W. Kim; Robin P. Peeters; Mary S. Rosenthal; Anne M. Sawka
   year: 2014
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4267409/
@@ -1093,7 +1070,7 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC4267409/
 - id: tyrosine-r18
-  title: 'Dietary Supplements: How FDA Helps Keep You Safe'
+  title: "Dietary Supplements: How FDA Helps Keep You Safe"
   authors: U.S. Food and Drug Administration
   year: 2022
   url: https://www.fda.gov/media/158340/download?attachment=
@@ -1104,87 +1081,75 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not applicable.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-3214752
-  title: 'Tyrosine: effects on catecholamine release.'
+- id: pubmed-3214752
+  title: "Tyrosine: effects on catecholamine release."
   authors: I N Acworth, M J During, R J Wurtman
   year: 1988
   url: https://pubmed.ncbi.nlm.nih.gov/3214752/
   kind: PubMed publication
   insight: We examined the possibility that the amino acid might actually enhance dopamine release in untreated animals, but that the technique of measuring striatal dopamine metabolism was too insensitive to demonstrate such an effect. Tyrosine administration (50-200 mg/kg IP) did indeed cause a dose related increase in extracellular fluid dopamine levels with minor elevations in levels of DOPAC and HVA, its major metabolites, which were not dose-related. The rise in dopamine was short-lived, suggesting that receptor-mediated feedback mechanisms responded to the increased dopamine release by diminishing neuronal firing or sensitivity to tyrosine.
   limitation: PubMed abstract retrieved 2026-11-01. No PubMed Central full text identifier was returned.
-  pmid: '3214752'
+  pmid: "3214752"
   doi: 10.1016/0361-9230(88)90161-x
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-27403851
-  title: 'Effects of l-Tyrosine on working memory and inhibitory control are determined by DRD2 genotypes: A randomized controlled trial.'
+- id: pubmed-27403851
+  title: "Effects of l-Tyrosine on working memory and inhibitory control are determined by DRD2 genotypes: A randomized controlled trial."
   authors: Lorenza S Colzato, Laura Steenbergen, Roberta Sellaro, Ann-Kathrin Stock, Larissa Arning, Christian Beste
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27403851/
   kind: PubMed publication
-  insight: 'l-Tyrosine (TYR), the precursor of dopamine (DA), has been shown to enhance facets of cognitive control in situations with high cognitive demands. However some previous outcomes were mixed: some studies reported significant improvements, while other did not. Given that TYR increases DA level in the brain, we investigated, in a double-blind, randomized, placebo-controlled design, whether the C957T genotypes of a functional synonymous polymorphism in the human dopamine D2 receptor (DRD2) gene (rs6277) contribute to individual differences in the reactivity to TYR administration and whether this factor predicts the magnitude of TYR-induced performance differences on inhibiting behavioral respons'
+  insight: "l-Tyrosine (TYR), the precursor of dopamine (DA), has been shown to enhance facets of cognitive control in situations with high cognitive demands. However some previous outcomes were mixed: some studies reported significant improvements, while other did not. Given that TYR increases DA level in the brain, we investigated, in a double-blind, randomized, placebo-controlled design, whether the C957T genotypes of a functional synonymous polymorphism in the human dopamine D2 receptor (DRD2) gene (rs6277) contribute to individual differences in the reactivity to TYR administration and whether this factor predicts the magnitude of TYR-induced performance differences on inhibiting behavioral respons"
   limitation: PubMed abstract retrieved 2026-11-01. No PubMed Central full text identifier was returned.
-  pmid: '27403851'
+  pmid: "27403851"
   doi: 10.1016/j.cortex.2016.06.010
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-25257259
-  title: 'Food for creativity: tyrosine promotes deep thinking.'
+- id: pubmed-25257259
+  title: "Food for creativity: tyrosine promotes deep thinking."
   authors: Lorenza S Colzato, Annelies M de Haan, Bernhard Hommel
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/25257259/
   kind: PubMed publication
   insight: Anecdotal evidence suggests that creative people sometimes use food to overcome mental blocks and lack of inspiration, but empirical support for this possibility is still lacking. As convergent thinking arguably requires more cognitive top-down control, this finding suggests that TYR can facilitate control-hungry creative operations.
   limitation: PubMed abstract retrieved 2026-11-01. No PubMed Central full text identifier was returned.
-  pmid: '25257259'
+  pmid: "25257259"
   doi: 10.1007/s00426-014-0610-4
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-65aff5bb6961
+- id: publication-link-65aff5bb6961
   title: pdf
   authors: Not established
   year: 2026
   url: https://bernhard-hommel.eu/Food%20for%20creativity%20(Colzato,%20de%20Haan%20&%20Hommel).pdf
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-25598314
-  title: 'Tyrosine promotes cognitive flexibility: evidence from proactive vs. reactive control during task switching performance.'
+- id: pubmed-25598314
+  title: "Tyrosine promotes cognitive flexibility: evidence from proactive vs. reactive control during task switching performance."
   authors: Laura Steenbergen, Roberta Sellaro, Bernhard Hommel, Lorenza S Colzato
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/25598314/
   kind: PubMed publication
   insight: Tyrosine (TYR), an amino acid found in various foods, has been shown to increase dopamine (DA) levels in the brain. Recent studies have provided evidence that TYR supplementation can improve facets of cognitive control in situations with high cognitive demands. reduced switching costs).
   limitation: PubMed abstract retrieved 2026-11-01. No PubMed Central full text identifier was returned.
-  pmid: '25598314'
+  pmid: "25598314"
   doi: 10.1016/j.neuropsychologia.2015.01.022
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-020e148cd3a0
+- id: publication-link-020e148cd3a0
   title: pdf
   authors: Not established
   year: 2026
   url: https://bernhard-hommel.eu/Tyrosine%20promotes%20cognitive%20flexibility.pdf
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-10548261
+- id: pubmed-10548261
   title: Tyrosine improves working memory in a multitasking environment.
   authors: J R Thomas, P A Lockwood, A Singh, P A Deuster
   year: 1999
@@ -1192,25 +1157,21 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   kind: PubMed publication
   insight: Previous studies indicate that tyrosine may prove useful in promoting improved performance in situations in which performance is compromised by stress. Administration of tyrosine significantly enhanced accuracy and decreased frequency of list retrieval on the working memory task during the multiple task battery compared with placebo. However, tyrosine induced no significant changes in performance on the arithmetic, visual, or auditory tasks during the Multiple Task, or modified any performance measures during the Simple Task battery.
   limitation: PubMed abstract retrieved 2026-11-01. No PubMed Central full text identifier was returned.
-  pmid: '10548261'
+  pmid: "10548261"
   doi: 10.1016/s0091-3057(99)00094-5
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-720696abb949
-  title: 'Working memory reloaded: tyrosine repletes updating in the N-back task (2013)'
+- id: publication-link-720696abb949
+  title: "Working memory reloaded: tyrosine repletes updating in the N-back task (2013)"
   authors: Not established
   year: 2013
   url: https://www.frontiersin.org/Journal/10.3389/fnbeh.2013.00200/full
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-28384480
+- id: pubmed-28384480
   title: l-Tyrosine administration modulates the effect of transcranial direct current stimulation on working memory in healthy humans.
   authors: Bryant J Jongkees, Roberta Sellaro, Christian Beste, Michael A Nitsche, Simone Kühn, Lorenza S Colzato
   year: 2017
@@ -1218,39 +1179,33 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   kind: PubMed publication
   insight: Experiment 1 showed Tyr administration enhances performance in a verbal N-back task. Experiment 2 showed Tyr modulates the effect of bilateral tDCS over DLPFC on WM. Specifically, tDCS had opposite effects on performance depending on current direction through the brain and Tyr administration. The present study provides two major findings. First, we replicate Tyr's beneficial effect on verbal WM. Second, our results indicate a causal role for DA in the effect of tDCS on cognition. For this reason, we encourage future studies to consider the modulating effect of DA, as a step towards more consistent and replicable results regarding the efficacy of tDCS.
   limitation: PubMed abstract retrieved 2026-11-01. No PubMed Central full text identifier was returned.
-  pmid: '28384480'
+  pmid: "28384480"
   doi: 10.1016/j.cortex.2017.02.014
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-25339925
-  title: 'People are different: tyrosine''s modulating effect on cognitive control in healthy humans may depend on individual differences related to dopamine function.'
+- id: pubmed-25339925
+  title: "People are different: tyrosine's modulating effect on cognitive control in healthy humans may depend on individual differences related to dopamine function."
   authors: Bryant J Jongkees, Bernhard Hommel, Lorenza S Colzato
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/25339925/
   kind: PubMed publication
   insight: Full text argues that tyrosine may help cognitive control under dopamine-depleting demand, with response moderated by baseline dopamine function and individual differences; the article is an opinion synthesis rather than a new efficacy trial.
   limitation: PubMed abstract text was unavailable; PMC full text (PMC4186281) was retrieved and used for the source-specific discussion. The article is not a new controlled efficacy estimate.
-  pmid: '25339925'
+  pmid: "25339925"
   doi: 10.3389/fpsyg.2014.01101
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-4ecbd1dcc2ff
-  title: 'Eating to stop: Tyrosine supplementation enhances inhibitory control but not response execution (2013)'
+- id: publication-link-4ecbd1dcc2ff
+  title: "Eating to stop: Tyrosine supplementation enhances inhibitory control but not response execution (2013)"
   authors: Not established
   year: 2013
   url: https://bernhard-hommel.eu/SSRT_tyrosine.pdf
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-23995581
+- id: pubmed-23995581
   title: Dietary tyrosine/phenylalanine depletion effects on behavioral and brain signatures of human motivational processing.
   authors: James M Bjork, Steven J Grant, Gang Chen, Daniel W Hommer
   year: 2014
@@ -1258,11 +1213,9 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   kind: PubMed publication
   insight: TPD did not exert main effects on mood or on task behavior, but affected brain activation.
   limitation: PubMed abstract retrieved 2026-11-01. PMC full text identifier PMC3895237 is available at https://pmc.ncbi.nlm.nih.gov/articles/PMC3895237/; methods and disclosures are not inferred beyond the retrieved source.
-  pmid: '23995581'
+  pmid: "23995581"
   doi: 10.1038/npp.2013.232
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 
@@ -1274,4 +1227,15 @@ PMC full-text retrieval for this page returned body text for 1/2 identified PMCI
   status: Dietary supplements are not FDA-approved for safety or effectiveness before marketing; manufacturers remain responsible for safety, truthful labeling, and compliance. Disease-treatment claims can cause a product to be regulated as a drug.
   sourceUrl: https://www.fda.gov/media/158340/download?attachment=
   asOf: 2026-10-10
+```
+
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Tyrosine
+  title: Wikipedia
+- service: Examine
+  url: https://examine.com/supplements/L-Tyrosine
+  title: Examine
 ```

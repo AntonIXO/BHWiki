@@ -1,15 +1,19 @@
 ---
 slug: morphine-01a08b04
 name: Morphine
-subtitle: Reddit index evidence trail.
+subtitle: Identity record
 aliases: []
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Identity record
-tags: []
-accent: '#a9b993'
+tags:
+  - alertness-response
+  - episodic-memory
+  - attention
+  - opioid
+accent: "#a9b993"
 reviewedAt: 2026-10-27
 editorialStatus: sourced-draft
 halfLife:
@@ -18,7 +22,6 @@ halfLife:
   high: null
   context: No pharmacokinetic observation was supplied by this identity import.
   sourceId: optihealth-substance-01a08b04-2f89-7849-95d5-bc13a57c7fe0
-  observationId: morphine-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
@@ -27,52 +30,51 @@ kinetics:
   metabolism: Not established
   sourceId: optihealth-substance-01a08b04-2f89-7849-95d5-bc13a57c7fe0
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 1658
 ---
 
 ## Summary
 
-Morphine is recorded as a canonical identity from a source-backed OptiHealth candidate. This draft does not assert effects, dosing, safety, or efficacy.
+Morphine is an opioid that acts mainly at mu-opioid receptors. Studies examine pain relief and its effects on the nervous system.
 
 ## Description
 
-This page records the source-backed identity label Morphine. The import preserves the candidate's aliases and source trail only; molecular structure, pharmacokinetics, effects, dosing, safety, and efficacy remain unestablished here.
+Morphine is an opioid that acts mainly at mu-opioid receptors. Studies examine pain relief and its effects on the nervous system.
 
 ## Evidence note
 
-PubMed abstracts for both linked morphine PMIDs were retrieved. They describe small randomized healthy-subject studies with acute oral doses; results are task-specific and do not support general cognitive-enhancement claims.
-
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -91,7 +93,7 @@ PubMed abstracts for both linked morphine PMIDs were retrieved. They describe sm
   purpose: Cognitive and psychomotor effects
   sourceCategory: research
   note: Research exposure; not a safe self-experimentation dose.
-  sourceId: reddit-pmid-8582463
+  sourceId: pubmed-8582463
 - label: Repeated-dose cognitive crossover
   amount: 10 mg morphine sulfate every 4 hours for four doses
   quantity: 10
@@ -106,26 +108,13 @@ PubMed abstracts for both linked morphine PMIDs were retrieved. They describe sm
   purpose: Repeated-dose cognition and psychomotor effects
   sourceCategory: research
   note: Controlled laboratory exposure; not a treatment recommendation.
-  sourceId: reddit-pmid-10692620
+  sourceId: pubmed-10692620
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: morphine-pk-unestablished
-  analyte: Morphine
-  route: oral
-  formulation: Morphine sulfate
-  population: Healthy-subject cognitive studies
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: The linked cognitive abstracts report timing of effects but no plasma PK parameter.
-  sourceId: reddit-pmid-8582463
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -149,7 +138,7 @@ PubMed abstracts for both linked morphine PMIDs were retrieved. They describe sm
   direction: Variable
   evidence: Human research
   description: Morphine effects were less dramatic than lorazepam; critical-flicker threshold was reduced over 6 hours and subjective alertness changes were not significant.
-  sourceId: reddit-pmid-8582463
+  sourceId: pubmed-8582463
   population: 12 healthy subjects
   exposure: 10 or 15 mg morphine sulfate once
   instrument: Critical flicker fusion and subjective ratings
@@ -161,7 +150,7 @@ PubMed abstracts for both linked morphine PMIDs were retrieved. They describe sm
   direction: Decreased
   evidence: Human research
   description: Single 10 or 15 mg oral morphine doses impaired delayed word recall and picture-recognition sensitivity at 1 hour in 12 healthy subjects.
-  sourceId: reddit-pmid-8582463
+  sourceId: pubmed-8582463
   population: 12 healthy subjects
   exposure: 10 or 15 mg morphine sulfate once
   instrument: Delayed word recall and picture recognition
@@ -173,7 +162,7 @@ PubMed abstracts for both linked morphine PMIDs were retrieved. They describe sm
   direction: Increased
   evidence: Human research
   description: Four 10 mg oral morphine doses at 4-hour intervals increased choice-reaction accuracy at every assessment in 10 healthy subjects; other effects were sporadic.
-  sourceId: reddit-pmid-10692620
+  sourceId: pubmed-10692620
   population: 10 healthy subjects
   exposure: 10 mg every 4 hours ×4
   instrument: Choice reaction and vigilance tasks
@@ -191,9 +180,8 @@ PubMed abstracts for both linked morphine PMIDs were retrieved. They describe sm
 
 ```yaml
 - title: Acute opioid cognitive impairment
-  description: Single oral morphine doses impaired delayed memory and reduced critical-flicker threshold; repeated-dose findings
-    do not establish safety outside controlled studies.
-  sourceId: reddit-pmid-8582463
+  description: Single oral morphine doses impaired delayed memory and reduced critical-flicker threshold; repeated-dose findings do not establish safety outside controlled studies.
+  sourceId: pubmed-8582463
 ```
 
 ## Claims
@@ -203,13 +191,13 @@ PubMed abstracts for both linked morphine PMIDs were retrieved. They describe sm
   assertion: Single oral morphine doses of 10–15 mg impaired delayed memory recall at 1 hour in healthy subjects.
   relation: supported-by
   participants:
-  - entityId: substance:morphine-01a08b04
-    role: intervention
-  - entityId: tag:episodic-memory
-    role: outcome
+    - entityId: substance:morphine-01a08b04
+      role: intervention
+    - entityId: tag:episodic-memory
+      role: outcome
   context: Randomized double-blind four-way crossover study of 12 subjects.
   sourceIds:
-  - reddit-pmid-8582463
+    - pubmed-8582463
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Acute small laboratory study.
@@ -217,13 +205,13 @@ PubMed abstracts for both linked morphine PMIDs were retrieved. They describe sm
   assertion: Repeated 10 mg oral morphine doses increased choice-reaction accuracy in a small healthy-subject crossover study without broad cognitive enhancement.
   relation: associated-with
   participants:
-  - entityId: substance:morphine-01a08b04
-    role: intervention
-  - entityId: tag:attention
-    role: outcome
+    - entityId: substance:morphine-01a08b04
+      role: intervention
+    - entityId: tag:attention
+      role: outcome
   context: Four doses at 4-hour intervals in 10 healthy subjects.
   sourceIds:
-  - reddit-pmid-10692620
+    - pubmed-10692620
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Small acute study; effects varied across tasks.
@@ -252,29 +240,29 @@ PubMed abstracts for both linked morphine PMIDs were retrieved. They describe sm
   kind: catalog-identity
   insight: The OptiHealth canonical catalog records this substance identity label.
   limitation: This catalog snapshot is not an independent evidence review and does not establish structure, dose, safety, or efficacy.
-- id: reddit-pmid-8582463
+- id: pubmed-8582463
   title: The cognitive and psychomotor effects of opioid analgesics. II. A randomized controlled trial of single doses of morphine, lorazepam and placebo in healthy subjects.
   authors: G W Hanks, W M O'Neill, P Simpson, K Wesnes
   year: 1995
   url: https://pubmed.ncbi.nlm.nih.gov/8582463/
   kind: PubMed publication
-  insight: 'Twelve subjects (8 male) took part in a randomised double blind four way crossover design study comparing four treatments: (i) morphine sulphate 10 mg, (ii) morphine sulphate 15 mg, (iii) lorazepam 1 mg (positive control) and (iv) placebo.'
+  insight: "Twelve subjects (8 male) took part in a randomised double blind four way crossover design study comparing four treatments: (i) morphine sulphate 10 mg, (ii) morphine sulphate 15 mg, (iii) lorazepam 1 mg (positive control) and (iv) placebo."
   limitation: PubMed abstract retrieved with the PubMed connector on 2026-11-01; full text was not available for this citation.
-  pmid: '8582463'
+  pmid: "8582463"
   doi: 10.1007/BF00194334
   funding: Not reported in the retrieved PubMed record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported in the retrieved PubMed record.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-10692620
-  title: 'The cognitive and psychomotor effects of morphine in healthy subjects: a randomized controlled trial of repeated (four) oral doses of dextropropoxyphene, morphine, lorazepam and placebo.'
+- id: pubmed-10692620
+  title: "The cognitive and psychomotor effects of morphine in healthy subjects: a randomized controlled trial of repeated (four) oral doses of dextropropoxyphene, morphine, lorazepam and placebo."
   authors: W M O'Neill, G W Hanks, P Simpson, M T Fallon, E Jenkins, K Wesnes
   year: 2000
   url: https://pubmed.ncbi.nlm.nih.gov/10692620/
   kind: PubMed publication
   insight: Ten healthy subjects (four male) of mean age 31 years (range 25-40) took part in a randomized double-blind four-way crossover study to examine the cognitive and psychomotor effects of repeated oral doses of dextropropoxyphene and morphine.
   limitation: PubMed abstract retrieved with the PubMed connector on 2026-11-01; full text was not available for this citation.
-  pmid: '10692620'
+  pmid: "10692620"
   doi: 10.1016/s0304-3959(99)00274-2
   funding: Not reported in the retrieved PubMed record.
   sponsorshipStatus: not-assessed

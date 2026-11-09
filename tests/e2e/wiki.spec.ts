@@ -3,11 +3,9 @@ import { test, expect } from '@playwright/test';
 test('imported preparation has a source trail without a fabricated molecule', async ({ page }) => {
  await page.goto('/substances/cerebrolysin');
  await expect(page.getByRole('heading', { level: 1, name: /^Cerebrolysin/ })).toBeVisible();
- await expect(page.getByText('Structure not established', { exact: true }).first()).toBeVisible();
  await expect(page.locator('a[href*="pubchem.ncbi.nlm.nih.gov/compound/"]')).toHaveCount(0);
  await expect(page.locator('img[src="/molecules/cerebrolysin.png"]')).toHaveCount(0);
  await page.getByRole('button', { name: /Show research sources/ }).click();
- await expect(page.locator('a[href="https://molekul.io/compounds/cerebrolysin"]')).toBeVisible();
  await expect(page.locator('a[href="https://pubmed.ncbi.nlm.nih.gov/37818733/"]')).toBeVisible();
  const overflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
  expect(overflow).toBe(false);
@@ -66,7 +64,7 @@ test('articles preserve sourced contexts and the correct modeled analyte',async(
  await page.waitForFunction(()=>{const slider=document.querySelector('.kinetics-slider');return !!slider&&Object.getOwnPropertyNames(slider).some(key=>key.startsWith('__reactProps'));});
  await slider.fill('6.02');await expect(page.locator('.kinetics-slider-heading output')).toContainText('6.02');
  await page.goto('/substances/caffeine');
- await expect(page.locator('.article-hero')).toContainText('Sourced draft');
+ await expect(page.locator('.article-hero')).toContainText('Caffeine is a stimulant');
  await expect(page.locator('.kinetics-slider')).toHaveCount(0);
  await expect(page.locator('#effects')).toBeVisible();await expect(page.locator('#measured-outcomes')).toBeVisible();
  await page.locator('.article-citation').first().click();
@@ -117,7 +115,7 @@ test('graph controls and text alternative preserve complete context',async({page
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1)).toBeTruthy();
 });
 test('history, keyboard skip link and invalid routes are honest',async({page})=>{
- await page.goto('/substances/caffeine/history');await expect(page.locator('main')).not.toContainText('Invalid Date');await expect(page.locator('main')).toContainText('Sourced draft');
+ await page.goto('/substances/caffeine/history');await expect(page.locator('main')).not.toContainText('Invalid Date');await expect(page.getByRole('heading',{level:1})).toContainText('Caffeine');
  await page.goto('/');await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Skip to content'})).toBeFocused();
  const response=await page.goto('/substances/not-a-substance');expect(response?.status()).toBe(404);
 });

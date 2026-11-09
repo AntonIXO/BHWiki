@@ -65,7 +65,7 @@ These are database execution measurements, not end-to-end request latencies or O
 
 ## Editorial status
 
-Every launch article is a **sourced draft**, with original summaries and inspectable references. Technical validation and targeted source checks do not constitute independent medical/editorial review. No reviewers, community counts, vendor records or personal health outcomes have been fabricated. No promotional, referral or vendor UI remains in the application.
+Every launch article is a **research article**, with original summaries and inspectable references. Technical validation and targeted source checks do not constitute independent medical/editorial review. No reviewers, community counts, vendor records or personal health outcomes have been fabricated. No promotional, referral or vendor UI remains in the application.
 
 ## Interactive research implementation — 2026-10-04
 

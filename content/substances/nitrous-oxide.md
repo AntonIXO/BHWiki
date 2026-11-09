@@ -21,7 +21,6 @@ halfLife:
   high: null
   context: The inspected review of inhalational anesthetics does not state an elimination half-life for nitrous oxide.
   sourceId: miller2023
-  observationId: nitrous-unresolved
 kinetics:
   onset: Not assessed
   peak: Not assessed
@@ -84,20 +83,7 @@ The review covers several anesthetic gases. Nothing in the text used here is a n
 ## Pharmacokinetics
 
 ```yaml
-- id: nitrous-unresolved
-  analyte: Nitrous oxide
-  route: Inhaled
-  formulation: Anesthetic gas
-  population: Patients receiving general anesthesia, as framed by the review
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No elimination half-life or MAC is stated in the text used for this draft.
-  sourceId: miller2023
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -159,14 +145,14 @@ The review covers several anesthetic gases. Nothing in the text used here is a n
   title: Inhalational Anesthetic
   authors: Miller et al.
   year: 2023
-  pmid: '32119427'
+  pmid: "32119427"
   url: https://pubmed.ncbi.nlm.nih.gov/32119427/
   kind: Review
   insight: Surveys inhaled anesthetics used for induction and maintenance of general anesthesia, including nitrous oxide.
   limitation: Not a nitrous-only study. No MAC, half-life, or interaction specific to nitrous oxide was extracted.
   funding: Not assessed in this draft.
 - id: pubchem
-  title: 'Nitrous oxide: compound identity and structure'
+  title: "Nitrous oxide: compound identity and structure"
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/948
@@ -181,4 +167,3 @@ The review covers several anesthetic gases. Nothing in the text used here is a n
 ```yaml
 []
 ```
-

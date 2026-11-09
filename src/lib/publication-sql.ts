@@ -13,9 +13,7 @@ export function publicationStatements(article: Substance, metadata: PublicationM
   const hash = contentHash(article);
   const contributors = json(metadata?.contributors ?? []);
   const reviewers = json(metadata?.reviewers ?? []);
-  const summary = article.editorialStatus === "editorially-reviewed"
-    ? `Editorial review: ${metadata!.reviewReference}`
-    : "Source-controlled publication; editorial review not yet completed.";
+  const summary = "Source-controlled content publication.";
   return [
     `SELECT bhwiki.publish_article(${json(article)}, ${q(hash)}, ${q(sourceCommit)}, ${contributors}, ${reviewers}, ${q(summary)});`,
   ];

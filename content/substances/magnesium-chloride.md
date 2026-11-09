@@ -9,9 +9,11 @@ molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
+tags:
+  - perception
+  - attention
 accent: "#888888"
-reviewedAt: "2026-10-15"
+reviewedAt: 2026-10-15
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -63,15 +65,10 @@ x-order: 9007199254740991
 
 ## Summary
 
-- text: "Magnesium chloride supplies magnesium. Small human comparisons found greater absorption than the tested magnesium oxide preparations, but not superiority to every other salt."
+- text: "Magnesium chloride supplies magnesium. "
   sourceId: firoz-2001
-- text: "Oral trials in selected people with hypomagnesemia reported improvements in magnesium status and some glycemic or blood-pressure measurements. These findings do not establish equivalent benefits in magnesium-replete people or prevention of cardiovascular events."
-  sourceId: guerrero-2015
-- text: "Direct chloride evidence includes null sleep and overall stress findings, an unblinded positive depression trial, and a small exercise trial with detrimental and null performance findings. Formulation, population and comparator materially affect interpretation."
-  sourceId: macian-2022
-  supportingSourceIds: [tarleton-2017, bomar-2025]
-- text: "Prescription intravenous magnesium chloride is an electrolyte-replacement product, distinct from oral supplementation. Its label includes renal contraindications and potentially serious cardiovascular and respiratory adverse effects."
-  sourceId: mylan-2021
+- text: "Oral trials in selected people with hypomagnesemia reported improvements in magnesium status and some glycemic or blood-pressure measurements.
+
 ## Description
 
 - identity: "Magnesium chloride"
@@ -89,6 +86,7 @@ x-order: 9007199254740991
 - formulationBoundary: "Oral liquids, tablets and modified-release products"
   interpretation: "A study of a particular oral preparation does not establish equivalent absorption, tolerability or efficacy for every chloride product, or for topical sprays and baths."
   sourceId: firoz-2001
+
 ## Evidence note
 
 - scope: "Salt-specific human evidence"
@@ -104,6 +102,7 @@ x-order: 9007199254740991
 - registration: "SeMAFor, NCT03887000"
   interpretation: "The registry identifies a completed study with 75 participants and links the fibromyalgia publication. No tabular results were posted in the retrieved record. Its structured masking field reads NONE despite the title and publication describing double-blinding; this discrepancy was not resolved."
   sourceId: semafor-registry
+
 ## Doses
 
 ```yaml
@@ -113,75 +112,70 @@ x-order: 9007199254740991
   quantityMax: null
   unit: not established
   ingredient: magnesium-chloride
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S2
+  population: Not established
+  formulation: Not established
 - label: magnesium-chloride research exposure 2
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-chloride
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 - label: magnesium-chloride research exposure 3
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-chloride
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 - label: magnesium-chloride research exposure 4
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-chloride
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 - label: magnesium-chloride research exposure 5
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-chloride
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 - label: magnesium-chloride research exposure 6
   amount: Not established
   quantity: null
@@ -192,11 +186,11 @@ x-order: 9007199254740991
   route: Intravenous use after dilution.
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
 ```
 
 ## Pharmacokinetics
@@ -204,8 +198,6 @@ x-order: 9007199254740991
 ```yaml
 - id: magnesium-chloride-pk-1
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -213,13 +205,11 @@ x-order: 9007199254740991
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: magnesium-chloride-pk-2
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -227,13 +217,11 @@ x-order: 9007199254740991
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: magnesium-chloride-pk-3
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -241,13 +229,11 @@ x-order: 9007199254740991
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: magnesium-chloride-pk-4
   analyte: Half-life and timing
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -255,7 +241,7 @@ x-order: 9007199254740991
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 ```
@@ -308,10 +294,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: magnesium-chloride-effect-2
   study:
     id: magnesium-chloride-effects-2
@@ -324,10 +310,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: magnesium-chloride-effect-3
   study:
     id: magnesium-chloride-effects-3
@@ -340,10 +326,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: magnesium-chloride-effect-4
   study:
     id: magnesium-chloride-effects-4
@@ -356,10 +342,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: magnesium-chloride-effect-5
   study:
     id: magnesium-chloride-effects-5
@@ -372,10 +358,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Potassium lowered blood pressure; adding magnesium provided no additional benefit.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: magnesium-chloride-effect-6
   study:
     id: magnesium-chloride-effects-6
@@ -388,10 +374,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: magnesium-chloride-effect-7
   study:
     id: magnesium-chloride-effects-7
@@ -404,10 +390,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: magnesium-chloride-effect-8
   study:
     id: magnesium-chloride-effects-8
@@ -421,10 +407,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -439,10 +425,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: magnesium-chloride-outcome-2
   study:
     id: magnesium-chloride-outcomes-2
@@ -456,10 +442,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Ventricular dysrhythmias occurred in 16% versus 34%, p<0.04.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: magnesium-chloride-outcome-3
   study:
     id: magnesium-chloride-outcomes-3
@@ -472,23 +458,23 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Mechanisms
 
 ```yaml
 - title: Magnesium-dependent enzyme activity
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Insulin-related hypothesis
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Neurobiological hypotheses
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 ```
 
@@ -659,9 +645,9 @@ x-order: 9007199254740991
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Disclosure unavailable in the accessed record.
   conflictOfInterestStatus: not-assessed
-  pmid: '11794633'
+  pmid: "11794633"
 - id: S5
-  title: 'Circulating Ionized Magnesium as a Measure of Supplement Bioavailability: Results from a Pilot Study for Randomized Clinical Trial.'
+  title: "Circulating Ionized Magnesium as a Measure of Supplement Bioavailability: Results from a Pilot Study for Randomized Clinical Trial."
   authors: Jiada Zhan, Taylor C Wallace, Sarah J Butts, Sisi Cao, Velarie Ansu, Lisa A Spence, Connie M Weaver, Nana Gletsu-Miller
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/32353962/
@@ -673,7 +659,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Wallace disclosed Vitamin Shoppe advisory-board service and Pfizer Consumer Healthcare grants. Weaver disclosed Yogurt in Nutrition Initiative and FDA advisory service and ILSI trusteeship; other authors declared none.
   conflictOfInterestStatus: not-assessed
 - id: S6
-  title: 'Oral magnesium supplementation improves insulin sensitivity and metabolic control in type 2 diabetic subjects: a randomized double-blind controlled trial.'
+  title: "Oral magnesium supplementation improves insulin sensitivity and metabolic control in type 2 diabetic subjects: a randomized double-blind controlled trial."
   authors: Martha Rodríguez-Morán, Fernando Guerrero-Romero
   year: 2003
   url: https://doi.org/10.2337/diacare.26.4.1147
@@ -685,7 +671,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Disclosure unavailable.
   conflictOfInterestStatus: not-assessed
 - id: S7
-  title: 'The effect of lowering blood pressure by magnesium supplementation in diabetic hypertensive adults with low serum magnesium levels: a randomized, double-blind, placebo-controlled clinical trial.'
+  title: "The effect of lowering blood pressure by magnesium supplementation in diabetic hypertensive adults with low serum magnesium levels: a randomized, double-blind, placebo-controlled clinical trial."
   authors: F Guerrero-Romero, M Rodríguez-Morán
   year: 2009
   url: https://doi.org/10.1038/jhh.2008.129
@@ -697,7 +683,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Disclosure unavailable.
   conflictOfInterestStatus: not-assessed
 - id: S8
-  title: 'Oral magnesium supplementation improves glycaemic status in subjects with prediabetes and hypomagnesaemia: A double-blind placebo-controlled randomized trial.'
+  title: "Oral magnesium supplementation improves glycaemic status in subjects with prediabetes and hypomagnesaemia: A double-blind placebo-controlled randomized trial."
   authors: F Guerrero-Romero, L E Simental-Mendía, G Hernández-Ronquillo, M Rodriguez-Morán
   year: 2015
   url: https://doi.org/10.1016/j.diabet.2015.03.010
@@ -709,7 +695,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Disclosure unavailable.
   conflictOfInterestStatus: not-assessed
 - id: S9
-  title: 'Oral Magnesium Supplementation and Metabolic Syndrome: A Randomized Double-Blind Placebo-Controlled Clinical Trial.'
+  title: "Oral Magnesium Supplementation and Metabolic Syndrome: A Randomized Double-Blind Placebo-Controlled Clinical Trial."
   authors: Martha Rodríguez-Morán, Luis E Simental-Mendía, Claudia I Gamboa-Gómez, Fernando Guerrero-Romero
   year: 2018
   url: https://doi.org/10.1053/j.ackd.2018.02.011
@@ -721,7 +707,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Disclosure unavailable.
   conflictOfInterestStatus: not-assessed
 - id: S10
-  title: 'Efficacy of potassium and magnesium in essential hypertension: a double-blind, placebo controlled, crossover study.'
+  title: "Efficacy of potassium and magnesium in essential hypertension: a double-blind, placebo controlled, crossover study."
   authors: P S Patki, J Singh, S V Gokhale, P M Bulakh, D S Shrotri, B Patwardhan
   year: 1990
   url: https://doi.org/10.1136/bmj.301.6751.521
@@ -733,7 +719,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Disclosure unavailable.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: 'Short-Term Magnesium Therapy Alleviates Moderate Stress in Patients with Fibromyalgia: A Randomized Double-Blind Clinical Trial.'
+  title: "Short-Term Magnesium Therapy Alleviates Moderate Stress in Patients with Fibromyalgia: A Randomized Double-Blind Clinical Trial."
   authors: Nicolas Macian, Christian Dualé, Marion Voute, Vincent Leray, Marion Courrent, Paula Bodé, Fatiha Giron, Sylvie Sonneville, Lise Bernard, Fabienne Joanny, Katell Menard, Gilles Ducheix, Bruno Pereira, Gisèle Pickering
   year: 2022
   url: https://doi.org/10.3390/nu14102088
@@ -745,7 +731,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Authors declared none.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: 'Huperzine A for Alzheimer’s Disease: Systematic Review and Meta-Analysis'
+  title: "Huperzine A for Alzheimer’s Disease: Systematic Review and Meta-Analysis"
   authors: Gao-Yuan Yang; Yan-Ying Wang; coauthors
   year: 2013
   url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0074916
@@ -758,7 +744,7 @@ x-order: 9007199254740991
   conflictOfInterestStatus: not-assessed
   doi: 10.1371/journal.pone.0074916
 - id: S13
-  title: 'Short-Term Magnesium Supplementation Has Modest Detrimental Effects on Cycle Ergometer Exercise Performance and Skeletal Muscle Mitochondria and Negligible Effects on the Gut Microbiota: A Randomized Crossover Clinical Trial.'
+  title: "Short-Term Magnesium Supplementation Has Modest Detrimental Effects on Cycle Ergometer Exercise Performance and Skeletal Muscle Mitochondria and Negligible Effects on the Gut Microbiota: A Randomized Crossover Clinical Trial."
   authors: Matthew C Bomar, Taylor R Ewell, Reagan L Brown, David M Brown, Beatrice S Kwarteng, Kieran S S Abbotts, Hannah M Butterklee, Natasha N B Williams, Scott D Wrigley, Maureen A Walsh, Karyn L Hamilton, David P Thomson, Tiffany L Weir, Christopher Bell
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/40077784/
@@ -770,7 +756,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Authors declared none.
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: 'Oral magnesium supplementation does not affect insulin sensitivity in people with insulin-treated type 2 diabetes and a low serum magnesium: a randomised controlled trial.'
+  title: "Oral magnesium supplementation does not affect insulin sensitivity in people with insulin-treated type 2 diabetes and a low serum magnesium: a randomised controlled trial."
   authors: Linda C A Drenthen, Jeroen H F de Baaij, Laura Rodwell, Antonius E van Herwaarden, Cees J Tack, Bastiaan E de Galan
   year: 2024
   url: https://doi.org/10.1007/s00125-023-06029-9
@@ -842,7 +828,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Petition submitted on behalf of the Center for Magnesium Education and Research LLC; FDA response is a separate regulatory assessment.
   conflictOfInterestStatus: not-assessed
 - id: S20
-  title: 'GRN No. 419: L-alpha-glycerylphosphorylcholine'
+  title: "GRN No. 419: L-alpha-glycerylphosphorylcholine"
   authors: U.S. Food and Drug Administration
   year: 2012
   url: https://www.hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=419&set=GrASNotices
@@ -860,17 +846,17 @@ x-order: 9007199254740991
 ```yaml
 - jurisdiction: United States
   activity: Not established
-  status: "Source-specific legal evidence is preserved in the cited source."
+  status: Source-specific legal evidence is preserved in the cited source.
   sourceUrl: https://clinicaltrials.gov/study/NCT03887000
   asOf: 2026-10-10
 - jurisdiction: United States
   activity: Not established
-  status: 'Source-specific legal evidence is preserved in the cited source.'
+  status: Source-specific legal evidence is preserved in the cited source.
   sourceUrl: https://clinicaltrials.gov/study/NCT03887000
   asOf: 2026-10-10
 - jurisdiction: United States
   activity: Not established
-  status: 'Source-specific legal evidence is preserved in the cited source.'
+  status: Source-specific legal evidence is preserved in the cited source.
   sourceUrl: https://clinicaltrials.gov/study/NCT03887000
   asOf: 2026-10-10
 ```

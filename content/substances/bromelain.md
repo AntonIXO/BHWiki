@@ -10,7 +10,15 @@ molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Proteolytic enzyme preparation
-tags: []
+tags:
+  - knee-osteoarthritis-symptoms
+  - postoperative-pain
+  - postoperative-facial-swelling
+  - ulcerative-colitis-disease-activity
+  - immune-function
+  - cysteine-protease-activity
+  - immune-inflammatory-modulation
+  - hemostasis-modulation
 accent: "#D7A32B"
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
@@ -61,6 +69,7 @@ x-shape:
   - legal
 x-order: 9007199254740991
 ---
+
 ## Summary
 
 Bromelain is a heterogeneous pineapple-derived protease preparation. Small human trials report mixed postoperative and inflammatory outcomes, while formulation, activity units, indication and comparator materially change what can be inferred.
@@ -350,7 +359,7 @@ Human evidence supports low-level oral absorption, but does not establish a clin
 
 ```yaml
 - id: ref-castell-1997
-  title: 'Intestinal absorption of undegraded proteins in men: presence of bromelain in plasma after oral intake'
+  title: "Intestinal absorption of undegraded proteins in men: presence of bromelain in plasma after oral intake"
   authors: Castell JV; Friedrich G; Kuhn CS; Poppe GE
   year: 1997
   url: https://pubmed.ncbi.nlm.nih.gov/9252520/
@@ -363,7 +372,7 @@ Human evidence supports low-level oral absorption, but does not establish a clin
   conflictsOfInterest: Disclosure not recovered.
   conflictOfInterestStatus: not-assessed
 - id: ref-brien-2006
-  title: 'Bromelain as an adjunctive treatment for moderate-to-severe osteoarthritis of the knee: a randomized placebo-controlled pilot study'
+  title: "Bromelain as an adjunctive treatment for moderate-to-severe osteoarthritis of the knee: a randomized placebo-controlled pilot study"
   authors: Brien S; Lewith G; Walker AF; Middleton R; Prescott P; Bundy R
   year: 2006
   url: https://pubmed.ncbi.nlm.nih.gov/17121765/
@@ -376,7 +385,7 @@ Human evidence supports low-level oral absorption, but does not establish a clin
   conflictsOfInterest: Disclosure not recovered.
   conflictOfInterestStatus: not-assessed
 - id: ref-majid-2014
-  title: 'Perioperative bromelain reduces pain and swelling and improves quality of life measures after mandibular third molar surgery: a randomized, double-blind, placebo-controlled clinical trial'
+  title: "Perioperative bromelain reduces pain and swelling and improves quality of life measures after mandibular third molar surgery: a randomized, double-blind, placebo-controlled clinical trial"
   authors: Majid OW; Al-Mashhadani BA
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/24589242/
@@ -402,7 +411,7 @@ Human evidence supports low-level oral absorption, but does not establish a clin
   conflictsOfInterest: Disclosure not recovered.
   conflictOfInterestStatus: not-assessed
 - id: ref-colletti-2024
-  title: 'An Evaluation of the Effects of Pineapple-Extract and Bromelain-Based Treatment after Mandibular Third Molar Surgery: A Randomized Three-Arm Clinical Study'
+  title: "An Evaluation of the Effects of Pineapple-Extract and Bromelain-Based Treatment after Mandibular Third Molar Surgery: A Randomized Three-Arm Clinical Study"
   authors: Colletti A et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38542694/
@@ -416,7 +425,7 @@ Human evidence supports low-level oral absorption, but does not establish a clin
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://www.mdpi.com/2072-6643/16/6/784
 - id: ref-delgarm-2025
-  title: 'Effects of bromelain supplementation on disease activity and quality of life in patients with ulcerative colitis: a randomized, triple-blind, placebo-controlled study'
+  title: "Effects of bromelain supplementation on disease activity and quality of life in patients with ulcerative colitis: a randomized, triple-blind, placebo-controlled study"
   authors: Delgarm et al.
   year: 2025
   url: https://doi.org/10.1038/s41598-025-26975-1
@@ -428,7 +437,7 @@ Human evidence supports low-level oral absorption, but does not establish a clin
   conflictsOfInterest: Disclosure not recovered.
   conflictOfInterestStatus: not-assessed
 - id: ref-leelakanok-2023
-  title: 'Efficacy and safety of bromelain: A systematic review and meta-analysis'
+  title: "Efficacy and safety of bromelain: A systematic review and meta-analysis"
   authors: Leelakanok N et al.
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/37157782/
@@ -442,7 +451,7 @@ Human evidence supports low-level oral absorption, but does not establish a clin
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.1177/02601060231173732
 - id: ref-matagne-2017
-  title: 'The proteolytic system of pineapple stems revisited: Purification and characterization of multiple catalytically active forms'
+  title: "The proteolytic system of pineapple stems revisited: Purification and characterization of multiple catalytically active forms"
   authors: Matagne A et al.
   year: 2017
   url: https://doi.org/10.1016/j.phytochem.2017.02.019

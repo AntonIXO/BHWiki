@@ -10,7 +10,10 @@ molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
+tags:
+  - perception
+  - fatigue-severity
+  - memory
 accent: "#888888"
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
@@ -61,9 +64,10 @@ x-shape:
   - legal
 x-order: 9007199254740991
 ---
+
 ## Summary
 
-Spermidine is an endogenous dietary polyamine supplied by foods, wheat-germ extracts, and purified salts. Observational cohorts associate higher dietary intake with lower mortality, but intervention evidence is mixed: the larger SMARTAGE trial was null for its prespecified memory endpoint after a small positive pilot. No trial establishes lifespan extension, dementia prevention, or clinically meaningful human autophagy activation. [S1][S2][S6][S9]
+Spermidine is an endogenous dietary polyamine supplied by foods, wheat-germ extracts, and purified salts.
 
 ## Description
 
@@ -428,7 +432,7 @@ SMARTAGE randomized 100 adults for 12 months and found no mnemonic-discriminatio
 
 ```yaml
 - id: S1
-  title: 'Effects of Spermidine Supplementation on Cognition and Biomarkers in Older Adults With Subjective Cognitive Decline: A Randomized Clinical Trial'
+  title: "Effects of Spermidine Supplementation on Cognition and Biomarkers in Older Adults With Subjective Cognitive Decline: A Randomized Clinical Trial"
   authors: Claudia Schwarz, Gloria S. Benson, Nora Horn, et al.; SmartAge investigators
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9136623/
@@ -441,7 +445,7 @@ SMARTAGE randomized 100 adults for 12 months and found no mnemonic-discriminatio
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC9136623/
 - id: S2
-  title: 'The effect of spermidine on memory performance in older adults at risk for dementia: A randomized controlled trial'
+  title: "The effect of spermidine on memory performance in older adults at risk for dementia: A randomized controlled trial"
   authors: Miranka Wirth, Gloria Benson, Claudia Schwarz, Theresa Köbe, Ulrike Grittner, Dietmar Schmitz, Stephan J. Sigrist, Jens Bohlken, Slaven Stekovic, Frank Madeo, Agnes Flöel
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/30388439/
@@ -465,7 +469,7 @@ SMARTAGE randomized 100 adults for 12 months and found no mnemonic-discriminatio
   conflictsOfInterest: Not fully reproduced in the accessible abstract.
   conflictOfInterestStatus: not-assessed
 - id: S4
-  title: 'The positive effect of spermidine in older adults suffering from dementia: First results of a 3-month trial'
+  title: "The positive effect of spermidine in older adults suffering from dementia: First results of a 3-month trial"
   authors: Thomas Pekar et al.; University of Applied Sciences Wiener Neustadt and Gepflegt Wohnen
   year: 2021
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8116233/
@@ -489,7 +493,7 @@ SMARTAGE randomized 100 adults for 12 months and found no mnemonic-discriminatio
   conflictsOfInterest: Not stated in the accessible abstract.
   conflictOfInterestStatus: not-assessed
 - id: S6
-  title: 'Higher spermidine intake is linked to lower mortality: a prospective population-based study'
+  title: "Higher spermidine intake is linked to lower mortality: a prospective population-based study"
   authors: Stefan Kiechl et al.; Medical University of Innsbruck and collaborating institutions
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/29955838/
@@ -501,7 +505,7 @@ SMARTAGE randomized 100 adults for 12 months and found no mnemonic-discriminatio
   conflictsOfInterest: No material conflict is emphasized in the accessible record.
   conflictOfInterestStatus: not-assessed
 - id: S7
-  title: 'The association of dietary spermidine with all-cause mortality and CVD mortality: The U.S. National Health and Nutrition Examination Survey, 2003 to 2014'
+  title: "The association of dietary spermidine with all-cause mortality and CVD mortality: The U.S. National Health and Nutrition Examination Survey, 2003 to 2014"
   authors: Wu H et al.; collaborating U.S. academic institutions
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9554131/
@@ -513,7 +517,7 @@ SMARTAGE randomized 100 adults for 12 months and found no mnemonic-discriminatio
   conflictsOfInterest: Not stated in the accessible abstract.
   conflictOfInterestStatus: not-assessed
 - id: S8
-  title: 'The Association of Dietary Polyamines with Mortality and the Risk of Cardiovascular Disease: A Prospective Study in UK Biobank'
+  title: "The Association of Dietary Polyamines with Mortality and the Risk of Cardiovascular Disease: A Prospective Study in UK Biobank"
   authors: Su Han, Mingxia Qian, Na Zhang, Rui Zhang, Min Liu, Jiangbo Wang, Furong Li, Liqiang Zheng, Zhaoqing Sun
   year: 2024
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11678356/
@@ -525,7 +529,7 @@ SMARTAGE randomized 100 adults for 12 months and found no mnemonic-discriminatio
   conflictsOfInterest: Not stated in the accessible abstract.
   conflictOfInterestStatus: not-assessed
 - id: S9
-  title: 'High-Dose Spermidine Supplementation Does Not Increase Spermidine Levels in Blood Plasma and Saliva of Healthy Adults: A Randomized Placebo-Controlled Pharmacokinetic and Metabolomic Study'
+  title: "High-Dose Spermidine Supplementation Does Not Increase Spermidine Levels in Blood Plasma and Saliva of Healthy Adults: A Randomized Placebo-Controlled Pharmacokinetic and Metabolomic Study"
   authors: Stefan Senekowitsch, Eliza Wietkamp, Michael Grimm, Franziska Schmelter, Philipp Schick, Anna Kordowski, Christian Sina, Hans Otzen, Werner Weitschies, Martin Smollich
   year: 2023
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10143675/
@@ -537,7 +541,7 @@ SMARTAGE randomized 100 adults for 12 months and found no mnemonic-discriminatio
   conflictsOfInterest: Not stated in the accessible abstract.
   conflictOfInterestStatus: not-assessed
 - id: S10
-  title: 'Supplementation of spermidine at 40 mg/day has minimal effects on circulating polyamines: An exploratory double-blind randomized controlled trial in older men'
+  title: "Supplementation of spermidine at 40 mg/day has minimal effects on circulating polyamines: An exploratory double-blind randomized controlled trial in older men"
   authors: Patrick Keohane, Jeremy R. Everett, Rui Pereira, Chad M. Cook, Traci M. Blonquist, Eunice Mah
   year: 2024
   url: https://doi.org/10.1016/j.nutres.2024.09.012
@@ -550,7 +554,7 @@ SMARTAGE randomized 100 adults for 12 months and found no mnemonic-discriminatio
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.1016/j.nutres.2024.09.012
 - id: S11
-  title: 'A comprehensive review of spermidine: Safety, health effects, absorption and metabolism, food materials evaluation, physical and chemical processing, and bioprocessing'
+  title: "A comprehensive review of spermidine: Safety, health effects, absorption and metabolism, food materials evaluation, physical and chemical processing, and bioprocessing"
   authors: Dian Zou, Ziyue Zhao, Lu Li, Yu Min, Daiyuan Zhang, Anying Ji, Cong Jiang, Xuetuan Wei, Xian Wu
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/35478379/
@@ -575,7 +579,7 @@ SMARTAGE randomized 100 adults for 12 months and found no mnemonic-discriminatio
   conflictOfInterestStatus: not-assessed
 - id: S13
   title: GRAS Notice 889, Wheat germ extract
-  authors: 'U.S. Food and Drug Administration; notifier: The Longevity Labs GmbH'
+  authors: "U.S. Food and Drug Administration; notifier: The Longevity Labs GmbH"
   year: 2020
   url: https://www.fda.gov/media/138730/download?attachment=
   kind: Regulatory GRAS notice

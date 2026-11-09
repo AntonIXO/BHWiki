@@ -10,7 +10,12 @@ molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
+tags:
+  - perception
+  - glycemic-control
+  - ldl-cholesterol
+  - hba1c
+  - diarrhea-duration
 accent: "#888888"
 reviewedAt: 2026-10-11
 editorialStatus: sourced-draft
@@ -64,7 +69,7 @@ x-order: 9007199254740991
 
 ## Summary
 
-Berberine is a plant-derived protoberberine alkaloid studied mainly as chloride or hydrochloride, with separate evidence for sulfate, phytosome, dihydroberberine, and HTD1801 formulations. Randomized evidence supports modest short-term changes in glucose and lipids, while weight findings conflict and long-term clinical outcomes remain unestablished. [S2][S3][S4][S9][S10][S16][S20]
+Berberine is a plant-derived protoberberine alkaloid studied mainly as chloride or hydrochloride, with separate evidence for sulfate, phytosome, dihydroberberine, and HTD1801 formulations.
 
 ## Description
 
@@ -212,20 +217,6 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   unit: hours
   context: HTD1801 is an ionic salt with dissociation-related exposure; ursodeoxycholate appears earlier and at much higher plasma concentrations than berberine. Findings cannot be generalized to conventional berberine chloride.
   sourceId: S19
-  modelEligible: false
-- id: dr-berberine-berberine-pk-1
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated universal terminal half-life was established in the returned report.
-  sourceId: S1
   modelEligible: false
 ```
 
@@ -649,10 +640,10 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
 
 ```yaml
 - id: pmid-42918506
-  title: 'Anticonvulsant activity of berberine: a systematic review and meta-analysis of preclinical studies in animal models.'
+  title: "Anticonvulsant activity of berberine: a systematic review and meta-analysis of preclinical studies in animal models."
   authors: Ullah W, Sulaiman M, Xue M, Xu S, Sun J.
   year: 2026
-  pmid: '42918506'
+  pmid: "42918506"
   doi: 10.1016/j.fitote.2026.107526
   url: https://pubmed.ncbi.nlm.nih.gov/42918506/
   kind: Systematic review and meta-analysis of preclinical animal studies
@@ -675,7 +666,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S2
-  title: 'Overall and Sex-Specific Effect of Berberine on Glycemic and Insulin-Related Traits: a Systematic Review and Meta-Analysis of Randomized Controlled Trials'
+  title: "Overall and Sex-Specific Effect of Berberine on Glycemic and Insulin-Related Traits: a Systematic Review and Meta-Analysis of Randomized Controlled Trials"
   authors: Jie V. Zhao, Xin Huang, Junmeng Zhang, Yap-Hang Chan, Hung-Fat Tse, Joseph E. Blais
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/37598753/
@@ -687,7 +678,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S3
-  title: 'Overall and Sex-Specific Effect of Berberine for the Treatment of Dyslipidemia in Adults: A Systematic Review and Meta-Analysis of Randomized Placebo-Controlled Trials'
+  title: "Overall and Sex-Specific Effect of Berberine for the Treatment of Dyslipidemia in Adults: A Systematic Review and Meta-Analysis of Randomized Placebo-Controlled Trials"
   authors: Joseph E. Blais, Xin Huang, Jie V. Zhao
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/36941490/
@@ -699,7 +690,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S4
-  title: 'Berberine and health outcomes: an overview of systematic reviews'
+  title: "Berberine and health outcomes: an overview of systematic reviews"
   authors: Lanjun Shi, Wenya Wang, Chengyang Jing, Jing Hu, Xing Liao
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12016319/
@@ -724,7 +715,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC4898966
 - id: S6
-  title: 'Effects of berberine on the blood concentration of cyclosporin A in renal transplanted recipients: clinical and pharmacokinetic study'
+  title: "Effects of berberine on the blood concentration of cyclosporin A in renal transplanted recipients: clinical and pharmacokinetic study"
   authors: National Library of Medicine PubMed record; authors not-assessed
   year: 2005
   url: https://pubmed.ncbi.nlm.nih.gov/16133554/
@@ -760,7 +751,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S9
-  title: 'Berberine and Adiposity in Diabetes-Free Individuals With Obesity and MASLD: A Randomized Clinical Trial'
+  title: "Berberine and Adiposity in Diabetes-Free Individuals With Obesity and MASLD: A Randomized Clinical Trial"
   authors: Lubi Lei et al.; BRAVO Collaborative Group
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/41543854/
@@ -772,7 +763,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S10
-  title: 'Berberine Ursodeoxycholate for the Treatment of Type 2 Diabetes: A Randomized Clinical Trial'
+  title: "Berberine Ursodeoxycholate for the Treatment of Type 2 Diabetes: A Randomized Clinical Trial"
   authors: JAMA Network Open; authors not-assessed
   year: 2025
   url: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2830820
@@ -784,7 +775,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: 'Development of an Innovative Berberine Food-Grade Formulation with an Ameliorated Absorption: In Vitro Evidence Confirmed by Healthy Human Volunteers Pharmacokinetic Study'
+  title: "Development of an Innovative Berberine Food-Grade Formulation with an Ameliorated Absorption: In Vitro Evidence Confirmed by Healthy Human Volunteers Pharmacokinetic Study"
   authors: National Library of Medicine PubMed record; authors not-assessed
   year: 2021
   url: https://pubmed.ncbi.nlm.nih.gov/34904017/
@@ -796,7 +787,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: 'Absorption Kinetics of Berberine and Dihydroberberine and Their Impact on Glycemia: A Randomized, Controlled, Crossover Pilot Trial'
+  title: "Absorption Kinetics of Berberine and Dihydroberberine and Their Impact on Glycemia: A Randomized, Controlled, Crossover Pilot Trial"
   authors: National Library of Medicine PubMed record; authors not-assessed
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/35010998/
@@ -820,7 +811,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: 'Molecular mechanisms, targets and clinical potential of berberine in regulating metabolism: a review focussing on databases and molecular docking studies'
+  title: "Molecular mechanisms, targets and clinical potential of berberine in regulating metabolism: a review focussing on databases and molecular docking studies"
   authors: Sun et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38957396/
@@ -846,7 +837,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://www.fda.gov/files/food/published/CP7321.008-DietarySupplements-09182024.pdf
 - id: S16
-  title: 'The effect of berberine supplementation on obesity indices: A dose-response meta-analysis and systematic review of randomized controlled trials'
+  title: "The effect of berberine supplementation on obesity indices: A dose-response meta-analysis and systematic review of randomized controlled trials"
   authors: Pan Xiong et al.
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/32379652/
@@ -865,14 +856,14 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   kind: randomized clinical trial
   insight: Human evidence for a berberine sulfate formulation in acute infectious diarrhea.
   limitation: Historical, disease-specific, and not evidence for metabolic use.
-  pmid: '3549923'
+  pmid: "3549923"
   doi: 10.1093/infdis/155.5.979
   funding: not-assessed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S18
-  title: 'In the News: Berberine'
+  title: "In the News: Berberine"
   authors: National Center for Complementary and Integrative Health
   year: 2023
   url: https://www.nccih.nih.gov/health/in-the-news-berberine
@@ -897,7 +888,7 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: S20
-  title: 'The effect of berberine on obesity indices: a systematic review and meta-analysis'
+  title: "The effect of berberine on obesity indices: a systematic review and meta-analysis"
   authors: Iman Elahi Vahed et al.
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/41310257/

@@ -77,7 +77,7 @@ Cialis and Adcirca use the same molecule in different clinical contexts. Erectil
 
 ## Evidence note
 
-Separate Tadalafil Deep Research, locally converted because generated download links were empty. Selected numerical findings and labels were rechecked; this is a sourced draft. Publication-specific funding is retained. Unrecovered original author declarations remain unassessed. Coverage is selective, not an independently reviewed systematic review.
+Separate Tadalafil Deep Research, locally converted because generated download links were empty. Selected numerical findings and labels were rechecked; this is a research article. Publication-specific funding is retained. Unrecovered original author declarations remain unassessed. Coverage is selective, not an independently reviewed systematic review.
 
 ## Doses
 
@@ -639,4 +639,3 @@ Separate Tadalafil Deep Research, locally converted because generated download l
   sourceUrl: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=bcd8f8ab-81a2-4891-83db-24a0b0e25895
   asOf: 2026-10-04
 ```
-

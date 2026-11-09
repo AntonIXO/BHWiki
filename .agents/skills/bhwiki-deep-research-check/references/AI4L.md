@@ -666,7 +666,7 @@ Audit conducted on [audit_date reformatted as %d/%m/%Y %H:%M] using [AI4L](https
 * 9.6 The following are excluded: Grokipedia, Examine, ConsumerLab content (these have their own dedicated sections)
 * 9.7 The following are excluded: Systematic reviews, meta-analyses (these belong in the Systematic Reviews section)
 * 9.8 The following are excluded: Encyclopedias, wikis, AI-generated reference sites (e.g., Wikipedia)
-* 9.9 The following are excluded: Forums, Reddit threads, community discussion boards, Q&A sites, social media posts
+* 9.9 The following are excluded: Forums, research threads, community discussion boards, Q&A sites, social media posts
 * 9.10 The following are excluded: All mainstream media - TV, print, and radio, including their related online content (e.g., MSNBC, FOX, NYT, WAPO, ...)
 
 * 9.11 The following are excluded: entries in a database, registry, or directory — pages that catalogue a compound or intervention rather than discuss it

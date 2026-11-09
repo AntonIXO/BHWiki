@@ -15,6 +15,8 @@ tags:
   - lysergamide
   - serotonin-2a
   - serotonin
+  - perception
+  - anxiety
 accent: "#b1abcf"
 reviewedAt: 2026-10-03
 editorialStatus: sourced-draft
@@ -228,7 +230,7 @@ The half-life is a study geometric mean. Subjective duration in that study is no
   title: Pharmacokinetics and Pharmacodynamics of Lysergic Acid Diethylamide in Healthy Subjects
   authors: Dolder et al.
   year: 2017
-  pmid: '28197931'
+  pmid: "28197931"
   url: https://pubmed.ncbi.nlm.nih.gov/28197931/
   kind: Human pharmacokinetic study
   insight: Reports plasma Cmax, a 2.6-hour geometric mean half-life, and subjective peak and duration after 100 and 200 µg.
@@ -238,7 +240,7 @@ The half-life is a study geometric mean. Subjective duration in that study is no
   title: Acute dose-dependent effects of lysergic acid diethylamide in a double-blind placebo-controlled study in healthy subjects
   authors: Holze et al.
   year: 2021
-  pmid: '33059356'
+  pmid: "33059356"
   url: https://pubmed.ncbi.nlm.nih.gov/33059356/
   kind: Double-blind placebo-controlled study
   insight: Describes dose-dependent subjective effects from 25 µg, a ceiling of good effects at 100 µg, and more anxiety at 200 µg.
@@ -248,14 +250,14 @@ The half-life is a study geometric mean. Subjective duration in that study is no
   title: Psychedelics
   authors: Nichols
   year: 2016
-  pmid: '26841800'
+  pmid: "26841800"
   url: https://pubmed.ncbi.nlm.nih.gov/26841800/
   kind: Review
   insight: Describes psychedelics as agonists or partial agonists at brain 5-HT2A receptors.
   limitation: A class review. It does not supply an LSD binding constant, and this article does not repeat broader safety claims from the review.
   funding: Not assessed in this draft.
 - id: pubchem
-  title: 'LSD: compound identity and structure'
+  title: "LSD: compound identity and structure"
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/5761
@@ -270,4 +272,3 @@ The half-life is a study geometric mean. Subjective duration in that study is no
 ```yaml
 []
 ```
-

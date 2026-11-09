@@ -12,7 +12,7 @@ import { ArrowRight, ArrowUpRight, BookOpen, GitBranch } from "lucide-react";
 import { Prose } from "@/components/prose";
 import { Breadcrumb } from "@/components/shell";
 import { SectionNav } from "@/components/section-nav";
-import { CardActionStatus, editorialLabel, kindLabels, pageNumber, PageNav, sectionFor, sections, sourceAnchor, sourceLabel, SourceCite, type ConceptSection, type ReadingSearchParams } from "@/components/concept-shared";
+import { CardActionStatus, kindLabels, pageNumber, PageNav, sectionFor, sections, sourceAnchor, sourceLabel, SourceCite, type ConceptSection, type ReadingSearchParams } from "@/components/concept-shared";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Empty, EmptyDescription, EmptyHeader } from "@/components/ui/empty";
@@ -27,7 +27,7 @@ function ObservationCard({ observation, substance }: { observation: Observation;
         <CardTitle>
           <Link href={`/substances/${substance.slug}`} className="inline-flex items-center gap-1 underline underline-offset-4">{substance.name}<ArrowUpRight aria-hidden="true" size={15} /></Link>
         </CardTitle>
-        <CardActionStatus status={editorialLabel(substance.editorialStatus)} direction={observation.direction} />
+        <CardActionStatus direction={observation.direction} />
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         <h3 className="text-lg font-medium">{observation.name}</h3>
@@ -72,7 +72,7 @@ function ClaimCard({ claim, substance, memberRecord }: { claim: Claim; substance
             {claim.conflictingSourceIds.map((id) => <SourceCite key={id} substance={substance} id={id} />)}
           </div>
         )}
-        <Link className="inline-flex items-center gap-1 text-sm underline underline-offset-4" href={`/substances/${substance.slug}#connections`}>{substance.name} · {editorialLabel(substance.editorialStatus)} <ArrowUpRight aria-hidden="true" size={13} /></Link>
+        <Link className="inline-flex items-center gap-1 text-sm underline underline-offset-4" href={`/substances/${substance.slug}#connections`}>{substance.name} <ArrowUpRight aria-hidden="true" size={13} /></Link>
       </CardContent>
     </Card>
   );
@@ -88,7 +88,7 @@ function SubstanceCard({ substance }: { substance: CatalogSubstance }) {
         </CardHeader>
         <CardContent className="flex flex-col gap-3">
           <p className="text-muted-foreground">{substance.summary}</p>
-          <Badge variant="secondary">{editorialLabel(substance.editorialStatus)}</Badge>
+
         </CardContent>
       </Card>
     </Link>
@@ -144,7 +144,6 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
       <header className="flex flex-col gap-4">
         <div className="flex flex-wrap items-center gap-3">
           <p className={`entity-kind-label entity-kind-label--${concept.kind} text-xs font-medium tracking-wide uppercase`} data-kind={concept.kind}>{kindLabels[concept.kind].toUpperCase()}</p>
-          <Badge variant="secondary">Definition: {concept.sourceUrls?.length ? "sourced draft" : "sources not assessed"}</Badge>
         </div>
         <h1 className="text-4xl font-medium">{concept.label}</h1>
         <Prose className="max-w-3xl text-lg text-muted-foreground" text={concept.description} />
@@ -181,7 +180,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
               {mechanisms.map(({ substance, mechanism }, index) => (
                 <Card key={`${substance.slug}-${index}`}>
                   <CardHeader>
-                    <CardDescription>{substance.name} · {editorialLabel(substance.editorialStatus)}</CardDescription>
+                    <CardDescription>{substance.name}</CardDescription>
                     <CardTitle><h3>{mechanism.title}</h3></CardTitle>
                   </CardHeader>
                   <CardContent className="flex flex-col gap-3">
@@ -265,7 +264,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
           <section className="flex scroll-mt-24 flex-col gap-4" id="definition-sources">
             <h2 className="text-2xl font-medium">Follow the sources</h2>
             <h3 className="text-lg font-medium">Definition sources</h3>
-            <p className="text-muted-foreground">Supporting reading for this original editorial definition. Independent editorial review has not been recorded.</p>
+            <p className="text-muted-foreground">Publications supporting this definition.</p>
             {concept.sourceUrls?.length ? (
               <ul className="flex flex-col gap-2">
                 {concept.sourceUrls.map((url, index) => (
@@ -340,7 +339,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
           <Card>
             <CardHeader>
               <CardTitle><h2>Read with the context left in.</h2></CardTitle>
-              <CardDescription>Sources and editorial review are separate. A sourced draft has references but has not completed independent editorial review.</CardDescription>
+              <CardDescription>Explore study methods, source links and publication history.</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col items-start gap-2">
               <Link href="/about" className="inline-flex items-center gap-1 text-sm underline underline-offset-4">Evidence & methodology <ArrowUpRight aria-hidden="true" size={14} /></Link>

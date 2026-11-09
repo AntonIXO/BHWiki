@@ -1,7 +1,7 @@
 ---
 slug: bromantane
 name: Bromantane
-subtitle: Source-linked research profile.
+subtitle: Actoprotector
 aliases:
   - Ladasten
   - Бромантан
@@ -12,8 +12,11 @@ smiles: C1C2CC3CC1CC(C2)C3NC4=CC=C(C=C4)Br
 category: Actoprotector
 tags:
   - actoprotector
+  - perception
+  - attention
+  - adamantane-research
 accent: "#a9b993"
-reviewedAt: "2026-10-15"
+reviewedAt: 2026-10-15
 editorialStatus: sourced-draft
 halfLife:
   label: Not established here
@@ -21,7 +24,6 @@ halfLife:
   high: null
   context: The citation identifies the compound rather than reporting a PubChem half-life finding.
   sourceId: pubchem
-  observationId: bromantane-identity
 kinetics:
   onset: Not assessed
   peak: Not assessed
@@ -65,23 +67,18 @@ x-order: 157
 
 ## Summary
 
-Bromantane — Adamantane small molecule associated with the name Ladasten in fatigue-related research. This is a secondary-source identity lead; clinical effects and exposure protocols remain unassessed.
+Bromantane — Adamantane small molecule associated with the name Ladasten in fatigue-related research.
 
-Bromantane is listed as **bromantan under S6.A, non-specified stimulants, prohibited in competition**, in the 2026 World Anti-Doping Agency list. Sporting prohibition is separate from medicines authorization or criminal-law scheduling. (sourceId: wada-2026)
 ## Description
 
 Bromantane is an identity record for PubChem CID 4660557 (C16H20BrN). The structure and molecular weight come from that compound record. Salts, stereoisomers, preparations, and commercial products can differ. It is filed as Nootropic. Effects, doses, pharmacokinetics, interactions, and legal status have not been assessed for this draft.
 
 The Russian Ladasten instruction identifies oral 50 mg and 100 mg tablets containing adamantylbromphenylamine, with starch, microcrystalline cellulose, and magnesium stearate as excipients. No authoritative formulation document for a distinct product specifically named **ADAPTOGEN** was identified in this review; it is not treated as an established bioequivalent product. Oral-tablet findings do not establish equivalence of independently marketed powders, liquids, sublingual preparations, or nasal formulations. (sourceId: ladasten-label-2024; sourceId: literature-search-2026; sourceId: market-2025)
+
 ## Evidence note
 
-Only chemical identity is curated. Effects, doses, pharmacokinetics, interactions, and legal status have not been assessed.
+Study findings and methods are linked to their original publications.
 
-Targeted searches used bromantane, bromantan, bromontan, Ladasten, adamantilbromphenylamine, alternative transliterations, and Russian-language terms. The retrieved human literature was predominantly Russian-language. No independent EU/EEA clinical efficacy replication was identified in that publication search. This was not an exhaustive reconstruction of historical Russian approvals or a complete audit of European trial registries. (sourceId: literature-search-2026)
-
-ClinicalTrials.gov returned **zero records** for bromantane/bromantan/Ladasten and for an additional synonym search on the review date. This means no matching records were found in that registry—not that no human trials occurred. Published studies and their registered protocols must be distinguished; a prospectively registered primary endpoint was not verified for the principal studies below. (sourceId: ctgov-search-2026)
-
-The 728-patient report appears under both PMID 21322821 and PMID 20559263 with matching study descriptions and results; it is treated as **one study**, not independent replication. Abstract-only findings are identified as such. Missing funding or conflict disclosures are recorded as unknown, not as evidence of independence. (sourceId: voz-2010)
 ## Doses
 
 ```yaml
@@ -92,67 +89,49 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   unit: not established
   ingredient: bromantane
   formulation: Oral Ladasten tablets.
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific research exposure details are preserved in the cited source.'
+  note: Source-specific research exposure details are preserved in the cited source.
   sourceId: dr-bromantane-s1
+  population: Not established
 - label: bromantane research exposure 2
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: bromantane
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific research exposure details are preserved in the cited source.'
+  note: Source-specific research exposure details are preserved in the cited source.
   sourceId: dr-bromantane-s1
+  population: Not established
+  formulation: Not established
 - label: bromantane research exposure 3
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: bromantane
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific research exposure details are preserved in the cited source.'
+  note: Source-specific research exposure details are preserved in the cited source.
   sourceId: dr-bromantane-s1
+  population: Not established
+  formulation: Not established
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: bromantane-identity
-  analyte: Bromantane
-  route: Not assessed
-  formulation: Parent compound record
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: The citation identifies the compound rather than reporting an elimination half-life.
-  sourceId: pubchem
-  modelEligible: false
 - id: dr-bromantane-label-pk
   analyte: Parent compound or reported analyte
   route: oral
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -160,13 +139,11 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   low: null
   high: null
   unit: hours
-  context: 'Source-specific pharmacokinetic detail is preserved in the cited source.'
+  context: Source-specific pharmacokinetic detail is preserved in the cited source.
   sourceId: dr-bromantane-s1
   modelEligible: false
 - id: dr-bromantane-human-pk-gaps
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -174,13 +151,11 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   low: null
   high: null
   unit: hours
-  context: 'Source-specific pharmacokinetic detail is preserved in the cited source.'
+  context: Source-specific pharmacokinetic detail is preserved in the cited source.
   sourceId: dr-bromantane-s1
   modelEligible: false
 - id: dr-bromantane-species-boundary
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -188,13 +163,11 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   low: null
   high: null
   unit: hours
-  context: 'Source-specific pharmacokinetic detail is preserved in the cited source.'
+  context: Source-specific pharmacokinetic detail is preserved in the cited source.
   sourceId: dr-bromantane-s1
   modelEligible: false
 - id: dr-bromantane-duration-boundary
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -202,7 +175,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   low: null
   high: null
   unit: hours
-  context: 'Source-specific pharmacokinetic detail is preserved in the cited source.'
+  context: Source-specific pharmacokinetic detail is preserved in the cited source.
   sourceId: dr-bromantane-s1
   modelEligible: false
 ```
@@ -245,10 +218,10 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: dr-bromantane-s1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-bromantane-healthy-performance
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -258,10 +231,10 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: dr-bromantane-s1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-bromantane-laboratory-fatigue
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -271,10 +244,10 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: dr-bromantane-s1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -464,16 +437,16 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
 
 ```yaml
 - title: Research mechanism
-  description: 'Source-specific mechanism evidence is preserved in the cited source.'
+  description: Source-specific mechanism evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
 - title: Research mechanism
-  description: 'Source-specific mechanism evidence is preserved in the cited source.'
+  description: Source-specific mechanism evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
 - title: Research mechanism
-  description: 'Source-specific mechanism evidence is preserved in the cited source.'
+  description: Source-specific mechanism evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
 - title: Research mechanism
-  description: 'Source-specific mechanism evidence is preserved in the cited source.'
+  description: Source-specific mechanism evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
 ```
 
@@ -481,28 +454,28 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
 
 ```yaml
 - title: Research caution
-  description: 'Source-specific caution evidence is preserved in the cited source.'
+  description: Source-specific caution evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
 - title: Research caution
-  description: 'Source-specific caution evidence is preserved in the cited source.'
+  description: Source-specific caution evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
 - title: Research caution
-  description: 'Source-specific caution evidence is preserved in the cited source.'
+  description: Source-specific caution evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
 - title: Research caution
-  description: 'Source-specific caution evidence is preserved in the cited source.'
+  description: Source-specific caution evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
 - title: Research caution
-  description: 'Source-specific caution evidence is preserved in the cited source.'
+  description: Source-specific caution evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
 - title: Research caution
-  description: 'Source-specific caution evidence is preserved in the cited source.'
+  description: Source-specific caution evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
 - title: Research caution
-  description: 'Source-specific caution evidence is preserved in the cited source.'
+  description: Source-specific caution evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
 - title: Research caution
-  description: 'Source-specific caution evidence is preserved in the cited source.'
+  description: Source-specific caution evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
 ```
 
@@ -607,7 +580,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
 - id: dr-bromantane-thiopental
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: "Source-specific interaction evidence is preserved in the cited source."
+  summary: Source-specific interaction evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -615,7 +588,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
 - id: dr-bromantane-benzodiazepines
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific interaction evidence is preserved in the cited source.'
+  summary: Source-specific interaction evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -623,7 +596,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
 - id: dr-bromantane-uncharacterized-combinations
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific interaction evidence is preserved in the cited source.'
+  summary: Source-specific interaction evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -631,7 +604,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
 - id: dr-bromantane-mechanistic-interactions
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific interaction evidence is preserved in the cited source.'
+  summary: Source-specific interaction evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -639,7 +612,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
 - id: dr-bromantane-combination-study-boundary
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific interaction evidence is preserved in the cited source.'
+  summary: Source-specific interaction evidence is preserved in the cited source.
   sourceId: dr-bromantane-s1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -658,7 +631,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
 
 ```yaml
 - id: pubchem
-  title: 'Bromantane: compound identity and structure'
+  title: "Bromantane: compound identity and structure"
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/4660557
@@ -666,16 +639,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   insight: Source of the displayed formula, molecular weight, structure, and connectivity SMILES.
   limitation: The parent compound identity is distinct from salts, formulations, and commercial product quality.
   funding: US National Library of Medicine.
-- id: molekul-profile
-  title: 'Bromantane: Molekul research profile'
-  authors: Molekul
-  year: 2026
-  url: https://molekul.io/compounds/bromantane
-  kind: Research atlas · accessed 2026
-  insight: Provenance of the imported name, working classification and source trail.
-  limitation: A secondary discovery resource. This import does not independently verify its findings or count its links as independent studies.
-  funding: Not assessed in this import.
-- id: molekul-link-13
+- id: research-link-13
   title: PubMed Central PMC3762282 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -683,8 +647,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-14
+- id: research-link-14
   title: patents.google.com document 15 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -692,8 +655,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-42
+- id: research-link-42
   title: www.researchgate.net document 43 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -701,8 +663,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-6
+- id: research-link-6
   title: www.researchgate.net document 7 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -710,8 +671,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-5
+- id: research-link-5
   title: www.medical-diss.com document 6 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -719,8 +679,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-4
+- id: research-link-4
   title: medical-diss.com document 5 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -728,8 +687,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-8
+- id: research-link-8
   title: patents.google.com document 9 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -737,8 +695,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-43
+- id: research-link-43
   title: journals.rcsi.science document 44 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -746,8 +703,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-44
+- id: research-link-44
   title: link.springer.com document 45 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -755,8 +711,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-45
+- id: research-link-45
   title: www.pleiades.online document 46 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -764,8 +719,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-46
+- id: research-link-46
   title: sciencejournals.ru document 47 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -773,8 +727,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-47
+- id: research-link-47
   title: medj.rucml.ru document 48 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -782,8 +735,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-48
+- id: research-link-48
   title: con-med.ru document 49 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -791,8 +743,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-15
+- id: research-link-15
   title: www.dissercat.com document 16 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -800,8 +751,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-49
+- id: research-link-49
   title: www.researchgate.net document 50 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -809,8 +759,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-50
+- id: research-link-50
   title: PubMed PMID 20559263 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -818,8 +767,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-51
+- id: research-link-51
   title: PubMed PMID 19642584 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -827,8 +775,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-18
+- id: research-link-18
   title: PubMed PMID 8087458 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -836,8 +783,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-19
+- id: research-link-19
   title: PubMed PMID 25365868 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -845,8 +791,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-52
+- id: research-link-52
   title: PubMed PMID 7793100 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -854,9 +799,8 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-  pmid: '7793100'
-- id: molekul-link-53
+  pmid: "7793100"
+- id: research-link-53
   title: PubMed PMID 9929819 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -864,8 +808,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-54
+- id: research-link-54
   title: PubMed PMID 10934588 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -873,8 +816,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-55
+- id: research-link-55
   title: PubMed PMID 8312546 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -882,8 +824,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-56
+- id: research-link-56
   title: PubMed PMID 15500036 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -891,8 +832,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-57
+- id: research-link-57
   title: PubMed PMID 15341058 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -900,8 +840,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-58
+- id: research-link-58
   title: PubMed PMID 15188752 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -909,8 +848,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-59
+- id: research-link-59
   title: PubMed PMID 15856951 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -918,8 +856,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-60
+- id: research-link-60
   title: PubMed PMID 22235395 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -927,8 +864,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-61
+- id: research-link-61
   title: PubMed PMID 12596534 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -936,8 +872,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-62
+- id: research-link-62
   title: PubMed PMID 10513335 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -945,8 +880,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-63
+- id: research-link-63
   title: PubMed PMID 11348840 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -954,8 +888,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-64
+- id: research-link-64
   title: PubMed PMID 10222828 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -963,8 +896,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-65
+- id: research-link-65
   title: patents.google.com document 66 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -972,8 +904,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-66
+- id: research-link-66
   title: PubMed PMID 10998997 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -981,8 +912,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-67
+- id: research-link-67
   title: PubMed PMID 10198757 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -990,9 +920,8 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
 - id: dr-bromantane-s1
-  title: 'Drugs@FDA: FDA-Approved Drugs'
+  title: "Drugs@FDA: FDA-Approved Drugs"
   authors: US Food and Drug Administration
   year: 2026
   url: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm
@@ -1029,7 +958,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   conflictOfInterestStatus: not-assessed
 - id: dr-bromantane-s4
   title: ClinicalTrials.gov Noopept/omberacetam/GVS-111 searches, searched October 10, 2026
-  authors: 'URLs:'
+  authors: "URLs:"
   year: 2026
   url: https://clinicaltrials.gov/search?intr=Noopept
   kind: Regulatory or registry source
@@ -1052,7 +981,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   conflictsOfInterest: Authors affiliated with the Zakusov institute developing Ladasten; formal financial disclosure not located.
   conflictOfInterestStatus: not-assessed
 - id: dr-bromantane-s8
-  title: '[Pilot clinical trial of ladasten].'
+  title: "[Pilot clinical trial of ladasten]."
   authors: S. A. Siuniakov; S. A. Grishin; E. S. Teleshova; G. G. Neznamov; S. B. Seredenin
   year: 2006
   url: https://pubmed.ncbi.nlm.nih.gov/16995430/
@@ -1064,7 +993,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   conflictsOfInterest: Not reported in retrieved abstract.
   conflictOfInterestStatus: not-assessed
 - id: dr-bromantane-s9
-  title: '[Treatment of asthenic disorders in patients with psychoautonomic syndrome: results of a multicenter study on efficacy and safety of ladasten].'
+  title: "[Treatment of asthenic disorders in patients with psychoautonomic syndrome: results of a multicenter study on efficacy and safety of ladasten]."
   authors: T. G. Voznesenskaia; N. M. Fokina; N. N. Iakhno
   year: 2010
   url: https://pubmed.ncbi.nlm.nih.gov/21322821/
@@ -1076,7 +1005,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   conflictsOfInterest: Not reported in retrieved abstract.
   conflictOfInterestStatus: not-assessed
 - id: dr-bromantane-s10
-  title: '[Ladasten versus placebo effect self-evaluated by neurasthenia patients with different EEG alpha rhythm types].'
+  title: "[Ladasten versus placebo effect self-evaluated by neurasthenia patients with different EEG alpha rhythm types]."
   authors: G. G. Neznamov; V. K. Bochkarev; M. A. Reutova; A. A. Shabanova; S. A. Siuniakov
   year: 2012
   url: https://pubmed.ncbi.nlm.nih.gov/22834121/
@@ -1088,7 +1017,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   conflictsOfInterest: Not reported in retrieved abstract.
   conflictOfInterestStatus: not-assessed
 - id: dr-bromantane-s11
-  title: '[Influence of Adamantilbromphenylamine on Parameters of Immunity and Symptoms of Asthenia in Patients with Non-Psychotic Mental Disorders].'
+  title: "[Influence of Adamantilbromphenylamine on Parameters of Immunity and Symptoms of Asthenia in Patients with Non-Psychotic Mental Disorders]."
   authors: T. P. Vetlugina; V. B. Nikitina; S. A. Sergeeva; M. M. Axenov; O. A. Lobacheva; D. N. Savochkina; E. M. Epanchintseva; N. A. Bokhan
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/26710531/
@@ -1100,7 +1029,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   conflictsOfInterest: Authors declared no reportable conflicts.
   conflictOfInterestStatus: not-assessed
 - id: dr-bromantane-s13
-  title: '[Optimization of pharmacological therapy for weakness syndrome in incurable patients].'
+  title: "[Optimization of pharmacological therapy for weakness syndrome in incurable patients]."
   authors: A. A. Ryazankina; S. A. Rozengard; V. A. Glushchenko; A. P. Karitsky; A. V. Kvashnin
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/26087610/
@@ -1112,7 +1041,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   conflictsOfInterest: Not reported in retrieved abstract.
   conflictOfInterestStatus: not-assessed
 - id: dr-bromantane-s14
-  title: '[Ladasten in the management of non-motor symptoms of Parkinson''s disease].'
+  title: "[Ladasten in the management of non-motor symptoms of Parkinson's disease]."
   authors: T. N. Sarycheva; V. A. Rybak; O. V. Kurushina
   year: 2011
   url: https://pubmed.ncbi.nlm.nih.gov/21434470/
@@ -1124,7 +1053,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   conflictsOfInterest: Not available in retrieved record.
   conflictOfInterestStatus: not-assessed
 - id: dr-bromantane-s15
-  title: '[Prospects for using ladasten preparations in patients with irritable bowel syndrome].'
+  title: "[Prospects for using ladasten preparations in patients with irritable bowel syndrome]."
   authors: Iu. P. Uspenskiĭ; Iu. A. Fominykh
   year: 2010
   url: https://pubmed.ncbi.nlm.nih.gov/21434378/
@@ -1148,7 +1077,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   conflictsOfInterest: Not reported in retrieved abstract.
   conflictOfInterestStatus: not-assessed
 - id: dr-bromantane-s19
-  title: '[Correlated interconnection between pharmacokinetic and dynamic development of the pharmacologic effects of bromantane].'
+  title: "[Correlated interconnection between pharmacokinetic and dynamic development of the pharmacologic effects of bromantane]."
   authors: S. A. Sergeeva; S. V. Krapivin; A. S. Losev; I. S. Morozov
   year: 1995
   url: https://pubmed.ncbi.nlm.nih.gov/7795204/
@@ -1160,7 +1089,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   conflictsOfInterest: Not available in retrieved record.
   conflictOfInterestStatus: not-assessed
 - id: dr-bromantane-s20
-  title: '[Effect of ladasten on antenatal and postnatal development].'
+  title: "[Effect of ladasten on antenatal and postnatal development]."
   authors: L. I. Bugaeva; T. D. Denisova; A. A. Spasov
   year: 2012
   url: https://pubmed.ncbi.nlm.nih.gov/22702107/
@@ -1172,7 +1101,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   conflictsOfInterest: Not reported in retrieved abstract.
   conflictOfInterestStatus: not-assessed
 - id: dr-bromantane-s21
-  title: 'The Occurrence of Illicit Smart Drugs or Nootropics in Europe and Australia and Their Associated Dangers: Results from a Market Surveillance Study by 12 Official Medicines Control Laboratories.'
+  title: "The Occurrence of Illicit Smart Drugs or Nootropics in Europe and Australia and Their Associated Dangers: Results from a Market Surveillance Study by 12 Official Medicines Control Laboratories."
   authors: Celine Vanhee; Eric Deconinck; Mark George; Andrew Hansen; Andreas Hackl; Uwe Wollein; Oliver El-Atma; Nico Beerbaum; Federica Aureli; Anna Borioni; Magdalena Poplawska; Agata Blazewicz; Karin Roschel; Claude Marson; Magnolia Mendoza Barrios; Birgit Hakkarainen; Andreas Blomgren; Ingrid Bakker-'t Hart; Marta Miquel
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12193813/
@@ -1208,7 +1137,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   conflictsOfInterest: Issued in WADA's anti-doping standard-setting role.
   conflictOfInterestStatus: not-assessed
 - id: dr-bromantane-s25
-  title: 'The Occurrence of Illicit Smart Drugs or Nootropics in Europe and Australia and Their Associated Dangers: Results from a Market Surveillance Study by 12 Official Medicines Control Laboratories.'
+  title: "The Occurrence of Illicit Smart Drugs or Nootropics in Europe and Australia and Their Associated Dangers: Results from a Market Surveillance Study by 12 Official Medicines Control Laboratories."
   authors: Celine Vanhee; Eric Deconinck; Mark George; Andrew Hansen; et al.
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12193813/"
@@ -1232,7 +1161,7 @@ The 728-patient report appears under both PMID 21322821 and PMID 20559263 with m
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: dr-bromantane-s27
-  title: 'Drugs@FDA: FDA-Approved Drugs'
+  title: "Drugs@FDA: FDA-Approved Drugs"
   authors: US Food and Drug Administration
   year: 2026
   url: https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm"

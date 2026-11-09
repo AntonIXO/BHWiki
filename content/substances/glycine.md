@@ -1,20 +1,24 @@
 ---
 slug: glycine
 name: Glycine
-subtitle: Dietary and supplemental glycine evidence across sleep, metabolic and clinical outcomes.
+subtitle: Research subject
 aliases:
-- glycine
-- aminoacetic acid
-- glycocoll
-- Gly
+  - glycine
+  - aminoacetic acid
+  - glycocoll
+  - Gly
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
-accent: '#888888'
-reviewedAt: '2026-10-15'
+tags:
+  - perception
+  - attention
+  - sleep
+  - fatigue
+accent: "#888888"
+reviewedAt: 2026-10-15
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -31,45 +35,43 @@ kinetics:
   metabolism: Not established
   sourceId: S1
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- evidenceNote
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - evidenceNote
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 9007199254740991
 ---
 
 ## Summary
 
-Supplemental glycine has preliminary, short-term human evidence for some sleep measures, but results are selective rather than consistently positive. Small trials reported better subjective sleep or shorter sleep-stage latencies; restricted-sleep experiments did not consistently improve sleepiness, memory, or daytime functioning. Much of this research involved Ajinomoto-affiliated investigators. (sourceId: ref2; sourceId: ref3; sourceId: ref4)
-
-Metabolic findings are mixed, and increased circulating glycine is not equivalent to improved health. A large schizophrenia trial found no benefit for negative symptoms or cognition; a severe-COVID-19 trial found no improvement in major clinical outcomes. Dietary associations, isolated glycine supplementation, and glycine-containing combinations require separate interpretation. (sourceId: ref11; sourceId: ref14; sourceId: ref17; sourceId: ref21; sourceId: ref23)
+Glycine is an amino acid involved in inhibitory and NMDA-receptor signalling. Small human studies explore sleep and next-day performance.
 
 ## Description
 
@@ -79,13 +81,7 @@ This article distinguishes free glycine powder or capsules from protein-bound di
 
 ## Evidence note
 
-The strongest distinctions are between randomized comparisons and uncontrolled changes, between clinical outcomes and biomarkers, and between humans and experimental animals. The frequently cited heat-loss mechanism was investigated in rats, not established as a human thermoregulatory treatment. Some clinical studies are exceptionally small, while larger or more rigorous comparisons have produced null results. (sourceId: ref5; sourceId: ref12; sourceId: ref17)
-
-References identify inspected funding and conflicts separately. Unavailable disclosures are marked unknown rather than interpreted as independence. Important access limitations include the unverified Bioglycin dose and internally ambiguous dose wording in the diabetes abstract. (sourceId: ref6; sourceId: ref9)
-
-Reddit index corpus import (4 linked source records; 1 PubMed abstracts). Full-text methods, funding, and conflicts remain unassessed where the source record says so.
-
-PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this Reddit-index entry; structured fields below are limited to abstract-supported findings. PMC full text was used where rights-eligible and available; remaining methods, funding, and conflicts are unassessed.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -97,14 +93,13 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   unit: not established
   ingredient: glycine
   formulation: Oral free glycine, including flavored granules
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific evidence is preserved in the cited source.
   sourceId: S3
+  population: Not established
 - label: glycine research exposure 2
   amount: Not established
   quantity: null
@@ -112,29 +107,27 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   unit: not established
   ingredient: glycine
   formulation: Oral glycine supplement
-  route: Not established
   frequency: Not established
   duration: 3 months
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific evidence is preserved in the cited source.
   sourceId: S10
+  population: Not established
 - label: glycine research exposure 3
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: glycine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific evidence is preserved in the cited source.
   sourceId: S9
+  population: Not established
+  formulation: Not established
 - label: glycine research exposure 4
   amount: Not established
   quantity: null
@@ -142,44 +135,41 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   unit: not established
   ingredient: glycine
   formulation: Commercially purchased 1-g pure-glycine capsules
-  route: Not established
   frequency: Not established
   duration: 14 days
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific evidence is preserved in the cited source.
   sourceId: S11
+  population: Not established
 - label: glycine research exposure 5
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: glycine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific evidence is preserved in the cited source.
   sourceId: S18
+  population: Not established
+  formulation: Not established
 - label: glycine research exposure 6
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: glycine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific evidence is preserved in the cited source.
   sourceId: S22
+  population: Not established
+  formulation: Not established
 - label: Glycine before bedtime (PMID 22529837)
   amount: 3 g
   quantity: 3
@@ -194,7 +184,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   purpose: Daytime sleepiness, fatigue, and psychomotor vigilance under 25% sleep restriction
   sourceCategory: research
   note: Full-text methods report 3 g 30 minutes before bedtime; this was a small, acute sleep-restriction study.
-  sourceId: reddit-pmid-22529837
+  sourceId: pubmed-22529837
 ```
 
 ## Pharmacokinetics
@@ -202,8 +192,6 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
 ```yaml
 - id: glycine-pk-1
   analyte: Oral plasma time course
-  route: Not established
-  formulation: Not established
   population: Nine healthy adults
   endpoint: elimination-half-life
   statistic: not-established
@@ -216,8 +204,6 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   modelEligible: false
 - id: glycine-pk-2
   analyte: Food-context modification
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -231,7 +217,6 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
 - id: glycine-pk-3
   analyte: Central exposure
   route: Intravenous
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -244,8 +229,6 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   modelEligible: false
 - id: glycine-pk-4
   analyte: Elimination half-life and absolute oral bioavailability
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -303,10 +286,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S3
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-effect-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -316,10 +299,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S4
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-effect-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -329,10 +312,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S22
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -349,10 +332,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S2
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-2
   study:
     id: glycine-outcomes-2
@@ -364,10 +347,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S3
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-3
   study:
     id: glycine-outcomes-3
@@ -379,10 +362,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S4
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-4
   study:
     id: glycine-outcomes-4
@@ -394,10 +377,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S6
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-5
   study:
     id: glycine-outcomes-5
@@ -409,10 +392,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S8
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-6
   study:
     id: glycine-outcomes-6
@@ -424,10 +407,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S9
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-7
   study:
     id: glycine-outcomes-7
@@ -439,10 +422,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S10
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-8
   study:
     id: glycine-outcomes-8
@@ -454,10 +437,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S11
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-9
   study:
     id: glycine-outcomes-9
@@ -469,10 +452,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S16
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-10
   study:
     id: glycine-outcomes-10
@@ -484,10 +467,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S17
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-11
   study:
     id: glycine-outcomes-11
@@ -499,10 +482,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S12
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-12
   study:
     id: glycine-outcomes-12
@@ -514,10 +497,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S13
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-13
   study:
     id: glycine-outcomes-13
@@ -529,10 +512,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S14
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-14
   study:
     id: glycine-outcomes-14
@@ -544,10 +527,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S15
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-15
   study:
     id: glycine-outcomes-15
@@ -559,10 +542,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S24
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-16
   study:
     id: glycine-outcomes-16
@@ -574,10 +557,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S21
-  population: Not established
   exposure: Estimated dietary glycine, including its proportion of total protein
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycine-outcome-17
   study:
     id: glycine-outcomes-17
@@ -589,11 +572,11 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S20
-  population: Not established
   exposure: 5–100 mg/kg/day within controlled amino-acid diets
   instrument: null
   magnitude: null
-- id: reddit-glycine-sleep-25533534
+  population: Not established
+- id: research-glycine-sleep-25533534
   conceptId: sleep
   name: Sleep
   direction: Variable
@@ -605,13 +588,13 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-glycine-daytime-performance-22529837
+- id: research-glycine-daytime-performance-22529837
   conceptId: fatigue
   name: Daytime fatigue and psychomotor vigilance
   direction: Variable
   evidence: Human research
   description: In a randomized crossover study with 25% sleep restriction for three nights, 3 g glycine before bedtime reduced fatigue and significantly improved psychomotor vigilance; sleepiness reduction was a non-significant tendency.
-  sourceId: reddit-pmid-22529837
+  sourceId: pubmed-22529837
   population: Seven healthy men analyzed after exclusions
   exposure: 3 g oral glycine 30 minutes before bedtime for 3 nights
   instrument: Visual analogue scales, fatigue questionnaire, psychomotor vigilance test
@@ -639,7 +622,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   sourceId: S5
 - title: SCN and sleep physiology (PMID 22529837; PMCID PMC3328957)
   description: The full text reports glycine modulation of suprachiasmatic-nucleus neuropeptides (arginine vasopressin and VIP) without changing plasma melatonin or clock-gene expression; the authors discuss NMDAR-mediated SCN effects and thermoregulation as possible sleep mechanisms.
-  sourceId: reddit-pmid-22529837
+  sourceId: pubmed-22529837
 ```
 
 ## Cautions
@@ -672,103 +655,103 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   assertion: Glycine reliably increases deep sleep.
   relation: evidence-boundary
   participants:
-  - entityId: substance:glycine
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:glycine
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - S3
+    - S3
   conflictingSourceIds:
-  - S1
+    - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: glycine-claim-2
   assertion: Glycine is a general nootropic.
   relation: evidence-boundary
   participants:
-  - entityId: substance:glycine
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:glycine
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - S6
+    - S6
   conflictingSourceIds:
-  - S1
+    - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: glycine-claim-3
   assertion: Raising blood glycine proves improved metabolic health.
   relation: evidence-boundary
   participants:
-  - entityId: substance:glycine
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:glycine
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - S11
+    - S11
   conflictingSourceIds:
-  - S1
+    - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: glycine-claim-4
   assertion: GlyNAC trials prove glycine alone reverses aging.
   relation: evidence-boundary
   participants:
-  - entityId: substance:glycine
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:glycine
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - S23
+    - S23
   conflictingSourceIds:
-  - S1
+    - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: glycine-claim-5
   assertion: Glycine's role in collagen proves supplemental benefits for skin, joints or wound healing.
   relation: evidence-boundary
   participants:
-  - entityId: substance:glycine
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:glycine
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - S1
+    - S1
   conflictingSourceIds:
-  - S1
+    - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: glycine-claim-6
   assertion: Glycine improves human thermoregulation through the established sleep mechanism.
   relation: evidence-boundary
   participants:
-  - entityId: substance:glycine
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:glycine
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - S5
+    - S5
   conflictingSourceIds:
-  - S1
+    - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
-- id: reddit-claim-glycine-25533534-0
+- id: research-claim-glycine-25533534-0
   assertion: Glycine is associated with the reported sleep finding in this publication.
   relation: associated-with
   participants:
-  - entityId: substance:glycine
-    role: intervention or exposure
-  - entityId: tag:sleep
-    role: reported endpoint
+    - entityId: substance:glycine
+      role: intervention or exposure
+    - entityId: tag:sleep
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - S5
+    - S5
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
@@ -784,7 +767,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   sourceId: S18
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - S1
+    - S1
 - id: interaction-2
   name: Documented or hypothesized coexposure
   otherSlug: null
@@ -792,7 +775,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   sourceId: S19
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - S1
+    - S1
 - id: interaction-3
   name: Documented or hypothesized coexposure
   otherSlug: null
@@ -800,24 +783,13 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   sourceId: S8
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - S1
+    - S1
 ```
 
 ## Experience links
 
 ```yaml
 []
-```
-
-## External wiki links
-
-```yaml
-- service: Wikipedia
-  url: https://en.wikipedia.org/wiki/Glycine
-  title: Wikipedia
-- service: Examine
-  url: https://examine.com/supplements/glycine
-  title: Examine.com
 ```
 
 ## References
@@ -872,7 +844,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   conflictsOfInterest: Authors declared no relevant commercial relationships, despite Ajinomoto affiliations and employee recruitment.
   conflictOfInterestStatus: not-assessed
   doi: 10.3389/fneur.2012.00061
-  pmid: '22529837'
+  pmid: "22529837"
 - id: S5
   title: The sleep-promoting and hypothermic effects of glycine are mediated by NMDA receptors in the suprachiasmatic nucleus.
   authors: Nobuhiro Kawai, Noriaki Sakai, Masashi Okuro, Sachie Karakawa, Yosuke Tsuneyoshi, Noriko Kawasaki, Tomoko Takeda, Makoto Bannai, Seiji Nishino
@@ -958,7 +930,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   conflictsOfInterest: Authors declared no competing interests.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: 'Glycine increases fat-free mass in malnourished haemodialysis patients: a randomized double-blind crossover trial.'
+  title: "Glycine increases fat-free mass in malnourished haemodialysis patients: a randomized double-blind crossover trial."
   authors: Laurence Genton, Daniel Teta, Menno Pruijm, Catherine Stoermann, Nicola Marangon, et al.
   year: 2021
   url: https://pubmed.ncbi.nlm.nih.gov/34519439/
@@ -970,7 +942,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   conflictsOfInterest: Author grants and fees from nutrition/medical companies; Cani disclosed biotechnology cofounding and patents.
   conflictOfInterestStatus: not-assessed
 - id: S13
-  title: 'The effect of enteral glycine on plasma glycine and muscle structure, size, and function in the critically ill: A randomized controlled trial.'
+  title: "The effect of enteral glycine on plasma glycine and muscle structure, size, and function in the critically ill: A randomized controlled trial."
   authors: Yasmine Ali Abdelhamid, Amy J. Bongetti, Marissa K. Caldow, Amalia Karahalios, et al.
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/41109034/
@@ -982,7 +954,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   conflictsOfInterest: Full disclosure not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: 'Glycine by enteral route does not improve major clinical outcomes in severe COVID-19: a randomized clinical pilot trial.'
+  title: "Glycine by enteral route does not improve major clinical outcomes in severe COVID-19: a randomized clinical pilot trial."
   authors: Mario H. Vargas, Jaime Chávez, Rosangela Del-Razo-Rodríguez, Carolina Muñoz-Perea, et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38773199/
@@ -1018,7 +990,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   conflictsOfInterest: Separate personal declaration not located.
   conflictOfInterestStatus: not-assessed
 - id: S17
-  title: 'The Cognitive and Negative Symptoms in Schizophrenia Trial (CONSIST): the efficacy of glutamatergic agents for negative symptoms and cognitive impairments.'
+  title: "The Cognitive and Negative Symptoms in Schizophrenia Trial (CONSIST): the efficacy of glutamatergic agents for negative symptoms and cognitive impairments."
   authors: Robert W. Buchanan, Daniel C. Javitt, Stephen R. Marder, Nina R. Schooler, James M. Gold, Robert P. McMahon, Uriel Heresco-Levy, William T. Carpenter
   year: 2007
   url: https://pubmed.ncbi.nlm.nih.gov/17898352/
@@ -1066,7 +1038,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   conflictsOfInterest: Authors reported no conflicts.
   conflictOfInterestStatus: not-assessed
 - id: S21
-  title: 'Dietary amino acids and risk of stroke subtypes: a prospective analysis of 356,000 participants in seven European countries'
+  title: "Dietary amino acids and risk of stroke subtypes: a prospective analysis of 356,000 participants in seven European countries"
   authors: Tammy Y. N. Tong, Robert Clarke, Julie A. Schmidt, et al.
   year: 2024
   url: https://doi.org/10.1007/s00394-023-03251-4
@@ -1090,7 +1062,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   conflictsOfInterest: All listed authors affiliated with Ajinomoto; formal declaration unavailable.
   conflictOfInterestStatus: not-assessed
 - id: S23
-  title: 'Supplementing Glycine and N-Acetylcysteine (GlyNAC) in Older Adults Improves Glutathione Deficiency, Oxidative Stress, Mitochondrial Dysfunction, Inflammation, Physical Function, and Aging Hallmarks: A Randomized Clinical Trial.'
+  title: "Supplementing Glycine and N-Acetylcysteine (GlyNAC) in Older Adults Improves Glutathione Deficiency, Oxidative Stress, Mitochondrial Dysfunction, Inflammation, Physical Function, and Aging Hallmarks: A Randomized Clinical Trial."
   authors: Premranjan Kumar, Chun Liu, James Suliburk, Jean W. Hsu, Raja Muthupillai, Farook Jahoor, Charles G. Minard, George E. Taffet, Rajagopal V. Sekhar
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/35975308/
@@ -1102,7 +1074,7 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   conflictsOfInterest: Complete formal declaration not verified.
   conflictOfInterestStatus: not-assessed
 - id: S24
-  title: 'Effect of oral glycine on the clinical, spirometric and inflammatory status in subjects with cystic fibrosis: a pilot randomized trial.'
+  title: "Effect of oral glycine on the clinical, spirometric and inflammatory status in subjects with cystic fibrosis: a pilot randomized trial."
   authors: Mario H. Vargas, Rosangela Del-Razo-Rodríguez, Amando López-García, José Luis Lezana-Fernández, Jaime Chávez, María E. Y. Furuya, Juan Carlos Marín-Santana
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/29246256/
@@ -1161,43 +1133,37 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not a clinical-study disclosure.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-1a1f4774fba2
+- id: publication-link-1a1f4774fba2
   title: The Effects of Glycine on Subjective Daytime Performance in Partially Sleep-Restricted Healthy Volunteers (2012)
   authors: Not established
   year: 2012
   url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3328957/
   kind: PubMed Central publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-2d80c434ec16
+- id: publication-link-2d80c434ec16
   title: Glycine ingestion improves subjective sleep quality in human volunteers, correlating with polysomnographic changes (2007)
   authors: Not established
   year: 2007
   url: https://onlinelibrary.wiley.com/doi/10.1111/j.1479-8425.2007.00262.x/abstract
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-6aed73ed340c
+- id: publication-link-6aed73ed340c
   title: Subjective effects of glycine ingestion before bedtime on sleep quality (2006)
   authors: Not established
   year: 2006
   url: https://onlinelibrary.wiley.com/doi/10.1111/j.1479-8425.2006.00193.x/full
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-22529837
+- id: pubmed-22529837
   title: The effects of glycine on subjective daytime performance in partially sleep-restricted healthy volunteers.
   authors: Makoto Bannai, Nobuhiro Kawai, Kaori Ono, Keiko Nakahara, Noboru Murakami
   year: 2012
@@ -1205,12 +1171,10 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   kind: PubMed Central publication
   insight: A randomized crossover sleep-restriction study analyzed seven healthy men; 3 g glycine before bedtime reduced fatigue and improved psychomotor vigilance, with no significant melatonin or clock-gene changes.
   limitation: Full text retrieved from PMCID PMC3328957; small sample and acute sleep-restriction design limit generalization.
-  pmid: '22529837'
+  pmid: "22529837"
   pmcid: PMC3328957
   doi: 10.3389/fneur.2012.00061
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 
@@ -1237,4 +1201,15 @@ PubMed MCP abstract review: 1 linked PubMed identifiers were retrieved for this 
   status: Glycine and its sodium salt are identified as E640 in the specifications regulation.
   sourceUrl: https://vkm.no/download/18.645b840415d03a2fe8f25c8b/1502711280583/Risk%20assessment%20of%20%22other%20substances%22%20%E2%80%93%20glycine.pdf
   asOf: 2026-10-10
+```
+
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Glycine
+  title: Wikipedia
+- service: Examine
+  url: https://examine.com/supplements/glycine
+  title: Examine.com
 ```

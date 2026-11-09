@@ -1,18 +1,28 @@
 ---
 slug: magnesium-l-threonate
 name: Magnesium L-threonate
-subtitle: Formulation-specific magnesium research with a preclinical brain-magnesium claim.
+subtitle: Research subject
 aliases:
-- magnesium L-threonate
-- MgT
-- Magtein
+  - magnesium L-threonate
+  - MgT
+  - Magtein
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
-accent: '#888888'
+tags:
+  - daytime-sleepiness
+  - alertness
+  - anxiety
+  - cognitive-performance
+  - memory
+  - sleep
+  - magnesium-homeostasis-outcome
+  - episodic-memory
+  - magnesium-homeostasis
+  - nmda-receptor
+accent: "#888888"
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
 halfLife:
@@ -30,37 +40,37 @@ kinetics:
   metabolism: Magnesium is handled through regulated distribution and renal excretion; magnesium L-threonate-specific metabolic and terminal elimination data are sparse.
   sourceId: efsa-2024
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- evidenceNote
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - evidenceNote
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 9007199254740991
 ---
 
@@ -74,9 +84,7 @@ The record separates exact salt exposure from elemental magnesium, peripheral ma
 
 ## Evidence note
 
-Short-term cognitive or subjective sleep signals remain uncertain; broad enhancement and superior human brain delivery are unestablished. Positive trials include commercial sponsorship or product involvement. Renal impairment, pregnancy or lactation, interactions, and long-term use remain evidence gaps. [lopresti-smith-2026] [hausenblas-2024] [efsa-2024] [nih-magnesium-2026]
-
-Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed. Full text retrieved for PMC4927823 (PMID 26519439), PMC4172865 (PMID 25213836), and PMC11381753 (PMID 39252819); PMC10934248 (PMID 38481468) returned citation/abstract metadata without a body in the rights-limited retrieval. Funding and conflicts are retained per reference where assessed.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -215,26 +223,12 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   purpose: Preventive or therapeutic preclinical exposure
   sourceCategory: research
   note: Animal-study dose; not a human dosing recommendation. MgT prevented or restored short-term-memory and hippocampal-LTP deficits.
-  sourceId: reddit-pmid-24077207
+  sourceId: pubmed-24077207
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: magnesium-l-threonate-pk-human-not-established
-  analyte: Magnesium from magnesium L-threonate
-  route: oral
-  formulation: Magnesium L-threonate
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: Human studies in the reviewed evidence did not establish a terminal magnesium L-threonate magnesium half-life. Peripheral plasma, red-cell, and urinary measures cannot be relabeled as brain or cerebrospinal-fluid pharmacokinetics.
-  sourceId: efsa-2024
-  modelEligible: false
 - id: magnesium-l-threonate-pk-threonate-moiety
   analyte: L-threonate moiety
   route: oral
@@ -249,10 +243,10 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   context: EFSA cites mean plasma L-threonate half-life of about 2.5 hours, fasting Tmax around 2 hours and fed Tmax around 3 hours; food increased AUC by about 33% and Cmax by about 21%, and four days of repeated dosing produced no accumulation. These findings describe the separate L-threonate moiety and cannot establish magnesium L-threonate magnesium or CNS pharmacokinetics.
   sourceId: efsa-2024
   modelEligible: false
-- id: dr-magnesium-l-threonate-magnesium-l-threonate-pk-1
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
+- id: magnesium-l-threonate-pk-human-not-established
+  analyte: Magnesium from magnesium L-threonate
+  route: oral
+  formulation: Magnesium L-threonate
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -260,8 +254,8 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   low: null
   high: null
   unit: hours
-  context: No validated universal terminal half-life was established in the returned report.
-  sourceId: dr-magnesium-l-threonate-s1
+  context: Human studies in the reviewed evidence did not establish a terminal magnesium L-threonate magnesium half-life. Peripheral plasma, red-cell, and urinary measures cannot be relabeled as brain or cerebrospinal-fluid pharmacokinetics.
+  sourceId: efsa-2024
   modelEligible: false
 ```
 
@@ -321,8 +315,8 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   magnitude: null
   reportType: measured-assessment
   conflictingSourceIds:
-  - ni-2023
-  - hausenblas-2024
+    - ni-2023
+    - hausenblas-2024
 - id: magnesium-l-threonate-effect-daytime-function
   conceptId: alertness
   name: Daytime alertness and functioning
@@ -336,7 +330,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   magnitude: null
   reportType: measured-assessment
   conflictingSourceIds:
-  - ni-2023
+    - ni-2023
 - id: magnesium-l-threonate-effect-adhd-symptoms
   conceptId: anxiety
   name: ADHD pilot symptom response
@@ -381,7 +375,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   magnitude: null
   reportType: measured-assessment
   conflictingSourceIds:
-  - ni-2023
+    - ni-2023
 - id: magnesium-l-threonate-outcome-older-adult-composite
   conceptId: cognitive-performance
   name: Four-domain cognitive composite in older adults
@@ -421,8 +415,8 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   magnitude: No significant between-group advantage reported
   reportType: measured-assessment
   conflictingSourceIds:
-  - lopresti-smith-2026
-  - liu-2016
+    - lopresti-smith-2026
+    - liu-2016
 - id: magnesium-l-threonate-outcome-sleep-trial-null
   conceptId: sleep
   name: Sleep quality across selected endpoints
@@ -436,8 +430,8 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   magnitude: ISI treatment-by-time interaction p=0.390
   reportType: measured-assessment
   conflictingSourceIds:
-  - lopresti-smith-2026
-  - ni-2023
+    - lopresti-smith-2026
+    - ni-2023
 - id: magnesium-l-threonate-outcome-peripheral-magnesium
   conceptId: magnesium-homeostasis-outcome
   name: Peripheral magnesium handling
@@ -457,7 +451,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   direction: Variable
   evidence: Limited research
   description: The review summarizes rodent studies linking MgT-related brain-magnesium elevation and NR2B signaling to improved learning and memory; it does not provide a new human efficacy estimate.
-  sourceId: reddit-pmid-25152202
+  sourceId: pubmed-25152202
   population: Preclinical rodent literature summarized in a narrative review
   exposure: Magnesium L-threonate and related NR2B-targeting approaches in animal studies
   instrument: Rodent learning and memory tasks
@@ -469,7 +463,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   direction: Increased
   evidence: Limited research
   description: In a transgenic Alzheimer’s-disease mouse model, MgT reduced amyloid plaque burden, prevented synapse loss, and prevented or reversed water-maze and novel-object memory deficits, including after late-stage treatment.
-  sourceId: reddit-pmid-25213836
+  sourceId: pubmed-25213836
   population: APPswe/PS1dE9 transgenic mice
   exposure: Approximately 910 mg/kg/day MgT (75 mg/kg/day elemental magnesium) in drinking water; long-term and 1-month late-stage regimens
   instrument: Morris water maze, novel-object recognition, synapse density and plaque measures
@@ -481,7 +475,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   direction: Increased
   evidence: Limited research
   description: In adult male rats with spared-nerve injury, MgT prevented and restored short-term-memory and hippocampal LTP deficits when given before or after injury.
-  sourceId: reddit-pmid-24077207
+  sourceId: pubmed-24077207
   population: Adult male Sprague-Dawley rats with spared-nerve injury
   exposure: 609 mg/kg/day MgT in drinking water for 2 weeks
   instrument: Novel-object recognition and hippocampal LTP
@@ -493,7 +487,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   direction: Increased
   evidence: Limited research
   description: Four weeks of MgT improved spatial-context discrimination in male Sprague-Dawley rats and reduced fear overgeneralization, without enhancing retention of contextual-fear memory.
-  sourceId: reddit-pmid-23764903
+  sourceId: pubmed-23764903
   population: Male Sprague-Dawley rats
   exposure: Magnesium L-threonate treatment for 4 weeks; dose not stated in abstract
   instrument: Contextual-fear conditioning and spatial-context discrimination tasks
@@ -505,7 +499,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   direction: Increased
   evidence: Limited research
   description: MgT improved learning, working memory, short- and long-term memory, and pattern completion in young and aged rats in the original preclinical study.
-  sourceId: reddit-pmid-20152124
+  sourceId: pubmed-20152124
   population: Young and aged Sprague-Dawley rats
   exposure: Magnesium L-threonate to elevate brain magnesium; exact dose not given in abstract
   instrument: Learning, working-memory, short-/long-term-memory, and pattern-completion tasks
@@ -530,22 +524,22 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conceptId: nmda-receptor
 - title: Neural-stem-cell proliferation
   description: In young and aged mice, short- and long-term dietary MgT increased hippocampal neural stem-cell proliferation or mitigated its age-associated decline; the study was preclinical and did not establish a human cognitive mechanism.
-  sourceId: reddit-pmid-26754806
+  sourceId: pubmed-26754806
 - title: NR2B and synaptic-plasticity pathway
   description: The NR2B review describes preclinical evidence that elevated brain magnesium can increase NR2B-related synaptic plasticity and memory, while emphasizing that MgT was still under clinical study.
-  sourceId: reddit-pmid-25152202
+  sourceId: pubmed-25152202
 - title: NMDAR, BACE1, and calcineurin signaling in AD mice
   description: In APPswe/PS1dE9 mice, MgT preserved NMDAR signaling, stabilized BACE1 expression, reduced sAPP-beta and beta-CTF, and prevented Aβ-induced NMDAR loss by limiting calcineurin overactivation in hippocampal slices.
-  sourceId: reddit-pmid-25213836
+  sourceId: pubmed-25213836
 - title: TNF-alpha and NMDAR dysfunction in neuropathic pain
   description: In spared-nerve-injury rats, MgT blocked hippocampal TNF-alpha upregulation and attenuated NMDAR-current and LTP deficits; the authors state that causal ordering between TNF-alpha normalization and NMDAR rescue remains unresolved.
-  sourceId: reddit-pmid-24077207
+  sourceId: pubmed-24077207
 - title: Synaptic release and NR2B signaling
   description: The original rat study linked MgT-related brain-magnesium elevation to increased synaptophysin/synaptobrevin puncta, altered presynaptic release probability, and upregulated NR2B-containing NMDAR signaling.
-  sourceId: reddit-pmid-20152124
+  sourceId: pubmed-20152124
 - title: Pattern separation and fear generalization
   description: In rats, MgT improved spatial-context discrimination without enhancing contextual-fear retention, suggesting a task-specific pattern-separation effect rather than broad memory enhancement.
-  sourceId: reddit-pmid-23764903
+  sourceId: pubmed-23764903
 ```
 
 ## Cautions
@@ -568,10 +562,10 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   sourceId: lopresti-smith-2026
 - title: Animal-model evidence is not human efficacy
   description: The mouse, rat, and narrative-review publications report preclinical mechanisms or behavioral endpoints; they do not establish efficacy, dosing, or safety in humans.
-  sourceId: reddit-pmid-26754806
+  sourceId: pubmed-26754806
 - title: Causal mechanism unresolved in neuropathic-pain model
   description: The neuropathic-pain rat study reports TNF-alpha normalization and NMDAR rescue with memory improvement but explicitly states that the causal relationship remains unresolved.
-  sourceId: reddit-pmid-24077207
+  sourceId: pubmed-24077207
 - title: Small MMFS-01 trial and symptom-domain uncertainty
   description: The 12-week MMFS-01 trial enrolled 51 older adults at one site; full text notes small sample, short duration, neuropsychiatric enrichment, and inability to determine sleep or anxiety effects because of strong placebo responses.
   sourceId: dr-magnesium-l-threonate-s6
@@ -584,13 +578,13 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   assertion: Magnesium L-threonate raises human brain or cerebrospinal-fluid magnesium more than other magnesium salts.
   relation: comparative-central-nervous-system-delivery
   participants:
-  - entityId: substance:magnesium-l-threonate
-    role: exposure
-  - entityId: tag:magnesium-homeostasis
-    role: measured-system
+    - entityId: substance:magnesium-l-threonate
+      role: exposure
+    - entityId: tag:magnesium-homeostasis
+      role: measured-system
   context: Rat CSF findings and peripheral human magnesium measurements are available, but direct comparative human brain or CSF measurements were not established in the reviewed evidence.
   sourceIds:
-  - efsa-2024
+    - efsa-2024
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Preclinical CSF findings cannot establish a human blood–brain-barrier or clinical cognitive advantage.
@@ -598,33 +592,33 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   assertion: Magnesium L-threonate may improve selected cognitive test outcomes in some studied populations.
   relation: measured-cognitive-outcome
   participants:
-  - entityId: substance:magnesium-l-threonate
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: outcome
+    - entityId: substance:magnesium-l-threonate
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: outcome
   context: Positive composite or domain signals occurred in selected randomized studies, while other endpoints and an independent breast-cancer-surgery trial were null.
   sourceIds:
-  - lopresti-smith-2026
-  - liu-2016
-  - zhang-2022
-  - ni-2023
+    - lopresti-smith-2026
+    - liu-2016
+    - zhang-2022
+    - ni-2023
   conflictingSourceIds:
-  - ni-2023
+    - ni-2023
   assessment: not-formally-assessed
   limitation: Small samples, multi-ingredient formulas, selective endpoints, and commercial sponsorship prevent a conclusion of general cognitive enhancement.
 - id: mgt-formulation-comparison-not-proven
   assertion: Magnesium L-threonate is superior to other magnesium salts for human sleep or cognition.
   relation: formulation-comparison
   participants:
-  - entityId: substance:magnesium-l-threonate
-    role: formulation
-  - entityId: tag:magnesium-homeostasis
-    role: comparison-domain
+    - entityId: substance:magnesium-l-threonate
+      role: formulation
+    - entityId: tag:magnesium-homeostasis
+      role: comparison-domain
   context: No completed published head-to-head human trial in the reviewed evidence established superiority over glycinate, citrate, chloride, or oxide.
   sourceIds:
-  - efsa-2024
-  - nih-magnesium-2026
-  - nct07640685
+    - efsa-2024
+    - nih-magnesium-2026
+    - nct07640685
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Current registries without posted results cannot supply comparative efficacy evidence.
@@ -632,13 +626,13 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   assertion: In APPswe/PS1dE9 mice, MgT prevented or reversed memory deficits alongside synapse and amyloid-pathology changes.
   relation: preclinical-association
   participants:
-  - entityId: substance:magnesium-l-threonate
-    role: intervention
-  - entityId: tag:episodic-memory
-    role: animal endpoint
+    - entityId: substance:magnesium-l-threonate
+      role: intervention
+    - entityId: tag:episodic-memory
+      role: animal endpoint
   context: Transgenic Alzheimer’s-disease mouse model with long-term and late-stage treatment regimens.
   sourceIds:
-  - reddit-pmid-25213836
+    - pubmed-25213836
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Animal model; no human efficacy or dose inference.
@@ -646,13 +640,13 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   assertion: MgT prevented and restored short-term-memory deficits in a spared-nerve-injury rat model.
   relation: preclinical-association
   participants:
-  - entityId: substance:magnesium-l-threonate
-    role: intervention
-  - entityId: tag:episodic-memory
-    role: animal endpoint
+    - entityId: substance:magnesium-l-threonate
+      role: intervention
+    - entityId: tag:episodic-memory
+      role: animal endpoint
   context: 609 mg/kg/day MgT in drinking water for two weeks before or after injury.
   sourceIds:
-  - reddit-pmid-24077207
+    - pubmed-24077207
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Rat model; TNF-alpha/NMDAR causal ordering unresolved.
@@ -660,13 +654,13 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   assertion: Four weeks of MgT improved spatial-context discrimination in rats without enhancing contextual-fear retention.
   relation: preclinical-association
   participants:
-  - entityId: substance:magnesium-l-threonate
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: animal endpoint
+    - entityId: substance:magnesium-l-threonate
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: animal endpoint
   context: Male Sprague-Dawley rats in spatial-context fear-conditioning and discrimination tasks.
   sourceIds:
-  - reddit-pmid-23764903
+    - pubmed-23764903
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Task-specific animal result; dose not stated in abstract and no human inference.
@@ -674,13 +668,13 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   assertion: MgT improved learning and multiple memory tasks in young and aged rats in the original preclinical study.
   relation: preclinical-association
   participants:
-  - entityId: substance:magnesium-l-threonate
-    role: intervention
-  - entityId: tag:episodic-memory
-    role: animal endpoint
+    - entityId: substance:magnesium-l-threonate
+      role: intervention
+    - entityId: tag:episodic-memory
+      role: animal endpoint
   context: Rat learning, working-memory, short-/long-term-memory, and pattern-completion tasks.
   sourceIds:
-  - reddit-pmid-20152124
+    - pubmed-20152124
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Animal study; abstract does not provide the administered dose.
@@ -688,13 +682,13 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   assertion: MgT increased hippocampal neural-stem-cell proliferation in young mice and mitigated age-associated decline in aged mice.
   relation: preclinical-mechanism
   participants:
-  - entityId: substance:magnesium-l-threonate
-    role: intervention
-  - entityId: tag:neural-stem-cell-proliferation
-    role: animal endpoint
+    - entityId: substance:magnesium-l-threonate
+      role: intervention
+    - entityId: tag:neural-stem-cell-proliferation
+      role: animal endpoint
   context: Short- and long-term dietary supplementation in young and aged mice.
   sourceIds:
-  - reddit-pmid-26754806
+    - pubmed-26754806
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Cellular and animal endpoint; no demonstrated human cognitive effect.
@@ -735,14 +729,6 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
 []
 ```
 
-## External wiki links
-
-```yaml
-- service: Examine
-  url: https://examine.com/supplements/magnesium
-  title: Examine.com
-```
-
 ## References
 
 ```yaml
@@ -774,7 +760,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/
 - id: lopresti-smith-2026
-  title: 'The effects of magnesium L-threonate (Magtein®) on cognitive performance and sleep quality in adults: a randomised, double-blind, placebo-controlled trial'
+  title: "The effects of magnesium L-threonate (Magtein®) on cognitive performance and sleep quality in adults: a randomised, double-blind, placebo-controlled trial"
   authors: Adrian L Lopresti, Stephen J Smith
   year: 2026
   url: https://doi.org/10.3389/fnut.2025.1729164
@@ -788,7 +774,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   disclosureUrl: https://doi.org/10.3389/fnut.2026.2010644
   doi: 10.3389/fnut.2025.1729164
 - id: liu-2016
-  title: 'Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled Trial.'
+  title: "Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled Trial."
   authors: Guosong Liu, Jason G Weinger, Zhong-Lin Lu, Feng Xue, Safa Sadeghpour
   year: 2016
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4927823/
@@ -800,7 +786,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictsOfInterest: External author-disclosure record was referenced; exact historical wording was not recovered.
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.3233/JAD-150538
-  pmid: '26519439'
+  pmid: "26519439"
   doi: 10.3233/JAD-150538
 - id: zhang-2022
   title: A Magtein, Magnesium L-Threonate, Based Formula Improves Brain Cognitive Functions in Healthy Chinese Adults
@@ -815,7 +801,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictsOfInterest: No known competing financial interests or personal relationships stated; study-level commercial involvement remains relevant.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://doi.org/10.3390/nu14245235
-  pmid: '36558392'
+  pmid: "36558392"
   doi: 10.3390/nu14245235
 - id: ni-2023
   title: A Randomized, Double-Blind, Placebo-Controlled Trial to Evaluate the Therapeutic Effect of Magnesium-L-Threonate Supplementation for Persistent Pain After Breast Cancer Surgery
@@ -830,10 +816,10 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictsOfInterest: Authors reported no conflicts; funding detail remains incomplete.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://doi.org/10.2147/BCTT.S413435
-  pmid: '37520407'
+  pmid: "37520407"
   doi: 10.2147/BCTT.S413435
 - id: hausenblas-2024
-  title: 'Magnesium-L-threonate improves sleep quality and daytime functioning in adults with self-reported sleep problems: A randomized controlled trial.'
+  title: "Magnesium-L-threonate improves sleep quality and daytime functioning in adults with self-reported sleep problems: A randomized controlled trial."
   authors: Heather A Hausenblas, Tarah Lynch, Stephanie Hooper, Aahana Shrestha, Doug Rosendale, Jennifer Gu
   year: 2024
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11381753/
@@ -845,10 +831,10 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictsOfInterest: Rosendale and Shrestha were paid AIDP consultants; Gu was AIDP vice president of research and development; other authors declared no known competing interests.
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.1016/j.sleepx.2024.100121
-  pmid: '39252819'
+  pmid: "39252819"
   doi: 10.1016/j.sleepx.2024.100121
 - id: surman-2021
-  title: 'L-Threonic Acid Magnesium Salt Supplementation in ADHD: An Open-Label Pilot Study'
+  title: "L-Threonic Acid Magnesium Salt Supplementation in ADHD: An Open-Label Pilot Study"
   authors: Surman C; Vaudreuil C; Boland H; Rhodewalt L; DiSalvo M; Biederman J
   year: 2021
   url: https://doi.org/10.1080/19390211.2020.1731044
@@ -859,17 +845,17 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Commercial collaborator present; individual status not recovered.
   conflictOfInterestStatus: not-assessed
-  pmid: '32162987'
+  pmid: "32162987"
   doi: 10.1080/19390211.2020.1731044
 - id: lopresti-corrigendum-2026
-  title: 'Correction: The effects of magnesium L-threonate on cognitive performance and sleep quality in adults'
+  title: "Correction: The effects of magnesium L-threonate on cognitive performance and sleep quality in adults"
   authors: Lopresti AL; Smith SJ
   year: 2026
   url: https://doi.org/10.3389/fnut.2026.2010644
   kind: Published correction
   insight: Corrects one-tailed critical-p wording in the trial report; the correction states the analyses were two-tailed and the results and interpretation were unchanged.
   limitation: This correction does not add independent efficacy or safety evidence.
-  funding: 'Same underlying trial context: Threotech Inc.'
+  funding: "Same underlying trial context: Threotech Inc."
   sponsorshipStatus: industry-funded
   conflictsOfInterest: Same declared commercial involvement as the underlying trial.
   conflictOfInterestStatus: declared
@@ -938,7 +924,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   disclosureUrl: https://doi.org/10.1016/j.sleepx.2025.100141
   doi: 10.1016/j.sleepx.2025.100141
 - id: surman-pilot-record
-  title: 'L-Threonic Acid Magnesium Salt Supplementation in ADHD: An Open-Label Pilot Study'
+  title: "L-Threonic Acid Magnesium Salt Supplementation in ADHD: An Open-Label Pilot Study"
   authors: Surman C; Vaudreuil C; Boland H; Rhodewalt L; DiSalvo M; Biederman J
   year: 2021
   url: https://doi.org/10.1080/19390211.2020.1731044
@@ -968,7 +954,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   authors: EFSA Panel on Nutrition, Novel Foods and Food Allergens (NDA); Turck D, Bohn T, Castenmiller J, et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38481468/
-  pmid: '38481468'
+  pmid: "38481468"
   kind: Regulatory safety assessment
   insight: Source cited by the returned Deep Research report.
   limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
@@ -977,11 +963,11 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictsOfInterest: Applicant commercial interest and EFSA declarations-of-interest process.
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-l-threonate-s4
-  title: 'The effects of magnesium L-threonate (Magtein) on cognitive performance and sleep quality in adults: a randomised, double-blind, placebo-controlled trial'
+  title: "The effects of magnesium L-threonate (Magtein) on cognitive performance and sleep quality in adults: a randomised, double-blind, placebo-controlled trial"
   authors: Lopresti AL, Smith SJ
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/41601871/
-  pmid: '41601871'
+  pmid: "41601871"
   kind: Randomized, double-blind, placebo-controlled trial
   insight: Source cited by the returned Deep Research report.
   limitation: Publication metadata, funding, or disclosure details were not fully recovered in the capture.
@@ -990,7 +976,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictsOfInterest: Commercial sponsor involvement and CRO leadership/employment disclosed.
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-l-threonate-s6
-  title: 'Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled Trial.'
+  title: "Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled Trial."
   authors: Guosong Liu, Jason G Weinger, Zhong-Lin Lu, Feng Xue, Safa Sadeghpour
   year: 2016
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4927823/
@@ -1003,9 +989,9 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC4927823/
   doi: 10.3233/JAD-150538
-  pmid: '26519439'
+  pmid: "26519439"
 - id: dr-magnesium-l-threonate-s7
-  title: 'Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled Trial'
+  title: "Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled Trial"
   authors: Liu G, Weinger JG, Lu Z-L, Xue F, Sadeghpour S
   year: 2016
   url: https://doi.org/10.3233/JAD-150538
@@ -1017,7 +1003,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictsOfInterest: Neurocentria design, endpoint analysis and manuscript involvement disclosed.
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-l-threonate-s8
-  title: 'Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled Trial'
+  title: "Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled Trial"
   authors: ClinicalTrials.gov registry NCT02363634
   year: 2015
   url: https://clinicaltrials.gov/study/NCT02363634
@@ -1041,7 +1027,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictsOfInterest: Commercial formulation support disclosed.
   conflictOfInterestStatus: not-assessed
   doi: 10.3390/nu14245235
-  pmid: '36558392'
+  pmid: "36558392"
 - id: dr-magnesium-l-threonate-s11
   title: A Randomized, Double-Blind, Placebo-Controlled Trial to Evaluate the Therapeutic Effect of Magnesium-L-Threonate Supplementation for Persistent Pain After Breast Cancer Surgery
   authors: Ni Y; Deng F; Yu S; Zhang J; Zhang X; Huang D; Zhou H
@@ -1055,9 +1041,9 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictsOfInterest: Authors reported no conflicts; funding detail incomplete.
   conflictOfInterestStatus: not-assessed
   doi: 10.2147/BCTT.S413435
-  pmid: '37520407'
+  pmid: "37520407"
 - id: dr-magnesium-l-threonate-s13
-  title: 'Magnesium-L-threonate improves sleep quality and daytime functioning in adults with self-reported sleep problems: A randomized controlled trial.'
+  title: "Magnesium-L-threonate improves sleep quality and daytime functioning in adults with self-reported sleep problems: A randomized controlled trial."
   authors: Heather A Hausenblas, Tarah Lynch, Stephanie Hooper, Aahana Shrestha, Doug Rosendale, Jennifer Gu
   year: 2024
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11381753/
@@ -1069,9 +1055,9 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictsOfInterest: Corrigendum reports paid AIDP consultants and an AIDP VP of R&D among authors.
   conflictOfInterestStatus: not-assessed
   doi: 10.1016/j.sleepx.2024.100121
-  pmid: '39252819'
+  pmid: "39252819"
 - id: dr-magnesium-l-threonate-s14
-  title: 'Magnesium-L-threonate improves sleep quality and daytime functioning in adults with self-reported sleep problems: A randomized controlled trial'
+  title: "Magnesium-L-threonate improves sleep quality and daytime functioning in adults with self-reported sleep problems: A randomized controlled trial"
   authors: Hausenblas HA, Lynch T, Hooper S, Shrestha A, Rosendale D, Gu J
   year: 2024
   url: https://doi.org/10.1016/j.sleepx.2024.100121
@@ -1083,7 +1069,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictsOfInterest: Corrigendum reports paid AIDP consultants and an AIDP VP of R&D among authors.
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-l-threonate-s15
-  title: 'Magnesium-L-threonate improves sleep quality and daytime functioning in adults with self-reported sleep problems: A randomized controlled trial'
+  title: "Magnesium-L-threonate improves sleep quality and daytime functioning in adults with self-reported sleep problems: A randomized controlled trial"
   authors: ISRCTN registry ISRCTN14728094
   year: 2024
   url: https://www.isrctn.com/ISRCTN14728094
@@ -1095,7 +1081,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-l-threonate-s16
-  title: 'L-Threonic Acid Magnesium Salt Supplementation in ADHD: An Open-Label Pilot Study'
+  title: "L-Threonic Acid Magnesium Salt Supplementation in ADHD: An Open-Label Pilot Study"
   authors: Surman C; Vaudreuil C; Boland H; Rhodewalt L; DiSalvo M; Biederman J
   year: 2021
   url: https://doi.org/10.1080/19390211.2020.1731044
@@ -1107,7 +1093,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   conflictsOfInterest: Commercial collaborator present; individual disclosure not recovered.
   conflictOfInterestStatus: not-assessed
   doi: 10.1080/19390211.2020.1731044
-  pmid: '32162987'
+  pmid: "32162987"
 - id: dr-magnesium-l-threonate-s25
   title: An 8-week open label trial of L-Threonic Acid Magnesium Salt in patients with mild to moderate dementia
   authors: Wroolie TE, Chen K, Watson KT, Iagaru A, Sonni I, Snyder N, Lee W, Reiman EM, Rasgon NL
@@ -1120,7 +1106,7 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Commercial collaborator present; publication disclosure not recovered.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-26754806
+- id: pubmed-26754806
   title: Elevation of Brain Magnesium Potentiates Neural Stem Cell Proliferation in the Hippocampus of Young and Aged Mice.
   authors: Shanshan Jia, Yunpeng Liu, Yang Shi, Yihe Ma, Yixin Hu, Meiyan Wang, Xue Li
   year: 2016
@@ -1128,13 +1114,13 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   kind: PubMed publication
   insight: Dietary MgT increased hippocampal neural-stem-cell proliferation in young mice and mitigated age-associated decline in aged mice; elevated extracellular magnesium supported NSC self-renewal in vitro.
   limitation: PubMed abstract reviewed; preclinical mouse/cell findings do not establish a human cognitive or safety effect.
-  pmid: '26754806'
+  pmid: "26754806"
   doi: 10.1002/jcp.25306
   funding: Not reported in the retrieved PubMed record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported in the retrieved PubMed record.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-25152202
+- id: pubmed-25152202
   title: Targeting the NMDA receptor subunit NR2B for treating or preventing age-related memory decline.
   authors: Deheng Wang, Stephanie A Jacobs, Joe Z Tsien
   year: 2014
@@ -1142,13 +1128,13 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   kind: PubMed publication
   insight: Review of NR2B-targeting and MgT preclinical memory mechanisms; MgT was described as under clinical trials.
   limitation: PubMed abstract reviewed; narrative review and preclinical evidence do not establish human efficacy.
-  pmid: '25152202'
+  pmid: "25152202"
   doi: 10.1517/14728222.2014.941286
   funding: Not reported in the retrieved PubMed record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported in the retrieved PubMed record.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-25213836
+- id: pubmed-25213836
   title: Elevation of brain magnesium prevents synaptic loss and reverses cognitive deficits in Alzheimer's disease mouse model.
   authors: Wei Li, Jia Yu, Yong Liu, Xiaojie Huang, Nashat Abumaria, Ying Zhu, Xian Huang, Wenxiang Xiong, Chi Ren, Xian-Guo Liu, Dehua Chui, Guosong Liu
   year: 2014
@@ -1156,14 +1142,14 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   kind: PubMed publication
   insight: In APPswe/PS1dE9 mice, MgT reduced amyloid plaque, prevented synapse loss and memory decline, and preserved NMDAR/BACE1 signaling.
   limitation: PMC4172865 full text and PubMed abstract reviewed; transgenic mouse model and small animal groups limit human inference.
-  pmid: '25213836'
+  pmid: "25213836"
   pmcid: PMC4172865
   doi: 10.1186/s13041-014-0065-y
   funding: Not reported in the retrieved PubMed record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported in the retrieved PubMed record.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-24077207
+- id: pubmed-24077207
   title: Magnesium L-threonate prevents and restores memory deficits associated with neuropathic pain by inhibition of TNF-α.
   authors: Jun Wang, Yong Liu, Li-Jun Zhou, Ying Wu, Fei Li, Ka-Feng Shen, Rui-Ping Pang, Xu-Hong Wei, Yong-Yong Li, Xian-Guo Liu
   year: 2013
@@ -1171,12 +1157,12 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   kind: PubMed publication
   insight: In spared-nerve-injury rats, 609 mg/kg/day MgT for 2 weeks prevented or restored short-term-memory and LTP deficits and blocked hippocampal TNF-alpha upregulation.
   limitation: PubMed abstract reviewed; animal model and unresolved causal ordering limit translation.
-  pmid: '24077207'
+  pmid: "24077207"
   funding: Not reported in the retrieved PubMed record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported in the retrieved PubMed record.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-23764903
+- id: pubmed-23764903
   title: Magnesium supplement enhances spatial-context pattern separation and prevents fear overgeneralization.
   authors: Nashat Abumaria, Lin Luo, Matae Ahn, Guosong Liu
   year: 2013
@@ -1184,13 +1170,13 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   kind: PubMed publication
   insight: Four weeks of MgT improved spatial-context discrimination in rats without enhancing contextual-fear retention.
   limitation: PubMed abstract reviewed; dose and full methods were not extracted and result is preclinical.
-  pmid: '23764903'
+  pmid: "23764903"
   doi: 10.1097/FBP.0b013e32836357c7
   funding: Not reported in the retrieved PubMed record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported in the retrieved PubMed record.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-20152124
+- id: pubmed-20152124
   title: Enhancement of learning and memory by elevating brain magnesium.
   authors: Inna Slutsky, Nashat Abumaria, Long-Jun Wu, Chao Huang, Ling Zhang, Bo Li, Xiang Zhao, Arvind Govindarajan, Ming-Gao Zhao, Min Zhuo, Susumu Tonegawa, Guosong Liu
   year: 2010
@@ -1198,19 +1184,19 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   kind: PubMed publication
   insight: MgT elevated brain magnesium and improved learning, working memory, short-/long-term memory, and pattern completion in young and aged rats.
   limitation: PubMed abstract reviewed; exact administered dose and full methods were not extracted and result is preclinical.
-  pmid: '20152124'
+  pmid: "20152124"
   doi: 10.1016/j.neuron.2009.12.026
   funding: Not reported in the retrieved PubMed record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported in the retrieved PubMed record.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-0dafe8d34360
-  title: 'Magnesium Threonate Supplementation in ADHD: An Open-label Pilot Study of Cognitive and Functional Effects (2015)'
+- id: publication-link-0dafe8d34360
+  title: "Magnesium Threonate Supplementation in ADHD: An Open-label Pilot Study of Cognitive and Functional Effects (2015)"
   authors: Not established
   year: 2015
   url: https://clinicaltrials.gov/ct2/show/NCT02558790
-  kind: Reddit index publication link
-  insight: The Reddit index links this non-PubMed source; it is retained as a discovery lead.
+  kind: research index publication link
+  insight: The research index links this non-PubMed source; it is retained as a discovery lead.
   limitation: No PubMed abstract was retrieved for this non-PubMed link; full-text methods, funding, and conflicts remain unassessed.
   funding: Not reported in the retrieved PubMed record.
   sponsorshipStatus: not-assessed
@@ -1236,4 +1222,12 @@ Reddit index corpus import: 8 linked source records; 7 PubMed abstracts reviewed
   status: Registry entries for NCT07640685, NCT07706283, and NCT07015047 describe planned or completed research without posted efficacy results in the reviewed records. Registry status does not establish efficacy, approval, or legal marketing status.
   sourceUrl: https://clinicaltrials.gov/study/NCT07706283
   asOf: 2026-10-10
+```
+
+## External wiki links
+
+```yaml
+- service: Examine
+  url: https://examine.com/supplements/magnesium
+  title: Examine.com
 ```

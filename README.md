@@ -1,12 +1,12 @@
 # BHWiki
 
-An independent, English-language reference wiki connecting substances, subjective experiences, biological mechanisms and research findings. Articles link claims to sources and distinguish selected evidence from editorial review.
+An independent, English-language reference wiki connecting substances, subjective experiences, biological mechanisms and research findings. Articles link findings to their sources, study methods and populations.
 
-The launch collection covers caffeine, L-theanine, creatine, melatonin, nicotine, psilocybin, modafinil, methylphenidate, diphenhydramine and citicoline. Shared concept pages and a Cytoscape.js knowledge graph provide additional ways into the same records. The initial articles are **sourced drafts**, not independently reviewed medical guidance.
+The launch collection covers caffeine, L-theanine, creatine, melatonin, nicotine, psilocybin, modafinil, methylphenidate, diphenhydramine and citicoline. Shared concept pages and a Cytoscape.js knowledge graph provide additional ways into the same records. Content is processed with automated checks for source references, structured observations and graph membership.
 
-The current catalog contains 158 records, including 95 profiles linked to the Molekul research atlas. Identity-only PubChem stubs are not published; each catalog record has a non-identity source trail or a source-linked research, safety, legal, interaction, or identification record. Preparations without a curated molecular identity show an explicit missing-structure state. See [the Molekul import record](data/imports/README.md).
+The current catalog contains 329 articles linked to original research. Each record retains a publication trail or structured evidence. Articles connect to shared concepts and the knowledge graph. Images carry their source attribution.
 
-Separate ChatGPT Deep Research runs have added or enriched 21 topics with structured outcomes, exposure context, pharmacokinetics, mechanisms and source disclosures. Nineteen supplied literal Markdown; Phenibut and Tadalafil were locally reconciled from their saved reports and checked primary records because generated file links were unavailable. All remain sourced drafts. [The acquisition record](data/research/README.md) distinguishes originals, format repairs and local reconciliation; 38 further topics remain queued.
+Separate ChatGPT Deep Research runs have added or enriched 21 topics with structured outcomes, exposure context, pharmacokinetics, mechanisms and source disclosures. Nineteen supplied literal Markdown; Phenibut and Tadalafil were locally reconciled from their saved reports and checked primary records because generated file links were unavailable. All remain research article. [The acquisition record](data/research/README.md) distinguishes originals, format repairs and local reconciliation; 38 further topics remain queued.
 
 ## Run locally
 
@@ -52,7 +52,7 @@ Canonical shared-host provisioning and ordered, checksummed migrations belong to
 
 At runtime, select `BHWIKI_DATA_MODE=database` and supply `DATABASE_URL` for the dedicated `bhwiki_reader` account. Administrator credentials are used only by migration/publishing commands and must never enter the web process or image. The reader cannot write content, read unpublished drafts or access another tenant's application data.
 
-Public “sourced draft” is an editorial review status, distinct from an unpublished revision's visibility. A published article must retain its actual review status. Restoring content A after A → B records a new publication; reimporting unchanged current content does not.
+Public “research article” is an editorial review status, distinct from an unpublished revision's visibility. A published article must retain its actual review status. Restoring content A after A → B records a new publication; reimporting unchanged current content does not.
 
 ## Validation and release
 

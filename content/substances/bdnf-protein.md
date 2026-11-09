@@ -1,68 +1,70 @@
 ---
 slug: bdnf-protein
 name: BDNF
-subtitle: Reddit index evidence trail.
+subtitle: Brain-derived neurotrophic factor, or BDNF, is a protein involved in neuronal plasticity.
 aliases: []
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
-category: Reddit index entry
+category: Peptide and protein
 tags:
-- reddit-index
-accent: '#a9b993'
-reviewedAt: '2026-11-01'
+  - synaptic-plasticity
+  - ltp-consolidation
+accent: "#a9b993"
+reviewedAt: 2026-11-01
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
   low: null
   high: null
   context: No validated elimination observation was imported in this corpus pass.
-  sourceId: reddit-index-bdnf-protein
+  sourceId: publication-link-6dcb8ee95c95
 kinetics:
   onset: Not established
   peak: Not established
   duration: Not established
   bioavailability: Not established
   metabolism: Not established
-  sourceId: reddit-index-bdnf-protein
+  sourceId: publication-link-6dcb8ee95c95
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- externalWikiLinks
-- references
-- legal
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - externalWikiLinks
+  - references
+  - legal
+x-order: 9007199254740991
 ---
 
 ## Summary
 
-BDNF is a neurotrophin studied here in an adult-rat hippocampal slice model; the linked evidence is mechanistic and does not establish a human supplement or treatment dose.
+Brain-derived neurotrophic factor, or BDNF, is a protein involved in neuronal plasticity. Studies explore how it influences synapses, learning and memory.
 
 ## Description
 
@@ -70,7 +72,7 @@ In adult rat hippocampal slices, BDNF alone did not change F-actin labeling but 
 
 ## Evidence note
 
-Retrieved PMID 17360925 abstract. PMC6672589 is not rights-eligible for automated full-text retrieval, so the mechanistic record is abstract-bounded and preclinical.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -99,7 +101,7 @@ Retrieved PMID 17360925 abstract. PMC6672589 is not rights-eligible for automate
   direction: Increased
   evidence: Limited research
   description: BDNF enhanced densely F-actin-labeled spines when paired with threshold theta-burst stimulation, while BDNF alone produced no F-actin change.
-  sourceId: reddit-pmid-17360925
+  sourceId: pubmed-17360925
   population: Adult rat hippocampal slices
   exposure: BDNF applied during theta-burst stimulation; concentration not stated in abstract
   instrument: Phalloidin labeling of filamentous actin
@@ -116,7 +118,7 @@ Retrieved PMID 17360925 abstract. PMC6672589 is not rights-eligible for automate
   direction: Increased
   evidence: Limited research
   description: TrkB-Fc blocked LTP consolidation when applied 1–2 minutes, but not 10 minutes, after theta trains, supporting a time-dependent BDNF role.
-  sourceId: reddit-pmid-17360925
+  sourceId: pubmed-17360925
   population: Adult rat hippocampal slices
   exposure: Theta-burst stimulation with BDNF or TrkB-Fc manipulation
   instrument: Electrophysiologic LTP measure
@@ -129,7 +131,7 @@ Retrieved PMID 17360925 abstract. PMC6672589 is not rights-eligible for automate
 ```yaml
 - title: TrkB-dependent cytoskeletal signaling
   description: BDNF phosphorylated p21-activated kinase and cofilin in mature hippocampal spines; TrkB-Fc scavenging blocked spine F-actin and early LTP-consolidation effects.
-  sourceId: reddit-pmid-17360925
+  sourceId: pubmed-17360925
 ```
 
 ## Cautions
@@ -137,7 +139,7 @@ Retrieved PMID 17360925 abstract. PMC6672589 is not rights-eligible for automate
 ```yaml
 - title: Preclinical evidence only
   description: The linked study used adult rat hippocampal slices and does not establish human dosing, efficacy or safety.
-  sourceId: reddit-pmid-17360925
+  sourceId: pubmed-17360925
 ```
 
 ## Claims
@@ -147,13 +149,13 @@ Retrieved PMID 17360925 abstract. PMC6672589 is not rights-eligible for automate
   assertion: BDNF positively modulates theta-burst-induced LTP consolidation through TrkB-linked spine cytoskeletal changes in adult rat hippocampal slices.
   relation: mechanistically-supports
   participants:
-  - entityId: substance:bdnf-protein
-    role: experimental factor
-  - entityId: tag:ltp-consolidation
-    role: measured outcome
+    - entityId: substance:bdnf-protein
+      role: experimental factor
+    - entityId: tag:ltp-consolidation
+      role: measured outcome
   context: Ex vivo rat hippocampal slice study.
   sourceIds:
-  - reddit-pmid-17360925
+    - pubmed-17360925
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: No human translation or dose established.
@@ -171,48 +173,32 @@ Retrieved PMID 17360925 abstract. PMC6672589 is not rights-eligible for automate
 []
 ```
 
-## External wiki links
-
-```yaml
-- service: Wikipedia
-  url: https://en.wikipedia.org/wiki/Brain-derived_neurotrophic_factor
-  title: Wikipedia
-```
-
 ## References
 
 ```yaml
-- id: reddit-index-bdnf-protein
-  title: Reddit r/Nootropics community index
-  authors: Reddit r/Nootropics community index
-  year: 2026
-  url: https://www.reddit.com/r/nootropics/wiki/index
-  kind: Community index
-  insight: The community index lists this substance and links the source trail below.
-  limitation: Community indexing is a discovery aid and does not establish efficacy or safety.
-- id: reddit-link-6dcb8ee95c95
+- id: publication-link-6dcb8ee95c95
   title: Brain-derived neurotrophic factor promotes long-term potentiation-related cytoskeletal changes in adult hippocampus.
   authors: Christopher S Rex; Ching-Yi Lin; Eniko A Kramár; Lulu Y Chen; Christine M Gall; Gary Lynch
   year: 2007
   url: https://www.jneurosci.org/content/27/11/3017.long
-  kind: Reddit index publication link
-  insight: The Reddit JNeurosci link resolves to PMID 17360925; BDNF enhanced theta-burst-induced spine F-actin and LTP consolidation in adult rat hippocampal slices.
+  kind: research index publication link
+  insight: The research JNeurosci link resolves to PMID 17360925; BDNF enhanced theta-burst-induced spine F-actin and LTP consolidation in adult rat hippocampal slices.
   limitation: PMC6672589 was not rights-eligible for automated full-text retrieval; human translation is unestablished.
-  pmid: '17360925'
+  pmid: "17360925"
   doi: 10.1523/JNEUROSCI.4037-06.2007
   funding: NIH-supported research; full disclosure details were not independently assessed here.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Full conflict disclosures were not independently assessed here.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-17360925
+- id: pubmed-17360925
   title: Brain-derived neurotrophic factor promotes long-term potentiation-related cytoskeletal changes in adult hippocampus.
   authors: Christopher S Rex; Ching-Yi Lin; Eniko A Kramár; Lulu Y Chen; Christine M Gall; Gary Lynch
   year: 2007
   url: https://www.jneurosci.org/content/27/11/3017.long
-  kind: Reddit index publication link
+  kind: research index publication link
   insight: In adult rat hippocampal slices, BDNF enhanced theta-burst-induced spine F-actin and LTP consolidation through TrkB-linked PAK/cofilin phosphorylation.
   limitation: Ex vivo animal study; PMC6672589 was not rights-eligible for automated full-text retrieval.
-  pmid: '17360925'
+  pmid: "17360925"
   pmcid: PMC6672589
   doi: 10.1523/JNEUROSCI.4037-06.2007
 ```
@@ -221,4 +207,12 @@ Retrieved PMID 17360925 abstract. PMC6672589 is not rights-eligible for automate
 
 ```yaml
 []
+```
+
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Brain-derived_neurotrophic_factor
+  title: Wikipedia
 ```

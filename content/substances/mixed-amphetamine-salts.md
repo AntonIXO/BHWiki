@@ -10,9 +10,11 @@ molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
+tags:
+  - perception
+  - attention
 accent: "#888888"
-reviewedAt: "2026-10-15"
+reviewedAt: 2026-10-15
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -64,11 +66,8 @@ x-order: 9007199254740991
 
 ## Summary
 
-Mixed amphetamine salts are defined prescription mixtures delivering predominantly dextroamphetamine with a smaller levoamphetamine component. Adderall immediate-release tablets are labeled in the United States for ADHD and narcolepsy; Adderall XR and Mydayis have ADHD indications with different age limits and release systems. Their doses and time courses are not interchangeable merely because all contain amphetamine. (sourceId: adderall-ir-label; sourceId: adderall-xr-label; sourceId: mydayis-label)
+Mixed amphetamine salts are defined prescription mixtures delivering predominantly dextroamphetamine with a smaller levoamphetamine component.
 
-Product-specific randomized trials demonstrate short-term improvement in ADHD symptoms. This does not establish general cognitive enhancement in healthy people: controlled studies found limited or inconsistent objective benefits, sometimes accompanied by stronger perceived enhancement or physiological activation. Narcolepsy-specific comparative evidence is substantially narrower than the ADHD evidence. (sourceId: weisler-2006; sourceId: ilieva-2013; sourceId: weyandt-2018; sourceId: trotti-2024)
-
-Important risks include appetite and sleep disturbance, cardiovascular stimulation, psychiatric adverse reactions, misuse, addiction, tolerance and physical dependence. Extended release does not remove these risks. (sourceId: adderall-xr-label)
 ## Description
 
 The mixture contains dextroamphetamine saccharate, dextroamphetamine sulfate, amphetamine sulfate and amphetamine aspartate, expressed using the product’s specified hydration or salt equivalents. The four components contribute equal nominal salt weights; two supply dextroamphetamine and two supply racemic amphetamine. The conventional description is approximately 3:1 dextroamphetamine to levoamphetamine, rather than a 1:1 racemate. The current Adderall XR description specifies **3.1:1 by amphetamine-base equivalents**, while other label passages retain the conventional 3:1 terminology. (sourceId: adderall-ir-label; sourceId: adderall-xr-label)
@@ -76,9 +75,11 @@ The mixture contains dextroamphetamine saccharate, dextroamphetamine sulfate, am
 Adderall is immediate release. Adderall XR combines immediate- and delayed-release beads. Mydayis uses three bead populations: immediate release and two delayed-release populations. Mydayis is therefore treated here as a separate delivery formulation, not as another name for Adderall XR. (sourceId: adderall-ir-label; sourceId: adderall-xr-label; sourceId: mydayis-label)
 
 Labeled milligrams describe the specified mixed salts, not an identical mass of amphetamine free base. A single molecular formula, molecular weight, PubChem identifier or SMILES would misrepresent this multi-salt product. Pure dextroamphetamine, lisdexamfetamine and methamphetamine are outside the product definition; studies pooling other amphetamines are explicitly identified below. (sourceId: adderall-ir-label; sourceId: adderall-xr-label; sourceId: moran-2024)
+
 ## Evidence note
 
 This record separates prescribing information, primary randomized outcomes, registry records, laboratory cognition and observational safety. The cited ADHD trials mainly evaluate weeks of symptom treatment, not lifelong educational or occupational outcomes. Industry involvement is substantial in several pivotal trials; unavailable disclosures are recorded as unknown rather than conflict-free. Registry entries establish registration and submitted status, not independent confirmation of efficacy. The studies listed are representative, not an exhaustive inventory. (sourceId: biederman-2002; sourceId: weisler-2006; sourceId: weisler-2017; sourceId: registry-shp465; sourceId: registry-hypersomnia)
+
 ## Doses
 
 ```yaml
@@ -89,14 +90,13 @@ This record separates prescribing information, primary randomized outcomes, regi
   unit: not established
   ingredient: mixed-amphetamine-salts
   formulation: Adderall immediate-release tablets
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
 - label: mixed-amphetamine-salts research exposure 2
   amount: "Ages 3–5: label starting dose 2.5 mg daily, with 2.5 mg weekly increments. Ages 6 and older: 5 mg once or twice daily initially, with 5 mg weekly increments."
   quantity: null
@@ -104,13 +104,12 @@ This record separates prescribing information, primary randomized outcomes, regi
   unit: not established
   ingredient: mixed-amphetamine-salts
   formulation: Adderall immediate release
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Pediatric ADHD
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - label: mixed-amphetamine-salts research exposure 3
   amount: Usual labeled range is 5–60 mg/day in divided doses, individualized in the label by response.
@@ -119,14 +118,13 @@ This record separates prescribing information, primary randomized outcomes, regi
   unit: not established
   ingredient: mixed-amphetamine-salts
   formulation: Adderall immediate release
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
 - label: mixed-amphetamine-salts research exposure 4
   amount: "Ages 6–12: initial 10 mg each morning, or 5 mg when a lower initial dose is appropriate; maximum 30 mg/day. Ages 13–17: initial 10 mg/day, with an increase to 20 mg/day described after one week. Adults: labeled recommended dose 20 mg/day."
   quantity: null
@@ -134,14 +132,13 @@ This record separates prescribing information, primary randomized outcomes, regi
   unit: not established
   ingredient: mixed-amphetamine-salts
   formulation: Adderall XR, once daily
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
 - label: mixed-amphetamine-salts research exposure 5
   amount: "Adults 18–55: initial 12.5 mg each morning; the label also permits considering 25 mg initially for some patients. Adjustments are in 12.5 mg increments no sooner than weekly, to a maximum of 50 mg/day. Ages 13–17: initial 12.5 mg/day; maximum 25 mg/day."
   quantity: null
@@ -149,14 +146,13 @@ This record separates prescribing information, primary randomized outcomes, regi
   unit: not established
   ingredient: mixed-amphetamine-salts
   formulation: Mydayis, triple-bead extended release
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
 ```
 
 ## Pharmacokinetics
@@ -164,7 +160,6 @@ This record separates prescribing information, primary randomized outcomes, regi
 ```yaml
 - id: ir-human-pk
   analyte: Parent compound or reported analyte
-  route: Not established
   formulation: Adderall immediate release
   population: Healthy adults receiving single fasted 10 or 30 mg doses
   endpoint: elimination-half-life
@@ -173,12 +168,11 @@ This record separates prescribing information, primary randomized outcomes, regi
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: xr-human-pk
   analyte: Parent compound or reported analyte
-  route: Not established
   formulation: Adderall XR
   population: Humans
   endpoint: elimination-half-life
@@ -187,12 +181,11 @@ This record separates prescribing information, primary randomized outcomes, regi
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: mydayis-human-pk
   analyte: Parent compound or reported analyte
-  route: Not established
   formulation: Mydayis
   population: Humans
   endpoint: elimination-half-life
@@ -201,13 +194,11 @@ This record separates prescribing information, primary randomized outcomes, regi
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: metabolism-and-excretion
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -215,7 +206,7 @@ This record separates prescribing information, primary randomized outcomes, regi
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 ```
@@ -272,10 +263,10 @@ This record separates prescribing information, primary randomized outcomes, regi
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: activation
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -285,10 +276,10 @@ This record separates prescribing information, primary randomized outcomes, regi
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: common-adverse-effects
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -298,10 +289,10 @@ This record separates prescribing information, primary randomized outcomes, regi
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -504,10 +495,10 @@ This record separates prescribing information, primary randomized outcomes, regi
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: registered-hypersomnia-study
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -517,20 +508,20 @@ This record separates prescribing information, primary randomized outcomes, regi
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Mechanisms
 
 ```yaml
 - title: Research mechanism
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research mechanism
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 ```
 
@@ -538,28 +529,28 @@ This record separates prescribing information, primary randomized outcomes, regi
 
 ```yaml
 - title: Research caution
-  description: "Source-specific evidence is preserved in the cited source."
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: "Source-specific evidence is preserved in the cited source."
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: "Source-specific evidence is preserved in the cited source."
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: "Source-specific evidence is preserved in the cited source."
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 ```
 
@@ -634,7 +625,7 @@ This record separates prescribing information, primary randomized outcomes, regi
 - id: maoi
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -642,7 +633,7 @@ This record separates prescribing information, primary randomized outcomes, regi
 - id: serotonergic-drugs
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -650,7 +641,7 @@ This record separates prescribing information, primary randomized outcomes, regi
 - id: cyp2d6-inhibitors
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -658,7 +649,7 @@ This record separates prescribing information, primary randomized outcomes, regi
 - id: ph-modifying-agents
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -666,7 +657,7 @@ This record separates prescribing information, primary randomized outcomes, regi
 - id: proton-pump-inhibitors
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -674,7 +665,7 @@ This record separates prescribing information, primary randomized outcomes, regi
 - id: tricyclic-antidepressants
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -682,7 +673,7 @@ This record separates prescribing information, primary randomized outcomes, regi
 - id: antihypertensives
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -735,7 +726,7 @@ This record separates prescribing information, primary randomized outcomes, regi
   conflictsOfInterest: The labeler has a commercial interest in the product.
   conflictOfInterestStatus: not-assessed
 - id: S4
-  title: 'A comparison of ritalin and adderall: efficacy and time-course in children with attention-deficit/hyperactivity disorder.'
+  title: "A comparison of ritalin and adderall: efficacy and time-course in children with attention-deficit/hyperactivity disorder."
   authors: W E Pelham; H R Aronoff; J K Midlam; C J Shapiro; E M Gnagy; A M Chronis; A N Onyango; G Forehand; A Nguyen; J Waxmonsky
   year: 1999
   url: https://pubmed.ncbi.nlm.nih.gov/10103335/
@@ -759,7 +750,7 @@ This record separates prescribing information, primary randomized outcomes, regi
   conflictsOfInterest: Not verified; unavailable disclosure is not evidence of no conflicts.
   conflictOfInterestStatus: not-assessed
 - id: S6
-  title: 'Efficacy and safety of mixed amphetamine salts extended release (Adderall XR) in the management of attention-deficit/hyperactivity disorder in adolescent patients: a 4-week, randomized, double-blind, placebo-controlled, parallel-group study.'
+  title: "Efficacy and safety of mixed amphetamine salts extended release (Adderall XR) in the management of attention-deficit/hyperactivity disorder in adolescent patients: a 4-week, randomized, double-blind, placebo-controlled, parallel-group study."
   authors: Thomas J Spencer; Timothy E Wilens; Joseph Biederman; Richard H Weisler; Stephanie C Read; Raymond Pratt
   year: 2006
   url: https://pubmed.ncbi.nlm.nih.gov/16678648/
@@ -771,7 +762,7 @@ This record separates prescribing information, primary randomized outcomes, regi
   conflictsOfInterest: Complete author disclosures not verified.
   conflictOfInterestStatus: not-assessed
 - id: S7
-  title: 'Mixed amphetamine salts extended-release in the treatment of adult ADHD: a randomized, controlled trial.'
+  title: "Mixed amphetamine salts extended-release in the treatment of adult ADHD: a randomized, controlled trial."
   authors: Richard H Weisler; Joseph Biederman; Thomas J Spencer; Timothy E Wilens; Stephen V Faraone; Allan K Chrisman; Stephanie C Read; Simon J Tulloch
   year: 2006
   url: https://pubmed.ncbi.nlm.nih.gov/16871129/
@@ -783,7 +774,7 @@ This record separates prescribing information, primary randomized outcomes, regi
   conflictsOfInterest: Investigators disclosed multiple industry relationships including Shire; author affiliations identify Read and Tulloch as Shire employees.
   conflictOfInterestStatus: not-assessed
 - id: S8
-  title: 'Efficacy and Safety of SHP465 Mixed Amphetamine Salts in the Treatment of Attention-Deficit/Hyperactivity Disorder in Adults: Results of a Randomized, Double-Blind, Placebo-Controlled, Forced-Dose Clinical Study'
+  title: "Efficacy and Safety of SHP465 Mixed Amphetamine Salts in the Treatment of Attention-Deficit/Hyperactivity Disorder in Adults: Results of a Randomized, Double-Blind, Placebo-Controlled, Forced-Dose Clinical Study"
   authors: Richard H Weisler; Michael Greenbaum; Valerie Arnold; Ming Yu; Brian Yan; Margo Jaffee; Brigitte Robertson
   year: 2017
   url: https://doi.org/10.1007/s40263-017-0455-7
@@ -795,7 +786,7 @@ This record separates prescribing information, primary randomized outcomes, regi
   conflictsOfInterest: Four authors were Shire employees with stock interests; investigators disclosed industry payments.
   conflictOfInterestStatus: not-assessed
 - id: S9
-  title: 'Modafinil Versus Amphetamine-Dextroamphetamine For Idiopathic Hypersomnia and Narcolepsy Type 2: A Randomized, Blinded, Non-inferiority Trial'
+  title: "Modafinil Versus Amphetamine-Dextroamphetamine For Idiopathic Hypersomnia and Narcolepsy Type 2: A Randomized, Blinded, Non-inferiority Trial"
   authors: Lynn Marie Trotti; Tyler Blake; Romy Hoque; David B Rye; Surina Sharma; Donald L Bliwise
   year: 2024
   url: https://doi.org/10.1007/s40263-024-01122-y
@@ -819,7 +810,7 @@ This record separates prescribing information, primary randomized outcomes, regi
   conflictsOfInterest: Full declaration not verified.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: 'Neurocognitive, Autonomic, and Mood Effects of Adderall: A Pilot Study of Healthy College Students'
+  title: "Neurocognitive, Autonomic, and Mood Effects of Adderall: A Pilot Study of Healthy College Students"
   authors: Lisa L Weyandt; Tara L White; Bergljot Gyda Gudmundsdottir; Adam Z Nitenson; Emma S Rathkey; Kelvin A De Leon; Stephanie A Bjorn
   year: 2018
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6165228/
@@ -919,12 +910,12 @@ This record separates prescribing information, primary randomized outcomes, regi
   asOf: 2026-10-10
 - jurisdiction: United States
   activity: Not established
-  status: 'Source-specific legal evidence is preserved in the cited source.'
+  status: Source-specific legal evidence is preserved in the cited source.
   sourceUrl: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f22635fe-821d-4cde-aa12-419f8b53db81
   asOf: 2026-10-10
 - jurisdiction: United States
   activity: Not established
-  status: 'Source-specific legal evidence is preserved in the cited source.'
+  status: Source-specific legal evidence is preserved in the cited source.
   sourceUrl: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=f22635fe-821d-4cde-aa12-419f8b53db81
   asOf: 2026-10-10
 ```

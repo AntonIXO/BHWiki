@@ -12,6 +12,11 @@ smiles: O=[Mg]
 category: Magnesium salt
 tags:
   - magnesium-homeostasis
+  - perception
+  - diarrhea-duration
+  - memory
+  - fatigue-severity
+  - attention
 accent: "#8090a0"
 reviewedAt: 2026-10-11
 editorialStatus: sourced-draft
@@ -65,7 +70,7 @@ x-order: 9007199254740991
 
 ## Summary
 
-Magnesium oxide contains about 60.3% elemental magnesium by mass. Small human studies found lower indirect absorption than several comparator salts, but the familiar 4% value is not universal. Direct clinical evidence is strongest for short-term constipation, with smaller migraine and cisplatin-specific studies. Renal dysfunction increases hypermagnesemia risk. [mgo-bioavail] [mgo-constipation] [mgo-risk]
+3% elemental magnesium by mass. Small human studies found lower indirect absorption than several comparator salts, but the familiar 4% value is not universal.
 
 ## Description
 
@@ -159,90 +164,84 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   quantityMax: null
   unit: not established
   ingredient: magnesium-oxide
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mgo-label
+  population: Not established
+  formulation: Not established
 - label: magnesium-oxide research exposure 2
   amount: 500 mg MgO three times daily
   quantity: 500
   quantityMax: null
   unit: not established
   ingredient: magnesium-oxide
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: 28 days
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: dr-magnesium-oxide-s1
+  population: Not established
+  formulation: Not established
 - label: magnesium-oxide research exposure 3
   amount: 500 mg MgO/day
   quantity: 500
   quantityMax: null
   unit: not established
   ingredient: magnesium-oxide
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: 8 weeks per treatment period
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: dr-magnesium-oxide-s1
+  population: Not established
+  formulation: Not established
 - label: magnesium-oxide research exposure 4
   amount: 9 mg/kg/day MgO in three divided doses with food
   quantity: 9
   quantityMax: null
   unit: not established
   ingredient: magnesium-oxide
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: 16 weeks
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: dr-magnesium-oxide-s1
+  population: Not established
+  formulation: Not established
 - label: magnesium-oxide research exposure 5
   amount: 500 mg MgO per 50 mg/m2 cisplatin
   quantity: 500
   quantityMax: null
   unit: not established
   ingredient: magnesium-oxide
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: dr-magnesium-oxide-s1
+  population: Not established
+  formulation: Not established
 - label: magnesium-oxide research exposure 6
   amount: one tablet twice daily; maximum two tablets in 24 hours on the cited label
   quantity: 24
   quantityMax: null
   unit: not established
   ingredient: magnesium-oxide
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mgo-label
+  population: Not established
+  formulation: Not established
 ```
 
 ## Pharmacokinetics
@@ -264,8 +263,6 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   modelEligible: false
 - id: dr-magnesium-oxide-magnesium-oxide-pk-1
   analyte: fractional_absorption
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -274,12 +271,10 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   high: null
   unit: hours
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
-  sourceId: dr-magnesium-oxide-s1
+  sourceId: mgo-bioavail
   modelEligible: false
 - id: dr-magnesium-oxide-magnesium-oxide-pk-2
   analyte: sixty_day_relative_bioavailability
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -288,12 +283,10 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   high: null
   unit: hours
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
-  sourceId: dr-magnesium-oxide-s1
+  sourceId: mgo-bioavail
   modelEligible: false
 - id: dr-magnesium-oxide-magnesium-oxide-pk-3
   analyte: systemic_adequacy
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -302,12 +295,10 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   high: null
   unit: hours
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
-  sourceId: dr-magnesium-oxide-s1
+  sourceId: mgo-bioavail
   modelEligible: false
 - id: dr-magnesium-oxide-magnesium-oxide-pk-4
   analyte: renal_elimination
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -316,12 +307,10 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   high: null
   unit: hours
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
-  sourceId: dr-magnesium-oxide-s1
+  sourceId: mgo-bioavail
   modelEligible: false
 - id: dr-magnesium-oxide-magnesium-oxide-pk-5
   analyte: luminal_fraction
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -330,7 +319,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   high: null
   unit: hours
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
-  sourceId: dr-magnesium-oxide-s1
+  sourceId: mgo-bioavail
   modelEligible: false
 ```
 
@@ -443,10 +432,10 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   evidence: Human research
   description: Nonabsorbed Mg creates an intestinal osmotic gradient, increasing net water and electrolyte secretion and softening stool
   sourceId: dr-magnesium-oxide-s1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-oxide-magnesium-oxide-effect-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -456,10 +445,10 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   evidence: Human research
   description: OTC MgO products are labeled to relieve acid indigestion and upset stomach
   sourceId: mgo-label
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-oxide-magnesium-oxide-effect-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -469,10 +458,10 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   evidence: Human research
   description: MgO can reduce chemotherapy-associated serum-magnesium decline in a defined cisplatin-treated population
   sourceId: dr-magnesium-oxide-s1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-oxide-magnesium-oxide-effect-4
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -482,10 +471,10 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   evidence: Human research
   description: Loose stool, diarrhea, abdominal cramping, nausea, and gas are plausible or reported effects; the product label specifically warns of a laxative effect
   sourceId: dr-magnesium-oxide-s1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-oxide-magnesium-oxide-effect-5
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -495,10 +484,10 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: dr-magnesium-oxide-s1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -563,10 +552,10 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: dr-magnesium-oxide-s1
-  population: Not established
   exposure: 1.5 g MgO/day for 4 weeks
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-oxide-magnesium-oxide-outcome-3
   study:
     id: magnesium-oxide-outcomes-3
@@ -958,7 +947,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/30798472/
-  pmid: '11794633'
+  pmid: "11794633"
 - id: mgo-walker
   title: Mg citrate found more bioavailable than other Mg preparations in a randomised, double-blind study.
   authors: Ann F Walker, Georgios Marakis, Samantha Christie, Martyn Byng
@@ -971,7 +960,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
-  pmid: '14596323'
+  pmid: "14596323"
 - id: mgo-constipation
   title: A Randomized Double-blind Placebo-controlled Trial on the Effect of Magnesium Oxide in Patients With Chronic Constipation
   authors: Sumire Mori; Toshihiko Tomita; Kazuki Fujimura; Haruki Asano; Tomohiro Ogawa; Takahisa Yamasaki; Takashi Kondo; Tomoaki Kono; Katsuyuki Tozawa; Tadayuki Oshima; Hirokazu Fukui; Takeshi Kimura; Jiro Watari; Hiroto Miwa
@@ -984,9 +973,9 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
-  pmid: '31587548'
+  pmid: "31587548"
 - id: mgo-guideline
-  title: 'AGA-ACG Clinical Practice Guideline: Pharmacological Management of Chronic Idiopathic Constipation'
+  title: "AGA-ACG Clinical Practice Guideline: Pharmacological Management of Chronic Idiopathic Constipation"
   authors: American Gastroenterological Association; American College of Gastroenterology
   year: 2023
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10544839/
@@ -999,7 +988,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC10544839/
 - id: mgo-pediatric
-  title: 'Oral magnesium oxide prophylaxis of frequent migrainous headache in children: a randomized, double-blind, placebo-controlled trial'
+  title: "Oral magnesium oxide prophylaxis of frequent migrainous headache in children: a randomized, double-blind, placebo-controlled trial"
   authors: Fong Wang; Stephen K. Van Den Eeden; Lynn M. Ackerson; Susan E. Salk; Robyn H. Reince; Ronald J. Elin
   year: 2003
   url: https://pubmed.ncbi.nlm.nih.gov/12786918/"
@@ -1010,7 +999,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
-  pmid: '12786918'
+  pmid: "12786918"
 - id: mgo-migraine
   title: The efficacy of magnesium oxide and sodium valproate in prevention of migraine headache
   authors: Narges Karimi; Azadeh Razian; Mohammad Heidari
@@ -1024,9 +1013,9 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/30798472/
-  pmid: '30798472'
+  pmid: "30798472"
 - id: mgo-cisplatin
-  title: 'Effect of Oral Magnesium Oxide Supplementation on Cisplatin-Induced Hypomagnesemia in Cancer Patients: A Randomized Controlled Trial'
+  title: "Effect of Oral Magnesium Oxide Supplementation on Cisplatin-Induced Hypomagnesemia in Cancer Patients: A Randomized Controlled Trial"
   authors: Maryam Zarif Yeganeh; Masoud Vakili; Ali Shahriari-Ahmadi; Marzieh Nojomi
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27057522/"
@@ -1037,9 +1026,9 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
-  pmid: '27057522'
+  pmid: "27057522"
 - id: mgo-risk
-  title: 'Risk factors for the development of hypermagnesemia in patients prescribed magnesium oxide: a retrospective cohort study'
+  title: "Risk factors for the development of hypermagnesemia in patients prescribed magnesium oxide: a retrospective cohort study"
   authors: Eri Wakai; Kenji Ikemura; Hiroko Sugimoto; Takuya Iwamoto; Masahiro Okuda
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/30805197/"
@@ -1050,9 +1039,9 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
-  pmid: '30805197'
+  pmid: "30805197"
 - id: mgo-case
-  title: 'Severe hypermagnesemia induced by magnesium oxide ingestion: a case series'
+  title: "Severe hypermagnesemia induced by magnesium oxide ingestion: a case series"
   authors: Hiroki Yamaguchi; Hisaki Shimada; Kazuhiro Yoshita; et al.
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/30136128/
@@ -1064,7 +1053,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictsOfInterest: Authors declared no conflict.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/30136128/
-  pmid: '30136128'
+  pmid: "30136128"
 - id: mgo-label
   title: MAGNESIUM OXIDE tablet
   authors: U.S. National Library of Medicine, DailyMed; Belleview Biosciences LLC
@@ -1091,7 +1080,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://ods.od.nih.gov/factsheets/magnesium-healthprofessional/
 - id: mgo-levothyroxine
-  title: 'Intestinal adsorption of levothyroxine by antacids and laxatives: case stories and in vitro experiments'
+  title: "Intestinal adsorption of levothyroxine by antacids and laxatives: case stories and in vitro experiments"
   authors: H. Mersebach; A. K. Rasmussen; L. Kirkegaard; U. Feldt-Rasmussen
   year: 1999
   url: https://pubmed.ncbi.nlm.nih.gov/10193669/"
@@ -1102,7 +1091,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
-  pmid: '10193669'
+  pmid: "10193669"
 - id: mgo-fda-supp
   title: Questions and Answers on Dietary Supplements
   authors: U.S. Food and Drug Administration
@@ -1117,7 +1106,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements
 - id: mgo-fda-antacid
-  title: 'OTC Monograph M001: Antacid Products for Over-the-Counter Human Use'
+  title: "OTC Monograph M001: Antacid Products for Over-the-Counter Human Use"
   authors: U.S. Food and Drug Administration
   year: 2022
   url: https://dps-admin.fda.gov/omuf/sites/omuf/files/monograph-documents/2022-10/OTC%20Monograph_M001-Antacid%20Products%20for%20OTC%20Human%20Use%2010.14.2022.pdf
@@ -1141,7 +1130,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported
   conflictOfInterestStatus: not-assessed
-  pmid: '11794633'
+  pmid: "11794633"
 - id: dr-magnesium-oxide-s2
   title: Mg citrate found more bioavailable than other Mg preparations in a randomised, double-blind study.
   authors: Ann F Walker, Georgios Marakis, Samantha Christie, Martyn Byng
@@ -1154,7 +1143,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported
   conflictOfInterestStatus: not-assessed
-  pmid: '14596323'
+  pmid: "14596323"
 - id: dr-magnesium-oxide-s3
   title: A Randomized Double-blind Placebo-controlled Trial on the Effect of Magnesium Oxide in Patients With Chronic Constipation
   authors: Sumire Mori; Toshihiko Tomita; Kazuki Fujimura; Haruki Asano; Tomohiro Ogawa; Takahisa Yamasaki; Takashi Kondo; Tomoaki Kono; Katsuyuki Tozawa; Tadayuki Oshima; Hirokazu Fukui; Takeshi Kimura; Jiro Watari; Hiroto Miwa
@@ -1168,7 +1157,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictsOfInterest: Not reported
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-oxide-s4
-  title: 'American Gastroenterological Association-American College of Gastroenterology Clinical Practice Guideline: Pharmacological Management of Chronic Idiopathic Constipation'
+  title: "American Gastroenterological Association-American College of Gastroenterology Clinical Practice Guideline: Pharmacological Management of Chronic Idiopathic Constipation"
   authors: American Gastroenterological Association and American College of Gastroenterology
   year: 2023
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10544839/"
@@ -1180,7 +1169,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictsOfInterest: Article disclosures are reported in the source
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-oxide-s5
-  title: 'Oral magnesium oxide prophylaxis of frequent migrainous headache in children: a randomized, double-blind, placebo-controlled trial'
+  title: "Oral magnesium oxide prophylaxis of frequent migrainous headache in children: a randomized, double-blind, placebo-controlled trial"
   authors: Fong Wang; Stephen K. Van Den Eeden; Lynn M. Ackerson; Susan E. Salk; Robyn H. Reince; Ronald J. Elin
   year: 2003
   url: https://pubmed.ncbi.nlm.nih.gov/12786918/"
@@ -1203,9 +1192,9 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported in the cited record
   conflictOfInterestStatus: not-assessed
-  pmid: '30798472'
+  pmid: "30798472"
 - id: dr-magnesium-oxide-s7
-  title: 'Effect of Oral Magnesium Oxide Supplementation on Cisplatin-Induced Hypomagnesemia in Cancer Patients: A Randomized Controlled Trial'
+  title: "Effect of Oral Magnesium Oxide Supplementation on Cisplatin-Induced Hypomagnesemia in Cancer Patients: A Randomized Controlled Trial"
   authors: Maryam Zarif Yeganeh; Masoud Vakili; Ali Shahriari-Ahmadi; Marzieh Nojomi
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27057522/"
@@ -1217,7 +1206,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictsOfInterest: Not reported
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-oxide-s8
-  title: 'Risk factors for the development of hypermagnesemia in patients prescribed magnesium oxide: a retrospective cohort study'
+  title: "Risk factors for the development of hypermagnesemia in patients prescribed magnesium oxide: a retrospective cohort study"
   authors: Eri Wakai; Kenji Ikemura; Hiroko Sugimoto; Takuya Iwamoto; Masahiro Okuda
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/30805197/"
@@ -1229,7 +1218,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictsOfInterest: Not reported
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-oxide-s9
-  title: 'Severe hypermagnesemia induced by magnesium oxide ingestion: a case series'
+  title: "Severe hypermagnesemia induced by magnesium oxide ingestion: a case series"
   authors: Hiroki Yamaguchi; Hisaki Shimada; Kazuhiro Yoshita; et al.
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/30136128/
@@ -1240,7 +1229,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Authors declared that no conflict of interest existed
   conflictOfInterestStatus: not-assessed
-  pmid: '30136128'
+  pmid: "30136128"
 - id: dr-magnesium-oxide-s11
   title: Magnesium - Health Professional Fact Sheet
   authors: National Institutes of Health, Office of Dietary Supplements
@@ -1254,7 +1243,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictsOfInterest: Not reported
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-oxide-s12
-  title: 'Intestinal adsorption of levothyroxine by antacids and laxatives: case stories and in vitro experiments'
+  title: "Intestinal adsorption of levothyroxine by antacids and laxatives: case stories and in vitro experiments"
   authors: H. Mersebach; A. K. Rasmussen; L. Kirkegaard; U. Feldt-Rasmussen
   year: 1999
   url: https://pubmed.ncbi.nlm.nih.gov/10193669/"
@@ -1278,7 +1267,7 @@ This page separates constipation, migraine and cisplatin outcomes from indirect 
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: dr-magnesium-oxide-s14
-  title: 'OTC Monograph M001: Antacid Products for Over-the-Counter Human Use'
+  title: "OTC Monograph M001: Antacid Products for Over-the-Counter Human Use"
   authors: U.S. Food and Drug Administration
   year: 2022
   url: https://dps-admin.fda.gov/omuf/sites/omuf/files/monograph-documents/2022-10/OTC%20Monograph_M001-Antacid%20Products%20for%20OTC%20Human%20Use%2010.14.2022.pdf"

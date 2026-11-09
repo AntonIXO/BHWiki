@@ -1,0 +1,415 @@
+{
+  "inositol": {
+    "src": "/articles/inositol.png",
+    "alt": "Inositol molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/892",
+    "credit": "PubChem"
+  },
+  "aniracetam": {
+    "src": "/articles/aniracetam.png",
+    "alt": "Aniracetam molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/2196",
+    "credit": "PubChem"
+  },
+  "aspirin": {
+    "src": "/articles/aspirin.png",
+    "alt": "Aspirin molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/2244",
+    "credit": "PubChem"
+  },
+  "betahistine": {
+    "src": "/articles/betahistine.png",
+    "alt": "Betahistine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/2366",
+    "credit": "PubChem"
+  },
+  "bromocriptine": {
+    "src": "/articles/bromocriptine.png",
+    "alt": "Bromocriptine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/31101",
+    "credit": "PubChem"
+  },
+  "bupropion": {
+    "src": "/articles/bupropion.png",
+    "alt": "Bupropion molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/444",
+    "credit": "PubChem"
+  },
+  "carnosine": {
+    "src": "/articles/carnosine.png",
+    "alt": "Carnosine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/439224",
+    "credit": "PubChem"
+  },
+  "centrophenoxine": {
+    "src": "/articles/centrophenoxine.png",
+    "alt": "Centrophenoxine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/19379",
+    "credit": "PubChem"
+  },
+  "citalopram": {
+    "src": "/articles/citalopram.png",
+    "alt": "Citalopram molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/2771",
+    "credit": "PubChem"
+  },
+  "curcumin": {
+    "src": "/articles/curcumin.png",
+    "alt": "Curcumin molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/969516",
+    "credit": "PubChem"
+  },
+  "cytisine": {
+    "src": "/articles/cytisine.png",
+    "alt": "Cytisine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/10235",
+    "credit": "PubChem"
+  },
+  "desmopressin": {
+    "src": "/articles/desmopressin.png",
+    "alt": "Desmopressin molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5311065",
+    "credit": "PubChem"
+  },
+  "dhea": {
+    "src": "/articles/dhea.png",
+    "alt": "DHEA molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5881",
+    "credit": "PubChem"
+  },
+  "dmae": {
+    "src": "/articles/dmae.png",
+    "alt": "DMAE molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/7902",
+    "credit": "PubChem"
+  },
+  "donepezil": {
+    "src": "/articles/donepezil.png",
+    "alt": "Donepezil molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/3152",
+    "credit": "PubChem"
+  },
+  "d-serine": {
+    "src": "/articles/d-serine.png",
+    "alt": "D-Serine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/71077",
+    "credit": "PubChem"
+  },
+  "d-cycloserine": {
+    "src": "/articles/d-cycloserine.png",
+    "alt": "D-cycloserine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/6234",
+    "credit": "PubChem"
+  },
+  "fludrocortisone": {
+    "src": "/articles/fludrocortisone.png",
+    "alt": "Fludrocortisone molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/31378",
+    "credit": "PubChem"
+  },
+  "galantamine": {
+    "src": "/articles/galantamine.png",
+    "alt": "Galantamine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/9651",
+    "credit": "PubChem"
+  },
+  "glucose": {
+    "src": "/articles/glucose.png",
+    "alt": "Glucose molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5793",
+    "credit": "PubChem"
+  },
+  "guanfacine": {
+    "src": "/articles/guanfacine.png",
+    "alt": "Guanfacine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/3519",
+    "credit": "PubChem"
+  },
+  "haloperidol": {
+    "src": "/articles/haloperidol.png",
+    "alt": "Haloperidol molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/3559",
+    "credit": "PubChem"
+  },
+  "histidine": {
+    "src": "/articles/histidine.png",
+    "alt": "Histidine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/6274",
+    "credit": "PubChem"
+  },
+  "icariin": {
+    "src": "/articles/icariin.png",
+    "alt": "Icariin molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5318997",
+    "credit": "PubChem"
+  },
+  "idazoxan": {
+    "src": "/articles/idazoxan.png",
+    "alt": "Idazoxan molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/54459",
+    "credit": "PubChem"
+  },
+  "insulin": {
+    "src": "/articles/insulin.png",
+    "alt": "Insulin molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/70678557",
+    "credit": "PubChem"
+  },
+  "levetiracetam": {
+    "src": "/articles/levetiracetam.png",
+    "alt": "Levetiracetam molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5284583",
+    "credit": "PubChem"
+  },
+  "losartan": {
+    "src": "/articles/losartan.png",
+    "alt": "Losartan molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/3961",
+    "credit": "PubChem"
+  },
+  "luteolin": {
+    "src": "/articles/luteolin.png",
+    "alt": "Luteolin molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5280445",
+    "credit": "PubChem"
+  },
+  "lysine": {
+    "src": "/articles/lysine.png",
+    "alt": "Lysine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5962",
+    "credit": "PubChem"
+  },
+  "metformin": {
+    "src": "/articles/metformin.png",
+    "alt": "Metformin molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/4091",
+    "credit": "PubChem"
+  },
+  "methylene-blue": {
+    "src": "/articles/methylene-blue.png",
+    "alt": "Methylene Blue molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/6099",
+    "credit": "PubChem"
+  },
+  "nefiracetam": {
+    "src": "/articles/nefiracetam.png",
+    "alt": "Nefiracetam molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/71157",
+    "credit": "PubChem"
+  },
+  "nicotinamide-mononucleotide": {
+    "src": "/articles/nicotinamide-mononucleotide.png",
+    "alt": "Nicotinamide Mononucleotide molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/14180",
+    "credit": "PubChem"
+  },
+  "nicotinamide-riboside": {
+    "src": "/articles/nicotinamide-riboside.png",
+    "alt": "Nicotinamide Riboside molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/439924",
+    "credit": "PubChem"
+  },
+  "oxytocin": {
+    "src": "/articles/oxytocin.png",
+    "alt": "Oxytocin molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/439302",
+    "credit": "PubChem"
+  },
+  "pergolide": {
+    "src": "/articles/pergolide.png",
+    "alt": "Pergolide molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/47811",
+    "credit": "PubChem"
+  },
+  "pitolisant": {
+    "src": "/articles/pitolisant.png",
+    "alt": "Pitolisant molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/9948102",
+    "credit": "PubChem"
+  },
+  "propranolol": {
+    "src": "/articles/propranolol.png",
+    "alt": "Propranolol molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/4946",
+    "credit": "PubChem"
+  },
+  "pyritinol": {
+    "src": "/articles/pyritinol.png",
+    "alt": "Pyritinol molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/14190",
+    "credit": "PubChem"
+  },
+  "roflumilast": {
+    "src": "/articles/roflumilast.png",
+    "alt": "Roflumilast molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/449193",
+    "credit": "PubChem"
+  },
+  "rolipram": {
+    "src": "/articles/rolipram.png",
+    "alt": "Rolipram molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5092",
+    "credit": "PubChem"
+  },
+  "sulbutiamine": {
+    "src": "/articles/sulbutiamine.png",
+    "alt": "Sulbutiamine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/3002120",
+    "credit": "PubChem"
+  },
+  "sunifiram": {
+    "src": "/articles/sunifiram.png",
+    "alt": "Sunifiram molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/4223812",
+    "credit": "PubChem"
+  },
+  "theacrine": {
+    "src": "/articles/theacrine.png",
+    "alt": "Theacrine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/75324",
+    "credit": "PubChem"
+  },
+  "theobromine": {
+    "src": "/articles/theobromine.png",
+    "alt": "Theobromine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5429",
+    "credit": "PubChem"
+  },
+  "thiamine": {
+    "src": "/articles/thiamine.png",
+    "alt": "Thiamine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/1130",
+    "credit": "PubChem"
+  },
+  "tolcapone": {
+    "src": "/articles/tolcapone.png",
+    "alt": "Tolcapone molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/4659569",
+    "credit": "PubChem"
+  },
+  "valproate": {
+    "src": "/articles/valproate.png",
+    "alt": "Valproate molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/3549980",
+    "credit": "PubChem"
+  },
+  "vardenafil": {
+    "src": "/articles/vardenafil.png",
+    "alt": "Vardenafil molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/135400189",
+    "credit": "PubChem"
+  },
+  "varenicline": {
+    "src": "/articles/varenicline.png",
+    "alt": "Varenicline molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/5310966",
+    "credit": "PubChem"
+  },
+  "vinpocetine": {
+    "src": "/articles/vinpocetine.png",
+    "alt": "Vinpocetine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/443955",
+    "credit": "PubChem"
+  },
+  "yohimbine": {
+    "src": "/articles/yohimbine.png",
+    "alt": "Yohimbine molecular structure",
+    "kind": "structure",
+    "sourceUrl": "https://pubchem.ncbi.nlm.nih.gov/compound/8969",
+    "credit": "PubChem"
+  },
+  "polygala-tenuifolia": {
+    "src": "/articles/polygala-tenuifolia.jpg",
+    "alt": "Polygala tenuifolia",
+    "kind": "photo",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Polygala_elongata_in_Talakona%2C_AP_I_IMG_8388.jpg",
+    "credit": "J.M.Garg · CC BY 3.0"
+  },
+  "bacopa-monnieri": {
+    "src": "/articles/bacopa-monnieri.jpg",
+    "alt": "Bacopa monnieri",
+    "kind": "photo",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr_010818-0007_Bacopa_monnieri.jpg",
+    "credit": "Forest &amp; Kim Starr · CC BY 3.0"
+  },
+  "ashwagandha": {
+    "src": "/articles/ashwagandha.jpg",
+    "alt": "Withania somnifera",
+    "kind": "photo",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:WithaniaFruit.jpg",
+    "credit": "Wowbobwow12 · CC BY-SA 3.0"
+  },
+  "ginkgo-biloba": {
+    "src": "/articles/ginkgo-biloba.jpg",
+    "alt": "Ginkgo biloba",
+    "kind": "photo",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:GINKGOBAUM-2.jpg",
+    "credit": "EecherplazGinkgo06.jpg: Cayambe\nderivative work: Ginkgotree (talk) · CC BY-SA 3.0"
+  },
+  "kava": {
+    "src": "/articles/kava.jpg",
+    "alt": "Kava",
+    "kind": "photo",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr_070515-7054_Piper_methysticum.jpg",
+    "credit": "Forest &amp; Kim Starr · CC BY 3.0"
+  },
+  "blueberry": {
+    "src": "/articles/blueberry.jpg",
+    "alt": "Blueberry",
+    "kind": "photo",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blueberries.jpg",
+    "credit": "The original Uploader was Oven Fresh at English Wikipedia · Public domain"
+  }
+}

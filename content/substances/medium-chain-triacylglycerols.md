@@ -1,24 +1,25 @@
 ---
 slug: medium-chain-triacylglycerols
 name: Medium-Chain Triacylglycerols
-subtitle: Reddit index evidence trail.
+subtitle: Medium-chain triacylglycerols are fats that can increase ketone availability.
 aliases: []
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
-category: Reddit index entry
+category: Food and nutrient
 tags:
-- reddit-index
-accent: '#a9b993'
-reviewedAt: '2026-11-01'
+  - ketosis
+  - brain-energy-metabolism
+accent: "#a9b993"
+reviewedAt: 2026-11-01
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
   low: null
   high: null
   context: No validated elimination observation was imported in this corpus pass.
-  sourceId: reddit-index-medium-chain-triacylglycerols
+  sourceId: pubmed-23274095
   observationId: mct-pk-23274095
 kinetics:
   onset: Not established
@@ -26,44 +27,45 @@ kinetics:
   duration: Not established
   bioavailability: Not established
   metabolism: Not established
-  sourceId: reddit-index-medium-chain-triacylglycerols
+  sourceId: pubmed-23274095
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- externalWikiLinks
-- references
-- legal
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - externalWikiLinks
+  - references
+  - legal
+x-order: 9007199254740991
 ---
 
 ## Summary
 
-Medium-chain triacylglycerol supplementation produced mild ketonemia in an eight-person metabolic study; the estimated brain-energy contribution was model-based.
+Medium-chain triacylglycerols are fats that can increase ketone availability. Studies explore their effects on brain energy use and cognition.
 
 ## Description
 
@@ -71,8 +73,7 @@ This record summarizes the 4-week human MCT protocol, including dose, ketone mea
 
 ## Evidence note
 
-PubMed abstract PMID 23274095 was retrieved and used to replace heuristic dose/effect records. The study was an 8-person, 4-week metabolic protocol; no formulation-independent pharmacokinetic or clinical cognitive conclusion was established.
-
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -91,7 +92,7 @@ PubMed abstract PMID 23274095 was retrieved and used to replace heuristic dose/e
   purpose: Metabolic study of ketonemia and substrate oxidation
   sourceCategory: research
   note: Research exposure; not a general dosing recommendation.
-  sourceId: reddit-pmid-23274095
+  sourceId: pubmed-23274095
 ```
 
 ## Pharmacokinetics
@@ -109,7 +110,7 @@ PubMed abstract PMID 23274095 was retrieved and used to replace heuristic dose/e
   high: null
   unit: hours
   context: Metabolic time-course measured over 8–12 hours before and after 4-week supplementation; no elimination half-life was reported.
-  sourceId: reddit-pmid-23274095
+  sourceId: pubmed-23274095
   modelEligible: false
 ```
 
@@ -127,9 +128,8 @@ PubMed abstract PMID 23274095 was retrieved and used to replace heuristic dose/e
   name: Mild ketonemia
   direction: Increased
   evidence: Human research
-  description: After 4 weeks of MCT supplementation, plasma beta-hydroxybutyrate plus acetoacetate peaked at 476 micromolar
-    and averaged 290 micromolar during the metabolic study day.
-  sourceId: reddit-pmid-23274095
+  description: After 4 weeks of MCT supplementation, plasma beta-hydroxybutyrate plus acetoacetate peaked at 476 micromolar and averaged 290 micromolar during the metabolic study day.
+  sourceId: pubmed-23274095
   population: 8 healthy adults
   exposure: 20 g/day for 1 week then 30 g/day for 3 weeks
   instrument: Plasma ketones
@@ -145,9 +145,8 @@ PubMed abstract PMID 23274095 was retrieved and used to replace heuristic dose/e
   name: Estimated brain energy contribution
   direction: Increased
   evidence: Human research
-  description: The achieved ketonemia was estimated to contribute up to 8–9% of brain energy metabolism; this was a model-based
-    estimate rather than direct brain measurement.
-  sourceId: reddit-pmid-23274095
+  description: The achieved ketonemia was estimated to contribute up to 8–9% of brain energy metabolism; this was a model-based estimate rather than direct brain measurement.
+  sourceId: pubmed-23274095
   population: 8 healthy adults
   exposure: 4-week MCT supplementation
   instrument: Isotope and metabolic measurements with theoretical estimate
@@ -159,18 +158,16 @@ PubMed abstract PMID 23274095 was retrieved and used to replace heuristic dose/e
 
 ```yaml
 - title: MCT-derived ketone production
-  description: MCT supplementation increased circulating ketones; isotope tracing showed time-dependent trioctanoate beta-oxidation
-    without changing beta-hydroxybutyrate oxidation.
-  sourceId: reddit-pmid-23274095
+  description: MCT supplementation increased circulating ketones; isotope tracing showed time-dependent trioctanoate beta-oxidation without changing beta-hydroxybutyrate oxidation.
+  sourceId: pubmed-23274095
 ```
 
 ## Cautions
 
 ```yaml
 - title: Small metabolic study
-  description: The study enrolled only eight healthy adults and reported no side effects under its protocol; tolerability
-    and efficacy cannot be generalized to other doses or populations.
-  sourceId: reddit-pmid-23274095
+  description: The study enrolled only eight healthy adults and reported no side effects under its protocol; tolerability and efficacy cannot be generalized to other doses or populations.
+  sourceId: pubmed-23274095
 ```
 
 ## Claims
@@ -180,13 +177,13 @@ PubMed abstract PMID 23274095 was retrieved and used to replace heuristic dose/e
   assertion: Four weeks of divided MCT supplementation produced mild sustained ketonemia in eight healthy adults.
   relation: supported-by
   participants:
-  - entityId: substance:medium-chain-triacylglycerols
-    role: intervention
-  - entityId: tag:ketosis
-    role: measured endpoint
+    - entityId: substance:medium-chain-triacylglycerols
+      role: intervention
+    - entityId: tag:ketosis
+      role: measured endpoint
   context: 20 g/day for one week followed by 30 g/day for three weeks.
   sourceIds:
-  - reddit-pmid-23274095
+    - pubmed-23274095
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Small metabolic study; brain-energy contribution was estimated rather than directly measured.
@@ -204,34 +201,18 @@ PubMed abstract PMID 23274095 was retrieved and used to replace heuristic dose/e
 []
 ```
 
-## External wiki links
-
-```yaml
-- service: Wikipedia
-  url: https://en.wikipedia.org/wiki/Medium-chain_triglyceride
-  title: Wikipedia
-```
-
 ## References
 
 ```yaml
-- id: reddit-index-medium-chain-triacylglycerols
-  title: Reddit r/Nootropics community index
-  authors: Reddit r/Nootropics community index
-  year: 2026
-  url: https://www.reddit.com/r/nootropics/wiki/index
-  kind: Community index
-  insight: The community index lists this substance and links the source trail below.
-  limitation: Community indexing is a discovery aid and does not establish efficacy or safety.
-- id: reddit-pmid-23274095
-  title: 'Stimulation of mild, sustained ketonemia by medium-chain triacylglycerols in healthy humans: estimated potential contribution to brain energy metabolism.'
+- id: pubmed-23274095
+  title: "Stimulation of mild, sustained ketonemia by medium-chain triacylglycerols in healthy humans: estimated potential contribution to brain energy metabolism."
   authors: Alexandre Courchesne-Loyer, Mélanie Fortier, Jennifer Tremblay-Mercier, Raphaël Chouinard-Watkins, Maggie Roy, Scott Nugent, Christian-Alexandre Castellano, Stephen C Cunnane
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23274095/
   kind: PubMed publication
-  insight: 'OBJECTIVE: In humans consuming a normal diet, we investigated 1) the capacity of a medium-chain triacylglycerol (MCT) supplement to stimulate and sustain ketonemia, 2) ¹³C-β-hydroxybutyrate and ¹³C-trioctanoate metabolism, and 3) the theoretical contribution of the degree of ketonemia achieved to brain energy metabolism.'
+  insight: "OBJECTIVE: In humans consuming a normal diet, we investigated 1) the capacity of a medium-chain triacylglycerol (MCT) supplement to stimulate and sustain ketonemia, 2) ¹³C-β-hydroxybutyrate and ¹³C-trioctanoate metabolism, and 3) the theoretical contribution of the degree of ketonemia achieved to brain energy metabolism."
   limitation: PubMed abstract retrieved with the PubMed connector on 2026-11-01; full text was not available for this citation.
-  pmid: '23274095'
+  pmid: "23274095"
   doi: 10.1016/j.nut.2012.09.009
   funding: Not reported in the retrieved PubMed record.
   sponsorshipStatus: not-assessed
@@ -243,4 +224,12 @@ PubMed abstract PMID 23274095 was retrieved and used to replace heuristic dose/e
 
 ```yaml
 []
+```
+
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Medium-chain_triglyceride
+  title: Wikipedia
 ```

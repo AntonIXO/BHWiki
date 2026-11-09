@@ -9,9 +9,11 @@ molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
+tags:
+  - perception
+  - attention
 accent: "#888888"
-reviewedAt: "2026-10-15"
+reviewedAt: 2026-10-15
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -63,9 +65,7 @@ x-order: 9007199254740991
 
 ## Summary
 
-No isolated-taurate randomized trial for deficiency, sleep, blood pressure, glycemia or cardiovascular events was identified. This evidence gap does not establish ineffectiveness. (sourceId: pubmed-search-2026)
-
-A 2026 uncontrolled study reported blood-pressure improvements with magnesium taurate **plus potassium citrate and lifestyle counselling**; it cannot establish a taurate-specific treatment effect. (sourceId: dereli-2026)
+No isolated-taurate randomized trial for deficiency, sleep, blood pressure, glycemia or cardiovascular events was identified.
 
 ## Description
 
@@ -78,6 +78,7 @@ Magnesium taurate, also called magnesium taurinate or magnesium ditaurate, conta
 PubMed/PMC searches through October 15, 2026 included taurate, taurinate and ditaurate. Case reports and combination studies are not isolated-ingredient randomized evidence. Other-salt trials below are indirect context only. (sourceId: pubmed-search-2026)
 
 The exact-name ClinicalTrials.gov search returned no records. This does not exclude unregistered studies, differently indexed interventions or studies in other registries. Missing funding or conflict statements are recorded as unavailable, not as declarations of independence. (sourceId: ctgov-search-2026)
+
 ## Doses
 
 ```yaml
@@ -87,15 +88,14 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   quantityMax: null
   unit: not established
   ingredient: magnesium-taurate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 - label: magnesium-taurate research exposure 2
   amount: Not established
   quantity: null
@@ -103,44 +103,41 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   unit: not established
   ingredient: magnesium-taurate
   formulation: Magnesium taurate plus potassium citrate.
-  route: Not established
   frequency: Not established
   duration: Three months.
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
 - label: magnesium-taurate research exposure 3
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-taurate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 - label: magnesium-taurate research exposure 4
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-taurate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 ```
 
 ## Pharmacokinetics
@@ -148,8 +145,6 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
 ```yaml
 - id: expected-dissociation
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -157,13 +152,11 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: human-parameters
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans receiving isolated oral magnesium taurate.
   endpoint: elimination-half-life
   statistic: not-established
@@ -171,13 +164,11 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: other-salt-absorption-proxies
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -185,7 +176,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 ```
@@ -228,10 +219,10 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: magnesium-physiology
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -241,10 +232,10 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -284,10 +275,10 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: sleep-bisglycinate-small-benefit
   study:
     id: sleep-bisglycinate-small-benefit
@@ -302,10 +293,10 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycemia-chloride-positive
   study:
     id: glycemia-chloride-positive
@@ -320,10 +311,10 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: 50 mL/day containing 2.5 g magnesium chloride.
   instrument: null
   magnitude: null
+  population: Not established
 - id: glycemia-gluconate-null
   study:
     id: glycemia-gluconate-null
@@ -337,10 +328,10 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: 15 mmol/day, reported by the investigators as 360 mg elemental magnesium/day.
   instrument: null
   magnitude: null
+  population: Not established
 - id: arterial-stiffness-citrate-positive
   study:
     id: arterial-stiffness-citrate-positive
@@ -355,10 +346,10 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: arterial-stiffness-nonreplication
   study:
     id: arterial-stiffness-nonreplication
@@ -373,10 +364,10 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: clinical-cardiovascular-events
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -386,20 +377,20 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   evidence: Human research
   description: Randomized isolated-taurate evidence for cardiovascular events, arrhythmia prevention or mortality was not identified; surrogates are insufficient.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Mechanisms
 
 ```yaml
 - title: Research mechanism
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research mechanism
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 ```
 
@@ -407,16 +398,16 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
 
 ```yaml
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 ```
 
@@ -491,7 +482,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
 - id: interaction-1
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -499,7 +490,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
 - id: interaction-2
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -507,7 +498,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
 - id: interaction-3
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: "Source-specific evidence is preserved in the cited source."
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -515,7 +506,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
 - id: interaction-4
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -569,7 +560,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   conflictOfInterestStatus: not-assessed
 - id: S4
   title: ClinicalTrials.gov Noopept/omberacetam/GVS-111 searches, searched October 10, 2026
-  authors: 'URLs:'
+  authors: "URLs:"
   year: 2026
   url: https://clinicaltrials.gov/search?intr=Noopept
   kind: Regulatory or registry source
@@ -603,9 +594,9 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not established from the accessible abstract.
   conflictOfInterestStatus: not-assessed
-  pmid: '21199787'
+  pmid: "21199787"
 - id: S7
-  title: 'Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial.'
+  title: "Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial."
   authors: Julius Schuster, Igor Cycelskij, Adrian Lopresti, Andreas Hahn
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12412596/
@@ -616,10 +607,10 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Lopresti disclosed directing Clinical Research Australia, a contract-research organization; the complete disclosure was not retrieved.
   conflictOfInterestStatus: not-assessed
-  pmid: '40918053'
+  pmid: "40918053"
   doi: 10.2147/NSS.S524348
 - id: S8
-  title: 'Oral magnesium supplementation improves insulin sensitivity and metabolic control in type 2 diabetic subjects: a randomized double-blind controlled trial.'
+  title: "Oral magnesium supplementation improves insulin sensitivity and metabolic control in type 2 diabetic subjects: a randomized double-blind controlled trial."
   authors: Martha Rodríguez-Morán, Fernando Guerrero-Romero
   year: 2003
   url: https://pubmed.ncbi.nlm.nih.gov/12663588/
@@ -631,7 +622,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   conflictsOfInterest: Not established from the accessible abstract.
   conflictOfInterestStatus: not-assessed
 - id: S9
-  title: 'Oral magnesium supplementation does not affect insulin sensitivity in people with insulin-treated type 2 diabetes and a low serum magnesium: a randomised controlled trial.'
+  title: "Oral magnesium supplementation does not affect insulin sensitivity in people with insulin-treated type 2 diabetes and a low serum magnesium: a randomised controlled trial."
   authors: Linda C A Drenthen, Jeroen H F de Baaij, Laura Rodwell, Antonius E van Herwaarden, Cees J Tack, Bastiaan E de Galan
   year: 2024
   url: https://link.springer.com/article/10.1007/s00125-023-06029-9
@@ -643,7 +634,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   conflictsOfInterest: De Galan was a Diabetologia associate editor, excluded from handling; other authors declared no biasing relationships.
   conflictOfInterestStatus: not-assessed
 - id: S10
-  title: 'Long-term magnesium supplementation improves arterial stiffness in overweight and obese adults: results of a randomized, double-blind, placebo-controlled intervention trial.'
+  title: "Long-term magnesium supplementation improves arterial stiffness in overweight and obese adults: results of a randomized, double-blind, placebo-controlled intervention trial."
   authors: Peter J Joris, Jogchum Plat, Stephan J L Bakker, Ronald P Mensink
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27053384/
@@ -655,7 +646,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   conflictsOfInterest: Complete declaration was not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: 'Effects of Magnesium Citrate, Magnesium Oxide, and Magnesium Sulfate Supplementation on Arterial Stiffness: A Randomized, Double-Blind, Placebo-Controlled Intervention Trial.'
+  title: "Effects of Magnesium Citrate, Magnesium Oxide, and Magnesium Sulfate Supplementation on Arterial Stiffness: A Randomized, Double-Blind, Placebo-Controlled Intervention Trial."
   authors: Joëlle C. Schutten; Peter J. Joris; Iris Groendijk; Coby Eelderink; Dion Groothof; Yvonne van der Veen; Robert Westerhuis; Femke Goorman; Ronald M. Danel; Martin H. de Borst; Stephan J. L. Bakker
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9075273/
@@ -667,7 +658,7 @@ The exact-name ClinicalTrials.gov search returned no records. This does not excl
   conflictsOfInterest: Commercial employment disclosed for Goorman and Danel with Nedmag/Magnesium Health Institute.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: 'Complementary vascular-protective actions of magnesium and taurine: a rationale for magnesium taurate.'
+  title: "Complementary vascular-protective actions of magnesium and taurine: a rationale for magnesium taurate."
   authors: M F McCarty
   year: 1996
   url: https://pubmed.ncbi.nlm.nih.gov/8692051/

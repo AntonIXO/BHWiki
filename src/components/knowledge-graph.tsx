@@ -122,7 +122,7 @@ export default function KnowledgeGraph({ substances, tags, hyperedges, truncated
   );
   const excludedContextIds = useMemo(
     () => tags
-      .filter((tag) => /reddit|child|pediatric|infant|neonatal|age[- ]?context/i.test(`${tag.id} ${tag.label}`))
+      .filter((tag) => /child|pediatric|infant|neonatal|age[- ]?context/i.test(`${tag.id} ${tag.label}`))
       .map((tag) => `tag:${tag.id}`),
     [tags],
   );

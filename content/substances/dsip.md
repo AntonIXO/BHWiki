@@ -1,7 +1,7 @@
 ---
 slug: dsip
 name: DSIP
-subtitle: Source-linked research profile.
+subtitle: Research peptide
 aliases:
   - Дельта-сон-индуцирующий пептид
 formula: Not established
@@ -19,15 +19,14 @@ halfLife:
   low: null
   high: null
   context: This import contains a research source trail, not a verified elimination estimate.
-  sourceId: molekul-profile
-  observationId: dsip-unassessed
+  sourceId: research-link-137
 kinetics:
   onset: Not assessed
   peak: Not assessed
   duration: Not assessed
   bioavailability: Not assessed
   metabolism: Not assessed
-  sourceId: molekul-profile
+  sourceId: research-link-137
 x-shape:
   - slug
   - name
@@ -64,19 +63,15 @@ x-order: 1038
 
 ## Summary
 
-DSIP — Nine-residue peptide indexed as Trp–Ala–Gly–Gly–Asp–Ala–Ser–Gly–Glu; its sleep-related name is not proof of human efficacy. This is a secondary-source identity lead; clinical effects and exposure protocols remain unassessed.
+DSIP — Nine-residue peptide indexed as Trp–Ala–Gly–Gly–Asp–Ala–Ser–Gly–Glu; its sleep-related name is not proof of human efficacy.
 
 ## Description
 
-DSIP appears in Molekul's research atlas. The original profile groups it as experimental nonapeptide. This describes the atlas's working classification, not an established indication. A single molecular identity has not been established here; no formula or structure is assigned to this record.
-
-The Molekul profile was parsed on 2026-10-04. Its classification and linked source trail are discovery information; external documents, cohort overlap, preparation identity and findings have not been independently appraised in this import.
-
-Identity lead from Molekul: Nine-residue peptide indexed as Trp–Ala–Gly–Gly–Asp–Ala–Ser–Gly–Glu; its sleep-related name is not proof of human efficacy. This account has not been independently verified against the original chemistry or preparation documentation.
+DSIP — Nine-residue peptide indexed as Trp–Ala–Gly–Gly–Asp–Ala–Ser–Gly–Glu; its sleep-related name is not proof of human efficacy.
 
 ## Evidence note
 
-The Molekul profile was parsed on 2026-10-04. Its classification and linked source trail are discovery information; external documents, cohort overlap, preparation identity and findings have not been independently appraised in this import. The year on a source-discovery link is its capture year, not the paper's publication year. Missing doses, kinetics and clinical observations remain unassessed.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -87,20 +82,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 ## Pharmacokinetics
 
 ```yaml
-- id: dsip-unassessed
-  analyte: DSIP
-  route: Not assessed
-  formulation: Preparation identity requires verification
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No elimination observation has been independently curated for this imported record.
-  sourceId: molekul-profile
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -154,16 +136,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 ## References
 
 ```yaml
-- id: molekul-profile
-  title: 'DSIP: Molekul research profile'
-  authors: Molekul
-  year: 2026
-  url: https://molekul.io/compounds/dsip
-  kind: Research atlas · accessed 2026
-  insight: Provenance of the imported name, working classification and source trail.
-  limitation: A secondary discovery resource. This import does not independently verify its findings or count its links as independent studies.
-  funding: Not assessed in this import.
-- id: molekul-link-132
+- id: research-link-132
   title: PubMed PMID 265572 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -171,8 +144,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-133
+- id: research-link-133
   title: PubMed PMID 9406227 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -180,8 +152,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-134
+- id: research-link-134
   title: PubMed PMID 3622582 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -189,8 +160,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-135
+- id: research-link-135
   title: PubMed PMID 3583493 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -198,8 +168,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-136
+- id: research-link-136
   title: PubMed PMID 1299794 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -207,8 +176,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-137
+- id: research-link-137
   title: PubMed PMID 8553617 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -216,9 +184,8 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-  pmid: '8553617'
-- id: molekul-link-138
+  pmid: "8553617"
+- id: research-link-138
   title: PubMed PMID 10395980 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -226,9 +193,8 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-  pmid: '10395980'
-- id: molekul-link-139
+  pmid: "10395980"
+- id: research-link-139
   title: PubMed PMID 7779981 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -236,8 +202,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-140
+- id: research-link-140
   title: PubMed PMID 8829679 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -245,8 +210,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-141
+- id: research-link-141
   title: PubMed PMID 3730559 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -254,8 +218,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-142
+- id: research-link-142
   title: PubMed PMID 3754970 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -263,8 +226,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-143
+- id: research-link-143
   title: PubMed PMID 3788358 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -272,8 +234,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-144
+- id: research-link-144
   title: PubMed PMID 11525128 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -281,8 +242,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-145
+- id: research-link-145
   title: PubMed PMID 6328354 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -290,8 +250,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-146
+- id: research-link-146
   title: PubMed PMID 3550726 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -299,8 +258,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-147
+- id: research-link-147
   title: PubMed PMID 16539679 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -308,7 +266,6 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
 ```
 
 ## Legal
@@ -316,4 +273,3 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 ```yaml
 []
 ```
-

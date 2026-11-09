@@ -12,7 +12,11 @@ molecularWeight: 568.9 g/mol
 pubchemCid: 5280899
 smiles: CC1=C(C(C[C@@H](C1)O)(C)C)/C=C/C(=C/C=C/C(=C/C=C/C=C(/C=C/C=C(/C=C/C2=C(C[C@H](CC2(C)C)O)C)\C)\C)/C)/C
 category: carotenoid
-tags: []
+tags:
+  - perception
+  - macular-pigment-optical-density
+  - visual-acuity
+  - macular-pigment-spatial-distribution
 accent: "#E7A900"
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
@@ -449,7 +453,7 @@ Biomarker changes are more reproducible than visual outcomes. The MacTel2 study 
   kind: randomized controlled human supplementation study
   insight: Using monthly heterochromatic flicker photometry and plasma HPLC, zeaxanthin alone produced similar pigment accumulation at foveal and parafoveal locations; after correction for reference-location accumulation, the reported MPOD increase was approximately 14%.
   limitation: Spatial accumulation of zeaxanthin confounded the conventional differential HFP calculation; the accessible abstract does not expose complete arm-level baseline characteristics or adverse-event tables.
-  pmid: '17084803'
+  pmid: "17084803"
   doi: 10.1016/j.abb.2006.09.032
   funding: Not assessed from an inspected publication funding declaration; two authors had DSM Nutritional Products affiliation, which is not itself coded as proof of study sponsorship.
   sponsorshipStatus: not-assessed
@@ -463,7 +467,7 @@ Biomarker changes are more reproducible than visual outcomes. The MacTel2 study 
   kind: controlled human supplementation study
   insight: In 34 subjects from the carotenoid supplementation program, high-mesopic contrast-acuity thresholds tended to improve with supplementation, but the clearly significant result was reported for lutein rather than standalone zeaxanthin.
   limitation: Small subgroup analysis; outcome pattern does not establish an independent significant zeaxanthin visual-performance effect.
-  pmid: '16792735'
+  pmid: "16792735"
   doi: 10.1111/j.1475-1313.2006.00387.x
   funding: Not assessed from an inspected funding declaration.
   sponsorshipStatus: not-assessed
@@ -477,21 +481,21 @@ Biomarker changes are more reproducible than visual outcomes. The MacTel2 study 
   kind: controlled human clinical trial
   insight: In 24 normal trichromats, supplementation increased macular pigment but yellow-blue discrimination remained unaffected; red-green discrimination showed only a tendency toward improvement.
   limitation: Small study and mixed lutein/zeaxanthin exposure conditions; not a clean standalone-zeaxanthin efficacy estimate.
-  pmid: '16460314'
+  pmid: "16460314"
   doi: 10.1111/j.1475-1313.2006.00386.x
   funding: Not assessed from an inspected publication funding statement.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: ref-zvf-2011
-  title: 'Randomized, double-blind, placebo-controlled study of zeaxanthin and visual function in patients with atrophic age-related macular degeneration: the Zeaxanthin and Visual Function Study (ZVF) FDA IND #78, 973'
+  title: "Randomized, double-blind, placebo-controlled study of zeaxanthin and visual function in patients with atrophic age-related macular degeneration: the Zeaxanthin and Visual Function Study (ZVF) FDA IND #78, 973"
   authors: Stuart P Richer, William Stiles, Kelly Graham-Hoffman, Marc Levin, Dennis Ruskin, James Wrobel, Dong-Wouk Park, Carla Thomas
   year: 2011
   url: https://pubmed.ncbi.nlm.nih.gov/22027699/
   kind: randomized double-masked active-controlled clinical trial
   insight: Sixty mostly male AMD patients were randomized to 8 mg zeaxanthin, zeaxanthin plus lutein, or lutein. MPOD rose across all groups without a between-group difference; the zeaxanthin arm improved high-contrast acuity by 1.5 lines, with borderline shape/field results, while lutein performed better on low-contrast acuity, CSF and glare recovery.
   limitation: The 'faux placebo' was active lutein rather than inert placebo; small and overwhelmingly male cohort; several reported zeaxanthin findings were exploratory or borderline.
-  pmid: '22027699'
+  pmid: "22027699"
   doi: 10.1016/j.optm.2011.08.008
   funding: Supported by the Captain James A. Lovell Federal Health Care Facility and Department of Veterans Affairs Research Service/CARES; Chrysantis, Inc. was identified as the primary ZVF granting sponsor, with multiple companies providing instruments or other support.
   sponsorshipStatus: mixed-funding
@@ -512,14 +516,14 @@ Biomarker changes are more reproducible than visual outcomes. The MacTel2 study 
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://clinicaltrials.gov/study/NCT00564902
 - id: ref-tanito-2012
-  title: 'Macular pigment density changes in Japanese individuals supplemented with lutein or zeaxanthin: quantification via resonance Raman spectrophotometry and autofluorescence imaging'
+  title: "Macular pigment density changes in Japanese individuals supplemented with lutein or zeaxanthin: quantification via resonance Raman spectrophotometry and autofluorescence imaging"
   authors: Masaki Tanito, Akira Obana, Yuko Gohto, Shigetoshi Okazaki, Werner Gellermann, Akihiro Ohira
   year: 2012
   url: https://pubmed.ncbi.nlm.nih.gov/22699751/
   kind: randomized active-comparator clinical trial
   insight: Twenty-two healthy Japanese volunteers received 10 mg/day lutein or zeaxanthin for up to three months. Zeaxanthin-group MPOD measured by resonance Raman spectroscopy remained unchanged, while lutein produced >20% MPOD increases at months 2 and 3.
   limitation: Small active-comparator study, only three months long, with no inert placebo.
-  pmid: '22699751'
+  pmid: "22699751"
   doi: 10.1007/s10384-012-0157-0
   funding: Not assessed because the inspected accessible sources did not expose a funding declaration.
   sponsorshipStatus: not-assessed
@@ -533,7 +537,7 @@ Biomarker changes are more reproducible than visual outcomes. The MacTel2 study 
   kind: randomized open-label interventional trial
   insight: Eight MacTel patients randomized to 10 or 20 mg/day zeaxanthin increased pigment in the residual perifoveal ring but not the depleted fovea, with no objective VA, contrast-sensitivity or OCT benefit. One 20-mg participant developed reversible crystalline maculopathy.
   limitation: Extremely small sample, no placebo control and progressive underlying disease; insufficient for incidence estimates or robust efficacy statistics.
-  pmid: '28079755'
+  pmid: "28079755"
   doi: 10.1097/IAE.0000000000001450
   funding: Research to Prevent Blindness, Lowy Medical Research Institute, NIH grants EY11600 and EY14800; zeaxanthin supplements supplied by ZeaVision, LLC.
   sponsorshipStatus: mixed-funding
@@ -548,21 +552,21 @@ Biomarker changes are more reproducible than visual outcomes. The MacTel2 study 
   kind: randomized double-masked placebo-controlled trial
   insight: In 108 people with early AMD, 10 mg lutein plus 10 mg zeaxanthin increased MPOD by 0.058±0.027 density unit over 48 weeks; visual-function relationships were also analyzed.
   limitation: Combination arm cannot isolate zeaxanthin; the strongest contrast-sensitivity between-group result in the abstract favored 20 mg lutein.
-  pmid: '22858124'
+  pmid: "22858124"
   doi: 10.1016/j.ophtha.2012.06.014
   funding: Not assessed from an inspected full funding declaration.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: ref-ma-mferg-2012
-  title: 'Improvement of retinal function in early age-related macular degeneration after lutein and zeaxanthin supplementation: a randomized, double-masked, placebo-controlled trial'
+  title: "Improvement of retinal function in early age-related macular degeneration after lutein and zeaxanthin supplementation: a randomized, double-masked, placebo-controlled trial"
   authors: Le Ma, Hong-Liang Dou, Yang-Mu Huang, Xin-Rong Lu, Xian-Rong Xu, Fang Qian, Zhi-Yong Zou, Hong-Lei Pang, Peng-Cheng Dong, Xin Xiao, Xun Wang, Ting-Ting Sun, Xiao-Ming Lin
   year: 2012
   url: https://pubmed.ncbi.nlm.nih.gov/22835510/
   kind: randomized double-masked placebo-controlled clinical trial
   insight: At 48 weeks the lutein-plus-zeaxanthin arm showed a significant increase in central ring-1 mfERG N1P1 response density; peripheral responses and P1 latencies did not consistently change.
   limitation: Combination treatment cannot identify a zeaxanthin-specific electrophysiologic effect.
-  pmid: '22835510'
+  pmid: "22835510"
   doi: 10.1016/j.ajo.2012.04.014
   funding: Not assessed from an inspected funding declaration.
   sponsorshipStatus: not-assessed
@@ -576,7 +580,7 @@ Biomarker changes are more reproducible than visual outcomes. The MacTel2 study 
   kind: randomized double-blind placebo-controlled clinical trial
   insight: Ten mg lutein plus 2 mg zeaxanthin daily for one year increased MPOD and improved photostress recovery and chromatic contrast versus placebo; glare disability did not significantly improve.
   limitation: No standalone-zeaxanthin arm. Publication reports 115 recruited participants, while the later ClinicalTrials.gov record lists 109 actual enrollment.
-  pmid: '25468896'
+  pmid: "25468896"
   doi: 10.1167/iovs.14-15573
   funding: University of Georgia was lead sponsor and DSM-firmenich Switzerland AG is listed as collaborator in the registry.
   sponsorshipStatus: mixed-funding
@@ -604,7 +608,7 @@ Biomarker changes are more reproducible than visual outcomes. The MacTel2 study 
   kind: randomized controlled clinical trial
   insight: Fifty-four high-myopia participants were randomized among Lycium barbarum arms providing 10 or 20 mg zeaxanthin plus small lutein doses, lutein controls and blank control. The high-dose Lycium comparison was significant for MPOD; the low-dose comparison was not.
   limitation: Zeaxanthin was delivered in whole Lycium barbarum with lutein and other food constituents, so this is not purified standalone-zeaxanthin evidence.
-  pmid: '35044504'
+  pmid: "35044504"
   doi: 10.1007/s00417-021-05532-2
   funding: Not assessed from an inspected publication funding declaration.
   sponsorshipStatus: not-assessed
@@ -618,21 +622,21 @@ Biomarker changes are more reproducible than visual outcomes. The MacTel2 study 
   kind: randomized double-blind comparative single-dose bioavailability study
   insight: Ninety adults received 10 mg lutein plus 2 mg zeaxanthin in test or reference formulations. The test formulation produced approximately 1.8-fold higher zeaxanthin Cmax and 2.2-fold higher AUC0-72, demonstrating formulation-dependent exposure.
   limitation: Co-formulated lutein/zeaxanthin single-dose pharmacokinetic study; does not establish a terminal zeaxanthin half-life or clinical visual efficacy.
-  pmid: '35585428'
+  pmid: "35585428"
   doi: 10.1007/s40123-022-00522-x
   funding: Not assessed from the inspected disclosure section.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from the inspected disclosure section.
   conflictOfInterestStatus: not-assessed
 - id: ref-children-2024
-  title: 'Lutein and Zeaxanthin Supplementation Improves Dynamic Visual and Cognitive Performance in Children: A Randomized, Double-Blind, Parallel, Placebo-Controlled Study'
+  title: "Lutein and Zeaxanthin Supplementation Improves Dynamic Visual and Cognitive Performance in Children: A Randomized, Double-Blind, Parallel, Placebo-Controlled Study"
   authors: Rajesh Parekh, Billy R Hammond, Divya Chandradhara
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38363462/
   kind: randomized double-blind placebo-controlled clinical trial
   insight: Sixty children received 10 mg lutein plus 2 mg zeaxanthin or placebo for 180 days; MPOD increased significantly versus placebo from day 42 and no safety concern was reported.
   limitation: Combination intervention; cannot attribute effects to zeaxanthin alone.
-  pmid: '38363462'
+  pmid: "38363462"
   doi: 10.1007/s12325-024-02785-1
   funding: Not assessed from an inspected disclosure statement.
   sponsorshipStatus: not-assessed
@@ -646,21 +650,21 @@ Biomarker changes are more reproducible than visual outcomes. The MacTel2 study 
   kind: randomized double-blind placebo-controlled clinical trial
   insight: Eighty-two teenagers received 10 mg lutein plus 2 mg zeaxanthin or sunflower-oil placebo for six months; MPOD increased more in both eyes in the active group, while several other cognitive/self-report endpoints were null.
   limitation: Combination intervention and recent publication without inspected full-text funding/COI declarations.
-  pmid: '42413424'
+  pmid: "42413424"
   doi: 10.1016/j.nutres.2026.06.005
   funding: Not assessed because the full disclosure statement was not inspected.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed because the full disclosure statement was not inspected.
   conflictOfInterestStatus: not-assessed
 - id: ref-areds2-2013
-  title: 'Lutein + zeaxanthin and omega-3 fatty acids for age-related macular degeneration: the Age-Related Eye Disease Study 2 (AREDS2) randomized clinical trial'
+  title: "Lutein + zeaxanthin and omega-3 fatty acids for age-related macular degeneration: the Age-Related Eye Disease Study 2 (AREDS2) randomized clinical trial"
   authors: Age-Related Eye Disease Study 2 Research Group
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23644932/
   kind: multicenter randomized double-masked placebo-controlled phase 3 trial
-  insight: 'Among 4203 high-risk AMD participants, adding 10 mg lutein plus 2 mg zeaxanthin to the AREDS background did not significantly reduce advanced AMD in the primary comparison: HR 0.90, 98.7% CI 0.76–1.07, P=0.12.'
-  limitation: 'Not standalone zeaxanthin: lutein and zeaxanthin were combined and participants generally also received the AREDS antioxidant/zinc formula. Secondary substitutions and subgroup analyses answer different questions from standalone efficacy.'
-  pmid: '23644932'
+  insight: "Among 4203 high-risk AMD participants, adding 10 mg lutein plus 2 mg zeaxanthin to the AREDS background did not significantly reduce advanced AMD in the primary comparison: HR 0.90, 98.7% CI 0.76–1.07, P=0.12."
+  limitation: "Not standalone zeaxanthin: lutein and zeaxanthin were combined and participants generally also received the AREDS antioxidant/zinc formula. Secondary substitutions and subgroup analyses answer different questions from standalone efficacy."
+  pmid: "23644932"
   doi: 10.1001/jama.2013.4997
   funding: Not assessed from an inspected funding declaration for this record.
   sponsorshipStatus: not-assessed

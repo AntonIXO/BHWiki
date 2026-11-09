@@ -15,6 +15,13 @@ category: Glycerophospholipid
 tags:
   - glycerophospholipid
   - choline-precursor
+  - hepatic-steatosis
+  - liver-fibrosis
+  - fatigue-severity
+  - cognitive-task-performance
+  - ulcerative-colitis-disease-activity
+  - ulcerative-colitis-remission
+  - plasma-tmao
 accent: "#888888"
 reviewedAt: 2026-10-04
 editorialStatus: sourced-draft
@@ -68,7 +75,7 @@ x-order: 9007199254740991
 
 ## Summary
 
-Phosphatidylcholine (PC) is an acyl-variable glycerophospholipid class, not one fixed molecule; commercial lecithin and PC-rich therapeutic formulations are not interchangeable. Human evidence is formulation-specific: MASLD steatosis data are positive, cognition and alcoholic-liver fibrosis trials are negative, and modified-release ulcerative-colitis findings did not replicate in phase 3.
+Phosphatidylcholine (PC) is an acyl-variable glycerophospholipid class, not one fixed molecule; commercial lecithin and PC-rich therapeutic formulations are not interchangeable.
 
 ## Description
 
@@ -620,7 +627,7 @@ Provided attachments specify the topic brief, BHWiki schema, canonical IDs and f
   conflictsOfInterest: Not applicable to this institutional monograph.
   conflictOfInterestStatus: not-assessed
 - id: kegg-m00090
-  title: 'KEGG Module M00090: Phosphatidylcholine (PC) biosynthesis, choline => PC'
+  title: "KEGG Module M00090: Phosphatidylcholine (PC) biosynthesis, choline => PC"
   authors: Kyoto Encyclopedia of Genes and Genomes
   year: 2026
   url: https://www.kegg.jp/module/M00090
@@ -639,7 +646,7 @@ Provided attachments specify the topic brief, BHWiki schema, canonical IDs and f
   kind: Primary biochemical study
   insight: Reports human hepatic conversion of phosphatidylethanolamine to PC through three sequential PEMT-catalyzed methylations using S-adenosylmethionine.
   limitation: Mechanistic biochemical work; it does not test supplemental PC efficacy.
-  pmid: '12431977'
+  pmid: "12431977"
   doi: 10.1074/jbc.M210904200
   funding: Not assessed from an inspected funding declaration.
   sponsorshipStatus: not-assessed
@@ -653,7 +660,7 @@ Provided attachments specify the topic brief, BHWiki schema, canonical IDs and f
   kind: Human challenge study and prospective cohort
   insight: Stable-isotope PC challenge demonstrated microbiota-dependent TMAO formation; a separate 4,007-person angiography cohort associated higher TMAO with later cardiovascular events.
   limitation: The cardiovascular analysis was observational and does not establish that PC supplementation causes cardiovascular events.
-  pmid: '23614584'
+  pmid: "23614584"
   doi: 10.1056/NEJMoa1109400
   funding: The publication reports National Institutes of Health and other support; detailed sponsorship classification was not fully assessed.
   sponsorshipStatus: not-assessed
@@ -667,7 +674,7 @@ Provided attachments specify the topic brief, BHWiki schema, canonical IDs and f
   kind: Randomized controlled trial
   insight: Six-month high-dose lecithin raised plasma choline but did not slow clinical or neuropsychological Alzheimer progression.
   limitation: Small older trial; only 37 participants met diagnostic and compliance requirements, and lecithin is not purified PC.
-  pmid: '3479525'
+  pmid: "3479525"
   funding: Not assessed.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
@@ -680,7 +687,7 @@ Provided attachments specify the topic brief, BHWiki schema, canonical IDs and f
   kind: Systematic review and meta-analysis
   insight: Review of 12 randomized trials found no clear clinical benefit of lecithin in Alzheimer or Parkinsonian dementia.
   limitation: Evidence was sparse, heterogeneous and based on small older lecithin trials; a moderate effect could not be excluded.
-  pmid: '12917896'
+  pmid: "12917896"
   doi: 10.1002/14651858.CD001015
   funding: Not assessed.
   sponsorshipStatus: not-assessed
@@ -694,7 +701,7 @@ Provided attachments specify the topic brief, BHWiki schema, canonical IDs and f
   kind: Multicenter randomized controlled trial
   insight: In 789 heavy drinkers with biopsy-confirmed liver injury, 2-year PPC treatment did not significantly alter the primary fibrosis-progression endpoint.
   limitation: Only 412 underwent the 24-month biopsy; alcohol intake fell markedly in both arms, reducing fibrosis progression and treatment contrast.
-  pmid: '14634492'
+  pmid: "14634492"
   doi: 10.1097/01.ALC.0000093743.03049.80
   funding: Not fully assessed from an inspected publication funding declaration.
   sponsorshipStatus: not-assessed
@@ -708,7 +715,7 @@ Provided attachments specify the topic brief, BHWiki schema, canonical IDs and f
   kind: Multicenter randomized controlled trial
   insight: Phase 2 LT-02 3.2 g/day reduced SCCAI more than placebo over 12 weeks; remission and mucosal-healing comparisons were less definitive.
   limitation: Small dose-finding study using change in SCCAI as the primary endpoint; later phase 3 induction failed.
-  pmid: '24796768'
+  pmid: "24796768"
   doi: 10.1038/ajg.2014.104
   funding: The publication states that the study was funded by sponsor Lipid Therapeutics GmbH, Heidelberg, Germany.
   sponsorshipStatus: industry-funded
@@ -716,14 +723,14 @@ Provided attachments specify the topic brief, BHWiki schema, canonical IDs and f
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC4085478/
 - id: dignass-2024
-  title: 'Modified-Release Phosphatidylcholine (LT-02) for Ulcerative Colitis: Two Double-Blind, Randomized, Placebo-Controlled Trials.'
+  title: "Modified-Release Phosphatidylcholine (LT-02) for Ulcerative Colitis: Two Double-Blind, Randomized, Placebo-Controlled Trials."
   authors: Axel Dignass, Wolfgang Stremmel, Marek Horyński, Oleksandr Poyda, Peter Armerding, Klaus Fellermann, Jost Langhorst, Tanja Kuehbacher, Peter Uebel, Juergen Stein, Gottfried Novacek, Elena Avalueva, Oleksandr Oliinyk, Peter Hasselblatt, Andrey Dorofeyev, Heidrun Heinemann, Ralph Mueller, Roland Greinwald, Walter Reinisch, International PROTECT-1/2 Study Groups
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/37806372/
   kind: Phase 3 randomized controlled trials
   insight: PROTECT-1 showed no LT-02 induction benefit and stopped for futility; the smaller maintenance trial showed no significant remission difference.
   limitation: Maintenance enrollment was curtailed after induction futility, limiting power to assess the maintenance signal.
-  pmid: '37806372'
+  pmid: "37806372"
   doi: 10.1016/j.cgh.2023.09.031
   funding: ClinicalTrials.gov identifies commercial sponsor Dr. Falk Pharma GmbH for PROTECT-1 and PROTECT-2.
   sponsorshipStatus: industry-funded
@@ -731,14 +738,14 @@ Provided attachments specify the topic brief, BHWiki schema, canonical IDs and f
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://clinicaltrials.gov/study/NCT02142725
 - id: stefan-2026
-  title: 'Effect of Essential Phospholipids in Metabolic Dysfunction-Associated Steatotic Liver Disease: A Randomised Phase 4 Clinical Trial.'
+  title: "Effect of Essential Phospholipids in Metabolic Dysfunction-Associated Steatotic Liver Disease: A Randomised Phase 4 Clinical Trial."
   authors: Norbert Stefan, Marek Hartleb, Jiangao Fan, Münevver Demir, Jörn M Schattenberg, Jan Gietka, Łukasz Bułdak, Branko Popovic, Rafael Varona, Beatrice Bois De Fer
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/41889076/
   kind: Multicenter randomized phase 4 trial
   insight: EPL 1800 mg/day improved CAP-defined hepatic steatosis versus placebo at 6 months but did not significantly improve liver stiffness.
   limitation: Six-month treatment, noninvasive surrogate endpoints and a 165-person modified intention-to-treat set limit inference about long-term clinical outcomes.
-  pmid: '41889076'
+  pmid: "41889076"
   doi: 10.1111/liv.70601
   funding: The publication reports commercial support from Opella.
   sponsorshipStatus: industry-funded
@@ -785,4 +792,3 @@ Provided attachments specify the topic brief, BHWiki schema, canonical IDs and f
   sourceUrl: https://www.fda.gov/drugs/buying-using-medicine-safely/using-fat-dissolving-injections-are-not-fda-approved-can-be-harmful
   asOf: 2026-10-04
 ```
-

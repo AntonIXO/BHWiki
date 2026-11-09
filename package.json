@@ -12,7 +12,6 @@
     "db:seed": "tsx scripts/db-seed.ts",
     "content:validate": "tsx scripts/validate-content.ts",
     "content:portal": "tsx scripts/generate-portal.ts",
-    "content:molekul": "tsx scripts/import-molekul.ts",
     "content:research": "tsx scripts/import-deep-research.ts",
     "content:normalize-pending": "tsx scripts/normalize-pending-research.ts",
     "content:research-links": "tsx scripts/add-research-source-links.ts",

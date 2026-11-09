@@ -225,18 +225,6 @@ The terminal range is not modeled as one half-life. The initial 4-hour figure is
   sourceId: dronabinol-label
 ```
 
-## Identification tests
-
-```yaml
-- name: GC-MS confirmation in biological samples
-  kind: instrumental-confirmation
-  target: Delta-9-THC in blood or urine
-  expectedResult: A validated GC-MS method identifies delta-9-THC using selective chromatographic and mass-spectral criteria in the studied matrix.
-  interpretation: Confirmatory laboratory analysis can identify and quantify delta-9-THC in the validated biological sample context.
-  limitations: Requires a qualified laboratory and matrix-specific validation; it does not identify an unknown capsule or establish product purity by itself.
-  sourceId: thc-gcms-2024
-```
-
 ## Experience links
 
 ```yaml
@@ -249,7 +237,7 @@ The terminal range is not modeled as one half-life. The initial 4-hour figure is
 
 ```yaml
 - id: dronabinol-label
-  title: 'Dronabinol capsules: prescribing information'
+  title: "Dronabinol capsules: prescribing information"
   authors: Major Pharmaceuticals
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fd8c5d57-0173-4f62-8ff0-d8147986a976
@@ -258,7 +246,7 @@ The terminal range is not modeled as one half-life. The initial 4-hour figure is
   limitation: Capsule labeling for specified adult indications. Retrieval year is 2026. Cannabis flower is outside this label.
   funding: Manufacturer prescribing information hosted by the US National Library of Medicine.
 - id: pubchem
-  title: 'Delta-9-THC: compound identity and structure'
+  title: "Delta-9-THC: compound identity and structure"
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/16078
@@ -275,7 +263,7 @@ The terminal range is not modeled as one half-life. The initial 4-hour figure is
   insight: Validates selective GC-MS identification and quantification of delta-9-THC in blood and THC-COOH in urine, including authentic forensic samples.
   limitation: Biological-matrix forensic method; it does not validate field reagent testing or identification of an unknown commercial product.
   doi: 10.1016/j.mex.2024.102962
-  pmid: '39415877'
+  pmid: "39415877"
   funding: Not assessed in this draft.
 ```
 
@@ -283,4 +271,16 @@ The terminal range is not modeled as one half-life. The initial 4-hour figure is
 
 ```yaml
 []
+```
+
+## Identification tests
+
+```yaml
+- name: GC-MS confirmation in biological samples
+  kind: instrumental-confirmation
+  target: Delta-9-THC in blood or urine
+  expectedResult: A validated GC-MS method identifies delta-9-THC using selective chromatographic and mass-spectral criteria in the studied matrix.
+  interpretation: Confirmatory laboratory analysis can identify and quantify delta-9-THC in the validated biological sample context.
+  limitations: Requires a qualified laboratory and matrix-specific validation; it does not identify an unknown capsule or establish product purity by itself.
+  sourceId: thc-gcms-2024
 ```

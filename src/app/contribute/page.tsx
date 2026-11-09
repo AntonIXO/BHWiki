@@ -8,7 +8,7 @@ export const dynamic = "force-dynamic";
 import { pageMetadata, type SeoSearchParams } from "@/lib/seo";
 
 export async function generateMetadata({ searchParams }: { searchParams: Promise<SeoSearchParams> }) {
-  return pageMetadata({ path: "/contribute", title: "Contribute", description: "Propose source-linked corrections and improvements to BHWiki articles, with transparent editorial review and publication history.", search: await searchParams });
+  return pageMetadata({ path: "/contribute", title: "Contribute", description: "Propose source-linked corrections and improvements to BHWiki articles, with automated validation and publication history.", search: await searchParams });
 }
 
 export default function Contribute() {
@@ -25,7 +25,6 @@ export default function Contribute() {
       <ol className="flex list-decimal flex-col gap-4 ps-5">
         <li><strong>Open a pull request.</strong> Change the article, shared concept or source record. Explain what changed and why.</li>
         <li><strong>Validate the content.</strong> Automated checks verify source references, structured observations and graph membership.</li>
-        <li><strong>Review the evidence.</strong> A maintainer inspects the source and diff, including contradictory findings and limitations.</li>
         <li><strong>Publish a revision.</strong> An accepted change becomes an atomic publication with source-control provenance. Corrections and reversions remain traceable.</li>
       </ol>
       <h2 className="pt-4 text-2xl font-medium">Where to contribute</h2>
@@ -53,8 +52,7 @@ export default function Contribute() {
           </Item>
         ))}
       </ItemGroup>
-      <p>The initial collection is labelled sourced draft. Independent review is a recorded step, not an assumption made when an article is imported.</p>
-      <Button variant="outline" nativeButton={false} render={<Link href="/about" />}>Read the editorial methods</Button>
+      <Button variant="outline" nativeButton={false} render={<Link href="/about" />}>Read the methods</Button>
     </main>
   );
 }

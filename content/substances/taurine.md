@@ -10,9 +10,11 @@ molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
+tags:
+  - perception
+  - attention
 accent: "#888888"
-reviewedAt: "2026-10-15"
+reviewedAt: 2026-10-15
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -64,14 +66,14 @@ x-order: 9007199254740991
 
 ## Summary
 
-Supplemental taurine has lowered blood pressure and selected metabolic markers in some short human trials, without establishing prevention of cardiovascular events or diabetes complications. Exercise findings conflict, and cognitive effects are inconsistent or task-specific. These findings concern particular supplemental doses and populations, not the effects of eating taurine-containing foods. (`sourceId: sun2016`; `sourceId: maleki2020`; `sourceId: balshaw2013`; `sourceId: rutherford2010`; `sourceId: giles2012`)
+Supplemental taurine has lowered blood pressure and selected metabolic markers in some short human trials, without establishing prevention of cardiovascular events or diabetes complications.
 
-Blood taurine is not a reliable substitute for tissue exposure or clinical benefit: supplementation can substantially increase plasma concentrations without improving insulin sensitivity or increasing muscle taurine. (`sourceId: brons2004`; `sourceId: galloway2008`)
 ## Description
 
 Taurine is a sulfur-containing amino sulfonic acid produced endogenously from sulfur-amino-acid metabolism and obtained through food. It is not a protein-building amino acid. Its physiological roles include bile-acid conjugation and regulation of cellular osmotic balance. (`sourceId: vkm2015`; `sourceId: fda2015`)
 
 Food analyses detected taurine in meats, dairy products and infant-feeding products, but not in the plant foods examined. Food composition does not establish that increasing dietary taurine produces the effects reported with isolated supplements. Capsules, dissolved taurine and caffeine-containing mixtures are distinct experimental exposures. (`sourceId: laidlaw1990`; `sourceId: balshaw2013`; `sourceId: rutherford2010`; `sourceId: giles2012`)
+
 ## Evidence note
 
 Evidence was reviewed through 2026-10-15, prioritizing primary human studies and official regulatory documents. This is a focused synthesis, not an exhaustive meta-analysis. Randomized supplementation, dietary associations, circulating biomarkers and experimental mechanisms are distinguished below. Study doses describe research exposures, not recommendations.
@@ -79,6 +81,7 @@ Evidence was reviewed through 2026-10-15, prioritizing primary human studies and
 One frequently cited heart-failure report is indexed in PubMed as a retracted publication and is excluded from efficacy interpretation. (`sourceId: ahmadian2017`)
 
 Full text and disclosure statements were accessible unevenly. “Not assessed” means funding or conflicts could not be adequately verified; it does not mean funding or conflicts were absent. A named product manufacturer is not automatically a study sponsor.
+
 ## Doses
 
 ```yaml
@@ -88,90 +91,84 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   quantityMax: null
   unit: not established
   ingredient: taurine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Trained male middle-distance runners
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  formulation: Not established
 - label: taurine research exposure 2
   amount: 1.66 g once, 1 hour before exercise
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: taurine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Endurance-trained men
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  formulation: Not established
 - label: taurine research exposure 3
   amount: 1.6 g/day for 12 weeks
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: taurine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Adults with prehypertension
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  formulation: Not established
 - label: taurine research exposure 4
   amount: 0.8 g three times daily, totaling 2.4 g/day, for 12 weeks
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: taurine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Adults with type 2 diabetes
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  formulation: Not established
 - label: taurine research exposure 5
   amount: 3 g/day for 8 weeks
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: taurine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Adults with type 2 diabetes
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  formulation: Not established
 - label: taurine research exposure 6
   amount: Single 4-g exposure
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: taurine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Eight healthy men
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  formulation: Not established
 ```
 
 ## Pharmacokinetics
@@ -179,8 +176,6 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
 ```yaml
 - id: taurine-pk-1
   analyte: Plasma absorption and elimination
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -188,13 +183,11 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: taurine-pk-2
   analyte: Exposure limits
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -202,13 +195,11 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: taurine-pk-3
   analyte: Plasma versus muscle
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -216,13 +207,11 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: taurine-pk-4
   analyte: Renal handling
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -230,7 +219,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 ```
@@ -280,10 +269,10 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: taurine-effect-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -293,10 +282,10 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: taurine-effect-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -306,10 +295,10 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: taurine-effect-4
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -319,10 +308,10 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -614,13 +603,13 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
 
 ```yaml
 - title: Osmoregulation and bile-acid conjugation
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Hydrogen-sulfide and vascular-calcium pathways
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Tumor-cell taurine uptake
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 ```
 
@@ -628,22 +617,22 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
 
 ```yaml
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: "Source-specific evidence is preserved in the cited source."
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 ```
 
@@ -718,7 +707,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
 - id: interaction-1
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -726,7 +715,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
 - id: interaction-2
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -734,7 +723,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
 - id: interaction-3
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -742,7 +731,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
 - id: interaction-4
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -819,7 +808,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Full declaration not accessed.
   conflictOfInterestStatus: not-assessed
 - id: S6
-  title: 'Effects of combined low-dose caffeine and taurine on anaerobic, neuromuscular, and cognitive performance: a double-blind randomized placebo-controlled crossover study.'
+  title: "Effects of combined low-dose caffeine and taurine on anaerobic, neuromuscular, and cognitive performance: a double-blind randomized placebo-controlled crossover study."
   authors: Köse Y; Ulaş M; Atay E
   year: 2026
   url: https://doi.org/10.1186/s13102-026-01863-x
@@ -831,7 +820,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Authors declared no competing interests.
   conflictOfInterestStatus: not-assessed
 - id: S7
-  title: 'Taurine Supplementation Lowers Blood Pressure and Improves Vascular Function in Prehypertension: Randomized, Double-Blind, Placebo-Controlled Study.'
+  title: "Taurine Supplementation Lowers Blood Pressure and Improves Vascular Function in Prehypertension: Randomized, Double-Blind, Placebo-Controlled Study."
   authors: Sun Q; Wang B; Li Y; Sun F; Li P; Xia W; Zhou X; Li Q; Wang X; Chen J; Zeng X; Zhao Z; He H; Liu D; Zhu Z
   year: 2016
   url: https://doi.org/10.1161/HYPERTENSIONAHA.115.06624
@@ -843,7 +832,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Publisher disclosure states none.
   conflictOfInterestStatus: not-assessed
 - id: S8
-  title: 'Taurine ameliorates blood pressure and vascular function in patients with type 2 diabetes: Randomized, double-blind, placebo-controlled trial.'
+  title: "Taurine ameliorates blood pressure and vascular function in patients with type 2 diabetes: Randomized, double-blind, placebo-controlled trial."
   authors: Li Y; Wang Q; Liu Y; Li Q; Xia W; Lin S; Yang Q; Scholze A; Zhao Z; He H; Zhang H; Yan Z; Tepel M; Mu H; Zhu Z; Liu D
   year: 2025
   url: https://doi.org/10.1016/j.isci.2025.112719
@@ -855,7 +844,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Authors declared no competing interests.
   conflictOfInterestStatus: not-assessed
 - id: S9
-  title: 'The effects of taurine supplementation on glycemic control and serum lipid profile in patients with type 2 diabetes: a randomized, double-blind, placebo-controlled trial.'
+  title: "The effects of taurine supplementation on glycemic control and serum lipid profile in patients with type 2 diabetes: a randomized, double-blind, placebo-controlled trial."
   authors: Maleki V; Alizadeh M; Esmaeili F; Mahdavi R
   year: 2020
   url: https://doi.org/10.1007/s00726-020-02859-8
@@ -879,7 +868,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Full declaration not accessed.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: 'Therapeutic effect of taurine in congestive heart failure: a double-blind crossover trial.'
+  title: "Therapeutic effect of taurine in congestive heart failure: a double-blind crossover trial."
   authors: Azuma J; Sawamura A; Awata N; Ohta H; Hamaguchi T; Harada H; Takihara K; Hasegawa H; Yamagami T; Ishiyama T
   year: 1985
   url: https://doi.org/10.1002/clc.4960080507
@@ -903,7 +892,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
 - id: S13
-  title: 'Differential cognitive effects of energy drink ingredients: caffeine, taurine, and glucose.'
+  title: "Differential cognitive effects of energy drink ingredients: caffeine, taurine, and glucose."
   authors: Giles GE; Mahoney CR; Brunyé TT; Gardony AL; Taylor HA; Kanarek RB
   year: 2012
   url: https://doi.org/10.1016/j.pbb.2012.07.004
@@ -939,7 +928,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Full declaration not accessed.
   conflictOfInterestStatus: not-assessed
 - id: S16
-  title: 'Randomised clinical trial: oral taurine supplementation versus placebo reduces muscle cramps in patients with chronic liver disease.'
+  title: "Randomised clinical trial: oral taurine supplementation versus placebo reduces muscle cramps in patients with chronic liver disease."
   authors: Vidot H; Cvejic E; Carey S; Strasser SI; McCaughan GW; Allman-Farinelli M; Shackel NA
   year: 2018
   url: https://doi.org/10.1111/apt.14950
@@ -975,7 +964,7 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
   conflictsOfInterest: Full declaration not accessed.
   conflictOfInterestStatus: not-assessed
 - id: S19
-  title: 'Taurine Intake, Plasma Taurine Concentration, and Dementia Risk: Findings From the Malmö Diet and Cancer Study.'
+  title: "Taurine Intake, Plasma Taurine Concentration, and Dementia Risk: Findings From the Malmö Diet and Cancer Study."
   authors: Zhang N; Borné Y; Hagberg E; Palmqvist S; Glans I; Ottosson F; Samuelsson J; Nägga K; Hansson O; Duarte JMN; Sonestedt E
   year: 2025
   url: https://doi.org/10.1111/jnc.70298
@@ -1089,17 +1078,17 @@ Full text and disclosure statements were accessible unevenly. “Not assessed”
 ```yaml
 - jurisdiction: United States
   activity: Not established
-  status: 'Source-specific legal evidence is preserved in the cited source.'
+  status: Source-specific legal evidence is preserved in the cited source.
   sourceUrl: https://pubmed.ncbi.nlm.nih.gov/2352336/
   asOf: 2026-10-10
 - jurisdiction: United States
   activity: Not established
-  status: 'Source-specific legal evidence is preserved in the cited source.'
+  status: Source-specific legal evidence is preserved in the cited source.
   sourceUrl: https://pubmed.ncbi.nlm.nih.gov/2352336/
   asOf: 2026-10-10
 - jurisdiction: European Union
   activity: Not established
-  status: 'Source-specific legal evidence is preserved in the cited source.'
+  status: Source-specific legal evidence is preserved in the cited source.
   sourceUrl: https://pubmed.ncbi.nlm.nih.gov/2352336/
   asOf: 2026-10-10
 ```

@@ -1,76 +1,76 @@
 ---
 slug: 9-methyl-beta-carboline
 name: 9-Methyl-beta-carboline
-subtitle: Reddit index evidence trail.
+subtitle: Research compound
 aliases: []
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
-category: Reddit index entry
-tags:
-- reddit-index
-accent: '#a9b993'
-reviewedAt: '2026-11-01'
+category: Research compound
+tags: []
+accent: "#a9b993"
+reviewedAt: 2026-11-01
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
   low: null
   high: null
   context: No validated elimination observation was imported in this corpus pass.
-  sourceId: reddit-index-9-methyl-beta-carboline
+  sourceId: pubmed-23842892
 kinetics:
   onset: Not established
   peak: Not established
   duration: Not established
   bioavailability: Not established
   metabolism: Not established
-  sourceId: reddit-index-9-methyl-beta-carboline
+  sourceId: pubmed-23842892
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- externalWikiLinks
-- references
-- legal
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - externalWikiLinks
+  - references
+  - legal
+x-order: 9007199254740991
 ---
 
 ## Summary
 
-9-Methyl-beta-carboline has 1 linked publications in the Reddit Nootropics index; abstract-supported records are listed below.
+9-Methyl-beta-carboline belongs to the beta-carboline family. The linked study examines how light-excited derivatives interact with DNA.
 
 ## Description
 
-This page imports the Reddit index source trail for 9-Methyl-beta-carboline. PubMed abstracts are used for structured observations where the abstract supports them; other links remain explicitly labeled as unverified leads.
+9-Methyl-beta-carboline belongs to the beta-carboline family. The linked study examines how light-excited derivatives interact with DNA.
 
 ## Evidence note
 
-Corpus import reviewed 1 PubMed abstracts and retained 1 linked source records. Full-text methods, funding, conflicts, and legal context were not comprehensively reviewed.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -107,7 +107,7 @@ Corpus import reviewed 1 PubMed abstracts and retained 1 linked source records. 
 ```yaml
 - title: Source-specific finding from PMID 23842892
   description: It has been well documented that β-carboline alkaloids, particularly the 9-methyl derivatives, are efficient photosensitizers.
-  sourceId: reddit-pmid-23842892
+  sourceId: pubmed-23842892
 ```
 
 ## Cautions
@@ -115,7 +115,7 @@ Corpus import reviewed 1 PubMed abstracts and retained 1 linked source records. 
 ```yaml
 - title: Source-specific finding from PMID 23842892
   description: It has been well documented that β-carboline alkaloids, particularly the 9-methyl derivatives, are efficient photosensitizers.
-  sourceId: reddit-pmid-23842892
+  sourceId: pubmed-23842892
 ```
 
 ## Claims
@@ -139,15 +139,7 @@ Corpus import reviewed 1 PubMed abstracts and retained 1 linked source records. 
 ## References
 
 ```yaml
-- id: reddit-index-9-methyl-beta-carboline
-  title: Reddit r/Nootropics community index
-  authors: Reddit r/Nootropics community index
-  year: 2026
-  url: https://www.reddit.com/r/nootropics/wiki/index
-  kind: Community index
-  insight: The community index lists this substance and links the source trail below.
-  limitation: Community indexing is a discovery aid and does not establish efficacy or safety.
-- id: reddit-pmid-23842892
+- id: pubmed-23842892
   title: Mechanisms of DNA damage by photoexcited 9-methyl-β-carbolines.
   authors: Mariana Vignoni, Federico A O Rasse-Suriani, Kathrin Butzbach, Rosa Erra-Balsells, Bernd Epe, Franco M Cabrerizo
   year: 2013
@@ -155,11 +147,9 @@ Corpus import reviewed 1 PubMed abstracts and retained 1 linked source records. 
   kind: PubMed publication
   insight: It has been well documented that β-carboline alkaloids, particularly the 9-methyl derivatives, are efficient photosensitizers.
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '23842892'
+  pmid: "23842892"
   doi: 10.1039/c3ob40344k
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 

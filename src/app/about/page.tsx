@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { pageMetadata, type SeoSearchParams } from "@/lib/seo";
 
 export async function generateMetadata({ searchParams }: { searchParams: Promise<SeoSearchParams> }) {
-  return pageMetadata({ path: "/about", title: "Evidence & methodology", description: "How BHWiki connects claims to sources, distinguishes subjective reports from measured outcomes, and handles editorial review and uncertainty.", search: await searchParams });
+  return pageMetadata({ path: "/about", title: "Evidence & methodology", description: "How BHWiki connects claims to sources, distinguishes subjective reports from measured outcomes, and preserves study context.", search: await searchParams });
 }
 
 export default function About() {
@@ -30,7 +30,7 @@ export default function About() {
         <AccordionItem value="numbers">
           <AccordionTrigger>Numbers need context</AccordionTrigger>
           <AccordionContent>
-            <p>Dose entries describe research exposures, label instructions, reference information, or community descriptions where explicitly identified. Route, formulation and population remain attached to the number. Missing values are marked as not assessed. A studied amount is not a personal recommendation.</p>
+            <p>Dose entries describe research exposures, label instructions, reference information, or community descriptions where explicitly identified. Route, formulation and population remain attached to the number. Only reported values are shown.</p>
             <p>Kinetic observations identify the analyte that was measured, including active metabolites. Study means and reported ranges have different meanings. The elimination chart illustrates a first-order model with a constant half-life after absorption. It does not estimate personal concentration, experienced effects, impairment, or a safe redosing time.</p>
           </AccordionContent>
         </AccordionItem>
@@ -47,9 +47,9 @@ export default function About() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="publication">
-          <AccordionTrigger>Publication and review</AccordionTrigger>
+          <AccordionTrigger>Publication history</AccordionTrigger>
           <AccordionContent>
-            <p>“Sourced draft” means the article has linked sources but has not received independent editorial review. “Editorially reviewed” requires a recorded review; it does not mean a medical recommendation. Public history records publication events and available source-control provenance. Corrections and reversions are new publications rather than overwritten history.</p>
+            <p>Content is processed with automated checks for source references, structured observations and graph membership. Public history records publication events and source-control provenance. Corrections and reversions remain traceable.</p>
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="open">

@@ -12,7 +12,21 @@ molecularWeight: 24.305 g/mol
 pubchemCid: 5462224
 smiles: "[Mg]"
 category: mineral
-tags: []
+tags:
+  - alertness
+  - sleep
+  - blood-pressure
+  - insulin-sensitivity
+  - glycemic-control
+  - cognitive-performance
+  - attention
+  - episodic-memory
+  - mg-atp-complex
+  - trpm6
+  - trpm7
+  - slc41a1
+  - cnnm2
+  - magnesium-homeostasis
 accent: "#8C9AA8"
 reviewedAt: 2026-10-04
 editorialStatus: sourced-draft
@@ -22,7 +36,6 @@ halfLife:
   high: null
   context: Magnesium is an essential element distributed among bone, soft tissues, extracellular fluid, and multiple chemical species; homeostatic intestinal and renal handling does not support one drug-like elimination half-life for "magnesium" across salts, routes, or compartments.
   sourceId: nih-ods-2026
-  observationId: pk-total-body-not-established
 kinetics:
   onset: Not established for magnesium as a nutrient across formulations and clinical endpoints.
   peak: Not established as a formulation-independent value; serum and urinary responses vary by salt, dose, food, baseline status, and renal handling.
@@ -159,20 +172,7 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
 ## Pharmacokinetics
 
 ```yaml
-- id: pk-total-body-not-established
-  analyte: magnesium as a total-body essential nutrient pool
-  route: oral
-  formulation: dietary magnesium and supplemental magnesium salts
-  population: humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: A single elimination half-life is not established or appropriate for elemental magnesium across salts and compartments because Mg is distributed among bone, soft tissues, extracellular fluid, protein/anion-bound species, and tightly regulated renal pools. Salt-specific or parenteral pharmacokinetic observations must not be relabeled as a universal magnesium half-life.
-  sourceId: nih-ods-2026
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -771,7 +771,7 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
   conflictsOfInterest: Not applicable to a clinical trial; not formally assessed.
   conflictOfInterestStatus: not-assessed
 - id: efsa-drv-2015
-  title: 'Dietary Reference Values: Magnesium and phosphorus'
+  title: "Dietary Reference Values: Magnesium and phosphorus"
   authors: European Food Safety Authority
   year: 2015
   url: https://www.efsa.europa.eu/en/press/news/150728
@@ -826,7 +826,7 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
   kind: controlled human bioavailability study
   insight: Magnesium citrate was more soluble in vitro and produced a larger urinary-magnesium response than magnesium oxide after oral loading in healthy volunteers.
   limitation: Small older study using urinary response rather than long-term clinical outcomes; exact modern commercial formulations may differ.
-  pmid: '2407766'
+  pmid: "2407766"
   doi: 10.1080/07315724.1990.10720349
   funding: Full funding declaration was not inspected in accessible full text during this review.
   sponsorshipStatus: not-assessed
@@ -840,34 +840,34 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
   kind: randomized double-blind placebo-controlled comparative bioavailability trial
   insight: At 300 mg/day elemental magnesium, citrate and an amino-acid chelate produced greater absorption-related responses than oxide over 60 days; citrate had the strongest serum response.
   limitation: Forty-six healthy participants; biomarker bioavailability differences do not establish superiority for clinical outcomes.
-  pmid: '14596323'
+  pmid: "14596323"
   funding: Full funding declaration was not inspected in accessible full text during this review.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Full conflict-of-interest declaration was not inspected.
   conflictOfInterestStatus: not-assessed
 - id: abbasi-2012
-  title: 'The effect of magnesium supplementation on primary insomnia in elderly: A double-blind placebo-controlled clinical trial.'
+  title: "The effect of magnesium supplementation on primary insomnia in elderly: A double-blind placebo-controlled clinical trial."
   authors: Behnood Abbasi, Masud Kimiagar, Khosro Sadeghniiat, Minoo M Shirazi, Mehdi Hedayati, Bahram Rashidkhani
   year: 2012
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3703169/
   kind: randomized double-blind placebo-controlled trial
   insight: In older adults with primary insomnia and low magnesium intake, 500 mg/day elemental magnesium as oxide improved ISI, sleep efficiency, and sleep-onset latency, but not between-group total sleep time.
   limitation: Small sample, short duration, largely subjective sleep measures, and a research dose above the U.S. supplemental UL.
-  pmid: '23853635'
+  pmid: "23853635"
   funding: Funded by the National Nutrition and Food Technology Research Institute, Shahid Beheshti University of Medical Sciences.
   sponsorshipStatus: non-industry-funded
   conflictsOfInterest: The full-text article states that the authors had no conflicts of interest.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC3703169/
 - id: schuster-2025
-  title: 'Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial.'
+  title: "Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial."
   authors: Julius Schuster, Igor Cycelskij, Adrian Lopresti, Andreas Hahn
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12412596/
   kind: randomized double-blind placebo-controlled trial
   insight: Four weeks of magnesium bisglycinate providing 250 mg/day elemental magnesium modestly improved ISI versus placebo (Cohen's d=0.20); secondary psychological outcomes were not significantly different.
   limitation: Self-reported poor sleep, no objective sleep measure, short duration, nonvalidated exploratory dietary-magnesium question, and 1.523 g/day glycine co-exposure.
-  pmid: '40918053'
+  pmid: "40918053"
   doi: 10.2147/NSS.S524348
   funding: Reported academic/noncommercial support from the Institute of Food and One Health, Leibniz University Hannover; the tested product was manufactured by Biogena.
   sponsorshipStatus: non-industry-funded
@@ -875,14 +875,14 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12412596/
 - id: hausenblas-2024
-  title: 'Magnesium-L-threonate improves sleep quality and daytime functioning in adults with self-reported sleep problems: A randomized controlled trial.'
+  title: "Magnesium-L-threonate improves sleep quality and daytime functioning in adults with self-reported sleep problems: A randomized controlled trial."
   authors: Heather A Hausenblas, Tarah Lynch, Stephanie Hooper, Aahana Shrestha, Doug Rosendale, Jennifer Gu
   year: 2024
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11381753/
   kind: randomized double-blind placebo-controlled trial
   insight: Selected subjective and Oura-derived secondary sleep/daytime metrics favored 1 g/day magnesium L-threonate over 21 days, while the primary ISI condition-by-time interaction was not significant.
   limitation: Short study, many outcomes, strong placebo response, proprietary wearable-derived sleep stages, and commercial sponsorship; a later correction addressed disclosure/registration information.
-  pmid: '39252819'
+  pmid: "39252819"
   doi: 10.1016/j.sleepx.2024.100121
   funding: Funded by AIDP Inc.; the tested Magtein ingredient was supplied by a commercial manufacturer.
   sponsorshipStatus: industry-funded
@@ -890,21 +890,21 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC11381753/
 - id: lopresti-sleep-review-2026
-  title: 'Magnesium Supplementation for Sleep in Adults: A Systematic Review of Randomized Controlled Trials.'
+  title: "Magnesium Supplementation for Sleep in Adults: A Systematic Review of Randomized Controlled Trials."
   authors: Adrian L Lopresti, Stephen J Smith, Peter D Drummond
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/42661485/
   kind: systematic review of randomized controlled trials
   insight: Twelve adult sleep RCTs were heterogeneous and inconsistent; certainty was rated low to very low and the review did not support routine oral magnesium for insomnia.
   limitation: Narrative synthesis was required because populations, salts, doses, durations, and outcome methods were too heterogeneous for a single pooled estimate.
-  pmid: '42661485'
+  pmid: "42661485"
   doi: 10.1080/19390211.2026.2719670
   funding: Full funding declaration was not available in the inspected PubMed record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Full conflict-of-interest declaration was not available in the inspected PubMed record.
   conflictOfInterestStatus: not-assessed
 - id: lopresti-smith-2026
-  title: 'The effects of magnesium L-threonate (Magtein®) on cognitive performance and sleep quality in adults: a randomised, double-blind, placebo-controlled trial'
+  title: "The effects of magnesium L-threonate (Magtein®) on cognitive performance and sleep quality in adults: a randomised, double-blind, placebo-controlled trial"
   authors: Adrian L Lopresti, Stephen J Smith
   year: 2026
   url: https://doi.org/10.3389/fnut.2025.1729164
@@ -918,42 +918,42 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.3389/fnut.2025.1729164
 - id: liu-2016
-  title: 'Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled Trial.'
+  title: "Efficacy and Safety of MMFS-01, a Synapse Density Enhancer, for Treating Cognitive Impairment in Older Adults: A Randomized, Double-Blind, Placebo-Controlled Trial."
   authors: Guosong Liu, Jason G Weinger, Zhong-Lin Lu, Feng Xue, Safa Sadeghpour
   year: 2016
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4927823/
   kind: randomized double-blind placebo-controlled trial
   insight: MMFS-01 containing magnesium L-threonate improved a composite cognitive score at 12 weeks, while attention and episodic-memory domain comparisons were not uniformly significant.
   limitation: Small single-site trial, per-protocol efficacy analysis, multiple endpoints without study-wide type-I-error control, selected symptomatic population, and commercial sponsor involvement.
-  pmid: '26519439'
+  pmid: "26519439"
   doi: 10.3233/JAD-150538
   funding: Funded by Neurocentria Inc.; Neurocentria participated in design, analyzed cognitive/body-magnesium outcomes, and wrote the paper through iterative review.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Commercial sponsor involvement and author affiliations were inspected, but a complete standalone conflict declaration was not available in the extracted text.
   conflictOfInterestStatus: not-assessed
 - id: argeros-2025
-  title: 'Magnesium Supplementation and Blood Pressure: A Systematic Review and Meta-Analysis of Randomized Controlled Trials.'
+  title: "Magnesium Supplementation and Blood Pressure: A Systematic Review and Meta-Analysis of Randomized Controlled Trials."
   authors: Zoe Argeros, Xiaoye Xu, Buna Bhandari, Katie Harris, Rhian M Touyz, Aletta E Schutte
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12529988/
   kind: systematic review and meta-analysis of randomized controlled trials
   insight: Across 38 RCTs and 2,709 participants, magnesium reduced SBP by 2.81 mmHg and DBP by 2.05 mmHg on average, with larger reductions in hypomagnesemic and treated-hypertensive subgroups.
   limitation: High between-study heterogeneity and no clear dose-response; normotensive groups did not reach statistical significance.
-  pmid: '41000008'
+  pmid: "41000008"
   doi: 10.1161/HYPERTENSIONAHA.125.25129
   funding: Funding declaration was not independently extracted for this review.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Conflict declaration was not independently extracted for this review.
   conflictOfInterestStatus: not-assessed
 - id: mohammadi-2026
-  title: 'Comprehensive Effects of Magnesium Supplementation on Cardiometabolic Risk Factors: A Systematic Review and Dose-Response Meta-Analysis.'
+  title: "Comprehensive Effects of Magnesium Supplementation on Cardiometabolic Risk Factors: A Systematic Review and Dose-Response Meta-Analysis."
   authors: Shooka Mohammadi, Andrea Palermo, Pantea Ojani, Navid Alaghemand, Pouyan Sanjari Pirayvatlou, Mohammadreza Mirkarimi, Sara Ayazian Mavi, Kia Tahouri, Shokoufeh Shokouhifar, Yeganeh Ettehad, Aida Borzabadi, Damoon Ashtary-Larky, Katsuhiko Suzuki, Cristina Bouzas, Daniela Rodrigues, Josep A Tur
   year: 2026
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13468553/
   kind: systematic review and dose-response meta-analysis
   insight: Across 78 RCTs, pooled effects included modest reductions in SBP, DBP, fasting glucose, HOMA-IR, and HbA1c; authors cautioned that clinical relevance was uncertain and certainty varied.
   limitation: Substantial clinical and intervention heterogeneity; higher-dose and longer-term evidence was comparatively sparse.
-  pmid: '42588058'
+  pmid: "42588058"
   doi: 10.3390/nu18152435
   funding: Funding declaration was not independently extracted for this review.
   sponsorshipStatus: not-assessed
@@ -967,21 +967,21 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
   kind: randomized double-blind placebo-controlled trial
   insight: In hypomagnesemic non-diabetic adults with insulin resistance, magnesium chloride increased serum magnesium and reduced HOMA-IR over three months.
   limitation: Selected deficiency-enriched population; the abstract does not establish downstream clinical outcomes or provide a generalizable elemental dose for all MgCl2 preparations.
-  pmid: '15223977'
+  pmid: "15223977"
   doi: 10.1016/S1262-3636(07)70116-7
   funding: Full funding statement was not inspected in accessible full text.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Full conflict-of-interest statement was not inspected.
   conflictOfInterestStatus: not-assessed
 - id: guerrero-bp-2009
-  title: 'The effect of lowering blood pressure by magnesium supplementation in diabetic hypertensive adults with low serum magnesium levels: a randomized, double-blind, placebo-controlled clinical trial.'
+  title: "The effect of lowering blood pressure by magnesium supplementation in diabetic hypertensive adults with low serum magnesium levels: a randomized, double-blind, placebo-controlled clinical trial."
   authors: F Guerrero-Romero, M Rodríguez-Morán
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19020533/
   kind: randomized double-blind placebo-controlled clinical trial
   insight: Magnesium chloride reduced systolic and diastolic blood pressure more than placebo over four months in diabetic hypertensive adults with hypomagnesemia.
   limitation: Small, selected population receiving captopril; effect size should not be extrapolated to normotensive or magnesium-replete people.
-  pmid: '19020533'
+  pmid: "19020533"
   doi: 10.1038/jhh.2008.129
   funding: Full funding statement was not inspected in accessible full text.
   sponsorshipStatus: not-assessed
@@ -995,7 +995,7 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
   kind: human genetic and molecular study
   insight: Identified TRPM6 mutations causing hereditary hypomagnesemia with secondary hypocalcemia and demonstrated intestinal/kidney expression, establishing a critical role in human Mg homeostasis.
   limitation: Rare monogenic disease establishes physiological necessity but does not predict supplementation effects in the general population.
-  pmid: '12032568'
+  pmid: "12032568"
   doi: 10.1038/ng889
   funding: Full funding disclosure was not independently inspected.
   sponsorshipStatus: not-assessed
@@ -1009,7 +1009,7 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
   kind: cellular mechanism study
   insight: TRPM7-deficient cells became magnesium deficient and growth-arrested, and extracellular magnesium rescued viability, supporting a central cellular Mg-homeostasis role.
   limitation: Cell-model evidence does not establish a clinical effect of oral magnesium supplementation.
-  pmid: '12887921'
+  pmid: "12887921"
   doi: 10.1016/S0092-8674(03)00556-7
   funding: Full funding disclosure was not independently inspected.
   sponsorshipStatus: not-assessed
@@ -1023,7 +1023,7 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
   kind: cellular transport study
   insight: SLC41A1 overexpression in HEK293 cells produced strongly sodium-dependent Mg2+ extrusion consistent with Na+/Mg2+ exchange.
   limitation: Overexpression-cell findings do not by themselves define whole-body flux or clinical supplementation responses.
-  pmid: '22031603'
+  pmid: "22031603"
   doi: 10.1152/ajpcell.00289.2011
   funding: Full funding disclosure was not independently inspected.
   sponsorshipStatus: not-assessed
@@ -1037,7 +1037,7 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
   kind: human genetic and renal-transport study
   insight: CNNM2 mutations caused dominant hypomagnesemia and the protein localized basolaterally in distal renal tubules, supporting an essential role in renal magnesium handling.
   limitation: The genetic/functional evidence supports physiological importance but does not settle every proposed molecular transport mechanism for CNNM2.
-  pmid: '21397062'
+  pmid: "21397062"
   doi: 10.1016/j.ajhg.2011.02.005
   funding: Full funding disclosure was not independently inspected for this article.
   sponsorshipStatus: not-assessed
@@ -1083,4 +1083,3 @@ Human trials and authoritative nutrient sources are summarized by endpoint. A nu
   sourceUrl: https://eur-lex.europa.eu/eli/dir/2002/46
   asOf: 2026-10-04
 ```
-

@@ -289,7 +289,7 @@ for (const [index, record] of substances.entries()) {
     continue;
   } catch { /* A missing file is the stub to write. */ }
   // Identity stubs only. Effects, doses, and legal status stay empty.
-  // Do not add prose copied from PsychonautWiki or molekul.io.
+  // Do not add prose copied from third-party reference sites.
   await writeFile(target, serializeContent(relative, { collection: "substances", record, order: 100 + index }));
   written += 1;
 }

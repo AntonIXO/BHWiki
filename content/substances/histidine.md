@@ -1,15 +1,23 @@
 ---
 slug: histidine
 name: Histidine
-subtitle: Reddit index evidence trail.
+subtitle: Amino acid and derivative
 aliases: []
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
-category: Identity record
-tags: []
-accent: '#a9b993'
+category: Amino acid and derivative
+tags:
+  - drowsiness
+  - anxiety
+  - cognitive-performance
+  - episodic-memory
+  - sleep
+  - depression-severity
+  - fatigue-severity
+  - anxiety-symptom-severity
+accent: "#a9b993"
 reviewedAt: 2026-10-27
 editorialStatus: sourced-draft
 halfLife:
@@ -18,7 +26,6 @@ halfLife:
   high: null
   context: No pharmacokinetic observation was supplied by this identity import.
   sourceId: optihealth-substance-01a08b04-2f4a-7353-bdd8-a7f6a35095f8
-  observationId: histidine-identity-unassessed
 kinetics:
   onset: Not established
   peak: Not established
@@ -27,57 +34,51 @@ kinetics:
   metabolism: Not established
   sourceId: optihealth-substance-01a08b04-2f4a-7353-bdd8-a7f6a35095f8
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 1540
 ---
 
 ## Summary
 
-Histidine is recorded as a canonical identity from a source-backed OptiHealth candidate. This draft does not assert effects, dosing, safety, or efficacy.
+Histidine is an essential amino acid and a precursor of histamine. Studies explore fatigue and cognitive performance.
 
 ## Description
 
-This page records the source-backed identity label Histidine. The import preserves the candidate's aliases and source trail only; molecular structure, pharmacokinetics, effects, dosing, safety, and efficacy remain unestablished here.
+Histidine is an essential amino acid and a precursor of histamine. Studies explore fatigue and cognitive performance.
 
 ## Evidence note
 
-Identity only import: the cited sources support candidate identity provenance, not an evidence review. No biological relationship or clinical claim is asserted.
-
-Reddit index corpus import (3 linked source records; 2 PubMed abstracts). Full-text methods, funding, and conflicts remain unassessed where the source record says so.
-
-PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this Reddit-index entry; structured fields below are limited to abstract-supported findings. PMC full text was used where rights-eligible and available; remaining methods, funding, and conflicts are unassessed.
-
-PubMed MCP abstract review covered 2 PMID-linked records for this Reddit-index entry. Structured fields are limited to abstract-supported findings; PMC full text was retrieved where rights-eligible and available, with remaining methods, funding, and conflicts unassessed.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -88,20 +89,7 @@ PubMed MCP abstract review covered 2 PMID-linked records for this Reddit-index e
 ## Pharmacokinetics
 
 ```yaml
-- id: histidine-identity-unassessed
-  analyte: Histidine
-  route: Not assessed
-  formulation: Identity-only record
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This identity import does not establish a pharmacokinetic observation.
-  sourceId: optihealth-substance-01a08b04-2f4a-7353-bdd8-a7f6a35095f8
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -113,26 +101,26 @@ PubMed MCP abstract review covered 2 PMID-linked records for this Reddit-index e
 ## Effects
 
 ```yaml
-- id: reddit-histidine-drowsiness-25921948
+- id: research-histidine-drowsiness-25921948
   conceptId: drowsiness
   name: Drowsiness
   direction: Increased
   evidence: Human research
-  description: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.'
-  sourceId: reddit-pmid-25921948
-  population: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects.'
+  description: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.
+  sourceId: pubmed-25921948
+  population: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects.
   exposure: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-histidine-anxiety-25056690
+- id: research-histidine-anxiety-25056690
   conceptId: anxiety
   name: Anxiety
   direction: Variable
   evidence: Human research
-  description: 'L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.'
-  sourceId: reddit-pmid-25056690
-  population: 'C57BL/6J male mice at 8 wk of age were assigned to 2 different diets for at least 2 wk: the control (Con) diet (5.08 g L-histidine/kg diet) or the low L-histidine diet (LHD) (1.28 g L-histidine/kg diet).'
+  description: L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.
+  sourceId: pubmed-25056690
+  population: "C57BL/6J male mice at 8 wk of age were assigned to 2 different diets for at least 2 wk: the control (Con) diet (5.08 g L-histidine/kg diet) or the low L-histidine diet (LHD) (1.28 g L-histidine/kg diet)."
   exposure: L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins.
   instrument: null
   magnitude: null
@@ -142,87 +130,87 @@ PubMed MCP abstract review covered 2 PMID-linked records for this Reddit-index e
 ## Outcomes
 
 ```yaml
-- id: reddit-histidine-cognitive-performance-25921948
+- id: research-histidine-cognitive-performance-25921948
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
   evidence: Human research
-  description: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.'
-  sourceId: reddit-pmid-25921948
-  population: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects.'
-  exposure: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.'
+  description: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.
+  sourceId: pubmed-25921948
+  population: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects.
+  exposure: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-histidine-episodic-memory-25921948
+- id: research-histidine-episodic-memory-25921948
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
   evidence: Human research
-  description: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.'
-  sourceId: reddit-pmid-25921948
-  population: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects.'
-  exposure: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.'
+  description: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.
+  sourceId: pubmed-25921948
+  population: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects.
+  exposure: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-histidine-sleep-25921948
+- id: research-histidine-sleep-25921948
   conceptId: sleep
   name: Sleep
   direction: Increased
   evidence: Human research
-  description: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.'
-  sourceId: reddit-pmid-25921948
-  population: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects.'
-  exposure: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.'
+  description: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.
+  sourceId: pubmed-25921948
+  population: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects.
+  exposure: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-histidine-depression-severity-25921948
+- id: research-histidine-depression-severity-25921948
   conceptId: depression-severity
   name: Depression Severity
   direction: Increased
   evidence: Human research
-  description: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.'
-  sourceId: reddit-pmid-25921948
-  population: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects.'
-  exposure: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.'
+  description: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.
+  sourceId: pubmed-25921948
+  population: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects.
+  exposure: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-histidine-fatigue-severity-25921948
+- id: research-histidine-fatigue-severity-25921948
   conceptId: fatigue-severity
   name: Fatigue Severity
   direction: Increased
   evidence: Human research
-  description: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.'
-  sourceId: reddit-pmid-25921948
-  population: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects.'
-  exposure: 'Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.'
+  description: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.
+  sourceId: pubmed-25921948
+  population: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects.
+  exposure: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-histidine-episodic-memory-25056690
+- id: research-histidine-episodic-memory-25056690
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Variable
   evidence: Human research
-  description: 'L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.'
-  sourceId: reddit-pmid-25056690
-  population: 'C57BL/6J male mice at 8 wk of age were assigned to 2 different diets for at least 2 wk: the control (Con) diet (5.08 g L-histidine/kg diet) or the low L-histidine diet (LHD) (1.28 g L-histidine/kg diet).'
-  exposure: 'L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.'
+  description: L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.
+  sourceId: pubmed-25056690
+  population: "C57BL/6J male mice at 8 wk of age were assigned to 2 different diets for at least 2 wk: the control (Con) diet (5.08 g L-histidine/kg diet) or the low L-histidine diet (LHD) (1.28 g L-histidine/kg diet)."
+  exposure: L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-histidine-anxiety-symptom-severity-25056690
+- id: research-histidine-anxiety-symptom-severity-25056690
   conceptId: anxiety-symptom-severity
   name: Anxiety Symptom Severity
   direction: Variable
   evidence: Human research
-  description: 'L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.'
-  sourceId: reddit-pmid-25056690
-  population: 'C57BL/6J male mice at 8 wk of age were assigned to 2 different diets for at least 2 wk: the control (Con) diet (5.08 g L-histidine/kg diet) or the low L-histidine diet (LHD) (1.28 g L-histidine/kg diet).'
-  exposure: 'L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.'
+  description: L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.
+  sourceId: pubmed-25056690
+  population: "C57BL/6J male mice at 8 wk of age were assigned to 2 different diets for at least 2 wk: the control (Con) diet (5.08 g L-histidine/kg diet) or the low L-histidine diet (LHD) (1.28 g L-histidine/kg diet)."
+  exposure: L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.
   instrument: null
   magnitude: null
   reportType: measured-assessment
@@ -238,66 +226,66 @@ PubMed MCP abstract review covered 2 PMID-linked records for this Reddit-index e
 
 ```yaml
 - title: Source-specific finding from PMID 25056690
-  description: 'L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.'
-  sourceId: reddit-pmid-25056690
+  description: L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.
+  sourceId: pubmed-25056690
 ```
 
 ## Claims
 
 ```yaml
-- id: reddit-claim-histidine-25921948-0
-  assertion: 'PMID 25921948 reports: Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.'
+- id: research-claim-histidine-25921948-0
+  assertion: "PMID 25921948 reports: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans."
   relation: associated-with
   participants:
-  - entityId: substance:histidine
-    role: intervention or exposure
-  - entityId: tag:drowsiness
-    role: reported endpoint
+    - entityId: substance:histidine
+      role: intervention or exposure
+    - entityId: tag:drowsiness
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-25921948
+    - pubmed-25921948
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
-- id: reddit-claim-histidine-25921948-1
-  assertion: 'PMID 25921948 reports: Our previous study reported that a dried bonito broth known in Japan as ''dashi'' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.'
+- id: research-claim-histidine-25921948-1
+  assertion: "PMID 25921948 reports: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans."
   relation: associated-with
   participants:
-  - entityId: substance:histidine
-    role: intervention or exposure
-  - entityId: tag:fatigue-severity
-    role: reported endpoint
+    - entityId: substance:histidine
+      role: intervention or exposure
+    - entityId: tag:fatigue-severity
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-25921948
+    - pubmed-25921948
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
-- id: reddit-claim-histidine-25056690-2
-  assertion: 'PMID 25056690 reports: L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.'
+- id: research-claim-histidine-25056690-2
+  assertion: "PMID 25056690 reports: L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine."
   relation: associated-with
   participants:
-  - entityId: substance:histidine
-    role: intervention or exposure
-  - entityId: tag:anxiety
-    role: reported endpoint
+    - entityId: substance:histidine
+      role: intervention or exposure
+    - entityId: tag:anxiety
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-25056690
+    - pubmed-25056690
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
-- id: reddit-claim-histidine-25056690-3
-  assertion: 'PMID 25056690 reports: L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.'
+- id: research-claim-histidine-25056690-3
+  assertion: "PMID 25056690 reports: L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine."
   relation: associated-with
   participants:
-  - entityId: substance:histidine
-    role: intervention or exposure
-  - entityId: tag:anxiety-symptom-severity
-    role: reported endpoint
+    - entityId: substance:histidine
+      role: intervention or exposure
+    - entityId: tag:anxiety-symptom-severity
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-25056690
+    - pubmed-25056690
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
@@ -315,14 +303,6 @@ PubMed MCP abstract review covered 2 PMID-linked records for this Reddit-index e
 []
 ```
 
-## External wiki links
-
-```yaml
-- service: Wikipedia
-  url: https://en.wikipedia.org/wiki/Histidine
-  title: Wikipedia
-```
-
 ## References
 
 ```yaml
@@ -334,7 +314,7 @@ PubMed MCP abstract review covered 2 PMID-linked records for this Reddit-index e
   kind: catalog-identity
   insight: The OptiHealth canonical catalog records this substance identity label.
   limitation: This catalog snapshot is not an independent evidence review and does not establish structure, dose, safety, or efficacy.
-- id: reddit-pmid-25921948
+- id: pubmed-25921948
   title: The effect of histidine on mental fatigue and cognitive performance in subjects with high fatigue and sleep disruption scores.
   authors: Ikuko Sasahara, Naoko Fujimura, Yoshizu Nozawa, Yasufumi Furuhata, Hitoshi Sato
   year: 2015
@@ -342,13 +322,11 @@ PubMed MCP abstract review covered 2 PMID-linked records for this Reddit-index e
   kind: PubMed publication
   insight: Our previous study reported that a dried bonito broth known in Japan as 'dashi' improved or ameliorated mood states, including fatigue, during the daily lives of human subjects. Histidine is an amino acid that is present in dried bonito broth, and we sought to evaluate whether histidine would affect feelings of fatigue in humans.
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '25921948'
+  pmid: "25921948"
   doi: 10.1016/j.physbeh.2015.04.042
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-25056690
+- id: pubmed-25056690
   title: Insufficient intake of L-histidine reduces brain histamine and causes anxiety-like behaviors in male mice.
   authors: Takeo Yoshikawa, Tadaho Nakamura, Tetsuro Shibakusa, Mayu Sugita, Fumito Naganuma, Tomomitsu Iida, Yamato Miura, Attayeb Mohsen, Ryuichi Harada, Kazuhiko Yanai
   year: 2014
@@ -356,23 +334,19 @@ PubMed MCP abstract review covered 2 PMID-linked records for this Reddit-index e
   kind: PubMed publication
   insight: L-histidine is one of the essential amino acids for humans, and it plays a critical role as a component of proteins. L-histidine is also important as a precursor of histamine.
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '25056690'
+  pmid: "25056690"
   doi: 10.3945/jn.114.196105
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-4aab78b75e1f
+- id: publication-link-4aab78b75e1f
   title: Histidine provides long-term neuroprotection after cerebral ischemia through promoting astrocyte migration
   authors: Not established
   year: 2026
   url: https://www.nature.com/articles/srep15356
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 
@@ -380,4 +354,12 @@ PubMed MCP abstract review covered 2 PMID-linked records for this Reddit-index e
 
 ```yaml
 []
+```
+
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Histidine
+  title: Wikipedia
 ```

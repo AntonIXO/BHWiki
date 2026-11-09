@@ -18,6 +18,10 @@ tags:
   - us-schedule-i
   - depression-severity
   - psychological-support
+  - cancer-related-distress
+  - ptsd-severity
+  - heavy-drinking-days
+  - smoking-abstinence
 accent: "#c1a6c5"
 reviewedAt: 2026-10-16
 editorialStatus: sourced-draft
@@ -71,7 +75,7 @@ x-order: 5
 
 ## Summary
 
-Psilocybin is a naturally occurring fungal tryptamine converted after ingestion to psychoactive psilocin. Most efficacy trials use measured oral doses of isolated psilocybin with structured psychological support; evidence from whole-mushroom formulations is much less developed. Depression trials include positive and null primary findings, while PTSD, anxiety and addiction evidence remains indication- and protocol-specific.
+Psilocybin is a mushroom-derived psychedelic converted to psilocin in the body. Research examines its effects on perception, mood and brain activity.
 
 ## Description
 
@@ -531,7 +535,7 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   title: Pharmacokinetics and Pharmacodynamics of Oral Psilocybin Administration in Healthy Participants
   authors: Friederike Holze, Anna M. Becker, Karolina E. Kolaczynska, Urs Duthaler, and Matthias E. Liechti
   year: 2023
-  pmid: '36507738'
+  pmid: "36507738"
   url: https://pubmed.ncbi.nlm.nih.gov/36507738/
   kind: Controlled oral PK/PD study
   insight: Characterized psilocin exposure, half-life, dose proportionality and subjective duration after 15–30 mg oral psilocybin.
@@ -544,7 +548,7 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   title: Psychedelic effects of psilocybin correlate with serotonin 2A receptor occupancy and plasma psilocin levels.
   authors: Martin K Madsen, Patrick M Fisher, Daniel Burmester, Agnete Dyssegaard, Dea S Stenbæk, Sara Kristiansen, Sys S Johansen, Sczabolz Lehel, Kristian Linnet, Claus Svarer, David Erritzoe, Brice Ozenne, Gitte M Knudsen
   year: 2019
-  pmid: '30685771'
+  pmid: "30685771"
   doi: 10.1038/s41386-019-0324-9
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6785028/
   kind: Human PET mechanistic study
@@ -558,7 +562,7 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   title: Acute Effects of Psilocybin After Escitalopram or Placebo Pretreatment in a Randomized, Double-Blind, Placebo-Controlled, Crossover Study in Healthy Subjects.
   authors: Anna M Becker, Friederike Holze, Tanja Grandinetti, Aaron Klaiber, Vanja E Toedtli, Karolina E Kolaczynska, Urs Duthaler, Nimmy Varghese, Anne Eckert, Edna Grünblatt, Matthias E Liechti
   year: 2022
-  pmid: '34743319'
+  pmid: "34743319"
   doi: 10.1002/cpt.2487
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9299061/
   kind: Randomized pharmacology interaction study
@@ -572,7 +576,7 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   title: Effects of discontinuation of serotonergic antidepressants prior to psilocybin therapy versus escitalopram for major depression.
   authors: David Erritzoe, Tommaso Barba, Meg J Spriggs, Fernando E Rosas, David J Nutt, Robin Carhart-Harris
   year: 2024
-  pmid: '38520045'
+  pmid: "38520045"
   doi: 10.1177/02698811241237870
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11102650/
   kind: Post hoc clinical-trial analysis
@@ -583,10 +587,10 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   conflictsOfInterest: Not fully re-extracted from the primary article for this draft.
   conflictOfInterestStatus: not-assessed
 - id: davis2021
-  title: 'Effects of Psilocybin-Assisted Therapy on Major Depressive Disorder: A Randomized Clinical Trial.'
+  title: "Effects of Psilocybin-Assisted Therapy on Major Depressive Disorder: A Randomized Clinical Trial."
   authors: Alan K Davis, Frederick S Barrett, Darrick G May, Mary P Cosimano, Nathan D Sepeda, Matthew W Johnson, Patrick H Finan, Roland R Griffiths
   year: 2021
-  pmid: '33146667'
+  pmid: "33146667"
   doi: 10.1001/jamapsychiatry.2020.3285
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7643046/
   kind: Randomized clinical trial
@@ -600,7 +604,7 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   title: Trial of Psilocybin versus Escitalopram for Depression.
   authors: Robin Carhart-Harris, Bruna Giribaldi, Rosalind Watts, Michelle Baker-Jones, Ashleigh Murphy-Beiner, Roberta Murphy, Jonny Martell, Allan Blemings, David Erritzoe, David J Nutt
   year: 2021
-  pmid: '33852780'
+  pmid: "33852780"
   doi: 10.1056/NEJMoa2032994
   url: https://pubmed.ncbi.nlm.nih.gov/33852780/
   kind: Phase 2 randomized comparative trial
@@ -611,10 +615,10 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   conflictsOfInterest: Authors reported outside consulting or advisory relationships, including relationships with psychedelic-sector organizations; full details are in the journal disclosure.
   conflictOfInterestStatus: not-assessed
 - id: mertens2026
-  title: 'Efficacy and Safety of Psilocybin in Treatment-Resistant Major Depression: The EPISODE Randomized Clinical Trial.'
+  title: "Efficacy and Safety of Psilocybin in Treatment-Resistant Major Depression: The EPISODE Randomized Clinical Trial."
   authors: Lea J Mertens, Michael Koslowski, Felix Betzler, Manuela Brand, Ricarda Evens, Laura Kärtner, Andrea Jungaberle, Henrik Jungaberle, Tomislav Majić, Christian N Schmitz, Andreas Ströhle, Dennis Scharf, Moritz Spangemacher, Max Wolff, Zahra Assadi, Scharif Bahri, Lilith Becher, Luca V Färber, Niklas Kirchen, Eugenia Kulakova, Linda Kunz, Andy Meijer, Barbara Rohrmoser, Stefan Wellek, Moritz M Berger, Gerhard Gründer
   year: 2026
-  pmid: '41848690'
+  pmid: "41848690"
   doi: 10.1001/jamapsychiatry.2026.0132
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13000742/
   kind: Phase 2b randomized clinical trial
@@ -625,10 +629,10 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   conflictsOfInterest: Multiple authors disclosed outside fees, research support, equity or organizational roles involving pharmaceutical or psychedelic-sector organizations.
   conflictOfInterestStatus: not-assessed
 - id: mcgowan2026
-  title: 'Investigating the safety and tolerability of single-dose psilocybin for post-traumatic stress disorder: A nonrandomized open-label clinical trial.'
+  title: "Investigating the safety and tolerability of single-dose psilocybin for post-traumatic stress disorder: A nonrandomized open-label clinical trial."
   authors: Niall M McGowan, James J Rucker, Rachel Yehuda, Manish Agrawal, Nadav Liam Modlin, Hollie Simmons, Agata Tofil-Kaluza, Shriya Das, Guy M Goodwin
   year: 2026
-  pmid: '40883964'
+  pmid: "40883964"
   doi: 10.1177/02698811251362390
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13198616/
   kind: Phase 2 open-label clinical trial
@@ -639,10 +643,10 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   conflictsOfInterest: Several authors were current or former COMPASS employees or held company equity; additional outside relationships were disclosed.
   conflictOfInterestStatus: not-assessed
 - id: griffiths2016
-  title: 'Psilocybin produces substantial and sustained decreases in depression and anxiety in patients with life-threatening cancer: A randomized double-blind trial.'
+  title: "Psilocybin produces substantial and sustained decreases in depression and anxiety in patients with life-threatening cancer: A randomized double-blind trial."
   authors: Roland R Griffiths, Matthew W Johnson, Michael A Carducci, Annie Umbricht, William A Richards, Brian D Richards, Mary P Cosimano, Margaret A Klinedinst
   year: 2016
-  pmid: '27909165'
+  pmid: "27909165"
   doi: 10.1177/0269881116675513
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5367557/
   kind: Randomized double-blind crossover trial
@@ -653,10 +657,10 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   conflictsOfInterest: Roland R Griffiths disclosed service on the Heffter Research Institute board.
   conflictOfInterestStatus: not-assessed
 - id: bogenschutz2022
-  title: 'Percentage of Heavy Drinking Days Following Psilocybin-Assisted Psychotherapy vs Placebo in the Treatment of Adult Patients With Alcohol Use Disorder: A Randomized Clinical Trial.'
+  title: "Percentage of Heavy Drinking Days Following Psilocybin-Assisted Psychotherapy vs Placebo in the Treatment of Adult Patients With Alcohol Use Disorder: A Randomized Clinical Trial."
   authors: Michael P Bogenschutz, Stephen Ross, Snehal Bhatt, Tara Baron, Alyssa A Forcehimes, Eugene Laska, Sarah E Mennenga, Kelley O'Donnell, Lindsey T Owens, Samantha Podrebarac, John Rotrosen, J Scott Tonigan, Lindsay Worth
   year: 2022
-  pmid: '36001306'
+  pmid: "36001306"
   doi: 10.1001/jamapsychiatry.2022.2096
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9403854/
   kind: Randomized active-placebo clinical trial
@@ -667,10 +671,10 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   conflictsOfInterest: Authors disclosed grants, consulting relationships and intellectual-property or commercial relationships involving psychedelic organizations.
   conflictOfInterestStatus: not-assessed
 - id: johnson2026
-  title: 'Psilocybin or Nicotine Patch for Smoking Cessation: A Pilot Randomized Clinical Trial.'
+  title: "Psilocybin or Nicotine Patch for Smoking Cessation: A Pilot Randomized Clinical Trial."
   authors: Matthew W Johnson, Gideon P Naudé, Peter S Hendricks, Albert Garcia-Romeu
   year: 2026
-  pmid: '41805956'
+  pmid: "41805956"
   doi: 10.1001/jamanetworkopen.2026.0972
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12976795/
   kind: Pilot randomized clinical trial
@@ -684,7 +688,7 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   title: A Case Report of Psilocybin-induced Psychosis in a Predisposed Patient.
   authors: Sorsha Lee Morris
   year: 2024
-  pmid: '39420616'
+  pmid: "39420616"
   doi: 10.9758/cpn.24.1180
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11494431/
   kind: Case report
@@ -707,7 +711,7 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   conflictsOfInterest: ClinicalTrials.gov registry metadata do not provide an investigator conflict-of-interest statement.
   conflictOfInterestStatus: not-assessed
 - id: fda2026
-  title: 'Psychedelic Drugs: Considerations for Clinical Investigations'
+  title: "Psychedelic Drugs: Considerations for Clinical Investigations"
   authors: U.S. Food and Drug Administration, Center for Drug Evaluation and Research
   year: 2026
   url: https://www.fda.gov/regulatory-information/search-fda-guidance-documents/psychedelic-drugs-considerations-clinical-investigations
@@ -758,4 +762,3 @@ Randomized depression evidence is mixed: some trials show substantial symptom re
   sourceUrl: https://www.oregon.gov/oha/ph/preventionwellness/pages/psilocybin-access-psilocybin-services.aspx
   asOf: 2026-10-16
 ```
-

@@ -16,6 +16,14 @@ tags:
   - pde5
   - cgmp-signaling
   - smooth-muscle-relaxation
+  - perception
+  - erectile-function
+  - lower-urinary-tract-symptoms
+  - maximum-urinary-flow
+  - walking-capacity
+  - pah-clinical-worsening
+  - exercise
+  - cognitive-performance
 accent: "#8189aa"
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
@@ -66,6 +74,7 @@ x-shape:
   - legal
 x-order: 295
 ---
+
 ## Summary
 
 Tadalafil has established indication-specific evidence for erectile dysfunction, BPH/LUTS and WHO Group 1 pulmonary arterial hypertension. Small healthy-athlete and disease-cognition studies do not support a general exercise or nootropic use claim.
@@ -428,7 +437,7 @@ The strongest evidence is for labeled disease treatment. The healthy-athlete evi
 
 ```yaml
 - id: pubchem
-  title: 'Tadalafil: compound identity'
+  title: "Tadalafil: compound identity"
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/110635
@@ -485,7 +494,7 @@ The strongest evidence is for labeled disease treatment. The healthy-athlete evi
   year: 2021
   url: https://www.frontiersin.org/journals/medicine/articles/10.3389/fmed.2021.744012/full
   doi: 10.3389/fmed.2021.744012
-  pmid: '34712682'
+  pmid: "34712682"
   kind: Systematic review and meta-analysis
   insight: Found a small IPSS improvement without established pooled Qmax benefit.
   limitation: Twelve-week outcomes and limited urodynamic data.
@@ -500,7 +509,7 @@ The strongest evidence is for labeled disease treatment. The healthy-athlete evi
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19470885/
   doi: 10.1161/CIRCULATIONAHA.108.839274
-  pmid: '19470885'
+  pmid: "19470885"
   kind: Randomized placebo-controlled trial
   insight: Tadalafil 40 mg/day improved six-minute walk distance and clinical-worsening outcomes in PAH.
   limitation: Disease-specific endpoints and industry-sponsored pivotal program.
@@ -515,7 +524,7 @@ The strongest evidence is for labeled disease treatment. The healthy-athlete evi
   year: 2008
   url: https://pubmed.ncbi.nlm.nih.gov/17614028/
   doi: 10.1055/s-2007-965131
-  pmid: '17614028'
+  pmid: "17614028"
   kind: Double-blind crossover trial
   insight: A 20 mg acute exposure did not improve VO2max or exercise thresholds in 14 trained men.
   limitation: Small, short normoxic experiment; not evidence about all exercise contexts.
@@ -524,12 +533,12 @@ The strongest evidence is for labeled disease treatment. The healthy-athlete evi
   conflictsOfInterest: Disclosure not recovered.
   conflictOfInterestStatus: not-assessed
 - id: ref-etlas-cognition-2025
-  title: 'Cognitive outcomes after tadalafil treatment in patients with cerebral small vessel disease: ETLAS-2 sub-study'
+  title: "Cognitive outcomes after tadalafil treatment in patients with cerebral small vessel disease: ETLAS-2 sub-study"
   authors: Ölmestig J et al.
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/41332889/
   doi: 10.1016/j.cccb.2025.100520
-  pmid: '41332889'
+  pmid: "41332889"
   kind: Randomized-trial cognitive substudy
   insight: Found no overall cognitive benefit after three months of tadalafil in a disease population.
   limitation: Does not test healthy-person nootropic use; disease population and adherence limits apply.

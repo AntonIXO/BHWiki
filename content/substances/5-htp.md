@@ -1,15 +1,18 @@
 ---
 slug: 5-htp
 name: 5-HTP
-subtitle: Reddit index evidence trail.
+subtitle: Amino acid and derivative
 aliases: []
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
-category: Identity record
-tags: []
-accent: '#a9b993'
+category: Amino acid and derivative
+tags:
+  - sleep
+  - serotonin
+  - dopamine
+accent: "#a9b993"
 reviewedAt: 2026-10-27
 editorialStatus: sourced-draft
 halfLife:
@@ -18,7 +21,6 @@ halfLife:
   high: null
   context: No pharmacokinetic observation was supplied by this identity import.
   sourceId: optihealth-substance-019fe218-4402-73f8-9046-c4ccae708f4f
-  observationId: 5-htp-identity-unassessed
 kinetics:
   onset: Not established
   peak: Not established
@@ -27,53 +29,51 @@ kinetics:
   metabolism: Not established
   sourceId: optihealth-substance-019fe218-4402-73f8-9046-c4ccae708f4f
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 1115
 ---
 
 ## Summary
 
-5-HTP is recorded as a canonical identity from a source-backed OptiHealth candidate. This draft does not assert effects, dosing, safety, or efficacy.
+5-HTP is a precursor used by the body to make serotonin. Research explores mood and other aspects of brain function.
 
 ## Description
 
-This page records the source-backed identity label 5-HTP. The import preserves the candidate's aliases and source trail only; molecular structure, pharmacokinetics, effects, dosing, safety, and efficacy remain unestablished here.
+5-HTP is a precursor used by the body to make serotonin. Research explores mood and other aspects of brain function.
 
 ## Evidence note
 
-Identity only import: the cited sources support candidate identity provenance, not an evidence review. No biological relationship or clinical claim is asserted.
-
-Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-text methods, funding, and conflicts remain unassessed where the source record says so.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -91,7 +91,7 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
-  sourceId: reddit-pmid-20737522
+  sourceId: pubmed-20737522
 - label: PubMed study exposure (12073163)
   amount: 200 mg
   quantity: 200
@@ -105,7 +105,7 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
-  sourceId: reddit-pmid-12073163
+  sourceId: pubmed-12073163
 - label: PubMed study exposure (15146330)
   amount: 2 mg/kg
   quantity: 2
@@ -119,26 +119,13 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
-  sourceId: reddit-pmid-15146330
+  sourceId: pubmed-15146330
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: 5-htp-identity-unassessed
-  analyte: 5-HTP
-  route: Not assessed
-  formulation: Identity-only record
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This identity import does not establish a pharmacokinetic observation.
-  sourceId: optihealth-substance-019fe218-4402-73f8-9046-c4ccae708f4f
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -156,15 +143,15 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
 ## Outcomes
 
 ```yaml
-- id: reddit-5-htp-sleep-15146330
+- id: research-5-htp-sleep-15146330
   conceptId: sleep
   name: Sleep
   direction: Increased
   evidence: Human research
-  description: 'UNLABELLED: To test the hypothesis that the administration of L -5-hydroxytryptophan (L -5-HTP) might exert beneficial effects on sleep terrors, we carried out an open pharmacological trial in a group of children with sleep terrors compared to a group of children with the same disorder but without L -5-HTP treatment.'
-  sourceId: reddit-pmid-15146330
+  description: "UNLABELLED: To test the hypothesis that the administration of L -5-hydroxytryptophan (L -5-HTP) might exert beneficial effects on sleep terrors, we carried out an open pharmacological trial in a group of children with sleep terrors compared to a group of children with the same disorder but without L -5-HTP treatment."
+  sourceId: pubmed-15146330
   population: examined again from the clinical and EEG points of view and (5) after 6 months, a structured interview in order to evaluate the clinical outcome
-  exposure: 'UNLABELLED: To test the hypothesis that the administration of L -5-hydroxytryptophan (L -5-HTP) might exert beneficial effects on sleep terrors, we carried out an open pharmacological trial in a group of children with sleep terrors compared to a group of children with the same disorder but without L -5-HTP treatment.'
+  exposure: "UNLABELLED: To test the hypothesis that the administration of L -5-hydroxytryptophan (L -5-HTP) might exert beneficial effects on sleep terrors, we carried out an open pharmacological trial in a group of children with sleep terrors compared to a group of children with the same disorder but without L -5-HTP treatment."
   instrument: null
   magnitude: null
   reportType: measured-assessment
@@ -174,44 +161,44 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
 
 ```yaml
 - title: Source-specific finding from PMID 23609610
-  description: 'OBJECTIVE: Several studies have suggested that exogenous administration of the serotonin precursor 5-hydroxytryptophan (5-HTP) can result in the ectopic production of serotonin in dopaminergic neurons and a concomitant reduction in dopamine release.'
-  sourceId: reddit-pmid-23609610
+  description: "OBJECTIVE: Several studies have suggested that exogenous administration of the serotonin precursor 5-hydroxytryptophan (5-HTP) can result in the ectopic production of serotonin in dopaminergic neurons and a concomitant reduction in dopamine release."
+  sourceId: pubmed-23609610
 - title: Source-specific finding from PMID 20737522
-  description: 'OBJECTIVE: Although the serotonin precursor 5-hydroxytryptophan (5-HTP) is marketed as a psychoactive nutritional supplement, knowledge is limited regarding the effects of exogenous 5-HTP on brain activity.'
-  sourceId: reddit-pmid-20737522
+  description: "OBJECTIVE: Although the serotonin precursor 5-hydroxytryptophan (5-HTP) is marketed as a psychoactive nutritional supplement, knowledge is limited regarding the effects of exogenous 5-HTP on brain activity."
+  sourceId: pubmed-20737522
 - title: Source-specific finding from PMID 21440001
   description: Carcinoid heart disease was one of the first valvular pathologies studied in molecular detail, and early research identified serotonin produced by oncogenic enterochromaffin cells as the likely culprit in causing changes in heart valve tissue.
-  sourceId: reddit-pmid-21440001
+  sourceId: pubmed-21440001
 - title: Source-specific finding from PMID 12073163
-  description: 'BACKGROUND: Hypersensitivity of brain serotonin receptors has been proposed as a causal mechanism in the pathophysiology of panic disorder.'
-  sourceId: reddit-pmid-12073163
+  description: "BACKGROUND: Hypersensitivity of brain serotonin receptors has been proposed as a causal mechanism in the pathophysiology of panic disorder."
+  sourceId: pubmed-12073163
 ```
 
 ## Cautions
 
 ```yaml
 - title: Source-specific finding from PMID 23609610
-  description: 'OBJECTIVE: Several studies have suggested that exogenous administration of the serotonin precursor 5-hydroxytryptophan (5-HTP) can result in the ectopic production of serotonin in dopaminergic neurons and a concomitant reduction in dopamine release.'
-  sourceId: reddit-pmid-23609610
+  description: "OBJECTIVE: Several studies have suggested that exogenous administration of the serotonin precursor 5-hydroxytryptophan (5-HTP) can result in the ectopic production of serotonin in dopaminergic neurons and a concomitant reduction in dopamine release."
+  sourceId: pubmed-23609610
 - title: Source-specific finding from PMID 15146330
-  description: 'UNLABELLED: To test the hypothesis that the administration of L -5-hydroxytryptophan (L -5-HTP) might exert beneficial effects on sleep terrors, we carried out an open pharmacological trial in a group of children with sleep terrors compared to a group of children with the same disorder but without L -5-HTP treatment.'
-  sourceId: reddit-pmid-15146330
+  description: "UNLABELLED: To test the hypothesis that the administration of L -5-hydroxytryptophan (L -5-HTP) might exert beneficial effects on sleep terrors, we carried out an open pharmacological trial in a group of children with sleep terrors compared to a group of children with the same disorder but without L -5-HTP treatment."
+  sourceId: pubmed-15146330
 ```
 
 ## Claims
 
 ```yaml
-- id: reddit-claim-5-htp-15146330-0
+- id: research-claim-5-htp-15146330-0
   assertion: 5-HTP is associated with the reported sleep finding in this publication.
   relation: associated-with
   participants:
-  - entityId: substance:5-htp
-    role: intervention or exposure
-  - entityId: tag:sleep
-    role: reported endpoint
+    - entityId: substance:5-htp
+      role: intervention or exposure
+    - entityId: tag:sleep
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-15146330
+    - pubmed-15146330
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
@@ -229,17 +216,6 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
 []
 ```
 
-## External wiki links
-
-```yaml
-- service: Wikipedia
-  url: https://en.wikipedia.org/wiki/5htp
-  title: Wikipedia
-- service: Examine
-  url: https://examine.com/supplements/5-HTP
-  title: Examine
-```
-
 ## References
 
 ```yaml
@@ -251,35 +227,31 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   kind: catalog-identity
   insight: The OptiHealth canonical catalog records this substance identity label.
   limitation: This catalog snapshot is not an independent evidence review and does not establish structure, dose, safety, or efficacy.
-- id: reddit-pmid-23609610
-  title: 'Effects of oral 5-hydroxytryptophan on a standardized planning task: insight into possible dopamine/serotonin interactions in the forebrain.'
+- id: pubmed-23609610
+  title: "Effects of oral 5-hydroxytryptophan on a standardized planning task: insight into possible dopamine/serotonin interactions in the forebrain."
   authors: Mathew H Gendle, Erica L Young, Alexandra C Romano
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23609610/
   kind: PubMed publication
-  insight: 'OBJECTIVE: Several studies have suggested that exogenous administration of the serotonin precursor 5-hydroxytryptophan (5-HTP) can result in the ectopic production of serotonin in dopaminergic neurons and a concomitant reduction in dopamine release.'
+  insight: "OBJECTIVE: Several studies have suggested that exogenous administration of the serotonin precursor 5-hydroxytryptophan (5-HTP) can result in the ectopic production of serotonin in dopaminergic neurons and a concomitant reduction in dopamine release."
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '23609610'
+  pmid: "23609610"
   doi: 10.1002/hup.2314
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-20737522
-  title: 'Oral administration of 5-hydroxytryptophan (5-HTP) impairs decision making under ambiguity but not under risk: evidence from the Iowa Gambling Task.'
+- id: pubmed-20737522
+  title: "Oral administration of 5-hydroxytryptophan (5-HTP) impairs decision making under ambiguity but not under risk: evidence from the Iowa Gambling Task."
   authors: Mathew H Gendle, Abbe C Golding
   year: 2010
   url: https://pubmed.ncbi.nlm.nih.gov/20737522/
   kind: PubMed publication
-  insight: 'OBJECTIVE: Although the serotonin precursor 5-hydroxytryptophan (5-HTP) is marketed as a psychoactive nutritional supplement, knowledge is limited regarding the effects of exogenous 5-HTP on brain activity.'
+  insight: "OBJECTIVE: Although the serotonin precursor 5-hydroxytryptophan (5-HTP) is marketed as a psychoactive nutritional supplement, knowledge is limited regarding the effects of exogenous 5-HTP on brain activity."
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '20737522'
+  pmid: "20737522"
   doi: 10.1002/hup.1139
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-21440001
+- id: pubmed-21440001
   title: Serotonin receptors and heart valve disease--it was meant 2B.
   authors: Joshua D Hutcheson, Vincent Setola, Bryan L Roth, W David Merryman
   year: 2011
@@ -287,51 +259,43 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   kind: PubMed publication
   insight: Carcinoid heart disease was one of the first valvular pathologies studied in molecular detail, and early research identified serotonin produced by oncogenic enterochromaffin cells as the likely culprit in causing changes in heart valve tissue.
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '21440001'
+  pmid: "21440001"
   doi: 10.1016/j.pharmthera.2011.03.008
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-ddad3cabbfc2
+- id: publication-link-ddad3cabbfc2
   title: 5-HTP efficacy and contraindications (2012)
   authors: Not established
   year: 2012
   url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3415362/
   kind: PubMed Central publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-12073163
+- id: pubmed-12073163
   title: L-5-hydroxytryptophan induced increase in salivary cortisol in panic disorder patients and healthy volunteers.
   authors: Koen Schruers, Rob van Diest, Nancy Nicolson, Eric Griez
   year: 2002
   url: https://pubmed.ncbi.nlm.nih.gov/12073163/
   kind: PubMed publication
-  insight: 'BACKGROUND: Hypersensitivity of brain serotonin receptors has been proposed as a causal mechanism in the pathophysiology of panic disorder.'
+  insight: "BACKGROUND: Hypersensitivity of brain serotonin receptors has been proposed as a causal mechanism in the pathophysiology of panic disorder."
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '12073163'
+  pmid: "12073163"
   doi: 10.1007/s00213-002-1072-8
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-15146330
+- id: pubmed-15146330
   title: L -5-Hydroxytryptophan treatment of sleep terrors in children.
   authors: Oliviero Bruni, Raffaele Ferri, Silvia Miano, Elisabetta Verrillo
   year: 2004
   url: https://pubmed.ncbi.nlm.nih.gov/15146330/
   kind: PubMed publication
-  insight: 'UNLABELLED: To test the hypothesis that the administration of L -5-hydroxytryptophan (L -5-HTP) might exert beneficial effects on sleep terrors, we carried out an open pharmacological trial in a group of children with sleep terrors compared to a group of children with the same disorder but without L -5-HTP treatment.'
+  insight: "UNLABELLED: To test the hypothesis that the administration of L -5-hydroxytryptophan (L -5-HTP) might exert beneficial effects on sleep terrors, we carried out an open pharmacological trial in a group of children with sleep terrors compared to a group of children with the same disorder but without L -5-HTP treatment."
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '15146330'
+  pmid: "15146330"
   doi: 10.1007/s00431-004-1444-7
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 
@@ -339,4 +303,15 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
 
 ```yaml
 []
+```
+
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/5htp
+  title: Wikipedia
+- service: Examine
+  url: https://examine.com/supplements/5-HTP
+  title: Examine
 ```

@@ -8,9 +8,9 @@ The accepted launch plan is an independent, English-language open-source substan
 - Shared effect, measured-outcome and mechanism/concept pages with original definitions, sources and linked substances.
 - Cytoscape.js graph navigation using the same entities and claims as the articles. Persist hyperedges with member roles and display a relationship node joined to its complete participants. Include focused shareable URLs, bounded neighborhoods, source details and a keyboard-accessible list.
 - Substance articles containing identity/molecule provenance, overview, qualitative subjective effects, measured outcomes, dose contexts, pharmacokinetics, safety, research, connections, dated legal context and public revisions.
-- Methods and contribution pages explaining evidence selection, review status, licensing and repository pull requests.
+- Methods and contribution pages explaining evidence selection, publication history, licensing and repository pull requests.
 
-Initial substances: caffeine, L-theanine, creatine, melatonin, nicotine, psilocybin, modafinil, methylphenidate, diphenhydramine and citicoline. The source-linked launch content remains visibly labeled sourced draft unless a real review is recorded. Missing findings are not assessed or not established.
+Initial substances: caffeine, L-theanine, creatine, melatonin, nicotine, psilocybin, modafinil, methylphenidate, diphenhydramine and citicoline. Content is processed with automated validation; fields with missing information are omitted.
 
 ## Content and interfaces
 
@@ -18,7 +18,7 @@ Claims identify participating entities and roles, applicable context, supporting
 
 No universal substance evidence score or invented radar-chart intensity is permitted. Quantitative charts require real measurements or an explicitly labeled educational model. Caffeine smoke exposure must remain a metabolic context; the decline of CYP1A2 activity after cessation is not caffeine's elimination half-life. Psilocin kinetics must name psilocin.
 
-Immutable revisions preserve the source snapshot, source commit, contributor/reviewer information and publication event. Publishing updates normalized facts, projections and publication pointers atomically. Compare against the current publication so A → B → A records three publications. Publication visibility is separate from editorial review status.
+Immutable revisions preserve the source snapshot, source commit, contributor/reviewer information and publication event. Publishing updates normalized facts, projections and publication pointers atomically. Compare against the current publication so A → B → A records three publications. Publication visibility is separate from editorial publication history.
 
 ## Infrastructure and delivery
 

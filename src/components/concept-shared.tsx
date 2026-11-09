@@ -45,10 +45,6 @@ export function sourceLabel(url: string): string {
   }
 }
 
-export function editorialLabel(status: Substance["editorialStatus"]): string {
-  return status === "editorially-reviewed" ? "Editorially reviewed" : "Sourced draft";
-}
-
 export function sourceAnchor(slug: string, id: string): string {
   return `source-${slug}-${id}`;
 }
@@ -95,11 +91,10 @@ export function PageNav({ label, page, totalPages, previousHref, nextHref }: { l
   );
 }
 
-export function CardActionStatus({ status, direction }: { status: string; direction: string }) {
+export function CardActionStatus({ direction }: { direction: string }) {
   return (
     <CardAction>
       <div className="flex flex-wrap justify-end gap-2">
-        <Badge variant="secondary">{status}</Badge>
         <Badge variant="outline">{direction}</Badge>
       </div>
     </CardAction>

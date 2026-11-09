@@ -12,6 +12,7 @@ category: Psychedelic
 tags:
   - psychedelic
   - phenethylamine
+  - perception
 accent: "#c8a18f"
 reviewedAt: 2026-10-03
 editorialStatus: sourced-draft
@@ -182,14 +183,14 @@ The 3.5-hour value is a model half-life across the studied doses. Predicted subj
   title: Pharmacokinetics, Pharmacodynamics, and Urinary Recovery of Oral Mescaline Hydrochloride in Healthy Participants
   authors: Mueller, Klaiber, and Liechti
   year: 2025
-  pmid: '40658345'
+  pmid: "40658345"
   url: https://pubmed.ncbi.nlm.nih.gov/40658345/
   kind: Population pharmacokinetic study
   insight: Estimates a 3.5-hour half-life, dose-proportional exposure, urinary recovery, and model-predicted effect timing across 100–800 mg.
   limitation: Pooled phase I data and a model. Predicted subjective intensity is not a measured score for each person. The abstract available here was cut off after the pharmacokinetic results.
   funding: Not assessed in this draft.
 - id: pubchem
-  title: 'Mescaline: compound identity and structure'
+  title: "Mescaline: compound identity and structure"
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/4076
@@ -204,4 +205,3 @@ The 3.5-hour value is a model half-life across the studied doses. Predicted subj
 ```yaml
 []
 ```
-

@@ -12,6 +12,11 @@ category: Benzodiazepine
 tags:
   - benzodiazepine
   - depressant
+  - drowsiness
+  - anxiety
+  - anxiety-symptom-severity
+  - cognitive-performance
+  - memory
 accent: "#c4b48a"
 reviewedAt: 2026-10-16
 editorialStatus: sourced-draft
@@ -65,13 +70,7 @@ x-order: 410
 
 ## Summary
 
-Alprazolam is the parent compound represented by PubChem CID 2118 and is a triazolobenzodiazepine marketed in the United States as immediate-release tablets and as extended-release XANAX XR. Current U.S. immediate-release labeling covers acute treatment of generalized anxiety disorder in adults and treatment of panic disorder, with or without agoraphobia, in adults; XANAX XR is labeled for panic disorder. Alprazolam is a Schedule IV controlled substance under U.S. federal law. Sources: pubchem; alprazolam-label; xanax-xr-label; dea-schedules-2026.
-
-The evidence base is indication- and formulation-specific. Older randomized panic-disorder trials found alprazolam superior to placebo across most measured clinical outcomes, while later reanalysis of the FDA trial record for extended-release alprazolam found that only one of five phase 2/3 efficacy trials was clearly positive and estimated a smaller effect when unpublished trials were included. In generalized anxiety disorder, a four-week randomized trial found a statistically significant placebo-adjusted reduction in total Hamilton Anxiety Rating Scale score with alprazolam 1.5 mg/day, but its somatic-anxiety factor did not significantly differ from placebo. These findings should not be collapsed into a single formulation-independent or indication-independent efficacy estimate. Sources: cross-national-panic-1992; rickels-gad-2005; ahn-horst-turner-2024.
-
-Acute healthy-volunteer studies consistently separate desired or subjective effects from objective performance. Oral alprazolam can increase sedation and impair driving, memory, information processing, and psychomotor performance, with effects depending strongly on dose and assessment time. One dose-ranging study found statistically significant performance impairment chiefly at 1 mg and no drug-related change in visual-analog ratings of drug effect; a separate 1 mg on-road study found substantial driving and laboratory impairment. A two-week 0.5 mg nightly study found selected visual-memory impairments but no detected psychomotor slowing on its choice-reaction-time measure. These healthy-volunteer results are not treatment-effect estimates for people with anxiety or panic disorder. Sources: kelly-1997; verster-2002; chowdhury-2016; smith-kroboth-1984.
-
-Dependence, withdrawal, misuse, and interactions are central to alprazolam's risk profile. Current U.S. labeling warns that physical dependence and clinically important withdrawal can occur with therapeutic use, that abrupt discontinuation or rapid dose reduction can precipitate potentially life-threatening reactions including seizures, and that concomitant opioids can cause profound sedation, respiratory depression, coma, and death. A panic-disorder discontinuation report documented both rebound panic and a distinct transient withdrawal syndrome, while an outpatient choice experiment found alprazolam functioned as a reinforcer in most of 14 anxious patients yet did not show accompanying signs of abuse or addiction in most participants. Sources: alprazolam-label; pecknold-1993; roache-1997.
+Alprazolam is a benzodiazepine that enhances GABA-A receptor signalling. Research examines anxiety, sedation and memory.
 
 ## Description
 
@@ -922,7 +921,7 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
 
 ```yaml
 - id: alprazolam-label
-  title: 'These highlights do not include all the information needed to use ALPRAZOLAM TABLETS safely and effectively. See full prescribing information for ALPRAZOLAM TABLETS. ALPRAZOLAM tablets, for oral use, CIV Initial U.S. Approval: 1981'
+  title: "These highlights do not include all the information needed to use ALPRAZOLAM TABLETS safely and effectively. See full prescribing information for ALPRAZOLAM TABLETS. ALPRAZOLAM tablets, for oral use, CIV Initial U.S. Approval: 1981"
   authors: Actavis Pharma, Inc.; U.S. National Library of Medicine DailyMed
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a23063c0-099a-4256-b95f-3a857bbf704b
@@ -935,7 +934,7 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=a23063c0-099a-4256-b95f-3a857bbf704b
 - id: xanax-xr-label
-  title: 'These highlights do not include all the information needed to use XANAX XR safely and effectively. See full prescribing information for XANAX XR. XANAX XR® (alprazolam) extended-release tablets, for oral use, CIV Initial U.S. Approval: 1981'
+  title: "These highlights do not include all the information needed to use XANAX XR safely and effectively. See full prescribing information for XANAX XR. XANAX XR® (alprazolam) extended-release tablets, for oral use, CIV Initial U.S. Approval: 1981"
   authors: Viatris Specialty LLC; U.S. National Library of Medicine DailyMed
   year: 2026
   url: https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=c8990714-c2f5-4b0c-9f1c-91d77156d962
@@ -972,10 +971,10 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   sponsorshipStatus: not-assessed
   conflictsOfInterest: A complete conflict-of-interest declaration was not recovered for this 1992 publication.
   conflictOfInterestStatus: not-assessed
-  pmid: '1540759'
+  pmid: "1540759"
   doi: 10.1192/bjp.160.2.191
 - id: rickels-gad-2005
-  title: 'Pregabalin for Treatment of Generalized Anxiety Disorder: A 4-Week, Multicenter, Double-blind, Placebo-Controlled Trial of Pregabalin and Alprazolam'
+  title: "Pregabalin for Treatment of Generalized Anxiety Disorder: A 4-Week, Multicenter, Double-blind, Placebo-Controlled Trial of Pregabalin and Alprazolam"
   authors: Karl Rickels; Mark H. Pollack; Douglas E. Feltner; R. Bruce Lydiard; Daniel L. Zimbroff; Robert J. Bielski; Kathy Tobias; Jerri D. Brock; Gwen L. Zornberg; Atul C. Pande
   year: 2005
   url: https://jamanetwork.com/journals/jamapsychiatry/fullarticle/1108404
@@ -987,7 +986,7 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   conflictsOfInterest: The inspected article declares extensive pharmaceutical-company consulting, advisory, speaking, and research relationships for several investigators, including relationships with Pfizer; several authors were Pfizer employees.
   conflictOfInterestStatus: declared
   disclosureUrl: https://jamanetwork.com/journals/jamapsychiatry/fullarticle/1108404
-  pmid: '16143734'
+  pmid: "16143734"
   doi: 10.1001/archpsyc.62.9.1022
 - id: ahn-horst-turner-2024
   title: Unpublished trials of alprazolam XR and their influence on its apparent efficacy for panic disorder
@@ -1002,7 +1001,7 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   conflictsOfInterest: Rosa Y. Ahn-Horst declared no competing interests. Erick H. Turner declared former employment as an FDA clinical reviewer and no other competing interests.
   conflictOfInterestStatus: declared
   disclosureUrl: https://www.cambridge.org/core/journals/psychological-medicine/article/unpublished-trials-of-alprazolam-xr-and-their-influence-on-its-apparent-efficacy-for-panic-disorder/B118AF52F7402C1A081822CF57E424D9
-  pmid: '37853797'
+  pmid: "37853797"
   doi: 10.1017/S0033291723002830
 - id: smith-kroboth-1984
   title: Pharmacokinetics and pharmacodynamics of alprazolam after oral and IV administration
@@ -1016,10 +1015,10 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   sponsorshipStatus: not-assessed
   conflictsOfInterest: No complete conflict-of-interest declaration was recovered for this 1984 publication.
   conflictOfInterestStatus: not-assessed
-  pmid: '6152055'
+  pmid: "6152055"
   doi: 10.1007/BF00431449
 - id: wright-1997
-  title: 'Pharmacokinetics and psychomotor performance of alprazolam: concentration-effect relationship'
+  title: "Pharmacokinetics and psychomotor performance of alprazolam: concentration-effect relationship"
   authors: C. Eugene Wright; Theresa L. Sisson; Joseph C. Fleishaker; Edward J. Antal
   year: 1997
   url: https://pubmed.ncbi.nlm.nih.gov/9115058/
@@ -1030,7 +1029,7 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   sponsorshipStatus: not-assessed
   conflictsOfInterest: A separate conflict-of-interest declaration was not recovered; all authors' reported affiliation with The Upjohn Company is retained as relevant sponsorship context rather than interpreted as an undeclared conflict.
   conflictOfInterestStatus: not-assessed
-  pmid: '9115058'
+  pmid: "9115058"
   doi: 10.1002/j.1552-4604.1997.tb04309.x
 - id: kelly-1997
   title: Behavioral effects of alprazolam in humans
@@ -1044,10 +1043,10 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   sponsorshipStatus: not-assessed
   conflictsOfInterest: A conflict-of-interest declaration was not recovered from the accessible publication record.
   conflictOfInterestStatus: not-assessed
-  pmid: '9833000'
+  pmid: "9833000"
   doi: 10.1097/00008877-199702000-00005
 - id: verster-2002
-  title: 'Effects of Alprazolam on Driving Ability, Memory Functioning and Psychomotor Performance: A Randomized, Placebo-controlled Study'
+  title: "Effects of Alprazolam on Driving Ability, Memory Functioning and Psychomotor Performance: A Randomized, Placebo-controlled Study"
   authors: Joris C. Verster; Edmund R. Volkerts; Marinus N. Verbaten
   year: 2002
   url: https://www.nature.com/articles/1395900
@@ -1059,7 +1058,7 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   conflictsOfInterest: No separate conflict-of-interest declaration was located in the inspected article page; funding is therefore reported without inferring author independence.
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://www.nature.com/articles/1395900
-  pmid: '12093599'
+  pmid: "12093599"
   doi: 10.1016/S0893-133X(02)00310-X
 - id: chowdhury-2016
   title: The Effect of Chronic Alprazolam Intake on Memory, Attention, and Psychomotor Performance in Healthy Human Male Volunteers
@@ -1074,10 +1073,10 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   conflictsOfInterest: The inspected full-text declaration states that the authors had no competing interests.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC4947648/
-  pmid: '27462136'
+  pmid: "27462136"
   doi: 10.1155/2016/3730940
 - id: kroboth-1990
-  title: 'Alprazolam in the elderly: pharmacokinetics and pharmacodynamics during multiple dosing'
+  title: "Alprazolam in the elderly: pharmacokinetics and pharmacodynamics during multiple dosing"
   authors: P. D. Kroboth; J. W. McAuley; R. B. Smith
   year: 1990
   url: https://pubmed.ncbi.nlm.nih.gov/2320708/
@@ -1088,7 +1087,7 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   sponsorshipStatus: not-assessed
   conflictsOfInterest: A complete conflict-of-interest declaration was not recovered for this 1990 publication.
   conflictOfInterestStatus: not-assessed
-  pmid: '2320708'
+  pmid: "2320708"
   doi: 10.1007/BF02243999
 - id: roache-1997
   title: Alprazolam-reinforced medication use in outpatients with anxiety
@@ -1102,7 +1101,7 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   sponsorshipStatus: not-assessed
   conflictsOfInterest: A complete conflict-of-interest declaration was not recovered from the accessible publication record.
   conflictOfInterestStatus: not-assessed
-  pmid: '9179516'
+  pmid: "9179516"
   doi: 10.1016/S0376-8716(97)01354-9
 - id: pecknold-1993
   title: Discontinuation reactions to alprazolam in panic disorder
@@ -1116,7 +1115,7 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   sponsorshipStatus: not-assessed
   conflictsOfInterest: A complete conflict-of-interest declaration was not recovered for this publication.
   conflictOfInterestStatus: not-assessed
-  pmid: '8145176'
+  pmid: "8145176"
   doi: 10.1016/0022-3956(93)90025-W
 - id: linnoila-1990
   title: Effects of single doses of alprazolam and diazepam, alone and in combination with ethanol, on psychomotor and cognitive performance and on autonomic nervous system reactivity in healthy volunteers
@@ -1130,7 +1129,7 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   sponsorshipStatus: not-assessed
   conflictsOfInterest: A complete conflict-of-interest declaration was not recovered for this 1990 publication.
   conflictOfInterestStatus: not-assessed
-  pmid: '2276384'
+  pmid: "2276384"
   doi: 10.1007/BF02657051
 - id: zacny-2012
   title: Separate and combined psychopharmacological effects of alprazolam and oxycodone in healthy volunteers
@@ -1145,10 +1144,10 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   conflictsOfInterest: The inspected full-text declaration reports no conflicts of interest for the authors.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC3568773/
-  pmid: '22365897'
+  pmid: "22365897"
   doi: 10.1016/j.drugalcdep.2012.01.023
 - id: greenblatt-ritonavir-2000
-  title: 'Alprazolam-ritonavir interaction: implications for product labeling'
+  title: "Alprazolam-ritonavir interaction: implications for product labeling"
   authors: David J. Greenblatt; Lisa L. von Moltke; Jerold S. Harmatz; A. L. Durol; J. P. Daily; Jennifer A. Graf; Polyxane Mertzanis; Jonathan L. Hoffman; Richard I. Shader
   year: 2000
   url: https://pubmed.ncbi.nlm.nih.gov/10801241/
@@ -1159,7 +1158,7 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   sponsorshipStatus: not-assessed
   conflictsOfInterest: A complete conflict-of-interest declaration was not recovered from the accessible publication record.
   conflictOfInterestStatus: not-assessed
-  pmid: '10801241'
+  pmid: "10801241"
   doi: 10.1067/mcp.2000.105757
 - id: nct06757140
   title: Opioid Drug Interaction Study
@@ -1201,4 +1200,3 @@ No universal subjective-effect duration is assigned in this record. Plasma Tmax,
   sourceUrl: https://www.deadiversion.usdoj.gov/schedules/schedules.html
   note: This record states federal scheduling only. State law and activity-specific requirements can differ and are not generalized from the federal schedule.
 ```
-

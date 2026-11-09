@@ -62,16 +62,12 @@ export default async function HistoryPage({ params }: Props) {
                   <p><PublicationTimestamp value={revision.publishedAt} /></p>
                   <dl className="grid gap-3 sm:grid-cols-2">
                     <div className="flex flex-col gap-1">
-                      <dt className="text-sm text-muted-foreground">Editorial status</dt>
-                      <dd><Badge variant="secondary">{revision.editorialStatus === "editorially-reviewed" ? "Editorially reviewed" : "Sourced draft"}</Badge></dd>
+                      <dt className="text-sm text-muted-foreground">Publication</dt>
+                      <dd>Published</dd>
                     </div>
                     <div className="flex flex-col gap-1">
                       <dt className="text-sm text-muted-foreground">Contributors</dt>
                       <dd>{revision.contributors.length ? revision.contributors.join(", ") : "Not recorded"}</dd>
-                    </div>
-                    <div className="flex flex-col gap-1">
-                      <dt className="text-sm text-muted-foreground">Reviewers</dt>
-                      <dd>{revision.reviewers.length ? revision.reviewers.join(", ") : "No editorial review recorded"}</dd>
                     </div>
                     <div className="flex min-w-0 flex-col gap-1">
                       <dt className="text-sm text-muted-foreground">Source commit</dt>
@@ -93,7 +89,7 @@ export default async function HistoryPage({ params }: Props) {
         <Empty>
           <EmptyHeader>
             <EmptyMedia variant="icon"><GitCommitHorizontal /></EmptyMedia>
-            <EmptyDescription>No database publication events are available in this content mode. The article’s sourced-draft status does not imply editorial review.</EmptyDescription>
+            <EmptyDescription>No publication events are available in this content mode.</EmptyDescription>
           </EmptyHeader>
         </Empty>
       )}

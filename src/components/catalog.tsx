@@ -236,7 +236,6 @@ export default function Catalog({
                   </div>
                 </CardContent>
                 <CardFooter className={cn("justify-between gap-3 text-muted-foreground", view === "list" && "md:mt-0 md:w-48 md:flex-col md:items-start md:justify-center md:border-s md:border-t-0")}>
-                  <span>{substance.editorialStatus === "editorially-reviewed" ? "Editorially reviewed" : "Sourced draft"}</span>
                   <span className="inline-flex items-center gap-1">
                     <Clock3 aria-hidden="true" />
                     {substance.halfLifeLabel}
@@ -273,7 +272,7 @@ export default function Catalog({
 
       <Separator />
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-        <p className="flex-1 text-sm text-muted-foreground">A growing, source-linked collection. Draft articles await independent editorial review.</p>
+        <p className="flex-1 text-sm text-muted-foreground">Explore substances, study findings and their connections.</p>
         <Link href="/contribute" className="inline-flex items-center gap-1 text-sm underline underline-offset-4">
           Contribute <ArrowUpRight aria-hidden="true" />
         </Link>

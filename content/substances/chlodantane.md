@@ -1,7 +1,7 @@
 ---
 slug: chlodantane
 name: Chlodantane
-subtitle: Source-linked research profile.
+subtitle: Experimental compound
 aliases:
   - Хлодантан
 formula: C17H20ClNO
@@ -20,7 +20,6 @@ halfLife:
   high: null
   context: The citation identifies the compound rather than reporting a PubChem half-life finding.
   sourceId: pubchem
-  observationId: chlodantane-identity
 kinetics:
   onset: Not assessed
   peak: Not assessed
@@ -64,23 +63,15 @@ x-order: 161
 
 ## Summary
 
-Chlodantane — N-(adamantan-2-yl)-4-chlorobenzamide. Its benzamide linkage differs from Bromantane's arylamine linkage. This is a secondary-source identity lead; clinical effects and exposure protocols remain unassessed.
+Chlodantane — N-(adamantan-2-yl)-4-chlorobenzamide. Its benzamide linkage differs from Bromantane's arylamine linkage.
 
 ## Description
 
-Chlodantane is an identity record for PubChem CID 959689 (C17H20ClNO). The structure and molecular weight come from that compound record. Salts, stereoisomers, preparations, and commercial products can differ. It is filed as Actoprotector. Effects, doses, pharmacokinetics, interactions, and legal status have not been assessed for this draft.
-
-Chlodantane appears in Molekul's research atlas. The original profile groups it as experimental adamantane / analogue. This describes the atlas's working classification, not an established indication. The existing PubChem identity is retained separately from the newly collected research links.
-
-The Molekul profile was parsed on 2026-10-04. Its classification and linked source trail are discovery information; external documents, cohort overlap, preparation identity and findings have not been independently appraised in this import.
-
-Identity lead from Molekul: N-(adamantan-2-yl)-4-chlorobenzamide. Its benzamide linkage differs from Bromantane's arylamine linkage. This account has not been independently verified against the original chemistry or preparation documentation.
+Chlodantane — N-(adamantan-2-yl)-4-chlorobenzamide. Its benzamide linkage differs from Bromantane's arylamine linkage.
 
 ## Evidence note
 
-Only chemical identity is curated. Effects, doses, pharmacokinetics, interactions, and legal status have not been assessed.
-
-The Molekul profile was parsed on 2026-10-04. Its classification and linked source trail are discovery information; external documents, cohort overlap, preparation identity and findings have not been independently appraised in this import. The year on a source-discovery link is its capture year, not the paper's publication year. Missing doses, kinetics and clinical observations remain unassessed.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -91,20 +82,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 ## Pharmacokinetics
 
 ```yaml
-- id: chlodantane-identity
-  analyte: Chlodantane
-  route: Not assessed
-  formulation: Parent compound record
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: The citation identifies the compound rather than reporting an elimination half-life.
-  sourceId: pubchem
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -159,7 +137,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 
 ```yaml
 - id: pubchem
-  title: 'Chlodantane: compound identity and structure'
+  title: "Chlodantane: compound identity and structure"
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/959689
@@ -167,16 +145,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   insight: Source of the displayed formula, molecular weight, structure, and connectivity SMILES.
   limitation: The parent compound identity is distinct from salts, formulations, and commercial product quality.
   funding: US National Library of Medicine.
-- id: molekul-profile
-  title: 'Chlodantane: Molekul research profile'
-  authors: Molekul
-  year: 2026
-  url: https://molekul.io/compounds/chlodantane
-  kind: Research atlas · accessed 2026
-  insight: Provenance of the imported name, working classification and source trail.
-  limitation: A secondary discovery resource. This import does not independently verify its findings or count its links as independent studies.
-  funding: Not assessed in this import.
-- id: molekul-link-14
+- id: research-link-14
   title: patents.google.com document 15 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -184,8 +153,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-6
+- id: research-link-6
   title: www.researchgate.net document 7 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -193,8 +161,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-7
+- id: research-link-7
   title: www.researchgate.net document 8 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -202,8 +169,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-5
+- id: research-link-5
   title: www.medical-diss.com document 6 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -211,8 +177,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-4
+- id: research-link-4
   title: medical-diss.com document 5 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -220,8 +185,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-8
+- id: research-link-8
   title: patents.google.com document 9 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -229,8 +193,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-9
+- id: research-link-9
   title: patents.google.com document 10 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -238,8 +201,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-46
+- id: research-link-46
   title: sciencejournals.ru document 47 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -247,7 +209,6 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
 ```
 
 ## Legal
@@ -255,4 +216,3 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 ```yaml
 []
 ```
-

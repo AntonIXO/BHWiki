@@ -12,6 +12,8 @@ category: Stimulant
 tags:
   - stimulant
   - phenethylamine
+  - perception
+  - attention
 accent: "#bea17c"
 reviewedAt: 2026-10-03
 editorialStatus: sourced-draft
@@ -21,7 +23,6 @@ halfLife:
   high: null
   context: The citation identifies the compound rather than reporting a PubChem half-life finding.
   sourceId: pubchem
-  observationId: lisdexamfetamine-identity
 kinetics:
   onset: Not assessed
   peak: Not assessed
@@ -65,16 +66,14 @@ x-order: 210
 
 ## Summary
 
-Lisdexamfetamine is recorded here as C15H25N3O, PubChem CID 11597698. It is indexed under Stimulant, Phenethylamine. Effects, doses, pharmacokinetics, interactions, and legal status have not been assessed for this draft.
+Lisdexamfetamine is a prodrug converted to dextroamphetamine. It is studied for attention and other effects of catecholamine signalling.
 
-Placebo-controlled randomized trials demonstrate clinically meaningful reductions in ADHD symptom ratings and binge-eating frequency in diagnosed populations. Evidence does not establish that these benefits generalize to healthy people or translate into superior real-world intellectual performance. Important risks include insomnia, appetite and weight reduction, elevated heart rate and blood pressure, psychiatric adverse reactions, and misuse, addiction, overdose and dependence.
-
-The prodrug formulation changes absorption and active-drug exposure kinetics but does not eliminate amphetamine-associated risks. [sourceId: fda2025, adler2008, mcelroy2016]
 ## Description
 
 Lisdexamfetamine is an identity record for PubChem CID 11597698 (C15H25N3O). The structure and molecular weight come from that compound record. Salts, stereoisomers, preparations, and commercial products can differ. It is indexed under Stimulant, Phenethylamine. Effects, doses, pharmacokinetics, interactions, and legal status have not been assessed for this draft.
 
 Vyvanse is available as oral capsules and chewable tablets. The pharmacological activity is predominantly attributable to the released dextroamphetamine, which enhances catecholaminergic neurotransmission. The conversion step contributes to a comparatively gradual active-drug concentration profile after oral administration; this does not confer immunity from misuse or make the drug nonaddictive. [sourceId: fda2025]
+
 ## Evidence note
 
 Only chemical identity is curated. Effects, doses, pharmacokinetics, interactions, and legal status have not been assessed.
@@ -84,6 +83,7 @@ The strongest direct evidence consists of short-term, randomized, double-blind, 
 The ADHD and BED trials frequently excluded participants with unstable medical or significant psychiatric comorbidity, limiting external validity. Several pivotal trials were sponsored by Shire, with sponsor employees among the authors. Open-label extensions, post hoc analyses and responder-enriched randomized-withdrawal studies are distinguished from independent, unselected placebo-controlled trials.
 
 No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of efficacy in healthy individuals. [sourceId: adler2008, adler2013, mcelroy2015, mcelroy2016, hudson2017]
+
 ## Doses
 
 ```yaml
@@ -94,13 +94,12 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
   unit: not established
   ingredient: lisdexamfetamine
   formulation: Oral lisdexamfetamine dimesylate
-  route: Not established
   frequency: Not established
   duration: Not established
   population: ADHD, age 6 years and older
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
 - label: lisdexamfetamine research exposure 2
   amount: Not established
@@ -109,13 +108,12 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
   unit: not established
   ingredient: lisdexamfetamine
   formulation: Oral lisdexamfetamine dimesylate
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Moderate-to-severe BED, adults
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
 - label: lisdexamfetamine research exposure 3
   amount: Not established
@@ -123,68 +121,49 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
   quantityMax: null
   unit: not established
   ingredient: lisdexamfetamine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Severe renal impairment, GFR 15 to <30 mL/min/1.73 m²
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
+  formulation: Not established
 - label: lisdexamfetamine research exposure 4
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: lisdexamfetamine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: End-stage renal disease, GFR <15 mL/min/1.73 m²
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
+  formulation: Not established
 - label: lisdexamfetamine research exposure 5
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: lisdexamfetamine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Healthy individuals seeking cognitive enhancement
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
+  formulation: Not established
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: lisdexamfetamine-identity
-  analyte: Lisdexamfetamine
-  route: Not assessed
-  formulation: Parent compound record
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: The citation identifies the compound rather than reporting an elimination half-life.
-  sourceId: pubchem
-  modelEligible: false
 - id: dr-lisdexamfetamine-lisdexamfetamine-pk-1
   analyte: Activation
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -192,13 +171,11 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
   modelEligible: false
 - id: dr-lisdexamfetamine-lisdexamfetamine-pk-2
   analyte: Lisdexamfetamine Tmax
-  route: Not established
-  formulation: Not established
   population: Healthy adults
   endpoint: elimination-half-life
   statistic: not-established
@@ -206,13 +183,11 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
   modelEligible: false
 - id: dr-lisdexamfetamine-lisdexamfetamine-pk-3
   analyte: Dextroamphetamine Tmax
-  route: Not established
-  formulation: Not established
   population: Healthy adults
   endpoint: elimination-half-life
   statistic: not-established
@@ -220,13 +195,11 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
   modelEligible: false
 - id: dr-lisdexamfetamine-lisdexamfetamine-pk-4
   analyte: Lisdexamfetamine plasma half-life
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -234,13 +207,11 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
   modelEligible: false
 - id: dr-lisdexamfetamine-lisdexamfetamine-pk-5
   analyte: Dextroamphetamine plasma half-life
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -248,13 +219,11 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
   modelEligible: false
 - id: dr-lisdexamfetamine-lisdexamfetamine-pk-6
   analyte: Food effect
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -262,13 +231,11 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
   modelEligible: false
 - id: dr-lisdexamfetamine-lisdexamfetamine-pk-7
   analyte: Elimination
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -276,13 +243,11 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
   modelEligible: false
 - id: dr-lisdexamfetamine-lisdexamfetamine-pk-8
   analyte: Dialysis
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -290,7 +255,7 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
   modelEligible: false
 ```
@@ -654,34 +619,34 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
 
 ```yaml
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: dr-lisdexamfetamine-s1
 ```
 
@@ -709,7 +674,7 @@ No demonstrated benefit in diagnosed ADHD or BED is treated as evidence of effic
 
 ```yaml
 - id: pubchem
-  title: 'Lisdexamfetamine: compound identity and structure'
+  title: "Lisdexamfetamine: compound identity and structure"
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/11597698

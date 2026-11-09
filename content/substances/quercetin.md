@@ -9,7 +9,14 @@ molecularWeight: 302.24 g/mol
 pubchemCid: 5280343
 smiles: C1=CC(=C(C=C1C2=C(C(=O)C3=C(C2=CC(=C3O)O)O)O)O)O
 category: Polyphenol
-tags: []
+tags:
+  - perception
+  - common-cold-incidence
+  - common-cold-duration
+  - exercise
+  - blood-pressure
+  - insulin-sensitivity
+  - hba1c
 accent: "#a57c65"
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
@@ -226,20 +233,6 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   unit: hours
   context: A 500 mg micellar product produced about 7-fold higher AUC and 7.7-fold higher Cmax than standard quercetin, with sampling extended to 72 hours; the open-label pilot does not establish a universal half-life.
   sourceId: S17
-  modelEligible: false
-- id: dr-quercetin-quercetin-pk-1
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated universal terminal half-life was established in the returned report.
-  sourceId: dr-quercetin-s1
   modelEligible: false
 ```
 
@@ -639,7 +632,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
 
 ```yaml
 - id: S1
-  title: 'Quercetin supplementation and upper respiratory tract infection: A randomized community clinical trial'
+  title: "Quercetin supplementation and upper respiratory tract infection: A randomized community clinical trial"
   authors: Serena A. Heinz; Dru A. Henson; Melanie D. Austin; Fuxia Jin; David C. Nieman
   year: 2010
   url: https://pubmed.ncbi.nlm.nih.gov/20478383/
@@ -713,7 +706,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/17951477/
 - id: S7
-  title: 'Quercetin reduces systolic blood pressure and plasma oxidised low-density lipoprotein concentrations in overweight subjects with a high-cardiovascular disease risk phenotype: a double-blinded, placebo-controlled cross-over study'
+  title: "Quercetin reduces systolic blood pressure and plasma oxidised low-density lipoprotein concentrations in overweight subjects with a high-cardiovascular disease risk phenotype: a double-blinded, placebo-controlled cross-over study"
   authors: Sarah Egert; Christine Boesch-Saadatmandi; Siegfried Wolffram; et al.
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19402938/
@@ -725,7 +718,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S8
-  title: 'Effects of a quercetin-rich onion skin extract on 24 h ambulatory blood pressure and endothelial function in overweight-to-obese patients with (pre-)hypertension: a randomised double-blinded placebo-controlled cross-over trial'
+  title: "Effects of a quercetin-rich onion skin extract on 24 h ambulatory blood pressure and endothelial function in overweight-to-obese patients with (pre-)hypertension: a randomised double-blinded placebo-controlled cross-over trial"
   authors: Verena Brüll; Constanze Burak; Birgit Stoffel-Wagner; et al.
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/26328470/
@@ -737,7 +730,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S9
-  title: 'Acute intake of quercetin from onion skin extract does not influence postprandial blood pressure and endothelial function in overweight-to-obese adults with hypertension: a randomized, double-blind, placebo-controlled, crossover trial'
+  title: "Acute intake of quercetin from onion skin extract does not influence postprandial blood pressure and endothelial function in overweight-to-obese adults with hypertension: a randomized, double-blind, placebo-controlled, crossover trial"
   authors: Verena Brüll; Constanze Burak; Birgit Stoffel-Wagner; et al.
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/26924303/
@@ -749,7 +742,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S10
-  title: 'The effects of Quercetin supplementation on cardiometabolic outcomes: An umbrella review of meta-analyses of randomized controlled trials'
+  title: "The effects of Quercetin supplementation on cardiometabolic outcomes: An umbrella review of meta-analyses of randomized controlled trials"
   authors: Seyyed Mostafa Arabi; et al.
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/37654199/
@@ -761,7 +754,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: 'Effect of quercetin supplementation on plasma lipid profiles, blood pressure, and glucose levels: a systematic review and meta-analysis'
+  title: "Effect of quercetin supplementation on plasma lipid profiles, blood pressure, and glucose levels: a systematic review and meta-analysis"
   authors: Haohai Huang; Dan Liao; Yong Dong; Rong Pu
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/31940027/
@@ -773,7 +766,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: 'Effects of Quercetin on Adiponectin-Mediated Insulin Sensitivity in Polycystic Ovary Syndrome: A Randomized Placebo-Controlled Double-Blind Clinical Trial'
+  title: "Effects of Quercetin on Adiponectin-Mediated Insulin Sensitivity in Polycystic Ovary Syndrome: A Randomized Placebo-Controlled Double-Blind Clinical Trial"
   authors: N. Rezvan; A. Moini; L. Janani; et al.
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/27824398/
@@ -785,7 +778,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S13
-  title: 'Benefits of Quercetin on Glycated Hemoglobin, Blood Pressure, PiKo-6 Readings, Night-Time Sleep, Anxiety, and Quality of Life in Patients with Type 2 Diabetes Mellitus: A Randomized Controlled Trial'
+  title: "Benefits of Quercetin on Glycated Hemoglobin, Blood Pressure, PiKo-6 Readings, Night-Time Sleep, Anxiety, and Quality of Life in Patients with Type 2 Diabetes Mellitus: A Randomized Controlled Trial"
   authors: Aikaterini E. Mantadaki; et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38930033/
@@ -834,7 +827,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Company affiliation disclosed; formal statement not assessed.
   conflictOfInterestStatus: declared
 - id: S17
-  title: 'A Pharmacokinetic Study of Different Quercetin Formulations in Healthy Participants: A Diet-Controlled, Crossover, Single- and Multiple-Dose Pilot Study'
+  title: "A Pharmacokinetic Study of Different Quercetin Formulations in Healthy Participants: A Diet-Controlled, Crossover, Single- and Multiple-Dose Pilot Study"
   authors: Julie Solnier; et al.
   year: 2023
   url: https://onlinelibrary.wiley.com/doi/10.1155/2023/9727539
@@ -908,7 +901,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC9608098/
 - id: S23
-  title: 'Interaction of quercetin and its metabolites with warfarin: displacement of warfarin from serum albumin and inhibition of CYP2C9 enzyme'
+  title: "Interaction of quercetin and its metabolites with warfarin: displacement of warfarin from serum albumin and inhibition of CYP2C9 enzyme"
   authors: M. Poór; G. Boda; P. W. Needs; et al.
   year: 2017
   url: https://doi.org/10.1016/j.biopha.2017.01.092
@@ -920,7 +913,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: S24
-  title: 'The Pharmacological Activity, Biochemical Properties, and Pharmacokinetics of the Major Natural Polyphenolic Flavonoid: Quercetin'
+  title: "The Pharmacological Activity, Biochemical Properties, and Pharmacokinetics of the Major Natural Polyphenolic Flavonoid: Quercetin"
   authors: G. S. Batiha; A. M. Beshbishy; L. G. Wasef; et al.
   year: 2020
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7143931/
@@ -933,7 +926,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC7143931/
 - id: S25
-  title: 'GRAS Notice GRN No. 341: Quercetin'
+  title: "GRAS Notice GRN No. 341: Quercetin"
   authors: U.S. Food and Drug Administration
   year: 2010
   url: https://hfpappexternal.fda.gov/scripts/fdcc/index.cfm?id=341&set=GRASNotices
@@ -957,7 +950,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not applicable
   conflictOfInterestStatus: not-assessed
 - id: S27
-  title: 'The effect of quercetin on the prevention or treatment of COVID-19 and other respiratory tract infections in humans: A rapid review'
+  title: "The effect of quercetin on the prevention or treatment of COVID-19 and other respiratory tract infections in humans: A rapid review"
   authors: University of California, Los Angeles and Griffith University evidence-review team
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/32837891/
@@ -969,7 +962,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Not assessed in the returned report.
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s1
-  title: 'Quercetin supplementation and upper respiratory tract infection: A randomized community clinical trial'
+  title: "Quercetin supplementation and upper respiratory tract infection: A randomized community clinical trial"
   authors: Serena A. Heinz; Dru A. Henson; Melanie D. Austin; Fuxia Jin; David C. Nieman
   year: 2010
   url: https://pubmed.ncbi.nlm.nih.gov/20478383/
@@ -1041,7 +1034,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s7
-  title: 'Quercetin reduces systolic blood pressure and plasma oxidised low-density lipoprotein concentrations in overweight subjects with a high-cardiovascular disease risk phenotype: a double-blinded, placebo-controlled cross-over study'
+  title: "Quercetin reduces systolic blood pressure and plasma oxidised low-density lipoprotein concentrations in overweight subjects with a high-cardiovascular disease risk phenotype: a double-blinded, placebo-controlled cross-over study"
   authors: Sarah Egert; Christine Boesch-Saadatmandi; Siegfried Wolffram; et al.
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19402938/
@@ -1053,7 +1046,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s8
-  title: 'Effects of a quercetin-rich onion skin extract on 24 h ambulatory blood pressure and endothelial function in overweight-to-obese patients with (pre-)hypertension: a randomised double-blinded placebo-controlled cross-over trial'
+  title: "Effects of a quercetin-rich onion skin extract on 24 h ambulatory blood pressure and endothelial function in overweight-to-obese patients with (pre-)hypertension: a randomised double-blinded placebo-controlled cross-over trial"
   authors: Verena Brüll; Constanze Burak; Birgit Stoffel-Wagner; et al.
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/26328470/
@@ -1065,7 +1058,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s9
-  title: 'Acute intake of quercetin from onion skin extract does not influence postprandial blood pressure and endothelial function in overweight-to-obese adults with hypertension: a randomized, double-blind, placebo-controlled, crossover trial'
+  title: "Acute intake of quercetin from onion skin extract does not influence postprandial blood pressure and endothelial function in overweight-to-obese adults with hypertension: a randomized, double-blind, placebo-controlled, crossover trial"
   authors: Verena Brüll; Constanze Burak; Birgit Stoffel-Wagner; et al.
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/26924303/
@@ -1077,7 +1070,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s10
-  title: 'The effects of Quercetin supplementation on cardiometabolic outcomes: An umbrella review of meta-analyses of randomized controlled trials'
+  title: "The effects of Quercetin supplementation on cardiometabolic outcomes: An umbrella review of meta-analyses of randomized controlled trials"
   authors: Seyyed Mostafa Arabi; et al.
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/37654199/
@@ -1089,7 +1082,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s11
-  title: 'Effect of quercetin supplementation on plasma lipid profiles, blood pressure, and glucose levels: a systematic review and meta-analysis'
+  title: "Effect of quercetin supplementation on plasma lipid profiles, blood pressure, and glucose levels: a systematic review and meta-analysis"
   authors: Haohai Huang; Dan Liao; Yong Dong; Rong Pu
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/31940027/
@@ -1101,7 +1094,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s12
-  title: 'Effects of Quercetin on Adiponectin-Mediated Insulin Sensitivity in Polycystic Ovary Syndrome: A Randomized Placebo-Controlled Double-Blind Clinical Trial'
+  title: "Effects of Quercetin on Adiponectin-Mediated Insulin Sensitivity in Polycystic Ovary Syndrome: A Randomized Placebo-Controlled Double-Blind Clinical Trial"
   authors: N. Rezvan; A. Moini; L. Janani; et al.
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/27824398/
@@ -1113,7 +1106,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s13
-  title: 'Benefits of Quercetin on Glycated Hemoglobin, Blood Pressure, PiKo-6 Readings, Night-Time Sleep, Anxiety, and Quality of Life in Patients with Type 2 Diabetes Mellitus: A Randomized Controlled Trial'
+  title: "Benefits of Quercetin on Glycated Hemoglobin, Blood Pressure, PiKo-6 Readings, Night-Time Sleep, Anxiety, and Quality of Life in Patients with Type 2 Diabetes Mellitus: A Randomized Controlled Trial"
   authors: Aikaterini E. Mantadaki; et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38930033/
@@ -1161,7 +1154,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: Company affiliation disclosed; formal statement not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s17
-  title: 'A Pharmacokinetic Study of Different Quercetin Formulations in Healthy Participants: A Diet-Controlled, Crossover, Single- and Multiple-Dose Pilot Study'
+  title: "A Pharmacokinetic Study of Different Quercetin Formulations in Healthy Participants: A Diet-Controlled, Crossover, Single- and Multiple-Dose Pilot Study"
   authors: Julie Solnier; et al.
   year: 2023
   url: https://onlinelibrary.wiley.com/doi/10.1155/2023/9727539"
@@ -1233,7 +1226,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: No potential conflicts declared
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s23
-  title: 'Interaction of quercetin and its metabolites with warfarin: displacement of warfarin from serum albumin and inhibition of CYP2C9 enzyme'
+  title: "Interaction of quercetin and its metabolites with warfarin: displacement of warfarin from serum albumin and inhibition of CYP2C9 enzyme"
   authors: M. Poór; G. Boda; P. W. Needs; et al.
   year: 2017
   url: https://doi.org/10.1016/j.biopha.2017.01.092"
@@ -1245,7 +1238,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s24
-  title: 'The Pharmacological Activity, Biochemical Properties, and Pharmacokinetics of the Major Natural Polyphenolic Flavonoid: Quercetin'
+  title: "The Pharmacological Activity, Biochemical Properties, and Pharmacokinetics of the Major Natural Polyphenolic Flavonoid: Quercetin"
   authors: G. S. Batiha; A. M. Beshbishy; L. G. Wasef; et al.
   year: 2020
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7143931/"
@@ -1269,7 +1262,7 @@ This page separates primary human trials, human pharmacokinetic studies, pooled 
   conflictsOfInterest: not-applicable
   conflictOfInterestStatus: not-assessed
 - id: dr-quercetin-s27
-  title: 'The effect of quercetin on the prevention or treatment of COVID-19 and other respiratory tract infections in humans: A rapid review'
+  title: "The effect of quercetin on the prevention or treatment of COVID-19 and other respiratory tract infections in humans: A rapid review"
   authors: University of California, Los Angeles and Griffith University evidence-review team
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/32837891/

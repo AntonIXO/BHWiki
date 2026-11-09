@@ -13,6 +13,11 @@ smiles: C(C(=O)[O-])N.C(C(=O)[O-])N.[Mg+2]
 category: Magnesium salt
 tags:
   - magnesium-homeostasis
+  - perception
+  - sleep
+  - memory
+  - fatigue-severity
+  - attention
 accent: "#8090a0"
 reviewedAt: 2026-10-11
 editorialStatus: sourced-draft
@@ -66,7 +71,7 @@ x-order: 9007199254740991
 
 ## Summary
 
-Magnesium glycinate and bisglycinate commonly describe the same chelate; the anhydrous compound is about 14.1% elemental magnesium. One short sleep RCT found a small self-reported benefit, but it co-delivered 1,523 mg/day glycine. Overall cognition was null, and deficiency evidence remains disease-specific and dose-ambiguous. [mgc-pubchem] [mgc-sleep] [mgc-cognition]
+1% elemental magnesium. One short sleep RCT found a small self-reported benefit, but it co-delivered 1,523 mg/day glycine.
 
 ## Description
 
@@ -160,75 +165,70 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   quantityMax: null
   unit: not established
   ingredient: magnesium-glycinate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mgc-pubchem
+  population: Not established
+  formulation: Not established
 - label: magnesium-glycinate research exposure 2
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-glycinate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mgc-pubchem
+  population: Not established
+  formulation: Not established
 - label: magnesium-glycinate research exposure 3
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-glycinate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mgc-pubchem
+  population: Not established
+  formulation: Not established
 - label: magnesium-glycinate research exposure 4
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-glycinate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mgc-pubchem
+  population: Not established
+  formulation: Not established
 - label: magnesium-glycinate research exposure 5
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-glycinate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mgc-pubchem
+  population: Not established
+  formulation: Not established
 ```
 
 ## Pharmacokinetics
@@ -250,8 +250,6 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   modelEligible: false
 - id: dr-magnesium-glycinate-magnesium-glycinate-pk-1
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -264,8 +262,6 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   modelEligible: false
 - id: dr-magnesium-glycinate-magnesium-glycinate-pk-2
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -278,8 +274,6 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   modelEligible: false
 - id: dr-magnesium-glycinate-magnesium-glycinate-pk-3
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -292,8 +286,6 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   modelEligible: false
 - id: dr-magnesium-glycinate-magnesium-glycinate-pk-4
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -306,8 +298,6 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   modelEligible: false
 - id: dr-magnesium-glycinate-magnesium-glycinate-pk-5
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -436,10 +426,10 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: mgc-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-glycinate-magnesium-glycinate-effect-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -449,10 +439,10 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: mgc-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-glycinate-magnesium-glycinate-effect-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -462,10 +452,10 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: mgc-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-glycinate-magnesium-glycinate-effect-4
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -475,10 +465,10 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: mgc-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-glycinate-magnesium-glycinate-effect-5
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -488,10 +478,10 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: mgc-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -539,10 +529,10 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: mgc-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-glycinate-magnesium-glycinate-outcome-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -552,10 +542,10 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: mgc-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-glycinate-magnesium-glycinate-outcome-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -565,10 +555,10 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: mgc-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-glycinate-magnesium-glycinate-outcome-4
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -578,10 +568,10 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: mgc-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-glycinate-magnesium-glycinate-outcome-5
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -591,10 +581,10 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: mgc-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Mechanisms
@@ -888,7 +878,7 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://ods.od.nih.gov/factsheets/magnesium-healthProfessional/
 - id: mgc-sleep
-  title: 'Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial.'
+  title: "Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial."
   authors: Julius Schuster, Igor Cycelskij, Adrian Lopresti, Andreas Hahn
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12412596/
@@ -901,7 +891,7 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12412596/
 - id: mgc-cognition
-  title: 'Ca:Mg Ratio, APOE Cytosine Modifications, and Cognitive Function: Results from a Randomized Trial'
+  title: "Ca:Mg Ratio, APOE Cytosine Modifications, and Cognitive Function: Results from a Randomized Trial"
   authors: Xiaoli Zhu; Adam R. Borenstein; Yujing Zheng; Wen Zhang; et al.
   year: 2020
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7737669/
@@ -914,7 +904,7 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC7737669/
 - id: mgc-pregnancy
-  title: 'Oral magnesium for relief in pregnancy-induced leg cramps: a randomised controlled trial'
+  title: "Oral magnesium for relief in pregnancy-induced leg cramps: a randomised controlled trial"
   authors: Chayanis Supakatisant; Vorapong Phupong
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/22909270/
@@ -925,7 +915,7 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   sponsorshipStatus: not-assessed
   conflictsOfInterest: No conflict reported in the evidence extraction.
   conflictOfInterestStatus: not-assessed
-  pmid: '22909270'
+  pmid: "22909270"
 - id: mgc-deficiency
   title: Efficacy and safety of magnesium glycinate as add on therapy in hypomagnesemic asthma and chronic obstructive pulmonary disease patients
   authors: Maneesh Kumar Maddirevula; Muhasaparur G. Rajanandh; Boman Wesley
@@ -939,9 +929,9 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   conflictsOfInterest: Authors declared no known competing financial interests or relationships.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/42633850/
-  pmid: '42633850'
+  pmid: "42633850"
 - id: mgc-brilli
-  title: 'Magnesium bioavailability after administration of sucrosomial magnesium: comparative crossover study'
+  title: "Magnesium bioavailability after administration of sucrosomial magnesium: comparative crossover study"
   authors: E. Brilli; S. Khadge; A. Fabiano; et al.
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/29630135/
@@ -953,7 +943,7 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   conflictsOfInterest: Commercial affiliation creates potential relevance; detailed COI unclear.
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/29630135/
-  pmid: '29630135'
+  pmid: "29630135"
 - id: mgc-review
   title: Intestinal Absorption and Factors Influencing Bioavailability of Magnesium—An Update
   authors: J. P. Schuchardt; A. Hahn
@@ -980,7 +970,7 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://www.tga.gov.au/resources/artg/363829
 - id: mgc-balchem
-  title: 'TRAACS Product List: Albion Minerals'
+  title: "TRAACS Product List: Albion Minerals"
   authors: Balchem Corporation
   year: 2024
   url: https://balchem.com/human-nutrition-health/wp-content/uploads/sites/2/2024/03/TRAACS_Product-list_Albion-Minerals.pdf
@@ -1019,7 +1009,7 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://www.fda.gov/food/dietary-supplements/structurefunction-claims
 - id: dr-magnesium-glycinate-s3
-  title: 'Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial.'
+  title: "Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial."
   authors: Julius Schuster, Igor Cycelskij, Adrian Lopresti, Andreas Hahn
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12412596/
@@ -1030,7 +1020,7 @@ Direct human evidence is limited to short or disease-specific trials. No human s
   sponsorshipStatus: not-assessed
   conflictsOfInterest: No commercial funding was reported in the accessible funding statement; manufacturer relationship beyond product supply is unclear.
   conflictOfInterestStatus: not-assessed
-  pmid: '40918053'
+  pmid: "40918053"
   doi: 10.2147/NSS.S524348
 - id: dr-magnesium-glycinate-s9
   title: EFSA opinion on certain bisglycinates as sources of copper, zinc, calcium, magnesium and glycinate nicotinate as a source of chromium in foods

@@ -1,7 +1,7 @@
 ---
 slug: magnesium-malate
 name: Magnesium malate
-subtitle: A magnesium salt with mixed-formulation fibromyalgia and status evidence.
+subtitle: Magnesium salt
 aliases:
   - magnesium malate
   - magnesium 2-hydroxybutanedioate
@@ -12,6 +12,10 @@ smiles: C(C(C(=O)[O-])O)C(=O)[O-].[Mg+2]
 category: Magnesium salt
 tags:
   - magnesium-homeostasis
+  - perception
+  - fatigue-severity
+  - memory
+  - attention
 accent: "#8090a0"
 reviewedAt: 2026-10-11
 editorialStatus: sourced-draft
@@ -73,7 +77,7 @@ Retail names include mono-, hydrated and di-magnesium malate materials. The publ
 
 ## Evidence note
 
-The page separates combination-product outcomes from isolated magnesium malate claims. Evidence is small, partly uncontrolled and partly industry-linked; no analyte-specific human terminal half-life was established. [mmm-russell] [mmm-ferreira] [mmm-weiss]
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -159,105 +163,98 @@ The page separates combination-product outcomes from isolated magnesium malate c
   quantityMax: null
   unit: not established
   ingredient: magnesium-malate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mmm-pubchem
+  population: Not established
+  formulation: Not established
 - label: magnesium-malate research exposure 2
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-malate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mmm-pubchem
+  population: Not established
+  formulation: Not established
 - label: magnesium-malate research exposure 3
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-malate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mmm-pubchem
+  population: Not established
+  formulation: Not established
 - label: magnesium-malate research exposure 4
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-malate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mmm-pubchem
+  population: Not established
+  formulation: Not established
 - label: magnesium-malate research exposure 5
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-malate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mmm-pubchem
+  population: Not established
+  formulation: Not established
 - label: magnesium-malate research exposure 6
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-malate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mmm-pubchem
+  population: Not established
+  formulation: Not established
 - label: magnesium-malate research exposure 7
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-malate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mmm-pubchem
+  population: Not established
+  formulation: Not established
 ```
 
 ## Pharmacokinetics
@@ -279,8 +276,6 @@ The page separates combination-product outcomes from isolated magnesium malate c
   modelEligible: false
 - id: dr-magnesium-malate-magnesium-malate-pk-1
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -293,8 +288,6 @@ The page separates combination-product outcomes from isolated magnesium malate c
   modelEligible: false
 - id: dr-magnesium-malate-magnesium-malate-pk-2
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -307,8 +300,6 @@ The page separates combination-product outcomes from isolated magnesium malate c
   modelEligible: false
 - id: dr-magnesium-malate-magnesium-malate-pk-3
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -321,8 +312,6 @@ The page separates combination-product outcomes from isolated magnesium malate c
   modelEligible: false
 - id: dr-magnesium-malate-magnesium-malate-pk-4
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -335,8 +324,6 @@ The page separates combination-product outcomes from isolated magnesium malate c
   modelEligible: false
 - id: dr-magnesium-malate-magnesium-malate-pk-5
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -444,10 +431,10 @@ The page separates combination-product outcomes from isolated magnesium malate c
   evidence: Human research
   description: The blinded Super Malic phase did not outperform placebo on pain, tender-point index, tender-point average, function, depression, or perceived stress; pain and tenderness improved only during the later open-label escalation.
   sourceId: mmm-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-malate-magnesium-malate-effect-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -457,10 +444,10 @@ The page separates combination-product outcomes from isolated magnesium malate c
   evidence: Human research
   description: Fatigue and sexual-energy questionnaire items improved after 30 days in the multinutrient MagSRT study, but the authors explicitly stated that magnesium alone could not be credited.
   sourceId: mmm-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-malate-magnesium-malate-effect-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -470,10 +457,10 @@ The page separates combination-product outcomes from isolated magnesium malate c
   evidence: Human research
   description: Timed-release di-magnesium malate increased serum magnesium acutely and red-blood-cell magnesium over 30–90 days in one product-specific study.
   sourceId: mmm-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-malate-magnesium-malate-effect-4
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -483,10 +470,10 @@ The page separates combination-product outcomes from isolated magnesium malate c
   evidence: Human research
   description: In the MagSRT study, 6 of 53 intervention participants reported loose stools or diarrhea and 2 reported gastrointestinal symptoms; 5 participants did not complete the trial because of side effects.
   sourceId: mmm-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-malate-magnesium-malate-effect-5
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -496,10 +483,10 @@ The page separates combination-product outcomes from isolated magnesium malate c
   evidence: Human research
   description: Thirteen of 24 randomized participants reported at least one adverse event, but investigators did not attribute events to malic acid or magnesium; gastrointestinal symptoms predominated during open-label treatment.
   sourceId: mmm-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -536,10 +523,10 @@ The page separates combination-product outcomes from isolated magnesium malate c
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: mmm-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-malate-magnesium-malate-outcome-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -549,10 +536,10 @@ The page separates combination-product outcomes from isolated magnesium malate c
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: mmm-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-malate-magnesium-malate-outcome-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -562,10 +549,10 @@ The page separates combination-product outcomes from isolated magnesium malate c
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: mmm-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-malate-magnesium-malate-outcome-4
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -575,10 +562,10 @@ The page separates combination-product outcomes from isolated magnesium malate c
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: mmm-pubchem
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Mechanisms
@@ -860,7 +847,7 @@ The page separates combination-product outcomes from isolated magnesium malate c
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/
 - id: mmm-abraham
-  title: 'Management of Fibromyalgia: Rationale for the Use of Magnesium and Malic Acid'
+  title: "Management of Fibromyalgia: Rationale for the Use of Magnesium and Malic Acid"
   authors: Guy E. Abraham; Jorge D. Flechas
   year: 1992
   url: https://doi.org/10.3109/13590849208997961
@@ -874,7 +861,7 @@ The page separates combination-product outcomes from isolated magnesium malate c
   disclosureUrl: https://doi.org/10.3109/13590849208997961
   doi: 10.3109/13590849208997961
 - id: mmm-russell
-  title: 'Treatment of fibromyalgia syndrome with Super Malic: randomized, double blind, placebo controlled, crossover pilot'
+  title: "Treatment of fibromyalgia syndrome with Super Malic: randomized, double blind, placebo controlled, crossover pilot"
   authors: I. J. Russell; J. E. Michalek; J. D. Flechas; G. E. Abraham
   year: 1995
   url: https://pubmed.ncbi.nlm.nih.gov/8587088/
@@ -886,7 +873,7 @@ The page separates combination-product outcomes from isolated magnesium malate c
   conflictsOfInterest: G. E. Abraham was Medical Director of Optimox; manufacturer involvement disclosed.
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/8587088/
-  pmid: '8587088'
+  pmid: "8587088"
 - id: mmm-ferreira
   title: Magnesium and malic acid supplement for fibromyalgia
   authors: Isadora Ferreira; Ángela Ortigoza; Philippa Moore
@@ -900,7 +887,7 @@ The page separates combination-product outcomes from isolated magnesium malate c
   conflictsOfInterest: Authors declared no relevant interests.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/31150373/
-  pmid: '31150373'
+  pmid: "31150373"
 - id: mmm-efsa
   title: Evaluation of di-magnesium malate as a novel food ingredient and magnesium source
   authors: EFSA Panel on Food Additives and Nutrient Sources added to Food
@@ -915,7 +902,7 @@ The page separates combination-product outcomes from isolated magnesium malate c
   conflictOfInterestStatus: not-assessed
   doi: 10.2903/j.efsa.2018.5292
 - id: mmm-weiss
-  title: 'Scottsdale Magnesium Study: Absorption, Cellular Uptake, and Clinical Effectiveness of a Timed-Release Magnesium Supplement'
+  title: "Scottsdale Magnesium Study: Absorption, Cellular Uptake, and Clinical Effectiveness of a Timed-Release Magnesium Supplement"
   authors: Decker Weiss; Debra K. Brunk; Dennis A. Goodman
   year: 2018
   url: https://doi.org/10.1080/07315724.2017.1398686
@@ -953,18 +940,6 @@ The page separates combination-product outcomes from isolated magnesium malate c
   conflictsOfInterest: None stated.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/label-claims-conventional-foods-and-dietary-supplements
-- id: dr-magnesium-malate-s11
-  title: Magnesium malate has been a game changer!!
-  authors: Pseudonymous Reddit user, r/Fibromyalgia
-  year: 2026
-  url: https://www.reddit.com/r/Fibromyalgia/comments/1w7an4f/magnesium_malate_has_been_a_game_changer/
-  kind: user-generated anecdotal experience
-  insight: Reports a personal perceived benefit from magnesium malate.
-  limitation: Uncontrolled, self-selected, unverifiable product and dose, and subject to placebo, regression-to-the-mean, and co-intervention effects.
-  funding: None stated.
-  sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not stated.
-  conflictOfInterestStatus: not-assessed
 ```
 
 ## Legal

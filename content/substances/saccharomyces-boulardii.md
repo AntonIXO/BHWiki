@@ -11,7 +11,12 @@ molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: probiotic yeast
-tags: []
+tags:
+  - antibiotic-associated-diarrhea-incidence
+  - clostridioides-difficile-recurrence
+  - diarrhea-duration
+  - gut-microbiota-composition
+  - clostridioides-difficile-toxin-proteolysis
 accent: "#9B7653"
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
@@ -62,6 +67,7 @@ x-shape:
   - legal
 x-order: 9007199254740991
 ---
+
 ## Summary
 
 Saccharomyces boulardii is a live probiotic yeast whose evidence depends on strain deposit, product, population and co-treatment. The clearest signals concern antibiotic-associated diarrhea and selected recurrent *C. difficile* settings, while invasive fungemia is a documented concern in vulnerable patients.
@@ -361,7 +367,7 @@ Evidence is strongest for selected adjunctive gastrointestinal uses and remains 
   conflictOfInterestStatus: declared
   disclosureUrl: https://clinicaltrials.gov/study/NCT01473368
 - id: ref-szajewska-2015
-  title: 'Systematic review with meta-analysis: Saccharomyces boulardii in the prevention of antibiotic-associated diarrhoea'
+  title: "Systematic review with meta-analysis: Saccharomyces boulardii in the prevention of antibiotic-associated diarrhoea"
   authors: Szajewska H; Kołodziej M
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/26216624/
@@ -399,7 +405,7 @@ Evidence is strongest for selected adjunctive gastrointestinal uses and remains 
   conflictsOfInterest: Older disclosure incomplete.
   conflictOfInterestStatus: not-assessed
 - id: ref-chitapanarux-2025
-  title: 'Efficacy and safety of Saccharomyces boulardii as adjunct therapy with Vancomycin in treating Clostridioides difficile infection: A randomized controlled trial'
+  title: "Efficacy and safety of Saccharomyces boulardii as adjunct therapy with Vancomycin in treating Clostridioides difficile infection: A randomized controlled trial"
   authors: Chitapanarux T et al.
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/40457042/
@@ -426,7 +432,7 @@ Evidence is strongest for selected adjunctive gastrointestinal uses and remains 
   conflictsOfInterest: Disclosure not recovered.
   conflictOfInterestStatus: not-assessed
 - id: ref-szajewska-2020
-  title: 'Systematic review with meta-analysis: Saccharomyces boulardii for treating acute gastroenteritis in children — a 2020 update'
+  title: "Systematic review with meta-analysis: Saccharomyces boulardii for treating acute gastroenteritis in children — a 2020 update"
   authors: Szajewska H; Kołodziej M; Zalewski BM
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/32056266/

@@ -12,6 +12,10 @@ smiles: C(C(=O)[O-])C(CC(=O)[O-])(C(=O)[O-])O.C(C(=O)[O-])C(CC(=O)[O-])(C(=O)[O-
 category: Magnesium salt
 tags:
   - magnesium-homeostasis
+  - perception
+  - sleep
+  - fatigue-severity
+  - attention
 accent: "#8090a0"
 reviewedAt: 2026-10-11
 editorialStatus: sourced-draft
@@ -65,7 +69,7 @@ x-order: 9007199254740991
 
 ## Summary
 
-Magnesium citrate is a magnesium–citrate salt; elemental magnesium is the relevant mineral quantity. Its established U.S. use is short-term saline/osmotic laxation. Small human comparisons found higher dissolution and urinary or serum magnesium responses than magnesium oxide, but these are absorption surrogates. Citrate-specific sleep and cognition benefits remain unestablished. [mc-label] [mc-kappeler] [mc-sleep]
+Magnesium citrate is a magnesium–citrate salt; elemental magnesium is the relevant mineral quantity.
 
 ## Description
 
@@ -159,90 +163,84 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   quantityMax: null
   unit: not established
   ingredient: magnesium-citrate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mc-cipro
+  population: Not established
+  formulation: Not established
 - label: magnesium-citrate research exposure 2
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-citrate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mc-cipro
+  population: Not established
+  formulation: Not established
 - label: magnesium-citrate research exposure 3
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-citrate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mc-cipro
+  population: Not established
+  formulation: Not established
 - label: magnesium-citrate research exposure 4
   amount: 320 mg magnesium/day as magnesium citrate for 7 weeks; 96 of 100 randomized participants completed the study as designed.
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-citrate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mc-sleep
+  population: Not established
+  formulation: Not established
 - label: magnesium-citrate research exposure 5
   amount: 200 mg magnesium citrate/day for 8 weeks.
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-citrate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mc-restless
+  population: Not established
+  formulation: Not established
 - label: magnesium-citrate research exposure 6
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: magnesium-citrate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: mc-fda-lax
+  population: Not established
+  formulation: Not established
 ```
 
 ## Pharmacokinetics
@@ -264,8 +262,6 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   modelEligible: false
 - id: dr-magnesium-citrate-magnesium-citrate-pk-1
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -274,12 +270,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   high: null
   unit: hours
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
-  sourceId: dr-magnesium-citrate-s4
+  sourceId: mc-lindberg
   modelEligible: false
 - id: dr-magnesium-citrate-magnesium-citrate-pk-2
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -288,12 +282,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   high: null
   unit: hours
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
-  sourceId: dr-magnesium-citrate-s4
+  sourceId: mc-lindberg
   modelEligible: false
 - id: dr-magnesium-citrate-magnesium-citrate-pk-3
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -306,8 +298,6 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   modelEligible: false
 - id: dr-magnesium-citrate-magnesium-citrate-pk-4
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -316,12 +306,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   high: null
   unit: hours
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
-  sourceId: dr-magnesium-citrate-s4
+  sourceId: mc-lindberg
   modelEligible: false
 - id: dr-magnesium-citrate-magnesium-citrate-pk-5
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -330,12 +318,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   high: null
   unit: hours
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
-  sourceId: dr-magnesium-citrate-s4
+  sourceId: mc-lindberg
   modelEligible: false
 - id: dr-magnesium-citrate-magnesium-citrate-pk-6
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -353,7 +339,7 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
 ```yaml
 - label: Elemental-magnesium fraction
   effect: Variable by salt form and product
-  detail: "USP 3:2 chemistry and hydration/assay basis mean total compound mass is not elemental magnesium mass; label declarations control interpretation."
+  detail: USP 3:2 chemistry and hydration/assay basis mean total compound mass is not elemental magnesium mass; label declarations control interpretation.
   sourceId: mc-usp
   observationId: magnesium-citrate-pk-unestablished
   factorType: other
@@ -380,7 +366,7 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   factorType: other
   direction: variable
 - label: Modifier 1
-  effect: "3:2, dibasic, hydrated, and commercial preparations can differ in elemental-Mg fraction; label declarations supersede generic arithmetic."
+  effect: 3:2, dibasic, hydrated, and commercial preparations can differ in elemental-Mg fraction; label declarations supersede generic arithmetic.
   detail: Source-specific modifier evidence is preserved in the cited reference.
   sourceId: mc-cipro
   observationId: dr-magnesium-citrate-magnesium-citrate-pk-1
@@ -468,10 +454,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   evidence: Human research
   description: Retains water in the gastrointestinal tract, softens stool, increases bowel movements, and can produce watery diarrhea at purgative exposure.
   sourceId: mc-cipro
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-citrate-magnesium-citrate-effect-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -481,10 +467,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   evidence: Human research
   description: Can raise circulating Mg after oral dosing; citrate produced higher post-dose serum responses than oxide in one crossover study.
   sourceId: mc-kappeler
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-citrate-magnesium-citrate-effect-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -494,10 +480,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   evidence: Human research
   description: In a placebo-controlled trial, PSQI improved from 10.4 to 6.6 overall, but improvement occurred regardless of citrate or sodium-citrate assignment.
   sourceId: mc-sleep
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-citrate-magnesium-citrate-effect-4
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -507,10 +493,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   evidence: Human research
   description: An open-label 12-person pilot using magnesium citrate reported lower symptom scores and improved quality-of-life scores, without a significant serum-Mg change.
   sourceId: mc-restless
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-citrate-magnesium-citrate-effect-5
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -520,10 +506,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   evidence: Human research
   description: No citrate-specific cognitive enhancement effect is established by the cited evidence.
   sourceId: mc-cognition
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -560,10 +546,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: mc-cipro
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-citrate-magnesium-citrate-outcome-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -573,10 +559,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: dr-magnesium-citrate-s10
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-citrate-magnesium-citrate-outcome-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -586,10 +572,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: mc-sleep
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-citrate-magnesium-citrate-outcome-4
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -599,10 +585,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: mc-restless
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-magnesium-citrate-magnesium-citrate-outcome-5
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -612,10 +598,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: mc-cognition
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Mechanisms
@@ -893,7 +879,7 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   conflictsOfInterest: Labeler has a commercial interest in the marketed product.
   conflictOfInterestStatus: not-assessed
 - id: mc-fda-lax
-  title: 'OTC Monograph M007: Laxative Drug Products for Over-the-Counter Human Use'
+  title: "OTC Monograph M007: Laxative Drug Products for Over-the-Counter Human Use"
   authors: U.S. Food and Drug Administration
   year: 2023
   url: https://dps-admin.fda.gov/omuf/sites/omuf/files/monograph-documents/2023-05/OTC%20Monograph_M007-Laxative%20Drug%20Products%20for%20OTC%20Human%20Use%2005.02.2023.pdf
@@ -931,7 +917,7 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   conflictsOfInterest: No conflict reported in the PubMed record.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/2407766/
-  pmid: '2407766'
+  pmid: "2407766"
   doi: 10.1080/07315724.1990.10720349
 - id: mc-kappeler
   title: Higher bioavailability of magnesium citrate as compared to magnesium oxide shown by evaluation of urinary excretion and serum levels after single-dose administration in a randomized cross-over study
@@ -959,7 +945,7 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/21199787/
-  pmid: '21199787'
+  pmid: "21199787"
 - id: mc-restless
   title: Magnesium citrate monotherapy improves restless legs syndrome symptoms and multiple suggested immobilization test scores in an open-label pilot study
   authors: Sasikanth Gorantla; Ashwath Ravisankar; Lynn Marie Trotti
@@ -973,9 +959,9 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   conflictsOfInterest: No study-specific conflict reported; one author serves on the AASM board.
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/38738598/
-  pmid: '38738598'
+  pmid: "38738598"
 - id: mc-sleep-review
-  title: 'Magnesium Supplementation for Sleep in Adults: A Systematic Review of Randomized Controlled Trials.'
+  title: "Magnesium Supplementation for Sleep in Adults: A Systematic Review of Randomized Controlled Trials."
   authors: Adrian L Lopresti, Stephen J Smith, Peter D Drummond
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/42661485/
@@ -988,9 +974,9 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.1080/19390211.2026.2719670
   doi: 10.1080/19390211.2026.2719670
-  pmid: '42661485'
+  pmid: "42661485"
 - id: mc-cognition
-  title: 'Magnesium and Cognitive Health in Adults: A Systematic Review and Meta-Analysis'
+  title: "Magnesium and Cognitive Health in Adults: A Systematic Review and Meta-Analysis"
   authors: Fan Chen; Jifan Wang; Yijie Cheng; Ruogu Li; Katherine L. Tucker; et al.
   year: 2024
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11362647/
@@ -1062,10 +1048,10 @@ The page separates citrate-specific clinical exposures from magnesium-class inte
   sponsorshipStatus: not-assessed
   conflictsOfInterest: No conflict reported in the PubMed record.
   conflictOfInterestStatus: not-assessed
-  pmid: '2407766'
+  pmid: "2407766"
   doi: 10.1080/07315724.1990.10720349
 - id: dr-magnesium-citrate-s8
-  title: 'Magnesium Supplementation for Sleep in Adults: A Systematic Review of Randomized Controlled Trials'
+  title: "Magnesium Supplementation for Sleep in Adults: A Systematic Review of Randomized Controlled Trials"
   authors: Adrian L. Lopresti; Stephen J. Smith; Peter D. Drummond
   year: 2026
   url: https://doi.org/10.1080/19390211.2026.2719670

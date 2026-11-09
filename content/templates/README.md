@@ -22,4 +22,4 @@ Dose intake fields are route/formulation-specific: use `foodRelation`, `solubili
 
 ## Unresolved identities and preparations
 
-A mixture, tissue extract or unresolved research code may use `pubchemCid: null`. In that case, `formula`, `molecularWeight` and `smiles` must all be `Not established`. Do not assign a surrogate compound identifier or draw a structure for a mixture. The profile still needs a source reference; imported Molekul profiles use `molekul-profile`. Existing molecular identities retain their PubChem attribution.
+A mixture, tissue extract or unresolved research code may use `pubchemCid: null`. In that case, `formula`, `molecularWeight` and `smiles` must all be `Not established`. Do not assign a surrogate compound identifier or draw a structure for a mixture. The profile still needs a source reference; imported atlas profiles use `atlas-profile`. Existing molecular identities retain their PubChem attribution.

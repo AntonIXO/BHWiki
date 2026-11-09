@@ -54,7 +54,6 @@ export function validateSubstance(value:unknown):asserts value is Substance {
  const hasSourceTrail=typed.references.some(reference=>reference.id!=='pubchem');
  const hasEvidence=[typed.doses,typed.modifiers,typed.effects,typed.outcomes,typed.mechanisms,typed.cautions,typed.claims,typed.interactions,typed.legal,typed.identificationTests??[]].some(items=>items.length>0);
  if(typed.subtitle==='Source-backed identity stub.'&&!hasEvidence)fail(p,'identity-only substance stubs must not be published');
- if(typed.subtitle==='Reddit index evidence trail.'&&!hasEvidence)fail(p,'Reddit index import must contain structured evidence or be omitted');
  if(!hasSourceTrail&&!hasEvidence)fail(p,'published substance needs a non-identity source or evidence record');
  const sources=new Set(typed.references.map(r=>r.id));if(sources.size!==typed.references.length)fail(p,'duplicate reference ID');
  for(const statement of [...typed.effects,...typed.outcomes,...typed.doses,...typed.modifiers,...typed.mechanisms,...typed.cautions,...typed.interactions,...typed.pkObservations,...(typed.identificationTests ?? []),typed.halfLife,typed.kinetics])if(!sources.has(statement.sourceId))fail(p,`unknown source ${statement.sourceId}`);

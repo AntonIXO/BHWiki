@@ -31,7 +31,13 @@ if (sourceCommit && !/^[a-f0-9]{40,64}$/.test(sourceCommit)) throw new Error("BH
 const statements = ["BEGIN;", "SET LOCAL lock_timeout = '5s';", "SET LOCAL statement_timeout = '60s';", "SELECT pg_advisory_xact_lock(674928105);", "SET LOCAL ROLE bhwiki_owner;"];
 const emit = (sql: string) => statements.push(sql);
 const currentSubstanceSlugs = substances.map((substance) => q(substance.slug)).join(", ");
-emit(`CREATE TEMP TABLE bhwiki_empty_reddit_entities ON COMMIT DROP AS
+// Retired entries contained no publication or research record. Keep history, but omit them from public reads.
+const retiredDiscoverySlugs = ["testoluten", "endoluten", "stamakort", "tireogen", "libidon", "vasonin", "chitomur", "visoluten", "bonothyrk", "chelohart", "zhenoluten"];
+emit(`UPDATE bhwiki.entities SET status = 'archived' WHERE entity_type = 'substance' AND slug IN (${retiredDiscoverySlugs.map(q).join(", ")});`);
+const currentClassSlugs = tags.filter(tag => tag.kind === "class").map(tag => q(tag.id)).join(", ");
+emit(`UPDATE bhwiki.entities SET status = 'archived' WHERE entity_type = 'class' AND slug NOT IN (${currentClassSlugs});`);
+
+emit(`CREATE TEMP TABLE bhwiki_empty_research_entities ON COMMIT DROP AS
 SELECT e.id
 FROM bhwiki.entities AS e
 WHERE e.entity_type = 'substance'
@@ -41,7 +47,6 @@ WHERE e.entity_type = 'substance'
     FROM bhwiki.articles AS a
     JOIN bhwiki.article_revisions AS r ON r.id = a.published_revision_id
     WHERE a.entity_id = e.id
-      AND r.document->>'subtitle' IN ('Reddit index evidence trail.', 'Source-backed identity stub.')
       AND coalesce(jsonb_array_length(r.document->'pkObservations'), 0) = 0
       AND coalesce(jsonb_array_length(r.document->'modifiers'), 0) = 0
       AND coalesce(jsonb_array_length(r.document->'doses'), 0) = 0
@@ -54,18 +59,18 @@ WHERE e.entity_type = 'substance'
       AND coalesce(jsonb_array_length(r.document->'identificationTests'), 0) = 0
       AND coalesce(jsonb_array_length(r.document->'legal'), 0) = 0
   );
-DELETE FROM bhwiki.claim_members AS cm USING bhwiki.claims AS c, bhwiki_empty_reddit_entities AS stale WHERE cm.claim_id = c.id AND c.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
-DELETE FROM bhwiki.claim_sources AS cs USING bhwiki.claims AS c, bhwiki_empty_reddit_entities AS stale WHERE cs.claim_id = c.id AND c.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
-DELETE FROM bhwiki.article_concepts AS ac USING bhwiki_empty_reddit_entities AS stale WHERE ac.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
-DELETE FROM bhwiki.article_sources AS ars USING bhwiki_empty_reddit_entities AS stale WHERE ars.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
-DELETE FROM bhwiki.doses AS d USING bhwiki_empty_reddit_entities AS stale WHERE d.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
-DELETE FROM bhwiki.pk_modifiers AS pm USING bhwiki_empty_reddit_entities AS stale WHERE pm.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
-DELETE FROM bhwiki.pk_observations AS po USING bhwiki_empty_reddit_entities AS stale WHERE po.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
-DELETE FROM bhwiki.effect_observations AS eo USING bhwiki_empty_reddit_entities AS stale WHERE eo.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
-DELETE FROM bhwiki.claims AS c USING bhwiki_empty_reddit_entities AS stale WHERE c.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
-UPDATE bhwiki.articles AS a SET published_revision_id = NULL FROM bhwiki_empty_reddit_entities AS stale WHERE a.entity_id = stale.id;
-DELETE FROM bhwiki.articles AS a USING bhwiki_empty_reddit_entities AS stale WHERE a.entity_id = stale.id;
-UPDATE bhwiki.entities AS e SET status = 'archived' FROM bhwiki_empty_reddit_entities AS stale WHERE e.id = stale.id;`);
+DELETE FROM bhwiki.claim_members AS cm USING bhwiki.claims AS c, bhwiki_empty_research_entities AS stale WHERE cm.claim_id = c.id AND c.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.claim_sources AS cs USING bhwiki.claims AS c, bhwiki_empty_research_entities AS stale WHERE cs.claim_id = c.id AND c.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.article_concepts AS ac USING bhwiki_empty_research_entities AS stale WHERE ac.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.article_sources AS ars USING bhwiki_empty_research_entities AS stale WHERE ars.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.doses AS d USING bhwiki_empty_research_entities AS stale WHERE d.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.pk_modifiers AS pm USING bhwiki_empty_research_entities AS stale WHERE pm.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.pk_observations AS po USING bhwiki_empty_research_entities AS stale WHERE po.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.effect_observations AS eo USING bhwiki_empty_research_entities AS stale WHERE eo.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+DELETE FROM bhwiki.claims AS c USING bhwiki_empty_research_entities AS stale WHERE c.article_id IN (SELECT a.entity_id FROM bhwiki.articles AS a WHERE a.entity_id = stale.id);
+UPDATE bhwiki.articles AS a SET published_revision_id = NULL FROM bhwiki_empty_research_entities AS stale WHERE a.entity_id = stale.id;
+DELETE FROM bhwiki.articles AS a USING bhwiki_empty_research_entities AS stale WHERE a.entity_id = stale.id;
+UPDATE bhwiki.entities AS e SET status = 'archived' FROM bhwiki_empty_research_entities AS stale WHERE e.id = stale.id;`);
 const entity = (slug: string) => `(SELECT id FROM bhwiki.entities WHERE slug = ${q(slug.replace(/^(substance|tag):/, ""))})`;
 const insert = (table: string, values: Record<string, string>) => emit(`INSERT INTO bhwiki.${table} (${Object.keys(values).join(", ")}) VALUES (${Object.values(values).join(", ")});`);
 const upsert = (table: string, values: Record<string, string>, keys: string[]) => emit(`INSERT INTO bhwiki.${table} (${Object.keys(values).join(", ")}) VALUES (${Object.values(values).join(", ")}) ON CONFLICT (${keys.join(", ")}) DO UPDATE SET ${Object.keys(values).filter((k) => !keys.includes(k)).map((k) => `${k} = EXCLUDED.${k}`).join(", ")};`);

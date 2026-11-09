@@ -219,7 +219,7 @@ Extract pharmacokinetics, the leaf, pure mitragynine, and 7-hydroxymitragynine a
   title: Mitragynine and 7-hydroxy-mitragyine plasma pharmacokinetics in humans after single and 15 multiple oral kratom extract doses
   authors: Huestis et al.
   year: 2026
-  pmid: '42266029'
+  pmid: "42266029"
   url: https://pubmed.ncbi.nlm.nih.gov/42266029/
   kind: Human pharmacokinetic study
   insight: Reports Cmax and Tmax for mitragynine and 7-hydroxymitragynine after specified extract doses.
@@ -235,7 +235,7 @@ Extract pharmacokinetics, the leaf, pure mitragynine, and 7-hydroxymitragynine a
   limitation: A product warning and alkaloid comparison. It is not a clinical trial of pure mitragynine, and it does not establish a leaf dose.
   funding: U.S. Food and Drug Administration.
 - id: pubchem
-  title: 'Mitragynine: compound identity and structure'
+  title: "Mitragynine: compound identity and structure"
   authors: NCBI PubChem
   year: 2026
   url: https://pubchem.ncbi.nlm.nih.gov/compound/3034396
@@ -254,4 +254,3 @@ Extract pharmacokinetics, the leaf, pure mitragynine, and 7-hydroxymitragynine a
   sourceUrl: https://www.fda.gov/news-events/public-health-focus/fda-and-kratom
   asOf: 2026-10-03
 ```
-

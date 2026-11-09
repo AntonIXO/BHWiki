@@ -1,7 +1,7 @@
 ---
 slug: cyclontane
 name: Cyclontane
-subtitle: Source-linked research profile.
+subtitle: Experimental compound
 aliases:
   - Циклонтан
 formula: Not established
@@ -19,15 +19,14 @@ halfLife:
   low: null
   high: null
   context: This import contains a research source trail, not a verified elimination estimate.
-  sourceId: molekul-profile
-  observationId: cyclontane-unassessed
+  sourceId: research-link-130
 kinetics:
   onset: Not assessed
   peak: Not assessed
   duration: Not assessed
   bioavailability: Not assessed
   metabolism: Not assessed
-  sourceId: molekul-profile
+  sourceId: research-link-130
 x-shape:
   - slug
   - name
@@ -64,19 +63,15 @@ x-order: 1036
 
 ## Summary
 
-Cyclontane — ADK-638, identified as 1-hydroxy-4-cyclohexylaminoadamantane hydrochloride; sodium-oxybate combinations require separate records. This is a secondary-source identity lead; clinical effects and exposure protocols remain unassessed.
+Cyclontane — ADK-638, identified as 1-hydroxy-4-cyclohexylaminoadamantane hydrochloride; sodium-oxybate combinations require separate records.
 
 ## Description
 
-Cyclontane appears in Molekul's research atlas. The original profile groups it as experimental adamantane / analogue. This describes the atlas's working classification, not an established indication. A single molecular identity has not been established here; no formula or structure is assigned to this record.
-
-The Molekul profile was parsed on 2026-10-04. Its classification and linked source trail are discovery information; external documents, cohort overlap, preparation identity and findings have not been independently appraised in this import.
-
-Identity lead from Molekul: ADK-638, identified as 1-hydroxy-4-cyclohexylaminoadamantane hydrochloride; sodium-oxybate combinations require separate records. This account has not been independently verified against the original chemistry or preparation documentation.
+Cyclontane — ADK-638, identified as 1-hydroxy-4-cyclohexylaminoadamantane hydrochloride; sodium-oxybate combinations require separate records.
 
 ## Evidence note
 
-The Molekul profile was parsed on 2026-10-04. Its classification and linked source trail are discovery information; external documents, cohort overlap, preparation identity and findings have not been independently appraised in this import. The year on a source-discovery link is its capture year, not the paper's publication year. Missing doses, kinetics and clinical observations remain unassessed.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -87,20 +82,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 ## Pharmacokinetics
 
 ```yaml
-- id: cyclontane-unassessed
-  analyte: Cyclontane
-  route: Not assessed
-  formulation: Preparation identity requires verification
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No elimination observation has been independently curated for this imported record.
-  sourceId: molekul-profile
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -154,16 +136,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 ## References
 
 ```yaml
-- id: molekul-profile
-  title: 'Cyclontane: Molekul research profile'
-  authors: Molekul
-  year: 2026
-  url: https://molekul.io/compounds/cyclontane
-  kind: Research atlas · accessed 2026
-  insight: Provenance of the imported name, working classification and source trail.
-  limitation: A secondary discovery resource. This import does not independently verify its findings or count its links as independent studies.
-  funding: Not assessed in this import.
-- id: molekul-link-130
+- id: research-link-130
   title: patents.google.com document 131 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -171,8 +144,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-42
+- id: research-link-42
   title: www.researchgate.net document 43 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -180,8 +152,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
-- id: molekul-link-131
+- id: research-link-131
   title: patents.google.com document 132 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -189,7 +160,6 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
 ```
 
 ## Legal
@@ -197,4 +167,3 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 ```yaml
 []
 ```
-

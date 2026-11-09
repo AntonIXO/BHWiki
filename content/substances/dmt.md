@@ -13,6 +13,15 @@ category: Psychedelic
 tags:
   - psychedelic
   - tryptamine
+  - perception
+  - anxiety
+  - blood-pressure
+  - attention
+  - postural-stability
+  - depression-severity
+  - anxiety-symptom-severity
+  - bdnf
+  - serotonin-2a
 accent: "#a89bc4"
 reviewedAt: 2026-10-16
 editorialStatus: sourced-draft
@@ -66,11 +75,7 @@ x-order: 406
 
 ## Summary
 
-N,N-Dimethyltryptamine (DMT) is a tryptamine psychedelic whose human intravenous pharmacology is characterized by extremely rapid onset, intense dose-dependent alterations of perception and consciousness, and rapid plasma clearance. Modern fixed-dose, bolus, and continuous-infusion studies show that the administration pattern strongly changes both the time course and tolerability of the experience: an IV bolus can peak within about 2 min and resolve within roughly 12–30 min, whereas controlled infusion can sustain a chosen intensity for hours while drug delivery continues. Plasma half-life estimates are correspondingly short, approximately 9–12 min after a 10-min infusion and about 6–7 min in a recent bolus study. Sources: `strassman1994-subjective`, `good2023-pk`, `erne2025-continuous`, `erne2026-bolus`.
-
-Human evidence is strongest for acute pharmacology and safety under intensive research supervision, not for established clinical treatment. A 2026 phase IIa trial in 34 adults with moderate-to-severe major depressive disorder found a greater 2-week reduction in MADRS depression scores after one 21.5 mg, 10-min IV DMT session with psychotherapeutic support than after placebo, but the study was small, industry-sponsored, and incorporated substantial psychological support; longer follow-up after the blinded comparison included open-label treatment and therefore cannot by itself establish durable placebo-controlled efficacy. Source: `erritzoe2026-mdd`.
-
-DMT should not be conflated with ayahuasca, 5-MeO-DMT, psilocybin, or isolated harmala alkaloids. In particular, ayahuasca changes DMT pharmacokinetics by combining DMT with monoamine-oxidase-A inhibition and is therefore not evidence for DMT monotherapy. Source: `good2023-pk`.
+DMT is a tryptamine psychedelic with rapid onset and short duration when given intravenously. Human studies examine perception, consciousness and pharmacokinetics.
 
 ## Description
 
@@ -855,7 +860,7 @@ Human receptor evidence should be described conservatively. The reviewed literat
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from an inspected full-text conflict disclosure.
   conflictOfInterestStatus: not-assessed
-  pmid: '8297216'
+  pmid: "8297216"
   doi: 10.1001/archpsyc.1994.03950020009001
 - id: strassman1994-subjective
   title: Dose-response study of N,N-dimethyltryptamine in humans. II. Subjective effects and preliminary results of a new rating scale
@@ -869,7 +874,7 @@ Human receptor evidence should be described conservatively. The reviewed literat
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from an inspected full-text conflict disclosure.
   conflictOfInterestStatus: not-assessed
-  pmid: '8297217'
+  pmid: "8297217"
   doi: 10.1001/archpsyc.1994.03950020022002
 - id: good2023-pk
   title: Pharmacokinetics of N,N-dimethyltryptamine in Humans
@@ -884,10 +889,10 @@ Human receptor evidence should be described conservatively. The reviewed literat
   conflictsOfInterest: The inspected article disclosure reported conflicts involving multiple authors and Small Pharma, including company employment or related financial relationships; no inference of independence was made.
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC10122081/
-  pmid: '37086340'
+  pmid: "37086340"
   doi: 10.1007/s13318-023-00822-y
 - id: james2024-phase1
-  title: 'Safety, tolerability, pharmacodynamic and wellbeing effects of SPL026 (dimethyltryptamine fumarate) in healthy participants: a randomized, placebo-controlled phase 1 trial'
+  title: "Safety, tolerability, pharmacodynamic and wellbeing effects of SPL026 (dimethyltryptamine fumarate) in healthy participants: a randomized, placebo-controlled phase 1 trial"
   authors: Ellen James; David Erritzoe; Tiffanie Benway; Zelah Joel; Christopher Timmermann; Meghan Good; Claudio Agnorelli; Brandon M. Weiss; Tommaso Barba; Graham Campbell; Michelle Baker Jones; Charlotte Hughes; Helen Topping; Malcolm Boyce; Carol Routledge
   year: 2024
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10810248/
@@ -899,10 +904,10 @@ Human receptor evidence should be described conservatively. The reviewed literat
   conflictsOfInterest: EJ, TBe, ZJ, MG, and CR were or had been Small Pharma employees; DE, CT, CA, BW, and TBa received a Small Pharma research grant for the trial; GC, MJ, CH, HT, and MB were employees or contractors of Hammersmith Medicines Research, which Small Pharma contracted to conduct the trial.
   conflictOfInterestStatus: declared
   disclosureUrl: https://www.frontiersin.org/journals/psychiatry/articles/10.3389/fpsyt.2023.1305796/full
-  pmid: '38274414'
+  pmid: "38274414"
   doi: 10.3389/fpsyt.2023.1305796
 - id: erritzoe2026-mdd
-  title: 'A short-acting psychedelic intervention for major depressive disorder: a phase IIa randomized placebo-controlled trial'
+  title: "A short-acting psychedelic intervention for major depressive disorder: a phase IIa randomized placebo-controlled trial"
   authors: David Erritzoe; Tommaso Barba; Tiffanie Benway; Zelah Joel; Meghan Good; Marie Layzell; Michelle Baker Jones; Graham Campbell; Ashleigh Murphy-Beiner; Peter Rands; Malcolm Boyce; Helen Topping; Brandon Weiss; Christopher Timmermann; David Nutt; Robin Carhart-Harris; Carol Routledge; Ellen James
   year: 2026
   url: https://www.nature.com/articles/s41591-025-04154-z
@@ -914,10 +919,10 @@ Human receptor evidence should be described conservatively. The reviewed literat
   conflictsOfInterest: The inspected disclosure reports multiple commercial relationships. Small Pharma employment/shareholding or later Cybin employment/options were declared by several authors; other authors reported advisory roles with psychedelic-development companies. The article states that the remaining authors declared no competing interests.
   conflictOfInterestStatus: declared
   disclosureUrl: https://www.nature.com/articles/s41591-025-04154-z
-  pmid: '41699126'
+  pmid: "41699126"
   doi: 10.1038/s41591-025-04154-z
 - id: vanderheijden2025-sixhour
-  title: 'Safety, Pharmacokinetics, and Pharmacodynamics of a 6-h N,N-Dimethyltryptamine (DMT) Infusion in Healthy Volunteers: A Randomized, Double-Blind, Placebo-Controlled Trial'
+  title: "Safety, Pharmacokinetics, and Pharmacodynamics of a 6-h N,N-Dimethyltryptamine (DMT) Infusion in Healthy Volunteers: A Randomized, Double-Blind, Placebo-Controlled Trial"
   authors: Katelijne V. van der Heijden; Rob G. J. A. Zuiker; Marije E. Otto; Christopher S. Bryan; Nancy Stewart; Christopher Stillwell; Marieke L. De Kam; Marloes B. van Leuken; Joop M. A. van Gerven; Gabriel E. Jacobs
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12070030/
@@ -929,7 +934,7 @@ Human receptor evidence should be described conservatively. The reviewed literat
   conflictsOfInterest: Christopher S. Bryan and Christopher Stillwell were employees of Algernon Pharmaceuticals; the other authors declared no competing interests for the work.
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12070030/
-  pmid: '40356576'
+  pmid: "40356576"
   doi: 10.1111/cts.70234
 - id: erne2025-continuous
   title: Acute dose-dependent effects and self-guided titration of continuous N,N-dimethyltryptamine infusions in a double-blind placebo-controlled study in healthy participants
@@ -944,10 +949,10 @@ Human receptor evidence should be described conservatively. The reviewed literat
   conflictsOfInterest: Matthias E. Liechti declared consultancy for Mind Medicine, Inc.; other authors declared no conflicts. University Hospital Basel know-how and data associated with the work were licensed to Mind Medicine, which the disclosure states had no role in financing, planning, conducting, or publishing the study.
   conflictOfInterestStatus: declared
   disclosureUrl: https://www.nature.com/articles/s41386-024-02041-8
-  pmid: '39702577'
+  pmid: "39702577"
   doi: 10.1038/s41386-024-02041-8
 - id: erne2026-bolus
-  title: 'Dose-dependent pharmacokinetics and acute effects of intravenous bolus N,N-dimethyltryptamine: double-blind, randomized versus open-label dose-escalation administration study in healthy participants'
+  title: "Dose-dependent pharmacokinetics and acute effects of intravenous bolus N,N-dimethyltryptamine: double-blind, randomized versus open-label dose-escalation administration study in healthy participants"
   authors: Livio Erne; Lorenz Mueller; Isabelle Straumann; Bislim Ademaj; Anne Eckert; Ina Vukalovic; Jan Valenta; Dino Luethi; Matthias E. Liechti; Severin B. Vogt
   year: 2026
   url: https://www.nature.com/articles/s41398-026-03987-7
@@ -959,7 +964,7 @@ Human receptor evidence should be described conservatively. The reviewed literat
   conflictsOfInterest: Matthias E. Liechti declared consultancy for Mind Medicine, Inc. and Lykos Therapeutics; the other authors declared no conflicts of interest.
   conflictOfInterestStatus: declared
   disclosureUrl: https://www.nature.com/articles/s41398-026-03987-7
-  pmid: '41896202'
+  pmid: "41896202"
   doi: 10.1038/s41398-026-03987-7
 - id: vanderheijden2026-smoking
   title: Pharmacokinetics, pharmacodynamics and safety of N,N-dimethyltryptamine administered intravenously in healthy smoking and non-smoking volunteers
@@ -973,7 +978,7 @@ Human receptor evidence should be described conservatively. The reviewed literat
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from an inspected full-text conflict declaration.
   conflictOfInterestStatus: not-assessed
-  pmid: '42671902'
+  pmid: "42671902"
   doi: 10.1177/02698811261473451
 - id: zahid2026-pindolol
   title: 5-HT1A receptor blockade potentiates the subjective effects of DMT
@@ -987,7 +992,7 @@ Human receptor evidence should be described conservatively. The reviewed literat
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from an inspected full-text conflict declaration.
   conflictOfInterestStatus: not-assessed
-  pmid: '42068196'
+  pmid: "42068196"
   doi: 10.1177/02698811261443696
 - id: luppi2023-pet-atlas
   title: In vivo mapping of pharmacologically induced functional reorganization onto the human brain's neurotransmitter landscape
@@ -1001,7 +1006,7 @@ Human receptor evidence should be described conservatively. The reviewed literat
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from an inspected full-text conflict disclosure for this review.
   conflictOfInterestStatus: not-assessed
-  pmid: '37315149'
+  pmid: "37315149"
   doi: 10.1126/sciadv.adf8332
 - id: piccinini2025-dynamics
   title: Transient destabilization of whole brain dynamics induced by N,N-Dimethyltryptamine (DMT)
@@ -1015,7 +1020,7 @@ Human receptor evidence should be described conservatively. The reviewed literat
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from an inspected full-text conflict disclosure for this review.
   conflictOfInterestStatus: not-assessed
-  pmid: '40069397'
+  pmid: "40069397"
   doi: 10.1038/s42003-025-07576-0
 - id: nct04673383
   title: SPL026 (DMT Fumarate) in Healthy Subjects and MDD Patients
@@ -1117,4 +1122,3 @@ Human receptor evidence should be described conservatively. The reviewed literat
   sourceUrl: https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000533085
   asOf: 2026-10-16
 ```
-

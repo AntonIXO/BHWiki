@@ -36,7 +36,7 @@ export function prepareResearchImport(root: string, slug: string, inputs: Resear
       parsed.order = previous.order;
     }
     if (parsed.collection === "substances") {
-      if (parsed.record.editorialStatus !== "sourced-draft") throw new Error("Automated research must remain a sourced draft");
+      if (parsed.record.editorialStatus !== "sourced-draft") throw new Error("Automated research must remain a research article");
       corpus.substances = [...corpus.substances.filter((s) => s.slug !== slug), parsed.record];
     } else if (parsed.collection === "tags") {
       corpus.tags = [...corpus.tags.filter((t) => t.id !== parsed.record.id), parsed.record];

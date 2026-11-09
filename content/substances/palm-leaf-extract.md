@@ -1,76 +1,78 @@
 ---
 slug: palm-leaf-extract
 name: Palm Leaf Extract
-subtitle: Reddit index evidence trail.
+subtitle: Palm leaf extracts contain plant polyphenols.
 aliases: []
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
-category: Reddit index entry
+category: Botanical and extract
 tags:
-- reddit-index
-accent: '#a9b993'
-reviewedAt: '2026-11-01'
+  - cognitive-performance
+  - episodic-memory
+accent: "#a9b993"
+reviewedAt: 2026-11-01
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
   low: null
   high: null
   context: No validated elimination observation was imported in this corpus pass.
-  sourceId: reddit-index-palm-leaf-extract
+  sourceId: pubmed-23001939
 kinetics:
   onset: Not established
   peak: Not established
   duration: Not established
   bioavailability: Not established
   metabolism: Not established
-  sourceId: reddit-index-palm-leaf-extract
+  sourceId: pubmed-23001939
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- externalWikiLinks
-- references
-- legal
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - externalWikiLinks
+  - references
+  - legal
+x-order: 9007199254740991
 ---
 
 ## Summary
 
-Palm Leaf Extract evidence is source-specific and endpoint-limited. Relative to the controls, volunteers taking OPLE had improved (P < 0.05) short-term memory, after 1 month of intervention which became highly significant (P < 0.005) after 2 months.
+Palm leaf extracts contain plant polyphenols. The linked research explores their effects on brain function and cognition.
+
 ## Description
 
 This page links PubMed evidence for palm leaf extract. Study populations, formulations and endpoints are retained per PMID; non-PubMed links remain provenance leads. Abstracts were retrieved for PMID(s) 23001939.
+
 ## Evidence note
 
-Corpus import reviewed 1 PubMed abstracts and retained 1 linked source records. Full-text methods, funding, conflicts, and legal context were not comprehensively reviewed.
-
-Reviewed PubMed abstracts for PMID(s) 23001939. No rights-eligible PMC full text was available among these records.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -89,7 +91,7 @@ Reviewed PubMed abstracts for PMID(s) 23001939. No rights-eligible PMC full text
   purpose: Research exposure
   sourceCategory: research
   note: Dose and schedule transcribed from PMID 23001939 abstract; formulation and population are source-specific to this study.
-  sourceId: reddit-pmid-23001939
+  sourceId: pubmed-23001939
 ```
 
 ## Pharmacokinetics
@@ -113,25 +115,25 @@ Reviewed PubMed abstracts for PMID(s) 23001939. No rights-eligible PMC full text
 ## Outcomes
 
 ```yaml
-- id: reddit-palm-leaf-extract-cognitive-performance-23001939
+- id: research-palm-leaf-extract-cognitive-performance-23001939
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
   evidence: Limited research
   description: Relative to the controls, volunteers taking OPLE had improved (P < 0.05) short-term memory, after 1 month of intervention which became highly significant (P < 0.005) after 2 months.
-  sourceId: reddit-pmid-23001939
+  sourceId: pubmed-23001939
   population: The OPLE (0.5 g day(-1) ) was supplemented to young, healthy, adult human volunteers, and their cognitive learning abilities were compared to placebo-controlled groups (N = 15).
   exposure: In rats, the equivalent OPLE dose showed brain antioxidant enzymes modulating properties and neuroprotection under nitric oxide deficiency, with possibly neurogenesis in normal rats.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-palm-leaf-extract-episodic-memory-23001939
+- id: research-palm-leaf-extract-episodic-memory-23001939
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
   evidence: Limited research
   description: Relative to the controls, volunteers taking OPLE had improved (P < 0.05) short-term memory, after 1 month of intervention which became highly significant (P < 0.005) after 2 months.
-  sourceId: reddit-pmid-23001939
+  sourceId: pubmed-23001939
   population: The OPLE (0.5 g day(-1) ) was supplemented to young, healthy, adult human volunteers, and their cognitive learning abilities were compared to placebo-controlled groups (N = 15).
   exposure: In rats, the equivalent OPLE dose showed brain antioxidant enzymes modulating properties and neuroprotection under nitric oxide deficiency, with possibly neurogenesis in normal rats.
   instrument: null
@@ -144,7 +146,7 @@ Reviewed PubMed abstracts for PMID(s) 23001939. No rights-eligible PMC full text
 ```yaml
 - title: Source-specific finding from PMID 23001939
   description: The dietary OPLE showed neuroprotection in nitric oxide-deficient rats.
-  sourceId: reddit-pmid-23001939
+  sourceId: pubmed-23001939
 ```
 
 ## Cautions
@@ -156,17 +158,17 @@ Reviewed PubMed abstracts for PMID(s) 23001939. No rights-eligible PMC full text
 ## Claims
 
 ```yaml
-- id: reddit-claim-palm-leaf-extract-23001939-0
-  assertion: 'PMID 23001939 reported: Relative to the controls, volunteers taking OPLE had improved (P < 0.05) short-term memory, after 1 month of intervention which became highly significant (P < 0.005) after 2 months.'
+- id: research-claim-palm-leaf-extract-23001939-0
+  assertion: "PMID 23001939 reported: Relative to the controls, volunteers taking OPLE had improved (P < 0.05) short-term memory, after 1 month of intervention which became highly significant (P < 0.005) after 2 months."
   relation: associated-with
   participants:
-  - entityId: substance:palm-leaf-extract
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:palm-leaf-extract
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: Source-specific result from PMID 23001939; applies to the population and design described in that abstract.
   sourceIds:
-  - reddit-pmid-23001939
+    - pubmed-23001939
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Abstract result from PMID 23001939; this single study does not establish general efficacy or safety.
@@ -187,15 +189,7 @@ Reviewed PubMed abstracts for PMID(s) 23001939. No rights-eligible PMC full text
 ## References
 
 ```yaml
-- id: reddit-index-palm-leaf-extract
-  title: Reddit r/Nootropics community index
-  authors: Reddit r/Nootropics community index
-  year: 2026
-  url: https://www.reddit.com/r/nootropics/wiki/index
-  kind: Community index
-  insight: The community index lists this substance and links the source trail below.
-  limitation: Community indexing is a discovery aid and does not establish efficacy or safety.
-- id: reddit-pmid-23001939
+- id: pubmed-23001939
   title: Cognitive enhancement and neuroprotection by catechin-rich oil palm leaf extract supplement.
   authors: Suhaila Mohamed, Tan Lee Ming, Juliana Md Jaffri
   year: 2013
@@ -203,11 +197,9 @@ Reviewed PubMed abstracts for PMID(s) 23001939. No rights-eligible PMC full text
   kind: PubMed publication
   insight: Relative to the controls, volunteers taking OPLE had improved (P < 0.05) short-term memory, after 1 month of intervention which became highly significant (P < 0.005) after 2 months.
   limitation: PubMed abstract for PMID 23001939 was reviewed; no rights-eligible PMC full text was available in this pass.
-  pmid: '23001939'
+  pmid: "23001939"
   doi: 10.1002/jsfa.5802
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 

@@ -1,16 +1,22 @@
 ---
 slug: multivitamin
 name: Multivitamin
-subtitle: Reddit index evidence trail.
+subtitle: Vitamin and mineral
 aliases: []
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
-category: Identity record
-tags: []
-accent: '#a9b993'
-reviewedAt: '2026-11-01'
+category: Vitamin and mineral
+tags:
+  - alertness
+  - episodic-memory
+  - verbal-fluency
+  - cognitive-performance
+  - homocysteine
+  - fatigue-severity
+accent: "#a9b993"
+reviewedAt: 2026-11-01
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -18,52 +24,51 @@ halfLife:
   high: null
   context: No pharmacokinetic observation was reported in the linked studies.
   sourceId: optihealth-substance-01a08b04-2f8c-74d6-8dae-929efefee332
-  observationId: multivitamin-pk-unestablished
 kinetics:
   onset: Not established
   peak: Not established
   duration: Not established
   bioavailability: Not established
   metabolism: Not established
-  sourceId: reddit-pmid-22330823
+  sourceId: pubmed-22330823
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 1664
 ---
 
 ## Summary
 
-Multivitamin evidence is formulation- and population-specific. A 10-trial meta-analysis (3,200 participants) found a small improvement in immediate free recall, but not delayed recall or verbal fluency; a 12-year randomized trial in 5,947 older male physicians found no cognitive benefit.
+Multivitamins combine several vitamins and minerals. Studies examine cognitive performance using specific formulations and populations.
 
 ## Description
 
@@ -71,7 +76,7 @@ The linked studies used different products and outcomes: a Supradyn multivitamin
 
 ## Evidence note
 
-Evidence reviewed from four PubMed publications. Full text was retrieved for PMID 24490265 (PMC3858850). The meta-analysis reported immediate free-recall benefit (SMD 0.32, 95% CI 0.09–0.56) but null delayed recall and verbal fluency; the long-term trial reported null global cognition and verbal-memory differences. No pharmacokinetic measurements were reported.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -82,20 +87,7 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
 ## Pharmacokinetics
 
 ```yaml
-- id: multivitamin-pk-unestablished
-  analyte: Multivitamin
-  route: Not reported
-  formulation: Mixed products across studies
-  population: Not reported
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: Linked clinical studies did not report a multivitamin pharmacokinetic endpoint.
-  sourceId: reddit-pmid-22330823
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -113,7 +105,7 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
   direction: Increased
   evidence: Human research
   description: A multivitamin/mineral/herbal formulation improved alertness and general daily functioning versus placebo after 8 weeks.
-  sourceId: reddit-pmid-22095836
+  sourceId: pubmed-22095836
   population: 50 healthy men, aged 50–69
   exposure: Multivitamin/mineral/antioxidant/herbal formulation for 8 weeks
   instrument: Mood and stress questionnaires
@@ -130,7 +122,7 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
   direction: Variable
   evidence: Human research
   description: The meta-analysis found no improvement in delayed free recall.
-  sourceId: reddit-pmid-22330823
+  sourceId: pubmed-22330823
   population: 3,200 participants across 10 randomized trials
   exposure: Chronic oral multivitamin supplementation
   instrument: Delayed free-recall tests
@@ -142,7 +134,7 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
   direction: Variable
   evidence: Human research
   description: The meta-analysis found no improvement in verbal fluency.
-  sourceId: reddit-pmid-22330823
+  sourceId: pubmed-22330823
   population: 3,200 participants across 10 randomized trials
   exposure: Chronic oral multivitamin supplementation
   instrument: Verbal-fluency tests
@@ -154,7 +146,7 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
   direction: Variable
   evidence: Human research
   description: In the Physicians’ Health Study II cognitive substudy, daily multivitamin did not change global cognition over up to 12 years.
-  sourceId: reddit-pmid-24490265
+  sourceId: pubmed-24490265
   population: 5,947 male physicians aged 65 years or older
   exposure: Daily multivitamin versus placebo; up to 12 years
   instrument: Composite of five telephone cognitive tests
@@ -166,7 +158,7 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
   direction: Variable
   evidence: Human research
   description: The same trial found no difference in verbal-memory change.
-  sourceId: reddit-pmid-24490265
+  sourceId: pubmed-24490265
   population: 5,947 male physicians aged 65 years or older
   exposure: Daily multivitamin versus placebo; up to 12 years
   instrument: Verbal-memory composite
@@ -178,7 +170,7 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
   direction: Decreased
   evidence: Human research
   description: A 102-participant subsection showed significant homocysteine reductions after the 9-week multivitamin/mineral intervention.
-  sourceId: reddit-pmid-20737518
+  sourceId: pubmed-20737518
   population: Subsection of 102 participants from the randomized trial
   exposure: Supradyn multivitamin/mineral for 9 weeks
   instrument: Plasma homocysteine
@@ -190,7 +182,7 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
   direction: Increased
   evidence: Human research
   description: Meta-analysis of 10 randomized trials (n=3,200) found improved immediate free recall with chronic oral multivitamin supplementation (SMD 0.32, 95% CI 0.09–0.56).
-  sourceId: reddit-pmid-22330823
+  sourceId: pubmed-22330823
   population: 3,200 participants across 10 randomized placebo-controlled trials
   exposure: Chronic oral multivitamin supplementation for at least 1 month
   instrument: Immediate free-recall tests
@@ -202,7 +194,7 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
   direction: Decreased
   evidence: Human research
   description: In 216 healthy women aged 25–50, a Supradyn multivitamin/mineral attenuated the negative effects of extended multitasking on mood/fatigue after 9 weeks.
-  sourceId: reddit-pmid-20737518
+  sourceId: pubmed-20737518
   population: 216 healthy women, aged 25–50
   exposure: Supradyn multivitamin/mineral for 9 weeks
   instrument: Multi-Tasking Framework mood/fatigue measures
@@ -215,7 +207,7 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
 ```yaml
 - title: Nutrient and oxidative-stress pathways proposed in the long-term trial
   description: The full text notes roles for vitamins C/E and beta-carotene in oxidative protection, B vitamins in neurotransmitter and homocysteine metabolism, and vitamin A in neuronal survival and synaptic plasticity; these are mechanistic rationale, not proof of clinical benefit.
-  sourceId: reddit-pmid-24490265
+  sourceId: pubmed-24490265
 ```
 
 ## Cautions
@@ -223,7 +215,7 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
 ```yaml
 - title: Formulation and population limits
   description: Products, doses, baseline nutritional status, and populations differed across trials; the long-term null result may reflect low doses or well-nourished participants.
-  sourceId: reddit-pmid-24490265
+  sourceId: pubmed-24490265
 ```
 
 ## Claims
@@ -233,13 +225,13 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
   assertion: Chronic multivitamin supplementation improved immediate free recall in a meta-analysis of randomized trials.
   relation: supported-by
   participants:
-  - entityId: substance:multivitamin
-    role: intervention
-  - entityId: tag:episodic-memory
-    role: outcome
+    - entityId: substance:multivitamin
+      role: intervention
+    - entityId: tag:episodic-memory
+      role: outcome
   context: Ten randomized trials, n=3,200; effect was specific to immediate free recall.
   sourceIds:
-  - reddit-pmid-22330823
+    - pubmed-22330823
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Formulations and tests varied; this does not establish benefit for all products.
@@ -247,13 +239,13 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
   assertion: Daily multivitamin prevented cognitive decline in older men.
   relation: contradicted-by
   participants:
-  - entityId: substance:multivitamin
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: outcome
+    - entityId: substance:multivitamin
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: outcome
   context: 12-year randomized Physicians’ Health Study II cognitive substudy.
   sourceIds:
-  - reddit-pmid-24490265
+    - pubmed-24490265
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Participants were older male physicians and may have been well nourished.
@@ -282,17 +274,17 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
   kind: catalog-identity
   insight: Canonical identity label only.
   limitation: Not an efficacy or safety review.
-- id: reddit-pmid-22330823
-  title: 'The effects of multivitamins on cognitive performance: a systematic review and meta-analysis.'
+- id: pubmed-22330823
+  title: "The effects of multivitamins on cognitive performance: a systematic review and meta-analysis."
   authors: Natalie A Grima, Matthew P Pase, Helen Macpherson, Andrew Pipingas
   year: 2012
   url: https://pubmed.ncbi.nlm.nih.gov/22330823/
   kind: PubMed publication
   insight: Ten randomized trials (n=3,200); immediate free recall improved, delayed recall and verbal fluency did not.
   limitation: Product formulations and tests varied.
-  pmid: '22330823'
+  pmid: "22330823"
   doi: 10.3233/JAD-2011-111751
-- id: reddit-pmid-20737518
+- id: pubmed-20737518
   title: Effects of a multi-vitamin/mineral supplement on cognitive function and fatigue during extended multi-tasking.
   authors: Crystal F Haskell, Bernadette Robertson, Emma Jones, Joanne Forster, Rebecca Jones, Anthea Wilde, Silvia Maggini, David O Kennedy
   year: 2010
@@ -300,9 +292,9 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
   kind: PubMed publication
   insight: Randomized trial in 216 healthy women; 9-week Supradyn supplementation attenuated task-related mood/fatigue effects and improved accuracy.
   limitation: Product-specific result; abstract did not report dose.
-  pmid: '20737518'
+  pmid: "20737518"
   doi: 10.1002/hup.1144
-- id: reddit-pmid-22095836
+- id: pubmed-22095836
   title: The effect of multivitamin supplementation on mood and stress in healthy older men.
   authors: Elizabeth Harris, Joni Kirk, Renee Rowsell, Luis Vitetta, Avni Sali, Andrew B Scholey, Andrew Pipingas
   year: 2011
@@ -310,17 +302,17 @@ Evidence reviewed from four PubMed publications. Full text was retrieved for PMI
   kind: PubMed publication
   insight: In 50 healthy men aged 50–69, an 8-week multivitamin/mineral/herbal product improved alertness and reduced depression/anxiety/stress scores.
   limitation: Combined vitamin, mineral, antioxidant and herbal formulation.
-  pmid: '22095836'
+  pmid: "22095836"
   doi: 10.1002/hup.1245
-- id: reddit-pmid-24490265
-  title: 'Long-term multivitamin supplementation and cognitive function in men: a randomized trial.'
+- id: pubmed-24490265
+  title: "Long-term multivitamin supplementation and cognitive function in men: a randomized trial."
   authors: Francine Grodstein, Jacqueline O'Brien, Jae Hee Kang, Rimma Dushkes, Nancy R Cook, Olivia Okereke, JoAnn E Manson, Robert J Glynn, Julie E Buring, Michael Gaziano, Howard D Sesso
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/24490265/
   kind: PubMed publication
   insight: Daily multivitamin versus placebo in 5,947 male physicians aged 65+ showed no cognitive benefit over up to 12 years.
   limitation: Doses may have been too low and participants well nourished; full text PMC3858850 inspected.
-  pmid: '24490265'
+  pmid: "24490265"
   doi: 10.7326/0003-4819-159-12-201312170-00006
   pmcid: PMC3858850
 ```

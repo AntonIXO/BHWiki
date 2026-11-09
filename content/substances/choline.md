@@ -1,17 +1,34 @@
 ---
 slug: choline
 name: Choline
-subtitle: Essential nutrient supporting membrane phospholipids, acetylcholine synthesis, and one-carbon metabolism.
+subtitle: Nutrient
 aliases:
-- Choline ion
-- Choline cation
-- Bilineurine
+  - Choline ion
+  - Choline cation
+  - Bilineurine
 formula: C5H14NO+
 molecularWeight: 104.17 g/mol
 pubchemCid: 305
 smiles: C[N+](C)(C)CCO
 category: Nutrient
-tags: []
+tags:
+  - choline-deficiency-organ-dysfunction
+  - hepatic-steatosis
+  - infant-information-processing-speed
+  - attention
+  - episodic-memory
+  - cognitive-task-performance
+  - plasma-tmao
+  - platelet-reactivity
+  - cognitive-performance
+  - depression-severity
+  - phosphatidylcholine-biosynthesis
+  - choline-precursor
+  - betaine-one-carbon-metabolism
+  - gut-microbial-tmao-generation
+  - acetylcholine
+  - chat
+  - pcyt1a
 accent: UNSPECIFIED
 reviewedAt: 2026-10-04
 editorialStatus: sourced-draft
@@ -21,7 +38,6 @@ halfLife:
   high: null
   context: No general human elimination half-life is established for dietary choline; choline enters multiple metabolic and structural pools rather than behaving as a single-compartment drug exposure.
   sourceId: efsa-2016-choline-drvs
-  observationId: choline-half-life-not-established
 kinetics:
   onset: Not established for choline as a general dietary nutrient exposure.
   peak: Formulation- and meal-dependent; no general peak value is established.
@@ -30,37 +46,37 @@ kinetics:
   metabolism: Choline enters phosphatidylcholine and sphingomyelin synthesis, acetylcholine synthesis, oxidation toward betaine and one-carbon metabolism, and—after gut microbial metabolism of susceptible choline-containing substrates—the trimethylamine/TMAO pathway.
   sourceId: efsa-2016-choline-drvs
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 9007199254740991
 ---
 
@@ -74,9 +90,7 @@ Choline (PubChem CID 305; C5H14NO+, 104.17 g/mol) is a permanently charged quate
 
 ## Evidence note
 
-High confidence applies to nutrient essentiality, deficiency-related liver/muscle injury, and established dietary reference values. Prenatal cognition evidence is promising but inconsistent and derives partly from small trials; adult cognitive supplementation evidence is sparse. Choline-bitartrate can raise TMAO and platelet reactivity, but formulation matters and downstream TMAO associations do not establish cardiovascular harm from dietary choline. No general elimination half-life is established. Funding/COI classifications are assessed only where declarations were inspected. Sources: fischer-2007; caudill-2018; bahnfleth-2022; cheatham-2012; wilcox-2021; jia-2019; yoo-2026.
-
-Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-text methods, funding, and conflicts remain unassessed where the source record says so.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -589,26 +603,13 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
-  sourceId: reddit-pmid-8372096
+  sourceId: pubmed-8372096
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: choline-half-life-not-established
-  analyte: Choline
-  route: Oral
-  formulation: Dietary and supplemental choline forms
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: A general elimination half-life is not established for choline as a nutrient because absorbed choline partitions into free choline, phospholipid, acetylcholine, betaine, and other metabolic pools; no defensible single-compartment value was identified.
-  sourceId: efsa-2016-choline-drvs
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -632,9 +633,9 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
     design: Controlled feeding depletion-repletion study with randomized folic-acid supplementation during depletion
     sampleSize: 57
     populationLabels:
-    - Healthy adult men
-    - Premenopausal women
-    - Postmenopausal women
+      - Healthy adult men
+      - Premenopausal women
+      - Postmenopausal women
     comparator: Sex and menopausal-status strata under the same depletion protocol
     route: Oral
     formulation: Controlled low-choline diet
@@ -645,7 +646,7 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   evidence: Human research
   description: During dietary choline depletion, fatty liver or muscle damage developed in 77% of men, 80% of postmenopausal women, and 44% of premenopausal women; organ function normalized with choline repletion.
   sourceId: fischer-2007
-  population: '57 healthy adults: 26 men, 16 premenopausal women, and 15 postmenopausal women.'
+  population: "57 healthy adults: 26 men, 16 premenopausal women, and 15 postmenopausal women."
   exposure: <50 mg choline per 70 kg body weight per day for up to 42 days after a 10-day higher-choline baseline diet.
   instrument: Liver magnetic-resonance imaging plus serum markers of hepatic and skeletal-muscle injury.
   magnitude: 77% of men, 80% of postmenopausal women, and 44% of premenopausal women developed the prespecified fatty-liver or muscle-damage phenotype.
@@ -655,7 +656,7 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
     design: Randomized placebo-controlled trial
     sampleSize: 15
     populationLabels:
-    - Long-term home total-parenteral-nutrition patients
+      - Long-term home total-parenteral-nutrition patients
     comparator: Usual total parenteral nutrition without added choline
     route: Intravenous
     formulation: Total parenteral nutrition plus 2 g/day choline chloride
@@ -666,7 +667,7 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
     estimate: 13.3
     unit: Hounsfield units
     instrument: Liver computed-tomography density
-    comparator: 'Usual TPN group mean at week 4: 5.8 Hounsfield units'
+    comparator: "Usual TPN group mean at week 4: 5.8 Hounsfield units"
     assessmentTime: Week 4
     population: Long-term home TPN patients randomized to choline-supplemented TPN
   conceptId: hepatic-steatosis
@@ -685,7 +686,7 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
     design: Randomized double-blind controlled feeding trial
     sampleSize: 24
     populationLabels:
-    - Infants born to healthy women randomized during the third trimester
+      - Infants born to healthy women randomized during the third trimester
     comparator: Maternal total choline intake of 480 mg/day
     route: Oral maternal exposure
     formulation: Controlled diet plus choline chloride
@@ -706,7 +707,7 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
     design: Seven-year follow-up of a randomized double-blind controlled feeding trial
     sampleSize: 20
     populationLabels:
-    - Children aged approximately 7 years
+      - Children aged approximately 7 years
     comparator: Maternal total choline intake of 480 mg/day during the third trimester
     route: Oral maternal exposure
     formulation: Controlled diet plus choline chloride
@@ -727,7 +728,7 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
     design: Randomized double-blind placebo-controlled trial
     sampleSize: 99
     populationLabels:
-    - Infants whose mothers received prenatal/postpartum phosphatidylcholine or placebo
+      - Infants whose mothers received prenatal/postpartum phosphatidylcholine or placebo
     comparator: Corn-oil placebo
     route: Oral maternal exposure
     formulation: Supplemental phosphatidylcholine
@@ -743,15 +744,15 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   instrument: null
   magnitude: No statistically significant treatment-group difference was reported.
   conflictingSourceIds:
-  - caudill-2018
-  - bahnfleth-2022
+    - caudill-2018
+    - bahnfleth-2022
 - id: prenatal-phosphatidylcholine-infant-cognitive-battery
   study:
     id: nct00678925
     design: Randomized double-blind placebo-controlled trial
     sampleSize: 99
     populationLabels:
-    - Infants whose mothers received prenatal/postpartum phosphatidylcholine or placebo
+      - Infants whose mothers received prenatal/postpartum phosphatidylcholine or placebo
     comparator: Corn-oil placebo
     route: Oral maternal exposure
     formulation: Supplemental phosphatidylcholine
@@ -767,15 +768,15 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   instrument: null
   magnitude: No statistically significant treatment-group differences were reported.
   conflictingSourceIds:
-  - caudill-2018
-  - bahnfleth-2022
+    - caudill-2018
+    - bahnfleth-2022
 - id: acute-choline-cognitive-performance
   study:
     id: deuster-2002-load-carriage
     design: Double-blind randomized crossover study
     sampleSize: 13
     populationLabels:
-    - Healthy adult men
+      - Healthy adult men
     comparator: Placebo
     route: Oral
     formulation: Formulation not established from inspected abstract
@@ -796,14 +797,14 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
     design: Randomized five-arm 28-day intervention trial
     sampleSize: 82
     populationLabels:
-    - Healthy adults with normal renal function
+      - Healthy adults with normal renal function
     comparator: Whole eggs and phosphatidylcholine supplement arms
     route: Oral
     formulation: Choline bitartrate tablets
     durationDays: 28
     assessmentTime: Baseline to day 28
     comparedSubstances:
-    - choline-bitartrate
+      - choline-bitartrate
   conceptId: plasma-tmao
   name: Fasting plasma TMAO
   direction: Increased
@@ -815,21 +816,21 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   instrument: Mass-spectrometric plasma TMAO quantification
   magnitude: TMAO increased in all three choline-bitartrate-containing arms (all P<.0001); egg-only P=.28 and phosphatidylcholine P=.27.
   conflictingSourceIds:
-  - thomas-2022
+    - thomas-2022
 - id: choline-bitartrate-platelet-reactivity
   study:
     id: nct03039023
     design: Randomized five-arm 28-day intervention trial
     sampleSize: 82
     populationLabels:
-    - Healthy adults with normal renal function
+      - Healthy adults with normal renal function
     comparator: Whole eggs and phosphatidylcholine supplement arms
     route: Oral
     formulation: Choline bitartrate tablets
     durationDays: 28
     assessmentTime: Baseline to day 28
     comparedSubstances:
-    - choline-bitartrate
+      - choline-bitartrate
   conceptId: platelet-reactivity
   name: Platelet reactivity
   direction: Increased
@@ -846,14 +847,14 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
     design: Randomized controlled crossover trial
     sampleSize: 23
     populationLabels:
-    - Adults with metabolic syndrome
+      - Adults with metabolic syndrome
     comparator: Three whole eggs per day
     route: Oral
     formulation: Choline bitartrate supplement
     durationDays: 28
     assessmentTime: End of each 4-week intervention
     comparedSubstances:
-    - choline-bitartrate
+      - choline-bitartrate
   conceptId: plasma-tmao
   name: TMAO after egg versus choline-bitartrate intake in metabolic syndrome
   direction: Variable
@@ -865,76 +866,76 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   instrument: Stable-isotope-dilution liquid chromatography–tandem mass spectrometry
   magnitude: No significant TMAO treatment difference was reported (P>.05).
   conflictingSourceIds:
-  - wilcox-2021
-- id: reddit-choline-cognitive-performance-19262950
+    - wilcox-2021
+- id: research-choline-cognitive-performance-19262950
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
   evidence: Human research
-  description: 'OBJECTIVE: The loss of cortical and hippocampal synapses is a universal hallmark of Alzheimer''s disease, and probably underlies its effects on cognition.'
-  sourceId: reddit-pmid-19262950
+  description: "OBJECTIVE: The loss of cortical and hippocampal synapses is a universal hallmark of Alzheimer's disease, and probably underlies its effects on cognition."
+  sourceId: pubmed-19262950
   population: Population described in the PubMed abstract
-  exposure: 'OBJECTIVE: The loss of cortical and hippocampal synapses is a universal hallmark of Alzheimer''s disease, and probably underlies its effects on cognition.'
+  exposure: "OBJECTIVE: The loss of cortical and hippocampal synapses is a universal hallmark of Alzheimer's disease, and probably underlies its effects on cognition."
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-choline-depression-severity-15705349
+- id: research-choline-depression-severity-15705349
   conceptId: depression-severity
   name: Depression Severity
   direction: Increased
   evidence: Human research
-  description: 'BACKGROUND: Brain phospholipid metabolism and membrane fluidity may be involved in the pathophysiology of mood disorders.'
-  sourceId: reddit-pmid-15705349
+  description: "BACKGROUND: Brain phospholipid metabolism and membrane fluidity may be involved in the pathophysiology of mood disorders."
+  sourceId: pubmed-15705349
   population: Population described in the PubMed abstract
-  exposure: 'BACKGROUND: Brain phospholipid metabolism and membrane fluidity may be involved in the pathophysiology of mood disorders.'
+  exposure: "BACKGROUND: Brain phospholipid metabolism and membrane fluidity may be involved in the pathophysiology of mood disorders."
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-choline-cognitive-performance-24286859
+- id: research-choline-cognitive-performance-24286859
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
   evidence: Limited research
   description: Rising neurodegenerative and depressive disease prevalence combined with the lack of effective pharmaceutical treatments and dangerous side effects, has created an urgent need for the development of effective therapies.
-  sourceId: reddit-pmid-24286859
+  sourceId: pubmed-24286859
   population: Population described in the PubMed abstract
   exposure: Rising neurodegenerative and depressive disease prevalence combined with the lack of effective pharmaceutical treatments and dangerous side effects, has created an urgent need for the development of effective therapies.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-choline-episodic-memory-24286859
+- id: research-choline-episodic-memory-24286859
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
   evidence: Limited research
   description: Rising neurodegenerative and depressive disease prevalence combined with the lack of effective pharmaceutical treatments and dangerous side effects, has created an urgent need for the development of effective therapies.
-  sourceId: reddit-pmid-24286859
+  sourceId: pubmed-24286859
   population: Population described in the PubMed abstract
   exposure: Rising neurodegenerative and depressive disease prevalence combined with the lack of effective pharmaceutical treatments and dangerous side effects, has created an urgent need for the development of effective therapies.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-choline-depression-severity-24286859
+- id: research-choline-depression-severity-24286859
   conceptId: depression-severity
   name: Depression Severity
   direction: Increased
   evidence: Limited research
   description: Rising neurodegenerative and depressive disease prevalence combined with the lack of effective pharmaceutical treatments and dangerous side effects, has created an urgent need for the development of effective therapies.
-  sourceId: reddit-pmid-24286859
+  sourceId: pubmed-24286859
   population: Population described in the PubMed abstract
   exposure: Rising neurodegenerative and depressive disease prevalence combined with the lack of effective pharmaceutical treatments and dangerous side effects, has created an urgent need for the development of effective therapies.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-choline-episodic-memory-25322923
+- id: research-choline-episodic-memory-25322923
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
   evidence: Limited research
-  description: 'BACKGROUND: The medical food Souvenaid, containing the specific nutrient combination Fortasyn Connect, is designed to improve synapse formation and function in patients with Alzheimer''s disease (AD).'
-  sourceId: reddit-pmid-25322923
+  description: "BACKGROUND: The medical food Souvenaid, containing the specific nutrient combination Fortasyn Connect, is designed to improve synapse formation and function in patients with Alzheimer's disease (AD)."
+  sourceId: pubmed-25322923
   population: Population described in the PubMed abstract
-  exposure: 'BACKGROUND: The medical food Souvenaid, containing the specific nutrient combination Fortasyn Connect, is designed to improve synapse formation and function in patients with Alzheimer''s disease (AD).'
+  exposure: "BACKGROUND: The medical food Souvenaid, containing the specific nutrient combination Fortasyn Connect, is designed to improve synapse formation and function in patients with Alzheimer's disease (AD)."
   instrument: null
   magnitude: null
   reportType: measured-assessment
@@ -967,14 +968,14 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   description: Human choline/TMAO studies commonly use chromatographic mass-spectrometric methods, including stable-isotope dilution LC-MS/MS, to distinguish choline, TMAO, betaine, dimethylglycine, and labeled isotopologues in plasma or urine.
   sourceId: wilcox-2021
 - title: Source-specific finding from PMID 19262950
-  description: 'OBJECTIVE: The loss of cortical and hippocampal synapses is a universal hallmark of Alzheimer''s disease, and probably underlies its effects on cognition.'
-  sourceId: reddit-pmid-19262950
+  description: "OBJECTIVE: The loss of cortical and hippocampal synapses is a universal hallmark of Alzheimer's disease, and probably underlies its effects on cognition."
+  sourceId: pubmed-19262950
 - title: Source-specific finding from PMID 8372096
   description: Chronic administration of uridine alters dopaminergic activity and related behavior.
-  sourceId: reddit-pmid-8372096
+  sourceId: pubmed-8372096
 - title: Source-specific finding from PMID 24286859
   description: Rising neurodegenerative and depressive disease prevalence combined with the lack of effective pharmaceutical treatments and dangerous side effects, has created an urgent need for the development of effective therapies.
-  sourceId: reddit-pmid-24286859
+  sourceId: pubmed-24286859
 ```
 
 ## Cautions
@@ -996,14 +997,14 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   description: A salt, phospholipid, citicoline, alpha-GPC, and free choline are not interchangeable mass units. Study interpretation should retain the exact ingredient, formulation, salt or phospholipid mass, and choline-equivalent amount when reported.
   sourceId: wilcox-2021
 - title: Source-specific finding from PMID 19262950
-  description: 'OBJECTIVE: The loss of cortical and hippocampal synapses is a universal hallmark of Alzheimer''s disease, and probably underlies its effects on cognition.'
-  sourceId: reddit-pmid-19262950
+  description: "OBJECTIVE: The loss of cortical and hippocampal synapses is a universal hallmark of Alzheimer's disease, and probably underlies its effects on cognition."
+  sourceId: pubmed-19262950
 - title: Source-specific finding from PMID 24286859
   description: Rising neurodegenerative and depressive disease prevalence combined with the lack of effective pharmaceutical treatments and dangerous side effects, has created an urgent need for the development of effective therapies.
-  sourceId: reddit-pmid-24286859
+  sourceId: pubmed-24286859
 - title: Source-specific finding from PMID 25322923
-  description: 'BACKGROUND: The medical food Souvenaid, containing the specific nutrient combination Fortasyn Connect, is designed to improve synapse formation and function in patients with Alzheimer''s disease (AD).'
-  sourceId: reddit-pmid-25322923
+  description: "BACKGROUND: The medical food Souvenaid, containing the specific nutrient combination Fortasyn Connect, is designed to improve synapse formation and function in patients with Alzheimer's disease (AD)."
+  sourceId: pubmed-25322923
 ```
 
 ## Claims
@@ -1013,15 +1014,15 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   assertion: Humans require an exogenous supply of choline because endogenous synthesis is insufficient for all individuals; controlled depletion can produce reversible liver or muscle dysfunction.
   relation: deficiency-causes-reversible-organ-dysfunction
   participants:
-  - entityId: substance:choline
-    role: required-nutrient
-  - entityId: tag:choline-deficiency-organ-dysfunction
-    role: deficiency-outcome
+    - entityId: substance:choline
+      role: required-nutrient
+    - entityId: tag:choline-deficiency-organ-dysfunction
+      role: deficiency-outcome
   context: Supported by controlled feeding depletion/repletion in healthy adults and by reversal of hepatic abnormalities with choline chloride in long-term parenteral-nutrition patients.
   sourceIds:
-  - fischer-2007
-  - buchman-2001
-  - efsa-2016-choline-drvs
+    - fischer-2007
+    - buchman-2001
+    - efsa-2016-choline-drvs
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Exact individual requirement varies, and available evidence is insufficient to derive an EAR for the general population.
@@ -1029,116 +1030,116 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   assertion: Higher maternal choline intake during pregnancy may improve selected offspring information-processing and sustained-attention outcomes, but the human evidence is not uniformly positive.
   relation: prenatal-exposure-may-modify-attention
   participants:
-  - entityId: substance:choline
-    role: maternal-nutrient-exposure
-  - entityId: tag:attention
-    role: offspring-cognitive-outcome
+    - entityId: substance:choline
+      role: maternal-nutrient-exposure
+    - entityId: tag:attention
+      role: offspring-cognitive-outcome
   context: A small controlled-feeding cohort showed faster infant processing and better sustained attention at age seven with 930 versus 480 mg/day; a larger maternal phosphatidylcholine trial found no infant cognitive benefit.
   sourceIds:
-  - caudill-2018
-  - bahnfleth-2022
+    - caudill-2018
+    - bahnfleth-2022
   conflictingSourceIds:
-  - cheatham-2012
+    - cheatham-2012
   assessment: not-formally-assessed
   limitation: Trials differ in formulation, timing, background diet, endpoints, and sample size; 930 mg/day is not established as an optimal routine pregnancy dose.
 - id: choline-bitartrate-can-increase-tmao
   assertion: Choline bitartrate can increase fasting plasma TMAO under some intervention conditions, and this response should not be generalized to equal-choline exposure from whole eggs or phosphatidylcholine.
   relation: formulation-specific-increase
   participants:
-  - entityId: substance:choline-bitartrate
-    role: administered-choline-form
-  - entityId: tag:plasma-tmao
-    role: downstream-biomarker
+    - entityId: substance:choline-bitartrate
+      role: administered-choline-form
+    - entityId: tag:plasma-tmao
+      role: downstream-biomarker
   context: In healthy adults with normal renal function, bitartrate-containing arms increased fasting TMAO over 28 days while egg-only and phosphatidylcholine arms did not; a smaller metabolic-syndrome crossover study reported no treatment difference.
   sourceIds:
-  - wilcox-2021
+    - wilcox-2021
   conflictingSourceIds:
-  - thomas-2022
+    - thomas-2022
   assessment: not-formally-assessed
   limitation: Small trials and differing populations, diets, microbiomes, renal function, and formulations limit generalization.
 - id: tmao-biomarker-does-not-establish-choline-cardiovascular-causality
   assertion: A choline-derived TMAO biomarker signal is not equivalent to evidence that dietary choline itself causes cardiovascular events.
   relation: downstream-biomarker-not-established-clinical-causality
   participants:
-  - entityId: substance:choline
-    role: potential-dietary-precursor
-  - entityId: tag:plasma-tmao
-    role: downstream-metabolite-biomarker
+    - entityId: substance:choline
+      role: potential-dietary-precursor
+    - entityId: tag:plasma-tmao
+      role: downstream-metabolite-biomarker
   context: Higher TMAO predicted major cardiovascular events in an angiography cohort, but bidirectional Mendelian-randomization analyses did not support genetically predicted TMAO as a cause of tested cardiovascular endpoints after multiple-testing correction and suggested reverse causality from diabetes or kidney disease.
   sourceIds:
-  - tang-2013
-  - jia-2019
-  - wilcox-2021
+    - tang-2013
+    - jia-2019
+    - wilcox-2021
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Metabolite association, genetic-instrument analyses, and short-term feeding studies answer different causal questions and do not directly estimate long-term cardiovascular effects of dietary choline.
-- id: reddit-claim-choline-19262950-0
+- id: research-claim-choline-19262950-0
   assertion: Choline is associated with the reported cognitive performance finding in this publication.
   relation: associated-with
   participants:
-  - entityId: substance:choline
-    role: intervention or exposure
-  - entityId: tag:cognitive-performance
-    role: reported endpoint
+    - entityId: substance:choline
+      role: intervention or exposure
+    - entityId: tag:cognitive-performance
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-19262950
+    - pubmed-19262950
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
-- id: reddit-claim-choline-15705349-1
+- id: research-claim-choline-15705349-1
   assertion: Choline is associated with the reported depression severity finding in this publication.
   relation: associated-with
   participants:
-  - entityId: substance:choline
-    role: intervention or exposure
-  - entityId: tag:depression-severity
-    role: reported endpoint
+    - entityId: substance:choline
+      role: intervention or exposure
+    - entityId: tag:depression-severity
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-15705349
+    - pubmed-15705349
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
-- id: reddit-claim-choline-8372096-2
+- id: research-claim-choline-8372096-2
   assertion: Choline is associated with the reported depression severity finding in this publication.
   relation: associated-with
   participants:
-  - entityId: substance:choline
-    role: intervention or exposure
-  - entityId: tag:depression-severity
-    role: reported endpoint
+    - entityId: substance:choline
+      role: intervention or exposure
+    - entityId: tag:depression-severity
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-8372096
+    - pubmed-8372096
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
-- id: reddit-claim-choline-24286859-3
+- id: research-claim-choline-24286859-3
   assertion: Choline is associated with the reported depression severity finding in this publication.
   relation: associated-with
   participants:
-  - entityId: substance:choline
-    role: intervention or exposure
-  - entityId: tag:depression-severity
-    role: reported endpoint
+    - entityId: substance:choline
+      role: intervention or exposure
+    - entityId: tag:depression-severity
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-24286859
+    - pubmed-24286859
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
-- id: reddit-claim-choline-25322923-4
+- id: research-claim-choline-25322923-4
   assertion: Choline is associated with the reported episodic memory finding in this publication.
   relation: associated-with
   participants:
-  - entityId: substance:choline
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:choline
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-25322923
+    - pubmed-25322923
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
@@ -1189,7 +1190,7 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   conflictsOfInterest: Not assessed for an official agency monograph.
   conflictOfInterestStatus: not-assessed
 - id: nih-ods-pregnancy
-  title: 'Dietary Supplements and Life Stages: Pregnancy — Fact Sheet for Health Professionals'
+  title: "Dietary Supplements and Life Stages: Pregnancy — Fact Sheet for Health Professionals"
   authors: National Institutes of Health, Office of Dietary Supplements
   year: 2025
   url: https://ods.od.nih.gov/factsheets/Pregnancy-HealthProfessional/
@@ -1221,7 +1222,7 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   kind: Controlled feeding depletion-repletion study
   insight: Dietary depletion caused fatty liver or muscle damage in many adults, with marked sex/menopausal differences, and organ dysfunction reversed with choline repletion.
   limitation: Small controlled-feeding cohort; depletion conditions do not estimate long-term disease risk or a population EAR.
-  pmid: '17490963'
+  pmid: "17490963"
   doi: 10.1093/ajcn/85.5.1275
   funding: NIH grants supported the study; the inspected full text also reports lecithin supplied by Solae.
   sponsorshipStatus: non-industry-funded
@@ -1229,14 +1230,14 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC2435503/
 - id: buchman-2001
-  title: 'Choline deficiency causes reversible hepatic abnormalities in patients receiving parenteral nutrition: proof of a human choline requirement: a placebo-controlled trial'
+  title: "Choline deficiency causes reversible hepatic abnormalities in patients receiving parenteral nutrition: proof of a human choline requirement: a placebo-controlled trial"
   authors: A L Buchman, M E Ament, M Sohel, M Dubin, D J Jenden, M Roch, H Pownall, W Farley, M Awal, C Ahn
   year: 2001
   url: https://pubmed.ncbi.nlm.nih.gov/11531217/
   kind: Randomized placebo-controlled trial
   insight: Adding 2 g/day choline chloride to long-term TPN improved liver CT density and several liver enzymes; steatosis recurred after choline withdrawal.
   limitation: Only 15 long-term TPN patients; findings address parenteral deficiency, not routine oral supplementation.
-  pmid: '11531217'
+  pmid: "11531217"
   doi: 10.1177/0148607101025005260
   funding: Not assessed from an inspected declaration.
   sponsorshipStatus: not-assessed
@@ -1255,14 +1256,14 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   conflictsOfInterest: Registry record is not a publication COI declaration.
   conflictOfInterestStatus: not-assessed
 - id: caudill-2018
-  title: 'Maternal choline supplementation during the third trimester of pregnancy improves infant information processing speed: a randomized, double-blind, controlled feeding study'
+  title: "Maternal choline supplementation during the third trimester of pregnancy improves infant information processing speed: a randomized, double-blind, controlled feeding study"
   authors: Marie A Caudill, Barbara J Strupp, Laura Muscalu, Julie E H Nevins, Richard L Canfield
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/29217669/
   kind: Randomized double-blind controlled feeding trial
   insight: Maternal 930 versus 480 mg/day total choline in the third trimester produced faster mean infant information-processing reaction time across four postnatal ages.
-  limitation: 'Very small trial: 26 mothers randomized and 24 infants contributed cognitive follow-up data.'
-  pmid: '29217669'
+  limitation: "Very small trial: 26 mothers randomized and 24 infants contributed cognitive follow-up data."
+  pmid: "29217669"
   doi: 10.1096/fj.201700692RR
   funding: Inspected publication reports support from the Egg Nutrition Center, Beef Checkoff, USDA, and Cornell institutional programs.
   sponsorshipStatus: mixed-funding
@@ -1270,14 +1271,14 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC6988845/
 - id: bahnfleth-2022
-  title: 'Prenatal choline supplementation improves child sustained attention: A 7-year follow-up of a randomized controlled feeding trial'
+  title: "Prenatal choline supplementation improves child sustained attention: A 7-year follow-up of a randomized controlled feeding trial"
   authors: Charlotte L Bahnfleth, Barbara J Strupp, Marie A Caudill, Richard L Canfield
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/34962672/
   kind: Randomized-trial follow-up
   insight: At age seven, children from the maternal 930 mg/day group had higher sustained-attention scores and less vigilance decline than the 480 mg/day group.
   limitation: Only 20 children were analyzed, making estimates imprecise and vulnerable to attrition and chance.
-  pmid: '34962672'
+  pmid: "34962672"
   doi: 10.1096/fj.202101217R
   funding: Inspected full text reports U.S. Department of Agriculture/NIFA support and commercial support including Balchem; author support also included NICHD and an Egg Nutrition Center award.
   sponsorshipStatus: mixed-funding
@@ -1297,14 +1298,14 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   conflictsOfInterest: Registry record is not a publication COI declaration.
   conflictOfInterestStatus: not-assessed
 - id: cheatham-2012
-  title: 'Phosphatidylcholine supplementation in pregnant women consuming moderate-choline diets does not enhance infant cognitive function: a randomized, double-blind, placebo-controlled trial'
+  title: "Phosphatidylcholine supplementation in pregnant women consuming moderate-choline diets does not enhance infant cognitive function: a randomized, double-blind, placebo-controlled trial"
   authors: Carol L Cheatham, Barbara Davis Goldman, Leslie M Fischer, Kerry-Ann da Costa, J Steven Reznick, Steven H Zeisel
   year: 2012
   url: https://pubmed.ncbi.nlm.nih.gov/23134891/
   kind: Randomized double-blind placebo-controlled trial
   insight: Maternal phosphatidylcholine supplementation produced no significant improvement in infant global development, language, visuospatial memory, or episodic memory at 10–12 months.
   limitation: Results concern one phosphatidylcholine regimen in women consuming moderate-choline diets and do not exclude effects with different exposure, timing, or later follow-up.
-  pmid: '23134891'
+  pmid: "23134891"
   doi: 10.3945/ajcn.112.037184
   funding: Inspected publication reports Gerber Foundation, NIH, and Egg Nutrition Center support; Solae supplied study phosphatidylcholine.
   sponsorshipStatus: mixed-funding
@@ -1319,7 +1320,7 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   kind: Randomized double-blind crossover trial
   insight: A 50 mg/kg exposure raised plasma choline but did not improve physical performance, reaction time, reasoning, vigilance, spatial memory, or working memory.
   limitation: Only 13 healthy men were studied under an exercise/load-carriage paradigm; formulation details and disclosures were not verified from full text.
-  pmid: '12502178'
+  pmid: "12502178"
   funding: Not assessed from an inspected declaration.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from an inspected declaration.
@@ -1337,14 +1338,14 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   conflictsOfInterest: Registry record is not a publication COI declaration.
   conflictOfInterestStatus: not-assessed
 - id: wilcox-2021
-  title: 'Dietary Choline Supplements, but Not Eggs, Raise Fasting TMAO Levels in Participants with Normal Renal Function: A Randomized Clinical Trial'
+  title: "Dietary Choline Supplements, but Not Eggs, Raise Fasting TMAO Levels in Participants with Normal Renal Function: A Randomized Clinical Trial"
   authors: Jennifer Wilcox, Sarah M Skye, Brett Graham, Allyson Zabell, Xinmin S Li, Lin Li, Shamanthika Shelkay, Xiaoming Fu, Sarah Neale, Cathy O'Laughlin, Kimberly Peterson, Stanley L Hazen, W H Wilson Tang
   year: 2021
   url: https://pubmed.ncbi.nlm.nih.gov/33872583/
   kind: Randomized clinical trial
   insight: Choline-bitartrate-containing arms increased fasting TMAO and platelet reactivity; equivalent high-choline exposure from eggs or phosphatidylcholine did not.
   limitation: Short 28-day biomarker study in mostly young adults with normal renal function; it did not measure cardiovascular events.
-  pmid: '33872583'
+  pmid: "33872583"
   doi: 10.1016/j.amjmed.2021.03.016
   funding: Inspected full text reports NIH/ODS and philanthropic support plus commercially supported mass-spectrometry infrastructure through a Shimadzu Center of Excellence award.
   sponsorshipStatus: mixed-funding
@@ -1359,7 +1360,7 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   kind: Randomized controlled crossover trial
   insight: Three eggs/day and choline bitartrate supplying about 400 mg/day choline-equivalent did not significantly differ in plasma TMAO in 23 adults with metabolic syndrome.
   limitation: Small metabolic-syndrome crossover study; disclosure text was not inspected for this draft.
-  pmid: '35334836'
+  pmid: "35334836"
   doi: 10.3390/nu14061179
   funding: Not assessed from an inspected declaration.
   sponsorshipStatus: not-assessed
@@ -1373,35 +1374,35 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   kind: Human challenge study and prospective cohort
   insight: Antibiotic suppression demonstrated microbiota-dependent TMAO formation after a phosphatidylcholine challenge; higher fasting TMAO predicted three-year major cardiovascular events in 4,007 angiography patients.
   limitation: The cardiovascular component is observational for TMAO and does not show that dietary choline or phosphatidylcholine causes cardiovascular events.
-  pmid: '23614584'
+  pmid: "23614584"
   doi: 10.1056/NEJMoa1109400
   funding: Abstract reports National Institutes of Health and other support; full funding declaration was not re-inspected for classification.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from an inspected declaration in this draft.
   conflictOfInterestStatus: not-assessed
 - id: jia-2019
-  title: 'Assessment of Causal Direction Between Gut Microbiota-Dependent Metabolites and Cardiometabolic Health: A Bidirectional Mendelian Randomization Analysis'
+  title: "Assessment of Causal Direction Between Gut Microbiota-Dependent Metabolites and Cardiometabolic Health: A Bidirectional Mendelian Randomization Analysis"
   authors: Jinzhu Jia, Pan Dou, Meng Gao, Xuejun Kong, Changwei Li, Zhonghua Liu, Tao Huang
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/31167879/
   kind: Bidirectional Mendelian randomization analysis
   insight: Genetically predicted higher TMAO was not associated with tested cardiometabolic diseases after Bonferroni correction; diabetes and kidney disease predicted higher TMAO, supporting possible reverse causality.
   limitation: Genetic instruments test lifelong genetically proxied metabolite variation, not short-term dietary choline exposure; several secondary associations were only suggestive.
-  pmid: '31167879'
+  pmid: "31167879"
   doi: 10.2337/db19-0153
   funding: Not assessed from an inspected declaration.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from an inspected declaration.
   conflictOfInterestStatus: not-assessed
 - id: yoo-2026
-  title: 'Choline status and related health outcomes in humans: A scoping review'
+  title: "Choline status and related health outcomes in humans: A scoping review"
   authors: Samantha Yoo, Andrew Aoun, Azita Montazeri, Erin Collins, Julian Little
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/41847819/
   kind: Scoping review
   insight: Mapped 117 primary human studies and judged evidence insufficient or equivocal for many outcomes, while identifying possible maternal-choline benefits for offspring neurodevelopment.
   limitation: Scoping review maps rather than quantitatively pools evidence; searches covered human studies from 2000 through May 2025 and three main databases.
-  pmid: '41847819'
+  pmid: "41847819"
   doi: 10.1177/02601060261430655
   funding: Canadian Institutes of Health Research grant FRN-PJT-175263.
   sponsorshipStatus: non-industry-funded
@@ -1416,67 +1417,61 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   kind: Randomized controlled trial of citicoline
   insight: Provides a human trial example in which the administered intervention was CDP-choline/citicoline rather than free dietary choline.
   limitation: This citation distinguishes formulation identity; its efficacy findings should not be transferred to choline.
-  pmid: '25681529'
+  pmid: "25681529"
   doi: 10.1016/j.pbb.2015.02.004
   funding: Not assessed from an inspected declaration.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from an inspected declaration.
   conflictOfInterestStatus: not-assessed
 - id: jeon-2024-alpha-gpc
-  title: 'Efficacy and safety of choline alphoscerate for amnestic mild cognitive impairment: a randomized double-blind placebo-controlled trial'
+  title: "Efficacy and safety of choline alphoscerate for amnestic mild cognitive impairment: a randomized double-blind placebo-controlled trial"
   authors: Jongwook Jeon, Su Young Lee, Seunghoon Lee, Changwoo Han, Geum Duck Park, Se-Joo Kim, Jhin Goo Chang, Woo Jung Kim
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/39300341/
   kind: Randomized controlled trial of alpha-GPC
   insight: Provides a human trial example identifying alpha-GPC/choline alphoscerate as a distinct administered choline-containing compound.
   limitation: This citation distinguishes formulation identity; its efficacy findings should not be transferred to choline.
-  pmid: '39300341'
+  pmid: "39300341"
   doi: 10.1186/s12877-024-05366-7
   funding: Not assessed from an inspected declaration.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from an inspected declaration.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-19262950
+- id: pubmed-19262950
   title: Synapse formation is enhanced by oral administration of uridine and DHA, the circulating precursors of brain phosphatides.
   authors: R J Wurtman, M Cansev, I H Ulus
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19262950/
   kind: PubMed publication
-  insight: 'OBJECTIVE: The loss of cortical and hippocampal synapses is a universal hallmark of Alzheimer''s disease, and probably underlies its effects on cognition.'
+  insight: "OBJECTIVE: The loss of cortical and hippocampal synapses is a universal hallmark of Alzheimer's disease, and probably underlies its effects on cognition."
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '19262950'
+  pmid: "19262950"
   doi: 10.1007/s12603-009-0056-3
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-a56f7a8309c3
+- id: publication-link-a56f7a8309c3
   title: Dietary uridine enhances the improvement in learning and memory produced by administering DHA to gerbils
   authors: Not established
   year: 2026
   url: https://www.fasebj.org/content/22/11/3938.full
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-15705349
+- id: pubmed-15705349
   title: Antidepressant-like effects of uridine and omega-3 fatty acids are potentiated by combined treatment in rats.
   authors: William A Carlezon, Stephen D Mague, Aimee M Parow, Andrew L Stoll, Bruce M Cohen, Perry F Renshaw
   year: 2005
   url: https://pubmed.ncbi.nlm.nih.gov/15705349/
   kind: PubMed publication
-  insight: 'BACKGROUND: Brain phospholipid metabolism and membrane fluidity may be involved in the pathophysiology of mood disorders.'
+  insight: "BACKGROUND: Brain phospholipid metabolism and membrane fluidity may be involved in the pathophysiology of mood disorders."
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '15705349'
+  pmid: "15705349"
   doi: 10.1016/j.biopsych.2004.11.038
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-8372096
+- id: pubmed-8372096
   title: Uridine and stimulant-induced motor activity.
   authors: C S Myers, M Napolitano, H Fisher, G C Wagner
   year: 1993
@@ -1484,13 +1479,11 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   kind: PubMed publication
   insight: Chronic administration of uridine alters dopaminergic activity and related behavior.
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '8372096'
+  pmid: "8372096"
   doi: 10.3181/00379727-204-43633
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-24286859
+- id: pubmed-24286859
   title: Neuroprotective and cognitive enhancing effects of a multi-targeted food intervention in an animal model of neurodegeneration and depression.
   authors: Yuliya E Borre, Theodora Panagaki, Pim J Koelink, Mary E Morgan, Hendrikus Hendriksen, Johan Garssen, Aletta D Kraneveld, Berend Olivier, Ronald S Oosting
   year: 2014
@@ -1498,25 +1491,21 @@ Reddit index corpus import (6 linked source records; 5 PubMed abstracts). Full-t
   kind: PubMed publication
   insight: Rising neurodegenerative and depressive disease prevalence combined with the lack of effective pharmaceutical treatments and dangerous side effects, has created an urgent need for the development of effective therapies.
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '24286859'
+  pmid: "24286859"
   doi: 10.1016/j.neuropharm.2013.11.009
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-25322923
-  title: 'Tolerability and safety of Souvenaid in patients with mild Alzheimer''s disease: results of multi-center, 24-week, open-label extension study.'
+- id: pubmed-25322923
+  title: "Tolerability and safety of Souvenaid in patients with mild Alzheimer's disease: results of multi-center, 24-week, open-label extension study."
   authors: Marcel G M Olde Rikkert, Frans R Verhey, Rafael Blesa, Christine A F von Arnim, Anke Bongers, John Harrison, John Sijben, Elio Scarpini, Maurits F J Vandewoude, Bruno Vellas, Renger Witkamp, Patrick J G H Kamphuis, Philip Scheltens
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/25322923/
   kind: PubMed publication
-  insight: 'BACKGROUND: The medical food Souvenaid, containing the specific nutrient combination Fortasyn Connect, is designed to improve synapse formation and function in patients with Alzheimer''s disease (AD).'
+  insight: "BACKGROUND: The medical food Souvenaid, containing the specific nutrient combination Fortasyn Connect, is designed to improve synapse formation and function in patients with Alzheimer's disease (AD)."
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '25322923'
+  pmid: "25322923"
   doi: 10.3233/JAD-141305
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 

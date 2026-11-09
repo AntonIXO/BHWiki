@@ -1,16 +1,23 @@
 ---
 slug: pqq
 name: pyrroloquinoline quinone
-subtitle: Evidence-specific research record.
+subtitle: Research subject
 aliases:
-- pqq
+  - pqq
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
-accent: '#888888'
+tags:
+  - perception
+  - fatigue-severity
+  - mitochondrial-biomarkers
+  - memory
+  - attention
+  - cognitive-performance
+  - episodic-memory
+accent: "#888888"
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
 halfLife:
@@ -28,43 +35,43 @@ kinetics:
   metabolism: Parent urinary recovery about 0.1% in the cited study
   sourceId: S5
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- evidenceNote
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - evidenceNote
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 9007199254740991
 ---
 
 ## Summary
 
-Pyrroloquinoline quinone (PQQ) supplements generally provide the disodium salt. Small, short human studies at about 20–21.5 mg/day report selective cognitive or surrogate biomarker signals, while an open-label fatigue/sleep study and a controlled exercise trial do not establish broad functional benefit. Human pharmacokinetics and long-term safety remain limited. [S5][S6][S8][S10][S11]
+Pyrroloquinoline quinone (PQQ) supplements generally provide the disodium salt. 5 mg/day report selective cognitive or surrogate biomarker signals, while an open-label fatigue/sleep study and a controlled exercise trial do not establish broad functional benefit.
 
 ## Description
 
@@ -72,11 +79,8 @@ PQQ disodium is a water-soluble quinone salt used in food supplements. Identity,
 
 ## Evidence note
 
-Clinical evidence is small and product-specific: randomized studies enrolled about 20–64 participants for 12 weeks, often using manufacturer-linked products. Selective domain findings and prefrontal NIRS changes are surrogate signals; no trial establishes increased mitochondrial number, longevity, or disease treatment. Funding and affiliations are listed per source. [S6][S7][S8][S9][S11]
+Study findings and methods are linked to their original publications.
 
-Reviewed PubMed abstracts for PMID(s) 17268846. No rights-eligible PMC full text was available among these records.
-
-PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restricted citations checked: PMC2804159.
 ## Doses
 
 ```yaml
@@ -162,7 +166,6 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   unit: mg
   ingredient: pyrroloquinoline quinone
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: orally given 20 mg of BioPQQ™ per day or placebo, for 12 weeks
@@ -309,7 +312,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   exposure: 20–21.5 mg/day for 12 weeks
   instrument: Cognitive batteries
   magnitude: null
-- id: reddit-pqq-attention-26782228
+- id: research-pqq-attention-26782228
   conceptId: attention
   name: Attention
   direction: Increased
@@ -321,7 +324,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-pqq-cognitive-performance-26782228
+- id: research-pqq-cognitive-performance-26782228
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
@@ -333,7 +336,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-pqq-episodic-memory-26782228
+- id: research-pqq-episodic-memory-26782228
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
@@ -358,7 +361,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   sourceId: S5
 - title: Source-specific finding from PMID 17268846
   description: Pyrroloquinoline quinone (PQQ), which is an essential nutrient, has been shown to act as an antioxidant.
-  sourceId: reddit-pmid-17268846
+  sourceId: pubmed-17268846
 ```
 
 ## Cautions
@@ -378,7 +381,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   sourceId: S6
 - title: Source-specific finding from PMID 17268846
   description: Reactive oxygen species (ROS) are thought to be responsible for neurotoxicity caused by the neurotoxin 6-hydroxydopamine (6-OHDA).
-  sourceId: reddit-pmid-17268846
+  sourceId: pubmed-17268846
 ```
 
 ## Claims
@@ -388,15 +391,15 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   assertion: PQQ improves cognition
   relation: evidence-boundary
   participants:
-  - entityId: substance:pqq
-    role: intervention
-  - entityId: tag:mitophagy
-    role: reported-outcome
+    - entityId: substance:pqq
+      role: intervention
+    - entityId: tag:mitophagy
+      role: reported-outcome
   context: Small RCTs reported selective domain findings; no broad or durable enhancement has been established.
   sourceIds:
-  - S6
-  - S8
-  - S9
+    - S6
+    - S8
+    - S9
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Small samples, multiple outcomes, short duration, and product-linked studies limit inference.
@@ -404,15 +407,15 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   assertion: PQQ increases human mitochondrial number
   relation: evidence-boundary
   participants:
-  - entityId: substance:pqq
-    role: intervention
-  - entityId: tag:mitophagy
-    role: reported-outcome
+    - entityId: substance:pqq
+      role: intervention
+    - entityId: tag:mitophagy
+      role: reported-outcome
   context: Only cell and surrogate biomarker evidence is available; human mitochondrial-count benefit is unproven.
   sourceIds:
-  - S5
-  - S11
-  - S12
+    - S5
+    - S11
+    - S12
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Mechanistic and biomarker findings do not establish tissue-level clinical benefit.
@@ -420,43 +423,43 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   assertion: PQQ is proven safe at any dose
   relation: evidence-boundary
   participants:
-  - entityId: substance:pqq
-    role: intervention
-  - entityId: tag:mitophagy
-    role: reported-outcome
+    - entityId: substance:pqq
+      role: intervention
+    - entityId: tag:mitophagy
+      role: reported-outcome
   context: Regulatory reviews support specified uses but do not establish indefinite or high-dose safety.
   sourceIds:
-  - S2
-  - S3
-  - S4
+    - S2
+    - S3
+    - S4
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Human exposure data are limited and renal/special-population evidence is incomplete.
-- id: reddit-claim-pqq-26782228-0
+- id: research-claim-pqq-26782228-0
   assertion: pyrroloquinoline quinone is associated with the reported episodic memory finding in this publication.
   relation: associated-with
   participants:
-  - entityId: substance:pqq
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:pqq
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - S6
+    - S6
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
-- id: reddit-claim-pqq-17268846-1
-  assertion: 'PMID 17268846 reported: Flow cytometry analysis using the ROS-sensitive fluorescence probe, dihydroethidium, revealed that PQQ reduced elevation of 6-OHDA-induced intracellular ROS.'
+- id: research-claim-pqq-17268846-1
+  assertion: "PMID 17268846 reported: Flow cytometry analysis using the ROS-sensitive fluorescence probe, dihydroethidium, revealed that PQQ reduced elevation of 6-OHDA-induced intracellular ROS."
   relation: associated-with
   participants:
-  - entityId: substance:pqq
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:pqq
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: Source-specific result from PMID 17268846; applies to the population and design described in that abstract.
   sourceIds:
-  - reddit-pmid-17268846
+    - pubmed-17268846
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Abstract result from PMID 17268846; this single study does not establish general efficacy or safety.
@@ -560,7 +563,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   authors: Yuji Itoh, Kyoko Hine, Hiroshi Miura, Tatsuo Uetake, Masahiko Nakano, Naohiro Takemura, Kaoru Sakatani
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/26782228/
-  pmid: '26782228'
+  pmid: "26782228"
   kind: Peer-reviewed randomized placebo-controlled human trial
   insight: 41 healthy older adults; 20 mg/day for 12 weeks; selected Stroop and Touch-M findings.
   limitation: Small sample, selective endpoints, subgroup finding, limited duration.
@@ -574,7 +577,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   authors: Masahiko Nakano, Yuta Murayama, Lizhen Hu, Kazuto Ikemoto, Tatsuo Uetake, Kaoru Sakatani
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27526146/
-  pmid: '27526146'
+  pmid: "27526146"
   kind: Peer-reviewed randomized human neuroimaging study
   insight: 20 healthy adults; 20 mg/day for 12 weeks; small NIRS changes in prefrontal physiology.
   limitation: Small surrogate-endpoint study; no independent clinical outcome.
@@ -584,11 +587,11 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/27526146/
 - id: S8
-  title: 'Effect of Dietary Pyrroloquinoline Quinone Disodium Salt on Cognitive Function in Healthy Volunteers: A Randomized, Double-Blind, Placebo-Controlled, Parallel-Group Study'
+  title: "Effect of Dietary Pyrroloquinoline Quinone Disodium Salt on Cognitive Function in Healthy Volunteers: A Randomized, Double-Blind, Placebo-Controlled, Parallel-Group Study"
   authors: Yoshiaki Shiojima, Megumi Takahashi, Ryohei Takahashi, Hiroyoshi Moriyama, Debasis Bagchi, Manashi Bagchi, Masanori Akanuma
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/34415830/
-  pmid: '34415830'
+  pmid: "34415830"
   kind: Peer-reviewed randomized placebo-controlled human trial
   insight: 64 randomized; 58 completers; 21.5 mg/day for 12 weeks; multiple Cognitrax-domain findings.
   limitation: Small sample, multiple cognitive outcomes, short duration, industry-linked affiliations.
@@ -628,7 +631,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   authors: Paul S. Hwang, Steven B. Machek, Thomas D. Cardaci, Dylan T. Wilburn, Caelin S. Kim, Emiliya S. Suezaki, Darryn S. Willoughby
   year: 2020
   url: https://pubmed.ncbi.nlm.nih.gov/31860387/
-  pmid: '31860387'
+  pmid: "31860387"
   kind: Peer-reviewed randomized placebo-controlled exercise trial
   insight: 23 men; 20 mg/day for six weeks with endurance training; PGC-1α increased but performance and body composition did not.
   limitation: Small all-male sample, short duration, surrogate mitochondrial marker.
@@ -648,7 +651,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
-  pmid: '19861415'
+  pmid: "19861415"
   pmcid: PMC2804159
 - id: S13
   title: Pyrroloquinoline Quinone Disodium
@@ -674,7 +677,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-17268846
+- id: pubmed-17268846
   title: Pyrroloquinoline quinone is a potent neuroprotective nutrient against 6-hydroxydopamine-induced neurotoxicity.
   authors: Hirokazu Hara, Hideaki Hiramatsu, Tetsuo Adachi
   year: 2007
@@ -682,11 +685,9 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   kind: PubMed publication
   insight: Flow cytometry analysis using the ROS-sensitive fluorescence probe, dihydroethidium, revealed that PQQ reduced elevation of 6-OHDA-induced intracellular ROS.
   limitation: PubMed abstract for PMID 17268846 was reviewed; no rights-eligible PMC full text was available in this pass.
-  pmid: '17268846'
+  pmid: "17268846"
   doi: 10.1007/s11064-006-9257-x
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 

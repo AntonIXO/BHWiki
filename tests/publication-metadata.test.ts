@@ -3,7 +3,7 @@ import test from "node:test";
 import { substances } from "../src/lib/content";
 import { contentHash, sourceIdentity, validateCanonicalSources, validateEditorialMetadata } from "../src/lib/publication-metadata";
 
-test("sourced drafts permit absent review metadata and stale attestations fail", () => {
+test("research article permit absent review metadata and stale attestations fail", () => {
   assert.equal(validateEditorialMetadata(substances, { version: 1, articles: {} }).size, 0);
   const article = substances[0];
   assert.throws(() => validateEditorialMetadata([article], { version: 1, articles: { [article.slug]: { contentHash: "0".repeat(64), contributors: [], reviewers: [] } } }), /Stale editorial metadata/);

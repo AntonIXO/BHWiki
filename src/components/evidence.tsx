@@ -233,7 +233,7 @@ export function EvidenceContents({ record }: { record: EvidenceRecord }) {
                 <a className="evidence-source-title" href={r.url} target="_blank" rel="noreferrer">{r.title}</a>
                 {(r.authors || r.year || r.kind) && <p className="evidence-source-meta">{[r.authors, r.year && String(r.year), r.kind].filter(Boolean).join(" · ")}</p>}
                 {r.insight && <div className="evidence-source-insight"><Beaker size={16} aria-hidden="true" /><Prose text={r.insight} /></div>}
-                {r.limitation?.trim() && !/^not (?:assessed|reported)\.?$/i.test(r.limitation.trim()) && <div className="evidence-source-limit"><CircleAlert size={16} aria-hidden="true" /><p><strong>Study limitations</strong><Prose text={r.limitation} inline /></p></div>}
+                {r.limitation?.trim() && !/(?:this (?:corpus pass|import)|imported from|metadata pending|require original-document verification)/i.test(r.limitation) && !/^not (?:assessed|reported)\.?$/i.test(r.limitation.trim()) && <div className="evidence-source-limit"><CircleAlert size={16} aria-hidden="true" /><p><strong>Study limitations</strong><Prose text={r.limitation} inline /></p></div>}
                 <SourceDisclosures reference={r} hideUnassessed />
               </article>
           ))}

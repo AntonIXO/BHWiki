@@ -10,9 +10,11 @@ molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
+tags:
+  - perception
+  - attention
 accent: "#888888"
-reviewedAt: "2026-10-15"
+reviewedAt: 2026-10-15
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -64,14 +66,8 @@ x-order: 9007199254740991
 
 ## Summary
 
-- text: "LSD microdosing can produce detectable acute effects, including increased energy and positive mood. In a six-week placebo-controlled home-administration trial, these did not translate into sustained improvements in the principal mood or cognitive assessments."
-  sourceId: murphy-2023
-- text: "A six-week randomized trial in adults with ADHD found no symptom advantage over placebo. Feeling stimulated is not equivalent to treating ADHD."
-  sourceId: mueller-2025
-- text: "A September 2026 conference abstract reporting the active-placebo-controlled LSDDEP2 depression trial found no antidepressant superiority. This preliminary controlled result contrasts with earlier uncontrolled improvement reports."
-  sourceId: donegan-2026-rct
-- text: "Objective creativity testing found neither acute nor lasting enhancement. These results do not establish improved workplace productivity."
-  sourceId: murphy-creativity-2025
+- text: "LSD microdosing can produce detectable acute effects, including increased energy and positive mood.
+
 ## Description
 
 - text: "Microdosing describes a dosing practice, not a different molecule. Human experiments commonly investigate approximately 5–20 µg LSD per administration, intended to produce minimal rather than pronounced psychedelic effects. The boundary is not reliably subperceptual: 10 µg was detectable on average in one dose-ranging experiment."
@@ -82,6 +78,7 @@ x-order: 9007199254740991
   sourceId: mueller-2025
 - text: "MB-22001 is an investigational titratable LSD formulation, not evidence that all products described as LSD microdoses are equivalent. This article does not transfer efficacy from full-dose LSD, psilocybin, or LSD analogues."
   sourceId: lsddep2-protocol
+
 ## Evidence note
 
 - text: "Separate acute drug effects, drug-free follow-up outcomes, patient symptom scales, laboratory tasks, and subjective productivity reports. Improvement from baseline without a placebo difference does not establish a drug-specific benefit."
@@ -96,6 +93,7 @@ x-order: 9007199254740991
   sourceId: donegan-2026-rct
 - text: "NCT07061886, an expectancy experiment involving 13 µg LSD or placebo, was listed as completed with 42 participants in its July 9, 2026 update, without posted results. Completion alone supplies no efficacy finding."
   sourceId: registry-expectancy
+
 ## Doses
 
 ```yaml
@@ -105,75 +103,70 @@ x-order: 9007199254740991
   quantityMax: null
   unit: not established
   ingredient: lsd-microdosing
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 - label: lsd-microdosing research exposure 2
   amount: Placebo or 5, 10, and 20 µg LSD base orally on separate crossover visits.
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: lsd-microdosing
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 - label: lsd-microdosing research exposure 3
   amount: Placebo or 5, 10, or 20 µg LSD, as reported, every fourth day for six administrations.
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: lsd-microdosing
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 - label: lsd-microdosing research exposure 4
   amount: Placebo or 13/26 µg LSD tartrate, equivalent in this preparation to 10/20 µg base, sublingually four times at 3–4-day intervals.
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: lsd-microdosing
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 - label: lsd-microdosing research exposure 5
   amount: "10 µg LSD or placebo every third day for six weeks: 14 sublingual administrations, initially supervised and subsequently at home."
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: lsd-microdosing
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 - label: lsd-microdosing research exposure 6
   amount: "20 µg LSD base or placebo twice weekly for six weeks: 12 outpatient administrations."
   quantity: null
@@ -181,29 +174,27 @@ x-order: 9007199254740991
   unit: not established
   ingredient: lsd-microdosing
   formulation: 29 µg LSD tartrate corresponding to 20 µg base in the study's ethanol-containing oral solution.
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: "Source-specific evidence is preserved in the cited source."
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
 - label: lsd-microdosing research exposure 7
   amount: Sixteen administrations over eight weeks, twice weekly; initial 8 µg followed by individually adjusted 6–20 µg doses in the final report.
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: lsd-microdosing
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 - label: lsd-microdosing research exposure 8
   amount: Sixteen administrations over eight weeks, starting at 8 µg with a 4–20 µg titration range.
   quantity: null
@@ -211,59 +202,55 @@ x-order: 9007199254740991
   unit: not established
   ingredient: lsd-microdosing
   formulation: MB-22001, expressed as LSD free-base equivalents.
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S2
+  population: Not established
 - label: lsd-microdosing research exposure 9
   amount: Planned 10 µg daily or every other day during the late-luteal symptom period over three menstrual cycles, versus placebo; estimated enrollment 150.
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: lsd-microdosing
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S4
+  population: Not established
+  formulation: Not established
 - label: lsd-microdosing research exposure 10
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: lsd-microdosing
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: "Source-specific evidence is preserved in the cited source."
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 - label: lsd-microdosing research exposure 11
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: lsd-microdosing
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 ```
 
 ## Pharmacokinetics
@@ -271,8 +258,6 @@ x-order: 9007199254740991
 ```yaml
 - id: lsd-microdosing-pk-1
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Healthy participants; oral 5, 10, and 20 µg LSD base
   endpoint: elimination-half-life
   statistic: not-established
@@ -280,13 +265,11 @@ x-order: 9007199254740991
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: lsd-microdosing-pk-2
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Healthy male volunteers; 10 µg sublingual LSD
   endpoint: elimination-half-life
   statistic: not-established
@@ -294,13 +277,11 @@ x-order: 9007199254740991
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: lsd-microdosing-pk-3
   analyte: Subjective duration
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -308,13 +289,11 @@ x-order: 9007199254740991
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: lsd-microdosing-pk-4
   analyte: Assay limitations
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -322,7 +301,7 @@ x-order: 9007199254740991
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 ```
@@ -365,10 +344,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: lsd-microdosing-effect-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -378,10 +357,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: lsd-microdosing-effect-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -391,10 +370,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -409,10 +388,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: lsd-microdosing-outcome-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -422,10 +401,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: lsd-microdosing-outcome-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -435,10 +414,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: lsd-microdosing-outcome-4
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -448,10 +427,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: lsd-microdosing-outcome-5
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -461,10 +440,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: lsd-microdosing-outcome-6
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -474,10 +453,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: lsd-microdosing-outcome-7
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -487,10 +466,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: lsd-microdosing-outcome-8
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -500,10 +479,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: lsd-microdosing-outcome-9
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -513,10 +492,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: lsd-microdosing-outcome-10
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -526,10 +505,10 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: lsd-microdosing-outcome-11
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -539,23 +518,23 @@ x-order: 9007199254740991
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Mechanisms
 
 ```yaml
 - title: Serotonergic pharmacology
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Peripheral BDNF; positive experiment
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Peripheral BDNF; non-replication
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 ```
 
@@ -563,22 +542,22 @@ x-order: 9007199254740991
 
 ```yaml
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 ```
 
@@ -653,7 +632,7 @@ x-order: 9007199254740991
 - id: interaction-1
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -661,7 +640,7 @@ x-order: 9007199254740991
 - id: interaction-2
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -669,7 +648,7 @@ x-order: 9007199254740991
 - id: interaction-3
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: "Source-specific evidence is preserved in the cited source."
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -677,7 +656,7 @@ x-order: 9007199254740991
 - id: interaction-4
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -706,7 +685,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Individual disclosures not supplied by registry.
   conflictOfInterestStatus: not-assessed
 - id: S2
-  title: 'LSDDEP2: study protocol for a randomised, double-dummy, triple-blind, active placebo-controlled, parallel groups trial of LSD microdosing in patients with major depressive disorder'
+  title: "LSDDEP2: study protocol for a randomised, double-dummy, triple-blind, active placebo-controlled, parallel groups trial of LSD microdosing in patients with major depressive disorder"
   authors: Daldegan-Bueno D; Donegan CJ; Forsyth A; Sumner RL; Murphy RJ; Menkes DB; Evans W; Hoeh N; Sundram F; Reynolds LM; Ponton R; Cavadino A; Smith T; Roop P; Allen N; Abeysinghe B; Svirskis D; Bansal M; Muthukumaraswamy S.
   year: 2024
   url: https://doi.org/10.1186/s13063-024-08384-3
@@ -754,7 +733,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Liechti disclosed Mind Medicine consultancy; the company had no funding or conduct role. Other authors declared none.
   conflictOfInterestStatus: not-assessed
 - id: S6
-  title: 'Acute Mood-Elevating Properties of Microdosed Lysergic Acid Diethylamide in Healthy Volunteers: A Home-Administered Randomized Controlled Trial.'
+  title: "Acute Mood-Elevating Properties of Microdosed Lysergic Acid Diethylamide in Healthy Volunteers: A Home-Administered Randomized Controlled Trial."
   authors: Murphy RJ; Sumner R; Evans W; Ponton R; Ram S; Godfrey K; Forsyth A; Cavadino A; Krishnamurthy Naga V; Smith T; Hoeh NR; Menkes DB; Muthukumaraswamy S.
   year: 2023
   url: https://doi.org/10.1016/j.biopsych.2023.03.013
@@ -814,7 +793,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Complete disclosure not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S11
-  title: 'Safety and Efficacy of Repeated Low-Dose LSD for ADHD Treatment in Adults: A Randomized Clinical Trial.'
+  title: "Safety and Efficacy of Repeated Low-Dose LSD for ADHD Treatment in Adults: A Randomized Clinical Trial."
   authors: Mueller L; Santos de Jesus J; Schmid Y; Müller F; Becker A; Klaiber A; Straumann I; Luethi D; Haijen ECHM; Hurks PPM; Kuypers KPC; Liechti ME.
   year: 2025
   url: https://doi.org/10.1001/jamapsychiatry.2025.0044
@@ -826,7 +805,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Mueller disclosed study funding; Liechti disclosed Mind Medicine consultancy/grants; Kuypers disclosed unrelated institutional Clerkenwell Health funding.
   conflictOfInterestStatus: not-assessed
 - id: S12
-  title: 'Effects of repeated low-dose LSD on neuropsychological functioning in adults with ADHD: a randomized placebo-controlled study.'
+  title: "Effects of repeated low-dose LSD on neuropsychological functioning in adults with ADHD: a randomized placebo-controlled study."
   authors: Haijen-Bongers ECHM; Hurks PPM; Schepers J; Vizeli P; Santos de Jesus J; Mueller L; Schmid Y; Liechti ME; Kuypers KPC.
   year: 2026
   url: https://doi.org/10.1007/s00213-026-07107-7
@@ -838,7 +817,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Liechti disclosed unrelated Definium and Lykos consultancy/grants; remaining authors declared no relevant commercial relationships.
   conflictOfInterestStatus: not-assessed
 - id: S13
-  title: 'LSD microdosing in major depressive disorder: results from an open-label trial.'
+  title: "LSD microdosing in major depressive disorder: results from an open-label trial."
   authors: Daldegan-Bueno D; Donegan CJ; Sumner R; Forsyth A; Evans W; Alshakhouri M; Reynolds L; Ponton R; Smith T; Roop P; Hoeh N; Allen N; Sundram F; Menkes D; Muthukumaraswamy S.
   year: 2026
   url: https://doi.org/10.1016/j.neuropharm.2025.110762
@@ -850,7 +829,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Complete publication-specific disclosure not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: '230. LSD microdosing for depression: hype or hope? A randomised controlled trial in major depressive disorder'
+  title: "230. LSD microdosing for depression: hype or hope? A randomised controlled trial in major depressive disorder"
   authors: Donegan C; Forsyth A; Sumner R; Miller E; Alshakhouri M; Murphy R; Evans W; Sundram F; Hoeh N; Menkes D; Douglass H; Reynolds L; Muthukumaraswamy S.
   year: 2026
   url: https://doi.org/10.1093/ijnp/pyag040.021
@@ -862,7 +841,7 @@ x-order: 9007199254740991
   conflictsOfInterest: No publication-specific disclosure available in the retrieved abstract.
   conflictOfInterestStatus: not-assessed
 - id: S15
-  title: 'LSDDEP2: study protocol for a randomised, double-dummy, triple-blind, active placebo-controlled, parallel groups trial of LSD microdosing in patients with major depressive disorder'
+  title: "LSDDEP2: study protocol for a randomised, double-dummy, triple-blind, active placebo-controlled, parallel groups trial of LSD microdosing in patients with major depressive disorder"
   authors: Daldegan-Bueno D; Donegan CJ; Forsyth A; Sumner RL; Murphy RJ; Menkes DB; Evans W; Hoeh N; Sundram F; Reynolds LM; Ponton R; Cavadino A; Smith T; Roop P; Allen N; Abeysinghe B; Svirskis D; Bansal M; Muthukumaraswamy S.
   year: 2024
   url: https://doi.org/10.1186/s13063-024-08384-3
@@ -946,7 +925,7 @@ x-order: 9007199254740991
   conflictsOfInterest: Declaration not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S22
-  title: 'New-Onset Seizures in an Adolescent Following Use of LSD while on Low-Dose Lithium Therapy: A Case Study.'
+  title: "New-Onset Seizures in an Adolescent Following Use of LSD while on Low-Dose Lithium Therapy: A Case Study."
   authors: Edwards C; Van Gerpen S; Anand V.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38986146/

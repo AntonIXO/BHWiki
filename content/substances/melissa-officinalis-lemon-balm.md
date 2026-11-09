@@ -1,70 +1,72 @@
 ---
 slug: melissa-officinalis-lemon-balm
 name: Melissa officinalis (Lemon balm)
-subtitle: Reddit index evidence trail.
+subtitle: Lemon balm is an aromatic herb studied for calmness, mood and cognitive performance..
 aliases:
-- Lemon balm
+  - Lemon balm
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
-category: Reddit index entry
+category: Botanical and extract
 tags:
-- reddit-index
-accent: '#a9b993'
-reviewedAt: '2026-11-01'
+  - mood-response
+  - episodic-memory
+  - anxiety-symptom-severity
+accent: "#a9b993"
+reviewedAt: 2026-11-01
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
   low: null
   high: null
   context: No validated elimination observation was imported in this corpus pass.
-  sourceId: reddit-index-melissa-officinalis-lemon-balm
-  observationId: melissa-pk-unestablished
+  sourceId: pubmed-25360512
 kinetics:
   onset: Not established
   peak: Not established
   duration: Not established
   bioavailability: Not established
   metabolism: Not established
-  sourceId: reddit-index-melissa-officinalis-lemon-balm
+  sourceId: pubmed-25360512
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- externalWikiLinks
-- references
-- legal
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - externalWikiLinks
+  - references
+  - legal
+x-order: 9007199254740991
 ---
 
 ## Summary
 
-Acute Melissa officinalis preparations produced dose- and matrix-dependent mood and memory findings in small human studies; thyroid evidence is in vitro.
+Lemon balm is an aromatic herb studied for calmness, mood and cognitive performance.
 
 ## Description
 
@@ -72,8 +74,7 @@ The linked studies used encapsulated dried leaf and standardized beverage/yoghur
 
 ## Evidence note
 
-PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Human findings are preparation- and dose-specific; the thyroid result is an in-vitro assay and no human pharmacokinetic parameter was reported.
-
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -92,26 +93,13 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
   purpose: Randomized placebo-controlled cognitive and mood crossover study
   sourceCategory: research
   note: The 1,600 mg dose showed the clearest favorable signal; this is a study exposure, not a dosing recommendation.
-  sourceId: reddit-pmid-12888775
+  sourceId: pubmed-12888775
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: melissa-pk-unestablished
-  analyte: Melissa officinalis constituents
-  route: oral
-  formulation: Varied extracts and foods
-  population: Human studies
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: The linked abstracts report acute pharmacodynamic outcomes but no validated half-life or exposure model.
-  sourceId: reddit-pmid-25360512
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -129,7 +117,7 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
   direction: Increased
   evidence: Human research
   description: In 20 healthy young adults, the highest single dose (1,600 mg) improved memory performance and increased calmness across post-dose assessments; lower doses showed some slower timed-memory performance.
-  sourceId: reddit-pmid-12888775
+  sourceId: pubmed-12888775
   population: 20 healthy young adults
   exposure: 600, 1,000, or 1,600 mg encapsulated dried leaf once
   instrument: Cognitive Drug Research battery and Bond-Lader visual analog scales
@@ -141,7 +129,7 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
   direction: Increased
   evidence: Human research
   description: Two double-blind crossover studies found standardized lemon-balm preparations in beverage or yoghurt generally improved mood and/or cognitive performance, with some dose- and matrix-dependent behavioral costs.
-  sourceId: reddit-pmid-25360512
+  sourceId: pubmed-25360512
   population: Healthy young adults
   exposure: Standardized lemon-balm beverage or yoghurt preparation
   instrument: Multi-Tasking Framework mood and cognitive measures
@@ -158,7 +146,7 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
   direction: Increased
   evidence: Human research
   description: The 1,600 mg dried-leaf dose improved memory performance in the acute crossover trial; preparation-specific effects were observed.
-  sourceId: reddit-pmid-12888775
+  sourceId: pubmed-12888775
   population: 20 healthy young adults
   exposure: Single oral dose
   instrument: Cognitive Drug Research battery
@@ -170,7 +158,7 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
   direction: Decreased
   evidence: Human research
   description: Lemon-balm-containing foods were generally associated with improved self-rated mood after multitasking in two crossover studies.
-  sourceId: reddit-pmid-25360512
+  sourceId: pubmed-25360512
   population: Healthy young adults
   exposure: Standardized preparation
   instrument: Self-rated mood after multitasking
@@ -182,26 +170,22 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
 
 ```yaml
 - title: Cholinergic receptor binding in vitro
-  description: The selected dried-leaf preparation displaced nicotinic and muscarinic ligands in human cerebral cortex tissue;
-    no cholinesterase inhibition was detected in the cited study.
-  sourceId: reddit-pmid-12888775
+  description: The selected dried-leaf preparation displaced nicotinic and muscarinic ligands in human cerebral cortex tissue; no cholinesterase inhibition was detected in the cited study.
+  sourceId: pubmed-12888775
 - title: TSH-receptor/cAMP interference in vitro
-  description: Melissa officinalis produced dose-dependent inhibition of TSH-stimulated adenylate cyclase and TSH binding
-    in transfected CHO cells; this is cell-model evidence, not a clinical thyroid effect.
-  sourceId: reddit-pmid-14759065
+  description: Melissa officinalis produced dose-dependent inhibition of TSH-stimulated adenylate cyclase and TSH binding in transfected CHO cells; this is cell-model evidence, not a clinical thyroid effect.
+  sourceId: pubmed-14759065
 ```
 
 ## Cautions
 
 ```yaml
 - title: Preparation and dose dependence
-  description: Different extracts and delivery matrices produced different cognitive and mood profiles, including slower timed-memory
-    performance at lower doses in one trial.
-  sourceId: reddit-pmid-12888775
+  description: Different extracts and delivery matrices produced different cognitive and mood profiles, including slower timed-memory performance at lower doses in one trial.
+  sourceId: pubmed-12888775
 - title: In-vitro thyroid signal
-  description: The thyroid-disruptor assay used transfected cells; it does not establish thyroid toxicity in people, but it
-    is a reason to avoid treating the finding as clinically settled.
-  sourceId: reddit-pmid-14759065
+  description: The thyroid-disruptor assay used transfected cells; it does not establish thyroid toxicity in people, but it is a reason to avoid treating the finding as clinically settled.
+  sourceId: pubmed-14759065
 ```
 
 ## Claims
@@ -211,13 +195,13 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
   assertion: A 1,600 mg single dose of a selected Melissa officinalis dried-leaf preparation improved memory performance and calmness in 20 healthy young adults.
   relation: supported-by
   participants:
-  - entityId: substance:melissa-officinalis-lemon-balm
-    role: intervention
-  - entityId: tag:episodic-memory
-    role: outcome
+    - entityId: substance:melissa-officinalis-lemon-balm
+      role: intervention
+    - entityId: tag:episodic-memory
+      role: outcome
   context: Acute randomized placebo-controlled crossover study; other doses and preparations differed.
   sourceIds:
-  - reddit-pmid-12888775
+    - pubmed-12888775
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Small acute study and preparation-specific results.
@@ -225,13 +209,13 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
   assertion: Standardized lemon-balm foods were generally associated with improved mood and/or cognition after multitasking in two crossover studies.
   relation: associated-with
   participants:
-  - entityId: substance:melissa-officinalis-lemon-balm
-    role: intervention
-  - entityId: tag:anxiety-symptom-severity
-    role: reported endpoint
+    - entityId: substance:melissa-officinalis-lemon-balm
+      role: intervention
+    - entityId: tag:anxiety-symptom-severity
+      role: reported endpoint
   context: Effects varied by dose and delivery matrix.
   sourceIds:
-  - reddit-pmid-25360512
+    - pubmed-25360512
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Abstract reports mixed matrix- and dose-dependent effects.
@@ -249,29 +233,10 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
 []
 ```
 
-## External wiki links
-
-```yaml
-- service: Wikipedia
-  url: https://en.wikipedia.org/wiki/Lemon_balm
-  title: Wikipedia
-- service: Examine
-  url: https://examine.com/supplements/Melissa+officinalis
-  title: Examine
-```
-
 ## References
 
 ```yaml
-- id: reddit-index-melissa-officinalis-lemon-balm
-  title: Reddit r/Nootropics community index
-  authors: Reddit r/Nootropics community index
-  year: 2026
-  url: https://www.reddit.com/r/nootropics/wiki/index
-  kind: Community index
-  insight: The community index lists this substance and links the source trail below.
-  limitation: Community indexing is a discovery aid and does not establish efficacy or safety.
-- id: reddit-pmid-25360512
+- id: pubmed-25360512
   title: Anti-stress effects of lemon balm-containing foods.
   authors: Andrew Scholey, Amy Gibbs, Chris Neale, Naomi Perry, Anastasia Ossoukhova, Vanessa Bilog, Marni Kras, Claudia Scholz, Mathias Sass, Sybille Buchwald-Werner
   year: 2014
@@ -279,13 +244,13 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
   kind: PubMed publication
   insight: Lemon balm (Melissa officinalis) has been used historically and contemporarily as a modulator of mood and cognitive function, with anxiolytic effects following administration of capsules, coated tablets and topical application.
   limitation: PubMed abstract retrieved with the PubMed connector on 2026-11-01; full text was not available for this citation.
-  pmid: '25360512'
+  pmid: "25360512"
   doi: 10.3390/nu6114805
   funding: Not reported in the retrieved PubMed record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported in the retrieved PubMed record.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-12888775
+- id: pubmed-12888775
   title: Modulation of mood and cognitive performance following acute administration of single doses of Melissa officinalis (Lemon balm) with human CNS nicotinic and muscarinic receptor-binding properties.
   authors: D O Kennedy, G Wake, S Savelev, N T J Tildesley, E K Perry, K A Wesnes, A B Scholey
   year: 2003
@@ -293,13 +258,13 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
   kind: PubMed publication
   insight: Melissa officinalis (Lemon balm) is a herbal medicine that has traditionally been attributed with memory-enhancing properties, but which is currently more widely used as a mild sedative and sleep aid.
   limitation: PubMed abstract retrieved with the PubMed connector on 2026-11-01; full text was not available for this citation.
-  pmid: '12888775'
+  pmid: "12888775"
   doi: 10.1038/sj.npp.1300230
   funding: Not reported in the retrieved PubMed record.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported in the retrieved PubMed record.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-14759065
+- id: pubmed-14759065
   title: In vitro assay of thyroid disruptors affecting TSH-stimulated adenylate cyclase activity.
   authors: F Santini, P Vitti, G Ceccarini, C Mammoli, V Rosellini, C Pelosini, A Marsili, M Tonacchera, P Agretti, T Santoni, L Chiovato, A Pinchera
   year: 2003
@@ -307,7 +272,7 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
   kind: PubMed publication
   insight: Several natural or synthetic chemicals have been indicated as potential thyroid disruptors.
   limitation: PubMed abstract retrieved with the PubMed connector on 2026-11-01; full text was not available for this citation.
-  pmid: '14759065'
+  pmid: "14759065"
   doi: 10.1007/BF03348190
   funding: Not reported in the retrieved PubMed record.
   sponsorshipStatus: not-assessed
@@ -319,4 +284,15 @@ PubMed abstracts for PMIDs 12888775, 14759065, and 25360512 were retrieved. Huma
 
 ```yaml
 []
+```
+
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Lemon_balm
+  title: Wikipedia
+- service: Examine
+  url: https://examine.com/supplements/Melissa+officinalis
+  title: Examine
 ```

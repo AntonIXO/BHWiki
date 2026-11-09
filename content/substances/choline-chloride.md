@@ -13,6 +13,11 @@ smiles: C[N+](C)(C)CCO.[Cl-]
 category: Choline salt
 tags:
   - choline-precursor
+  - episodic-memory
+  - cognitive-task-performance
+  - attention
+  - hepatic-steatosis
+  - plasma-tmao-concentration
 accent: "#7A8B99"
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
@@ -435,7 +440,7 @@ Choline chloride reliably raises free-choline and related biomarkers after oral 
   kind: Human randomized crossover pharmacokinetic study
   insight: Provides salt-specific oral dose conversion, plasma choline/betaine kinetics, TMAO response, and timing after choline chloride.
   limitation: Six healthy men, single-dose exposure, no absolute bioavailability measurement, and no long-term clinical endpoint.
-  pmid: '34287673'
+  pmid: "34287673"
   doi: 10.1007/s00394-021-02637-6
   funding: Open-access support through Projekt DEAL; investigator-initiated trial partly funded by HiPP-Werk Georg Hipp OHG, an infant-formula manufacturer.
   sponsorshipStatus: industry-funded
@@ -455,14 +460,14 @@ Choline chloride reliably raises free-choline and related biomarkers after oral 
   conflictsOfInterest: Not assessed in the registry record.
   conflictOfInterestStatus: not-assessed
 - id: caudill-2018
-  title: 'Maternal choline supplementation during the third trimester of pregnancy improves infant information processing speed: a randomized, double-blind, controlled feeding study'
+  title: "Maternal choline supplementation during the third trimester of pregnancy improves infant information processing speed: a randomized, double-blind, controlled feeding study"
   authors: Marie A Caudill, Barbara J Strupp, Laura Muscalu, Julie E H Nevins, Richard L Canfield
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/29217669/
   kind: Randomized double-blind controlled feeding trial
   insight: Reports faster infant saccade reaction time after the higher maternal choline intake achieved with choline-chloride supplementation.
   limitation: Small cohort, maternal rather than infant dosing, and one prenatal trial; no single numerical between-group effect in the abstract.
-  pmid: '29217669'
+  pmid: "29217669"
   doi: 10.1096/fj.201700692RR
   funding: Egg Nutrition Center, The Beef Checkoff, USDA programs, Cornell social-science and life-course grants, and NIFA/USDA Hatch support.
   sponsorshipStatus: mixed-funding
@@ -470,14 +475,14 @@ Choline chloride reliably raises free-choline and related biomarkers after oral 
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC6988845/
 - id: bahnfleth-2022
-  title: 'Prenatal choline supplementation improves child sustained attention: A 7-year follow-up of a randomized controlled feeding trial'
+  title: "Prenatal choline supplementation improves child sustained attention: A 7-year follow-up of a randomized controlled feeding trial"
   authors: Charlotte L Bahnfleth, Barbara J Strupp, Marie A Caudill, Richard L Canfield
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/34962672/
   kind: Randomized-trial follow-up
   insight: Reports better age-seven sustained-attention performance after the higher maternal choline intake in the NCT01127022 cohort.
   limitation: Only 20 children were analyzed; this is a follow-up of the same prenatal trial, not an independent replication.
-  pmid: '34962672'
+  pmid: "34962672"
   doi: 10.1096/fj.202101217R
   funding: Seven-year follow-up funded by NIFA/USDA Hatch and Balchem Corp.; trainee support included NICHD and an Egg Nutrition Center award.
   sponsorshipStatus: mixed-funding
@@ -492,21 +497,21 @@ Choline chloride reliably raises free-choline and related biomarkers after oral 
   kind: Human pharmacokinetic study
   insight: Provides escalating intravenous choline-chloride exposure and supports a two-compartment model with saturable central elimination.
   limitation: Four long-term parenteral-nutrition patients; inspected abstract does not provide a single elimination half-life.
-  pmid: '8143393'
+  pmid: "8143393"
   doi: 10.1038/clpt.1994.28
   funding: Not assessed from a full funding declaration.
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed from a full disclosure statement.
   conflictOfInterestStatus: not-assessed
 - id: buchman-1995
-  title: 'Choline deficiency: a cause of hepatic steatosis during parenteral nutrition that can be reversed with intravenous choline supplementation'
+  title: "Choline deficiency: a cause of hepatic steatosis during parenteral nutrition that can be reversed with intravenous choline supplementation"
   authors: A L Buchman, M D Dubin, A A Moukarzel, et al.
   year: 1995
   url: https://pubmed.ncbi.nlm.nih.gov/7590654/
   kind: Human deficiency-treatment case series
   insight: Four deficient long-term parenteral-nutrition patients received 1-4 g/day intravenous choline chloride with plasma and CT improvement.
   limitation: Uncontrolled four-person series in severe deficiency; funding and conflict declarations were not inspected in full text.
-  pmid: '7590654'
+  pmid: "7590654"
   doi: 10.1002/hep.1840220510
   funding: Not assessed from a full funding declaration.
   sponsorshipStatus: not-assessed
@@ -520,7 +525,7 @@ Choline chloride reliably raises free-choline and related biomarkers after oral 
   kind: Human placebo-sequence study
   insight: Eight elderly patients showed no average memory improvement after 16 g/day choline chloride for seven days.
   limitation: Very small, old study; instrument details and modern disclosure information were unavailable in the inspected abstract.
-  pmid: '484722'
+  pmid: "484722"
   doi: 10.1176/ajp.136.10.1275
   funding: Not assessed.
   sponsorshipStatus: not-assessed
@@ -534,7 +539,7 @@ Choline chloride reliably raises free-choline and related biomarkers after oral 
   kind: Double-blind human study
   insight: Young healthy subjects receiving high-dose choline chloride showed no significant group-level short- or long-term memory benefit.
   limitation: Sample size is not stated in the abstract; old high-dose study with uninspected funding and conflict declarations.
-  pmid: '7350901'
+  pmid: "7350901"
   doi: 10.1001/archneur.1980.00500500079013
   funding: Not assessed.
   sponsorshipStatus: not-assessed

@@ -11,6 +11,10 @@ smiles: Not established
 category: Research subject
 tags:
   - behavioral-scheduling
+  - perception
+  - body-fat-mass
+  - fasting-glucose
+  - blood-pressure
 accent: "#888888"
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
@@ -89,7 +93,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   duration: Study-specific
   population: Adults in randomized trials
   purpose: Research protocol; not a personal recommendation.
-  note: "A common schedule is 16:8. Eating-window calories may be ad libitum, counted, or calorie-matched (S1, S3, S4)."
+  note: A common schedule is 16:8. Eating-window calories may be ad libitum, counted, or calorie-matched (S1, S3, S4).
   sourceCategory: research
   sourceId: S1
 - label: Alternate-day fasting
@@ -507,7 +511,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   id: S1
   authors: Daniela A. Koppold, Carolin Breinlinger, Etienne Hanslian, Christian Kessler, et al.; international fasting terminology consensus panel; Charité—Universitätsmedizin Berlin
   disclosureUrl: https://edoc.mdc-berlin.de/id/eprint/24572/1/24572oa.pdf
-- title: 'Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials'
+- title: "Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials"
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12175170/
   kind: systematic review and network meta-analysis of randomized trials
@@ -531,7 +535,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   conflictOfInterestStatus: not-assessed
   id: S3
   authors: Deying Liu et al.; Nanfang Hospital, Southern Medical University, and Tulane University
-- title: 'Time-Restricted Eating Without Calorie Counting for Weight Loss in a Racially Diverse Population: A Randomized Controlled Trial'
+- title: "Time-Restricted Eating Without Calorie Counting for Weight Loss in a Racially Diverse Population: A Randomized Controlled Trial"
   year: 2023
   url: https://pubmed.ncbi.nlm.nih.gov/37364268/
   kind: 12-month randomized controlled trial
@@ -543,7 +547,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   conflictOfInterestStatus: not-assessed
   id: S4
   authors: University of Illinois Chicago trial team
-- title: 'Effect of Alternate-Day Fasting on Weight Loss, Weight Maintenance, and Cardioprotection Among Metabolically Healthy Obese Adults: A Randomized Clinical Trial'
+- title: "Effect of Alternate-Day Fasting on Weight Loss, Weight Maintenance, and Cardioprotection Among Metabolically Healthy Obese Adults: A Randomized Clinical Trial"
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/28459931/
   kind: 12-month randomized controlled trial
@@ -555,7 +559,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   conflictOfInterestStatus: not-assessed
   id: S5
   authors: John F. Trepanowski et al.; University of Illinois Chicago
-- title: 'Effects of Intermittent Energy Restriction Compared with Those of Continuous Energy Restriction on Body Composition and Cardiometabolic Risk Markers: A Systematic Review and Meta-Analysis of Randomized Controlled Trials in Adults'
+- title: "Effects of Intermittent Energy Restriction Compared with Those of Continuous Energy Restriction on Body Composition and Cardiometabolic Risk Markers: A Systematic Review and Meta-Analysis of Randomized Controlled Trials in Adults"
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/37827491/
   kind: systematic review and meta-analysis
@@ -567,7 +571,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   conflictOfInterestStatus: not-assessed
   id: S6
   authors: Maite M. Schroor et al.; Maastricht University
-- title: 'Efficacy and safety of prolonged water fasting: a narrative review of human trials'
+- title: "Efficacy and safety of prolonged water fasting: a narrative review of human trials"
   year: 2023
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11494232/
   kind: narrative review of human trials
@@ -579,7 +583,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   conflictOfInterestStatus: not-assessed
   id: S8
   authors: Mark Ezpeleta, Sofia Cienfuegos, Shuhao Lin, Vasiliki Pavlou et al.; University of Illinois Chicago
-- title: 'Effect of Fasting-Mimicking Diet or Continuous Energy Restriction on Weight Loss, Body Composition, and Appetite-Regulating Hormones Among Metabolically Healthy Women with Obesity: a Randomized Controlled, Parallel Trial'
+- title: "Effect of Fasting-Mimicking Diet or Continuous Energy Restriction on Weight Loss, Body Composition, and Appetite-Regulating Hormones Among Metabolically Healthy Women with Obesity: a Randomized Controlled, Parallel Trial"
   year: 2021
   url: https://pubmed.ncbi.nlm.nih.gov/33420673/
   kind: randomized controlled trial
@@ -591,7 +595,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   conflictOfInterestStatus: not-assessed
   id: S9
   authors: Mehdi Sadeghian et al.; Ahvaz Jundishapur University of Medical Sciences
-- title: 'Intermittent fasting and health outcomes: an umbrella review of systematic reviews and meta-analyses of randomised controlled trials'
+- title: "Intermittent fasting and health outcomes: an umbrella review of systematic reviews and meta-analyses of randomised controlled trials"
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38500840/
   kind: umbrella review
@@ -604,7 +608,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   id: S10
   authors: Ming-Li Sun et al.; international academic collaborators
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/38500840/
-- title: '5. Facilitating Positive Health Behaviors and Well-being to Improve Health Outcomes: Standards of Care in Diabetes—2025'
+- title: "5. Facilitating Positive Health Behaviors and Well-being to Improve Health Outcomes: Standards of Care in Diabetes—2025"
   year: 2025
   url: https://diabetesjournals.org/care/article/48/Supplement_1/S86/157563/5-Facilitating-Positive-Health-Behaviors-and-Well
   kind: clinical practice guideline
@@ -616,7 +620,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   conflictOfInterestStatus: not-assessed
   id: S11
   authors: American Diabetes Association Professional Practice Committee
-- title: 'Calorie Restriction and Fasting Diets: What Do We Know?'
+- title: "Calorie Restriction and Fasting Diets: What Do We Know?"
   year: 2018
   url: https://www.nia.nih.gov/news/calorie-restriction-and-fasting-diets-what-do-we-know
   kind: government evidence brief
@@ -628,7 +632,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   conflictOfInterestStatus: not-assessed
   id: S12
   authors: National Institute on Aging, National Institutes of Health
-- title: 'Refeeding syndrome: what it is, and how to prevent and treat it'
+- title: "Refeeding syndrome: what it is, and how to prevent and treat it"
   year: 2008
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2440847/
   kind: clinical narrative review
@@ -640,7 +644,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   conflictOfInterestStatus: not-assessed
   id: S13
   authors: H. M. Mehanna, J. Moledina, J. Travis
-- title: 'Flipping the Metabolic Switch: Understanding and Applying the Health Benefits of Fasting'
+- title: "Flipping the Metabolic Switch: Understanding and Applying the Health Benefits of Fasting"
   year: 2018
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5783752/
   kind: mechanistic review
@@ -652,7 +656,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   conflictOfInterestStatus: not-assessed
   id: S14
   authors: Sarah D. Anton et al.
-- title: 'The ups and downs of caloric restriction and fasting: from molecular effects to clinical application'
+- title: "The ups and downs of caloric restriction and fasting: from molecular effects to clinical application"
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8749464/
   kind: review
@@ -664,7 +668,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   conflictOfInterestStatus: not-assessed
   id: S15
   authors: S. J. Hofer, D. Carmona-Gutierrez, M. I. Mueller, F. Madeo
-- title: 'Adverse events profile associated with intermittent fasting in adults with overweight or obesity: a systematic review and meta-analysis of randomized controlled trials'
+- title: "Adverse events profile associated with intermittent fasting in adults with overweight or obesity: a systematic review and meta-analysis of randomized controlled trials"
   year: 2024
   url: https://link.springer.com/article/10.1186/s12937-024-00975-9
   kind: systematic review and meta-analysis of adverse events
@@ -677,7 +681,7 @@ The strongest evidence comes from randomized TRE and ADF trials. A 2025 network 
   id: S16
   authors: Nutrition Journal systematic-review team
 - id: S7
-  title: 'Efficacy and safety of prolonged water fasting: a narrative review of human trials'
+  title: "Efficacy and safety of prolonged water fasting: a narrative review of human trials"
   authors: Mark Ezpeleta, Sofia Cienfuegos, Shuhao Lin, Vasiliki Pavlou et al.; University of Illinois Chicago
   year: 2023
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11494232/

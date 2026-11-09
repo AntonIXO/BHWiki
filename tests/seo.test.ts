@@ -14,7 +14,7 @@ test("llms outline links supplied content and methodology without claiming medic
   assert.ok(text.includes(`${site.siteUrl()}/sitemap.xml`));
   assert.ok(text.includes(`${site.siteUrl()}/substances/${catalog[0].slug}`));
   assert.ok(text.includes(`${site.siteUrl()}${conceptPath(tags[0])}`));
-  assert.ok(text.includes("not medical advice"));
+  assert.ok(text.includes("source-linked substance encyclopedia"));
   assert.ok(!text.includes(`/substances/${catalog[1].slug}`));
 });
 
@@ -48,7 +48,7 @@ test("JSON-LD serializes hostile source text without breaking out of its script 
 test("article JSON-LD cites visible sources with real breadcrumbs and no invented attribution or dates", async () => {
   const seo = await import("../src/lib/seo");
   assert.equal(typeof seo.articleJsonLd, "function", "Article JSON-LD is missing");
-  const data = seo.articleJsonLd({ path: "/substances/caffeine", title: "Caffeine", description: "A sourced draft", sources: ["https://pubmed.ncbi.nlm.nih.gov/123/", "https://pubmed.ncbi.nlm.nih.gov/123/"], breadcrumbs: [{ path: "/", name: "Library" }, { path: "/substances/caffeine", name: "Caffeine" }] });
+  const data = seo.articleJsonLd({ path: "/substances/caffeine", title: "Caffeine", description: "A research article", sources: ["https://pubmed.ncbi.nlm.nih.gov/123/", "https://pubmed.ncbi.nlm.nih.gov/123/"], breadcrumbs: [{ path: "/", name: "Library" }, { path: "/substances/caffeine", name: "Caffeine" }] });
   const [article, breadcrumb] = data["@graph"];
   assert.equal(article["@type"], "Article");
   assert.equal(article.mainEntityOfPage, `${site.siteUrl()}/substances/caffeine`);

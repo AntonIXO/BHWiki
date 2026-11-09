@@ -15,8 +15,8 @@ export type SeoSearchParams = Record<string, string | string[] | undefined>;
 export function buildLlmsTxt(substances: { slug: string; name: string }[], concepts: Pick<Tag, "id" | "kind" | "label">[]): string {
   const label = (value: string) => value.replace(/[\r\n\[\]]/g, " ");
   return [
-    "# BHWiki", "", "> An independent, source-linked substance encyclopedia; not medical advice.", "",
-    "Articles connect mechanisms, subjective experiences and measured outcomes to their cited sources. Sourced drafts are not attested medical review. Preserve populations, exposures and limitations; missing evidence is not evidence of safety. Consult each article's Research & sources section for the underlying publications.", "",
+    "# BHWiki", "", "> An independent, source-linked substance encyclopedia.", "",
+    "Articles connect mechanisms, subjective experiences and measured outcomes to their cited sources. Consult each article's Research & sources section for the underlying publications.", "",
     "## Orientation", `- [Evidence & methodology](${absoluteUrl("/about")})`, `- [Contribute corrections](${absoluteUrl("/contribute")})`, `- [Public sitemap](${absoluteUrl("/sitemap.xml")})`, "",
     "## Substances", ...substances.map(s => `- [${label(s.name)}](${absoluteUrl(`/substances/${s.slug}`)})`), "",
     "## Concepts, effects and outcomes", ...concepts.map(c => `- [${label(c.label)}](${absoluteUrl(conceptPath(c))})`), "",

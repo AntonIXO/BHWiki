@@ -10,9 +10,11 @@ molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
+tags:
+  - perception
+  - attention
 accent: "#888888"
-reviewedAt: "2026-10-15"
+reviewedAt: 2026-10-15
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -64,19 +66,20 @@ x-order: 9007199254740991
 
 ## Summary
 
-Magnesium sulfate has distinct uses that cannot be treated as interchangeable: oral saline laxation, parenteral magnesium replacement, obstetric seizure prevention or treatment, and other indication-specific hospital interventions. Its strongest large-trial evidence concerns preventing eclampsia and reducing recurrent eclamptic seizures—not improving health in magnesium-replete supplement users. (sourceId: oral-label; sourceId: injection-label; sourceId: magpie; sourceId: eclampsia-trial)
+Magnesium sulfate has distinct uses that cannot be treated as interchangeable: oral saline laxation, parenteral magnesium replacement, obstetric seizure prevention or treatment, and other indication-specific hospital interventions.
 
-Oral sulfate supplementation has produced some favorable metabolic measurements in a small diabetes trial, but a larger comparison with citrate, oxide, and placebo found no overall arterial-stiffness or blood-pressure benefit. Asthma findings depend on route, severity, and endpoint; several substantial trials were negative. Renal impairment increases the risk of potentially fatal magnesium accumulation. (sourceId: solati; sourceId: schutten; sourceId: silverman; sourceId: three-mg; sourceId: premix-label)
 ## Description
 
 Anhydrous magnesium sulfate is MgSO4, molecular weight 120.37 g/mol. Epsom salt and the cited injectable products contain magnesium sulfate heptahydrate, MgSO4·7H2O, approximately 246.48 g/mol. Hydration therefore changes the relationship between salt mass and magnesium content. Calculated elemental-magnesium fractions are approximately 20.2% for anhydrous sulfate and 9.86% for the heptahydrate. One gram of heptahydrate supplies approximately 98.6 mg magnesium, 4.06 mmol, or 8.12 mEq—not 1 g elemental magnesium. (sourceId: pubchem; sourceId: injection-label)
 
 “Elemental magnesium” describes the magnesium content of a preparation, not a separate equivalent dose of the entire salt. Injectable gram doses below refer to magnesium sulfate salt unless explicitly identified as elemental magnesium. The 2022 oral comparison used sulfate material reported as 17.4% magnesium; its capsule mass cannot be reconstructed using the heptahydrate fraction. Its citrate and oxide arms are identified separately, not treated as sulfate evidence. (sourceId: injection-label; sourceId: schutten)
+
 ## Evidence note
 
 Clinical outcomes, physiological measurements, and labeling claims are distinguished below. A reduced seizure rate is not equivalent to increased urinary magnesium; a spirometry improvement is not necessarily reduced hospitalization. The favorable diabetes findings coexist with null HbA1c and insulin-resistance findings. The arterial-stiffness trial’s positive sulfate subgroup was exploratory, not a replacement for its overall null result. (sourceId: magpie; sourceId: silverman; sourceId: solati; sourceId: schutten)
 
 The vascular trial’s registry lists 162 planned participants; its publication reports 164 randomized participants. Its industry and public–private support and author employment disclosures are retained. Missing historical funding or conflict statements are recorded as unavailable or unverified, never as proof of independence. (sourceId: vascular-registry; sourceId: schutten)
+
 ## Doses
 
 ```yaml
@@ -86,15 +89,15 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   quantityMax: null
   unit: not established
   ingredient: Magnesium sulfate heptahydrate USP
-  formulation: Not established
   route: oral
   frequency: Label permits no more than two doses daily, with a repeat dose after four hours
   duration: Short-term laxative use
   population: Adults and children aged 12 years or older
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: "Source-specific evidence is preserved in the cited source."
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  formulation: Not established
 - label: Oral vascular trial
   amount: 450 mg elemental magnesium daily
   quantity: 450
@@ -108,7 +111,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   population: Overweight or slightly obese adults
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - label: Oral diabetes trial
   amount: 300 mg elemental magnesium daily
@@ -123,7 +126,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   population: Adults with type 2 diabetes receiving adjusted usual medication
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - label: Obstetric injectable labeling
   amount: 4–6 g loading dose over 15 minutes, followed by 1–2 g/hour
@@ -138,7 +141,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   population: Pregnant patients with preeclampsia or eclampsia
   purpose: Seizure prevention, treatment, or prevention of recurrence
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - label: Deficiency replacement example
   amount: 5 g in one liter of compatible infusion fluid over three hours
@@ -146,30 +149,29 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   quantityMax: null
   unit: not established
   ingredient: Magnesium sulfate heptahydrate
-  formulation: Not established
   route: intravenous
   frequency: Not established
   duration: Not established
   population: Patients with magnesium deficiency
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  formulation: Not established
 - label: Acute adult asthma trial exposures
   amount: 2 g intravenously over 20 minutes, or 500 mg nebulized three times over one hour
   quantity: 2
   quantityMax: null
   unit: not established
   ingredient: Magnesium sulfate
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Adults presenting with severe acute asthma
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  formulation: Not established
 ```
 
 ## Pharmacokinetics
@@ -177,8 +179,6 @@ The vascular trial’s registry lists 162 planned participants; its publication 
 ```yaml
 - id: magnesium-sulfate-pk-1
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Six healthy men
   endpoint: elimination-half-life
   statistic: not-established
@@ -186,13 +186,11 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: magnesium-sulfate-pk-2
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -200,13 +198,11 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: magnesium-sulfate-pk-3
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Preeclamptic women described in prescribing information
   endpoint: elimination-half-life
   statistic: not-established
@@ -214,13 +210,11 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: magnesium-sulfate-pk-4
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -228,7 +222,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 ```
@@ -278,10 +272,10 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: magnesium-sulfate-effect-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -291,10 +285,10 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: magnesium-sulfate-effect-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -304,10 +298,10 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -547,13 +541,13 @@ The vascular trial’s registry lists 162 planned participants; its publication 
 
 ```yaml
 - title: Intestinal osmotic action
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Neuromuscular and vascular pharmacology
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Magnesium versus sulfate-specific benefit
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 ```
 
@@ -561,22 +555,22 @@ The vascular trial’s registry lists 162 planned participants; its publication 
 
 ```yaml
 - title: Hypermagnesemia
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Oral gastrointestinal safety
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Nutritional upper limit
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Prolonged pregnancy exposure
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Contraindications and formulation-specific hazards
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Concentration and route errors
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 ```
 
@@ -666,7 +660,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
 - id: interaction-1
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -674,7 +668,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
 - id: interaction-2
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -682,7 +676,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
 - id: interaction-3
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -690,7 +684,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
 - id: interaction-4
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -698,7 +692,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
 - id: interaction-5
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -706,7 +700,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
 - id: interaction-6
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -795,7 +789,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   conflictsOfInterest: No declaration available in the accessed abstract.
   conflictOfInterestStatus: not-assessed
 - id: S7
-  title: 'Effects of Magnesium Citrate, Magnesium Oxide, and Magnesium Sulfate Supplementation on Arterial Stiffness: A Randomized, Double-Blind, Placebo-Controlled Intervention Trial.'
+  title: "Effects of Magnesium Citrate, Magnesium Oxide, and Magnesium Sulfate Supplementation on Arterial Stiffness: A Randomized, Double-Blind, Placebo-Controlled Intervention Trial."
   authors: Joëlle C. Schutten; Peter J. Joris; Iris Groendijk; Coby Eelderink; Dion Groothof; Yvonne van der Veen; Robert Westerhuis; Femke Goorman; Ronald M. Danel; Martin H. de Borst; Stephan J. L. Bakker
   year: 2022
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9075273/
@@ -831,7 +825,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   conflictsOfInterest: No conflict declaration located in accessed material.
   conflictOfInterestStatus: not-assessed
 - id: S10
-  title: 'Do women with pre-eclampsia, and their babies, benefit from magnesium sulphate? The Magpie Trial: a randomised placebo-controlled trial.'
+  title: "Do women with pre-eclampsia, and their babies, benefit from magnesium sulphate? The Magpie Trial: a randomised placebo-controlled trial."
   authors: Douglas Altman; Guillermo Carroli; Lelia Duley; et al.; Magpie Trial Collaboration Group
   year: 2002
   url: https://pubmed.ncbi.nlm.nih.gov/12057549/
@@ -867,7 +861,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   conflictsOfInterest: No relevant potential conflict was reported.
   conflictOfInterestStatus: not-assessed
 - id: S13
-  title: 'Prenatal Intravenous Magnesium at 30-34 Weeks'' Gestation and Neurodevelopmental Outcomes in Offspring: The MAGENTA Randomized Clinical Trial.'
+  title: "Prenatal Intravenous Magnesium at 30-34 Weeks' Gestation and Neurodevelopmental Outcomes in Offspring: The MAGENTA Randomized Clinical Trial."
   authors: Caroline A. Crowther; Pat Ashwood; Philippa F. Middleton; Andrew McPhee; Thach Tran; Jane E. Harding; MAGENTA Study Group
   year: 2023
   url: https://jamanetwork.com/journals/jama/fullarticle/2808328
@@ -879,7 +873,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   conflictsOfInterest: None reported; funders reported no role in conduct, analysis, or publication decisions.
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: 'IV magnesium sulfate in the treatment of acute severe asthma: a multicenter randomized controlled trial.'
+  title: "IV magnesium sulfate in the treatment of acute severe asthma: a multicenter randomized controlled trial."
   authors: Robert A. Silverman; Harold Osborn; Jeffrey Runge; et al.; Acute Asthma/Magnesium Study Group
   year: 2002
   url: https://pubmed.ncbi.nlm.nih.gov/12171821/
@@ -891,7 +885,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   conflictsOfInterest: Full declaration not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S15
-  title: 'The 3Mg trial: a randomised controlled trial of intravenous or nebulised magnesium sulphate versus placebo in adults with acute severe asthma.'
+  title: "The 3Mg trial: a randomised controlled trial of intravenous or nebulised magnesium sulphate versus placebo in adults with acute severe asthma."
   authors: Steve Goodacre; Judith Cohen; Mike Bradburn; John Stevens; Alasdair Gray; Jonathan Benger; Tim Coats; 3Mg Research Team
   year: 2014
   url: https://www.journalslibrary.nihr.ac.uk/hta/HTA18220
@@ -903,7 +897,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   conflictsOfInterest: Author-specific declaration not located in accessed HTML; public-hospital pharmacy and Tayside Pharmaceuticals manufacturing arrangements were reported.
   conflictOfInterestStatus: not-assessed
 - id: S16
-  title: 'Effect of Nebulized Magnesium vs Placebo Added to Albuterol on Hospitalization Among Children With Refractory Acute Asthma Treated in the Emergency Department: A Randomized Clinical Trial.'
+  title: "Effect of Nebulized Magnesium vs Placebo Added to Albuterol on Hospitalization Among Children With Refractory Acute Asthma Treated in the Emergency Department: A Randomized Clinical Trial."
   authors: Suzanne Schuh; Judy Sweeney; Maggie Rumantir; et al.; Pediatric Emergency Research Canada Network
   year: 2020
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC7686869/
@@ -927,7 +921,7 @@ The vascular trial’s registry lists 162 planned participants; its publication 
   conflictsOfInterest: Full declaration not retrieved.
   conflictOfInterestStatus: not-assessed
 - id: S18
-  title: 'Early administration of intravenous magnesium to high-risk patients with acute myocardial infarction in the Magnesium in Coronaries (MAGIC) Trial: a randomised controlled trial.'
+  title: "Early administration of intravenous magnesium to high-risk patients with acute myocardial infarction in the Magnesium in Coronaries (MAGIC) Trial: a randomised controlled trial."
   authors: Magnesium in Coronaries Trial Investigators
   year: 2002
   url: https://pubmed.ncbi.nlm.nih.gov/12401244/

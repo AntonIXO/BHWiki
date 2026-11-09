@@ -1,68 +1,70 @@
 ---
 slug: desmopressin
 name: Desmopressin
-subtitle: Reddit index evidence trail.
+subtitle: Peptide and protein
 aliases: []
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
-category: Reddit index entry
+category: Peptide and protein
 tags:
-- reddit-index
-accent: '#a9b993'
-reviewedAt: '2026-11-01'
+  - memory
+  - episodic-memory
+accent: "#a9b993"
+reviewedAt: 2026-11-01
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
   low: null
   high: null
   context: No validated elimination observation was imported in this corpus pass.
-  sourceId: reddit-index-desmopressin
+  sourceId: pubmed-3762902
 kinetics:
   onset: Not established
   peak: Not established
   duration: Not established
   bioavailability: Not established
   metabolism: Not established
-  sourceId: reddit-index-desmopressin
+  sourceId: pubmed-3762902
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- externalWikiLinks
-- references
-- legal
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - externalWikiLinks
+  - references
+  - legal
+x-order: 9007199254740991
 ---
 
 ## Summary
 
-Desmopressin (DDAVP) is a vasopressin analogue. The two linked healthy-volunteer studies found no significant memory benefit: 20 µg/day intranasally for 15 days did not change multiple memory tests, and a single 60 µg intranasal post-trial dose did not improve 24-hour prose recall.
+Desmopressin is a synthetic analogue of vasopressin. Research explores the relationship between vasopressin signalling and memory.
 
 ## Description
 
@@ -70,7 +72,7 @@ In the 40-student double-blind study, 10 participants received desmopressin 0.2 
 
 ## Evidence note
 
-Reviewed both linked PubMed abstracts. No PMC full text was available through the connector in this pass. Both records are old, small healthy-volunteer experiments and do not establish nootropic efficacy or a human PK estimate.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -89,7 +91,7 @@ Reviewed both linked PubMed abstracts. No PMC full text was available through th
   purpose: Memory testing
   sourceCategory: research
   note: Dose and schedule reported in the PubMed abstract.
-  sourceId: reddit-pmid-3762902
+  sourceId: pubmed-3762902
 - label: Post-trial recall study
   amount: 60 µg
   quantity: 60
@@ -104,7 +106,7 @@ Reviewed both linked PubMed abstracts. No PMC full text was available through th
   purpose: Memory consolidation experiment
   sourceCategory: research
   note: Single dose reported in the PubMed abstract.
-  sourceId: reddit-pmid-8745039
+  sourceId: pubmed-8745039
 ```
 
 ## Pharmacokinetics
@@ -134,7 +136,7 @@ Reviewed both linked PubMed abstracts. No PMC full text was available through th
   direction: Variable
   evidence: Human research
   description: Fifteen days of intranasal desmopressin did not significantly change verbal span, verbal retention, visual retention, visual learning or verbal learning scores versus placebo.
-  sourceId: reddit-pmid-3762902
+  sourceId: pubmed-3762902
   population: 40 healthy student volunteers across desmopressin, vasopressin and placebo groups
   exposure: Desmopressin 20 µg/day intranasally for 15 days
   instrument: Verbal and visual memory tests
@@ -146,7 +148,7 @@ Reviewed both linked PubMed abstracts. No PMC full text was available through th
   direction: Variable
   evidence: Human research
   description: A single 60 µg intranasal DDAVP dose given after prose learning did not affect recall after 24 hours.
-  sourceId: reddit-pmid-8745039
+  sourceId: pubmed-8745039
   population: Healthy young male volunteers
   exposure: 60 µg intranasal DDAVP post-trial
   instrument: Prose passage recall
@@ -159,7 +161,7 @@ Reviewed both linked PubMed abstracts. No PMC full text was available through th
 ```yaml
 - title: Vasopressin-analogue timing hypothesis
   description: The post-trial DDAVP study interpreted the null 24-hour recall result as consistent with vasopressin effects on acquisition rather than consolidation; this is an interpretation of that experiment, not a demonstrated mechanism for desmopressin generally.
-  sourceId: reddit-pmid-8745039
+  sourceId: pubmed-8745039
 ```
 
 ## Cautions
@@ -167,13 +169,13 @@ Reviewed both linked PubMed abstracts. No PMC full text was available through th
 ```yaml
 - title: Null memory findings
   description: Neither linked healthy-volunteer study found a significant memory benefit.
-  sourceId: reddit-pmid-3762902
+  sourceId: pubmed-3762902
 - title: Narrow evidence base
   description: The studies are old, small and use specific intranasal protocols; they do not establish efficacy, safety or PK for unsupervised use.
-  sourceId: reddit-pmid-8745039
+  sourceId: pubmed-8745039
 - title: Compound identity in PMID 1523161
   description: The linked study tested des-glycinamide-[Arg8]vasopressin (DGAVP) and oxytocin, not desmopressin; its memory findings should not be transferred to desmopressin.
-  sourceId: reddit-pmid-1523161
+  sourceId: pubmed-1523161
 ```
 
 ## Claims
@@ -183,14 +185,14 @@ Reviewed both linked PubMed abstracts. No PMC full text was available through th
   assertion: The linked healthy-volunteer studies did not show a significant desmopressin memory benefit.
   relation: null-finding
   participants:
-  - entityId: substance:desmopressin
-    role: intervention
-  - entityId: tag:memory
-    role: outcome
+    - entityId: substance:desmopressin
+      role: intervention
+    - entityId: tag:memory
+      role: outcome
   context: 20 µg/day intranasal for 15 days and single 60 µg post-trial intranasal protocols.
   sourceIds:
-  - reddit-pmid-3762902
-  - reddit-pmid-8745039
+    - pubmed-3762902
+    - pubmed-8745039
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Small, older studies with specific protocols and healthy samples.
@@ -211,15 +213,7 @@ Reviewed both linked PubMed abstracts. No PMC full text was available through th
 ## References
 
 ```yaml
-- id: reddit-index-desmopressin
-  title: Reddit r/Nootropics community index
-  authors: Reddit r/Nootropics community index
-  year: 2026
-  url: https://www.reddit.com/r/nootropics/wiki/index
-  kind: Community index
-  insight: Discovery index linking two desmopressin memory studies.
-  limitation: Community indexing is not efficacy or safety evidence.
-- id: reddit-pmid-3762902
+- id: pubmed-3762902
   title: Effects of vasopressin and desmopressin on memory. A double-blind study in 40 healthy volunteers.
   authors: O Guard; G Marchal; A Graule; et al.
   year: 1986
@@ -227,9 +221,9 @@ Reviewed both linked PubMed abstracts. No PMC full text was available through th
   kind: PubMed publication
   insight: Intranasal desmopressin 20 µg/day for 15 days did not significantly change verbal or visual memory scores.
   limitation: Small older healthy-volunteer study; full text not retrieved in this pass.
-  pmid: '3762902'
+  pmid: "3762902"
   doi: 10.1159/000118246
-- id: reddit-pmid-8745039
+- id: pubmed-8745039
   title: Failure of posttrial administration of vasopressin analogue (DDAVP) to influence memory in healthy, young, male volunteers.
   authors: B E Beckwith; T V Petros; P J Bergloff; et al.
   year: 1995
@@ -237,9 +231,9 @@ Reviewed both linked PubMed abstracts. No PMC full text was available through th
   kind: PubMed publication
   insight: Single 60 µg intranasal DDAVP after prose learning did not affect 24-hour recall.
   limitation: Small healthy-male study; full text not retrieved in this pass.
-  pmid: '8745039'
+  pmid: "8745039"
   doi: 10.1016/0196-9781(95)02029-2
-- id: reddit-pmid-1523161
+- id: pubmed-1523161
   title: Effect of a single dose of des-glycinamide-[Arg8]vasopressin or oxytocin on cognitive processes in young healthy subjects.
   authors: J Bruins; R Hijman; J M Van Ree
   year: 1992
@@ -247,11 +241,9 @@ Reviewed both linked PubMed abstracts. No PMC full text was available through th
   kind: PubMed publication
   insight: DGAVP 2 mg intranasal improved delayed recognition of abstract words in a small placebo-controlled study; this was not a desmopressin exposure.
   limitation: Different vasopressin analogue and small healthy-volunteer study; no direct desmopressin inference.
-  pmid: '1523161'
+  pmid: "1523161"
   doi: 10.1016/0196-9781(92)90075-e
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 

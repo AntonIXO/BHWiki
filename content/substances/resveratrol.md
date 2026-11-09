@@ -1,17 +1,23 @@
 ---
 slug: resveratrol
 name: Resveratrol
-subtitle: Trans-resveratrol, pterostilbene and formulation-specific human evidence.
+subtitle: Research subject
 aliases:
-- resveratrol
+  - resveratrol
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
-accent: '#888888'
-reviewedAt: '2026-10-15'
+tags:
+  - perception
+  - attention
+  - cognitive-performance
+  - sleep
+  - fatigue-severity
+  - episodic-memory
+accent: "#888888"
+reviewedAt: 2026-10-15
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -28,47 +34,43 @@ kinetics:
   metabolism: Not established
   sourceId: S1
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- evidenceNote
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - evidenceNote
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 9007199254740991
 ---
 
 ## Summary
 
-Resveratrol has formulation- and population-specific human signals, not a demonstrated general anti-aging effect. A small cognitive benefit in postmenopausal women contrasts with null verbal-memory results in another older-adult trial; altered Alzheimer biomarkers do not establish dementia treatment or prevention. (sourceId: reshaw-2021; huhn-2018; turner-2015)
-
-Metabolic results range from improved glycemic measurements in a short diabetes trial to no improvement in a larger six-month trial. Improved vessel-dilation measurements are not evidence of fewer cardiovascular events. Resveratrol also attenuated some exercise-training adaptations in older men. (sourceId: movahed-2013; bo-2016; wong-2013; gliemann-2013)
-
-Pterostilbene is a different compound: its own small trial found increased LDL cholesterol alongside lower blood pressure. Neither its findings nor those from resveratrol mixtures or enhanced-delivery products establish effects of ordinary trans-resveratrol. (sourceId: riche-2014; wightman-2014; howells-2011)
+Resveratrol has formulation- and population-specific human signals, not a demonstrated general anti-aging effect.
 
 ## Description
 
@@ -78,11 +80,7 @@ This record distinguishes purified trans-resveratrol, incompletely characterized
 
 ## Evidence note
 
-This is a targeted primary-evidence synthesis, not a pooled estimate. Neuropsychological tests, walking performance, glucose-control markers, vascular physiology, imaging, and cellular measurements remain separate endpoints. Small samples, multiple outcomes, short exposure, baseline imbalances, and incomplete formulation reporting limit generalization. A within-group improvement is not necessarily a treatment effect versus placebo. (sourceId: witte-2014; movahed-2013; restore-2017; turner-2015)
-
-Commercial support is recorded separately from authors’ conflict declarations. RESHAW received Evolva support; the pterostilbene metabolic trial received ChromaDex funding; the muscle-recovery combination study used Elysium-supplied pills and disclosed an employee with stock options. These relationships affect interpretation, not automatic acceptance or rejection. “Not verified” below means disclosure information was not established from the retrieved material, not that conflicts were absent. (sourceId: reshaw-2021; riche-2014; jensen-2022)
-
-Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26684010. Rights-eligible PMC full text reviewed: PMC4466044, PMC4694087.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -94,7 +92,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   unit: not established
   ingredient: resveratrol
   formulation: Trans-resveratrol, RESHAW
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Postmenopausal women.
@@ -109,7 +106,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   unit: not established
   ingredient: resveratrol
   formulation: resVida purified trans-resveratrol
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Eleven obese men.
@@ -124,7 +120,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   unit: not established
   ingredient: resveratrol
   formulation: Fluxome trans-resveratrol
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Twenty-four obese men randomized against placebo.
@@ -139,7 +134,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   unit: not established
   ingredient: resveratrol
   formulation: Biotivia resveratrol capsules, reported 99% purity
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Sixty-six adults with type 2 diabetes randomized against placebo.
@@ -154,7 +148,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   unit: not established
   ingredient: resveratrol
   formulation: Study resveratrol; complete formulation not verified
-  route: Not established
   frequency: Not established
   duration: Not established
   population: 192 adults with type 2 diabetes.
@@ -169,7 +162,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   unit: not established
   ingredient: resveratrol
   formulation: Resveratrol plus quercetin
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Healthy overweight older adults; not resveratrol monotherapy.
@@ -184,14 +176,13 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   unit: not established
   ingredient: resveratrol
   formulation: Alzheimer trial resveratrol
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
 - label: resveratrol research exposure 8
   amount: Not established
   quantity: null
@@ -199,7 +190,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   unit: not established
   ingredient: resveratrol
   formulation: Pterostilbene, separate compound
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Eighty adults with elevated cholesterol across four arms including placebo.
@@ -214,7 +204,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   unit: mg
   ingredient: Resveratrol
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -229,7 +218,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   unit: mg
   ingredient: Resveratrol
   formulation: As described in the PubMed abstract
-  route: Not established from abstract
   frequency: Study exposure
   duration: Study exposure
   population: Population described in the PubMed abstract
@@ -251,7 +239,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   purpose: Research exposure
   sourceCategory: research
   note: Dose and schedule transcribed from PMID 20357044 abstract; formulation and population are source-specific to this study.
-  sourceId: reddit-pmid-20357044
+  sourceId: pubmed-20357044
 - label: PubMed study exposure (25939591)
   amount: 150 mg
   quantity: 150
@@ -266,7 +254,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   purpose: Research exposure
   sourceCategory: research
   note: Dose and schedule transcribed from PMID 25939591 abstract; formulation and population are source-specific to this study.
-  sourceId: reddit-pmid-25939591
+  sourceId: pubmed-25939591
 ```
 
 ## Pharmacokinetics
@@ -274,8 +262,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
 ```yaml
 - id: resveratrol-pk-1
   analyte: Absorption versus circulating parent
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -288,8 +274,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   modelEligible: false
 - id: resveratrol-pk-2
   analyte: Concentration and peak timing
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -302,8 +286,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   modelEligible: false
 - id: resveratrol-pk-3
   analyte: Study-specific parent half-life
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -316,8 +298,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   modelEligible: false
 - id: resveratrol-pk-4
   analyte: Radiolabel half-life boundary
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -330,8 +310,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   modelEligible: false
 - id: resveratrol-pk-5
   analyte: Micronized SRT501
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -344,8 +322,6 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   modelEligible: false
 - id: resveratrol-pk-6
   analyte: Pterostilbene comparison
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -368,7 +344,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   high: null
   unit: hours
   context: The many putative beneficial effects of the polyphenol resveratrol include an ability to bolster endogenous antioxidant defenses, modulate nitric oxide synthesis, and promote vasodilation, which thereby improves blood flow.
-  sourceId: reddit-pmid-20357044
+  sourceId: pubmed-20357044
   modelEligible: false
 ```
 
@@ -410,10 +386,10 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   evidence: Human research
   description: Twenty-eight obese adults received resVida trans-resveratrol 75 mg/day or placebo for six weeks each. Flow-mediated dilation increased by 23% relatively, not 23 percentage points; P=0.021. Blood pressure, arterial compliance, and Stroop performance were unchanged.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-effect-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -423,10 +399,10 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   evidence: Human research
   description: Sixteen young adults received 500 mg resveratrol plus 10 mg piperine daily or placebo during four weeks of forearm training. Near-infrared spectroscopy estimated approximately 40% versus 10% improvement in the trained arm; P=0.02. Untrained arms did not improve.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-effect-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -436,10 +412,10 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   evidence: Human research
   description: Daily resveratrol at 0.5–5 g for 29 days altered circulating IGF-I and IGFBP-3 compared with pretreatment values. Biomarker changes without placebo control do not establish cancer prevention or slower aging.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -454,36 +430,36 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-outcome-2
   conflictingSourceIds: []
   reportType: measured-assessment
   conceptId: attention
-  name: 'Older-adult verbal memory: positive pilot'
+  name: "Older-adult verbal memory: positive pilot"
   direction: Variable
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-outcome-3
   conflictingSourceIds: []
   reportType: measured-assessment
   conceptId: attention
-  name: 'Older-adult verbal memory: null trial'
+  name: "Older-adult verbal memory: null trial"
   direction: Variable
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-outcome-4
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -493,10 +469,10 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-outcome-5
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -506,10 +482,10 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-outcome-6
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -519,36 +495,36 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-outcome-7
   conflictingSourceIds: []
   reportType: measured-assessment
   conceptId: attention
-  name: 'Type 2 diabetes: positive short trial'
+  name: "Type 2 diabetes: positive short trial"
   direction: Variable
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-outcome-8
   conflictingSourceIds: []
   reportType: measured-assessment
   conceptId: attention
-  name: 'Type 2 diabetes: larger null trial'
+  name: "Type 2 diabetes: larger null trial"
   direction: Variable
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-outcome-9
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -558,10 +534,10 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-outcome-10
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -571,10 +547,10 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-outcome-11
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -584,10 +560,10 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-outcome-12
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -597,10 +573,10 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: resveratrol-outcome-13
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -610,47 +586,47 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
-- id: reddit-resveratrol-cognitive-performance-26344014
+  population: Not established
+- id: research-resveratrol-cognitive-performance-26344014
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
   evidence: Limited research
   description: Single doses of resveratrol have previously been shown to increase cerebral blood flow (CBF) with no clear effect on cognitive function or mood in healthy adults.
-  sourceId: reddit-pmid-26344014
+  sourceId: pubmed-26344014
   population: Population not stated in the PubMed record.
   exposure: In this randomised, double-blind, placebo-controlled, parallel-groups study, a total of sixty adults aged between 18 and 30 years received either placebo or resveratrol for 28 d.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-resveratrol-sleep-26344014
+- id: research-resveratrol-sleep-26344014
   conceptId: sleep
   name: Sleep
   direction: Increased
   evidence: Limited research
   description: Single doses of resveratrol have previously been shown to increase cerebral blood flow (CBF) with no clear effect on cognitive function or mood in healthy adults.
-  sourceId: reddit-pmid-26344014
+  sourceId: pubmed-26344014
   population: Population not stated in the PubMed record.
   exposure: In this randomised, double-blind, placebo-controlled, parallel-groups study, a total of sixty adults aged between 18 and 30 years received either placebo or resveratrol for 28 d.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-resveratrol-fatigue-severity-26344014
+- id: research-resveratrol-fatigue-severity-26344014
   conceptId: fatigue-severity
   name: Fatigue Severity
   direction: Increased
   evidence: Limited research
   description: Single doses of resveratrol have previously been shown to increase cerebral blood flow (CBF) with no clear effect on cognitive function or mood in healthy adults.
-  sourceId: reddit-pmid-26344014
+  sourceId: pubmed-26344014
   population: Population not stated in the PubMed record.
   exposure: In this randomised, double-blind, placebo-controlled, parallel-groups study, a total of sixty adults aged between 18 and 30 years received either placebo or resveratrol for 28 d.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-resveratrol-cognitive-performance-24804871
+- id: research-resveratrol-cognitive-performance-24804871
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
@@ -662,25 +638,25 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-resveratrol-cognitive-performance-20357044
+- id: research-resveratrol-cognitive-performance-20357044
   conceptId: cognitive-performance
   name: Cognitive Performance
   direction: Increased
   evidence: Human research
   description: The many putative beneficial effects of the polyphenol resveratrol include an ability to bolster endogenous antioxidant defenses, modulate nitric oxide synthesis, and promote vasodilation, which thereby improves blood flow.
-  sourceId: reddit-pmid-20357044
+  sourceId: pubmed-20357044
   population: In this randomized, double-blind, placebo-controlled, crossover study, 22 healthy adults received placebo and 2 doses (250 and 500 mg) of trans-resveratrol in counterbalanced order on separate days.
   exposure: In this randomized, double-blind, placebo-controlled, crossover study, 22 healthy adults received placebo and 2 doses (250 and 500 mg) of trans-resveratrol in counterbalanced order on separate days.
   instrument: null
   magnitude: null
   reportType: measured-assessment
-- id: reddit-resveratrol-episodic-memory-25791529
+- id: research-resveratrol-episodic-memory-25791529
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
   evidence: Limited research
   description: We find that in rat primary neurons, resveratrol can rapidly increase AMPAR protein level, AMPAR synaptic accumulation and the strength of excitatory synaptic transmission.
-  sourceId: reddit-pmid-25791529
+  sourceId: pubmed-25791529
   population: Population not stated in the PubMed record.
   exposure: Resveratrol is a phytoalexin that confers overall health benefits including positive regulation in brain function such as learning and cognition.
   instrument: null
@@ -702,10 +678,10 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   sourceId: S1
 - title: Source-specific finding from PMID 26684010
   description: While the mechanism of action is still debated, an increasing literature reports that resveratrol regulates the mitochondrial respiratory chain function.
-  sourceId: reddit-pmid-26684010
+  sourceId: pubmed-26684010
 - title: Source-specific finding from PMID 25791529
   description: α-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid receptors (AMPARs) are glutamatergic receptors that mediate the majority of fast excitatory transmission and synaptic plasticity, and thus play a critical role in higher brain functions, including learning and memory.
-  sourceId: reddit-pmid-25791529
+  sourceId: pubmed-25791529
 ```
 
 ## Cautions
@@ -730,14 +706,14 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Source-specific finding from PMID 26362286
-  description: 'OBJECTIVE: A randomized, placebo-controlled, double-blind, multicenter 52-week phase 2 trial of resveratrol in individuals with mild to moderate Alzheimer disease (AD) examined its safety and tolerability and effects on biomarker (plasma Aβ40 and Aβ42, CSF Aβ40, Aβ42, tau, and phospho-tau 181) and volumetric MRI outcomes (primary outcomes) and clinical outcomes (secondary outcomes).'
+  description: "OBJECTIVE: A randomized, placebo-controlled, double-blind, multicenter 52-week phase 2 trial of resveratrol in individuals with mild to moderate Alzheimer disease (AD) examined its safety and tolerability and effects on biomarker (plasma Aβ40 and Aβ42, CSF Aβ40, Aβ42, tau, and phospho-tau 181) and volumetric MRI outcomes (primary outcomes) and clinical outcomes (secondary outcomes)."
   sourceId: S4
 - title: Source-specific finding from PMID 24804871
   description: Previous research has shown that resveratrol can increase cerebral blood flow (CBF) in the absence of improved cognitive performance in healthy, young human subjects during the performance of cognitively demanding tasks.
   sourceId: S5
 - title: Source-specific finding from PMID 26684010
   description: Nevertheless, the mechanisms and consequences of such an interaction still require further investigation.
-  sourceId: reddit-pmid-26684010
+  sourceId: pubmed-26684010
 ```
 
 ## Claims
@@ -747,143 +723,143 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   assertion: Resveratrol extends human lifespan or reliably mimics exercise.
   relation: evidence-boundary
   participants:
-  - entityId: substance:resveratrol
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:resveratrol
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - S1
+    - S1
   conflictingSourceIds:
-  - S1
+    - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: resveratrol-claim-2
   assertion: Better cerebral perfusion proves better cognition or prevents dementia.
   relation: evidence-boundary
   participants:
-  - entityId: substance:resveratrol
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:resveratrol
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - S1
+    - S1
   conflictingSourceIds:
-  - S1
+    - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: resveratrol-claim-3
   assertion: Pterostilbene is a clinically superior, better-absorbed resveratrol.
   relation: evidence-boundary
   participants:
-  - entityId: substance:resveratrol
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:resveratrol
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - S1
+    - S1
   conflictingSourceIds:
-  - S1
+    - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: resveratrol-claim-4
   assertion: Enhanced delivery guarantees greater benefit or safety.
   relation: evidence-boundary
   participants:
-  - entityId: substance:resveratrol
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:resveratrol
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - S1
+    - S1
   conflictingSourceIds:
-  - S1
+    - S1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
-- id: reddit-claim-resveratrol-26344014-0
-  assertion: 'PMID 26344014 reported: Single doses of resveratrol have previously been shown to increase cerebral blood flow (CBF) with no clear effect on cognitive function or mood in healthy adults.'
+- id: research-claim-resveratrol-26344014-0
+  assertion: "PMID 26344014 reported: Single doses of resveratrol have previously been shown to increase cerebral blood flow (CBF) with no clear effect on cognitive function or mood in healthy adults."
   relation: associated-with
   participants:
-  - entityId: substance:resveratrol
-    role: intervention or exposure
-  - entityId: tag:fatigue-severity
-    role: reported endpoint
+    - entityId: substance:resveratrol
+      role: intervention or exposure
+    - entityId: tag:fatigue-severity
+      role: reported endpoint
   context: Source-specific result from PMID 26344014; applies to the population and design described in that abstract.
   sourceIds:
-  - reddit-pmid-26344014
+    - pubmed-26344014
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Abstract result from PMID 26344014; this single study does not establish general efficacy or safety.
-- id: reddit-claim-resveratrol-24804871-1
+- id: research-claim-resveratrol-24804871-1
   assertion: Resveratrol is associated with the reported cognitive performance finding in this publication.
   relation: associated-with
   participants:
-  - entityId: substance:resveratrol
-    role: intervention or exposure
-  - entityId: tag:cognitive-performance
-    role: reported endpoint
+    - entityId: substance:resveratrol
+      role: intervention or exposure
+    - entityId: tag:cognitive-performance
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - S5
+    - S5
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
-- id: reddit-claim-resveratrol-20357044-2
-  assertion: 'PMID 20357044 reported: The many putative beneficial effects of the polyphenol resveratrol include an ability to bolster endogenous antioxidant defenses, modulate nitric oxide synthesis, and promote vasodilation, which thereby improves blood flow.'
+- id: research-claim-resveratrol-20357044-2
+  assertion: "PMID 20357044 reported: The many putative beneficial effects of the polyphenol resveratrol include an ability to bolster endogenous antioxidant defenses, modulate nitric oxide synthesis, and promote vasodilation, which thereby improves blood flow."
   relation: associated-with
   participants:
-  - entityId: substance:resveratrol
-    role: intervention or exposure
-  - entityId: tag:cognitive-performance
-    role: reported endpoint
+    - entityId: substance:resveratrol
+      role: intervention or exposure
+    - entityId: tag:cognitive-performance
+      role: reported endpoint
   context: Source-specific result from PMID 20357044; applies to the population and design described in that abstract.
   sourceIds:
-  - reddit-pmid-20357044
+    - pubmed-20357044
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Abstract result from PMID 20357044; this single study does not establish general efficacy or safety.
-- id: reddit-claim-resveratrol-25939591-3
-  assertion: 'PMID 25939591 reported: A number of studies have demonstrated that resveratrol reduces prostate growth in animal models and reduces prostate cell growth in vitro.'
+- id: research-claim-resveratrol-25939591-3
+  assertion: "PMID 25939591 reported: A number of studies have demonstrated that resveratrol reduces prostate growth in animal models and reduces prostate cell growth in vitro."
   relation: associated-with
   participants:
-  - entityId: substance:resveratrol
-    role: intervention or exposure
-  - entityId: tag:cognitive-performance
-    role: reported endpoint
+    - entityId: substance:resveratrol
+      role: intervention or exposure
+    - entityId: tag:cognitive-performance
+      role: reported endpoint
   context: Source-specific result from PMID 25939591; applies to the population and design described in that abstract.
   sourceIds:
-  - reddit-pmid-25939591
+    - pubmed-25939591
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Abstract result from PMID 25939591; this single study does not establish general efficacy or safety.
-- id: reddit-claim-resveratrol-26684010-4
-  assertion: 'PMID 26684010 reported: While the mechanism of action is still debated, an increasing literature reports that resveratrol regulates the mitochondrial respiratory chain function.'
+- id: research-claim-resveratrol-26684010-4
+  assertion: "PMID 26684010 reported: While the mechanism of action is still debated, an increasing literature reports that resveratrol regulates the mitochondrial respiratory chain function."
   relation: associated-with
   participants:
-  - entityId: substance:resveratrol
-    role: intervention or exposure
-  - entityId: tag:cognitive-performance
-    role: reported endpoint
+    - entityId: substance:resveratrol
+      role: intervention or exposure
+    - entityId: tag:cognitive-performance
+      role: reported endpoint
   context: Source-specific result from PMID 26684010; applies to the population and design described in that abstract.
   sourceIds:
-  - reddit-pmid-26684010
+    - pubmed-26684010
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Abstract result from PMID 26684010; this single study does not establish general efficacy or safety.
-- id: reddit-claim-resveratrol-25791529-5
-  assertion: 'PMID 25791529 reported: We find that in rat primary neurons, resveratrol can rapidly increase AMPAR protein level, AMPAR synaptic accumulation and the strength of excitatory synaptic transmission.'
+- id: research-claim-resveratrol-25791529-5
+  assertion: "PMID 25791529 reported: We find that in rat primary neurons, resveratrol can rapidly increase AMPAR protein level, AMPAR synaptic accumulation and the strength of excitatory synaptic transmission."
   relation: associated-with
   participants:
-  - entityId: substance:resveratrol
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:resveratrol
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: Source-specific result from PMID 25791529; applies to the population and design described in that abstract.
   sourceIds:
-  - reddit-pmid-25791529
+    - pubmed-25791529
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Abstract result from PMID 25791529; this single study does not establish general efficacy or safety.
@@ -899,7 +875,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - S1
+    - S1
 - id: interaction-2
   name: Documented or hypothesized coexposure
   otherSlug: null
@@ -907,7 +883,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - S1
+    - S1
 - id: interaction-3
   name: Documented or hypothesized coexposure
   otherSlug: null
@@ -915,7 +891,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - S1
+    - S1
 - id: interaction-4
   name: Documented or hypothesized coexposure
   otherSlug: null
@@ -923,24 +899,13 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - S1
+    - S1
 ```
 
 ## Experience links
 
 ```yaml
 []
-```
-
-## External wiki links
-
-```yaml
-- service: Wikipedia
-  url: https://en.wikipedia.org/wiki/Resveratrol
-  title: Wikipedia
-- service: Examine
-  url: https://examine.com/supplements/Resveratrol
-  title: Examine
 ```
 
 ## References
@@ -963,7 +928,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: A. Veronica Witte; Lucia Kerti; Daniel S. Margulies; Agnes Flöel
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/24899709/
-  pmid: '24899709'
+  pmid: "24899709"
   kind: Deep Research source
   insight: Positive word-retention signal from a resveratrol–quercetin combination.
   limitation: Small matched-completer analysis; ingredient effects not separable.
@@ -976,7 +941,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Sebastian Huhn; Frauke Beyer; Rui Zhang; et al.
   year: 2018
   url: https://pubmed.ncbi.nlm.nih.gov/29548848/
-  pmid: '29548848'
+  pmid: "29548848"
   kind: Deep Research source
   insight: No significant improvement in the primary verbal-memory outcome.
   limitation: Complete formulation and full disclosure statements not verified from retrieved primary material.
@@ -989,7 +954,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: R. Scott Turner; Ronald G. Thomas; Suzanne Craft; et al.; Alzheimer's Disease Cooperative Study
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/26362286/
-  pmid: '26362286'
+  pmid: "26362286"
   kind: Deep Research source
   insight: Biomarker effects and increased MRI volume loss without established cognitive efficacy.
   limitation: Phase 2 safety/biomarker trial; clinical outcomes secondary.
@@ -998,11 +963,11 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   conflictsOfInterest: Complete individual disclosures not verified.
   conflictOfInterestStatus: not-assessed
 - id: S5
-  title: 'Effects of resveratrol alone or in combination with piperine on cerebral blood flow parameters and cognitive performance in human subjects: a randomised, double-blind, placebo-controlled, cross-over investigation.'
+  title: "Effects of resveratrol alone or in combination with piperine on cerebral blood flow parameters and cognitive performance in human subjects: a randomised, double-blind, placebo-controlled, cross-over investigation."
   authors: Emma L. Wightman; Jonathon L. Reay; Crystal F. Haskell; Gary Williamson; Tristan P. Dew; David O. Kennedy
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/24804871/
-  pmid: '24804871'
+  pmid: "24804871"
   kind: Deep Research source
   insight: Perfusion changed without cognitive benefit or demonstrated pharmacokinetic enhancement.
   limitation: Acute experiment; pharmacokinetic subgroup numbered six.
@@ -1015,7 +980,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Silvie Timmers; Ellen Konings; Lena Bilet; et al.
   year: 2011
   url: https://pubmed.ncbi.nlm.nih.gov/22055504/
-  pmid: '22055504'
+  pmid: "22055504"
   kind: Deep Research source
   insight: Metabolic and muscle-signaling changes with 150 mg/day resVida.
   limitation: Eleven men; short mechanistic crossover.
@@ -1024,11 +989,11 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   conflictsOfInterest: Coauthor Iris Kunz had a DSM affiliation; complete declaration not verified.
   conflictOfInterestStatus: not-assessed
 - id: S7
-  title: 'High-dose resveratrol supplementation in obese men: an investigator-initiated, randomized, placebo-controlled clinical trial of substrate metabolism, insulin sensitivity, and body composition.'
+  title: "High-dose resveratrol supplementation in obese men: an investigator-initiated, randomized, placebo-controlled clinical trial of substrate metabolism, insulin sensitivity, and body composition."
   authors: Morten M. Poulsen; Poul F. Vestergaard; Berthil F. Clasen; et al.
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23193181/
-  pmid: '23193181'
+  pmid: "23193181"
   kind: Deep Research source
   insight: Clamp-measured insulin sensitivity and other metabolic endpoints were null.
   limitation: Twenty-four men; four weeks; specific high-dose formulation.
@@ -1041,7 +1006,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Ali Movahed; Iraj Nabipour; Xavier Lieben Louis; et al.
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/24073011/
-  pmid: '24073011'
+  pmid: "24073011"
   kind: Deep Research source
   insight: Glycemic changes favored 1 g/day added to existing treatment.
   limitation: Baseline imbalances, multiple endpoints, and only 45 days.
@@ -1054,7 +1019,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: S. Bo; V. Ponzo; G. Ciccone; et al.
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27520400/
-  pmid: '27520400'
+  pmid: "27520400"
   kind: Deep Research source
   insight: Larger diabetes trial found no significant CRP or glycemic benefit.
   limitation: Formulation details and full disclosures not verified.
@@ -1067,7 +1032,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Rachel H. X. Wong; Narelle M. Berry; Alison M. Coates; et al.
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23743811/
-  pmid: '23743811'
+  pmid: "23743811"
   kind: Deep Research source
   insight: Flow-mediated dilation improved; blood pressure and Stroop performance did not.
   limitation: Twenty-eight participants; vascular surrogate rather than cardiovascular events.
@@ -1080,7 +1045,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Lasse Gliemann; Jakob Friis Schmidt; Jesper Olesen; et al.
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23878368/
-  pmid: '23878368'
+  pmid: "23878368"
   kind: Deep Research source
   insight: Some training gains were attenuated with 250 mg/day.
   limitation: Small older-male sample; not all exercise regimens or populations.
@@ -1093,7 +1058,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Kristine R. Polley; Nathan Jenkins; Patrick O'Connor; Kevin McCully
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/26638911/
-  pmid: '26638911'
+  pmid: "26638911"
   kind: Deep Research source
   insight: Resveratrol–piperine combination improved a local muscle physiological estimate.
   limitation: Sixteen participants; combination product; not whole-body performance.
@@ -1102,11 +1067,11 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   conflictsOfInterest: Not verified.
   conflictOfInterestStatus: not-assessed
 - id: S13
-  title: 'Effect of Resveratrol on Walking Performance in Older People With Peripheral Artery Disease: The RESTORE Randomized Clinical Trial.'
+  title: "Effect of Resveratrol on Walking Performance in Older People With Peripheral Artery Disease: The RESTORE Randomized Clinical Trial."
   authors: Mary M. McDermott; Christiaan Leeuwenburgh; Jack M. Guralnik; et al.
   year: 2017
   url: https://pubmed.ncbi.nlm.nih.gov/28403379/
-  pmid: '28403379'
+  pmid: "28403379"
   kind: Deep Research source
   insight: No consistent walking benefit across doses and functional tests.
   limitation: Small pilot with a prespecified one-sided 0.10 threshold.
@@ -1115,11 +1080,11 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   conflictsOfInterest: Complete declaration not verified.
   conflictOfInterestStatus: not-assessed
 - id: S14
-  title: 'Nicotinamide riboside for peripheral artery disease: the NICE randomized clinical trial'
+  title: "Nicotinamide riboside for peripheral artery disease: the NICE randomized clinical trial"
   authors: Mary M. McDermott; Christopher R. Martens; Kathryn J. Domanchuk; et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38871717/
-  pmid: '38871717'
+  pmid: "38871717"
   kind: Deep Research source
   insight: Adding resveratrol did not demonstrate extra walking benefit.
   limitation: Small trial with one-sided 0.10 testing and differential adherence.
@@ -1128,11 +1093,11 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   conflictsOfInterest: McDermott reported Helixmith funding and ArtAssist/Mars support; other authors declared none.
   conflictOfInterestStatus: not-assessed
 - id: S15
-  title: 'Pterostilbene on metabolic parameters: a randomized, double-blind, and placebo-controlled trial.'
+  title: "Pterostilbene on metabolic parameters: a randomized, double-blind, and placebo-controlled trial."
   authors: Daniel M. Riche; Krista D. Riche; Chad T. Blackshear; et al.
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/25057276/
-  pmid: '25057276'
+  pmid: "25057276"
   kind: Deep Research source
   insight: Pterostilbene monotherapy increased LDL; higher dose lowered blood pressure.
   limitation: Small short trial; different findings for the grape-extract combination.
@@ -1145,7 +1110,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Daniel M. Riche; Corey L. McEwen; Krista D. Riche; et al.
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23431291/
-  pmid: '23431291'
+  pmid: "23431291"
   kind: Deep Research source
   insight: Short-term laboratory and reported adverse-event assessment.
   limitation: Same cohort as the metabolic report; not long-term safety.
@@ -1158,7 +1123,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Jonas Brorson Jensen; Ole L. Dollerup; Andreas B. Møller; et al.
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/35998039/
-  pmid: '35998039'
+  pmid: "35998039"
   kind: Deep Research source
   insight: Combination did not improve assessed muscle regeneration.
   limitation: Thirty-two participants; induced injury; ingredients not separated.
@@ -1171,7 +1136,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Thomas Walle; Faye Hsieh; Mark H. DeLegge; John E. Oatis; U. Kristina Walle
   year: 2004
   url: https://pubmed.ncbi.nlm.nih.gov/15333514/
-  pmid: '15333514'
+  pmid: "15333514"
   kind: Deep Research source
   insight: High absorption with extensive metabolism and little circulating unchanged parent.
   limitation: Six volunteers; radiolabel-derived half-life is not parent-specific.
@@ -1184,7 +1149,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: David J. Boocock; Guy E. S. Faust; Ketan R. Patel; et al.
   year: 2007
   url: https://pubmed.ncbi.nlm.nih.gov/17548692/
-  pmid: '17548692'
+  pmid: "17548692"
   kind: Deep Research source
   insight: Dose-specific parent and conjugate exposure after single doses.
   limitation: Ten participants per dose; no efficacy or chronic-safety test.
@@ -1197,7 +1162,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Luis Almeida; Manuel Vaz-da-Silva; Amílcar Falcão; et al.
   year: 2009
   url: https://pubmed.ncbi.nlm.nih.gov/19194969/
-  pmid: '19194969'
+  pmid: "19194969"
   kind: Deep Research source
   insight: Measured parent half-life and exposure under a specified repeated-dose regimen.
   limitation: Brief study; frequent dosing; substantial between-person variability.
@@ -1206,11 +1171,11 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   conflictsOfInterest: Not verified.
   conflictOfInterestStatus: not-assessed
 - id: S21
-  title: 'Repeat dose study of the cancer chemopreventive agent resveratrol in healthy volunteers: safety, pharmacokinetics, and effect on the insulin-like growth factor axis.'
+  title: "Repeat dose study of the cancer chemopreventive agent resveratrol in healthy volunteers: safety, pharmacokinetics, and effect on the insulin-like growth factor axis."
   authors: Victoria A. Brown; Ketan R. Patel; Maria Viskaduraki; et al.
   year: 2010
   url: https://pubmed.ncbi.nlm.nih.gov/20935227/
-  pmid: '20935227'
+  pmid: "20935227"
   kind: Deep Research source
   insight: Repeated gram-level exposure, conjugate predominance, and gastrointestinal intolerance.
   limitation: Forty volunteers; 29 days; biomarker comparisons lacked placebo control.
@@ -1223,7 +1188,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Lynne M. Howells; D. P. Berry; P. J. Elliott; et al.
   year: 2011
   url: https://pubmed.ncbi.nlm.nih.gov/21680702/
-  pmid: '21680702'
+  pmid: "21680702"
   kind: Deep Research source
   insight: Micronized-product exposure and a tumor-tissue biomarker signal.
   limitation: Small preoperative study; historical formulation comparison; no clinical cancer endpoint.
@@ -1236,7 +1201,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Rakesh Popat; Torben Plesner; Faith Davies; et al.
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23205612/
-  pmid: '23205612'
+  pmid: "23205612"
   kind: Deep Research source
   insight: Serious renal toxicity and limited efficacy in the SRT501 myeloma study.
   limitation: Advanced disease, renal vulnerability, and dehydration complicate attribution.
@@ -1261,7 +1226,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: H-H Sherry Chow; Linda L. Garland; Chiu-Hsieh Hsu; et al.
   year: 2010
   url: https://pubmed.ncbi.nlm.nih.gov/20716633/
-  pmid: '20716633'
+  pmid: "20716633"
   kind: Deep Research source
   insight: Human probe-drug evidence for altered CYP activity after 1 g/day.
   limitation: Uncontrolled four-week study; substrate-specific clinical harms not established.
@@ -1274,7 +1239,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Ahmed A. Albassam; Reginald F. Frye
   year: 2019
   url: https://pubmed.ncbi.nlm.nih.gov/30976185/
-  pmid: '30976185'
+  pmid: "30976185"
   kind: Deep Research source
   insight: Pterostilbene inhibited CYP2C8 and UGT1A6 in vitro.
   limitation: No clinical interaction outcome or validated human exposure threshold.
@@ -1287,7 +1252,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Izet M. Kapetanovic; Miguel Muzzio; Zhihua Huang; Thomas N. Thompson; David L. McCormick
   year: 2011
   url: https://pubmed.ncbi.nlm.nih.gov/21116625/
-  pmid: '21116625'
+  pmid: "21116625"
   kind: Deep Research source
   insight: Source of frequently repeated comparative bioavailability figures.
   limitation: Rat experiment, not human pharmacokinetics or clinical superiority.
@@ -1300,7 +1265,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   authors: Victoria H. J. Roberts; Lynley D. Pound; Stephanie R. Thorn; et al.
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/24563374/
-  pmid: '24563374'
+  pmid: "24563374"
   kind: Deep Research source
   insight: Maternal benefits accompanied an unexpected fetal-pancreas developmental signal.
   limitation: Nonhuman primates on a specific diet; not human pregnancy-risk quantification.
@@ -1344,19 +1309,17 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not a sponsored clinical study.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-f0758bccfc62
-  title: 'Effect of resveratrol supplementation on cognitive performance and mood in adults: a systematic literature review and meta-analysis of randomized controlled trials'
+- id: publication-link-f0758bccfc62
+  title: "Effect of resveratrol supplementation on cognitive performance and mood in adults: a systematic literature review and meta-analysis of randomized controlled trials"
   authors: Not established
   year: 2026
   url: https://academic.oup.com/nutritionreviews/article-abstract/76/6/432/4954227
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-26344014
+- id: pubmed-26344014
   title: The effects of chronic trans-resveratrol supplementation on aspects of cognitive function, mood, sleep, health and cerebral blood flow in healthy, young humans.
   authors: Emma L Wightman, Crystal F Haskell-Ramsay, Jonathon L Reay, Gary Williamson, Tristan Dew, Wei Zhang, David O Kennedy
   year: 2015
@@ -1364,39 +1327,33 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   kind: PubMed publication
   insight: Single doses of resveratrol have previously been shown to increase cerebral blood flow (CBF) with no clear effect on cognitive function or mood in healthy adults.
   limitation: PubMed abstract for PMID 26344014 was reviewed; no rights-eligible PMC full text was available in this pass.
-  pmid: '26344014'
+  pmid: "26344014"
   doi: 10.1017/S0007114515003037
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-20357044
-  title: 'Effects of resveratrol on cerebral blood flow variables and cognitive performance in humans: a double-blind, placebo-controlled, crossover investigation.'
+- id: pubmed-20357044
+  title: "Effects of resveratrol on cerebral blood flow variables and cognitive performance in humans: a double-blind, placebo-controlled, crossover investigation."
   authors: David O Kennedy, Emma L Wightman, Jonathon L Reay, Georg Lietz, Edward J Okello, Anthea Wilde, Crystal F Haskell
   year: 2010
   url: https://pubmed.ncbi.nlm.nih.gov/20357044/
   kind: PubMed publication
   insight: The many putative beneficial effects of the polyphenol resveratrol include an ability to bolster endogenous antioxidant defenses, modulate nitric oxide synthesis, and promote vasodilation, which thereby improves blood flow.
   limitation: PubMed abstract for PMID 20357044 was reviewed; no rights-eligible PMC full text was available in this pass.
-  pmid: '20357044'
+  pmid: "20357044"
   doi: 10.3945/ajcn.2009.28641
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-0f1dd257e298
+- id: publication-link-0f1dd257e298
   title: Effects of Resveratrol on Cognitive Performance, Mood and Cerebrovascular Function in Post-Menopausal Women; A 14-Week Randomised Placebo-Controlled Intervention Trial
   authors: Not established
   year: 2026
   url: https://www.mdpi.com/2072-6643/9/1/27/htm
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-25939591
+- id: pubmed-25939591
   title: Resveratrol reduces the levels of circulating androgen precursors but has no effect on, testosterone, dihydrotestosterone, PSA levels or prostate volume. A 4-month randomised trial in middle-aged men.
   authors: Thomas Nordstrøm Kjaer, Marie Juul Ornstrup, Morten Møller Poulsen, Jens Otto Lunde Jørgensen, David Michael Hougaard, Arieh Sierra Cohen, Shadman Neghabat, Bjørn Richelsen, Steen Bønløkke Pedersen
   year: 2015
@@ -1404,13 +1361,11 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   kind: PubMed publication
   insight: A number of studies have demonstrated that resveratrol reduces prostate growth in animal models and reduces prostate cell growth in vitro.
   limitation: PubMed abstract for PMID 25939591 was reviewed; no rights-eligible PMC full text was available in this pass.
-  pmid: '25939591'
+  pmid: "25939591"
   doi: 10.1002/pros.23006
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-26684010
+- id: pubmed-26684010
   title: Resveratrol Directly Binds to Mitochondrial Complex I and Increases Oxidative Stress in Brain Mitochondria of Aged Mice.
   authors: Naïg Gueguen, Valérie Desquiret-Dumas, Géraldine Leman, Stéphanie Chupin, Stéphanie Baron, Valérie Nivet-Antoine, Emilie Vessières, Audrey Ayer, Daniel Henrion, Guy Lenaers, Pascal Reynier, Vincent Procaccio
   year: 2015
@@ -1418,14 +1373,12 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   kind: PubMed publication
   insight: While the mechanism of action is still debated, an increasing literature reports that resveratrol regulates the mitochondrial respiratory chain function.
   limitation: PubMed abstract and rights-eligible PMC full text (PMC4694087) were reviewed; applicability remains limited to the reported design and population.
-  pmid: '26684010'
+  pmid: "26684010"
   doi: 10.1371/journal.pone.0144290
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
   pmcid: PMC4694087
-- id: reddit-pmid-25791529
+- id: pubmed-25791529
   title: Resveratrol up-regulates AMPA receptor expression via AMP-activated protein kinase-mediated protein translation.
   authors: Guan Wang, Stephen Amato, James Gilbert, Heng-Ye Man
   year: 2015
@@ -1433,11 +1386,9 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   kind: PubMed publication
   insight: We find that in rat primary neurons, resveratrol can rapidly increase AMPAR protein level, AMPAR synaptic accumulation and the strength of excitatory synaptic transmission.
   limitation: PubMed abstract and rights-eligible PMC full text (PMC4466044) were reviewed; applicability remains limited to the reported design and population.
-  pmid: '25791529'
+  pmid: "25791529"
   doi: 10.1016/j.neuropharm.2015.03.003
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
   pmcid: PMC4466044
 ```
@@ -1450,7 +1401,7 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   status: The specified trans-resveratrol novel-food entry permits adult food-supplement use at a maximum of 150 mg/day, subject to its specifications and labeling conditions. Regulation 2021/51 removed the restriction to capsule or tablet presentations. Labeling identifies trans-resveratrol and requires a statement about medical supervision for consumers using medicines.
   sourceUrl: https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements
   asOf: 2026-10-10
-- jurisdiction: 'European Union: safety assessment'
+- jurisdiction: "European Union: safety assessment"
   activity: Not established
   status: EFSA's favorable conclusion concerned a specified high-purity synthetic product at the proposed 150-mg/day adult exposure.
   sourceUrl: https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements
@@ -1460,4 +1411,15 @@ Reviewed PubMed abstracts for PMID(s) 20357044, 25791529, 25939591, 26344014, 26
   status: Dietary supplements are not FDA-approved before marketing; manufacturers bear responsibility for applicable safety, quality, and labeling requirements. Disease-treatment claims invoke drug-regulatory requirements.
   sourceUrl: https://www.fda.gov/food/information-consumers-using-dietary-supplements/questions-and-answers-dietary-supplements
   asOf: 2026-10-10
+```
+
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Resveratrol
+  title: Wikipedia
+- service: Examine
+  url: https://examine.com/supplements/Resveratrol
+  title: Examine
 ```

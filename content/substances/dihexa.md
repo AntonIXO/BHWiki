@@ -1,23 +1,27 @@
 ---
 slug: dihexa
 name: Dihexa
-subtitle: A preclinical HGF/c-MET research compound with compromised foundational evidence and no human dataset.
+subtitle: Experimental compound
 aliases:
-- dihexa
-- PNB-0408
-- N-hexanoyl-Tyr-Ile-(6)-aminohexanamide
+  - dihexa
+  - PNB-0408
+  - N-hexanoyl-Tyr-Ile-(6)-aminohexanamide
 formula: C27H44N4O5
 molecularWeight: 504.7 g/mol
 pubchemCid: 129010512
 smiles: CCCCCC(=O)N[C@@H](CC1=CC=C(C=C1)O)C(=O)N[C@@H]([C@@H](C)CC)C(=O)NCCCCCC(=O)N
 category: Experimental compound
 tags:
-- experimental-compound
-accent: '#8090a0'
+  - experimental-compound
+  - perception
+  - memory
+  - attention
+  - spatial-memory
+accent: "#8090a0"
 reviewedAt: 2026-10-11
 editorialStatus: sourced-draft
 halfLife:
-  label: 'Rat-only observations: 5.6 h serum stability; ~304 h IV terminal estimate; no human half-life'
+  label: "Rat-only observations: 5.6 h serum stability; ~304 h IV terminal estimate; no human half-life"
   low: null
   high: null
   context: The two numeric observations are rat-specific and sourced from a Dihexa PK paper carrying a Notice of Concern. Human PK was not located.
@@ -31,43 +35,43 @@ kinetics:
   metabolism: Human metabolism, metabolites and clearance are unknown.
   sourceId: dh-pk
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 9007199254740991
 ---
 
 ## Summary
 
-Dihexa is a synthetic angiotensin-IV-derived peptidomimetic reported in rat PK and cognition studies. No registered or published human trial or human PK study was located. The principal mechanistic paper was retracted and the main PK/behavior paper carries a Notice of Concern, so animal findings require strong qualification. [dh-pk] [dh-retraction-2014] [dh-notice]
+Dihexa is a synthetic angiotensin-IV-derived peptidomimetic reported in rat PK and cognition studies.
 
 ## Description
 
@@ -75,9 +79,7 @@ The CAS-linked record identifies C27H44N4O5 and CID 129010512; a separate PNB-04
 
 ## Evidence note
 
-This page separates rat doses, true rat half-life observations, preclinical outcomes, mechanistic hypotheses, integrity warnings and legal context. No human dose, efficacy, safety, interaction or half-life is established. [dh-trials] [dh-hgf-cancer]
-
-Reddit index corpus import includes the linked PMID 23055539 abstract plus the curated preclinical/ret argeted records above. PMC full text for PMID 23055539 (PMC3533412) was identified but not retrieved in this pass because of connector errors/rate limits; the page retains the prior curated full-text-derived rat PK records and integrity warnings.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -133,60 +135,59 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   quantityMax: null
   unit: not established
   ingredient: dihexa
-  formulation: Not established
   route: Intravenous
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: In-vivo PK
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: dr-dihexa-s2
+  population: Not established
+  formulation: Not established
 - label: dihexa research exposure 2
   amount: 20 mg/kg
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: dihexa
-  formulation: Not established
   route: Intraperitoneal
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: In-vivo PK
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: dr-dihexa-s2
+  population: Not established
+  formulation: Not established
 - label: dihexa research exposure 3
   amount: 2 mg/kg
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: dihexa
-  formulation: Not established
   route: Oral
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Scopolamine-amnesia Morris water maze experiment
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: dr-dihexa-s3
+  population: Not established
+  formulation: Not established
 - label: dihexa research exposure 4
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: dihexa
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: dr-dihexa-s9
+  population: Not established
+  formulation: Not established
 ```
 
 ## Pharmacokinetics
@@ -222,8 +223,6 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   modelEligible: false
 - id: dr-dihexa-dihexa-pk-1
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -232,12 +231,10 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   high: null
   unit: hours
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
-  sourceId: dr-dihexa-s2
+  sourceId: dh-pubchem-pnb
   modelEligible: false
 - id: dr-dihexa-dihexa-pk-2
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -246,12 +243,10 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   high: null
   unit: hours
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
-  sourceId: dr-dihexa-s2
+  sourceId: dh-pubchem-pnb
   modelEligible: false
 - id: dr-dihexa-dihexa-pk-3
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -260,12 +255,10 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   high: null
   unit: hours
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
-  sourceId: dr-dihexa-s2
+  sourceId: dh-pubchem-pnb
   modelEligible: false
 - id: dr-dihexa-dihexa-pk-4
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -278,8 +271,6 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   modelEligible: false
 - id: dr-dihexa-dihexa-pk-5
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -288,7 +279,7 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   high: null
   unit: hours
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
-  sourceId: dr-dihexa-s2
+  sourceId: dh-pubchem-pnb
   modelEligible: false
 ```
 
@@ -366,10 +357,10 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: dr-dihexa-s3
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-dihexa-dihexa-effect-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -379,10 +370,10 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: dr-dihexa-s3
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-dihexa-dihexa-effect-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -392,10 +383,10 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: dr-dihexa-s2
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-dihexa-dihexa-effect-4
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -405,10 +396,10 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: dr-dihexa-s9
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -445,10 +436,10 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: dr-dihexa-s9
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-dihexa-dihexa-outcome-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -458,10 +449,10 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: dr-dihexa-s9
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-dihexa-dihexa-outcome-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -471,10 +462,10 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: dr-dihexa-s9
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-dihexa-dihexa-outcome-4
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -484,17 +475,17 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: dr-dihexa-s2
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
-- id: reddit-dihexa-cognitive-performance-23055539
+  population: Not established
+- id: research-dihexa-cognitive-performance-23055539
   conceptId: spatial-memory
   name: Scopolamine-impaired spatial-memory performance
   direction: Increased
   evidence: Limited research
   description: The preclinical paper reports that orally active, blood-brain-barrier-permeant dihexa reversed scopolamine-induced deficits in Morris water-maze performance in rats and augmented hippocampal synaptogenesis; it is not human evidence.
-  sourceId: reddit-pmid-23055539
+  sourceId: pubmed-23055539
   population: Scopolamine-impaired and aged rats
   exposure: Dihexa in rat preclinical experiments; exact schedules are in the full text/curated dh-pk record
   instrument: Morris water maze and hippocampal synaptogenesis assays
@@ -516,7 +507,7 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   sourceId: dh-mechanism
 - title: Angiotensin-IV analog stabilization and barrier permeability
   description: PMID 23055539 reports chemical modifications yielding orally active, blood-brain-barrier-permeant dihexa with rat scopolamine and aged-model procognitive activity; this is a preclinical report and does not validate human mechanism.
-  sourceId: reddit-pmid-23055539
+  sourceId: pubmed-23055539
 - title: Research mechanism
   description: Source-specific mechanism detail is preserved in the cited source.
   sourceId: dr-dihexa-s3
@@ -570,13 +561,13 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   assertion: Dihexa improves human cognition.
   relation: clinical-efficacy
   participants:
-  - entityId: substance:dihexa
-    role: intervention
-  - entityId: tag:memory
-    role: outcome-domain
+    - entityId: substance:dihexa
+      role: intervention
+    - entityId: tag:memory
+      role: outcome-domain
   context: No human efficacy trial was located.
   sourceIds:
-  - dh-trials
+    - dh-trials
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Animal cognitive performance does not establish clinical benefit.
@@ -584,14 +575,14 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   assertion: Dihexa is a proven HGF/c-MET activator.
   relation: mechanism
   participants:
-  - entityId: substance:dihexa
-    role: compound
-  - entityId: tag:experimental-compound
-    role: research-context
+    - entityId: substance:dihexa
+      role: compound
+    - entityId: tag:experimental-compound
+      role: research-context
   context: The central mechanistic paper was retracted.
   sourceIds:
-  - dh-mechanism
-  - dh-retraction-2014
+    - dh-mechanism
+    - dh-retraction-2014
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Mechanism remains unconfirmed.
@@ -599,14 +590,14 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   assertion: Dihexa crosses the blood-brain barrier in humans.
   relation: distribution
   participants:
-  - entityId: substance:dihexa
-    role: compound
-  - entityId: tag:experimental-compound
-    role: research-context
+    - entityId: substance:dihexa
+      role: compound
+    - entityId: tag:experimental-compound
+      role: research-context
   context: Brain accumulation was reported in rats; human CNS exposure is unknown.
   sourceIds:
-  - dh-pk
-  - dh-trials
+    - dh-pk
+    - dh-trials
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Species and measurement limitations.
@@ -614,14 +605,14 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   assertion: Dihexa causes cancer.
   relation: safety
   participants:
-  - entityId: substance:dihexa
-    role: compound
-  - entityId: tag:experimental-compound
-    role: pathway-context
+    - entityId: substance:dihexa
+      role: compound
+    - entityId: tag:experimental-compound
+      role: pathway-context
   context: Only a pathway-based theoretical concern is supported.
   sourceIds:
-  - dh-hgf-cancer
-  - dh-trials
+    - dh-hgf-cancer
+    - dh-trials
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: No human tumor outcome demonstrates causation.
@@ -629,14 +620,14 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   assertion: Rodent doses define a human dose.
   relation: dose-translation
   participants:
-  - entityId: substance:dihexa
-    role: compound
-  - entityId: tag:experimental-compound
-    role: animal-model
+    - entityId: substance:dihexa
+      role: compound
+    - entityId: tag:experimental-compound
+      role: animal-model
   context: No clinical dose exists.
   sourceIds:
-  - dh-pk
-  - dh-trials
+    - dh-pk
+    - dh-trials
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Animal doses cannot be converted into validated human regimens.
@@ -644,109 +635,109 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   assertion: Dihexa improves human cognition
   relation: evidence-boundary
   participants:
-  - entityId: substance:dihexa
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:dihexa
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - dr-dihexa-s9
+    - dr-dihexa-s9
   conflictingSourceIds:
-  - dr-dihexa-s1
+    - dr-dihexa-s1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: dr-dihexa-dihexa-claim-2
   assertion: Dihexa is a proven HGF/c-MET activator
   relation: evidence-boundary
   participants:
-  - entityId: substance:dihexa
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:dihexa
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - dr-dihexa-s3
-  - dr-dihexa-s4
+    - dr-dihexa-s3
+    - dr-dihexa-s4
   conflictingSourceIds:
-  - dr-dihexa-s1
+    - dr-dihexa-s1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: dr-dihexa-dihexa-claim-3
   assertion: Dihexa crosses the blood-brain barrier
   relation: evidence-boundary
   participants:
-  - entityId: substance:dihexa
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:dihexa
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - dr-dihexa-s2
-  - dr-dihexa-s7
+    - dr-dihexa-s2
+    - dr-dihexa-s7
   conflictingSourceIds:
-  - dr-dihexa-s1
+    - dr-dihexa-s1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: dr-dihexa-dihexa-claim-4
   assertion: Rodent doses define a human dose
   relation: evidence-boundary
   participants:
-  - entityId: substance:dihexa
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:dihexa
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - dr-dihexa-s2
-  - dr-dihexa-s3
-  - dr-dihexa-s9
+    - dr-dihexa-s2
+    - dr-dihexa-s3
+    - dr-dihexa-s9
   conflictingSourceIds:
-  - dr-dihexa-s1
+    - dr-dihexa-s1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: dr-dihexa-dihexa-claim-5
   assertion: Dihexa causes cancer
   relation: evidence-boundary
   participants:
-  - entityId: substance:dihexa
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:dihexa
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - dr-dihexa-s8
-  - dr-dihexa-s9
+    - dr-dihexa-s8
+    - dr-dihexa-s9
   conflictingSourceIds:
-  - dr-dihexa-s1
+    - dr-dihexa-s1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: dr-dihexa-dihexa-claim-6
   assertion: Dihexa is safe in humans
   relation: evidence-boundary
   participants:
-  - entityId: substance:dihexa
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:dihexa
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - dr-dihexa-s9
-  - dh-trials
+    - dr-dihexa-s9
+    - dh-trials
   conflictingSourceIds:
-  - dr-dihexa-s1
+    - dr-dihexa-s1
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
-- id: reddit-claim-dihexa-23055539-0
+- id: research-claim-dihexa-23055539-0
   assertion: In rat models, dihexa was reported to reverse scopolamine-induced Morris water-maze deficits and augment hippocampal synaptogenesis.
   relation: preclinical-effect
   participants:
-  - entityId: substance:dihexa
-    role: intervention
-  - entityId: tag:spatial-memory
-    role: reported endpoint
+    - entityId: substance:dihexa
+      role: intervention
+    - entityId: tag:spatial-memory
+      role: reported endpoint
   context: Preclinical AngIV-analog study; no human efficacy dataset.
   sourceIds:
-  - reddit-pmid-23055539
+    - pubmed-23055539
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Animal-only evidence; the paper carries an editorial Notice of Concern and human translation is unknown.
@@ -774,7 +765,7 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   sourceId: dr-dihexa-s9
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - dr-dihexa-s1
+    - dr-dihexa-s1
 - id: dr-dihexa-interaction-2
   name: Documented or hypothesized coexposure
   otherSlug: null
@@ -782,7 +773,7 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   sourceId: dr-dihexa-s3
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - dr-dihexa-s1
+    - dr-dihexa-s1
 - id: dr-dihexa-interaction-3
   name: Documented or hypothesized coexposure
   otherSlug: null
@@ -790,7 +781,7 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   sourceId: dr-dihexa-s3
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - dr-dihexa-s1
+    - dr-dihexa-s1
 - id: dr-dihexa-interaction-4
   name: Documented or hypothesized coexposure
   otherSlug: null
@@ -798,7 +789,7 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   sourceId: dr-dihexa-s8
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - dr-dihexa-s1
+    - dr-dihexa-s1
 ```
 
 ## Experience links
@@ -860,7 +851,7 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   conflictOfInterestStatus: declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC4270014/
 - id: dh-retraction-2014
-  title: 'Retraction: The procognitive and synaptogenic effects of angiotensin IV-derived peptides'
+  title: "Retraction: The procognitive and synaptogenic effects of angiotensin IV-derived peptides"
   authors: Journal editorial record
   year: 2025
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12063880/
@@ -883,9 +874,9 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   sponsorshipStatus: not-assessed
   conflictsOfInterest: No complete statement located.
   conflictOfInterestStatus: not-assessed
-  pmid: '22464142'
+  pmid: "22464142"
 - id: dh-retraction-2012
-  title: 'Retraction: Development of angiotensin IV analogs as HGF/Met modifiers'
+  title: "Retraction: Development of angiotensin IV analogs as HGF/Met modifiers"
   authors: Journal editorial record
   year: 2025
   url: https://pubmed.ncbi.nlm.nih.gov/40311219/
@@ -896,9 +887,9 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not assessed.
   conflictOfInterestStatus: not-assessed
-  pmid: '40311219'
+  pmid: "40311219"
 - id: dh-notice
-  title: 'Expression of Concern: Evaluation of metabolically stabilized angiotensin IV analogs'
+  title: "Expression of Concern: Evaluation of metabolically stabilized angiotensin IV analogs"
   authors: Journal editorial record
   year: 2021
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8184897/
@@ -1045,7 +1036,7 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   conflictsOfInterest: Original author affiliations are retained
   conflictOfInterestStatus: not-assessed
 - id: dr-dihexa-s8
-  title: 'Notice of Concern: McCoy AT, Benoist CC, Wright JW, Kawas LH, Bule-Ghogare JM, Zhu M, Appleyard SM, Wayman GA, and Harding JW (2013) Evaluation of Metabolically Stabilized Angiotensin IV Analogs as Procognitive/Antidementia Agents, J Pharmacol Exp Ther, 344: 141-154; DOI: 10.1124/jpet.112.199497'
+  title: "Notice of Concern: McCoy AT, Benoist CC, Wright JW, Kawas LH, Bule-Ghogare JM, Zhu M, Appleyard SM, Wayman GA, and Harding JW (2013) Evaluation of Metabolically Stabilized Angiotensin IV Analogs as Procognitive/Antidementia Agents, J Pharmacol Exp Ther, 344: 141-154; DOI: 10.1124/jpet.112.199497"
   authors: The Journal of Pharmacology and Experimental Therapeutics; original authors McCoy et al.
   year: 2021
   url: https://pubmed.ncbi.nlm.nih.gov/34551989/
@@ -1092,31 +1083,27 @@ Reddit index corpus import includes the linked PMID 23055539 abstract plus the c
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Institutional and commercialization context is inherent
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-8c39cf5ab8fd
+- id: publication-link-8c39cf5ab8fd
   title: Prospective Alzheimer's Drug Builds New Brain Cell Connections, Improves Cognitive Function of Rats
   authors: Not established
   year: 2026
   url: https://www.sciencedaily.com/releases/2012/10/121011090653.htm
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-23055539
+- id: pubmed-23055539
   title: Evaluation of metabolically stabilized angiotensin IV analogs as procognitive/antidementia agents.
   authors: Alene T McCoy, Caroline C Benoist, John W Wright, Leen H Kawas, Jyote M Bule-Ghogare, Mingyan Zhu, Suzanne M Appleyard, Gary A Wayman, Joseph W Harding
   year: 2013
   url: https://pubmed.ncbi.nlm.nih.gov/23055539/
   kind: PubMed publication
-  insight: 'Angiotensin IV (AngIV: VYIHPF)-related peptides have long been recognized as procognitive agents with potential as antidementia therapeutics.'
+  insight: "Angiotensin IV (AngIV: VYIHPF)-related peptides have long been recognized as procognitive agents with potential as antidementia therapeutics."
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '23055539'
+  pmid: "23055539"
   doi: 10.1124/jpet.112.199497
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 

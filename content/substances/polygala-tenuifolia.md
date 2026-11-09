@@ -3,17 +3,21 @@ slug: polygala-tenuifolia
 name: Polygala tenuifolia
 subtitle: BT-11 root-extract evidence with limited human trials.
 aliases:
-- Yuan Zhi
-- Yuanzhi
-- Polygalae Radix
+  - Yuan Zhi
+  - Yuanzhi
+  - Polygalae Radix
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Botanical root and extract
-tags: []
-accent: '#a9b993'
-reviewedAt: '2026-11-05'
+tags:
+  - memory-performance-effect
+  - working-memory-state
+  - cognitive-performance
+  - adverse-events
+accent: "#a9b993"
+reviewedAt: 2026-11-05
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -21,7 +25,6 @@ halfLife:
   high: null
   context: No human elimination study for the whole root or BT-11 extract was identified.
   sourceId: polygala-review-33069838
-  observationId: polygala-tenuifolia-identity-unassessed
 kinetics:
   onset: Not established
   peak: Not established
@@ -30,43 +33,43 @@ kinetics:
   metabolism: Not established
   sourceId: polygala-review-33069838
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 1133
 ---
 
 ## Summary
 
-Polygala tenuifolia evidence is formulation-specific. Three human randomized studies of the named BT-11 root extract provide preliminary cognitive signals and short-term adolescent safety data, while a Polygala–Acorus Alzheimer’s review cannot isolate Polygala’s independent effect.
+Polygala tenuifolia is a plant whose root extract BT-11 has been studied for memory. Small human trials report improvements on some recall and cognitive tests.
 
 ## Description
 
@@ -74,12 +77,12 @@ Polygalae Radix is a dried-root medicinal material associated with P. tenuifolia
 
 ## Evidence note
 
-This sourced draft adds PubMed-verified records for the 2009 older-adult BT-11 RCT, the 2019 adolescent safety RCT, and the 2023 systematic review/meta-analysis of Polygala plus Acorus. No human PK half-life, validated interaction profile, or long-term adult safety study was identified. Mechanistic findings from animal or in-vitro work are kept separate from clinical outcomes.
+This research article adds PubMed-verified records for the 2009 older-adult BT-11 RCT, the 2019 adolescent safety RCT, and the 2023 systematic review/meta-analysis of Polygala plus Acorus. No human PK half-life, validated interaction profile, or long-term adult safety study was identified. Mechanistic findings from animal or in-vitro work are kept separate from clinical outcomes.
 
 ## Doses
 
 ```yaml
-- label: 'PMID 30576772 study exposure: BT-11 300 mg/day'
+- label: "PMID 30576772 study exposure: BT-11 300 mg/day"
   amount: 300 mg/day
   quantity: 300
   quantityMax: null
@@ -99,20 +102,7 @@ This sourced draft adds PubMed-verified records for the 2009 older-adult BT-11 R
 ## Pharmacokinetics
 
 ```yaml
-- id: polygala-tenuifolia-identity-unassessed
-  analyte: Polygala tenuifolia root or BT-11 extract
-  route: Not assessed
-  formulation: Botanical root/extract mixture
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: Reviews discuss constituent pharmacokinetics but do not establish a clinically usable elimination curve for the whole root or BT-11.
-  sourceId: polygala-review-33069838
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -220,13 +210,13 @@ This sourced draft adds PubMed-verified records for the 2009 older-adult BT-11 R
   assertion: BT-11 was associated with source-specific memory-test improvements in healthy adults.
   relation: associated-with
   participants:
-  - entityId: substance:polygala-tenuifolia
-    role: named root extract exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:polygala-tenuifolia
+      role: named root extract exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: Four-week randomized healthy-adult study; several measures also improved with placebo.
   sourceIds:
-  - polygala-memory-19429065
+    - polygala-memory-19429065
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Small single study with abstract-only numerical reporting and no independent replication identified.
@@ -234,13 +224,13 @@ This sourced draft adds PubMed-verified records for the 2009 older-adult BT-11 R
   assertion: Polygala tenuifolia plus Acorus tatarinowii may improve Alzheimer’s disease outcomes when added to conventional medication, with low or very low certainty.
   relation: associated-with
   participants:
-  - entityId: substance:polygala-tenuifolia
-    role: one component of combination exposure
-  - entityId: tag:cognitive-performance
-    role: pooled endpoint
+    - entityId: substance:polygala-tenuifolia
+      role: one component of combination exposure
+    - entityId: tag:cognitive-performance
+      role: pooled endpoint
   context: Systematic review of 16 RCTs; combination effects cannot be attributed to Polygala alone.
   sourceIds:
-  - polygala-acorus-meta-38283842
+    - polygala-acorus-meta-38283842
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Multi-herb intervention, high or unclear risk of bias, and low/very low certainty.
@@ -281,7 +271,7 @@ This sourced draft adds PubMed-verified records for the 2009 older-adult BT-11 R
   kind: PubMed randomized controlled trial
   insight: Four-week oral BT-11 study in healthy adults using K-CVLT and SOPT.
   limitation: Abstract does not report exact dose, sample size, or numerical effect sizes.
-  pmid: '19429065'
+  pmid: "19429065"
   doi: 10.1016/j.neulet.2009.03.024
   funding: Not assessed in the accessible abstract.
   sponsorshipStatus: not-assessed
@@ -295,7 +285,7 @@ This sourced draft adds PubMed-verified records for the 2009 older-adult BT-11 R
   kind: PubMed randomized controlled trial
   insight: BT-11 group (n=28) had greater total CERAD increases than placebo (n=25), with selected memory and naming measures improved.
   limitation: Primary abstract does not establish dose, duration, numerical effect sizes, or a significant MMSE between-group benefit.
-  pmid: '19699261'
+  pmid: "19699261"
   doi: 10.1016/j.neulet.2009.08.033
   funding: Not assessed in the accessible abstract.
   sponsorshipStatus: not-assessed
@@ -309,7 +299,7 @@ This sourced draft adds PubMed-verified records for the 2009 older-adult BT-11 R
   kind: PubMed randomized controlled trial
   insight: 300 mg/day BT-11 for 12 weeks showed no statistically significant difference from placebo in adverse reactions or safety laboratory, vital-sign, weight, and ECG measures.
   limitation: Age-specific short-term safety study; does not establish adult or long-term safety.
-  pmid: '30576772'
+  pmid: "30576772"
   doi: 10.1016/j.jep.2018.12.031
   funding: Not assessed in the accessible abstract.
   sponsorshipStatus: not-assessed
@@ -323,7 +313,7 @@ This sourced draft adds PubMed-verified records for the 2009 older-adult BT-11 R
   kind: PubMed systematic review and meta-analysis
   insight: Sixteen RCTs (1,103 participants) studied Polygala–Acorus combinations; adjunctive pooled effects favored cognition and function but certainty was low/very low.
   limitation: Multi-herb intervention, high or unclear risk of bias, high MMSE heterogeneity, and no independent Polygala estimate.
-  pmid: '38283842'
+  pmid: "38283842"
   doi: 10.3389/fphar.2023.1268000
   funding: Fundamental Research Funds for the Central Universities 2019-JYB-TD-007; National Key R&D Program 2018YFC1704100; National Natural Science Foundation of China 82074362; Qihuang Scholar Foundation.
   sponsorshipStatus: non-industry-funded
@@ -338,7 +328,7 @@ This sourced draft adds PubMed-verified records for the 2009 older-adult BT-11 R
   kind: PubMed review
   insight: Reviews Polygalae Radix from P. tenuifolia and P. sibirica, including constituents, toxicology, and pharmacokinetics; reports irritation concerns.
   limitation: Narrative review; does not establish clinical efficacy or a validated whole-root PK profile.
-  pmid: '33069838'
+  pmid: "33069838"
   doi: 10.1016/j.fitote.2020.104759
   funding: Not assessed in the accessible abstract.
   sponsorshipStatus: not-assessed

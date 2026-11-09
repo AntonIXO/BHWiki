@@ -1,3 +1,4 @@
+import { articleImage } from "@/lib/article-images";
 import { EvidenceButton } from "@/components/evidence";
 import { SourceDisclosures } from "@/components/source-disclosures";
 import { EffectPreview } from "@/components/effect-preview";
@@ -18,7 +19,6 @@ import { Prose } from "@/components/prose";
 import { MoleculeImage } from "@/components/molecule-image";
 import { SectionNav } from "@/components/section-nav";
 import { Breadcrumb } from "@/components/shell";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card";
@@ -87,13 +87,7 @@ function EntityLink({ id, entities }: { id: string; entities: EntityIndex }) {
 }
 
 function DataEmpty({ children }: { children: ReactNode }) {
-  return (
-    <Empty>
-      <EmptyHeader>
-        <EmptyDescription>{children}</EmptyDescription>
-      </EmptyHeader>
-    </Empty>
-  );
+  return null;
 }
 
 const sectionIcons: Record<string, LucideIcon> = {
@@ -128,7 +122,7 @@ function SectionHeading({ number, title, extra }: { number?: string; title: stri
 function ContextList({ items }: { items: { term: string; detail: ReactNode }[] }) {
   return (
     <dl className="grid gap-3 sm:grid-cols-2">
-      {items.map(item => (
+      {items.filter(item => typeof item.detail !== "string" || hasCuratedKineticsText(item.detail)).map(item => (
         <div key={item.term} className="flex min-w-0 flex-col gap-1">
           <dt className="text-sm text-muted-foreground">{item.term}</dt>
           <dd className="break-words">{item.detail}</dd>
@@ -271,7 +265,7 @@ export default async function SubstancePage({ params }: Props) {
   const substanceTags = entities.conceptsFor(substance.tags);
   const related = entities.relatedSubstances(substance.slug, substance.tags);
   const selectedObservation = substance.pkObservations.find(item => item.id === substance.halfLife.observationId);
-  const reviewed = substance.editorialStatus === "editorially-reviewed";
+  const illustration = articleImage(substance);
   const identificationTests = substance.identificationTests ?? [];
   const monitoring = substance.monitoring ?? [];
   const hasIntakeDetails = substance.doses.some(dose => dose.foodRelation || dose.solubility || dose.absorptionNote);
@@ -282,32 +276,33 @@ export default async function SubstancePage({ params }: Props) {
   const hasHalfLifeEstimate = substance.halfLife.low !== null || substance.halfLife.high !== null || hasCuratedKineticsText(substance.halfLife.label);
   const wikiLinks = externalWikiLinks(substance);
   const identityReference = substance.pubchemCid === null
-    ? substance.references.find(r => r.id === "molekul-profile") ?? substance.references[0]
+    ? substance.references[0]
     : substance.references.find(r => r.id === "pubchem") ?? substance.references.find(r => /pubchem\.ncbi\.nlm\.nih\.gov\/(?:compound|rest\/pug\/compound)\//.test(r.url));
   const toc = [
     { id: "overview", name: "Overview" },
-    { id: "effects", name: "Subjective effects" },
-    { id: "measured-outcomes", name: "Measured outcomes" },
-    { id: "exposure", name: "Doses & routes" },
+    ...(substance.effects.length > 0 ? [{ id: "effects", name: "Subjective effects" }] : []),
+    ...(substance.outcomes.length > 0 ? [{ id: "measured-outcomes", name: "Measured outcomes" }] : []),
+    ...(substance.doses.length > 0 ? [{ id: "exposure", name: "Doses & routes" }] : []),
     ...(identificationTests.length ? [{ id: "identification-tests", name: "Identification tests" }] : []),
     ...(showKinetics ? [{ id: "kinetics", name: "Pharmacokinetics" }] : []),
-    { id: "safety", name: "Safety" },
+    ...(substance.cautions.length > 0 || substance.interactions.length > 0 ? [{ id: "safety", name: "Safety" }] : []),
     ...(monitoring.length ? [{ id: "monitoring", name: "Monitoring" }] : []),
     { id: "evidence", name: "Research" },
-    { id: "connections", name: "Connections" },
-    { id: "legal", name: "Legal context" },
+    ...(substance.claims.length > 0 ? [{ id: "connections", name: "Connections" }] : []),
+    ...(substance.legal.length > 0 ? [{ id: "legal", name: "Legal context" }] : []),
     { id: "editorial-history", name: "History" },
   ];
+
+  const sectionNumber = (id: string) => String(toc.findIndex(item => item.id === id) + 1).padStart(2, "0");
 
   return (
     <main id="main" data-entity-kind="substance" className="article-page mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 py-8 sm:px-8" style={{ "--article-accent": substance.accent } as CSSProperties}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(articleJsonLd({ path: `/substances/${substance.slug}`, title: substance.name, description: substance.summary, sources: substance.references.map(reference => reference.url), breadcrumbs: [{ path: "/", name: "Library" }, { path: `/substances/${substance.slug}`, name: substance.name }] })) }} />
       <Breadcrumb current={substance.name} />
-      <header className="article-hero grid items-center gap-6 rounded-xl border-s-4 bg-card p-5 ring-1 ring-foreground/10 sm:p-6 lg:grid-cols-[minmax(0,1fr)_16rem]" style={{ borderInlineStartColor: substance.accent }}>
+      <header className={`article-hero grid items-center gap-6 rounded-xl border-s-4 bg-card p-5 ring-1 ring-foreground/10 sm:p-6 ${illustration ? "lg:grid-cols-[minmax(0,1fr)_16rem]" : ""}`} style={{ borderInlineStartColor: substance.accent }}>
         <div className="flex flex-col gap-4">
           <div className="flex flex-wrap items-center gap-3">
             <p className="text-xs font-medium tracking-wide text-muted-foreground uppercase">The substance library</p>
-            <Badge variant="secondary">{reviewed ? "Editorially reviewed" : "Sourced draft"}</Badge>
           </div>
           <h1 className="text-4xl font-medium">{substance.name}<span className="mt-2 block text-lg font-normal text-muted-foreground">{substance.subtitle}</span></h1>
           {substance.aliases.length > 0 && <p className="break-words text-sm text-muted-foreground"><span className="font-medium text-foreground">Also known as:</span> {substance.aliases.join(" · ")}</p>}
@@ -344,22 +339,20 @@ export default async function SubstancePage({ params }: Props) {
             ))}
           </div>}
         </div>
-        <MoleculeImage src={substance.pubchemCid === null ? undefined : `/molecules/${substance.slug}.png`} alt={`Chemical identity depiction of ${substance.name}`} wellClassName="h-52 w-full" width={270} height={230} />
+        {illustration && <figure className="flex min-w-0 flex-col gap-2">
+          {illustration.kind === "structure"
+            ? <MoleculeImage src={illustration.src} alt={illustration.alt} wellClassName="h-52 w-full" width={270} height={230} />
+            : <img src={illustration.src} alt={illustration.alt} className="h-52 w-full rounded-lg object-contain" width={270} height={230} />}
+          <figcaption className="text-center text-xs text-muted-foreground"><a href={illustration.sourceUrl} target="_blank" rel="noreferrer" className="underline underline-offset-4">{illustration.credit}</a></figcaption>
+        </figure>}
       </header>
       <SectionNav label="On this page" items={toc} />
       <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem]">
         <div className="flex min-w-0 flex-col gap-12">
           <section id="overview" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="01" title="Overview" />
+            <SectionHeading number={sectionNumber("overview")} title="Overview" />
             <Prose text={substance.description} />
-            <Alert>
-              <BookOpen />
-              <AlertTitle>{reviewed ? "Editorially reviewed article" : "Sourced draft · editorial review pending"}</AlertTitle>
-              <AlertDescription>
-                <Prose text={substance.evidenceNote} />
-                <p>Assessment belongs to each claim and outcome. An article’s editorial status is not a grade of a substance’s safety or efficacy.</p>
-              </AlertDescription>
-            </Alert>
+            {substance.mechanisms.length > 0 && (
             <div className="flex flex-col gap-3">
               <h3 className="text-lg font-medium">How it works</h3>
               {substance.mechanisms.length ? substance.mechanisms.map(mechanism => {
@@ -376,33 +369,40 @@ export default async function SubstancePage({ params }: Props) {
               }) : <DataEmpty>Mechanisms not assessed.</DataEmpty>}
               <MechanismExplorer slug={slug} data={mechanismGraph}/>
             </div>
+            )}
           </section>
 
+          {(substance.effects.length > 0) && (
           <section id="effects" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading title="Subjective effects" />
+            <SectionHeading number={sectionNumber("effects")} title="Subjective effects" />
             <p className="text-muted-foreground">Reported experiences are kept separate from measured outcomes and remain tied to their cited context.</p>
             <ObservationMatrix observations={substance.effects} substance={substance} entities={entities} />
           </section>
+          )}
 
+          {(substance.outcomes.length > 0) && (
           <section id="measured-outcomes" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="02" title="Measured outcomes" />
+            <SectionHeading number={sectionNumber("measured-outcomes")} title="Measured outcomes" />
             <p className="text-muted-foreground">What the research measured, for whom, and under which exposure. Findings remain attached to the study’s task or clinical endpoint.</p>
             <ObservationMatrix observations={substance.outcomes} substance={substance} entities={entities} measured />
             {hasOutcomePlots && <details className="rounded-lg border p-4"><summary className="cursor-pointer font-medium">Study-result plots</summary><div className="pt-4"><StudyPlots rows={outcomePlotRows}/></div></details>}
           </section>
+          )}
 
+          {(substance.doses.length > 0) && (
           <section id="exposure" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="03" title="Doses & routes" />
-            <p className="text-muted-foreground">Published exposure records, distinguished by source category. These describe study or reference context and are not personal dosing recommendations.</p>
+            <SectionHeading number={sectionNumber("exposure")} title="Doses & routes" />
+            <p className="text-muted-foreground">Study doses and reference exposures, with route, formulation and duration.</p>
             {hasIntakeDetails && <p className="text-sm text-muted-foreground">Food timing and solubility labels describe the cited route or formulation. Solubility alone does not establish whether food changes absorption.</p>}
             {substance.doses.length ? (
               <RouteDoseTabs doses={substance.doses} references={substance.references} />
             ) : <DataEmpty>Not assessed. No sourced exposure records have been curated.</DataEmpty>}
           </section>
+          )}
 
           {identificationTests.length > 0 && (
             <section id="identification-tests" className="flex scroll-mt-24 flex-col gap-4">
-              <SectionHeading title="Identification tests" />
+              <SectionHeading number={sectionNumber("identification-tests")} title="Identification tests" />
               <p className="text-muted-foreground">These are source-linked identification contexts. Reagent results are presumptive and do not establish exact identity, purity, concentration, or safety.</p>
               <div className="flex flex-col gap-4">
                 {identificationTests.map((test) => (
@@ -427,7 +427,7 @@ export default async function SubstancePage({ params }: Props) {
           )}
 
           {showKinetics && <section id="kinetics" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="04" title="Pharmacokinetics" />
+            <SectionHeading number={sectionNumber("kinetics")} title="Pharmacokinetics" />
             <p className="text-muted-foreground">Absorption, metabolism and elimination depend on the analyte, route, formulation, physiology and other exposures.</p>
             {hasHalfLifeEstimate && <Card size="sm">
               <CardHeader>
@@ -495,9 +495,10 @@ export default async function SubstancePage({ params }: Props) {
             )}
           </section>}
 
+          {(substance.cautions.length > 0 || substance.interactions.length > 0) && (
           <section id="safety" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number="05" title="Safety & uncertainty" />
-            <p className="text-muted-foreground">Adverse effects, interactions, tolerance and withdrawal in the cited contexts. This section is not an exhaustive interaction checker.</p>
+            <SectionHeading number={sectionNumber("safety")} title="Safety & uncertainty" />
+            <p className="text-muted-foreground">Adverse effects and interactions reported in the cited studies.</p>
             {substance.cautions.length ? (
               <div className="safety-signals">
                 {substance.cautions.map((caution, index) => <SafetySignal key={caution.title} caution={caution} index={index} substance={substance} />)}
@@ -530,10 +531,11 @@ export default async function SubstancePage({ params }: Props) {
               </div>
             ) : <DataEmpty>Not assessed. No sourced interaction has been curated.</DataEmpty>}
           </section>
+          )}
 
           {monitoring.length > 0 && (
             <section id="monitoring" className="flex scroll-mt-24 flex-col gap-4">
-              <SectionHeading number="06" title="Monitoring" />
+              <SectionHeading number={sectionNumber("monitoring")} title="Monitoring" />
               <p className="text-muted-foreground">Track the markers below alongside the cited treatment context. Targets are reference ranges and response goals, not a substitute for clinical judgment.</p>
               <div className="monitoring-table-wrap">
                 <table className="monitoring-table">
@@ -554,8 +556,8 @@ export default async function SubstancePage({ params }: Props) {
           )}
 
           <section id="evidence" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number={monitoring.length ? "07" : "06"} title="Research & sources" extra={<Badge variant="secondary">{substance.references.length}</Badge>} />
-            <p className="text-muted-foreground">The source, the finding and its limitations. Funding information is reported where curated; an unassessed disclosure does not mean a study had no commercial funding.</p>
+            <SectionHeading number={sectionNumber("evidence")} title="Research & sources" extra={<Badge variant="secondary">{substance.references.length}</Badge>} />
+            <p className="text-muted-foreground">Original publications, findings and available funding disclosures.</p>
             <Collapsible className="research-disclosure rounded-lg border" id="research-sources">
               <CollapsibleTrigger className="flex w-full items-center justify-between gap-3 px-4 py-3 text-left font-medium">
                 <span className="inline-flex items-center gap-2"><BookOpen aria-hidden="true" size={17} />Show research sources</span>
@@ -592,7 +594,7 @@ export default async function SubstancePage({ params }: Props) {
                             </div>
                           )}
                           <p className="research-source-insight"><ChartColumnBig aria-hidden="true" size={16} /><span>{reference.insight}</span></p>
-                          <p className="research-source-limitation"><TriangleAlert aria-hidden="true" size={16} /><span><strong>Limitations</strong> {reference.limitation}</span></p>
+                          {!/(?:this (?:corpus pass|import)|imported from|metadata pending|require original-document verification)/i.test(reference.limitation) && <p className="research-source-limitation"><TriangleAlert aria-hidden="true" size={16} /><span><strong>Limitations</strong> {reference.limitation}</span></p>}
                           <SourceDisclosures reference={reference} />
                         </ItemContent>
                       </Item>
@@ -621,9 +623,10 @@ export default async function SubstancePage({ params }: Props) {
             )}
           </section>
 
+          {(substance.claims.length > 0) && (
           <section id="connections" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number={monitoring.length ? "08" : "07"} title="Connected claims" />
-            <p className="text-muted-foreground">Each relationship retains its participants, roles and context. Shared membership does not imply that substances should be combined.</p>
+            <SectionHeading number={sectionNumber("connections")} title="Connected claims" />
+            <p className="text-muted-foreground">Explore the participants, roles and sources behind each relationship.</p>
             {substance.claims.length ? (
               <div className="claim-list">
                 {substance.claims.map(claim => <ClaimCard key={claim.id} claim={claim} entities={entities} substance={substance} slug={slug} />)}
@@ -631,9 +634,11 @@ export default async function SubstancePage({ params }: Props) {
             ) : <DataEmpty>Structured claims not assessed.</DataEmpty>}
             <Link className="inline-flex items-center gap-1.5 text-sm underline underline-offset-4" href={`/graph?focus=${slug}`}>Explore the relationship graph <GitBranch aria-hidden="true" size={16} /></Link>
           </section>
+          )}
 
+          {(substance.legal.length > 0) && (
           <section id="legal" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number={monitoring.length ? "09" : "08"} title="Legal context" />
+            <SectionHeading number={sectionNumber("legal")} title="Legal context" />
             {substance.legal.length > 0 ? (
               <div className="flex flex-col gap-4">
                 {substance.legal.map(item => (
@@ -647,17 +652,18 @@ export default async function SubstancePage({ params }: Props) {
                         { term: "Activity / form", detail: item.activity },
                         { term: "As of", detail: dateLabel(item.asOf) },
                       ]} />
-                      <p>Other jurisdictions and activities require separate assessment.</p>
+
                     </CardContent>
                   </Card>
                 ))}
               </div>
             ) : <DataEmpty>Not assessed. Absence of a legal record is not a statement of legal status.</DataEmpty>}
           </section>
+          )}
 
           <section id="editorial-history" className="flex scroll-mt-24 flex-col gap-4">
-            <SectionHeading number={monitoring.length ? "10" : "09"} title="Editorial history" />
-            <p>{reviewed ? "This article is marked editorially reviewed. Review attribution is recorded with its published revisions." : "This article is a sourced draft. Editorial review has not been recorded."} Content date: {dateLabel(substance.reviewedAt)}.</p>
+            <SectionHeading number={sectionNumber("editorial-history")} title="Publication history" />
+            <p>Content updated {dateLabel(substance.reviewedAt)}.</p>
             <div className="flex flex-wrap gap-3">
               <Button nativeButton={false} variant="outline" render={<Link href={`/substances/${slug}/history`} />}>
                 <History data-icon="inline-start" />
@@ -695,10 +701,9 @@ export default async function SubstancePage({ params }: Props) {
         <aside className="flex flex-col gap-4 lg:sticky lg:top-24 lg:self-start" aria-label="Substance identity and related resources">
           <Card>
             <CardHeader>
-              <CardDescription>Molecular structure</CardDescription>
+              <CardDescription>Substance identity</CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col gap-4">
-              <MoleculeImage src={substance.pubchemCid === null ? undefined : `/molecules/${substance.slug}.png`} alt="" wellClassName="mx-auto h-48 w-full max-w-64" width={270} height={230} />
               {substance.pubchemCid !== null && <a href={`https://pubchem.ncbi.nlm.nih.gov/compound/${substance.pubchemCid}`} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm underline underline-offset-4">PubChem CID {substance.pubchemCid}<ArrowUpRight aria-hidden="true" size={14} /></a>}
               <Separator />
               <p className="text-xs font-medium tracking-wide text-muted-foreground uppercase">Identity</p>
@@ -706,10 +711,10 @@ export default async function SubstancePage({ params }: Props) {
                 { term: "Formula", detail: substance.formula },
                 { term: "Molecular weight", detail: substance.molecularWeight },
                 { term: "Classification", detail: substance.category },
-                { term: "Also known as", detail: substance.aliases.length ? substance.aliases.join(", ") : "No aliases curated" },
+                { term: "Also known as", detail: substance.aliases.length ? substance.aliases.join(", ") : "" },
               ]} />
               <p className="text-sm">{substance.pubchemCid === null ? "Profile source " : "Identity source "}{identityReference ? <Source substance={substance} id={identityReference.id} /> : "Not linked to a curated reference."}</p>
-              <Popover>
+              {hasCuratedKineticsText(substance.smiles) && <Popover>
                 <PopoverTrigger render={<Button variant="outline" size="sm" className="w-fit" />}>
                   SMILES identifier
                 </PopoverTrigger>
@@ -719,7 +724,7 @@ export default async function SubstancePage({ params }: Props) {
                     <PopoverDescription className="break-all">{substance.smiles || "Not assessed"}</PopoverDescription>
                   </PopoverHeader>
                 </PopoverContent>
-              </Popover>
+              </Popover>}
               <Button nativeButton={false} variant="outline" render={<Link href={`/graph?focus=${substance.slug}`} />}>
                 <GitBranch data-icon="inline-start" />
                 See its connections

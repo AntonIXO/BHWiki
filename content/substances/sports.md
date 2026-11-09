@@ -1,76 +1,77 @@
 ---
 slug: sports
 name: Sports
-subtitle: Reddit index evidence trail.
+subtitle: Sport and physical training are studied for their effects on attention, memory and cognitive performance..
 aliases: []
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
-category: Reddit index entry
+category: Behaviour and protocol
 tags:
-- reddit-index
-accent: '#a9b993'
-reviewedAt: '2026-11-01'
+  - attention
+accent: "#a9b993"
+reviewedAt: 2026-11-01
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
   low: null
   high: null
   context: No validated elimination observation was imported in this corpus pass.
-  sourceId: reddit-index-sports
+  sourceId: pubmed-25725192
 kinetics:
   onset: Not established
   peak: Not established
   duration: Not established
   bioavailability: Not established
   metabolism: Not established
-  sourceId: reddit-index-sports
+  sourceId: pubmed-25725192
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- externalWikiLinks
-- references
-- legal
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - externalWikiLinks
+  - references
+  - legal
+x-order: 9007199254740991
 ---
 
 ## Summary
 
-Sports has 1 linked PubMed publication records in the Reddit Nootropics index. Structured observations below are limited to source-specific abstract results and explicitly identified pharmacokinetic or safety findings.
+Sport and physical training are studied for their effects on attention, memory and cognitive performance.
 
 ## Description
 
-This page links the legacy Reddit Nootropics index to 1 retrieved PubMed records out of 1 linked PMID records. Doses, outcomes, mechanisms, cautions, and claims cite the matching publication reference; a PMC link is retained when PubMed supplied one.
+Sport and physical training are studied for their effects on attention, memory and cognitive performance.
 
 ## Evidence note
 
-PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entry; 0 returned PMCID identifiers. Structured records cite the matching publication reference. Full-text retrieval was attempted for the identified PMC records; unavailable or partial retrieval is left explicit in the citation limitation. Funding and conflicts remain unassessed unless the source record reports them.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -99,13 +100,13 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
 ## Outcomes
 
 ```yaml
-- id: reddit-sports-attention-25725192
+- id: research-sports-attention-25725192
   conceptId: attention
   name: Attention
   direction: Variable
   evidence: Human research
   description: Cognitive training has received a lot of attention recently, yielding findings that can be conflicting and controversial. After training for eight weeks, the designed sport group showed the largest gains in all cognitive measures, illustrating the efficacy of complex motor activities to enhance cognition. Designed sport training also revealed impressive health benefits, namely decreased heart rate and blood pressure.
-  sourceId: reddit-pmid-25725192
+  sourceId: pubmed-25725192
   population: Cognitive training has received a lot of attention recently, yielding findings that can be conflicting and controversial.
   exposure: Cognitive training has received a lot of attention recently, yielding findings that can be conflicting and controversial.
   instrument: null
@@ -128,17 +129,17 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
 ## Claims
 
 ```yaml
-- id: reddit-claim-sports-25725192
+- id: research-claim-sports-25725192
   assertion: Cognitive training has received a lot of attention recently, yielding findings that can be conflicting and controversial. After training for eight weeks, the designed sport group showed the largest gains in all cognitive measures, illustrating the efficacy of complex motor activities to enhance cognition. Designed sport training also revealed impressive health benefits, namely decreased heart rate and blood pressure.
   relation: associated-with
   participants:
-  - entityId: substance:sports
-    role: intervention or exposure
-  - entityId: tag:attention
-    role: reported endpoint
+    - entityId: substance:sports
+      role: intervention or exposure
+    - entityId: tag:attention
+      role: reported endpoint
   context: PMID 25725192 abstract result/conclusion; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-25725192
+    - pubmed-25725192
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Single publication; the abstract does not establish general efficacy or safety.
@@ -159,27 +160,17 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
 ## References
 
 ```yaml
-- id: reddit-index-sports
-  title: Reddit r/Nootropics community index
-  authors: Reddit r/Nootropics community index
-  year: 2026
-  url: https://www.reddit.com/r/nootropics/wiki/index
-  kind: Community index
-  insight: The community index lists this substance and links the source trail below.
-  limitation: Community indexing is a discovery aid and does not establish efficacy or safety.
-- id: reddit-pmid-25725192
-  title: 'An ecological approach to cognitive enhancement: complex motor training.'
+- id: pubmed-25725192
+  title: "An ecological approach to cognitive enhancement: complex motor training."
   authors: David Moreau, Alexandra B Morrison, Andrew R A Conway
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/25725192/
   kind: PubMed publication
   insight: Cognitive training has received a lot of attention recently, yielding findings that can be conflicting and controversial. After training for eight weeks, the designed sport group showed the largest gains in all cognitive measures, illustrating the efficacy of complex motor activities to enhance cognition. Designed sport training also revealed impressive health benefits, namely decreased heart rate and blood pressure.
   limitation: PubMed abstract retrieved 2026-11-01. No PubMed Central full text identifier was returned.
-  pmid: '25725192'
+  pmid: "25725192"
   doi: 10.1016/j.actpsy.2015.02.007
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 

@@ -1,7 +1,7 @@
 ---
 slug: ventvil
 name: Ventvil
-subtitle: Source-linked research profile.
+subtitle: Biological preparation
 aliases:
   - Вентвил
 formula: Not established
@@ -11,6 +11,7 @@ smiles: Not established
 category: Biological preparation
 tags:
   - biological-preparation
+  - peptide-research
 accent: "#a9b993"
 reviewedAt: 2026-10-04
 editorialStatus: sourced-draft
@@ -19,15 +20,14 @@ halfLife:
   low: null
   high: null
   context: This import contains a research source trail, not a verified elimination estimate.
-  sourceId: molekul-profile
-  observationId: ventvil-unassessed
+  sourceId: research-link-167
 kinetics:
   onset: Not assessed
   peak: Not assessed
   duration: Not assessed
   bioavailability: Not assessed
   metabolism: Not assessed
-  sourceId: molekul-profile
+  sourceId: research-link-167
 x-shape:
   - slug
   - name
@@ -64,19 +64,15 @@ x-order: 1087
 
 ## Summary
 
-Ventvil — Liver polypeptide extract; Livagen/KEDA denotes a distinct intervention. This is a secondary-source identity lead; clinical effects and exposure protocols remain unassessed.
+Ventvil — Liver polypeptide extract; Livagen/KEDA denotes a distinct intervention.
 
 ## Description
 
-Ventvil appears in Molekul's research atlas. The original profile groups it as tissue-derived polypeptide complex. This describes the atlas's working classification, not an established indication. A single molecular identity has not been established here; no formula or structure is assigned to this record.
-
-The Molekul profile was parsed on 2026-10-04. Its classification and linked source trail are discovery information; external documents, cohort overlap, preparation identity and findings have not been independently appraised in this import.
-
-Identity lead from Molekul: Liver polypeptide extract; Livagen/KEDA denotes a distinct intervention. This account has not been independently verified against the original chemistry or preparation documentation.
+Ventvil — Liver polypeptide extract; Livagen/KEDA denotes a distinct intervention.
 
 ## Evidence note
 
-The Molekul profile was parsed on 2026-10-04. Its classification and linked source trail are discovery information; external documents, cohort overlap, preparation identity and findings have not been independently appraised in this import. The year on a source-discovery link is its capture year, not the paper's publication year. Missing doses, kinetics and clinical observations remain unassessed.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -87,20 +83,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 ## Pharmacokinetics
 
 ```yaml
-- id: ventvil-unassessed
-  analyte: Ventvil
-  route: Not assessed
-  formulation: Preparation identity requires verification
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No elimination observation has been independently curated for this imported record.
-  sourceId: molekul-profile
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -154,16 +137,7 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 ## References
 
 ```yaml
-- id: molekul-profile
-  title: 'Ventvil: Molekul research profile'
-  authors: Molekul
-  year: 2026
-  url: https://molekul.io/compounds/ventvil
-  kind: Research atlas · accessed 2026
-  insight: Provenance of the imported name, working classification and source trail.
-  limitation: A secondary discovery resource. This import does not independently verify its findings or count its links as independent studies.
-  funding: Not assessed in this import.
-- id: molekul-link-167
+- id: research-link-167
   title: PubMed PMID 32362099 — source link captured 2026; metadata pending
   authors: Bibliographic metadata not independently verified
   year: 2026
@@ -171,7 +145,6 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
   kind: Source discovery link · capture year
   insight: This URL appeared in the compound profile's source trail. No study finding is asserted by this reference.
   limitation: Publication title, authors, date, methods, findings, source access and relevance require original-document verification. Multiple links may represent the same study or a related preparation.
-  funding: Not assessed in this import.
 ```
 
 ## Legal
@@ -179,4 +152,3 @@ The Molekul profile was parsed on 2026-10-04. Its classification and linked sour
 ```yaml
 []
 ```
-

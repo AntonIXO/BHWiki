@@ -9,16 +9,16 @@ import type { Substance, TagKind } from "../src/lib/types";
 
 const curatedSlugs = ["caffeine", "l-theanine", "creatine", "melatonin", "nicotine", "psilocybin", "modafinil", "methylphenidate", "diphenhydramine", "citicoline"];
 const curatedHashes = [
-  "a68f5c29584d5303ea355813c6033590f29f144115dd6acf5adb937a30a41017",
-  "89d4e24b9f4441ad36e6e98cad937b05da40d4bbaeeb73fa4eeeec88b0710cad",
-  "3c7f625f039d7bb12eb9c3d0a4a288e98cf2ae9e136baa24055ce2d2db5a9e4e",
-  "1b2b542eb4f6133c213b352f4a7a61841f267e102a2d7a6f768bba3d50c88aee",
-  "11fc97da3bb572d54d11e96b8d6a569a84d289163a7770fd4358a8334d0b52c5",
-  "f8c8258e89ff47240104fd22602ac94ef98f991b2fe1bbea7b3b2f5f6d734fe6",
-  "b71d5b488aab7523168792bd996eb11cf508b412ca464cc0695db2747409680c",
-  "a8275baaff59fc792278f8dc08809a566ba8aa5d6d2af4390491dcd425b5d64b",
-  "2af40220f322b71b7ac9db93b605a1dea2327a12c1f95a70eb200fe8c55f30de",
-  "414f2427a558db923108e90fdfea485ab9f210f32a83245bcd8cc9b40a64cbc3",
+  "c3367b27b2b54fab34d6bb2e4cbd2931d31bc389be63129ac58c576d826259f2",
+  "9b0f7e51148f42f74939d0a6350186c1a6b66620406452dea7bf6a383edc2adb",
+  "48895f730571d302c14ca4af54139854f8047080b6110b7581f8f22874e96103",
+  "e7874f948ab38ea3e27e42fb601db8c0a52c54249742ba8d1ed178f2a812a173",
+  "691249f43f92145e7440ea52a412b29eaf94511c12f0805e1b049a712f123e9d",
+  "2c55cb114918102dfb34346f5817f15d5a177ce587c06393be9e01112f336267",
+  "af8481a2cd767164c710d06046728fd3db3e35d5a50f816058eb6375e59ac6e9",
+  "d24a4a974f5eaf55553f94a9415dc01cf1c9c7523a73e0f5f35625801e0c608d",
+  "af5fa2be6ae044d2b625ca2a5416848f2678c315ffdb904464b7f497bf2d29e4",
+  "b276d19c48b1ecd69a1e630a5aaeeec3811137434cdef8d2067c841a264ca0fb"
 ];
 
 test("markdown files preserve the curated records", () => {
@@ -26,15 +26,15 @@ test("markdown files preserve the curated records", () => {
   assert.deepEqual(curated.map((substance) => substance?.slug), curatedSlugs);
   assert.deepEqual(curated.map((substance) => substance && contentHash(substance)), curatedHashes);
   assert.ok(substances.length >= curatedSlugs.length);
-  assert.equal(tags.length, 356);
+  assert.equal(tags.length, 355);
   assert.equal(substances.filter((substance) => substance.subtitle === "Identity record.").length, 0);
   assert.equal(substances.filter((substance) => substance.subtitle === "Source-backed identity stub.").length, 0);
   const kinds: Record<TagKind, number> = { class: 0, "chemical-family": 0, mechanism: 0, target: 0, neurotransmitter: 0, enzyme: 0, effect: 0, outcome: 0, exposure: 0, legal: 0 };
   for (const tag of tags) kinds[tag.kind] += 1;
-  assert.deepEqual(kinds, { class: 19, "chemical-family": 8, mechanism: 30, target: 20, neurotransmitter: 6, enzyme: 12, effect: 54, outcome: 201, exposure: 5, legal: 1 });
+  assert.deepEqual(kinds, { class: 18, "chemical-family": 8, mechanism: 30, target: 20, neurotransmitter: 6, enzyme: 12, effect: 54, outcome: 201, exposure: 5, legal: 1 });
   assert.equal(hyperedges.length, 63);
   const total = (count: (substance: Substance) => number) => curated.reduce((sum, substance) => sum + count(substance!), 0);
-  assert.equal(total((substance) => substance.references.length), 337);
+  assert.equal(total((substance) => substance.references.length), 330);
   assert.equal(total((substance) => substance.pkObservations.length), 25);
   assert.equal(total((substance) => substance.doses.length), 83);
   assert.equal(total((substance) => substance.mechanisms.length), 45);

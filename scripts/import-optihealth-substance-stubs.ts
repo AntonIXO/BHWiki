@@ -206,7 +206,7 @@ export function auditOptiHealthCoverage(input: OptiHealthCandidateFile, corpus: 
 
 export const auditCoverage = auditOptiHealthCoverage;
 
-/** Build an identity-only sourced draft. No effects, doses, structures, or relations are inferred. */
+/** Build an identity-only research article. No effects, doses, structures, or relations are inferred. */
 export function buildOptiHealthSubstanceStub(candidate: OptiHealthCandidate, _generatedAt: string): never {
   if (candidate.identityStatus === "ambiguous") throw new Error(`ambiguous candidate is review-only: ${candidate.name}`);
   throw new Error(`Identity-only substance stubs are not publishable: ${candidate.name}`);

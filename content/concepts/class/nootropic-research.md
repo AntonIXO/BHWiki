@@ -4,7 +4,11 @@ label: Nootropic research
 kind: class
 aliases: []
 sourceUrls:
-  - https://molekul.io/compounds
+  - https://pubmed.ncbi.nlm.nih.gov/27240534/
+  - https://pubmed.ncbi.nlm.nih.gov/26248695/
+  - https://pubmed.ncbi.nlm.nih.gov/11854487/
+  - https://pubmed.ncbi.nlm.nih.gov/22549035/
+  - https://pubmed.ncbi.nlm.nih.gov/24607292/
 x-shape:
   - id
   - label
@@ -18,4 +22,3 @@ x-order: 9007199254740991
 ## Definition
 
 A discovery grouping for compounds investigated in cognition-related research. The label does not establish cognitive improvement in any population.
-

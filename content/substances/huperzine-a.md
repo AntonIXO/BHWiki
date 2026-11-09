@@ -1,20 +1,24 @@
 ---
 slug: huperzine-a
 name: Huperzine A
-subtitle: A reversible cholinesterase inhibitor with mixed Alzheimer evidence and uncertain supplement quality.
+subtitle: Cholinesterase inhibitor
 aliases:
-- huperzine a
-- HupA
-- selagine
+  - huperzine a
+  - HupA
+  - selagine
 formula: C15H18N2O
 molecularWeight: 242.32 g/mol
 pubchemCid: 854026
 smiles: C/C=C/1\[C@@H]2CC3=C([C@]1(CC(=C2)C)N)C=CC(=O)N3
 category: Cholinesterase inhibitor
 tags:
-- acetylcholine
-- experimental-compound
-accent: '#8090a0'
+  - acetylcholine
+  - experimental-compound
+  - perception
+  - memory
+  - attention
+  - episodic-memory
+accent: "#8090a0"
 reviewedAt: 2026-10-11
 editorialStatus: sourced-draft
 halfLife:
@@ -32,37 +36,37 @@ kinetics:
   metabolism: Substantial unchanged urinary excretion has been reported; CYP interaction evidence is limited.
   sourceId: hup-pk
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 9007199254740991
 ---
 
@@ -76,11 +80,7 @@ Purified HupA is not dose-equivalent to unstandardized Huperzia serrata extract,
 
 ## Evidence note
 
-This page separates symptomatic AD outcomes, selected healthy studies, human PK and cholinergic safety. No chronic safe intake or disease-modifying effect is established; funding and conflicts are marked on the cited records. [hup-rivm] [hup-ad-us]
-
-Reddit index corpus import (4 linked source records; 3 PubMed abstracts). Full-text methods, funding, and conflicts remain unassessed where the source record says so.
-
-PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this Reddit-index entry; structured fields below are limited to abstract-supported findings. PMC full text was used where rights-eligible and available; remaining methods, funding, and conflicts are unassessed.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
@@ -181,8 +181,6 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   quantityMax: null
   unit: not established
   ingredient: huperzine-a
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Placebo-controlled to week 16; active follow-up to week 24
   population: AD, U.S. phase II
@@ -190,14 +188,13 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: hup-ad-us
+  formulation: Not established
 - label: huperzine-a research exposure 2
   amount: 400 µg/day
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: huperzine-a
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: 12 weeks
   population: AD, Chinese multicenter trial
@@ -205,14 +202,13 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: hup-ad-cn
+  formulation: Not established
 - label: huperzine-a research exposure 3
   amount: 100 µg twice daily
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: huperzine-a
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: 4 weeks
   population: Adolescents reporting memory inadequacy
@@ -220,14 +216,13 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: hup-adolescent
+  formulation: Not established
 - label: huperzine-a research exposure 4
   amount: 200 µg single dose
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: huperzine-a
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Acute crossover exposure
   population: Healthy exercise-trained adults
@@ -235,14 +230,13 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: hup-exercise
+  formulation: Not established
 - label: huperzine-a research exposure 5
   amount: 400 µg single dose
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: huperzine-a
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Single-dose PK study
   population: Healthy pharmacokinetic volunteers
@@ -250,21 +244,21 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: hup-pk
+  formulation: Not established
 - label: huperzine-a research exposure 6
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: huperzine-a
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
   note: Source-specific research exposure details are preserved in the cited source.
   sourceId: hup-rivm
+  population: Not established
+  formulation: Not established
 - label: PubMed study exposure (25455867)
   amount: 200 μg
   quantity: 200
@@ -278,7 +272,7 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   purpose: Research exposure
   sourceCategory: research
   note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
-  sourceId: reddit-pmid-25455867
+  sourceId: pubmed-25455867
 ```
 
 ## Pharmacokinetics
@@ -300,8 +294,6 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   modelEligible: true
 - id: dr-huperzine-a-huperzine-a-pk-1
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -314,8 +306,6 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   modelEligible: false
 - id: dr-huperzine-a-huperzine-a-pk-2
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -328,8 +318,6 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   modelEligible: false
 - id: dr-huperzine-a-huperzine-a-pk-3
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -342,8 +330,6 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   modelEligible: false
 - id: dr-huperzine-a-huperzine-a-pk-4
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -356,8 +342,6 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   modelEligible: false
 - id: dr-huperzine-a-huperzine-a-pk-5
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -465,10 +449,10 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: hup-ad-us
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-huperzine-a-huperzine-a-effect-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -478,10 +462,10 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: hup-meta
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-huperzine-a-huperzine-a-effect-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -491,10 +475,10 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: hup-ad-us
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -531,7 +515,7 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   population: 15 exercise-trained adults
   exposure: 200 µg single dose
   instrument: Cognitive tasks and perceived exertion
-  magnitude: 'Null'
+  magnitude: "Null"
   reportType: measured-assessment
 - conceptId: memory
   name: Mild cognitive impairment
@@ -553,10 +537,10 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: hup-ad-us
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-huperzine-a-huperzine-a-outcome-2
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -566,10 +550,10 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: hup-ad-us
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-huperzine-a-huperzine-a-outcome-3
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -579,10 +563,10 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: hup-ad-us
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-huperzine-a-huperzine-a-outcome-4
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -592,10 +576,10 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: hup-mci
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-huperzine-a-huperzine-a-outcome-5
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -605,10 +589,10 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: hup-exercise
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: dr-huperzine-a-huperzine-a-outcome-6
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -618,19 +602,19 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   evidence: Human research
   description: Source-specific outcome evidence is preserved in the cited reference.
   sourceId: hup-ad-us
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
-- id: reddit-huperzine-a-episodic-memory-10678121
+  population: Not established
+- id: research-huperzine-a-episodic-memory-10678121
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Increased
   evidence: Limited research
-  description: 'AIM: To study the efficacy of huperzine-A capsules (Hup) on memory and learning performance of adolescent students.'
+  description: "AIM: To study the efficacy of huperzine-A capsules (Hup) on memory and learning performance of adolescent students."
   sourceId: hup-adolescent
   population: 34 matched pairs of junior-middle-school students with reported memory inadequacy
-  exposure: 'AIM: To study the efficacy of huperzine-A capsules (Hup) on memory and learning performance of adolescent students.'
+  exposure: "AIM: To study the efficacy of huperzine-A capsules (Hup) on memory and learning performance of adolescent students."
   instrument: null
   magnitude: null
   reportType: measured-assessment
@@ -655,11 +639,11 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   description: Source-specific mechanism detail is preserved in the cited source.
   sourceId: hup-ad-us
 - title: Source-specific finding from PMID 25455867
-  description: 'INTRODUCTION: Based on common pharmacodynamic mechanisms, recent efforts to develop second generation alternatives for organophosphate (OP) prophylaxis have expanded to include cholinesterase (ChE) inhibiting compounds traditionally approved for use in the treatment of Alzheimer''s disease (AD).'
-  sourceId: reddit-pmid-25455867
+  description: "INTRODUCTION: Based on common pharmacodynamic mechanisms, recent efforts to develop second generation alternatives for organophosphate (OP) prophylaxis have expanded to include cholinesterase (ChE) inhibiting compounds traditionally approved for use in the treatment of Alzheimer's disease (AD)."
+  sourceId: pubmed-25455867
 - title: Source-specific finding from PMID 15916732
-  description: 'RESULTS: Treatment of PC12 cells with 10 micromol/L HupA for 48 h markedly increased the number of neurite-bearing cells, but caused no significant alteration in cell viability or other signs of cytotoxicity. In addition to inhibiting AChE activity, 10 micromol/L HupA also increased the mRNA and protein levels of this enzyme. In addition, following 2 h exposure of the astrocytes to 10 micromol/L HupA, there was a significant up-regulation of mRNA for NGF and P75 low-affinity NGF receptor. The protein level of NGF was also increased after 24 h treatment with HupA.  CONCLUSION: Our findings demonstrate for the first time that HupA has a direct or indirect neurotrophic activity, which might be '
-  sourceId: reddit-pmid-15916732
+  description: "RESULTS: Treatment of PC12 cells with 10 micromol/L HupA for 48 h markedly increased the number of neurite-bearing cells, but caused no significant alteration in cell viability or other signs of cytotoxicity. In addition to inhibiting AChE activity, 10 micromol/L HupA also increased the mRNA and protein levels of this enzyme. In addition, following 2 h exposure of the astrocytes to 10 micromol/L HupA, there was a significant up-regulation of mRNA for NGF and P75 low-affinity NGF receptor. The protein level of NGF was also increased after 24 h treatment with HupA.  CONCLUSION: Our findings demonstrate for the first time that HupA has a direct or indirect neurotrophic activity, which might be "
+  sourceId: pubmed-15916732
 ```
 
 ## Cautions
@@ -690,11 +674,11 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   description: Source-specific caution detail is preserved in the cited source.
   sourceId: hup-meta
 - title: Source-specific finding from PMID 25455867
-  description: 'INTRODUCTION: Based on common pharmacodynamic mechanisms, recent efforts to develop second generation alternatives for organophosphate (OP) prophylaxis have expanded to include cholinesterase (ChE) inhibiting compounds traditionally approved for use in the treatment of Alzheimer''s disease (AD).'
-  sourceId: reddit-pmid-25455867
+  description: "INTRODUCTION: Based on common pharmacodynamic mechanisms, recent efforts to develop second generation alternatives for organophosphate (OP) prophylaxis have expanded to include cholinesterase (ChE) inhibiting compounds traditionally approved for use in the treatment of Alzheimer's disease (AD)."
+  sourceId: pubmed-25455867
 - title: Source-specific finding from PMID 15916732
-  description: 'RESULTS: Treatment of PC12 cells with 10 micromol/L HupA for 48 h markedly increased the number of neurite-bearing cells, but caused no significant alteration in cell viability or other signs of cytotoxicity. In addition to inhibiting AChE activity, 10 micromol/L HupA also increased the mRNA and protein levels of this enzyme. In addition, following 2 h exposure of the astrocytes to 10 micromol/L HupA, there was a significant up-regulation of mRNA for NGF and P75 low-affinity NGF receptor. The protein level of NGF was also increased after 24 h treatment with HupA.  CONCLUSION: Our findings demonstrate for the first time that HupA has a direct or indirect neurotrophic activity, which might be '
-  sourceId: reddit-pmid-15916732
+  description: "RESULTS: Treatment of PC12 cells with 10 micromol/L HupA for 48 h markedly increased the number of neurite-bearing cells, but caused no significant alteration in cell viability or other signs of cytotoxicity. In addition to inhibiting AChE activity, 10 micromol/L HupA also increased the mRNA and protein levels of this enzyme. In addition, following 2 h exposure of the astrocytes to 10 micromol/L HupA, there was a significant up-regulation of mRNA for NGF and P75 low-affinity NGF receptor. The protein level of NGF was also increased after 24 h treatment with HupA.  CONCLUSION: Our findings demonstrate for the first time that HupA has a direct or indirect neurotrophic activity, which might be "
+  sourceId: pubmed-15916732
 ```
 
 ## Claims
@@ -704,15 +688,15 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   assertion: Huperzine A treats Alzheimer disease.
   relation: clinical-efficacy
   participants:
-  - entityId: substance:huperzine-a
-    role: intervention
-  - entityId: tag:memory
-    role: outcome-domain
-  context: 'Clinical evidence is mixed: one U.S. phase-II primary endpoint was null while smaller trials and meta-analysis report signals.'
+    - entityId: substance:huperzine-a
+      role: intervention
+    - entityId: tag:memory
+      role: outcome-domain
+  context: "Clinical evidence is mixed: one U.S. phase-II primary endpoint was null while smaller trials and meta-analysis report signals."
   sourceIds:
-  - hup-ad-us
-  - hup-ad-cn
-  - hup-meta
+    - hup-ad-us
+    - hup-ad-cn
+    - hup-meta
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: No disease-modifying outcome is established.
@@ -720,14 +704,14 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   assertion: Huperzine A improves memory in healthy adults.
   relation: clinical-efficacy
   participants:
-  - entityId: substance:huperzine-a
-    role: intervention
-  - entityId: tag:memory
-    role: outcome-domain
+    - entityId: substance:huperzine-a
+      role: intervention
+    - entityId: tag:memory
+      role: outcome-domain
   context: Selected adolescent evidence and one null adult exercise trial do not establish general enhancement.
   sourceIds:
-  - hup-adolescent
-  - hup-exercise
+    - hup-adolescent
+    - hup-exercise
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Small, selected or acute studies.
@@ -735,14 +719,14 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   assertion: Huperzia serrata extract is equivalent to purified HupA.
   relation: product-identity
   participants:
-  - entityId: substance:huperzine-a
-    role: active_alkaloid
-  - entityId: tag:experimental-compound
-    role: extract-context
+    - entityId: substance:huperzine-a
+      role: active_alkaloid
+    - entityId: tag:experimental-compound
+      role: extract-context
   context: Extracts contain multiple alkaloids and labels may be inaccurate.
   sourceIds:
-  - hup-chemistry
-  - hup-products
+    - hup-chemistry
+    - hup-products
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Standardization and assay are required.
@@ -750,13 +734,13 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   assertion: Natural origin implies safety.
   relation: safety
   participants:
-  - entityId: substance:huperzine-a
-    role: exposure
-  - entityId: tag:acetylcholine
-    role: cholinergic-system
+    - entityId: substance:huperzine-a
+      role: exposure
+    - entityId: tag:acetylcholine
+      role: cholinergic-system
   context: Cholinergic toxicity and incomplete chronic data are documented.
   sourceIds:
-  - hup-rivm
+    - hup-rivm
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Natural origin does not establish safety.
@@ -764,137 +748,137 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   assertion: Improves memory and focus in healthy adults
   relation: evidence-boundary
   participants:
-  - entityId: substance:huperzine-a
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:huperzine-a
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - hup-adolescent
-  - hup-exercise
-  - hup-opss
+    - hup-adolescent
+    - hup-exercise
+    - hup-opss
   conflictingSourceIds:
-  - hup-ad-us
+    - hup-ad-us
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: dr-huperzine-a-huperzine-a-claim-2
   assertion: Treats Alzheimer disease
   relation: evidence-boundary
   participants:
-  - entityId: substance:huperzine-a
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:huperzine-a
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - hup-ad-us
-  - hup-ad-cn
-  - hup-meta
+    - hup-ad-us
+    - hup-ad-cn
+    - hup-meta
   conflictingSourceIds:
-  - hup-ad-us
+    - hup-ad-us
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: dr-huperzine-a-huperzine-a-claim-3
   assertion: Prevents or reverses neurodegeneration
   relation: evidence-boundary
   participants:
-  - entityId: substance:huperzine-a
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:huperzine-a
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - hup-ad-us
-  - hup-meta
+    - hup-ad-us
+    - hup-meta
   conflictingSourceIds:
-  - hup-ad-us
+    - hup-ad-us
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: dr-huperzine-a-huperzine-a-claim-4
   assertion: Huperzia extract is equivalent to purified HupA
   relation: evidence-boundary
   participants:
-  - entityId: substance:huperzine-a
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:huperzine-a
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - hup-products
-  - hup-chemistry
+    - hup-products
+    - hup-chemistry
   conflictingSourceIds:
-  - hup-ad-us
+    - hup-ad-us
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: dr-huperzine-a-huperzine-a-claim-5
   assertion: Natural origin implies safety
   relation: evidence-boundary
   participants:
-  - entityId: substance:huperzine-a
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:huperzine-a
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - hup-rivm
+    - hup-rivm
   conflictingSourceIds:
-  - hup-ad-us
+    - hup-ad-us
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
 - id: dr-huperzine-a-huperzine-a-claim-6
   assertion: Enhances pre-workout cognition or performance
   relation: evidence-boundary
   participants:
-  - entityId: substance:huperzine-a
-    role: intervention
-  - entityId: tag:cognitive-performance
-    role: reported-outcome-context
+    - entityId: substance:huperzine-a
+      role: intervention
+    - entityId: tag:cognitive-performance
+      role: reported-outcome-context
   context: Source-specific research report
   sourceIds:
-  - hup-exercise
+    - hup-exercise
   conflictingSourceIds:
-  - hup-ad-us
+    - hup-ad-us
   assessment: not-formally-assessed
   limitation: Source-specific limitation preserved in the returned report.
-- id: reddit-claim-huperzine-a-10678121-0
+- id: research-claim-huperzine-a-10678121-0
   assertion: Huperzine A is associated with the reported episodic memory finding in this publication.
   relation: associated-with
   participants:
-  - entityId: substance:huperzine-a
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:huperzine-a
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - hup-adolescent
+    - hup-adolescent
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
-- id: reddit-claim-huperzine-a-25455867-1
+- id: research-claim-huperzine-a-25455867-1
   assertion: Huperzine A is associated with the reported episodic memory finding in this publication.
   relation: associated-with
   participants:
-  - entityId: substance:huperzine-a
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:huperzine-a
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-25455867
+    - pubmed-25455867
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
-- id: reddit-claim-huperzine-a-15916732-2
-  assertion: 'PMID 15916732 reports: RESULTS: Treatment of PC12 cells with 10 micromol/L HupA for 48 h markedly increased the number of neurite-bearing cells, but caused no significant alteration in cell viability or other signs of cytotoxicity. In addition to inhibiting AChE activity, 10 micromol/L HupA also increased the mRNA and protein levels of this enzyme. In addition, following 2 h exposure of the astrocytes to 10 micromol/L HupA, there was a significant up-regulation of mRNA for NGF and P75 low-affinity NGF receptor. The protein level of NGF was also increased after 24 h treatment with HupA.  CONCLUSION: Our findings demonstrate for the first time that HupA has a direct or indirect neurotrophic activity, which might be'
+- id: research-claim-huperzine-a-15916732-2
+  assertion: "PMID 15916732 reports: RESULTS: Treatment of PC12 cells with 10 micromol/L HupA for 48 h markedly increased the number of neurite-bearing cells, but caused no significant alteration in cell viability or other signs of cytotoxicity. In addition to inhibiting AChE activity, 10 micromol/L HupA also increased the mRNA and protein levels of this enzyme. In addition, following 2 h exposure of the astrocytes to 10 micromol/L HupA, there was a significant up-regulation of mRNA for NGF and P75 low-affinity NGF receptor. The protein level of NGF was also increased after 24 h treatment with HupA.  CONCLUSION: Our findings demonstrate for the first time that HupA has a direct or indirect neurotrophic activity, which might be"
   relation: associated-with
   participants:
-  - entityId: substance:huperzine-a
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:huperzine-a
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-15916732
+    - pubmed-15916732
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
@@ -928,7 +912,7 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sourceId: hup-rivm
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - hup-ad-us
+    - hup-ad-us
 - id: dr-huperzine-a-interaction-2
   name: Documented or hypothesized coexposure
   otherSlug: null
@@ -936,7 +920,7 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sourceId: hup-rivm
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - hup-ad-us
+    - hup-ad-us
 - id: dr-huperzine-a-interaction-3
   name: Documented or hypothesized coexposure
   otherSlug: null
@@ -944,7 +928,7 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sourceId: hup-rivm
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - hup-ad-us
+    - hup-ad-us
 - id: dr-huperzine-a-interaction-4
   name: Documented or hypothesized coexposure
   otherSlug: null
@@ -952,7 +936,7 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sourceId: hup-rivm
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - hup-ad-us
+    - hup-ad-us
 - id: dr-huperzine-a-interaction-5
   name: Documented or hypothesized coexposure
   otherSlug: null
@@ -960,24 +944,13 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sourceId: hup-rivm
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
-  - hup-ad-us
+    - hup-ad-us
 ```
 
 ## Experience links
 
 ```yaml
 []
-```
-
-## External wiki links
-
-```yaml
-- service: Wikipedia
-  url: https://en.wikipedia.org/wiki/Huperzine
-  title: Wikipedia
-- service: Examine
-  url: https://examine.com/supplements/Huperzine-A
-  title: Examine
 ```
 
 ## References
@@ -1008,9 +981,9 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
-  pmid: '12181083'
+  pmid: "12181083"
 - id: hup-meta
-  title: 'Huperzine A for Alzheimer’s Disease: Systematic Review and Meta-Analysis'
+  title: "Huperzine A for Alzheimer’s Disease: Systematic Review and Meta-Analysis"
   authors: Gao-Yuan Yang; Yan-Ying Wang; coauthors
   year: 2013
   url: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0074916
@@ -1047,7 +1020,7 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
-  pmid: '10678121'
+  pmid: "10678121"
 - id: hup-exercise
   title: Effect of Huperzine A on Cognitive Function and Perception of Effort during Exercise
   authors: Chadsley M. Wessinger; Cynthia L. Inman; Jeremiah Weinstock; Edward P. Weiss
@@ -1060,7 +1033,7 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not stated.
   conflictOfInterestStatus: not-assessed
-  pmid: '34567353'
+  pmid: "34567353"
 - id: hup-pk
   title: Pharmacokinetics of huperzine A following oral administration to human volunteers
   authors: Y.X. Li; R.Q. Zhang; C.R. Li; X.H. Jiang
@@ -1073,7 +1046,7 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not stated.
   conflictOfInterestStatus: not-assessed
-  pmid: '18348466'
+  pmid: "18348466"
 - id: hup-rivm
   title: Risk assessment of herbal preparations containing Huperzia serrata
   authors: National Institute for Public Health and the Environment (RIVM)
@@ -1100,7 +1073,7 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   conflictsOfInterest: Not reported in cited abstract.
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/31990212/
-  pmid: '31990212'
+  pmid: "31990212"
 - id: hup-chemistry
   title: Quantification of huperzine A in Huperzia serrata and major alkaloids
   authors: Qingqing Wu; Yuehua Gu
@@ -1113,9 +1086,9 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not reported.
   conflictOfInterestStatus: not-assessed
-  pmid: '16337768'
+  pmid: "16337768"
 - id: hup-fda-guidance
-  title: 'Revised Draft Guidance: Dietary Supplements: New Dietary Ingredient Notifications'
+  title: "Revised Draft Guidance: Dietary Supplements: New Dietary Ingredient Notifications"
   authors: U.S. Food and Drug Administration
   year: 2024
   url: https://www.fda.gov/media/99538/download
@@ -1128,7 +1101,7 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://www.fda.gov/media/99538/download
 - id: hup-opss
-  title: 'Huperzine A: Dietary Supplements for Brain Health'
+  title: "Huperzine A: Dietary Supplements for Brain Health"
   authors: Operation Supplement Safety, U.S. Department of Defense
   year: 2026
   url: https://www.opss.org/article/huperzine-dietary-supplements-brain-health
@@ -1178,45 +1151,39 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   sponsorshipStatus: not-assessed
   conflictsOfInterest: Not stated
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-25455867
+- id: pubmed-25455867
   title: Physiological and neurobehavioral effects of cholinesterase inhibition in healthy adults.
   authors: Katherine C Morasch, Christopher L Aaron, James E Moon, Richard K Gordon
   year: 2015
   url: https://pubmed.ncbi.nlm.nih.gov/25455867/
   kind: PubMed publication
-  insight: 'INTRODUCTION: Based on common pharmacodynamic mechanisms, recent efforts to develop second generation alternatives for organophosphate (OP) prophylaxis have expanded to include cholinesterase (ChE) inhibiting compounds traditionally approved for use in the treatment of Alzheimer''s disease (AD).'
+  insight: "INTRODUCTION: Based on common pharmacodynamic mechanisms, recent efforts to develop second generation alternatives for organophosphate (OP) prophylaxis have expanded to include cholinesterase (ChE) inhibiting compounds traditionally approved for use in the treatment of Alzheimer's disease (AD)."
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '25455867'
+  pmid: "25455867"
   doi: 10.1016/j.physbeh.2014.09.010
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-bdb5f6817ad2
-  title: ' ref'
+- id: publication-link-bdb5f6817ad2
+  title: " ref"
   authors: Not established
   year: 2026
   url: https://www.theannals.com/content/43/3/514.full
-  kind: Reddit index publication link
-  insight: The Reddit index links this publication; bibliographic metadata was not returned by the PubMed batch.
+  kind: research index publication link
+  insight: The research index links this publication; bibliographic metadata was not returned by the PubMed batch.
   limitation: Full text, publication metadata, funding, and conflicts were not independently verified in this corpus pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-15916732
+- id: pubmed-15916732
   title: Effects of huperzine A on secretion of nerve growth factor in cultured rat cortical astrocytes and neurite outgrowth in rat PC12 cells.
   authors: Li-li Tang, Rui Wang, Xi-can Tang
   year: 2005
   url: https://pubmed.ncbi.nlm.nih.gov/15916732/
   kind: PubMed publication
-  insight: 'RESULTS: Treatment of PC12 cells with 10 micromol/L HupA for 48 h markedly increased the number of neurite-bearing cells, but caused no significant alteration in cell viability or other signs of cytotoxicity. In addition to inhibiting AChE activity, 10 micromol/L HupA also increased the mRNA and protein levels of this enzyme. In addition, following 2 h exposure of the astrocytes to 10 micromol/L HupA, there was a significant up-regulation of mRNA for NGF and P75 low-affinity NGF receptor. The protein level of NGF was also increased after 24 h treatment with HupA.  CONCLUSION: Our findings demonstrate for the first time that HupA has a direct or indirect neurotrophic activity, which might be '
+  insight: "RESULTS: Treatment of PC12 cells with 10 micromol/L HupA for 48 h markedly increased the number of neurite-bearing cells, but caused no significant alteration in cell viability or other signs of cytotoxicity. In addition to inhibiting AChE activity, 10 micromol/L HupA also increased the mRNA and protein levels of this enzyme. In addition, following 2 h exposure of the astrocytes to 10 micromol/L HupA, there was a significant up-regulation of mRNA for NGF and P75 low-affinity NGF receptor. The protein level of NGF was also increased after 24 h treatment with HupA.  CONCLUSION: Our findings demonstrate for the first time that HupA has a direct or indirect neurotrophic activity, which might be "
   limitation: Imported from the PubMed abstract; full-text methods and disclosures were not inspected in this corpus pass.
-  pmid: '15916732'
+  pmid: "15916732"
   doi: 10.1111/j.1745-7254.2005.00130.x
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 
@@ -1248,4 +1215,15 @@ PubMed MCP abstract review: 2 linked PubMed identifiers were retrieved for this 
   status: Source-specific legal detail is preserved in the cited source.
   sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC3269774/
   asOf: 2026-10-10
+```
+
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Huperzine
+  title: Wikipedia
+- service: Examine
+  url: https://examine.com/supplements/Huperzine-A
+  title: Examine
 ```

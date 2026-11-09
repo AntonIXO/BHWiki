@@ -20,6 +20,8 @@ tags:
   - hospital-length-of-stay
   - ibs-symptom-response
   - h-pylori-eradication
+  - antibiotic-associated-diarrhea-incidence
+  - plasma-tmao-concentration
 accent: "#5B7F6A"
 reviewedAt: 2026-10-10
 editorialStatus: sourced-draft
@@ -29,7 +31,6 @@ halfLife:
   high: null
   context: Synbiotics are mixtures of live microorganisms and microbial substrates, not a single absorbed compound. The constituent organisms, substrates, metabolites, and host-microbiota responses do not share one pharmacokinetic elimination half-life.
   sourceId: isapp-2020
-  observationId: synbiotics-pk-not-established
 kinetics:
   onset: Not established as a class-wide value; biological responses depend on the microorganism, substrate, host, endpoint, and formulation.
   peak: Not established.
@@ -70,6 +71,7 @@ x-shape:
   - legal
 x-order: 9007199254740991
 ---
+
 ## Summary
 
 Synbiotics pair live microorganisms with selectively utilized substrates. Effects belong to the specific strain, substrate, dose, product and population; there is no universal class-wide clinical outcome.
@@ -150,20 +152,7 @@ Clinical evidence is formulation-specific and often heterogeneous. Positive sign
 ## Pharmacokinetics
 
 ```yaml
-- id: synbiotics-pk-not-established
-  analyte: Organism plus substrate mixture
-  route: Oral
-  formulation: Formulation-specific synbiotic products
-  population: Not applicable as a single pharmacokinetic population
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: Organisms, substrates and metabolites have distinct gastrointestinal fates. Stool persistence or metabolite appearance cannot be converted into a class-wide drug elimination half-life.
-  sourceId: isapp-2020
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -423,7 +412,7 @@ Clinical evidence is formulation-specific and often heterogeneous. Positive sign
   conflictOfInterestStatus: declared
   disclosureUrl: https://doi.org/10.3920/BM2020.0062
 - id: ref-ibs-network-2024
-  title: 'Efficacy of Probiotics, Prebiotics, Synbiotics, and FMT in IBS: Systematic Review and Network Meta-Analysis'
+  title: "Efficacy of Probiotics, Prebiotics, Synbiotics, and FMT in IBS: Systematic Review and Network Meta-Analysis"
   authors: Wu J et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38999862/
@@ -475,7 +464,7 @@ Clinical evidence is formulation-specific and often heterogeneous. Positive sign
   conflictsOfInterest: Disclosure incomplete.
   conflictOfInterestStatus: not-assessed
 - id: ref-rossi-2016
-  title: 'SYNERGY: A Randomized Trial'
+  title: "SYNERGY: A Randomized Trial"
   authors: Rossi M et al.
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/26772193/

@@ -1,24 +1,24 @@
 ---
 slug: s-adenosyl-l-methionine
 name: S-adenosyl-L-methionine
-subtitle: Reddit index evidence trail.
+subtitle: Amino acid and derivative
 aliases: []
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
-category: Reddit index entry
+category: Amino acid and derivative
 tags:
-- reddit-index
-accent: '#a9b993'
-reviewedAt: '2026-11-01'
+  - depression-severity
+accent: "#a9b993"
+reviewedAt: 2026-11-01
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
   low: null
   high: null
   context: No validated elimination observation was imported in this corpus pass.
-  sourceId: reddit-pmid-12420702
+  sourceId: pubmed-12420702
   observationId: s-adenosyl-l-methionine-pk-12420702
 kinetics:
   onset: Not established
@@ -26,57 +26,58 @@ kinetics:
   duration: Not established
   bioavailability: Not established
   metabolism: Not established
-  sourceId: reddit-pmid-12420702
+  sourceId: pubmed-12420702
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- externalWikiLinks
-- references
-- legal
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - externalWikiLinks
+  - references
+  - legal
+x-order: 9007199254740991
 ---
 
 ## Summary
 
-S-adenosyl-L-methionine has 1 linked PubMed publication records in the Reddit Nootropics index. Structured observations below are limited to source-specific abstract results and explicitly identified pharmacokinetic or safety findings.
+S-adenosyl-L-methionine, or SAMe, participates in methylation reactions. Research explores mood and cognitive function.
 
 ## Description
 
-This page links the legacy Reddit Nootropics index to 1 retrieved PubMed records out of 1 linked PMID records. Doses, outcomes, mechanisms, cautions, and claims cite the matching publication reference; a PMC link is retained when PubMed supplied one.
+S-adenosyl-L-methionine, or SAMe, participates in methylation reactions. Research explores mood and cognitive function.
 
 ## Evidence note
 
-PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entry; 0 returned PMCID identifiers. Structured records cite the matching publication reference. Full-text retrieval was attempted for the identified PMC records; unavailable or partial retrieval is left explicit in the citation limitation. Funding and conflicts remain unassessed unless the source record reports them.
+Study findings and methods are linked to their original publications.
 
 ## Doses
 
 ```yaml
-- label: 'PMID 12420702 study exposure: 1600 mg'
+- label: "PMID 12420702 study exposure: 1600 mg"
   amount: 1600 mg
   quantity: 1600
   quantityMax: null
@@ -90,7 +91,7 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
   purpose: Research exposure; not a general-use recommendation
   sourceCategory: research
   note: A small number of clinical trials with parenteral or oral SAMe have shown that, at doses of 200-1600 mg/d, SAMe is superior to placebo and is as effective as tricyclic antidepressants in alleviating depression, although some individuals may require higher doses
-  sourceId: reddit-pmid-12420702
+  sourceId: pubmed-12420702
 ```
 
 ## Pharmacokinetics
@@ -106,7 +107,7 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
   high: null
   unit: hours
   context: Derived from the amino acid L-methionine through a metabolic pathway called the one-carbon cycle, SAMe has been postulated to have antidepressant properties.
-  sourceId: reddit-pmid-12420702
+  sourceId: pubmed-12420702
   modelEligible: false
 ```
 
@@ -125,13 +126,13 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
 ## Outcomes
 
 ```yaml
-- id: reddit-s-adenosyl-l-methionine-depression-severity-12420702
+- id: research-s-adenosyl-l-methionine-depression-severity-12420702
   conceptId: depression-severity
   name: Depression Severity
   direction: Variable
   evidence: Human research
   description: Despite this growing popularity, there is limited evidence for the effectiveness of many of these natural treatments. A small number of clinical trials with parenteral or oral SAMe have shown that, at doses of 200-1600 mg/d, SAMe is superior to placebo and is as effective as tricyclic antidepressants in alleviating depression, although some individuals may require higher doses. SAMe may also protect against the deleterious effects of Alzheimer disease.
-  sourceId: reddit-pmid-12420702
+  sourceId: pubmed-12420702
   population: Population not specified in the returned PubMed abstract.
   exposure: A small number of clinical trials with parenteral or oral SAMe have shown that, at doses of 200-1600 mg/d, SAMe is superior to placebo and is as effective as tricyclic antidepressants in alleviating depression, although some individuals may require higher doses.
   instrument: null
@@ -144,7 +145,7 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
 ```yaml
 - title: Explicit mechanistic or disposition finding (PMID 12420702)
   description: SAMe is a methyl donor and is involved in the synthesis of various neurotransmitters in the brain.
-  sourceId: reddit-pmid-12420702
+  sourceId: pubmed-12420702
 ```
 
 ## Cautions
@@ -152,23 +153,23 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
 ```yaml
 - title: Safety or adverse-event finding (PMID 12420702)
   description: SAMe is well tolerated and relatively free of adverse effects, although some cases of mania have been reported in bipolar patients.
-  sourceId: reddit-pmid-12420702
+  sourceId: pubmed-12420702
 ```
 
 ## Claims
 
 ```yaml
-- id: reddit-claim-s-adenosyl-l-methionine-12420702
+- id: research-claim-s-adenosyl-l-methionine-12420702
   assertion: Despite this growing popularity, there is limited evidence for the effectiveness of many of these natural treatments. A small number of clinical trials with parenteral or oral SAMe have shown that, at doses of 200-1600 mg/d, SAMe is superior to placebo and is as effective as tricyclic antidepressants in alleviating depression, although some individuals may require higher doses. SAMe may also protect against the deleterious effects of Alzheimer disease.
   relation: associated-with
   participants:
-  - entityId: substance:s-adenosyl-l-methionine
-    role: intervention or exposure
-  - entityId: tag:depression-severity
-    role: reported endpoint
+    - entityId: substance:s-adenosyl-l-methionine
+      role: intervention or exposure
+    - entityId: tag:depression-severity
+      role: reported endpoint
   context: PMID 12420702 abstract result/conclusion; direction and population are retained on the linked observation.
   sourceIds:
-  - reddit-pmid-12420702
+    - pubmed-12420702
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Single publication; the abstract does not establish general efficacy or safety.
@@ -189,27 +190,17 @@ PubMed/PMC review: retrieved 1 PubMed records linked from this Reddit index entr
 ## References
 
 ```yaml
-- id: reddit-index-s-adenosyl-l-methionine
-  title: Reddit r/Nootropics community index
-  authors: Reddit r/Nootropics community index
-  year: 2026
-  url: https://www.reddit.com/r/nootropics/wiki/index
-  kind: Community index
-  insight: The community index lists this substance and links the source trail below.
-  limitation: Community indexing is a discovery aid and does not establish efficacy or safety.
-- id: reddit-pmid-12420702
-  title: 'Role of S-adenosyl-L-methionine in the treatment of depression: a review of the evidence.'
+- id: pubmed-12420702
+  title: "Role of S-adenosyl-L-methionine in the treatment of depression: a review of the evidence."
   authors: David Mischoulon, Maurizio Fava
   year: 2002
   url: https://pubmed.ncbi.nlm.nih.gov/12420702/
   kind: PubMed publication
   insight: Despite this growing popularity, there is limited evidence for the effectiveness of many of these natural treatments. A small number of clinical trials with parenteral or oral SAMe have shown that, at doses of 200-1600 mg/d, SAMe is superior to placebo and is as effective as tricyclic antidepressants in alleviating depression, although some individuals may require higher doses. SAMe may also protect against the deleterious effects of Alzheimer disease.
   limitation: PubMed abstract retrieved 2026-11-01. No PubMed Central full text identifier was returned.
-  pmid: '12420702'
+  pmid: "12420702"
   doi: 10.1093/ajcn/76/5.1158S
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 

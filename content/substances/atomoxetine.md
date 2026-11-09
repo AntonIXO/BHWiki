@@ -15,6 +15,8 @@ tags:
   - cognitive-performance
   - major-cardiovascular-events
   - blood-pressure
+  - perception
+  - alertness
 accent: "#8e9cb8"
 reviewedAt: 2026-10-11
 editorialStatus: sourced-draft
@@ -68,7 +70,7 @@ x-order: 9007199254740991
 
 ## Summary
 
-Atomoxetine is an oral selective norepinephrine reuptake inhibitor approved in the United States for ADHD in adults and children aged 6 years and older. The U.S. label does not establish it as a general memory, intelligence, productivity, or cognitive-enhancement medicine. ADHD trials support symptom improvement, while healthy-volunteer studies show task-specific findings rather than a general enhancement effect. [atomoxetine-label] [asherson2014] [chamberlain2006]
+Atomoxetine inhibits norepinephrine reuptake. Studies examine attention and executive function.
 
 ## Description
 
@@ -205,20 +207,6 @@ This page converts the completed research into source-linked cards. Label dosing
   unit: hours
   context: Plasma peak and elimination half-life are not therapeutic-onset measures. Adult symptom effects were detectable by week 1, larger by week 4, and further improved on average through week 26.
   sourceId: faraone2016
-  modelEligible: false
-- id: dr-atomoxetine-atomoxetine-pk-1
-  analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
-  population: Humans
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: No validated universal terminal half-life was established in the returned report.
-  sourceId: atomoxetine-label
   modelEligible: false
 ```
 
@@ -544,7 +532,7 @@ This page converts the completed research into source-linked cards. Label dosing
 
 ```yaml
 - id: atomoxetine-label
-  title: 'STRATTERA (atomoxetine) capsules, for oral use; Initial U.S. Approval: 2002'
+  title: "STRATTERA (atomoxetine) capsules, for oral use; Initial U.S. Approval: 2002"
   authors: U.S. Food and Drug Administration
   year: 2026
   url: https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/021411s053lbl.pdf
@@ -557,7 +545,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://www.accessdata.fda.gov/drugsatfda_docs/label/2026/021411s053lbl.pdf
 - id: cortese2018
-  title: 'Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults: a systematic review and network meta-analysis'
+  title: "Comparative efficacy and tolerability of medications for attention-deficit hyperactivity disorder in children, adolescents, and adults: a systematic review and network meta-analysis"
   authors: Samuele Cortese, Ashmita Adamo, Claudia Del Giovane, et al.
   year: 2018
   url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6109107/
@@ -570,7 +558,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC6109107/
 - id: asherson2014
-  title: 'Efficacy of atomoxetine in adults with attention deficit hyperactivity disorder: an integrated analysis of the complete database of multicenter placebo-controlled trials'
+  title: "Efficacy of atomoxetine in adults with attention deficit hyperactivity disorder: an integrated analysis of the complete database of multicenter placebo-controlled trials"
   authors: Philip Asherson, Chris Bushe, Keith Saylor, Yoko Tanaka, Walter Deberdt, Himanshu Upadhyaya
   year: 2014
   url: https://pubmed.ncbi.nlm.nih.gov/25035246/
@@ -583,7 +571,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: declared
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/25035246/
 - id: faraone2016
-  title: 'Atomoxetine Increased Effect over Time in Adults with Attention-Deficit/Hyperactivity Disorder Treated for up to 6 Months: Pooled Analysis of Two Double-Blind, Placebo-Controlled, Randomized Trials'
+  title: "Atomoxetine Increased Effect over Time in Adults with Attention-Deficit/Hyperactivity Disorder Treated for up to 6 Months: Pooled Analysis of Two Double-Blind, Placebo-Controlled, Randomized Trials"
   authors: Stephen V. Faraone et al.
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/26922462/
@@ -596,7 +584,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/26922462/
 - id: ravishankar2016
-  title: 'The efficacy of atomoxetine in treating adult attention deficit hyperactivity disorder (ADHD): A meta-analysis of controlled trials'
+  title: "The efficacy of atomoxetine in treating adult attention deficit hyperactivity disorder (ADHD): A meta-analysis of controlled trials"
   authors: Vinutha Ravishankar, Suresh Vedaveni Chowdappa, Vivek Benegal, Kesavan Muralidharan
   year: 2016
   url: https://pubmed.ncbi.nlm.nih.gov/27931908/
@@ -609,7 +597,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/27931908/
 - id: isfandnia2024
-  title: 'The effects of chronic administration of stimulant and non-stimulant medications on executive functions in ADHD: A systematic review and meta-analysis'
+  title: "The effects of chronic administration of stimulant and non-stimulant medications on executive functions in ADHD: A systematic review and meta-analysis"
   authors: Ferdous Isfandnia et al.
   year: 2024
   url: https://pubmed.ncbi.nlm.nih.gov/38718988/
@@ -648,7 +636,7 @@ This page converts the completed research into source-linked cards. Label dosing
   conflictOfInterestStatus: not-assessed
   disclosureUrl: https://pubmed.ncbi.nlm.nih.gov/21346736/
 - id: nourredine2026
-  title: 'Pharmacological interventions for ADHD: a systematic review and dose-effect network meta-analysis'
+  title: "Pharmacological interventions for ADHD: a systematic review and dose-effect network meta-analysis"
   authors: Mikail Nourredine, Lucie Jurek, Tasnim Hamza, Andrea Cipriani, Fabien Subtil, Valeria Parlatini, Luis C. Farhat, Guilherme Fusetto Veronesi, Orestis Efthimiou, Georgia Salanti, Samuele Cortese
   year: 2026
   url: https://pubmed.ncbi.nlm.nih.gov/42134365/

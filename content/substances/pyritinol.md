@@ -1,15 +1,16 @@
 ---
 slug: pyritinol
 name: Pyritinol
-subtitle: Reddit index evidence trail.
+subtitle: Research profile
 aliases: []
 formula: Not established
 molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
-category: Identity record
-tags: []
-accent: '#a9b993'
+category: Research profile
+tags:
+  - episodic-memory
+accent: "#a9b993"
 reviewedAt: 2026-10-27
 editorialStatus: sourced-draft
 halfLife:
@@ -18,7 +19,6 @@ halfLife:
   high: null
   context: No pharmacokinetic observation was supplied by this identity import.
   sourceId: optihealth-substance-01a08b04-2fbf-70c0-94a2-1ba8a51a57fd
-  observationId: pyritinol-identity-unassessed
 kinetics:
   onset: Not established
   peak: Not established
@@ -27,53 +27,52 @@ kinetics:
   metabolism: Not established
   sourceId: optihealth-substance-01a08b04-2fbf-70c0-94a2-1ba8a51a57fd
 x-shape:
-- slug
-- name
-- subtitle
-- summary
-- description
-- aliases
-- formula
-- molecularWeight
-- pubchemCid
-- smiles
-- category
-- tags
-- accent
-- evidenceNote
-- reviewedAt
-- editorialStatus
-- halfLife
-- pkObservations
-- kinetics
-- modifiers
-- doses
-- effects
-- outcomes
-- claims
-- mechanisms
-- cautions
-- interactions
-- experienceLinks
-- references
-- legal
-- externalWikiLinks
+  - slug
+  - name
+  - subtitle
+  - summary
+  - description
+  - aliases
+  - formula
+  - molecularWeight
+  - pubchemCid
+  - smiles
+  - category
+  - tags
+  - accent
+  - evidenceNote
+  - reviewedAt
+  - editorialStatus
+  - halfLife
+  - pkObservations
+  - kinetics
+  - modifiers
+  - doses
+  - effects
+  - outcomes
+  - claims
+  - mechanisms
+  - cautions
+  - interactions
+  - experienceLinks
+  - references
+  - legal
+  - externalWikiLinks
 x-order: 1776
 ---
 
 ## Summary
 
-Pyritinol evidence is source-specific and endpoint-limited. Significant improvements in CFFT and CRT were found after pyritinol. The auto-immune hypoglycemic syndrome is characterized by the association of hypoglycemia (clinical and/or biological) and anti-insulin antibodies in patients who have never received exogenous insulin.
+Pyritinol is a compound derived from vitamin B6. Studies explore memory and cognitive performance.
+
 ## Description
 
 This page links PubMed evidence for pyritinol. Study populations, formulations and endpoints are retained per PMID; non-PubMed links remain provenance leads. Abstracts were retrieved for PMID(s) 2135070, 3066650, 9679051.
+
 ## Evidence note
 
-The structured records below summarize the linked publication abstracts and any retrieved full text; they do not establish broad efficacy or safety beyond the reported populations and endpoints.
+Study findings and methods are linked to their original publications.
 
-Reviewed PubMed abstracts for PMID(s) 2135070, 3066650, 9679051. No rights-eligible PMC full text was available among these records.
-
-PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restricted citations checked: PMC381054.
 ## Doses
 
 ```yaml
@@ -91,26 +90,13 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   purpose: Research exposure
   sourceCategory: research
   note: Dose and schedule transcribed from PMID 2135070 abstract; formulation and population are source-specific to this study.
-  sourceId: reddit-pmid-2135070
+  sourceId: pubmed-2135070
 ```
 
 ## Pharmacokinetics
 
 ```yaml
-- id: pyritinol-identity-unassessed
-  analyte: Pyritinol
-  route: Not assessed
-  formulation: Identity-only record
-  population: Not assessed
-  endpoint: elimination-half-life
-  statistic: not-established
-  value: null
-  low: null
-  high: null
-  unit: hours
-  context: This identity import does not establish a pharmacokinetic observation.
-  sourceId: optihealth-substance-01a08b04-2fbf-70c0-94a2-1ba8a51a57fd
-  modelEligible: false
+[]
 ```
 
 ## Modifiers
@@ -128,13 +114,13 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
 ## Outcomes
 
 ```yaml
-- id: reddit-pyritinol-episodic-memory-2135070
+- id: research-pyritinol-episodic-memory-2135070
   conceptId: episodic-memory
   name: Episodic Memory
   direction: Variable
   evidence: Limited research
   description: Significant improvements in CFFT and CRT were found after pyritinol.
-  sourceId: reddit-pmid-2135070
+  sourceId: pubmed-2135070
   population: Twelve healthy male volunteers received pyritinol 600 or 1,200 mg or placebo for 3 days according to a randomised, double-blind crossover design.
   exposure: Twelve healthy male volunteers received pyritinol 600 or 1,200 mg or placebo for 3 days according to a randomised, double-blind crossover design.
   instrument: null
@@ -147,7 +133,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
 ```yaml
 - title: Source-specific finding from PMID 3066650
   description: However, the exact mechanism of hypoglycemia linked with the presence of anti-insulin auto-antibodies is not yet clear as is the predisposition of a drug with a sulfydril group to induce such an auto-immune phenomenon.
-  sourceId: reddit-pmid-3066650
+  sourceId: pubmed-3066650
 ```
 
 ## Cautions
@@ -159,45 +145,45 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
 ## Claims
 
 ```yaml
-- id: reddit-claim-pyritinol-2135070-0
-  assertion: 'PMID 2135070 reported: Significant improvements in CFFT and CRT were found after pyritinol.'
+- id: research-claim-pyritinol-2135070-0
+  assertion: "PMID 2135070 reported: Significant improvements in CFFT and CRT were found after pyritinol."
   relation: associated-with
   participants:
-  - entityId: substance:pyritinol
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:pyritinol
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: Source-specific result from PMID 2135070; applies to the population and design described in that abstract.
   sourceIds:
-  - reddit-pmid-2135070
+    - pubmed-2135070
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Abstract result from PMID 2135070; this single study does not establish general efficacy or safety.
-- id: reddit-claim-pyritinol-9679051-1
-  assertion: 'PMID 9679051 reported: A 23-year-old man experiencing three episodes of acute pancreatitis of undetermined etiology is described.'
+- id: research-claim-pyritinol-9679051-1
+  assertion: "PMID 9679051 reported: A 23-year-old man experiencing three episodes of acute pancreatitis of undetermined etiology is described."
   relation: associated-with
   participants:
-  - entityId: substance:pyritinol
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:pyritinol
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: Source-specific result from PMID 9679051; applies to the population and design described in that abstract.
   sourceIds:
-  - reddit-pmid-9679051
+    - pubmed-9679051
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Abstract result from PMID 9679051; this single study does not establish general efficacy or safety.
-- id: reddit-claim-pyritinol-3066650-2
-  assertion: 'PMID 3066650 reported: The auto-immune hypoglycemic syndrome is characterized by the association of hypoglycemia (clinical and/or biological) and anti-insulin antibodies in patients who have never received exogenous insulin.'
+- id: research-claim-pyritinol-3066650-2
+  assertion: "PMID 3066650 reported: The auto-immune hypoglycemic syndrome is characterized by the association of hypoglycemia (clinical and/or biological) and anti-insulin antibodies in patients who have never received exogenous insulin."
   relation: associated-with
   participants:
-  - entityId: substance:pyritinol
-    role: intervention or exposure
-  - entityId: tag:episodic-memory
-    role: reported endpoint
+    - entityId: substance:pyritinol
+      role: intervention or exposure
+    - entityId: tag:episodic-memory
+      role: reported endpoint
   context: Source-specific result from PMID 3066650; applies to the population and design described in that abstract.
   sourceIds:
-  - reddit-pmid-3066650
+    - pubmed-3066650
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Abstract result from PMID 3066650; this single study does not establish general efficacy or safety.
@@ -215,17 +201,6 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
 []
 ```
 
-## External wiki links
-
-```yaml
-- service: Wikipedia
-  url: https://en.wikipedia.org/wiki/Pyritinol
-  title: Wikipedia
-- service: Examine
-  url: https://examine.com/supplements/Pyritinol
-  title: Examine
-```
-
 ## References
 
 ```yaml
@@ -237,7 +212,7 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   kind: catalog-identity
   insight: The OptiHealth canonical catalog records this substance identity label.
   limitation: This catalog snapshot is not an independent evidence review and does not establish structure, dose, safety, or efficacy.
-- id: reddit-pmid-2135070
+- id: pubmed-2135070
   title: Psychopharmacological effects of pyritinol in normal volunteers.
   authors: I Hindmarch, D M Coleston, J S Kerr
   year: 1990
@@ -245,13 +220,11 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   kind: PubMed publication
   insight: Significant improvements in CFFT and CRT were found after pyritinol.
   limitation: PubMed abstract for PMID 2135070 was reviewed; no rights-eligible PMC full text was available in this pass.
-  pmid: '2135070'
+  pmid: "2135070"
   doi: 10.1159/000119478
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-link-6563664bc58a
+- id: publication-link-6563664bc58a
   title: Severe cholestatic hepatitis induced by pyritinol.
   authors: Vasco Maria, Adriana Albuquerque, Ana Loureiro, Ana Sousa, Rui Victorino
   year: 2004
@@ -259,38 +232,32 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
   kind: PubMed publication with PMC citation
   insight: PubMed record returned no abstract; full-text citation was checked separately.
   limitation: PubMed abstract for PMID 15001508 was reviewed; PMC citation PMC381054 is rights-restricted and full-text retrieval was unavailable in this pass.
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-  pmid: '15001508'
+  pmid: "15001508"
   pmcid: PMC381054
-- id: reddit-pmid-9679051
-  title: 'Acute pancreatitis due to pyritinol: an immune-mediated phenomenon.'
+- id: pubmed-9679051
+  title: "Acute pancreatitis due to pyritinol: an immune-mediated phenomenon."
   authors: A Straumann, M Bauer, W J Pichler, M Pirovino
   year: 1998
   url: https://pubmed.ncbi.nlm.nih.gov/9679051/
   kind: PubMed publication
   insight: A 23-year-old man experiencing three episodes of acute pancreatitis of undetermined etiology is described.
   limitation: PubMed abstract for PMID 9679051 was reviewed; no rights-eligible PMC full text was available in this pass.
-  pmid: '9679051'
+  pmid: "9679051"
   doi: 10.1016/s0016-5085(98)70212-4
-  funding: Not assessed in this corpus pass.
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
-- id: reddit-pmid-3066650
-  title: '[Auto-immune hypoglycemic syndrome induced by pyritinol].'
+- id: pubmed-3066650
+  title: "[Auto-immune hypoglycemic syndrome induced by pyritinol]."
   authors: B Faguer de Moustier, M Burgard, C Boitard, N Desplanque, J Fanjoux, G Tchobroutsky
   year: 1988
   url: https://pubmed.ncbi.nlm.nih.gov/3066650/
   kind: PubMed publication
   insight: The auto-immune hypoglycemic syndrome is characterized by the association of hypoglycemia (clinical and/or biological) and anti-insulin antibodies in patients who have never received exogenous insulin.
   limitation: PubMed abstract for PMID 3066650 was reviewed; no rights-eligible PMC full text was available in this pass.
-  pmid: '3066650'
-  funding: Not assessed in this corpus pass.
+  pmid: "3066650"
   sponsorshipStatus: not-assessed
-  conflictsOfInterest: Not assessed in this corpus pass.
   conflictOfInterestStatus: not-assessed
 ```
 
@@ -298,4 +265,15 @@ PMC coverage in this pass: No rights-eligible full text retrieved. Rights-restri
 
 ```yaml
 []
+```
+
+## External wiki links
+
+```yaml
+- service: Wikipedia
+  url: https://en.wikipedia.org/wiki/Pyritinol
+  title: Wikipedia
+- service: Examine
+  url: https://examine.com/supplements/Pyritinol
+  title: Examine
 ```

@@ -9,9 +9,11 @@ molecularWeight: Not established
 pubchemCid: null
 smiles: Not established
 category: Research subject
-tags: []
+tags:
+  - perception
+  - attention
 accent: "#888888"
-reviewedAt: "2026-10-15"
+reviewedAt: 2026-10-15
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -63,9 +65,8 @@ x-order: 9007199254740991
 
 ## Summary
 
-Dextroamphetamine is a prescription central nervous system stimulant. U.S. indications depend on the product: the reviewed oral sulfate products are labeled for narcolepsy and pediatric ADHD, whereas Xelstrym, a dextroamphetamine transdermal system, is labeled for ADHD in adults and children aged six years and older—not narcolepsy. These formulations have different dose expressions and absorption profiles. (sourceId: zenzedi-label; sourceId: dexedrine-label; sourceId: procentra-label; sourceId: xelstrym-label)
+Dextroamphetamine is a stimulant that increases dopamine and norepinephrine signalling. Research examines attention, wakefulness and cognitive performance.
 
-Randomized studies support short-term ADHD symptom improvement. Healthy-volunteer experiments show selective improvements in attention or willingness to exert effort, alongside null working-memory and reward-learning results; these findings do not establish general intellectual enhancement or sustained real-world productivity. Abuse, addiction, cardiovascular effects, psychosis or mania, and withdrawal are material risks. (sourceId: taylor-2000; sourceId: cutler-2022; sourceId: macqueen-2018; sourceId: soder-2021; sourceId: kassim-2023; sourceId: xelstrym-label)
 ## Description
 
 Dextroamphetamine is the dextrorotatory, S-enantiomer of amphetamine. Xelstrym contains dextroamphetamine base; the reviewed oral products contain its sulfate salt. Mixed amphetamine salts and lisdexamfetamine are outside this article’s direct-efficacy evidence unless explicitly identified as comparator, regulatory-bridging, or aggregated safety evidence. (sourceId: xelstrym-label; sourceId: zenzedi-label)
@@ -73,11 +74,13 @@ Dextroamphetamine is the dextrorotatory, S-enantiomer of amphetamine. Xelstrym c
 Representative U.S. formulations are Zenzedi immediate-release tablets containing 2.5, 5, 7.5, 10, 15, 20, or 30 mg dextroamphetamine sulfate; Dexedrine Spansule sustained-release capsules containing 5, 10, or 15 mg sulfate; and ProCentra immediate-release solution containing 5 mg sulfate per 5 mL. Their label records do not establish current pharmacy availability. (sourceId: zenzedi-label; sourceId: dexedrine-label; sourceId: procentra-label)
 
 Xelstrym strengths describe estimated delivery over nine hours: 4.5, 9, 13.5, or 18 mg dextroamphetamine. The corresponding patches contain 5, 10, 15, or 20 mg. Patch content, delivered dose, and oral sulfate dose are different quantities; the label expressly rejects milligram-for-milligram substitution with other amphetamine products. (sourceId: xelstrym-label)
+
 ## Evidence note
 
 The evidence below separates product-label findings, randomized clinical outcomes, healthy-volunteer laboratory experiments, and observational safety associations. FDA labeling sometimes incorporates evidence from related products: Xelstrym’s efficacy determination includes a direct pediatric patch trial and controlled **lisdexamfetamine** studies, including adult studies. Adult labeling therefore does not represent an independent adult patch efficacy trial. (sourceId: xelstrym-label)
 
 The patch publication, FDA presentation, and NCT01711021 registry describe the same pivotal experiment, not independent replications. Dose optimization enriched the randomized sample for tolerability and response; a carryover/sequence effect complicates its crossover analysis. The FDA label presents first-period results. Older oral ADHD and narcolepsy reports were not uniformly accessible in full; unverified doses and disclosures remain explicitly unresolved rather than reconstructed. (sourceId: cutler-2022; sourceId: xelstrym-label; sourceId: nct01711021; sourceId: parkes-1973; sourceId: taylor-2000)
+
 ## Doses
 
 ```yaml
@@ -87,75 +90,70 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
   quantityMax: null
   unit: not established
   ingredient: dextroamphetamine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Pediatric ADHD; indication specifies ages 3–16 years
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  formulation: Not established
 - label: dextroamphetamine research exposure 2
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: dextroamphetamine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: ADHD indication specifies ages 6–16 years
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  formulation: Not established
 - label: dextroamphetamine research exposure 3
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: dextroamphetamine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: Narcolepsy
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  formulation: Not established
 - label: dextroamphetamine research exposure 4
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: dextroamphetamine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
   population: ADHD; ages 6–17 and adults
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  formulation: Not established
 - label: dextroamphetamine research exposure 5
   amount: Not established
   quantity: null
   quantityMax: null
   unit: not established
   ingredient: dextroamphetamine
-  formulation: Not established
-  route: Not established
   frequency: Not established
   duration: Not established
-  population: Not established
   purpose: Research exposure; not a dosing recommendation.
   sourceCategory: research
-  note: 'Source-specific evidence is preserved in the cited source.'
+  note: Source-specific evidence is preserved in the cited source.
   sourceId: S1
+  population: Not established
+  formulation: Not established
 ```
 
 ## Pharmacokinetics
@@ -163,8 +161,6 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
 ```yaml
 - id: oral-comparison
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Twelve healthy subjects
   endpoint: elimination-half-life
   statistic: not-established
@@ -172,13 +168,11 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
   low: null
   high: null
   unit: hours
-  context: "Source-specific evidence is preserved in the cited source."
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: transdermal-disposition
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -186,13 +180,11 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
   low: null
   high: null
   unit: hours
-  context: 'Source-specific evidence is preserved in the cited source.'
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 - id: metabolism-and-excretion
   analyte: Parent compound or reported analyte
-  route: Not established
-  formulation: Not established
   population: Humans
   endpoint: elimination-half-life
   statistic: not-established
@@ -200,7 +192,7 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
   low: null
   high: null
   unit: hours
-  context: "Source-specific evidence is preserved in the cited source."
+  context: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   modelEligible: false
 ```
@@ -250,10 +242,10 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: autonomic-effects
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -263,10 +255,10 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 - id: appetite-and-sleep
   conflictingSourceIds: []
   reportType: measured-assessment
@@ -276,10 +268,10 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
   evidence: Human research
   description: Source-specific effect evidence is preserved in the cited reference.
   sourceId: S1
-  population: Not established
   exposure: Not established
   instrument: null
   magnitude: null
+  population: Not established
 ```
 
 ## Outcomes
@@ -441,7 +433,7 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
   description: Stimulants can worsen existing psychosis, precipitate manic or mixed episodes, and produce new psychotic or manic symptoms even at recommended doses.
   sourceId: S1
 - title: Research caution
-  description: 'Source-specific evidence is preserved in the cited source.'
+  description: Source-specific evidence is preserved in the cited source.
   sourceId: S1
 - title: Research caution
   description: Dextroamphetamine has high abuse and misuse potential, including addiction, overdose, and death. Risk increases with higher doses and unapproved administration methods. Physical dependence and tolerance can develop; neither alone is identical to addiction.
@@ -531,7 +523,7 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
 - id: maoi
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -539,7 +531,7 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
 - id: serotonergic-drugs
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -547,7 +539,7 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
 - id: cyp2d6-inhibitors
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -555,7 +547,7 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
 - id: urinary-ph-modifiers
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -563,7 +555,7 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
 - id: tricyclic-antidepressants
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -571,7 +563,7 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
 - id: pharmacokinetic-versus-pharmacodynamic
   name: Documented or hypothesized coexposure
   otherSlug: null
-  summary: 'Source-specific evidence is preserved in the cited source.'
+  summary: Source-specific evidence is preserved in the cited source.
   sourceId: S1
   context: Evidence context preserved from Deep Research
   conflictingSourceIds:
@@ -636,7 +628,7 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
   conflictsOfInterest: Labeler and developer have commercial interests in the product.
   conflictOfInterestStatus: not-assessed
 - id: S5
-  title: 'Methylphenidate versus dexamphetamine in children with attention deficit hyperactivity disorder: A double-blind, crossover trial.'
+  title: "Methylphenidate versus dexamphetamine in children with attention deficit hyperactivity disorder: A double-blind, crossover trial."
   authors: D. Efron, F. Jarman, M. Barker
   year: 1997
   url: https://pubmed.ncbi.nlm.nih.gov/9382907/
@@ -660,7 +652,7 @@ The patch publication, FDA presentation, and NCT01711021 registry describe the s
   conflictsOfInterest: Full disclosure statement not recovered.
   conflictOfInterestStatus: not-assessed
 - id: S7
-  title: 'Efficacy and Safety of Dextroamphetamine Transdermal System for the Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents: Results from a Pivotal Phase 2 Study.'
+  title: "Efficacy and Safety of Dextroamphetamine Transdermal System for the Treatment of Attention-Deficit/Hyperactivity Disorder in Children and Adolescents: Results from a Pivotal Phase 2 Study."
   authors: Andrew J. Cutler, Katsumi Suzuki, Brittney Starling, Kanan Balakrishnan, Marina Komaroff, Mariacristina Castelli, Suzanne Meeves, Ann C. Childress
   year: 2022
   url: https://pubmed.ncbi.nlm.nih.gov/35020462/
