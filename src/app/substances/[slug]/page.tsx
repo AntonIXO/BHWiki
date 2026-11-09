@@ -8,6 +8,7 @@ import { StudyPlots } from "@/components/study-plots";
 import { evidenceKey, observationMagnitude, observationRows, plotGroups } from "@/lib/research";
 import type { CSSProperties, ReactNode } from "react";
 import type { Metadata } from "next";
+import { pageMetadata, articleJsonLd, serializeJsonLd, type SeoSearchParams } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowDown, ArrowRight, ArrowUp, ArrowUpRight, BookOpen, BookOpenCheck, ChartColumnBig, CircleDot, Clock3, Compass, FlaskConical, GitBranch, HeartPulse, History, Layers3, MoveHorizontal, Network, Pill, Scale, ShieldAlert, ShieldCheck, Target, TriangleAlert } from "lucide-react";
@@ -32,11 +33,12 @@ import { getSubstance, getCatalog, getConcepts, getKnowledgeGraph } from "@/lib/
 import { conceptPath, type ExternalWikiService, type Observation, type Substance } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
-type Props = { params: Promise<{ slug: string }> };
+type Props = { params: Promise<{ slug: string }>; searchParams: Promise<SeoSearchParams> };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
   const substance = await getSubstance((await params).slug);
-  return { title: substance ? `${substance.name} — effects, evidence & pharmacokinetics` : "Substance not found", description: substance?.summary };
+  if (!substance) notFound();
+  return pageMetadata({ path: `/substances/${substance.slug}`, title: `${substance.name} — substance reference & evidence`, description: substance.summary, search: await searchParams, article: true });
 }
 
 function Source({ substance, id }: { substance: Substance; id: string }) {
@@ -299,6 +301,7 @@ export default async function SubstancePage({ params }: Props) {
 
   return (
     <main id="main" data-entity-kind="substance" className="article-page mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 py-8 sm:px-8" style={{ "--article-accent": substance.accent } as CSSProperties}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(articleJsonLd({ path: `/substances/${substance.slug}`, title: substance.name, description: substance.summary, sources: substance.references.map(reference => reference.url), breadcrumbs: [{ path: "/", name: "Library" }, { path: `/substances/${substance.slug}`, name: substance.name }] })) }} />
       <Breadcrumb current={substance.name} />
       <header className="article-hero grid items-center gap-6 rounded-xl border-s-4 bg-card p-5 ring-1 ring-foreground/10 sm:p-6 lg:grid-cols-[minmax(0,1fr)_16rem]" style={{ borderInlineStartColor: substance.accent }}>
         <div className="flex flex-col gap-4">

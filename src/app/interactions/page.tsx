@@ -15,7 +15,8 @@ import {
 import { Empty, EmptyDescription, EmptyHeader } from "@/components/ui/empty";
 import type { ResearchSearchParams } from "@/components/observation-explorer";
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Explore interactions" };
+import { pageMetadata } from "@/lib/seo";
+export const metadata = pageMetadata({ path: "/interactions", title: "Explore interactions", description: "Explore authored interaction records and shared mechanisms with their source context and limitations.", noindex: true });
 export default async function InteractionsPage({
   searchParams,
 }: {

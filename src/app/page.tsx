@@ -1,7 +1,12 @@
+import { pageMetadata, SITE_TITLE, SITE_DESCRIPTION, type SeoSearchParams } from "@/lib/seo";
 import LibraryHome from "@/components/library-home";
 import { getCatalog, getConcepts } from "@/lib/repository";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({ searchParams }: { searchParams: Promise<SeoSearchParams> }) {
+  return pageMetadata({ path: "/", title: SITE_TITLE, description: SITE_DESCRIPTION, search: await searchParams });
+}
 
 export default async function Home({ searchParams }: { searchParams: Promise<{ tag?: string; q?: string }> }) {
   const { tag, q } = await searchParams;

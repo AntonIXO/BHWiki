@@ -5,6 +5,7 @@ import { EvidenceButton } from "@/components/evidence";
 import { evidenceKey } from "@/lib/research";
 import "server-only";
 import type { Metadata } from "next";
+import { pageMetadata, articleJsonLd, serializeJsonLd } from "@/lib/seo";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { ArrowRight, ArrowUpRight, BookOpen, GitBranch } from "lucide-react";
@@ -94,9 +95,11 @@ function SubstanceCard({ substance }: { substance: CatalogSubstance }) {
   );
 }
 
-export async function conceptMetadata(slug: string): Promise<Metadata> {
+export async function conceptMetadata(slug: string, search: ReadingSearchParams = {}, section?: ConceptSection): Promise<Metadata> {
   const concept = await getConcept(slug);
-  return concept ? { title: `${concept.label} — ${kindLabels[concept.kind].toLowerCase()} & evidence`, description: concept.description, alternates: { canonical: conceptPath(concept) } } : { title: "Concept not found" };
+  if (!concept) notFound();
+  if (section && sectionFor(concept) !== section) redirect(conceptPath(concept));
+  return pageMetadata({ path: conceptPath(concept), title: `${concept.label} — ${kindLabels[concept.kind].toLowerCase()} & evidence`, description: concept.description, search, article: true });
 }
 
 export async function ConceptArticle({ section, slug, searchParams }: { section: ConceptSection; slug: string; searchParams: ReadingSearchParams }) {
@@ -136,6 +139,7 @@ export async function ConceptArticle({ section, slug, searchParams }: { section:
 
   return (
     <main id="main" data-entity-kind={concept.kind} className="mx-auto flex w-full max-w-6xl flex-col gap-8 px-5 py-8 sm:px-8">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(articleJsonLd({ path: conceptPath(concept), title: concept.label, description: concept.description, sources: concept.sourceUrls ?? [], breadcrumbs: [{ path: "/", name: "Library" }, { path: `/${section}`, name: sections[section].title }, { path: conceptPath(concept), name: concept.label }] })) }} />
       <Breadcrumb items={[{ href: "/", label: "Library" }, { href: `/${section}`, label: sections[section].title }, { label: concept.label }]} />
       <header className="flex flex-col gap-4">
         <div className="flex flex-wrap items-center gap-3">

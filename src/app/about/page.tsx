@@ -1,7 +1,11 @@
 import { Breadcrumb, PrimaryLink } from "@/components/shell";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-export const metadata = { title: "Evidence & methodology" };
+import { pageMetadata, type SeoSearchParams } from "@/lib/seo";
+
+export async function generateMetadata({ searchParams }: { searchParams: Promise<SeoSearchParams> }) {
+  return pageMetadata({ path: "/about", title: "Evidence & methodology", description: "How BHWiki connects claims to sources, distinguishes subjective reports from measured outcomes, and handles editorial review and uncertainty.", search: await searchParams });
+}
 
 export default function About() {
   return (

@@ -22,7 +22,8 @@ import {
 import { Empty, EmptyDescription, EmptyHeader } from "@/components/ui/empty";
 import type { ResearchSearchParams } from "@/components/observation-explorer";
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Compare substances" };
+import { pageMetadata } from "@/lib/seo";
+export const metadata = pageMetadata({ path: "/compare", title: "Compare substances", description: "Compare source-linked substance records side by side; missing evidence is not evidence of safety.", noindex: true });
 const missing = <p className="text-muted-foreground">Not assessed.</p>;
 function blocks(items: ReactNode[]) {
   return items.length ? (

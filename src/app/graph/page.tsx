@@ -2,7 +2,8 @@ import KnowledgeGraph from "@/components/knowledge-graph";
 import { Breadcrumb } from "@/components/shell";
 import { getKnowledgeGraph } from "@/lib/repository";
 
-export const metadata = { title: "Knowledge graph", description: "Explore sourced connections between substances, effects, outcomes and biological mechanisms." };
+import { pageMetadata } from "@/lib/seo";
+export const metadata = pageMetadata({ path: "/graph", title: "Knowledge graph", description: "Explore sourced connections between substances, effects, outcomes and biological mechanisms.", noindex: true });
 export const dynamic = "force-dynamic";
 
 export default async function GraphPage({ searchParams }: { searchParams: Promise<{ focus?: string | string[] }> }) {

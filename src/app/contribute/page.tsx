@@ -5,7 +5,11 @@ import { Item, ItemContent, ItemGroup, ItemTitle } from "@/components/ui/item";
 import { repositoryUrl } from "@/lib/site";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Contribute" };
+import { pageMetadata, type SeoSearchParams } from "@/lib/seo";
+
+export async function generateMetadata({ searchParams }: { searchParams: Promise<SeoSearchParams> }) {
+  return pageMetadata({ path: "/contribute", title: "Contribute", description: "Propose source-linked corrections and improvements to BHWiki articles, with transparent editorial review and publication history.", search: await searchParams });
+}
 
 export default function Contribute() {
   const repo = repositoryUrl();

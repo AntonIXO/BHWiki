@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, GitCommitHorizontal } from "lucide-react";
@@ -15,7 +16,8 @@ type Props = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const substance = await getSubstance((await params).slug);
-  return { title: substance ? `${substance.name} — revision history` : "Substance not found" };
+  if (!substance) notFound();
+  return pageMetadata({ path: `/substances/${substance.slug}/history`, title: `${substance.name} — revision history`, description: `Publication history and editorial attribution for the ${substance.name} article.`, noindex: true });
 }
 
 function PublicationTimestamp({ value }: { value: string }) {
