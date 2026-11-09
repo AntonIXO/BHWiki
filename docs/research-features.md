@@ -21,13 +21,6 @@ Migration `202610040001_research_explorers.sql` adds nullable `observation_key` 
 
 Apply the canonical migration before deploying the app, publish the current corpus, and verify database/bundled query parity with `bun run db:verify:research`. Canonical files are `/opt/optihealth_db/deploy/tenants/bhwiki-v4.sql` and the migration list in `bhwiki.sh`.
 
-## Isolated enriched browser tests
+## Isolated research fixtures
 
-The normal corpus remains sparse. Do not add synthetic findings to it to demonstrate widgets.
-
-1. Build in bundled mode: `BHWIKI_DATA_MODE=bundled bun run build`.
-2. Run `bun scripts/prepare-research-fixture.ts`; it prints a fresh temporary content directory.
-3. Start a separate server with `BHWIKI_DATA_MODE=bundled BHWIKI_CONTENT_DIRECTORY=<printed-directory>`, on a nonproduction port.
-4. Run Playwright against that origin with `BHWIKI_RICH_FIXTURE_TESTS=1` and `--grep 'isolated rich'`.
-
-The alternate directory is an explicit server-owned setting and requires bundled mode. Never configure it on the deployed database-backed application. Fixtures are not imported by runtime or publication code.
+The normal corpus remains sparse. Do not publish synthetic findings to demonstrate widgets. Unit tests construct isolated rich records in `tests/fixtures/research.ts`; these fixtures are never imported by runtime or publication code. Manually inspect real reading surfaces when changing the UI.

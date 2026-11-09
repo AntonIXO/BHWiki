@@ -24,14 +24,7 @@ Always supply the production env file: the template's default `bhwiki:local` is 
 
 Build a clean, reviewed source snapshot as a new commit-tagged image with the existing Dockerfile. Builds do not access the database. Test before switching `/etc/bhwiki/compose.env` to the new tag and applying Compose. Preserve the current image for rollback. Do not change or reprovision the shared database for an application-only release.
 
-After switching, verify the container's exact image, healthy state, loopback listener, catalog/article/graph responses, a JavaScript URL referenced by the public HTML, molecule assets and certificate hostname. Run the browser suite against the public origin:
-
-```bash
-PLAYWRIGHT_CHROMIUM_EXECUTABLE=/root/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome \
-PLAYWRIGHT_BASE_URL=https://bhwiki.devpins.org bun run test:e2e
-```
-
-The explicit browser path uses the installed Chromium binary. Without it, this checkout's newer Playwright version expects a browser revision not installed on the host.
+After switching, verify the container's exact image, healthy state, loopback listener, catalog/article/graph responses, a JavaScript URL referenced by the public HTML, molecule assets and certificate hostname. The deployment pipeline runs unit tests, content validation, typecheck, builds and live HTTP/database checks. There is no browser-test suite or browser installation step.
 
 ## Verified launch
 

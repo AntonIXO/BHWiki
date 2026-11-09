@@ -1,6 +1,6 @@
 # Release verification — 2026-09-29
 
-The bundled collection checked on 2026-10-03 contains **191 articles, 59 concepts, and 27 relationships**. Content validation, typecheck, and the unit tests passed. Playwright against the bundled dev server passed on desktop and mobile, including the class index, an identity stub, a sourced interaction, and the off-site experience link. That check does not repeat the database or deployment checks in the table below. The table remains the record of the ten-article launch.
+The bundled collection checked on 2026-10-03 contains **191 articles, 59 concepts, and 27 relationships**. Content validation, typecheck, and the unit tests passed. Historical browser checks against the bundled dev server passed on desktop and mobile, including the class index, an identity stub, a sourced interaction, and the off-site experience link. That check does not repeat the database or deployment checks in the table below. The table remains the record of the ten-article launch.
 
 On 2026-10-13, the published corpus was reduced to 158 articles by removing identity-only PubChem stubs and their unused molecule assets. The historical checks above describe the pre-cleanup corpus.
 
@@ -14,7 +14,7 @@ Verified the independent ten-article release against the existing database and t
 | `bun run test` | 32 tests pass: content/source integrity, contextual search, complete hyperedges, bounded graph loading, kinetics and review/source metadata |
 | `bun run content:validate` | Pass: 10 articles, 44 sourced concepts, 19 relationships, reference resolution and exact-snapshot editorial metadata |
 | `BHWIKI_DATA_MODE=bundled bun run build` | Production build passes with all application, concept, history and read-API routes |
-| `bun run test:e2e` against the database-backed production server | 14 tests pass across desktop Chromium (1440×1000) and mobile Chromium (390×844) |
+| Historical browser suite against the database-backed production server | 14 tests pass across desktop Chromium (1440×1000) and mobile Chromium (390×844) |
 | Automated accessibility | No axe WCAG 2 A/AA or 2.1 AA violations on the library, caffeine article, alertness concept and focused graph at both tested sizes |
 | Actual OrioleDB verification | Pass: storage engine, RLS, read-only privileges, cross-tenant isolation, hidden unpublished records, immutable history and publication semantics |
 | Migration consistency | Applied 001/002/003 checksums preserved; all three portable SQL files match canonical infrastructure copies byte-for-byte |
