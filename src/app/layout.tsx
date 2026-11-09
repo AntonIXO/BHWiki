@@ -1,4 +1,5 @@
 import { EvidenceProvider } from "@/components/evidence";
+import { UmamiAnalytics } from "@/components/umami-analytics";
 import type { Metadata } from "next";
 import { siteUrl } from "@/lib/site";
 import { SITE_TITLE, SITE_DESCRIPTION, siteJsonLd, serializeJsonLd, verificationMetadata } from "@/lib/seo";
@@ -21,6 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <head><UmamiAnalytics /></head>
       <body className="flex min-h-svh flex-col">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: serializeJsonLd(siteJsonLd()) }} />
         <TooltipProvider delay={300}><EvidenceProvider>

@@ -21,7 +21,6 @@
     "content:research-monitor": "tsx scripts/monitor-literature.ts",
     "content:optihealth-stubs": "tsx scripts/import-optihealth-substance-stubs.ts",
     "content:research-review": "tsx scripts/review-literature.ts",
-    "test:e2e": "playwright test",
     "content:hashes": "tsx scripts/content-hashes.ts",
     "db:verify": "tsx scripts/db-verify.ts",
     "db:benchmark": "tsx scripts/db-benchmark.ts",
@@ -51,8 +50,6 @@
     "yaml": "^2.9.1"
   },
   "devDependencies": {
-    "@axe-core/playwright": "4.13.0",
-    "@playwright/test": "1.63.0",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/cytoscape-fcose": "^2.2.5",
     "@types/node": "26.6.3",

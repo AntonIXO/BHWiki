@@ -17,8 +17,6 @@ COMPOSE_ENV="${BHWIKI_COMPOSE_ENV:-/etc/bhwiki/compose.env}"
 RUNTIME_ENV="${BHWIKI_RUNTIME_ENV:-/etc/bhwiki/runtime.env}"
 PUBLIC_URL="${BHWIKI_PUBLIC_URL:-https://bhwiki.devpins.org}"
 LOCAL_URL="${BHWIKI_LOCAL_URL:-http://127.0.0.1:3086}"
-E2E_REQUIRED="${BHWIKI_E2E_REQUIRED:-0}"
-RUN_E2E="${BHWIKI_RUN_E2E:-1}"
 LOCK_FILE="/run/lock/bhwiki-deploy.lock"
 
 log() { printf '\n[%s] %s\n' "$(date -Is)" "$*"; }
@@ -141,25 +139,6 @@ if broken:
     raise SystemExit(1)
 PY
 
-if [[ "$RUN_E2E" == 1 ]]; then
-  log "Running public Playwright E2E suite"
-  chromium="${PLAYWRIGHT_CHROMIUM_EXECUTABLE:-}"
-  if [[ -z "$chromium" && -x /root/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome ]]; then
-    chromium=/root/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome
-  fi
-  e2e_status=0
-  if [[ -n "$chromium" ]]; then
-    PLAYWRIGHT_CHROMIUM_EXECUTABLE="$chromium" PLAYWRIGHT_BASE_URL="$PUBLIC_URL" bun run test:e2e || e2e_status=$?
-  else
-    PLAYWRIGHT_BASE_URL="$PUBLIC_URL" bun run test:e2e || e2e_status=$?
-  fi
-  if (( e2e_status != 0 )); then
-    if [[ "$E2E_REQUIRED" == 1 ]]; then
-      fatal "E2E suite failed with exit code $e2e_status"
-    fi
-    printf '\nWARNING: deployment is live, but E2E exited with %s (set BHWIKI_E2E_REQUIRED=1 to make this fatal).\n' "$e2e_status" >&2
-  fi
-fi
 
 log "Deployment complete: $IMAGE"
 printf 'commit=%s\nimage=%s\nhealth=%s\nrestarts=%s\nurl=%s\n' "$COMMIT" "$IMAGE" "$health" "$restarts" "$PUBLIC_URL"

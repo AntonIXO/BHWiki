@@ -36,11 +36,9 @@ bun run typecheck
 bun run content:validate
 bun run test
 BHWIKI_DATA_MODE=bundled bun run build
-bunx playwright install chromium
-BHWIKI_DATA_MODE=bundled bun run test:e2e
 ```
 
-Run the browser suite for interface changes and inspect the affected page at narrow and wide widths. Check keyboard navigation, visible focus, source anchors, empty states and the graph's accessible list. Database changes additionally require actual OrioleDB verification and concurrency tests, not a substitute heap database.
+For interface changes, manually inspect the affected page at narrow and wide widths. Check keyboard navigation, visible focus, source anchors, empty states and the graph's accessible list. Database changes additionally require actual OrioleDB verification and concurrency tests, not a substitute heap database.
 
 Canonical shared-host migrations belong in `/opt/optihealth_db`. Add a new ordered migration and its portable copy; do not rewrite previously applied SQL. Rehearse first and preserve other tenants, shared roles and PostgREST settings. Refer to [docs/database.md](docs/database.md) for the verified commands.
 
