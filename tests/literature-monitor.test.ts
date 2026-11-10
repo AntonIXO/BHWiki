@@ -4,7 +4,10 @@ import {
   buildEuropePmcQuery,
   canonicalPaperId,
   deduplicatePapers,
+  europePmcPaper,
   extractQuotedEvidence,
+  matchWatchTerms,
+  spoolFileStem,
   validateSuggestion,
   renderEditorialProposal,
   type LiteraturePaper,
@@ -127,4 +130,53 @@ test("renders an approval artifact without silently publishing it", () => {
   assert.match(markdown, /Status: \*\*approved\*\*/);
   assert.match(markdown, /Caffeine improved reaction time by 4 ms/);
   assert.match(markdown, /Apply the change manually/);
+});
+
+test("maps a Europe PMC core record's journal and author names", () => {
+  const paper = europePmcPaper(
+    {
+      pmid: "42880479",
+      doi: "10.1016/j.fct.2026.116460",
+      title: "Evaluating the biological effects of caffeine-related compounds methylliberine and theacrine.",
+      authorString: "Santillo MF, Sprando RL, Yourick JJ.",
+      journalInfo: {
+        journal: {
+          title: "Food and chemical toxicology : an international journal published for the British Industrial Biological Research Association",
+          medlineAbbreviation: "Food Chem Toxicol",
+          isoabbreviation: "Food Chem Toxicol",
+        },
+      },
+      abstractText: "Methylliberine and theacrine were profiled.",
+      firstPublicationDate: "2026-10-15",
+    },
+    { slug: "caffeine", name: "Caffeine", aliases: [], tags: [] },
+    ["Caffeine"],
+  );
+  assert.equal(paper.journal, "Food Chem Toxicol");
+  assert.deepEqual(paper.authors, ["Santillo MF", "Sprando RL", "Yourick JJ"]);
+});
+
+test("matches watch terms once regardless of casing", () => {
+  const terms = matchWatchTerms(
+    { slug: "caffeine", name: "Caffeine", aliases: ["CYP1A2"], tags: ["stimulant", "cyp1a2"] },
+    new Map([["stimulant", "Stimulant"], ["cyp1a2", "CYP1A2"]]),
+    { title: "Caffeine as a stimulant", abstractText: "CYP1A2 metabolises caffeine." },
+  );
+  assert.deepEqual(terms, ["Caffeine", "CYP1A2", "stimulant"]);
+});
+
+test("merging duplicate papers keeps one matched term per case-insensitive value", () => {
+  const target = { slug: "caffeine", name: "Caffeine", aliases: [], tags: [] };
+  const [merged] = deduplicatePapers([
+    europePmcPaper({ pmid: "7", title: "A study", abstractText: "short" }, target, ["Caffeine"]),
+    europePmcPaper({ pmid: "7", title: "A study", abstractText: "longer abstract" }, target, ["caffeine", "sleep"]),
+  ]);
+  assert.deepEqual(merged.matchedTerms, ["Caffeine", "sleep"]);
+});
+
+test("spool file stems keep existing names and keep DOI slashes out of paths", () => {
+  assert.equal(spoolFileStem("pmid:42880479"), "pmid_42880479");
+  assert.equal(spoolFileStem("suggestion:abc123"), "suggestion_abc123");
+  assert.equal(spoolFileStem("doi:10.64898/2026.09.30.26363751"), "doi_10.64898%2F2026.09.30.26363751");
+  assert.notEqual(spoolFileStem("doi:10.1000/a_b"), spoolFileStem("doi:10.1000/a/b"));
 });
