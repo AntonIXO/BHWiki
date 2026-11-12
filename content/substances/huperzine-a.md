@@ -644,6 +644,9 @@ Study findings and methods are linked to their original publications.
 - title: Source-specific finding from PMID 15916732
   description: "RESULTS: Treatment of PC12 cells with 10 micromol/L HupA for 48 h markedly increased the number of neurite-bearing cells, but caused no significant alteration in cell viability or other signs of cytotoxicity. In addition to inhibiting AChE activity, 10 micromol/L HupA also increased the mRNA and protein levels of this enzyme. In addition, following 2 h exposure of the astrocytes to 10 micromol/L HupA, there was a significant up-regulation of mRNA for NGF and P75 low-affinity NGF receptor. The protein level of NGF was also increased after 24 h treatment with HupA.  CONCLUSION: Our findings demonstrate for the first time that HupA has a direct or indirect neurotrophic activity, which might be "
   sourceId: pubmed-15916732
+- title: Metabolism and urinary excretion
+  description: In human liver preparations, Huperzine A showed little metabolism and negligible inhibition of the tested CYP enzymes at the concentrations studied. In 14 elderly participants, 35 ± 9% of a 0.1 mg oral dose was recovered unchanged in urine over 48 hours. In-vitro results do not exclude other interactions.
+  sourceId: hup-pk-metabolism
 ```
 
 ## Cautions
@@ -1185,6 +1188,20 @@ Study findings and methods are linked to their original publications.
   doi: 10.1111/j.1745-7254.2005.00130.x
   sponsorshipStatus: not-assessed
   conflictOfInterestStatus: not-assessed
+- id: hup-pk-metabolism
+  title: Evaluation of the in vitro and in vivo metabolic pathway and cytochrome P450 inhibition/induction profile of Huperzine A
+  authors: Ping-Ping Lin; Xue-Ning Li; Fei Yuan; Wei-Li Chen; Meng-Jie Yang; Hong-Rong Xu
+  year: 2016
+  url: https://pubmed.ncbi.nlm.nih.gov/27751854/
+  kind: Human in-vitro metabolism and clinical pharmacokinetic study
+  insight: In-vitro CYP testing and a single-dose study of 14 elderly participants; 35 ± 9% was recovered unchanged in urine over 48 hours.
+  limitation: Small clinical sample; CYP inhibition and induction were tested in vitro and cannot exclude other interactions.
+  funding: Indexed as non-U.S. government research support; detailed disclosure not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not assessed.
+  conflictOfInterestStatus: not-assessed
+  pmid: "27751854"
+  doi: 10.1016/j.bbrc.2016.10.039
 ```
 
 ## Legal

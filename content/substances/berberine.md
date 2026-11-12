@@ -79,6 +79,8 @@ Berberine occurs in plants including *Berberis* and *Coptis*. Salt, complex, and
 
 Human randomized metabolic outcomes, formulation-specific PK, interactions, pregnancy and infant cautions, and preclinical mechanisms are covered. Glycemic and lipid estimates are heterogeneous and mostly short-term; cardiovascular, mortality, and durable obesity benefits remain unestablished. [S2][S3][S4][S5][S6]
 
+Circadian findings are preclinical: cell and mouse studies implicate CLOCK/BMAL1, REV-ERBα and FGF21, but do not establish a human dosing schedule or sleep benefit. [S22][S23][S24]
+
 ## Doses
 
 ```yaml
@@ -157,6 +159,21 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   sourceCategory: research
   note: Historical disease-specific evidence; not evidence for metabolic use.
   sourceId: S17
+- label: Berberine in 2026 women hyperlipidemia trial
+  amount: 500 mg per dose
+  quantity: 500
+  quantityMax: null
+  unit: mg
+  ingredient: Berberine
+  formulation: Oral berberine used in the trial
+  route: Oral
+  frequency: Twice daily
+  duration: 12 weeks
+  population: 100 women aged 20–65 years with hyperlipidemia in Hong Kong
+  purpose: Research exposure; not a dosing recommendation.
+  sourceCategory: research
+  note: Sex-specific comparison used a separate completed trial in 84 men receiving the same intervention.
+  sourceId: S25
 ```
 
 ## Pharmacokinetics
@@ -421,6 +438,19 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   magnitude: Not established
   reportType: measured-assessment
   conflictingSourceIds: []
+- id: berberine-outcome-lipids-women-2026
+  conceptId: ldl-cholesterol
+  name: Atherogenic lipids in women and sex-specific comparison
+  direction: Decreased
+  evidence: Human research
+  description: In a 2026 randomized placebo-controlled trial of 100 women with hyperlipidemia, berberine 500 mg twice daily for 12 weeks reduced apoB and several atherogenic lipid measures. Comparison with stored samples from a separate completed randomized trial in 84 men receiving the same intervention suggested larger effects in women for apoB, total cholesterol, LDL-C, and Lp(a).
+  sourceId: S25
+  population: 100 women aged 20–65 years with hyperlipidemia; sex comparison with 84 men from a separate completed trial
+  exposure: Berberine 500 mg orally twice daily for 12 weeks
+  instrument: ApoB, total cholesterol, LDL-C, triglycerides, Lp(a), HDL-C, apoA1, and sex hormones
+  magnitude: Women showed placebo-adjusted standardized reductions including apoB -1.18 SD, total cholesterol -1.15 SD, LDL-C -1.06 SD, triglycerides -0.77 SD, and Lp(a) -0.71 SD; sex-comparison estimates favored larger reductions in women for several atherogenic markers.
+  reportType: measured-assessment
+  conflictingSourceIds: []
 ```
 
 ## Mechanisms
@@ -441,6 +471,17 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
 - title: Gut–liver contribution
   description: Low parent-drug exposure and formulation-specific pharmacokinetics support possible intestinal and gut–liver contributions; this remains a mechanistic hypothesis rather than proof of a distinct clinical mechanism.
   sourceId: S7
+- title: CLOCK–BMAL1 signaling in metabolic liver models
+  description: In high-fat-diet mice and glucosamine-treated HepG2 cells, CLOCK and BMAL1 expression was reduced in the disease or insulin-resistance models and increased after berberine exposure. Berberine was associated with improved glucose handling and redox markers, while Bmal1 knockdown weakened relevant effects. This is preclinical evidence and does not show that berberine resets the human central circadian clock.
+  sourceId: S22
+
+- title: REV-ERBα–NLRP3 circadian pharmacodynamics
+  description: In macrophage experiments and a mouse chronic-colitis model, berberine enhanced REV-ERBα-associated transcriptional repression, reduced Bmal1 and Nlrp3 reporter or expression measures, and lost anti-inflammatory activity in REV-ERBα-deficient macrophages. The in-vivo effect was time-of-day dependent, with ZT10 outperforming ZT2.
+  sourceId: S23
+
+- title: BMAL1–FGF21 signaling in brown adipose tissue
+  description: In brown adipocytes and high-fat-diet mice, berberine increased FGF21 expression together with changes in BMAL1; Bmal1 knockdown prevented berberine-induced FGF21 upregulation in cultured brown adipocytes. The study also implicated AMPK. This remains preclinical mechanistic evidence.
+  sourceId: S24
 ```
 
 ## Cautions
@@ -470,6 +511,9 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
 - title: Anticonvulsant findings remain preclinical
   description: A 2026 systematic review found anticonvulsant signals in animal models, including dose and formulation effects, but the abstract provides no human epilepsy trial evidence. These findings should not be presented as a treatment effect in people.
   sourceId: pmid-42918506
+- title: Sex-hormone signal requires replication
+  description: A 2026 analysis found a decrease in total testosterone in women and an increase in men after the same 12-week berberine regimen. Because the sex comparison involved two separate trials and the clinical significance is uncertain, the finding should not be treated as an established endocrine effect.
+  sourceId: S25
 ```
 
 ## Claims
@@ -899,6 +943,66 @@ Human randomized metabolic outcomes, formulation-specific PK, interactions, preg
   sponsorshipStatus: not-assessed
   conflictsOfInterest: not-assessed
   conflictOfInterestStatus: not-assessed
+- id: S22
+  title: "Berberine Ameliorates Metabolic-Associated Fatty Liver Disease Mediated Metabolism Disorder and Redox Homeostasis by Upregulating Clock Genes: Clock and Bmal1 Expressions"
+  authors: Cunsi Ye, Yajing Zhang, Shaomin Lin, Yi Chen, Zimiao Wang, Haoyinghua Feng, Guangqing Fang, Shijian Quan
+  year: 2023
+  pmid: "36838862"
+  doi: 10.3390/molecules28041874
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9960773/
+  kind: preclinical mouse and hepatocyte mechanistic study
+  insight: High-fat-diet mouse and glucosamine-treated HepG2 experiments linked berberine with increased CLOCK/BMAL1 expression, altered circadian oscillatory behavior, improved glucose handling, and redox changes; Bmal1 knockdown attenuated relevant effects.
+  limitation: Preclinical evidence; animal doses and cell concentrations cannot be translated directly into human metabolic dosing or circadian-timing recommendations.
+  funding: 2019 Guangdong University Characteristic Innovation Project, reference 2019KTSCX023
+  sponsorshipStatus: non-industry-funded
+  conflictsOfInterest: Authors declared no conflict of interest.
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC9960773/
+
+- id: S23
+  title: "Circadian pharmacological effects of berberine on chronic colitis in mice: Role of the clock component Rev-erbα"
+  authors: Ziyue Zhou, Yanke Lin, Lu Gao, Zemin Yang, Shuai Wang, Baojian Wu
+  year: 2020
+  pmid: "31866303"
+  doi: 10.1016/j.bcp.2019.113773
+  url: https://pubmed.ncbi.nlm.nih.gov/31866303/
+  kind: preclinical circadian pharmacology study
+  insight: Cell and mouse experiments implicated REV-ERBα in berberine anti-inflammatory activity; chronic-colitis effects varied with dosing time and were greater at ZT10 than ZT2.
+  limitation: Mouse chronic-colitis and cellular evidence; does not establish an optimal dosing time in humans or for metabolic disease.
+  funding: not-assessed
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: not-assessed
+  conflictOfInterestStatus: not-assessed
+
+- id: S24
+  title: Berberine stimulates fibroblast growth factor 21 by modulating the molecular clock component brain and muscle Arnt-like 1 in brown adipose tissue
+  authors: Takao Hirai, Yuhei Mitani, Karen Kurumisawa, Kohei Nomura, Wei Wang, Ken-Ichi Nakashima, Makoto Inoue
+  year: 2019
+  pmid: "30991048"
+  doi: 10.1016/j.bcp.2019.04.017
+  url: https://pubmed.ncbi.nlm.nih.gov/30991048/
+  kind: preclinical brown-adipose and molecular-clock mechanistic study
+  insight: Berberine increased FGF21 expression in brown adipocytes, with AMPK involvement; Bmal1 knockdown prevented berberine-induced FGF21 upregulation, linking BMAL1 with the response.
+  limitation: Cell and mouse evidence; does not establish human circadian efficacy, sleep effects, or chronotherapeutic timing.
+  funding: PubMed classifies the article as non-U.S. government research support; detailed funding declaration not assessed.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: not-assessed
+  conflictOfInterestStatus: not-assessed
+- id: S25
+  title: "Sex-Specific Lipid, Apolipoprotein B, and Lipoprotein(a) Responses to Berberine Based on 2 Randomized Placebo-Controlled Trials"
+  authors: Jie V. Zhao, Bing Chen, Yap-Hang Chan, Junmeng Zhang, Yuanqing Xia, Joseph Edgar Blais, Haiyong Chen, Brian Tomlinson, Dennis Kai Ming Ip
+  year: 2026
+  pmid: "42470424"
+  doi: 10.1016/j.jacasi.2026.06.011
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13654383/
+  kind: randomized placebo-controlled trial plus cross-trial sex comparison
+  insight: A 100-woman 12-week RCT found reductions in apoB and multiple atherogenic lipid markers with berberine 500 mg twice daily; comparison with a separate matched-intervention trial in 84 men suggested larger lipid responses in women and opposite-direction testosterone changes.
+  limitation: Sex comparisons used stored samples from a separate completed men's trial rather than concurrent randomization by sex; short duration and biomarker endpoints do not establish clinical-event benefit.
+  funding: Health and Medical Research Fund, project numbers 15162621 and 21222191
+  sponsorshipStatus: non-industry-funded
+  conflictsOfInterest: Authors reported no relationships relevant to the contents of the paper.
+  conflictOfInterestStatus: none-declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC13654383/
 ```
 
 ## Legal
