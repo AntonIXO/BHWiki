@@ -6,6 +6,7 @@ aliases:
   - huperzine a
   - HupA
   - selagine
+  - (-)-huperzine A
 formula: C15H18N2O
 molecularWeight: 242.32 g/mol
 pubchemCid: 854026
@@ -19,7 +20,7 @@ tags:
   - attention
   - episodic-memory
 accent: "#8090a0"
-reviewedAt: 2026-10-11
+reviewedAt: "2026-11-12"
 editorialStatus: sourced-draft
 halfLife:
   label: Approximately 11.9 hours in one small single-dose human PK study
@@ -80,7 +81,9 @@ Purified HupA is not dose-equivalent to unstandardized Huperzia serrata extract,
 
 ## Evidence note
 
-Study findings and methods are linked to their original publications.
+Reviews report cognitive and functional signals in Alzheimer disease, but the underlying studies are heterogeneous and often methodologically weak. Evidence in mild cognitive impairment and healthy adults remains limited. [hup-meta-overview] [hup-mci] [hup-exercise]
+
+A controlled-release phase II/III trial in Alzheimer dementia was recruiting in the registry update posted August 17, 2026, with no posted results at the time of this review. Its estimated enrollment is 720; it compares the investigational formulation with placebo and donepezil. [hup-cr-trial]
 
 ## Doses
 
@@ -259,20 +262,36 @@ Study findings and methods are linked to their original publications.
   sourceId: hup-rivm
   population: Not established
   formulation: Not established
-- label: PubMed study exposure (25455867)
-  amount: 200 μg
-  quantity: 200
+- label: Elderly metabolism study
+  amount: 0.1 mg single dose
+  quantity: 0.1
   quantityMax: null
-  unit: μg
+  unit: mg
   ingredient: Huperzine A
-  formulation: As described in the PubMed abstract
-  frequency: Study exposure
-  duration: Study exposure
-  population: 34 matched pairs of junior-middle-school students with reported memory inadequacy
+  formulation: Oral study dose
+  route: Oral
+  frequency: Single dose
+  duration: 48-hour urine collection
+  population: 14 elderly participants
   purpose: Research exposure
   sourceCategory: research
-  note: Dose extracted from the PubMed abstract; verify the full text for formulation and protocol details.
-  sourceId: pubmed-25455867
+  note: Approximately 35 ± 9% of the administered dose was recovered unchanged in urine during the measured 48-hour interval.
+  sourceId: hup-pk-metabolism
+- label: Controlled-release Alzheimer phase-II/III trial
+  amount: Dose-selection study; exact dose schedule should be taken from the current trial registry
+  quantity: null
+  quantityMax: null
+  unit: not established
+  ingredient: Huperzine A
+  formulation: Controlled-release tablet
+  route: Oral
+  frequency: Morning administration
+  duration: Primary efficacy assessment at week 24; planned open-label extension through week 52
+  population: Planned mild-to-moderate Alzheimer dementia population
+  purpose: Registered research exposure; not a dosing recommendation
+  sourceCategory: research
+  note: Planned randomized double-blind placebo- and active-controlled phase-II/III study with donepezil comparator; no efficacy results are available.
+  sourceId: hup-cr-trial
 ```
 
 ## Pharmacokinetics
@@ -352,6 +371,20 @@ Study findings and methods are linked to their original publications.
   context: Source-specific pharmacokinetic detail is preserved in the cited source.
   sourceId: hup-ad-us
   modelEligible: false
+- id: huperzine-a-formulation-half-life
+  analyte: Huperzine A
+  route: Oral
+  formulation: Immediate-release oral reference formulation
+  population: Healthy Chinese male volunteers
+  endpoint: elimination-half-life
+  statistic: study-mean
+  value: 12.092
+  low: null
+  high: null
+  unit: hours
+  context: Randomized single-dose crossover bioequivalence study; reference-formulation mean half-life was 12.092 hours with SD 1.898 hours, while two test formulations produced similar estimates.
+  sourceId: hup-pk-formulations
+  modelEligible: true
 ```
 
 ## Modifiers
@@ -676,12 +709,9 @@ Study findings and methods are linked to their original publications.
 - title: Research caution
   description: Source-specific caution detail is preserved in the cited source.
   sourceId: hup-meta
-- title: Source-specific finding from PMID 25455867
-  description: "INTRODUCTION: Based on common pharmacodynamic mechanisms, recent efforts to develop second generation alternatives for organophosphate (OP) prophylaxis have expanded to include cholinesterase (ChE) inhibiting compounds traditionally approved for use in the treatment of Alzheimer's disease (AD)."
-  sourceId: pubmed-25455867
-- title: Source-specific finding from PMID 15916732
-  description: "RESULTS: Treatment of PC12 cells with 10 micromol/L HupA for 48 h markedly increased the number of neurite-bearing cells, but caused no significant alteration in cell viability or other signs of cytotoxicity. In addition to inhibiting AChE activity, 10 micromol/L HupA also increased the mRNA and protein levels of this enzyme. In addition, following 2 h exposure of the astrocytes to 10 micromol/L HupA, there was a significant up-regulation of mRNA for NGF and P75 low-affinity NGF receptor. The protein level of NGF was also increased after 24 h treatment with HupA.  CONCLUSION: Our findings demonstrate for the first time that HupA has a direct or indirect neurotrophic activity, which might be "
-  sourceId: pubmed-15916732
+- title: Registered controlled-release trial is not efficacy evidence
+  description: The current phase-II/III controlled-release trial is a prospective registered study without posted outcome results; its existence should not be interpreted as evidence that the formulation is effective or safe.
+  sourceId: hup-cr-trial
 ```
 
 ## Claims
@@ -854,34 +884,6 @@ Study findings and methods are linked to their original publications.
   context: Publication abstract; direction and population are retained on the linked observation.
   sourceIds:
     - hup-adolescent
-  conflictingSourceIds: []
-  assessment: not-formally-assessed
-  limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
-- id: research-claim-huperzine-a-25455867-1
-  assertion: Huperzine A is associated with the reported episodic memory finding in this publication.
-  relation: associated-with
-  participants:
-    - entityId: substance:huperzine-a
-      role: intervention or exposure
-    - entityId: tag:episodic-memory
-      role: reported endpoint
-  context: Publication abstract; direction and population are retained on the linked observation.
-  sourceIds:
-    - pubmed-25455867
-  conflictingSourceIds: []
-  assessment: not-formally-assessed
-  limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
-- id: research-claim-huperzine-a-15916732-2
-  assertion: "PMID 15916732 reports: RESULTS: Treatment of PC12 cells with 10 micromol/L HupA for 48 h markedly increased the number of neurite-bearing cells, but caused no significant alteration in cell viability or other signs of cytotoxicity. In addition to inhibiting AChE activity, 10 micromol/L HupA also increased the mRNA and protein levels of this enzyme. In addition, following 2 h exposure of the astrocytes to 10 micromol/L HupA, there was a significant up-regulation of mRNA for NGF and P75 low-affinity NGF receptor. The protein level of NGF was also increased after 24 h treatment with HupA.  CONCLUSION: Our findings demonstrate for the first time that HupA has a direct or indirect neurotrophic activity, which might be"
-  relation: associated-with
-  participants:
-    - entityId: substance:huperzine-a
-      role: intervention or exposure
-    - entityId: tag:episodic-memory
-      role: reported endpoint
-  context: Publication abstract; direction and population are retained on the linked observation.
-  sourceIds:
-    - pubmed-15916732
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: Automated corpus import from an abstract; this record is not an independent meta-analysis.
@@ -1202,6 +1204,48 @@ Study findings and methods are linked to their original publications.
   conflictOfInterestStatus: not-assessed
   pmid: "27751854"
   doi: 10.1016/j.bbrc.2016.10.039
+- id: hup-meta-overview
+  title: "The effects of Huperzine A on dementia and mild cognitive impairment: An overview of systematic reviews"
+  authors: Nafiseh Ghassab-Abdollahi; Khorshid Mobasseri; Ali Dehghani Ahmadabad; Haidar Nadrian; Mojgan Mirghafourvand
+  year: 2021
+  url: https://pubmed.ncbi.nlm.nih.gov/33851462/
+  kind: Overview of systematic reviews
+  insight: Six systematic reviews were assessed. Signals for cognition and activities of daily living in Alzheimer disease were judged insufficient for firm conclusions because of heterogeneity and low quality of the underlying studies; evidence for vascular dementia and MCI was sparse.
+  limitation: Umbrella review depended on the quality, coverage and publication dates of included reviews and primary trials.
+  funding: Not established from the PubMed record.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not established from the PubMed record.
+  conflictOfInterestStatus: not-assessed
+  pmid: "33851462"
+  doi: 10.1002/ptr.7126
+- id: hup-pk-formulations
+  title: "Pharmacokinetics and tolerability of oral dosage forms of huperzine A in healthy Chinese male volunteers: a randomized, single dose, three-period, six-sequence crossover study"
+  authors: San-Lan Wu; coauthors
+  year: 2017
+  url: https://pubmed.ncbi.nlm.nih.gov/29058298/
+  kind: Randomized single-dose pharmacokinetic bioequivalence study
+  insight: The reference formulation produced mean Cmax 1.550 ng/mL, AUC0-72h 17.550 ng·h/mL and half-life 12.092 hours; two test formulations produced similar approximately 12-hour half-lives and met reported bioequivalence criteria.
+  limitation: Single-dose study in healthy Chinese men; pharmacokinetic equivalence does not establish clinical efficacy or chronic safety.
+  funding: Not established from the cited abstract.
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Not established from the cited abstract.
+  conflictOfInterestStatus: not-assessed
+  pmid: "29058298"
+  doi: 10.1007/s11596-017-1807-8
+- id: hup-cr-trial
+  title: Clinical Study to Evaluate the Efficacy and Safety of Huperzine A Controlled-Release Tablets in Patients With Mild-to-Moderate Dementia of the Alzheimer's Type
+  authors: Wanbangde Pharmaceutical Group Co., LTD
+  year: 2025
+  url: https://clinicaltrials.gov/study/NCT07066826
+  kind: Registered phase-II/III randomized controlled trial
+  insight: Planned enrollment is 720 participants in a randomized, double-blind, double-dummy, placebo- and donepezil-controlled study with primary ADAS-Cog11 and ADCS-ADL assessment at week 24 and an open-label extension through week 52.
+  limitation: No results are posted. The registry listed the trial as recruiting in its August 17, 2026 update; no results were posted when checked on November 12, 2026.
+  funding: Sponsored by Wanbangde Pharmaceutical Group Co., LTD.
+  disclosureUrl: https://clinicaltrials.gov/study/NCT07066826
+  sponsorshipStatus: industry-funded
+  conflictsOfInterest: Sponsor is the responsible party for the registry record; investigator financial disclosures are not established from the registry summary.
+  conflictOfInterestStatus: not-assessed
+  clinicalTrialsId: NCT07066826
 ```
 
 ## Legal

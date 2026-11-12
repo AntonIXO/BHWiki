@@ -16,8 +16,9 @@ tags:
   - ldl-cholesterol
   - hba1c
   - diarrhea-duration
+  - androgen-metabolism
 accent: "#888888"
-reviewedAt: 2026-10-11
+reviewedAt: "2026-11-12"
 editorialStatus: sourced-draft
 halfLife:
   label: Not established
@@ -282,6 +283,13 @@ Circadian findings are preclinical: cell and mouse studies implicate CLOCK/BMAL1
   observationId: berberine-pk-summary
   factorType: other
   direction: variable
+- label: Sex and CYP2D6 pharmacokinetics
+  effect: Variable
+  detail: Human pharmacokinetic research found sex-associated differences in berberine exposure and CYP2D6-related metabolic variability. These exposure findings do not establish sex-specific clinical efficacy or a universal elimination half-life.
+  sourceId: S26
+  observationId: berberine-pk-summary
+  factorType: genotype
+  direction: variable
 ```
 
 ## Effects
@@ -451,6 +459,19 @@ Circadian findings are preclinical: cell and mouse studies implicate CLOCK/BMAL1
   magnitude: Women showed placebo-adjusted standardized reductions including apoB -1.18 SD, total cholesterol -1.15 SD, LDL-C -1.06 SD, triglycerides -0.77 SD, and Lp(a) -0.71 SD; sex-comparison estimates favored larger reductions in women for several atherogenic markers.
   reportType: measured-assessment
   conflictingSourceIds: []
+- id: berberine-outcome-sex-hormones-2026
+  conceptId: androgen-metabolism
+  name: Sex-hormone biomarkers
+  direction: Variable
+  evidence: Human research
+  description: The 2026 sex-specific analysis reported opposite-direction total-testosterone changes, with a reduction in women and an increase in men. The clinical importance and reproducibility of this finding are not established.
+  sourceId: S25
+  population: Women and men from two separate randomized placebo-controlled trials using the same 12-week berberine intervention
+  exposure: Berberine 500 mg twice daily
+  instrument: Total testosterone and other sex-hormone biomarkers
+  magnitude: Standardized total-testosterone effect approximately -0.42 SD in women and +0.43 SD in men
+  reportType: measured-assessment
+  conflictingSourceIds: []
 ```
 
 ## Mechanisms
@@ -482,6 +503,9 @@ Circadian findings are preclinical: cell and mouse studies implicate CLOCK/BMAL1
 - title: BMAL1–FGF21 signaling in brown adipose tissue
   description: In brown adipocytes and high-fat-diet mice, berberine increased FGF21 expression together with changes in BMAL1; Bmal1 knockdown prevented berberine-induced FGF21 upregulation in cultured brown adipocytes. The study also implicated AMPK. This remains preclinical mechanistic evidence.
   sourceId: S24
+- title: Circadian effects appear tissue- and disease-context dependent
+  description: A 2026 review highlights that berberine can increase pathologically reduced CLOCK/BMAL1 signaling in metabolic liver models while enhancing REV-ERBα-dependent repression of Bmal1 in inflammatory colitis models. Tissue, disease state, circadian phase, and regulatory level may account for the apparently different directions; human time-aware trials are still needed.
+  sourceId: S27
 ```
 
 ## Cautions
@@ -514,6 +538,9 @@ Circadian findings are preclinical: cell and mouse studies implicate CLOCK/BMAL1
 - title: Sex-hormone signal requires replication
   description: A 2026 analysis found a decrease in total testosterone in women and an increase in men after the same 12-week berberine regimen. Because the sex comparison involved two separate trials and the clinical significance is uncertain, the finding should not be treated as an established endocrine effect.
   sourceId: S25
+- title: Circadian dosing is not clinically established
+  description: Time-of-day-dependent efficacy has been demonstrated in a mouse chronic-colitis model, but no cited completed human chronotherapy study establishes an optimal morning, evening, meal-relative, or sleep-relative berberine dosing window for metabolic disease.
+  sourceId: S27
 ```
 
 ## Claims
@@ -625,6 +652,23 @@ Circadian findings are preclinical: cell and mouse studies implicate CLOCK/BMAL1
   conflictingSourceIds: []
   assessment: not-formally-assessed
   limitation: The evidence base is mainly short surrogate-endpoint research.
+- id: berberine-claim-circadian-reset
+  assertion: Berberine resets circadian rhythm or has a proven optimal time of day for human metabolic use.
+  relation: evidence-boundary
+  participants:
+    - entityId: substance:berberine
+      role: intervention
+    - entityId: tag:glycemic-control
+      role: circadian-evidence-context
+  context: Not established in humans. CLOCK/BMAL1, REV-ERBα, and FGF21 findings are primarily from cell and animal studies, and time-of-day-dependent pharmacodynamics have been demonstrated in a mouse colitis model rather than a human metabolic chronotherapy trial.
+  sourceIds:
+    - S22
+    - S23
+    - S24
+    - S27
+  conflictingSourceIds: []
+  assessment: not-formally-assessed
+  limitation: Preclinical clock-gene modulation does not establish human clock resetting, sleep benefit, or a dosing-time recommendation.
 ```
 
 ## Interactions
@@ -1003,6 +1047,35 @@ Circadian findings are preclinical: cell and mouse studies implicate CLOCK/BMAL1
   conflictsOfInterest: Authors reported no relationships relevant to the contents of the paper.
   conflictOfInterestStatus: none-declared
   disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC13654383/
+- id: S26
+  title: Sex-Dependent Effects of CYP2D6 on the Pharmacokinetics of Berberine in Humans
+  authors: Jonas A. Blöcher et al.
+  year: 2025
+  pmid: "39488825"
+  doi: 10.1002/cpt.3454
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11652804/
+  kind: human pharmacokinetic and pharmacogenetic study
+  insight: Berberine exposure differed significantly by sex, including AUC0–48h after adjustment for age, BMI, and genotype, and CYP2D6 genotype contributed to metabolic variability.
+  limitation: Pharmacokinetic study; findings do not establish sex-specific clinical efficacy, safety thresholds, or a universal elimination half-life.
+  funding: not-assessed
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: not-assessed
+  conflictOfInterestStatus: not-assessed
+- id: S27
+  title: "Berberine as a multitarget modulator of metabolic inflammation: molecular mechanisms, circadian regulation, and translational perspectives"
+  authors: Jiaxuan Xie, Junbo Cao, Shuying Zhang, Jiayang Zhang, Guanlin Wu, et al.
+  year: 2026
+  pmid: "42774343"
+  doi: 10.3389/fphar.2026.1935151
+  url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13594412/
+  kind: mechanistic and translational review
+  insight: Synthesizes CLOCK/BMAL1, REV-ERBα, metabolic-inflammation, and circadian-pharmacodynamic evidence and identifies time-aware human studies as a translational gap.
+  limitation: Review rather than independent replication; circadian evidence is chiefly preclinical and does not establish an optimal human dosing window.
+  funding: not-assessed
+  sponsorshipStatus: not-assessed
+  conflictsOfInterest: Authors declared no commercial or financial relationships that could be construed as a potential conflict; two authors disclosed Frontiers editorial-board membership at submission.
+  conflictOfInterestStatus: declared
+  disclosureUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC13594412/
 ```
 
 ## Legal
