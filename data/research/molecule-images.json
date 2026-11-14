@@ -91,6 +91,13 @@
       "pubchemCid": 5280343,
       "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280343/PNG?image_size=500x500&record_type=2d",
       "sha256": "f0cd48ef6586a0436cf016583f9513c0ed2f08f3216cf2b3298e25c8fb6b6e65"
+    },
+    {
+      "slug": "n-acetylcysteine-019fe218",
+      "pubchemCid": 12035,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12035/PNG?image_size=500x500&record_type=2d",
+      "sha256": "22430ce793f109c4e7193cfb4b5a26f3ff2d28de69c9179cb59a6c519b4f2828",
+      "retrievedAt": "2026-11-14"
     }
   ]
 }
