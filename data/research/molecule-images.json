@@ -112,6 +112,13 @@
       "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/164979/PNG?image_size=500x500&record_type=2d",
       "sha256": "c40f49305d23d6053efa4ad3b9bd2a83d450ffdff46987d5eb45c6bf64bca08e",
       "retrievedAt": "2026-11-18"
+    },
+    {
+      "slug": "meldonium",
+      "pubchemCid": 123868,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/123868/PNG?image_size=500x500&record_type=2d",
+      "sha256": "9ab8696d3129bb8aa85494e5d7c29f19e3dceca39dd8f7df95c788cde9534b25",
+      "retrievedAt": "2026-11-18"
     }
   ]
 }
