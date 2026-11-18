@@ -2,11 +2,11 @@
 
 ## Execution and terminal state
 
-- Verify the installed runner's supported reasoning values. The pinned runner used in October 2026 rejected `ultra` even though the account catalogue exposed it; `max` was its highest selectable value. Record that scope instead of claiming account-wide maximum capability. Recheck after runner updates.
+- The current MCP `research_run` call owns submission and waiting. Record the model and reasoning only when the returned evidence identifies them.
 - Authentication readiness and HTTP 200 responses establish access, not research completion. The authenticated backend has returned overload errors and `incomplete chunked read` failures after accepting requests. The MCP result may have `isError: false` while its text says `Research failed:`; inspect both.
-- A tool's 300-second observation timeout does not prove that the research stopped. Poll its exact handle or inspect the authoritative process/job state. The `openai-codex` provider used here cannot recover completed reports through `research_status`; record that limitation. Do not launch duplicates merely because observation expired.
+- A transport timeout does not prove that research stopped. Use the same `request_id` if the request needs a retry. Do not submit through a second surface merely because observation expired.
 - Prefer one isolated call when diagnosing backend failures. High-concurrency batches produced widespread failures; do not assume concurrency was the cause without evidence. Back off after repeated terminal failures, preserve the queue, and report the actual error.
-- `Missing X server` from a browser tool is an infrastructure failure, not evidence that Deep Research mode was selected. Follow the entrypoint's Chrome retry rule. Do not silently change runners or claim research acquisition from a browser that never opened.
+- Local browser failures can affect article QA. The MCP research submission uses native HTTP and does not require a running browser.
 
 ## Literal captures and manifests
 

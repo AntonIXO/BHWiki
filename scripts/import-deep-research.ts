@@ -59,6 +59,7 @@ function main() {
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
   const args = process.argv.slice(2);
   let slug = "", article = "", sourceUrl = "";
+  let sourceMethod: "chrome" | "mcp" = "chrome";
   let apply = false;
   const companions: { relativePath: string; localPath: string }[] = [];
   while (args.length) {
@@ -69,13 +70,17 @@ function main() {
     if (flag === "--slug") slug = value;
     else if (flag === "--article") article = value;
     else if (flag === "--source-url") sourceUrl = value;
+    else if (flag === "--source-method") {
+      if (value !== "chrome" && value !== "mcp") throw new Error("Source method must be chrome or mcp");
+      sourceMethod = value;
+    }
     else if (flag === "--companion") {
       const separator = value.indexOf("=");
       if (separator < 1) throw new Error("Companion argument must be content-relative-path=downloaded-local-path");
       companions.push({ relativePath: value.slice(0, separator), localPath: value.slice(separator + 1) });
     } else throw new Error(`Unknown flag ${flag}`);
   }
-  if (!slug || !article) throw new Error("Usage: content:research --slug TOPIC --article DOWNLOAD.md [--companion outcomes/ID.md=DOWNLOAD.md] [--source-url CHAT_URL] [--apply]");
+  if (!slug || !article) throw new Error("Usage: content:research --slug TOPIC --article DOWNLOAD.md [--companion outcomes/ID.md=DOWNLOAD.md] [--source-method chrome|mcp] [--source-url CHAT_URL] [--apply]");
   if (sourceUrl) {
     const url = new URL(sourceUrl);
     if (url.protocol !== "https:" || url.hostname !== "chatgpt.com" || url.username || url.password)
@@ -110,7 +115,8 @@ function main() {
     });
     throw error;
   }
-  writeFileSync(path.join(archive, "manifest.json"), JSON.stringify({ topic: slug, sourceUrl: sourceUrl || null, importedAt: new Date().toISOString(), method: "One topic per ChatGPT Deep Research using Chrome", editorialStatus: "sourced-draft", files: recorded }, null, 2) + "\n");
+  const method = sourceMethod === "mcp" ? "One topic per ChatGPT Deep Research via MCP" : "One topic per ChatGPT Deep Research using Chrome";
+  writeFileSync(path.join(archive, "manifest.json"), JSON.stringify({ topic: slug, sourceUrl: sourceUrl || null, importedAt: new Date().toISOString(), method, editorialStatus: "sourced-draft", files: recorded }, null, 2) + "\n");
   console.log(`Imported ${slug} and ${prepared.length - 1} companion files after corpus, citation, disclosure and round-trip validation.`);
 }
 

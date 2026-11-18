@@ -1,6 +1,6 @@
 ---
 name: bhwiki-deep-research-check
-description: Run or audit one BHWiki topic through approved Deep Research or GPT-6 Pro Web in Chrome, preserving rich fields, source links, funding and conflicts, then validate its parsing and render.
+description: Run or audit one BHWiki topic through ChatGPT Deep Research MCP, preserving rich fields, source links, funding and conflicts, then validate its parsing and render.
 metadata:
   short-description: Check Deep Research against BHWiki
 ---
@@ -19,9 +19,9 @@ BHWiki’s checked-in contract is the output authority when the two documents di
 
 Use the connected OpenAI Deep Research result as the research input. For an inspection-only acquisition, preserve exactly one returned report under `data/research/pending-YYYY-MM-DD/<slug>-.../deep-research.md` and one short README with the conversation/mode/model evidence; do not create duplicate captures, acquisition manifests, or extra copies. Only a normalized, validated BHWiki Markdown article may enter `content/`, and pending research artifacts remain uncommitted unless the user explicitly asks otherwise.
 
-When using the browser-backed ChatGPT surface, select the model selector's `6 Pro` mode before submitting the Deep Research prompt. Depending on the current UI, this may be displayed as the `Pro` tier rather than with the numeric model prefix; record the exact visible label instead of inventing a model name. Do not substitute ordinary Chat, `Medium`, the default model, or another model for this mode. Verify immediately before submission that the selector shows the Pro tier at `5 of 5` (the highest setting, when the power scale is exposed) and that the composer visibly has the `Deep research` mode chip. Model selection is separate from the Deep Research mode and must be checked immediately before submission. If neither a `6 Pro` label nor the current UI's `Pro` tier is visible, preserve the run as unverified and do not import it as an approved acquisition.
+Use the ChatGPT Deep Research MCP tool `research_run` for acquisition. Discover its current schema, submit one topic in one call with a stable `request_id` for retrying that same request, and wait for the returned Markdown report. The tool handles quota checking, submission and waiting. `research_doctor` and `research_quotas` are optional diagnostics. Browser mode and model selector checks do not apply to this MCP path.
 
-**Browser-run guard:** The outbound request itself must contain an explicit Deep Research activation marker (for the current ChatGPT web surface, the `$ deep-research` command/prefix) and the submitted conversation must render a visible `Deep research` label/link or equivalent research-run indicator. A Pro model selection alone is not evidence that Deep Research was requested. If the marker or rendered indicator is absent, record the acquisition as an unverified workflow failure; do not cancel an already-running user-authorized report solely because this check is discovered after submission, but do not import it until provenance is repaired or the run is explicitly reissued with the marker.
+Inspect the actual MCP output for a completed report and references. A transport success, intermediate status or embedded `Research failed:` message does not establish acquisition. Preserve the exact run evidence the tool returns and reuse the same request ID if a retry is needed. Use the returned ChatGPT conversation URL for import provenance when supplied. Omit `--source-url` when the result has no conversation URL. Report a terminal acquisition failure explicitly and keep separately verified primary-source work identifiable as such.
 
 ## Research run
 
@@ -65,7 +65,7 @@ Use the repository’s existing Markdown import path. Run the dry import first, 
 bun run content:validate
 bun run typecheck
 bun run test
-bun run content:research -- --slug <slug> --article <path/to/<slug>.md> --source-url <chat-url> --apply
+bun run content:research --slug <slug> --article <path/to/<slug>.md> --source-method mcp --apply
 ```
 
 Use the project’s research/e2e checks when the page has plots, disclosures, study controls, or other interactive output. Open the rendered article in the local wiki and verify that the intended source cards, funding/COI badges, study result plots, PK/duration controls, concept links, and empty-state behavior match the structured data. Fix parser/import/render issues and re-run the relevant checks; do not silently delete evidence to make validation pass.

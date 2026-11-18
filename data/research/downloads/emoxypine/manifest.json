@@ -1,0 +1,19 @@
+{
+  "topic": "emoxypine",
+  "sourceUrl": "https://chatgpt.com/c/6afdaec5-2980-83ed-ad9e-00cba5c7e088",
+  "importedAt": "2026-11-18T14:16:30.115Z",
+  "method": "One topic per ChatGPT Deep Research via MCP",
+  "editorialStatus": "sourced-draft",
+  "files": [
+    {
+      "path": "substances/emoxypine.md",
+      "archive": "00e2d7107ce0/substances/emoxypine.md",
+      "sha256": "00e2d7107ce0a45bbd6a3aad42d5139b3a8f66160eaeb43518b624be4b283e4a"
+    },
+    {
+      "path": "outcomes/motor-function-in-rehabilitation.md",
+      "archive": "e3e831abe89d/outcomes/motor-function-in-rehabilitation.md",
+      "sha256": "e3e831abe89d406de05b90b5542cd03c1eca4972f5e25f731bd1746e18a05e17"
+    }
+  ]
+}
