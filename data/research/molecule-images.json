@@ -98,6 +98,20 @@
       "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12035/PNG?image_size=500x500&record_type=2d",
       "sha256": "22430ce793f109c4e7193cfb4b5a26f3ff2d28de69c9179cb59a6c519b4f2828",
       "retrievedAt": "2026-11-14"
+    },
+    {
+      "slug": "5-htp",
+      "pubchemCid": 439280,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/439280/PNG?image_size=500x500&record_type=2d",
+      "sha256": "b9091bc07a803c00eebf7913fa3d1f73abbb85b43ef6a2ff7bd9291fe2adee2f",
+      "retrievedAt": "2026-11-18"
+    },
+    {
+      "slug": "9-methyl-beta-carboline",
+      "pubchemCid": 164979,
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/164979/PNG?image_size=500x500&record_type=2d",
+      "sha256": "c40f49305d23d6053efa4ad3b9bd2a83d450ffdff46987d5eb45c6bf64bca08e",
+      "retrievedAt": "2026-11-18"
     }
   ]
 }
