@@ -46,8 +46,14 @@ function escapeTerm(value: string): string {
   return `"${normalizeSpace(value).toLocaleLowerCase().replaceAll('"', "\\\"")}"`;
 }
 
+/** Drop short terms and case-insensitive repeats, keeping the first casing seen. */
 function uniqueTerms(values: string[]): string[] {
-  return [...new Set(values.map(normalizeSpace).filter((value) => value.length >= 2))];
+  const byKey = new Map<string, string>();
+  for (const value of values.map(normalizeSpace)) {
+    const key = value.toLocaleLowerCase();
+    if (value.length >= 2 && !byKey.has(key)) byKey.set(key, value);
+  }
+  return [...byKey.values()];
 }
 
 /** Build a conservative TITLE_ABS query; no generic tag is queried without a substance. */
@@ -59,11 +65,23 @@ export function buildEuropePmcQuery(target: WatchTarget, tagLabels: Map<string, 
   return `TITLE_ABS:(${substances})${tags} AND FIRST_PDATE:[${since} TO *]`;
 }
 
+/** Watch terms (name, aliases, tag ids and labels) that occur in a record's title or abstract. */
+export function matchWatchTerms(target: WatchTarget, tagLabels: Map<string, string>, result: Record<string, unknown>): string[] {
+  const text = normalizeSpace(`${result.title ?? ""} ${result.abstractText ?? result.abstract ?? ""}`).toLocaleLowerCase();
+  const candidates = [target.name, ...target.aliases, ...target.tags, ...target.tags.map((tag) => tagLabels.get(tag) ?? "")];
+  return uniqueTerms(candidates).filter((term) => text.includes(term.toLocaleLowerCase()));
+}
+
 export function canonicalPaperId(paper: Pick<LiteraturePaper, "pmid" | "doi" | "title" | "publishedOn" | "id">): string {
   if (paper.pmid?.trim()) return `pmid:${paper.pmid.trim()}`;
   if (paper.doi?.trim()) return `doi:${paper.doi.trim().toLowerCase()}`;
   const basis = `${normalizeSpace(paper.title).toLowerCase()}|${paper.publishedOn ?? ""}`;
   return `title:${createHash("sha256").update(basis).digest("hex").slice(0, 24)}`;
+}
+
+/** File stem for a spooled paper or suggestion id. `:` → `_` keeps existing spool names; URI-encoding the rest stops a DOI's `/` from creating directories or folding two DOIs into one file. */
+export function spoolFileStem(id: string): string {
+  return encodeURIComponent(id.replaceAll(":", "_"));
 }
 
 function mergePaper(first: LiteraturePaper, second: LiteraturePaper): LiteraturePaper {
@@ -76,7 +94,7 @@ function mergePaper(first: LiteraturePaper, second: LiteraturePaper): Literature
     pmid: first.pmid ?? second.pmid,
     pmcid: first.pmcid ?? second.pmcid,
     matchedSubstances: [...new Set([...first.matchedSubstances, ...second.matchedSubstances])],
-    matchedTerms: [...new Set([...first.matchedTerms, ...second.matchedTerms])],
+    matchedTerms: uniqueTerms([...first.matchedTerms, ...second.matchedTerms]),
     authors: [...new Set([...first.authors, ...second.authors])],
     raw: { ...first.raw, ...second.raw },
   };
@@ -172,6 +190,17 @@ export function renderEditorialProposal(input: {
   ].join("\n");
 }
 
+function stringField(value: unknown): string | null {
+  return typeof value === "string" && value.trim() ? normalizeSpace(value) : null;
+}
+
+/** `resultType=lite` exposes `journalTitle`; `resultType=core` nests the journal under `journalInfo.journal`. */
+function europePmcJournal(result: Record<string, unknown>): string | null {
+  const journalInfo = result.journalInfo as { journal?: Record<string, unknown> } | undefined;
+  const journal = journalInfo?.journal ?? {};
+  return stringField(result.journalTitle) ?? stringField(journal.medlineAbbreviation) ?? stringField(journal.isoabbreviation) ?? stringField(journal.title);
+}
+
 export function europePmcPaper(result: Record<string, unknown>, target: WatchTarget, matchedTerms: string[]): LiteraturePaper {
   const pmid = typeof result.pmid === "string" ? result.pmid : null;
   const doi = typeof result.doi === "string" ? result.doi : null;
@@ -186,8 +215,8 @@ export function europePmcPaper(result: Record<string, unknown>, target: WatchTar
     pmid,
     pmcid,
     publishedOn: typeof result.firstPublicationDate === "string" ? result.firstPublicationDate : null,
-    journal: typeof result.journalTitle === "string" ? result.journalTitle : null,
-    authors: typeof result.authorString === "string" ? result.authorString.split(",").map(normalizeSpace).filter(Boolean) : [],
+    journal: europePmcJournal(result),
+    authors: typeof result.authorString === "string" ? result.authorString.replace(/\.\s*$/, "").split(",").map(normalizeSpace).filter(Boolean) : [],
     sourceKind: "europepmc",
     matchedSubstances: [target.slug],
     matchedTerms,

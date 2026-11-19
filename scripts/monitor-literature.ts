@@ -9,6 +9,8 @@ import {
   deduplicatePapers,
   europePmcPaper,
   extractQuotedEvidence,
+  matchWatchTerms,
+  spoolFileStem,
   validateSuggestion,
   type LiteraturePaper,
   type SuggestionDraft,
@@ -59,12 +61,6 @@ async function fetchEuropePmc(query: string): Promise<Record<string, unknown>[]>
   return body.resultList?.result ?? [];
 }
 
-function termMatches(target: WatchTarget, result: Record<string, unknown>): string[] {
-  const text = `${result.title ?? ""} ${result.abstractText ?? result.abstract ?? ""}`.toLocaleLowerCase();
-  const terms = [target.name, ...target.aliases, ...target.tags, ...target.tags.map((tag) => tagLabels.get(tag) ?? "")];
-  return [...new Set(terms.filter((term) => term.length >= 2 && text.includes(term.toLocaleLowerCase())))];
-}
-
 async function callLlm(paper: LiteraturePaper): Promise<LlmResult> {
   const prompt = [
     "You are an evidence triage assistant for an editorial research wiki.",
@@ -96,8 +92,8 @@ function suggestionId(paperId: string, suggestion: SuggestionDraft): string {
 async function saveSpool(papers: LiteraturePaper[], suggestions: Array<{ id: string; paperId: string; suggestion: SuggestionDraft; model: string }>): Promise<void> {
   await mkdir(path.join(spool, "papers"), { recursive: true });
   await mkdir(path.join(spool, "suggestions"), { recursive: true });
-  for (const paper of papers) await writeFile(path.join(spool, "papers", `${paper.id.replaceAll(":", "_")}.json`), `${JSON.stringify({ ...paper, status: "discovered", runId }, null, 2)}\n`);
-  for (const item of suggestions) await writeFile(path.join(spool, "suggestions", `${item.id.replaceAll(":", "_")}.json`), `${JSON.stringify(item, null, 2)}\n`);
+  for (const paper of papers) await writeFile(path.join(spool, "papers", `${spoolFileStem(paper.id)}.json`), `${JSON.stringify({ ...paper, status: "discovered", runId }, null, 2)}\n`);
+  for (const item of suggestions) await writeFile(path.join(spool, "suggestions", `${spoolFileStem(item.id)}.json`), `${JSON.stringify(item, null, 2)}\n`);
   await writeFile(path.join(spool, `run-${runId}.json`), `${JSON.stringify({ runId, since, papers: papers.length, suggestions: suggestions.length, createdAt: new Date().toISOString() }, null, 2)}\n`);
 }
 
@@ -137,7 +133,7 @@ async function main(): Promise<void> {
     const query = buildEuropePmcQuery(target, tagLabels, since);
     const results = await fetchEuropePmc(query);
     for (const result of results) {
-      const matchedTerms = termMatches(target, result);
+      const matchedTerms = matchWatchTerms(target, tagLabels, result);
       if (!matchedTerms.length) continue;
       fetched.push(europePmcPaper(result, target, matchedTerms));
     }

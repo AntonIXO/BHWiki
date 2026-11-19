@@ -1,7 +1,7 @@
 import postgres from "postgres";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import path from "node:path";
-import { renderEditorialProposal, type LiteraturePaper, type SuggestionDraft } from "../src/lib/literature-monitor";
+import { renderEditorialProposal, spoolFileStem, type LiteraturePaper, type SuggestionDraft } from "../src/lib/literature-monitor";
 
 const value = (name: string, fallback?: string) => {
   const prefix = `--${name}=`;
@@ -13,10 +13,6 @@ const decision = value("decision");
 const id = value("id");
 const reviewer = value("reviewer", process.env.USER ?? "editor")!;
 const spool = path.resolve(value("spool", process.env.BHWIKI_LITERATURE_SPOOL ?? "/var/lib/bhwiki/literature")!);
-
-function filenameForId(value: string): string {
-  return value.replaceAll(":", "_");
-}
 
 async function listSpool(): Promise<void> {
   const directory = path.join(spool, "suggestions");
@@ -32,9 +28,9 @@ async function listSpool(): Promise<void> {
 
 async function reviewSpool(): Promise<void> {
   if (!id || !decision || !["approve", "reject"].includes(decision)) throw new Error("Use --id=<suggestion-id> --decision=approve|reject");
-  const suggestionPath = path.join(spool, "suggestions", `${filenameForId(id)}.json`);
+  const suggestionPath = path.join(spool, "suggestions", `${spoolFileStem(id)}.json`);
   const item = JSON.parse(await readFile(suggestionPath, "utf8")) as { id: string; paperId: string; model: string; suggestion: SuggestionDraft };
-  const paperPath = path.join(spool, "papers", `${filenameForId(item.paperId)}.json`);
+  const paperPath = path.join(spool, "papers", `${spoolFileStem(item.paperId)}.json`);
   const paper = JSON.parse(await readFile(paperPath, "utf8")) as LiteraturePaper;
   const status = decision === "approve" ? "approved" : "rejected";
   item.suggestion.status = status;
@@ -42,9 +38,9 @@ async function reviewSpool(): Promise<void> {
   if (status === "approved") {
     const proposals = path.join(spool, "proposals");
     await mkdir(proposals, { recursive: true });
-    await writeFile(path.join(proposals, `${filenameForId(id)}.md`), renderEditorialProposal({ id, paper, suggestion: item.suggestion, status, reviewer }));
+    await writeFile(path.join(proposals, `${spoolFileStem(id)}.md`), renderEditorialProposal({ id, paper, suggestion: item.suggestion, status, reviewer }));
   }
-  console.log(JSON.stringify({ id, decision, status, published: false, proposal: status === "approved" ? path.join(spool, "proposals", `${filenameForId(id)}.md`) : null }));
+  console.log(JSON.stringify({ id, decision, status, published: false, proposal: status === "approved" ? path.join(spool, "proposals", `${spoolFileStem(id)}.md`) : null }));
 }
 
 async function listDatabase(): Promise<void> {
@@ -70,7 +66,7 @@ async function reviewDatabase(): Promise<void> {
       await tx`UPDATE bhwiki.literature_suggestions SET status=${status}, reviewer=${reviewer}, reviewed_at=now() WHERE id=${id}`;
       if (status === "approved") {
         await mkdir(path.join(spool, "proposals"), { recursive: true });
-        await writeFile(path.join(spool, "proposals", `${filenameForId(id)}.md`), renderEditorialProposal({
+        await writeFile(path.join(spool, "proposals", `${spoolFileStem(id)}.md`), renderEditorialProposal({
           id,
           paper: { title: row.title, url: row.url, doi: row.doi, pmid: row.pmid, publishedOn: row.publishedOn, journal: row.journal, abstract: row.abstract },
           suggestion: { substanceSlug: row.substanceSlug, suggestionType: row.suggestionType, payload: row.payload, rationale: row.rationale, evidenceQuotes: row.evidenceQuotes },
@@ -78,7 +74,7 @@ async function reviewDatabase(): Promise<void> {
           reviewer,
         }));
       }
-      console.log(JSON.stringify({ id, decision, status, published: false, proposal: status === "approved" ? path.join(spool, "proposals", `${filenameForId(id)}.md`) : null }));
+      console.log(JSON.stringify({ id, decision, status, published: false, proposal: status === "approved" ? path.join(spool, "proposals", `${spoolFileStem(id)}.md`) : null }));
     });
   } finally { await sql.end({ timeout: 2 }); }
 }
