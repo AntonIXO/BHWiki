@@ -438,7 +438,7 @@ Study findings and methods are linked to their original publications.
   conflictOfInterestStatus: not-assessed
 - id: dr-noopept-s11
   title: "[Meteoadaptogenic properties of peptide drugs in healthy volunteers]."
-  authors: Authors listed in returned report
+  authors: PD Shabanov, VP Ganapol’skii, PV Aleksandrov
   year: 2007
   url: https://pubmed.ncbi.nlm.nih.gov/18318195/
   pmid: "18318195"
