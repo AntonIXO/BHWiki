@@ -26,12 +26,12 @@ test("markdown files preserve the curated records", () => {
   assert.deepEqual(curated.map((substance) => substance?.slug), curatedSlugs);
   assert.deepEqual(curated.map((substance) => substance && contentHash(substance)), curatedHashes);
   assert.ok(substances.length >= curatedSlugs.length);
-  assert.equal(tags.length, 390);
+  assert.equal(tags.length, 393);
   assert.equal(substances.filter((substance) => substance.subtitle === "Identity record.").length, 0);
   assert.equal(substances.filter((substance) => substance.subtitle === "Source-backed identity stub.").length, 0);
   const kinds: Record<TagKind, number> = { class: 0, "chemical-family": 0, mechanism: 0, target: 0, neurotransmitter: 0, enzyme: 0, effect: 0, outcome: 0, exposure: 0, legal: 0 };
   for (const tag of tags) kinds[tag.kind] += 1;
-  assert.deepEqual(kinds, { class: 21, "chemical-family": 8, mechanism: 32, target: 21, neurotransmitter: 6, enzyme: 13, effect: 54, outcome: 229, exposure: 5, legal: 1 });
+  assert.deepEqual(kinds, { class: 22, "chemical-family": 8, mechanism: 32, target: 21, neurotransmitter: 6, enzyme: 13, effect: 54, outcome: 231, exposure: 5, legal: 1 });
   assert.equal(hyperedges.length, 65);
   const total = (count: (substance: Substance) => number) => curated.reduce((sum, substance) => sum + count(substance!), 0);
   assert.equal(total((substance) => substance.references.length), 330);
